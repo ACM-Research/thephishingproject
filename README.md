@@ -5,6 +5,7 @@ An email parser used to identify potential phishing attacks targeted towards col
 
 ## Resources
 #### Email Parsing API
+- mailparser.io : https://mailparser.io/
 - Nylas API: https://docs.nylas.com/docs/quickstart-email
 
 #### General Research Resources
