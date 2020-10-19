@@ -1,10 +1,12 @@
+import json
 import imaplib
 import mailparser
 import xlsxwriter
 
 # login credentials
-sender_email = "truongjesse51@gmail.com"
-password = "rIbImBLeNu"
+config = json.load(open('config.json', 'r'))
+sender_email = config['sender_email']
+password = config['password']
 
 # Defining a imaplib var and logining into the email with the credentials
 mail = imaplib.IMAP4_SSL("imap.gmail.com")
