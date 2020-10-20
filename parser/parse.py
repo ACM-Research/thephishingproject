@@ -6,6 +6,7 @@ import mailparser
 from bs4 import BeautifulSoup
 from textblob import TextBlob
 import language_tool_python
+import textstat
 import nltk
 
 # make sure we have punkt downloaded
@@ -33,9 +34,19 @@ def main(dir):
                 'attachments': mail.attachments,
                 'body': body,
                 'grammarErrors': len(grammarErrors),
-                'characterCount': len(body),
-                'wordCount': len(blob.words),
-                'sentenceCount': len(blob.sentences),
+                'counts': {
+                    'characterCount': len(body),
+                    'wordCount': textstat.lexicon_count(body),
+                    'sentenceCount': textstat.sentence_count(body)
+                },
+                'readability': {
+                    'flesch_kincaid': textstat.flesch_kincaid_grade(body),
+                    'gunning_fog': textstat.gunning_fog(body),
+                    'smog_index': textstat.smog_index(body),
+                    'automated_readability_index': textstat.automated_readability_index(body),
+                    'coleman_liau_index': textstat.coleman_liau_index(body),
+                    'linsear_write': textstat.linsear_write_formula(body),
+                },
                 'sentiment': {
                     'polarity': blob.sentiment.polarity,
                     'subjectivity': blob.sentiment.subjectivity
