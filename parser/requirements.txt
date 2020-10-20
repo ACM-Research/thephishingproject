@@ -1,9 +1,13 @@
 astroid==2.4.2
 beautifulsoup4==4.9.3
+certifi==2020.6.20
+chardet==3.0.4
 click==7.1.2
+idna==2.10
 ipaddress==1.0.23
 isort==5.6.4
 joblib==0.17.0
+language-tool-python==2.4.5
 lazy-object-proxy==1.4.3
 lxml==4.6.1
 mail-parser==3.12.0
@@ -11,10 +15,12 @@ mccabe==0.6.1
 nltk==3.5
 pylint==2.6.0
 regex==2020.10.15
+requests==2.24.0
 simplejson==3.17.0
 six==1.14.0
 soupsieve==2.0.1
 textblob==0.15.3
 toml==0.10.1
 tqdm==4.50.2
+urllib3==1.25.11
 wrapt==1.12.1

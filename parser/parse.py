@@ -5,8 +5,15 @@ import json
 import mailparser
 from bs4 import BeautifulSoup
 from textblob import TextBlob
+import language_tool_python
+import nltk
+
+# make sure we have punkt downloaded
+nltk.download('punkt', quiet=True)
 
 def main(dir):
+    checker = language_tool_python.LanguageTool('en-US')
+
     emails = {}
 
     for filename in os.listdir(dir):
@@ -16,7 +23,8 @@ def main(dir):
             emails[filename] = {}
             mail = mailparser.parse_from_file_obj(file)
             body = BeautifulSoup(mail.body, 'lxml').text
-            sentiment = TextBlob(body)
+            blob = TextBlob(body)
+            grammarErrors = checker.check(body)
 
             emails[filename] = {
                 'subject': mail.subject,
@@ -24,9 +32,13 @@ def main(dir):
                 'to': [tup[1] for tup in mail.to],
                 'attachments': mail.attachments,
                 'body': body,
+                'grammarErrors': len(grammarErrors),
+                'characterCount': len(body),
+                'wordCount': len(blob.words),
+                'sentenceCount': len(blob.sentences),
                 'sentiment': {
-                    'polarity': sentiment.polarity,
-                    'subjectivity': sentiment.subjectivity
+                    'polarity': blob.sentiment.polarity,
+                    'subjectivity': blob.sentiment.subjectivity
                 }
             }
 
