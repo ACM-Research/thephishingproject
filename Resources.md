@@ -31,3 +31,6 @@ Please add categories to keep this neat
   - Simple and easy to understand data visualization. Good for presentation or representing basic data.
 - Pandas [documentation](https://pypi.org/project/pandas/)
   - Aids in reading data into data structures you can add to or manipulate. You can also calculate certain values depending on how much or what type of data you have in the dataset.
+
+## Header Info
+- A full Email Header Analysis doc(https://mlhale.github.io/nebraska-gencyber-modules/phishing/email-headeranalysis/#email-headers)
