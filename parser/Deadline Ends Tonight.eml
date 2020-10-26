@@ -1,0 +1,1081 @@
+Received: from BN6PR01MB2481.prod.exchangelabs.com (2603:10b6:404:50::11) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 17:33:32
+ +0000
+Received: from MN2PR20CA0046.namprd20.prod.outlook.com (2603:10b6:208:235::15)
+ by BN6PR01MB2481.prod.exchangelabs.com (2603:10b6:404:50::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.21; Tue, 13 Oct 2020 17:33:31 +0000
+Received: from BL2NAM02FT019.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:235:cafe::27) by MN2PR20CA0046.outlook.office365.com
+ (2603:10b6:208:235::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Tue, 13 Oct 2020 17:33:31 +0000
+Authentication-Results: spf=pass (sender IP is 192.28.145.45)
+ smtp.mailfrom=envelope.thescla.org; utdallas.edu; dkim=pass (signature was
+ verified) header.d=sclahonors.org;utdallas.edu; dmarc=pass action=none
+ header.from=sclahonors.org;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of envelope.thescla.org
+ designates 192.28.145.45 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.28.145.45;
+ helo=envelope.thescla.org;
+Received: from envelope.thescla.org (192.28.145.45) by
+ BL2NAM02FT019.mail.protection.outlook.com (10.152.77.166) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 17:33:30 +0000
+X-MSFBL: S61gZYHg3ANz6IED2RhbjLKx6Iu03jjtmgWJ2FCWMsQ=|eyJyIjoienh0MTgwMDA
+	1QHV0ZGFsbGFzLmVkdSIsInUiOiI4MzktTU9MLTU1MjowOjI2MzQ6MTA4Njc3OjA
+	6Mjc2ODo5OjE3MDQ6MTEwOTI2OS0xMCIsImIiOiJkdnAtMTkyLTI4LTE0NS00NSI
+	sImciOiJiZy1hYmQtOTg5In0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1602610409;
+	s=m1; d=sclahonors.org; i=@sclahonors.org;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=iM7MIhVzFwd+qB4Z5JUq8T0Giia1Z/Ebb5dtOEQcPKs=;
+	b=ZXXJqt2mK5qVVJ/V7hv6hL1zFQDY6wDqr6HFG/8bhuFk5jpHa/JLRfK7sHunrqQK
+	465R547WLhRsRuXK4+fHJHClio8gvqcqgnZ8DOC0RKdPlI2CQyyVLAEq8han3IBLylT
+	tme0nA+iHbvsrjv2Yr4ItQrz7FI+kXaTV9R/Bh8c=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1602610409;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=iM7MIhVzFwd+qB4Z5JUq8T0Giia1Z/Ebb5dtOEQcPKs=;
+	b=PI9JC5+4TVix6i/39ZLt2QtQq0Y3PBu8o80CDAOGsOUxAiAvbvE1eqcOy/AyKKDm
+	ElcwpRbtKc4WldvyFkf27Yx08qHAs3RJsI/DAhmwGc0zIr6AXFck8Bh8Gem9kfjqmXq
+	rJnIyiKBCqDvo8nRG7qwykrGEpOKWz1sn7XCGOHM=
+Date: Tue, 13 Oct 2020 12:33:29 -0500 (CDT)
+From: The Society for Collegiate Leadership & Achievement <membership@sclahonors.org>
+Reply-To: membership@sclahonors.org
+To: zxt180005@utdallas.edu
+Message-ID: <1282355236.1021202608.1602610409752.JavaMail.mktmail@abmas02.marketo.org>
+Subject: Deadline Ends Tonight
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1021202606_1038451158.1602610409747"
+X-Binding: bg-abd-989
+X-MarketoID: 839-MOL-552:0:2634:108677:0:2768:9:1704:1109269-10
+X-MktArchive: false
+List-Unsubscribe:
+ <mailto:GRGVEQTPJNTVEN3SGI2TKVKHON2VG5SOGJTT2PI.1704.2768.9@unsub-ab.mktomail.com>
+X-Mailfrom: 839-MOL-552.0.1704.0.0.2768.9.1109269-10@envelope.thescla.org
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path: 839-MOL-552.0.1704.0.0.2768.9.1109269-10@envelope.thescla.org
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 17:33:30.6606
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 15171ca8-8ebf-45f4-e083-08d86f9e1a1d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT019.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 15171ca8-8ebf-45f4-e083-08d86f9e1a1d
+X-MS-TrafficTypeDiagnostic: BN6PR01MB2481:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:5797;
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:192.28.145.45;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:envelope.thescla.org;PTR:envelope.thescla.org;CAT:SPM;SFS:(4636009)(3450700001)(19627405001)(8676002)(9686003)(6512007)(1096003)(356005)(22186003)(3480700007)(336012)(36736006)(7116003)(5660300002)(956004)(42882007)(36906005)(7066003)(26005)(34206002)(6486002)(83380400001)(58800400005)(166002)(118246002)(6506007)(83170400001)(15188445003)(83080400001)(7636003)(7596003)(76236003)(33964004)(135750200004);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 17:33:30.6546
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 15171ca8-8ebf-45f4-e083-08d86f9e1a1d
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT019.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2481
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3366630
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?M2ZXSnErTldocWtibEo0YVR6TTg5V2ZHbXA5VHBpVXVyeEpCNVVVem5DU2t1?=
+ =?utf-8?B?SFhBenFtYWpsc2tUcFZ1dnJIbjFYd3pIK3J1TUJKcGMyZmtMTVFyaTFRaExZ?=
+ =?utf-8?B?TUc2M1MzYVdaM1dQRDgwalUrQzk0SURpTlk4QThwd2xmZytjbFl0SllVakRG?=
+ =?utf-8?B?M255VHBEbEMyd0taM2NhRWZCTkpPOS9RcWM2SWJMenBZRnNlektoQnNjUG4w?=
+ =?utf-8?B?S0lsT2xYZCt6eHU5VTRuYks2RWlYWE5zY0RmN3loU0RXbnVMc3FpRSs5RHRS?=
+ =?utf-8?B?MUIxckNCMC9tWHlBVEhmdHpZOFIwM0xIMXhKcTVBM1dKbGNydGM4enhWUDNI?=
+ =?utf-8?B?dDA5QTBsT1VVRDlqaWYvSkJycGFBYXlPRVZKQjBaWG43cDVCRng5QzFNak1M?=
+ =?utf-8?B?bTVTYTJ3NnZlaUJDTit6S0RmR3UzWlRKbUovZ1JKYjMrY1E1MTl4a2cxUllu?=
+ =?utf-8?B?QmZMTDFzdjNTbHFhVWwvN0w3bUhsd291RUVlZjlUUHlIcFYvWWpTMElTOWg3?=
+ =?utf-8?B?OFQ3TDk5aVU0UmNHL2pKUS9uY0NKdUNPdHI4RWdMSFJ3QTlvTnYrYTIvQjQz?=
+ =?utf-8?B?ZFBWck9UZXFpbTBINFZ5TFNJSk54cWpzZ1RmZXlWL3FJUDVXTGo4bTNZVE1O?=
+ =?utf-8?B?Mzd2aUVLajk2YjNrcmFXbXlWVEFyVE5tMzRWRW16ZE4yUnd6NDdVQ3Q4ZHBB?=
+ =?utf-8?B?dmh5dFZlS3dENWk1TkM5Uyt1akNaeFY0elo1cTlvdTkzd3FXcVZyUGRhWlU2?=
+ =?utf-8?B?Uk50ZHVQTWlUNHdLV21BbG1kcHB5dXJBOC9CeUZDRFpXbi94Y05XWHJ1TjVM?=
+ =?utf-8?B?VVY3YmpLckpCdGdCbTB4cFdQZ3V5ZHMvOHJCSkJ0YU5NVFB2SEZ5YW5kNk1T?=
+ =?utf-8?B?My9QeTFvT29yNTBQZzFmQy8zam8zZFpPQS9UUm1jMVhqYUl0QUpweEZIRUNz?=
+ =?utf-8?B?RGxLWUZNLzJXZFo4QWFnUGZZVDRCYTFJVVpuVlIwNTNHMHczWHNFbHplVW1C?=
+ =?utf-8?B?bTk3dG04RnVrWjFZdGFkRUFPQk9LV0ZQWCtENTFIWnFxbG5udGNzV0tXTVBW?=
+ =?utf-8?B?T1pFRndpaVBMVGJlc3ZBTlZHTU9IbUtONVovcUF6WHpWWENsM1FhdllFeHR3?=
+ =?utf-8?B?MGtPd0xHM1dFdTV6ODZaU2g0Q0dic0M5cDFXRXA3TFV6Rk11UlJZSzJPaDMy?=
+ =?utf-8?B?UUFYdnJhV09SaEs1ay9QYVZrL3FmdmV2eng5M1BYSTFLTDRWN0dmQkZ5YVpw?=
+ =?utf-8?B?Q0taVDhhVDl3Rk1nbjlSYkszNlVNNU15WGllWDZubXJBRlBNTHE1M0RrZHFq?=
+ =?utf-8?B?UUxPN21DV0xaNHNXZVBMSG9JZHU4RGJoZ0JsTEJQSkNQaU9sMTg3c0N2aitY?=
+ =?utf-8?B?QUR4ZStNOUgzWm1peWg0MTNQYml5YkxpOVpZa3BYR0N4akNzNEc4eW5BMHox?=
+ =?utf-8?B?QzBaUmRKa1VpNjlVNFY0anp5ZHJaOEJNQ3VOb1pqNGtaUmw1dkNsZW16VVFJ?=
+ =?utf-8?B?Nm93UlVVcTlJdmlIYnMwampuQjNCTjdOMm9uTXpyRnEyTFJyZkVNem9HOWhU?=
+ =?utf-8?B?ZWdVbDdBOWpHY1NVeWk3RFJTcGNpMGtCSm5xSU5jR2tsbGppbUtjSTdDelV5?=
+ =?utf-8?B?bWpsUG9pOTlvL253c3NYVWhzUmIybTg2MmJ1RmpTZ3JMQVQza09PODkzemY5?=
+ =?utf-8?B?TllzNXN3aGNtbDNhQzdWZFc2dTg0NVk5WkNBMWFUc05MbUlyWFdMQkhjWXh4?=
+ =?utf-8?B?NW05YjRFNVFGS3NUT01od2crVUxDTWNjbUFVVUdrMGdmK3l2eWJtNnZPSzY1?=
+ =?utf-8?B?ZWdmRVdvU1VFWEJGRllpL0RHWGNvYXFKU25NMXk4Kzd1VVBaWS9xQnlyV2JU?=
+ =?utf-8?B?dnh1NDNiK2lBRitadjBiclRTdzlwQUt5eS9HMDNwNVFOZWREczRheUJyN2c0?=
+ =?utf-8?B?QXU2THdPcjd4YzFHRUFRNHlKb2xZaFFGdk1GVlhKc2FDbzljanVHUExoRnZ1?=
+ =?utf-8?B?SW9TT3Y1Ym5NSFRvME5PS29peHBuZDJ4Ny9RTGwvWjFwa0YrbUJEcU9CM215?=
+ =?utf-8?B?Tjl3MDZqWHR1dXpSRHlDa0xDS1RaeVZqWWN2KzhLTFhLaU1kMmJGaUo4bkZP?=
+ =?utf-8?B?N0pCdTJDMmNZRHhrU0xDb3dCVVh1eUVEb1p6U0tLWC9HaEpQWFF2ZEdsYUVZ?=
+ =?utf-8?B?VFVjYlZrdFFzbUlJUmx0U2FzVGdJYngyM2xzbFJyNW9Wa3BTV1I1R3krUnlr?=
+ =?utf-8?B?YXI5Z3E3VlM1SDRSS0JLaDU3NU4yazlFM0JxNTF5NjJEMm5LWjVFc0RKTWI3?=
+ =?utf-8?B?cVFIam1RWGN0THp1Mzd5OWhzVzB5c1pueVpSNzZZdVJlMXZBVGl4SXpPcTBI?=
+ =?utf-8?B?N3NBemppbHZsd1NnSVErcXVHa0Fxam83TFovZnZVNUd3cVBNbDBmOW1pdXVz?=
+ =?utf-8?B?aTZmb3k4ZytmVkIvTHBMRkkrakpjTGVQR3RwTTNQanNIWmg4NXdpZXBxZ05w?=
+ =?utf-8?B?RFJSQzUvNTVtSTlKZ1hVV1gvK2FkbDJUeGZtZzZaNmdnPT0=?=
+MIME-Version: 1.0
+
+------=_Part_1021202606_1038451158.1602610409747
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Zu Yuang,
+
+
+This is a reminder -=C2=A0Today is the last day to accept this invitation.
+
+
+
+
+We have identified you as a potential candidate for membership in The Socie=
+ty for Collegiate Leadership & Achievement (SCLA) <https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.org%2FP000p0wMaO0rb40=
+70zwL3E3&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e=
+08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738207212909=
+8124&amp;sdata=3DFqdNyj7IDC7%2BJaH9oV69ufOoGExyUlopQR4vRdC8pQI%3D&amp;reser=
+ved=3D0>. SCLA is a multidisciplinary honor society with more than 60,000 m=
+embers at 600+ colleges nationwide. Membership is granted based on academic=
+ progress and strong GPA.
+
+
+To accept your invitation and access your exclusive member benefits, click =
+the button below:
+
+
+ACCEPT YOUR INVITATION <https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttp%3A%2F%2Fem.thescla.org%2Fdc%2F9uGUAezThOXeahkRubBSJKgUGY_mhfwn14ASO=
+-T5rKzlisDykkXBJj3MZ5d4_QI7jXgf1q4tUzNMMxKurTUfnS5W5bKxOJoPET47TJhWvKOQWPx-=
+HfZuFs_Ufa27x6M1sBgLhYc3ofeC09NeqZUKTA%3D%3D%2FXwa0r5O0p000L94zE033MI0&amp;=
+data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e08308d86f9e1a=
+1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382072129098124&amp;sdat=
+a=3DMQE1ZhA5%2FFMOKYftBKSS430MycQfgD7J%2B10wEICyutM%3D&amp;reserved=3D0>
+
+
+You can also go to thescla.org
+and input your Invitation Code:
+UTDA202001
+
+
+If you have questions about membership, please contact us at membership@the=
+scla.org <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%=
+2Fem.thescla.org%2FP000p0wMaO0rg4080zCL3E3&amp;data=3D02%7C01%7CJerry.Teng%=
+40UTDallas.edu%7C15171ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637382072129098124&amp;sdata=3DVwlsnrGn3AB0BiC8Is%2FjKm=
+OazUh3VdUhFeWoARxYoQI%3D&amp;reserved=3D0>. We applaud you for your achieve=
+ment and welcome you to SCLA.
+
+
+Sincerely,
+
+
+SCLA Membership Team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The SCLA
+ Advisory Board
+Fred Siegel
+ Chair=20
+Derrick Frost
+ Financial Advisor Entrepreneur
+ Former NFL Player=20
+LeNorman Strong
+ Associate Vice Chancellor for Student Affairs, University of California, B=
+erkeley (Ret.)=20
+Arlene Cash
+ VP for Enrollment Management, Guilford College=20
+Ernesto Lopez
+ Delaware State Senate, 6th Senatorial District=20
+Rodney Johnson
+ Executive Director for the Office of Parent Services, The George Washingto=
+n University=20
+Carola Weil
+ Dean for the School of Professional and Extended Studies, American Univers=
+ity=20
+Alexa Kim
+ VP of Customer Service, University of Maryland University College=20
+Robert Kirkwood
+ EVP of Marketing and Technology, INVISTA=20
+Jody Hubbard
+ Change Management Director, DELL=20
+Bobby Dishell
+ Former President of the University of Michigan Central Student Government=
+=20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+membership@thescla.org <https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttp%3A%2F%2Fem.thescla.org%2FP000p0wMaO0rg4080zCL3E3&amp;data=3D02%7C01=
+%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382072129098124&amp;sdata=3DVwlsnrGn3A=
+B0BiC8Is%2FjKmOazUh3VdUhFeWoARxYoQI%3D&amp;reserved=3D0> | 202.769.5000 <ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla=
+.org%2FCOr00D0ha08M0pwz3E03L04&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.e=
+du%7C15171ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C=
+0%7C0%7C637382072129098124&amp;sdata=3DFTKQQ69%2FByXNh7wz97tE%2BBNoC%2Fwmu1=
+AZue5JN4ngGUc%3D&amp;reserved=3D0>
+1775 Tysons Blvd. 5th Floor Tysons, Virginia 22102
+
+=C2=A9 2020 The Society for Collegiate Leadership & Achievement, LLC
+Click here <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fwww2.thescla.org%2FUnsubscribePage.html%3Fmkt_unsubscribe%3D1%26mkt_tok=
+%3DeyJpIjoiWWpnNU9EVTRaVFZqTldRMiIsInQiOiI2ai9FNU44SEVHUXpIVjZNRHRPa3R5UDNF=
+ekU0eWtoc2Y5UGFuU0RjNXZxM0EzMWlrYjM0ZER3V3lGOWFONThTYlI5ai9jYjNtdTJkTUVqZVJ=
+KcUh6aVZQRHRDTzJBK3dQRTM0bUNVMEZrTzZOK2JGOEN6a0F2OG14Q1A1NittOCJ9&amp;data=
+=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e08308d86f9e1a1d%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382072129098124&amp;sdata=3D=
+5FuRXGFZfkTMXYQOW3W2i4aEfC63%2FBISsPE1sIkgdt0%3D&amp;reserved=3D0> to unsub=
+scribe.
+
+------=_Part_1021202606_1038451158.1602610409747
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" style=3D"width: 100%;"><head><!-- Marketo Variable Definiti=
+ons --><!-- Other Meta Tags -->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ minimum-scale=3D1, maximum-scale=3D1">=20
+<meta name=3D"robots" content=3D"noindex,nofollow">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<link href=3D"https://fonts.googleapis.com/css?family=3DRaleway:300,400,700=
+" rel=3D"stylesheet" type=3D"text/css">=20
+<link href=3D"https://fonts.googleapis.com/css?family=3DLato:300,400,700" r=
+el=3D"stylesheet" type=3D"text/css">=20
+<!--[if mso]>
+<style type=3D'text/css'>
+.primary-font {
+font-family: Arial, sans-serif !important;
+}
+</style>
+<![endif]-->=20
+<!--[if mso]>
+<style type=3D'text/css'>
+.secondary-font {
+font-family: Arial, sans-serif !important;
+}
+</style>
+<![endif]-->=20
+<style>
+			/*startcommon*/
+			@media only screen and (max-width: 800px) {
+				table#boxing{
+					width: 100% !important;
+				}
+			}
+			/*endcommon*/
+		</style>=20
+<!--[if gte mso 9]>
+		    <style type=3D"text/css">
+		    	#hero .table3-3{
+					width: 100% !important;
+		    	}
+		    </style>
+		<![endif]-->=20
+<style media=3D"all">
+/* CLIENT-SPECIFIC STYLES */
+#outlook a {
+  padding: 0;
+}
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody {
+  width: 100%;
+}
+.ExternalClass {
+  width: 100%;
+}
+/* Force Hotmail to display emails at full width */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+/* Force Hotmail to display normal line spacing */
+/* iOS BLUE LINKS */
+.appleBody a {
+  color: #000;
+  text-decoration: none;
+}
+.appleFooter a {
+  color: #000;
+  text-decoration: none;
+}
+@-ms-viewport {=20
+    width: device-width;=20
+}
+
+</style>=20
+<style media=3D"all">
+@media only screen and (max-width: 640px) {
+
+/*starttablet*/
+
+	.mktoVideoThumbnail{
+		width: 100% !important;
+		height: auto!important;
+		max-height:inherit!important;
+		min-height:inherit!important;
+	}
+
+body {
+	width: auto !important;
+}
+
+table.table600{
+	width: 100% !important;
+}
+
+table.table-inner{
+	width: 95% !important;
+}
+
+table.table1-2{
+	width: 47% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 29.4% !important;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: left !important;
+}
+
+table.table2-3{
+	width: 64% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 10% !important;
+	text-align: right !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.stack{
+	padding-bottom: 40px !important;
+}
+
+.stack-tablet {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	mso-hide: none !important;
+	display: block !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-tablet{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 47% !important;
+	text-align: left !important;
+}
+
+.m_two-articles .table1-2 {
+	width: 100% !important;
+}
+
+.m_two-articles .photo img {
+	width: 100% !important;
+}
+
+.m_two-articles .stack-tablet td {
+	height: 60px !important;
+}
+
+.m_free-image img {
+	width: 450px !important;
+}
+
+/*endtablet*/
+
+}
+
+@media only screen and (max-width: 479px) {
+
+/*startmobile*/
+
+body {
+	width: auto !important;
+}
+
+table.table600{
+	width: 290px !important;
+}
+
+table.table-inner{
+	width: 80% !important;
+	float: none !important;
+}
+
+table.table1-2{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table2-3{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.td3-1{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+.stack-smartphone {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	display: block !important;
+	mso-hide: none !important;
+}
+
+td.center-smartphone{
+	text-align: center !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-smartphone{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+.m_free-image img {
+	width: 290px !important;
+}
+
+.m_hr .table-inner {
+	width: 100% !important;
+}
+
+/*endmobile*/
+
+}
+
+
+</style>=20
+</head>=20
+<body style=3D"margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bo=
+ttom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adj=
+ust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: =
+0; width: 100%;"><style type=3D"text/css">div#emailPreHeader{ display: none=
+ !important; }</style><div id=3D"emailPreHeader" style=3D"mso-hide:all; vis=
+ibility:hidden; opacity:0; color:transparent; mso-line-height-rule:exactly;=
+ line-height:0; font-size:0px; overflow:hidden; border-width:0; display:non=
+e !important;">Don't forget to accept your nomination.</div>=20
+<!-- Outer table START -->=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: col=
+lapse;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"outer" valign=3D"top" style=3D"-webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens:=
+ none; min-width: 600px; border-collapse: collapse; background-color: #eeee=
+ee;">=20
+<table width=3D"800" align=3D"center" id=3D"boxing" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-sp=
+acing: 0; border-collapse: collapse;margin-top: 0; margin-right: auto; marg=
+in-bottom: 0; margin-left: auto;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mktoContainer boxedbackground" id=3D"template-wrapper" style=
+=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens:=
+ none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+<table class=3D"mktoModule m_free-text" id=3D"free-text" idstyle=3D"-webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">=20
+<tbody>=20
+<tr>=20
+<td style=3D"-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyph=
+ens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;backgr=
+ound-color:#eeeeee;" bgcolor=3D"#eeeeee" valign=3D"top">=20
+<center>=20
+<table class=3D"table600" align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"secondary-font text" style=3D"-moz-hyphens: none;-webkit-text-=
+size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: b=
+reak-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;fo=
+nt-family:'Lato', Arial, sans-serif;font-size: 14px;line-height: 23px;color=
+: #666666;border-collapse: collapse;">=20
+<div class=3D"mktoText" id=3D"text">=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spa=
+cing: 0; border-collapse: collapse; padding: 0; vertical-align: top; text-a=
+lign: left;" width=3D"100%">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td style=3D"word-wrap: break-word; -webkit-hyphens: auto; border-collapse:=
+ collapse !important; padding: 0; vertical-align: top; text-align: left; fo=
+nt-size: 16px; line-height: 1.3; color: #0a0a0a; font-family: Helvetica, Ar=
+ial, sans-serif; font-weight: normal; margin: 0;">=20
+<table class=3D"body" style=3D"border-spacing: 0; border-collapse: collapse=
+; padding: 0; vertical-align: top; text-align: left; background: #f3f3f3; h=
+eight: 100%; width: 100%; font-size: 16px; line-height: 1.3; color: #0a0a0a=
+; font-family: Helvetica, Arial, sans-serif; font-weight: normal; margin: 0=
+;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td align=3D"center" class=3D"float-center eoa_sig" style=3D"word-wrap: bre=
+ak-word; -webkit-hyphens: auto; border-collapse: collapse !important; paddi=
+ng: 0; vertical-align: top; text-align: center; font-size: 16px; line-heigh=
+t: 1.3; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-wei=
+ght: normal; margin: 0 auto; float: none;" valign=3D"top">=20
+<center style=3D"width: 100%; min-width: 580px;">=20
+<table align=3D"center" class=3D"container float-center" style=3D"border-sp=
+acing: 0; border-collapse: collapse; padding: 0; vertical-align: top; text-=
+align: center; background: #fefefe; width: 580px; margin: 0 auto; float: no=
+ne;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td class=3D"eoa_sig" style=3D"word-wrap: break-word; -webkit-hyphens: auto=
+; border-collapse: collapse !important; padding: 0; vertical-align: top; te=
+xt-align: left; font-size: 16px; line-height: 1.3; color: #0a0a0a; font-fam=
+ily: Helvetica, Arial, sans-serif; font-weight: normal; margin: 0;">=20
+<table class=3D"row" style=3D"border-spacing: 0; border-collapse: collapse;=
+ padding: 0; vertical-align: top; text-align: left; width: 100%; position: =
+relative; display: table;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td class=3D"eoa_sig" style=3D"word-wrap: break-word; -webkit-hyphens: auto=
+; border-collapse: collapse !important; padding: 0; vertical-align: top; te=
+xt-align: left; font-size: 16px; line-height: 1.3; color: #0a0a0a; font-fam=
+ily: Helvetica, Arial, sans-serif; font-weight: normal; margin: 0;">=20
+<div style=3D"background-image: url('https://gallery.mailchimp.com/8c453b16=
+bdcf972a4eaf4ec1d/images/91fc2d8d-cbaf-453e-a2b9-9bd501b61be3.png'); height=
+: 219px; width: 580;">=20
+<br>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table class=3D"row" style=3D"border-spacing: 0; border-collapse: collapse;=
+ padding: 0; vertical-align: top; text-align: left; width: 100%; position: =
+relative; display: table;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<th class=3D"small-12 large-9 columns first" style=3D"font-size: 16px; line=
+-height: 1.3; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; fo=
+nt-weight: normal; padding: 0; margin: 0 auto; text-align: left; width: 419=
+px; padding-left: 16px; padding-right: 8px; padding-bottom: 16px;">=20
+<table style=3D"border-spacing: 0; border-collapse: collapse; padding: 0; v=
+ertical-align: top; text-align: left;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td class=3D"eoa_sig" height=3D"16" style=3D"word-wrap: break-word; -webkit=
+-hyphens: auto; border-collapse: collapse !important; padding: 0; vertical-=
+align: top; text-align: left; font-size: 16px; line-height: 16px; color: #4=
+8434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; margin:=
+ 0; mso-line-height-rule: exactly;"></td>=20
+</tr>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<th style=3D"font-size: 16px; line-height: 1.3; color: #0a0a0a; font-family=
+: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0;=
+ text-align: left;"> <h3 class=3D"text-left yellow" style=3D"font-size: 18p=
+x; color: #f0b130; word-wrap: normal; font-family: Helvetica, Arial, sans-s=
+erif; font-weight: 600; margin-bottom: 10px; padding: 0; margin: 0; text-al=
+ign: left; line-height: 1.3;">Dear Zu Yuang,</h3> <p class=3D"text-left" st=
+yle=3D"margin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7; c=
+olor: #48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400;=
+ padding: 0; text-align: left;"><br></p> <p class=3D"text-left" style=3D"ma=
+rgin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7; color: #48=
+434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; padding:=
+ 0; text-align: left;">This is a reminder -&nbsp;<strong>Today is the last =
+day to accept this invitation.</strong></p> <p class=3D"text-left" style=3D=
+"margin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7; color: =
+#48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; paddi=
+ng: 0; text-align: left;"><strong></strong><br></p> <p class=3D"text-left" =
+style=3D"margin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7;=
+ color: #48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 40=
+0; padding: 0; text-align: left;"><br></p> <p class=3D"text-left" style=3D"=
+margin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7; color: #=
+48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; paddin=
+g: 0; text-align: left;">We have identified you as a potential candidate fo=
+r membership in <a style=3D"color: #48434b; text-decoration: underline; fon=
+t-family: Helvetica, Arial, sans-serif; font-weight: 400; padding: 0; margi=
+n: 0; text-align: left; line-height: 1.3;" href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.org%2FP000p0wMaO0rb40=
+70zwL3E3&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e=
+08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738207212915=
+8092&amp;sdata=3Dl3GRfQn2QTucu7AHjbrCMppPtYUDowsA%2BMI%2Frxk6tnY%3D&amp;res=
+erved=3D0" originalsrc=3D"http://em.thescla.org/P000p0wMaO0rb4070zwL3E3" sh=
+ash=3D"ypYZvSAowCwuCirVYeeia1pD6vBvR9kd+s2ox2l3JumpISlfanLnF+kORXUfMeLsnemV=
+Qr/kCVa7jMFcqJFapWTg56hIkOB8Gf0DPDktQMGrCSsmtLhCXfulhbWZdKeSSit0nvDZRn1c3Qx=
+MeK4bAa9xi1wG8DZQMiMz6nu0KO0=3D" class=3D"link" title=3D"The Society for Co=
+llegiate Leadership and Achievement" target=3D"_blank">The Society for Coll=
+egiate Leadership &amp; Achievement (SCLA)</a>. SCLA is a multidisciplinary=
+ honor society with more than 60,000 members at 600+ colleges nationwide. M=
+embership is granted based on academic progress and strong GPA.</p> <p clas=
+s=3D"text-left" style=3D"margin-bottom: 10px; margin: 0; font-size: 15px; l=
+ine-height: 1.7; color: #48434b; font-family: Helvetica, Arial, sans-serif;=
+ font-weight: 400; padding: 0; text-align: left;"><br></p> <p class=3D"text=
+-left" style=3D"margin-bottom: 10px; margin: 0; font-size: 15px; line-heigh=
+t: 1.7; color: #48434b; font-family: Helvetica, Arial, sans-serif; font-wei=
+ght: 400; padding: 0; text-align: left;">To accept your invitation and acce=
+ss your exclusive member benefits, click the button below:</p> <br> <p styl=
+e=3D"text-align: center; color: #474747; font-family: Helvetica, Arial, san=
+s-serif; font-weight: normal; line-height: 21px; font-size: 13px; margin: 0=
+ 0 10px; padding: 0;" align=3D"center"><a href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.org%2Fdc%2F9uGUAezThOX=
+eahkRubBSJKgUGY_mhfwn14ASO-T5rKzlisDykkXBJj3MZ5d4_QI7jXgf1q4tUzNMMxKurTUfnS=
+5W5bKxOJoPET47TJhWvKOQWPx-HfZuFs_Ufa27x6M1sBgLhYc3ofeC09NeqZUKTA%3D%3D%2FXw=
+a0r5O0p000L94zE033MI0&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C1517=
+1ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37382072129168088&amp;sdata=3DTlNqMl4AsqQD4mFK2i3olr0nedDFesT1cTFe0rNMQ9w%3=
+D&amp;reserved=3D0" originalsrc=3D"http://em.thescla.org/dc/9uGUAezThOXeahk=
+RubBSJKgUGY_mhfwn14ASO-T5rKzlisDykkXBJj3MZ5d4_QI7jXgf1q4tUzNMMxKurTUfnS5W5b=
+KxOJoPET47TJhWvKOQWPx-HfZuFs_Ufa27x6M1sBgLhYc3ofeC09NeqZUKTA=3D=3D/Xwa0r5O0=
+p000L94zE033MI0" shash=3D"aUaNbVftqdYwQlqln5XQW+EceF8/SaEEQQgk/wyBtvSEj1UR9=
+Sg0z58YevyM0BvkCUlahO/6ppeGP127JA0U0So4SYPPGgHI2/+1WmlQULCxe9VvmeizbePrICo1=
+TXUXwQDJAAAeRNJmut7YJa761ZY6up/5iaOUCa9dHYayIUE=3D" style=3D"display: inlin=
+e-block; color: #fff; -webkit-border-radius: 28px; border-radius: 5px; font=
+-size: 16px; font-weight: 400; letter-spacing: 1px; text-decoration: none; =
+background: #f0b130; padding: 13px 25px 10px; text-transform: uppercase;">A=
+CCEPT YOUR INVITATION</a></p> <p class=3D"text-left" style=3D"margin-bottom=
+: 10px; margin: 0; font-size: 15px; line-height: 1.7; color: #48434b; font-=
+family: Helvetica, Arial, sans-serif; font-weight: 400; padding: 0; text-al=
+ign: left;"><br></p> <p class=3D"text-left" style=3D"margin: 0px; font-size=
+: 15px; line-height: 1.7; color: #48434b; font-family: Helvetica, Arial, sa=
+ns-serif; font-weight: 400; padding: 0px; text-align: center;">You can also=
+ go to thescla.org<br>and input your Invitation Code:<br>UTDA202001</p> <p =
+class=3D"text-left" style=3D"margin: 0px; font-size: 15px; line-height: 1.7=
+; color: #48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 4=
+00; padding: 0px; text-align: center;"><br></p> <p class=3D"text-left" styl=
+e=3D"margin-bottom: 10px; margin: 0; font-size: 15px; line-height: 1.7; col=
+or: #48434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; p=
+adding: 0; text-align: left;">If you have questions about membership, pleas=
+e contact us at <a class=3D"link" href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.org%2FP000p0wMaO0rg4080zCL3E3&=
+amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f4e08308d86f=
+9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382072129168088&amp;=
+sdata=3DwYQ7CiL4EBvfXOIYd2Kz5ea%2FpNK2C0Jqs2dQp2bmgys%3D&amp;reserved=3D0" =
+originalsrc=3D"http://em.thescla.org/P000p0wMaO0rg4080zCL3E3" shash=3D"Nhql=
+sW0dhuG8wksftpgGUZ6YjZP8x/j2XXaPOC+3yJqGIVJzIcavUFraX1Y1J+xxeRErvopcpZEo/AR=
+JXTTsrfpLIJ1hiG0GG0ogLaccCVxv3NgevQVZL0tTwXNnu/Ou0odfLZeNBLFkjivKXkxDfDWRGE=
+qG9QBM0iCgftFj0Rw=3D" style=3D"color: #48434b; text-decoration: underline; =
+font-family: Helvetica, Arial, sans-serif; font-weight: 400; padding: 0; ma=
+rgin: 0; text-align: left; line-height: 1.3;" title=3D"Send SCLA an Email">=
+membership@thescla.org</a>. We applaud you for your achievement and welcome=
+ you to SCLA.</p> <p class=3D"text-left" style=3D"margin-bottom: 10px; marg=
+in: 0; font-size: 15px; line-height: 1.7; color: #48434b; font-family: Helv=
+etica, Arial, sans-serif; font-weight: 400; padding: 0; text-align: left;">=
+<br></p> <p class=3D"text-left" style=3D"margin-bottom: 10px; margin: 0; fo=
+nt-size: 15px; line-height: 1.7; color: #48434b; font-family: Helvetica, Ar=
+ial, sans-serif; font-weight: 400; padding: 0; text-align: left;">Sincerely=
+,</p> <br> <p class=3D"text-left" style=3D"margin-bottom: 10px; margin: 0; =
+font-size: 15px; line-height: 1.7; color: #48434b; font-family: Helvetica, =
+Arial, sans-serif; font-weight: 400; padding: 0; text-align: left;">SCLA Me=
+mbership Team</p> <p class=3D"text-left" style=3D"margin-bottom: 10px; marg=
+in: 0; font-size: 15px; line-height: 1.7; color: #48434b; font-family: Helv=
+etica, Arial, sans-serif; font-weight: 400; padding: 0; text-align: left;">=
+<br></p> <p class=3D"text-left" style=3D"margin-bottom: 10px; margin: 0; fo=
+nt-size: 15px; line-height: 1.7; color: #48434b; font-family: Helvetica, Ar=
+ial, sans-serif; font-weight: 400; padding: 0; text-align: left;"><img src=
+=3D"https://gallery.mailchimp.com/8c453b16bdcf972a4eaf4ec1d/images/622d6c47=
+-3fc4-4f1d-a37a-e79cec558761.gif" width=3D"100" height=3D"62" alt=3D"Paul H=
+immelfarb" style=3D"color: #474747; font-family: Helvetica, Arial, sans-ser=
+if; font-size: 14px; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans:=
+ 2; text-align: left; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-=
+decoration: none; outline: none; width: auto; max-width: 100%; clear: both;=
+ display: inline-block;"></p> <br></th>=20
+</tr>=20
+</tbody>=20
+</table> </th>=20
+<th class=3D"sidebar small-12 large-3 columns last" style=3D"font-size: 16p=
+x; line-height: 1.3; color: #0a0a0a; font-family: Helvetica, Arial, sans-se=
+rif; font-weight: normal; padding: 0; margin: 0 auto; text-align: left; wid=
+th: 129px; padding-left: 8px; padding-right: 16px; padding-bottom: 16px; ba=
+ckground: #ced0d1;" valign=3D"top">=20
+<table style=3D"border-spacing: 0; border-collapse: collapse; padding: 0; v=
+ertical-align: top; text-align: left;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"=
+top">=20
+<th style=3D"font-size: 16px; line-height: 1.3; color: #0a0a0a; font-family=
+: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0;=
+ text-align: left;" valign=3D"top">=20
+<table style=3D"border-spacing: 0; border-collapse: collapse; padding: 0; v=
+ertical-align: top; text-align: left;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"=
+top">=20
+<th style=3D"font-size: 16px; line-height: 1.3; color: #0a0a0a; font-family=
+: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0;=
+ text-align: left;" valign=3D"top"> <h6 style=3D"font-size: 12px; color: #4=
+84749; word-wrap: normal; font-family: Helvetica, Arial, sans-serif; font-w=
+eight: 600; margin-bottom: 10px; padding: 20px 0 15px; margin: 0; text-alig=
+n: left; line-height: 1.3;" align=3D"left">The SCLA<br> Advisory Board</h6>=
+ <p align=3D"left" class=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: =
+0 0 12px; font-size: 11px; line-height: 15px !important; color: #484749; fo=
+nt-family: Helvetica, Arial, sans-serif; font-weight: 600; padding: 0; text=
+-align: left;">Fred Siegel<br> <small style=3D"font-size: 9px; color: #4847=
+49; padding-top: 4px; display: block; font-weight: 400; line-height: 14px;"=
+><em>Chair</em> </small></p> <p align=3D"left" class=3D"eoa_sig" style=3D"m=
+argin-bottom: 10px; margin: 0 0 12px; font-size: 11px; line-height: 15px !i=
+mportant; color: #484749; font-family: Helvetica, Arial, sans-serif; font-w=
+eight: 600; padding: 0; text-align: left;">Derrick Frost<br> <small style=
+=3D"font-size: 9px; color: #484749; padding-top: 4px; display: block; font-=
+weight: 400; line-height: 14px;"><em>Financial Advisor Entrepreneur<br> For=
+mer NFL Player</em> </small></p> <p align=3D"left" class=3D"eoa_sig" style=
+=3D"margin-bottom: 10px; margin: 0 0 12px; font-size: 11px; line-height: 15=
+px !important; color: #484749; font-family: Helvetica, Arial, sans-serif; f=
+ont-weight: 600; padding: 0; text-align: left;">LeNorman Strong<br> <small =
+style=3D"font-size: 9px; color: #484749; padding-top: 4px; display: block; =
+font-weight: 400; line-height: 14px;"><em>Associate Vice Chancellor for Stu=
+dent Affairs, University of California, Berkeley (Ret.)</em> </small></p> <=
+p align=3D"left" class=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 =
+0 12px; font-size: 11px; line-height: 15px !important; color: #484749; font=
+-family: Helvetica, Arial, sans-serif; font-weight: 600; padding: 0; text-a=
+lign: left;">Arlene Cash<br> <small style=3D"font-size: 9px; color: #484749=
+; padding-top: 4px; display: block; font-weight: 400; line-height: 14px;"><=
+em>VP for Enrollment Management, Guilford College</em> </small></p> <p alig=
+n=3D"left" class=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 0 12px=
+; font-size: 11px; line-height: 15px !important; color: #484749; font-famil=
+y: Helvetica, Arial, sans-serif; font-weight: 600; padding: 0; text-align: =
+left;">Ernesto Lopez<br> <small style=3D"font-size: 9px; color: #484749; pa=
+dding-top: 4px; display: block; font-weight: 400; line-height: 14px;"><em>D=
+elaware State Senate, 6th Senatorial District</em> </small></p> <p align=3D=
+"left" class=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 0 12px; fo=
+nt-size: 11px; line-height: 15px !important; color: #484749; font-family: H=
+elvetica, Arial, sans-serif; font-weight: 600; padding: 0; text-align: left=
+;">Rodney Johnson<br> <small style=3D"font-size: 9px; color: #484749; paddi=
+ng-top: 4px; display: block; font-weight: 400; line-height: 14px;"><em>Exec=
+utive Director for the Office of Parent Services, The George Washington Uni=
+versity</em> </small></p> <p align=3D"left" class=3D"eoa_sig" style=3D"marg=
+in-bottom: 10px; margin: 0 0 12px; font-size: 11px; line-height: 15px !impo=
+rtant; color: #484749; font-family: Helvetica, Arial, sans-serif; font-weig=
+ht: 600; padding: 0; text-align: left;">Carola Weil<br> <small style=3D"fon=
+t-size: 9px; color: #484749; padding-top: 4px; display: block; font-weight:=
+ 400; line-height: 14px;"><em>Dean for the School of Professional and Exten=
+ded Studies, American University</em> </small></p> <p align=3D"left" class=
+=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 0 12px; font-size: 11p=
+x; line-height: 15px !important; color: #484749; font-family: Helvetica, Ar=
+ial, sans-serif; font-weight: 600; padding: 0; text-align: left;">Alexa Kim=
+<br> <small style=3D"font-size: 9px; color: #484749; padding-top: 4px; disp=
+lay: block; font-weight: 400; line-height: 14px;"><em>VP of Customer Servic=
+e, University of Maryland University College</em> </small></p> <p align=3D"=
+left" class=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 0 12px; fon=
+t-size: 11px; line-height: 15px !important; color: #484749; font-family: He=
+lvetica, Arial, sans-serif; font-weight: 600; padding: 0; text-align: left;=
+">Robert Kirkwood<br> <small style=3D"font-size: 9px; color: #484749; paddi=
+ng-top: 4px; display: block; font-weight: 400; line-height: 14px;"><em>EVP =
+of Marketing and Technology, INVISTA</em> </small></p> <p align=3D"left" cl=
+ass=3D"eoa_sig" style=3D"margin-bottom: 10px; margin: 0 0 12px; font-size: =
+11px; line-height: 15px !important; color: #484749; font-family: Helvetica,=
+ Arial, sans-serif; font-weight: 600; padding: 0; text-align: left;">Jody H=
+ubbard<br> <small style=3D"font-size: 9px; color: #484749; padding-top: 4px=
+; display: block; font-weight: 400; line-height: 14px;"><em>Change Manageme=
+nt Director, DELL</em> </small></p> <p align=3D"left" class=3D"eoa_sig" sty=
+le=3D"margin-bottom: 10px; margin: 0 0 12px; font-size: 11px; line-height: =
+15px !important; color: #484749; font-family: Helvetica, Arial, sans-serif;=
+ font-weight: 600; padding: 0; text-align: left;">Bobby Dishell<br> <small =
+style=3D"font-size: 9px; color: #484749; padding-top: 4px; display: block; =
+font-weight: 400; line-height: 14px;"><em>Former President of the Universit=
+y of Michigan Central Student Government</em> </small></p> </th>=20
+<th class=3D"expander eoa_sig" style=3D"font-size: 16px; line-height: 1.3; =
+color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-weight: nor=
+mal; padding: 0 !important; margin: 0; text-align: left; visibility: hidden=
+; width: 0;"></th>=20
+</tr>=20
+</tbody>=20
+</table> </th>=20
+</tr>=20
+</tbody>=20
+</table> </th>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table class=3D"row" style=3D"border-spacing: 0; border-collapse: collapse;=
+ padding: 0; vertical-align: top; text-align: left; width: 100%; position: =
+relative; display: table; background-color: #244b6c;">=20
+<tbody>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<td class=3D"eoa_sig" height=3D"16" style=3D"word-wrap: break-word; -webkit=
+-hyphens: auto; border-collapse: collapse !important; padding: 0; vertical-=
+align: top; text-align: left; font-size: 16px; line-height: 16px; color: #4=
+8434b; font-family: Helvetica, Arial, sans-serif; font-weight: 400; margin:=
+ 0; mso-line-height-rule: exactly;"></td>=20
+</tr>=20
+<tr style=3D"padding: 0; vertical-align: top; text-align: left;">=20
+<th class=3D"small-12 large-12 columns first last" style=3D"font-size: 16px=
+; line-height: 1.3; color: #0a0a0a; font-family: Helvetica, Arial, sans-ser=
+if; font-weight: normal; padding: 0; margin: 0 auto; text-align: left; widt=
+h: 564px; padding-left: 16px; padding-right: 16px; padding-bottom: 16px;"> =
+<p class=3D"text-left white" style=3D"margin-bottom: 10px; margin: 0; font-=
+size: 15px; line-height: 1.7; color: #fff; font-family: Helvetica, Arial, s=
+ans-serif; font-weight: 400; padding: 0; text-align: left;"><a href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.o=
+rg%2FP000p0wMaO0rg4080zCL3E3&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu=
+%7C15171ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C0%7C637382072129178082&amp;sdata=3D1NMp%2Ba21qlnR8REsP%2F84Qx64%2Bp%2FsQG=
+Do%2FCVnHBq1fwc%3D&amp;reserved=3D0" originalsrc=3D"http://em.thescla.org/P=
+000p0wMaO0rg4080zCL3E3" shash=3D"auCDilmpUWfa+JaaSQexzzgO28/SgcIx8vx0vjaEdn=
+2jMNiJIgLZmHD80DFmrMU5PgKD054EjY2XrDTOAb7/eAlXDaoQQ62aqBntEYzbK40x0NuW9cN83=
+RuSAgnolVah/z4LHxSIYIQvFUelIuoai6PvNJGtwbyLJTWaeezFDj0=3D" style=3D"color: =
+#fff; text-decoration: none; font-family: Helvetica, Arial, sans-serif; fon=
+t-weight: 400; padding: 0; margin: 0; text-align: left; line-height: 1.3;" =
+title=3D"Send SCLA an Email">membership@thescla.org</a> | <a href=3D"https:=
+//nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fem.thescla.org=
+%2FCOr00D0ha08M0pwz3E03L04&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7=
+C15171ca88ebf45f4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C=
+0%7C637382072129188075&amp;sdata=3D0RpVEdFK1VxSTpPzl702MIBw3QIvNJaSvV1pwn95=
+YjU%3D&amp;reserved=3D0" originalsrc=3D"http://em.thescla.org/COr00D0ha08M0=
+pwz3E03L04" shash=3D"h4b3G0MD2V/bmsMPthAcm5fSjGxKREg05fuIvSQHSoBaNMbTtJ+QrF=
+2xeLA8blk3Bl+K6JrCOxi9Zmd2ze+io2DgxYL9E6gw6z/LlLOo0Z/J+UqR7LF2yf8ZmzwOSmqrL=
+UR1SineoAaPW7Od/ZBEbAT9mCuIE7oVIqsO+gJxRYs=3D" style=3D"color: #fff; text-d=
+ecoration: none; font-family: Helvetica, Arial, sans-serif; font-weight: 40=
+0; padding: 0; margin: 0; text-align: left; line-height: 1.3;">202.769.5000=
+</a></p> <p class=3D"text-left white" style=3D"margin-bottom: 10px; margin:=
+ 0; font-size: 15px; line-height: 1.7; color: #fff; font-family: Helvetica,=
+ Arial, sans-serif; font-weight: 400; padding: 0; text-align: left;"><span =
+style=3D"color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-si=
+ze: 12.5px; font-style: normal; font-variant-ligatures: normal; font-varian=
+t-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-=
+align: center; text-indent: 0px; text-transform: none; white-space: normal;=
+ widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-c=
+olor: #244b6c; text-decoration-style: initial; text-decoration-color: initi=
+al; display: inline !important; float: none;">1775 Tysons Blvd. 5th Floor T=
+ysons, Virginia 22102</span></p>=20
+<hr style=3D"border-bottom: 1px solid #e3e4e5; border-right: 0; border-top:=
+ 0;"> <p class=3D"text-left white" style=3D"margin-bottom: 10px; margin: 0;=
+ font-size: 15px; line-height: 1.7; color: #fff; font-family: Helvetica, Ar=
+ial, sans-serif; font-weight: 400; padding: 0; text-align: left;"><small st=
+yle=3D"color: #cacaca; font-size: 80%;">=C2=A9 <span style=3D"color: #cacac=
+a; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-style: =
+normal; font-variant-ligatures: normal; font-variant-caps: normal; font-wei=
+ght: 400; letter-spacing: normal; orphans: 2; text-align: center; text-inde=
+nt: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing=
+: 0px; -webkit-text-stroke-width: 0px; background-color: #244b6c; text-deco=
+ration-style: initial; text-decoration-color: initial; display: inline !imp=
+ortant; float: none;">2020</span> The Society for Collegiate Leadership &am=
+p; Achievement, LLC</small></p> </th>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table class=3D"mktoModule m_free-text" id=3D"footer" idstyle=3D"-webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>=20
+<tbody>=20
+<tr>=20
+<td style=3D"-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyph=
+ens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;backgr=
+ound-color:#eeeeee;" bgcolor=3D"#eeeeee" valign=3D"top">=20
+<center>=20
+<table class=3D"table600" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-sp=
+acing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; mar=
+gin-bottom: 0; margin-left: auto;" align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"600">=20
+<tbody>=20
+<tr>=20
+<td class=3D"" style=3D"-webkit-text-size-adjust: 100%;-ms-text-size-adjust=
+: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-=
+webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: coll=
+apse;line-height:10px;font-size:10px;" height=3D"10px">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"secondary-font text" style=3D"-moz-hyphens: none;-webkit-text-=
+size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: b=
+reak-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;fo=
+nt-family:'Lato', Arial, sans-serif;font-size: 14px;line-height: 23px;color=
+: #666666;border-collapse: collapse;">=20
+<div class=3D"mktoText" id=3D"footerText">=20
+<p style=3D"text-align: center;"><span style=3D"color: #333333;"><strong></=
+strong></span> Click <a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttp%3A%2F%2Fwww2.thescla.org%2FUnsubscribePage.html%3Fmkt_unsub=
+scribe%3D1%26mkt_tok%3DeyJpIjoiWWpnNU9EVTRaVFZqTldRMiIsInQiOiI2ai9FNU44SEVH=
+UXpIVjZNRHRPa3R5UDNFekU0eWtoc2Y5UGFuU0RjNXZxM0EzMWlrYjM0ZER3V3lGOWFONThTYlI=
+5ai9jYjNtdTJkTUVqZVJKcUh6aVZQRHRDTzJBK3dQRTM0bUNVMEZrTzZOK2JGOEN6a0F2OG14Q1=
+A1NittOCJ9&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C15171ca88ebf45f=
+4e08308d86f9e1a1d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382072129=
+188075&amp;sdata=3DWUJNGnArcrqsRB2INHWmoEXq5qCAhPJW%2FiNXS%2BnW1wk%3D&amp;r=
+eserved=3D0" originalsrc=3D"http://www2.thescla.org/UnsubscribePage.html?mk=
+t_unsubscribe=3D1&amp;mkt_tok=3DeyJpIjoiWWpnNU9EVTRaVFZqTldRMiIsInQiOiI2ai9=
+FNU44SEVHUXpIVjZNRHRPa3R5UDNFekU0eWtoc2Y5UGFuU0RjNXZxM0EzMWlrYjM0ZER3V3lGOW=
+FONThTYlI5ai9jYjNtdTJkTUVqZVJKcUh6aVZQRHRDTzJBK3dQRTM0bUNVMEZrTzZOK2JGOEN6a=
+0F2OG14Q1A1NittOCJ9" shash=3D"Z+ObEMliUqzrb331pcUQQcizEeoat5K6oGfo+EejeLji9=
+iX75YNNq1iCaZnbu8L72BvGty8zcetpG1S6rG/Vzhf9i4IxMoSEI8cZ6ITOqyLBiQqCaTBCbEA7=
+UxzPfMcCB8V4zk97oU5OC4cc7Kk2roj6+KJcf0CqCepG9lnajj0=3D" target=3D"_blank" c=
+lass=3D"mktNoTrack">here</a> to unsubscribe. <br></p>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td class=3D"" style=3D"-webkit-text-size-adjust: 100%;-ms-text-size-adjust=
+: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-=
+webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: coll=
+apse;line-height:20px;font-size:20px;" height=3D"20px">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> </td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!-- Outer Table END --> =20
+
+<img src=3D"http://em.thescla.org/trk?t=3D1&amp;mid=3DODM5LU1PTC01NTI6MDoyN=
+jM0OjEwODY3NzowOjI3Njg6OToxNzA0OjExMDkyNjktMTA6bnVsbA%3D%3D" width=3D"1" he=
+ight=3D"1" style=3D"display:none !important;" alt=3D"">
+</body>
+</html>=
+
+------=_Part_1021202606_1038451158.1602610409747--
