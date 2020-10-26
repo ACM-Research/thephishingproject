@@ -20,14 +20,20 @@ def main(dir):
     for filename in os.listdir(dir):
         if not filename.endswith('.eml'):
             continue
-        with open(filename, 'r') as file:
+        with open(filename, 'r', encoding='utf8') as file:
             emails[filename] = {}
             mail = mailparser.parse_from_file_obj(file)
-            body = BeautifulSoup(mail.body, 'lxml').text
+            body = re.sub('\\\\u201.', '', re.sub('--- mail_boundary ---.*', '', re.sub("\\n", "", " ".join(
+                BeautifulSoup(mail.body, 'lxml').get_text().split()))))
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
             emails[filename] = {
+                'hops': mail.received[-1]['hop'],
+                'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
+                'spf': re.findall('spf=(\S*)', mail.headers['Authentication-Results'])[0],
+                'dkim': re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])[0],
+                'dmarc': re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])[0],
                 'subject': mail.subject,
                 'from': mail.from_[0][1],
                 'to': [tup[1] for tup in mail.to],
