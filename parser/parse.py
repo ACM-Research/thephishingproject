@@ -9,6 +9,9 @@ import language_tool_python
 import textstat
 import nltk
 
+# determine if we want to save the email body text
+save_body = True
+
 # make sure we have punkt downloaded
 nltk.download('punkt', quiet=True)
 
@@ -20,10 +23,14 @@ def main(dir):
     for filename in os.listdir(dir):
         if not filename.endswith('.eml'):
             continue
-        with open(filename, 'r') as file:
+        
+        # print to stderr to support output redirection
+        print('[INFO] Processing {}...'.format(filename), file=sys.stderr)
+
+        with open(os.path.join(dir, filename), 'r') as file:
             emails[filename] = {}
             mail = mailparser.parse_from_file_obj(file)
-            body = BeautifulSoup(mail.body, 'lxml').text
+            body = BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' ')
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
@@ -31,8 +38,7 @@ def main(dir):
                 'subject': mail.subject,
                 'from': mail.from_[0][1],
                 'to': [tup[1] for tup in mail.to],
-                'attachments': mail.attachments,
-                'body': body,
+                'attachments': [x['filename'] for x in mail.attachments],
                 'grammarErrors': len(grammarErrors),
                 'counts': {
                     'characterCount': len(body),
@@ -52,6 +58,9 @@ def main(dir):
                     'subjectivity': blob.sentiment.subjectivity
                 }
             }
+
+            if save_body:
+                emails[filename]['body'] = body
 
     print(
         json.dumps(emails, indent=2)
