@@ -1,0 +1,99 @@
+Received: from DM6PR01MB3850.prod.exchangelabs.com (2603:10b6:5:83::19) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 15:38:24
+ +0000
+Received: from MN2PR08CA0027.namprd08.prod.outlook.com (2603:10b6:208:239::32)
+ by DM6PR01MB3850.prod.exchangelabs.com (2603:10b6:5:83::19) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.19; Fri, 23 Oct 2020 15:38:20 +0000
+Received: from BL2NAM02FT017.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:239:cafe::a7) by MN2PR08CA0027.outlook.office365.com
+ (2603:10b6:208:239::32) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 15:38:20 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.33.120)
+ smtp.mailfrom=amazonses.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=amazonses.com;utdallas.edu; dmarc=fail action=none
+ header.from=utdallas.edu;compauth=pass reason=702
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.33.120 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.33.120; helo=a33-120.smtp-out.amazonses.com;
+Received: from a33-120.smtp-out.amazonses.com (54.240.33.120) by
+ BL2NAM02FT017.mail.protection.outlook.com (10.152.77.174) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 15:38:20 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1603467500;
+	h=MIME-Version:From:To:Reply-To:Date:Subject:Content-Type:Content-Transfer-Encoding:Message-ID:Feedback-ID;
+	bh=YW58qej/NNSPudAm4mDNZgA6q/CmQgQQEsZXrRMiun4=;
+	b=J9loOuyiQXScMujNkCv5oeV3jptuh+y661FMctPVmceNY3oZPGfdqcYCrgPbxojK
+	jHdmwnDnQrpjnu4PgOvFoLbQDXBG+BveUUy9d15YMPrD2P50Z7E6q+244AGadvWKKyl
+	rtcPh5HqBz4am7SF5MoHElMLFwiGXwbfvwc/TtBE=
+X-Sender: "University Housing" <housing@utdallas.edu>
+X-Receiver: zxt180005@utdallas.edu
+From: "University Housing" <housing@utdallas.edu>
+To: zxt180005@utdallas.edu
+Reply-To: housing@utdallas.edu
+Date: Fri, 23 Oct 2020 15:38:19 +0000
+Subject: =?UTF-8?B?VW5pdmVyc2l0eSBIb3VzaW5nIC0gUGFja2FnZSBSZWNlaXZlZA==?=
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+Message-ID: <01000175561c59b4-aa0c90ec-5769-4507-be74-f1c71b4357ec-000000@email.amazonses.com>
+X-SES-Outgoing: 2020.10.23-54.240.33.120
+Feedback-ID: 1.us-east-1.bfXsoDdlciz04m8UHP7iBcJoJGJBjKQunZTxC5UtSvQ=:AmazonSES
+Return-Path:
+ 01000175561c59b4-aa0c90ec-5769-4507-be74-f1c71b4357ec-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 15:38:20.3752
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e801242c-49f2-4b8b-81e5-08d87769ab65
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: e801242c-49f2-4b8b-81e5-08d87769ab65
+X-MS-TrafficTypeDiagnostic: DM6PR01MB3850:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-AmazonSES-Policy: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:54.240.33.120;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a33-120.smtp-out.amazonses.com;PTR:a33-120.smtp-out.amazonses.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 15:38:20.3682
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e801242c-49f2-4b8b-81e5-08d87769ab65
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB3850
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.8524596
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	6DB2gW/mpoYovO2FwNKBzGntsH3SPMjaNQLEWPNGuGfXSNoXNDROVeFtxi48SFr+Y9MUUfnx0ZDt/puVPVYFWI3EEeUzrI8rBBl10Vs1PKk0Cu1YNCat2+TZFo+0aAR8g7QNHw3h7obDb9MfqRiUoYmEvX077NcfVRyXTBRfC9kXdnN2Ywm8eyX7gVKV6xqC+Q4QQHncNwcQkdvsgN8UaZ6TGjHEVzRMkvUIyXuqJZNbRRfy+aSWEmTAEwvUXjeDgtWsSmil17FL5GE11g76ega7GpzfYaOyoxI/nQRuWzFpRsnxtaqgjMXryQ6P6fVTH6lB6BlLsfb0gaIo1WQMccdW/kqYHZVbujwj+a6aneyWJq9K9SJfKvmJoUNLJjkZh2YD+2lQB1nZExRgSA1HR/OLIqYcZT8pNC0pn+oa42VCdJew/LyzFRoYeVIp6iAAKWe4dWzrABRQixq2FZA+2WO/CHSxUeRS0pyXyVWWn47iIGA1WCh2UxuYDrQagjAgUxprLo1dqHZYnmjKOrJXsCZXi9pFofDF9qMDhfL8fSrsCkHwJ0qXYp0/G3rPEZrTBm9jOAIaEOY3qLC5n0yXc+oCAj7wPKTDFDZKVV6RRmtA3A2Ia9qvuofJcD6u9OSzCS56RqKTWebOe8NJw76V+Z9pZykgvCgwmUI5zPC7eeyVyWwbSFtwPSh8Nr3aBlnBYH7iShmNMim/N3weFxx2/vDUy07SyS3zZxHnJHRTqOaXLp4GVDCkcKa+xFim60Y2ppbdTJNHHx+1+75cPLWxNXrgK+v1yQdtfcYhRMVVueKIGb2KVG6QlwoaEeEkvubECINFmwUUrwgB5KKrELOV2705eRxWz1pgeQv1ZHnWmnx1N0nwspZioSiIiFyvEmv/pwY4FiAu71nQkFjJreF6aHkrV3HpmNdGhX2+CZeiZPk=
+MIME-Version: 1.0
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJz
+ZXQ9dXRmLTgiPjxwPkplcnJ5IFRlbmcsPC9wPg0KDQo8cD5Zb3UgcmVjZWl2ZWQgYSBwYWNrYWdl
+ITxicj4NCjxicj4NCllvdXIgcGFja2FnZSB3YXMgZGVsaXZlcmVkIHRvIHRoZSZuYnNwO1VuaXZl
+cnNpdHkgVmlsbGFnZSBPZmZpY2UuJm5ic3A7UGxlYXNlIGNvbWUgYnkgdG8gY2xhaW0gYW5kIHNp
+Z24gZm9yIHRoZSBwYWNrYWdlLjwvcD4NCg0KPHA+VGhlIFVuaXZlcnNpdHkgVmlsbGFnZSBPZmZp
+Y2UgaXMgb3BlbjogPGJyPk0tRjogMTBBTS01UE08YnI+U2F0OiAxUE0tNVBNPGJyPiBTdW46IENs
+b3NlZCA8YnI+DQo8YnI+DQpUaGFuayB5b3UsPGJyPg0KVW5pdmVyc2l0eSBIb3VzaW5nPGJyPg0K
+PGJyPg0KQXMgYSByZW1pbmRlciwgaXQgaXMgb3VyIHBvbGljeSB0byByZXR1cm4gYSBwYWNrYWdl
+IHRvIHRoZSBzZW5kZXIgaWYgaXQgaGFzIG5vdCBiZWVuIHBpY2tlZCB1cCBieSB0aGUgMTV0aCBk
+YXkgYWZ0ZXIgaXQgYXJyaXZlcy4gSWYgeW91IGhhdmUgYW55IHF1ZXN0aW9ucywgcGxlYXNlIGVt
+YWlsIDxhIGhyZWY9Im1haWx0bzpob3VzaW5nQHV0ZGFsbGFzLmVkdSI+aG91c2luZ0B1dGRhbGxh
+cy5lZHU8L2E+IG9yIGNhbGwgdGhlIGxvY2F0aW9uIHdoZXJlIHlvdXIgcGFja2FnZSB3YXMgcmVj
+ZWl2ZWQuPC9wPg0K

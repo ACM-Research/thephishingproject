@@ -1,0 +1,669 @@
+Received: from DM6PR01MB4828.prod.exchangelabs.com (2a01:111:e400:7a4d::35) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS via
+ BN3PR03CA0075.NAMPRD03.PROD.OUTLOOK.COM; Fri, 28 Aug 2020 21:23:38 +0000
+Received: from CY1PR03CA0039.namprd03.prod.outlook.com (2603:10b6:600::49) by
+ DM6PR01MB4828.prod.exchangelabs.com (2603:10b6:5:72::32) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19; Fri, 28 Aug 2020 21:23:36 +0000
+Received: from CY1NAM02FT046.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:600:0:cafe::ec) by CY1PR03CA0039.outlook.office365.com
+ (2603:10b6:600::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.19 via Frontend
+ Transport; Fri, 28 Aug 2020 21:23:36 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.140.14)
+ smtp.mailfrom=mail10.mcsignup.com; UTDallas.edu; dkim=pass (signature was
+ verified) header.d=mailchimpapp.net;UTDallas.edu; dmarc=fail action=none
+ header.from=gmail.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of mail10.mcsignup.com
+ designates 198.2.140.14 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.140.14; helo=mail10.mcsignup.com;
+Received: from mail10.mcsignup.com (198.2.140.14) by
+ CY1NAM02FT046.mail.protection.outlook.com (10.152.74.232) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19 via Frontend Transport; Fri, 28 Aug 2020 21:23:36 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k2; t=1598649815; i=comet.acm=3Dgmail.com@mailchimpapp.net;
+	bh=1U4tTnFEqnLPKBy67uWDmzGLv0IwSQLDL+psM+Nubfg=;
+	h=From:Reply-To:To:Date:Message-ID:Subject:Form-Sub:MIME-Version:
+	 Content-Type;
+	b=CGyp1Jrfh9FxJVImdW/WZ+6+vBBuSpYJr4MBCCKXgQxEdH2WOqQ3EZ4mQU7+2g00t
+	 xoho6S9GG58agej8jmOgdiRDEyQwddlMw8glLh/A88MMvjY84JhdQOMTe7PuV8LE5D
+	 GuMBu2J2a0Ap9j5AGutxX+kYe4k1QofdyzgZ4ODbXSBSwUPthpCyM5P4WWaLfvvta6
+	 lFq2y5B6h3A0w0zKaPinEmKiF9MN0PN8Ma8q2X+IWUcC8AEJIfyv8kSnK3frWwxHYJ
+	 PXPKMehhKL6NxZfUHx/qtxka789/gtR1I+As8GDrgtApWsIrxuH1TiSKbTKST054bX
+	 JdpKz/y3LCFPw==
+Received: from 127.0.0.1 (localhost [127.0.0.1])
+	by mail10.mcsignup.com (Mailchimp) with ESMTP id 4BdXdg6Npwz4f4JCr
+	for <Jerry.Teng@UTDallas.edu>; Fri, 28 Aug 2020 21:23:35 +0000 (GMT)
+From: =?utf-8?Q?ACM=20UTD?= <comet.acm@gmail.com>
+Reply-To: comet.acm@gmail.com
+To: <Jerry.Teng@UTDallas.edu>
+Date: Fri, 28 Aug 2020 21:23:35 +0000
+Message-ID: <d4cc85576e42f08703474ea63291d81183d.20200828212335@mail10.mcsignup.com>
+X-Mailer: MailChimp Mailer - **CIDe035407a9e291d81183d**
+X-Campaign: mailchimpd4cc85576e42f08703474ea63.e035407a9e
+X-campaignid: mailchimpd4cc85576e42f08703474ea63.e035407a9e
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=d4cc85576e42f08703474ea63&id=e035407a9e&e=291d81183d
+X-MC-User: d4cc85576e42f08703474ea63
+X-Feedback-ID: 21571491:21571491.e035407a9e:us7:mc
+X-Auto-Response-Suppress: OOF, AutoReply
+X-Accounttype: ff
+Subject: ACM Members: Subscription Confirmed
+Form-Sub: v=1;ip=none
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_210879393"
+Return-Path:
+ bounce-mcsys.us7_21571491.e035407a9e-Jerry.Teng=UTDallas.edu@mail10.mcsignup.com
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Aug 2020 21:23:36.4120
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 51f7964a-dd1f-4113-da02-08d84b989ffb
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132431234164140061;(0964fcdf-1dd6-4fe8-dc49-08d52adbc662);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT046.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 51f7964a-dd1f-4113-da02-08d84b989ffb
+X-MS-TrafficTypeDiagnostic: DM6PR01MB4828:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2399;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 11297072678929122191;16257924177596976644;11516103285524161641;472308700550737975;13951083148873709334;6303705894254549794
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:198.2.140.14;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mail10.mcsignup.com;PTR:mail10.mcsignup.com;CAT:SPOOF;SFS:(4636009)(83380400001)(82202003)(76236003)(2860700004)(5660300002)(58800400005)(3450700001)(19627405001)(22186003)(166002)(73392003)(9686003)(7126003)(83170400001)(6916009)(7596003)(7636003)(356005)(76482006)(8676002)(36906005)(1096003)(336012)(26005)(42882007)(2160300002)(33964004)(400484006)(126430200006);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 0:0x0|0x0|0x0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Aug 2020 21:23:36.2940
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 51f7964a-dd1f-4113-da02-08d84b989ffb
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT046.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4828
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1942242
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3305.032
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UmFtNnRCTm9nRlA1eHFQTXk3UjdLZEF6Y2daTzlCU0NRSEpLVXJwNEdHZ3Va?=
+ =?utf-8?B?REw3WVNHL0ZwNjljSm82ak9GWFA4Nm4wbkxub0I1c1lhU2dncE84dlRyblpC?=
+ =?utf-8?B?Q2o1bnZrcWhKSUk2RHpCSE51SnJWOHpoWGlZV05GM3NVd2w5LzU0SGY2MEZH?=
+ =?utf-8?B?RGZZYVdGUGdwVEU5UVB5ZjVTQmNjcTNlS2tIWUhuUXVmNXRYSkZWcDVVVFRN?=
+ =?utf-8?B?Z0EzUkw3MHJuZVhwSGJjYVo3Ly9DSUFrYlM1dWcwN2JoNkdQV05Xb1NZbkJ5?=
+ =?utf-8?B?YUVGc1RmSk1hY2x3NUVtYThaMzZiSzlaOVBFR2NPTzdRcDZWcEhLejVBbk1X?=
+ =?utf-8?B?MHFxdytid1RGT2JjR01UTFBNMzVVK0IrL2FiUmhQNzFUMFFlL0JMZndlZWlu?=
+ =?utf-8?B?dklnWGNNSnM5UHF1K05wRG04bS9KcDNaNkNQNTh5RENNbnZKMFNPdFQzSklH?=
+ =?utf-8?B?RXdkWTdKc1JMS2hhWXNNUjlVUUdHckhsbCszN3VBRkJlZWhPeE1TamFBRTZB?=
+ =?utf-8?B?WDNHTkZRK0FyRWE3VVdnTU50YVdxVUtzMjFvSG8wNlljTnhaL0NwZHdLbFl3?=
+ =?utf-8?B?MnNrT3dabFFLTHZwdkxHMW1DeWtaRGFvVjhWT0xoQTdRUjlIcGZBVHRad0dP?=
+ =?utf-8?B?THZNNEhFV3FFeHVlNFVZR0lGVmJsN0duNjhqdnlHRU0wa2F4TDBZczdCUFV1?=
+ =?utf-8?B?Z3Flczk5bysyZGlUVWt2SVgrR2J3VnhIS3p2dGJ5WXUrZVVZNWRJNHBmWkdi?=
+ =?utf-8?B?UTUrRHJkclZUYkxXdTF5eEVYTFFDblgzNFpWWWhlUzlkdGVjay9YZWZBQnhr?=
+ =?utf-8?B?a2svWTlGa3VxdHNyelZVQ3VMdHg5ZHV6c05mNkcwbVI3STdlZ2toRG5Xb0NF?=
+ =?utf-8?B?cSsxR09Ra0wyOVNZQlc3V0hnMGpYd1ZPOVZPeEgrV21TQVZZcUUwYWgvY2lk?=
+ =?utf-8?B?Qkh1d1pXZTFML3VLZVNLdzEvS1c2Tk1WVXEzRmltcDI2cHUyM2xsOEpETG9T?=
+ =?utf-8?B?bkZCUGZxaHdsNklzOGNXSjhSMHJSMTRKckJqY3N1MG1HeWhGZFcwV1RZektM?=
+ =?utf-8?B?WTh1cnBUeUFqT3dMSnRyWVNHYytsMGkzeVVOK1o4NWdtRzY0R2JoVFBSU3Zo?=
+ =?utf-8?B?czJQbVdlZE5sd05CcGZRbGNWVVZpU29UR2ZlQjBMRGZWb0M0eVpCR3V1MzdP?=
+ =?utf-8?B?cG9nTzdVcCtINkQ5WFVrbEx1RzlQNkx2S2dqckxKRVltVVlsMlliaDJrY3dL?=
+ =?utf-8?B?bHFKLzV0UEZOZG01WWYzWlVHUTVGQVJZZVkvdUUyc1pPeHp6VG9tK3JadCsz?=
+ =?utf-8?B?RGpqakxxMVc4RFFSczBYb29RcVZWZDJrd2FCRDRjM0V6TkgzbHpQZldBMEJR?=
+ =?utf-8?B?UHUzMVR3VENHTXB3dzAwTHYxNm1aWXpEUzRCR2xNM2dQNlFYd0VEU1kySERB?=
+ =?utf-8?B?bWhoMzNlU2Qyck5HODFrTWZpdkhHTTU4enUxUWtLalRHT3A3b0Q0czZHcDZq?=
+ =?utf-8?B?NjhEZENaL2llcTh4dU9RcG9QZnFyV01nUHlWSEthYkdTNXVML3A3T01SSnpO?=
+ =?utf-8?B?QmZDU3FEZlF0bHZFUkpFNE1GemJCZFRqTVJBSmxJYkZGdlo3SnJLdzZtdnAw?=
+ =?utf-8?B?Y3BMcTkyeUdPNW4xQVRrU2s3Z1Y0aGcwMmkvejkybzhnNDRVOEhJYmVyYm5q?=
+ =?utf-8?B?K1VvVDF3L1E2T2NNaWRBc3hnRzNCa2xFcEFQVW5sMGwwM2ZlNDFna0M0SEZV?=
+ =?utf-8?B?alFYZGo4bnFka1BSRWppV1Z0dko3cktMUVRwNEJ4ZUMzVXpYeGRYVUVWM0Yx?=
+ =?utf-8?B?MkpxQnArTkZOL0F3WEUxQjBHd1ZESXhPbkZ2NEw1eHJmc1ZBejdZRDlPQVJW?=
+ =?utf-8?B?Z3UxYXdia2JuMUVocXBjR2JPM3A2OWM2UUE0RGlhWXoxbWM4ZzBBcWlCbDNs?=
+ =?utf-8?B?bWswdzJBUzhtUGJHUDJEREx2cnZBcERMUVhkOEh2TmNmb0Q0OUZvREFBc2NC?=
+ =?utf-8?B?OVQ4WXVuaEVIaHJJTGNQQ0RhMXoyalhuOWNVNWFBL2d1eERBSVZXandWSXJL?=
+ =?utf-8?B?TnlXNHYwbW5jRlQ1Y3FwVjZUS1g5cFVvUDd4YmJTdHVMemEyM1pDK0VXb0lC?=
+ =?utf-8?B?TWpkUWlzTVJDbDg2UUo5SWNqNWVaOWN1a0RIRWRsbXVrVllNOHpjU0tjTkpi?=
+ =?utf-8?B?V051NW5NVVVOZERLWXloUVdwdnMxMGxCcFhwOGNBQ2dyUURQdTJGOVAyYklO?=
+ =?utf-8?B?SWh3ZWhmekttRWF4OXVObGI2dXcxZHJqcTJ6RWI4SzE5R3hGbmdlM0tUbnBy?=
+ =?utf-8?B?aG14ajdVdWhhZ0RYRkhqbnhrbEkxR250NXRkNEJhcVZYQUFxSzhsdmV1WFRs?=
+ =?utf-8?B?ajBJMHprL2NVWG9HNEJRUFZiVGFQWm11emNpVUI1elU4eXFMeTg2T3VDSklp?=
+ =?utf-8?B?Vk1BWGFCRzQrQXJ4L3hBd2xxN1hYUGdJWDRpSVh1UThBMEM4VzhzVmZRN0xS?=
+ =?utf-8?B?QmNNc0tkSW1IK3R2WFRITVFXR0RrMEdxSGI1c09heWRmWmkvTmZRT1NFdVZF?=
+ =?utf-8?B?YTNOeHkydHpDY3FaNDhxNGlYVElkMmFXZTl3UkV6bjZQcSszNnB5cHFjQVZo?=
+ =?utf-8?B?UFVSS0Y2M2d3WWw1WWtnZjNYd2FBSU8xTTlhck9GbnNqRlI3SlBUeHo5SjRC?=
+ =?utf-8?B?RUMvaXQ1VVdsWDUxNVRjSm9pNDVNeXB4UUtBTEVqbU9MbjBsR2pBUklid21r?=
+ =?utf-8?B?ZUlqQkFoT3J1Ny9XK3o3S0JESnFkcm9zeWpQU2dVQXRlN1h1R3pIeE5pZ09v?=
+ =?utf-8?B?UUFkNlNKdzFBT2FpL1lxWnZ0ekhpMk85QnlIYlkzWWlGK2hweWdXRDBPWVAz?=
+ =?utf-8?B?anlkbXlWbUtqdy9McFpnMzdiSUtWSWhtZ0x5c24zRy9JZ2I2TkdvR2EwNEUv?=
+ =?utf-8?B?blQ2WGo5UU1jZGpIWGRQQmNiRWVkNlhvelhDMnFRVkdWVU9sdVd1VFFLRG9T?=
+ =?utf-8?B?U3F2ZzEwVDhwdmZQWkdwajdxR3pDWlZJS2haVWMxanNCTElOTUlMcVZDN1ow?=
+ =?utf-8?B?YXlwT3d5R0Z2YXBTRTF4MEg1enlSSmQyZUw2aGlPTkU5YjdIdzM1ODFTREM2?=
+ =?utf-8?B?U21PV2hLNzlOZFhud1lZNDFVbmpnbHVZMnY2cHQrdk5uR21HN0hzRG1ZR2Nv?=
+ =?utf-8?B?dFJFM0VIR01hL0pHa1RaNktrckJxSnZieG5CaW5zZmNvVEk0TEFhZ0RNNjY0?=
+ =?utf-8?B?WWdiZVZQUTI0MHRTYnFkVDE2aGRwYUR2ZkdiaU9OUHRKbUI3ZmlRSDdqeGdH?=
+ =?utf-8?B?Y3pMRk04ekFlS0hheFNZaTAxdnhjVXRnPT0=?=
+MIME-Version: 1.0
+
+--_----------=_MCPart_210879393
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Your subscription to the ACM UTD mailing list has been confirmed!
+
+For your records, here is a copy of the information you submitted to us...
+ 
+* Email Address: Jerry.Teng@UTDallas.edu   
+* Last Name: Teng   
+* First Name: Jerry     
+* I'm a...: Student - Undergraduate    
+
+If at any time you wish to stop receiving our emails, you can:
+unsubscribe here (https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fus7.mailchimp.com%2Fmctx%2Fclicks%3Furl%3Dhttps%253A%252F%252Facmutd.us7.list-manage.com%252Funsubscribe%253Fu%253Dd4cc85576e42f08703474ea63%2526id%253D6cc9c02dca%2526e%253D08eb894a2d%26h%3Da63b340bf583acedbce4f4fc8f6ff2a752bd95d325d1cccf6c8874209c89800a%26v%3D1%26xid%3De035407a9e%26uid%3D21571491%26pool%3Dcontact_facing%26subject%3DACM%2BMembers%253A%2BSubscription%2BConfirmed&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C51f7964add1f4113da0208d84b989ffb%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637342466183789723&amp;sdata=gmtSp805Z9Tk6zDoAmm0OK19mPVUugEYiUGJoGSmqx4%3D&amp;reserved=0)
+
+You may also contact us at:
+comet.acm@gmail.com (mailto:comet.acm@gmail.com)
+--_----------=_MCPart_210879393
+Content-Type: text/html; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce" dir=3D"ltr"><head><!--[if gte mso 15]>=0A=
+        <xml>=0A=
+            <o:OfficeDocumentSettings>=0A=
+                <o:AllowPNG/>=0A=
+                <o:PixelsPerInch>96</o:PixelsPerInch>=0A=
+            </o:OfficeDocumentSettings>=0A=
+        </xml>=0A=
+        <![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>ACM Members</title>=0A=
+        =0A=
+        <meta http-equiv=3D"x-ua-compatible" content=3D"IE=3Dedge">=0A=
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">=0A=
+        <meta name=3D"description" content=3D"ACM Members Email Forms">=0A=
+        <meta name=3D"keywords" content=3D"ACM Members">=0A=
+        =0A=
+    <style type=3D"text/css">=0A=
+		body{=0A=
+			font:14px/20px 'Helvetica', Arial, sans-serif;=0A=
+			margin:0;=0A=
+			padding:75px 0 0 0;=0A=
+			text-align:center;=0A=
+			-webkit-text-size-adjust:none;=0A=
+		}=0A=
+		p{=0A=
+			padding:0 0 10px 0;=0A=
+		}=0A=
+		h1 img{=0A=
+			max-width:100%;=0A=
+			height:auto !important;=0A=
+			vertical-align:bottom;=0A=
+		}=0A=
+		h2{=0A=
+			font-size:22px;=0A=
+			line-height:28px;=0A=
+			margin:0 0 12px 0;=0A=
+		}=0A=
+		h3{=0A=
+			margin:0 0 12px 0;=0A=
+		}=0A=
+		.headerBar{=0A=
+			background:none;=0A=
+			padding:0;=0A=
+			border:none;=0A=
+		}=0A=
+		.wrapper{=0A=
+			width:600px;=0A=
+			margin:0 auto 10px auto;=0A=
+			text-align:left;=0A=
+		}=0A=
+		input.formEmailButton{=0A=
+			border:none !important;=0A=
+		}=0A=
+		.formEmailButton{=0A=
+			display:inline-block;=0A=
+			font-weight:500;=0A=
+			font-size:16px;=0A=
+			line-height:42px;=0A=
+			font-family:'Helvetica', Arial, sans-serif;=0A=
+			width:auto;=0A=
+			white-space:nowrap;=0A=
+			height:42px;=0A=
+			margin:12px 5px 12px 0;=0A=
+			padding:0 22px;=0A=
+			text-decoration:none;=0A=
+			text-align:center;=0A=
+			cursor:pointer;=0A=
+			border:0;=0A=
+			border-radius:3px;=0A=
+			vertical-align:top;=0A=
+		}=0A=
+		.formEmailButton span{=0A=
+			display:inline;=0A=
+			font-family:'Helvetica', Arial, sans-serif;=0A=
+			text-decoration:none;=0A=
+			font-weight:500;=0A=
+			font-style:normal;=0A=
+			font-size:16px;=0A=
+			line-height:42px;=0A=
+			cursor:pointer;=0A=
+			border:none;=0A=
+		}=0A=
+		.rounded6{=0A=
+			border-radius:6px;=0A=
+		}=0A=
+		.poweredWrapper{=0A=
+			padding:20px 0;=0A=
+			width:560px;=0A=
+			margin:0 auto;=0A=
+		}=0A=
+		.poweredBy{=0A=
+			display:block;=0A=
+			text-align:center;=0A=
+		}=0A=
+		span.or{=0A=
+			display:inline-block;=0A=
+			height:32px;=0A=
+			line-height:32px;=0A=
+			padding:0 5px;=0A=
+			margin:5px 5px 0 0;=0A=
+		}=0A=
+		.clear{=0A=
+			clear:both;=0A=
+		}=0A=
+		.profile-list{=0A=
+			display:block;=0A=
+			margin:15px 20px;=0A=
+			padding:0;=0A=
+			list-style:none;=0A=
+			border-top:1px solid #eee;=0A=
+		}=0A=
+		.profile-list li{=0A=
+			display:block;=0A=
+			margin:0;=0A=
+			padding:5px 0;=0A=
+			border-bottom:1px solid #eee;=0A=
+		}=0A=
+		html[dir=3Drtl] .wrapper,html[dir=3Drtl] .container,html[dir=3Drtl] label=
+{=0A=
+			text-align:right !important;=0A=
+		}=0A=
+		html[dir=3Drtl] ul.interestgroup_field label{=0A=
+			padding:0;=0A=
+		}=0A=
+		html[dir=3Drtl] ul.interestgroup_field input{=0A=
+			margin-left:5px;=0A=
+		}=0A=
+		html[dir=3Drtl] .hidden-from-view{=0A=
+			right:-5000px;=0A=
+			left:auto;=0A=
+		}=0A=
+		body,#bodyTable{=0A=
+			background-color:#ffffff;=0A=
+		}=0A=
+		h1{=0A=
+			font-size:28px;=0A=
+			line-height:100%;=0A=
+			margin-bottom:20px;=0A=
+			margin-top:0;=0A=
+			padding:0;=0A=
+		}=0A=
+		#templateContainer{=0A=
+			background-color:none;=0A=
+		}=0A=
+		#templateBody{=0A=
+			background-color:#ffffff;=0A=
+		}=0A=
+		.bodyContent{=0A=
+			line-height:150%;=0A=
+			font-family:Helvetica;=0A=
+			font-size:14px;=0A=
+			color:#333333;=0A=
+			padding:30px;=0A=
+		}=0A=
+		a:link,a:active,a:visited,a{=0A=
+			color:#ff9c00;=0A=
+		}=0A=
+		.formEmailButton:link,.formEmailButton:active,.formEmailButton:visited,.f=
+ormEmailButton,.formEmailButton span{=0A=
+			background-color:#5d5d5d !important;=0A=
+			color:#ffffff !important;=0A=
+		}=0A=
+		.formEmailButton:hover{=0A=
+			background-color:#444444 !important;=0A=
+			color:#ffffff !important;=0A=
+		}=0A=
+		label{=0A=
+			line-height:150%;=0A=
+			font-family:Helvetica;=0A=
+			font-size:16px;=0A=
+			color:#5d5d5d;=0A=
+		}=0A=
+		.field-group input,select,textarea,.dijitInputField{=0A=
+			font-family:Helvetica;=0A=
+			color:#5d5d5d !important;=0A=
+		}=0A=
+		.asterisk{=0A=
+			color:#cc6600;=0A=
+			font-size:20px;=0A=
+		}=0A=
+		label .asterisk{=0A=
+			visibility:hidden;=0A=
+		}=0A=
+		.indicates-required{=0A=
+			display:none;=0A=
+		}=0A=
+		.field-help{=0A=
+			color:#777;=0A=
+		}=0A=
+		.error,.errorText{=0A=
+			color:#e85c41;=0A=
+			font-weight:bold;=0A=
+		}=0A=
+	@media (max-width: 620px){=0A=
+		body{=0A=
+			width:100%;=0A=
+			-webkit-font-smoothing:antialiased;=0A=
+			padding:10px 0 0 0 !important;=0A=
+			min-width:300px !important;=0A=
+		}=0A=
+=0A=
+}	@media (max-width: 620px){=0A=
+		.wrapper,.poweredWrapper{=0A=
+			width:auto !important;=0A=
+			max-width:600px !important;=0A=
+			padding:0 10px;=0A=
+		}=0A=
+=0A=
+}	@media (max-width: 620px){=0A=
+		#templateContainer,#templateBody,#templateContainer table{=0A=
+			width:100% !important;=0A=
+			-moz-box-sizing:border-box;=0A=
+			-webkit-box-sizing:border-box;=0A=
+			box-sizing:border-box;=0A=
+		}=0A=
+=0A=
+}	@media (max-width: 620px){=0A=
+		.addressfield span{=0A=
+			width:auto;=0A=
+			float:none;=0A=
+			padding-right:0;=0A=
+		}=0A=
+=0A=
+}	@media (max-width: 620px){=0A=
+		.captcha{=0A=
+			width:auto;=0A=
+			float:none;=0A=
+		}=0A=
+=0A=
+}		.gdpr-mergeRow{=0A=
+			margin:10px 0;=0A=
+			color:#4a4a4a;=0A=
+			font-family:Helvetica;=0A=
+		}=0A=
+		.gdpr-content{=0A=
+			margin:0 -20px 0 -20px;=0A=
+			padding:20px;=0A=
+			background:rgba(255, 255, 255, 0.8);=0A=
+		}=0A=
+		#gdpr-label{=0A=
+			margin-top:0;=0A=
+		}=0A=
+		#gdpr-description{=0A=
+			margin-top:6px;=0A=
+			margin-bottom:0;=0A=
+			padding-bottom:11px;=0A=
+		}=0A=
+		.gdpr-content p{=0A=
+			color:#4a4a4a;=0A=
+			font-size:13px;=0A=
+			line-height:1.5;=0A=
+		}=0A=
+		.gdpr-content .checkbox-group label{=0A=
+			font-weight:normal;=0A=
+			font-size:13px;=0A=
+		}=0A=
+		#gdpr-legal{=0A=
+			padding-top:20px;=0A=
+			margin:0;=0A=
+		}=0A=
+		.gdpr-footer{=0A=
+			margin:0 -20px 0 -20px;=0A=
+			padding:20px;=0A=
+			background:rgba(255, 255, 255, 0.9);=0A=
+			overflow:auto;=0A=
+			color:#6d6d6d;=0A=
+		}=0A=
+		.gdpr-footer p{=0A=
+			font-size:10px;=0A=
+			line-height:1.5;=0A=
+			margin-bottom:0;=0A=
+		}=0A=
+		.gdpr-footer a{=0A=
+			color:#206578;=0A=
+		}=0A=
+		.gdpr-footer img{=0A=
+			width:65px;=0A=
+			float:left;=0A=
+			margin-right:15px;=0A=
+		}=0A=
+		.button:link,.button:active,.button:visited,.button,.button span,.button-=
+small:link,.button-small:active,.button-small:visited,.button-small{=0A=
+			background-color:#ff9c00;=0A=
+		}=0A=
+		.button:hover,.button-small:hover{=0A=
+			background-color:#df8704;=0A=
+		}=0A=
+</style></head>=0A=
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"font: 14px/20px 'Helvetica', Arial, sans-serif=
+;margin: 0;padding: 75px 0 0 0;text-align: center;-webkit-text-size-adjust:=
+ none;background-color: #ffffff;">=0A=
+    	<center>=0A=
+        	<table border=3D"0" cellpadding=3D"20" cellspacing=3D"0" height=3D=
+"100%" width=3D"100%" id=3D"bodyTable" style=3D"background-color: #ffffff;"=
+>=0A=
+            	<tr>=0A=
+                	<td align=3D"center" valign=3D"top">=0A=
+                    	<!-- // BEGIN CONTAINER -->=0A=
+                        <!--[if gte mso 9]>=0A=
+                        <table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">=0A=
+                        <tr>=0A=
+                        <td align=3D"center" valign=3D"top" width=3D"600" s=
+tyle=3D"width:600px;">=0A=
+                        <![endif]-->=0A=
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"max-width: 600px;border-radius: 6px;backgrou=
+nd-color: none;" id=3D"templateContainer" class=3D"rounded6">=0A=
+                        	<tr>=0A=
+                            	<td align=3D"center" valign=3D"top">=0A=
+                                	<!-- // BEGIN HEADER -->=0A=
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"max-width:600px">=0A=
+                                    	<tr>=0A=
+                                        	<td>=0A=
+                                            	<h1 style=3D"font-size: 28px;l=
+ine-height: 100%;margin-bottom: 20px;margin-top: 0;padding: 0;"><a href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fus7.mai=
+lchimp.com%2Fmctx%2Fclicks%3Furl%3Dhttp%253A%252F%252Facmutd.co%26h%3D3330f=
+18f8fd6474696426a0670ecddefc83fc9845ee5cbc5a2f511de4e43d1df%26v%3D1%26xid%3=
+De035407a9e%26uid%3D21571491%26pool%3Dcontact_facing%26subject%3DACM%2BMemb=
+ers%253A%2BSubscription%2BConfirmed&amp;data=3D02%7C01%7CJerry.Teng%40UTDal=
+las.edu%7C51f7964add1f4113da0208d84b989ffb%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C1%7C637342466183829701&amp;sdata=3Dxec8oYESbiF3e6fVn9OGU8cXRx8ktDs=
+gsCWmRXam1GU%3D&amp;reserved=3D0" originalsrc=3D"https://us7.mailchimp.com/=
+mctx/clicks?url=3Dhttp%3A%2F%2Facmutd.co&amp;h=3D3330f18f8fd6474696426a0670=
+ecddefc83fc9845ee5cbc5a2f511de4e43d1df&amp;v=3D1&amp;xid=3De035407a9e&amp;u=
+id=3D21571491&amp;pool=3Dcontact_facing&amp;subject=3DACM+Members%3A+Subscr=
+iption+Confirmed" shash=3D"LkecVFVL3IKtkzNJztm8LDd6SErZw3+zhRB5apRhmuKaLJcQ=
++c8f/DUu0bGF/3JA0fa2WxmCMKjPAxIdZ3D8+1Idpbcqg2WmORGnM5VzwkCjelirEPRAKhnYjZa=
+7er7wvZ+is0yXkMvAe534kz4VyfERHp5ubDRSxvfJG/vnNAw=3D" target=3D"_blank" styl=
+e=3D"color: #ff9c00;"><img src=3D"https://gallery.mailchimp.com/d4cc85576e4=
+2f08703474ea63/images/d6c32513-cfba-4df0-a74f-73286fce544b.png" alt=3D"" bo=
+rder=3D"0" style=3D"border: 0px none;border-color: ;border-style: none;bord=
+er-width: 0px;height: 100px;width: 100px;margin: 0;padding: 0;max-width: 10=
+0%;vertical-align: bottom;" width=3D"100" height=3D"100"></a></h1>=0A=
+                                            </td>=0A=
+                                        </tr>=0A=
+                                    </table>=0A=
+                                	<!-- END HEADER \\ -->=0A=
+                                </td>=0A=
+                            </tr>=0A=
+                        	<tr>=0A=
+                            	<td align=3D"center" valign=3D"top">=0A=
+                                	<!-- // BEGIN BODY -->=0A=
+                                	<table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"max-width: 600px;border-radius: 6px;b=
+ackground-color: #ffffff;" id=3D"templateBody" class=3D"rounded6">=0A=
+                                    	<tr>=0A=
+                                            =0A=
+                                            <td align=3D"left" valign=3D"to=
+p" class=3D"bodyContent" style=3D"line-height: 150%;font-family: Helvetica;=
+font-size: 14px;color: #333333;padding: 30px;">=0A=
+                                                =0A=
+                                                <div>Your subscription to t=
+he ACM UTD mailing list has been confirmed!=0A=
+</div>=0A=
+<p style=3D"padding: 0 0 10px 0;">For your records, here is a copy of the i=
+nformation you submitted to us...</p>=0A=
+<ul class=3D"profile-list" style=3D"display: block;margin: 15px 20px;paddin=
+g: 0;list-style: none;border-top: 1px solid #eee;">=0A=
+=0A=
+=0A=
+<li style=3D"display: block;margin: 0;padding: 5px 0;border-bottom: 1px sol=
+id #eee;"><strong>Email Address:</strong> Jerry.Teng@UTDallas.edu</li>=0A=
+=0A=
+=0A=
+=0A=
+<li style=3D"display: block;margin: 0;padding: 5px 0;border-bottom: 1px sol=
+id #eee;"><strong>Last Name:</strong> Teng</li>=0A=
+=0A=
+=0A=
+=0A=
+<li style=3D"display: block;margin: 0;padding: 5px 0;border-bottom: 1px sol=
+id #eee;"><strong>First Name:</strong> Jerry</li>=0A=
+=0A=
+=0A=
+=0A=
+    =0A=
+        =0A=
+        <li style=3D"display: block;margin: 0;padding: 5px 0;border-bottom:=
+ 1px solid #eee;"><strong>I'm a...:</strong> Student - Undergraduate</li>=
+=0A=
+        =0A=
+    =0A=
+=0A=
+=0A=
+</ul>=0A=
+<p style=3D"padding: 0 0 10px 0;">If at any time you wish to stop receiving=
+ our emails, you can:<br>=0A=
+    <a class=3D"formEmailButton" href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttps%3A%2F%2Fus7.mailchimp.com%2Fmctx%2Fclicks%3Furl%3=
+Dhttps%253A%252F%252Facmutd.us7.list-manage.com%252Funsubscribe%253Fu%253Dd=
+4cc85576e42f08703474ea63%2526id%253D6cc9c02dca%2526e%253D08eb894a2d%26h%3Da=
+63b340bf583acedbce4f4fc8f6ff2a752bd95d325d1cccf6c8874209c89800a%26v%3D1%26x=
+id%3De035407a9e%26uid%3D21571491%26pool%3Dcontact_facing%26subject%3DACM%2B=
+Members%253A%2BSubscription%2BConfirmed&amp;data=3D02%7C01%7CJerry.Teng%40U=
+TDallas.edu%7C51f7964add1f4113da0208d84b989ffb%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C1%7C637342466183829701&amp;sdata=3DpPQjg7eBNbP6%2FDLhgpwDS6UHA=
+eHf36Inw5vF%2FdAImMQ%3D&amp;reserved=3D0" originalsrc=3D"https://us7.mailch=
+imp.com/mctx/clicks?url=3Dhttps%3A%2F%2Facmutd.us7.list-manage.com%2Funsubs=
+cribe%3Fu%3Dd4cc85576e42f08703474ea63%26id%3D6cc9c02dca%26e%3D08eb894a2d&am=
+p;h=3Da63b340bf583acedbce4f4fc8f6ff2a752bd95d325d1cccf6c8874209c89800a&amp;=
+v=3D1&amp;xid=3De035407a9e&amp;uid=3D21571491&amp;pool=3Dcontact_facing&amp=
+;subject=3DACM+Members%3A+Subscription+Confirmed" shash=3D"ZqrxFlEDMd0pZbgW=
+NIK9LSSmTmvyvS1I7PDW83u64HbMIbY7L87N2USui5Sw9WFIFjTDktMEolWhA+2dQlRHLE+xFVB=
+QsLbTsKE2KvlaEp9060MOTY3xp+3CysDrFB1zsvivDrMB1SYzkyTRG0Zn8qMJwf9KhYalGv69yn=
+1LGkM=3D" style=3D"color: #ffffff !important;display: inline-block;font-wei=
+ght: 500;font-size: 16px;line-height: 42px;font-family: 'Helvetica', Arial,=
+ sans-serif;width: auto;white-space: nowrap;height: 42px;margin: 12px 5px 1=
+2px 0;padding: 0 22px;text-decoration: none;text-align: center;cursor: poin=
+ter;border: 0;border-radius: 3px;vertical-align: top;background-color: #5d5=
+d5d !important;"><span style=3D"display: inline;font-family: 'Helvetica', A=
+rial, sans-serif;text-decoration: none;font-weight: 500;font-style: normal;=
+font-size: 16px;line-height: 42px;cursor: pointer;border: none;background-c=
+olor: #5d5d5d !important;color: #ffffff !important;">unsubscribe here</span=
+></a></p>=0A=
+<p style=3D"padding: 0 0 10px 0;">You may also contact us at:<br>=0A=
+<a href=3D"mailto:comet.acm@gmail.com" style=3D"color: #ff9c00;">comet.acm@=
+gmail.com</a></p>=0A=
+=0A=
+                                            </td>=0A=
+                                            =0A=
+                                        </tr>=0A=
+                                    </table>=0A=
+                                    <!-- END BODY \\ -->=0A=
+                                </td>=0A=
+                            </tr>=0A=
+                        	<tr>=0A=
+                            	<td align=3D"center" valign=3D"top">=0A=
+                                	<!-- // BEGIN FOOTER -->=0A=
+                                	<table border=3D"0" cellpadding=3D"20" cel=
+lspacing=3D"0" width=3D"100%" style=3D"max-width:600px">=0A=
+                                    	<tr>=0A=
+                                        	<td align=3D"center" valign=3D"top=
+">=0A=
+                                                =0A=
+                                                <div>=0A=
+                                                    <span class=3D"poweredB=
+y" style=3D"display: block;text-align: center;"><a href=3D"https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fus7.mailchimp.com%2Fmct=
+x%2Fclicks%3Furl%3Dhttp%253A%252F%252Fwww.mailchimp.com%252Femail-referral%=
+252F%253Futm_source%253Dfreemium_newsletter%2526utm_medium%253Demail%2526ut=
+m_campaign%253Dreferral_marketing%2526aid%253Dd4cc85576e42f08703474ea63%252=
+6afl%253D1%26h%3D2898ed3ec7f0d60d01bb34e8e52b97b301bdadd730b47d8cb6a717c946=
+1477e2%26v%3D1%26xid%3De035407a9e%26uid%3D21571491%26pool%3Dcontact_facing%=
+26subject%3DACM%2BMembers%253A%2BSubscription%2BConfirmed&amp;data=3D02%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7C51f7964add1f4113da0208d84b989ffb%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637342466183839699&amp;sdata=3DSYru7Px%2=
+BEJsBYb8Iwt5dD9ofdiwTAYYdt4DarCY3ZmY%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://us7.mailchimp.com/mctx/clicks?url=3Dhttp%3A%2F%2Fwww.mailchimp.com%2F=
+email-referral%2F%3Futm_source%3Dfreemium_newsletter%26utm_medium%3Demail%2=
+6utm_campaign%3Dreferral_marketing%26aid%3Dd4cc85576e42f08703474ea63%26afl%=
+3D1&amp;h=3D2898ed3ec7f0d60d01bb34e8e52b97b301bdadd730b47d8cb6a717c9461477e=
+2&amp;v=3D1&amp;xid=3De035407a9e&amp;uid=3D21571491&amp;pool=3Dcontact_faci=
+ng&amp;subject=3DACM+Members%3A+Subscription+Confirmed" shash=3D"Tg8YeE9ha2=
+5qMkLbeyh/N6FeQhEIRDArBt4d+gPVxdQBpPS0yXeWgAspPUCwZAW/nxdu60eQh4pPky56FNXaO=
+ljDWX2ic4gr5cSt9oGIWTm4/e+jMHuLbRSonTY+Lsu+JNGtzpJCebvsbgelUwjY7HakvTj4qWAX=
+OBQkDLWsX6M=3D" style=3D"color: #ff9c00;"><img src=3D"https://cdn-images.ma=
+ilchimp.com/monkey_rewards/MC_MonkeyReward_15.png" border=3D"0" alt=3D"Emai=
+l Marketing Powered by Mailchimp" title=3D"Mailchimp Email Marketing" width=
+=3D"139" height=3D"54"></a></span>=0A=
+                                                </div>=0A=
+                                                =0A=
+                                            </td>=0A=
+                                        </tr>=0A=
+                                    </table>=0A=
+                                    <!-- END FOOTER \\ -->=0A=
+                                </td>=0A=
+                            </tr>=0A=
+                        </table>=0A=
+                        <!--[if gte mso 9]>=0A=
+                        </td>=0A=
+                        </tr>=0A=
+                        </table>=0A=
+                        <![endif]-->=0A=
+                        <!-- END CONTAINER \\ -->=0A=
+                    </td>=0A=
+                </tr>=0A=
+            </table>=0A=
+        </center>=0A=
+    <img src=3D"https://us7.mailchimp.com/mctx/opens?xid=3De035407a9e&amp;u=
+id=3D21571491&amp;pool=3Dcontact_facing&amp;subject=3DACM+Members%3A+Subscr=
+iption+Confirmed" height=3D"1" width=3D"1"></body>=0A=
+</html>=
+
+--_----------=_MCPart_210879393--

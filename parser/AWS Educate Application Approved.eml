@@ -1,0 +1,203 @@
+Received: from BL0PR01MB4819.prod.exchangelabs.com (2603:10b6:208:73::32) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 24 Oct 2020 18:05:07
+ +0000
+Received: from MN2PR13CA0001.namprd13.prod.outlook.com (2603:10b6:208:160::14)
+ by BL0PR01MB4819.prod.exchangelabs.com (2603:10b6:208:73::32) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.18; Sat, 24 Oct 2020 18:05:05 +0000
+Received: from BL2NAM02FT044.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:160:cafe::79) by MN2PR13CA0001.outlook.office365.com
+ (2603:10b6:208:160::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.4 via Frontend
+ Transport; Sat, 24 Oct 2020 18:05:05 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.27.27)
+ smtp.mailfrom=us-west-2.amazonses.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=awseducate.com;utdallas.edu; dmarc=pass action=none
+ header.from=awseducate.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of us-west-2.amazonses.com
+ designates 54.240.27.27 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.27.27; helo=a27-27.smtp-out.us-west-2.amazonses.com;
+Received: from a27-27.smtp-out.us-west-2.amazonses.com (54.240.27.27) by
+ BL2NAM02FT044.mail.protection.outlook.com (10.152.77.35) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Sat, 24 Oct 2020 18:05:05 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=xelyu5nablrrqj5scckqloieecubrbgu; d=awseducate.com; t=1603562703;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=PtHDdxvqV69jynU6psLDHZ/4CaLcvoraYH7gJ3gTopE=;
+	b=ZWE2nqfrMOKGKoKJJNnm9U+6ZuIaPxdmDanF3D6cVquyb63fHQCNsmE3ZZj7oL0b
+	9PTO0yyAto1s4wLdHXLhwBs2PwsK9kFFn8cUW05CxumuFuVnqHw2D0rjBe+FhL6DnWx
+	sRt/robEONyp/cBo5D2tmhjCmv9b2qwnyTTHAyTY=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1603562703;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=PtHDdxvqV69jynU6psLDHZ/4CaLcvoraYH7gJ3gTopE=;
+	b=PLrxgfbPuyiJPLDJiV4KFetZtx7VjJxT7YdklUjceWxIvEykW6BU97U8XTWWIktb
+	FjhriSZAHD3RIPW8pH0fvAH9ATVZE9UjXhiAKz8bcJZ2Df5x2k4Pze6K7Jz39A8iGOR
+	FlUs8SdVS4axDxru/k0JUUEGvtNbM3L8QyXKps7M=
+Authentication-Results-Original: mx1-ph2-sp4.mta.salesforce.com
+ x-tls.subject="/C=US/ST=California/L=San Francisco/O=salesforce.com,
+ inc./OU=0:app;1:ph2;2:ph2-sp4;3:na116;4:prod/CN=na116-app1-3-ph2.ops.sfdc.net";
+ auth=pass (cipher=ECDHE-RSA-AES256-GCM-SHA384)
+Date: Sat, 24 Oct 2020 18:05:03 +0000
+From: AWS Educate Support <support@awseducate.com>
+Reply-To: support@awseducate.com
+To: "jerry.teng@utdallas.edu" <jerry.teng@utdallas.edu>
+Message-ID: <010101755bc90994-b0ad9367-450b-475a-bb42-ca3e04badb74-000000@us-west-2.amazonses.com>
+Subject: AWS Educate Application Approved
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3593_1254452138.1603562702405"
+X-SFDC-LK: 00Do0000000HnT1
+X-SFDC-User: 005o0000000MaIb
+X-Sender: postmaster@salesforce.com
+X-mail_abuse_inquiries: http://www.salesforce.com/company/abuse.jsp
+X-SFDCOrgRelay: 00Do0000000HnT1
+X-SFDC-Binding: 1WrIRBV94myi25uB
+X-SFDC-EmailCategory: workflowActionAlert
+X-SFDC-EntityId: 01W1N000000KYko
+X-SFDC-Interface: internal
+X-SFDC-Restrict: ^(.*)
+X-SFDCRelayAddr: email-smtp.us-west-2.amazonaws.com
+X-SFDCRelayPort: 25
+X-SFDCTLS: 4
+X-SES-Outgoing: 2020.10.24-54.240.27.27
+Feedback-ID: 1.us-west-2.filKV0tfKCh3kRluvxEC88YTiCJDd2QpUTCSIB00vv0=:AmazonSES
+Return-Path:
+ 010101755bc90994-b0ad9367-450b-475a-bb42-ca3e04badb74-000000@us-west-2.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2020 18:05:05.4748
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ fbfe4a77-bd54-4728-d539-08d87847560e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT044.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: fbfe4a77-bd54-4728-d539-08d87847560e
+X-MS-TrafficTypeDiagnostic: BL0PR01MB4819:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 13541230002416037397;7279280972234844794;679450357201802339;4140130765869650706;145920829431143302
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:54.240.27.27;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:a27-27.smtp-out.us-west-2.amazonses.com;PTR:a27-27.smtp-out.us-west-2.amazonses.com;CAT:NONE;SFS:(4636009)(286005)(83380400001)(79850400001)(6916009)(42882007)(336012)(33964004)(6486002)(7696005)(3480700007)(36736006)(166002)(8676002)(356005)(7596003)(3450700001)(6506007)(58800400005)(7636003)(9686003)(83170400001)(1096003)(956004)(26005)(71280400001)(130870200001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 2000:0x0|0x0|0x2000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2020 18:05:05.2190
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: fbfe4a77-bd54-4728-d539-08d87847560e
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT044.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4819
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4946565
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SWdKWFpsSm1jQmdqZHJsQVdTRWN4Y1pMRmdGa1ZHbVpDZExSU2FXSWV6MTkw?=
+ =?utf-8?B?Q05WMTBFNUdEZzNLYTNabExkWDYwdER6R1htZWdCRitkUmhoUUwvOUw5Q2FN?=
+ =?utf-8?B?R2FqQWVSc1hIRnhPQnZmVjdlSFJwYnhybmdUT0NCTTlRaXluUmw3SW43YXJ5?=
+ =?utf-8?B?Vm5xcVk3R2ovQkpTR3dycGEyWG5qVE1Bd2M0Q0tmeFRQTGNYdzg0a2d3NUlO?=
+ =?utf-8?B?YWoxbEZQSHEzamF0Nm0vazg0Y0dZa2U2dWlEM0tCRFV0YkZmeDVhZk9OZEpX?=
+ =?utf-8?B?NDI3VnM2ZjBIUkRIVEQ0T3gwTDNIY0pXSXkzY1FKb3BGTUp1ZDF4aWIvOE1s?=
+ =?utf-8?B?cGQxNFZMRU9ielNIV3FQSFhFSERZSmpqQ3Fnb1RzY2NobmhMcGx0b3N0VHZn?=
+ =?utf-8?B?UWIvd2tyRE1ZUTJqNGFCeXRjc09Tb0JhaEJVeERHajdUdUpPdk5VYmg5Z1Iy?=
+ =?utf-8?B?dHluZkltSytuVXI3VnNiajlSbWdsRGVaMWJVWTV1cWUwYU00bkkxMWhLUnM5?=
+ =?utf-8?B?SlZnSnd5NEZ6VHNFdWp3VWxJZTlLQUVaZE9hMEVaVURmdXJTUXMwenNTZ054?=
+ =?utf-8?B?SHY2T3FvOHFIT05CLzlMSWdsd1FBYkVsR25EcktvMnhHUHJRUXhsc0JzalV5?=
+ =?utf-8?B?TUY3OHBKN1hPVW1pUWtxb3FYbUlVUU53ZmVDbVhzcjRmN1lYQ1E1b1FZaFFT?=
+ =?utf-8?B?OG00M29FRWJNSE5ocERoYkFNQXpaSGRHdExmbFpVcUJvYkkwVksxd3V5V0xr?=
+ =?utf-8?B?QTNLR010eElyUU1IeHQ3aUJoMGxuVXFneUtnQlFsT0JhNHBCNTFBVkhKVFVo?=
+ =?utf-8?B?TTNIN2dKQ09JSFZNczdSbW9rZE5Nemd4bnMrV2dWd3g3UVNhaGc4ZEVqTkt0?=
+ =?utf-8?B?bXI4T1p2eHpZajBHSVhCQmcxeUd1NGlGL0RESEgzblVVL1Z2SGNnZzhGY01y?=
+ =?utf-8?B?czR0OUVqcWhScE9iM2NzY29zK1k3YWF1NWRsR3NZeGJKb0RQbCs0bVVVclkv?=
+ =?utf-8?B?dUUrKzQvZnh6MEl5WEF1TytvNzlKZzFQZmdUaXFoNFFnbllYdGRkaUNYMzE2?=
+ =?utf-8?B?eWNCZENUOFVBRS92UFNuSi9Udnd5TGo2ay9lTnByU21QOVMyaXFlRnAvQWE5?=
+ =?utf-8?B?VzVDZEVEZW9raFZOeWpONVlIUEw0WkxhdEJwSGhtK2lGS1QwTkludXgvZWh6?=
+ =?utf-8?B?a3VLaU93Wlk4RDdrZjBJdnpoaXRlUTFhazJ3L3ByNXFOQWowTGZQeW1BM2NV?=
+ =?utf-8?B?M0ZtcjY0ckNDZlhqcit3QWliQTVmT2txdi9lZ0lSbG9reHh4VjdIdzlPZWJy?=
+ =?utf-8?B?MXZpSndVOUtSZUluUzRUQno5clVwdFJVVGVCV0xyc0xDd3hoQXEveHNzTDEv?=
+ =?utf-8?B?Mmk5S204TytXSlRKUUQranptcjNxSERBVHI3WGptdGFudGltWjVGRVU1d0Z2?=
+ =?utf-8?B?ZGczWWx2bzM3dlQvWUYybFpLSzVENkl2dlJJVkQxZjZwNFNMK0M0RTVxeHQ0?=
+ =?utf-8?B?VWptQVJNZjJWejVBcHE5eFhhNVpUS0VhaVhJVzNKRFdVbWRDeDlQWE5FMmxT?=
+ =?utf-8?B?Zm9VSDlBamdVTTZ5ZUEyNGhLNnNva2xnM2NFc0t2NkZOTU1vODh0TWRxcFh1?=
+ =?utf-8?B?Z20xY3g2MkZYSEdsT0syLzR0YU4yQ1FOSE1pcWs4akJsMmdVRmVTU2cwTVFB?=
+ =?utf-8?B?Si94a00xeGM4UWpJbDUweStzUEc5QXErbkQzVSttSlpBQXcrclhnOExqSmdH?=
+ =?utf-8?B?V1QzV2IzTFF5RXNTRis5azBvd0pXNkROeURBVTdSKy9yYlhSdzg0YVhISThp?=
+ =?utf-8?B?bTg4NjJ5YStpVG9PaHZLeGl2UENLWmpqUnVyeGl0bmt5S1dYL3lnSVp0WEJD?=
+ =?utf-8?B?L0lNZEEwaW9OWklxOG82NHVCekJVVXl1NzkyamtEM3VrcHlCRTdCSzR3MmxP?=
+ =?utf-8?B?Y2s1QlBVOTBISER4VjRUR3QyUDg2dVZMVm5GaHVzd1RSUksrV2JKSlZXSjZy?=
+ =?utf-8?B?SkFReDU3bEJoTFd4a2hyZTZ5ZzJFQ25UdFNKb081d3h1OUdaN0s0TU54SmxJ?=
+ =?utf-8?Q?MzfEYN?=
+MIME-Version: 1.0
+
+------=_Part_3593_1254452138.1603562702405
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+------=_Part_3593_1254452138.1603562702405
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+
+
+Dear Jerry,
+
+
+<p>Congratulations!
+</p>
+
+
+<p>Your AWS Educate application has been approved.  As a member of the AWS Educate program, you will gain access to the benefits listed below:                    
+</p><div id="j_id0:emailTemplate:j_id3:j_id4:j_id19">
+<p>
+<span style="display: inline-block; font-weight:bold; text-decoration: underline;padding-bottom: 5px;">AWS Educate Student Portal</span>
+<br>
+The AWS Educate Student Portal is the hub for AWS Educate students around the world to find AWS content to help with classwork, connect to self-paced labs and training resources.
+</p><div id="j_id0:emailTemplate:j_id3:j_id4:j_id21">
+<p style="font-size:125%;">
+    <b><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.awseducate.com%2Fstudent%2FVerifySelfRegistration%3Ftoken%3D6223e508f9035f955182e58fa7f46f73&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076199091%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=hINW18w7IIucJT8dOGWtrfJd4W714RAu5G0TgtP%2B4QQ%3D&amp;reserved=0" originalsrc="https://www.awseducate.com/student/VerifySelfRegistration?token=6223e508f9035f955182e58fa7f46f73" shash="dqjpaXQE8QQWak95OSF4RgOw5U/SIvOuw2LdS7ksvslFA7556VHBOt40djso+zm87538aXUt52QgLZM0dPNwsNmQd0ZJ+ogA/5LUwd160xTPNcs2aGgFtxtFwZRqArHG7QErDdbu5rpFKPJXhSkZEk/FmaamIdwwR91yQ/5RoMo=">
+    Click here</a> to set your password and log in to the AWS Educate Student Portal. After logging in, click “AWS Account” at the top of the page to access your AWS Educate Starter Account. Use this feature to gain access to the AWS Console and resources, and start building in the cloud.</b>
+</p>
+<p style="padding-bottom:4px;">
+    Bookmark the AWS Educate Student Portal for easy access, or <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.awseducate.com%2Fsignin&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076199091%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=Y7PsogCCRPYd6td9f5LsbXwOhtpQWZVtNJn%2FO1XtgAw%3D&amp;reserved=0" originalsrc="https://www.awseducate.com/signin" shash="HQkj67LAa09SJmCYXw1Hgf9VmJ3pV5/BUgLFuWmrQi+T9Ou7lbP1DTDlkTxBpyEUmMqoK1ZzumKN0HpOgGcmjJUqOB1jJwSI6RKSstbzUEa/nHlyi9J8lTfKOtoxvZGVXiSScHaPL03EgdHr53lK4x4b3kOEiNk0fvaavUMGnZg=">
+    click here</a> to sign in directly. 
+</p>
+<p>You can access a video walk-through of the AWS Educate Student portal <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fyoutu.be%2FX36oOsjyoXA&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076209079%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=QqtfydhZFsON4Z5%2FIz0W6TQDX%2FsDGu2%2BEFoXF1KIWno%3D&amp;reserved=0" originalsrc="https://youtu.be/X36oOsjyoXA" shash="yK0nftptqV49czrO2jXrMYKkiMMjqij1fbc96knCasL8R9IlD2TrFoqHUn6bd5CasjMdflKTycuetR7sr5wt0jeIpaYrcigZQzgrOF6lZl9851baQpScK8rayzUOjZnHZFBNIDuLKUrG212a3/uH0zb2dJVy0ceyhgJh1xKin54=">here</a>.<br></p></div></div><div id="j_id0:emailTemplate:j_id3:j_id4:j_id35">
+<p>
+<span style="display: inline-block; font-weight:bold; text-decoration: underline;padding-bottom: 5px;">Free AWS Essentials Training</span>
+<br>To access our foundational AWS Cloud Practitioner Essentials online learning class for free and find other self-paced labs, you must have either and AWS account or an Amazon ID. 
+</p><span id="j_id0:emailTemplate:j_id3:j_id4:j_id37">
+    <ul><li>If you have an AWS account, sign in and  <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.aws.training%2FUserPreferences%2FRegistration%3Ftoken%3DE5JpsH1ASIO69L7JKoiocw-E474LM2LRC1S&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076209079%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=V29h5uNr2gL3eNlfulvfCHoL98X1capYTtBwoXYTInY%3D&amp;reserved=0" originalsrc="https://www.aws.training/UserPreferences/Registration?token=E5JpsH1ASIO69L7JKoiocw-E474LM2LRC1S" shash="HjyM2xGjCxnWvkYG+CjAMGBg5nFyJAPdEKVO2mg4rG4CPQx9J2Q48Nprjv0m3XGLIDvGbdKzP8DQ9zIQgu+MFPpguyGI07a7TVpbYRTTUT5KB1I4Soa1CRqQQFuHpsVTH2yVthzE3vHdzuf1TFTQdbMSIrThF6XdYSM3oFCB8co=">click here</a> to receive these benefits.  
+    </li><li>
+    If you do not have an AWS account, <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.aws.training%2FUserPreferences%2FRegistration%3Ftoken%3DE5JpsH1ASIO69L7JKoiocw-E474LM2LRC1S&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076219075%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=cT93dBioSFfXjU7RwC0CODA84AtRxp4QkvDyTJ2Zxvw%3D&amp;reserved=0" originalsrc="https://www.aws.training/UserPreferences/Registration?token=E5JpsH1ASIO69L7JKoiocw-E474LM2LRC1S" shash="pMvsRgK6OFZwMbflxYSHYxb5ILmPmoGc7DNywE0YC+CNRknhTOkbs27SXqEdcCmCg0nI/kufZJEeP5QuG3LK5jwf2g4UrtbnpNZaXKwGx16s9tArrgfxJXARh8xnvYTpneE3weDsTv6LfeGhQvBK7bP7yTb0kOQecW26GfFb5KY=">click here</a> and follow the instructions to create an Amazon ID to access these benefits.  
+    </li></ul></span>
+<p>
+Once you access the Training and Certification portal, click &quot;Learning Library&quot; and search for &quot;AWS Cloud Practitioner Essentials&quot; to easily locate and enroll in AWS Cloud Practitioner Essentials on-line training. You can access AWS training any time after setting up your account by clicking <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.aws.training%2F&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7Cfbfe4a77bd544728d53908d87847560e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391595076219075%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=aGQrKS7M6LpIz%2FvH%2Fmk%2FG3IrTEiWLzBKIQryKHLKVQw%3D&amp;reserved=0" originalsrc="https://www.aws.training/" shash="Olqi+BfmknEkjIYDyGTPrxaj1MTrQJzgEWOLmMDxN5ozglWTpk2aDgUuSrX1hA3e1FEXjDZF2uxqRRjxjb9vLZwk7hxPFWjRj7DN7lohes7r1qTxqsxhNe8Kq3xAC5KLerAlyXw+YVHpGKKDK7NNx9KwO7fhaTHrdJjfeGRbMco=">here</a>.
+</p></div>
+
+
+<p>Thank you again for participating in AWS Educate and we hope you enjoy the program!
+</p>
+<p>
+Good luck with your continued studies,
+</p>
+The AWS Educate Team
+</body>
+</html>
+------=_Part_3593_1254452138.1603562702405--

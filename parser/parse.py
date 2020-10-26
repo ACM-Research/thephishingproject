@@ -30,11 +30,20 @@ def main(dir):
         with open(os.path.join(dir, filename), 'r') as file:
             emails[filename] = {}
             mail = mailparser.parse_from_file_obj(file)
-            body = BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' ')
+            body = re.sub('--- mail_boundary ---.*', ' ', BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' '), flags=re.DOTALL)
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
+            spf = re.findall('spf=(\S*)', mail.headers['Authentication-Results'])
+            dkim = re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])
+            dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
+
             emails[filename] = {
+                'hops': mail.received[-1]['hop'],
+                'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
+                'spf': spf[0] if len(spf) else None,
+                'dkim': dkim[0] if len(dkim) else None,
+                'dmarc': dmarc[0] if len(dmarc) else None,
                 'subject': mail.subject,
                 'from': mail.from_[0][1],
                 'to': [tup[1] for tup in mail.to],
