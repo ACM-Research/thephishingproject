@@ -10,10 +10,26 @@ import textstat
 import nltk
 
 # determine if we want to save the email body text
-save_body = True
+csv_file = 'output.csv'
+save_body = False
 
 # make sure we have punkt downloaded
 nltk.download('punkt', quiet=True)
+
+def flatten_json(y):
+    out = {}
+
+    def flatten(x, name=''):
+        if type(x) is dict:
+            for a in x:
+                flatten(x[a], name + a + '.')
+        elif type(x) is list:
+            out[name[:-1]] = ','.join([str(data) for data in x])
+        else:
+            out[name[:-1]] = x
+
+    flatten(y)
+    return out
 
 def main(dir):
     checker = language_tool_python.LanguageTool('en-US')
@@ -74,6 +90,18 @@ def main(dir):
     print(
         json.dumps(emails, indent=2)
     )
+
+    # print headers using first email
+    column_headers = list(flatten_json(emails[list(emails.keys())[0]]).keys())
+
+
+    f = open(csv_file, 'w')
+
+    f.write(',{}\n'.format(','.join(column_headers)))
+    
+    for email in emails.keys():
+        flattened_email = flatten_json(emails[email])
+        f.write('{},{}\n'.format('"'+email+'"', ','.join(['"'+str(flattened_email[column_header])+'"' for column_header in column_headers])))
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
