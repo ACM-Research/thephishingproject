@@ -23,7 +23,8 @@ def main(dir: str):
     for filename in os.listdir(dir):
         if not filename.endswith('.eml'):
             continue
-                print()
+                
+        print()
         print('[INFO] Processing {}...'.format(filename))
 
         with open(os.path.join(dir, filename), 'r') as file:
