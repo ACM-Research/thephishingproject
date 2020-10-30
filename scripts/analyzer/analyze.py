@@ -10,38 +10,22 @@ import textstat
 import nltk
 
 # determine if we want to save the email body text
-csv_file = 'output.csv'
 save_body = False
 
 # make sure we have punkt downloaded
 nltk.download('punkt', quiet=True)
 
-def flatten_json(y):
-    out = {}
 
-    def flatten(x, name=''):
-        if type(x) is dict:
-            for a in x:
-                flatten(x[a], name + a + '.')
-        elif type(x) is list:
-            out[name[:-1]] = ','.join([str(data) for data in x])
-        else:
-            out[name[:-1]] = x
 
-    flatten(y)
-    return out
-
-def main(dir):
+def main(dir: str):
     checker = language_tool_python.LanguageTool('en-US')
-
     emails = {}
 
     for filename in os.listdir(dir):
         if not filename.endswith('.eml'):
             continue
         
-        # print to stderr to support output redirection
-        print('[INFO] Processing {}...'.format(filename), file=sys.stderr)
+        print('[INFO] Processing {}...'.format(filename))
 
         with open(os.path.join(dir, filename), 'r') as file:
             emails[filename] = {}
@@ -87,21 +71,48 @@ def main(dir):
             if save_body:
                 emails[filename]['body'] = body
 
-    print(
-        json.dumps(emails, indent=2)
-    )
+    ## quit if nothing found ##
+    if not emails:
+        print('[WARNING] No files were found in "{}"!'.format(dir))
+        return
 
-    # print headers using first email
+    ## output json ##
+    with open(os.path.join(dir, 'analysis.json'), 'w') as jsonFile:
+        json.dump(emails, jsonFile, indent=2)
+
+    ## build and output csv ##
+
+    # generate and output headers using first email
     column_headers = list(flatten_json(emails[list(emails.keys())[0]]).keys())
-
-
-    f = open(csv_file, 'w')
-
-    f.write(',{}\n'.format(','.join(column_headers)))
+    csvFile = open(os.path.join(dir, 'analysis.csv'), 'w')
+    csvFile.write(',{}\n'.format(','.join(column_headers)))
     
+    # generate and output one line per email
     for email in emails.keys():
+        # flatten json to 1 layer deep
         flattened_email = flatten_json(emails[email])
-        f.write('{},{}\n'.format('"'+email+'"', ','.join(['"'+str(flattened_email[column_header])+'"' for column_header in column_headers])))
+        # generate the values for this row
+        csv_values = ['"'+str(flattened_email[column_header])+'"' for column_header in column_headers]
+        # add email name and join w/ commas, then write out
+        csvFile.write('{},{}\n'.format('"'+email+'"', ','.join(csv_values)))
+
+    csvFile.close()
+
+# flatten json into single layer by concatenating keys with '.'
+def flatten_json(y):
+    out = {}
+
+    def flatten(x, name=''):
+        if type(x) is dict:
+            for a in x:
+                flatten(x[a], name + a + '.')
+        elif type(x) is list:
+            out[name[:-1]] = ','.join([str(data) for data in x])
+        else:
+            out[name[:-1]] = x
+
+    flatten(y)
+    return out
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

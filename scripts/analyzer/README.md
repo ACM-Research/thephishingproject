@@ -7,16 +7,8 @@ Example analyzer using mail-parser, beautifulsoup4, textblob. Automatically scan
 Assuming `python` points to Python 3.x:  
 ```sh
 python -m pip install -r requirements.txt
-python analyze.py
+python analyze.py [directory]
 ```
 
-## Options
-Read `*.eml` files from another directory
-```sh
-python parse.py [directory]
-```
-
-Redirecting output to file  
-```sh
-python parse.py > [outfile]
-```
+This script will read all .eml files in the specified directory and create `analysis.json` and `analysis.csv` in that directory.  
+If no directory is specified, the current working directory will be used.  
