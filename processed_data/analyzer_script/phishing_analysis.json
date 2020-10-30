@@ -1,5 +1,5 @@
 {
-  "Re- Human Resources - Internships-Student ( Personal Assistant )...eml": {
+  "Re: Human Resources - Internships/Student ( Personal Assistant )..": {
     "hops": 6,
     "totalDelay": 0.1,
     "spf": "pass",
@@ -10,12 +10,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -32,7 +33,7 @@
       "subjectivity": 0.0
     }
   },
-  "Re- Job and Internship Offer- Student Personal Assistant...eml": {
+  "Re: Job and Internship Offer/ Student Personal Assistant..": {
     "hops": 6,
     "totalDelay": 0.13333333333333333,
     "spf": "pass",
@@ -43,12 +44,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -65,7 +67,7 @@
       "subjectivity": 0.0
     }
   },
-  "JOB OFFER[1].eml": {
+  "JOB OFFER": {
     "hops": 6,
     "totalDelay": 0.11666666666666667,
     "spf": "pass",
@@ -85,6 +87,7 @@
       "erica.colmenero@utdallas.edu",
       "erica.colston@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "DHHS EMPLOYMENTS.pdf"
     ],
@@ -107,7 +110,7 @@
       "subjectivity": 0.0
     }
   },
-  "PART TIME JOB[1].eml": {
+  "PART TIME JOB": {
     "hops": 6,
     "totalDelay": 0.2,
     "spf": "neutral",
@@ -118,10 +121,11 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 9,
     "counts": {
-      "characterCount": 625,
+      "characterCount": 623,
       "wordCount": 68,
       "sentenceCount": 1
     },
@@ -129,8 +133,8 @@
       "flesch_kincaid": 36.9,
       "gunning_fog": 34.26,
       "smog_index": 0.0,
-      "automated_readability_index": 50.7,
-      "coleman_liau_index": 28.51,
+      "automated_readability_index": 50.6,
+      "coleman_liau_index": 28.45,
       "linsear_write": 12.75
     },
     "sentiment": {
@@ -138,7 +142,7 @@
       "subjectivity": 0.5375
     }
   },
-  "Re- Apply - Internships-Student Personal Assistant.eml": {
+  "Re: Apply - Internships/Student Personal Assistant": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "pass",
@@ -149,12 +153,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -171,7 +176,7 @@
       "subjectivity": 0.0
     }
   },
-  "EMPLOYMENT OPPORTUNITY.eml": {
+  "EMPLOYMENT OPPORTUNITY": {
     "hops": 6,
     "totalDelay": 0.21666666666666667,
     "spf": "pass",
@@ -190,6 +195,9 @@
       "eric.ye@utdallas.edu",
       "eric.zhang@utdallas.edu",
       "nicholas.allen@utdallas.edu"
+    ],
+    "replyTo": [
+      "officialsupervisor662@gmail.com"
     ],
     "attachments": [
       "I am Paul Harrison I work as a clinical counselor for the department...pdf"
@@ -213,7 +221,7 @@
       "subjectivity": 0.0
     }
   },
-  "Re- Internships-Student Personal Assistant.eml": {
+  "Re: Internships/Student Personal Assistant": {
     "hops": 6,
     "totalDelay": 0.1,
     "spf": "pass",
@@ -224,12 +232,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -246,7 +255,7 @@
       "subjectivity": 0.0
     }
   },
-  "Personal-Logistics Assistant Needed Urgently!!!.eml": {
+  "Personal/Logistics Assistant Needed Urgently!!!": {
     "hops": 3,
     "totalDelay": 0.016666666666666666,
     "spf": null,
@@ -257,10 +266,13 @@
     "to": [
       ""
     ],
+    "replyTo": [
+      "w_binterior@hotmail.com"
+    ],
     "attachments": [],
     "grammarErrors": 2,
     "counts": {
-      "characterCount": 548,
+      "characterCount": 546,
       "wordCount": 72,
       "sentenceCount": 1
     },
@@ -268,8 +280,8 @@
       "flesch_kincaid": 36.1,
       "gunning_fog": 37.13,
       "smog_index": 0.0,
-      "automated_readability_index": 45.7,
-      "coleman_liau_index": 20.5,
+      "automated_readability_index": 45.6,
+      "coleman_liau_index": 20.39,
       "linsear_write": 27.75
     },
     "sentiment": {
@@ -277,7 +289,7 @@
       "subjectivity": 0.3625
     }
   },
-  "Part-Time Assistant Offer.eml": {
+  "Part-Time Assistant Offer": {
     "hops": 5,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
@@ -290,12 +302,13 @@
       "esashton@live.unc.edu",
       "ebacheld@email.unc.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "School Prg.txt"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -312,7 +325,7 @@
       "subjectivity": 0.0
     }
   },
-  "Re- Jobs, Internship-Employment.eml": {
+  "Re: Jobs, Internship/Employment": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "pass",
@@ -323,12 +336,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -345,7 +359,7 @@
       "subjectivity": 0.0
     }
   },
-  "Job Offer.eml": {
+  "Job Offer": {
     "hops": 5,
     "totalDelay": 0.05,
     "spf": "pass",
@@ -356,19 +370,20 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [],
-    "grammarErrors": 3,
+    "grammarErrors": 4,
     "counts": {
-      "characterCount": 235,
+      "characterCount": 233,
       "wordCount": 38,
       "sentenceCount": 3
     },
     "readability": {
-      "flesch_kincaid": 8.2,
+      "flesch_kincaid": 7.1,
       "gunning_fog": 9.29,
       "smog_index": 10.5,
-      "automated_readability_index": 9.2,
-      "coleman_liau_index": 10.83,
+      "automated_readability_index": 9.1,
+      "coleman_liau_index": 10.66,
       "linsear_write": 7.0
     },
     "sentiment": {
@@ -376,7 +391,7 @@
       "subjectivity": 0.6666666666666666
     }
   },
-  "PART TIME JOB OPPORTUNITY FOR STUDENTS.eml": {
+  "PART TIME JOB OPPORTUNITY FOR STUDENTS": {
     "hops": 6,
     "totalDelay": 0.15,
     "spf": "pass",
@@ -396,6 +411,7 @@
       "Haozhao.Zhang@utdallas.edu",
       "Heng.Zhang2@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "EMPLOYMENT!!! (PART TIME JOB OPPORTUNITY FOR STUDENTS)...pdf"
     ],
@@ -418,7 +434,7 @@
       "subjectivity": 0.0
     }
   },
-  "UTDALLAS PART TIME JOB OFFER[1].eml": {
+  "UTDALLAS PART TIME JOB OFFER": {
     "hops": 6,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
@@ -429,19 +445,20 @@
     "to": [
       "eric.zhang@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 4,
     "counts": {
-      "characterCount": 704,
+      "characterCount": 702,
       "wordCount": 109,
       "sentenceCount": 4
     },
     "readability": {
-      "flesch_kincaid": 15.1,
+      "flesch_kincaid": 13.9,
       "gunning_fog": 16.06,
       "smog_index": 14.6,
       "automated_readability_index": 18.0,
-      "coleman_liau_index": 14.1,
+      "coleman_liau_index": 14.05,
       "linsear_write": 15.75
     },
     "sentiment": {
@@ -449,7 +466,7 @@
       "subjectivity": 0.6166666666666667
     }
   },
-  "University of Texas  Job employment Opportunity For Student Program 2020.eml": {
+  "University of Texas  Job employment Opportunity For Student Program\n 2020": {
     "hops": 6,
     "totalDelay": 0.1,
     "spf": "pass",
@@ -474,21 +491,22 @@
       "nathaniel.boos@utdallas.edu",
       "nathaniel.boyan@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "Employment Details Placement.txt"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 50,
+      "characterCount": 48,
       "wordCount": 8,
       "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 8.8,
+      "flesch_kincaid": 5.2,
       "gunning_fog": 13.2,
       "smog_index": 0.0,
-      "automated_readability_index": 7.3,
-      "coleman_liau_index": 10.8,
+      "automated_readability_index": 6.7,
+      "coleman_liau_index": 10.11,
       "linsear_write": 5.0
     },
     "sentiment": {
@@ -496,7 +514,7 @@
       "subjectivity": 0.5
     }
   },
-  "attach.eml": {
+  "": {
     "hops": 6,
     "totalDelay": 0.11666666666666667,
     "spf": "pass",
@@ -507,12 +525,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "PastedImage-1.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -529,7 +548,7 @@
       "subjectivity": 0.0
     }
   },
-  "Work Study-Personal Assistant.eml": {
+  "Work Study/Personal Assistant": {
     "hops": 5,
     "totalDelay": 0.05,
     "spf": "pass",
@@ -543,12 +562,13 @@
       "yli478@ucsc.edu",
       "Marwa.Abdelkarim@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "School Prg.txt"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -565,7 +585,7 @@
       "subjectivity": 0.0
     }
   },
-  "Flexible Job Opportunity [1].eml": {
+  "Flexible Job Opportunity": {
     "hops": 3,
     "totalDelay": 0.25,
     "spf": null,
@@ -576,10 +596,11 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 16,
     "counts": {
-      "characterCount": 1717,
+      "characterCount": 1715,
       "wordCount": 270,
       "sentenceCount": 9
     },
@@ -596,7 +617,7 @@
       "subjectivity": 0.4887755102040816
     }
   },
-  "We are looking for a middleman.eml": {
+  "We are looking for a middleman": {
     "hops": 5,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
@@ -605,10 +626,11 @@
     "subject": "We are looking for a middleman",
     "from": "brendareece2000@gmail.com",
     "to": [],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 3,
     "counts": {
-      "characterCount": 1398,
+      "characterCount": 1396,
       "wordCount": 252,
       "sentenceCount": 9
     },
@@ -625,7 +647,7 @@
       "subjectivity": 0.4318181818181818
     }
   },
-  "EMPLOYMENT!!! (PART TIME JOB OPPORTUNITY FOR STUDENTS).eml": {
+  "EMPLOYMENT!!! (PART TIME JOB OPPORTUNITY FOR STUDENTS)": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "pass",
@@ -645,6 +667,7 @@
       "Grace.Chang@utdallas.edu",
       "Grace.Chen@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [
       "EMPLOYMENT!!! (PART TIME JOB OPPORTUNITY FOR STUDENTS) (1).pdf"
     ],
@@ -667,38 +690,7 @@
       "subjectivity": 0.0
     }
   },
-  "PART TIME JOB.eml": {
-    "hops": 6,
-    "totalDelay": 3.15,
-    "spf": "neutral",
-    "dkim": "none",
-    "dmarc": "fail",
-    "subject": "PART TIME JOB",
-    "from": "jdowling@utdallas.edu",
-    "to": [
-      ""
-    ],
-    "attachments": [],
-    "grammarErrors": 9,
-    "counts": {
-      "characterCount": 625,
-      "wordCount": 68,
-      "sentenceCount": 1
-    },
-    "readability": {
-      "flesch_kincaid": 36.9,
-      "gunning_fog": 34.26,
-      "smog_index": 0.0,
-      "automated_readability_index": 50.7,
-      "coleman_liau_index": 28.51,
-      "linsear_write": 12.75
-    },
-    "sentiment": {
-      "polarity": 0.2875,
-      "subjectivity": 0.5375
-    }
-  },
-  "Health Care Internship Remote Personal Assistant Offer for Student.eml": {
+  "Health Care Internship Remote Personal Assistant Offer for Student": {
     "hops": 6,
     "totalDelay": 0.13333333333333333,
     "spf": "pass",
@@ -709,21 +701,22 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Office for Human Research Protections.txt"
     ],
     "grammarErrors": 1,
     "counts": {
-      "characterCount": 24,
+      "characterCount": 22,
       "wordCount": 3,
       "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 17.4,
+      "flesch_kincaid": 9.2,
       "gunning_fog": 14.53,
       "smog_index": 0.0,
-      "automated_readability_index": 13.0,
-      "coleman_liau_index": 15.03,
+      "automated_readability_index": 11.5,
+      "coleman_liau_index": 13.12,
       "linsear_write": 1.5
     },
     "sentiment": {
@@ -731,7 +724,7 @@
       "subjectivity": 0.9
     }
   },
-  "Re- Re- Internships-Student  \u201d Personal Assistant\u201d.eml": {
+  "Re: Re: Internships/Student  \u201d Personal Assistant\u201d": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "pass",
@@ -742,12 +735,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Untitled.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -764,7 +758,7 @@
       "subjectivity": 0.0
     }
   },
-  "PART TIME JOB OPPORTUNITY.eml": {
+  "PART TIME JOB OPPORTUNITY": {
     "hops": 6,
     "totalDelay": 0.06666666666666667,
     "spf": "softfail",
@@ -775,10 +769,11 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 9,
     "counts": {
-      "characterCount": 659,
+      "characterCount": 657,
       "wordCount": 82,
       "sentenceCount": 1
     },
@@ -786,8 +781,8 @@
       "flesch_kincaid": 38.8,
       "gunning_fog": 42.07,
       "smog_index": 0.0,
-      "automated_readability_index": 53.5,
-      "coleman_liau_index": 23.34,
+      "automated_readability_index": 53.4,
+      "coleman_liau_index": 23.29,
       "linsear_write": 21.833333333333332
     },
     "sentiment": {
@@ -795,7 +790,7 @@
       "subjectivity": 0.5916666666666667
     }
   },
-  "Internship message.eml": {
+  "Internship message": {
     "hops": 6,
     "totalDelay": 0.11666666666666667,
     "spf": "pass",
@@ -806,12 +801,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "PastedImage-1.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },
@@ -828,38 +824,7 @@
       "subjectivity": 0.0
     }
   },
-  "Flexible Job Opportunity .eml": {
-    "hops": 3,
-    "totalDelay": 0.2833333333333333,
-    "spf": null,
-    "dkim": "none",
-    "dmarc": "none",
-    "subject": "Flexible Job Opportunity",
-    "from": "Nwasinachi.Ezeji@UTDallas.edu",
-    "to": [
-      ""
-    ],
-    "attachments": [],
-    "grammarErrors": 16,
-    "counts": {
-      "characterCount": 1717,
-      "wordCount": 270,
-      "sentenceCount": 9
-    },
-    "readability": {
-      "flesch_kincaid": 15.0,
-      "gunning_fog": 16.44,
-      "smog_index": 15.0,
-      "automated_readability_index": 18.8,
-      "coleman_liau_index": 13.24,
-      "linsear_write": 11.6
-    },
-    "sentiment": {
-      "polarity": 0.15255102040816326,
-      "subjectivity": 0.4887755102040816
-    }
-  },
-  "Free Job Opening.eml": {
+  "Free Job Opening": {
     "hops": 5,
     "totalDelay": 0.1,
     "spf": "pass",
@@ -889,10 +854,13 @@
       "Shivy.Agadi@utdallas.edu",
       "Bishoy.Agaiby@utdallas.edu"
     ],
+    "replyTo": [
+      "kcontreras101997@gmail.com"
+    ],
     "attachments": [],
     "grammarErrors": 2,
     "counts": {
-      "characterCount": 639,
+      "characterCount": 637,
       "wordCount": 104,
       "sentenceCount": 3
     },
@@ -901,7 +869,7 @@
       "gunning_fog": 18.5,
       "smog_index": 15.9,
       "automated_readability_index": 20.3,
-      "coleman_liau_index": 12.43,
+      "coleman_liau_index": 12.37,
       "linsear_write": 16.0
     },
     "sentiment": {
@@ -909,38 +877,7 @@
       "subjectivity": 0.440934065934066
     }
   },
-  "UTDALLAS PART TIME JOB OFFER.eml": {
-    "hops": 6,
-    "totalDelay": 0.1,
-    "spf": "pass",
-    "dkim": "pass",
-    "dmarc": "pass",
-    "subject": "UTDALLAS PART TIME JOB OFFER",
-    "from": "gerarouche@gmail.com",
-    "to": [
-      "eric.zhang@utdallas.edu"
-    ],
-    "attachments": [],
-    "grammarErrors": 5,
-    "counts": {
-      "characterCount": 704,
-      "wordCount": 109,
-      "sentenceCount": 4
-    },
-    "readability": {
-      "flesch_kincaid": 15.1,
-      "gunning_fog": 16.06,
-      "smog_index": 14.6,
-      "automated_readability_index": 18.0,
-      "coleman_liau_index": 14.1,
-      "linsear_write": 15.75
-    },
-    "sentiment": {
-      "polarity": 0.44393939393939397,
-      "subjectivity": 0.6166666666666667
-    }
-  },
-  "WORK AT YOUR LOCATION AT PANDEMIC PERIOD.eml": {
+  "WORK AT YOUR LOCATION AT PANDEMIC PERIOD": {
     "hops": 6,
     "totalDelay": 0.11666666666666667,
     "spf": "pass",
@@ -950,6 +887,9 @@
     "from": "myltd7@gmail.com",
     "to": [
       ""
+    ],
+    "replyTo": [
+      "richardfrank001@gmail.com"
     ],
     "attachments": [],
     "grammarErrors": 4,
@@ -971,7 +911,7 @@
       "subjectivity": 0.0
     }
   },
-  "*- UTD Student 2020 Internship Work C7590 (PA) Personal Assistant $620 weekly;*-\".eml": {
+  "*: UTD Student 2020 Internship Work C7590 (PA) Personal Assistant $620 weekly;*-\"": {
     "hops": 6,
     "totalDelay": 0.1,
     "spf": "pass",
@@ -982,60 +922,9 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "Internship 2020s.png"
-    ],
-    "grammarErrors": 0,
-    "counts": {
-      "characterCount": 1,
-      "wordCount": 0,
-      "sentenceCount": 1
-    },
-    "readability": {
-      "flesch_kincaid": -15.7,
-      "gunning_fog": 0.0,
-      "smog_index": 0.0,
-      "automated_readability_index": 0.0,
-      "coleman_liau_index": -15.81,
-      "linsear_write": -1.0
-    },
-    "sentiment": {
-      "polarity": 0.0,
-      "subjectivity": 0.0
-    }
-  },
-  "Job Offer[2].eml": {
-    "hops": 6,
-    "totalDelay": 0.18333333333333332,
-    "spf": "pass",
-    "dkim": "pass",
-    "dmarc": "pass",
-    "subject": "Job Offer",
-    "from": "mcyinks011@gmail.com",
-    "to": [
-      "david.zhang@utdallas.edu",
-      "edward.zhang@utdallas.edu",
-      "elaine.zhang@utdallas.edu",
-      "emma.zhang@utdallas.edu",
-      "eric.zhang@utdallas.edu",
-      "fan.zhang5@utdallas.edu",
-      "gloria.zhang@utdallas.edu",
-      "hantao.zhang2@utdallas.edu",
-      "hxz170011@utdallas.edu",
-      "haoyue.zhang@utdallas.edu",
-      "haozhao.zhang@utdallas.edu",
-      "heng.zhang2@utdallas.edu",
-      "hong.zhang@utdallas.edu",
-      "hxz150430@utdallas.edu",
-      "ivan.zhang@utdallas.edu",
-      "jwz180000@utdallas.edu",
-      "jennifer.zhang@utdallas.edu",
-      "jeremiah.zhang@utdallas.edu",
-      "jiahao.zhang1@utdallas.edu",
-      "jinglun.zhang@utdallas.edu"
-    ],
-    "attachments": [
-      "I am Allen Szalno Ashley I work as a clinical counselor for the department\u2026.pdf"
     ],
     "grammarErrors": 0,
     "counts": {
@@ -1056,7 +945,7 @@
       "subjectivity": 0.0
     }
   },
-  "UTD STUDENT EMPOWERMENT PART TIME JOB OPPORTUNITY.eml": {
+  "UTD STUDENT EMPOWERMENT PART TIME JOB OPPORTUNITY": {
     "hops": 5,
     "totalDelay": 0.05,
     "spf": "pass",
@@ -1067,10 +956,11 @@
     "to": [
       "Haozhao.Zhang@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 6,
     "counts": {
-      "characterCount": 693,
+      "characterCount": 691,
       "wordCount": 109,
       "sentenceCount": 4
     },
@@ -1078,8 +968,8 @@
       "flesch_kincaid": 15.1,
       "gunning_fog": 16.06,
       "smog_index": 14.6,
-      "automated_readability_index": 17.5,
-      "coleman_liau_index": 13.52,
+      "automated_readability_index": 17.4,
+      "coleman_liau_index": 13.47,
       "linsear_write": 15.75
     },
     "sentiment": {
@@ -1087,7 +977,7 @@
       "subjectivity": 0.6166666666666667
     }
   },
-  "*- Student Internship - is B8117 Completed . Slot- (PA) Personal Assistant $620 weekly;*.eml": {
+  "*: Student Internship - is B8117 Completed . Slot: (PA) Personal Assistant $620 weekly;*": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "pass",
@@ -1098,12 +988,13 @@
     "to": [
       ""
     ],
+    "replyTo": [],
     "attachments": [
       "INTERNSHIP 2020_2022.png"
     ],
     "grammarErrors": 0,
     "counts": {
-      "characterCount": 1,
+      "characterCount": 0,
       "wordCount": 0,
       "sentenceCount": 1
     },

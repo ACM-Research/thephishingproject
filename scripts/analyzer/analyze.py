@@ -3,7 +3,6 @@ import sys
 import re
 import json
 import mailparser
-from bs4 import BeautifulSoup
 from textblob import TextBlob
 import language_tool_python
 import textstat
@@ -24,13 +23,13 @@ def main(dir: str):
     for filename in os.listdir(dir):
         if not filename.endswith('.eml'):
             continue
-        
+                print()
         print('[INFO] Processing {}...'.format(filename))
 
         with open(os.path.join(dir, filename), 'r') as file:
-            emails[filename] = {}
             mail = mailparser.parse_from_file_obj(file)
-            body = re.sub('--- mail_boundary ---.*', ' ', BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' '), flags=re.DOTALL)
+            #body = re.sub('--- mail_boundary ---.*', ' ', BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' '), flags=re.DOTALL)
+            body = mail.text_plain[0] if mail.text_plain else ''
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
@@ -38,7 +37,11 @@ def main(dir: str):
             dkim = re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])
             dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
 
-            emails[filename] = {
+            if mail.subject in emails:
+                print('[WARNING] {} seems to be a duplicate! Skipping...'.format(filename))
+                continue
+
+            emails[mail.subject] = {
                 'hops': mail.received[-1]['hop'],
                 'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
                 'spf': spf[0] if len(spf) else None,
@@ -47,6 +50,7 @@ def main(dir: str):
                 'subject': mail.subject,
                 'from': mail.from_[0][1],
                 'to': [tup[1] for tup in mail.to],
+                'replyTo': [tup[1] for tup in mail.reply_to],
                 'attachments': [x['filename'] for x in mail.attachments],
                 'grammarErrors': len(grammarErrors),
                 'counts': {

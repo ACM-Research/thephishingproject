@@ -1,5 +1,5 @@
 {
-  "\ud83d\udd0e Discover your next career move.eml": {
+  "\ud83d\udd0e Discover your next career move": {
     "hops": 5,
     "totalDelay": 8.033333333333333,
     "spf": "pass",
@@ -10,10 +10,13 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "handshake@g.joinhandshake.com"
+    ],
     "attachments": [],
     "grammarErrors": 2,
     "counts": {
-      "characterCount": 660,
+      "characterCount": 658,
       "wordCount": 102,
       "sentenceCount": 4
     },
@@ -22,7 +25,7 @@
       "gunning_fog": 14.51,
       "smog_index": 13.4,
       "automated_readability_index": 16.6,
-      "coleman_liau_index": 13.12,
+      "coleman_liau_index": 13.06,
       "linsear_write": 12.0
     },
     "sentiment": {
@@ -30,7 +33,7 @@
       "subjectivity": 0.4547619047619047
     }
   },
-  "Today's ACM Event- NVIDIA.eml": {
+  "Today's ACM Event: NVIDIA": {
     "hops": 5,
     "totalDelay": 3.55,
     "spf": "pass",
@@ -41,10 +44,13 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "comet.acm@gmail.com"
+    ],
     "attachments": [],
     "grammarErrors": 8,
     "counts": {
-      "characterCount": 1367,
+      "characterCount": 1365,
       "wordCount": 220,
       "sentenceCount": 7
     },
@@ -52,7 +58,7 @@
       "flesch_kincaid": 14.4,
       "gunning_fog": 16.56,
       "smog_index": 14.3,
-      "automated_readability_index": 19.0,
+      "automated_readability_index": 18.9,
       "coleman_liau_index": 12.54,
       "linsear_write": 10.666666666666666
     },
@@ -61,7 +67,7 @@
       "subjectivity": 0.5023809523809525
     }
   },
-  "[ecs.cs.ug] FY21 MSFC Pathways Intern Job Vacancy Announcement (opening September 14-16, 2020).eml": {
+  "[ecs.cs.ug] FY21 MSFC Pathways Intern Job Vacancy Announcement\n (opening September 14-16, 2020)": {
     "hops": 10,
     "totalDelay": 2.0166666666666666,
     "spf": "softfail",
@@ -73,29 +79,32 @@
       "ecs.cs.ug@utdallas.edu",
       "ecs.se.ug@utdallas.edu"
     ],
+    "replyTo": [
+      "jeyv@utdallas.edu"
+    ],
     "attachments": [
       "image001.jpg"
     ],
-    "grammarErrors": 17,
+    "grammarErrors": 16,
     "counts": {
-      "characterCount": 2976,
-      "wordCount": 405,
+      "characterCount": 3052,
+      "wordCount": 408,
       "sentenceCount": 6
     },
     "readability": {
-      "flesch_kincaid": 32.0,
-      "gunning_fog": 32.43,
-      "smog_index": 25.4,
-      "automated_readability_index": 42.3,
-      "coleman_liau_index": 18.53,
-      "linsear_write": 16.25
+      "flesch_kincaid": 32.2,
+      "gunning_fog": 32.59,
+      "smog_index": 25.7,
+      "automated_readability_index": 43.2,
+      "coleman_liau_index": 19.11,
+      "linsear_write": 16.75
     },
     "sentiment": {
       "polarity": 0.11666666666666667,
       "subjectivity": 0.3315476190476191
     }
   },
-  "ACM Dev Applications Open! Win an Amazon Giftcard.eml": {
+  "ACM Dev Applications Open! Win an Amazon Giftcard": {
     "hops": 5,
     "totalDelay": 0.08333333333333333,
     "spf": "pass",
@@ -106,10 +115,13 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "contact@acmutd.co"
+    ],
     "attachments": [],
     "grammarErrors": 11,
     "counts": {
-      "characterCount": 1531,
+      "characterCount": 1529,
       "wordCount": 231,
       "sentenceCount": 10
     },
@@ -118,7 +130,7 @@
       "gunning_fog": 13.92,
       "smog_index": 13.8,
       "automated_readability_index": 16.8,
-      "coleman_liau_index": 14.68,
+      "coleman_liau_index": 14.63,
       "linsear_write": 10.714285714285714
     },
     "sentiment": {
@@ -126,7 +138,7 @@
       "subjectivity": 0.37
     }
   },
-  "[ecs.stu] Best practices for your job search.eml": {
+  "[ecs.stu] Best practices for your job search": {
     "hops": 11,
     "totalDelay": 20.016666666666666,
     "spf": "softfail",
@@ -137,10 +149,13 @@
     "to": [
       "jerry.alexander@utdallas.edu"
     ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
     "attachments": [],
     "grammarErrors": 23,
     "counts": {
-      "characterCount": 4348,
+      "characterCount": 4346,
       "wordCount": 660,
       "sentenceCount": 18
     },
@@ -157,7 +172,7 @@
       "subjectivity": 0.4800807074062888
     }
   },
-  "Contest today 12-00 noon CDT - 3-00 p.m..eml": {
+  "Contest today 12:00 noon CDT - 3:00 p.m.": {
     "hops": 6,
     "totalDelay": 0.08333333333333334,
     "spf": "none",
@@ -168,6 +183,7 @@
     "to": [
       "ivor.page@tx.rr.com"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 1,
     "counts": {
@@ -188,7 +204,7 @@
       "subjectivity": 0.31666666666666665
     }
   },
-  "Texas Instruments Inc. is coming to career fair! \ud83c\udf88.eml": {
+  "Texas Instruments Inc. is coming to career fair! \ud83c\udf88": {
     "hops": 5,
     "totalDelay": 1.3166666666666667,
     "spf": "pass",
@@ -199,10 +215,11 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 12,
     "counts": {
-      "characterCount": 942,
+      "characterCount": 940,
       "wordCount": 148,
       "sentenceCount": 6
     },
@@ -211,7 +228,7 @@
       "gunning_fog": 13.12,
       "smog_index": 13.3,
       "automated_readability_index": 16.1,
-      "coleman_liau_index": 12.6,
+      "coleman_liau_index": 12.54,
       "linsear_write": 21.666666666666668
     },
     "sentiment": {
@@ -219,7 +236,7 @@
       "subjectivity": 0.7111111111111111
     }
   },
-  "\ud83d\udc40 See who's hiring.eml": {
+  "\ud83d\udc40 See who's hiring": {
     "hops": 5,
     "totalDelay": 21.15,
     "spf": "pass",
@@ -230,10 +247,13 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "handshake@g.joinhandshake.com"
+    ],
     "attachments": [],
     "grammarErrors": 8,
     "counts": {
-      "characterCount": 1100,
+      "characterCount": 1098,
       "wordCount": 155,
       "sentenceCount": 4
     },
@@ -242,7 +262,7 @@
       "gunning_fog": 21.46,
       "smog_index": 19.0,
       "automated_readability_index": 26.3,
-      "coleman_liau_index": 17.24,
+      "coleman_liau_index": 17.18,
       "linsear_write": 37.0
     },
     "sentiment": {
@@ -250,7 +270,7 @@
       "subjectivity": 0.48806193806193804
     }
   },
-  "Scott from DoorDash has sent you a message on Handshake.eml": {
+  "Scott from DoorDash has sent you a message on Handshake": {
     "hops": 5,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
@@ -261,10 +281,11 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 3,
     "counts": {
-      "characterCount": 1553,
+      "characterCount": 1551,
       "wordCount": 257,
       "sentenceCount": 9
     },
@@ -281,7 +302,7 @@
       "subjectivity": 0.4163752913752914
     }
   },
-  "[ecs.stu] Fall recruiting update.eml": {
+  "[ecs.stu] Fall recruiting update": {
     "hops": 11,
     "totalDelay": 0.9,
     "spf": "softfail",
@@ -292,10 +313,13 @@
     "to": [
       "jerry.alexander@utdallas.edu"
     ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
     "attachments": [],
     "grammarErrors": 8,
     "counts": {
-      "characterCount": 1332,
+      "characterCount": 1330,
       "wordCount": 189,
       "sentenceCount": 9
     },
@@ -312,7 +336,7 @@
       "subjectivity": 0.6257575757575757
     }
   },
-  "Contest today for CS^2 students..eml": {
+  "Contest today for CS^2 students.": {
     "hops": 6,
     "totalDelay": 0.15,
     "spf": "none",
@@ -323,6 +347,7 @@
     "to": [
       "ivor.page@tx.rr.com"
     ],
+    "replyTo": [],
     "attachments": [],
     "grammarErrors": 2,
     "counts": {
@@ -343,7 +368,7 @@
       "subjectivity": 0.2222222222222222
     }
   },
-  "That thing you\u2019ve always wanted to do?.eml": {
+  "That thing you\u2019ve always wanted to do?": {
     "hops": 4,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
@@ -354,19 +379,22 @@
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "support@masterclass.com"
+    ],
     "attachments": [],
-    "grammarErrors": 14,
+    "grammarErrors": 15,
     "counts": {
-      "characterCount": 569,
+      "characterCount": 567,
       "wordCount": 85,
       "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 37.6,
+      "flesch_kincaid": 36.4,
       "gunning_fog": 35.88,
       "smog_index": 0.0,
       "automated_readability_index": 46.2,
-      "coleman_liau_index": 14.01,
+      "coleman_liau_index": 13.95,
       "linsear_write": 16.5
     },
     "sentiment": {
