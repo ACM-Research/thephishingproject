@@ -1,0 +1,1212 @@
+Received: from MWHPR01MB3231.prod.exchangelabs.com (2603:10b6:300:93::16) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR17CA0054.NAMPRD17.PROD.OUTLOOK.COM; Thu, 3 Sep 2020 20:08:55 +0000
+Received: from SN2PR01CA0059.prod.exchangelabs.com (2603:10b6:800::27) by
+ MWHPR01MB3231.prod.exchangelabs.com (2603:10b6:300:fd::8) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.23; Thu, 3 Sep 2020 20:08:52 +0000
+Received: from SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:800:0:cafe::27) by SN2PR01CA0059.outlook.office365.com
+ (2603:10b6:800::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3348.16 via Frontend
+ Transport; Thu, 3 Sep 2020 20:08:52 +0000
+Authentication-Results: spf=pass (sender IP is 148.105.15.123)
+ smtp.mailfrom=mail123.sea91.rsgsv.net; utdallas.edu; dkim=pass (signature was
+ verified) header.d=mailchimpapp.net;utdallas.edu; dmarc=fail action=none
+ header.from=gmail.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of mail123.sea91.rsgsv.net
+ designates 148.105.15.123 as permitted sender)
+ receiver=protection.outlook.com; client-ip=148.105.15.123;
+ helo=mail123.sea91.rsgsv.net;
+Received: from mail123.sea91.rsgsv.net (148.105.15.123) by
+ SN1NAM02FT038.mail.protection.outlook.com (10.152.72.69) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19 via Frontend Transport; Thu, 3 Sep 2020 20:08:52 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k2; t=1599163522; i=comet.acm=3Dgmail.com@mailchimpapp.net;
+	bh=YZGZaxVSWmXwZoLdRVg6/uAsjTMXAQTWs+7rhlsMkOg=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+	b=XO3tYglYhOmhAm2UykCn9f5exWwcqPA8VqKo1oFY9UX9fmCbNjIZyB57He0pfVrUa
+	 EnQYiG0P0PK9Ky7iko9hBVwbrknCPiducjzidpU/HHxSze6/U4yBZlxpWRUgAzHglb
+	 jIsHKiq/rBWX62R6Kiw2+BBmcOA8r8wAkb5hG7voAExuEJGPUHgl5HOL7R9Geut5/y
+	 jcXqm+jNBBqG+VXjQiktxyAYsY9DyYlU6Fpo/Kq96uR1zRRUTgPTysrsAMUIUuaUYC
+	 ZBtZdT2U/u++Ev+7jr0ASC4M96UK/EPqV5FvDR/rFEk594Jwf7f8mOAWb4DM/jDj3P
+	 vPW57JVcevdKA==
+Received: from localhost (localhost [127.0.0.1])
+	by mail123.sea91.rsgsv.net (Mailchimp) with ESMTP id 4BjBcf1qDBzFCWxZK
+	for <ewz190000@utdallas.edu>; Thu,  3 Sep 2020 20:05:22 +0000 (GMT)
+Subject: =?utf-8?Q?Today=27s=20ACM=20Event=3A=20NVIDIA?=
+From: =?utf-8?Q?ACM=20UTD?= <comet.acm@gmail.com>
+Reply-To: <comet.acm@gmail.com>
+To: <ewz190000@utdallas.edu>
+Date: Thu,  3 Sep 2020 20:05:20 +0000
+Message-ID: <d4cc85576e42f08703474ea63.4dac0f0b50.20200903200513.b466722361.79b132f3@mail123.sea91.rsgsv.net>
+X-Mailer: MailChimp Mailer - **CIDb4667223614dac0f0b50**
+X-Campaign: mailchimpd4cc85576e42f08703474ea63.b466722361
+X-campaignid: mailchimpd4cc85576e42f08703474ea63.b466722361
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=d4cc85576e42f08703474ea63&id=b466722361&e=4dac0f0b50
+X-MC-User: d4cc85576e42f08703474ea63
+Feedback-ID: 21571491:21571491.4578538:us7:mc
+List-ID: d4cc85576e42f08703474ea63mc list <d4cc85576e42f08703474ea63.110465.list-id.mcsv.net>
+X-Accounttype: ff
+X-Original-Sender: comet.acm@gmail.com
+List-Unsubscribe:
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Facmutd.us7.list-manage.com%2Funsubscribe%3Fu%3Dd4cc85576e42f08703474ea63%26id%3D6cc9c02dca%26e%3D4dac0f0b50%26c%3Db466722361&amp;data=02%7C01%7CEric.Zhang%40UTDallas.edu%7Ceb374012f84e4539726108d850452dd0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637347605351172966&amp;sdata=dmu%2BrF2i51T%2Fba89uTtAqCTkDINMMjXwzxiy6hzmP5c%3D&amp;reserved=0>,
+ <mailto:unsubscribe-mc.us7_d4cc85576e42f08703474ea63.b466722361-4dac0f0b50@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Return-Path: bounce-mc.us7_21571491.4578538-4dac0f0b50@mail123.sea91.rsgsv.net
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Sep 2020 20:08:52.4526
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ eb374012-f84e-4539-7261-08d850452dd0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132436373324546163;(0964fcdf-1dd6-4fe8-dc49-08d52adbc662);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: eb374012-f84e-4539-7261-08d850452dd0
+X-MS-TrafficTypeDiagnostic: MWHPR01MB3231:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:4714;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 3813983266482300331;12499994875720983246;12570579797807896132;8228993657426209826;291528759923944659;11516103285524161641
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:148.105.15.123;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mail123.sea91.rsgsv.net;PTR:mail123.sea91.rsgsv.net;CAT:SPOOF;SFS:(4636009)(82202003)(966005)(66574015)(7596003)(83170400001)(7636003)(16670700002)(83380400001)(76236003)(83080400001)(356005)(166002)(7126003)(58800400005)(26005)(3450700001)(16799955002)(19810500001)(76482006)(336012)(6862004)(1096003)(42882007)(33964004)(5660300002)(19627405001)(9686003)(2860700004)(8676002)(73392003)(559001)(579004);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 2000:0x0|0x0|0x2000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Sep 2020 20:08:52.3136
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: eb374012-f84e-4539-7261-08d850452dd0
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR01MB3231
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.8747578
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3348.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?zDl1j3S4+8Fz35EG7fxDXs4/oAHsirKi7OxGSHWkHCkir1wsk6f3+7nCO4B1?=
+ =?us-ascii?Q?hCdofvs33VInusEzO8mi23Dk0Qahlt12JruE2QusTTnpKVqFqQXJ5UGv+N1+?=
+ =?us-ascii?Q?hsbtARGpcpHFOPyvGqVUZyj55W4BqEMOPrTQfdggSzzz3fAKS3bWREWvFHHS?=
+ =?us-ascii?Q?IA3sjAON894j6vnWJK/qb7pjrsmAPlbxmhTv9N1x5dXQHF7etKwDXTzXxx3l?=
+ =?us-ascii?Q?Tfhqs5hXMZvD+FQEXs6vPl4Ho56mSpqU5lh/OGLJe3SVPqjDdy5QdCpARcW1?=
+ =?us-ascii?Q?0OD2ZP78Y1nlZmKLgJejdXVQEI8raNoRu7zKZFIkH0912spTOZ38b++oW8yT?=
+ =?us-ascii?Q?NuGvLfAxpMIvhYm1EIUFBoUqkG7xXVpIhDHyZOl3gjq/5QYeK5QerVgLuuTR?=
+ =?us-ascii?Q?UwqfUCLyJOLTJm1lBq0UCNtDy8RiDpfDSvAXXuCVsnL2V38AmyqgbCHcLUiq?=
+ =?us-ascii?Q?6iEFFDv9179SdiEADjSGzQbNgcvIT4LeANfOYfE74EEarMUYfu0TQJZwOvfp?=
+ =?us-ascii?Q?d3VpmBA3XLfJoNH05gtCmrG3LiPc/Ktkgsy7aLstrCnvr/HYW3CkUYX4mvWZ?=
+ =?us-ascii?Q?upcbhZpYvE0fCtT2jOhM+dAu9qY0UQDr6lz5H3czMkP/500iwAeuX5v5/6jC?=
+ =?us-ascii?Q?2CcCkP1qiqi6yFuUfClfMjKQxv42FZv7v8D/kCIhtsQ3y2QOdFFcAOXsN66/?=
+ =?us-ascii?Q?U5+qB9cBgtFNsud/GM14FNWXL4FaaMR9SJzc5tooMM2vXwEpEZcKMi0X3e03?=
+ =?us-ascii?Q?JcLsxsVRJAgcSzipUksWWLxYEFG4XkqxO6/oaFrUpwaq8999i4q9UjkyqJF+?=
+ =?us-ascii?Q?Ht9G+kKGXAreQEpI92Mz8ua7qon7mwUep8kKjtT22UnYQ6kkwLCz0QBZYtqD?=
+ =?us-ascii?Q?s7CYuoNNhRPbTGQjHlsIsejWe68b4zEHgq3XGnfGxIJZmwpoIkLvHssGyqk5?=
+ =?us-ascii?Q?zjHWpLpfJgjYJ7iuiokhSeZjLjJ95IoPIBrXyfs4FWd1sFZQnWRdia93ZJuc?=
+ =?us-ascii?Q?UKZhY8EYYJXoCqAsemuPTaUUmDoU3sP1AWoH/h0XLwxmy5V0y79/Mm6Io7Z0?=
+ =?us-ascii?Q?dQqgC8IrY9+XS6yaR4EGyI9jid5pk0Ig+BC8NpC75S+oUueD0aF+pvObFExY?=
+ =?us-ascii?Q?Z3p9XPWZowoC0egaGYY2OhvJ5BMRuyYTh+apIrWZulPnmFbG8+W7oz7/9cVA?=
+ =?us-ascii?Q?4SC9sYp/RKMpq5bK7F9mpBt2tNy+3navRdKOWlflXiR9oWDv3FBOT6a6X+k4?=
+ =?us-ascii?Q?RIyZWgq3YkR+uE/mAJMSDL7ftmLqzQs4ExAUATEXDeTW0Fx+Wxu0GSUtWjC3?=
+ =?us-ascii?Q?pvBWWfYyTXpGCImhg1pmIL7CV6GJ0slj1FpbIkJLCmOWGxRgFlbGpk2tPGFz?=
+ =?us-ascii?Q?xdWFrJ5RM838TN5HqbHDirUuXTEGxaCsWxGtHiekszTwf7+uwTCr/r/JetfH?=
+ =?us-ascii?Q?ccilozgvYSdz4Hq46ooNlsEF4QAqofOZ9NV/bB9wgvvfVKFWiTDGvILrzuSv?=
+ =?us-ascii?Q?WAEh3Ouf3niGRlNyY4oNkruJjPzpuhzS2zLExzlFplDYEb7MyiCAmHzutPLw?=
+ =?us-ascii?Q?vPj+ggwFwOp3FBPXuTVf36ABlcRq4vQZMh4Ichjw1pXARf6mdN53p5WnsOl6?=
+ =?us-ascii?Q?E0xanu/Sec+k0Q1mhXSfsAixo9Q66A5AcrZvMg83mK5/r5yEQwwBPKD6gxxx?=
+ =?us-ascii?Q?aIi2MvmAzSjGytORmJJ5lVFZuhLDqSBBgvCyF7FcspDv3VWMggzw/0hWLZCt?=
+ =?us-ascii?Q?UH0nhRzWSPcuFI1adiQUxx0BoohnqXc1v/IWeKg/4YY+erRKnuCNZzUin29F?=
+ =?us-ascii?Q?xJEm8Gu2+UgJ74eRYB/TwSCbYwK2FtZTBduyy/3QZYxP2VvlH64BzAoCe+Yt?=
+ =?us-ascii?Q?DtV5wWXuDoWrmq5DDdNyJHgZ78eWdEYETlc8syg4fJGJUOan5isFHiTKlR5x?=
+ =?us-ascii?Q?eXD16nHMD67tanjmml1SE93keA1nLcb67XYHw50ow1AlRDqZOBHnu8KwxqVM?=
+ =?us-ascii?Q?021O0QqQIPT8/LpFcj8QYuumPMIk1RJHLUA/Cf6/jZAnQ3z9GgteXEijsmYC?=
+ =?us-ascii?Q?bWHLZW+AUe2QFtdhQgem+C7+UZG7UkJPJvRbeEe3cqz3Tt+p/lkGBYXoaRVu?=
+ =?us-ascii?Q?d3O/FYBZvlHdU9VA1lqRa5JQ5JHekLjbRaC3ebV1ZW2CilIhamT6z0oDNt2x?=
+ =?us-ascii?Q?hGMW5X3LJjX5WvtBtJ7t8Aczrbo6EKNxFv9eWFb5mQBGUq/rR79Q8yql6/uJ?=
+ =?us-ascii?Q?2HdW5djXbJ1I5Ollw1dTdayfAViVl93r+d8A9EG3i9NJs7VUOWDt26X3fzex?=
+ =?us-ascii?Q?qo1uYHU1j0L3cFNHgaAUMrjXFk1RT/hb70ANb9OilcZPxkMOj5JFiB/bIGbY?=
+ =?us-ascii?Q?9W7aen6XmkLCqgHaGYODUgbj/Gwp+5sK29zYgvVRgS2aJG77IBFQZJa9m0ja?=
+ =?us-ascii?Q?uLwnQmRTWQc=3D?=
+Content-type: multipart/alternative;
+	boundary="B_3686568111_932279125"
+MIME-Version: 1.0
+
+--B_3686568111_932279125
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+We hope to see you there!=20
+=20
+Join our Nvidia Event Today!
+=20
+Link: content.acmutd.com/nvidia=20
+Time: Thursday, September 3 at 8:30 PM CST
+=20
+Dr.Branislav Kisacanin is an expert on applications of computer vision and =
+AI in autonomous driving. Before joining Nvidia 5 years ago, he was a CTO at=
+ Interphase and R&D engineer with Texas Instruments and Delphi. He received =
+his PhD in 1998 from U of Illinois and has participated in creation of 10+ b=
+ooks, 6 special editions of major journals, and helped organize multiple wor=
+kshops and conferences. In his spare time, Dr.Kisacanin is a passionate teac=
+her of competitive math and physics at the AwesomeMath Academy and Summer Pr=
+ograms. We will discuss the applications of Deep Learning, what math lies be=
+hind deep learning(spoiler alert: linear algebra, multi-dimensional calculus=
+, probability, and optimization theory, at least), and where the research mi=
+ght be going, so don't miss out!
+
+
+=20
+=20
+view this email in your browser=20
+Copyright =C2=A9 2020 ACM UTD, All rights reserved.
+You are receiving this email because you have opted in to the ACM UTD maili=
+ng list via our website, at an event, or by request.
+
+Our mailing address is:
+ACM UTDUniversity of Texas at Dallas
+Richardson, TX 75080
+
+Add us to your address book
+
+
+Want to change how you receive these emails?
+You can update your preferences or unsubscribe from this list.
+
+=20
+ 
+
+--B_3686568111_932279125
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><!-- NAME: ART NEWSLETTER --><!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><meta name=3D"view=
+port" content=3D"width=3Ddevice-width, initial-scale=3D1"><title>Today's AC=
+M Event: NVIDIA</title><style type=3D"text/css">
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=3Dtel],a[href^=3Dsms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Ext=
+ernalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		a.mcnButton{
+			display:block;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent{
+			word-break:break-word;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+		.mcnDividerBlock{
+			table-layout:fixed !important;
+		}
+		h1{
+			color:#FFFFFF;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:48px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h2{
+			color:#1F2F38;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:48px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h3{
+			color:#1F2F38;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:36px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:150%;
+			letter-spacing:normal;
+			text-align:center;
+		}
+		h4{
+			color:#435864;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:22px;
+			font-style:italic;
+			font-weight:normal;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		#templateHeader{
+			background-color:#f88f52;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:21px;
+			padding-bottom:21px;
+		}
+		.headerContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+			color:#FFFFFF;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:18px;
+			line-height:150%;
+			text-align:left;
+		}
+		.headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
+			color:#FFFFFF;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateBody{
+			background-color:#fcf5e5;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:56px;
+			padding-bottom:56px;
+		}
+		.bodyContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+			color:#202020;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:18px;
+			line-height:150%;
+			text-align:left;
+		}
+		.bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
+			color:#DE5B49;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateUpperColumns{
+			background-color:#f88f52;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+		#templateUpperColumns .columnContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		#templateUpperColumns .columnContainer .mcnTextContent,#templateUpperColu=
+mns .columnContainer .mcnTextContent p{
+			color:#202020;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+		#templateUpperColumns .columnContainer .mcnTextContent a,#templateUpperCo=
+lumns .columnContainer .mcnTextContent p a{
+			color:#DE5B49;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateLowerColumns{
+			background-color:#f88f52;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:50% 50%;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+		#templateLowerColumns .columnContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.lowerColumnHeaderContainer .mcnTextContent,.lowerColumnHeaderContainer .=
+mcnTextContent p{
+			color:#202020;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:18px;
+			line-height:150%;
+			text-align:left;
+		}
+		.lowerColumnHeaderContainer .mcnTextContent a,.lowerColumnHeaderContainer=
+ .mcnTextContent p a{
+			color:#DE5B49;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateLowerColumns .columnContainer .mcnTextContent,#templateLowerColu=
+mns .columnContainer .mcnTextContent p{
+			color:#202020;
+			font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			font-size:18px;
+			line-height:150%;
+			text-align:left;
+		}
+		#templateLowerColumns .columnContainer .mcnTextContent a,#templateLowerCo=
+lumns .columnContainer .mcnTextContent p a{
+			color:#DE5B49;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateFooter{
+			background-color:#fcf5e5;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+		.footerContainer{
+			background-color:transparent;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:0;
+			padding-bottom:0;
+		}
+		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+			color:#FFFFFF;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+		.footerContainer .mcnTextContent a,.footerContainer .mcnTextContent p a{
+			color:#FFFFFF;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	@media only screen and (max-width: 480px){
+		.columnWrapper{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnRetinaImage{
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCapti=
+onBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcn=
+ImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionR=
+ightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRi=
+ghtImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCar=
+dRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImage=
+CardRightImageContentContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupContent{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter =
+.mcnTextContent{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCapt=
+ionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-chil=
+d .mcnTextContent{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardBottomImageContent{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockInner{
+			padding-top:0 !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockOuter{
+			padding-top:9px !important;
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnTextContent,.mcnBoxedTextContentColumn{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+			padding-right:18px !important;
+			padding-bottom:0 !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcpreview-image-uploader{
+			display:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h1{
+			font-size:36px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h2{
+			font-size:30px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h3{
+			font-size:26px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h4{
+			font-size:22px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContain=
+er .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateUpperColumns .columnContainer .mcnTextContent,#templateUpperColu=
+mns .columnContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.lowerColumnHeaderContainer .mcnTextContent,.lowerColumnHeaderContainer .=
+mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateLowerColumns .columnContainer .mcnTextContent,#templateLowerColu=
+mns .columnContainer .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}</style><!--[if !mso]><!--><link href=3D"https://fonts.googleapis.com/css?=
+family=3DLato:400,400i,700,700i|Noticia+Text:400,400i,700,700i" rel=3D"styl=
+esheet"><!--<![endif]--></head><body style=3D"height: 100%;margin: 0;paddin=
+g: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><!--
+--><!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displ=
+ay:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">We hope to see y=
+ou there!</span><!--<![endif]--><!--
+--> <center><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding=
+: 0;width: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" id=3D"body=
+Cell" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;"=
+><!-- BEGIN TEMPLATE // --><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" id=3D"templateHe=
+ader" data-template-container=3D"" style=3D"background:#f88f52 none no-repe=
+at center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;background-color: #f88f52;background-image: no=
+ne;background-repeat: no-repeat;background-position: center;background-size=
+: cover;border-top: 0;border-bottom: 0;padding-top: 21px;padding-bottom: 21=
+px;"><!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]--><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templ=
+ateContainer" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;max-width: 600px !important;"><tbody><tr><td valign=3D"top" class=3D"heade=
+rContainer" style=3D"background:transparent none no-repeat center/cover;mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;background-color: transparent;background-image: none;background-r=
+epeat: no-repeat;background-position: center;background-size: cover;border-=
+top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlo=
+ck" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;"><tbody class=3D"mcnImageBlockOuter"><tr><td valign=3D"top" style=
+=3D"padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;" class=3D"mcnImageBlockInner"><table align=
+=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"mcnImageContentContainer" style=3D"min-width: 100%;border-collapse:=
+ collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;"><tbody><tr><td class=3D"mcnImageCont=
+ent" valign=3D"top" style=3D"padding-right: 9px;padding-left: 9px;padding-t=
+op: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-m=
+s-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img align=3D"cen=
+ter" alt=3D"" src=3D"https://gallery.mailchimp.com/d4cc85576e42f08703474ea6=
+3/images/Logo_2x.png" width=3D"218" style=3D"max-width: 218px;padding-botto=
+m: 0;display: inline !important;vertical-align: bottom;border: 0;height: au=
+to;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" cl=
+ass=3D"mcnImage"> </td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table><!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]--></td></tr><tr><td align=3D"cent=
+er" valign=3D"top" id=3D"templateBody" data-template-container=3D"" style=
+=3D"background:#fcf5e5 none no-repeat center/cover;mso-line-height-rule: ex=
+actly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-=
+color: #fcf5e5;background-image: none;background-repeat: no-repeat;backgrou=
+nd-position: center;background-size: cover;border-top: 0;border-bottom: 0;p=
+adding-top: 56px;padding-bottom: 56px;"><!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]--><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templ=
+ateContainer" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;max-width: 600px !important;"><tbody><tr><td valign=3D"top" class=3D"bodyC=
+ontainer" style=3D"background:transparent none no-repeat center/cover;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;background-color: transparent;background-image: none;background-rep=
+eat: no-repeat;background-position: center;background-size: cover;border-to=
+p: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock"=
+ style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;m=
+so-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 1=
+00%;"><tbody class=3D"mcnTextBlockOuter"><tr><td valign=3D"top" class=3D"mc=
+nTextBlockInner" style=3D"padding-top: 9px;mso-line-height-rule: exactly;-m=
+s-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"599" style=3D"width:599px;">
+				<![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer"><tbody><tr><td valign=3D"top" class=3D"mcnTextContent" style=3D"padd=
+ing-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;word-break: break-word;color: #202020;font-family: 'Noticia Text', =
+Georgia, 'Times New Roman', serif;font-size: 18px;line-height: 150%;text-al=
+ign: left;"><div style=3D"text-align: center;"><span style=3D"font-size:17p=
+x"><span style=3D"font-family:lato,helvetica neue,helvetica,arial,sans-seri=
+f"><strong>Join our Nvidia Event Today!</strong></span></span><br>&nbsp;</d=
+iv><div style=3D"text-align: left;"><span style=3D"font-size:12px">Link:&nb=
+sp;<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Facmutd.us7.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd4cc85576e42f087034=
+74ea63%26id%3Dd940795935%26e%3D4dac0f0b50&amp;data=3D02%7C01%7CEric.Zhang%4=
+0UTDallas.edu%7Ceb374012f84e4539726108d850452dd0%7C8d281d1d9c4d4bf7b16e032d=
+15de9f6c%7C0%7C1%7C637347605351103003&amp;sdata=3DDVWVgWetPw1CH7DH3%2BDJHle=
+alUZpwUQIAr%2BaRjuVZ7k%3D&amp;reserved=3D0" originalsrc=3D"https://acmutd.u=
+s7.list-manage.com/track/click?u=3Dd4cc85576e42f08703474ea63&amp;id=3Dd9407=
+95935&amp;e=3D4dac0f0b50" shash=3D"V+3IXrl5gmREV6ISsCbiwknL7saDpKlG54wb760v=
+i6hJ1hz/B+PYuAtrGdD5iMN9KPFQqGn3ntPaRkBgrBYr7QIAY3CRCg+rvOY0+fEvXcmIi8jaGco=
+DeEwpKCzCYFBr2xSXz/j2bnrI6a5B0LRuZnioFyxocqP1t4pQhAkpNgU=3D" target=3D"_bla=
+nk" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;color: #DE5B49;font-weight: normal;text-decoratio=
+n: underline;">content.acmutd.com/nvidia</a>&nbsp;<br>Time: Thursday, Septe=
+mber 3 at 8:30 PM CST</span></div><div style=3D"text-align: center;">&nbsp;=
+</div><div style=3D"text-align: left;"><span style=3D"font-size:12px"><span=
+ style=3D"font-family:lato,helvetica neue,helvetica,arial,sans-serif">Dr.Br=
+anislav Kisacanin is an expert on applications of computer vision and AI in=
+ autonomous driving. Before joining Nvidia 5 years ago, he was a CTO at Int=
+erphase and R&amp;D engineer with Texas Instruments and Delphi. He received=
+ his PhD in 1998 from U of Illinois and has participated in creation of 10+=
+ books, 6 special editions of major journals, and helped organize multiple =
+workshops and conferences. In his spare time, Dr.Kisacanin is a passionate =
+teacher of competitive math and physics at the AwesomeMath Academy and Summ=
+er Programs. We will discuss the applications of Deep Learning, what math l=
+ies behind deep learning(spoiler alert: linear algebra, multi-dimensional c=
+alculus, probability, and optimization theory, at least), and where the res=
+earch might be going, so don't miss out!</span></span><br><br><br>&nbsp;</d=
+iv></td></tr></tbody></table><!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td></tr></tbody></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlock" style=3D"mi=
+n-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><tbody=
+ class=3D"mcnImageBlockOuter"><tr><td valign=3D"top" style=3D"padding: 9px;=
+mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;" class=3D"mcnImageBlockInner"><table align=3D"left" width=3D"=
+100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnImageCon=
+tentContainer" style=3D"min-width: 100%;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;"><tbody><tr><td class=3D"mcnImageContent" valign=3D"top"=
+ style=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-botto=
+m: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;"><img align=3D"center" alt=3D"" src=
+=3D"https://mcusercontent.com/d4cc85576e42f08703474ea63/images/78e38137-354=
+b-4a63-a95e-656f600f704e.jpg" width=3D"563.9999389648438" style=3D"max-widt=
+h: 2400px;padding-bottom: 0;display: inline !important;vertical-align: bott=
+om;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpola=
+tion-mode: bicubic;" class=3D"mcnImage"> </td></tr></tbody></table></td></t=
+r></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collap=
+se: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;"><tbody class=3D"mcnTextBlockOuter=
+"><tr><td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: =
+9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;"><!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer"><tbody><tr><td valign=3D"top" class=3D"mcnTextContent" style=3D"padd=
+ing-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;word-break: break-word;color: #202020;font-family: 'Noticia Text', =
+Georgia, 'Times New Roman', serif;font-size: 18px;line-height: 150%;text-al=
+ign: left;"></td></tr></tbody></table><!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td></tr></tbody></table></td></tr></tbody></table><!--[if=
+ (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]--></td></tr><tr><td align=3D"cent=
+er" valign=3D"top" id=3D"templateUpperColumns" data-template-container=3D""=
+ style=3D"background:#f88f52 none no-repeat center/cover;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;backg=
+round-color: #f88f52;background-image: none;background-repeat: no-repeat;ba=
+ckground-position: center;background-size: cover;border-top: 0;border-botto=
+m: 0;padding-top: 0px;padding-bottom: 0px;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 600px !=
+important;"><tbody><tr><td valign=3D"top" style=3D"mso-line-height-rule: ex=
+actly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--[if (=
+gte mso 9)|(IE)]>
+                                                <table align=3D"center" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:=
+600px;">
+                                                <tr>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"200" style=3D"width:200px;">
+                                                <![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"200" class=
+=3D"columnWrapper" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody><tr><td valign=3D"top" class=3D"columnContainer" style=3D"ba=
+ckground:transparent none no-repeat center/cover;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-co=
+lor: transparent;background-image: none;background-repeat: no-repeat;backgr=
+ound-position: center;background-size: cover;border-top: 0;border-bottom: 0=
+;padding-top: 0;padding-bottom: 0;"></td></tr></tbody></table><!--[if (gte =
+mso 9)|(IE)]>
+                                                </td>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"200" style=3D"width:200px;">
+                                                <![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"200" class=
+=3D"columnWrapper" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody><tr><td valign=3D"top" class=3D"columnContainer" style=3D"ba=
+ckground:transparent none no-repeat center/cover;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-co=
+lor: transparent;background-image: none;background-repeat: no-repeat;backgr=
+ound-position: center;background-size: cover;border-top: 0;border-bottom: 0=
+;padding-top: 0;padding-bottom: 0;"></td></tr></tbody></table><!--[if (gte =
+mso 9)|(IE)]>
+                                                </td>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"200" style=3D"width:200px;">
+                                                <![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"200" class=
+=3D"columnWrapper" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody><tr><td valign=3D"top" class=3D"columnContainer" style=3D"ba=
+ckground:transparent none no-repeat center/cover;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-co=
+lor: transparent;background-image: none;background-repeat: no-repeat;backgr=
+ound-position: center;background-size: cover;border-top: 0;border-bottom: 0=
+;padding-top: 0;padding-bottom: 0;"></td></tr></tbody></table><!--[if (gte =
+mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]--></td></tr></tbo=
+dy></table></td></tr><tr><td align=3D"center" valign=3D"top" id=3D"template=
+LowerColumns" data-template-container=3D"" style=3D"background:#f88f52 none=
+ no-repeat 50% 50%/cover;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;background-color: #f88f52;background-=
+image: none;background-repeat: no-repeat;background-position: 50% 50%;backg=
+round-size: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padding-b=
+ottom: 0px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;max-width: 600px !important;"><tbody><tr><td valig=
+n=3D"top" class=3D"lowerColumnHeaderContainer" style=3D"mso-line-height-rul=
+e: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D=
+"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;table-layout: fixed !important;"><tbody class=3D"mcnDi=
+viderBlockOuter"><tr><td class=3D"mcnDividerBlockInner" style=3D"min-width:=
+ 100%;padding: 54px 18px 45px;mso-line-height-rule: exactly;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;"><table class=3D"mcnDividerCont=
+ent" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"min-width: 100%;border-top: 2px solid #DE5B49;border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;"><tbody><tr><td style=3D"mso-line-height-rule:=
+ exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><span>=
+</span></td></tr></tbody></table><!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td></tr></tbody></table></td></tr><tr><td valign=3D"top" style=3D"mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;"><!--[if (gte mso 9)|(IE)]>
+                                                <table align=3D"center" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:=
+600px;">
+                                                <tr>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"300" style=3D"width:300px;">
+                                                <![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"300" class=
+=3D"columnWrapper" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody><tr><td valign=3D"top" class=3D"columnContainer" style=3D"ba=
+ckground:transparent none no-repeat center/cover;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-co=
+lor: transparent;background-image: none;background-repeat: no-repeat;backgr=
+ound-position: center;background-size: cover;border-top: 0;border-bottom: 0=
+;padding-top: 0;padding-bottom: 0;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"mcnDividerBlock" style=3D"min-widt=
+h: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: =
+fixed !important;"><tbody class=3D"mcnDividerBlockOuter"><tr><td class=3D"m=
+cnDividerBlockInner" style=3D"min-width: 100%;padding: 36px 18px 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;"><table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-collapse:=
+ collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;"><tbody><tr><td style=3D"mso-line-hei=
+ght-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;"><span></span></td></tr></tbody></table><!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|=
+(IE)]>
+                                                </td>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"300" style=3D"width:300px;">
+                                                <![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"300" class=
+=3D"columnWrapper" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody><tr><td valign=3D"top" class=3D"columnContainer" style=3D"ba=
+ckground:transparent none no-repeat center/cover;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-co=
+lor: transparent;background-image: none;background-repeat: no-repeat;backgr=
+ound-position: center;background-size: cover;border-top: 0;border-bottom: 0=
+;padding-top: 0;padding-bottom: 0;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"mcnDividerBlock" style=3D"min-widt=
+h: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: =
+fixed !important;"><tbody class=3D"mcnDividerBlockOuter"><tr><td class=3D"m=
+cnDividerBlockInner" style=3D"min-width: 100%;padding: 36px 18px 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;"><table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-collapse:=
+ collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;"><tbody><tr><td style=3D"mso-line-hei=
+ght-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;"><span></span></td></tr></tbody></table><!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td></tr></tbody></table></td></tr></tbody></table><!--[if (gte mso 9)|=
+(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]--></td></tr></tbo=
+dy></table></td></tr><tr><td align=3D"center" valign=3D"top" id=3D"template=
+Footer" data-template-container=3D"" style=3D"background:#fcf5e5 none no-re=
+peat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;background-color: #fcf5e5;background-image: =
+none;background-repeat: no-repeat;background-position: center;background-si=
+ze: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padding-bottom: 0=
+px;"><!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]--><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templ=
+ateContainer" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;max-width: 600px !important;"><tbody><tr><td valign=3D"top" class=3D"foote=
+rContainer" style=3D"background:transparent none no-repeat center/cover;mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;background-color: transparent;background-image: none;background-r=
+epeat: no-repeat;background-position: center;background-size: cover;border-=
+top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBloc=
+k" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;"><tbody class=3D"mcnTextBlockOuter"><tr><td valign=3D"top" class=3D"=
+mcnTextBlockInner" style=3D"padding-top: 9px;mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer"><tbody><tr><td valign=3D"top" class=3D"mcnTextContent" style=3D"padd=
+ing-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;word-break: break-word;color: #FFFFFF;font-family: Helvetica;font-s=
+ize: 12px;line-height: 150%;text-align: center;"><a href=3D"https://nam02.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fmailchi.mp%2F17cff9659=
+007%2Facm-projects-research-education-applications-4578538%3Fe%3D4dac0f0b50=
+&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ceb374012f84e4539726108d85=
+0452dd0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637347605351103003&amp=
+;sdata=3Ds%2BRGqOH6oXxbDBXlZH7wMhecQzUxqiWppIRdG1uTV8w%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://mailchi.mp/17cff9659007/acm-projects-research-educa=
+tion-applications-4578538?e=3D4dac0f0b50" shash=3D"bXEtBSRxCdv3bJd6gXILzNVv=
+aMLPoIy5o4WIlh5huLl/VHxiC5PTb5DjfTgqQtfkIrUiMOwyeQHXsqPfmgrgqQTgJG/PMhGMG2T=
+SBRQTDG43YeuGPTAbcHq/BKPqtyyqCifRO3wltsiAPe7dY21BdF+cglluqSHNMPoEsS2/OZE=3D=
+" target=3D"blank" style=3D"mso-line-height-rule: exactly;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal=
+;text-decoration: underline;"><span style=3D"color:#000000">view this email=
+ in your browser</span></a> </td></tr></tbody></table><!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td></tr></tbody></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock" style=3D"min=
+-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspa=
+ce: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><tbody =
+class=3D"mcnTextBlockOuter"><tr><td valign=3D"top" class=3D"mcnTextBlockInn=
+er" style=3D"padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;"><!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer"><tbody><tr><td valign=3D"top" class=3D"mcnTextContent" style=3D"padd=
+ing-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;word-break: break-word;color: #FFFFFF;font-family: Helvetica;font-s=
+ize: 12px;line-height: 150%;text-align: center;"><span style=3D"color:#0000=
+00"><em>Copyright =C2=A9 2020 ACM UTD, All rights reserved.</em><br>You are=
+ receiving this email because you have opted in to the ACM UTD mailing list=
+ via our website, at an event, or by request.<br><br><strong>Our mailing ad=
+dress is:</strong><br><div class=3D"vcard"><span class=3D"org fn">ACM UTD</=
+span><div class=3D"adr"><div class=3D"street-address">University of Texas a=
+t Dallas</div><span class=3D"locality">Richardson</span>, <span class=3D"re=
+gion">TX</span> <span class=3D"postal-code">75080</span></div><br><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Facm=
+utd.us7.list-manage.com%2Fvcard%3Fu%3Dd4cc85576e42f08703474ea63%26id%3D6cc9=
+c02dca&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ceb374012f84e4539726=
+108d850452dd0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373476053511129=
+94&amp;sdata=3D7zNXR7Qss1JxOBelx5RxUYkUlFXkiEM9VCoyK1UFaGg%3D&amp;reserved=
+=3D0" originalsrc=3D"https://acmutd.us7.list-manage.com/vcard?u=3Dd4cc85576=
+e42f08703474ea63&amp;id=3D6cc9c02dca" shash=3D"qV5MDRCed6cN2EEYkD7EGw27kiDs=
+PUY9uMlzarp5bf8CyRvhbnbQQflXnHlPKxh+G/94jvmS6hZDA/cdEsPvESIfTSX4B0AnFXZzuHg=
+7tcv5Q1BOTPugI1WuKRWUUnRpL7nDbgZ5Jnj1PRNEWFnaMvIb79H+5SjtbwyCWPuHFeM=3D" cl=
+ass=3D"hcard-download">Add us to your address book</a></div><br><br>Want to=
+ change how you receive these emails?<br>You can </span><a href=3D"https://=
+nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Facmutd.us7.list=
+-manage.com%2Fprofile%3Fu%3Dd4cc85576e42f08703474ea63%26id%3D6cc9c02dca%26e=
+%3D4dac0f0b50&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ceb374012f84e=
+4539726108d850452dd0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637347605=
+351122987&amp;sdata=3D34lcAvjKbZkm0QD71Dla6U59oZSs8q7nBGQMmKmr0bI%3D&amp;re=
+served=3D0" originalsrc=3D"https://acmutd.us7.list-manage.com/profile?u=3Dd=
+4cc85576e42f08703474ea63&amp;id=3D6cc9c02dca&amp;e=3D4dac0f0b50" shash=3D"o=
+ZUf7hRn2oUxkyqxBOw1VsTy7E4UPtIr09QOawN5Gw0B1KOqojluAcP2zGn3jAdE/J+XdDeBvT4M=
+VwaQru9p15bQRwXAyATSjLP1m/LHNcaaUSlUzLwYCArUGhudJMOeXjbPYTSkr6vZomG+R77yli4=
+RPA6AXx5R16mj80U50fc=3D" style=3D"mso-line-height-rule: exactly;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: =
+normal;text-decoration: underline;"><span style=3D"color:#000000">update yo=
+ur preferences</span></a><span style=3D"color:#000000"> or </span><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Facm=
+utd.us7.list-manage.com%2Funsubscribe%3Fu%3Dd4cc85576e42f08703474ea63%26id%=
+3D6cc9c02dca%26e%3D4dac0f0b50%26c%3Db466722361&amp;data=3D02%7C01%7CEric.Zh=
+ang%40UTDallas.edu%7Ceb374012f84e4539726108d850452dd0%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C1%7C637347605351132990&amp;sdata=3DTbCuZFm0QC1EKx7xbwc6=
+yJxYLXRH%2F6fxGGznHtKt4zg%3D&amp;reserved=3D0" originalsrc=3D"https://acmut=
+d.us7.list-manage.com/unsubscribe?u=3Dd4cc85576e42f08703474ea63&amp;id=3D6c=
+c9c02dca&amp;e=3D4dac0f0b50&amp;c=3Db466722361" shash=3D"L3zJTBdGy1r47Fp2M+=
+iNLTQNMbUzJ7k7fj5dI60UZZf70Gu2rsblT4Km8hOZTA1umn5GdHoi7SBVkEGL/SKZSY42s42dp=
+m3AsNvDg+6uZAk5CEaUkqpsBPypu0sXbIs19NNkptOSemysw5fxzuF/uSvuYbw2vVNNO3wV96wb=
+60Q=3D" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decor=
+ation: underline;"><span style=3D"color:#000000">unsubscribe from this list=
+</span></a><span style=3D"color:#000000">.<br><br><a href=3D"https://nam02.=
+safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.mailchimp.com%2Fem=
+ail-referral%2F%3Futm_source%3Dfreemium_newsletter%26utm_medium%3Demail%26u=
+tm_campaign%3Dreferral_marketing%26aid%3Dd4cc85576e42f08703474ea63%26afl%3D=
+1&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ceb374012f84e4539726108d8=
+50452dd0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637347605351132990&am=
+p;sdata=3DkM9%2BqV1CnCkIXqY3HfzcKTtlvDmCXXvt5QpFdh1Dk%2Bs%3D&amp;reserved=
+=3D0" originalsrc=3D"http://www.mailchimp.com/email-referral/?utm_source=3D=
+freemium_newsletter&amp;utm_medium=3Demail&amp;utm_campaign=3Dreferral_mark=
+eting&amp;aid=3Dd4cc85576e42f08703474ea63&amp;afl=3D1" shash=3D"xVMOhjWPMv4=
+0zhitrjK/G/koq4Ea60se7vpg9ojx4r8W+KIecdRLvVP53yDVt2mEOQULOtw+5XgBKx/ENwk9SR=
+EHyxumvVujJ81rEPiMmfVKXNIE8SxjL+TfI5c6bOi7G/CP0ha0oSNahMpTru2YZKEPfWIr51r5P=
+Ml9eWnvwpw=3D"><img src=3D"https://cdn-images.mailchimp.com/monkey_rewards/=
+MC_MonkeyReward_15.png" border=3D"0" alt=3D"Email Marketing Powered by Mail=
+chimp" title=3D"Mailchimp Email Marketing" width=3D"139" height=3D"54"></a>=
+ </span></td></tr></tbody></table><!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td></tr></tbody></table></td></tr></tbody></table><!--[if=
+ (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td></tr></tbody></table><=
+!-- // END TEMPLATE --></td></tr></tbody></table></center><img src=3D"https=
+://acmutd.us7.list-manage.com/track/open.php?u=3Dd4cc85576e42f08703474ea63&=
+amp;id=3Db466722361&amp;e=3D4dac0f0b50" height=3D"1" width=3D"1"> </body></=
+html>
+
+--B_3686568111_932279125--

@@ -1,0 +1,800 @@
+Received: from BN6PR01MB2497.prod.exchangelabs.com (2603:10b6:104:3::27) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ CO2PR06CA0069.NAMPRD06.PROD.OUTLOOK.COM; Thu, 20 Aug 2020 21:57:06 +0000
+Received: from SN4PR0701CA0028.namprd07.prod.outlook.com
+ (2603:10b6:803:2d::29) by BN6PR01MB2497.prod.exchangelabs.com
+ (2603:10b6:404:54::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.24; Thu, 20 Aug
+ 2020 21:56:51 +0000
+Received: from SN1NAM02FT052.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:2d:cafe::6b) by SN4PR0701CA0028.outlook.office365.com
+ (2603:10b6:803:2d::29) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.25 via Frontend
+ Transport; Thu, 20 Aug 2020 21:56:51 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.148)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.148 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.148) by
+ SN1NAM02FT052.mail.protection.outlook.com (10.152.72.146) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3305.24 via Frontend Transport; Thu, 20 Aug 2020 21:56:50 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 20 Aug 2020 16:56:14 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 20 Aug 2020 16:56:14 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 09DA5C000055; Thu, 20 Aug 2020 16:56:14 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 69277C000055
+	for <ecs.stu@lists.utdallas.edu>; Thu, 20 Aug 2020 16:41:50 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=jerry.alexander@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  jerry.alexander@utdallas.edu designates 40.107.237.84 as
+  permitted sender) identity=mailfrom; client-ip=40.107.237.84;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="jerry.alexander@utdallas.edu";
+  x-sender="jerry.alexander@utdallas.edu";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16
+  ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: ByrnNbqZOmdjCkvln4HySsUUZXsT2MsAuJ+lelM+pn/qRx/ihpQP0EOR+4QhuG6C6v3V3rdC6Q
+ H2Ku4cGmW69FqVxyKqC3n6uyFYeslZxINrt/DUnygtwjEk7xop1j6Liq9EQ+wgvyoY+gb/NLCq
+ yPwnCH1yl9EQxfDrEW+Fj8x6L70aBUsh8gK2NwfwOaDluk4V0WdCAPE5p9oANf6Car7Gg7sDi1
+ pYBspkJjVWZxxfWbboLAptwkcba3GOPq3bSHCg1yC/X/nZG1xCMnlxX1H48R2jeCuG0UcImpEm
+ 6rSWBhKD/EHtfsthMZ04VyWe
+X-IronPort-RemoteIP: 40.107.237.84
+X-IronPort-MID: 610330
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+IronPort-PHdr: =?us-ascii?q?9a23=3AhtSJkxcNrn/kfWFStIKNnN0VlGMj4u6mDksu8p?=
+ =?us-ascii?q?Mizoh2WeGdxc26YxeN2/xhgRfzUJnB7Loc0qyK6v6mADVZqs7Y+Fk5M7V0Hy?=
+ =?us-ascii?q?cfjssXmwFySOWkMmbcaMDQUiohAc5ZX0Vk9XzoeWJcGcL5ekGA6ibqtW1aFR?=
+ =?us-ascii?q?rwLxd6KfroEYDOkcu3y/qy+5rOaAlUmTaxe7x/IAi3oAnLq8UanJZuJqktxh?=
+ =?us-ascii?q?fUv3BFZ/lYyWR0KFyJgh3y/N2w/Jlt8yRRv/Iu6ctNWrjkcqo7ULJVEi0oP3?=
+ =?us-ascii?q?g668P3uxbDSxCP5mYHXWUNjhVIGQnF4wrkUZr3ryD3q/By2CiePc3xULA0RT?=
+ =?us-ascii?q?Gv5LplRRP0lCsKMSMy/WfKgcJyka1bugqsqRxhzYDJfIGbOvlwfqLBctwVXm?=
+ =?us-ascii?q?dORNpdWzBbD4+gc4cDEewMNvtYoYnnoFsOqAOzCQewCePr1DBJiWX53asn3O?=
+ =?us-ascii?q?s/CwHKxBErEdYQv3TOttX0NKkeWv2ywanK0zrDdelW2Dfn5IfSdhAuv/6NUq?=
+ =?us-ascii?q?h2ccXM10YvDRjIjkiMqYP4JTyV0uANvHKA7+Z6S+2glnMnphh3rzOyycgilp?=
+ =?us-ascii?q?PHiZgJylDY6yp52oA1KMW6RUN/fdKqH5RduiGEO4ZrXs4vQ3xktDskxrAIt5?=
+ =?us-ascii?q?C3YCgExYgnyRLBdvGKc5SE7xL9WeuPLzp0mG5pdK68ihux90Wr1+PyVs6x0F?=
+ =?us-ascii?q?lQrypFlMHBtnQM1xzV6ciIVOZy/kan2TqVyw/T7eRELVgplarHNpEu2Lowlp?=
+ =?us-ascii?q?4JvkTYBCP5hlj5jLKQe045+eao8/zqb7r6qpOGKoN4lgPzPr4wlsGxA+k0KA?=
+ =?us-ascii?q?sDUmeD9emz1rDv51D1TbZIg/Esj6XVrY3WKd4GqqO2DQJZypgv5hejAzqo1d?=
+ =?us-ascii?q?kUgGULI0lEdR+CkYTlJ1LDLfX7APuihlmhlSpny+3AM7b8GJvCNGLDn63kfb?=
+ =?us-ascii?q?tl605T1g4zzddH6pxMFrwPJ+//VlHouNHFFhE0MBW4w+H8B9pjzI8eXn+PAr?=
+ =?us-ascii?q?OCP6PVrF+I4P8gL/OUZI8Pvzb9N+Yq6OLyjX84nl8de7Ol3ZwKaHCkGvRmJE?=
+ =?us-ascii?q?KZYXn2jtgdFmcKuxIyTO3siFKcTT5ef3m/U74m6j0mFI6rD53PSp6jjbGDxi?=
+ =?us-ascii?q?u2HZJbanhDCl+WEHfoc4uEW+0LaCKXOsJhkCILVaK7S44hzx2hrgv6xKRoL+?=
+ =?us-ascii?q?XO/C0XqIzs1MJu6u3OiRE96CZ7D8CZ026XVGF4hH0HSCIr3Kxnu0xy1k+D0b?=
+ =?us-ascii?q?Rkg/xfDdFc+e9GUhwgOZ7H0+x6Fsv/WgbAfteSVFamWc+qASwtTt0s2dAOZ0?=
+ =?us-ascii?q?J9FM+5jhzZwSWlHqIVxPS3A8l+26bRz3H3K8tnjz7k2bM7nhNuFslCL3e3wK?=
+ =?us-ascii?q?d7+hjaAYLEiW2Ei6qjcaAVx2jA+HrVnkSUu0QNGid0XLXMW3wSfA+ej9nj/F?=
+ =?us-ascii?q?KIB+usBK49I01IzcOSI61GZ8fBkElKTfPnMc+Ybm6szTTjTS2Uz6+BOdK5M1?=
+ =?us-ascii?q?4W2z/QXRBeyVI64GqGOA4iByyov2PZCnlUGEnyZ1/3rrcspWiyFAk0xF3XMx?=
+ =?us-ascii?q?Qki/y04h4QlbqXTPZAlqkctnIZoi5vVE24w8qQDtOBowR7e6AJY94n+kYB3G?=
+ =?us-ascii?q?bUpwV7MpG6B71+ilcadw1s+U7iykwtWL9NmsUrsn4miTFKB//DgQF5fiiDld?=
+ =?us-ascii?q?D9IbSNbGn5oE3zMuuKnFDG0NOGvKwI7aZwp1LmtQCvXk0slhcvm9tYyWGNoJ?=
+ =?us-ascii?q?zOARobV578SG4q6xRzo7XTeW8w656c2XB3MKayuyPPwJp1XK18kknmJYwAdv?=
+ =?us-ascii?q?PYXAbpdq9ST9CjMukrh0SkYlofMeZe+bR1d8Kqev2a2bK6aeNpnTaol2NCs8?=
+ =?us-ascii?q?h21kOB8TY5S/adg85DmqnHmFHcCHGs0ATE0Ii/g41PaDAME3DqxDPtXshRbf?=
+ =?us-ascii?q?EvId9OVSGvO82y1pN1gJu+PhwQvFOlGV4C39ekPBSIaFmolw9dz14G53WjlD?=
+ =?us-ascii?q?uxyTB5iRk0sqaW2CjH2KLveAdNaQspDCFyyEzhJ4S5lYVQXkWydRlvnR+o9U?=
+ =?us-ascii?q?/8y6VBjLljI2DXRU5TOSX6MisxN8n4/qrHaMlJ5pQytCxRW+npekiUfbn7pw?=
+ =?us-ascii?q?pJmzOmBWZVwyo3Mi27opis1QIvk3qTdTwgyRiRMdE13xrU48bQAOJcziZTDj?=
+ =?us-ascii?q?ctkiHZXxC9J4X7oY3Sxs2F6qbmEDv8HpxLLXu3lcXZ7HT9vSsyRkTh+pL70t?=
+ =?us-ascii?q?z/TVpni2mij4EsDWOQ60+gKojzi/bjab4hIhYuXBmkrJMlUoBmzNlqjclJiy?=
+ =?us-ascii?q?FD38eboSJfwzW0bYU+u+q2bWJTF2QCm4eHuVG8ikM/dinblcWlBj2cxMBlet?=
+ =?us-ascii?q?W3MHgO1C5799pNFKqf8L1Dm21yv0a8qgXSJ/N6m1J/gbNr4XoeybhY6jpo9T?=
+ =?us-ascii?q?2UB/UpJWcdOCXtkxqS6NXn8PdKeGqmdby5zwxzkc3zVbw=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0CoBQDk7D5fh1TtayhcAw4QAQELEgx?=
+ =?us-ascii?q?AgUyBIS9Rd3UDBwgXAQETCod2hTiiTROBaQIJAQEBAQEBAQEBBwElCAIEAQG?=
+ =?us-ascii?q?ECEQCgkMkAToEDQIDAQEBAwIFAQEBBAEBAQIBAQIDAgIBEwEBAQgNCQgpMIF?=
+ =?us-ascii?q?iAYFGAYEpIQoEMQyCNyKDMRsTAQEqAQkEEQFAQCYBBBsRAgeDBAGBfn8CDKR?=
+ =?us-ascii?q?CAYEoPgIjARItAQECCYEFKYgsNAEBc4E0gwEBAQWBSg+ESQEJgUQDBoE5hh4?=
+ =?us-ascii?q?/gjOFbD6BVIE4FxI8AgEBgiqBHAICF4EHFgsgKxqDA4Iti0OEMCeJUZxSAwQ?=
+ =?us-ascii?q?DgmMElDWGCoMBiV+FMo4YsgQCBAIEBQIQBYFuBYFycoFsCoFBTQECAQIUAQE?=
+ =?us-ascii?q?CAQEIAQEBAVSNSAwOCYNOaokuPkMxNwIGCgEBAwl8jWmBNQEwYAEB?=
+X-IPAS-Result: =?us-ascii?q?A0CoBQDk7D5fh1TtayhcAw4QAQELEgxAgUyBIS9Rd3UDB?=
+ =?us-ascii?q?wgXAQETCod2hTiiTROBaQIJAQEBAQEBAQEBBwElCAIEAQGECEQCgkMkAToED?=
+ =?us-ascii?q?QIDAQEBAwIFAQEBBAEBAQIBAQIDAgIBEwEBAQgNCQgpMIFiAYFGAYEpIQoEM?=
+ =?us-ascii?q?QyCNyKDMRsTAQEqAQkEEQFAQCYBBBsRAgeDBAGBfn8CDKRCAYEoPgIjARItA?=
+ =?us-ascii?q?QECCYEFKYgsNAEBc4E0gwEBAQWBSg+ESQEJgUQDBoE5hh4/gjOFbD6BVIE4F?=
+ =?us-ascii?q?xI8AgEBgiqBHAICF4EHFgsgKxqDA4Iti0OEMCeJUZxSAwQDgmMElDWGCoMBi?=
+ =?us-ascii?q?V+FMo4YsgQCBAIEBQIQBYFuBYFycoFsCoFBTQECAQIUAQECAQEIAQEBAVSNS?=
+ =?us-ascii?q?AwOCYNOaokuPkMxNwIGCgEBAwl8jWmBNQEwYAEB?=
+X-IronPort-AV: E=Sophos;i="5.76,334,1592888400"; 
+   d="scan'208,217";a="610330"
+X-MGA-submission: =?us-ascii?q?MDE9nZLMFGH+1T+abRG8dVsWNxkKeoSvmZc5wq?=
+ =?us-ascii?q?+WhFIxJ41Hr3O5c6Rhdoo2sZoAiqekTBJbNX5c6AHDyhQlwAPgkMFa4T?=
+ =?us-ascii?q?vGfmfiO70lm2OGflEDiXFDaseK8OHuI7CXE7VhXJQB3GyOBy8/eXL3UN?=
+ =?us-ascii?q?m2?=
+Received: from mail-bn8nam12on2084.outbound.protection.outlook.com (HELO NAM12-BN8-obe.outbound.protection.outlook.com) ([40.107.237.84])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 20 Aug 2020 16:37:07 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=eBJyJn3iCSkm9ySTzAljh7DKCOo+iu84izxC/QfQki3H+tvrajIw12qqeF8YGQzxJtuhwC53bYGKhIKhjvcHN1KcPjJ5u3aJRmQZp+kxP+bnBPLJm6S36olxKu3t3xMXRAxHL7HCulc0hUCpjqAI0v4Uf3A0n9LjmNA5dJLK37a8Y21/2P8D26CWJEQFUPka6Rev1IN2DyLWbQvm6Mr23dziD4Ae/WgIG/Nkih3dIfDO+fUtb3Fk+AHwAnlWoP9siYD5HziXqXiLbN+DmHAlMqy9v+QkHx14ysIAFtGjOQJtb3z4xrkkgNbTSty7P3oSGUNnrgldS4K+auKEO6vNhw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ama/nGjyb+RFVK1XskYSpqpZ+9E/pN+InvM9WDOSeGc=;
+ b=hV5pQ6Tth3kv+IT/waDXrIqKggs0k4uA+YPgqabohdyC1OUTUNS8ZLMffi8jAhTw9AEgm/TXoIizhbPwdoGynJoNaE3HfQEbl95ddLecVQrdD7vUc6sjV+i0/NFymamzhRSj7DWXIsm0ZT3anYA3lKvJoqkggGyxBRixFK+epM++EZ5tAiu7nKwZKYhphOjSwSF9NI1wzE8c+U3FdRbnb++g4Pmqqgwr1UZH+TjpgYe5RvgJIReAXFKllWw7HC+bgbKQEAdCvSGN7jXabSg88FrBuUmmjCEXxLlLtZt3jAIAkUkF/lUOY0EAY98z3vP1mNj9yWH2n1twEN65vMYVnw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ama/nGjyb+RFVK1XskYSpqpZ+9E/pN+InvM9WDOSeGc=;
+ b=mcWOtMDnoyXrpSsvpYKFTLwfLz7YsCX/NY1PvlpGrpL4eC4UqoMuHpq6L8lt/88/GcjFD67hMxb8RUFsvDTVgM9n0R55ZjDEkXjj1BZTHLzX8sOoPnp3E9W3eJECwOWT+kk7DviOKQdWlS0bodsHzCspXIJJhOwZPHCp6oUNQtY=
+Received: from BL0PR01MB4404.prod.exchangelabs.com (2603:10b6:208:81::11) by
+ MN2PR01MB6112.prod.exchangelabs.com (2603:10b6:208:158::28) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3305.26; Thu, 20 Aug 2020 21:37:05 +0000
+Received: from BL0PR01MB4404.prod.exchangelabs.com
+ ([fe80::e5b4:80d9:3b23:cbc9]) by BL0PR01MB4404.prod.exchangelabs.com
+ ([fe80::e5b4:80d9:3b23:cbc9%2]) with mapi id 15.20.3305.025; Thu, 20 Aug 2020
+ 21:37:05 +0000
+From: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+Thread-Topic: Best practices for your job search
+Thread-Index: AdZ3OZpAJYG5I3kATO6HLRei8HAD2w==
+Date: Thu, 20 Aug 2020 21:37:04 +0000
+Message-ID: <BL0PR01MB4404FA5D7DF99405D7BCCA2F825A0@BL0PR01MB4404.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [47.187.111.143]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: bfcaadc3-c0bb-467c-6ec2-08d84553f18f
+x-ms-traffictypediagnostic: MN2PR01MB6112:|BN6PR01MB2497:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <MN2PR01MB6112A66272C304529199A0FB825A0@MN2PR01MB6112.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8273;OLM:8273;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ VUyTRz08gJut+iz40NiIIG9W+nn8O9i5ZGsQrSXBF07/2kFkQfLfSaF7L6Q1eXZW3zhd1nnbmKhonQUNoaj75I5ejgWM8bRu9ddyRz/83YZHPzVisOAInM4l49N+NsbzSUUGt5gp8tdsvXR9u24bdzMctd0vj/vo601VUCR7ovu2eqA1ZJgJcexA+/NucL2YvMqQytkfC7BbQM30fPlQEd2sSwosST24jbDEzcCGG/bosPVcNYNodvbj6egs35RrNxaJQk6KLPVeXxyFN6azupx+M/BV3QDRYxSijKop0KEj3xAv1QNk2axoXGmA3RuDm0rcu0Xbl2fpexzD6R+w0A+BljBdsF7VDYNe0Xn/rV2eJd15rklbsXrLUX9qN+yqLRj9q1L/5xLVq76eqwOzcg==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL0PR01MB4404.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(376002)(346002)(39860400002)(396003)(366004)(136003)(26005)(71200400001)(316002)(45080400002)(33656002)(5660300002)(66556008)(8676002)(55016002)(6506007)(296002)(76116006)(786003)(166002)(64756008)(66446008)(83380400001)(86362001)(6200100001)(966005)(66476007)(478600001)(75432002)(66946007)(2906002)(8936002)(9686003)(52536014)(6862004)(186003)(7696005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: w384LPel2hOYx5ebfDyRXxL7IE2E4v1IziJIe7GR+IHXHkscS4920NFw6vEIk87iD4utZe/vll1LVzM7idVxwLykqd2RhSwruOQdfgFXRdgtqCUj6CRDELivJAvm6/PJhKzBvBC+kRqqzmrY1RCFS376GEDB8X/fyqV52W5pkxwjHqOr0ppm8YgTX1gImyGFsBlIWJZMZUjjVsgdFTIP3O8SdIXiul649HTosAEtzWzxcaTLtOfmecs4xO84SPTT+fRtDfoeud4Pp23xgkZ8jQZvV2Am0TZTo+J4aTCiISuxmd0/6qlizFcktG5gqyu1+M3GseDZKcRgfYBB2n3PSGh/8B860m/khJHWrK3Che1mGvOaUrxmME79oAK7fzoq4Ay6zOSxwvG/2qR/bHejkLWsS5HKMTuD0JO6lgcrRMiGZZ+Nzd8l5L4Qs6KlZapLe498M0nt1ALOZ9wQKUXjK4SSDgb6laor4lFynL5QAOCIUxXmPlDljHWDNUna6BEvTHB7raRZQM1fWnUqB3KtR8tIMlU9DTn5HnL4u0mliA2zbm6I6u81j7D+qkeEbjrsaAMjgP+A7anuqlWa/M4sT9oiQr3me4ZfzGpmd92AgoYNqo+w65qxibs/mJWgeZxLnK4N9wzHqdsFtWLtnoCiYA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB6112
+Subject: [ecs.stu] Best practices for your job search
+Reply-To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+X-Loop: ecs.stu@lists.utdallas.edu
+X-Sequence: 1289
+Errors-To: ecs.stu-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.stu-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.stu.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.stu>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.stu>
+List-Post: <mailto:ecs.stu@lists.utdallas.edu>
+List-Owner: <mailto:ecs.stu-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.stu>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.stu/2020-08/BL0PR01MB4404FA5D7DF99405D7BCCA2F825A0%40BL0PR01MB4404.prod.exchangelabs.com>
+Return-Path: ecs.stu-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Aug 2020 21:56:51.0236
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ bfcaadc3-c0bb-467c-6ec2-08d84553f18f
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT052.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT052.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT052.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ fcf5daac-5a45-4374-a5a6-08d845512eac
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.148;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Aug 2020 21:56:50.9556
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: bfcaadc3-c0bb-467c-6ec2-08d84553f18f
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.148];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2497
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:15.7199115
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3283.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?nMFPwMTlXU5jBGWB0GnA48K+BZN9rwGCNvQkDxNqbMMOmWrud/iyTr3XO2eP?=
+ =?us-ascii?Q?9gu3U4dmdGgo4F1icrvQNMT5EjOMuNkG7FjZ0eryM5SV+R1C6nytcG0KH0qV?=
+ =?us-ascii?Q?X0Jz25rdAiZ7rsldEqH+/gDhBLffXVh9bJxWecjReqWTMLyOjklvroBJSN8/?=
+ =?us-ascii?Q?zpiycE7mvnLMKvIoBI68roWfAWnln6c1lNiGqXdclew6dQF5ljPJA1xqMl50?=
+ =?us-ascii?Q?kEimBWX7SMW28P1KTns8EWHNG3HZApsQRroKQHx96ZpmQTrrOtRxguxrI8WD?=
+ =?us-ascii?Q?DgMqH6Kmy/uaHZMAf9OO7Bdi2B3X2y7k+WSQ3bSNQzpcKnUFxbQQH+L9qTn6?=
+ =?us-ascii?Q?My36110+G+YEyFVMnxDKyNwI+i5joNWc+krW/isODnuBpSWlZzQv1jYLxmpf?=
+ =?us-ascii?Q?QPs6Bi7cYC42RPhuJbRshvBllxRl52MDEW56gKVsRsJufunRl17L12ZbiHwn?=
+ =?us-ascii?Q?pBaK0K44/1rI/h84E1mi07LsUiu6LwUHoADuzH9bfHmWIuogUbxmVt/JK7Fo?=
+ =?us-ascii?Q?czVTFtpaRO6EyMMT0+jYVI2omCTAeJlz8ZkY4JgC7KJeXovWhz1oOkVxRJ+9?=
+ =?us-ascii?Q?N0ntQinhdQjZOBNuSyosrG3xm+HA1Jy2LS5zIGztBF14Xh7weI8iM1b4oz8d?=
+ =?us-ascii?Q?VziaLzrNJyGbtIyTNW8u0JzqCfG24E3K2YUOM8fo73fR7fAHCrL1l3AnnWd0?=
+ =?us-ascii?Q?8OsCl1Enri5YTJfjMt/bIEhZmoVsCIwX4lAiw3TopT7yfXXvEM5NfbbRHFJu?=
+ =?us-ascii?Q?9mERdLWJCIdwY1QG4tL1CHSRzCUR7o/5erTkmO4t8k88BWfoSNcmvnUP95MY?=
+ =?us-ascii?Q?Mjh69caWlcfe5zqG5+di2wJHkj65ImB+pOyJRp4tU7fe4fy9KYf9LGoY7s0P?=
+ =?us-ascii?Q?K0fGfg5Q+rnNvzbujPSvCKHmR03SBoDkQlG3edxogXREAmH1KGk1s1lNCpir?=
+ =?us-ascii?Q?IzB/Oj/ZxfUjK7yG7Ocda5Jwzovdgdcm80GO1dqYYGcMK6jZQdC4z9ShC6Xz?=
+ =?us-ascii?Q?n2tyOomDX1a1k4IPmN+zibsz3WsYRsANW2T+fHQrRilaLEkywe0QfIQi8ApI?=
+ =?us-ascii?Q?DB3jap5qigrRwRiItDsxitarUB2kpqDStJzqJ6CUyfBWrga5hCfGga39qRZQ?=
+ =?us-ascii?Q?VvEmCWzxteQeLHPkWDtSRulFYRpijVSd3HPKto/CRVsMv+6qKhrZi6/ik0sW?=
+ =?us-ascii?Q?g7E4IrZ5887Z35hQa25TDbwrJR8Ydomlp1wPKV1CjgD77yHcJtpmCJ4WvHZc?=
+ =?us-ascii?Q?3npm07k64EeeD3gCKQrKnjZlWLfdHNZx2NOLAxzJIT9s2ZwpSxFuCpmNZcXN?=
+ =?us-ascii?Q?ySmdzYGNTA1PfKsoxzTTIWLDcgqpNOYdkAAryUNfb9IAzA7nV1NyJFp41hxx?=
+ =?us-ascii?Q?kWE3fespjugKgPXAKoKeene3fGV4sg55piiovEiNvt+KyjCW3AqbTgBPgrUP?=
+ =?us-ascii?Q?VjHzlzwFx9BqTTjiKskcsEY08nY97RVusER+0tuOVsFJ8J/az4xkrSf99uLR?=
+ =?us-ascii?Q?FUy1Rxxz87Jrf5hBOfGSnFDguzju8b2QyfD0?=
+Content-type: multipart/alternative;
+	boundary="B_3686568091_1908770411"
+MIME-Version: 1.0
+
+--B_3686568091_1908770411
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+If you are interested in finding an internship or entry-level position, I e=
+ncourage you to begin the preparation needed to be successful in your job se=
+arch.
+
+=20
+
+When you interview, your role is to tell stories that describe your skills,=
+ experiences, and passion for your work during the interview. The interviewe=
+r will be assessing your stories and delivery to determine if you are the be=
+st fit for the position.=20
+
+=20
+
+1.      A good analogy for this is the process that actors use to prepare f=
+or their roles. They start by memorizing the script. Once the lines are memo=
+rized, the focus shifts to gaining mastery of the content delivery by practi=
+cing (rehearsing). This ensures that the narrative has a social and emotiona=
+l impact on the audience. Be your own screenwriter by creating stories using=
+ situation or task, actions, and results statements in Power Point:
+
+a.      Situation or task=E2=80=94the most common situations are based on class p=
+rojects, work experience, hobby projects, volunteer experiences, or student =
+leadership activities.
+
+Example: As part of a four-person team, developed working prototype that me=
+t the needs of the professor or employer.=20
+
+b.      Actions-describe what steps you performed to achieve the desired ou=
+tcome.  For most engineering tasks, the design process includes problem defi=
+nition, problem analysis, development of possible solutions, and selection o=
+f the best solution.=20
+
+                                                    i.     Describe these s=
+teps with enough detail to highlight the top level actions and skills used t=
+o achieve the results.=20
+
+c.      Results=E2=80=94what was the outcome of your actions and what did you lea=
+rn?=20
+
+=20
+
+2.      Follow this step-by-step process to rehearse your stories.=20
+
+a.      Print the notes of the PowerPoint stories and begin practicing your=
+ story in front of a mirror or recording on a device.=20
+
+b.      Use this practice to refine your delivery. Your stories will become=
+ much better and you will gain confidence in yourself.=20
+
+c.      Be sure to pay attention to the social and emotional aspects so tha=
+t you come across as authentic, positive, confident, and capable. This step =
+will prepare you to impress the interviewer.=20
+
+d.      Memorization is not enough.
+
+=20
+
+3.      Spending a few minutes each day will improve your ability to presen=
+t yourself as a viable candidate.
+
+4.      As you start applying for jobs, be aware that many companies use ap=
+plicant tracking systems that screen resumes for keywords, phrases, and text=
+ strings. Read the job descriptions carefully to make sure you are presentin=
+g the right information for each job/employer.
+
+=20
+
+For many students, finding a job can be stressful process. By using this pr=
+ocess to develop unconscious competence, you will be learning a life-skill t=
+hat will have a major impact on your career.=20
+
+=20
+If you haven=E2=80=99t done so, I encourage you to create a LinkedIn profile. Emp=
+loyers view LinkedIn as another tool to learn about your skills and experien=
+ces. With a one page resume, you are limited in the information that you can=
+ share. LinkedIn allows you create a portfolio for your activities, employme=
+nt, student organizational involvement, research, academic and hobby project=
+s, and recommendations. and start connecting with Jonsson School students an=
+d alumni. By monitoring the daily feeds, you can view employer posts that ha=
+ve information about events and the recruiting process. One  of the easiest =
+and best resources for creating an effective profile is the Learning LinkedI=
+n for Students video by Oliver Schinkten. His video is one of many videos cr=
+eated by recruiting professionals to provide guidance  on your job search.  =
+You can access the videos at the LinkedIn learning tab on the library=E2=80=99s we=
+bsite. Once you have created a profile, click on my profile and then click o=
+n connect. I will accept your connection request and then you will be able t=
+o view my 23,000 LinkedIn connections.=20
+=20
+
+Please continue to read my emails as I cover topics that help you prepare f=
+or career success.=20
+
+=20
+
+=20
+
+Best regards,
+
+=20
+
+Jerry Alexander-Assistant Dean for Student Development
+
+Director of  Industrial Practice Programs (Intern and Co-op)=20
+
+UT Dallas Erik Jonsson School of Engineering and Computer Science=20
+
+South Engineering and Computer Science Building, room 2.502
+
+https://www.linkedin.com/in/internguy/
+
+972.883.4373
+
+=20
+
+
+--B_3686568091_1908770411
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)"><sty=
+le><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h3
+	{mso-style-priority:9;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParag=
+raphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListPar=
+agraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagra=
+phCxSpLast
+	{mso-style-priority:34;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1471510127;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1006342648 67698703 67698713 67698715 67698703 6769=
+8713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3D"EN-US" link=3D"#0563=
+C1" vlink=3D"#954F72"><div class=3D"WordSection1"><p class=3D"MsoNormal">If=
+ you are interested in finding an internship or entry-level position, I enc=
+ourage you to begin the preparation needed to be successful in your job sea=
+rch.<o:p></o:p></p><p class=3D"MsoNormal" style=3D"margin-right:15.0pt;back=
+ground:white;vertical-align:baseline"><o:p>&nbsp;</o:p></p><p class=3D"MsoN=
+ormal" style=3D"margin-right:15.0pt;background:white;vertical-align:baselin=
+e">When you interview, your role is to tell stories that describe your skil=
+ls, experiences, and passion for your work during the interview. The interv=
+iewer will be assessing your stories and delivery to determine if you are t=
+he best fit for the position. <o:p></o:p></p><p class=3D"MsoNormal" style=
+=3D"margin-right:15.0pt;background:white;vertical-align:baseline"><o:p>&nbs=
+p;</o:p></p><p class=3D"MsoListParagraphCxSpFirst" style=3D"margin-bottom:0=
+in;margin-bottom:.0001pt;mso-add-space:auto;text-indent:-.25in;line-height:=
+normal;mso-list:l0 level1 lfo1"><![if !supportLists]><span style=3D"mso-lis=
+t:Ignore">1.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>A good analogy for this is t=
+he process that actors use to prepare for their roles. They start by memori=
+zing the script. Once the lines are memorized, the focus shifts to gaining =
+mastery of the content delivery by practicing (rehearsing). This ensures th=
+at the narrative has a social and emotional impact on the audience. Be your=
+ own screenwriter by creating stories using situation or task, actions, and=
+ results statements in Power Point:<o:p></o:p></p><p class=3D"MsoListParagr=
+aphCxSpLast" style=3D"mso-margin-top-alt:0in;margin-right:0in;margin-bottom=
+:0in;margin-left:1.0in;margin-bottom:.0001pt;mso-add-space:auto;text-indent=
+:-.25in;line-height:normal;mso-list:l0 level2 lfo1"><![if !supportLists]><s=
+pan style=3D"mso-list:Ignore">a.<span style=3D"font:7.0pt &quot;Times New R=
+oman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b><span=
+ style=3D"color:#222222;background:white">Situation or task=E2=80=94</span>=
+</b><span style=3D"color:#222222;background:white">the</span><b><span style=
+=3D"color:#222222;background:white"> </span></b><span style=3D"color:#22222=
+2;background:white">most common situations are based on class projects, wor=
+k experience, hobby projects, volunteer experiences, or student leadership =
+activities.</span><o:p></o:p></p><p class=3D"MsoNormal" style=3D"margin-lef=
+t:1.5in">Example: As part of a four-person team, developed working prototyp=
+e that met the needs of the professor or employer. <o:p></o:p></p><p class=
+=3D"MsoListParagraphCxSpFirst" style=3D"mso-margin-top-alt:0in;margin-right=
+:0in;margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;mso-add-spac=
+e:auto;text-indent:-.25in;line-height:normal;mso-list:l0 level2 lfo1"><![if=
+ !supportLists]><strong><span style=3D"font-family:&quot;Calibri&quot;,sans=
+-serif;font-weight:normal"><span style=3D"mso-list:Ignore">b.<span style=3D=
+"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </s=
+pan></span></span></strong><![endif]><strong><span style=3D"font-family:&qu=
+ot;Calibri&quot;,sans-serif;color:#222222;background:white">Actions</span><=
+/strong><strong><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;c=
+olor:#222222;background:white;font-weight:normal">-describe</span></strong>=
+<span style=3D"color:#212529;letter-spacing:-.35pt;background:white"> what =
+steps you performed to achieve the desired outcome.&nbsp; </span><span styl=
+e=3D"color:#222222;background:white">For most engineering tasks, the design=
+ process&nbsp;includes problem definition, problem analysis, development of=
+ possible solutions, and selection of the best solution. </span><strong><sp=
+an style=3D"font-family:&quot;Calibri&quot;,sans-serif;font-weight:normal">=
+<o:p></o:p></span></strong></p><p class=3D"MsoListParagraphCxSpMiddle" styl=
+e=3D"mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:=
+1.5in;margin-bottom:.0001pt;mso-add-space:auto;text-indent:-1.5in;mso-text-=
+indent-alt:-9.0pt;line-height:normal;mso-list:l0 level3 lfo1"><![if !suppor=
+tLists]><strong><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;f=
+ont-weight:normal"><span style=3D"mso-list:Ignore"><span style=3D"font:7.0p=
+t &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style=3D"font:7.0pt &q=
+uot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></=
+strong><![endif]><strong><span style=3D"font-family:&quot;Calibri&quot;,san=
+s-serif;color:#222222;background:white;font-weight:normal">Describe these s=
+teps with enough detail to highlight the top level actions and skills used =
+to achieve the results. </span></strong><strong><span style=3D"font-family:=
+&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p></o:p></span></stro=
+ng></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"mso-margin-top-alt:=
+0in;margin-right:0in;margin-bottom:0in;margin-left:1.0in;margin-bottom:.000=
+1pt;mso-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:l0 le=
+vel2 lfo1"><![if !supportLists]><strong><span style=3D"font-family:&quot;Ca=
+libri&quot;,sans-serif;font-weight:normal"><span style=3D"mso-list:Ignore">=
+c.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp; </span></span></span></strong><![endif]><strong><span style=3D=
+"font-family:&quot;Calibri&quot;,sans-serif;color:#222222;background:white"=
+>Results=E2=80=94</span></strong><strong><span style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;color:#222222;background:white;font-weight:normal">=
+what was the outcome of your actions and what did you learn? </span></stron=
+g><strong><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;font-we=
+ight:normal"><o:p></o:p></span></strong></p><p class=3D"MsoListParagraphCxS=
+pMiddle" style=3D"mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in=
+;margin-left:1.0in;margin-bottom:.0001pt;mso-add-space:auto;line-height:nor=
+mal"><strong><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;font=
+-weight:normal"><o:p>&nbsp;</o:p></span></strong></p><p class=3D"MsoListPar=
+agraphCxSpMiddle" style=3D"margin-bottom:0in;margin-bottom:.0001pt;mso-add-=
+space:auto;text-indent:-.25in;line-height:normal;mso-list:l0 level1 lfo1"><=
+![if !supportLists]><strong><span style=3D"font-family:&quot;Calibri&quot;,=
+sans-serif;font-weight:normal"><span style=3D"mso-list:Ignore">2.<span styl=
+e=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ </span></span></span></strong><![endif]><strong><span style=3D"font-family=
+:&quot;Calibri&quot;,sans-serif">Follow this step-by-step process to rehear=
+se your stories. </span></strong><strong><span style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;font-weight:normal"><o:p></o:p></span></strong></p>=
+<p class=3D"MsoListParagraphCxSpMiddle" style=3D"mso-margin-top-alt:0in;mar=
+gin-right:0in;margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;mso=
+-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:l0 level2 lf=
+o1"><![if !supportLists]><strong><span style=3D"font-family:&quot;Calibri&q=
+uot;,sans-serif;font-weight:normal"><span style=3D"mso-list:Ignore">a.<span=
+ style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; </span></span></span></strong><![endif]><strong><span style=3D"font-f=
+amily:&quot;Calibri&quot;,sans-serif;font-weight:normal">Print the notes of=
+ the PowerPoint stories and begin practicing your story in front of a mirro=
+r or recording on a device. </span></strong><strong><span style=3D"font-fam=
+ily:&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p></o:p></span></=
+strong></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"mso-margin-top-=
+alt:0in;margin-right:0in;margin-bottom:0in;margin-left:1.0in;margin-bottom:=
+.0001pt;mso-add-space:auto;text-indent:-.25in;line-height:normal;mso-list:l=
+0 level2 lfo1"><![if !supportLists]><strong><span style=3D"font-family:&quo=
+t;Calibri&quot;,sans-serif;font-weight:normal"><span style=3D"mso-list:Igno=
+re">b.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; </span></span></span></strong><![endif]><strong><span styl=
+e=3D"font-family:&quot;Calibri&quot;,sans-serif;font-weight:normal">Use thi=
+s practice to refine your delivery. Your stories will become much better an=
+d you will gain confidence in yourself. </span></strong><strong><span style=
+=3D"font-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p></o=
+:p></span></strong></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"mso=
+-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:1.0in;ma=
+rgin-bottom:.0001pt;mso-add-space:auto;text-indent:-.25in;line-height:norma=
+l;mso-list:l0 level2 lfo1"><![if !supportLists]><strong><span style=3D"font=
+-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><span style=3D"m=
+so-list:Ignore">c.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><![endif]><stron=
+g><span style=3D"font-family:&quot;Calibri&quot;,sans-serif;font-weight:nor=
+mal">Be sure to pay attention to the social and emotional aspects so that y=
+ou come across as authentic, positive, confident, and capable. This step wi=
+ll prepare you to impress the interviewer. </span></strong><strong><span st=
+yle=3D"font-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p>=
+</o:p></span></strong></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"=
+mso-margin-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:1.0in=
+;margin-bottom:.0001pt;mso-add-space:auto;text-indent:-.25in;line-height:no=
+rmal;mso-list:l0 level2 lfo1"><![if !supportLists]><strong><span style=3D"f=
+ont-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><span style=
+=3D"mso-list:Ignore">d.<span style=3D"font:7.0pt &quot;Times New Roman&quot=
+;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><![endif]><=
+strong><u><span style=3D"font-family:&quot;Calibri&quot;,sans-serif">Memori=
+zation is not enough</span></u></strong><strong><span style=3D"font-family:=
+&quot;Calibri&quot;,sans-serif">.</span></strong><strong><span style=3D"fon=
+t-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p></o:p></sp=
+an></strong></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"mso-margin=
+-top-alt:0in;margin-right:0in;margin-bottom:0in;margin-left:1.0in;margin-bo=
+ttom:.0001pt;mso-add-space:auto;line-height:normal"><strong><span style=3D"=
+font-family:&quot;Calibri&quot;,sans-serif;font-weight:normal"><o:p>&nbsp;<=
+/o:p></span></strong></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"m=
+argin-bottom:0in;margin-bottom:.0001pt;mso-add-space:auto;text-indent:-.25i=
+n;line-height:normal;mso-list:l0 level1 lfo1"><![if !supportLists]><span st=
+yle=3D"mso-list:Ignore">3.<span style=3D"font:7.0pt &quot;Times New Roman&q=
+uot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Spending a few=
+ minutes each day will improve your ability to present yourself as a viable=
+ candidate.<o:p></o:p></p><p class=3D"MsoListParagraphCxSpMiddle" style=3D"=
+margin-bottom:0in;margin-bottom:.0001pt;mso-add-space:auto;text-indent:-.25=
+in;line-height:normal;mso-list:l0 level1 lfo1"><![if !supportLists]><span s=
+tyle=3D"mso-list:Ignore">4.<span style=3D"font:7.0pt &quot;Times New Roman&=
+quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><strong><span=
+ style=3D"font-family:&quot;Calibri&quot;,sans-serif">As you start applying=
+ for jobs, be aware that many companies use applicant tracking systems that=
+ screen resumes </span></strong><span style=3D"color:black;background:white=
+">for keywords, phrases, and text strings. Read the job descriptions carefu=
+lly to make sure you are presenting the right information for each job/empl=
+oyer.</span><o:p></o:p></p><p class=3D"MsoListParagraphCxSpLast" style=3D"m=
+argin-bottom:0in;margin-bottom:.0001pt;mso-add-space:auto;line-height:norma=
+l"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">For many students, finding a=
+ job can be stressful process. By using this process to develop unconscious=
+ competence, you will be learning a life-skill that will have a major impac=
+t on your career. <o:p></o:p></p><p class=3D"MsoNormal">&nbsp;<o:p></o:p></=
+p><h3 style=3D"margin:0in;margin-bottom:.0001pt;vertical-align:baseline"><s=
+pan style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;fo=
+nt-weight:normal">If you haven=E2=80=99t done so, I encourage you to create=
+ a </span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,s=
+ans-serif">LinkedIn profile</span><span style=3D"font-size:11.0pt;font-fami=
+ly:&quot;Calibri&quot;,sans-serif;font-weight:normal">. Employers view Link=
+edIn as another tool to learn about your skills and experiences. With a one=
+ page resume, you are limited in the information that you can share. Linked=
+In allows you create a portfolio for your activities, employment, student o=
+rganizational involvement, research, academic and hobby projects, and recom=
+mendations. and start connecting with Jonsson School students and alumni. B=
+y monitoring the daily feeds, you can view employer posts that have informa=
+tion about events and the recruiting process. One&nbsp; of the easiest and =
+best resources for creating an effective profile is the <a href=3D"https://=
+nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.linkedin.co=
+m%2Flearning%2Flearning-linkedin-for-students%3Fu%3D70198226&amp;data=3D02%=
+7C01%7CEric.Zhang%40UTDallas.edu%7Cbfcaadc3c0bb467c6ec208d84553f18f%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637335574264847990&amp;sdata=3DHt%2FP=
+aF70%2B98btm87EzLSBimPgGyalgE8UjJKDHUVADA%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.linkedin.com/learning/learning-linkedin-for-students?u=3D70=
+198226" shash=3D"XQPgV7416poSvWZDoQ8TaWarrLhwLfIxOAfw68ui0jbbDFy2mPHo6MPUWA=
+YbVBdjTrfkjf8RA8mEC9HW0npgJjlyvkIXFVISUPXAP3bDPoULAwfYBT6NreKLoTxGF47nc7+3H=
+e3dsjyjiypZaeMqmiHQLBxOb4IzbohQ+t08rds=3D"><span style=3D"color:windowtext;=
+border:none windowtext 1.0pt;padding:0in;text-decoration:none">Learning Lin=
+kedIn for Students</span></a> video by <span style=3D"border:none windowtex=
+t 1.0pt;padding:0in"><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fwww.linkedin.com%2Flearning%2Finstructors%2Foliver=
+-schinkten%3Fu%3D70198226&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C=
+bfcaadc3c0bb467c6ec208d84553f18f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637335574264857984&amp;sdata=3DCzvG81Iskze%2FJ8R9WllKUm2APGwNLFfxmE4dUPx=
+DaiI%3D&amp;reserved=3D0" originalsrc=3D"https://www.linkedin.com/learning/=
+instructors/oliver-schinkten?u=3D70198226" shash=3D"lG1+rLWHOGJtnsmhlBo6SqT=
+KCyz0rm3ac6e1f003yMpkOTvr3mnsoInO454zn5q5i/dxpwIfsHHgfiQvf1ISYhrvj0ca+U/W0O=
+Wil0veGxtLJmpuPZUAS62GLtRo9ZIBuMLm+SCZqWNxpwCOytkvP1CTrcTzj96Ci60xDLdkUOw=
+=3D"><span style=3D"color:windowtext;text-decoration:none">Oliver Schinkten=
+</span></a>. </span>His video is one of many videos created by recruiting p=
+rofessionals to provide guidance&nbsp; on your job search.<span style=3D"bo=
+rder:none windowtext 1.0pt;padding:0in">&nbsp; You can access the videos at=
+ the </span><a href=3D"https://www.utdallas.edu/library/utdlynda/">LinkedIn=
+ learning tab</a><span style=3D"border:none windowtext 1.0pt;padding:0in"> =
+on the library=E2=80=99s website. Once you have created a profile, click on=
+ </span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fwww.linkedin.com%2Fin%2Finternguy%2F&amp;data=3D02%7C01%7CEric.=
+Zhang%40UTDallas.edu%7Cbfcaadc3c0bb467c6ec208d84553f18f%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637335574264857984&amp;sdata=3Dxn4nNCJXzorF3fH%2F=
+xqG8su6a1wp0apo6ptxcPbMrjw8%3D&amp;reserved=3D0" originalsrc=3D"https://www=
+.linkedin.com/in/internguy/" shash=3D"Nm750nIQ7ZiOLswPASRel9Lb3W1jTkzHq3CWH=
+U7pVnWqccZJ960Z6bbD/77TaFHOFedf7dwk5QcHhxvfypT0WjTodFsLeIcsx9Z1vVVp9T86EHJI=
+MYKvnbfpY9ih+rAzGRzPABefY3nVw5B4dPh42p4pKfhLQXKDbEoV62OkrpI=3D">my profile<=
+/a> and then<span style=3D"border:none windowtext 1.0pt;padding:0in"> click=
+ on connect. I will accept your connection request and then you will be abl=
+e to view my 23,000 LinkedIn connections. </span><o:p></o:p></span></h3><p =
+class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Please cont=
+inue to read my emails as I cover topics that help you prepare for career s=
+uccess. <o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=
+=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal"><span style=3D"c=
+olor:black">Best regards,<o:p></o:p></span></p><p class=3D"MsoNormal"><span=
+ style=3D"color:black"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><=
+span style=3D"color:black">Jerry Alexander-Assistant Dean for Student Devel=
+opment<o:p></o:p></span></p><p class=3D"MsoNormal"><span style=3D"color:bla=
+ck">Director of&nbsp; Industrial Practice Programs (Intern and Co-op) <o:p>=
+</o:p></span></p><p class=3D"MsoNormal"><span style=3D"color:black">UT Dall=
+as Erik Jonsson School of Engineering and Computer Science <o:p></o:p></spa=
+n></p><p class=3D"MsoNormal"><span style=3D"color:black">South Engineering =
+and Computer Science Building, room 2.502<o:p></o:p></span></p><p class=3D"=
+MsoNormal"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fwww.linkedin.com%2Fin%2Finternguy%2F&amp;data=3D02%7C01%7C=
+Eric.Zhang%40UTDallas.edu%7Cbfcaadc3c0bb467c6ec208d84553f18f%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637335574264867979&amp;sdata=3DJya5fjWsutCYn=
+Uq%2FjEDJwrw4%2B%2F2ujbM4hfjTwt6KWkI%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://www.linkedin.com/in/internguy/" shash=3D"jmADJj7cvjF0v4z3WFdDm0XBa77D=
+rKNK8jHIOPK39DFZkfwiZrKXgK2EjQVa1utbx8J2O59AM+riJYCSthine91bGW++ywL8r5LMdNs=
+NNKm+TeEtyHet77IlvMyPJu1X7JTT9+/UagyRzg1THpnLjblpSU6IUTNWCRPS2Zz8250=3D"><s=
+pan style=3D"color:blue">https://www.linkedin.com/in/internguy/</span></a><=
+span style=3D"color:black"><o:p></o:p></span></p><p class=3D"MsoNormal"><sp=
+an style=3D"color:black">972.883.4373<o:p></o:p></span></p><p class=3D"MsoN=
+ormal"><o:p>&nbsp;</o:p></p></div></body></html>
+
+--B_3686568091_1908770411--

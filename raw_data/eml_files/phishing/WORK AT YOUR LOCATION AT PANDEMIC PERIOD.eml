@@ -1,0 +1,144 @@
+Received: from MN2PR01MB5629.prod.exchangelabs.com (2603:10b6:300:db::14) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR21CA0052.NAMPRD21.PROD.OUTLOOK.COM; Sat, 27 Jun 2020 10:51:06 +0000
+Received: from BL0PR02CA0006.namprd02.prod.outlook.com (2603:10b6:207:3c::19)
+ by MN2PR01MB5629.prod.exchangelabs.com (2603:10b6:208:117::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3131.21; Sat, 27 Jun 2020 10:51:02 +0000
+Received: from BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:207:3c:cafe::f1) by BL0PR02CA0006.outlook.office365.com
+ (2603:10b6:207:3c::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3131.20 via Frontend
+ Transport; Sat, 27 Jun 2020 10:51:02 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.221.66)
+ smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=gmail.com;utdallas.edu; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.221.66 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.221.66; helo=mail-wr1-f66.google.com;
+Received: from mail-wr1-f66.google.com (209.85.221.66) by
+ BL2NAM02FT008.mail.protection.outlook.com (10.152.76.162) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3131.20 via Frontend Transport; Sat, 27 Jun 2020 10:51:02 +0000
+Received: by mail-wr1-f66.google.com with SMTP id b6so11841376wrs.11
+        for <Eric.Zhang@utdallas.edu>; Sat, 27 Jun 2020 03:51:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:reply-to:from:date:message-id:subject:to;
+        bh=ElfmJa9fj6VQU8SB2YwyC+Yd9P39ypTkCAJwpPHhGCg=;
+        b=p2DDqCMTOKKFN0c7dSVaJbbE+WJTEMFNYcK6uvunD8fqOf6trRbd6mhHxkbuAzfoE6
+         +j1B6sNlRs8Jipyq2A76LS2smEHNGiKJyb30EMkzR97oGffhHissm3FhTIIBM1wIUuRs
+         jyZdCzEQVJ7qtPaQneaAAxFtCUW+0Gdtl1mvM+CB7pkPa0VjkPbiYvc6/yBU2hVOmZaW
+         codSXvQrdIrOblWM6Kf4Xy5YAssEm9WtQoX3dUvgm8hrfVq2NaZP1oalz83BO+hWjHJT
+         8yMVKIJU+6t/fCS57qWscnvGvt4R26OkEE5PHISyEiROkAZXBHUmyDo9YyzHBY0ntd72
+         7p2A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to;
+        bh=ElfmJa9fj6VQU8SB2YwyC+Yd9P39ypTkCAJwpPHhGCg=;
+        b=JWl2kJs6ZtwQPuWon3IZsEXjSUkHIFrwQKpDgUn1mR0m+eTu1jqtfBoxx7OtW0osXz
+         e7gtXVUdKTVdf5U1K41s3OADjqhk84mQUZpUgG0xRvi+D8Yk/0AoSbbhuqXBx1W7vIAG
+         ejN1RGCpB+usXbE7i3zzvUn8iSpm18uMjVBnNexFTIwALZiyJXPg3u0hW8mejUxKqk1E
+         yyz5C6MNv50LCMEL4Ss35OrG6a9auU9UPvXuboAUmE48MnadZj6y9pMV8RIYxeHQNyoW
+         Q9a0oXPjIVh5lPYq4yh6kG9L1UL8I8+e52geNwD8eW4i2HxUhiW6Tf34VSeO6sPHdTZ9
+         aNQQ==
+X-Gm-Message-State: AOAM532LHOJ8Fb8EwgWOb29hywokoQc7RUT+KmBHk3U58UnZHdw8l2KN
+	UEdTMNq2d0jlWmoXbxYlXR0WiyDaC6gjo+peRDrXhpPm
+X-Google-Smtp-Source: ABdhPJxC7pVo6ZrAe8o+kiANzEjtthXgV5udXAzWUASgrOGXSLtUvH+QluHGvP2DjsBRPGKJHtT/tHquWgGUGcPx+/0=
+X-Received: by 2002:ac2:5226:: with SMTP id i6mr4308440lfl.55.1593255060592;
+ Sat, 27 Jun 2020 03:51:00 -0700 (PDT)
+Received: by 2002:a05:6512:20c:0:0:0:0 with HTTP; Sat, 27 Jun 2020 03:50:59
+ -0700 (PDT)
+Reply-To: richardfrank001@gmail.com
+From: Bally Technologies Inc <myltd7@gmail.com>
+Date: Sat, 27 Jun 2020 11:50:59 +0100
+Message-ID: <CAPP71HyfnJ6AQQfv=xSS_b2MjgFaCZFAhwh9bGaPwzzBsMuDDw@mail.gmail.com>
+Subject: WORK AT YOUR LOCATION AT PANDEMIC PERIOD
+To: undisclosed-recipients:;
+Bcc: Eric.Zhang@utdallas.edu
+Return-Path: myltd7@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Jun 2020 10:51:02.2529
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d24e6ab4-6821-4c87-4846-08d81a87fbee
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:209.85.221.66;CTRY:US;LANG:en;SCL:6;SRV:;IPV:NLI;SFV:SPM;H:mail-wr1-f66.google.com;PTR:mail-wr1-f66.google.com;CAT:SPM;SFTY:;SFS:(4636009)(109986005)(336012)(76482006)(22186003)(5660300002)(1096003)(558084003)(2860700004)(26005)(42186006)(55446002)(73392003)(58800400005)(83380400001)(2160300002)(82202003)(8676002)(86362001)(356005)(7636003)(7596003)(55470200001)(36900200004)(15660700003)(37350500002);DIR:INB;SFP:;
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: d24e6ab4-6821-4c87-4846-08d81a87fbee
+X-MS-TrafficTypeDiagnostic: MN2PR01MB5629:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:873;
+X-MS-Exchange-Organization-SCL: 6
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Jun 2020 10:51:02.2499
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d24e6ab4-6821-4c87-4846-08d81a87fbee
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5629
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.1931402
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3131.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?5KKZNGt/F922iPY3aT+U9aYyYQv9ZuzIg44iMYvuArWz1UavSkN7p/b0D/jo?=
+ =?us-ascii?Q?hEdZf2sxaurjCktfrsv18fbm0NUzBfbtUpOHmyreijOG1ozsVRpUJfa5suCe?=
+ =?us-ascii?Q?1A+NljsJ/VogrKFRb0KJuTUsW0ytBf00vW0taVxGCHZ/qLg3e1ngDIWHLu5k?=
+ =?us-ascii?Q?P4qnShVP1aXT5D46e13uByzxe9WBP8tSYu/3OyzFBg0QJIuc2K5ppsxhskDj?=
+ =?us-ascii?Q?gzCASLRUirj8fqw8f9Imrv6DQxg3X2fL6cGQuaStieqI6YxqrhHQKHJ+3GBJ?=
+ =?us-ascii?Q?aqiIuC2oGvlhSOZKvy9G8FUw/aLyGQo1gMDWb4QiRy1kIgP3PY1+cOiePVYe?=
+ =?us-ascii?Q?WThCCODvLS7NdGfcWlOBs7w7wfj8Lu49X8uVzJSVIMDPIwJIrmK/IFyYX6Tu?=
+ =?us-ascii?Q?tHZw6utPmDR7/na2uIH4XaVdpD6spNPoouhnRgLitoVY2DV/XDVs1uVZkxYR?=
+ =?us-ascii?Q?F1zMNV389mFjqAHqtSPwRYSvAPL2LECvNfEDscEex8tVs3FR3APrBpU3FVGG?=
+ =?us-ascii?Q?NdxUw27rVK1Q71DXHc07pMBvIFKLofsQla+iNmN1tVARHbPtPp9Q6zqtO9Q5?=
+ =?us-ascii?Q?O50WHoEW8Ns52ZeLOBE0sMC7ZAFFQ2ZoiBt2RGLvIsoRSq/T8OoColP/uQnq?=
+ =?us-ascii?Q?ViZBH+MPqDFGrbAXf9PGlLmenJUBOlGPRKfC1OY1Pl5ntCyukpus0liL8ybl?=
+ =?us-ascii?Q?6rRmSoQmFpoFHY6ryCRYWZpJ8ob987dkIkhhVE6EULEYBXuSR21WybvUzHZp?=
+ =?us-ascii?Q?Nn7ylclyjrA3umtUEClS7XqSJH8BZKo3U2ehqA6C18k+Z1f4z+j0QQbE9w57?=
+ =?us-ascii?Q?SM5uPnn2u0j0CTyPuu3UR0EOd8BPhKnpM9dcHXo0EbOExnHSE1Vq4pvThOp4?=
+ =?us-ascii?Q?PL8HWVKD3zVj8uBFFak6ujyvJ2K85khVBBZ9ne4IeGjpRG0++XyN0Hhpz9hj?=
+ =?us-ascii?Q?scSLc0NRGMm+3K6SFrZWnRK3Y6Efl8BS1RTE74WjOenmiMaUBVIzlXL7zEsp?=
+ =?us-ascii?Q?73JjIhjK0tN/h0+2hi+GlHBp1B3Ug4pNVkJdiTwjOxA24VfmP/yB6h8bl177?=
+ =?us-ascii?Q?02Ym7z/+Jv4fRI6kvSqI39W6cOyhBKJbLl34mATDuA3IMTE5wKpUcAthc/VC?=
+ =?us-ascii?Q?RDaIq3irNcQxfdcpJd0HZpBa0oN4yKfE20i3uqE3JScQ2FZQOJhkV2FO+4J3?=
+ =?us-ascii?Q?4L+dD700ddTYAWya84EfoPohatFKKerIgF473K6aTxhSxcFj6Po7pvPmKrJe?=
+ =?us-ascii?Q?XMXej1AGisASQmjNUrupD3HN11nY/4ly4J85tX5YD9O6FSvwnt3tVgjnz40y?=
+ =?us-ascii?Q?HFAhTEZ3qVk3L6hxNsgsSrh90Qy0sIAVdETLdIxDSvZDuLb+saMwYs20qKSx?=
+ =?us-ascii?Q?2J2XpAWpG6wQDyL9844y0lC+esn0D1GcV4Sbq06f1yh6NCXhx4CjCAsJ2WNu?=
+ =?us-ascii?Q?FQHbF4UApnPgMcINolkvpcehp2wAaKRhVXNsZmBsd/65k3pKv53+xhviD/Zx?=
+ =?us-ascii?Q?lViaQsSTBB80DmX9sz9fksbJw41Vnh86YN160zwd8bEdb+CAyIm+Dmpv8Ey/?=
+ =?us-ascii?Q?+8IYKqgzqctTnhYcbi8H7U7BJ2YmYzcDpHFTdXJhhEqDTLm7qThtW6xSBDB2?=
+ =?us-ascii?Q?MBz/3Fa7sPunrDOS+d0NT5l0CLmdk99l2UkmXDDg6I7G1nyo0lLcuI8YseMZ?=
+ =?us-ascii?Q?s2zu8hHuU67MhBbgBNERNB/qeHu+NN0JEg5iIydxATfjKWsQmRXRkqfCDCU5?=
+ =?us-ascii?Q?JvEam8GLsiuzpHHOR5YsZSSrktcO0IXkokUwO2FXDTldgrxwFGxZtC+G91gv?=
+ =?us-ascii?Q?G/m5oYNn7gpXkgqwXBJEVyDM2/fcyXVR3tZkEyQIR6+YCQhpHxBrCZLYmy3T?=
+ =?us-ascii?Q?qO/JApWo4tZraOX3qYaJA1yL0T9XAVOirUFYCNU=3D?=
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+MIME-Version: 1.0
+
+-- 
+Get administrative Assistant ii Position for Flexible work hours that
+won't affect your academic schedule. send  your name and phone number
+for the job detail,Dr Eric
+

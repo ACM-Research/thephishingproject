@@ -1,0 +1,614 @@
+Received: from CO2PR01MB1992.prod.exchangelabs.com (2603:10b6:300:ed::27) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR20CA0041.NAMPRD20.PROD.OUTLOOK.COM; Wed, 2 Sep 2020 16:40:07 +0000
+Received: from CY4PR03CA0011.namprd03.prod.outlook.com (2603:10b6:903:33::21)
+ by CO2PR01MB1992.prod.exchangelabs.com (2603:10b6:102:f::19) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3348.15; Wed, 2 Sep 2020 16:40:05 +0000
+Received: from CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:33:cafe::91) by CY4PR03CA0011.outlook.office365.com
+ (2603:10b6:903:33::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3348.15 via Frontend
+ Transport; Wed, 2 Sep 2020 16:40:05 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ CY1NAM02FT027.mail.protection.outlook.com (10.152.75.159) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3326.19 via Frontend Transport; Wed, 2 Sep 2020 16:40:05 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Wed, 2 Sep 2020 11:38:11 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Wed, 2 Sep 2020 11:38:11 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id BAEA2C00005C; Wed,  2 Sep 2020 11:38:11 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (exchange.utdallas.edu [10.182.71.117])
+	by lists.utdallas.edu (Postfix) with ESMTP id A0673C000058;
+	Wed,  2 Sep 2020 11:38:06 -0500 (CDT)
+Received: from mail-ed1-f42.google.com (10.182.70.130) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Wed, 2 Sep 2020 11:38:06 -0500
+Received: by mail-ed1-f42.google.com with SMTP id q21so5591558edv.1;
+        Wed, 02 Sep 2020 09:38:06 -0700 (PDT)
+X-Gm-Message-State: AOAM531LnpBDa8XjTx/AHz+UYWILRQM4UXk1oRgB94SX+t3rbASnbc7h
+	gIfq1sVhtCOnMy07nbB+Gs0boUtA1yAYUd/1J4g=
+X-Google-Smtp-Source: ABdhPJwyV3z8ACD7rPfb3SnEa9ynobid4cXos72b3P8AhwX15vcHzotDT5Kc7coeYZLzCVq0zwUb5c87oohauMat99M=
+X-Received: by 2002:aa7:d059:: with SMTP id n25mr922589edo.270.1599064684469;
+ Wed, 02 Sep 2020 09:38:04 -0700 (PDT)
+References: <SA9PR09MB57425AD6FA9DF93AFE067ABEB62E0@SA9PR09MB5742.namprd09.prod.outlook.com>
+ <SA9PR09MB5086993E9F97D64E79D79D9D802F0@SA9PR09MB5086.namprd09.prod.outlook.com>
+ <SA0PR09MB6572C9B0BE1756E7F33DB4AEA62F0@SA0PR09MB6572.namprd09.prod.outlook.com>
+ <422914789391493080ce3143ffa2efa9@BN6PR0101MB2929.prod.exchangelabs.com>
+In-Reply-To: <422914789391493080ce3143ffa2efa9@BN6PR0101MB2929.prod.exchangelabs.com>
+From: Jey Veerasamy <jeyv@utdallas.edu>
+Date: Wed, 2 Sep 2020 11:37:28 -0500
+X-Gmail-Original-Message-ID: <CAKZQkmD2oRWGB+NbexApTaMiq_UrYHRYeHAiJCzrzw0-eN1RwQ@mail.gmail.com>
+Message-ID: <CAKZQkmD2oRWGB+NbexApTaMiq_UrYHRYeHAiJCzrzw0-eN1RwQ@mail.gmail.com>
+To: <ecs.cs.ug@utdallas.edu>, <ecs.se.ug@utdallas.edu>
+X-Originating-IP: [10.182.70.130]
+X-ClientProxiedBy: utdex12.campus.ad.utdallas.edu (10.180.14.117) To
+ utdex01.campus.ad.utdallas.edu (10.182.71.117)
+Subject: [ecs.cs.ug] FY21 MSFC Pathways Intern Job Vacancy Announcement
+ (opening September 14-16, 2020)
+Reply-To: Jey Veerasamy <jeyv@utdallas.edu>
+X-Loop: ecs.cs.ug@lists.utdallas.edu
+X-Sequence: 1166
+Errors-To: ecs.cs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.cs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.cs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.cs.ug>
+List-Post: <mailto:ecs.cs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.cs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.cs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.cs.ug/2020-09/CAKZQkmD2oRWGB%2BNbexApTaMiq_UrYHRYeHAiJCzrzw0-eN1RwQ%40mail.gmail.com>
+Return-Path: ecs.cs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Sep 2020 16:40:05.2733
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e6b765b8-99af-45b7-fbbf-08d84f5ed89e
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: e6b765b8-99af-45b7-fbbf-08d84f5ed89e
+X-MS-TrafficTypeDiagnostic: CO2PR01MB1992:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:6790;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Sep 2020 16:40:05.1733
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e6b765b8-99af-45b7-fbbf-08d84f5ed89e
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB1992
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7078521
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3305.034
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?/8suJkZFruV8ER7BkzokhYFwsDlZ1Ej6fB3WUcVz256pTTEjnxXbTeT+lcrK?=
+ =?us-ascii?Q?25S6mA/G0Ynqs9kNBy+GazthvrZzc9LhXMehNbWpN6ana5gpT4jgbFrY0Caj?=
+ =?us-ascii?Q?rVJ/KjiFCdzJ+p0jyCCK1jb0vE5YjN3BUl5UxGJKWOJjVDr/dK2az1JwmcKT?=
+ =?us-ascii?Q?midKNn7fKRtsG9brx225wm3XXXQjjHuOcAvKiUxggWuf9zAjYTiv4qqaqtR+?=
+ =?us-ascii?Q?Ndox4ERGvX5BDSJNr27u6MMJS31Ff2BZw/3cco6/Sig6q6wYbAmCX84Wl1T7?=
+ =?us-ascii?Q?TE9uykPBAxOLpbbi7/sfXD1KFXuaKZ5odbEdCgu0u/2ySSWAjzooyUO4llEA?=
+ =?us-ascii?Q?wvO9X1wS9e+mbFo1jz2qsyPSaSkIWOmMeImFF+En+EPc+R7zLi3Hz6AwlS0x?=
+ =?us-ascii?Q?z6dlBPcQvsO59u6257s/1CXSldsyOlK+LM4X7gMUQaXtmdBGLj2AJTNeUTqc?=
+ =?us-ascii?Q?Nf5NEL/uT8Bz3kUWizPXqjMmL1xfyXt5+TMrKdpDJ3OrVxoAFhEOyuW3ms0e?=
+ =?us-ascii?Q?GKid6HmLXm6dGgwt/uz2qb+zBEj7wvlMfzKYVJOurpCf9e/5PPIPim2j7TGJ?=
+ =?us-ascii?Q?7HbYHXneQ8r/mXGTR3tipQOlpShniSgPgR5GbR4fdxJIvuf+s0DAdmrNcW4j?=
+ =?us-ascii?Q?SD3rXuD1TjiMoBNR8U5npXsEHjxlHBuv4P4Sd/Jzp1fRJxU768FgqKqsU4q1?=
+ =?us-ascii?Q?oTSzKocAc9cIbS/V0enXhRNGIHx+MEJDznAln3O5NGHys+WKI/mP3fnyUkEK?=
+ =?us-ascii?Q?Ab3yvYjbRvBMlR/6RkjkTMtdCfyXphmWQUCM3Esmy2Q3uvsarTHkhJyfRGuF?=
+ =?us-ascii?Q?WMvix6vHHW0VjxNkNt96BkP8+bkRsEejiG6UXaHblE1e8MEIN26TGuEP8uyx?=
+ =?us-ascii?Q?TALyjCutYv2dG2ZFVKpIEXr9AWMw+lG2DtoXeaVHQvYlnYdeUcyRP0VDe/XP?=
+ =?us-ascii?Q?jbWT/Wn6qhQNSAD0IhXcQIyCftcaE+yQzanCIsXoyeZNk2Sg+WrBfX1Uj+4M?=
+ =?us-ascii?Q?uDdrj9tKocoE9nuyotP0q08BR3UjxVeg5HPuvTpkgeSsGIoKQAqKGUv+C7Op?=
+ =?us-ascii?Q?uvsnyL26vVyhQngVskSgBxxkBkVxlI33+6PVwgKhJIgcdfnvWNhh4/F3+eCz?=
+ =?us-ascii?Q?FoXhuBUzdLGZAdyvgNqEEva0wLmFWjXcBVp6Kn7YfUOmjFrBVuEqqoftqR5d?=
+ =?us-ascii?Q?JBWIX/xGvrowhl2S8MPspWis3RdpswV8AanycwcMde/+jN3mXk9ExxIsP0Cy?=
+ =?us-ascii?Q?u2AH1mjAVj7v3baKwyhIqTDrETzJFel3H4NesJxP+wTs6JsvXYeIVKplMeIX?=
+ =?us-ascii?Q?O2LtU2vsDPld3VT7isPL05fejljqbw6Ci80IZ6ExEtvQYdZYLqWC3w/W+Ikf?=
+ =?us-ascii?Q?ett1VBtAFdRmVTDG+cWKsZndF33GSJBQMi4BvzBZf7PUIYF9Va7qc/CfszQ9?=
+ =?us-ascii?Q?9RCtLkEKZyYymJ6BsMqELn9OxhCseI1TQYyt08qK6RNVjfcxx4QKuK0/RuqM?=
+ =?us-ascii?Q?dFrYqv637OqHM042WuhQa7eFvEBngIHj56fXEOGIBOHSSBZcST5um/FqzmM0?=
+ =?us-ascii?Q?rJYUW/fEtAKWjkRdIksNQIAKyqxj8lntHioLoM2a?=
+Content-type: multipart/mixed;
+	boundary="B_3686568091_1278101561"
+MIME-Version: 1.0
+
+--B_3686568091_1278101561
+Content-type: multipart/related;
+	boundary="B_3686568091_777462101"
+
+--B_3686568091_777462101
+Content-type: multipart/alternative;
+	boundary="B_3686568091_653699639"
+
+--B_3686568091_653699639
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+FYI, if you want to explore careers with NASA.
+
+---------- Forwarded message ---------
+From: Barr, Kathryn A (MSFC-HP25)[MO&I] <kathryn.a.barr@nasa.gov>
+Date: Wed, Sep 2, 2020 at 10:25 AM
+Subject: FW: HEADS UP: FY21 MSFC Pathways Intern Job Vacancy Announcement (=
+opening September 14-16, 2020)
+To: georgia.stuart@gmail.com <georgia.stuart@gmail.com>
+
+
+Georgia,
+
+=20
+
+See the email below regarding the next set of =E2=80=9CPathways=E2=80=9D jobs that are =
+opening up at MSFC.  Other NASA sites probably have a similar schedule.  Pat=
+hways program employs both current students and recent graduates (undergrad =
+and grad programs) with the intention of leading to a permanent or 6-year te=
+rm employment.
+
+=20
+
+General info about the pathways program can be found here.
+
+https://www.nasa.gov/careers/pathways-program
+
+=20
+
+Please pass this along to anyone who you think may be interested and/or you=
+r connections at universities.
+
+=20
+
+Thanks,
+Kathy
+
+=20
+
+From: Fletcher, Cathy A. (MSFC-HS20) <cathy.a.fletcher@nasa.gov>=20
+Subject: HEADS UP: FY21 MSFC Pathways Intern Job Vacancy Announcement (open=
+ing September 14-16, 2020)
+
+=20
+
+Heads Up: =20
+
+FY21 MSFC Pathways Intern job vacancy announcements will be opening Monday,=
+ September 14, 2020 and closing on Wednesday, September 16, 2020 via USAJobs=
+.gov.  Please share appropriately.
+
+=20
+
+NASA MSFC Pathways Intern Student Trainee GS 4 and GS 5 ($32,258 - $46,920)=
+ opportunities are as follows:
+Business and Industry
+Engineering (preferred majors below)
+Aerospace
+Computer Sci/Computer Engineering
+Electrical
+Industrial
+Material
+Mechanical
+Information Technology (Information Systems)
+=20
+
+=20
+
+Notes:
+Applicants must have an expected graduation date of one calendar year or mo=
+re from the closing date of this announcement.=20
+=20
+Applicants must complete all program requirements to be considered for conv=
+ersion to full-time employment.  E.g., undergrad students must complete thre=
+e work tours and grad students must complete two work tours prior to conferm=
+ent.
+=20
+Starting GS grade levels are determined by education level the date applica=
+tion is submitted. Interns may be promoted to higher grades based on the amo=
+unt of education completed and acceptable performance. However, promotions a=
+re not guaranteed.
+=20
+Each job announcement will be considered closed at 11:59 p.m. on either the=
+ date that a specific number of applications (300) are received or on 9/16/2=
+020, whichever occurs first.=20
+=20
+Please encourage applicants to read the postings in its entirety to underst=
+and the unique requirements for each announcement.
+=20
+Direct questions to Cathy.A.Fletcher@nasa.gov
+=20
+
+=20
+
+Best regards,
+
+=20
+
+Cathy A. Fletcher
+
+Manager, MSFC Pathways Program
+
+NASA Office of the Chief Human Capital Officer
+
+256.544.7752 (w) | cathy.a.fletcher@nasa.gov (e)
+
+Mission First. People Always.
+
+
+--=20
+
+ Dr. Jey Veerasamy Virtual Office=20
+jeyv@utdallas.edu 972-883-4241
+Director, Center for CS Education & Outreach (Web, FB)
+Associate Professor of Instruction, Dept of CS (Web, LinkedIn)=20
+Upcoming events: Meetup, FBJoin email lists: community, professionals & col=
+lege students
+
+
+--B_3686568091_653699639
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-fami=
+ly:verdana,sans-serif">FYI, if you want to explore careers with NASA.</div>=
+<div class=3D"gmail_quote"><div><div dir=3D"ltr"><div><br><div class=3D"gma=
+il_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded messag=
+e ---------<br>From: <strong class=3D"gmail_sendername" dir=3D"auto">Barr, =
+Kathryn A (MSFC-HP25)[MO&amp;I]</strong> <span dir=3D"auto">&lt;<a href=3D"=
+mailto:kathryn.a.barr@nasa.gov" target=3D"_blank">kathryn.a.barr@nasa.gov</=
+a>&gt;</span><br>Date: Wed, Sep 2, 2020 at 10:25 AM<br>Subject: FW: HEADS U=
+P: FY21 MSFC Pathways Intern Job Vacancy Announcement (opening September 14=
+-16, 2020)<br>To: <a href=3D"mailto:georgia.stuart@gmail.com" target=3D"_bl=
+ank">georgia.stuart@gmail.com</a> &lt;<a href=3D"mailto:georgia.stuart@gmai=
+l.com" target=3D"_blank">georgia.stuart@gmail.com</a>&gt;<br></div><br><br>=
+<div lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72"><div><p class=3D"Mso=
+Normal">Georgia,<u></u><u></u></p><p class=3D"MsoNormal"><u></u>&nbsp;<u></=
+u></p><p class=3D"MsoNormal">See the email below regarding the next set of =
+=E2=80=9CPathways=E2=80=9D jobs that are opening up at MSFC.&nbsp; Other NA=
+SA sites probably have a similar schedule.&nbsp; Pathways program employs b=
+oth current students and recent graduates (undergrad and grad programs) wit=
+h the intention of leading to a permanent or 6-year term employment.<u></u>=
+<u></u></p><p class=3D"MsoNormal"><u></u>&nbsp;<u></u></p><p class=3D"MsoNo=
+rmal">General info about the pathways program can be found here.<u></u><u><=
+/u></p><p class=3D"MsoNormal"><a href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttps%3A%2F%2Fwww.nasa.gov%2Fcareers%2Fpathways-program=
+&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84=
+f5ed89e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637346616078605669&amp=
+;sdata=3DzQIBowifiOa%2Bqvz7HdMYiKt7mr%2BWDq8DxkrG2Xmr%2Fw0%3D&amp;reserved=
+=3D0" originalsrc=3D"https://www.nasa.gov/careers/pathways-program" shash=
+=3D"nAXqWbkEPLNOr42i3oTZpegFWzckPBSEKH8uvgNN7ppM9iUiIRAUEhn8aWpY0+YkGha04e1=
+dqd//474Ma1r5C8UsZZMel95KBNVc6oOTZRqSa+aLLRrPk70bEffeq524aC7r7FNIEMfsmqD3vV=
+73LcuYOJokb3X+fB2HfFUp5iA=3D" target=3D"_blank">https://www.nasa.gov/career=
+s/pathways-program</a><u></u><u></u></p><p class=3D"MsoNormal"><span style=
+=3D"color:#1f497d"><u></u>&nbsp;<u></u></span></p><p class=3D"MsoNormal"><s=
+pan style=3D"color:#1f497d">Please pass this along to anyone who you think =
+may be interested and/or your connections at universities.<u></u><u></u></s=
+pan></p><p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>&nbsp;<=
+u></u></span></p><p class=3D"MsoNormal"><span style=3D"color:#1f497d">Thank=
+s,<br>Kathy<u></u><u></u></span></p><p class=3D"MsoNormal"><span style=3D"c=
+olor:#1f497d"><u></u>&nbsp;<u></u></span></p><div><div style=3D"border:none=
+;border-top:solid #e1e1e1 1.0pt;padding:3.0pt 0in 0in 0in"><p class=3D"MsoN=
+ormal"><b>From:</b> Fletcher, Cathy A. (MSFC-HS20) &lt;<a href=3D"mailto:ca=
+thy.a.fletcher@nasa.gov" target=3D"_blank">cathy.a.fletcher@nasa.gov</a>&gt=
+; <br><b>Subject:</b> HEADS UP: FY21 MSFC Pathways Intern Job Vacancy Annou=
+ncement (opening September 14-16, 2020)<u></u><u></u></p></div></div><p cla=
+ss=3D"MsoNormal"><u></u>&nbsp;<u></u></p><p class=3D"MsoNormal"><b><span st=
+yle=3D"font-family:&quot;Arial&quot;,sans-serif">Heads Up</span></b><span s=
+tyle=3D"font-family:&quot;Arial&quot;,sans-serif">:&nbsp; <u></u><u></u></s=
+pan></p><p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;=
+,sans-serif">FY21 MSFC Pathways Intern job vacancy announcements will be op=
+ening Monday, September 14, 2020 and closing on Wednesday, September 16, 20=
+20 via USA<span style=3D"color:#993366">Jobs</span>.gov<span style=3D"color=
+:#993366">. </span><span style=3D"color:#1f497d">&nbsp;</span><span style=
+=3D"color:red">Please share appropriately.</span><u></u><u></u></span></p><=
+p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-ser=
+if"><u></u>&nbsp;<u></u></span></p><p class=3D"MsoNormal"><span style=3D"fo=
+nt-family:&quot;Arial&quot;,sans-serif">NASA MSFC Pathways Intern Student T=
+rainee GS 4 and GS 5 ($32,258 - $46,920) opportunities are as follows:<u></=
+u><u></u></span></p><ul style=3D"margin-top:0in" type=3D"disc"><li class=3D=
+"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Busine=
+ss and Industry<u></u><u></u></span></li><li class=3D"MsoNormal"><span styl=
+e=3D"font-family:&quot;Arial&quot;,sans-serif">Engineering (preferred major=
+s below)<u></u><u></u></span></li><ul style=3D"margin-top:0in" type=3D"circ=
+le"><li class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sa=
+ns-serif">Aerospace<u></u><u></u></span></li><li class=3D"MsoNormal"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif">Computer Sci/Computer En=
+gineering<u></u><u></u></span></li><li class=3D"MsoNormal"><span style=3D"f=
+ont-family:&quot;Arial&quot;,sans-serif">Electrical<u></u><u></u></span></l=
+i><li class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Industrial<u></u><u></u></span></li><li class=3D"MsoNormal"><span s=
+tyle=3D"font-family:&quot;Arial&quot;,sans-serif">Material<u></u><u></u></s=
+pan></li><li class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quo=
+t;,sans-serif">Mechanical<u></u><u></u></span></li></ul><li class=3D"MsoNor=
+mal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Information T=
+echnology (Information Systems)<u></u><u></u></span></li></ul><p class=3D"M=
+soNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><u></u>&=
+nbsp;<u></u></span></p><p class=3D"MsoNormal"><span style=3D"font-family:&q=
+uot;Arial&quot;,sans-serif"><u></u>&nbsp;<u></u></span></p><p class=3D"MsoN=
+ormal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Notes:<u></=
+u><u></u></span></p><ul style=3D"margin-top:0in" type=3D"disc"><li class=3D=
+"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Applic=
+ants must have an expected graduation date of one calendar year or more fro=
+m the closing date of this announcement. <u></u><u></u></span></li></ul><p>=
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif"><u></u>&nbsp;<u></=
+u></span></p><ul style=3D"margin-top:0in" type=3D"disc"><li class=3D"MsoNor=
+mal"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Applicants mu=
+st complete all program requirements to be considered for conversion to ful=
+l-time employment.&nbsp; E.g., undergrad students must complete three work =
+tours and grad students must complete two work tours prior to conferment.<u=
+></u><u></u></span></li></ul><p><span style=3D"font-family:&quot;Arial&quot=
+;,sans-serif"><u></u>&nbsp;<u></u></span></p><ul style=3D"margin-top:0in" t=
+ype=3D"disc"><li class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial=
+&quot;,sans-serif">Starting GS grade levels are determined by education lev=
+el the date application is submitted. Interns may be promoted to higher gra=
+des based on the amount of education completed and acceptable performance. =
+However, promotions are not guaranteed.<u></u><u></u></span></li></ul><p><s=
+pan style=3D"font-family:&quot;Arial&quot;,sans-serif"><u></u>&nbsp;<u></u>=
+</span></p><ul style=3D"margin-top:0in" type=3D"disc"><li class=3D"MsoNorma=
+l"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Each job announ=
+cement will be considered closed at 11:59 p.m. on either the date that a sp=
+ecific number of applications (300) are received or on 9/16/2020, whichever=
+ occurs first. <u></u><u></u></span></li></ul><p><span style=3D"font-family=
+:&quot;Arial&quot;,sans-serif"><u></u>&nbsp;<u></u></span></p><ul style=3D"=
+margin-top:0in" type=3D"disc"><li class=3D"MsoNormal"><span style=3D"font-f=
+amily:&quot;Arial&quot;,sans-serif">Please encourage applicants to read the=
+ postings in its entirety to understand the unique requirements for each an=
+nouncement.<u></u><u></u></span></li></ul><p><b><span style=3D"font-family:=
+&quot;Arial&quot;,sans-serif"><u></u>&nbsp;<u></u></span></b></p><ul style=
+=3D"margin-top:0in" type=3D"disc"><li class=3D"MsoNormal"><span style=3D"fo=
+nt-family:&quot;Arial&quot;,sans-serif">Direct questions to </span><a href=
+=3D"mailto:Cathy.A.Fletcher@nasa.gov" target=3D"_blank"><span style=3D"font=
+-family:&quot;Arial&quot;,sans-serif">Cathy.A.Fletcher@nasa.gov</span></a><=
+span style=3D"font-family:&quot;Arial&quot;,sans-serif"><u></u><u></u></spa=
+n></li></ul><p class=3D"MsoNormal"><span style=3D"color:#1f497d"><u></u>&nb=
+sp;<u></u></span></p><p class=3D"MsoNormal"><span style=3D"color:#1f497d"><=
+u></u>&nbsp;<u></u></span></p><p class=3D"MsoNormal" style=3D"line-height:1=
+5.0pt"><span style=3D"font-family:&quot;Arial&quot;,sans-serif">Best regard=
+s,<u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"line-height:15.0=
+pt"><b><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><u></u>&nbs=
+p;<u></u></span></b></p><p class=3D"MsoNormal" style=3D"line-height:15.0pt"=
+><b><span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#007bc2">=
+Cathy A. Fletcher</span></b><span style=3D"color:black"><u></u><u></u></spa=
+n></p><p class=3D"MsoNormal" style=3D"margin-top:3.0pt;line-height:12.0pt">=
+<span style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;col=
+or:black">Manager, MSFC Pathways Program</span><span style=3D"color:black">=
+<u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"line-height:12.0pt=
+"><span style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;c=
+olor:black">NASA Office of the Chief Human Capital Officer</span><span styl=
+e=3D"color:black"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"=
+margin-bottom:6.0pt;line-height:12.0pt"><span style=3D"font-size:9.0pt;font=
+-family:&quot;Arial&quot;,sans-serif;color:black">256.544.7752 (w) |&nbsp;<=
+/span><a href=3D"mailto:cathy.a.fletcher@nasa.gov" target=3D"_blank"><span =
+style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif">cathy.a.=
+fletcher@nasa.gov</span></a><span style=3D"font-size:9.0pt;font-family:&quo=
+t;Arial&quot;,sans-serif;color:black">&nbsp;(e)</span><span style=3D"color:=
+black"><u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"margin-bott=
+om:6.0pt;line-height:22.0pt"><span style=3D"color:black"><img border=3D"0" =
+width=3D"240" height=3D"53" style=3D"width:2.5in;height:.552in" id=3D"m_697=
+1578205217435044m_-2903994173736026945Picture_x0020_1" src=3D"cid:1744fac70=
+434ce8e91" alt=3D"cid:image001.jpg@01D5D5E0.DB39DA50"><u></u><u></u></span>=
+</p><p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quo=
+t;Arial&quot;,sans-serif;color:#f05f22">Mission First. <b>People Always.</b=
+></span><u></u><u></u></p></div></div></div></div></div></div></div><br cle=
+ar=3D"all"><div><br></div>-- <br><div dir=3D"ltr" class=3D"gmail_signature"=
+ data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr">=
+<div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div=
+ dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"l=
+tr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div =
+dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"=
+ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr=
+"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div =
+dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"=
+ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr=
+"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div =
+dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"=
+ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr=
+"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div style=3D"font-siz=
+e:small;font-family:verdana,sans-serif"><br><div style=3D"direction:ltr"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" valign=3D"top" style=
+=3D"direction:ltr;border-collapse:collapse;border-style:solid;border-color:=
+rgb(163,163,163);border-width:0pt"><tbody><tr><td style=3D"border-width:0pt=
+;vertical-align:top;width:1.1881in;padding:4pt"><img src=3D"https://docs.go=
+ogle.com/uc?export=3Ddownload&amp;id=3D1P7tAaxAjWy1CT4TO8FqGxWwy5J25TUzM&am=
+p;revid=3D0B5Sd-HLJYzgFeE8vbjBSTHlmc1BIa0ZzTTVZZ3hBZVVURjV3PQ"> <p style=3D=
+"margin:0in"></p></td><td style=3D"border-width:0pt;vertical-align:top;widt=
+h:4.8013in;padding:4pt"><p style=3D"margin:0in"><font face=3D"verdana, sans=
+-serif" color=3D"#000000" size=3D"1"><a href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttp:%2F%2Futdallas.edu%2F~jeyv&amp;data=3D02%7C=
+01%7CEric.Zhang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84f5ed89e%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637346616078615661&amp;sdata=3DmNFm9blX=
+Hmkl4oLoYZdSulF3nWmDjnEAh4SFjbGKMQc%3D&amp;reserved=3D0" originalsrc=3D"htt=
+p://utdallas.edu/~jeyv" shash=3D"dcbvGLq+qbj0d7sXOrSwVbwJnsyG8Q4osjDkL+HdhF=
+FNqN80lQGB87HID90JsKJIb6ysbpW/NlqjJk3SzFiLRJ1kg3w320TFCWuPFkjqsl280PFl7WLxt=
+aj93wHM4Z/GSJ8U3NV8oG7zvZI5l/SbSd4+aT6cVjTbIyFXeIyf8E0=3D" target=3D"_blank=
+">Dr. Jey Veerasamy</a>&nbsp;<a href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttp%3A%2F%2Fbit.ly%2Fvisit-jey&amp;data=3D02%7C01%7CEri=
+c.Zhang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84f5ed89e%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637346616078615661&amp;sdata=3DMTpAuiW6B0t4cAla=
+Czi7SymilpFDsS4nuab9YVZ2Llo%3D&amp;reserved=3D0" originalsrc=3D"http://bit.=
+ly/visit-jey" shash=3D"WRdCwiDvHqD4GHmPFvh+GJs3vWBAzoKHLXFQf0wCrCXiOAB865P0=
+sD582KossECBIicgOk/VSif+RFCLyU/UNBmPiaK51yXwyep/jiy8GC+qycI+LjKKgHgQH0FaVb4=
+XvQPceK0aVRowbypWf7K5AqQCPVU6rpZWPPYX4YQHOF8=3D" target=3D"_blank">Virtual =
+Office</a>&nbsp;<br><a href=3D"mailto:jeyv@utdallas.edu" target=3D"_blank">=
+jeyv@utdallas.edu</a>&nbsp;972-883-4241<br>Director,&nbsp;Center for CS Edu=
+cation &amp; Outreach&nbsp;(<a href=3D"http://www.utdallas.edu/k12/" target=
+=3D"_blank">Web</a>, <a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttp%3A%2F%2Ffb.com%2FUTDCSOR%2Fevents&amp;data=3D02%7C01%7CEric=
+.Zhang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84f5ed89e%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637346616078625658&amp;sdata=3DaasIwEA8tEIEl5P6i=
+vbf3M886rvqLpqdqTGP1%2FJx7nI%3D&amp;reserved=3D0" originalsrc=3D"http://fb.=
+com/UTDCSOR/events" shash=3D"WYvdp3hccF+L/LeR5DaV+bmYysog+GNOGimwxhoQvjBP+0=
+zMI2cZ+vJ1e2WC9RBEcuoyLOjmchYxM/fF+iqJzJTVNwjE6owJ3i8D4s7iazcHNQ15VbMh801mx=
+IJcGe+3Cv3hmxpzzF1zsg/6oRktmKYpKOz7OwTG8lAqrLRc8no=3D" target=3D"_blank">FB=
+</a>)<br></font></p><p style=3D"margin:0in"><font face=3D"verdana, sans-ser=
+if" color=3D"#000000" size=3D"1">Associate Professor of Instruction,&nbsp;D=
+ept of CS&nbsp;(<a href=3D"http://cs.utdallas.edu/" target=3D"_blank">Web</=
+a>, <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fwww.linkedin.com%2Fgroups%2F2709588%2F&amp;data=3D02%7C01%7CEric.Zh=
+ang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84f5ed89e%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C0%7C637346616078635651&amp;sdata=3D7uLCtlQagc66IaY6sCUY=
+khFVFAJJKoeJ%2BPvwOUtZL4U%3D&amp;reserved=3D0" originalsrc=3D"https://www.l=
+inkedin.com/groups/2709588/" shash=3D"RMhnYHxwckUvSmCjg5P9RJ1pdKirEUaTykU57=
+SmkglcEFQxy5MNq5lG5xnH+h/qxHnHRO/pxoD90yY5m92k7y00uC47Uw+rDljqsjbkJLGiosUEx=
+L3kqctbcCknnHGfOnww9Jiky0BhmEYyMNgd4A0QEzJ9uNDp/5ZJRAmX/cu8=3D" target=3D"_=
+blank">LinkedIn</a>)&nbsp;<br></font></p><p style=3D"margin:0in"><font face=
+=3D"verdana, sans-serif" color=3D"#000000" size=3D"1">Upcoming events: <a h=
+ref=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+www.meetup.com%2Futdcsor%2Fevents%2Fcalendar%2F&amp;data=3D02%7C01%7CEric.Z=
+hang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08d84f5ed89e%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637346616078635651&amp;sdata=3DGM%2FAfGcdz0MrKxA%2=
+Fm6Hp3NRYRB5IhJEcq2uCFT5IRQA%3D&amp;reserved=3D0" originalsrc=3D"https://ww=
+w.meetup.com/utdcsor/events/calendar/" shash=3D"uHmKHBPWHrVZ1ZLdxnLyi8bZF7G=
+UoNP2rJe946XyPWn5q2GPEC/zwfh8c+3Kw4lQSzmR1JvQae/NkUO4HVG379ULpSj6UoN1yUAR5W=
+hcjpXgvdLrMmKsvFOao9GNuZr9B+RavydXnS/uhehWHU7VIpVgP79vF5EEPPAlEVotq8s=3D" t=
+arget=3D"_blank">Meetup</a>, <a href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fpg%2FUTDCSDept%2Fevents=
+%2F&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7Ce6b765b899af45b7fbbf08=
+d84f5ed89e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637346616078645645&=
+amp;sdata=3DvibbovmWsMZ026376KJr%2BUzOpIauW6s2hXlcbaMGeAM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://www.facebook.com/pg/UTDCSDept/events/" shash=
+=3D"HFrTYBB6+FT7fo8COOs9JoMvVL3MTYorYjY9cEC3RgzwKBjyns9Rp6Ic3FzbCDbGw2LZVO6=
+tBvmh2aMacrE9tzWAWYXv5L4TyF6kZchYytVNblDR04ajaJ9K6vAbMdvm+BKgLEOQNTYsNgCF9U=
+mR6ZTcFSTds3HzZiZksKS2W4E=3D" target=3D"_blank">FB</a></font></p><p style=
+=3D"margin:0in"><font face=3D"verdana, sans-serif" color=3D"#000000" size=
+=3D"1">Join email lists: <a href=3D"mailto:sympa@lists.utdallas.edu?subject=
+=3Dsubscribe%20csoutreach" target=3D"_blank">community</a>, <a href=3D"mail=
+to:sympa@lists.utdallas.edu?subject=3Dsubscribe%20csindustry" target=3D"_bl=
+ank">professionals </a>&amp; <a href=3D"mailto:sympa@lists.utdallas.edu?sub=
+ject=3Dsubscribe%20csevents" target=3D"_blank">college students</a></font><=
+/p></td></tr></tbody></table></div></div></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></div></div></div><=
+/div></div></div></div></div></div></div></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></div></div></div><=
+/div></div></div></div></div></div></div></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></div></div></div><=
+/div></div></div></div></div></div></div></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></body></html>
+
+--B_3686568091_653699639--
+
+--B_3686568091_777462101
+Content-type: image/jpeg; name="image001.jpg";
+ x-mac-creator="4F50494D";
+ x-mac-type="4A504547"
+Content-ID: <1744fac70434ce8e91>
+Content-disposition: inline;
+	filename="image001.jpg"
+Content-transfer-encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAA1APADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aimk
+4rC8Q+MNN8PAJO5luGGVgj+99T6CqjFzdoq7JlKMFeTN6lry+X4p6m8hMGm2yR9tzFj/AEq/pvxR
+jaVYtVsvIDY/ewtuUfUda6JYOslexzLGUW7XPQaKrWt5FeQJPbyrLFIu5XU5Bpkd/HNeS2sZ3NCB
+5hHRSeg+veuXrY61qrouUhNNLEUjAOCrDgjBoAo3WqJbajaWZwWuN3Ofu4HFaCHI5rk9T8LRPqEE
+lrG/lsHMoZyRkDI56jPSt3RHtpNJgltFZYpBnazEkHoRz71lTc23zLQ2qKkox5Hd21+80aKaSaa0
+gQFmYKAMknpWuxiSUVQj1rTpJREt7CXPAG4cmrhekpJ7Dacd0PorPl1mwhkMct7CjjqC3T61YN1G
+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
+KKKACiiigAooooAKKKKACiiigD//2Q==
+
+--B_3686568091_777462101--
+
+--B_3686568091_1278101561--

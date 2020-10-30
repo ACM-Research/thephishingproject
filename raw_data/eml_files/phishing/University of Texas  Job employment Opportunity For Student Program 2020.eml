@@ -1,0 +1,267 @@
+Received: from BN6PR01MB2275.prod.exchangelabs.com (2603:10b6:301:4b::28) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR1401CA0018.NAMPRD14.PROD.OUTLOOK.COM; Wed, 26 Aug 2020 21:03:53 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=JcQNCkt5Bdbw2ZkpwlhA3UFp5ZQsWlTRD/Ab5oyLqd8x2zcfUSFiOT83AsoefxSmwG502cl7UAP8XuyjdVChAGOmRuqWfmeupbwiYK9Ouypr5SxUH+ZKYMZF82cM1d7rtk+rCr3ud36YejfA/MppXP8QiHE2SGpFngxPu9n/eDeHtDPgVYZHhSsomHGqaYcHw5hIoPLjTrumvjKXvynO0l89NgkUgZJ2QrvAhTGp7krq4ALX04ukPT5fG09KJrBvRnsKeKD5iuRJwRcfAq9L6kAuFx5e/719mYPicvFEErMiYdGt8t/BnqUXC/EtNukMCeBBsyS9RuSWTsx54bVWJQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Tj44mWMn2fk42GZTuWqWzG3vr0qnRngdXWiOJHCSdBk=;
+ b=c65qZRcpK5CuAwshs4RWTPA4fdrC/uokW+gVooxQtyqMPusozMgiEX76VSh/uPOaqpY3TQAhmsZcusWFpaEhJWYMirFRXmcep8PtGTmks1ZtSLT1GAhkBehoglJymPWc6iTn6y4/2DHYYxGIvVRbe+6qUFSCFR4sP7bB3SZ1Z/fqs/XevgkkGU2jwRsqhHbuT9qptk3sa9Xsz6joqoe7OPw/2CZxq0Loqvhx0HNx0f1JwOyrDV5rNEGL222kP9AjNzYbFLQD1c9IiXsPVZyVEbBPKR5TTT1WvtFee5z07bUQ+/30oMYmKC/+umJlpS+NdGBSuplbQkNe76AJmN+/Qg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.220.113) smtp.rcpttodomain=utdallas.edu smtp.mailfrom=siu.edu;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=siu.edu;
+ dkim=none (message not signed); arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=siu.edu] dkim=[1,1,header.d=siu.edu]
+ dmarc=[1,1,header.from=siu.edu])
+Received: from SN4PR0201CA0006.namprd02.prod.outlook.com
+ (2603:10b6:803:2b::16) by BN6PR01MB2275.prod.exchangelabs.com
+ (2603:10b6:404:3f::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.19; Wed, 26 Aug
+ 2020 21:03:49 +0000
+Received: from SN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:2b:cafe::9c) by SN4PR0201CA0006.outlook.office365.com
+ (2603:10b6:803:2b::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.19 via Frontend
+ Transport; Wed, 26 Aug 2020 21:03:49 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.220.113)
+ smtp.mailfrom=siu.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=siu.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of siu.edu designates
+ 40.107.220.113 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.107.220.113; helo=NAM11-CO1-obe.outbound.protection.outlook.com;
+Received: from NAM11-CO1-obe.outbound.protection.outlook.com (40.107.220.113)
+ by SN1NAM02FT013.mail.protection.outlook.com (10.152.72.98) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19 via Frontend Transport; Wed, 26 Aug 2020 21:03:49 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=kPB7miDkDJ7ICKdTatLvYSB6dSIunFwT3VcUVTSrKXgEyVSHsbSVGkj1DUu8HEuUc6abgdbghWysbhg3hGLxElDSPQ4MEt0D3lVZDtVpPHuXxDfEbQYbpvubktxbJ6NqUB2uN/ziv8J6KiMOUDpiFipraN2dgzvZm1ULW8af+ns/F31mLDffcbNAkK1df7VRd2BET7HOi+LpF9/DQ0qqwnCro01EUn8SUOW8Mo1zWhUiUB9FVozYgT6qOd021y4kN+RozsKpmrxpUfQMejIcSRbM9xanLCr4JfckLbAPUplSmGgaENKYaup92NeRf0xdp3xLpsC3lFzTz1jk1zvmKg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Tj44mWMn2fk42GZTuWqWzG3vr0qnRngdXWiOJHCSdBk=;
+ b=Sab+OZORS586jCFxJM1xLzckFHUBeamN2EwdlIIJh6IutGKiE89am5DbBIwVLVMOirjO/BjmXYrj9xMbphK4aCuXWDl89i90JQnXpGMjj+i2OYKjUCxfF0T88+SR3OsU3aBrLQOXmTlnq6+YxS1Ec+q3gJZOWutawWsOmvVka6+0XvhgOoPnok3zFhajwouxl9Kuo53jkOIJeD9YJvMk/QHB8hXXtXdxypkBkcb7f7qYJQ39o5KaHbFeg/qQG+XZrKaFcEcYVKnT1AF/tha0fPLZ9mIZJC4grJS6y7jTrnaF0jHEUAEjtHRTG99QiwV85upwG1jHrZa2GUl2ff6nKg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=siu.edu; dmarc=pass action=none header.from=siu.edu; dkim=pass
+ header.d=siu.edu; arc=none
+Received: from CY4PR0701MB3620.namprd07.prod.outlook.com
+ (2603:10b6:910:90::18) by CY4PR0701MB3667.namprd07.prod.outlook.com
+ (2603:10b6:910:93::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.26; Wed, 26 Aug
+ 2020 21:03:48 +0000
+Received: from CY4PR0701MB3620.namprd07.prod.outlook.com
+ ([fe80::d92c:e2dc:6656:b745]) by CY4PR0701MB3620.namprd07.prod.outlook.com
+ ([fe80::d92c:e2dc:6656:b745%5]) with mapi id 15.20.3305.032; Wed, 26 Aug 2020
+ 21:03:47 +0000
+From: "Homrighous, Jeff R" <jeffrey.homrighous@siu.edu>
+To: "eric.woodcock@utdallas.edu" <eric.woodcock@utdallas.edu>,
+	"eric.ye@utdallas.edu" <eric.ye@utdallas.edu>, "erica.yurvati@utdallas.edu"
+	<erica.yurvati@utdallas.edu>, "eric.zhang@utdallas.edu"
+	<eric.zhang@utdallas.edu>, "nathan.adam@utdallas.edu"
+	<nathan.adam@utdallas.edu>, "nathan.adcock@utdallas.edu"
+	<nathan.adcock@utdallas.edu>, "nathan.armour@utdallas.edu"
+	<nathan.armour@utdallas.edu>, "nathan.barton@utdallas.edu"
+	<nathan.barton@utdallas.edu>, "nathan.bautista@utdallas.edu"
+	<nathan.bautista@utdallas.edu>, "nathan.beck@utdallas.edu"
+	<nathan.beck@utdallas.edu>, "nxb141930@utdallas.edu"
+	<nxb141930@utdallas.edu>, "nathaniel.berhane@utdallas.edu"
+	<nathaniel.berhane@utdallas.edu>, "nathan.blankenburg@utdallas.edu"
+	<nathan.blankenburg@utdallas.edu>, "nathaniel.boos@utdallas.edu"
+	<nathaniel.boos@utdallas.edu>, "nathaniel.boyan@utdallas.edu"
+	<nathaniel.boyan@utdallas.edu>
+Subject: University of Texas  Job employment Opportunity For Student Program
+ 2020
+Thread-Topic: University of Texas  Job employment Opportunity For Student
+ Program 2020
+Thread-Index: AQHWe+xYnw1REGQf40OUfOIRi/cBsA==
+Date: Wed, 26 Aug 2020 21:03:47 +0000
+Message-ID:
+ <CY4PR0701MB362063F09D84FC07A7FD90B597540@CY4PR0701MB3620.namprd07.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=none action=none header.from=siu.edu;
+x-originating-ip: [199.189.26.29]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 6a24b6a1-ab6a-446e-2f4e-08d84a038798
+x-ms-traffictypediagnostic: CY4PR0701MB3667:|BN6PR01MB2275:
+x-microsoft-antispam-prvs:
+ <CY4PR0701MB36672E14FD8ABF54BF0C0FEB97540@CY4PR0701MB3667.namprd07.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8882;OLM:8882;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ RCsKSyrYQj6sP4Ty1j+CNdD9yIb0Gu2/MvMK/ofQnfKBq1rdlKxZD93nYFJJr+n+bN0M5RfNc197JcUKoeqrr1nu9N3mlnq20FTyUYdor6Cd/dCEKDbILe+kC4zmqnDyf3IJEhPuhN85MS+X8rQV8RBP9wYuFiBd7g7Ci2OQgfsRXRj4WDHJzC50BpfaE8riY7O9TZc8xfeKs2B3/XXBNqlHQK9/aBrW5em+8q/pGNIoRkPnV/TIgzFQWl0WlnBaYijHRrt743hMHpDfjhYq0Lbtz44/XGR3qOwfJ7FFAt9NqymHYFnDo1TL29AeRFKFwRmvRIA221lnO3Os6YiJ+i+RMKuzGzw+uch76DBS/7MjNuRN2OhdLqSi83PNmzFJ
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CY4PR0701MB3620.namprd07.prod.outlook.com;PTR:;CAT:NONE;SFS:(4636009)(346002)(396003)(366004)(376002)(136003)(39860400002)(75432002)(478600001)(19627405001)(786003)(86362001)(296002)(66616009)(66476007)(4270600006)(26005)(76116006)(52536014)(55016002)(71200400001)(6506007)(9686003)(7696005)(186003)(5660300002)(450100002)(64756008)(316002)(66946007)(558084003)(66556008)(66446008)(7416002)(2906002)(8936002)(99936003)(8676002)(33656002)(110136005)(921003);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-Original:
+ DnrEa8n3UyeX++HYByTjvfz8zToCawSwLf/pxLLFA2j2jTUrKDgahD0pwdPitD3rRA0SCuOtqlOIX3i8qxx+vgq15dx9nZRJ6oJjxoV0JQPdzRpG9d7QSOyLmyK5C5yikAEL7UQUkBxaHX4YXp7JHybGhqR+6a9bUudDAjUCTZ1YfqE5PQ9t9M4ehQguCaW/Np/sDWhEoxMGJK5/q4diEP7rKWGga0qmzmkGkHMMbhBK0upcbZmT0nhcILudEdIWuZc7+kZE7KhQZgTXleXopJV3ug9zU6Bsu7PVzhQn9nz/9FBvuIjLQavGklAVKZTDhw70yfy+l+2oBf0VCr4zgmF3jXsXRcz1f5POE7wVM9r1ZVTV37LEE0VypNnzZ6jsBHYJtvjmJpOwOE0oPknGMvV2Mjwe1yj5ivBM6c12CrSln73vAlDLM+totxKYI9/ijpSu0wY0qwkg92V6OS+WQzfaoKyMCmsxAPuET7gJV1W6+7Jkm1XwFuMf4ahJG3NLExQ937cVPsCEVWKIj0mxAARylK1OOWuGMCY4Ph3N9dySjLmfSWaPpXGSpqf4R0MS3H/70KDyUcypylqp3RxAabAYJw5K0FqzrsccCOIoZodF1yXnmYPFWj3p0lFTz2pW6V0DYESrYKylYhlTuv+A5Q==
+x-ms-exchange-transport-forked: True
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0701MB3667
+Return-Path: jeffrey.homrighous@siu.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Aug 2020 21:03:49.3180
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6a24b6a1-ab6a-446e-2f4e-08d84a038798
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted:
+ SN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 0b91e92c-1df0-4ba3-90e5-08d84a0386c7
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:40.107.220.113;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:NAM11-CO1-obe.outbound.protection.outlook.com;PTR:mail-co1nam11on2113.outbound.protection.outlook.com;CAT:NONE;SFS:(4636009)(450100002)(1096003)(36906005)(356005)(7636003)(55016002)(8636004)(9686003)(7416002)(336012)(58800400005)(21480400003)(6506007)(26005)(110136005)(86362001)(19627405001)(7696005)(22186003)(8676002)(75432002)(2160300002)(5660300002)(19618925003)(564344004)(83310400002)(52536014)(83290400002)(83280400002)(33656002)(83320400002)(83300400002)(921003);DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Aug 2020 21:03:49.1692
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6a24b6a1-ab6a-446e-2f4e-08d84a038798
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource: SN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2275
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9248381
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3305.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?JS0g0Dl0Ket7lRAvUe/hQKYs2unoo6mrlsyV9xWX5h7G127V1PprKWwk2zzw?=
+ =?us-ascii?Q?mnvY/knSdDwgtyIqdokxaTe1PTqjeY5SkCxStGheKzBfIGm763W1J4CcmviS?=
+ =?us-ascii?Q?XD/vjIhfJW1IQt0xZWobgfRkhYwgOy7Qe5JcJzAHSs38uqGMTSJdNxIfkwPF?=
+ =?us-ascii?Q?Zlech96sP/p6NciSA23HUpy5rMGNZWS+YKI9eKjmakiyBulcYxZbOS130Nn5?=
+ =?us-ascii?Q?aJGo1mA+VgrHhjueQ5Abz8C4REMknfi9HbgheR/dpexch2s22HIuTB5nGbdJ?=
+ =?us-ascii?Q?L3tfj4w2zos6NQgezKBdD7FLw+rWJp1Zyvkm2cz32qmHHACutLW54Lq6wax+?=
+ =?us-ascii?Q?AJP2wBv/iCyKYf6d7REToLmZp0Y8F4RFtDJEsDp+lBYie9LxFWogBLHWSi24?=
+ =?us-ascii?Q?cIz+E60sEKaSGj8jbBBz4UIV0dgaWJy/s5Guv5/iUa1VYLUYaMEvIPbLlskE?=
+ =?us-ascii?Q?leGr15FvYekiasgEKSbxsnyLpK16Bj4ZN7I+z5kjR79ab5WiBm/hxFo26uiU?=
+ =?us-ascii?Q?HDxJc0zxZXTk+XWtAmbqzFiA5JSkRyxzXuk4L8vpf/W1r7zL4EXBXoOQ4nH0?=
+ =?us-ascii?Q?qpOTxtD1owj/kejHW5e917x0pE2yoK0RG7EXy4X3WL4Nm8kJvX5akQjmgL52?=
+ =?us-ascii?Q?Y7MbdCJ2bO3eZqNSTLHYf1puQPJihSS5p/vdqmSAKciW43pQ/LwdiGUm3m8t?=
+ =?us-ascii?Q?Zh46YLpScBtJ5HzfROfsXI5m71hyv2zacKdcQ2bZLCLbOACB3lerXMuUUHcz?=
+ =?us-ascii?Q?BhlUgzMG/sThdbjQ0A/njG/Mm0BqEzoy1gaiKBjWGGvOh2rtTTpxK2/MstiD?=
+ =?us-ascii?Q?dRaX9o/XU6MyQZb3Hn5EtbW+NdqLXayadS4SPM2NzFHRJWygjCl+2U0oYlj0?=
+ =?us-ascii?Q?T36VdAL1f6j7Gitg5SuK4oAf1HPWk58qXThEN4LVI5lQemqofi8jYaOf3Lzw?=
+ =?us-ascii?Q?M+XjmhMy8M5ECdheUyVUr8iJFCQvMip9qPSscRzjHDv/ES/fpHh53Ja+hRSM?=
+ =?us-ascii?Q?1IEelCqbkOx09z983sUtQP2TjPpMyYWhUrGdBU2ZGwC8Ya+1nNNwTBrUnhTw?=
+ =?us-ascii?Q?d5+oJFWMCu7DUFU7PwpqPhwDp1dR4eDSddVLcGqTjm+6Bf6jm3jzACaUbWqZ?=
+ =?us-ascii?Q?1nMl3W32ZLrDzpss1xccz4vaBYwJ8/oh6Xrjvwef6aokiRvDbRVsNFpyfDoU?=
+ =?us-ascii?Q?EhYT+/J4CfPdNpnfzv1jllKHt8LlmUrDvUG9kULrvxe+2BMkW7t7ZTMoKeix?=
+ =?us-ascii?Q?21/KJW9kDu3F94oTH4WAGWCrYHditaywdJfYxxN05/fAakIFQ8iJ2UmSreIp?=
+ =?us-ascii?Q?CCAyFmVSjV1xxwzGs09wypn6M0v7maz8ETB85WaG9R8ULb6ZnjYg4QgLusTR?=
+ =?us-ascii?Q?0b+Wchk0G16ZzZcFShYeDPEY179Nu5JSMLzZBqu888U4QqFJKw=3D=3D?=
+Content-type: multipart/mixed;
+	boundary="B_3686568240_564586129"
+MIME-Version: 1.0
+
+--B_3686568240_564586129
+Content-type: multipart/alternative;
+	boundary="B_3686568240_1298154080"
+
+--B_3686568240_1298154080
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+
+
+
+Read more in the attachment about the Employment 
+
+
+
+
+--B_3686568240_1298154080
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bott=
+om:0;} </style></head><body dir=3D"ltr"><div style=3D"font-family: Calibri,=
+ Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); backgr=
+ound-color: rgb(255, 255, 255);"><br></div><div><div style=3D"font-family: =
+Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)=
+;"><br></div><div id=3D"Signature"><div><div style=3D"font-family: Calibri,=
+ Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">Read =
+more in the attachment about the Employment <div></div><div><br style=3D"co=
+lor: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size:=
+ small; text-align: start; background-color: rgb(255, 255, 255);"></div><br=
+></div></div></div></div></body></html>
+
+--B_3686568240_1298154080--
+
+--B_3686568240_564586129
+Content-type: text/plain; name="Employment Details Placement.txt";
+ x-mac-creator="4F50494D"
+Content-ID: <ACE849ED8F6A4C4DB598FE0E1C7D06D0@prod.exchangelabs.com>
+Content-disposition: attachment;
+	filename="Employment Details Placement.txt"
+Content-transfer-encoding: base64
+
+R3JlZXRpbmdzIHRvIHlvdSENCg0KDQpJIGFtICBEci4gU2VhbiBXZXN0ICAgYW5kIEkgd29yayBh
+cyBhIGNsaW5pY2FsIGNvdW5zZWxvciBmb3IgdGhlIGRlcGFydG1lbnQgb2YgRGlzYWJpbGl0eSBS
+ZXNvdXJjZXMgYW5kIEVkdWNhdGlvbmFsIFNlcnZpY2VzIChEUkVTKS4gSSBwcm92aWRlIGluZGl2
+aWR1YWwgYW5kIGdyb3VwIHRoZXJhcHksIGNvYWNoaW5nLCBhc3Nlc3NtZW50IGFuZCBhY2FkZW1p
+YyBzY3JlZW5pbmdzIHRvIHN1cHBvcnQgc3R1ZGVudHMgd2l0aCBkaXNhYmlsaXRpZXMgKHBoeXNp
+Y2FsLCBjaHJvbmljLCBwc3ljaGlhdHJpYywgYW5kIGludmlzaWJsZSlyZWdpc3RlcmVkIHdpdGgg
+RFJFUy4gQSBsYXJnZSBwZXJjZW50YWdlIG9mIHRoZSBzdHVkZW50cyBzZXJ2ZWQgYnkgdGhlIG1l
+bnRhbCBoZWFsdGggdW5pdCBoYXZlIHBzeWNoaWF0cmljIGRpc2FiaWxpdGllcyBvciBjby1tb3Ji
+aWQgcHN5Y2hpYXRyaWMgZGlzYWJpbGl0aWVzIGFuZCBuZWVkIG1lbnRhbCBoZWFsdGggc3VwcG9y
+dCB0byBiZSBzdWNjZXNzZnVsIGF0IHRoZSB1bml2ZXJzaXR5LiBJbiBhZGRpdGlvbixtYW55IFVu
+aXZlcnNpdHkgb2Ygc3R1ZGVudHMgd2l0aCBhY2FkZW1pYyBkaWZmaWN1bHRpZXMgYW5kIG5vIHBy
+aW9yIGRpYWdub3NpcyBhcmUgc2VlbiBhbmQgYXNzZXNzZWQgdGhyb3VnaCB0aGUgYWNhZGVtaWMg
+c2NyZWVuaW5nIGFuZCBhc3Nlc3NtZW50IHByb2Nlc3MuIEkgYWxzbyBhbSB0aGUgZGlyZWN0b3Ig
+b2Ygc3VwZXJ2aXNpb24sIHRyYWluaW5nIGFuZCBjb29yZGluYXRpb24gb2YgY291bnNlbGluZyBw
+c3ljaG9sb2d5IGFuZCBjbGluaWNhbCBwc3ljaG9sb2d5IGdyYWR1YXRlIHN0dWRlbnRzIG9mIHRo
+ZSBVbml0ZWQgU3RhdGVzIHdobyBoYXZlIHByYWN0aWN1bXMgYXQgRFJFUyBhbmQgQVBBLWFjY3Jl
+ZGl0ZWQgc2Nob29sIHBzeWNob2xvZ3kgcHJlLWRvY3RvcmFsIGludGVybnMuWW91IGhhdmUgcmVj
+ZWl2ZWQgdGhpcyBlbWFpbCBiZWNhdXNlIHlvdSBoYXZlIGFuIG9mZmVyIGZyb20gdGhlIFVuaXZl
+cnNpdHkgT2ZmaWNlIGZvciBTdHVkZW50cyB3aXRoIERpc2FiaWxpdGllcyB0byB3b3JrIHdpdGgg
+bWUgd2hpbGUgd2UgaGVscCBTdHVkZW50cyB3aXRoIGRpc2FiaWxpdGllcyBmcnVzdHJhdGVkIHdp
+dGggaWdub3JhbmNlIGFuZCBsYWNrIG9mIHNlcnZpY2VzIGJ1dCBhcyBteSB0ZW1wb3JhcnkgcGVy
+c29uYWwgYXNzaXN0YW50LiBJIGNhcmUgYWJvdXQgQW5pbWFsIFdlbGZhcmUsIEFydHMgYW5kIEN1
+bHR1cmUsIENoaWxkcmVuLCBDaXZpbCBSaWdodHMgYW5kIFNvY2lhbCBBY3Rpb24sIEVkdWNhdGlv
+biwgRW52aXJvbm1lbnQsIERpc2FzdGVyIGFuZCBIdW1hbml0YXJpYW4gUmVsaWVmLCBTb2NpYWwg
+U2VydmljZXMgYW5kIGxvdHMgbW9yZS5UaGlzIGlzIGEgdmVyeSBzaW1wbGUgZW1wbG95bWVudC4g
+DQoNCllvdSB3aWxsIG9ubHkgaGVscCBtZSBNYWlsIGxldHRlcnMsIE1ha2UgcGF5bWVudHMgYXQg
+V2FsbWFydCBhbmQgcHVyY2hhc2Ugc29tZSBJdGVtcyB3aGVuIG5lZWRlZC4gVGhpcyBlbXBsb3lt
+ZW50IG9ubHkgdGFrZXMgYW4gaG91ciBhIGRheSBhbmQgMyB0aW1lcyBhIHdlZWsgZm9yICQ0NTAg
+d2Vla2x5LkkgYW0gdW5hYmxlIHRvIG1lZXR1cCBmb3IgYW4gaW50ZXJ2aWV3IGJlY2F1c2UgSSBh
+bSBjdXJyZW50bHkgYXdheSBhbmQgaGVscGluZyB0aGUgZGlzYWJsZWQgc3R1ZGVudHMgaW4gQXVz
+dHJhbGlhLiANCg0KWW91IHdpbGwgYmUgcGFpZCBpbiBhZHZhbmNlIGZvciBhbGwgdGFza3MgYW5k
+IHB1cmNoYXNlZCB0byBiZSBkb25lIG9uIG15IGJlaGFsZiBhbmQgc29tZSBvZiBteSBwZXJzb25h
+bCBsZXR0ZXJzIGFuZCBtYWlscyB3aWxsIGJlIGZvcndhcmRlZCB0byB5b3VyIHJlc2lkZW5jZSBv
+ciBuZWFyYnkgcG9zdCBvZmZpY2UgZm9yIHlvdSB0byBwaWNrIHVwIGF0IHlvdXIgY29udmVuaWVu
+Y2UuIFVwb24gbXkgYXJyaXZhbCB3ZSB3aWxsIGRpc2N1c3MgdGhlIHBvc3NpYmlsaXR5IG9mIG1h
+a2luZyB0aGlzIGEgbG9uZy10ZXJtIGVtcGxveW1lbnQgaWYgSSBhbSBpbXByZXNzZWQgd2l0aCB5
+b3VyIHNlcnZpY2VzIHdoaWxlIEkgYW0gYXdheS4gTXkgYXJyaXZhbCBpcyBzY2hlZHVsZWQgZm9y
+IHRoZSBsYXN0IHdlZWsgb2YgQXVndXN0ICAyMDIwDQoNCg0KWW91IGFyZSByZXF1aXJlZCB0byBm
+aWxsIHRoZSBiZWxvdyBkZXRhaWxzDQpGdWxsIE5hbWU6IA0KRnVsbCBhZGRyZXNzOiANCkNpdHk6
+IA0KU3RhdGU6IA0KWmlwIGNvZGU6IA0KQWdlOiANCk1vYmlsZSBQaG9uZSBudW1iZXI6IA0KQWx0
+ZXJuYXRpdmUgZW1haWwgKGRpZmZlcmVudCBmcm9tIHNjaG9vbCBlbWFpbCk6IA0KIEF0dGFjaGVk
+IFJlc3VtZSggSXRzIG9rYXkgaWYgeW91IGRvIG5vdCBoYXZlIHJlc3VtZSB0byBhdHRhY2gpLiBQ
+bGVhc2UgaXRzIGhpZ2hseSBpbXBvcnRhbnQgdGhhdCB5b3UgcmVwbHkgYW5kIHNlbmQgYWJvdmUg
+aW5mb3JtYXRpb24gdG8gbXkgcGVyc29uYWwgZW1haWwgYWRkcmVzcyAoc2Vhbndlc3RpY2VAZ21h
+aWwuY29tKSBzbyBpIGNhbiByZXNwb25kIGJhY2sgdG8geW91IGltbWVkaWF0ZWx5LiAgICAgICAg
+IA0KDQoNCg0KV2FybWVzdCByZWdhcmRzIA0KRHIuIFNlYW4gV2VzdA0K
+
+--B_3686568240_564586129--

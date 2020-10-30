@@ -1,0 +1,298 @@
+Received: from CY1PR01MB2041.prod.exchangelabs.com (2603:10b6:300:4b::25) by
+ MWHPR01MB2671.prod.exchangelabs.com with HTTPS via
+ MWHPR02CA0015.NAMPRD02.PROD.OUTLOOK.COM; Thu, 12 Mar 2020 18:57:24 +0000
+Received: from MN2PR01CA0025.prod.exchangelabs.com (2603:10b6:208:10c::38) by
+ CY1PR01MB2041.prod.exchangelabs.com (2a01:111:e400:c60e::26) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2793.17; Thu, 12 Mar 2020 18:57:22 +0000
+Received: from BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:10c:cafe::a9) by MN2PR01CA0025.outlook.office365.com
+ (2603:10b6:208:10c::38) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2793.16 via Frontend
+ Transport; Thu, 12 Mar 2020 18:57:22 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.148)
+ smtp.mailfrom=utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ utdallas.edu discourages use of 129.110.242.148 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.148) by
+ BL2NAM02FT008.mail.protection.outlook.com (10.152.76.162) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.2814.13 via Frontend Transport; Thu, 12 Mar 2020 18:57:21 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1913.5; Thu, 12 Mar 2020 13:57:20 -0500
+Received: from utdex12.campus.ad.utdallas.edu ([fe80::1452:bae8:e1ef:de1d]) by
+ utdex12.campus.ad.utdallas.edu ([fe80::1452:bae8:e1ef:de1d%20]) with mapi id
+ 15.01.1913.005; Thu, 12 Mar 2020 13:57:20 -0500
+From: "Faulk, Kristin" <kfaulk@utdallas.edu>
+Subject: PART TIME JOB OPPORTUNITY
+Thread-Topic: PART TIME JOB OPPORTUNITY
+Thread-Index: AQHV+J/+7KmLlRBeG0KvjfW0L4W1lA==
+Date: Thu, 12 Mar 2020 18:57:20 +0000
+Message-ID: <acb94cf078434095a4c91cb487616fdb@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator: <acb94cf078434095a4c91cb487616fdb@utdallas.edu>
+x-originating-ip: [10.182.70.130]
+X-OrganizationHeadersPreserved: utdex12.campus.ad.utdallas.edu
+To: Undisclosed recipients:;
+Return-Path: kfaulk@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Mar 2020 18:57:21.8794
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cd5290ce-c9fb-4bd2-b183-08d7c6b73224
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Organization-Recipient-P2-Type: Bcc
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.148;IPV:;CTRY:US;EFV:NLI;SFV:SKI;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:CY1PR01MB2041;H:webmail.utdallas.edu;FPR:;SPF:None;LANG:en;
+X-OriginatorOrg: utdallas.edu
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: cd5290ce-c9fb-4bd2-b183-08d7c6b73224
+X-MS-TrafficTypeDiagnostic: CY1PR01MB2041:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;
+X-Microsoft-Antispam: BCL:0;
+X-PSINMDFA: 1.0
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Mar 2020 18:57:21.5482
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cd5290ce-c9fb-4bd2-b183-08d7c6b73224
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.148];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY1PR01MB2041
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.1488076
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2793.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(750127)(520011016)(706158)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+ G5QkWC2k+vzGKRL30Q7zRmOyEEaSKf9Zs6XhfJEYrMEmCJLW4LQFUDcSetNOiBFkE7lB9oTMh4n7vSGmMW1Fx8mmm3zfSClzfX/pSaEhRwdvhGVpm/An2Zhd+wgIzai6yrjeo3KgXswOcwxAuSlLn4ayHrs9VHx4/fcedhpkax/QlwA8oFMddldgBxGK6IMX4gyf7kaAwrep4/nKSw3uZNmlCSd94Ze0XmB+SrAIbjllBP1C9xoLkVjzvxRUXxZJgSBiW6pl7wXm7egur8noftHwV1ZAM5a+9bjTvkk6O7Gqb3nI6fj6NVTtND1Mcgu5VeW7ucr86Xmp3tqgB/fI5phMhjUeaIOwzZOV+43mWAIwukSYg5O1u3aOprbET4F4/a4dHaSTHimqdCi4ltDRjFQwxXArlpPXRCy9jW3pxf2/QOBuSJQwQJB+66a/1yqvYThjmZ9lIVM8HjmFw2+fbw==
+Content-type: multipart/alternative;
+	boundary="B_3686568240_1314479144"
+MIME-Version: 1.0
+
+--B_3686568240_1314479144
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+
+
+
+
+NAME OF ORGANISATION:
+Budweiser
+
+JOB TITLE:
+
+Advertise While Driving
+
+JOB'S FUNCTION AND OBJECTIVES
+
+We seek interested candidates to go about their normal routine with the advert of  the "Budweiser logo" on their Car
+
+Necessary Conditions:
+should have a Car,Truck,Van or Motorcycle..
+
+
+COMPENSATION:
+$350 Weekly
+
+
+Regarding this position, Interested Candidates should contact Peter  directly via email at (perter.fisher18917@gmail.com) for more information 
+
+
+In anticipation, We look forward to your response.
+
+
+
+Thank you,
+ 
+Kristin Faulk
+Engineering, Construction & Planning
+Facilities Management
+kfaulk@utdallas.edu
+Ofc.: 972-833-2449
+Fax: 972-833-2775
+
+
+
+
+--B_3686568240_1314479144
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margin-=
+bottom:0;} --></style></head><body dir=3D"ltr"><div id=3D"divtagdefaultwrap=
+per" style=3D"font-size:12pt;color:#000000;font-family:Calibri,Helvetica,sa=
+ns-serif;" dir=3D"ltr"><p></p><div dir=3D"ltr" style=3D"margin:0px;padding:=
+0px;border:0px none;font-variant-numeric:inherit;font-variant-east-asian:in=
+herit;font-stretch:inherit;line-height:inherit;vertical-align:baseline"><di=
+v dir=3D"ltr" style=3D"margin:0px;padding:0px;border:0px none;font-variant-=
+numeric:inherit;font-variant-east-asian:inherit;font-stretch:inherit;line-h=
+eight:inherit;vertical-align:baseline"><h3 style=3D"font-weight:normal;marg=
+in:0px 0px 3px;padding:2px 0px 0px;display:inline-block;line-height:1.3"><d=
+iv><br></div><div><br></div><div><br></div><div><span style=3D"color:rgb(33=
+,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe WP&=
+quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font-size:15px">NAME OF ORGAN=
+ISATION:</span><br></div></h3></div><div dir=3D"ltr" style=3D"margin:0px;pa=
+dding:0px;border:0px none;font-variant-numeric:inherit;font-variant-east-as=
+ian:inherit;font-stretch:inherit;line-height:inherit;vertical-align:baselin=
+e"><span style=3D"font-size:20px">Budweiser</span></div><div dir=3D"ltr" st=
+yle=3D"margin:0px;padding:0px;border:0px none;font-variant-numeric:inherit;=
+font-variant-east-asian:inherit;font-stretch:inherit;line-height:inherit;ve=
+rtical-align:baseline"><span style=3D"font-size:20px"><br></span><font face=
+=3D"wf_segoe-ui_normal, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif, seri=
+f, EmojiFont" color=3D"#212121"><span style=3D"font-size:15px">JOB TITLE:</=
+span></font><br><p style=3D"margin-right: 0px; margin-left: 0px; font-stret=
+ch: normal; line-height: normal; font-family: Verdana;">Advertise While Dri=
+ving</p><br><font face=3D"Roboto, arial, sans-serif"><span style=3D"font-si=
+ze:16px"><b>JOB'S FUNCTION AND OBJECTIVES</b></span></font></div><div dir=
+=3D"ltr" style=3D"color:rgb(33,33,33);font-family:wf_segoe-ui_normal,&quot;=
+Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont=
+;font-size:15px;margin:0px;padding:0px;border:0px none;font-variant-numeric=
+:inherit;font-variant-east-asian:inherit;font-stretch:inherit;line-height:i=
+nherit;vertical-align:baseline"><br></div><div dir=3D"ltr" style=3D"color:r=
+gb(33,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Sego=
+e WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font-size:15px;margin:0p=
+x;padding:0px;border:0px none;font-variant-numeric:inherit;font-variant-eas=
+t-asian:inherit;font-stretch:inherit;line-height:inherit;vertical-align:bas=
+eline">We seek interested candidates to go about their normal routine with =
+the advert of&nbsp; the &quot;Budweiser logo&quot; on their Car</div><div d=
+ir=3D"ltr" style=3D"color:rgb(33,33,33);font-family:wf_segoe-ui_normal,&quo=
+t;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFo=
+nt;font-size:15px;margin:0px;padding:0px;border:0px none;font-variant-numer=
+ic:inherit;font-variant-east-asian:inherit;font-stretch:inherit;line-height=
+:inherit;vertical-align:baseline"><br></div><div dir=3D"ltr" style=3D"color=
+:rgb(33,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Se=
+goe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font-size:15px;margin:=
+0px;padding:0px;border:0px none;font-variant-numeric:inherit;font-variant-e=
+ast-asian:inherit;font-stretch:inherit;line-height:inherit;vertical-align:b=
+aseline">Necessary Conditions:<br>should have a Car,Truck,Van or Motorcycle=
+..<br></div><div dir=3D"ltr" style=3D"color:rgb(33,33,33);font-family:wf_se=
+goe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-s=
+erif,serif,EmojiFont;font-size:15px;margin:0px;padding:0px;border:0px none;=
+font-variant-numeric:inherit;font-variant-east-asian:inherit;font-stretch:i=
+nherit;line-height:inherit;vertical-align:baseline"><br></div><div dir=3D"l=
+tr" style=3D"color:rgb(33,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe=
+ UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font=
+-size:15px;margin:0px;padding:0px;border:0px none;font-variant-numeric:inhe=
+rit;font-variant-east-asian:inherit;font-stretch:inherit;line-height:inheri=
+t;vertical-align:baseline"><br></div><div dir=3D"ltr" style=3D"color:rgb(33=
+,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe WP&=
+quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font-size:15px;margin:0px;pad=
+ding:0px;border:0px none;font-variant-numeric:inherit;font-variant-east-asi=
+an:inherit;font-stretch:inherit;line-height:inherit;vertical-align:baseline=
+">COMPENSATION:<br>$350 Weekly<br></div><div dir=3D"ltr" style=3D"color:rgb=
+(33,33,33);font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe =
+WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;font-size:15px;margin:0px;=
+padding:0px;border:0px none;font-variant-numeric:inherit;font-variant-east-=
+asian:inherit;font-stretch:inherit;line-height:inherit;vertical-align:basel=
+ine"><br></div><div dir=3D"ltr" style=3D"color:rgb(33,33,33);font-family:wf=
+_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,san=
+s-serif,serif,EmojiFont;font-size:15px;margin:0px;padding:0px;border:0px no=
+ne;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-stretc=
+h:inherit;line-height:inherit;vertical-align:baseline"><br></div><div dir=
+=3D"ltr" style=3D"margin:0px;padding:0px;border:0px none;font-variant-numer=
+ic:inherit;font-variant-east-asian:inherit;font-stretch:inherit;line-height=
+:inherit;vertical-align:baseline">Regarding this position, Interested Candi=
+dates should contact Peter&nbsp; directly via email at (<span style=3D"colo=
+r: rgb(95, 99, 104); font-family: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif; font-size: 14px; text-align: center; white-space: nowrap;">perter=
+.fisher18917@gmail.com</span>) for more information&nbsp;</div><div dir=3D"=
+ltr" style=3D"color:rgb(33,33,33);font-family:wf_segoe-ui_normal,&quot;Sego=
+e UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiFont;fon=
+t-size:15px;margin:0px;padding:0px;border:0px none;font-variant-numeric:inh=
+erit;font-variant-east-asian:inherit;font-stretch:inherit;line-height:inher=
+it;vertical-align:baseline"><br></div><div style=3D"color:rgb(33,33,33);fon=
+t-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahom=
+a,Arial,sans-serif,serif,EmojiFont;font-size:15px;margin:0px;padding:0px;bo=
+rder:0px none;font-variant-numeric:inherit;font-variant-east-asian:inherit;=
+font-stretch:inherit;line-height:inherit;vertical-align:baseline"><br></div=
+></div><div style=3D"color:rgb(33,33,33);font-family:wf_segoe-ui_normal,&qu=
+ot;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,EmojiF=
+ont;font-size:15px;margin:0px;padding:0px;border:0px none;font-variant-nume=
+ric:inherit;font-variant-east-asian:inherit;font-stretch:inherit;line-heigh=
+t:inherit;vertical-align:baseline"><p style=3D"font-size: 11pt; font-family=
+: Calibri, sans-serif, serif, EmojiFont; margin-right: 0px; margin-left: 0p=
+x;">In anticipation,&nbsp;<span style=3D"color: rgb(0, 0, 0); font-family: =
+Calibri, Arial, Helvetica, sans-serif; font-size: 12pt;">We look forward to=
+ your&nbsp;response.</span></p><p style=3D"font-size: 11pt; font-family: Ca=
+libri, sans-serif, serif, EmojiFont; margin-right: 0px; margin-left: 0px;">=
+<br></p><div style=3D"margin:0px;padding:0px;border:0px none;font-variant-n=
+umeric:inherit;font-variant-east-asian:inherit;font-stretch:inherit;font-si=
+ze:12pt;line-height:inherit;font-family:Calibri,Arial,Helvetica,sans-serif;=
+vertical-align:baseline;color:rgb(0,0,0)"><br></div><div style=3D"margin:0p=
+x;padding:0px;border:0px none;font-variant-numeric:inherit;font-variant-eas=
+t-asian:inherit;font-stretch:inherit;font-size:12pt;line-height:inherit;fon=
+t-family:Calibri,Arial,Helvetica,sans-serif;vertical-align:baseline;color:r=
+gb(0,0,0)"><div style=3D"direction: ltr;"><div style=3D"color: rgb(33, 33, =
+33); font-family: wf_segoe-ui_normal, &quot;Segoe UI&quot;, &quot;Segoe WP&=
+quot;, Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px; margin=
+: 0px;"><font size=3D"2" style=3D"font-family: Calibri, sans-serif, serif, =
+EmojiFont;"><span style=3D"font-size: 11pt;"><font size=3D"3" color=3D"#007=
+0C0"><span style=3D"font-size: 12pt;">Thank you,</span></font></span></font=
+></div><div style=3D"color: rgb(33, 33, 33); font-family: wf_segoe-ui_norma=
+l, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif, s=
+erif, EmojiFont; font-size: 15px; margin: 0px;"><font size=3D"2" style=3D"f=
+ont-family: Calibri, sans-serif, serif, EmojiFont;"><span style=3D"font-siz=
+e: 11pt;"><font size=3D"3" color=3D"#0070C0"><span style=3D"font-size: 12pt=
+;">&nbsp;</span></font></span></font></div><div style=3D"color: rgb(33, 33,=
+ 33); font-family: wf_segoe-ui_normal, &quot;Segoe UI&quot;, &quot;Segoe WP=
+&quot;, Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px; margi=
+n: 0px;"><font size=3D"2" style=3D"font-family: Calibri, sans-serif, serif,=
+ EmojiFont;"><span style=3D"font-size: 11pt;"><font size=3D"3" color=3D"#70=
+30A0" style=3D"font-family: &quot;Bradley Hand ITC&quot;, serif, EmojiFont;=
+"><span style=3D"font-size: 12pt;"><b>Kristin Faulk</b></span></font></span=
+></font></div><div style=3D"color: rgb(33, 33, 33); font-family: wf_segoe-u=
+i_normal, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-s=
+erif, serif, EmojiFont; font-size: 15px; margin: 0px;"><font size=3D"2" sty=
+le=3D"font-family: Calibri, sans-serif, serif, EmojiFont;"><span style=3D"f=
+ont-size: 11pt;"><font color=3D"#7030A0" style=3D"font-family: Candara, san=
+s-serif, serif, EmojiFont;">Engineering, Construction &amp; Planning</font>=
+</span></font></div><div style=3D"color: rgb(33, 33, 33); font-family: wf_s=
+egoe-ui_normal, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, =
+sans-serif, serif, EmojiFont; font-size: 15px; margin: 0px;"><font size=3D"=
+2" style=3D"font-family: Calibri, sans-serif, serif, EmojiFont;"><span styl=
+e=3D"font-size: 11pt;"><font color=3D"#7030A0" style=3D"font-family: Candar=
+a, sans-serif, serif, EmojiFont;">Facilities Management</font></span></font=
+></div><div style=3D"color: rgb(33, 33, 33); font-family: wf_segoe-ui_norma=
+l, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif, s=
+erif, EmojiFont; font-size: 15px; margin: 0px;"><font size=3D"2" style=3D"f=
+ont-family: Calibri, sans-serif, serif, EmojiFont;"><span style=3D"font-siz=
+e: 11pt;"><font color=3D"#7030A0" style=3D"font-family: Candara, sans-serif=
+, serif, EmojiFont;">kfaulk@utdallas.edu</font></span></font></div><div sty=
+le=3D"color: rgb(33, 33, 33); font-family: wf_segoe-ui_normal, &quot;Segoe =
+UI&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif, serif, EmojiFont=
+; font-size: 15px; margin: 0px;"><font size=3D"2" style=3D"font-family: Cal=
+ibri, sans-serif, serif, EmojiFont;"><span style=3D"font-size: 11pt;"><font=
+ color=3D"#7030A0" style=3D"font-family: Candara, sans-serif, serif, EmojiF=
+ont;">Ofc.: 972-833-2449</font></span></font></div><div style=3D"color: rgb=
+(33, 33, 33); font-family: wf_segoe-ui_normal, &quot;Segoe UI&quot;, &quot;=
+Segoe WP&quot;, Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15p=
+x; margin: 0px;"><font size=3D"2" style=3D"font-family: Calibri, sans-serif=
+, serif, EmojiFont;"><span style=3D"font-size: 11pt;"><font color=3D"#7030A=
+0" style=3D"font-family: Candara, sans-serif, serif, EmojiFont;">Fax: 972-8=
+33-2775</font></span></font></div></div></div></div><br><p></p></div></body=
+></html>
+
+--B_3686568240_1314479144--

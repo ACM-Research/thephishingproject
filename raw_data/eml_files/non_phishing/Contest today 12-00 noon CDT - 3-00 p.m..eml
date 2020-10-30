@@ -1,0 +1,168 @@
+Received: from DM6PR01MB4139.prod.exchangelabs.com (2603:10b6:300:ed::20) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR20CA0034.NAMPRD20.PROD.OUTLOOK.COM; Sat, 8 Aug 2020 16:13:58 +0000
+Received: from BN8PR03CA0036.namprd03.prod.outlook.com (2603:10b6:408:94::49)
+ by DM6PR01MB4139.prod.exchangelabs.com (2603:10b6:5:28::20) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3261.22; Sat, 8 Aug 2020 16:13:56 +0000
+Received: from BN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:408:94:cafe::11) by BN8PR03CA0036.outlook.office365.com
+ (2603:10b6:408:94::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3261.16 via Frontend
+ Transport; Sat, 8 Aug 2020 16:13:55 +0000
+Authentication-Results: spf=none (sender IP is 74.6.129.193)
+ smtp.mailfrom=att.net; UTDALLAS.EDU; dkim=pass (signature was verified)
+ header.d=att.net;UTDALLAS.EDU; dmarc=bestguesspass action=none
+ header.from=att.net;compauth=pass reason=109
+Received-SPF: None (protection.outlook.com: att.net does not designate
+ permitted sender hosts)
+Received: from sonic309-19.consmr.mail.bf2.yahoo.com (74.6.129.193) by
+ BN1NAM02FT013.mail.protection.outlook.com (10.13.2.88) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3261.19 via Frontend Transport; Sat, 8 Aug 2020 16:13:55 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1596903235; bh=JOshK5IwTIiFMtw/rNHQ/Sqd/05UfCXyDPY7tkMWYOw=; h=From:Date:Subject:To:References:From:Subject; b=yceTmLdUysIeCrBR2vdmeCZtqcG/Lxm3gbEOrtEOM9EVqEjFTraHQSo/EXdgJNg9aBxNXcC86g5lrOZUDuXvTSjXlOg8pbAavXaK4SAMxx6uQWH8VSV5GYrqHU5P0S3C2zLwwBjcs55JK5kqtSoBNU7PaMlmPg4Bi6k9vMZW5NA=
+X-YMail-OSG: iPT9Zx0VM1l77jU0HH7GkhRrGMR1FN0kmsDTtrntTIvcrpYFiZvD8uZBRqQFT54
+ VkYvxxhOJzp78_oSFWGbD38Kt87_iQovU8UZ0quxSRE9WZk6KKveRUfe7tjnasVAzfDcXHrKuCZV
+ _JbvfoVQjSGmPCFWXut_MJTxv1.Rp5K0KxRsH_2zKxyg8s5osWURvkglRuiZTWLaH3R5GXrpP6nQ
+ hyXlb_ftqCwDjFkRO2HVv6eeKgGhsJUqQyXlIeBr8wsAKenHMP7eRE254EQAzkHlYY3DttANcLBW
+ DTW_9nKZaStpY0I97prUE3gF.i59pPWbKVHNY6h_baZXFyOl08MSiN3cAQ97NaqdPac1GZvT4LM1
+ SesGR154q.MC9Mh3pbyskrbYBXLtj.9B0pqys1KzcjI7tCh4YR8GqzEgiCogXED5XTQLNx5B7kDi
+ wPLdXfmtLd.ltEUaBL.qI1GyNY4WS3kZFXDRKrOFXH7sAosKyeHjkVRKPyh2ZczZLFc4G50d0m2W
+ oi55hSyRSS2NoMMGrhS7wyQST.DIJqhS5CXPjSQFYJBqLqonm1OqxB3hyJsDF9SHFnqAYd.McjeL
+ rKxwqMzqcjdOfsbRKiCUbwZ.reU9qLTC3Z3lU.j.nVLYTXbkwzIgFkYi7yYjOcu2oJunL1pGs0sV
+ Nx18kNqDCrclTLeYEaKtoepLZt.uhhARu4.p5485SJvD2Gdb1ni0ewjIktN23JW.TrU7eSqIBu6j
+ AdXhYoqpRaOYyG4EZSKRXdIwwEROhqJ3DVmt2HJ_eV1BTP9OI1tat0wFoQV3KX7YaQVa1LwKHg77
+ 4TrkYyl87t_lJ8dzGQ.4Qnc9olYL1e5fHZUquvWcpv.D1XwTmYMB__w8U3ss.uYkqywmlezbV_zu
+ sEgxac6rYUJ2mQoxsCgmtIMkmEvaeGhcLauo24uGBD.QvePLYqt.8jal2PRYZCzFVKTwlehPf_d1
+ _Y4PXWa493xspgESiPm931rX2.n2L1vabAtBADrE_ei4rtm5nur5rC8gWEKgAvvnj9USoVnF91iy
+ U9gmp1GQpMkFBU9bqINfOKp63Oy24DFtDfnpyjWguw4OgMlEKILbEDhqqDk2wlInF7T.lIJs_NAd
+ eVkEsdjE2TkkMyc_wPziJiz5JcYBlkbqerNHuAdgVWQHtYcDO8iScBbCPWcOa2OLevYXNo7p7WJz
+ DW3BXWylRsCoRl1AQXZjwkoHgaghpezb1sRfar.ln2lt9MSC6juFFeANZpibP6HzIxBPJ7J_YLCt
+ Vk0nycMaRo3AjlbchiNhIUHKg.4AmTs5EynSGVhJ_PR8yBaDmqRsnA71qNvtZpxx_962tVWB2dCY
+ q2DFaOnLgPfdl63_n_5zkOgFWGexNQmo2z8FyT8Z_lHiXHFZSGUYjyiI2cdJkHpO9B8_d.4QKlQS
+ tWrlIRFr_srnhUpYGxTvuJjUK_3g-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic309.consmr.mail.bf2.yahoo.com with HTTP; Sat, 8 Aug 2020 16:13:55 +0000
+Received: by smtp425.mail.bf1.yahoo.com (VZM Hermes SMTP Server) with ESMTPA ID 34784193ca41fadfba10016e5cd3a4ab;
+          Sat, 08 Aug 2020 16:13:53 +0000 (UTC)
+From: Ivor Page <ivorpage@att.net>
+	charset=utf-8
+Date: Sat, 8 Aug 2020 11:13:44 -0500
+Subject: Contest today 12:00 noon CDT - 3:00 p.m.
+Message-Id: <FF39A814-1E2A-4042-ACBB-8ED014C46DFD@att.net>
+To: Ivor Page <ivor.page@tx.rr.com>
+X-Mailer: Apple Mail (2.3608.120.23.2.1)
+References: <FF39A814-1E2A-4042-ACBB-8ED014C46DFD.ref@att.net>
+Content-Length: 375
+Return-Path: ivorpage@att.net
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Aug 2020 16:13:55.7899
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b25b8bf4-a12d-44d6-ec92-08d83bb60cce
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b25b8bf4-a12d-44d6-ec92-08d83bb60cce
+X-MS-TrafficTypeDiagnostic: DM6PR01MB4139:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:6430;
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:74.6.129.193;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:sonic309-19.consmr.mail.bf2.yahoo.com;PTR:sonic309-19.consmr.mail.bf2.yahoo.com;CAT:GIMP;SFTY:9.20;SFS:(4636009)(7636003)(1096003)(356005)(6862004)(42186006)(82202003)(36756003)(26005)(5660300002)(2616005)(83380400001)(4744005)(7596003)(8676002)(336012)(6966003)(86362001)(33656002)(58800400005)(6666004)(43540500001);DIR:INB;SFP:;SFTY:9.20;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Aug 2020 16:13:55.7219
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b25b8bf4-a12d-44d6-ec92-08d83bb60cce
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN1NAM02FT013.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4139
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2629638
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3239.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?QUSIYiEFrz4RV6iWIdRlkSqbeH73YIyEBy5TfV0i2ILqQyI3CNF4mW/0WEb2?=
+ =?us-ascii?Q?9ZWYY8uASN0dvQZk8vFiEY3O6okuyoxXxAMxHRZvnBolv/MTaLzANJ6pqKrD?=
+ =?us-ascii?Q?0q68UK8OTNtYpBjx7I8H+W7WsvgHcCqnJAl3h0HIEw1dE5SxEOu/HosZcVv6?=
+ =?us-ascii?Q?1fvgDvoenibAH1ACeCUQ74TJ3LLJ/rBc18lrCSXRlHmYhhFSTSE1xQkBLd63?=
+ =?us-ascii?Q?yQWmi/I3Gzj6BdYvgk7JOUFzS52oUQadhZzOunvp1VG1HIm0C1pMPL5FoOqq?=
+ =?us-ascii?Q?TQx6+fzusHvDJmY3QusMD/FxnBAAbSV+ttlIXtifDgmHCWXWxO8/VtqZW92N?=
+ =?us-ascii?Q?bcuE04Huvio2OuKAy9Yq1rMlXggj+y3qddT+vqbVZ06OW8/ikuaEwLA2B32I?=
+ =?us-ascii?Q?hGh05yWxLUrq8ltMyzJpwN6e5pjERZchDX4Ql2tCyVNlcZiNzz6CtdxcqWRZ?=
+ =?us-ascii?Q?DxbT8xMwc7EfCfMmot37/XsKAkSmnONB4NYnvxiglSmeAeMRTr+B5KSpheen?=
+ =?us-ascii?Q?H4tB1TPDepTx/GnbiGTQEulo7RioblhaTQ89PVYYb/D7/jEMyHlHBrsDfexL?=
+ =?us-ascii?Q?nEWPOtDF6y96RX8IU5yxtZI7bBvTX9nasouwFyO2VBgNW3I6aVxZy89Pt/G6?=
+ =?us-ascii?Q?1QAbSHBDb649HvsmzPByTdAyvzIAeNL0c9Mt0uinVr96B5ih/hAnG5OzNMu/?=
+ =?us-ascii?Q?/sVhFE7/nbxuxpZ3KcXD46F/BfX0qwxDkM5J4R/qK4/WPjA5JRbX7DUyXVEZ?=
+ =?us-ascii?Q?rmx4oaNgee9M1uja4OfJdSpHjB2Dpe51DVsloxhPKhnJ2XPT+DFrnmvAPcmc?=
+ =?us-ascii?Q?yY/o7V/AheHlc2721irIlO6EvHWHry4JDAKXVossdlz4QrgereSqvaECt2vX?=
+ =?us-ascii?Q?YVO5dQ/jcLPkbtGZr3ofmQPrH5aQ7uM2GtQ9Ar4kpGttbfcaalvrcRQqdstR?=
+ =?us-ascii?Q?JeqjyIx9eFOSfmCkmRxVBXE9ztnsJjjpa7lhBuCXMgz4ov6gNWXxxWfapAPr?=
+ =?us-ascii?Q?/ClxIyt7acSWJEZUPmqiG1ymCKuBHxGYXJg2otptjW7d5y0rRR3A9agmcs0M?=
+ =?us-ascii?Q?YAkn1f6iXqtdM6x9v6Tq6NpvPlPOQJHKn0WOjKVM6Cx6cUNKiWst69ggXAeh?=
+ =?us-ascii?Q?H4xHH7Al43zq97yWjWp64bEAna/LFsOAwXAxMYdIBEbK0iKblB5ha2ZCx0fd?=
+ =?us-ascii?Q?UB07FT4mr8D38LjmAW2yhzR7Uuav8WLnzU/rTCRPHX+J0NBlX5xyTjVYGprq?=
+ =?us-ascii?Q?7HoBaLlhwssI1igqnrITzWQjSuI3Sl0agg6yumm/AuogPvCgQ66vm5jJSYJl?=
+ =?us-ascii?Q?Cp5AcDkRf/64XODAcMlvPyY+iVvIvveHiJSAPYPef69oKucyVM6c7Cgc29PT?=
+ =?us-ascii?Q?n6yDwH0PnC6CXTFDzYRPxqGH2DFzs5mavQZYBu99ocs6RNkeMIeCHSDmKoZa?=
+ =?us-ascii?Q?04vplZK1Zvpis4G+WvKvxMkM44unP8McHxRi5K1p7qaDrrkLE+RvDM8hsKpc?=
+ =?us-ascii?Q?rxfxIwm0jWC46EUyqUiPT2b5XP+JNBc7o8H3jl93H93O9/gn5wBtmlLZXWhx?=
+ =?us-ascii?Q?09tyjKqmpKsTPuRklMVECcrPe5xdsS1WzpTTBoWpZia4zaAzPIpHbAzbycQZ?=
+ =?us-ascii?Q?U9Jakr9PEfPaWHvljfb6bmKjRFPK8EziYeLMFgY04PaVBznhy8cQ7M2SkWaH?=
+ =?us-ascii?Q?5LNhm8cxvYPCbekMTOOFwAUEYwH2xPvhTJrh0J8/KQFrj3za9A/cPpKl/5Z2?=
+ =?us-ascii?Q?RAgEPMkNcyUePvW3uI2JR5MRREuuiQ6IAZ4GcgnnUxBlIQxmSXX5RHicZJxH?=
+ =?us-ascii?Q?k8f1Ru4RKwSEzKeXm/KRvtmSLehUKQvBp4x5NOYKM0RjJvmecQqiUR9B6uL4?=
+ =?us-ascii?Q?F3MpZa2n/sQ/dfIPCAD971JKgPosX6PK51wVjSHB87cBQPqJzbHzRi5+nkrX?=
+ =?us-ascii?Q?pZMZGB9jJ8YqD96JFXf6G+2mDVx07bimRkFlWeiHuyJZYh/eI3DzHDeja8mV?=
+ =?us-ascii?Q?dtO3n5Cm2NgaGRi0+B8jltpGxdVwCL0N1/edLDdzqFXV8DlU3aD0dwoWk1CF?=
+ =?us-ascii?Q?0nZaHarvOg1qXD5vG4H/tN4WvhoRSJGwnAGj7/fri2r22Hh8WAIxhIT6Pqma?=
+ =?us-ascii?Q?DIAdruOjTGtAFHwYOnVa3YaJwbcCvCutnXZ0SorvQ0sNr+WTbXRn1CgOOzUn?=
+ =?us-ascii?Q?GG7FNZtKvh+/jfsCKzRr4ccIX03mtGvRLGFWlUdoasluV99wX8290gH3z8nm?=
+ =?us-ascii?Q?N61tJuy2rLP8/eMikmIn+APIp0nxRFcRzPlf/9xjTWKMuM4q4dXtdyXtuQyU?=
+ =?us-ascii?Q?v9QTw/vV1WavQdkq7nIfsDvbmcmpMX335vV9jUKUppOkGPtc7Xy/2LsIPZqZ?=
+ =?us-ascii?Q?wFCIJ6fAfjCP/VSNLo5RCGSIfWvNjKQMc9GtDxxoctCHXIGX+kvIpDcMlHG+?=
+ =?us-ascii?Q?1lK976qkFyQ=3D?=
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+MIME-Version: 1.0
+
+[IVORPAGE@ATT.NET appears similar to someone who previously sent you email,=
+ but may not be that person. Learn why this could be a risk at http://aka.m=
+s/LearnAboutSenderIdentification.]
+
+You have been promoted to the =E2=80=9Cmain=E2=80=9D contest today in honor=
+ of your successes with 2-hour contests.
+
+There will be a 3-hour contest today beginning at 12:00 noon CDT.
+All are invited to take part.
+
+It is Kattis contest UTD20s17.
+
+Enjoy.
+
+Next Saturday we will take a break for move-in and for getting ready for se=
+mester.
+
+Ivor Page
+ivorpage@att.net
+
+
+
+

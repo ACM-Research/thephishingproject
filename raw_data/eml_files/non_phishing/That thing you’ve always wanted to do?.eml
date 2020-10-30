@@ -1,0 +1,1645 @@
+Received: from SN6PR01MB5264.prod.exchangelabs.com (2603:10b6:805:cf::32) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS; Fri, 18 Sep 2020 17:07:45
+ +0000
+Received: from MN2PR22CA0014.namprd22.prod.outlook.com (2603:10b6:208:238::19)
+ by SN6PR01MB5264.prod.exchangelabs.com (2603:10b6:805:cf::32) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3391.11; Fri, 18 Sep 2020 17:07:42 +0000
+Received: from BL2NAM02FT046.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:238:cafe::54) by MN2PR22CA0014.outlook.office365.com
+ (2603:10b6:208:238::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3391.14 via Frontend
+ Transport; Fri, 18 Sep 2020 17:07:42 +0000
+Authentication-Results: spf=pass (sender IP is 192.174.82.171)
+ smtp.mailfrom=bounces.masterclass.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=email.masterclass.com;utdallas.edu; dmarc=pass action=none
+ header.from=email.masterclass.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounces.masterclass.com
+ designates 192.174.82.171 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.174.82.171;
+ helo=mta-82-171.sparkpostmail.com;
+Received: from mta-82-171.sparkpostmail.com (192.174.82.171) by
+ BL2NAM02FT046.mail.protection.outlook.com (10.152.76.118) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3391.15 via Frontend Transport; Fri, 18 Sep 2020 17:07:41 +0000
+X-MSFBL: 7CVMipqaa0I7LO5G1llejEMZhxICrCEP4pevBVSzJ/E=|eyJyIjoiZXd6MTkwMDA
+	wQHV0ZGFsbGFzLmVkdSIsImN1c3RvbWVyX2lkIjoiMjE4ODgxIiwibWVzc2FnZV9
+	pZCI6IjAwMWM1Y2U5NjQ1ZmFmN2UwYTZkIiwic3ViYWNjb3VudF9pZCI6IjAiLCJ
+	0ZW5hbnRfaWQiOiJzcGMifQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=email.masterclass.com; s=scph0518; t=1600448860;
+	i=@email.masterclass.com;
+	bh=WUv/0iI3ff1t7g1DT67eD9l/hMHIB+qmIBrG3pLLGO4=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=pa7MERbDY35cFKfumyN+jDn77Dx/b4EFUVsn/2cfgs/xAwETB+2NUZXn3cQ93zpug
+	 3B44ZUg8L1fzwZ/y8ejyToxAaOwHgeRaHoKESzHFK3mG3NPbGxYSpFpIgsZUdgktkk
+	 D1ThJbcYulMDlZwD6ZfYYEQpZQ4wbekVglkMswJA=
+To: ewz190000@utdallas.edu
+Message-ID: <A0.D6.32431.C59E46F5@ab.mta1vrest.cc.prd.sparkpost>
+Date: Fri, 18 Sep 2020 17:07:40 +0000
+Reply-To: support@masterclass.com
+Subject: =?utf-8?B?VGhhdCB0aGluZyB5b3XigJl2ZSBhbHdheXMgd2FudGVkIHRvIGRv?=
+	=?utf-8?B?Pw==?=
+X-Campaign-ID: 402020
+From: "MasterClass" <support@email.masterclass.com>
+X-Message-ID: aa0b8b21a719479b83cb1d123696882c
+X-Feedback-ID: 575511:402020:12738:iterable
+Feedback-ID: 575511:402020:12738:iterable
+List-Unsubscribe:
+ <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:90g0cS3bptWDaCGdLf6Q5xbJ9B5kuda64rb4U2-fi1c~|eyAicmNwdF90byI6ICJld3oxOTAwMDBAdXRkYWxsYXMuZWR1IiwgInRlbmFudF9pZCI6ICJzcGMiLCAiY3VzdG9tZXJfaWQiOiAiMjE4ODgxIiwgIm1lc3NhZ2VfaWQiOiAiMDAxYzVjZTk2NDVmYWY3ZTBhNmQiLCAic3ViYWNjb3VudF9pZCI6ICIwIiB9>
+List-Id: <spc.218881.0.sparkpostmail.com>
+Return-Path: msprvs1=18530r_1Nb0Ll=bounces-218881@bounces.masterclass.com
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Sep 2020 17:07:42.0484
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 2e54d3e4-102c-4c9d-a881-08d85bf55abe
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT046.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 2e54d3e4-102c-4c9d-a881-08d85bf55abe
+X-MS-TrafficTypeDiagnostic: SN6PR01MB5264:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:660;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.174.82.171;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mta-82-171.sparkpostmail.com;PTR:mta-82-171.sparkpostmail.com;CAT:NONE;SFS:(4636009)(286005)(58800400005)(7636003)(19627405001)(1096003)(33656002)(7596003)(2160300002)(356005)(34206002)(6512007)(6486002)(19810500001)(118246002)(83170400001)(166002)(9686003)(76236003)(956004)(42882007)(6506007)(33964004)(36906005)(36736006)(26005)(336012)(22186003)(66103001)(32090200005)(131040200001)(559001)(579004);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Sep 2020 17:07:41.6911
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2e54d3e4-102c-4c9d-a881-08d85bf55abe
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT046.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB5264
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9427882
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3348.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?q9g6pWApLLEgwowA2Y+CcC+7hH9kmD+lMp+sWTSn4Ji1mLkOx+e5hzIksaqO?=
+ =?us-ascii?Q?TTM26OQPWuQEp16MJBEPKT/ZexKylRYA1Cjr3YIigOUItqoNPsEHb0llTmrB?=
+ =?us-ascii?Q?6O28bPCrHlYakWYcolikARSqPOhY/MI98UT5IoC1dpMLZ+ezhI7NUnN7PBFN?=
+ =?us-ascii?Q?Chf2o0joWFeV3G94rw+r/5Jm8uUGZ2jFT7769IULhZO0Qc8xLZm+uQNPOl0E?=
+ =?us-ascii?Q?C9a4Z/J9bJqRSvzhgtxAuQ8Xmhg88T8Y5aXcISAkZeM70JRFpdBq1QBuFzdU?=
+ =?us-ascii?Q?HVDJkh5m0k0uPKJfiZfjfd86S7sivcbOaR4z4ECIGdnh+f8j7E24S5CtEfRK?=
+ =?us-ascii?Q?NBUXZbZaIaDWn6tobL279Y2Nh0apm8RAaNYEx9XAQtm+ufyixiF0nqxjLp1z?=
+ =?us-ascii?Q?ukpxluQ8YmrNNOqJ5LXnpSox+oqNivahXUb8lnntg4bTRMScvMZT5LxsTp+C?=
+ =?us-ascii?Q?mi0Nu/uwX2M9YJ7sq1Id287B63lNMd5YqBINqP9TS4HgsIr2ypHAWe5LjkS4?=
+ =?us-ascii?Q?AhN46ietCVtiqfG5WGollvNM4yzzLAePBLxEd9TgbQcv2yRGOfTyPkO3HGr6?=
+ =?us-ascii?Q?Uc8riXR4TNodtSD+ZbhwlwzgqheMkcIaEXfR6X2kna6Z2RqrJzSIimLhcTiz?=
+ =?us-ascii?Q?4aAeIpVEaxVdcPZV4hvT/4FCAU7bbtAG5IXRBnRxkonHj57ap5R0mMnyMVhH?=
+ =?us-ascii?Q?d6xHn+nUrvyJWm743MujP2stTdWCiHFEUIlqRWx4fF3O4dJMumbzUAVyyuJv?=
+ =?us-ascii?Q?L17r395XlYK+Ec1flmPaCSYvSVElmFzWw4Se8SO6y6FWxlyeR4tH+/DAjg/w?=
+ =?us-ascii?Q?6pX1pV7Ty97dPTgsd5w0JbcMir6Zpd+FfJDZR379VeC8q5q29jRD+7hmTOWd?=
+ =?us-ascii?Q?EaEey0d9AZcq+OIADenT2Uj1oAZdQ1rdsA2Ez6FxtPRWo518VUX1rHhc2ht+?=
+ =?us-ascii?Q?jmZkhkcaQBHMi0x2uCASqABIKwuv7T16LJsqWaXjJlpyGgx4iJL1fxuOuWim?=
+ =?us-ascii?Q?GfCTfvWUdy8s2lP0DzFiY/zM4H1PumB3kp78H2QTHdpsCX7OJxSWQnwsORgA?=
+ =?us-ascii?Q?xzCP4+OjqMR9yHig3DlgBHh4afgvqjnOTc9GVcoA30oFXAzqqV4kCgNe0fiZ?=
+ =?us-ascii?Q?j3j10jG3jSCaJ044o03RHyzTEn7Bel9noQiSupfD1ilFIukWvnCjBarSu+js?=
+ =?us-ascii?Q?3sE2YsFxcWeEVh5eptJ3bD6ydB+ZVxVI9Kecq6tFdGjmDNDV1JSCG3dtdrG4?=
+ =?us-ascii?Q?agox5zT6uBnlR7oBHwKWoIZQ4vyXgUJ1mSWoITuJsLssED4a0dZCKyPQcxNy?=
+ =?us-ascii?Q?Og3Lxlmmzpqoy33qhrnuYj83HXKBGe+nIuruwVAIUbtry+zlXrCrln58iSTc?=
+ =?us-ascii?Q?4l+CGsi6TKUpE4M/uWlW8poU6tnDfYc4OobNWx6HDrRgm4Y1zEx3h3sQ/HEC?=
+ =?us-ascii?Q?IYqWcj7rTgLNSajBXTdONJU/XCe3MCvtSKWXN6YFq1nqi3FYpcWyHm6JX6OH?=
+ =?us-ascii?Q?pyZlSuMzBf0vV5kCFGonaO5yZWgYAaDh21Zi/O30EwhDJfqEOxLLCooJ8j08?=
+ =?us-ascii?Q?toUa1gNJUE5T4uaB3cfQ20guLya7FPSnfu8D9MKA8Jxw2TiKRo+50J5qAZTK?=
+ =?us-ascii?Q?hee8733RJwhLPRsyhHlpGqw=3D?=
+Content-type: multipart/alternative;
+	boundary="B_3686568091_256041130"
+MIME-Version: 1.0
+
+--B_3686568091_256041130
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+It=E2=80=99s right here.=20
+=20
+ =20
+=20
+Find your roots=20
+with Ron Finley=20
+=20
+Soar to great heights=20
+with Shonda Rhimes=20
+=20
+Create a Michelin-star dinner=20
+with Thomas Keller=20
+=20
+Cook the best scrambled eggs=20
+with Gordon Ramsay=20
+=20
+Make the shot=20
+with Stephen Curry=20
+=20
+Take the shot=20
+with Annie Leibovitz=20
+=20
+Land the job=20
+with Robin Roberts=20
+=20
+Stick the landing=20
+with Simone Biles=20
+Jump back in to our 85+ classes and reignite your passion now.=20
+Let's Go=20
+    =20
+Support  |   Gifts  |   Privacy  |  Terms  |  Unsubscribe=20
+=C2=A92020 MasterClass, 660 4th Street #443, San Francisco, CA 94107 USA=20
+                                                                =20
+ 
+
+--B_3686568091_256041130
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:sc=
+hemas-microsoft-com:office:office"><head><!--[if gte mso 9]><xml><o:OfficeD=
+ocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:Offic=
+eDocumentSettings></xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Today's the day</title><meta name=3D"viewport" content=3D"width=3Ddevi=
+ce-width, initial-scale=3D1.0"><style type=3D"text/css">a{outline:0;color:#=
+000;text-decoration:none}a:hover{text-decoration:none!important}a[x-apple-d=
+ata-detectors]{color:inherit!important;text-decoration:none!important}a[hre=
+f^=3D"tel"]:hover{text-decoration:none!important}.active-i a:hover,.active-=
+t:hover{opacity:.8}.active-i a,.active-t{transition:all .3s ease}b,strong{f=
+ont-weight:700}th{padding:0}table{border-collapse:collapse!important;border=
+-spacing:0}table td{mso-line-height-rule:exactly;border-collapse:collapse;b=
+order-spacing:0}h1,h2,h3,h4,p{margin:0}img{clear:both;display:block;outline=
+:0;text-decoration:none;margin:0;border:0;border:0 none;height:auto;line-he=
+ight:100%}a img{border:0}body{height:100%!important;margin:0;padding:0;widt=
+h:100%!important}.ExternalClass .not-for-outlook,[owa] .not-for-outlook{dis=
+play:none}a{outline:0;color:#000;text-decoration:none!important}a:hover{tex=
+t-decoration:none!important}.h-u a{text-decoration:none}.h-u a:hover{text-d=
+ecoration:underline!important}a[x-apple-data-detectors]{color:inherit!impor=
+tant;text-decoration:none!important}a[href^=3D"tel"]:hover{text-decoration:=
+none!important}.active-i a:hover,.active-t:hover{opacity:.8}.active-i a,.ac=
+tive-t{transition:all .3s ease}a img{border:0}b,strong{font-weight:700}p{ma=
+rgin:0}th{padding:0}table td{mso-line-height-rule:exactly}.ns span,.ns a{co=
+lor:inherit!important;text-decoration:none!important;border:none!important}=
+.l-white a{color:#fff}@media only screen and (max-width:639px){h1,.h1{font-=
+size:45px!important;line-height:56px!important;font-family:Arial,Helvetica,=
+sans-serif!important;font-weight:bold!important}h2,.h2,.mobile_h1{font-size=
+:38px!important;line-height:48px!important;font-family:Arial,Helvetica,sans=
+-serif!important;font-weight:bold!important}h3,.h3{font-size:29px!important=
+;line-height:36px!important;font-family:Arial,Helvetica,sans-serif!importan=
+t;font-weight:bold!important}h4,.h4{font-size:22px!important;line-height:28=
+px!important;font-family:Arial,Helvetica,sans-serif!important;font-weight:b=
+old!important}h5,.h5{font-size:18px!important;line-height:24px!important;fo=
+nt-family:Arial,Helvetica,sans-serif!important;font-weight:bold!important}p=
+{font-size:17px!important;line-height:26px!important;font-family:Arial,Helv=
+etica,sans-serif!important;font-weight:normal!important}.instructor{font-si=
+ze:17px!important;line-height:17px!important;font-family:Arial,Helvetica,sa=
+ns-serif!important;font-weight:normal!important;font-weight:bold!important}=
+.body2{font-size:15px!important;line-height:23px!important;font-family:Aria=
+l,Helvetica,sans-serif!important;font-weight:normal!important}.mobile{displ=
+ay:block!important;max-height:100%!important;height:auto!important;width:au=
+to!important;font-size:initial!important}.d-b{display:block!important}.hm{d=
+isplay:none!important;width:0!important;height:0!important;padding:0!import=
+ant;font-size:0!important;line-height:0!important}.desktop,.gem_desktop{dis=
+play:none!important}.category{font-size:18px!important;line-height:23px!imp=
+ortant;font-weight:100!important;width:60%!important}.feature_img{height:27=
+5px!important}.feature_bg{background-position:left center!important}.gem_de=
+sktop_image{display:none}.gem_mobile_image{background:#f3f3f3;padding:24px;=
+width:auto!important;display:block!important;max-height:100%!important;heig=
+ht:auto!important}.gem_info{display:block!important;padding-left:0!importan=
+t;padding-top:24px}.button{font-size:13px!important;line-height:16px!import=
+ant;letter-spacing:1.6px!important}.w-190{width:190px!important}.w-260{widt=
+h:260px!important}.w-50p{width:50%!important}li{font-size:17px!important;li=
+ne-height:26px!important;font-family:Arial,Helvetica,sans-serif!important;c=
+olor:#000!important;font-weight:normal!important}li{line-height:22px!import=
+ant;padding-bottom:4px!important}li:last-child{padding-bottom:0!important}.=
+wi-30p img{width:30%!important;height:auto!important}.wi-100p img{width:100=
+%!important;height:auto!important}.wi-100p{width:auto!important;height:auto=
+!important}.pb-m-40{padding-bottom:40px!important}.pb-m-32{padding-bottom:3=
+2px!important}.pb-m-24{padding-bottom:24px!important}.pb-m-8{padding-bottom=
+:8px!important}.pb-m-0{padding-bottom:0!important}.pb-12{padding-bottom:12p=
+x!important}.pb-m-20{padding-bottom:20px!important}.pt-m-24{padding-top:24p=
+x!important}.pt-m-32{padding-top:32px!important}.pt-m-40{padding-top:40px!i=
+mportant}.pt-12{padding-top:12px!important}.pt-m-48{padding-top:48px!import=
+ant}.plr-m-32,.plr-32{padding-left:32px!important;padding-right:32px!import=
+ant}.ptb-m-40{padding-top:40px!important;padding-bottom:40px!important}.p-m=
+-32{padding:32px!important}.w-100p{width:100%!important}img.quote{width:47p=
+x!important;height:35px!important}img.stars{width:180px!important;height:au=
+to!important}.mclive{width:200px!important;border:none!important}.mclive im=
+g{padding-bottom:12px!important;border-bottom:2px solid #31333b!important}.=
+h-m-48{height:48px!important}.w-m-32{width:32px!important}.bg-mobile{backgr=
+ound:url(https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669=
+d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/newslett=
+er/Global%20elements/bogo_mobile_v3.jpg) no-repeat left top!important;backg=
+round-size:cover!important}}@media only screen and (max-width:413px){.hi-ct=
+a img{height:31px!important;width:auto!important}}@media only screen and (m=
+ax-width:374px){.hi-cta img{height:26px!important;width:auto!important}}@me=
+dia only screen and (max-width:375px) and (min-width:374px){.gmail-fix{min-=
+width:374px!important}}@media only screen and (max-width:414px) and (min-wi=
+dth:413px){.gmail-fix{min-width:413px!important}}@media(prefers-dark-interf=
+ace){body{-apple-color-filter:none}}</style></head><body style=3D"backgroun=
+d: #fff; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; height: 100% !important; width: 100% !important;"><div sty=
+le=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;border:0;=
+max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!important;=
+display:none!important;line-height:0px!important;"><img border=3D"0" width=
+=3D"1" height=3D"1" src=3D"http://tracking.masterclass.com/q/zbq3OguB7Vo2Nc=
+7Lmpm14w~~/AANXAQA~/RgRhR25cPVcDc3BjQgoAHFzpZF-vfgptUhZld3oxOTAwMDBAdXRkYWx=
+sYXMuZWR1WAQAAAAA"></div><span style=3D"color:transparent;visibility:hidden=
+;display:none;opacity:0;height:0;width:0;font-size:0;">It=E2=80=99s right h=
+ere.</span><img src=3D"https://links.masterclass.com/e/eo?_t=3Dc862c12dcd89=
+4e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DBvO=
+FQGTyjf_Ue0Y2dPMmg2iuUO20yT4ivMeGlFBBCrO3jPzEU9vjm9XHi1LXZ33cva97XjJ9_YjzdK=
+VIdIo-9-hrRpa6QElbcJVwolSnBEp6iMJ5dpaWOv7xrYSmIzZKeM2E30P-MeQIQUGruxO4qiuoQ=
+2FFkhjTmY1jx-h5cOM%3D" style=3D"border:0;width:1px;height:1px;border-width:=
+0px!important;display:none!important;line-height:0!important;" width=3D"1" =
+height=3D"1"> <table width=3D"100%" style=3D"border-spacing: 0; background:=
+ #fafafa; min-width: 320px; border-collapse: collapse !important;" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"border-collapse: collap=
+se; border-spacing: 0; mso-line-height-rule: exactly;"><table class=3D"w-10=
+0p" width=3D"640" align=3D"center" style=3D"border-spacing: 0; background: =
+#fffffe; max-width: 640px; margin: 0 auto; border-collapse: collapse !impor=
+tant;" cellpadding=3D"0" cellspacing=3D"0"><!-- header --><tbody><tr><td cl=
+ass=3D"wi-30p pt-12 pb-12" align=3D"center" style=3D"border-collapse: colla=
+pse; border-spacing: 0; background: #000000; padding: 10px 10px; line-heigh=
+t: 1px; font-size: 1px; mso-line-height-rule: at-least;"><a style=3D"outlin=
+e: none; color: #000; text-decoration: none !important;" href=3D"https://na=
+m02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass=
+.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a71=
+9479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8787=
+-wn-1lVhineyVWCcQw4A46dGxAp_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lwc42WRUz4=
+bRRSiBsCAu1lPnlRTuYshYJPcMrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy79G5ZsDz=
+O-6LiYgJhSsYyXwhEH_LfHcTu43pZ06jlNXeJGMltFlevhKcOi6xklhunYVoUJUVJ16f4kEQY5F=
+EE6bNENLlQawYUJHBs_87BjnfrwE4DgDp5QZKUq8nRTXKLR621tNRBCFYjvWQwqRxVzUQf7cbRP=
+Um8WoKGwPPOPJGrqaVuSIOrj3TanFrysTsvRDoDkP6pzwlMLc32hDei5bpROHVRlXYnve-NA1Hb=
+MtvV4M7Fvx-9seAX7YBO9dChdQOJnlkHssHFmR24u1eW85haA%253D%253D&amp;data=3D02%7=
+C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653568922&amp;sdata=3DM3Ydwvm=
+bGtnJtyVIuY1JDtwwz1khLd10ZzPDfgEplNc%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&a=
+mp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu=
+4SwrpJfubvx2nN-Bj8787-wn-1lVhineyVWCcQw4A46dGxAp_oRc4mWtFB4-4NXOuqFnFLD2Ewb=
+wU_IuEhtvw4Lwc42WRUz4bRRSiBsCAu1lPnlRTuYshYJPcMrXhe6UjSe7OUsEJjvr5ZDFENck3W=
+m0M7JktYCltOy79G5ZsDzO-6LiYgJhSsYyXwhEH_LfHcTu43pZ06jlNXeJGMltFlevhKcOi6xkl=
+hunYVoUJUVJ16f4kEQY5FEE6bNENLlQawYUJHBs_87BjnfrwE4DgDp5QZKUq8nRTXKLR621tNRB=
+CFYjvWQwqRxVzUQf7cbRPUm8WoKGwPPOPJGrqaVuSIOrj3TanFrysTsvRDoDkP6pzwlMLc32hDe=
+i5bpROHVRlXYnve-NA1HbMtvV4M7Fvx-9seAX7YBO9dChdQOJnlkHssHFmR24u1eW85haA%3D%3=
+D" shash=3D"b1cVGDm+MGKhGtpmpmGY0RasitXqfH9EHx+bcEgY7nlN5JqVXLsc/UI/jAvHdzL=
+3jP4KCN2DFvfi8HzKBJVEuo7/9c4B9fYe+mEnGeE8sKHX34cXVxvp6yzsTsIpMSwNSmqpW7zeTE=
+DMJjbuHP67OSNtPZhdvkjOZ1s9EVT1AM0=3D"><!-- logo --><img src=3D"https://d15k=
+2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-=
+c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/Global/mc_wordmark%402x.png" =
+width=3D"148" style=3D"clear: both; display: block; outline: none; text-dec=
+oration: none; margin: 0px; height: auto; line-height: 100%; border: none; =
+max-width: 138px; font: 16px/20px Arial, Helvetica, sans-serif; color: #fff=
+; vertical-align: top;" alt=3D"MASTERCLASS"> </a></td></tr><!-- end header =
+--><!-- hero --><tr><!-- desktop image --><td class=3D"wi-100p pb-32 deskto=
+p" align=3D"center" style=3D"border-collapse: collapse; border-spacing: 0; =
+mso-line-height-rule: exactly;"><a style=3D"outline: none; color: #000; tex=
+t-decoration: none !important;" href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc=
+862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_=
+e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8787-wn-1lVhineyVWCcQw4A46dGx=
+Ap_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lwc42WRUz4bRRSiBsCAu1lPnlRTuYshYJPc=
+MrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy79G5ZsDzO-6LiYgJhSsYyXwhEH_LfHcTu=
+43pZ06jlNXeJGMltFlevhKcOi6xklhunYVoBNz2SZtbiNO_PBdyemNEYMM0iuRuiHjGUu3mZjO_=
+TI8atTDemeyAmk4JEmnyS3d__l-9XL3vj4kOQ5vjvVmcDbYkmn7sUmp2_MOb63uC2OIwpdNpOZJ=
+L6uHrRwD69_LB0E1bASSvAj6onASkbAL1m4Dh8JQMVP79KaS1nWK-xTsBcjXvNqfeWOWnnnSPou=
+j0A66uDWESUoK2Zalj1Tqrng%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDall=
+as.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6=
+c%7C0%7C0%7C637360456653578922&amp;sdata=3DUN7oalTYk%2BhAQ3UuC2uXAMmubYnavZ=
+4l64MKRoN25AQ%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass=
+.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479=
+b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8787-w=
+n-1lVhineyVWCcQw4A46dGxAp_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lwc42WRUz4bR=
+RSiBsCAu1lPnlRTuYshYJPcMrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy79G5ZsDzO-=
+6LiYgJhSsYyXwhEH_LfHcTu43pZ06jlNXeJGMltFlevhKcOi6xklhunYVoBNz2SZtbiNO_PBdye=
+mNEYMM0iuRuiHjGUu3mZjO_TI8atTDemeyAmk4JEmnyS3d__l-9XL3vj4kOQ5vjvVmcDbYkmn7s=
+Ump2_MOb63uC2OIwpdNpOZJL6uHrRwD69_LB0E1bASSvAj6onASkbAL1m4Dh8JQMVP79KaS1nWK=
+-xTsBcjXvNqfeWOWnnnSPouj0A66uDWESUoK2Zalj1Tqrng%3D%3D" shash=3D"lR8MFm3M5sk=
+UgskXEWBkguAzLS8X3tBlFjNU44gxJGVLINNvUZ7UJ1m626zRBNdajlFZPTp7GD6wsAk8MQgHL9=
+MC2nKD6yDKjx+Dxn35/vcJksCK43cuhl1AuAHfWkapbrQdygd/wvEFDb4JwqlvB+Xm5JNRNqzAO=
+sG59z2z4L0=3D"><img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/use=
+rs/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c=
+182120673/AAP%20Engagement/Hero_desktop_v4.jpg" width=3D"640" style=3D"clea=
+r: both; display: block; outline: none; text-decoration: none; margin: 0px;=
+ height: auto; line-height: 100%; vertical-align: top; border: none;" alt=
+=3D"Today's the day."> </a></td><!-- end desktop image --><!-- mobile image=
+ --><td class=3D"wi-100p pb-32 mobile" align=3D"center" style=3D"border-col=
+lapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; display:=
+ none;"><a style=3D"outline: none; color: #000; text-decoration: none !impo=
+rtant;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c18=
+2120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1=
+BEnYu4SwrpJfubvx2nN-Bj8787-wn-1lVhineyVWCcQw4A46dGxAp_oRc4mWtFB4-4NXOuqFnFL=
+D2EwbwU_IuEhtvw4Lwc42WRUz4bRRSiBsCAu1lPnlRTuYshYJPcMrXhe6UjSe7OUsEJjvr5ZDFE=
+Nck3Wm0M7JktYCltOy79G5ZsDzO-6LiYgJhSsYyXwhEH_LfHcTu43pZ06jlNXeJGMltFlevhKcO=
+i6xklhunYVoS5LeELT3vCSUcu4T3MOo-jIpBw03L9T2XPClS0-zfzFDy9RxfsaS8CtNyqaHrLLr=
+DZaimb_0NYYCPHOtg2ugye7d5HlIDhUfxIGwNYOkZVmVaYj8Sf1cwYFIdR489X-DD0hOQSYHe8e=
+xF6gLO6nlVzbyb-vKSN2GotMKhIfWpk4o1Yz84jfhbEroOi_V6xKLIEVqxWoW_rhuuKkgaTU6Ug=
+%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9=
+da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653=
+578922&amp;sdata=3DkOyGkP2YuDTyF9RPoZNQP60qc81DwkyvJNYL%2FuFS%2BvU%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862=
+c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;=
+_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8787-wn-1lVhineyVWCcQw4A46dG=
+xAp_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lwc42WRUz4bRRSiBsCAu1lPnlRTuYshYJP=
+cMrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy79G5ZsDzO-6LiYgJhSsYyXwhEH_LfHcT=
+u43pZ06jlNXeJGMltFlevhKcOi6xklhunYVoS5LeELT3vCSUcu4T3MOo-jIpBw03L9T2XPClS0-=
+zfzFDy9RxfsaS8CtNyqaHrLLrDZaimb_0NYYCPHOtg2ugye7d5HlIDhUfxIGwNYOkZVmVaYj8Sf=
+1cwYFIdR489X-DD0hOQSYHe8exF6gLO6nlVzbyb-vKSN2GotMKhIfWpk4o1Yz84jfhbEroOi_V6=
+xKLIEVqxWoW_rhuuKkgaTU6Ug%3D%3D" shash=3D"ArXNMt/TQhqE/ET0+HZTLunYQSLndQGG3=
+F9Zn67ZpJMkxdod51J+KafmiTKXCWvmDjooTn7E1H2aoZKrjnfiJHpzOmnTobxutQ9TW0SJuDhH=
+zN4floUEKCaL1eOvKGtpIl0CiJ7BV9N0QVk8lNLeizOBaP36RVQBK4gA7A4ZpjA=3D"><img sr=
+c=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d571=
+3-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/AAP%20Engage=
+ment/Hero_mobile_v6.jpg" width=3D"100%" style=3D"clear: both; display: bloc=
+k; outline: none; text-decoration: none; margin: 0px; height: auto; line-he=
+ight: 100%; vertical-align: top; border: none;" alt=3D"Today's the day."> <=
+/a></td><!-- end mobile image --></tr><tr><td class=3D"plr-32 ptb-m-32" sty=
+le=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: e=
+xactly; padding: 64px 64px 48px;"><table class=3D"w-100p" width=3D"512" ali=
+gn=3D"center" style=3D"border-spacing: 0; margin: 0 auto; border-collapse: =
+collapse !important;" cellpadding=3D"0" cellspacing=3D"0"><!-- instructors =
+--><tbody><tr><td style=3D"border-collapse: collapse; border-spacing: 0; ms=
+o-line-height-rule: exactly;"><table width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"border-spacing: 0; border-collapse: collapse !importa=
+nt;"><!-- instructor --><tbody><tr><td style=3D"border-collapse: collapse; =
+border-spacing: 0; mso-line-height-rule: exactly; padding: 0 0 32px;"><tabl=
+e width=3D"100%" height=3D"122" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"middle" style=3D"border-spacing: 0; background: #F3F3F3; border-radius:=
+ 8px; border-collapse: collapse !important;" class=3D"instructor_tile"><tbo=
+dy><tr><td class=3D"wi-105 w-105" width=3D"122" valign=3D"top" style=3D"bor=
+der-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly;">=
+<a style=3D"outline: none; color: #000; text-decoration: none !important;" =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%=
+26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4Sw=
+rpJfubvx2nN-Bj_l2SBDmD7fc4YDR8lo-FD45CE4TOWDTla4nHZVstKt3gifa8EhXCqDKpYwAQH=
+JGqktqnVYTNGqjrXbSH82BGqvYjL1v9RIh2tlnx8E6LsjU3nD5GffSQy1G17b3W4AF-zRCeOnlL=
+aW3hxKimkyafGOn09gpRMAmXbf59b9cZzxYZ1ng2zKnqMDyjrYlnnIuamPkERw6l2CVDe9ndmvT=
+LRxGw-kGOmVwHSaDOACg0LMZm0bilOmKyn2FK2msL3nFmf7Y1sWhJeSIIf89IUVZPGxtF3iYPKf=
+xtBtUhLbtq-tc-pQ2vJ8T4Lj3vu46d4LbtCLwo7z98gPo8R5L0xvnrDLllBuOCpxO6RhJ6vH2xY=
+TG1Hqv3QWupnvFjwQ2s4aWngKRjzykWCUw0kZ62S0ODg8N5tKzYX553anjsA3lOQEqA%253D%25=
+3D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d=
+85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653588918&a=
+mp;sdata=3DWblGF06K7Pq8UN0TVStpTaDLMggz9CRUWLPYDaxC3CM%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7a=
+aa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdG=
+f5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_l2SBDmD7fc4YDR8lo-FD45CE4TOWDTla4nHZVst=
+Kt3gifa8EhXCqDKpYwAQHJGqktqnVYTNGqjrXbSH82BGqvYjL1v9RIh2tlnx8E6LsjU3nD5GffS=
+Qy1G17b3W4AF-zRCeOnlLaW3hxKimkyafGOn09gpRMAmXbf59b9cZzxYZ1ng2zKnqMDyjrYlnnI=
+uamPkERw6l2CVDe9ndmvTLRxGw-kGOmVwHSaDOACg0LMZm0bilOmKyn2FK2msL3nFmf7Y1sWhJe=
+SIIf89IUVZPGxtF3iYPKfxtBtUhLbtq-tc-pQ2vJ8T4Lj3vu46d4LbtCLwo7z98gPo8R5L0xvnr=
+DLllBuOCpxO6RhJ6vH2xYTG1Hqv3QWupnvFjwQ2s4aWngKRjzykWCUw0kZ62S0ODg8N5tKzYX55=
+3anjsA3lOQEqA%3D%3D" shash=3D"iBYxKJN/ZGyfV7gjgv0mdIsYwOECmPsfvkuvNvLbt1e1R=
+07AuECf4vjSRaQKC1WM7iUt3Ie71GMKOXP/TtBfcQwvFcDy1AdeAJ1BByZHkWJ+rTHafKA/+ex4=
+Ui9cGtv6CTZC8eAClpkGeZ/85Cj46pMvXYMX23ff8sZFO86ToKI=3D"><img src=3D"https:/=
+/d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-=
+bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/AAP%20Engagement/RF_Hero=
+_1X1_A.jpg" width=3D"122" style=3D"clear: both; display: block; outline: no=
+ne; text-decoration: none; margin: 0px; height: auto; line-height: 100%; ve=
+rtical-align: top; border-radius: 8px 0 0 8px; border: none;" alt=3D"Ron Fi=
+nley"> </a></td><td style=3D"border-collapse: collapse; border-spacing: 0; =
+mso-line-height-rule: exactly;"><table class=3D"w-100p" width=3D"358" cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; border-collapse:=
+ collapse !important;"><tbody><tr><td class=3D"instructor pl-m-12" style=3D=
+"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactl=
+y; padding: 0 32px 1px 32px; font: bold 24px/31px Arial, Helvetica, sans-se=
+rif; color: #000;"><a style=3D"outline: none; color: #000; text-decoration:=
+ none !important;" href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e=
+7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5=
+bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_l2SBDmD7fc4YDR8lo-FD45CE4TOWDTla4nHZVstKt=
+3gifa8EhXCqDKpYwAQHJGqktqnVYTNGqjrXbSH82BGqvYjL1v9RIh2tlnx8E6LsjU3nD5GffSQy=
+1G17b3W4AF-zRCeOnlLaW3hxKimkyafGOn09gpRMAmXbf59b9cZzxYZ1ng2zKnqMDyjrYlnnIua=
+mPkERw6l2CVDe9ndmvTLRxWv8NylI7h-2kP--Yrn4eX0Iuw5OXbuT-nxvZIkhtJ_p9l6p-Ep471=
+PtjavId71IGWZjGCmduM9uP0Hc0NDcITGRJdbhn0-zZyIqfBAy-o1qVA72r0w8j2nrieHD_o1B_=
+gkciVqH5h3Kp54mWJ-tTVHfEl2E_fMM4yqK-fa90ZI0YmPe5-Kvp9Y44ESeVhnOg1szNaQy8wEF=
+IGKQOwp1QYA%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54=
+d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37360456653588918&amp;sdata=3DvyjZ%2FXwZelaMVgtIrf9tn%2BB%2Bnk6xf51tBalkuMX=
+QkAA%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/cl=
+ick?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d12=
+3696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_l2SBDmD7fc4YDR=
+8lo-FD45CE4TOWDTla4nHZVstKt3gifa8EhXCqDKpYwAQHJGqktqnVYTNGqjrXbSH82BGqvYjL1=
+v9RIh2tlnx8E6LsjU3nD5GffSQy1G17b3W4AF-zRCeOnlLaW3hxKimkyafGOn09gpRMAmXbf59b=
+9cZzxYZ1ng2zKnqMDyjrYlnnIuamPkERw6l2CVDe9ndmvTLRxWv8NylI7h-2kP--Yrn4eX0Iuw5=
+OXbuT-nxvZIkhtJ_p9l6p-Ep471PtjavId71IGWZjGCmduM9uP0Hc0NDcITGRJdbhn0-zZyIqfB=
+Ay-o1qVA72r0w8j2nrieHD_o1B_gkciVqH5h3Kp54mWJ-tTVHfEl2E_fMM4yqK-fa90ZI0YmPe5=
+-Kvp9Y44ESeVhnOg1szNaQy8wEFIGKQOwp1QYA%3D%3D" shash=3D"pOzqeu8cpua/OkFGJ1Uj=
+NDuG4C/p5TvvVPORSFqNdFcJCHP2HDo03Jf4tVCGgix/RST3U6qGaB9V8Mv2RKCGeEBkSQX7Odp=
+WdlA7peHNa0dkdCuQt7y9/7kVKGi+jkqCi7OZ2SgLNA8fKm8FgIADu9bSs7B+gBkbGNYMTWjIBd=
+g=3D">Find your roots </a></td></tr><tr><td class=3D"body2 pl-m-12" style=
+=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: exa=
+ctly; font: 18px/27px Arial, Helvetica, sans-serif; color: #596170; padding=
+-left: 32px;"><a style=3D"outline: none; color: #596170; text-decoration: n=
+one !important;" href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7a=
+aa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bX=
+shjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJBtyeF6mvR6Aq06TubQjjVVXI9Abc3Az=
+HMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGjkkoKfpRvU09EELNEIqMst4zZe4Zx9jS=
+RqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdszxTNWl6Y_PbcouCNAiToOxsDvfgG_O7C=
+aXeAAHx5OnoZQj_c8nW4P0H9H2kIz9mBtFrC_g3GFtx46s4Pp4D9pxpLcU4XFOoaPvz0dNOFXTw=
+3ZERntseTKAECkrn49CVzXXT4KjJPu-3MlXhc4qHWIXMWpe4Wm1YT5GYTOmUvt2IFCb9n1hT2xU=
+EGKHTBeuXktw_b58anLGf1cLfcU6YMOAqdo-POYTL2jaIZ_FQ6x23n_KZoN9k1SV5r_9sRHYyGE=
+0j_Nr9b8A%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3=
+e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637=
+360456653598909&amp;sdata=3DtDfIDR8saC8%2BSVfOT6zt962x6%2F6QTBTO%2BQvrSE2hq=
+wM%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/clic=
+k?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d1236=
+96882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJBtye=
+F6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGjkkoK=
+fpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdszxTNW=
+l6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW4P0H9H2kIz9mBtFrC_g3GFtx46s4P=
+p4D9pxpLcU4XFOoaPvz0dNOFXTw3ZERntseTKAECkrn49CVzXXT4KjJPu-3MlXhc4qHWIXMWpe4=
+Wm1YT5GYTOmUvt2IFCb9n1hT2xUEGKHTBeuXktw_b58anLGf1cLfcU6YMOAqdo-POYTL2jaIZ_F=
+Q6x23n_KZoN9k1SV5r_9sRHYyGE0j_Nr9b8A%3D%3D" shash=3D"gGT/1+olFp90mbzurOPXGH=
+8D/ViZWC6JvVKOqfrpbB2trlkOGVxBZ9PM1a9yhocAIWjAbMh9Bdp3L+HJI2vCgTSt3YcAXIbcb=
+M6BnJD7wnvW7rLr86yvk5uRpaCtC2JvVjolO91QdjipqjNW9JCh5Y8NOcNIjCbPHW9C9vjClac=
+=3D">with Ron Finley </a></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr><!-- end indtructor --><!-- instructor --><tr><td style=3D"bord=
+er-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; pa=
+dding: 0 0 32px;"><table width=3D"100%" height=3D"122" cellpadding=3D"0" ce=
+llspacing=3D"0" align=3D"middle" style=3D"border-spacing: 0; background: #F=
+3F3F3; border-radius: 8px; border-collapse: collapse !important;" class=3D"=
+instructor_tile"><tbody><tr><td class=3D"wi-105 w-105" width=3D"122" valign=
+=3D"top" style=3D"border-collapse: collapse; border-spacing: 0; mso-line-he=
+ight-rule: exactly;"><a style=3D"outline: none; color: #000; text-decoratio=
+n: none !important;" href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd89=
+4e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdG=
+f5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJBtyeF6mvR6Aq06TubQjjVVXI9Ab=
+c3AzHMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGjkkoKfpRvU09EELNEIqMst4zZe4Z=
+x9jSRqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdszxTNWl6Y_PbcouCNAiToOxsDvfgG=
+_O7CaXeAAHx5OnoZQj_c8nW4Mz2RzFYyXf5Y4Nsl2QCHXAIlL02kyZvpmHgzwGh9tIIdEaeoDnC=
+p7WthBZziKvry5zR0UZKG6Gl3_qOTtK44_lfRn1zL0aWqIfGUBHCPPta5kzB8jB3FECwDdbMTqe=
+LJORLa1g6gNawY5mseTtJaONsFF0ZSZj7s4KMHk8oiWbmAqhYK81CiHibdGC5Fs2OR2EsUoZmgQ=
+P_jJCWwvzN1bA%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e=
+54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7=
+C637360456653598909&amp;sdata=3DnTLm85HNPfVr%2BQpEwVlXjBYh1mOIHHueG6Q7%2BiN=
+UNbg%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/cl=
+ick?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d12=
+3696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJBt=
+yeF6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGjkk=
+oKfpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdszxT=
+NWl6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW4Mz2RzFYyXf5Y4Nsl2QCHXAIlL0=
+2kyZvpmHgzwGh9tIIdEaeoDnCp7WthBZziKvry5zR0UZKG6Gl3_qOTtK44_lfRn1zL0aWqIfGUB=
+HCPPta5kzB8jB3FECwDdbMTqeLJORLa1g6gNawY5mseTtJaONsFF0ZSZj7s4KMHk8oiWbmAqhYK=
+81CiHibdGC5Fs2OR2EsUoZmgQP_jJCWwvzN1bA%3D%3D" shash=3D"Rae7+h1rqQC1f+l5xWJ5=
+qaaX+P1Yv5tKftTZsPOSbiUb8dAaCx6Ch4/aSsgsbSoKOG28JyRyoteQRpadsnOo4dOZW6zVb1N=
+EFcBjoUQa/WgeimvGYkNZpi2qdL24GU97uHtw3a2E/kkUlsNY8nUyxvEbfJBcBB3utXW998OSV1=
+k=3D"><img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integr=
+ators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673=
+/AAP%20Engagement/SR_Hero_1X1_A.jpg" width=3D"122" style=3D"clear: both; di=
+splay: block; outline: none; text-decoration: none; margin: 0px; height: au=
+to; line-height: 100%; vertical-align: top; border-radius: 8px 0 0 8px; bor=
+der: none;" alt=3D"Shonda Rhimes"> </a></td><td style=3D"border-collapse: c=
+ollapse; border-spacing: 0; mso-line-height-rule: exactly;"><table class=3D=
+"w-100p" width=3D"358" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-=
+spacing: 0; border-collapse: collapse !important;"><tbody><tr><td class=3D"=
+instructor pl-m-12" style=3D"border-collapse: collapse; border-spacing: 0; =
+mso-line-height-rule: exactly; padding: 0 32px 1px 32px; font: bold 24px/31=
+px Arial, Helvetica, sans-serif; color: #000;"><a style=3D"outline: none; c=
+olor: #000; text-decoration: none !important;" href=3D"https://nam02.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2=
+Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1=
+d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJB=
+tyeF6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGjk=
+koKfpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdszx=
+TNWl6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW49X_lGzYE5hbnqCuct0qWyVO4V=
+qAiJwo83IarEHLxIu5Y9-YnGPsYiWnq7yTWncwQS33lzZ1nW253DYm9I_ScfnGxgFszc9fbTN-A=
+Qr1CrS_1MwME_yIFLorsw9PWKrK4vkXx9D8xpf4xSPr0HaeOvQUmzq3RGUlu0vE_Hto_SwYmPhP=
+HxdZS05bMW5LrvTumRzBgxLmeAOx7EBrldNAU1A%253D%253D&amp;data=3D02%7C01%7CEric=
+.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637360456653608906&amp;sdata=3DogvycyUy6DAZBWzNk=
+YRyURcFg0WblFr9A%2BXcdz%2BVNBM%3D&amp;reserved=3D0" originalsrc=3D"https://=
+links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=
+=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4Swrp=
+Jfubvx2nN-Bj_0uSCPFOPVZeJBtyeF6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPH=
+UbuePQqau4hBRYpp9Ur9lHvGjkkoKfpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1f=
+U8j21MOt-SOzvK0uFEeSDTdszxTNWl6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW=
+49X_lGzYE5hbnqCuct0qWyVO4VqAiJwo83IarEHLxIu5Y9-YnGPsYiWnq7yTWncwQS33lzZ1nW2=
+53DYm9I_ScfnGxgFszc9fbTN-AQr1CrS_1MwME_yIFLorsw9PWKrK4vkXx9D8xpf4xSPr0HaeOv=
+QUmzq3RGUlu0vE_Hto_SwYmPhPHxdZS05bMW5LrvTumRzBgxLmeAOx7EBrldNAU1A%3D%3D" sh=
+ash=3D"qrn9n1nuqwQt0WDNxJWIfz8VQaeYAWivSTCClCCly90rZLvhkLwMwZTgUMz+IPkmSPNe=
+LdFKM1JQpRTFLhkfMA5eelv5Hol23gX9XHcQ2EgFLoIkx+RbR2VlPCN+1r3vGit29Rm8MA3m4cD=
+E8nNjE72+gX2E3st/YL6pD2ftv/0=3D">Soar to great heights </a></td></tr><tr><t=
+d class=3D"body2 pl-m-12" style=3D"border-collapse: collapse; border-spacin=
+g: 0; mso-line-height-rule: exactly; font: 18px/27px Arial, Helvetica, sans=
+-serif; color: #596170; padding-left: 32px;"><a style=3D"outline: none; col=
+or: #596170; text-decoration: none !important;" href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%=
+2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb=
+1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_0uSCPFOPVZeJ=
+BtyeF6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPHUbuePQqau4hBRYpp9Ur9lHvGj=
+kkoKfpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1fU8j21MOt-SOzvK0uFEeSDTdsz=
+xTNWl6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW4l9v9qsC8z6DnglyG4RMCIZUC=
+QZMYoJNJZK75s148ylZ_cLTdaHLzAjmuOOyaF3__ODYdPBKDPmnpK0SAYT_OwC7nRSFdxZ_b7BA=
+27m37iJMAl1ZDE6akBFac2q23FUYv0E98WCOczc64D9oME-HBNwMIKR4RA7Ve04ZObMTSoaFCPM=
+pkrcRNKV0_cGgjl2BBmF86BIvxhlIRCzFZoOYbdQ%253D%253D&amp;data=3D02%7C01%7CEri=
+c.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637360456653618895&amp;sdata=3DNRjvR1x8GpLwvHgC=
+hQB1LcN7%2BAApkZdxt8ySw0UQX%2Bs%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=
+=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4Swrp=
+Jfubvx2nN-Bj_0uSCPFOPVZeJBtyeF6mvR6Aq06TubQjjVVXI9Abc3AzHMf0Vr-eln1Px0SDBPH=
+UbuePQqau4hBRYpp9Ur9lHvGjkkoKfpRvU09EELNEIqMst4zZe4Zx9jSRqqqIrAVJsbS_aMZu1f=
+U8j21MOt-SOzvK0uFEeSDTdszxTNWl6Y_PbcouCNAiToOxsDvfgG_O7CaXeAAHx5OnoZQj_c8nW=
+4l9v9qsC8z6DnglyG4RMCIZUCQZMYoJNJZK75s148ylZ_cLTdaHLzAjmuOOyaF3__ODYdPBKDPm=
+npK0SAYT_OwC7nRSFdxZ_b7BA27m37iJMAl1ZDE6akBFac2q23FUYv0E98WCOczc64D9oME-HBN=
+wMIKR4RA7Ve04ZObMTSoaFCPMpkrcRNKV0_cGgjl2BBmF86BIvxhlIRCzFZoOYbdQ%3D%3D" sh=
+ash=3D"MLTzQQsWEYof4JaGyTcUjb13/4VoQeo0lwqIo8Huo7FdJbt4/H1w85MPrgNXlTdn83Kz=
+HKkrW7scYy9TLaHjJ6EpE4kcP8iY15vnFhKlTqjqE+X7NzJhMtKwhHDPXkm0DRkfXJtWqnV/SON=
+pWvyQ7V0CT/0oBdzEqJBuOr0Rch8=3D">with Shonda Rhimes </a></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr><!-- end indtructor --><!-- inst=
+ructor --><tr><td style=3D"border-collapse: collapse; border-spacing: 0; ms=
+o-line-height-rule: exactly; padding: 0 0 32px;"><table width=3D"100%" heig=
+ht=3D"122" cellpadding=3D"0" cellspacing=3D"0" align=3D"middle" style=3D"bo=
+rder-spacing: 0; background: #F3F3F3; border-radius: 8px; border-collapse: =
+collapse !important;" class=3D"instructor_tile"><tbody><tr><td class=3D"wi-=
+105 w-105" width=3D"122" valign=3D"top" style=3D"border-collapse: collapse;=
+ border-spacing: 0; mso-line-height-rule: exactly;"><a style=3D"outline: no=
+ne; color: #000; text-decoration: none !important;" href=3D"https://nam02.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%=
+2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b=
+83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8g_i7jBRt=
+LwlrSEBgByuq6dcNorq9BglzZKryqtRmw-t0Z4ge1X8riWAby_KF30tgg0YqYCUhkakcxPzSc8b=
+4x0jasu_CaH4zpl_a8wAENKSTrWCb6BoZ7mRl-yOEnecbp0Z2TD6jdRaLIZ8c4gGyCfo1dtx7Di=
+mvQCC79LKRiOljMDPCnp66zwOpQsOOg8houkGeKBJm4iM5SB8ca0U10QIh1n-BtMNHUDBcNyuAW=
+bHjPbHYfHc_BRuXAKBd1bClwVJ_tDIr2smWzNVzRgDjzttTMErL54QLLIjzjnkL0mN3RRd0BV9H=
+GulywcfepNAKkjtSUH34vmY8t4W4gpd9s4UbP8ra8ynZktR_YQH6pGUiUoXpsWYeEesH4NGia2L=
+RziWv32cVbm_V-DEotBlzBXi3aLIzwcP6V-rmnzroz0g%253D%253D&amp;data=3D02%7C01%7=
+CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653618895&amp;sdata=3DLIZffSnOXafb=
+UDXowP%2BkxPIDPuY%2FLKaS50Z6Kb3J8oo%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&am=
+p;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4=
+SwrpJfubvx2nN-Bj8g_i7jBRtLwlrSEBgByuq6dcNorq9BglzZKryqtRmw-t0Z4ge1X8riWAby_=
+KF30tgg0YqYCUhkakcxPzSc8b4x0jasu_CaH4zpl_a8wAENKSTrWCb6BoZ7mRl-yOEnecbp0Z2T=
+D6jdRaLIZ8c4gGyCfo1dtx7DimvQCC79LKRiOljMDPCnp66zwOpQsOOg8houkGeKBJm4iM5SB8c=
+a0U10QIh1n-BtMNHUDBcNyuAWbHjPbHYfHc_BRuXAKBd1bClwVJ_tDIr2smWzNVzRgDjzttTMEr=
+L54QLLIjzjnkL0mN3RRd0BV9HGulywcfepNAKkjtSUH34vmY8t4W4gpd9s4UbP8ra8ynZktR_YQ=
+H6pGUiUoXpsWYeEesH4NGia2LRziWv32cVbm_V-DEotBlzBXi3aLIzwcP6V-rmnzroz0g%3D%3D=
+" shash=3D"EPIsPC5hLGa2GNTWbg2NST0c76NvFW3Aa86olxzEqWrcXNx5kWWD/8yWUUfsiDbt=
+3DzhkKdliRc/AkRjk1rgLF0HzsSawXnoehHmDvVyJYwNu4XuLuSwzQD8ABJw22dWF6zMB4cxfG8=
+0lQm9WBRBLdRMOCH23AsvGvhYQ2SrF6M=3D"><img src=3D"https://d15k2d11r6t6rl.clo=
+udfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c=
+862c12dcd894e7aaa5de2c182120673/AAP%20Engagement/TK_Hero_1X1_A.jpg" width=
+=3D"122" style=3D"clear: both; display: block; outline: none; text-decorati=
+on: none; margin: 0px; height: auto; line-height: 100%; vertical-align: top=
+; border-radius: 8px 0 0 8px; border: none;" alt=3D"Thomas Keller"> </a></t=
+d><td style=3D"border-collapse: collapse; border-spacing: 0; mso-line-heigh=
+t-rule: exactly;"><table class=3D"w-100p" width=3D"358" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"border-spacing: 0; border-collapse: collapse !imp=
+ortant;"><tbody><tr><td class=3D"instructor pl-m-12" style=3D"border-collap=
+se: collapse; border-spacing: 0; mso-line-height-rule: exactly; padding: 0 =
+32px 1px 32px; font: bold 24px/31px Arial, Helvetica, sans-serif; color: #0=
+00;"><a style=3D"outline: none; color: #000; text-decoration: none !importa=
+nt;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c18212=
+0673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEn=
+Yu4SwrpJfubvx2nN-Bj8g_i7jBRtLwlrSEBgByuq6dcNorq9BglzZKryqtRmw-t0Z4ge1X8riWA=
+by_KF30tgg0YqYCUhkakcxPzSc8b4x0jasu_CaH4zpl_a8wAENKSTrWCb6BoZ7mRl-yOEnecbp0=
+Z2TD6jdRaLIZ8c4gGyCfo1dtx7DimvQCC79LKRiOljMDPCnp66zwOpQsOOg8houkGeKBJm4iM5S=
+B8ca0U10ayHLHuzdlkMYYyV8Hq6lPlAz7XMJ3zyut_hnEtwg_1MvgbtK_QetQQN-WLicqPww-4S=
+v89AyWZOHFWpaITLha63Xmi5yW0vhVqYd_i7rk3ig-_qudakWKLT3r3D1FOc9RZ2s41G3fCxQMV=
+8SsLgjwJPj9z8olwPKCLuH6zB1nYMmuuCr3c2hvC-kH3bV5X5JQZmsOgd05kz_4kJRHNF3UQ%25=
+3D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da8=
+8108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653628=
+892&amp;sdata=3D6JKd20GyxzqJXgSw5m9UljKqQB3oIqhU6rXPhvO26NY%3D&amp;reserved=
+=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=3Dc862c12dcd8=
+94e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZ=
+aZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8g_i7jBRtLwlrSEBgByuq6dcNorq9BglzZK=
+ryqtRmw-t0Z4ge1X8riWAby_KF30tgg0YqYCUhkakcxPzSc8b4x0jasu_CaH4zpl_a8wAENKSTr=
+WCb6BoZ7mRl-yOEnecbp0Z2TD6jdRaLIZ8c4gGyCfo1dtx7DimvQCC79LKRiOljMDPCnp66zwOp=
+QsOOg8houkGeKBJm4iM5SB8ca0U10ayHLHuzdlkMYYyV8Hq6lPlAz7XMJ3zyut_hnEtwg_1Mvgb=
+tK_QetQQN-WLicqPww-4Sv89AyWZOHFWpaITLha63Xmi5yW0vhVqYd_i7rk3ig-_qudakWKLT3r=
+3D1FOc9RZ2s41G3fCxQMV8SsLgjwJPj9z8olwPKCLuH6zB1nYMmuuCr3c2hvC-kH3bV5X5JQZms=
+Ogd05kz_4kJRHNF3UQ%3D%3D" shash=3D"QRVEM6r4STTxwbupq/Wmuyftocx7AJjfLhVrHtrs=
+0yTF6ZFpRki6MSTqPkWHhpxPu3z1Yyxd5+4/CRSHKeQtluriV5muO4atfRCtnoy1rp0Si9zTkya=
+F/7jVH9+Xkedpsyd6UPcYMShobgPQzTVz/Ly6lq+oYMFC0sWXBTdS9zw=3D">Create a Miche=
+lin-star dinner </a></td></tr><tr><td class=3D"body2 pl-m-12" style=3D"bord=
+er-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; fo=
+nt: 18px/27px Arial, Helvetica, sans-serif; color: #596170; padding-left: 3=
+2px;"><a style=3D"outline: none; color: #596170; text-decoration: none !imp=
+ortant;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c1=
+82120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB=
+1BEnYu4SwrpJfubvx2nN-Bj8g_i7jBRtLwlrSEBgByuq6dcNorq9BglzZKryqtRmw-t0Z4ge1X8=
+riWAby_KF30tgg0YqYCUhkakcxPzSc8b4x0jasu_CaH4zpl_a8wAENKSTrWCb6BoZ7mRl-yOEne=
+cbp0Z2TD6jdRaLIZ8c4gGyCfo1dtx7DimvQCC79LKRiOljMDPCnp66zwOpQsOOg8houkGeKBJm4=
+iM5SB8ca0U10qNYoHZOQ0LfxusynxtClsOTfGx8h5M9NFRvIcdk_NMN_4gs644eKoZOVimasrFu=
+aBFCp6VPpvWb0nCDXPWuljGTn5GVu3AS4YbBAl8CXOvpm9BVUjt3e0h_MX1v_tklpOEnNvhPMz8=
+ApnVtywiLWgNqfW61U4kC6bTvAXijTW7kVb0hcpqVhNlHPDCyCADh9SWtYTJj35mnJbF2sEhg-L=
+w%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c=
+9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63736045665=
+3628892&amp;sdata=3D%2F7z0qtve7aIHLGsBFyUOHHDUrAqoeyXsOcnqXy6nhL4%3D&amp;re=
+served=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=3Dc862c=
+12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_=
+e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8g_i7jBRtLwlrSEBgByuq6dcNorq9=
+BglzZKryqtRmw-t0Z4ge1X8riWAby_KF30tgg0YqYCUhkakcxPzSc8b4x0jasu_CaH4zpl_a8wA=
+ENKSTrWCb6BoZ7mRl-yOEnecbp0Z2TD6jdRaLIZ8c4gGyCfo1dtx7DimvQCC79LKRiOljMDPCnp=
+66zwOpQsOOg8houkGeKBJm4iM5SB8ca0U10qNYoHZOQ0LfxusynxtClsOTfGx8h5M9NFRvIcdk_=
+NMN_4gs644eKoZOVimasrFuaBFCp6VPpvWb0nCDXPWuljGTn5GVu3AS4YbBAl8CXOvpm9BVUjt3=
+e0h_MX1v_tklpOEnNvhPMz8ApnVtywiLWgNqfW61U4kC6bTvAXijTW7kVb0hcpqVhNlHPDCyCAD=
+h9SWtYTJj35mnJbF2sEhg-Lw%3D%3D" shash=3D"Z/6mzPOEa+QhKIXoFjoVXHSVsJhzGgyKwr=
+Qlf2wRAz8/ZuqA7KwEI3jnZwWBSSdnsrkr7oxSBEj222KKM/XQPA4ZHLv3qivngL/KoaWSDZkXi=
+6iM+IDcQq0VZQoi3BcJjakXQ+UD6+G67Cpmw1lpi/8N6L0UAMpV8FtaZf78CxY=3D">with Tho=
+mas Keller </a></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r><!-- end indtructor --><!-- instructor --><tr><td style=3D"border-collaps=
+e: collapse; border-spacing: 0; mso-line-height-rule: exactly; padding: 0 0=
+ 32px;"><table width=3D"100%" height=3D"122" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"middle" style=3D"border-spacing: 0; background: #F3F3F3; bo=
+rder-radius: 8px; border-collapse: collapse !important;" class=3D"instructo=
+r_tile"><tbody><tr><td class=3D"wi-105 w-105" width=3D"122" valign=3D"top" =
+style=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule=
+: exactly;"><a style=3D"outline: none; color: #000; text-decoration: none !=
+important;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de=
+2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI4=
+6QB1BEnYu4SwrpJfubvx2nN-Bj9_BiwFmNHWe6Y9F1fbha6kz2PHRjfGD4zbMYEHhLcYhW-N9jL=
+6UEGh8Uv4lVVykJMRUxXh1pCS4ZsezzbDyk0FXvgRqqoTrSFVcHjLvvms2o6u7VMHS3KcKSgifv=
+c9rOheANOSdDiG7SWxfVoqFt9L-_9S9zmH9v14ycN3RHRgc1rFiNZHup800ntQGOljxOq7RQw5M=
+N3L86SgGUINVSTo--6YDD5dslP4Cy51_pE2PiE-rAKdw0sV5_Ek_2ThTr9P_HPAyllL59DHNmlw=
+_RB50kVo17PdgSJdvTS36D2iSwUzn-cp2Uhox9LJMLeUuUHyAYNoWGIoiQCeFwc5uZeQ8SWTme2=
+5BcenGyfRWqKuHfB2jZOnD2RKb4KsmoAAjnkOoVPE3uTOa3XoQBVFaEx0NZwpNiF5qC_I25i-uf=
+vodA%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102=
+c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63736045=
+6653638887&amp;sdata=3D%2Bac9UyEigClsTXFTO43SSHMW9ZCZBROSJFM0WHwCtEk%3D&amp=
+;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=3Dc8=
+62c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&am=
+p;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9_BiwFmNHWe6Y9F1fbha6kz2PH=
+RjfGD4zbMYEHhLcYhW-N9jL6UEGh8Uv4lVVykJMRUxXh1pCS4ZsezzbDyk0FXvgRqqoTrSFVcHj=
+Lvvms2o6u7VMHS3KcKSgifvc9rOheANOSdDiG7SWxfVoqFt9L-_9S9zmH9v14ycN3RHRgc1rFiN=
+ZHup800ntQGOljxOq7RQw5MN3L86SgGUINVSTo--6YDD5dslP4Cy51_pE2PiE-rAKdw0sV5_Ek_=
+2ThTr9P_HPAyllL59DHNmlw_RB50kVo17PdgSJdvTS36D2iSwUzn-cp2Uhox9LJMLeUuUHyAYNo=
+WGIoiQCeFwc5uZeQ8SWTme25BcenGyfRWqKuHfB2jZOnD2RKb4KsmoAAjnkOoVPE3uTOa3XoQBV=
+FaEx0NZwpNiF5qC_I25i-ufvodA%3D%3D" shash=3D"tQT/fq4xloepZm9+j98CFhsEn8hDrvE=
+wWWdUF1bZ8vyPLjrfkPQXBAQ08gJoaHIQoeVFMIafo+LnQjldIQmqE8nWFgEtzvE8K23BN0Y1ib=
+8/wJjLZCzbekNLtSxtn/RIm3+5pkRwjDET4a/tVW/h9huYx2oqMxflXnV6LDIUkOc=3D"><img =
+src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5=
+713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/AAP%20Enga=
+gement/GR_Hero_1X1_A.jpg" width=3D"122" style=3D"clear: both; display: bloc=
+k; outline: none; text-decoration: none; margin: 0px; height: auto; line-he=
+ight: 100%; vertical-align: top; border-radius: 8px 0 0 8px; border: none;"=
+ alt=3D"Gordon Ramsay"> </a></td><td style=3D"border-collapse: collapse; bo=
+rder-spacing: 0; mso-line-height-rule: exactly;"><table class=3D"w-100p" wi=
+dth=3D"358" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0;=
+ border-collapse: collapse !important;"><tbody><tr><td class=3D"instructor =
+pl-m-12" style=3D"border-collapse: collapse; border-spacing: 0; mso-line-he=
+ight-rule: exactly; padding: 0 32px 1px 32px; font: bold 24px/31px Arial, H=
+elvetica, sans-serif; color: #000;"><a style=3D"outline: none; color: #000;=
+ text-decoration: none !important;" href=3D"https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t=
+%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c=
+%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9_BiwFmNHWe6Y9F1fbha6kz2P=
+HRjfGD4zbMYEHhLcYhW-N9jL6UEGh8Uv4lVVykJMRUxXh1pCS4ZsezzbDyk0FXvgRqqoTrSFVcH=
+jLvvms2o6u7VMHS3KcKSgifvc9rOheANOSdDiG7SWxfVoqFt9L-_9S9zmH9v14ycN3RHRgc1rFi=
+NZHup800ntQGOljxOq7RQw5MN3L86SgGUINVSToqJbFRXNqLR-gwox64_hqvUS-qIXzUWnOTYEc=
+d1NkVTjf1GMbJ67cFBKMOBgJUNa4oklj8ML7FnYOymHTT6tdHFN5nQ9lvAr5JLbhQnVJeLE-Lii=
+7DkIKqiKLwH_ueRghOXiKzrTkiTFxAXzgCEHmicxfRCdm0ZAtRmVoRwaGO7D08s4CJo05Evf-f_=
+LWt9_zGDfJasjxlQxNnDxMnqKM-Q%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UT=
+Dallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15d=
+e9f6c%7C0%7C0%7C637360456653638887&amp;sdata=3D1yL7yiG9XWpih5bwBG42vlJ%2F8t=
+bDNFa48oO4b4RDfRs%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterc=
+lass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a71=
+9479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9_=
+BiwFmNHWe6Y9F1fbha6kz2PHRjfGD4zbMYEHhLcYhW-N9jL6UEGh8Uv4lVVykJMRUxXh1pCS4Zs=
+ezzbDyk0FXvgRqqoTrSFVcHjLvvms2o6u7VMHS3KcKSgifvc9rOheANOSdDiG7SWxfVoqFt9L-_=
+9S9zmH9v14ycN3RHRgc1rFiNZHup800ntQGOljxOq7RQw5MN3L86SgGUINVSToqJbFRXNqLR-gw=
+ox64_hqvUS-qIXzUWnOTYEcd1NkVTjf1GMbJ67cFBKMOBgJUNa4oklj8ML7FnYOymHTT6tdHFN5=
+nQ9lvAr5JLbhQnVJeLE-Lii7DkIKqiKLwH_ueRghOXiKzrTkiTFxAXzgCEHmicxfRCdm0ZAtRmV=
+oRwaGO7D08s4CJo05Evf-f_LWt9_zGDfJasjxlQxNnDxMnqKM-Q%3D%3D" shash=3D"tr1W6hm=
+pp8mLVIwjQg0Jkth96kbccj0b5IQbzIDmD5Ficc1NypaJ6olQaCktdnBRZCnsz19eLgu6T3lgOl=
+P4NLMcRpPzPyC//kLnzmmjln2j9CJLcMGT+XlJdcL6IvIn0fDVpDZA0eTX3NmaQcQfwzQb21wYS=
+Ns7/fQ+mGYcM3w=3D">Cook the best scrambled eggs </a></td></tr><tr><td class=
+=3D"body2 pl-m-12" style=3D"border-collapse: collapse; border-spacing: 0; m=
+so-line-height-rule: exactly; font: 18px/27px Arial, Helvetica, sans-serif;=
+ color: #596170; padding-left: 32px;"><a style=3D"outline: none; color: #59=
+6170; text-decoration: none !important;" href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick=
+%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d12369=
+6882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9_BiwFmNHWe6Y9F1fbha=
+6kz2PHRjfGD4zbMYEHhLcYhW-N9jL6UEGh8Uv4lVVykJMRUxXh1pCS4ZsezzbDyk0FXvgRqqoTr=
+SFVcHjLvvms2o6u7VMHS3KcKSgifvc9rOheANOSdDiG7SWxfVoqFt9L-_9S9zmH9v14ycN3RHRg=
+c1rFiNZHup800ntQGOljxOq7RQw5MN3L86SgGUINVSToHIQOrsIH8DRQ_2ptGO-Tmhmq88Cyptn=
+faAWVqoNndC4d4WtwJySOMlN-EyhoTR1VgdskDqe1wAvDibDlPJJx2OTAzSGdH7LK9OkwuKOeP7=
+2VK_XfAuicCtYFodNShm4MHxR-aAOcEl7l3ht5zLh1zdsqYE2KBbiRYLcEVQR63wP5JeEEMP7Mv=
+eTVFc2lBJltfrwN1yHHmaz6DtgipasOmA%253D%253D&amp;data=3D02%7C01%7CEric.Zhang=
+%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637360456653648879&amp;sdata=3Dl6wBc2RjyQ%2FBSGP6NHNEt=
+eXe8Z4Qb9HGm09k371mzSg%3D&amp;reserved=3D0" originalsrc=3D"https://links.ma=
+sterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b=
+21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN=
+-Bj9_BiwFmNHWe6Y9F1fbha6kz2PHRjfGD4zbMYEHhLcYhW-N9jL6UEGh8Uv4lVVykJMRUxXh1p=
+CS4ZsezzbDyk0FXvgRqqoTrSFVcHjLvvms2o6u7VMHS3KcKSgifvc9rOheANOSdDiG7SWxfVoqF=
+t9L-_9S9zmH9v14ycN3RHRgc1rFiNZHup800ntQGOljxOq7RQw5MN3L86SgGUINVSToHIQOrsIH=
+8DRQ_2ptGO-Tmhmq88CyptnfaAWVqoNndC4d4WtwJySOMlN-EyhoTR1VgdskDqe1wAvDibDlPJJ=
+x2OTAzSGdH7LK9OkwuKOeP72VK_XfAuicCtYFodNShm4MHxR-aAOcEl7l3ht5zLh1zdsqYE2KBb=
+iRYLcEVQR63wP5JeEEMP7MveTVFc2lBJltfrwN1yHHmaz6DtgipasOmA%3D%3D" shash=3D"yh=
+HpLxVWcHSyBbK5pEHKrrClMn9n+tiOZPZcjPyPRvrB2tmbkHUdYe995fBkyGgzBEoMgEWzUb3v3=
+p3VTz037UplRMO7uTdyiqZTfRY9DBPlm4RIsDfn1btxGhW/7JDGy30tYQXNglHWJSeDW7GQSmlj=
+vjCLTU7J8KH4aFXkKEk=3D">with Gordon Ramsay </a></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr><!-- end indtructor --><!-- instructor --=
+><tr><td style=3D"border-collapse: collapse; border-spacing: 0; mso-line-he=
+ight-rule: exactly; padding: 0 0 32px;"><table width=3D"100%" height=3D"122=
+" cellpadding=3D"0" cellspacing=3D"0" align=3D"middle" style=3D"border-spac=
+ing: 0; background: #F3F3F3; border-radius: 8px; border-collapse: collapse =
+!important;" class=3D"instructor_tile"><tbody><tr><td class=3D"wi-105 w-105=
+" width=3D"122" valign=3D"top" style=3D"border-collapse: collapse; border-s=
+pacing: 0; mso-line-height-rule: exactly;"><a style=3D"outline: none; color=
+: #000; text-decoration: none !important;" href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fcli=
+ck%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123=
+696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_3u31CYPybVIWnHV7H=
+xJl8EE2Pb3e5SZvun0TecrG1607Q02oeRkOrV1YGlV8mXbEGXFfDjKUWzu0bRTUruNeFvYPWLm3=
+PCum1RM2SMYgO55nkJtNW_k8JHlPZzHlX_tbcPd_iMumFrN6zgMa0Z2UzfLNJRkkZwkzWEbwY79=
+pP-tS7FjlSQmjKi_irMnJO7HipF_8DZHaztos3Qb6dVSp6bxVoJ1I_cw-bSmGm8_LLO0cHb9-rj=
+mj-OFXsI6zsJ8UiR-AQlF6tmNkdvYRr4MR_mZ9JMedGywmcr9aVPoQziSgWqF65JDWdSEg2Da3L=
+kvDDgHIBOERW7-W90QkrOZP17cqdZloydQYCM2V1Hys8_mPvxRftf_W38KG8ZBz2LkZnTA8qhve=
+-49z0nfzDJUF9NHclZ6IrfsMwWhdUHgksXQ%253D%253D&amp;data=3D02%7C01%7CEric.Zha=
+ng%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637360456653648879&amp;sdata=3DZ286xIq79GjK2c8wSleYF=
+hhTnzlZMI9Qv6J5AJxd43Q%3D&amp;reserved=3D0" originalsrc=3D"https://links.ma=
+sterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b=
+21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN=
+-Bj_3u31CYPybVIWnHV7HxJl8EE2Pb3e5SZvun0TecrG1607Q02oeRkOrV1YGlV8mXbEGXFfDjK=
+UWzu0bRTUruNeFvYPWLm3PCum1RM2SMYgO55nkJtNW_k8JHlPZzHlX_tbcPd_iMumFrN6zgMa0Z=
+2UzfLNJRkkZwkzWEbwY79pP-tS7FjlSQmjKi_irMnJO7HipF_8DZHaztos3Qb6dVSp6bxVoJ1I_=
+cw-bSmGm8_LLO0cHb9-rjmj-OFXsI6zsJ8UiR-AQlF6tmNkdvYRr4MR_mZ9JMedGywmcr9aVPoQ=
+ziSgWqF65JDWdSEg2Da3LkvDDgHIBOERW7-W90QkrOZP17cqdZloydQYCM2V1Hys8_mPvxRftf_=
+W38KG8ZBz2LkZnTA8qhve-49z0nfzDJUF9NHclZ6IrfsMwWhdUHgksXQ%3D%3D" shash=3D"NV=
+e9HmUUU2mwjNLGXxFUiLYaHQKlynAweBTAJAW3O3VcjPiZU54PUm2G9KA4Ob79vvEATDtLyyTTX=
+siiojSdMAB2pm7Xwmh7FmhZiVWdBvmKf09qyOdrSDAv5AjivtGTgbnFkeqTPnhFn7S7zfoKicy5=
+NBF3cKa6fcHSPU21ekk=3D"><img src=3D"https://d15k2d11r6t6rl.cloudfront.net/p=
+ublic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e=
+7aaa5de2c182120673/AAP%20Engagement/SC_Hero_1X1_A.jpg" width=3D"122" style=
+=3D"clear: both; display: block; outline: none; text-decoration: none; marg=
+in: 0px; height: auto; line-height: 100%; vertical-align: top; border-radiu=
+s: 8px 0 0 8px; border: none;" alt=3D"Stephen Curry"> </a></td><td style=3D=
+"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactl=
+y;"><table class=3D"w-100p" width=3D"358" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"border-spacing: 0; border-collapse: collapse !important;"><tbod=
+y><tr><td class=3D"instructor pl-m-12" style=3D"border-collapse: collapse; =
+border-spacing: 0; mso-line-height-rule: exactly; padding: 0 32px 1px 32px;=
+ font: bold 24px/31px Arial, Helvetica, sans-serif; color: #000;"><a style=
+=3D"outline: none; color: #000; text-decoration: none !important;" href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.m=
+asterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Da=
+a0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx=
+2nN-Bj_3u31CYPybVIWnHV7HxJl8EE2Pb3e5SZvun0TecrG1607Q02oeRkOrV1YGlV8mXbEGXFf=
+DjKUWzu0bRTUruNeFvYPWLm3PCum1RM2SMYgO55nkJtNW_k8JHlPZzHlX_tbcPd_iMumFrN6zgM=
+a0Z2UzfLNJRkkZwkzWEbwY79pP-tS7FjlSQmjKi_irMnJO7HipF_8DZHaztos3Qb6dVSp6gTsoV=
+rx1sjQyUgXxtKFTH__lyG58hqp_syckW2o32Y43c3uCjhOZ9WQkNy79bYD6fChH5oEYbqrffa55=
+p0G22Kij5YUU1wM3sY_kr-nUuSLCyLb2M5Ag0Nqe9IEQ0Yox7TRZ-xfh7O-K2z1NrlYP_Etikt-=
+4-d_MOiHteFoa9l1jK8C0yiXK0xipN91zc6OuyBVjaJUlK0tKk6lBzt13mg%253D%253D&amp;d=
+ata=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55ab=
+e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653658873&amp;sdata=
+=3DZsBE5ulE0CVJWCAOZcBrTcIhYZIp4yP6T4hP23bGuug%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c1=
+82120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI=
+46QB1BEnYu4SwrpJfubvx2nN-Bj_3u31CYPybVIWnHV7HxJl8EE2Pb3e5SZvun0TecrG1607Q02=
+oeRkOrV1YGlV8mXbEGXFfDjKUWzu0bRTUruNeFvYPWLm3PCum1RM2SMYgO55nkJtNW_k8JHlPZz=
+HlX_tbcPd_iMumFrN6zgMa0Z2UzfLNJRkkZwkzWEbwY79pP-tS7FjlSQmjKi_irMnJO7HipF_8D=
+ZHaztos3Qb6dVSp6gTsoVrx1sjQyUgXxtKFTH__lyG58hqp_syckW2o32Y43c3uCjhOZ9WQkNy7=
+9bYD6fChH5oEYbqrffa55p0G22Kij5YUU1wM3sY_kr-nUuSLCyLb2M5Ag0Nqe9IEQ0Yox7TRZ-x=
+fh7O-K2z1NrlYP_Etikt-4-d_MOiHteFoa9l1jK8C0yiXK0xipN91zc6OuyBVjaJUlK0tKk6lBz=
+t13mg%3D%3D" shash=3D"dnxQjK9big/P6XkVkZuC+ZjcGCLLXNbunENP90lXrE3Ngm3o3hNJL=
+la7dGLZfHIl34xcC5Peu/k+gxrPsOriANYzb2Fx8ONmTCAU/H9RSByz8lfLbnYRPzDm7xQlmt8Q=
+YAj1TCuDnjWr158PoqO4R8Ly4SFb/hfbCX3nhbFhyes=3D">Make the shot </a></td></tr=
+><tr><td class=3D"body2 pl-m-12" style=3D"border-collapse: collapse; border=
+-spacing: 0; mso-line-height-rule: exactly; font: 18px/27px Arial, Helvetic=
+a, sans-serif; color: #596170; padding-left: 32px;"><a style=3D"outline: no=
+ne; color: #596170; text-decoration: none !important;" href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.c=
+om%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a7194=
+79b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_3u31C=
+YPybVIWnHV7HxJl8EE2Pb3e5SZvun0TecrG1607Q02oeRkOrV1YGlV8mXbEGXFfDjKUWzu0bRTU=
+ruNeFvYPWLm3PCum1RM2SMYgO55nkJtNW_k8JHlPZzHlX_tbcPd_iMumFrN6zgMa0Z2UzfLNJRk=
+kZwkzWEbwY79pP-tS7FjlSQmjKi_irMnJO7HipF_8DZHaztos3Qb6dVSp6of6DS2O9gXDPlJycc=
+9ZEJmpkkIfy8Siy6UnfqDaE7jFLiRyp671NMwKZoaPdIAja1g87tFtOBrAeCfjBEmItm3siVz-S=
+aS4iKxcB0A6I4e47NIZCSKTfiO2ZtTKZPVH4_Elm3MaZLvMgnaHIErSoQmGixMzIvv3ZeQhQ2QO=
+EbL7A_5BCwuzGSj5nV9-1Keb-5SaWRtVflV4AHw_9g5P_cg%253D%253D&amp;data=3D02%7C0=
+1%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653658873&amp;sdata=3DtPYN95sVK=
+SSYAV7DuFJDW0qAs1dwzeSCa2HEQaayxEQ%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp=
+;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4S=
+wrpJfubvx2nN-Bj_3u31CYPybVIWnHV7HxJl8EE2Pb3e5SZvun0TecrG1607Q02oeRkOrV1YGlV=
+8mXbEGXFfDjKUWzu0bRTUruNeFvYPWLm3PCum1RM2SMYgO55nkJtNW_k8JHlPZzHlX_tbcPd_iM=
+umFrN6zgMa0Z2UzfLNJRkkZwkzWEbwY79pP-tS7FjlSQmjKi_irMnJO7HipF_8DZHaztos3Qb6d=
+VSp6of6DS2O9gXDPlJycc9ZEJmpkkIfy8Siy6UnfqDaE7jFLiRyp671NMwKZoaPdIAja1g87tFt=
+OBrAeCfjBEmItm3siVz-SaS4iKxcB0A6I4e47NIZCSKTfiO2ZtTKZPVH4_Elm3MaZLvMgnaHIEr=
+SoQmGixMzIvv3ZeQhQ2QOEbL7A_5BCwuzGSj5nV9-1Keb-5SaWRtVflV4AHw_9g5P_cg%3D%3D"=
+ shash=3D"Et87aosUlcMBRf/DWE1B55BSwV1Ws2yYb1L+rmUxLdftW2GvfevEB8sFJLkEzfRq6=
+dJFQaTX0lJdCJxuGqAsiSF/fj8vgNK7/njAYvGMcXMQ+mbY5Fe8z4LPOB9jYhdoqX6XUw4+YbfD=
+eHlaYMh0DRSWEVOcp2JHp80QvdSSbrg=3D">with Stephen Curry </a></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr><!-- end indtructor --><!-- i=
+nstructor --><tr><td style=3D"border-collapse: collapse; border-spacing: 0;=
+ mso-line-height-rule: exactly; padding: 0 0 32px;"><table width=3D"100%" h=
+eight=3D"122" cellpadding=3D"0" cellspacing=3D"0" align=3D"middle" style=3D=
+"border-spacing: 0; background: #F3F3F3; border-radius: 8px; border-collaps=
+e: collapse !important;" class=3D"instructor_tile"><tbody><tr><td class=3D"=
+wi-105 w-105" width=3D"122" valign=3D"top" style=3D"border-collapse: collap=
+se; border-spacing: 0; mso-line-height-rule: exactly;"><a style=3D"outline:=
+ none; color: #000; text-decoration: none !important;" href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.c=
+om%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a7194=
+79b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-4VQ7i=
+TTiQmPw5vpsCfBuHmt3DtIHYAC9WYJX6VcWAocpTbTULRpYas8yaBZlsTSeGvq5jUYkiwmkg0_s=
+YH7bIAqaOUBs0qZa8zx2ycRCymc0jgri5aWP0np_fJYHdjeC8B9Ffz4EntXp7O44ZaRUcIkns3h=
+KadF0SnIIY5R-y1ag0t8LSL4zdh8SAHKxC2K1aQHX4VJnEsWK_TMnjb8tJcdgcKvFB5FWBwyNrH=
+v7wtubQtKGEboPkAj3MK7vnRggxnlYd2Y_cR30QGU4lJPpAStMOfCGuqSyp2TPUSwOHbssLogoQ=
+8fLhf7qKaJr74bMKE3mFQ-fwIgK-Bv94ztFbaXE3yjXHA4m9bW14t7JYDdN2fC3NJmooWDR-QOu=
+0YeHT-X2gSPQFuMdcg8r3jTKAnJMTZc1k7heSL-QtouppKA%253D%253D&amp;data=3D02%7C0=
+1%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653668865&amp;sdata=3DsUikiJM5H=
+L%2FqrhpZ%2BWSn4AqwGM6%2FLbzy8FdYASMgmP4%3D&amp;reserved=3D0" originalsrc=
+=3D"https://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c18212=
+0673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB=
+1BEnYu4SwrpJfubvx2nN-Bj-4VQ7iTTiQmPw5vpsCfBuHmt3DtIHYAC9WYJX6VcWAocpTbTULRp=
+Yas8yaBZlsTSeGvq5jUYkiwmkg0_sYH7bIAqaOUBs0qZa8zx2ycRCymc0jgri5aWP0np_fJYHdj=
+eC8B9Ffz4EntXp7O44ZaRUcIkns3hKadF0SnIIY5R-y1ag0t8LSL4zdh8SAHKxC2K1aQHX4VJnE=
+sWK_TMnjb8tJcdgcKvFB5FWBwyNrHv7wtubQtKGEboPkAj3MK7vnRggxnlYd2Y_cR30QGU4lJPp=
+AStMOfCGuqSyp2TPUSwOHbssLogoQ8fLhf7qKaJr74bMKE3mFQ-fwIgK-Bv94ztFbaXE3yjXHA4=
+m9bW14t7JYDdN2fC3NJmooWDR-QOu0YeHT-X2gSPQFuMdcg8r3jTKAnJMTZc1k7heSL-QtouppK=
+A%3D%3D" shash=3D"SMKkNsNx7jKP6wq7kIaOZbcYNU38SfgCkT7refIc/WgF0IULjeT9bpX1w=
+YtFWoVp14fTZQd+wbAmCEXBMv0s1es2S8JPDhPLgvdu2Kc87Qr7hY58pACiYeFv9wwaGd7OfKOT=
+LugfBHW195oVV+7ZwVXZ/3Sfk3g5i54YQKUcOCE=3D"><img src=3D"https://d15k2d11r6t=
+6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff=
+6dd6a/c862c12dcd894e7aaa5de2c182120673/AAP%20Engagement/AL_Hero_1X1_A.jpg" =
+width=3D"122" style=3D"clear: both; display: block; outline: none; text-dec=
+oration: none; margin: 0px; height: auto; line-height: 100%; vertical-align=
+: top; border-radius: 8px 0 0 8px; border: none;" alt=3D"Annie Leibovitz"> =
+</a></td><td style=3D"border-collapse: collapse; border-spacing: 0; mso-lin=
+e-height-rule: exactly;"><table class=3D"w-100p" width=3D"358" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0; border-collapse: colla=
+pse !important;"><tbody><tr><td class=3D"instructor pl-m-12" style=3D"borde=
+r-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; pad=
+ding: 0 32px 1px 32px; font: bold 24px/31px Arial, Helvetica, sans-serif; c=
+olor: #000;"><a style=3D"outline: none; color: #000; text-decoration: none =
+!important;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5d=
+e2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI=
+46QB1BEnYu4SwrpJfubvx2nN-Bj-4VQ7iTTiQmPw5vpsCfBuHmt3DtIHYAC9WYJX6VcWAocpTbT=
+ULRpYas8yaBZlsTSeGvq5jUYkiwmkg0_sYH7bIAqaOUBs0qZa8zx2ycRCymc0jgri5aWP0np_fJ=
+YHdjeC8B9Ffz4EntXp7O44ZaRUcIkns3hKadF0SnIIY5R-y1ag0t8LSL4zdh8SAHKxC2K1aQHX4=
+VJnEsWK_TMnjb8tJTYJEfFYC1LjjN4F_p3GFaNw3d08U-T1xb7GbNY-UkEmjPB2Sygk7VsPSOCU=
+3-PmZxNGF9f_GGLSiPcMoSFfcfu9hRqBDL5YV95MdQeAPdUQ4HUj2piYRzq8AXUlWpOKuDJrzHW=
+5p3dlnY0ffSudwJbuc3a_QaMixHRT6fQT4RoeidTZCe6byIWLUj-mw2_BDYMKi_icsPYF2Z-M1d=
+p98kg%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e410=
+2c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373604=
+56653668865&amp;sdata=3D23PHf7ldxzkIYezAh4ROR4pB3%2F2V3EY72M5%2BiHTKCZs%3D&=
+amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=
+=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d12369688=
+2c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-4VQ7iTTiQmPw5vpsCfBu=
+Hmt3DtIHYAC9WYJX6VcWAocpTbTULRpYas8yaBZlsTSeGvq5jUYkiwmkg0_sYH7bIAqaOUBs0qZ=
+a8zx2ycRCymc0jgri5aWP0np_fJYHdjeC8B9Ffz4EntXp7O44ZaRUcIkns3hKadF0SnIIY5R-y1=
+ag0t8LSL4zdh8SAHKxC2K1aQHX4VJnEsWK_TMnjb8tJTYJEfFYC1LjjN4F_p3GFaNw3d08U-T1x=
+b7GbNY-UkEmjPB2Sygk7VsPSOCU3-PmZxNGF9f_GGLSiPcMoSFfcfu9hRqBDL5YV95MdQeAPdUQ=
+4HUj2piYRzq8AXUlWpOKuDJrzHW5p3dlnY0ffSudwJbuc3a_QaMixHRT6fQT4RoeidTZCe6byIW=
+LUj-mw2_BDYMKi_icsPYF2Z-M1dp98kg%3D%3D" shash=3D"V3BzHY4VmtnA0bKlMEVUZKizJD=
+gNx3Msmr2/Z0FahUf+B0B1rEvC0SvTCKtPdWoUEuEZblyV9xarNq5I1Tzo1Ca9f2IEVw2mjS6cX=
+wnbwz0eJN+HTdsXEPcJ5naQ+HyGB4vTBe6JVJ+cyLkSwxRxBriojb3IRtHRUYIZGwir0ag=3D">=
+Take the shot </a></td></tr><tr><td class=3D"body2 pl-m-12" style=3D"border=
+-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly; font=
+: 18px/27px Arial, Helvetica, sans-serif; color: #596170; padding-left: 32p=
+x;"><a style=3D"outline: none; color: #596170; text-decoration: none !impor=
+tant;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182=
+120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1B=
+EnYu4SwrpJfubvx2nN-Bj-4VQ7iTTiQmPw5vpsCfBuHmt3DtIHYAC9WYJX6VcWAocpTbTULRpYa=
+s8yaBZlsTSeGvq5jUYkiwmkg0_sYH7bIAqaOUBs0qZa8zx2ycRCymc0jgri5aWP0np_fJYHdjeC=
+8B9Ffz4EntXp7O44ZaRUcIkns3hKadF0SnIIY5R-y1ag0t8LSL4zdh8SAHKxC2K1aQHX4VJnEsW=
+K_TMnjb8tJEg8vpVTT90mpaNLhTWBISu0xzKexzsjA3omgxdmIr33YuPl1lRGit80EOvwh9IMJe=
+jg9o4CAcIWmOsYVLTd3TDXB7nO2EZX7CNsnP6GIK0qFtAN129FLeqirqTJ16AdowpsViKxHLOrY=
+sy2kyAK6HytNmR_pHGE2M289KLamzdrBChXn6hEC63nZdSPehuX3rIvahEKfeOe5oyPUIK9Rbg%=
+253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9d=
+a88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373604566536=
+78862&amp;sdata=3Dd1JMWIRNxmM2Csbdwb7%2FxGTGaerSyk6hFRxHKk0ce6Y%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=3Dc862c12=
+dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=
+=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-4VQ7iTTiQmPw5vpsCfBuHmt3DtIHY=
+AC9WYJX6VcWAocpTbTULRpYas8yaBZlsTSeGvq5jUYkiwmkg0_sYH7bIAqaOUBs0qZa8zx2ycRC=
+ymc0jgri5aWP0np_fJYHdjeC8B9Ffz4EntXp7O44ZaRUcIkns3hKadF0SnIIY5R-y1ag0t8LSL4=
+zdh8SAHKxC2K1aQHX4VJnEsWK_TMnjb8tJEg8vpVTT90mpaNLhTWBISu0xzKexzsjA3omgxdmIr=
+33YuPl1lRGit80EOvwh9IMJejg9o4CAcIWmOsYVLTd3TDXB7nO2EZX7CNsnP6GIK0qFtAN129FL=
+eqirqTJ16AdowpsViKxHLOrYsy2kyAK6HytNmR_pHGE2M289KLamzdrBChXn6hEC63nZdSPehuX=
+3rIvahEKfeOe5oyPUIK9Rbg%3D%3D" shash=3D"yi/b9UCfBmf1cuFzeXI+aTfmo+PjuljmDLc=
+F4NHwYS2U7mGNN0egLU3l3Iicyvu/XP9mrMBIhxfuzAdZA2bRPDsJokGEXFHQ7EPjquniAG7d3K=
+nOONaJMGmiNo+vBNsx9k1zcohYvFHB32mfcxk5xviqSHyrUp+3SAtk6d4AnKE=3D">with Anni=
+e Leibovitz </a></td></tr></tbody></table></td></tr></tbody></table></td></=
+tr><!-- end indtructor --><!-- instructor --><tr><td style=3D"border-collap=
+se: collapse; border-spacing: 0; mso-line-height-rule: exactly; padding: 0 =
+0 32px;"><table width=3D"100%" height=3D"122" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"middle" style=3D"border-spacing: 0; background: #F3F3F3; bo=
+rder-radius: 8px; border-collapse: collapse !important;" class=3D"instructo=
+r_tile"><tbody><tr><td class=3D"wi-105 w-105" width=3D"122" valign=3D"top" =
+style=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule=
+: exactly;"><a style=3D"outline: none; color: #000; text-decoration: none !=
+important;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de=
+2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI4=
+6QB1BEnYu4SwrpJfubvx2nN-Bj-jbZKN5J_1dn67dBMu_lA5ridVTYILJkuenpoPV0jzoXn99gI=
+ckpno1qdhL7QjhgN_rEUd_Cm6obnBa5sdJR1f3vOMMn39h5JxHgmJjnaB9LmExfNXiFz5qrHsgw=
+UstBRjx7jMN6NJH5OuKn4TWyripeQyBwm6y4QiiFTm72byledg17JDv__1J6itipvxR5SyEWRLx=
+6ZZEDZy6JUt0hyHhxULiID5xyMuC4k4m41YeAsWLK6tkR7eD2JQCFVmMncBme4fGR7TVPqF45-Z=
+fJabvfQs9hcgm3hvbL7phJwxULPZVKVj0rIdIOhcQlM-UQzGJw_qCbl1OuLTBIscTDgjnO9maIC=
+DL7Hp_t-gMOCjJgGwGOnfBVB_nbAgPP7vbm1WaiY0ysFBOiP0DhlJwH8FqRWc_-M_T0aAYb-_-3=
+wubw%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102=
+c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63736045=
+6653678862&amp;sdata=3DEyTgJqpVVLVrFNh%2FDh%2BNBVxfp14vrxY9h9MCk3vh0O8%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/a/click?_t=3D=
+c862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&=
+amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-jbZKN5J_1dn67dBMu_lA5ri=
+dVTYILJkuenpoPV0jzoXn99gIckpno1qdhL7QjhgN_rEUd_Cm6obnBa5sdJR1f3vOMMn39h5JxH=
+gmJjnaB9LmExfNXiFz5qrHsgwUstBRjx7jMN6NJH5OuKn4TWyripeQyBwm6y4QiiFTm72byledg=
+17JDv__1J6itipvxR5SyEWRLx6ZZEDZy6JUt0hyHhxULiID5xyMuC4k4m41YeAsWLK6tkR7eD2J=
+QCFVmMncBme4fGR7TVPqF45-ZfJabvfQs9hcgm3hvbL7phJwxULPZVKVj0rIdIOhcQlM-UQzGJw=
+_qCbl1OuLTBIscTDgjnO9maICDL7Hp_t-gMOCjJgGwGOnfBVB_nbAgPP7vbm1WaiY0ysFBOiP0D=
+hlJwH8FqRWc_-M_T0aAYb-_-3wubw%3D%3D" shash=3D"cL6cwfiGEU7cpFF5Jf+yEGozpNrBM=
+YNaWIaB0VaNE4LIbHQpVbGa6adJRtB0eeez6+O36D7XV4hvE0foZ8dyQCjbPWadTW9jNKleeAE7=
+RiuuzoXbgAGog3//NFl+Li7lkFMrWTFSUlt3XSUd2RWsCjvb2j/4BIu0gNf+ocXBOb0=3D"><im=
+g src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669=
+d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/AAP%20En=
+gagement/RRo_Hero_1X1_A.jpg" width=3D"122" style=3D"clear: both; display: b=
+lock; outline: none; text-decoration: none; margin: 0px; height: auto; line=
+-height: 100%; vertical-align: top; border-radius: 8px 0 0 8px; border: non=
+e;" alt=3D"Robin Roberts"> </a></td><td style=3D"border-collapse: collapse;=
+ border-spacing: 0; mso-line-height-rule: exactly;"><table class=3D"w-100p"=
+ width=3D"358" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:=
+ 0; border-collapse: collapse !important;"><tbody><tr><td class=3D"instruct=
+or pl-m-12" style=3D"border-collapse: collapse; border-spacing: 0; mso-line=
+-height-rule: exactly; padding: 0 32px 1px 32px; font: bold 24px/31px Arial=
+, Helvetica, sans-serif; color: #000;"><a style=3D"outline: none; color: #0=
+00; text-decoration: none !important;" href=3D"https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3=
+F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d1236968=
+82c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-jbZKN5J_1dn67dBMu_lA5=
+ridVTYILJkuenpoPV0jzoXn99gIckpno1qdhL7QjhgN_rEUd_Cm6obnBa5sdJR1f3vOMMn39h5J=
+xHgmJjnaB9LmExfNXiFz5qrHsgwUstBRjx7jMN6NJH5OuKn4TWyripeQyBwm6y4QiiFTm72byle=
+dg17JDv__1J6itipvxR5SyEWRLx6ZZEDZy6JUt0hyHfdGmG5jSgj_RuBDNsVlWYCafwXTbSj_H9=
+y3O6309IXr97B3BEft0Orps0xmmKjdo3Hvad_BKjcPRmdbC149mP74I-Og0K6rm3XQB7YNuKmGA=
+eY2xdB5WUyZjSdK9dnIqfBJxde0pq85Xbw_u9Hbt0vDErPH0nCqrwEoAtetjcWY3ju4j-o8EOKP=
+0iRgaXoDBWN6D1Z4Rf0qvmSE5F2yjTg%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%4=
+0UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d=
+15de9f6c%7C0%7C0%7C637360456653688864&amp;sdata=3DT41PwiQ9H%2FkxzySUc90BI00=
+kznNsNjgli2A4WAwvARM%3D&amp;reserved=3D0" originalsrc=3D"https://links.mast=
+erclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21=
+a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-B=
+j-jbZKN5J_1dn67dBMu_lA5ridVTYILJkuenpoPV0jzoXn99gIckpno1qdhL7QjhgN_rEUd_Cm6=
+obnBa5sdJR1f3vOMMn39h5JxHgmJjnaB9LmExfNXiFz5qrHsgwUstBRjx7jMN6NJH5OuKn4TWyr=
+ipeQyBwm6y4QiiFTm72byledg17JDv__1J6itipvxR5SyEWRLx6ZZEDZy6JUt0hyHfdGmG5jSgj=
+_RuBDNsVlWYCafwXTbSj_H9y3O6309IXr97B3BEft0Orps0xmmKjdo3Hvad_BKjcPRmdbC149mP=
+74I-Og0K6rm3XQB7YNuKmGAeY2xdB5WUyZjSdK9dnIqfBJxde0pq85Xbw_u9Hbt0vDErPH0nCqr=
+wEoAtetjcWY3ju4j-o8EOKP0iRgaXoDBWN6D1Z4Rf0qvmSE5F2yjTg%3D%3D" shash=3D"AKRh=
++VY8THmnsWQq0P8GJ2n1QJ0hhDvQZ1NLmb+J6cQ2wWSy3qKetVKB6k7yB2x0CWx1FDfGeTpa8Kf=
+D4Eqr0XvNCJcnOgTJG7g61LJ8QipbBLiPLCYIAuLRA3SowyH/TrISiEML+UcSb6XbDGRUU6ZJ4e=
+jJq+DRxeie3q9LVzc=3D">Land the job </a></td></tr><tr><td class=3D"body2 pl-=
+m-12" style=3D"border-collapse: collapse; border-spacing: 0; mso-line-heigh=
+t-rule: exactly; font: 18px/27px Arial, Helvetica, sans-serif; color: #5961=
+70; padding-left: 32px;"><a style=3D"outline: none; color: #596170; text-de=
+coration: none !important;" href=3D"https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc862c=
+12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3D=
+ZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-jbZKN5J_1dn67dBMu_lA5ridVTYILJku=
+enpoPV0jzoXn99gIckpno1qdhL7QjhgN_rEUd_Cm6obnBa5sdJR1f3vOMMn39h5JxHgmJjnaB9L=
+mExfNXiFz5qrHsgwUstBRjx7jMN6NJH5OuKn4TWyripeQyBwm6y4QiiFTm72byledg17JDv__1J=
+6itipvxR5SyEWRLx6ZZEDZy6JUt0hyHNz16zrlhayWTgLzczX2O_RMA1fbu8FKT44jSI3JZDtCI=
+lkPLtD5G8s9ZRZrkFFJzj-By8OLZ-QsKOdA5y9cZc0yrpJsJvk9qkEFLdVPMfp5rrpR7NNCnSqo=
+IpSthGMyQ5lyVVsLLUQdiXnSxJQs9ReqfGJdeGKAmlIxTYcveQ864BFbsjOr_2ebhCB4zdUf_Oa=
+Zamfd_6MswCF5yVE7zUg%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.e=
+du%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C=
+0%7C0%7C637360456653688864&amp;sdata=3DPw%2F4kdQ73vuKtbf01nFhSHt0Prs6aAwwkZ=
+pF9DD9bXY%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com=
+/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83c=
+b1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj-jbZKN5J_1=
+dn67dBMu_lA5ridVTYILJkuenpoPV0jzoXn99gIckpno1qdhL7QjhgN_rEUd_Cm6obnBa5sdJR1=
+f3vOMMn39h5JxHgmJjnaB9LmExfNXiFz5qrHsgwUstBRjx7jMN6NJH5OuKn4TWyripeQyBwm6y4=
+QiiFTm72byledg17JDv__1J6itipvxR5SyEWRLx6ZZEDZy6JUt0hyHNz16zrlhayWTgLzczX2O_=
+RMA1fbu8FKT44jSI3JZDtCIlkPLtD5G8s9ZRZrkFFJzj-By8OLZ-QsKOdA5y9cZc0yrpJsJvk9q=
+kEFLdVPMfp5rrpR7NNCnSqoIpSthGMyQ5lyVVsLLUQdiXnSxJQs9ReqfGJdeGKAmlIxTYcveQ86=
+4BFbsjOr_2ebhCB4zdUf_OaZamfd_6MswCF5yVE7zUg%3D%3D" shash=3D"NzI0fzb5xGb2yW9=
+Ln45oGJE6lE8GIJos+0e1cvhWf0cUhOeNG1aWnX7Ru0MMj1vn8mec2KR62bU38AxvoBI3ViH0X8=
+1OP+UsElg97gYDK2XicrZE/gu/ClJ4L3TclrVOOCe8X8eqMfPxxLEA4TbeRWcqzJB2z4hN73NA1=
+VBQl5k=3D">with Robin Roberts </a></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr><!-- end indtructor --><!-- instructor --><tr><td styl=
+e=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: ex=
+actly; padding: 0 0 32px;"><table width=3D"100%" height=3D"122" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"middle" style=3D"border-spacing: 0; backg=
+round: #F3F3F3; border-radius: 8px; border-collapse: collapse !important;" =
+class=3D"instructor_tile"><tbody><tr><td class=3D"wi-105 w-105" width=3D"12=
+2" valign=3D"top" style=3D"border-collapse: collapse; border-spacing: 0; ms=
+o-line-height-rule: exactly;"><a style=3D"outline: none; color: #000; text-=
+decoration: none !important;" href=3D"https://nam02.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa%2Fclick%3F_t%3Dc86=
+2c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%=
+3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8c9fcWOyYDr_c3mKPC5B8sRzYJOyyyb=
+AH0l0lEXuDmeWEXS8lcJ-FPmIbCX3cuUnx1tXzCAAZiZ4ZQn9tMyC9JY8_t7sgVo2xBMk8_YDUd=
+SsvAEfQQgqqgC3YeQCoTRWmpxFPimrNXAeuMjThCf8hgu3GdITAEGfbAF58i4x1qeU4J7i_smFw=
+ATCmztVJr1AojfsrnufTjq-E50jF_LWAs370O-nnsu25KkxfDX3HgwOQHFshR6Zng52zVbFAqcC=
+FgZftqexeW9sPNtD52fLx7_Xbc52c6CsRXAGnpRWj7guQ3zB6G52vIMquzk-I8KWhtdxeirDK-P=
+zrKM1uKpzo_yTmnwcDhS7IiytN9fVxdh7COkQDyaCANg54SvqURW8EfPbJy1_niILqVbOj2NSNO=
+XU53KzkNJ5J8p_5jeNekvw%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas=
+.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C0%7C637360456653698850&amp;sdata=3DkP%2BGt73cZn1y8VYw2fzx4qOCpdMZ3IbE=
+DDreVON%2Ft5o%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass=
+.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479=
+b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8c9fcW=
+OyYDr_c3mKPC5B8sRzYJOyyybAH0l0lEXuDmeWEXS8lcJ-FPmIbCX3cuUnx1tXzCAAZiZ4ZQn9t=
+MyC9JY8_t7sgVo2xBMk8_YDUdSsvAEfQQgqqgC3YeQCoTRWmpxFPimrNXAeuMjThCf8hgu3GdIT=
+AEGfbAF58i4x1qeU4J7i_smFwATCmztVJr1AojfsrnufTjq-E50jF_LWAs370O-nnsu25KkxfDX=
+3HgwOQHFshR6Zng52zVbFAqcCFgZftqexeW9sPNtD52fLx7_Xbc52c6CsRXAGnpRWj7guQ3zB6G=
+52vIMquzk-I8KWhtdxeirDK-PzrKM1uKpzo_yTmnwcDhS7IiytN9fVxdh7COkQDyaCANg54SvqU=
+RW8EfPbJy1_niILqVbOj2NSNOXU53KzkNJ5J8p_5jeNekvw%3D%3D" shash=3D"hZmj/9SAIIe=
+npLrXhgPOD8cK7Yz/o329JNwp+tyHEECS4vIG4D5aKLYDg1AFigEqqUch54GyYM/4s6VqwW0MIi=
+Ivsjp4+Ov7bGhZPzwP+5IsL8jXEZN5EgrDoFN8pE0uopJ1h/LcJaVJCCu4/PEOy8mmsY4Sscjft=
+Z3jB+PWpQE=3D"><img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/use=
+rs/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c=
+182120673/AAP%20Engagement/SB_Hero_1X1_A.jpg" width=3D"122" style=3D"clear:=
+ both; display: block; outline: none; text-decoration: none; margin: 0px; h=
+eight: auto; line-height: 100%; vertical-align: top; border-radius: 8px 0 0=
+ 8px; border: none;" alt=3D"Simone Biles"> </a></td><td style=3D"border-col=
+lapse: collapse; border-spacing: 0; mso-line-height-rule: exactly;"><table =
+class=3D"w-100p" width=3D"358" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"border-spacing: 0; border-collapse: collapse !important;"><tbody><tr><td c=
+lass=3D"instructor pl-m-12" style=3D"border-collapse: collapse; border-spac=
+ing: 0; mso-line-height-rule: exactly; padding: 0 32px 1px 32px; font: bold=
+ 24px/31px Arial, Helvetica, sans-serif; color: #000;"><a style=3D"outline:=
+ none; color: #000; text-decoration: none !important;" href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.c=
+om%2Fa%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a7194=
+79b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8c9fcW=
+OyYDr_c3mKPC5B8sRzYJOyyybAH0l0lEXuDmeWEXS8lcJ-FPmIbCX3cuUnx1tXzCAAZiZ4ZQn9t=
+MyC9JY8_t7sgVo2xBMk8_YDUdSsvAEfQQgqqgC3YeQCoTRWmpxFPimrNXAeuMjThCf8hgu3GdIT=
+AEGfbAF58i4x1qeU4J7i_smFwATCmztVJr1AojfsrnufTjq-E50jF_LWAsjy57DlB2oHK-eA67h=
+PmtjqoKOICosr6SGJVmgF2L7x2w8kSl7_a-_212c70YXwSk_dOUJDdXLyUnpAzNkW6HrCEGGUF0=
+7MMHRSfQhoBFxzMBkdsXf9ZGzxXKq9YbJmCb5ucnrIakttj49xFNzNWB3hSA_bx_r61ZCYznEWB=
+hdzMkZ6BuWELqdTh7rAj-5KEwuCQJ6NRVqYY5F531DC_4fQ%253D%253D&amp;data=3D02%7C0=
+1%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653698850&amp;sdata=3DFwYsaZyu3=
+m2a%2BpItJaNWFeoxux7mp8FQI5jeOPIEe9I%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&a=
+mp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu=
+4SwrpJfubvx2nN-Bj8c9fcWOyYDr_c3mKPC5B8sRzYJOyyybAH0l0lEXuDmeWEXS8lcJ-FPmIbC=
+X3cuUnx1tXzCAAZiZ4ZQn9tMyC9JY8_t7sgVo2xBMk8_YDUdSsvAEfQQgqqgC3YeQCoTRWmpxFP=
+imrNXAeuMjThCf8hgu3GdITAEGfbAF58i4x1qeU4J7i_smFwATCmztVJr1AojfsrnufTjq-E50j=
+F_LWAsjy57DlB2oHK-eA67hPmtjqoKOICosr6SGJVmgF2L7x2w8kSl7_a-_212c70YXwSk_dOUJ=
+DdXLyUnpAzNkW6HrCEGGUF07MMHRSfQhoBFxzMBkdsXf9ZGzxXKq9YbJmCb5ucnrIakttj49xFN=
+zNWB3hSA_bx_r61ZCYznEWBhdzMkZ6BuWELqdTh7rAj-5KEwuCQJ6NRVqYY5F531DC_4fQ%3D%3=
+D" shash=3D"IU//41FxipjmOOCSAntg7XfYV0kMljvty46aDBwpO2C/4oAvQY3dKt9CRlRarsJ=
+g7JA6aWzfHTEe50XNUPrnxs6HaPxGbJlNK020s99xuOgw4j/gEoXqKQ+P9zsgg/XkfEPtYHUbaA=
+e9BOs1Jr/AEzawE2mIiYdg6COKRbavLgU=3D">Stick the landing </a></td></tr><tr><=
+td class=3D"body2 pl-m-12" style=3D"border-collapse: collapse; border-spaci=
+ng: 0; mso-line-height-rule: exactly; font: 18px/27px Arial, Helvetica, san=
+s-serif; color: #596170; padding-left: 32px;"><a style=3D"outline: none; co=
+lor: #596170; text-decoration: none !important;" href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fa=
+%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83c=
+b1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8c9fcWOyYDr_=
+c3mKPC5B8sRzYJOyyybAH0l0lEXuDmeWEXS8lcJ-FPmIbCX3cuUnx1tXzCAAZiZ4ZQn9tMyC9JY=
+8_t7sgVo2xBMk8_YDUdSsvAEfQQgqqgC3YeQCoTRWmpxFPimrNXAeuMjThCf8hgu3GdITAEGfbA=
+F58i4x1qeU4J7i_smFwATCmztVJr1AojfsrnufTjq-E50jF_LWAstHW8vcTtofEMf2LFlUuFsow=
+As_5F8X296j34qa4Pnx3Q2dq71ugWGKw8-plj-VH20BbwZAAsmKRXOe92mLNbMN-eJ8KrykrX75=
+nMYDJJ1cC_Y9OQtAW94fP1K4OmUXNppnhbmB_qB2jALCtuhkfmJNoFOTwJ_lDa6CiKhTnnAE-NO=
+Ovn3paEwZT7FZDwWvEocwQql4_pDB4d26wE6ekf7g%253D%253D&amp;data=3D02%7C01%7CEr=
+ic.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637360456653708844&amp;sdata=3Dvn%2F%2BMZIHkNR=
+5gDVF2ASEzniNQt72ppXJRAMof5%2FGVDQ%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://links.masterclass.com/a/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp=
+;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4S=
+wrpJfubvx2nN-Bj8c9fcWOyYDr_c3mKPC5B8sRzYJOyyybAH0l0lEXuDmeWEXS8lcJ-FPmIbCX3=
+cuUnx1tXzCAAZiZ4ZQn9tMyC9JY8_t7sgVo2xBMk8_YDUdSsvAEfQQgqqgC3YeQCoTRWmpxFPim=
+rNXAeuMjThCf8hgu3GdITAEGfbAF58i4x1qeU4J7i_smFwATCmztVJr1AojfsrnufTjq-E50jF_=
+LWAstHW8vcTtofEMf2LFlUuFsowAs_5F8X296j34qa4Pnx3Q2dq71ugWGKw8-plj-VH20BbwZAA=
+smKRXOe92mLNbMN-eJ8KrykrX75nMYDJJ1cC_Y9OQtAW94fP1K4OmUXNppnhbmB_qB2jALCtuhk=
+fmJNoFOTwJ_lDa6CiKhTnnAE-NOOvn3paEwZT7FZDwWvEocwQql4_pDB4d26wE6ekf7g%3D%3D"=
+ shash=3D"PNdIyPEN1TfBl/+d7OP2ZfslNJmfKSygF4xVArWQnVKHFkLr8XKwWGlT6CMAPOfqR=
+2USMP+c+ELB74ssO1fDe9jGuTXSJTR5RFbkBt3UacZUh2Knx6pSZIZC+PXW6E6O19t7NYGzOC4x=
+7RNu0f+1Pl7H4RglpP0HWbp/ezS7kVc=3D">with Simone Biles </a></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr><!-- end indtructor --></tbody=
+></table></td></tr><!-- end instructors --><tr><td class=3D"p pb-24" style=
+=3D"border-collapse: collapse; border-spacing: 0; mso-line-height-rule: exa=
+ctly; padding: 0 0 32px; font: 18px/27px Arial, Helvetica, sans-serif; colo=
+r: #000;">Jump back in to our 85+ classes and reignite your passion now. </=
+td></tr><!-- button --><tr><td class=3D"" style=3D"border-collapse: collaps=
+e; border-spacing: 0; mso-line-height-rule: exactly; padding: 0 0 16px;"><t=
+able class=3D"w-220" width=3D"260" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"border-spacing: 0; border-collapse: collapse !important;"><tbody><tr><=
+td class=3D"active-t btn-01 fs-13 lh-16 ls-1p4" align=3D"center" style=3D"b=
+order-collapse: collapse; border-spacing: 0; mso-line-height-rule: exactly;=
+ transition: all 0.3s ease; background: #c83232; mso-padding-alt: 14px 15px=
+; font: bold 16px/20px Arial, Helvetica, sans-serif; border-radius: 4px; te=
+xt-transform: uppercase; letter-spacing: 2px;"><a style=3D"outline: none; c=
+olor: #fffffe; display: block; padding: 14px 15px; text-transform: uppercas=
+e; text-decoration: none !important;" href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F=
+_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d12369688=
+2c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj8787-wn-1lVhineyVWCcQw4=
+A46dGxAp_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lwc42WRUz4bRRSiBsCAu1lPnlRTuY=
+shYJPcMrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy79G5ZsDzO-6LiYgJhSsYyXwhEH_=
+LfHcTu43pZ06jlNXeJGMltFlevhKcOi6xklhunYVottC0EeVlam7a4VXP-zkVtb812zUTIbert0=
+yCYjRp7wWPPPewZKN6VnqB8ieMzP5fZnQ1kEclpIo-dJW8AChCm6EXGVwQHaIGmIKeIyzDg0qPC=
+jrges-puuB_fBN77MN9fozHQTdJlDrCBXCfoqH8P0r_OZ-Tp4Qy1GP3-1B62UMLJT0MML_BO8zw=
+jj7ynz3N0O9Q2UaNFDQUtBNbBxHYBQ%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40=
+UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C0%7C637360456653708844&amp;sdata=3Dv5%2FD95pOe1Yq2M8xd2zNow0U=
+xPEw%2Fy26i75%2B5X9bnn4%3D&amp;reserved=3D0" originalsrc=3D"https://links.m=
+asterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8=
+b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2n=
+N-Bj8787-wn-1lVhineyVWCcQw4A46dGxAp_oRc4mWtFB4-4NXOuqFnFLD2EwbwU_IuEhtvw4Lw=
+c42WRUz4bRRSiBsCAu1lPnlRTuYshYJPcMrXhe6UjSe7OUsEJjvr5ZDFENck3Wm0M7JktYCltOy=
+79G5ZsDzO-6LiYgJhSsYyXwhEH_LfHcTu43pZ06jlNXeJGMltFlevhKcOi6xklhunYVottC0EeV=
+lam7a4VXP-zkVtb812zUTIbert0yCYjRp7wWPPPewZKN6VnqB8ieMzP5fZnQ1kEclpIo-dJW8AC=
+hCm6EXGVwQHaIGmIKeIyzDg0qPCjrges-puuB_fBN77MN9fozHQTdJlDrCBXCfoqH8P0r_OZ-Tp=
+4Qy1GP3-1B62UMLJT0MML_BO8zwjj7ynz3N0O9Q2UaNFDQUtBNbBxHYBQ%3D%3D" shash=3D"D=
+GO5tFQFu47eD6CEsbLDG+aM83CQxLp3dQAgwfUpYDOUFZuMYv1SWX9j64YRqvw6BaNs/6LUIgv5=
+H7l9Lq/q1aioxMRo9k4i354yd94/Qwg/GwqUmEDgLOGkEAp/Vi6q7W9z3xLrGsvwm/UjNnE+n+6=
+T0B9aHoGjdxhiaJUA6RI=3D">Let's Go</a> </td></tr></tbody></table></td></tr><=
+!-- end button --></tbody></table></td></tr><!-- footer --><tr><td class=3D=
+"l-white" style=3D"border-collapse: collapse; border-spacing: 0; mso-line-h=
+eight-rule: exactly; background: #000; padding: 0 0 0 0;"><table width=3D"6=
+00" align=3D"center" style=3D"width:100% !important; max-width:600px; margi=
+n:0 auto;" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td class=3D"plr-=
+5" style=3D"background:#000; padding:24px 30px;"><table width=3D"100%" cell=
+padding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"padding:0 0px;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"w-100p" align=3D"center"><tbody><tr><td style=3D"padding: 0 0 32px 0;" =
+class=3D"hm"><table cellpadding=3D"0" cellspacing=3D"0" align=3D"center"><t=
+body><tr><td align=3D"center" style=3D"font:12px Arial, Helvetica, san-seri=
+f; color:#DBDDE1; letter-spacing: .015em; text-decoration:none; padding: 32=
+px 0 0px 0;"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" border=3D"0" style=3D"padding: 0 0 0 0;"><tbody><tr><td align=
+=3D"center" style=3D"padding:0 10px 0px 0"><a style=3D"text-decoration:none=
+;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c1821206=
+73%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BKvc4=
+8eZqeC0YYZm7wkYHGb4dn3IokxUwHwA1j6nXjji-VMPkqnmSnOgdgxpNOn8o-IfY9hcenmdMNXY=
+z53Yy36zr27_0w4wN8HsNLPlNALDNVTIlYyjhCcZxcFNDp0NXUgvg26JnyIBiqX3iLF2wFoCn_H=
+ANwNt0MIvZKf7L58FjGoQq6jUcRWvIj30EhuINJjNj3fBRCfdzNbvS-1wvN6siZKC1Uowezx1OA=
+QyLh_ZFtMF_mnvLT8B9WWxctBrbehOdMDeXIsbmPfAQetE7DUaN6ewjirOCFQvG6f4jG7Xa97rN=
+J-3alupXHCthUh1Q6rOY7IIKNSkOWf780YFHYc%253D&amp;data=3D02%7C01%7CEric.Zhang=
+%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637360456653718840&amp;sdata=3DuvUErEst9%2FIZLM%2F%2BB=
+R52cTAKzrEdmpTZ6hUyR2KSeYk%3D&amp;reserved=3D0" originalsrc=3D"https://link=
+s.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa=
+0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BKvc48eZqeC0YYZ=
+m7wkYHGb4dn3IokxUwHwA1j6nXjji-VMPkqnmSnOgdgxpNOn8o-IfY9hcenmdMNXYz53Yy36zr2=
+7_0w4wN8HsNLPlNALDNVTIlYyjhCcZxcFNDp0NXUgvg26JnyIBiqX3iLF2wFoCn_HANwNt0MIvZ=
+Kf7L58FjGoQq6jUcRWvIj30EhuINJjNj3fBRCfdzNbvS-1wvN6siZKC1Uowezx1OAQyLh_ZFtMF=
+_mnvLT8B9WWxctBrbehOdMDeXIsbmPfAQetE7DUaN6ewjirOCFQvG6f4jG7Xa97rNJ-3alupXHC=
+thUh1Q6rOY7IIKNSkOWf780YFHYc%3D" shash=3D"IF03R7WCpsfQH9AcHTYSpD8Bl0uAHMkMt=
+XOUdfFC8Hk1StJuVOUZ4g/+CoiORaGO8cvsWUI+mGP2IUnSyX495K1pzoeTTsHnKeQINBXIbWoh=
+n2AmXyKzQ9CPbKSBYjBpkp1lqayvHRYQ+VYDBAhYM3V7qu8WRrLN3OlfH18XKyI=3D"><img cl=
+ass=3D"app-store" width=3D"90" alt=3D"Download on the App Store" style=3D"f=
+ont:16px/20px Lato, Arial, Helvetica, san-serif; color:#fff;" src=3D"https:=
+//gallery.mailchimp.com/e18548847fbb96bf384241ca5/images/a5abc82a-41b9-46de=
+-8b0e-3d8a431a69a9.png"></a></td><td align=3D"center" style=3D"padding:0 10=
+px 0 0"><a style=3D"text-decoration:none;" href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fcli=
+ck%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123=
+696882c%26_e%3DZZaZbdGf5bXshjI46QB1BKvc48eZqeC0YYZm7wkYHGZq6AngUkzwvsRFtZEZ=
+KFs6vTBXyeV6Gm1dzFZf-1LlR8cZcmqKxXDO2i6QAbYIFc7IkFHsrM6iCwCHHL_WJgjEKhEr-gY=
+e1K3LfUCiwvNUOkl3JvBTBCNqL9cT9LVQPO3THKqnwZNSRl-qe3KEDM_pOcv1NALP9W4qqeruC-=
+qyJYK0sIVWS4rRD-mgX_1ylHf2i_HtYVXUQtNb_IoefcZwzLq4pTV8EaNKMySjQzdGVhze2HNks=
+nH1lxJxnIPgyjIt89YErBicRv6TD3Q04LlkOB-wR4v6qTNB2fvXDndgb28pp31Ds9LwNUfekswA=
+xk0%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da=
+88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63736045665371=
+8840&amp;sdata=3DmLBScfMcWheg1YTvHDDOSU8S0fl%2Fbba8eFp41izkPWE%3D&amp;reser=
+ved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12d=
+cd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=
+=3DZZaZbdGf5bXshjI46QB1BKvc48eZqeC0YYZm7wkYHGZq6AngUkzwvsRFtZEZKFs6vTBXyeV6=
+Gm1dzFZf-1LlR8cZcmqKxXDO2i6QAbYIFc7IkFHsrM6iCwCHHL_WJgjEKhEr-gYe1K3LfUCiwvN=
+UOkl3JvBTBCNqL9cT9LVQPO3THKqnwZNSRl-qe3KEDM_pOcv1NALP9W4qqeruC-qyJYK0sIVWS4=
+rRD-mgX_1ylHf2i_HtYVXUQtNb_IoefcZwzLq4pTV8EaNKMySjQzdGVhze2HNksnH1lxJxnIPgy=
+jIt89YErBicRv6TD3Q04LlkOB-wR4v6qTNB2fvXDndgb28pp31Ds9LwNUfekswAxk0%3D" shas=
+h=3D"UCEvOqLGoIw9Ls0WaMaNfPz4+3mETeUgrw+Zy9h75nzQkOiPYaiDdmaK7ODkVrEqKf/MtF=
+ZAuIM/13AFMDvH2FMTr1WK2Kpp01ac3rDHUTQP55RIu428xNcxAv/5/Fgfcua7eiHk2evskUN75=
+BqdQDFaEtwZRiGocngRKzghsWE=3D"><img class=3D"google-play" width=3D"102" alt=
+=3D"Get it on Google Play" style=3D"font:16px/20px Lato, Arial, Helvetica, =
+san-serif; color:#fff;" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public=
+/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5=
+de2c182120673/google-play-badge%20copy.png"></a></td><td align=3D"center" s=
+tyle=3D"padding:0 10px 0 0"><a style=3D"text-decoration:none;" href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.maste=
+rclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8=
+b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BJTMV7ILc337d2e4IiQe=
+FPmpSHtcbl1m45kBsvwBL5DUf16IVtN8esLnEhzHS4pu1VTuk1cg_LsNQkSmOO1iQ62NVjg4arg=
+1zEajWY3My-mzornkY6BhbtCsWpf_0hMXHBc3oGdU5mWx6R7P2neB4FxwMYTujwhl6iJf-9TXZI=
+stXTg8Tn4sEOrUbYBN587qfcLeyV1s7_a5b2OX2y9JI7c3JYWeMODv23b_MctD6LRVAE88JLWq2=
+p6bub8Rww8nDbQ2A3lqfoYCIC4HzzoTu_97mkqmmbQ24XDC_3b9gniW&amp;data=3D02%7C01%=
+7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653728834&amp;sdata=3D8wmjHHFxi%2=
+FiF4MMIGttASuW0TIZqpK1kj2IkPkqHfb4%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp=
+;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BJTMV7I=
+Lc337d2e4IiQeFPmpSHtcbl1m45kBsvwBL5DUf16IVtN8esLnEhzHS4pu1VTuk1cg_LsNQkSmOO=
+1iQ62NVjg4arg1zEajWY3My-mzornkY6BhbtCsWpf_0hMXHBc3oGdU5mWx6R7P2neB4FxwMYTuj=
+whl6iJf-9TXZIstXTg8Tn4sEOrUbYBN587qfcLeyV1s7_a5b2OX2y9JI7c3JYWeMODv23b_MctD=
+6LRVAE88JLWq2p6bub8Rww8nDbQ2A3lqfoYCIC4HzzoTu_97mkqmmbQ24XDC_3b9gniW" shash=
+=3D"IEgX27LqSWe52MGvYQ9HOYHGjJuznfzn/WbjDFS2Jqo1xQ47rWZnVF4SuTEABz5N/BFNJBq=
+45wGCS+pC7FM2Q1BmXKOOjw/cj0B/iEp2Jbc3Gtdisz472eGo3Jc7BR5rimBqSUgHBsrsYo32bT=
+jMzmMAY0qAkSa5EXNvjDireHE=3D"><img class=3D"amazon" width=3D"102" alt=3D"Av=
+ailable at Amazon Appstore" style=3D"font:16px/20px Lato, Arial, Helvetica,=
+ san-serif; color:#fff;" src=3D"https://d15k2d11r6t6rl.cloudfront.net/publi=
+c/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa=
+5de2c182120673/amazon_appstore_badge.png"></a></td><td align=3D"center" sty=
+le=3D"padding:0 0 0 0"><a style=3D"text-decoration:none;" href=3D"https://n=
+am02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclas=
+s.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a7=
+19479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BMh72apgvGktUfdQjlNr3JFms=
+leqoyckC4M8xziimRCPISx9vYIxpZ9K_ulyWb-KWQzLBl2HJVlsR50TJrDsAK6bz6UhuGtH7sIw=
+8vYwbud8eFNftcpgvrtR7oliifrNjhRwERlAW2PDBZ_Qn0IOJetQdgs2fP4QnBsji79m0RuFcEO=
+8NF8sDsKUXyFpTiTTdLN0deouzgETs8ViVXixJFczKtC744eMOIx6aG0wZ6oygxPDbD6cfNf6vY=
+DW5xpN_GdAMyOOVK_YR3v-FqUOlO-sUP9eVKsr3PjRQGyuiw_rkNK856cOAuxPuAmNWyGxuA%25=
+3D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da8=
+8108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653728=
+834&amp;sdata=3DHz5DCNKxggtwxaFG47kkZ2yqagG19h%2FsryD0Yb%2B2z1A%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12=
+dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=
+=3DZZaZbdGf5bXshjI46QB1BMh72apgvGktUfdQjlNr3JFmsleqoyckC4M8xziimRCPISx9vYIx=
+pZ9K_ulyWb-KWQzLBl2HJVlsR50TJrDsAK6bz6UhuGtH7sIw8vYwbud8eFNftcpgvrtR7oliifr=
+NjhRwERlAW2PDBZ_Qn0IOJetQdgs2fP4QnBsji79m0RuFcEO8NF8sDsKUXyFpTiTTdLN0deouzg=
+ETs8ViVXixJFczKtC744eMOIx6aG0wZ6oygxPDbD6cfNf6vYDW5xpN_GdAMyOOVK_YR3v-FqUOl=
+O-sUP9eVKsr3PjRQGyuiw_rkNK856cOAuxPuAmNWyGxuA%3D%3D" shash=3D"puOUC2vo/SJYt=
+87oJjQdcrTZmXl1V+0NOOHyThPwP45ilKjURRQSgch81t00UNPYafceuVPB4XHGzEPmBHwq4yUz=
+fSaS2l4EuNCjff1i4uDKlENeX0F+yYCdaNbkvaoeSZJ+V/rsDOjwbWD5ZLcf8pcj048VF6zhpu6=
+3tmQRA2E=3D"><img class=3D"roku" width=3D"83" alt=3D"Get it on Roku" style=
+=3D"font:16px/20px Lato, Arial, Helvetica, san-serif; color:#fff;" src=3D"h=
+ttps://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a=
+-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/newsletter/Global%=
+20elements/Roku.png"></a></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr><tr><td class=3D"plr-15" style=3D"padding: 0 0 0px 0;" align=3D=
+"center"><table align=3D"center" style=3D"padding: 32px 0 0 0px; display:no=
+ne; max-width:200px; text-align:center;" class=3D"d-b"><tbody><tr><td align=
+=3D"center" style=3D"padding:0 10px 0 0"><a style=3D"text-decoration:none;"=
+ href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673=
+%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BKvc48e=
+ZqeC0YYZm7wkYHGb4dn3IokxUwHwA1j6nXjji-VMPkqnmSnOgdgxpNOn8o-IfY9hcenmdMNXYz5=
+3Yy36zr27_0w4wN8HsNLPlNALDNVTIlYyjhCcZxcFNDp0NXVedJNb5T83Ms5OBuXBydiqSetIX4=
+m1Gb_dGncNfh15ltF1FHEIfLATP1h70vB3CDRDVPbKKcQzjhp6kLjlbZEt6J7YS0-bW-tv3puuJ=
+WuQRRcGLGaumkfbPvMbdmVgxQbxf-hm5fO9s-bVyeBs3vd56a70cAUoBRjtjtbcuLWX4SurT4Fh=
+HgiQH0djc6de6MvnFz-NpkUpzH31UvjO1VH0%253D&amp;data=3D02%7C01%7CEric.Zhang%4=
+0UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d=
+15de9f6c%7C0%7C0%7C637360456653738828&amp;sdata=3DdgQKpnEcSnjcamYak0HFo8pfj=
+A1MfP2Pqa3Bkfd6718%3D&amp;reserved=3D0" originalsrc=3D"https://links.master=
+class.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a7=
+19479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BKvc48eZqeC0YYZm7wkYHGb=
+4dn3IokxUwHwA1j6nXjji-VMPkqnmSnOgdgxpNOn8o-IfY9hcenmdMNXYz53Yy36zr27_0w4wN8=
+HsNLPlNALDNVTIlYyjhCcZxcFNDp0NXVedJNb5T83Ms5OBuXBydiqSetIX4m1Gb_dGncNfh15lt=
+F1FHEIfLATP1h70vB3CDRDVPbKKcQzjhp6kLjlbZEt6J7YS0-bW-tv3puuJWuQRRcGLGaumkfbP=
+vMbdmVgxQbxf-hm5fO9s-bVyeBs3vd56a70cAUoBRjtjtbcuLWX4SurT4FhHgiQH0djc6de6Mvn=
+Fz-NpkUpzH31UvjO1VH0%3D" shash=3D"TZ+Ql50JKR6Ef9r0I3wN/JqLxq0CSiTHTiSdHMcuz=
+4VJ0Lm5ZR+/aR7joAYTRy5sAbpRZC3EaQhAPZe+Sbs3dEVwBIcK7w9FAmUGbjwC3gJLlFO7wKP9=
+6DNXInZKOTntmR8OulTkWhMvh0kpVHq9uABO7XyottAs8Q46PvTyWy4=3D"><img class=3D"a=
+pp-store" width=3D"90" alt=3D"Download on the App Store" style=3D"font:16px=
+/20px Lato, Arial, Helvetica, san-serif; color:#fff;" src=3D"https://galler=
+y.mailchimp.com/e18548847fbb96bf384241ca5/images/a5abc82a-41b9-46de-8b0e-3d=
+8a431a69a9.png"></a></td><td align=3D"center" style=3D"padding:0 0 0 0"><a =
+style=3D"text-decoration:none;" href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc=
+862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_=
+e%3DZZaZbdGf5bXshjI46QB1BKvc48eZqeC0YYZm7wkYHGZq6AngUkzwvsRFtZEZKFs6vTBXyeV=
+6Gm1dzFZf-1LlR8cZcmqKxXDO2i6QAbYIFc7IkFHsrM6iCwCHHL_WJgjEKhEr-gYe1K3LfUCiwv=
+NUOnOMbvA0bSpja90vKOCT1SVvq4SxX1LkUAt7SWnhbdxR6LkUG_0OXsDRojGNyNy2eazd9jYEm=
+ivUS7qaUiUt-5ppfGZT2Kk0vdeYnkDs9qUchYfW0H-r1kzPhP0prg-fcfghK3xHEyxDg7GAWV7H=
+6Opurcv0TC7jBza4lHxOrVTWOrM5EOhSfyVsR0qrWXPAD3OvXpjPMs4kxZt6BIVvRIY%253D&am=
+p;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf5=
+5abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653738828&amp;sd=
+ata=3D%2FDTxVAJkp%2FzAxgximzG%2Fn%2Ft2hRnFQ3TIa4ZDyJLvOpY%3D&amp;reserved=
+=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12dcd8=
+94e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZ=
+aZbdGf5bXshjI46QB1BKvc48eZqeC0YYZm7wkYHGZq6AngUkzwvsRFtZEZKFs6vTBXyeV6Gm1dz=
+FZf-1LlR8cZcmqKxXDO2i6QAbYIFc7IkFHsrM6iCwCHHL_WJgjEKhEr-gYe1K3LfUCiwvNUOnOM=
+bvA0bSpja90vKOCT1SVvq4SxX1LkUAt7SWnhbdxR6LkUG_0OXsDRojGNyNy2eazd9jYEmivUS7q=
+aUiUt-5ppfGZT2Kk0vdeYnkDs9qUchYfW0H-r1kzPhP0prg-fcfghK3xHEyxDg7GAWV7H6Opurc=
+v0TC7jBza4lHxOrVTWOrM5EOhSfyVsR0qrWXPAD3OvXpjPMs4kxZt6BIVvRIY%3D" shash=3D"=
+czTknpE7+D9X32jcylq5KWG6/3uqVPrzpKa7l1Wc65NUgkJEH+koTW+XxR0PgsJDDqEDwIdEIQ9=
+k6+mMKsnUxVylZw3by6G52bzDqUf/3Q1qJVtlGumYuvrCI4Hu1QjsR86U+MHiKPIujtyqWx0SnU=
+x7jeVqNfZ7oY18dSrzE3E=3D"><img class=3D"google-play" width=3D"102" alt=3D"G=
+et it on Google Play" style=3D"font:16px/20px Lato, Arial, Helvetica, san-s=
+erif; color:#fff;" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/user=
+s/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c1=
+82120673/google-play-badge%20copy.png"></a></td></tr></tbody></table><table=
+ align=3D"center" style=3D"padding: 12px 0 32px 0px; display:none; max-widt=
+h:200px; text-align:center;" class=3D"d-b"><tbody><tr><td align=3D"center" =
+style=3D"padding:0 10px 0 0"><a style=3D"text-decoration:none;" href=3D"htt=
+ps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.mast=
+erclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b=
+8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BJTMV7ILc337d2e4IiQ=
+eFPmpSHtcbl1m45kBsvwBL5DUf16IVtN8esLnEhzHS4pu1VTuk1cg_LsNQkSmOO1iQ63mWOOeCp=
+kzwRzvE_L3FwU2tKLEOL0Ry9boCArdodHfEvDs-qJtBDZ7tB09geK813MdPio7jpSkbZLVYR0gP=
+EZLkneTgJh6oY45yEWRgo34IjT94VdUL_6tw21ZDkjiKW69zNVxC9-78fBaIxShu1F_TKDKBKi4=
+3Co6sit0z_Ce_CO6-dlrs4ZgCSYanF7ANGc1A3FzBh7ESGpYqFUiquBU&amp;data=3D02%7C01=
+%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653748822&amp;sdata=3DYLFHJ7BP%2=
+FAONz0hMWlCtk%2FpXF1GLXePHZbbufUuc2v0%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&=
+amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BJTM=
+V7ILc337d2e4IiQeFPmpSHtcbl1m45kBsvwBL5DUf16IVtN8esLnEhzHS4pu1VTuk1cg_LsNQkS=
+mOO1iQ63mWOOeCpkzwRzvE_L3FwU2tKLEOL0Ry9boCArdodHfEvDs-qJtBDZ7tB09geK813MdPi=
+o7jpSkbZLVYR0gPEZLkneTgJh6oY45yEWRgo34IjT94VdUL_6tw21ZDkjiKW69zNVxC9-78fBaI=
+xShu1F_TKDKBKi43Co6sit0z_Ce_CO6-dlrs4ZgCSYanF7ANGc1A3FzBh7ESGpYqFUiquBU" sh=
+ash=3D"eGOfJaP2IhumBtl1F0qdJQj6yE3YJMSK+gQkhoHq342j/wNzDHx3gA8+FtRf6A49ZDzp=
+p4FLD0BereVANRTp4lcv14dn0w50krD+8FU1RYoqjJHyvOv1Gxbe3jUhuJN1ilQmq0NUB+Mi3uS=
+TJeQv7za52y2KWP1fI1W0uVYZSCk=3D"><img class=3D"amazon" width=3D"102" alt=3D=
+"Available at Amazon Appstore" style=3D"font:16px/20px Lato, Arial, Helveti=
+ca, san-serif; color:#fff;" src=3D"https://d15k2d11r6t6rl.cloudfront.net/pu=
+blic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7=
+aaa5de2c182120673/amazon_appstore_badge.png"></a></td><td align=3D"center" =
+style=3D"padding:0 0 0 0"><a style=3D"text-decoration:none;" href=3D"https:=
+//nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterc=
+lass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b2=
+1a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BMh72apgvGktUfdQjlNr3J=
+FmsleqoyckC4M8xziimRCPISx9vYIxpZ9K_ulyWb-KWQzLBl2HJVlsR50TJrDsAK6bz6UhuGtH7=
+sIw8vYwbud8Mp-bE6UbIsS4Lx66VxqqTGSmuVv9vdG-Y_rqaEaSWQa7GAEsCP3DP8_ntk3tlNyP=
+2ia7H4IDccPdDdjDk7ey5z_cwWqHNHypOnjNykIBxaKCI60fUf601yF-7-0vWbaVW6Bh1n8ZaYC=
+8B2r5mQogIU-7JDCLBqYUT7EB7lC5WnMpZ25y8JwxPncacdI0yP2naNvR3Nro33KnoyZwijZ7gw=
+%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9=
+da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653=
+748822&amp;sdata=3DdGmry7Inqdf8ccAow%2F3t2yntcGggiouKkpizVZVYX3s%3D&amp;res=
+erved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c1=
+2dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=
+=3DZZaZbdGf5bXshjI46QB1BMh72apgvGktUfdQjlNr3JFmsleqoyckC4M8xziimRCPISx9vYIx=
+pZ9K_ulyWb-KWQzLBl2HJVlsR50TJrDsAK6bz6UhuGtH7sIw8vYwbud8Mp-bE6UbIsS4Lx66Vxq=
+qTGSmuVv9vdG-Y_rqaEaSWQa7GAEsCP3DP8_ntk3tlNyP2ia7H4IDccPdDdjDk7ey5z_cwWqHNH=
+ypOnjNykIBxaKCI60fUf601yF-7-0vWbaVW6Bh1n8ZaYC8B2r5mQogIU-7JDCLBqYUT7EB7lC5W=
+nMpZ25y8JwxPncacdI0yP2naNvR3Nro33KnoyZwijZ7gw%3D%3D" shash=3D"n6LG1mOI2r4RS=
+4kvDHbpA+erd9qc3S1yJKriptF6k/CL+ygQmcBDYTBNbQT7yrkGhBdjwVK+0Y+fcOIWin+Oy2T9=
+JCMkwPACOVEbi8acJJHNDVolRkpIJ/Y+eng03FSEJdxJDyFTCDtkJH0+WrRQL7q9FfImOM7AWJ1=
+R2oegbbc=3D"><img class=3D"roku" width=3D"83" alt=3D"Get it on Roku" style=
+=3D"font:16px/20px Lato, Arial, Helvetica, san-serif; color:#fff;" src=3D"h=
+ttps://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a=
+-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/newsletter/Global%=
+20elements/Roku.png"></a></td></tr></tbody></table></td></tr><tr><td class=
+=3D"plr-15" style=3D"padding: 0 0 0px 0;" align=3D"center"><table align=3D"=
+center"><tbody><tr><td style=3D"padding: 0 32px 32px 0;" align=3D"center"><=
+a style=3D"text-decoration:none;" href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3=
+Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%2=
+6_e%3DZZaZbdGf5bXshjI46QB1BEOqY7Dvn3u8LV0N3ph2BFdkNtCjt03dZaJhFNr3lnO3uYYuW=
+DK-J76Kp9iOtIWk5_iTutxDXAwOagCrYFPP0iTSzmxh4F6-3Cb93BOXACFCtAeLH0r8V74biM8m=
+ogtQw0gb24UHtAObuvcQWyjyCqA6kplZH4WXDK3qpNxHTuDSyKWBSsom_9LzQRCLEFNVV1Nqt_J=
+TbPQRAG-zehTP8IqKbJknjelJK15pfdDEZ7RFj1GhHAMkJP9-5M-_vfdYQtbdLNT-sBBdJeypbL=
+pHYls%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9=
+da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653=
+758814&amp;sdata=3Dg6bTC64BBjd2QkGyAuF%2FkRVwO4xX%2BCWJvQmV8ZEnjrA%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862=
+c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;=
+_e=3DZZaZbdGf5bXshjI46QB1BEOqY7Dvn3u8LV0N3ph2BFdkNtCjt03dZaJhFNr3lnO3uYYuWD=
+K-J76Kp9iOtIWk5_iTutxDXAwOagCrYFPP0iTSzmxh4F6-3Cb93BOXACFCtAeLH0r8V74biM8mo=
+gtQw0gb24UHtAObuvcQWyjyCqA6kplZH4WXDK3qpNxHTuDSyKWBSsom_9LzQRCLEFNVV1Nqt_JT=
+bPQRAG-zehTP8IqKbJknjelJK15pfdDEZ7RFj1GhHAMkJP9-5M-_vfdYQtbdLNT-sBBdJeypbLp=
+HYls%3D" shash=3D"aVXgFHtQUH0ugRrT2Z+avPm4sSpT6NrzkUaQjTBtpjby03ngQE3X6H6Sp=
+VkjQzPoW2mNJtCLFUrt33RgaZLIv2Mig8FdnWWh490gHDNdYZK6TvHPHJblyfB3VvkJOP8i/IuM=
+wetW2jjCaYinDoOi3/M/r0mtjc8FNdfm9rFI8hk=3D"><img width=3D"32" style=3D"widt=
+h:32px; font:16px/20px Arial, Helvetica, san-serif; color:#000;" alt=3D"Fac=
+ebook" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrator=
+s/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/Foo=
+ter/facebook.png"> </a></td><td style=3D"padding: 0 32px 32px 0;" align=3D"=
+center"><a style=3D"text-decoration:none;" href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fcli=
+ck%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123=
+696882c%26_e%3DZZaZbdGf5bXshjI46QB1BJ-F1vXAofQvNlDOb0OM-AkwLqDvf8RhtlQ9gxOB=
+oLPHriqnbwDSaUrB7dhiJphBwvLHJs4oigjZ_E4FHDxpq4Up_wYukDSy1lGRLsMgQ_M8i3Hg_Kf=
+dZ0kXSW3EoFS2ozyLBUKdD-OvvK_VIN38z2rmjfu-oBUYgtlI8YpB4cB6qNoRDBku-zQf3yE5Tq=
+ir-puTq32ef8Qe8xyh_1mVWy8zzHYQyLjuDIBbBjuwQyit8YkwobA6mnEzu-QuhdVAsw%253D%2=
+53D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108=
+d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653758814&=
+amp;sdata=3DLSaX9f4lb2wmPEKcsPt99owICjnLgJGhOTKQTS%2BBhHg%3D&amp;reserved=
+=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12dcd8=
+94e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZ=
+aZbdGf5bXshjI46QB1BJ-F1vXAofQvNlDOb0OM-AkwLqDvf8RhtlQ9gxOBoLPHriqnbwDSaUrB7=
+dhiJphBwvLHJs4oigjZ_E4FHDxpq4Up_wYukDSy1lGRLsMgQ_M8i3Hg_KfdZ0kXSW3EoFS2ozyL=
+BUKdD-OvvK_VIN38z2rmjfu-oBUYgtlI8YpB4cB6qNoRDBku-zQf3yE5Tqir-puTq32ef8Qe8xy=
+h_1mVWy8zzHYQyLjuDIBbBjuwQyit8YkwobA6mnEzu-QuhdVAsw%3D%3D" shash=3D"qrrcaSD=
+jUO6GVo9cKhDrq3uhASdRmiz8oTilVr/LGU8a2gvvG0s0RBNjolcd6KaZf6gTOVMF8SulJl+XLI=
+5FTD8aB5bkW9W1Jfn2+bqsuaTsv6x3lqb70zoSzngyGCtwYC0SURQnvn/+Hmg+CUFg46CIW8VUp=
+zykDGOEXWuIpsc=3D"><img width=3D"32" style=3D"max-width:32px; font:16px/20p=
+x Arial, Helvetica, san-serif; color:#000;" alt=3D"Instagram" src=3D"https:=
+//d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb=
+-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/Footer/instagram.png"> =
+</a></td><td style=3D"padding: 0 32px 32px 0;" align=3D"center"><a style=3D=
+"text-decoration:none;" href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t%3Dc862c12dc=
+d894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZ=
+bdGf5bXshjI46QB1BOCflqwZx15oGlKZ3s8CQLzbngqjv2IUHwfgF015TAD2Eu7MJHrH4bqZ2jl=
+4m8aKXrt-eHuPEyiYChDQtpsJWOXk2tyIP5Y6LNYcIruYf_IbPcbNZqqUbamd-QH3O5IdXtoBeI=
+HNHwWxI0YsoI6QiVBWR9IhOiK-h11PwDmy6Ehezfn1rvirTVmHhaKpWJ_G17PEPmZGBf0StKkUQ=
+mwjTzpy0797IlqmpQOwHDpYaZmw9SzpfFZCbVFdeaa94axSNQ%253D%253D&amp;data=3D02%7=
+C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653768813&amp;sdata=3DyBYvRRb=
+Yx5dAk04BRjM1y1QmBy9ejrnzL%2BAlb4mb7Lc%3D&amp;reserved=3D0" originalsrc=3D"=
+https://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c182120673=
+&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BOC=
+flqwZx15oGlKZ3s8CQLzbngqjv2IUHwfgF015TAD2Eu7MJHrH4bqZ2jl4m8aKXrt-eHuPEyiYCh=
+DQtpsJWOXk2tyIP5Y6LNYcIruYf_IbPcbNZqqUbamd-QH3O5IdXtoBeIHNHwWxI0YsoI6QiVBWR=
+9IhOiK-h11PwDmy6Ehezfn1rvirTVmHhaKpWJ_G17PEPmZGBf0StKkUQmwjTzpy0797IlqmpQOw=
+HDpYaZmw9SzpfFZCbVFdeaa94axSNQ%3D%3D" shash=3D"l1uLb21llJ9i6lf3z9PEz65ZcVWx=
+oMYwdeF2q2RsFP77H7jPJ8MGbbpF3Hl8R7clUJCTxoxg1NRNiQIZIvG5O256v03rehTDOnpNZMn=
+hJtGYYRz+VojXazDBrILJP1YqQSs/QE7E50t1B8vKY/Gf+jOpkfD9T6l2OzhsResSD/A=3D"><i=
+mg width=3D"32" style=3D"max-width:32px; font:16px/20px Arial, Helvetica, s=
+an-serif; color:#000;" alt=3D"Twitter" src=3D"https://d15k2d11r6t6rl.cloudf=
+ront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862=
+c12dcd894e7aaa5de2c182120673/Footer/twitter.png"> </a></td><td style=3D"pad=
+ding: 0 32px 32px 0;" align=3D"center"><a style=3D"text-decoration:none;" h=
+ref=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+links.masterclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%2=
+6_m%3Daa0b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BLvY3Y_NK=
+sWVNzAOER0xvqjbKN6wm9CwTKuVxT9ue2q6cq0h5UiUvHW1bVNzFGCNFoLtFvNrW29TgpEZ8bYT=
+HKwBynk4n1capt8cudd1cH8WQ-WGAaZ_TUhJik6YWO3m5iIgRfTPb8LBWi6oOkYYvBLcDzEpq5E=
+DlphqtLbgwBbfHUA_-MwkTdxi_9X2IHgDc3bkftHLvc1BGi7bT81iZ22MWRVu0Kv7_gTcp7pmtl=
+fsIsgYln6bb1k9BpjpYIjexTwQidFW5AFK9T4Eq6LJ0t7LwZ-e6_94jhoigUAkiIU3&amp;data=
+=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55abe%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653768813&amp;sdata=3D=
+B2n%2BpreL1FLuV0pX4YOrpAQh%2FT3AgK8C2T3cmu3IUTg%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5de2c=
+182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bXshj=
+I46QB1BLvY3Y_NKsWVNzAOER0xvqjbKN6wm9CwTKuVxT9ue2q6cq0h5UiUvHW1bVNzFGCNFoLtF=
+vNrW29TgpEZ8bYTHKwBynk4n1capt8cudd1cH8WQ-WGAaZ_TUhJik6YWO3m5iIgRfTPb8LBWi6o=
+OkYYvBLcDzEpq5EDlphqtLbgwBbfHUA_-MwkTdxi_9X2IHgDc3bkftHLvc1BGi7bT81iZ22MWRV=
+u0Kv7_gTcp7pmtlfsIsgYln6bb1k9BpjpYIjexTwQidFW5AFK9T4Eq6LJ0t7LwZ-e6_94jhoigU=
+AkiIU3" shash=3D"W/WnyyJLghfAmLLm6rW1fD5xF5Zf171GXhEf8rhrIF6Q/IdCWVzBKsckYl=
+IAWVlXGwSl+U5BSYoleQO753PpMd3l6J6KQriyvMlEkUrw6Wpa8ABZBtiPiH8R6WkXFS2uk9hP1=
+X0cuhLDwwXDAdeXlX57/yR1Xj6FWopdWDB7KlA=3D"><img width=3D"32" style=3D"width=
+:32px; font:16px/20px Arial, Helvetica, san-serif; color:#000;" alt=3D"YouT=
+ube" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/=
+669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/Foote=
+r/youtube.png"> </a></td><td style=3D"padding: 0 0 32px 0;" align=3D"center=
+"><a style=3D"text-decoration:none;" href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_=
+t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882=
+c%26_e%3DZZaZbdGf5bXshjI46QB1BKl6SXJdjJC7iUzFycgnjAjHS7opRib9VkIu-evXZbqdrW=
+vjh9sw7GvMgJegPplYMBZCT3FMaOJBxl3_RojYxmuyf9y9kjBDfpTwXBozrYy6VCp2pDGBSCYCT=
+4zcSBxorWAovHl5RodPStwkewNCYmlW5WdghhLFL9mf4PTJi7FbkCl1n8iXlWJ3AHIP5xZ5th8P=
+uuPNKAwTVQaTWIUno1ru4P5x2Lycu-_ktSNW5FVoobZxZsJCwlwogUA7zsi1_cgGUlDS61NyJ8j=
+Lj1MTWrg%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c=
+4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456=
+653778811&amp;sdata=3DkA15Zj5trqJrl20HUNPmUitHSq1hm3qqsjSiayLbRa0%3D&amp;re=
+served=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c=
+12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_=
+e=3DZZaZbdGf5bXshjI46QB1BKl6SXJdjJC7iUzFycgnjAjHS7opRib9VkIu-evXZbqdrWvjh9s=
+w7GvMgJegPplYMBZCT3FMaOJBxl3_RojYxmuyf9y9kjBDfpTwXBozrYy6VCp2pDGBSCYCT4zcSB=
+xorWAovHl5RodPStwkewNCYmlW5WdghhLFL9mf4PTJi7FbkCl1n8iXlWJ3AHIP5xZ5th8PuuPNK=
+AwTVQaTWIUno1ru4P5x2Lycu-_ktSNW5FVoobZxZsJCwlwogUA7zsi1_cgGUlDS61NyJ8jLj1MT=
+Wrg%3D" shash=3D"yQdsj4GTJVsjB5cLk3YED07fzYI2UTqFcmd2bpAgxig1x0vq6NS4qzBovu=
+UduM2OU/hYOsyl8joB/v9AmauNrLS0xEt94t72py/5E6jrCdh4czP3sVTtnmiQpniue1V5sV46H=
+KlvU7ZB/IY4twGfsselq5X+JxTrdudTNwGmnuI=3D"><img width=3D"32" style=3D"width=
+:32px; font:16px/20px Arial, Helvetica, san-serif; color:#000;" alt=3D"Link=
+edIn" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators=
+/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/c862c12dcd894e7aaa5de2c182120673/Foot=
+er/linkedin.png"> </a></td></tr></tbody></table></td></tr><tr><td style=3D"=
+font:11px Arial, Helvetica, san-serif; color:#DBDDE1;" align=3D"center" cla=
+ss=3D"plr-15"><a style=3D"font:12px Arial, Helvetica, san-serif; color:#DBD=
+DE1; letter-spacing: .015em; text-decoration:none;" href=3D"https://nam02.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%=
+2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b=
+83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BDybr-J36r7BTOE45Qsth2MngJG-UNb=
+wPz8zv9eKmpYYziY8AdfgmHjkg6VaeZKnfwGDalCV-_NlYFsyrbT3fmIUD3xhDUxpnDy1KkjfMf=
+KCSinkhhHGccCiE7NiRNVoAYzsqkuYJtEYIk9Ej9nwOB9ttqGlvp676yTJffVcJ4jELZflRTh50=
+HYnaZ7oA7h-jPr4i3kVb1bYDp1h3UZ2MC53aCCH1VIgJh6GzYm1xCj-8doDZbro9R1iYlsXOHri=
+MKnnZyUf2Ni88-aUwXqnM6U%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu=
+%7C2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C0%7C637360456653778811&amp;sdata=3D6SDXxXQeNxWQ6EgSPNDcqtB9M4GNAlNfOihi%2=
+B9SowAk%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/u=
+/click?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1=
+d123696882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BDybr-J36r7BTOE45Qsth2MngJG-UNbwPz=
+8zv9eKmpYYziY8AdfgmHjkg6VaeZKnfwGDalCV-_NlYFsyrbT3fmIUD3xhDUxpnDy1KkjfMfKCS=
+inkhhHGccCiE7NiRNVoAYzsqkuYJtEYIk9Ej9nwOB9ttqGlvp676yTJffVcJ4jELZflRTh50HYn=
+aZ7oA7h-jPr4i3kVb1bYDp1h3UZ2MC53aCCH1VIgJh6GzYm1xCj-8doDZbro9R1iYlsXOHriMKn=
+nZyUf2Ni88-aUwXqnM6U%3D" shash=3D"r2fawG+lODfLQk2W7xlTBMXAFwA8D02eAx9DXwalS=
+PF88mu2D/UKIXaunTJoxeGtWwLMBpOm/CeIB0jytZo7/jVqNrD5FGLJW4vFFDws6/D1H477RGOf=
+niTUHPEfe/agyP2c2N/wa7rklvpR6sHEVZJAnYAM3vNgJUXgl5vlslg=3D">Support</a>&nbs=
+p;&nbsp;|&nbsp;&nbsp; <a style=3D"font:12px Arial, Helvetica, san-serif; co=
+lor:#DBDDE1; letter-spacing: .015em; text-decoration:none;" href=3D"https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.mastercl=
+ass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21=
+a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9=
+DAp96q1Gh6p45Xa4SVmjCMVt8oERDnjD9wIV3syIGLnIr36nZh4xw1G5R02h8Bx2qlaFtgvtGnM=
+Vfs6H8xMg80Nq3VBZ4_RjXCavRCFYcQ0Yfm-rs5nC0frK9Z8Znh_FyWbAQcPpLe7S7eTfm0nHeg=
+PeAayZWVkO4QYXWq31wW5cDxJ6Eusdg9ZjZNiN_hSyaXEKkvr-ecyDCrowheF3neen8Lu3eXjYb=
+jBJqKmpsfU202p1iy_K-dv2-M5Es-wk51JNjKCTC4hke5iz4PUN5LsD2GAFOtOPi-ZuWBqV_KTf=
+4Av-QpresXr2HV3Ie-v8JQDaz-CMzIEHa1WgMx0LtA7_IucA-DmuJi5WGJk7ZEw%253D%253D&a=
+mp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf=
+55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653788800&amp;s=
+data=3DkLah25aqow7XHZWQV2xUiP4cSf%2FyFQtnst5EVQIN%2BQI%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7a=
+aa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdG=
+f5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj9DAp96q1Gh6p45Xa4SVmjCMVt8oERDnjD9wIV3sy=
+IGLnIr36nZh4xw1G5R02h8Bx2qlaFtgvtGnMVfs6H8xMg80Nq3VBZ4_RjXCavRCFYcQ0Yfm-rs5=
+nC0frK9Z8Znh_FyWbAQcPpLe7S7eTfm0nHegPeAayZWVkO4QYXWq31wW5cDxJ6Eusdg9ZjZNiN_=
+hSyaXEKkvr-ecyDCrowheF3neen8Lu3eXjYbjBJqKmpsfU202p1iy_K-dv2-M5Es-wk51JNjKCT=
+C4hke5iz4PUN5LsD2GAFOtOPi-ZuWBqV_KTf4Av-QpresXr2HV3Ie-v8JQDaz-CMzIEHa1WgMx0=
+LtA7_IucA-DmuJi5WGJk7ZEw%3D%3D" shash=3D"hPe4haIYFyLpr8AeShar1f3YZ0ZHJzBP6+=
+ipj1oREnQFA20bk94eNPEtjngXgYqJT8vNCU07A0DumtAB2IMZlkWN7o4HxMtOEDQ2mmPwAl4MA=
+1kHLm7xuuXVTAM+bjc5w3//HAFSRJh1J3NfvagYYR4QBNdeOQ9xCD6AXsLdzao=3D">Gifts</a=
+>&nbsp;&nbsp;|&nbsp;&nbsp; <a style=3D"font:12px Arial, Helvetica, san-seri=
+f; color:#DBDDE1; letter-spacing: .015em; text-decoration:none;" href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.mas=
+terclass.com%2Fu%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0=
+b8b21a719479b83cb1d123696882c%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2n=
+N-Bj_b7fSXwRidXp6SVzT4dS66T4CKxjfHAmmKk6UZA62jC_Rt1kcCHDkjJC1P4tYF3651s4kNh=
+xk3p5pNLQRW7POdJHd6INanUCft_TYmoWUp4M1Mt3KqyOZGCCWy_UT53bqWg0mPe5D-oeKG0vll=
+kOiWAqGPggmr55O_pKzpoCnduYLdgUGeSVROAP2AOB6-R30BB8FSP8decUhoMkTkjLhC8_BOSSe=
+qJaWmFoGQiD30Lg%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C=
+2e54d3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637360456653788800&amp;sdata=3DquzFFJwiKOLUiHs5XNDLfHQhyldgPOfafP8Fbv3u3=
+F0%3D&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/u/clic=
+k?_t=3Dc862c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d1236=
+96882c&amp;_e=3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_b7fSXwRidXp6SVzT=
+4dS66T4CKxjfHAmmKk6UZA62jC_Rt1kcCHDkjJC1P4tYF3651s4kNhxk3p5pNLQRW7POdJHd6IN=
+anUCft_TYmoWUp4M1Mt3KqyOZGCCWy_UT53bqWg0mPe5D-oeKG0vllkOiWAqGPggmr55O_pKzpo=
+CnduYLdgUGeSVROAP2AOB6-R30BB8FSP8decUhoMkTkjLhC8_BOSSeqJaWmFoGQiD30Lg%3D%3D=
+" shash=3D"pke/XRvZkx96TYFBAa+/21/KsxtkIzkLv6ysWovyWxRRlNfeXTRYR+btdyS8rB3U=
+26QF0r95Z+FbZj54FQnjpBShVEWhWSezcMnzMD4t921BuFaNwAh0G2VqJW5dFwhVarLCBPrFW3h=
+Z9Bh+iL/2H/gy1Yju8yxMpetT8RvuhYo=3D">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a=
+ style=3D"font:12px Arial, Helvetica, san-serif; color:#DBDDE1; letter-spac=
+ing: .015em; text-decoration:none;" href=3D"https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2Fu%2Fclick%3F_t=
+%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83cb1d123696882c=
+%26_e%3DZZaZbdGf5bXshjI46QB1BEnYu4SwrpJfubvx2nN-Bj_R1FnMKaq6zvV1fqAAmL8liyr=
+kFMA-waoa53amgTto9O6WI8mWnjMqK1KsYNAefWEZGdH_zXOpt32MXeR8bA4xyhecxxM0RLfE6S=
+RH9eMkcTLdYjTg-Ql8kDHSWd-a841AnLX4rHE4t4_5Cew7kVztc_LCQGJF1qy8CT4ySnMhOW5KC=
+Yz3QXDuPwdSChipWvAaY-tzj9YIPxpCkfGjnkGQIl7OLW2yAdosbkvktBcm6g%253D%253D&amp=
+;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9da88108d85bf55=
+abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653798795&amp;sda=
+ta=3DtbaGtyzVs5arH4il4CRmAej%2FK7RHbApdbJtwu1Ls5nk%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862c12dcd894e7aaa5d=
+e2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;_e=3DZZaZbdGf5bX=
+shjI46QB1BEnYu4SwrpJfubvx2nN-Bj_R1FnMKaq6zvV1fqAAmL8liyrkFMA-waoa53amgTto9O=
+6WI8mWnjMqK1KsYNAefWEZGdH_zXOpt32MXeR8bA4xyhecxxM0RLfE6SRH9eMkcTLdYjTg-Ql8k=
+DHSWd-a841AnLX4rHE4t4_5Cew7kVztc_LCQGJF1qy8CT4ySnMhOW5KCYz3QXDuPwdSChipWvAa=
+Y-tzj9YIPxpCkfGjnkGQIl7OLW2yAdosbkvktBcm6g%3D%3D" shash=3D"narhygF6YTouwHfD=
+SA2MD2to3Ml3GWnfIWjWyAx06r9L8mTY9s4n/bX8ylaye7l/mxXOzlR5WrKed1lMgMNJk12kYq9=
+ngLAfQwNj3gyJCBvYM8c/eeQhGaYxUqDTo2I/0cK3B2P/nY0e8lLXyr4VI4uVUMBkVIP0+OytkR=
+r57o4=3D">Terms</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style=3D"font:12px Arial, He=
+lvetica, san-serif; color:#DBDDE1; letter-spacing: .015em; text-decoration:=
+none;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Flinks.masterclass.com%2Fe%2FencryptedUnsubscribe%3F_r%3Dc862c12dcd8=
+94e7aaa5de2c182120673%26_s%3Daa0b8b21a719479b83cb1d123696882c%26_t%3DBvOFQG=
+Tyjf_Ue0Y2dPMmg2iuUO20yT4ivMeGlFBBCrO3jPzEU9vjm9XHi1LXZ33cva97XjJ9_YjzdKVId=
+Io-9-hrRpa6QElbcJVwolSnBEp6iMJ5dpaWOv7xrYSmIzZKeM2E30P-MeQIQUGruxO4qiuoQ2FF=
+khjTmY1jx-h5cOM%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d=
+3e4102c4c9da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7360456653798795&amp;sdata=3Dq20x17WH2MhY5IEAw0MqgiiFM01KM7WruEVOiolvWHk%3D=
+&amp;reserved=3D0" originalsrc=3D"https://links.masterclass.com/e/encrypted=
+Unsubscribe?_r=3Dc862c12dcd894e7aaa5de2c182120673&amp;_s=3Daa0b8b21a719479b=
+83cb1d123696882c&amp;_t=3DBvOFQGTyjf_Ue0Y2dPMmg2iuUO20yT4ivMeGlFBBCrO3jPzEU=
+9vjm9XHi1LXZ33cva97XjJ9_YjzdKVIdIo-9-hrRpa6QElbcJVwolSnBEp6iMJ5dpaWOv7xrYSm=
+IzZKeM2E30P-MeQIQUGruxO4qiuoQ2FFkhjTmY1jx-h5cOM%3D" shash=3D"unEhT3SPV8Mskk=
+fgXiuuU0lCZ0D5MnFHQxMvfqOOIiVyV5TlWgx2QkLzOZSbsGRXzn4jiFaYtD5sgMyKccvGhhSSc=
+haxe7ag9tSbSP0kL2KPm/0ycAETnMuxBP1ExiCxWZSHDJ3kH+RNZAD4BcCjx6cZ6eEhYGXej/xc=
+7CF+e2E=3D">Unsubscribe</a> </td></tr><tr><td class=3D"plr-15 pb-30" valign=
+=3D"top" align=3D"center" style=3D"font:12px Arial, Helvetica, san-serif; c=
+olor:#949AA4; padding: 25px 0 32px 0; letter-spacing: .015em;">=C2=A92020 M=
+asterClass, <a style=3D"font:12px Arial, Helvetica, san-serif; color:#949AA=
+4; letter-spacing: .015em; text-decoration:none;" href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flinks.masterclass.com%2F=
+u%2Fclick%3F_t%3Dc862c12dcd894e7aaa5de2c182120673%26_m%3Daa0b8b21a719479b83=
+cb1d123696882c%26_e%3DjMW6uiM2WgY2SR4QIseNpDcvMznpnoxHIUdA8eh4rnhCOwRSdJLYx=
+NA3WDnQFk0ET2CR8GJ6cwhjlRaTvX4fsTbYqpjgQEC8F3eWrHazTwxZtAZ54IZB_4QB_5M46jFG=
+KrgRGLMKr7hqvkZgsbbc-9oifmRAuW5e_UPm3RWHnR7gumc-C6zEo_ay6hfIpKOHTnqcXmnXK44=
+B9vrhLWFQg-1aKRKRP9_LMy9rhPuINwNnBoaYeHEZgicv0CoibRTTaaGH785Ww2ellTeHfnsLWQ=
+%253D%253D&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C2e54d3e4102c4c9=
+da88108d85bf55abe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637360456653=
+798795&amp;sdata=3DQTl740UKFbhAZ6pXdGrcJicrVKHiqB%2F%2BRYq2L8Ck5DA%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://links.masterclass.com/u/click?_t=3Dc862=
+c12dcd894e7aaa5de2c182120673&amp;_m=3Daa0b8b21a719479b83cb1d123696882c&amp;=
+_e=3DjMW6uiM2WgY2SR4QIseNpDcvMznpnoxHIUdA8eh4rnhCOwRSdJLYxNA3WDnQFk0ET2CR8G=
+J6cwhjlRaTvX4fsTbYqpjgQEC8F3eWrHazTwxZtAZ54IZB_4QB_5M46jFGKrgRGLMKr7hqvkZgs=
+bbc-9oifmRAuW5e_UPm3RWHnR7gumc-C6zEo_ay6hfIpKOHTnqcXmnXK44B9vrhLWFQg-1aKRKR=
+P9_LMy9rhPuINwNnBoaYeHEZgicv0CoibRTTaaGH785Ww2ellTeHfnsLWQ%3D%3D" shash=3D"=
+rHEqdOGaiyNdejmOdIALh6jzMSsWW0iie5DmJMYJd+D4UcG4kSoeCz7I89bnZIM6PqgbtoVtDlD=
+0aWHgKU1mi26NSMvN437AaAWvgjQQzFUAMw7p6WaxDN6+0z+NQNlV8TMjqJXPMUzbu2tbrsRyjF=
+AlMgBDb4/Ss0V/oePnZaw=3D">660 4th Street #443, San Francisco, CA 94107 USA<=
+/a> </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr><!-- end footer --></tbody></table></td></tr><tr><td class=
+=3D"hm" style=3D"border-collapse: collapse; border-spacing: 0; mso-line-hei=
+ght-rule: exactly; line-height: 0;"><div style=3D"white-space:nowrap; font:=
+15px/0 courier;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp;</div></td></tr></tbody></table><img border=3D"0" wid=
+th=3D"1" height=3D"1" alt=3D"" src=3D"http://tracking.masterclass.com/q/8r0=
+OPpmnAm1G2rEOueC5Xw~~/AANXAQA~/RgRhR25cPlcDc3BjQgoAHFzpZF-vfgptUhZld3oxOTAw=
+MDBAdXRkYWxsYXMuZWR1WAQAAAAA"> </body></html>
+
+--B_3686568091_256041130--
