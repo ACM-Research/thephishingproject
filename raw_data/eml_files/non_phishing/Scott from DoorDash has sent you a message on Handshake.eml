@@ -1,0 +1,471 @@
+Received: from DM6PR01MB5755.prod.exchangelabs.com (2603:10b6:300:db::24) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR21CA0062.NAMPRD21.PROD.OUTLOOK.COM; Tue, 4 Aug 2020 19:45:07 +0000
+Received: from CY4PR18CA0071.namprd18.prod.outlook.com (2603:10b6:903:13f::33)
+ by DM6PR01MB5755.prod.exchangelabs.com (2603:10b6:5:204::31) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3239.21; Tue, 4 Aug 2020 19:45:04 +0000
+Received: from CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:13f:cafe::ad) by CY4PR18CA0071.outlook.office365.com
+ (2603:10b6:903:13f::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3239.16 via Frontend
+ Transport; Tue, 4 Aug 2020 19:45:04 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.158.52)
+ smtp.mailfrom=notifications.joinhandshake.com; utdallas.edu; dkim=pass
+ (signature was verified)
+ header.d=notifications.joinhandshake.com;utdallas.edu; dmarc=pass action=none
+ header.from=notifications.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ notifications.joinhandshake.com designates 192.237.158.52 as permitted
+ sender) receiver=protection.outlook.com; client-ip=192.237.158.52;
+ helo=a3.mail.joinhandshake.com;
+Received: from a3.mail.joinhandshake.com (192.237.158.52) by
+ CY1NAM02FT003.mail.protection.outlook.com (10.152.74.151) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3239.17 via Frontend Transport; Tue, 4 Aug 2020 19:45:04 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=notifications.joinhandshake.com; q=dns/txt; s=pic; t=1596570304;
+ h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date:
+ List-Unsubscribe: List-Unsubscribe-Post;
+ bh=nfBpDXi9O1cpK13qtdi2ob2fX/kUr5x1kQ9C5vv8C6E=; b=EhvxBXJXiyLyDaFG2YD/AjvHJ8ONfJc5g5ZcbFurU3muPH2kUDyOQDvhPkXNW/+/DWKnZr0q
+ dqSMh4nj1ywZ00/bBidpAJDnAvgmWGak82xG6CliKiR+oxR0ch5SuLZ2Ar4bJwRUOSpCmdBj
+ 9ImwZermp242eKeG9oMNvLU7JEU=
+X-Mailgun-Sending-Ip: 192.237.158.52
+X-Mailgun-Sid: WyI2ZjhkOCIsICJld3oxOTAwMDBAdXRkYWxsYXMuZWR1IiwgIjJkOTY3Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tezbzgy3sm2j5giydembqhaydimjzgq2tamzogexeirjsgu4tencciiydkmzuha3uejjugbxg65djmzuwgylunfxw44zonjxws3timfxgi43imfvwkltdn5wsm2b5he2tmmrqhfswenrthfstczjvmizdiyrzha2teodbhbtdcmzqgezsm5dbnrsw45c7mvxgoylhmvwwk3tul5rwc3lqmfuwo3s7nfsd2mzwg42dgjtimfxgi43imfvwkx3on52gsztjmnqxi2lpnzpwszb5ha2dmmruhe4tmnbgmnqw24dbnftw4x3pmjvgky3ul52hs4dfhvfg6yrgoi6wk532ge4tambqgastimdvorsgc3dmmfzs4zleoutha4tfnvuxk3k7mvwxa3dppfsxex3jmq6tcnzrga2cm5b5nzxxi2lgnfrwc5djn5xf6zlnmfuwyjtuhvrxezlborsv62loorsxe3tbnrpw2zltonqwozk7mnqw24dbnftw4xztgy3timzgoq6wg4tfmf2gkx3jnz2gk4tomfwf63lfonzwcz3fez2gc3dfnz2f6zlom5qwozlnmvxhix3dmfwxayljm5xf6zdborsv62lehu2tgmjwhathezldnfygszloorpxg5dvmrsw45c7nfsd2mrvgu4tkmbtgmtggylnobqwsz3ol5xwe2tfmn2f643povzggzj5nfxhizlsnzqwyjtjnz2gk4tomfwf63lfonzwcz3fl5uwipjxgqzdqmrzgyya@notifications.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJx9kc9uwyAMxp9mHCP-Bw5cqu2yl0AE3JYuQAREU_f0Szat21RtXIxsf_5-loOhQcsRRUMxxVhhTjQXmA1keHyiQlN-OGDBuBoPDxzn0uMxetdjyW24lJjPLod2di8w-JLQ2WghKdYwSaaBgJgon7QSVDl1JAwThrqbIXcL-eROkPavd2lx8ZRtDIbJkTN0G2p_Gu51xSXlWkuObqoyXcB3268LmOcyoWrg9Y1ovL2NeO3BzbNrA4QVLRVSXJOFtMzlCnWfSEaCOermlxMkF-ct6Su4DjbmDjW72SZobcP-Rv7k_bPxv23DhyAYwYhUqIKPS9wbWl_DHrcSFUJvt2B3y7ayVg_myw7dAW7ikVNFtcTvDkSmxQ&amp;data=02%7C01%7CEric.Zhang%40UTDallas.edu%7C15416047d8ee4f34c63b08d838aee224%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637321671075585971&amp;sdata=cimzzJfDkM5KgGLj2fdakloV%2FRa%2F2EcQwVGAKEOlWlw%3D&amp;reserved=0>
+Received: by luna.mailgun.net with HTTP; Tue, 04 Aug 2020 19:45:03 +0000
+Date: Tue, 04 Aug 2020 19:45:03 +0000
+Message-Id: <20200804194503.1.DE25924BB053487B@notifications.joinhandshake.com>
+X-Mailgun-Variables: {"talent_engagement_campaign_id": "36743",
+ "handshake_notification_id": "846249964", "campaign_object_type": "Job",
+ "premium_employer_id": "17104", "talent_engagement_campaign_date_id":
+ "53168", "recipient_student_id": "25595033", "campaign_object_source":
+ "internal", "internal_message_id": "74282960"}
+X-Mailgun-Native-Send: true
+X-Mailgun-Track-Opens: true
+X-Mailgun-Track-Clicks: true
+X-Mailgun-Tag: notification_email
+X-Mailgun-Tag: create_internal_message_campaign_36743
+X-Mailgun-Tag: create_internal_message
+X-Mailgun-Require-Tls: false
+To: ewz190000@utdallas.edu
+From: Handshake <handshake@notifications.joinhandshake.com>
+Subject: Scott from DoorDash has sent you a message on Handshake
+Return-Path: handshake@notifications.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Aug 2020 19:45:04.2451
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 15416047-d8ee-4f34-c63b-08d838aee224
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 15416047-d8ee-4f34-c63b-08d838aee224
+X-MS-TrafficTypeDiagnostic: DM6PR01MB5755:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.237.158.52;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a3.mail.joinhandshake.com;PTR:a3.mail.joinhandshake.com;CAT:NONE;SFTY:;SFS:;DIR:INB;SFP:;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Aug 2020 19:45:04.0971
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 15416047-d8ee-4f34-c63b-08d838aee224
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5755
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6528556
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3239.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?ZKFWIMvjHt3VlfS6Une33yFMpg7VQQDi1eig7xJQZbczBN0Gp0Y2i7BLre54?=
+ =?us-ascii?Q?tBGTsT+m/fY03l/BD6cAhrZ9LIvM2sj2IhamSikl5XpWNY0qjczqq/CGEQaB?=
+ =?us-ascii?Q?gNhyU1ea15BrmcXvEPIawGrmoz7jJNSflIf6ukZ+pOpHVQHkDG5JwcHtURlu?=
+ =?us-ascii?Q?4Iahww0BBXywY8pJD4QUVCMr2w62FM01lclxj2dxSIwKhQDhstTUdV8tTSD0?=
+ =?us-ascii?Q?2RJFhz35Iq6Zfxe7yAVg7L1Vc7ollnBE/2S4Q246opykJQ6iZsBweJv9vpgZ?=
+ =?us-ascii?Q?NjZ0SGBYOOzF9ZmG9f+vuBZxP8EsDvJk6643BXD45pDVaCzLMVzutU11Sr+s?=
+ =?us-ascii?Q?p+xXJZnrCJLX1VS7S68Hjy3btADNzHHG3CaVnfRDOt9mtUSH26ZYHU8tbcvL?=
+ =?us-ascii?Q?R4cuFv6oLg/iEJLVhr61wRPuRrkBOqffGIRiuH0NkvIKHk31Vh4c9kfc2liP?=
+ =?us-ascii?Q?EckUE1pnE6zNDPS5lkYNZlL/3nZ52BLAf3aTFiMznVpkiP7GLVJjmz2FNeZ4?=
+ =?us-ascii?Q?4pUXV2bYjQxHDRYxbPh/qjaWSc6qQcEzXISfkB0316/QHV2e0yb3DHsDq9C3?=
+ =?us-ascii?Q?hMCTDyv8aoSohceFS6ZCYnXgLZltmA4fh90H7eT5V1w9ru/ZMyOI8Nwya+C0?=
+ =?us-ascii?Q?QgYtjdcQ1bQtVW0qlk5jtuVAe71s9V8je4bcHn91VOFv/jpkHsgymgFcSksf?=
+ =?us-ascii?Q?pplxE713AK+NTbgRdSndU/JTGEfLBf4Au1acPBwyCy+AD0F56De5yjxH4V/K?=
+ =?us-ascii?Q?k3LH5FHTzikcwfT6xhc8hyyFmPJtIXWiznmwtP/+4dcfZPw5aOkOmo4BKtYv?=
+ =?us-ascii?Q?GyHcumsE+7OCp3ctNrgp0qjUDPXkkNtceG4FEu6UKqli35kgPQtvMMjAzX32?=
+ =?us-ascii?Q?BVGIZlecn7QvoMwfIm/rJ3GbcSFzeiopEioWr8emgOghY94tDeJTk6eYj/UV?=
+ =?us-ascii?Q?V1EoXoaLWyELH3UYfbRYhIAGJur/NcoVdptmflYr2AYJn/TkYtRcfjdSyfu5?=
+ =?us-ascii?Q?kU6k4xH8U+M17Ya9tBA9ux+AEoc/wT+eOxYmfUrXuK03EAbuveVJXdXI0is3?=
+ =?us-ascii?Q?W1Ytq4AKuob/pKWsRVJLSvTm9zFGnlaz/TuEXXq5MgFsflCvQH327yxgPyuD?=
+ =?us-ascii?Q?bRp/JWAgcbpU5OeO7RdMVH5m8chAo/dHYyekH+oiOOquyoPWGSVVYNcK9bgp?=
+ =?us-ascii?Q?Bgf40LNivCSdE2KKGUkBjtRCh67nhzYKjeZ9kjKH4kOJziQm+ZSUVzPKgzYN?=
+ =?us-ascii?Q?XGb09v5Xb5iAlN0NtrglV4hZwc8m/DqvB7DS5Yjs9E7w8uxhiivQ3gAaPQV6?=
+ =?us-ascii?Q?SgD+qVMBxUPmwgI2WJ8ZZYhPliVzHOnV/ajcz9kBUI+9/PnXFEJEBsvnDufy?=
+ =?us-ascii?Q?ReifTClERcp2l8sNcP7tN/CwJXdQfBBpz8gC+/KdtDEPsfcLcmK1HBll3R+4?=
+ =?us-ascii?Q?R4IBuUT2bv/bw6X9wlYf9mTTkl8JOXLtrqnk7v7AnD2r9mTTMec1K/np8MiK?=
+ =?us-ascii?Q?oX7jboC63vMxZSgsBhkyhmsP8KaECv5fBIxnE3Swpc1JezGgiUiOr44ZZjmF?=
+ =?us-ascii?Q?0vSr5e4TpIK/bFHp10o=3D?=
+Content-type: multipart/alternative;
+	boundary="B_3686568091_364937852"
+MIME-Version: 1.0
+
+--B_3686568091_364937852
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+=20
+Hello Eric,
+
+You have a new message from Scott M=20
+
+DoorDash=20
+DoorDash Delivery Driver/Bike/Scooter=20
+Part-Time Job =E2=80=94 United States=20
+=20
+Apply to Job =E2=86=92=20
+Hi Eric,
+
+I=E2=80=99m Scott and I work on the Dasher engagement team at DoorDash. I see tha=
+t you=E2=80=99re attending University of Texas at Dallas so I wanted to let you kn=
+ow we=E2=80=99re actively on-boarding drivers (=E2=80=9CDashers=E2=80=9D) in your area to deli=
+ver food and other items from local merchants to hungry customers. In case y=
+ou haven=E2=80=99t heard of DoorDash before, we give customers an easy way to orde=
+r delivery from well-known restaurants like Cheesecake Factory and Chipotle,=
+ and from local restaurants including your college town favorites.=20
+
+Delivering with DoorDash (=E2=80=9CDashing=E2=80=9D) doesn't feel like being an everyda=
+y delivery driver. When you become a Dasher, you=E2=80=99re your own boss and you =
+can choose exactly when and where to work. You=E2=80=99ll learn how to work with l=
+ocal businesses and have the opportunity to interact with people coming from=
+ a diverse set of backgrounds.
+
+You don=E2=80=99t even need a car -- you can deliver from your bike, motorcycle, =
+scooter, or moped if you have one.
+
+I=E2=80=99d love for you to sign up if it sounds interesting. You can get started=
+ by clicking below.
+
+Thanks!
+Scott
+DoorDash=20
+View the Message and Reply
+
+Thank you,=20
+The Handshake Team=20
+
+You received this email because Handshake partners with your school to help=
+ you grow your career. If you'd no longer like to receive emails like this y=
+ou can sign in to manage your notification preferences or unsubscribe.=20
+=20
+
+P.O. Box 40770, San Francisco, CA 94140
+ 
+
+--B_3686568091_364937852
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<!DOCTYPE html><html style=3D"background-color:transparent"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta content=3D"width=3Ddevice-width" name=3D"viewport"><title>Handshake</ti=
+tle><style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px =
+solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px=
+ solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+.campaign-card a:hover{text-decoration:none;color:inherit}
+.campaign-card .campaign-actions a:hover{text-decoration:none;color:#1569e0=
+;cursor:pointer;display:block;font-weight:500;font-size:0.9em;height:auto;l=
+ine-height:20px;text-size-adjust:100%;width:auto;word-break:break-word;padd=
+ing:0;-webkit-box-direction:normal;-webkit-font-smoothing:subpixel-antialia=
+sed;-webkit-tap-highlight-color:transparent}
+@media (max-width: 767px) {
+.avatar--mobile-md{max-width:56px}
+}
+@media (max-width: 480px) {
+.campaign-card .campaign-summary{font-size:12px;padding:8px}
+.campaign-card .campaign-summary .summary-content .summary-icon{display:non=
+e}
+.campaign-card .campaign-summary .summary-sub-content{padding:4px, 0;font-s=
+ize:10px;width:100%}
+.campaign-card .campaign-actions{padding:8px}
+}
+@media (max-width: 1050px) {
+.campaign-card .campaign-summary .summary-content .summary-icon img{width:5=
+6px;height:56px}
+}</style></head><body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple=
+-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica =
+Neue&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px"><tabl=
+e class=3D"body email-layout" data-made-with-foundation=3D"" style=3D"backg=
+round-color:transparent;max-width:580px;table-layout:fixed;border:0;border-=
+collapse:collapse;width:100%;text-align:inherit;margin:auto;padding:0"><tbo=
+dy><tr><td class=3D"email-header"><table style=3D"width: 100%"><tbody><tr><=
+td><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A=
+%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UkFuwyAQfI05WhiwDQcOj=
+dIe-gkLwzqmNWBh3Cp9fXHSpK2SFiGx2tndmR1hJDGiaZGVBBOMOWaVYDWmZVXuH0ktCNvtcE0Z=
+b3cFwz4kO1itkg1-KV-C9aPyZhnVK5Q6ODRKwAYz1RusMAxVTTg2_TAwYxQA7xlHSU3gUwf-oA7=
+gtlArNyt78J01kjYto-g6tPtJuOGcNYQJ0TA0yTGleSnoQ0Ge8l2TUdOk7qjacJpx1y1hjRoKul=
+c62Tebjp1TdoJYkGaDHRi7ugzDlv5KXtTl9C8xpxp01R76F9CpS8cZ5HPoUZTw_lEJnE_27SoOz=
+IrmCC7z5AnzFI4Qt72qtsIMJXmHIkkdQSXorE8QvZqyzmXJ5n0bd3btz8L_PDenBiNrWjUcRdB2=
+tlvBklazvRkidS3yj6A3y57tlBc6dCMwN7eMcCIa_Alfq9kC&amp;data=3D02%7C01%7CEric.=
+Zhang%40UTDallas.edu%7C15416047d8ee4f34c63b08d838aee224%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637321671075526003&amp;sdata=3DtAU7BgqsVbkW7B6Vce=
+ksMRYa7zSE%2BTOPGCs3aTmveHM%3D&amp;reserved=3D0" originalsrc=3D"http://emai=
+l.notifications.joinhandshake.com/c/eJx9UkFuwyAQfI05WhiwDQcOjdIe-gkLwzqmNWB=
+h3Cp9fXHSpK2SFiGx2tndmR1hJDGiaZGVBBOMOWaVYDWmZVXuH0ktCNvtcE0Zb3cFwz4kO1itkg=
+1-KV-C9aPyZhnVK5Q6ODRKwAYz1RusMAxVTTg2_TAwYxQA7xlHSU3gUwf-oA7gtlArNyt78J01k=
+jYto-g6tPtJuOGcNYQJ0TA0yTGleSnoQ0Ge8l2TUdOk7qjacJpx1y1hjRoKulc62Tebjp1TdoJY=
+kGaDHRi7ugzDlv5KXtTl9C8xpxp01R76F9CpS8cZ5HPoUZTw_lEJnE_27SoOzIrmCC7z5AnzFI4=
+Qt72qtsIMJXmHIkkdQSXorE8QvZqyzmXJ5n0bd3btz8L_PDenBiNrWjUcRdB2tlvBklazvRkidS=
+3yj6A3y57tlBc6dCMwN7eMcCIa_Alfq9kC" shash=3D"vn/j+DL01R7IERKektZuURnVccZUXd=
+jKFZIgK+dS4N3kw+MgE/yUulCevdEMSA28xnbVhk63B5V8t5/IKWL6KbOq4esxIBy6oA9CiTB1K=
+zNOBh8f8mHmaDdD498MGtKOFWh/MNGMWmOXO3L7Wbmnt3zuLUk7NKL3xjt1D840g9s=3D" styl=
+e=3D"color:#254fa5;font-weight:inherit;color: inherit; text-decoration: non=
+e;"><img alt=3D"Handshake" class=3D"handshake-logo" src=3D"https://handshak=
+e-production-cdn.joinhandshake.com/static_assets/hs-logo-red-lg.png" style=
+=3D"margin-top:24px;margin-bottom:16px;width: 159px; height: 24px" title=3D=
+"Handshake"> </a></td><td class=3D"branding" style=3D"width:40px;height:40p=
+x"></td></tr></tbody></table></td></tr><tr><td class=3D"email-content"><div=
+ class=3D"feed"><div class=3D"row list-item"><div class=3D"col-md-12"><p st=
+yle=3D"font-size:18px;line-height:28px">Hello Eric,</p><p style=3D"font-siz=
+e:18px;line-height:28px">You have a new message from <b>Scott M</b> </p><di=
+v class=3D"campaign-card" style=3D"border-color:#e0e0e0;border-style:solid;=
+border-width:2px;box-sizing:border-box;color:rgba(0,0,0,0.8)"><a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Femail.noti=
+fications.joinhandshake.com%2Fc%2FeJx9Ustu3SAQ_Rqzq4V5GLNg0as0i_wEwmZyza1tX=
+MBy0q_v0LxaRS1CMJo58zgHvGFe94oEwyijdKCi00JS3nbt3TcmNROXC5VcDOrSCLrFEh7D5EqI=
+W25vMWyz23ye3Xdop7iS2Wg1SC-hB-2Y1l5Tr7SbtJfDqNXYKVLcAluxsF3dFdZqTm7dXbhuNnj=
+DeyU4eS9q_2xY44PomdC6F2Qxcyl7bvjXht3jPs-z9TEm7_JcZ0FXNSGhkbH6sVccvz_KanM80g=
+QNv_toxDuL9BXTDesrZAUfjhUhY3TJvzrfJkW3f7Ju-mGPjEzsbbSze823jzGVLyceMxYl7-Tie=
+IOp2PK8g3mII0kGzp-dprhQ2KN4tywut-APsidYsbmFdV_iM6RKvFMdFaSYvwSB1YUFnVMCV8CG=
+rUDa3ILD54zqfij7Ius_gf97FP87wRvJu34gCaawhwrI5fD1xhCTUuOX4Z_Ivuhs3tqRTwNishJ=
+sYLqnvwDLguCX&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C15416047d8ee=
+4f34c63b08d838aee224%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637321671=
+075535998&amp;sdata=3DBu95jhLTxNaOP8wxiCJOa4RDpb5sNzT3w87FII9nzD4%3D&amp;re=
+served=3D0" originalsrc=3D"http://email.notifications.joinhandshake.com/c/e=
+Jx9Ustu3SAQ_Rqzq4V5GLNg0as0i_wEwmZyza1tXMBy0q_v0LxaRS1CMJo58zgHvGFe94oEwyij=
+dKCi00JS3nbt3TcmNROXC5VcDOrSCLrFEh7D5EqIW25vMWyz23ye3Xdop7iS2Wg1SC-hB-2Y1l5=
+Tr7SbtJfDqNXYKVLcAluxsF3dFdZqTm7dXbhuNnjDeyU4eS9q_2xY44PomdC6F2Qxcyl7bvjXht=
+3jPs-z9TEm7_JcZ0FXNSGhkbH6sVccvz_KanM80gQNv_toxDuL9BXTDesrZAUfjhUhY3TJvzrfJ=
+kW3f7Ju-mGPjEzsbbSze823jzGVLyceMxYl7-TieIOp2PK8g3mII0kGzp-dprhQ2KN4tywut-AP=
+sidYsbmFdV_iM6RKvFMdFaSYvwSB1YUFnVMCV8CGrUDa3ILD54zqfij7Ius_gf97FP87wRvJu34=
+gCaawhwrI5fD1xhCTUuOX4Z_Ivuhs3tqRTwNishJsYLqnvwDLguCX" shash=3D"fgccPGjaAlM=
+dJiyNiY179fjOFb4CFK79BtjMsJXb6v3mndt9lNY3O4vY/vRAxpQYmGSkRePE30W9NjrvCKqvre=
+H+HHV/CZeybkQj4Ekk/uCZBTRvlSIdRRZ+oH7HoZCKWEW5EuaLTKIN0IyMahP3DDiPF7Ta7J3Rz=
+D6LOiJm788=3D" style=3D"color:#254fa5;font-weight:inherit;text-decoration:n=
+one;color:inherit"><div class=3D"campaign-summary" style=3D"font-family:&qu=
+ot;Suisse Int'l&quot;, -apple-system, system-ui, &quot;Segoe UI&quot;, Robo=
+to, &quot;Helvetica Neue&quot;, sans-serif;font-variant-ligatures:common-li=
+gatures contextual;box-sizing:border-box;padding:16px;font-weight:400;-webk=
+it-font-smoothing:subpixel-antialiased"><div class=3D"summary-content" styl=
+e=3D"display:inline-flex;justify-content:space-between;width:100%"><div cla=
+ss=3D"summary-text" style=3D"display:block;flex-basis:auto;flex-grow:1;flex=
+-shrink:1;width:80%"><p style=3D"font-size:18px;line-height:28px;margin-top=
+:0">DoorDash </p><h1 style=3D"font-weight:700;word-break:break-word;font-si=
+ze:46px;line-height:52px;font-size:18px;font-weight:500">DoorDash Delivery =
+Driver/Bike/Scooter </h1><div>Part-Time Job =E2=80=94 United States </div><=
+/div><div class=3D"summary-icon" style=3D"display:block;flex-basis:auto;fle=
+x-grow:0;flex-shrink:1;width:15%;max-width:20%"><img src=3D"https://s3.amaz=
+onaws.com/handshake.production/app/public/assets/institutions/17104/origina=
+l/hs-emp-logo-data.?1564095364" style=3D"width:72px;height:72px"> </div></d=
+iv></div><div class=3D"campaign-actions" style=3D"display:inline-flex;justi=
+fy-content:flex-start;width:90%;padding:0 0 16px 16px"></a><a href=3D"https=
+://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Femail.notific=
+ations.joinhandshake.com%2Fc%2FeJx9Ustu3SAQ_Rqzq4V5GLNg0as0i_wEwmZyza1tXMBy=
+0q_v0LxaRS1CMJo58zgHvGFe94oEwyijdKCi00JS3nbt3TcmNROXC5VcDOrSCLrFEh7D5EqIW25=
+vMWyz23ye3Xdop7iS2Wg1SC-hB-2Y1l5Tr7SbtJfDqNXYKVLcAluxsF3dFdZqTm7dXbhuNnjDey=
+U4eS9q_2xY44PomdC6F2Qxcyl7bvjXht3jPs-z9TEm7_JcZ0FXNSGhkbH6sVccvz_KanM80gQNv=
+_toxDuL9BXTDesrZAUfjhUhY3TJvzrfJkW3f7Ju-mGPjEzsbbSze823jzGVLyceMxYl7-TieIOp=
+2PK8g3mII0kGzp-dprhQ2KN4tywut-APsidYsbmFdV_iM6RKvFMdFaSYvwSB1YUFnVMCV8CGrUD=
+a3ILD54zqfij7Ius_gf97FP87wRvJu34gCaawhwrI5fD1xhCTUuOX4Z_Ivuhs3tqRTwNishJsYL=
+qnvwDLguCX&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%7C15416047d8ee4f3=
+4c63b08d838aee224%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637321671075=
+535998&amp;sdata=3DBu95jhLTxNaOP8wxiCJOa4RDpb5sNzT3w87FII9nzD4%3D&amp;reser=
+ved=3D0" originalsrc=3D"http://email.notifications.joinhandshake.com/c/eJx9=
+Ustu3SAQ_Rqzq4V5GLNg0as0i_wEwmZyza1tXMBy0q_v0LxaRS1CMJo58zgHvGFe94oEwyijdKC=
+i00JS3nbt3TcmNROXC5VcDOrSCLrFEh7D5EqIW25vMWyz23ye3Xdop7iS2Wg1SC-hB-2Y1l5Tr7=
+SbtJfDqNXYKVLcAluxsF3dFdZqTm7dXbhuNnjDeyU4eS9q_2xY44PomdC6F2Qxcyl7bvjXht3jP=
+s-z9TEm7_JcZ0FXNSGhkbH6sVccvz_KanM80gQNv_toxDuL9BXTDesrZAUfjhUhY3TJvzrfJkW3=
+f7Ju-mGPjEzsbbSze823jzGVLyceMxYl7-TieIOp2PK8g3mII0kGzp-dprhQ2KN4tywut-APsid=
+YsbmFdV_iM6RKvFMdFaSYvwSB1YUFnVMCV8CGrUDa3ILD54zqfij7Ius_gf97FP87wRvJu34gCa=
+awhwrI5fD1xhCTUuOX4Z_Ivuhs3tqRTwNishJsYLqnvwDLguCX" shash=3D"fgccPGjaAlMdJi=
+yNiY179fjOFb4CFK79BtjMsJXb6v3mndt9lNY3O4vY/vRAxpQYmGSkRePE30W9NjrvCKqvreH+H=
+HV/CZeybkQj4Ekk/uCZBTRvlSIdRRZ+oH7HoZCKWEW5EuaLTKIN0IyMahP3DDiPF7Ta7J3RzD6L=
+OiJm788=3D" style=3D"color:#254fa5;font-weight:inherit;color:inherit;text-d=
+ecoration:none;color:#1569e0;cursor:pointer;display:block;font-weight:500;f=
+ont-size:0.9em;height:auto;line-height:20px;text-size-adjust:100%;width:aut=
+o;word-break:break-word;padding:0;-webkit-box-direction:normal;-webkit-font=
+-smoothing:subpixel-antialiased;-webkit-tap-highlight-color:transparent">Ap=
+ply to Job =E2=86=92</a> </div></div><blockquote style=3D"margin:8px 0;back=
+ground-color:#f7f7f7;border-radius:3px;padding:24px"><div><span style=3D"ba=
+ckground-color: transparent;color: rgb(0, 0, 0);">Hi Eric,</span></div><div=
+><br></div><div><span style=3D"background-color: transparent;color: rgb(0, =
+0, 0);">I=E2=80=99m </span>Scott <span style=3D"background-color: transpare=
+nt;color: rgb(0, 0, 0);">and I work on the Dasher engagement team at DoorDa=
+sh. I see that you=E2=80=99re attending University of Texas at Dallas so I =
+wanted to let you know we=E2=80=99re actively on-boarding drivers (=E2=80=
+=9CDashers=E2=80=9D) in your area to deliver food and other items from loca=
+l merchants to hungry customers. In case you haven=E2=80=99t heard of DoorD=
+ash before, we give customers an easy way to order delivery from well-known=
+ restaurants like Cheesecake Factory and Chipotle, and from local restauran=
+ts including your college town favorites.</span> </div><div><br></div><div>=
+<span style=3D"background-color: transparent;color: rgb(0, 0, 0);">Deliveri=
+ng with DoorDash (=E2=80=9CDashing=E2=80=9D) doesn't feel like being an eve=
+ryday delivery driver. When you become a Dasher, you=E2=80=99re your own bo=
+ss and you can choose exactly when and where to work. You=E2=80=99ll learn =
+how to work with local businesses and have the opportunity to interact with=
+ people coming from a diverse set of backgrounds.</span></div><div><br></di=
+v><div><span style=3D"background-color: transparent;color: rgb(0, 0, 0);">Y=
+ou don=E2=80=99t even need a car -- you can deliver from your bike, motorcy=
+cle, scooter, or moped if you have one.</span></div><div><br></div><div><st=
+rong style=3D"background-color: transparent;color: rgb(0, 0, 0);">I=E2=80=
+=99d love for you to sign up if it sounds interesting. You can get started =
+by clicking below.</strong></div><div><br></div><div><span style=3D"backgro=
+und-color: transparent;color: rgb(0, 0, 0);">Thanks!</span></div><div>Scott=
+</div><div><span style=3D"background-color: transparent;color: rgb(0, 0, 0)=
+;">DoorDash&nbsp;</span></div></blockquote><table style=3D"width: auto"><tb=
+ody><tr><td><table><tbody><tr><td class=3D"primary-button" style=3D"color:#=
+fff;background-color:#f73b33;border:1px solid #f73b33;border-radius:3px;tex=
+t-decoration:none;margin:8px 4px 8px 0;display:inline-block;font-weight:500=
+"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UstuwyAQ_BpztHgZmwOHRm=
+kP_QkLwyYmtcHCOFX69cVJk7ZKWoQE2tndmR2wilopauQUxRTjBnMieYVZScrtM60k5ZsNrhhv6=
+k3BsQ_J7ZzRyQU_l4fgfK-9nXv9BqUJI-oVYE6l2dEdZjXGnbCMysbyuqmsJLQjKOkBfGrB7_Ue=
+xvVq9Dhpt_ets4qJmjN0a9r-JFzxhgvKpRQcDapPaZoL9lTQl7yXZPUw6AeqMmiCP0KcL7oLlpP=
+Hdg5LNFCwrTbJHV06taN2A8SCihUewbplzDCs4a_gVWoO_1J2zkG3QUJ3AJPadJpAvYYORQXvH0=
+TivLKJN6VgFzRFGDNP7jAN4QRxHZLUBHOU1AOKpEwEnaB1PkH0esg65zk7-e3ixcI_E_97AHsus=
+KpiRDQognGTWxPmtNj1zBCtKpm_B7sb9mKnutKhO4G5uOa0oVLgT1PT3PE&amp;data=3D02%7C=
+01%7CEric.Zhang%40UTDallas.edu%7C15416047d8ee4f34c63b08d838aee224%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637321671075545993&amp;sdata=3DlQwYh4cI=
+3PcbowYHZfbCnva2FUnAHpyUfCmrRQL5gCk%3D&amp;reserved=3D0" originalsrc=3D"htt=
+p://email.notifications.joinhandshake.com/c/eJx9UstuwyAQ_BpztHgZmwOHRmkP_Qk=
+LwyYmtcHCOFX69cVJk7ZKWoQE2tndmR2wilopauQUxRTjBnMieYVZScrtM60k5ZsNrhhv6k3BsQ=
+_J7ZzRyQU_l4fgfK-9nXv9BqUJI-oVYE6l2dEdZjXGnbCMysbyuqmsJLQjKOkBfGrB7_UexvVq9=
+Dhpt_ets4qJmjN0a9r-JFzxhgvKpRQcDapPaZoL9lTQl7yXZPUw6AeqMmiCP0KcL7oLlpPHdg5L=
+NFCwrTbJHV06taN2A8SCihUewbplzDCs4a_gVWoO_1J2zkG3QUJ3AJPadJpAvYYORQXvH0TivLK=
+JN6VgFzRFGDNP7jAN4QRxHZLUBHOU1AOKpEwEnaB1PkH0esg65zk7-e3ixcI_E_97AHsusKpiRD=
+QognGTWxPmtNj1zBCtKpm_B7sb9mKnutKhO4G5uOa0oVLgT1PT3PE" shash=3D"osJg2Cht/OL=
+9x35lL53nU+mmG/ClRVdV7TtIhH5cWFTieIOSWVPyn4EZw8bRgHlzxVt/ZSwJT77MuCRUz0EF0P=
+7j7vjRagR0qUupnYTZBX3xufFnH9ElMs3EvI446E3FOFGx0lMKYwuQt3mRj3y7/WXkwlXtJqOPw=
+BKKZuTopHg=3D" style=3D"color:#254fa5;font-weight:inherit;text-decoration:n=
+one;color:inherit;display:inline-block;color:#fff;padding:8px 24px">View th=
+e Message and Reply</a></td></tr></tbody></table></td></tr></tbody></table>=
+<p style=3D"font-size:18px;line-height:28px">Thank you, <br>The Handshake T=
+eam </p></div></div></div></td></tr><tr><td class=3D"email-footer" style=3D=
+"padding-top:16px"><hr class=3D"divider" style=3D"display:block;height:0;wi=
+dth:100%;border:0;border-top:1px solid #e0e0e0;margin:8px 0"><p class=3D"mu=
+ted extra-small" style=3D"font-size:18px;line-height:28px;color:#7a7a7a;fon=
+t-size:14px;line-height:20px">You received this email because Handshake par=
+tners with your school to help you grow your career. If you'd no longer lik=
+e to receive emails like this you can <a href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttp%3A%2F%2Femail.notifications.joinhandshake.=
+com%2Fc%2FeJx9UV1v6yAM_TXhsSJASHjgYVV3H-6fiFxwWraEREDuVffr52xrt2kfCAnLxz72O=
+XgrvNEtC1ZwwXnHVW1Uw-Wu3h3uRWOE2u95I1XX7ivF41zCEByUMMe8e5hDPEP0-QyPuHPzxM5W=
+-yMHYYQE3jQKjnJQSg_GO-ck6HZgBUaMpcd4ghNOW-hgWiCcYh-8lbpVkt1I-48DN7xTWihjtGK=
+jPZey5EreVeIP3bV4GEf4ZqsNzJgyvaJpDImTFH5iXhIOmDA6JEKimvo8r8lhJQ_gSvgXyqWfII=
+yYKqE3eEIf1olg3NJvyasQSn9if6lhN5nz8QFd6ctlQft3PrJk8f9TbTgdsvimA_3KaK-J5hDDM=
+s4XTJsFdVtzxYr9ZkSxLiEU7EMsmCKMtGfO5PO7x68G_1j42_f4lwZvG1nrjiV0YQlbQS6r316C=
+rv5-Eftqp72OY18WpOZWiU4YzZ8BKTjnUA&amp;data=3D02%7C01%7CEric.Zhang%40UTDall=
+as.edu%7C15416047d8ee4f34c63b08d838aee224%7C8d281d1d9c4d4bf7b16e032d15de9f6=
+c%7C0%7C0%7C637321671075545993&amp;sdata=3DghOqTS2Z%2BHjvAwGsUmwUyLYyqY5BUU=
+iA2kzCWqmgcSg%3D&amp;reserved=3D0" originalsrc=3D"http://email.notification=
+s.joinhandshake.com/c/eJx9UV1v6yAM_TXhsSJASHjgYVV3H-6fiFxwWraEREDuVffr52xrt=
+2kfCAnLxz72OXgrvNEtC1ZwwXnHVW1Uw-Wu3h3uRWOE2u95I1XX7ivF41zCEByUMMe8e5hDPEP0=
+-QyPuHPzxM5W-yMHYYQE3jQKjnJQSg_GO-ck6HZgBUaMpcd4ghNOW-hgWiCcYh-8lbpVkt1I-48=
+DN7xTWihjtGKjPZey5EreVeIP3bV4GEf4ZqsNzJgyvaJpDImTFH5iXhIOmDA6JEKimvo8r8lhJQ=
+_gSvgXyqWfIIyYKqE3eEIf1olg3NJvyasQSn9if6lhN5nz8QFd6ctlQft3PrJk8f9TbTgdsvimA=
+_3KaK-J5hDDMs4XTJsFdVtzxYr9ZkSxLiEU7EMsmCKMtGfO5PO7x68G_1j42_f4lwZvG1nrjiV0=
+YQlbQS6r316Crv5-Eftqp72OY18WpOZWiU4YzZ8BKTjnUA" shash=3D"pVGfYOO2Xsq1ar/YBt=
+GYePUqV4iQ1M2o/6FpddypZ4cO0R5EJIscBz/ZYbv66q9+Uv5JgHn8+6Faea2p1MJrW9wsZke1T=
+KNmakU0g4lygKtS72FtIvd+FDwciqAV6XgxjJftM7cdCnxOp9cw0/f3qL6wwwAncpIhtHm9HhHb=
+rzM=3D" style=3D"color:#254fa5;font-weight:inherit">sign in</a> to manage y=
+our notification preferences or <a href=3D"https://nam02.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Flink.mailgun.com%2Fu%2FeJx9kc9uwyAMxp9m=
+HCP-Bw5cqu2yl0AE3JYuQAREU_f0Szat21RtXIxsf_5-loOhQcsRRUMxxVhhTjQXmA1keHyiQlN=
+-OGDBuBoPDxzn0uMxetdjyW24lJjPLod2di8w-JLQ2WghKdYwSaaBgJgon7QSVDl1JAwThrqbIX=
+cL-eROkPavd2lx8ZRtDIbJkTN0G2p_Gu51xSXlWkuObqoyXcB3268LmOcyoWrg9Y1ovL2NeO3Bz=
+bNrA4QVLRVSXJOFtMzlCnWfSEaCOermlxMkF-ct6Su4DjbmDjW72SZobcP-Rv7k_bPxv23DhyAY=
+wYhUqIKPS9wbWl_DHrcSFUJvt2B3y7ayVg_myw7dAW7ikVNFtcTvDkSmxQ&amp;data=3D02%7C=
+01%7CEric.Zhang%40UTDallas.edu%7C15416047d8ee4f34c63b08d838aee224%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637321671075555986&amp;sdata=3DrWVR%2Fb=
+btvDUUpsiyehyBgjnwxt%2Fxg%2FTtMCEC3tjEz6o%3D&amp;reserved=3D0" originalsrc=
+=3D"https://link.mailgun.com/u/eJx9kc9uwyAMxp9mHCP-Bw5cqu2yl0AE3JYuQAREU_f0=
+Szat21RtXIxsf_5-loOhQcsRRUMxxVhhTjQXmA1keHyiQlN-OGDBuBoPDxzn0uMxetdjyW24lJj=
+PLod2di8w-JLQ2WghKdYwSaaBgJgon7QSVDl1JAwThrqbIXcL-eROkPavd2lx8ZRtDIbJkTN0G2=
+p_Gu51xSXlWkuObqoyXcB3268LmOcyoWrg9Y1ovL2NeO3BzbNrA4QVLRVSXJOFtMzlCnWfSEaCO=
+ermlxMkF-ct6Su4DjbmDjW72SZobcP-Rv7k_bPxv23DhyAYwYhUqIKPS9wbWl_DHrcSFUJvt2B3=
+y7ayVg_myw7dAW7ikVNFtcTvDkSmxQ" shash=3D"DI6UPgCiArSZXT4L9VkPN8+GCIUulFDIfx=
+sfOo2zn3ivxroYmcNiFuknE7QG7fzNPd2hJ2RA5w6qVh2Vgrdobcd7zNlce0IC4BrqgEtsSLeIX=
+LbS8obeadGcmASHzxDC7dioNHnpalbquCf/stFHtXOKGzwaSaFjxcJWELpRQd8=3D" style=3D=
+"color:#254fa5;font-weight:inherit">unsubscribe</a>. </p><a href=3D"https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Femail.notificat=
+ions.joinhandshake.com%2Fc%2FeJx9UkFuwyAQfI05WhiwDQcOjdIe-gkLwzqmNWBh3Cp9fX=
+HSpK2SFiGx2tndmR1hJDGiaZGVBBOMOWaVYDWmZVXuH0ktCNvtcE0Zb3cFwz4kO1itkg1-KV-C9=
+aPyZhnVK5Q6ODRKwAYz1RusMAxVTTg2_TAwYxQA7xlHSU3gUwf-oA7gtlArNyt78J01kjYto-g6=
+tPtJuOGcNYQJ0TA0yTGleSnoQ0Ge8l2TUdOk7qjacJpx1y1hjRoKulc62Tebjp1TdoJYkGaDHRi=
+7ugzDlv5KXtTl9C8xpxp01R76F9CpS8cZ5HPoUZTw_lEJnE_27SoOzIrmCC7z5AnzFI4Qt72qts=
+IMJXmHIkkdQSXorE8QvZqyzmXJ5n0bd3btz8L_PDenBiNrWjUcRdB2tlvBklazvRkidS3yj6A3y=
+57tlBc6dCMwN7eMcCIa_Alfq9kC&amp;data=3D02%7C01%7CEric.Zhang%40UTDallas.edu%=
+7C15416047d8ee4f34c63b08d838aee224%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637321671075555986&amp;sdata=3DmGXbZGa%2FI17LGyLJaSOmQpcu6l03x1xA%2BYS=
+SKHkgZRQ%3D&amp;reserved=3D0" originalsrc=3D"http://email.notifications.joi=
+nhandshake.com/c/eJx9UkFuwyAQfI05WhiwDQcOjdIe-gkLwzqmNWBh3Cp9fXHSpK2SFiGx2t=
+ndmR1hJDGiaZGVBBOMOWaVYDWmZVXuH0ktCNvtcE0Zb3cFwz4kO1itkg1-KV-C9aPyZhnVK5Q6O=
+DRKwAYz1RusMAxVTTg2_TAwYxQA7xlHSU3gUwf-oA7gtlArNyt78J01kjYto-g6tPtJuOGcNYQJ=
+0TA0yTGleSnoQ0Ge8l2TUdOk7qjacJpx1y1hjRoKulc62Tebjp1TdoJYkGaDHRi7ugzDlv5KXtT=
+l9C8xpxp01R76F9CpS8cZ5HPoUZTw_lEJnE_27SoOzIrmCC7z5AnzFI4Qt72qtsIMJXmHIkkdQS=
+XorE8QvZqyzmXJ5n0bd3btz8L_PDenBiNrWjUcRdB2tlvBklazvRkidS3yj6A3y57tlBc6dCMwN=
+7eMcCIa_Alfq9kC" shash=3D"Fy1hr90M4QJ1NIAw91k4awFFBukgRCQKR1YPwC65IbFsiAs94=
+Aaxa1ko813r+TAyDEjGbqt2YxhiFn/kKB8GaOBORm9ECR3KtSKhe21TjUgFfXaladxAjPOlCU1s=
+aKqnP7G3mdh/eM3+FmIUfhstAr2gORKI3mtZGOVqJrzyvDw=3D" style=3D"color:#254fa5;=
+font-weight:inherit;color: inherit; text-decoration: none;"><img alt=3D"Han=
+dshake" class=3D"handshake-logo" src=3D"https://handshake-production-cdn.jo=
+inhandshake.com/static_assets/hs-logo-red-lg.png" style=3D"margin-top:16px;=
+width: 159px; height: 24px" title=3D"Handshake"> </a><p class=3D"muted extr=
+a-small" style=3D"font-size:18px;line-height:28px;color:#7a7a7a;font-size:1=
+4px;line-height:20px">P.O. Box 40770, San Francisco, CA 94140</p></td></tr>=
+</tbody></table><img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://em=
+ail.notifications.joinhandshake.com/o/eJx9kc9uwyAMxp9mHCP-Bw5cqu2yl0AE3JYuQ=
+AREU_f0Szat21RtXIxsf_5-loOhQcsRRUMxxVhhTjQXmA1keHyiQlN-OGDBuBoPDxzn0uMxetdj=
+yW24lJjPLod2di8w-JLQ2WghKdYwSaaBgJgon7QSVDl1JAwThrqbIXcL-eROkPavd2lx8ZRtDIb=
+JkTN0G2p_Gu51xSXlWkuObqoyXcB3268LmOcyoWrg9Y1ovL2NeO3BzbNrA4QVLRVSXJOFtMzlCn=
+WfSEaCOermlxMkF-ct6Su4DjbmDjW72SZobcP-Rv7k_bPxv23DhyAYwYhUqIKPS9wbWl_DHrcSF=
+UJvt2B3y7ayVg_myw7dAW7ikVNFtcTvDkSmxQ"> </body></html>
+
+--B_3686568091_364937852--

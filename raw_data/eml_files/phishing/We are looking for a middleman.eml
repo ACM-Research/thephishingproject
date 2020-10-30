@@ -1,0 +1,219 @@
+Received: from DM6PR01MB5577.prod.exchangelabs.com (2603:10b6:300:ae::25) by
+ MWHPR0101MB3005.prod.exchangelabs.com with HTTPS via
+ MWHPR14CA0015.NAMPRD14.PROD.OUTLOOK.COM; Sat, 29 Aug 2020 08:48:33 +0000
+Received: from MN2PR03CA0001.namprd03.prod.outlook.com (2603:10b6:208:23a::6)
+ by DM6PR01MB5577.prod.exchangelabs.com (2603:10b6:5:155::33) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19; Sat, 29 Aug 2020 08:48:30 +0000
+Received: from BL2NAM02FT009.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:23a:cafe::86) by MN2PR03CA0001.outlook.office365.com
+ (2603:10b6:208:23a::6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.19 via Frontend
+ Transport; Sat, 29 Aug 2020 08:48:29 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.160.193)
+ smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=gmail.com;utdallas.edu; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.160.193 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.160.193; helo=mail-qt1-f193.google.com;
+Received: from mail-qt1-f193.google.com (209.85.160.193) by
+ BL2NAM02FT009.mail.protection.outlook.com (10.152.77.68) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3326.19 via Frontend Transport; Sat, 29 Aug 2020 08:48:29 +0000
+Received: by mail-qt1-f193.google.com with SMTP id t23so1416289qto.3
+        for <Eric.Zhang@utdallas.edu>; Sat, 29 Aug 2020 01:48:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:cc;
+        bh=7ygfzO1t3p1Gcujmovq2ina8SnpHqCJdoIyIe8ISNEo=;
+        b=n6DHWC+1Qa9DdUD59bisWyHW7SAijf3EZ6fr2CeMtabYKnBNlHROZ4mEgYhQibMLLO
+         XDI3x/J14grrRCAV+OjRFM+PMHagi57EI/UElZAZoWYVxEAEuK+WWsF6pTCgj8bMRQPO
+         nCjg4NkKyL1YDV4tpcBriP04LxJFCmCBsPXaS6dz22femw1cjURLm3K3tzi3Vq7VFk9s
+         6XYZmf8WFvNl0ij8hBpWMrIl2iftlY/XxfnnsX4NlPDRncI26tLL9/UiwuF2nBRpdYHT
+         psGkFUgqomXv5p9/FHpTpFBX2PjW6IPhpRaLr5Xvl3FNEIYA/iNKCaCKu3oZp8FsNTSm
+         qgjQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:cc;
+        bh=7ygfzO1t3p1Gcujmovq2ina8SnpHqCJdoIyIe8ISNEo=;
+        b=QoNdsWwlxHsgJFBH+WqSgGjPB+0IdLDx5Jfa7Wxuyfr1nX8audzYNYq1UWZg/Ucg9W
+         e+t2Qu8YYfWi4nOU4xtFpsQUl2nhmgkzCCw0ogFrJlPDuHMrIg+stzlLW5vVMkyb+aiF
+         nshWlTUBW+A+NF9Hm8+76Waq4DZnb1CQjd5061UfWTMr12u7rWGZoCVArvUtF7NiiELb
+         6wrlwlAR3u3uUDgo38za/cpJ+dNBnotYQGA5OKQcXM7EoJjdl+zS+KBQ0z8FpWiouVOy
+         PxMQ529t8XXUMTdTekOvZPZJ7ELgXhuoG9u3Te02WaTWLdQvBpLS/V7eViucXfO0KZ1U
+         QC/g==
+X-Gm-Message-State: AOAM532xY6uCJ63PI7l4dSQe3WAGgwPYlfUf+wq1wYZgqs3IUwh14Giz
+	kAoSGXJhhKuQ/GO6NLlsb8WfcCZOiXnZ+Y3NOgg=
+X-Received: by 2002:ac8:fbb:: with SMTP id b56mt4807555qtk.307.1598690908123;
+ Sat, 29 Aug 2020 01:48:28 -0700 (PDT)
+From: Brenda Reece <brendareece2000@gmail.com>
+Date: Sat, 29 Aug 2020 09:47:41 +0100
+Message-ID: <CADecwQReAfXCsPzYV5bCuS8DRiOPxyJwqk1dTOB5r3cp3HHScA@mail.gmail.com>
+Subject: We are looking for a middleman
+Cc: Joyce.Wu@utdallas.edu, jjw130130@utdallas.edu, Kennan.Wu@utdallas.edu, 
+	Leighton.Wu@utdallas.edu, Lisa.Wu@utdallas.edu, Meina.Wu@utdallas.edu, 
+	Michael.Wu@utdallas.edu, perry.wu@utdallas.edu, Qinning.Wu@utdallas.edu, 
+	Roni.Wu@utdallas.edu, rkw170000@utdallas.edu, Shengsheng.Wu@utdallas.edu, 
+	Shiwen.Wu@utdallas.edu, Shiyu.Wu@utdallas.edu, Sili.Wu@utdallas.edu, 
+	Sophia.Wu@utdallas.edu, Spencer.Wu@utdallas.edu, txw170002@utdallas.edu, 
+	Ting-Wei.Wu@utdallas.edu, Tinglei.Wu@utdallas.edu, TsuHao.Wu@utdallas.edu, 
+	Valerie.Wu@utdallas.edu, Xiao.Wu@utdallas.edu, Yanan.Wu@utdallas.edu, 
+	Yang.Wu@utdallas.edu, Yanting.Wu@utdallas.edu, Yanyan.Wu@utdallas.edu, 
+	Yaokun.Wu@utdallas.edu, Yulang.Wu@utdallas.edu, Yung-Han.Wu@utdallas.edu, 
+	Yupeng.Wu@utdallas.edu, amw170001@utdallas.edu, Cole.Wuestenberg@utdallas.edu, 
+	Hannah.Wuetherich@utdallas.edu, jxw170010@utdallas.edu, 
+	Michel-Andre.Wuilleumier@utdallas.edu, Dane.Wukich@utdallas.edu, 
+	maw130430@utdallas.edu, nrw160130@utdallas.edu, Dannie.Zhabilov@utdallas.edu, 
+	Andrew.Zhang2@utdallas.edu, Anqi.Zhang@utdallas.edu, bxz180000@utdallas.edu, 
+	bxz110730@utdallas.edu, bdz170000@utdallas.edu, Bohan.Zhang@utdallas.edu, 
+	fmz170000@utdallas.edu, Boya.Zhang@utdallas.edu, Boyang.Zhang@utdallas.edu, 
+	bxz140830@utdallas.edu, Carolyn.Zhang@utdallas.edu, Chaoxi.Zhang@utdallas.edu, 
+	Chenglong.Zhang@utdallas.edu, Chenxu.Zhang@utdallas.edu, 
+	Chiyu.Zhang@utdallas.edu, Cong.Zhang3@utdallas.edu, 
+	Daniel.Zhang4@utdallas.edu, David.Zhang@utdallas.edu, 
+	Elaine.Zhang@utdallas.edu, Emma.Zhang@utdallas.edu, Eric.Zhang@utdallas.edu, 
+	Fan.Zhang5@utdallas.edu, Gloria.Zhang@utdallas.edu, 
+	Hantao.Zhang2@utdallas.edu, hxz170011@utdallas.edu, Haoyue.Zhang@utdallas.edu, 
+	Haozhao.Zhang@utdallas.edu, Heng.Zhang2@utdallas.edu, 
+	Huayi.Zhang@utdallas.edu, Ivan.Zhang@utdallas.edu, jwz180000@utdallas.edu, 
+	Jennifer.Zhang@utdallas.edu, Jinglun.Zhang@utdallas.edu, 
+	Jingwen.Zhang@utdallas.edu, Jingwen.Zhang2@utdallas.edu, 
+	jxz164430@utdallas.edu, Jonathan.Zhang@utdallas.edu, 
+	Junchen.Zhang@utdallas.edu, kjz170000@utdallas.edu, Kelvin.Zhang@utdallas.edu, 
+	Leiyao.Zhang@utdallas.edu, Licheng.Zhang@utdallas.edu, 
+	Maksym.Zhang@utdallas.edu, Mengli.Zhang@utdallas.edu, 
+	Mingge.Zhang@utdallas.edu, Minmin.Zhang@utdallas.edu, 
+	Zhang.Naifu@utdallas.edu, Naixu.Zhang@utdallas.edu, Nan.Zhang2@utdallas.edu, 
+	Nathan.Zhang@utdallas.edu, npz170000@utdallas.edu, Ningjie.Zhang@utdallas.edu, 
+	Peiru.Zhang@utdallas.edu, Ping.Zhang@utdallas.edu, qxz170002@utdallas.edu, 
+	Richard.Zhang2@utdallas.edu, rxz151130@utdallas.edu, rui.zhang@utdallas.edu, 
+	Runyu.Zhang2@utdallas.edu
+Return-Path: brendareece2000@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Aug 2020 08:48:29.9374
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 02b13fb1-9916-45dc-37d1-08d84bf84da2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 02b13fb1-9916-45dc-37d1-08d84bf84da2
+X-MS-TrafficTypeDiagnostic: DM6PR01MB5577:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:209.85.160.193;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mail-qt1-f193.google.com;PTR:mail-qt1-f193.google.com;CAT:SPM;SFS:(4636009)(7596003)(26005)(86362001)(1096003)(58800400005)(8676002)(5660300002)(82202003)(42186006)(83380400001)(33964004)(4326008)(7636003)(356005)(336012)(2160300002)(76482006)(109986005)(55446002)(22186003)(6666004)(73392003)(97350200001)(136160200002);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Aug 2020 08:48:29.9344
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 02b13fb1-9916-45dc-37d1-08d84bf84da2
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5577
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2795112
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3305.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?Eyy9Q+NMIJiSjOFT//ZNPZ6/YjdA9rnEAyHsqcab2HFtdo0wpYpqVNDKHNUX?=
+ =?us-ascii?Q?joPNk9suZbP5a3L0xZ7MNanAeVFb+myrqIW0AUZjE46ii7Kl+uZo6NkqgdXx?=
+ =?us-ascii?Q?No4Ja4HZf+slzaQ3vpesWpLUruEqWrz51la2wWXnZdKvXj4VftH/16/JuwXV?=
+ =?us-ascii?Q?dYEVGMNBAsoyIwGVuhx8Kcr9Kt/sL4c9RU3U07LcdApqb6seUDMPmT344qER?=
+ =?us-ascii?Q?yliwKet0HkWo/Z5XQvW+wG58X5Qy5guoRYOm7PQ7BwFCu2oEL+kexx9SfTBs?=
+ =?us-ascii?Q?7qUKmDqsVUN3MlXZr0EUpxQ0nSi4xC8MrCfzvUTWje6giSlrVVrM1fL1it9J?=
+ =?us-ascii?Q?0fzVKBaVvbD3gplLJxETDdbB+eROnsOSXznoYLxV4QjiTlKi1wQPCTLB3dM+?=
+ =?us-ascii?Q?VfidKaZpOmETYI6XgjStC+UQGIAlIvTY+SU8GgZ6OuDEyigvTvNMbfS6ec09?=
+ =?us-ascii?Q?kayfY8gq6sfKeYeYCjPf3ji/NDZnos7MEOC/sCrJLiNftJmfzSW1MymTmW94?=
+ =?us-ascii?Q?mMe5TDEWOgYindRylZs2ye9bSI1l9b2WQjnWR2gpdxgzIaLJSEBeMOJZhc7G?=
+ =?us-ascii?Q?EnpMt4H2oaQyLQc6vB8FZo1Kmem6GBv3CYFnLGE+NPFnwXTuefe19qHtZujB?=
+ =?us-ascii?Q?DxFUeb3zDA5Q1PXzLkK9AAvyiNBlm/37TQ20w1rRlymmBr/rHs1S+b7+kqFV?=
+ =?us-ascii?Q?/vchbwi84dITYP9uGWCoTIglC2WFJuVxTSnLA1uSm1WQQrAGdRyoVBbjq5Fx?=
+ =?us-ascii?Q?X/hTOdF/T8Nk8udVFBijgYe6geSao4DySc7Yr2XyeiWtmO5CR9v7kUXErzrp?=
+ =?us-ascii?Q?XtmgyQIkVGxqydeppKOGgU8S7hv8gh9KeO3CMfqs0uVqgMNMkEpUVCivg/4i?=
+ =?us-ascii?Q?V4rp95z+AaIEiinXPTUGOlGXva39rPROVX3XtvKMBkDLio4HNjOk81DFNdnv?=
+ =?us-ascii?Q?DQm10Yy8uNairKjlqVo3gXNP6D0ALVsHD21vNIhDj8Y2cCayzN9+2vGfgmka?=
+ =?us-ascii?Q?x/cXMOiF5JPZV6+bMC/DRyp9NC1mkUgfsoIp3pq3vRqENhhhHlWa98+y3d6O?=
+ =?us-ascii?Q?wov6e4SZBxBD9E2eOe7PvFRdGU7hHtTzu+aODl8BxH+Mbc/Jy+B5W93gxt/t?=
+ =?us-ascii?Q?HAXwhF+Pg9/I8U7kCjMy+GACpGYNkMAYMh9UaM6vmnlprbTzj5Qo/be0bbs+?=
+ =?us-ascii?Q?s2IThjxnyEOiAxO9+Dl5tAdZvhcLwp2n+PbYYDwSKjuSXzjWYYw3cqpZob71?=
+ =?us-ascii?Q?pPKyrDojYd7Lh+QneNU+5e7xEN5DJv+HAOFxVVZe8FLP45AJoICV9Vv1K7HU?=
+ =?us-ascii?Q?SOEYUqBGsufT1Yp3DQe4HlzMN2R9rDetlqsbKC+Z6adZ+ElXf3oth1OJtELA?=
+ =?us-ascii?Q?j3GmHeoZB2vVIqHI4okvExGrQlnO5ngJmOnh57qJE1Uw5g/F48fPhn2C8CzF?=
+ =?us-ascii?Q?ALt02y60B++WWhrtl6/sIgWgsavOnyGhWObQFO2OCC3CpiDhkfelvQuOY7Su?=
+ =?us-ascii?Q?2pKhffaEFBRGSUmBIesvDC8Q6BLWxJV1gNMVqbehbwPW5Tm/pCQx60atKE6Q?=
+ =?us-ascii?Q?3jG89ZT23y7AUXpSev1IrijIhvd5u3KlqbuWAnKxb+X2Rk2Op8Bb9PImZW7i?=
+ =?us-ascii?Q?3hSjbhHzylFqgkzPlVf5IqJYunwwnC6TWjNxxv8yVlENXcK0xHi/Bwgj5pRB?=
+ =?us-ascii?Q?lm85Ga2guMPvdeBuB5hQOT3VmusgCA/TVGZyNIvH6OzUTiPQ2w7R0ZfJhpNs?=
+ =?us-ascii?Q?UVIFwgi/S+2VAL78GHz/zb/3txxzc3mkyTCw1Xp9MDLkd1rloCoI5B2qKYrT?=
+ =?us-ascii?Q?q6F868h7abAMo5TgB4Yln8x3AKVvPViVnCHwWctYlLAWr4F480cQ9hHCGLE6?=
+ =?us-ascii?Q?QxrSzNNBx0+1maUzPf/hQ3HORbHAQb3YK6qKgOvLUZpbJREy2ElSsA7ppJv2?=
+ =?us-ascii?Q?B3A6nIH/y10MJ0czyscdVzi4SSX64IrHY9XQN86CxnI=3D?=
+Content-type: multipart/alternative;
+	boundary="B_3686568056_1704614614"
+MIME-Version: 1.0
+
+--B_3686568056_1704614614
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+
+Fort Garry Brewing Company is a producer, marketer and distributor of craft beers and a producer of cider, which is also a leading brand which offers incorporation services to our clients all over the globe. We are looking for a very trustworthy, hardworking and responsible individual with a weekly wage of 300 Dollars. We have agents that are working for us, these agents need materials like grains, yeast and hops to do their daily job and we need you to work as a middleman to help the agents in getting their respective supplies. You will be contacted whenever they need materials, it will be your duty to work with the supplier to make orders for the materials.
+
+Each supplier will only order for materials once a week depending on the task he or she is to complete for that week. We are employing you just to reduce the workload for us and on our supplier and also to keep record of materials that are being ordered weekly. This is strictly an online pay job where you work with suppliers only for getting the supplies needed by our agents during the weekdays or you can have your own part of the work completed at your
+leisure time at home. This takes 2-3 hours per week. If you care to proceed with the job, get back to us with the information listed below so we can process your information. We will be waiting for your response.
+
+NAME:
+ADDRESS:
+CITY:
+STATE:
+ZIPCODE:
+PHONE NUMBER:
+AGE: 
+
+
+--B_3686568056_1704614614
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div dir=3D"ltr">Fort Garry Brewing Company is a producer, marke=
+ter and distributor of craft beers and a producer of cider, which is also a=
+ leading brand which offers incorporation services to our clients all over =
+the globe. We are looking for a very trustworthy, hardworking and responsib=
+le individual with a weekly wage of 300 Dollars. We have agents that are wo=
+rking for us, these agents need materials like grains, yeast and hops to do=
+ their daily job and we need you to work as a middleman to help the agents =
+in getting their respective supplies. You will be contacted whenever they n=
+eed materials, it will be your duty to work with the supplier to make order=
+s for the materials.<br><br>Each supplier will only order for materials onc=
+e a week depending on the task he or she is to complete for that week. We a=
+re employing you just to reduce the workload for us and on our supplier and=
+ also to keep record of materials that are being ordered weekly. This is st=
+rictly an online pay job where you work with suppliers only for getting the=
+ supplies needed by our agents during the weekdays or you can have your own=
+ part of the work completed at your<br>leisure time at home. This takes 2-3=
+ hours per week. If you care to proceed with the job, get back to us with t=
+he information listed below so we can process your information. We will be =
+waiting for your response.<br><br>NAME:<br>ADDRESS:<br>CITY:<br>STATE:<br>Z=
+IPCODE:<br>PHONE NUMBER:<br>AGE: </div></body></html>
+
+--B_3686568056_1704614614--

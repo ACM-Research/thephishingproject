@@ -1,0 +1,186 @@
+Received: from SN6PR01MB4255.prod.exchangelabs.com (2603:10b6:903:99::18) by
+ CY4PR0101MB2997.prod.exchangelabs.com with HTTPS via
+ CY4PR13CA0032.NAMPRD13.PROD.OUTLOOK.COM; Tue, 7 Jul 2020 18:57:49 +0000
+Received: from SN6PR08CA0028.namprd08.prod.outlook.com (2603:10b6:805:66::41)
+ by SN6PR01MB4255.prod.exchangelabs.com (2603:10b6:805:ac::28) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3174.20; Tue, 7 Jul 2020 18:57:46 +0000
+Received: from SN1NAM02FT032.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:805:66:cafe::14) by SN6PR08CA0028.outlook.office365.com
+ (2603:10b6:805:66::41) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3153.24 via Frontend
+ Transport; Tue, 7 Jul 2020 18:57:46 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.221.195)
+ smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=gmail.com;utdallas.edu; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.221.195 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.221.195; helo=mail-vk1-f195.google.com;
+Received: from mail-vk1-f195.google.com (209.85.221.195) by
+ SN1NAM02FT032.mail.protection.outlook.com (10.152.72.126) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3153.24 via Frontend Transport; Tue, 7 Jul 2020 18:57:46 +0000
+Received: by mail-vk1-f195.google.com with SMTP id g22so5479336vke.9
+        for <Eric.Zhang@utdallas.edu>; Tue, 07 Jul 2020 11:57:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=LEpzSAUaKKeIRT1ALGHxTphbIYBFgqpBJ/cS+il2W2Y=;
+        b=Ge4XuVF0H9dWicKSS9Ssy0ZaH+lajsowfmZpaubK+vfzb/KuhtjufZZImkpaxQxuqE
+         hEAV468lkjU9j9t4qiaFFRCmWjRrXIstPNkJ+/m5V2EwlQPppGIAQVDBO3I9Z6fsVn7R
+         Q8HoCO1M5f0O7xQoZ9gHgWaopyaRWUTeVjyfpqBOgnb7LJMtEnWHOS4e/xVqqfLKXtgd
+         VYX67QLhNHgvJARYSVOQuqOXcGBwqIIKZ8eonLn3Ues6Gc9VqWVAsFvbEYxjVbCeOn5D
+         Osyug8iGPY59lyFvLc7vxGGLLKlx5aGArk+Pty5UMtkQsdQzhC2z1eKjE/k8AJrsrFD6
+         MOiA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=LEpzSAUaKKeIRT1ALGHxTphbIYBFgqpBJ/cS+il2W2Y=;
+        b=l8GvRn0wAiAXIybGqqbPj3RvKEUsnTDNX1aFzz+yPLJDVP5hM4ZX5HiODNGIJ7TRYv
+         tQ+d98c9Ka+Of4o+irBYxL4ie7NbYGOmsQmfc2CQ2v94EvHJCwVTCLryDkxnASg0jSEi
+         Yv0UdNMvxBaCTg+R+kd91l4F+fRLoDkfVSXSbiIxwixkjY7BOxSzqUwV4MHmPo8IcKfE
+         jU4+hiw4KbuJDZzyf08BNw9MrbPoOlOK0i7LayAaZQsRje2ZjOiQToV95C8G0qxfudSi
+         KHflaaNgajwukrdWIxHFtmVfFQAcdQqgtgcU0Y/mORBd0/ctjiOeHI1YmUM4pxjIae8A
+         O4OQ==
+X-Gm-Message-State: AOAM530l86fi18je10tCyyYh/gI1ptHPRVao0fmxmFA0g2faLGdYK0pI
+	5131pnSiiJ0dpKmbr+h/ilU1Pd8zUWQYyJxuVck=
+X-Google-Smtp-Source: ABdhPJwWje4ZAqDK5Wa1mCxeyWgTZ2GUd/VWr20KpzXu0NEq/3mqdfBBb3QAo1TBY2nVC+/WydPuZsnlRAo+0GorZhc=
+X-Received: by 2002:a1f:bf85:: with SMTP id p127mr29901368vkf.70.1594148265604;
+ Tue, 07 Jul 2020 11:57:45 -0700 (PDT)
+From: Jane Peterson <janepeterson.consultant096@gmail.com>
+Date: Tue, 7 Jul 2020 11:57:34 -0700
+Message-ID: <CABMieFi__H85s1DDbGkpwsJz5DS=zXVC1dss_2tw6zdr0S9OFg@mail.gmail.com>
+Subject: UTD STUDENT EMPOWERMENT PART TIME JOB OPPORTUNITY
+To: Haozhao.Zhang@utdallas.edu
+Bcc: Eric.Zhang@utdallas.edu
+Return-Path: janepeterson.consultant096@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Jul 2020 18:57:46.2684
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 0d4d42fb-0441-43c6-e7a1-08d822a7a302
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:209.85.221.195;CTRY:US;LANG:en;SCL:6;SRV:;IPV:NLI;SFV:SPM;H:mail-vk1-f195.google.com;PTR:mail-vk1-f195.google.com;CAT:SPM;SFTY:;SFS:(4636009)(33964004)(7636003)(26005)(6666004)(34206002)(336012)(83380400001)(22186003)(42186006)(82202003)(73392003)(356005)(86362001)(5660300002)(7596003)(76482006)(8676002)(58800400005)(1096003)(2160300002)(55446002);DIR:INB;SFP:;
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT032.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 0d4d42fb-0441-43c6-e7a1-08d822a7a302
+X-MS-TrafficTypeDiagnostic: SN6PR01MB4255:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:4502;
+X-MS-Exchange-Organization-SCL: 6
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Jul 2020 18:57:46.2649
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0d4d42fb-0441-43c6-e7a1-08d822a7a302
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT032.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4255
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9542011
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3153.029
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?g9NUzqIey7wZFkB/6W+YLX8+Gx1UVIm2ulGUVgq3dASPt7DGIoE5t9Q/cUCJ?=
+ =?us-ascii?Q?kqXQFERduiIRQPvTU8UDXTeqH1JQ54YyWaOCk0VcNtZII5FuG+d1ApL3Zi3m?=
+ =?us-ascii?Q?Gb9P0SzvUjR0XfOm9AYx9lh+jQzIxzDqOItQwNju7QsccM3CnxvxRDBZizND?=
+ =?us-ascii?Q?GZukoW6iJ5nEVC8lS+6qfBSrPJCLaVO3Xt0irZf+9pZWkKl2U4SJbJunsV9P?=
+ =?us-ascii?Q?xFmRvIqcVZwamh4tIxxKio/ahYcA8ow3Ozc8PyN/VvQ5IAn1Knyro0tQNb0I?=
+ =?us-ascii?Q?F3ViFAzg+iDOKm/hJZIiuE2sqW1tlDZuvQZk7VHunzxUsNTYSzz6kGpwnOYm?=
+ =?us-ascii?Q?4rm4b7K0nhPXd/hxnqtCIubbtG4HI4UiCYK9sQrGXesOBkDWu8Dgh2KeNokK?=
+ =?us-ascii?Q?qlnv3orGzNTP5u6aSwc02UEfGZfUAK+OAvKaYOxu6zN5CzAbW4Eao2JOlIMK?=
+ =?us-ascii?Q?Ze+gW7Kf2xnsayWcxd8iH0UUwZ/AEJ6+Z1UJTdYk2y8YcyOq+lImKAweOJ3h?=
+ =?us-ascii?Q?tkmo3cDlLQjxdbj7dFKf3fUUtiNuUGtIq7CQImoQtWGhw3BEIvpe1T45gqym?=
+ =?us-ascii?Q?MSzgpt0nGd5+FwGrc9kl9tjIUSk5yaqj/uPpEO0akKkl+7a+svIPIlEflVYJ?=
+ =?us-ascii?Q?G34DRpLd/B65/uzop8rGsjtPzw3O+WnlT1EIBybFBExOe7FM9kqb+gp1pw9J?=
+ =?us-ascii?Q?UzfRM/utc9CTojlNfq7fkHE9915lQPelnlFnNDhZci27jOvg8m5uJIe85+K2?=
+ =?us-ascii?Q?nmlhoEQOjG1FPxL0NXXdIZAXve6wLqMmbJR6+YdhlhOWcpto0v0DJ/Yx+g1F?=
+ =?us-ascii?Q?TuFyQ/JViR3OPlssevuUMf6/EO3tDg0qPtGxGVl5FtzwtjL0cYi7WO4JdSAc?=
+ =?us-ascii?Q?TlOZnRvb/JTU6fGUb3tjlTs7vZd0DiNVLEm4q+VSz7fjXzmzsgQNphfzUu4c?=
+ =?us-ascii?Q?zocipVGN8j1XqUspNZjW5hx9pKZbC4zHXcfiadj2j+OAi0cbtUBmu3a5zJuC?=
+ =?us-ascii?Q?KzuxFhPl9VFs0yaJM4BrtYFdLvB+6zgXqrvH3gXP+RLHvYu92AlPSvckLUzH?=
+ =?us-ascii?Q?RJr4CCD4MdEo/5mQy/T5DZdWT0I2vmaKhKT7dWWW5llPFviEftGQG8IFmu4l?=
+ =?us-ascii?Q?rny/p0e10DAdYA659TdV7AOlm7TMy44Qt9YteCYpqLO1wEt9HY/laPI3uImS?=
+ =?us-ascii?Q?clLtDBt2JRzGW1jqhAmk03WqWxj0aDY0AmyYoYwHSXk8y94bJlaw/kPzRQt7?=
+ =?us-ascii?Q?B2vvK4IjX599WmoOhPmTxdXUuOj/nTgPGwFJkc8Ox9G2km45VolcQk1WoqgD?=
+ =?us-ascii?Q?5/EMbL0LAhZjTbl8YzxAfoCnQ/OlJfNXscFAd6wFRpl8NBImQaiaF/ROz+MJ?=
+ =?us-ascii?Q?NU6SOSo313XizIy6JLTXeWFJOInetP5FrRe3StP54KtxJe5NrQlPOT0GWc1O?=
+ =?us-ascii?Q?o5H2dlihtzeJNwJWYkYajS7ZpyPViR2zkQvKQO1kEv9WuJeE54hisrrKC5+p?=
+ =?us-ascii?Q?xLQhcTP9bj59Kz8Hr8dZq0HeLYcUWgTMTLA7idePsgA4PPgYI9eCAFBqrjDM?=
+ =?us-ascii?Q?DKR2Fz0R2CJWIF30gHK0LPd0VLaTEUxkyFpfXoJcf5hKm6B0lk3mzMqVY19N?=
+ =?us-ascii?Q?D1tlVzPrpoS0vxIFYdNdFg4=3D?=
+Content-type: multipart/alternative;
+	boundary="B_3686568056_774294130"
+MIME-Version: 1.0
+
+--B_3686568056_774294130
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+Dear student,=20
+
+   We got your contact through your school database and I'm happy to inform=
+ you that our reputable company CISCOsystems=C2=AE is currently running a studen=
+t empowerment=20
+program. This program is completely school oriented as it has been designed=
+ not to deter you from all school activities which is priority for you and t=
+his=20
+organisation. This program is to help loyal and hardworking students like y=
+ou secure a part time job with an attractive weekly salary.
+TO PROCEED WITH THIS JOB OFFER, KINDLY REPLY TO THIS MAIL WITH YOUR ALTERNA=
+TE E-MAIL ADDRESS IN ORDER TO RECEIVE THE FULL JOB DESCRIPTION.=20
+
+Best Regards,
+
+Jane Peterson,
+HR Recruit Manager/Consultant
+CISCOsystems Inc=C2=AE.
+
+
+--B_3686568056_774294130
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div dir=3D"ltr"><b style=3D"font-family:sans-serif">Dear studen=
+t,&nbsp;</b><div dir=3D"auto" style=3D"font-family:sans-serif"><b><br></b><=
+/div><div dir=3D"auto" style=3D"font-family:sans-serif"><b>&nbsp; &nbsp;We =
+got your contact through your school database and I'm happy to inform you t=
+hat our reputable company CISCOsystems=C2=AE is currently running a student=
+ empowerment&nbsp;</b></div><div dir=3D"auto" style=3D"font-family:sans-ser=
+if"><b>program. This program is completely school oriented as it has been d=
+esigned not to deter you from all school activities which is priority for y=
+ou and this&nbsp;</b></div><div dir=3D"auto" style=3D"font-family:sans-seri=
+f"><b>organisation. This program is to help loyal and hardworking students =
+like you secure a part time job with an attractive weekly salary.</b></div>=
+<div dir=3D"auto" style=3D"font-family:sans-serif"><b>TO PROCEED WITH THIS =
+JOB OFFER, KINDLY REPLY TO THIS MAIL WITH YOUR ALTERNATE E-MAIL ADDRESS IN =
+ORDER TO RECEIVE THE FULL JOB DESCRIPTION.&nbsp;</b></div><div dir=3D"auto"=
+ style=3D"font-family:sans-serif"><b><br></b></div><div dir=3D"auto" style=
+=3D"font-family:sans-serif"><b>Best Regards,</b></div><div dir=3D"auto" sty=
+le=3D"font-family:sans-serif"><b><br></b></div><div dir=3D"auto" style=3D"f=
+ont-family:sans-serif"><b>Jane Peterson,</b></div><div dir=3D"auto" style=
+=3D"font-family:sans-serif"><b>HR Recruit Manager/Consultant</b></div><div =
+dir=3D"auto" style=3D"font-family:sans-serif"><b>CISCOsystems Inc=C2=AE.</b=
+></div></div></body></html>
+
+--B_3686568056_774294130--

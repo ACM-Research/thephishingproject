@@ -1,0 +1,261 @@
+Received: from CO2PR01MB2104.prod.exchangelabs.com (2603:10b6:404:37::34) by
+ BN6PR0101MB3105.prod.exchangelabs.com with HTTPS via
+ BN6PR22CA0048.NAMPRD22.PROD.OUTLOOK.COM; Wed, 18 Dec 2019 09:24:08 +0000
+Received: from CY4PR1201CA0021.namprd12.prod.outlook.com
+ (2603:10b6:910:16::31) by CO2PR01MB2104.prod.exchangelabs.com
+ (2603:10b6:102:7::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2538.18; Wed, 18 Dec
+ 2019 09:24:05 +0000
+Received: from CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:910:16:cafe::16) by CY4PR1201CA0021.outlook.office365.com
+ (2603:10b6:910:16::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2559.14 via Frontend
+ Transport; Wed, 18 Dec 2019 09:24:05 +0000
+Authentication-Results: spf=neutral (sender IP is 129.110.242.147)
+ smtp.mailfrom=utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: Neutral (protection.outlook.com: 129.110.242.147 is neither
+ permitted nor denied by domain of utdallas.edu)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ CY1NAM02FT049.mail.protection.outlook.com (10.152.75.83) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.2538.14 via Frontend Transport; Wed, 18 Dec 2019 09:24:04 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1713.5; Wed, 18 Dec 2019 03:20:58 -0600
+Received: from utdex01.campus.ad.utdallas.edu ([fe80::7c0a:6d7f:ce34:ba7f]) by
+ utdex01.campus.ad.utdallas.edu ([fe80::7c0a:6d7f:ce34:ba7f%14]) with mapi id
+ 15.01.1713.004; Wed, 18 Dec 2019 03:20:59 -0600
+From: "Dowling, Walter" <jdowling@utdallas.edu>
+Subject: PART TIME JOB
+Thread-Topic: PART TIME JOB
+Thread-Index: AdW1gnMiaJtRKELQRX6Q8pL9D92rfA==
+Date: Wed, 18 Dec 2019 09:20:58 +0000
+Message-ID: <1ed191e2d6fd4aa3ba23612846599fcf@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.182.70.130]
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+To: Undisclosed recipients:;
+Return-Path: jdowling@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Dec 2019 09:24:05.3232
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ffa6ee57-4112-49b5-fd57-08d7839c0715
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Organization-Recipient-P2-Type: Bcc
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;IPV:;CTRY:US;EFV:NLI;SFV:SKI;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:CO2PR01MB2104;H:webmail.utdallas.edu;FPR:;SPF:None;LANG:en;
+X-OriginatorOrg: utdallas.edu
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: ffa6ee57-4112-49b5-fd57-08d7839c0715
+X-MS-TrafficTypeDiagnostic: CO2PR01MB2104:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:5797;
+X-Microsoft-Antispam: BCL:0;
+X-PSINMDFA: 1.0
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Dec 2019 09:24:04.9099
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ffa6ee57-4112-49b5-fd57-08d7839c0715
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB2104
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6101199
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2538.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(706158)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+ dlBx3LScVYd/oniKCOnDAjxuLre8XjBORauFWurNMw5WWBCsQtK85pzffBLtxAOi8TsuD9TxmUA1fZHkxm2cEnMKz4Oov662lE39kggsCHCsfWb6tBrfsAmkakN31mpq8eE2VpCFvC28aP0L/Dlt9yhAYVkOd0f5d8XGR8togkx2Kl1jLtApMokWfzwKlnpzpeZ5jqU5nTwmYIbpk42pc6QqiZsyexJrK+azQkqr+cjiEP0rr6pMNiV1B0YrcPfX+F5INDiNlHfVcVnnc4Tvsg/ZIY2MHgY5wpU/He0JG1aROxESWgY+QxPhsrXQP7IZwLcue8PWBEpyULDFGjC4R8cbH7KdNE9utWYuYyH7tP/jzIU526fJnlZqhP2/5Z+kw2oaYvTfUdbhW10xL3LcUZzXJI7qoWKQlOvmLOGF4aLtq3XHwvbLlvjXm/mmkFfepF+CHjVu+gzQNwkxFoXUkbjGLz7F4qhGKiiIYugK9mC+U63EoJHOboU2bm6M+D+S
+Content-type: multipart/alternative;
+	boundary="B_3686568240_318822438"
+MIME-Version: 1.0
+
+--B_3686568240_318822438
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+
+Name of Company:
+
+ 
+
+Dentsu Aegis Network Ltd.
+
+ 
+
+ 
+
+ 
+
+Name of Company:
+
+ 
+
+Dentsu Aegis Network Ltd.
+
+ 
+
+ 
+
+ 
+
+JOB TITLE:
+
+ 
+
+Advertise While Driving
+
+ 
+
+ 
+
+JOB DESCRIPTION:
+
+ 
+
+We seek interested candidates to go about their normal routine with the advert of  the "TOKYO 2020" on their Car
+
+ 
+
+Qualifications:
+
+ 
+
+Must have a Car,Truck,Van or Motorcycle..
+
+ 
+
+SALARY:
+
+ 
+
+$250 weekly including $50 for gas 
+
+ 
+
+Interested Candidates should contact  
+
+Timothy Minasian
+
+olympicusjoboffer2020@gmail.com 
+
+Hiring Coordinator/Logistic Supervisor
+
+ 
+
+www.linkedin.com/company/dentsu-aegis-network
+
+ 
+
+Sincerely,
+
+ 
+
+Dowling.
+
+ 
+
+
+--B_3686568240_318822438
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)"><sty=
+le><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3D"EN-US" link=3D"#0563=
+C1" vlink=3D"#954F72"><div class=3D"WordSection1"><p class=3D"MsoNormal">Na=
+me of Company:<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p=
+ class=3D"MsoNormal">Dentsu Aegis Network Ltd.<o:p></o:p></p><p class=3D"Ms=
+oNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><=
+p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Name of C=
+ompany:<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=
+=3D"MsoNormal">Dentsu Aegis Network Ltd.<o:p></o:p></p><p class=3D"MsoNorma=
+l"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p clas=
+s=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">JOB TITLE:<o:p>=
+</o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal=
+">Advertise While Driving<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;<=
+/o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal"=
+>JOB DESCRIPTION:<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p=
+><p class=3D"MsoNormal">We seek interested candidates to go about their nor=
+mal routine with the advert of&nbsp; the &quot;TOKYO 2020&quot; on their Ca=
+r<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"Mso=
+Normal">Qualifications:<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o=
+:p></p><p class=3D"MsoNormal">Must have a Car,Truck,Van or Motorcycle..<o:p=
+></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNorma=
+l">SALARY:<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p cla=
+ss=3D"MsoNormal">$250 weekly including $50 for gas <o:p></o:p></p><p class=
+=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Interested Candi=
+dates should contact &nbsp;<o:p></o:p></p><p class=3D"MsoNormal">Timothy Mi=
+nasian<o:p></o:p></p><p class=3D"MsoNormal">olympicusjoboffer2020@gmail.com=
+&nbsp;<o:p></o:p></p><p class=3D"MsoNormal">Hiring Coordinator/Logistic Sup=
+ervisor<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=
+=3D"MsoNormal">www.linkedin.com/company/dentsu-aegis-network<o:p></o:p></p>=
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"MsoNormal">Sincerel=
+y,<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p><p class=3D"Ms=
+oNormal">Dowling.<o:p></o:p></p><p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p=
+></div></body></html>
+
+--B_3686568240_318822438--
