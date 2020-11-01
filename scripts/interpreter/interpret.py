@@ -8,6 +8,8 @@ a y-value of 1 and non-phishing emails will be given a value of 0.
 import json
 from os import path
 import matplotlib.pyplot as pyplot
+import numpy
+from numpy.linalg import lstsq
 
 import tests
 from tests import TestType
@@ -71,6 +73,22 @@ def graphNumerical(phishingResults: list, nonPhishingResults: list, testName="")
     pyplot.legend()
     pyplot.show()
 
+def graphBestFit(phishingResults: list, nonPhishingResults: list, testName=""):
+    """ Use least squares to fit a linear trend to the results.
+
+    Phishing emails are given a score of 1 while legitamate emails are given a score of 0.
+    """
+    # format for approximating system Ax = b
+    matA = phishingResults + nonPhishingResults
+    vecB = [1] * len(phishingResults) + [0] * len(nonPhishingResults)
+    
+    predX, residuals, rank, singulars = lstsq(matA, vecB)
+    predResults = numpy.dot(matA, predX)
+
+    phishPredictions = predResults[:len(phishingResults)]
+    nonPhishPredictions = predResults[len(phishingResults):]
+    graphNumerical(phishPredictions, nonPhishPredictions, "Best Fit: "+testName)
+
 
 def visualizeTest(test):
     """ Graphs test according to type. 
@@ -88,6 +106,9 @@ def visualizeTest(test):
 
     elif test.testType == TestType.numerical:
         graphNumerical(phishingResults, nonPhishingResults, test.testName)
+
+    elif test.testType == TestType.bestfit:
+        graphBestFit(phishingResults, nonPhishingResults, test.testName)
 
 
 if __name__ == "__main__":

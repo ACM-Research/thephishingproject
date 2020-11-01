@@ -10,8 +10,11 @@ Tests are also given names for the purpose of graphing. These can be any strings
     test.testName = "testname"
 """
 class TestType:
-    categorical = "categorical"
-    numerical = "numerical"
+    categorical = "categorical" # test result returns category
+    numerical = "numerical"     # test result returns single numerical value
+    bestfit = "bestfit"         # test returns tuple, result depends on line of best fit with other data.
+                                # For example it could return an (x, y, z) tuple aggregating different tests
+                                # to be put through least squares optimization.
 
 allTests = []
 
@@ -47,3 +50,11 @@ def subjectivityTest(email):
 subjectivityTest.testType = TestType.numerical
 subjectivityTest.testName = "Body Subjectivity"
 allTests.append(subjectivityTest)
+
+def readabilityTest(email):
+    # aggregate test of all readability, passed through linear fitting
+    readabilityFields = ["flesch_kincaid", "gunning_fog", "smog_index", "automated_readability_index", "coleman_liau_index", "linsear_write"]
+    return [email["readability"][field] for field in readabilityFields]
+readabilityTest.testType = TestType.bestfit
+readabilityTest.testName = "Agregate Readability Scores"
+allTests.append(readabilityTest)
