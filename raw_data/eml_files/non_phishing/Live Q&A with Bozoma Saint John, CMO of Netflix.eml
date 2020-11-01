@@ -1,0 +1,998 @@
+Received: from BN6PR01MB2658.prod.exchangelabs.com (2603:10b6:404:cf::22) by
+ SN6PR01MB3806.prod.exchangelabs.com with HTTPS; Thu, 29 Oct 2020 15:36:10
+ +0000
+Received: from DM5PR2001CA0023.namprd20.prod.outlook.com (2603:10b6:4:16::33)
+ by BN6PR01MB2658.prod.exchangelabs.com (2603:10b6:404:cf::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.28; Thu, 29 Oct 2020 15:36:08 +0000
+Received: from CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:4:16:cafe::db) by DM5PR2001CA0023.outlook.office365.com
+ (2603:10b6:4:16::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Thu, 29 Oct 2020 15:36:07 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.214.45)
+ smtp.mailfrom=em-sj-77.mktomail.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=qualtrics-marketing.com;utdallas.edu; dmarc=pass
+ action=none header.from=qualtrics-marketing.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em-sj-77.mktomail.com
+ designates 199.15.214.45 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.214.45;
+ helo=em-sj-45.mktomail.com;
+Received: from em-sj-45.mktomail.com (199.15.214.45) by
+ CY1NAM02FT040.mail.protection.outlook.com (10.152.75.135) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3520.15 via Frontend Transport; Thu, 29 Oct 2020 15:36:07 +0000
+X-MSFBL: J+ZivqRfj4/x6UJzvt1OQhEHHqoD1O4esTggz+3TZrE=|eyJ1IjoiNTQyLUZNRi0
+	0MTI6MDo0ODM5MzoyMzk4MzI6MTIyNzQ1NTo2NDQzNDo5OjM4NjE3NDo5NzY0MDc
+	1MC02MjExIiwiZyI6ImJnLXNqLTAxIiwiYiI6ImR2cC0xOTktMTUtMjE0LTE5OSI
+	sInIiOiJheHQxOTAwNThAdXRkYWxsYXMuZWR1In0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1603985766;
+	s=m1; d=qualtrics-marketing.com; i=@qualtrics-marketing.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=oxtcpHgCnro0otaUksNrVoK9lfzOGnGo1BCjAyc5iaA=;
+	b=RK2criNBHUn6R8QxXgsYqu9oSlFK+c2sqEbSuusRVXhzFb1AqXpSYO4QlfO5RedC
+	EjtV1D4HNV9S62SzrmXL0iA5sSVJP2MDUJI32URZ8BVrBFhgkItcAFke24Fv91ARi0t
+	HlDwuXmzMAqi3JE+aPTqtl4FB5s5RWWscBu8adEc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1603985766;
+	s=m1; d=mktomail.com; i=@mktomail.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=oxtcpHgCnro0otaUksNrVoK9lfzOGnGo1BCjAyc5iaA=;
+	b=edL0/26Ewl+6lEAkPOHdldneTRoAqwxwnDWzwpqJVE+Zdn6dQx/1WcK6UWvQmRQw
+	/ueQTtNra7irtJjr9yC0YGumUiJ2TAeMi0umiYH/vL1bdsZFyrzxs24rV/dYTpEb+If
+	V176hvQmkByP62jQqL4qeLHHGXL1iC7O2A+rhVpg=
+Date: Thu, 29 Oct 2020 10:36:06 -0500 (CDT)
+From: The Qualtrics Team <success@qualtrics-marketing.com>
+Reply-To: success@qualtrics-marketing.com
+To: axt190058@utdallas.edu
+Message-ID: <2082992736.22490988.1603985766418@sjmktmail-batch1o.marketo.org>
+Subject: Live Q&A with Bozoma Saint John, CMO of Netflix
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_22490987_1025949389.1603985766417"
+X-Binding: bg-sj-01
+X-MarketoID: 542-FMF-412:0:48393:239832:1227455:64434:9:386174:97640750-6211
+X-Mailfrom: 542-FMF-412.0.386174.0.0.64434.9.97640750-6211@em-sj-77.mktomail.com
+List-Unsubscribe:
+ <mailto:JNXS2N2QIVZTKRTZNRQVG3BWNVXW6N2VPFDTCLJUMM3HEVLIOV3G4RKCGBHGS4JZOA2U2PI=.386174.64434.9@unsub-sj.mktomail.com>
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path:
+ 542-FMF-412.0.386174.0.0.64434.9.97640750-6211@em-sj-77.mktomail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Oct 2020 15:36:07.7676
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ aa0fe4d9-e115-469f-b062-08d87c205ad5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132484593677696643;(4d29bbe7-9268-40c6-23cc-08d4a395902b);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: aa0fe4d9-e115-469f-b062-08d87c205ad5
+X-MS-TrafficTypeDiagnostic: BN6PR01MB2658:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 8797101644762507225;4223115052861172904;17892187139306043183;4070726059406855261;14691509011820419859;685949458506371783;17241073875671686794;14695230308755752362;2952640423051642715;15406600076111232343
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:199.15.214.45;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:em-sj-45.mktomail.com;PTR:em-sj-45.mktomail.com;CAT:NONE;SFS:(4636009)(286005)(33964004)(1096003)(3450700001)(16799955002)(7596003)(7636003)(956004)(6506007)(36736006)(42882007)(8676002)(336012)(118246002)(26005)(83380400001)(6486002)(9686003)(6512007)(34206002)(76236003)(19630485002)(83170400001)(19627405001)(166002)(356005)(94166001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Oct 2020 15:36:07.6597
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: aa0fe4d9-e115-469f-b062-08d87c205ad5
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2658
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0423600
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.029
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?U1RObHFxRnNtaXdLdnA4bzljUERLUjJoeGFwOU1jR2l1TCtrTnRVUk4yYUc2?=
+ =?utf-8?B?UEI2RHpDWkxGQm5TZVBiTjlRT2ZMdE9sQjhWMWRmSkNrVVp4OWxkVGpUMVJy?=
+ =?utf-8?B?b0dHODRwS0VtMC9halBOdUk5V0crNnR6VStXRVlad0VRMFdQMzIzM21nbTJR?=
+ =?utf-8?B?RUY5MUxTejBkRlBKZUc5b0dGWU0zcVJaTFloN1NqbjdmaVUyR1VYSk10ZFBr?=
+ =?utf-8?B?dEwvN05DcTg4RUh3VWtiMTA1ekg3b21NaUFOTlJHT0F0NTlVeTdpZ3RNMGdv?=
+ =?utf-8?B?N3d5TWJ3c2ZvL01jZ2t6Y0lPUXI1VThrTVVURDFaWGJLTU1HRzFLdGZNK2E4?=
+ =?utf-8?B?OW9xeG1SMFAwV2hhdkppOUhrNGdNbXYwUlJscmxDOCtrdjA4NEVoQWg2SWFu?=
+ =?utf-8?B?d0UwaDJFMHZEQTU3UGtaMHJJOVdWMElQeDh2R0NGLzAwOVJSM3pFK0NpRHBo?=
+ =?utf-8?B?c0c1MTlBUzNQWFVMc0g0eUIxOTd6Z2E5MElWemFKUWZsMkExOUZMMFJreDZu?=
+ =?utf-8?B?dHkrbWdUZWJmdml5ajg5VElaZjFpQ01GM05FUnkxRXVUQ3ZKL2xUaXVVdGhn?=
+ =?utf-8?B?RmVnYkkvc2JJTmYxNWhMVVhuQ1JPclp3RTlDNHVWV1B6em1zMlJjVjhDNzZl?=
+ =?utf-8?B?RVg2OWR0QzA5bXVUeHk3c3g5YkRxYWt0a1p6YS8yYURhOVNCRG9lQkRocmlX?=
+ =?utf-8?B?cUgxZ1FjVXR1VDJVOC9nYitzMzBXdTQvZmpPNEl1SkloWGE0Ky9WS1pOazhr?=
+ =?utf-8?B?UkNCb04xS0dGOU9WZkI4VVlLSGd6b3FlWTB3bHpUQzJzZll6aU5XTm5JNGxs?=
+ =?utf-8?B?RVpzbmNlOVFxK25tVVBOU1pFL2dpUHlWSndqSStad2l6cW8yQXBiL2tpQjV4?=
+ =?utf-8?B?aWZ5SU9Hd0RRSkRZTG9rN1NGOFNWTnZPOU9TR2hmVzRUbmpSTmZLZkxySGhH?=
+ =?utf-8?B?a0VXcjIvdnIxM3lXYW9KZ04zdHNsdlBGZFBxbFJFSlBvSERvUndZQ1NtT25D?=
+ =?utf-8?B?Z1NiUlBKOFNGU0pnc2hwcGQ5WktSSTNsRkwycDR5d0owdXNkM2U1UHlWSE9x?=
+ =?utf-8?B?UUJ0VHNWSWpKVVB6NDh4aHNHVkVHS2psWXNYQ0VDRzRSbzZKYXM5eFh1SHpO?=
+ =?utf-8?B?SmRpTEJmeXJjbGZsaWNMRUtROStFV0x2Vm9zN1MzWDZtcXNsYXdjSnBNZEdo?=
+ =?utf-8?B?My9IU093MEpnekRqM2tDOGVGaGpyQlpEUDRjODZlVWFYU3NQNnkrVjU4ZHo5?=
+ =?utf-8?B?VTl3MEd6VllwV21oVGpFVG9KdUFCejIxS1hCSlhuTnJNSisxelM0OERLQUh3?=
+ =?utf-8?B?bFpUWGU5aE10dnZWdW5iZG52MnFTZzZ3Y0NHKy9pMFlXVWJiNEVZc3BHYkNn?=
+ =?utf-8?B?ZnRLS3V3eEJTam5SbXV1MHl6RHcvY1Q4di9nK0ovQ3FUUllrQ3d3Y0RKeTFa?=
+ =?utf-8?B?VU9qVnljNTltTHBSZGM5QUVZR1N1ZmRDcG5iVi95cVFCRlExcC9UQlhmcEk4?=
+ =?utf-8?B?VTZBcUlsRDdhanBFRFdTNDJuYkZSMlJWb3pBMUozQSsvQmJSWDFpdEY2S04v?=
+ =?utf-8?B?NEY4Vy9pQU9SbjdCcUZwNHdsemtoMkY1Sjk1Vlc2cVNvTnZSTEdxOFNqblkv?=
+ =?utf-8?B?TXRLS2dCRXMxRXNQeEtSbnc3WjR4d09MakRCYVcvVDZqY3ZIUFNlMm5UeHNO?=
+ =?utf-8?B?ZnB3aHlRNC9ianBJeVdxTnFwcFR4MEFLSEZjUnBDQXd5VkxoenAvQTRaMjI3?=
+ =?utf-8?B?TCtTRi9md2lidjBoeWRLd20rdWdRckRXTGpaMXV6bHhuaTF6U0hKSityMi94?=
+ =?utf-8?B?Z0ZkeWFmZU01QUxBNEEzSU1ya1k2NkdhdUpkN2lpZEt2eVNzZjJyRFhDck92?=
+ =?utf-8?B?a1kzVndWeGZJalFSeVY4aXJzQ1czcFE3KzhHRjBCTlk5Ykx4RWcxenFpY3RU?=
+ =?utf-8?B?L2FNZVJwN2VmWG1sTVFpRXRpaGdLQXRWY1A3UDVtR3cyeE5QeXJDeTJWR0NZ?=
+ =?utf-8?Q?O3B2Ctd5AXeWLs1+oLYxAakW9IqqUY=3D?=
+MIME-Version: 1.0
+
+------=_Part_22490987_1025949389.1603985766417
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Join the trailblazing CMO of Netflix on Nov 17.=C2=A0View Online <[[https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsuccess.qualtr=
+ics.com%2Findex.php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTkRZd09EWmpO=
+bVJsTW1abCIsInQiOiJmRjJVeHdxTTJVZTJaV0dLanlzdjY5OTBRWkkycjRYaUY3WXJxN2MvdXh=
+IQVVVMVVzUmZUZFJ4Rk8zbDZiTmNGaE40alQ2TXRvcHFSbVhHeU1CcDZGV0hxcitNaWZCbFQ0bE=
+xuS3QxMUtjVEZoZVRaa2VkamIyTUxNZDBKRUl2OSJ9&amp;data=3D04%7C01%7CAbigail.Tho=
+mas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C1%7C637395825704042039%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdat=
+a=3DPMhrmEd%2BHdQ4vOMiDEI7NvbyxFSPqxEY2hoyxzvnv78%3D&amp;reserved=3D0]]>
+While most brands turn to safe behavior in times of crisis, Bozoma Saint Jo=
+hn will share why now, more than ever, is a time for bravery. Join this liv=
+e Q&A <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fp=
+ages.qualtrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdpr9fb=
+c-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF9hccVZrOF8_OBC0NEXZrB2vZAo6j03HUYlOD7QR=
+agMCkTVeTADjhG7OMkxu9DmgbHKVsy57JRx9pBYpemm_8sePKVOAPFsz8I1sG76h0bPqso_CnBp=
+LeEgmD-lWLmFSoxpMNFlmgNEb4Sk3WHI3h_o%3D%2Fui6600OMBA0h3U02sOGFF30&amp;data=
+=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205=
+ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704042039%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C3000&amp;sdata=3Dj8msj97S7SJJTtb4BdvHRwSI%2B5hGU%2Ft0n5oe4a5TDQY=
+%3D&amp;reserved=3D0> as we discuss the once-in-a-career opportunity presen=
+ted to those willing to take chances.
+Date
+Tuesday, November 17
+Time
+9AM PT // 12PM ET
+REGISTER <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%=
+2Fpages.qualtrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdpr=
+9fbc-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF9hccVZrOF8_OBC0NEXZrB2vZAo6j03HUYlOD=
+7QRagMCkTVeTADjhG7OMkxu9DmgbHKVsy57JRx9pBYpemm_8sePKVOAPFsz8I1sG76h0bPqso_C=
+nBpLeEgmD-lWLmFSoxpMNFlmgNEb4Sk3WHI3h_o%3D%2Fui6600OMBA0h3U02sOGFF30&amp;da=
+ta=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c2=
+05ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704042039%7CUnk=
+nown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJX=
+VCI6Mn0%3D%7C3000&amp;sdata=3Dj8msj97S7SJJTtb4BdvHRwSI%2B5hGU%2Ft0n5oe4a5TD=
+QY%3D&amp;reserved=3D0>
+333 River Park Drive, Provo, Utah 84604
+385 203 4999
+Terms of Service <https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fpages.qualtrics.com%2Fs0qs6A30OM620F3GBO20h0F&amp;data=3D04%7C01%=
+7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704042039%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+3000&amp;sdata=3DfgXxMlzn6tatchHYU53fNUkSTf2lpIWdb08vbj7R6Tk%3D&amp;reserve=
+d=3D0>=20
+Privacy <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2=
+Fpages.qualtrics.com%2FE3h0F6O3MrO060GF2s0BA03&amp;data=3D04%7C01%7CAbigail=
+.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C1%7C637395825704052042%7CUnknown%7CTWFpbGZsb3d8eyJ=
+WIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;=
+sdata=3DIoK9iWq7QHDAMkpnGhSihYp1R6imuR8%2BVX2sxjNlhR4%3D&amp;reserved=3D0>
+Security Statement <https://nam02.safelinks.protection.outlook.com/?url=3Dh=
+ttp%3A%2F%2Fpages.qualtrics.com%2FXhA0O4M66300FsBOG023Fs0&amp;data=3D04%7C0=
+1%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704052042%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C3000&amp;sdata=3DxZthwcKSnOXmW6GJsBdFzsbSN7cR%2BMsyNkGi888mMJs%3D&amp;res=
+erved=3D0>=20
+Unsubscribe <[[https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fsuccess.qualtrics.com%2FUnsubscribePage.html%3Fmkt_unsubscribe%3D1%=
+26mkt_tok%3DeyJpIjoiTkRZd09EWmpObVJsTW1abCIsInQiOiJmRjJVeHdxTTJVZTJaV0dLanl=
+zdjY5OTBRWkkycjRYaUY3WXJxN2MvdXhIQVVVMVVzUmZUZFJ4Rk8zbDZiTmNGaE40alQ2TXRvcH=
+FSbVhHeU1CcDZGV0hxcitNaWZCbFQ0bExuS3QxMUtjVEZoZVRaa2VkamIyTUxNZDBKRUl2OSJ9&=
+amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb0620=
+8d87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704052042=
+%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haW=
+wiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3Dd63q%2Byt%2BEYKA41RaQ%2FgmQZ8m%2BD0ljvj=
+1uRMVDInsOEw%3D&amp;reserved=3D0]]>=20
+=C2=A9 2020 Qualtrics
+
+------=_Part_22490987_1025949389.1603985766417
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"=E2=80=9Chttp://www.w3.org/1999/xhtml=E2=80=
+=9D" xmlns:v=3D"=E2=80=9Curn:schemas-microsoft-com:vml=E2=80=9D" xmlns:o=3D=
+"=E2=80=9Curn:schemas-microsoft-com:office:office=E2=80=9D"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->=20
+<!--Variables-->                                       =20
+<title></title>=20
+<style>
+      /* CLIENT-SPECIFIC STYLES */
+      img{-ms-interpolation-mode: bicubic;}=20
+      /* Force IE to smoothly render resized images. */
+      #outlook a{padding:0;}=20
+      /* Force Outlook 2007 and up to provide a "view in browser" message. =
+*/
+      table{mso-table-lspace:0pt;mso-table-rspace:0pt;}=20
+      /* Remove spacing between tables in Outlook 2007 and up. */
+      .ReadMsgBody{width:100%;}=20
+      .ExternalClass{width:100%;}=20
+      /* Force Outlook.com to display emails at full width. */
+      p, a, li, td, blockquote{mso-line-height-rule:exactly;}=20
+      /* Force Outlook to render line heights as they're originally set. */
+      a[href^=3D"tel"], a[href^=3D"sms"]{color:inherit;cursor:default; text=
+-decoration:none;}=20
+      /* Force mobile devices to inherit declared link styles. */
+      p, a, li, td, body, table, blockquote{-ms-text-size-adjust:100%;-webk=
+it-text-size-adjust:100%;}=20
+      /* Prevent Windows- and Webkit-based mobile platforms from changing d=
+eclared text sizes. */
+      .ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass d=
+iv, .ExternalClass span, .ExternalClass font{line-height:100%;}
+      /* Force Outlook.com to display line heights normally. */
+      table{border-collapse:collapse;}
+
+      html {
+        -webkit-text-size-adjust: none;
+      }
+
+      #gmailModule,
+      .mobileOnly{ display:none !important; }
+      /*Hide Full-Width Image on Desktop*/
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active,
+      u + #body a{=20
+        color: #00B4EF;
+        text-decoration:none;=20
+      }
+
+      a img{
+        border: 0px !important;
+      }
+
+      .button a,=20
+      .button a:hover{=20
+        color:#ffffff;=20
+        background-color:#E25333;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      ul, ol{
+        margin: 0 !important;
+        padding: 0 0 0 20px !important;
+      }=09
+      span.calendar-link a{
+        color: #ffffff !important;
+      }
+      @media only screen and (max-width:600px){
+        #bodyTable{ width:100% !important; }
+
+        img{
+          width:auto !important;
+          max-width:100% !important;
+          height:auto !important;
+        }
+        .hide{
+          display: none !important;
+        }
+        .logoContain img{
+          max-width:215px !important;
+        }
+        .tableStack{ width:100% !important; }
+        table.buttonStack { margin-top: 10px !important; }
+        td.buttonStack { padding-top: 16px !important; }
+
+        .stack{
+          padding-top: 15px !important;
+          padding-right:5% !important;
+          padding-bottom: 15px !important;
+          padding-left:5% !important;
+          width:90% !important;
+        }
+       =20
+        .tightstack{
+          padding-top: 0 !important;
+          padding-right:5% !important;
+          padding-bottom: 0 !important;
+          padding-left:5% !important;
+          width:90% !important;
+        }
+       =20
+        td.mobileTopPad{ padding-top: 30px !important; }
+        table.mobileTopPad{ margin-top: 30px !important; }
+
+        table.button{=20
+          width:100% !important;=20
+          display:table !important;
+        }
+
+        .desktopPad,
+        #gmailModule{
+          display:none !important;
+        }
+        .center img{
+          margin-left:auto !important;
+          margin-right:auto !important;
+        }
+        .center table{
+          margin-right:auto;
+          margin-left:auto;
+        }
+        .center{=20
+          text-align:center !important;
+        }
+        .noPad{
+          padding-top:0px !important;
+          padding-right:0px !important;
+          padding-bottom:0px !important;
+          padding-left:0px !important;
+        }
+        .noSidePad{
+          padding-right:0px !important;
+          padding-left:0px !important;
+        }
+        .mobileNoTopPad{
+          padding-top: 0px !important;
+        }
+        .mobilePad{
+          padding: 20px !important;
+        }
+        .mobileSmall{
+          font-size: 12px !important;
+        }
+        hr{
+          margin-right:auto !important;
+          margin-left:auto !important;
+        }
+        .internalCell{
+          Width:90% !important;
+          Padding-top:7px !important;
+          Padding-right:5% !important;
+          Padding-bottom:7px !important;
+          Padding-left:5% !important;
+        }
+
+
+        .mobileOnly{ display:block !important; }
+      }
+    </style>=20
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+a{=20
+color: #00B4EF !important;
+text-decoration:none !important;=20
+}
+#footerContent a{
+color: #000000 !important;
+}
+td, p, ul, ol, li {=20
+font-family:Arial, sans-serif !important;=20
+}
+ul, ol {
+margin: 0px 0px 0px 26px !important;
+padding: 0px !important;
+list-style-position: inside !important;
+}
+table.outlookPadColumn{
+width:34% !important;
+padding-right:2% !important;
+}
+td.outlookFloat{margin-left:40px;padding-right:0px !important;}
+</style>
+<![endif]-->=20
+</head>=20
+<body id=3D"body" bgcolor=3D"#f9f9f9" style=3D"background:#f9f9f9;">=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"background:#f9f9f9;mso-padding-alt: 0px 0px 0px =
+0px;">=20
+<tbody>
+<tr>=20
+<td>=20
+<!--Body Table-->=20
+<table role=3D"presentation" id=3D"bodyTable" width=3D"600" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"margin-left:aut=
+o;margin-right:auto;">=20
+<!--Preheader Container-->=20
+<tbody>
+<tr class=3D"desktopPad">=20
+<td style=3D"white-space:normal;color: #000000 ;font-family: Helvetica, Ari=
+al, sans-serif; font-size:11px; text-align:center; padding-top:7px;padding-=
+bottom:7px;">=20
+<div class=3D"mktoText" id=3D"preheader">
+Join the trailblazing CMO of Netflix on Nov 17.&nbsp;
+<span style=3D"color: #00b4ef;"><a href=3D"https://nam02.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Fsuccess.qualtrics.com%2Findex.php%2Fema=
+il%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTkRZd09EWmpObVJsTW1abCIsInQiOiJmRjJVe=
+HdxTTJVZTJaV0dLanlzdjY5OTBRWkkycjRYaUY3WXJxN2MvdXhIQVVVMVVzUmZUZFJ4Rk8zbDZi=
+TmNGaE40alQ2TXRvcHFSbVhHeU1CcDZGV0hxcitNaWZCbFQ0bExuS3QxMUtjVEZoZVRaa2VkamI=
+yTUxNZDBKRUl2OSJ9&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0=
+fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C=
+637395825704132007%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3D3DZteE2rpsPIBuX%2BAqF=
+tkkBGRewqkHbmOSAieMZ%2B%2BYM%3D&amp;reserved=3D0" originalsrc=3D"https://su=
+ccess.qualtrics.com/index.php/email/emailWebview?mkt_tok=3DeyJpIjoiTkRZd09E=
+WmpObVJsTW1abCIsInQiOiJmRjJVeHdxTTJVZTJaV0dLanlzdjY5OTBRWkkycjRYaUY3WXJxN2M=
+vdXhIQVVVMVVzUmZUZFJ4Rk8zbDZiTmNGaE40alQ2TXRvcHFSbVhHeU1CcDZGV0hxcitNaWZCbF=
+Q0bExuS3QxMUtjVEZoZVRaa2VkamIyTUxNZDBKRUl2OSJ9" shash=3D"aSGpg0zcZglKxI5JWd=
+PtW1Vc9ZLZ6LjNmDo392eemACgxxykEud737WE6g4rYQau9pjccgLFzXOf5APG62mCpib/yUZCD=
+BqnWs2R04+tmG8myfm8H+B16xt8Rq8y33dNmy0oME89cfnoSRt7abJBj5wrsYs1PLFvjrkCkkTL=
+RgI=3D" style=3D"color: #00b4ef;">View Online</a></span>
+</div> </td>=20
+</tr>=20
+<!--/Preheader Container-->=20
+<tr>=20
+<td>=20
+<table role=3D"presentation" id=3D"container" class=3D"mktoContainer" width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-=
+collapse:collapse;">
+<tr class=3D"mktoModule" id=3D"bannerImg">=20
+<td>=20
+<!--Banner Image-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td align=3D"center" style=3D"background-color:#ffffff;">=20
+<div class=3D"mktoImg" id=3D"bannerImage01" mktolockimgsize=3D"true">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fpages.qualtrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdp=
+r9fbc-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF2rKBXUk_048NZnlxQIPcPFupbDM_gDoSwer=
+q3sfADX2S4RZaKJb3bGNfCSL0RzJoahW5Fu8mkEMw8oFFDIAq6cLaACGKqEYtFTgPveFD5kklJD=
+pdAtSUCEDkEP2LUk63Qhyh0WstNZZBztut1yTsdtQ31E14cUFIbHvQi6vHVVn%2Fui6600OMBA0=
+h3U02sOGFF30&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9=
+e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63739=
+5825704142000%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DAUrazufA4uc6QkfzLsgtGS%2F7=
+AXLiUB4oqpoaMKNHrmI%3D&amp;reserved=3D0" originalsrc=3D"http://pages.qualtr=
+ics.com/dc/qEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdpr9fbc-f0asKyNheviLO=
+8uqxUFM1mRWbdDqW2FGDF2rKBXUk_048NZnlxQIPcPFupbDM_gDoSwerq3sfADX2S4RZaKJb3bG=
+NfCSL0RzJoahW5Fu8mkEMw8oFFDIAq6cLaACGKqEYtFTgPveFD5kklJDpdAtSUCEDkEP2LUk63Q=
+hyh0WstNZZBztut1yTsdtQ31E14cUFIbHvQi6vHVVn/ui6600OMBA0h3U02sOGFF30" shash=
+=3D"x7iDhg23g4CfV36axMWaTLfHWUGa/NBZBcMIPlVKTzuWNSOqTFjvQw4xJNzwZB5QCiZ1H8K=
+f7E5/cFip6KIKHrffoszZ8bC4dMawzFloswyWY3bAllo/n2YrwbisEAKFAZWg95EyGp+nI0SpDC=
+ZwdSKN5+UP/yfSYUPlojbLYnU=3D" target=3D"_blank"><img src=3D"https://success=
+.qualtrics.com/rs/542-FMF-412/images/Work_Different_Bozoma_Saint_John_Email=
+_Banner_AMR_with_CTA %281%29.png" width=3D"600" alt=3D"It's time for brands=
+ to get brave // Bozoma Saint John, CMO, Netflix // Register Now" style=3D"=
+display:block;"></a>=20
+</div> </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Banner Image--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"persistentSpacerModuled789ce2c-6c97-4409-a2a=
+a-8911a90a126e">=20
+<td>=20
+<!--Persistent Spacer-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td height=3D"20" style=3D"white-space:normal;background-color:#ffffff; lin=
+e-height:20px;font-size:20px;">&nbsp; </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Persistent Spacer--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"fullTextTightStack">=20
+<td>=20
+<!--Full Text with Tight Stack-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td class=3D"tightstack" style=3D"font-weight:normal;color:#000000;text-ali=
+gn:left;white-space:normal;font-family: Helvetica, Arial, sans-serif; font-=
+size:16px; line-height:28px; padding-top: 15px; padding-right:40px; padding=
+-bottom: 10px; padding-left:30px; background-color:#ffffff;">=20
+<div class=3D"mktoText" id=3D"text15">
+ While most brands turn to safe behavior in times of crisis, Bozoma Saint J=
+ohn will share why now, more than ever, is a time for bravery.=20
+<span style=3D"color: #00b4ef;"><a href=3D"https://nam02.safelinks.protecti=
+on.outlook.com/?url=3Dhttp%3A%2F%2Fpages.qualtrics.com%2Fdc%2FqEtCYPdDrgh7D=
+bDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdpr9fbc-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF2rK=
+BXUk_048NZnlxQIPcPFupbDM_gDoSwerq3sfADX2S4RZaKJb3bGNfCSL0RzJoahW5Fu8mkEMw8o=
+FFDIAq6cLaACGKqEYtFTgPveFD5kklJDpdAtSUCEDkEP2LUk63Qhyh0WstNZZBztut1yTsdtQ31=
+E14cUFIbHvQi6vHVVn%2Fui6600OMBA0h3U02sOGFF30&amp;data=3D04%7C01%7CAbigail.T=
+homas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C1%7C637395825704151999%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sd=
+ata=3DBkeX6fEMYelCMtJrNsu4EvEr7kOFuF86Idh9yl3j0lo%3D&amp;reserved=3D0" orig=
+inalsrc=3D"http://pages.qualtrics.com/dc/qEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12Gp=
+UR8lyMVhPdpr9fbc-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF2rKBXUk_048NZnlxQIPcPFup=
+bDM_gDoSwerq3sfADX2S4RZaKJb3bGNfCSL0RzJoahW5Fu8mkEMw8oFFDIAq6cLaACGKqEYtFTg=
+PveFD5kklJDpdAtSUCEDkEP2LUk63Qhyh0WstNZZBztut1yTsdtQ31E14cUFIbHvQi6vHVVn/ui=
+6600OMBA0h3U02sOGFF30" shash=3D"kyDUJi77pL3BFDdS/G7m1J6hKjOqRjEVjCiwoeBiU97=
+bt42/0P3RSlAIGsdcsNvarDMVD2zrPIJ1tVwdnu3dM7fl+o/VgvJo3RUNhURAz5Ws44eZsOtqjn=
+MPjCNYKuPAV0s3FYDQY28C9DY4sHwU9Jivxwd9V5dZb03lXiO2Rq0=3D" target=3D"_blank"=
+ style=3D"color: #00b4ef;">Join this live Q&amp;A</a></span> as we discuss =
+the once-in-a-career opportunity presented to those willing to take chances=
+.=20
+</div> </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Full Text with Tight Stack--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"twoColumn-tbf7aac5e6-aed5-4977-a2a7-91c3d485=
+9ff7">=20
+<td>=20
+<!--Two Column Text-Button-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td class=3D"stack" style=3D"white-space:normal;background-color:#ffffff;pa=
+dding-top: 20px; padding-right:50px; padding-bottom: 20px; padding-left:50p=
+x;">=20
+<!--Left-->=20
+<table role=3D"presentation" class=3D"tableStack" width=3D"68%" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td style=3D"font-weight:bold;color:#000000;text-align:left;white-space:nor=
+mal;font-family: Arial, Helvetica, serif; font-size:16px; line-height: 30px=
+; padding: 5px;">=20
+<div class=3D"mktoText" id=3D"leftTopTitle06f7aac5e6-aed5-4977-a2a7-91c3d48=
+59ff7">
+ Date=20
+</div> </td>=20
+<td style=3D"font-weight:normal;color:#000000;text-align:left;white-space:n=
+ormal;font-family: Arial, Helvetica, serif; font-size:16px; line-height: 30=
+px;padding: 5px;">=20
+<div class=3D"mktoText" id=3D"leftText06f7aac5e6-aed5-4977-a2a7-91c3d4859ff=
+7">
+ Tuesday, November 17=20
+</div> </td>=20
+</tr>=20
+<tr>=20
+<td style=3D"font-weight:bold;color:#000000;text-align:left;white-space:nor=
+mal;font-family: Arial, Helvetica, serif; font-size:16px; line-height: 30px=
+;padding: 5px;">=20
+<div class=3D"mktoText" id=3D"leftBottomTitle06f7aac5e6-aed5-4977-a2a7-91c3=
+d4859ff7">
+ Time=20
+</div> </td>=20
+<td style=3D"font-weight:normal;color:#000000;text-align:left;white-space:n=
+ormal;font-family: Arial, Helvetica, serif; font-size:16px; line-height: 30=
+px; padding: 5px;">=20
+<div class=3D"mktoText" id=3D"leftBottomText06f7aac5e6-aed5-4977-a2a7-91c3d=
+4859ff7">
+ 9AM PT // 12PM ET=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--/Left-->=20
+<!--Right-->=20
+<table role=3D"presentation" class=3D"tableStack mobileTopPad" width=3D"28%=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"right" style=3D=
+"margin-top: 16px;">=20
+<tbody>=20
+<tr style=3D"background-color:#ffffff;">=20
+<td style=3D"text-align:left;white-space:normal;">=20
+<!--Button-->=20
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" bgcolor=3D"#00B4EF" style=3D"display:inline-block; border: 1px #00B4EF s=
+olid; border-radius: 4px; background-color: #00B4EF;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"font-weight: normal; font-family: Helvetica, Arial, sans-serif=
+; font-size:12px; line-height:20px; color:#ffffff; padding: 7px 14px; text-=
+align:center; ">=20
+<div class=3D"mktoText" id=3D"buttonText06f7aac5e6-aed5-4977-a2a7-91c3d4859=
+ff7">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fpages.qualtrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdp=
+r9fbc-f0asKyNheviLO8uqxUFM1mRWbdDqW2FGDF2rKBXUk_048NZnlxQIPcPFupbDM_gDoSwer=
+q3sfADX2S4RZaKJb3bGNfCSL0RzJoahW5Fu8mkEMw8oFFDIAq6cLaACGKqEYtFTgPveFD5kklJD=
+pdAtSUCEDkEP2LUk63Qhyh0WstNZZBztut1yTsdtQ31E14cUFIbHvQi6vHVVn%2Fui6600OMBA0=
+h3U02sOGFF30&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9=
+e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63739=
+5825704151999%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DBkeX6fEMYelCMtJrNsu4EvEr7k=
+OFuF86Idh9yl3j0lo%3D&amp;reserved=3D0" originalsrc=3D"http://pages.qualtric=
+s.com/dc/qEtCYPdDrgh7DbDU2Hwx5oYb-GJ2-J12GpUR8lyMVhPdpr9fbc-f0asKyNheviLO8u=
+qxUFM1mRWbdDqW2FGDF2rKBXUk_048NZnlxQIPcPFupbDM_gDoSwerq3sfADX2S4RZaKJb3bGNf=
+CSL0RzJoahW5Fu8mkEMw8oFFDIAq6cLaACGKqEYtFTgPveFD5kklJDpdAtSUCEDkEP2LUk63Qhy=
+h0WstNZZBztut1yTsdtQ31E14cUFIbHvQi6vHVVn/ui6600OMBA0h3U02sOGFF30" shash=3D"=
+kyDUJi77pL3BFDdS/G7m1J6hKjOqRjEVjCiwoeBiU97bt42/0P3RSlAIGsdcsNvarDMVD2zrPIJ=
+1tVwdnu3dM7fl+o/VgvJo3RUNhURAz5Ws44eZsOtqjnMPjCNYKuPAV0s3FYDQY28C9DY4sHwU9J=
+ivxwd9V5dZb03lXiO2Rq0=3D" style=3D"text-decoration: none; color: #ffffff !i=
+mportant;" target=3D"_blank"><span style=3D"text-decoration: none; color: #=
+ffffff;">REGISTER</span></a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--/Button--> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--/Right--> </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Two Column Text--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"persistentSpacerModule8daa74b6-b850-4b47-839=
+6-d8c712e75a3e">=20
+<td>=20
+<!--Persistent Spacer-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td height=3D"20" style=3D"white-space:normal;background-color:#ffffff; lin=
+e-height:20px;font-size:20px;">&nbsp; </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Persistent Spacer--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"spacerShadow1">=20
+<td>=20
+<!--Spacer w/Shadow-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff; padding-top:20px=
+; padding-bottom:20px;">=20
+<td align=3D"center" style=3D"background-color:#ffffff;">=20
+<div class=3D"mktoImg" id=3D"spacerShadowimg1">=20
+<img src=3D"https://success.qualtrics.com/rs/542-FMF-412/images/spacer-shad=
+ow.jpg" width=3D"600" alt=3D"ShadowDivider" style=3D"display:block;" border=
+=3D"0">=20
+</div> </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Spacer w/Shadow--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"persistentSpacerModule52adf40d-1c5c-41a1-a43=
+8-58dcf0f83f50">=20
+<td>=20
+<!--Persistent Spacer-->=20
+<table role=3D"presentation" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:nowrap; background-color:#ffffff;">=20
+<td height=3D"20" style=3D"white-space:normal;background-color:#ffffff; lin=
+e-height:20px;font-size:20px;">&nbsp; </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Persistent Spacer--> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"footer">=20
+<td>=20
+<!--Footer-->=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<!--[if gte mso 9]>
+<tr>
+<td>
+<table role=3D"presentation" width=3D"600" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width:600px;">
+<![endif]-->=20
+<tbody>=20
+<tr style=3D"white-space:normal; background-color:#ffffff">=20
+<td class=3D"stack" style=3D"padding-top:15px;padding-right:40px;padding-to=
+p: 10px; padding-right:40px; padding-bottom: 20px; padding-left:40px;backgr=
+ound-color:#ffffff;">=20
+<div class=3D"mktoSnippet" id=3D"footerContent">
+=20
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+<tbody>
+<tr style=3D"white-space: nowrap;">
+<td width=3D"100%" style=3D"padding-bottom: 8px;">
+<table role=3D"presentation" width=3D"90" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td width=3D"40" style=3D"padding-right: 10px; padding-left: 0px;"><span st=
+yle=3D"color: #000000;"><a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttp%3A%2F%2Fpages.qualtrics.com%2FrB0k0F2s3MWAO6F3O06G0h0&am=
+p;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d=
+87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704161994%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C3000&amp;sdata=3DPgem7La%2BYDxA8R22BKCsvwEVtV8OweN14Vg6otm=
+k0fQ%3D&amp;reserved=3D0" originalsrc=3D"http://pages.qualtrics.com/rB0k0F2=
+s3MWAO6F3O06G0h0" shash=3D"NbyfSEtXAaPgm0Iipv/ZdxMGqeiNO/pmZxS/JsswCLjEiiXI=
+D86jRA5JT/W7LfnlCYwa6Pf2Qs8/JtgCbdFgnS02Z2FyUyBwuSaFW8GRQi6tbMscFVfUOTCzNTD=
+VwQRu+u4vW/AMtTapFbEwHu/6RFoq1PCkwctDgOiKb49zLIU=3D" style=3D"color: #00000=
+0;"><img src=3D"https://success.qualtrics.com/rs/542-FMF-412/images/social-=
+icons-fb.png" width=3D"25" border=3D"0" alt=3D"Facebook" style=3D"display: =
+block; max-width: 25px !important;" constrain=3D"true" imagepreview=3D"fals=
+e"></a></span></td>
+<td width=3D"40" style=3D"padding-right: 10px; padding-left: 0px;"><span st=
+yle=3D"color: #000000;"><a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttp%3A%2F%2Fpages.qualtrics.com%2Fx0F0030s2l36A6M0XhBOOFG&am=
+p;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d=
+87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637395825704171986%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C3000&amp;sdata=3DRympBRt20DkSpcmYeft0Ivi5whLQlgFNoFE70%2Fm=
+2roc%3D&amp;reserved=3D0" originalsrc=3D"http://pages.qualtrics.com/x0F0030=
+s2l36A6M0XhBOOFG" shash=3D"zx0lGyv5rx45glWV2CsWo0B+xu6apQt62Vew9EVKAMZ+Gf7V=
+exI+ztu13FGIY5kpNjrPk2WdjJzLMmM5RF0McWVg0ecrtuY1z+w/VZFcU+Nfgu+40lpcrabOKxI=
+i3IOxF9jVykznLiNXzcaJE8ujhD5ORZ+dDynaybxOGW4NrQs=3D" style=3D"color: #00000=
+0;"><img src=3D"https://success.qualtrics.com/rs/542-FMF-412/images/social-=
+icons-twitter.png" width=3D"29" border=3D"0" alt=3D"Twitter" style=3D"displ=
+ay: block; max-width: 29px !important;" constrain=3D"true" imagepreview=3D"=
+false"></a></span></td>
+<td width=3D"40" style=3D"padding-right: 10px; padding-left: 0px;"><span st=
+yle=3D"color: #000000;"><a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttp%3A%2F%2Fpages.qualtrics.com%2FWF03Y6MBA6m2FhO00G3Os00&am=
+p;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d=
+87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637395825704171986%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C3000&amp;sdata=3DGI5Rw4vPE8lnxNi0gzEbDb4GFWZ289PZogIKApFuF=
+Ps%3D&amp;reserved=3D0" originalsrc=3D"http://pages.qualtrics.com/WF03Y6MBA=
+6m2FhO00G3Os00" shash=3D"WgZwvFETltefMuQCMAZNHfVLkcEp3unEtWvvFBzW9rBk6nl7qB=
+XKl35wgDSZ1B9gp+gqNRdIzO2/haf85YvT10/O3EZ7czkA6i64Dz1/HyTKIgdIE0uhPydQkyuJh=
+HNAbq8qiMZ2uxERTQ4eMB7QCBra0zxV9xxgQCqZbwkOfFw=3D" style=3D"color: #000000;=
+"><img src=3D"https://success.qualtrics.com/rs/542-FMF-412/images/social-ic=
+ons-linkedin.png" width=3D"27" border=3D"0" alt=3D"LinkedIn" style=3D"displ=
+ay: block; min-width: 20px; max-width: 27px !important;" constrain=3D"false=
+" imagepreview=3D"false"></a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"2" style=3D"font-family: Arial, Helvetica, sans-serif; color=
+: #2e393f; font-size: 11px; line-height: 20px; text-align: left;"><span sty=
+le=3D"color: #000000;">333 River Park Drive, Provo, Utah 84604&nbsp; |&nbsp=
+; 385&nbsp;203&nbsp;4999 </span><br><span style=3D"color: #000000;"> <a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fpag=
+es.qualtrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5iUa-rD_KNa4oTEQ5FenVqDvN5S8Btp=
+54A6tSaFPLQ3oeFcLdgylofEO_iOEtoq5d9c1YUp1_VcLVWUhFVC56wVTHhM7FEtnNxJD9cQsgQ=
+XftvULexhXnK_kdagkn7lrgndrQ1S0KWM5C1S_J_z9WqRy2lUpZLHzwctlnZ6UwDe35FY_52dpF=
+v5UOYR44kHGKzGH6YfKuRhjjeufQb27MhI%3D%2Fui6600OMBA0h3U02sOGFF30&amp;data=3D=
+04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637395825704181982%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C3000&amp;sdata=3DyLpSTcGmX7DeD0XyHcshsWxbiFfpRUejjzXQn7bs43A%3D&amp=
+;reserved=3D0" originalsrc=3D"http://pages.qualtrics.com/dc/qEtCYPdDrgh7DbD=
+U2Hwx5iUa-rD_KNa4oTEQ5FenVqDvN5S8Btp54A6tSaFPLQ3oeFcLdgylofEO_iOEtoq5d9c1YU=
+p1_VcLVWUhFVC56wVTHhM7FEtnNxJD9cQsgQXftvULexhXnK_kdagkn7lrgndrQ1S0KWM5C1S_J=
+_z9WqRy2lUpZLHzwctlnZ6UwDe35FY_52dpFv5UOYR44kHGKzGH6YfKuRhjjeufQb27MhI=3D/u=
+i6600OMBA0h3U02sOGFF30" shash=3D"FnoXgwJNEYDT3squeJI32KETNJh/nZzjB/LzJUwZJi=
+sOZEPz7v8sYPwJwlxeqsNNRVhbNrE5tMiH6NhWVZ/2T5cqtFKgBKDjjQuCcY1EdRECkk3X2CFhe=
+66qYao5DipZ9pgl2gR+2/a95CkppNZBqyla3g0DSFEmMy1mJEPSXYc=3D" style=3D"text-de=
+coration: none; color: #000000;" target=3D"_blank"><span style=3D"text-deco=
+ration: none;"> Terms of Service</span></a>&nbsp; |&nbsp;&nbsp;<a href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fpages.qua=
+ltrics.com%2Fdc%2FqEtCYPdDrgh7DbDU2Hwx5l4Q4Lvb20dbxAB4OigMJGb9B_nSlpdlA9BnK=
+olS92ikrk4sG9aic9bn7DaublYQFHmVh8e9ttD-CZJmXC0cjfYCOAOWNAs52d4K0IbEIV_OKeDG=
+gbhCBsAarZou8l8z47LCDKITIu6hV3dIBYCxGtL15E5NpgrtbS7GDEcuEn7dy4lgeCJStvwwefU=
+9sJ3o833aneMR6tNM3wvu96BbY0U%3D%2Fui6600OMBA0h3U02sOGFF30&amp;data=3D04%7C0=
+1%7CAbigail.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637395825704191979%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C3000&amp;sdata=3D9nmQWDYrAcLQ%2F15RqrXhnnsrJdwhr6t6jTWaBZ7hXqs%3D&amp;res=
+erved=3D0" originalsrc=3D"http://pages.qualtrics.com/dc/qEtCYPdDrgh7DbDU2Hw=
+x5l4Q4Lvb20dbxAB4OigMJGb9B_nSlpdlA9BnKolS92ikrk4sG9aic9bn7DaublYQFHmVh8e9tt=
+D-CZJmXC0cjfYCOAOWNAs52d4K0IbEIV_OKeDGgbhCBsAarZou8l8z47LCDKITIu6hV3dIBYCxG=
+tL15E5NpgrtbS7GDEcuEn7dy4lgeCJStvwwefU9sJ3o833aneMR6tNM3wvu96BbY0U=3D/ui660=
+0OMBA0h3U02sOGFF30" shash=3D"yyXBgIhPvbALsTJDUSw0AvmYBZif9xMurKRvzba73CVMV1=
+DCqeye64b1qOgpK1RSxC0puHjqJA3Q3HLlH1DuutsGQWR27EsrzCxLh3t4JuZN9oNoS+0vqjJB2=
+94zSON7HQV02XQCVQEv34CjiYlYW3T2quLZM6eQElRWeJ+8XrM=3D" style=3D"text-decora=
+tion: none; color: #000000;" target=3D"_blank"><span style=3D"text-decorati=
+on: none;">Privacy</span></a>&nbsp; |&nbsp;&nbsp;<a href=3D"https://nam02.s=
+afelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fpages.qualtrics.com%2Fd=
+c%2FqEtCYPdDrgh7DbDU2Hwx5gQVlc3Ikc-e62IY6AA-TnXqRwu6_QsRBV0Cr7s044g8T9OqYLB=
+hXISKhdicfFky1KbuiuNjtGXGcFMJgXFc8ulUIk9Fy-pxnqfB5kSchDtEcd3FacenVJ_z0F2gwN=
+gvFvt-hQm-dMHT2XEnfyT9DJhiZQ14yLRxbbt8gdPwWf6Fsc7QBQFZPTpVl4DI-c0f_nixCJKr2=
+Vng2UxSuqYHX8U%3D%2Fui6600OMBA0h3U02sOGFF30&amp;data=3D04%7C01%7CAbigail.Th=
+omas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637395825704191979%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sda=
+ta=3DZmcy6ZGb0EFUkCfkkSUBy%2BVRIvzhc0H12cNEwM%2FIuB0%3D&amp;reserved=3D0" o=
+riginalsrc=3D"http://pages.qualtrics.com/dc/qEtCYPdDrgh7DbDU2Hwx5gQVlc3Ikc-=
+e62IY6AA-TnXqRwu6_QsRBV0Cr7s044g8T9OqYLBhXISKhdicfFky1KbuiuNjtGXGcFMJgXFc8u=
+lUIk9Fy-pxnqfB5kSchDtEcd3FacenVJ_z0F2gwNgvFvt-hQm-dMHT2XEnfyT9DJhiZQ14yLRxb=
+bt8gdPwWf6Fsc7QBQFZPTpVl4DI-c0f_nixCJKr2Vng2UxSuqYHX8U=3D/ui6600OMBA0h3U02s=
+OGFF30" shash=3D"Uwz8ZSaszVat68Mi2bBn7Cy8fjrvtMTkkfd2v1cTPzVNUuUTE0HuPv54E7=
+lRxfB+PWRfuy1YWUS2XNtKdBNkBYy6GE7L/lGCh3A4MdkcEoSOJb0r54TtSBmmgw5Hb1gV/HgHF=
+K7g+91Teq6KsvfWO4GYtUAZsuaqGSvD8DA/bYs=3D" style=3D"text-decoration: none; =
+color: #000000;" target=3D"_blank"><span style=3D"text-decoration: none;">S=
+ecurity Statement</span></a>&nbsp;&nbsp;|&nbsp; <a href=3D"https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsuccess.qualtrics.com%2=
+FUnsubscribePage.html%3Fmkt_unsubscribe%3D1%26mkt_tok%3DeyJpIjoiTkRZd09EWmp=
+ObVJsTW1abCIsInQiOiJmRjJVeHdxTTJVZTJaV0dLanlzdjY5OTBRWkkycjRYaUY3WXJxN2MvdX=
+hIQVVVMVVzUmZUZFJ4Rk8zbDZiTmNGaE40alQ2TXRvcHFSbVhHeU1CcDZGV0hxcitNaWZCbFQ0b=
+ExuS3QxMUtjVEZoZVRaa2VkamIyTUxNZDBKRUl2OSJ9%26utm_source%3Dmarketo%26utm_me=
+dium%3Demail%26utm_campaign%3D2020--11--amr--email--xm--wd-bozoma-saint-joh=
+n%26utm_content%3Dsignature&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas=
+.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C1%7C637395825704201973%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DO%2B9j7tmJN=
+CgFYzWTB%2FPjoAP%2FrnE2KNf%2B05jfKysZEs0%3D&amp;reserved=3D0" originalsrc=
+=3D"https://success.qualtrics.com/UnsubscribePage.html?mkt_unsubscribe=3D1&=
+amp;mkt_tok=3DeyJpIjoiTkRZd09EWmpObVJsTW1abCIsInQiOiJmRjJVeHdxTTJVZTJaV0dLa=
+nlzdjY5OTBRWkkycjRYaUY3WXJxN2MvdXhIQVVVMVVzUmZUZFJ4Rk8zbDZiTmNGaE40alQ2TXRv=
+cHFSbVhHeU1CcDZGV0hxcitNaWZCbFQ0bExuS3QxMUtjVEZoZVRaa2VkamIyTUxNZDBKRUl2OSJ=
+9&amp;utm_source=3Dmarketo&amp;utm_medium=3Demail&amp;utm_campaign=3D2020--=
+11--amr--email--xm--wd-bozoma-saint-john&amp;utm_content=3Dsignature" shash=
+=3D"SQMRDZYSDRGyfiO06hD1my+Y1qRBhufDOq8lMealQvtsa01kxbKnUKqZyf5nY+vMJzetgU7=
+dWMe9uMlengZJVQgKnYGP5PnJc81hpjUYzeyTiKLNPnYS1qLWfeKQHPo2CKsbwgHcalzKrwFqYL=
+IruUOGbdGUhTOP6XwenJM8ID0=3D" style=3D"text-decoration: none; color: #00000=
+0;" target=3D"_blank"><span style=3D"text-decoration: none;">Unsubscribe</s=
+pan></a>&nbsp;&nbsp;</span><br><span style=3D"color: #000000;"> =C2=A9 2020=
+ Qualtrics&nbsp; &nbsp; &nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+=20
+</div> </td>=20
+</tr>=20
+<!--[if gte mso 9]>
+</table>
+</td>
+</tr>
+<![endif]-->=20
+</tbody>=20
+</table>=20
+<!--/Footer--> </td>=20
+</tr>
+</table> </td>=20
+</tr>=20
+<!--/Container-->=20
+<!--Full Width Image for Gmail to render desktop version on mobile-->=20
+<tr>=20
+<td>=20
+<table role=3D"presentation" class=3D"hide" id=3D"gmailModule" width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"min-width:100%=
+;">=20
+<tbody>
+<tr style=3D"white-space:nowrap; background-color:#ffffff">=20
+<td height=3D"1" class=3D"hide" style=3D"min-width:600px;opacity:0; font-si=
+ze:0px;line-height:0px;"> <img height=3D"1" src=3D"#" style=3D"min-width: 6=
+00px;max-height:0px; text-decoration: none; border: none; -ms-interpolation=
+-mode: bicubic;"> </td>=20
+</tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+<!--/Full Width Image for Gmail to render desktop version on mobile-->=20
+</tbody>
+</table>=20
+<!--End Body Table--> </td>=20
+</tr>=20
+</tbody>
+</table> =20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fpages.qualtrics.com%2FP03066hFAM0OjB0s0OVF3G2&amp;data=3D04%7C01%7CAbiga=
+il.Thomas2%40UTDallas.edu%7Caa0fe4d9e115469fb06208d87c205ad5%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637395825704211967%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&am=
+p;sdata=3DUPelZh%2BbrDBqV0ZALT9lMlh%2FNI2BkKo%2F61C7EZD8pYE%3D&amp;reserved=
+=3D0" originalsrc=3D"http://pages.qualtrics.com/P03066hFAM0OjB0s0OVF3G2" sh=
+ash=3D"qORFmFcMggv8eKUg5E4TaztSysAyVO92gN3KahKd5LuzciRp4AMEZWKmet3jFNnrBjb1=
+I2DixN4iDSMcA6cdsiBPzIpYVgj5u6kjqhS/JVuCVPUgNmgDad0e74oNTYqDAXxqCbnPCSW0lLU=
+KodDK90YjeCjaQf2M9cdgNcwcZws=3D"></a>
+<img src=3D"http://pages.qualtrics.com/trk?t=3D1&amp;mid=3DNTQyLUZNRi00MTI6=
+MDo0ODM5MzoyMzk4MzI6MTIyNzQ1NTo2NDQzNDo5OjM4NjE3NDo5NzY0MDc1MC02MjExOmF4dDE=
+5MDA1OEB1dGRhbGxhcy5lZHU%3D" width=3D"1" height=3D"1" style=3D"display:none=
+ !important;" alt=3D"">
+</body>
+</html>=
+
+------=_Part_22490987_1025949389.1603985766417--

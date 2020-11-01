@@ -1,0 +1,1450 @@
+Received: from BN6PR01MB2611.prod.exchangelabs.com (2603:10b6:404:ce::13) by
+ BYAPR01MB3798.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 17:58:56
+ +0000
+Received: from DM5PR13CA0049.namprd13.prod.outlook.com (2603:10b6:3:117::11)
+ by BN6PR01MB2611.prod.exchangelabs.com (2603:10b6:404:ce::13) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.22; Tue, 13 Oct 2020 17:58:51 +0000
+Received: from CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:117:cafe::a7) by DM5PR13CA0049.outlook.office365.com
+ (2603:10b6:3:117::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.11 via Frontend
+ Transport; Tue, 13 Oct 2020 17:58:50 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ CY1NAM02FT027.mail.protection.outlook.com (10.152.75.159) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 17:58:50 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Tue, 13 Oct 2020 12:58:49 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Tue, 13 Oct 2020 12:58:49 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 54DC7C000056; Tue, 13 Oct 2020 12:58:49 -0500 (CDT)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id 4965AC000053
+	for <ecs.ug@lists.utdallas.edu>; Tue, 13 Oct 2020 12:57:06 -0500 (CDT)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=ECS_ADU@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  ECS_ADU@utdallas.edu designates 40.107.237.65 as permitted
+  sender) identity=mailfrom; client-ip=40.107.237.65;
+  receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="ECS_ADU@utdallas.edu";
+  x-sender="ECS_ADU@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: 54bPtopnFlF7f0HWwobXxwcEl3AN1pldl8RoJyV3yFqnkMgY+8K4KaSH+sXyuyIQKTIFQjqb3B
+ faZwPfER3CPjoc6WITy6D0xZNK6n98GWn6osIDVeoZYqE2Y9nfevOQ6LrTYIK2EOpi7dNM+PZQ
+ GC3hnnIP5brUNZBgO6D/Ha6lTsSXbTG+W5ie+LQMC36bE5OsDOQl1jCyKzKRQjVVRb57OEmGy9
+ N+FaW9N7vhk1JYZA0p/cp/K31zUcsAB+5i/12WfsbNQeOpBLgJ5PWP2VS/Z7czSsBsefVwgzCP
+ MOZGlNs7bE9eAQB27f93duVl
+X-IronPort-RemoteIP: 40.107.237.65
+X-IronPort-MID: 955197
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0D3AgAf6YVfh0HtayhdAw4QAQELEgxAgnIvURgBXlgeA?=
+ =?us-ascii?q?wcILAqNNYgXlDqGA4FjAQUBAQkBAQEBAQEBAQEIARgBCQcEAgQBAYFsgl4Cg?=
+ =?us-ascii?q?gMlATgTAgMBAQEDAgMBAQEBAQQBAQECAQECAwICARMBAQF/YIECAYFGAYFKC?=
+ =?us-ascii?q?wMxDII3BQIDHweDCwEBAQEDEhsTAQEMHQYBBwEPAgEIEQQBASEBAgQHMQEUB?=
+ =?us-ascii?q?wEBBQMBAQQIBgEEAQcOBwQBgn8EAQGBfk0DLgECDJsGAYEoPgIjARItAQECC?=
+ =?us-ascii?q?YEFKYgsNXRhUx2CZAEBBYEzAYNeA1UBCQ2BOQMGgTiGU4g+QIFUgWE3BQIuP?=
+ =?us-ascii?q?oFAgRwCAheBBwoBEgEDIAwTDAkRgwOCLZAZIhSKBIEdigGRdg0dgkmJApIKg?=
+ =?us-ascii?q?xWKCJQglyaGcZU1AgQCBAUCEAWBayEPWl0MB3KDNxMMLgECAQINAQICAgEBA?=
+ =?us-ascii?q?gEBCAEBAQFUjSUjGh2DOmqBFYFyhic+QzECAQEBDAkBHAIGCgEBAwl8iwhXX?=
+ =?us-ascii?q?AGBEAEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3Ag4vq6hCg7KrPasOWa7EGUyQJP3N1i/DPJgcQr6?=
+ =?us-ascii?q?AfoPdwSP3/os2wAkXT6L1XgUPTWs2DsrQY0rWQ7vGrBjFIyK3CmUhKSIZLWR?=
+ =?us-ascii?q?4BhJdetC0bK+nBN3fGKuX3ZTcxBsVIWQwt1Xi6NU9IBJS2PAWK8TW94jEIBx?=
+ =?us-ascii?q?rwKxd+KPjrFY7OlcS30P2594HObwlSizexfLF/IA+2oAjVucUbg4tvIbstxx?=
+ =?us-ascii?q?XUpXdFZ/5Yzn5yK1KJmBb86Maw/Jp9/ClVpvks6c1OX7jkcqohVbBXAygoPG?=
+ =?us-ascii?q?4z5M3wqBnMVhCP6WcGUmUXiRVHHQ7I5wznU5jrsyv6su192DSGPcDzULs5Vy?=
+ =?us-ascii?q?iu47ttRRT1kyoMKSI3/3/LhcxxlKJboQyupxpjw47PfYqZMONycr7Bcd8GQG?=
+ =?us-ascii?q?ZMWMFeWTFcAoOnd4sAEfYOPfpWoYn6olsBtxq+BQ+xD+/rxTJFgnr60Ks03O?=
+ =?us-ascii?q?Q7FQHNwRIuEdQAvn/JqNn5LagfXeWzwaLVzzvMculW1C/95obWbx4hvf+CU7?=
+ =?us-ascii?q?F+ccXTyEkgCwzKg06KpoD5Iz+YzPgBv3SF4+dmSOmhi3QnqwZ0ojW3yckhlJ?=
+ =?us-ascii?q?THiZoJx17K+ypy3YE4K9KmRUBmedGpDJVeuC+BOotrXsMtXntnuCI+yrIcop?=
+ =?us-ascii?q?63ZjYFx4k6xxPGbfGMboeH7A75WumLPTd4mGxqeKi5hxuq9UWtyvDxW8uq3V?=
+ =?us-ascii?q?hEsCZIjNrBuH4C2RHd9MWLVvhw80ei1DuN1Q3f9PxILEApmKffN5Mt3rA+mJ?=
+ =?us-ascii?q?UPvEnAGiL4l0P7h7KYeEUj/+in8eXnYrP+q5+bKo90lgX+MqMpmsy8G+g3Lg?=
+ =?us-ascii?q?8OX22D9euh1L3j5lf1QLpNjv0oiqXWq5HaJdgBqq69Aw5Y1Jso5RWnDzq+39?=
+ =?us-ascii?q?kUgWMLIE9ZdB+FlYTlJV/DLfLiAfq+g1mgiCpny+7CM7H7H5nBM2TPnK3/cb?=
+ =?us-ascii?q?ty9UJQ0gs+wchB659VFr0MLvf+VlLtuNPDDxI0Nha7z/rpBdh4yI8TXXyAD6?=
+ =?us-ascii?q?qcPa/Pv1KF4P8kLfOWa48Pojn9LuAo5/7wgn89nl8QZbGn0IcQZnylAPhqOl?=
+ =?us-ascii?q?iUb2Lvj9sYFmcFpRQxQPbtiF2fTT5cfHGyX7865j4mEo6mFZ3DRoexgLOfwC?=
+ =?us-ascii?q?i7ApxWZmdAClyWFnfoapmEW/MLaCKVIc9tiCALVb+kS4M51BGushH1y6Z/I+?=
+ =?us-ascii?q?fb5iEUr4/v2MR36uHJix0/+z55A96c3myNV210m3kHRz4y3KBxu0x9zVKD3L?=
+ =?us-ascii?q?B3jfFGCNJc/+9EXAk0OpPH0ux6F839VRjFfteNUlmmWc+qDi8sQdIs29MOeV?=
+ =?us-ascii?q?pyG82+jhDf2CqnG6EamKCQBJAu76Lc0GP8J8J8y3bdyKkhlEMqQtZTNWK7nK?=
+ =?us-ascii?q?F/8wzTCJTSk0mDiamlaLkcj2bw8nyexz+LtUBcTAkiXaXeUHw3YVHfsJL+/E?=
+ =?us-ascii?q?yVVKKkC7ksLl587/W/AJBhUPzDoAZ7Quz+MoHbamO1h2DiDBOZgKyFaInnYU?=
+ =?us-ascii?q?0AwCnUDEwNiEYe8WvVCA4lGy30pmvfCCBpR1bial3htLYu+CLjCxVpkVzbMh?=
+ =?us-ascii?q?EnhubvpUYc2qPNR/1KgOle4HwvoDkqRQ+2hIKGB9DY/VdJeKRHfcgw+kkB0n?=
+ =?us-ascii?q?jQqkp6JJPzEqZ5m1Q+bwFz6kbn1hFrDddMkdMnoFst1gNvb6WC3wRaajma0J?=
+ =?us-ascii?q?vsb4DxEVTYxzuVSoT7iWzYy8uc2rsK7KE9olTnoAb7H08ztWpu19pYyVOB+p?=
+ =?us-ascii?q?nDCA4bStT8Xltkyh5hurv6fiw5sobd1HlwNvuwvzbc1pd2VLt0klP6IokCYf?=
+ =?us-ascii?q?7YUl6uSZJCDpfxeeAkwgbyNEpfMuteqvdtNJj2J/eMgPT2FOJhhy69gH5Zpo?=
+ =?us-ascii?q?dn21/K8DBzGdLPio0IzvqDww2LWi3zll6tqYijlItfIywdNm6+0jT/QpNNaq?=
+ =?us-ascii?q?R2eY8QT2qiPpvk6M95gsvAcEVv3XKeTwcr8/SeUDavR0Hh0QRU0U0M53GrhH?=
+ =?us-ascii?q?3rnHRPjzg1o//Hj2T1yOP4eU9CZzMRHjtLkEvsLI6ojtsTQEmvaU0TmQC44V?=
+ =?us-ascii?q?rhmfgJqb92di/TShsVI3GzcydjSqu1pvyJZMscoIgwv3BvWf+nKUufVqa7ph?=
+ =?us-ascii?q?Ib1y35GG4L6RsAQBiGh73kgxBzjGaUNzB+oGeAI5NKyBzS5cLRSbtq5hRbHX?=
+ =?us-ascii?q?QqsTDMHRD8MsKgpJOUnMue7rn7CySgTp1WYW/gyobS/Ce84GRrB1W4kZXR0p?=
+ =?us-ascii?q?XKOjMN+APG/8R2WSzMqB/nJITnyuy2PPlmcU9hGFLno5YiXNgmzc1q385Why?=
+ =?us-ascii?q?VSj47d5XcdlGbvLdhXvMC2JGEAQzIG2Z+d4QTo3lFiMmPcwov4UnuHxc4yL9?=
+ =?us-ascii?q?K+Y24Qxmc895UWUOHNtOMCx3Aq5ATl/mezKbBnkzwQyOUj8isXmOhQ/gomkn?=
+ =?us-ascii?q?jBW/VOW0hAPSn80R+P6oPbzu0faWCxfLy3zEc7k8qmCeTIjypnb1/VR78/AS?=
+ =?us-ascii?q?N56sF2KxTB3GC5ueSGMJHAKMkesBGZiUKKosNuH7sdq9IXmSZuPWb0pjsox/?=
+ =?us-ascii?q?Nx3lR+mJq9uoaAMWBk+qm0VwVAOAryYccCqVSPxe5O29yb1Ie1EtB9Cy0GCd?=
+ =?us-ascii?q?H2GOmwHmtY5rz3chyDGzompjKHFKrDSEWBvVx+oSuqcdjjNmnLdiVBi4Q4Ak?=
+ =?us-ascii?q?HbfAsG3UgVRGlowsZ/T1j1gpSnKAAguHgQ/gKq90EKk7owcUG5CiCG+GLKIn?=
+ =?us-ascii?q?81UMTNdUIKqF0doR+TaYvHsapyB38KpJT59V7UczXJaVgQVTNbHRDUYjKrdr?=
+ =?us-ascii?q?i2u4ua+rDBVLPndqnAPe3V+74ZC6fAxJSk1pZq8mSXLsuDeGF4COE20VZCWn?=
+ =?us-ascii?q?Y/HNnFnzIISGockCeoDYbT4R64/mcu/5KPtc/zUQeq3rOhTr5bMNFh4Rez2P?=
+ =?us-ascii?q?vRKvKcjSJ9IC0e258RlybF?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,371,1596517200"; 
+   d="scan'208,217";a="955197"
+X-MGA-submission: =?us-ascii?q?MDGMF6Dtl/mstdJkuRFS+An/zp63BA5T7W2mtY?=
+ =?us-ascii?q?v2Kx1g724VaDXr8cRSPtrUOaes+jdadEBxTUJ1mBQr/A6QeBgAlpnTGA?=
+ =?us-ascii?q?MzDrnEVa5Qw3m7KRuHfZ8gP6u4Tt22xcpcocpC8OAabY3bdw8r4/KucG?=
+ =?us-ascii?q?fz?=
+Received: from mail-bn8nam12on2065.outbound.protection.outlook.com (HELO NAM12-BN8-obe.outbound.protection.outlook.com) ([40.107.237.65])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 13 Oct 2020 12:57:04 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=T8K6pvXgbg6V+8OTXBqknvV0PO4bnX7Ow9nYKS+8mOxcDyNLy74WR7jVddbUmkZB7Q5vV/M/PEyxAJWRBcCjO3foM7poaLdyIYZkZWEizwDw+Nv7daEcsxZfOBi/UPC3AX/B1ESsElywTSoLamdLUDh15rt4Q5dTgck9/U3Xei/n2n8gIsdWyq6n4Pd6C+lfR8byx2t8m4hQ/BsClyxne6nXoeNQvBGeAKA8gFWEDpcbAe9PpPwsy/3YUn3QLUcj5KcOGd/rjlnx4rSUbFjlGz/a1GQ6mWrfx9cIZOPLVJ0M5izzuGNzVprXhtbHwwJoHXtaQIjyS2y/NV/8/g1QtA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=vhadBhKUgrfSCf15bAMSJrwpqPTs9m1llDQ4ieAjdvc=;
+ b=kBUaALCKp4Cn54Bp4wntwK/c4wzdVXZZ1ooM46MwZEeZMozqo1L18U9Z8lGoOUcx5ZB5h/jHnhQlqHvkOkQ3CLuKtRejgfBEzr288zUMkmr5eUQmx5I3ELj4BIX60DyaTzyVQXHDnkcBCPDrrhriCnRK/1+JFNldFFZuR861zjGZ4bhmoQEEasS0WzrgM2BII/17BHv4AJ+A1PfWhyXkgZgPycU60GKLXeq6aM7lzO0uRDw8j2kRO9fE3w9kTb2FzyhnC4ZvWBC806jmGB7dSw2yqR69UtX6nnP6b6VQdHyEyfkU7Hy2dzXuOPQ+P+Jxm1fah8wHJpb309ssBIsooA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=vhadBhKUgrfSCf15bAMSJrwpqPTs9m1llDQ4ieAjdvc=;
+ b=hsMRApuEZcMK2Zf0KZiWHcZOAdvmzPRthGwj4x/JJweupwmIukkiG6pB8oATsSoWM7qcGjVdnSXmULHqVw23d9c7QaAjb8PuJ1NMgZN/4K3c6XC/psGbNfXMuE4xS3YiustT13YOdfSzam9vSY6bfB4SMM7BHV1OqgSNUzyrYHY=
+Received: from SJ0PR01MB6208.prod.exchangelabs.com (2603:10b6:a03:29e::13) by
+ BY5PR01MB5796.prod.exchangelabs.com (2603:10b6:a03:1be::33) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.23; Tue, 13 Oct 2020 17:57:01 +0000
+Received: from SJ0PR01MB6208.prod.exchangelabs.com
+ ([fe80::6914:7064:c1ab:fa26]) by SJ0PR01MB6208.prod.exchangelabs.com
+ ([fe80::6914:7064:c1ab:fa26%6]) with mapi id 15.20.3455.030; Tue, 13 Oct 2020
+ 17:57:01 +0000
+From: ECS_ADU <ECS_ADU@utdallas.edu>
+To: seecsundergrads <ecs.ug@lists.utdallas.edu>
+CC: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+Thread-Topic: U.S. Department of Homeland Security (DHS) Science and
+ Technology Directorate, Office of University Programs, Professional
+ Opportunities for the Student
+Thread-Index: AdahaSzGX6dU6TrGSLSpNUTjwOtOJwAIGzAw
+Date: Tue, 13 Oct 2020 17:57:01 +0000
+Message-ID: <SJ0PR01MB6208B3D309FAE5D857BF33A6EB040@SJ0PR01MB6208.prod.exchangelabs.com>
+References: <LYRIS-2565954-78890-2020.10.13-10.01.26--amy.walker#utdallas.edu@listserv.orau.org>
+In-Reply-To: <LYRIS-2565954-78890-2020.10.13-10.01.26--amy.walker#utdallas.edu@listserv.orau.org>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-originating-ip: [129.110.242.6]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 5d626aed-b78e-426c-7459-08d86fa1a40f
+x-ms-traffictypediagnostic: BY5PR01MB5796:|BN6PR01MB2611:
+x-ms-exchange-sharedmailbox-routingagent-processed: True
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <BY5PR01MB5796D275820C72DD67F351E8EC040@BY5PR01MB5796.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:6790;OLM:6790;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 41Qa7kZDIcp/vD+k1ksMi/cyDJp7jIYnhI+m5joOZPZOQ7RcmPwA6SrBqczNHKHmabiMxd0xNab49D4PngJWlE4Pnw6IIy2NSrv2hQB+wf9wjkeGsalF+EwQGlz0QPCD1QwF24msNo/0/+x6+JZ3pSPBCRqj4qSy3uIoI616YjRg6/I/m+2fZnsy91sTVTc8RuCV6pzqSnjin4RDc92+hdwBXJvBRNzY6FsVu8f1ldHqzNL5KfEukCIIVr4bfCSxTrY98TbvHEooClqYbTeDkbhrpTBmJRbrBQSIejyTl05u8MSyvMCI2oe66jIMFrDod/aP8N7d15PfQYCDB5uN6l+iZeUUP33xLk63Tatw9YmKnQHwZH1+qARf8R7SjI8UjKqlqUMYTKrX4HP+ah+XgQZ9D/F6fdbvkQpJeF3Xq4lGqQneyCf8Yrw9NEui16lHO/K1pgur00xD8el2pmmHX/ra8M8g2DeWL9HhD7VVTc11KapIINBV6oTVSbaHJiPWGMVDDpXdzJR2v1wRAIopDkPEKkjPALBKL8ryr18hN1M=
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR01MB6208.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(346002)(396003)(136003)(39860400002)(376002)(366004)(66446008)(6916009)(66476007)(64756008)(66556008)(966005)(76116006)(71200400001)(55016002)(86362001)(33656002)(26005)(15650500001)(66946007)(478600001)(53546011)(186003)(2906002)(6506007)(8936002)(9686003)(83380400001)(75432002)(8676002)(76236003)(786003)(52536014)(296002)(316002)(4326008)(7696005)(166002)(83080400001)(5660300002)(11970500013)(11810500003)(531144003)(493534005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: 6IzbaXrZb1o61Ndm/c/4XRvcsEAs/G5Y4NDcTwm46BLhXwkBdf83FN3YVtTHmYRm8ImDYJxCV2wNGBf1KZHLhhJJmQ7swSQ8XWtU2WWI/FWZ6cMPplO7x9Z7XPYwQ1mdi8Go5A5YxlC/u6ufNB62ycNU26fbl7PJVrUkiy+v6HLM47UU24B9udL3U9Xk0eKLIJhDmKDknUbyYAySyOjv7/SdI0j77yjLc57nu/3w6kLPOv9ZLWYef3m5BDXCfmVK0e9XVQ/GYhgSd87rBLx97xcUP7Um788pono/lKwzsuhuvv1N208Q6C2XfE+CIzKDAdXD/ZEM3Io8EC/MftECb2gbRAG3KcuJ+18BWx7HuNvSgjFI08JUfR1koo9r7xw10BHp+xDnemiSzIA1FHUkZirBCVjgG4NewfP0yJG7jCao7KZ5YlBGnFRTi+ja1Qc7psIEQQqRbYQmks9XSIkA9IPfOws/r86494qKR+eITDqg5IkY3vmdhQgAoKENvN6nAJNWNwJaNyCT1+Fol2tpkqY2ZkOPksKd3tSlhriADOSgJQOJRkcP2IUrzvVJeFVm/LdNp4qYiECf7eI/OTUY06Izsn/S24zkYqACrRu8PNwJaFUCE5is/BJU5XrRyDVGgg9M+Sjyryoh5uUaoNsSjA==
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR01MB6208B3D309FAE5D857BF33A6EB040SJ0PR01MB6208prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR01MB5796
+Subject: [ecs.ug] FW: U.S. Department of Homeland Security (DHS) Science and
+ Technology Directorate, Office of University Programs, Professional
+ Opportunities for the Student
+Reply-To: ECS_ADU <ECS_ADU@utdallas.edu>
+X-Loop: ecs.ug@lists.utdallas.edu
+X-Sequence: 118
+Errors-To: ecs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.ug>
+List-Post: <mailto:ecs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.ug/2020-10/SJ0PR01MB6208B3D309FAE5D857BF33A6EB040%40SJ0PR01MB6208.prod.exchangelabs.com>
+Return-Path: ecs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 17:58:50.5819
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5d626aed-b78e-426c-7459-08d86fa1a40f
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ d6d59541-2c50-4e2f-18b4-08d86fa162ec
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 3
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 17:58:50.4619
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5d626aed-b78e-426c-7459-08d86fa1a40f
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2611
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.2055443
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?ng0K3AdQq6VScMvPnHHOErdoHKcrkfCO8gt6ksNfdy504P3DYeionkjB?=
+ =?Windows-1252?Q?i6rCcLFNH3DlgAfZujZzJPIsJb87g1XNMwHGXkLytOR8q2pduM5YtkUj?=
+ =?Windows-1252?Q?bIsZvs1Nri3siVfsaLxlwan/z4bIGfKMIf5iKRhYZFFCtDDBNKpenvRH?=
+ =?Windows-1252?Q?zWl/hdsM+jcjjqw5NkvY/LxIGSbwLRtoXAXheAaqWHDKCepy3ud/4DnP?=
+ =?Windows-1252?Q?0ocdQTZjqDXJOsOHZ8TVga2uqNzDYFDZcGEltm9Owk/HoGRnTSYAz5cc?=
+ =?Windows-1252?Q?Xf6Sv92d5Hr8ETJhUcEHVE1+lMEQN6HAQSYb6OusrTp1QrmorIENYFyW?=
+ =?Windows-1252?Q?YqDHfqvBi+/OSZOrsl1HhC7YnYB8+jFEaWHVWocfBUTcDqoDrz+eef2/?=
+ =?Windows-1252?Q?JguVKltxKPmG48FUh8+/qGdVbRxJ9exRww22oF4u8mb+755iQRLRVjEH?=
+ =?Windows-1252?Q?hpOcpm5VbGAO5w7nAEhBtWbk0YNMfBVNvEz8xToVB6PmoWFivd7wMrBY?=
+ =?Windows-1252?Q?gpkxNsLHzMTIvOXejCQwoDIU4T9k+FWIpyTufWSemtD23OW7EKTvDs66?=
+ =?Windows-1252?Q?6wyoazwNrOvoNOgKpaISdIfIzqBrxB3k2zFOFKXFZJ9sb6kw8iqhV/55?=
+ =?Windows-1252?Q?LEgXfnhUKEr/qhTbDptaQWx5i3OW2cVDZkxqQ+RB9FmEXO9QGMRI8JV3?=
+ =?Windows-1252?Q?YkKEJojplGBZPGGZ3QIzg0cB07NZxR+HMedz+GHm4KoJC2FZl0gDIKdA?=
+ =?Windows-1252?Q?gSF6HMl39zkJiFYgK6CYIfYRRaxSwdJ+/ZE9N3HjMVp1/Umb6HFKJV+P?=
+ =?Windows-1252?Q?SUfCCI202x7xBvX2iYg9pCcD/EQgiFR6YB2RfCDb+IwbLjtg0oBsk0Mg?=
+ =?Windows-1252?Q?s47fI+wtg3/VSmXTozbTwaK2yj5UTVZxUDUkmjhI3M1+dRG6Hz6hIv9L?=
+ =?Windows-1252?Q?dUN05uTu7hbcBz2WKT8Tkr4evjNi7zQHJtf4d+GdYeTwPvYn/opyLgPC?=
+ =?Windows-1252?Q?1XmSUU/+hrUYSZ6X/nRejTbs8ov5dZbmVNQs9fIBKRN5HoY2VBQqWPj4?=
+ =?Windows-1252?Q?5hHrE3ReZIr48F4uoNYHJB5og4gEHGNsb8WfGelFJ9M27549jJMGl7th?=
+ =?Windows-1252?Q?rKctgB0Ocme+nYC/SLaaM6kqtNw3OGrsbEO62oX0JBdopMS4p8MssTIX?=
+ =?Windows-1252?Q?l0bCc2iZ1j+srOD+MbSGjkcq6IxikgIE5VghqYyhO+ivlIj85R78d2MP?=
+ =?Windows-1252?Q?jUWcJv/Zz2okjTglp1L3qv826ESu4L0BxFYQI6obJUp8dDv9rYu3UD9X?=
+ =?Windows-1252?Q?FuDZsrpxzoXwv5JQhrbjvxtDOO4Ti+Hu+CB2mujLKD970L3nHH2tz/dm?=
+ =?Windows-1252?Q?GViVFYY5MIGIWclhydMNxtIOR3fBXXq9smq5oVh2BbBNbZ309kR0jZ+P?=
+ =?Windows-1252?Q?Zpn6s3r5xGjclsN20MS7ohowspIZzcqfvEvyJGPV4AzgXwPvZ/SMZz5R?=
+ =?Windows-1252?Q?VVrXuRMsx2ylgYw5utc9n2fSB3vOnA=3D=3D?=
+MIME-Version: 1.0
+
+--_000_SJ0PR01MB6208B3D309FAE5D857BF33A6EB040SJ0PR01MB6208prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good afternoon,
+
+Please see the DHS internship opportunity below. Note the requirements that=
+ you must be a US citizen and have health insurance. (No, I don't know any =
+more!).
+
+Best Wishes,
+Dr. W.
+
+************************************************
+Dr. Amy V. Walker
+Associate Dean for Undergraduate Education,
+Professor of Materials Science and Engineering,
+Erik Jonsson School of Engineering and Computer Science,
+University of Texas at Dallas,
+800 W. Campbell Rd,
+Richardson
+TX 75080
+
+Ph: 972 883 5780
+Fax: 972 883 5725
+
+From: DHSED@orau.org <DHSED@orau.org>
+Sent: Tuesday, October 13, 2020 9:01 AM
+To: Walker, Amy <amy.walker@utdallas.edu>
+Subject: U.S. Department of Homeland Security (DHS) Science and Technology =
+Directorate, Office of University Programs, Professional Opportunities for =
+the Student
+
+Good afternoon,
+
+Now accepting applications for:
+
+U.S. Department of Homeland Security (DHS) Science and Technology Directora=
+te
+Office of University Programs
+Professional Opportunities for the Student Workforce to Experience Research=
+ Program (HS-POWER)
+
+Reference Code
+DHS-POWER-2020-04
+Description
+*       Are you a student looking for a professional opportunity to learn a=
+bout homeland security related research to enhance your research interests =
+and career goals?
+*       Do you want to learn from top scientists and subject matter experts=
+ in homeland security disciplines and areas of research?
+*       Do you want to network with your peers and members of the academic =
+and scientific communities in government facilities conducting research in =
+DHS relevant areas?
+If you answered "Yes", to the above questions, the HS-POWER program is for =
+you!
+
+The U.S. Department of Homeland Security (DHS) Science and Technology Direc=
+torate Office of University Programs<https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fwww.dhs.gov%2Fscience-and-technology%2Foffice=
+-university-programs&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C=
+5d626aedb78e426c745908d86fa1a40f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637382087357349696&amp;sdata=3DbDM5%2FZDJBCa5%2B3zg6mn%2FdoSgkUxAPzLQqwI=
+PuSxR3zo%3D&amp;reserved=3D0> sponsors the Professional Opportunities for t=
+he Student Workforce to Experience Research Program (HS-POWER) for undergra=
+duate and graduate students. HS-POWER is open to students majoring in a bro=
+ad spectrum of homeland security related science, technology, engineering a=
+nd mathematics (STEM) disciplines as well as DHS mission-relevant research =
+areas<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fw=
+ww.dhs.gov%2Fstrategic-planning&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDa=
+llas.edu%7C5d626aedb78e426c745908d86fa1a40f%7C8d281d1d9c4d4bf7b16e032d15de9=
+f6c%7C0%7C0%7C637382087357349696&amp;sdata=3DWSilbMWeizmaM%2Bx8mijKZGb7PONO=
+QSR3GgWddPR7j6Y%3D&amp;reserved=3D0>.
+As a participant in the HS-POWER Program, you will participate in quality r=
+esearch experiences with federal research facilities and other Homeland Sec=
+urity STEM focused entities nationwide either onsite or in a virtual enviro=
+nment. This experience will provide you with a competitive edge as you appl=
+y your education, talent and skills in a variety of settings within the DHS=
+ enterprise. Additionally, you will establish connections with DHS professi=
+onals that facilitate long-term relationships between yourself, researchers=
+, DHS personnel and research facilities.
+
+Benefits
+*       Stipend:
+
+     *   Undergraduate students receive a stipend of $600 per week;
+     *   Graduate students receive a stipend of $700 per week.
+*       For students participating onsite:
+
+     *   Travel: Travel reimbursement for inbound and outbound expenses up =
+to $1,000 for participants who live more than fifty miles, one-way, from th=
+e assigned hosting site.
+     *   Housing Allowance: A housing allowance of $200/week is provided to=
+ participants who live more than fifty miles, one-way, from their assigned =
+hosting facility and who are paying for housing while onsite.
+*       Due to COVID 19, some students may be required to participate virtu=
+ally. In that case:
+
+     *   A stipend supplement of $50 per week will be given to offset costs=
+ of remote participation.
+
+Appointment Details
+*       Appointments will be for 10 consecutive weeks.
+
+     *   Start dates beginning in the time frame of late fall through summe=
+r 2021 are negotiated between participants, their assigned mentors/faciliti=
+es, and ORISE. Factors such as class schedules, housing availability and fa=
+cility schedules may be taken into consideration when determining appointme=
+nt start and end dates.
+*       Interns will be assigned to research projects and/or other technica=
+l activities under the guidance of a mentor.
+*       Per week time commitment varies by location.
+*       HS-POWER participants are required to have health insurance coverag=
+e during the appointment period and to provide proof of this coverage prior=
+ to the start of the appointment.
+
+How to Apply:  Click https://nam02.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fbit.ly%2FHSPOWER20&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTD=
+allas.edu%7C5d626aedb78e426c745908d86fa1a40f%7C8d281d1d9c4d4bf7b16e032d15de=
+9f6c%7C0%7C0%7C637382087357349696&amp;sdata=3DC2bntGypKzAhnnygrsZomoMP9JJA4=
+dYD7Igw37JJHbU%3D&amp;reserved=3D0<https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fbit.ly%2FHSPOWER20&amp;data=3D02%7C01%7CAbigail=
+.Thomas2%40UTDallas.edu%7C5d626aedb78e426c745908d86fa1a40f%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637382087357359683&amp;sdata=3DgZJctRfaNhR85zO=
+mAXwud1oR0%2BYLHKwsAKRyisOu2NA%3D&amp;reserved=3D0> to start your journey!
+
+U.S. citizenship required
+Previous program participants may apply.
+Application deadline: October 30, 2020, 11:59 pm EST.
+For questions please email us at dhsed@orau.org<mailto:dhsed@orau.org>.
+DHS has partnered with the Oak Ridge Institute for Science and Education (O=
+RISE) to manage this program.
+To unsubscribe, please click here<mailto:dhsed@orau.org?subject=3DUNSUBSCRI=
+BE> or send an email to dhsed@orau.org<mailto:dhsed@orau.org?subject=3DUNSU=
+BSCRIBE> with the subject line UNSUBSCRIBE.
+
+
+---
+
+You are currently subscribed to dhseducationprograms_msi as: amy.walker@utd=
+allas.edu<mailto:amy.walker@utdallas.edu>.
+
+To unsubscribe send a blank email to leave-78890-2565954.94270a779df163203f=
+cd611c388db025@listserv.orau.org<mailto:leave-78890-2565954.94270a779df1632=
+03fcd611c388db025@listserv.orau.org>
+
+--_000_SJ0PR01MB6208B3D309FAE5D857BF33A6EB040SJ0PR01MB6208prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:695035949;
+	mso-list-template-ids:-1825942410;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1190144094;
+	mso-list-template-ids:-1577947066;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1216892878;
+	mso-list-template-ids:-1926315030;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1244797122;
+	mso-list-template-ids:353302894;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1544442239;
+	mso-list-template-ids:2012659432;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1778059850;
+	mso-list-template-ids:-608404298;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:2113281958;
+	mso-list-template-ids:-1683477562;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l6:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Good afternoon,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please see the DHS int=
+ernship opportunity below. Note the requirements that you must be a US citi=
+zen and have health insurance. (No, I don&#8217;t know any more!).<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Best Wishes,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dr. W.<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">**********************=
+**************************<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dr. Amy V. Walker<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Associate Dean for Und=
+ergraduate Education,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Professor of Materials=
+ Science and Engineering,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Erik Jonsson School of=
+ Engineering and Computer Science,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">University of Texas at=
+ Dallas,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">800 W. Campbell Rd,<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Richardson<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">TX 75080<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Ph: 972 883 5780<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Fax: 972 883 5725<o:p>=
+</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> DHSED@orau.org &lt;DHSED@orau.org&gt; <=
+br>
+<b>Sent:</b> Tuesday, October 13, 2020 9:01 AM<br>
+<b>To:</b> Walker, Amy &lt;amy.walker@utdallas.edu&gt;<br>
+<b>Subject:</b> U.S. Department of Homeland Security (DHS) Science and Tech=
+nology Directorate, Office of University Programs, Professional Opportuniti=
+es for the Student<o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Good aft=
+ernoon,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>&nb=
+sp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Now a=
+ccepting applications for:&nbsp;<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>=
+&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">U.S. Dep=
+artment of Homeland Security (DHS) Science and Technology Directorate
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Office o=
+f University Programs<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Professi=
+onal Opportunities for the Student Workforce to Experience Research Program=
+ (HS-POWER)<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>=
+&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Refer=
+ence Code</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Helve=
+tica&quot;,sans-serif;color:#333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:10.0pt;background:white"><spa=
+n style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;co=
+lor:#333333">DHS-POWER-2020-04
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Descr=
+iption</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Helvetic=
+a&quot;,sans-serif;color:#333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l6 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Are you a =
+student looking for a professional opportunity to learn about homeland secu=
+rity related research to enhance your research
+ interests and career goals?<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l6 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Do you wan=
+t to learn from top scientists and subject matter experts in homeland secur=
+ity disciplines and areas of research?<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l6 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Do you wan=
+t to network with your peers and members of the academic and scientific com=
+munities in government facilities conducting
+ research in DHS relevant areas?<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">If yo=
+u answered &#8220;Yes&#8221;, to the above questions, the HS-POWER program =
+is for you!</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Hel=
+vetica&quot;,sans-serif;color:#333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>&nb=
+sp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">The&nbsp=
+;</span><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.dh=
+s.gov%2Fscience-and-technology%2Foffice-university-programs&amp;data=3D02%7=
+C01%7CAbigail.Thomas2%40UTDallas.edu%7C5d626aedb78e426c745908d86fa1a40f%7C8=
+d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382087357409668&amp;sdata=3DmL=
+oWughMEkBQDGDncFZs5Geqp8vcANhFUU4sA9mCkUw%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.dhs.gov/science-and-technology/office-university-programs" =
+shash=3D"UlgFAbXuIALJVVYpUlC6RtfxwVDeyE4JMlvPKOAE+vood6gRsvrinXqzgZjnpkxFL8=
+TxSe8BdRBCs//9JTF//9xy95QkbhqV954CZ9x650q5t2gToDBh72xpKpbiLK1/fL0EjtWjVlOH8=
+/2XcELhMl1tOKJlMr2CmMex1fxIj4Q=3D" target=3D"_blank"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#0D4DB5">U.S.
+ Department of Homeland Security (DHS) Science and Technology Directorate O=
+ffice of University Programs</span></a></span><span style=3D"font-size:10.5=
+pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">&nbsp;sponso=
+rs the Professional Opportunities for the Student
+ Workforce to Experience Research Program (HS-POWER) for undergraduate and =
+graduate students. HS-POWER is open to students majoring in a broad spectru=
+m of homeland security related science, technology, engineering and mathema=
+tics (STEM) disciplines as well
+ as&nbsp;</span><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><a=
+ href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fwww.dhs.gov%2Fstrategic-planning&amp;data=3D02%7C01%7CAbigail.Thomas2%40U=
+TDallas.edu%7C5d626aedb78e426c745908d86fa1a40f%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637382087357419662&amp;sdata=3Drgs68TaacKz1ViojNXeU2xQautE=
+NRwn2N9LxVqnRxaY%3D&amp;reserved=3D0" originalsrc=3D"https://www.dhs.gov/st=
+rategic-planning" shash=3D"dgujbXFR2qPV0Caj1Y5ViV3Kj0VOmfb5zuw6ai+us4cp3Bet=
+00dmhYlvqvK3wAZs6amiHv0bNRDvgr6cPvjVgC8xE42FGZJJSrpX8mDQymIUTHcpm/hgcrPRyei=
+UW5UBrXeE7YgFIMVuCE3F7+QmQfUzSbkQlfAcqeEdXTJ2Ks8=3D" target=3D"_blank"><spa=
+n style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;co=
+lor:#0D4DB5">DHS
+ mission-relevant research areas</span></a></span><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">As a par=
+ticipant in the HS-POWER Program, you will participate in quality research =
+experiences with&nbsp;federal research facilities and
+ other Homeland Security STEM focused entities nationwide either onsite or =
+in a virtual environment. This experience will provide you with a competiti=
+ve edge as you apply your education, talent and skills in a variety of sett=
+ings within the DHS enterprise.
+ Additionally, you will establish connections with DHS professionals that f=
+acilitate long-term relationships between yourself, researchers, DHS person=
+nel and research facilities.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>=
+&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Benef=
+its</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&q=
+uot;,sans-serif;color:#333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l2 level1 lfo4;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Stipend:
+<o:p></o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<ul style=3D"margin-top:0in" type=3D"circle">
+<li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:10.0pt;line-he=
+ight:115%;mso-list:l2 level2 lfo4;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">Undergraduate students receive a stipend of $600 per we=
+ek;
+<o:p></o:p></span></li><li class=3D"MsoNormal" style=3D"color:#333333;margi=
+n-bottom:10.0pt;line-height:115%;mso-list:l2 level2 lfo4;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">Graduate students receive a stipend of $700 per week.<o=
+:p></o:p></span></li></ul>
+</ul>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l2 level1 lfo4;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">For studen=
+ts participating onsite:<o:p></o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<ul style=3D"margin-top:0in" type=3D"circle">
+<li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:10.0pt;line-he=
+ight:115%;mso-list:l2 level2 lfo4;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">Travel: Travel reimbursement for inbound and outbound e=
+xpenses up to $1,000 for participants who live more than fifty miles, one-w=
+ay, from the assigned hosting site.<o:p></o:p></span></li><li class=3D"MsoN=
+ormal" style=3D"color:#333333;margin-bottom:10.0pt;line-height:115%;mso-lis=
+t:l2 level2 lfo4;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">Housing Allowance: A housing allowance of $200/week is =
+provided to participants who live more than fifty miles, one-way, from thei=
+r assigned hosting facility and who are paying
+ for housing while onsite.&nbsp;<o:p></o:p></span></li></ul>
+</ul>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l2 level1 lfo4;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Due to COV=
+ID 19, some students may be required to participate virtually. In that case=
+:
+<o:p></o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<ul style=3D"margin-top:0in" type=3D"circle">
+<li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:10.0pt;line-he=
+ight:115%;mso-list:l2 level2 lfo4;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">A stipend supplement of $50 per week will be given to o=
+ffset costs of remote participation.
+<o:p></o:p></span></li></ul>
+</ul>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>=
+&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Appoi=
+ntment Details</span></b><span style=3D"font-size:10.5pt;font-family:&quot;=
+Helvetica&quot;,sans-serif;color:#333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l3 level1 lfo9;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Appointmen=
+ts will be for 10 consecutive weeks.
+<o:p></o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<ul style=3D"margin-top:0in" type=3D"circle">
+<li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:10.0pt;line-he=
+ight:115%;mso-list:l3 level2 lfo9;background:white">
+<span style=3D"font-size:10.5pt;line-height:115%;font-family:&quot;Helvetic=
+a&quot;,sans-serif">Start dates beginning in the time frame of late fall th=
+rough summer 2021 are negotiated between participants, their assigned mento=
+rs/facilities, and ORISE. Factors such as class
+ schedules, housing availability and facility schedules may be taken into c=
+onsideration when determining appointment start and end dates.<o:p></o:p></=
+span></li></ul>
+</ul>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l3 level1 lfo9;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Interns wi=
+ll be assigned to research projects and/or other technical activities under=
+ the guidance of a mentor.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l3 level1 lfo9;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Per week t=
+ime commitment varies by location.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:10.0pt;margin-left:24.75pt;text-indent:-.25in;line-height:115%;m=
+so-list:l3 level1 lfo9;background:white">
+<![if !supportLists]><span style=3D"font-size:10.0pt;line-height:115%;font-=
+family:Symbol;color:#333333"><span style=3D"mso-list:Ignore">&middot;<span =
+style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;
+</span></span></span><![endif]><span style=3D"font-size:10.5pt;line-height:=
+115%;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">HS-POWER p=
+articipants are required to have health insurance coverage during the appoi=
+ntment period and to provide proof of this coverage
+ prior to the start of the appointment.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>=
+&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"background:white"><b><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">How t=
+o Apply:&nbsp;
+</span></b><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot=
+;,sans-serif;color:#333333">Click
+</span><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><a href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fbit.ly%=
+2FHSPOWER20&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5d626aedb=
+78e426c745908d86fa1a40f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382=
+087357429652&amp;sdata=3DiyWp8aq9JxSzcPrYPVFMdnVBaJpxgTlmF8E%2FIoOo7Co%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://bit.ly/HSPOWER20" shash=3D"tmlzRWHY=
+NBI9RgARJJeHvPBzpBX2YpQFBxsKVzln7G4psPJZ1+0ODrsQTEXxUPlwGCilwoV3wO/nvWsDpZk=
+YnQZStT6HP2uvLy0TepwVaLjoQkcBTUy2gm5cQlhDa+e7ZDcFNv/ZT1uWS0Kam5Gn1/3E5D698Q=
+SoBaHP5aOg7w4=3D"><span style=3D"font-size:10.5pt;font-family:&quot;Helveti=
+ca&quot;,sans-serif;color:blue">https://bit.ly/HSPOWER20</span></a></span><=
+span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif=
+;color:#333333">
+ to start your journey!<b><o:p></o:p></b></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p>&nb=
+sp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">U.S. cit=
+izenship required<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Previous=
+ program participants may apply.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"font-size:=
+10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333">Applicat=
+ion deadline: October 30, 2020, 11:59 pm EST.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:15.0pt;margin-right:0in;=
+margin-bottom:15.0pt;margin-left:0in;background:white">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-s=
+erif;color:#333333">For questions please email us at
+</span></b><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><a href=
+=3D"mailto:dhsed@orau.org"><b><span style=3D"font-size:10.5pt;font-family:&=
+quot;Helvetica&quot;,sans-serif;color:blue">dhsed@orau.org</span></b></a></=
+span><b><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,s=
+ans-serif;color:#333333">.<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:15.0pt;margin-right:0in;=
+margin-bottom:15.0pt;margin-left:0in;background:white">
+<b><i><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,san=
+s-serif;color:#333333">DHS has partnered with the Oak Ridge Institute for S=
+cience and Education (ORISE) to manage this program.</span></i></b><b><span=
+ style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;col=
+or:#333333"><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:15.0pt;margin-right:0in;=
+margin-bottom:15.0pt;margin-left:0in;background:white">
+<b><i><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,san=
+s-serif;color:#333333">To unsubscribe, please click
+</span></i></b><span style=3D"font-family:&quot;Arial&quot;,sans-serif"><a =
+href=3D"mailto:dhsed@orau.org?subject=3DUNSUBSCRIBE"><b><i><span style=3D"f=
+ont-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:blue">he=
+re</span></i></b></a></span><b><i><span style=3D"font-size:10.5pt;font-fami=
+ly:&quot;Helvetica&quot;,sans-serif;color:#333333">&nbsp;or
+ send an email to&nbsp;</span></i></b><span style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><a href=3D"mailto:dhsed@orau.org?subject=3DUNSUBSCRIBE"=
+><b><i><span style=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sa=
+ns-serif;color:blue">dhsed@orau.org</span></i></b></a></span><b><i><span st=
+yle=3D"font-size:10.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:=
+#333333">&nbsp;with
+ the subject line UNSUBSCRIBE.</span></i></b><b><span style=3D"font-size:10=
+.5pt;font-family:&quot;Helvetica&quot;,sans-serif;color:#333333"><o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p>---<o:p></o:p></p>
+<p>You are currently subscribed to dhseducationprograms_msi as: <a href=3D"=
+mailto:amy.walker@utdallas.edu">
+amy.walker@utdallas.edu</a>.<o:p></o:p></p>
+<p>To unsubscribe send a blank email to <a href=3D"mailto:leave-78890-25659=
+54.94270a779df163203fcd611c388db025@listserv.orau.org">
+leave-78890-2565954.94270a779df163203fcd611c388db025@listserv.orau.org</a><=
+o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR01MB6208B3D309FAE5D857BF33A6EB040SJ0PR01MB6208prod_--
