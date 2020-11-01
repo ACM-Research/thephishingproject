@@ -32,12 +32,18 @@ def dkimTest(email):
     # map to results of email dkim
     return email["dkim"] or "none"
 dkimTest.testType = TestType.categorical
-spfTest.testName = "DKIM Authentication Results"
+dkimTest.testName = "DKIM Authentication Results"
 allTests.append(dkimTest)
 
 def dmarcTest(email):
     # map to results of email dmarc
     return email["dmarc"] or "none"
 dmarcTest.testType = TestType.categorical
-spfTest.testName = "DMARC Authentication Results"
+dmarcTest.testName = "DMARC Authentication Results"
 allTests.append(dmarcTest)
+
+def subjectivityTest(email):
+    return email["sentiment"]["subjectivity"]
+subjectivityTest.testType = TestType.numerical
+subjectivityTest.testName = "Body Subjectivity"
+allTests.append(subjectivityTest)
