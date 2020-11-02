@@ -1,0 +1,172 @@
+References: <kgiicmnaehb5a@piazza.com>
+From: "CS 2337 on Piazza" <no-reply@piazza.com>
+Sender: "CS 2337 on Piazza" <no-reply@piazza.com>
+To: "Truong, Jesse Trung" <Jesse.Truong@UTDallas.edu>
+In-Reply-To: <kgiicmnaehb5a@piazza.com>
+Subject: Node parameters
+Date: Tue, 20 Oct 2020 15:56:53 -0600
+Message-ID: <kgiicmnaehb5a@piazza.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0062_01D6B0AA.1B9A6340"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQHWpyvulYa6KO2LSUeD8dAL8ZwydQ==
+Content-Language: en-us
+x-ms-publictraffictype: Email
+received-spf: Pass (protection.outlook.com: domain of send.piazza.com designates 167.89.101.215 as permitted sender) receiver=protection.outlook.com; client-ip=167.89.101.215; helo=o4.sendgrid.piazza.com;
+x-ms-exchange-organization-originalclientipaddress: 167.89.101.215
+x-ms-exchange-organization-originalserveripaddress: 10.152.72.196
+x-ms-exchange-organization-authsource: SN1NAM02FT061.eop-nam02.prod.protection.outlook.com
+X-MimeOLE: Produced By Microsoft MimeOLE
+x-ms-exchange-organization-submissionquotaskipped: False
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0062_01D6B0AA.1B9A6340
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Your classmate posted a new Question.
+
+Node parameters
+
+
+
+Hi I just had a question about the nodes that are being passed into the BST 
+class functions.
+
+I was wondering in the parameter list if they should be declared as
+
+(Node<T>* node) or as (T node)
+
+I tried to implement it with the first option, but for some reason, it was 
+trying to convert them into <Node<Node<DVD>>* pointers and giving me an 
+error
+
+Thank you.
+
+
+
+Click here 
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fclass%3Fcid%3Dkgiicmnaehb5a%26nid%3Dkdkny0h2flh4wp%26token%3D9NDsAQ4j0O3&data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184712757%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=iOu37EdnF6N5PboHk0RRl7PqsOWo6vzmlej4AbqKkRw%3D&reserved=0> 
+to view. Search or link to this question with @347. Follow it 
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Ffollow%2Fkgiicmnaehb5a%2F9NDsAQ4j0O3%2F562328ac&data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184712757%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=OAvy05GtWj%2BXTihM%2Fh6xDAqTXj3WeTy72DrQsvwS%2Bqo%3D&reserved=0> 
+to get notified when a response comes in.
+
+Sign up for more classes at http://piazza.com/utdallas 
+<https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fpiazza.com%2Futdallas&data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184722753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=HqcypbwXkJIC46%2FNTQWPvQekqIwfTIVKammZxr5pE2o%3D&reserved=0> 
+.
+
+
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because jtt190006@utdallas.edu is enrolled in CS 
+2337 at University of Texas at Dallas. Sign in 
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flogin&data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184722753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=%2B0OBKyHMq1I3ss0FzVZEHTUNtSpyxxM7OJ9WCwpxDv0%3D&reserved=0> 
+to manage your email preferences or un-enroll 
+<https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184732744%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=5TBbYwGQVw4HCBBzDdCh5IizJ7lIRAS7WTauvDWQgp8%3D&reserved=0> 
+from this class.
+
+------=_NextPart_000_0062_01D6B0AA.1B9A6340
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dutf-8">
+
+</head>
+Your classmate posted a new Question. <br><br>
+<b>Node parameters</b><br>
+<br>
+<p>Hi I just had a question about the nodes that are being passed into =
+the BST class functions.</p>
+<p>I was wondering in the parameter list if they should be declared =
+as</p>
+<p>(Node&lt;T&gt;* node) or as (T node)</p>
+<p>I tried to implement it with the first option, but for some reason, =
+it was trying to convert them into &lt;Node&lt;Node&lt;DVD&gt;&gt;* =
+pointers and giving me an error</p>
+<p>Thank you.</p>
+<br>
+<br>
+<a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fpiazza.com%2Fclass%3Fcid%3Dkgiicmnaehb5a%26nid%3Dkdkny0h2flh4wp%26toke=
+n%3D9NDsAQ4j0O3&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cb=
+f3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37388278184712757%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DiOu37EdnF6N5PboHk0=
+RRl7PqsOWo6vzmlej4AbqKkRw%3D&amp;reserved=3D0" =
+originalsrc=3D"https://piazza.com/class?cid=3Dkgiicmnaehb5a&amp;nid=3Dkdk=
+ny0h2flh4wp&amp;token=3D9NDsAQ4j0O3" =
+shash=3D"hkKQcg6bIWZv0kfkSHOyFL8sezQ3Vp53YVNhEodieT3D1VJX1oxBEzhhEmWhuhhd=
+zMVyUZ6p3UGGZupy47+ex5T5ZHEQPKNgKK19TKP/xaZmcdCHDeqVaFenyqWnAEyx2F07dJ94+=
+uw2zvg28mmz6p46yQ37dko2Jtqcs/7L9hk=3D">Click here</a> to view. Search or =
+link to this question with @347.  <a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fpiazza.com%2Ffollow%2Fkgiicmnaehb5a%2F9NDsAQ4j0O3%2F562328ac&amp;data=3D=
+04%7C01%7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%=
+7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184712757%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C1000&amp;sdata=3DOAvy05GtWj%2BXTihM%2Fh6xDAqTXj3WeTy72DrQsvwS%=
+2Bqo%3D&amp;reserved=3D0" =
+originalsrc=3D"https://piazza.com/follow/kgiicmnaehb5a/9NDsAQ4j0O3/562328=
+ac" =
+shash=3D"osrls8DHUMCwiD15KC0Gh4eu86msHQ0J/Ua8gIXsmzjhQgVf2UN7V1PjWR0d3vrd=
+xjoNJGiCAS20CR+QgHo1T8EJZQfnxmbqJLxxUwO0DN81g3nY9lnHkIRDMmrIePrTDXgW+6b4Y=
+Cr2/7EJfIBqq/01Nb97DTdiCa8KMn1t9ng=3D">Follow it</a> to get notified =
+when a response comes in. <br><br>Sign up for more classes at <a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%=
+2Fpiazza.com%2Futdallas&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%=
+7C4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637388278184722753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DHqcypbwXkJ=
+IC46%2FNTQWPvQekqIwfTIVKammZxr5pE2o%3D&amp;reserved=3D0" =
+originalsrc=3D"http://piazza.com/utdallas" =
+shash=3D"mjWGhAFoOVBOXFivHz3d4rRo9ICBRLknCG3QJrJzK9UEvsXkNjbX9db7unWGxnq1=
+8sqqPPDpi+R5ioHPJX+P5fnf4pxnEVIGK84AXZ3Ak/3QPTifyrtaD1I/7C9eNxqT9ywlTnQub=
+U3Rk/t1JnuUoSLBm9CR4tYRJurNxn6FRbk=3D">http://piazza.com/utdallas</a>.<br=
+><br><br>
+<br>
+Thanks,<br>
+The Piazza Team<br>
+--<br>
+Contact us at team@piazza.com<br><br><br>
+<font size=3D"-2">
+You're receiving this email because jtt190006@utdallas.edu is enrolled =
+in CS 2337 at University of Texas at Dallas. <a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fpiazza.com%2Flogin&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%7C=
+4682cbf3ede249261a0c08d875431009%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637388278184722753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D%2B0OBKyHMq1=
+I3ss0FzVZEHTUNtSpyxxM7OJ9WCwpxDv0%3D&amp;reserved=3D0" =
+originalsrc=3D"https://piazza.com/login" =
+shash=3D"X2ZX9vHvORwjqwPNFkE9j02FJ79IT7veMVHIa4NK7fhiVh3U+VmbQD7npWWQHOh7=
+28ckSbhRpzY6zaDyQ6Xx92ev5X03w4DIUFfJPP6XtH8kGKjPdBbzXYqFQIxEs/A5xGGCcthsj=
+NhykprbDyJxHTGrDOKNu5Q7m8oKbrAHPh8=3D">Sign in</a> to manage your email =
+preferences or <a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=3D04%7C01%=
+7CJesse.Truong%40UTDallas.edu%7C4682cbf3ede249261a0c08d875431009%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388278184732744%7CUnknown%7CTWFpb=
+GZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3D5TBbYwGQVw4HCBBzDdCh5IizJ7lIRAS7WTauvDWQgp8%3D&amp;re=
+served=3D0" =
+originalsrc=3D"https://piazza.com/remove/9NDsAQ4j0O3/kdkny0h2flh4wp" =
+shash=3D"tzV3iEtrYNKcZAMkoLsw5t4i0p86cJK420OKWsHeccscSHF1G/GgaEmP6Czj6eCT=
+ABhpVfzMnPb3DAl6U87aYdG9DN922PIHyNxkgMu65v7wHuWxxGb3JPzysOD5LYkxP0sYlJtrr=
+xnKZ+vNj/qu8C/k3vI/bq0ep+fHlTnqiew=3D">un-enroll</a> from this =
+class.</font>
+</html>
+
+------=_NextPart_000_0062_01D6B0AA.1B9A6340--
