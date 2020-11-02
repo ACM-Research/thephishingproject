@@ -1,165 +1,460 @@
-Received: from MN2PR01MB5806.prod.exchangelabs.com (2603:10b6:404:37::15) by
- BN6PR0101MB2996.prod.exchangelabs.com with HTTPS via
- BN6PR22CA0029.NAMPRD22.PROD.OUTLOOK.COM; Sun, 19 Jul 2020 02:11:39 +0000
-Received: from SA9PR03CA0030.namprd03.prod.outlook.com (2603:10b6:806:20::35)
- by MN2PR01MB5806.prod.exchangelabs.com (2603:10b6:208:190::28) with Microsoft
- SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
- 15.20.3195.17; Sun, 19 Jul 2020 02:11:36 +0000
-Received: from SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
- (2603:10b6:806:20:cafe::2c) by SA9PR03CA0030.outlook.office365.com
- (2603:10b6:806:20::35) with Microsoft SMTP Server (version=TLS1_2,
- cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3195.19 via Frontend
- Transport; Sun, 19 Jul 2020 02:11:36 +0000
-Authentication-Results: spf=pass (sender IP is 17.58.23.188)
- smtp.mailfrom=icloud.com; utdallas.edu; dkim=pass (signature was verified)
- header.d=icloud.com;utdallas.edu; dmarc=pass action=none
- header.from=icloud.com;compauth=pass reason=100
-Received-SPF: Pass (protection.outlook.com: domain of icloud.com designates
- 17.58.23.188 as permitted sender) receiver=protection.outlook.com;
- client-ip=17.58.23.188; helo=mr85p00im-hyfv06021301.me.com;
-Received: from mr85p00im-hyfv06021301.me.com (17.58.23.188) by
- SN1NAM02FT038.mail.protection.outlook.com (10.152.72.69) with Microsoft SMTP
- Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
- 15.20.3195.18 via Frontend Transport; Sun, 19 Jul 2020 02:11:35 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icloud.com;
-	s=1a1hai; t=1595124694;
-	bh=4RQERwJmb9opGBhTCMHhrxlrJbstY9myDXhUKcwjV9Q=;
-	h=From:Subject:Date:Message-id:Content-Type;
-	b=GNyL0w/4IHJ5i4phugdQnFcYu0burT8RRdWBc2nafzj6pqRkDnhU4HUkxzHFOYKGs
-	 7T8VJnXZa8I1hh7vWqBVsfDacmqZNtb/vvzQsDNWgtK+AKDh9cpxp7NsEjdVeN6zJM
-	 g2A9+LZl+oHGIb/UXFWWU69urAkS35A/1V0O/rSZv7HJiZyE92SP855NPcdt2hUJq2
-	 N7AHB5GPClAjD7hK1Ci4F7teHrUmLpsek4Lcfskyv846eMdK0kUkmiGmbwISUuNDe+
-	 /FXaY0hqCKV7nE7oC9AqYi0+z17160Z1WenHED/4/qEFW3tmKBq/e4aN7Fm898nDOk
-	 Es20jVyuaA5LQ==
-Received: from mr85p00im-hyfv06021301.me.com (mr85p00im-hyfv06021301.me.com [17.58.23.188])
-	by mr85p00im-hyfv06021301.me.com (Postfix) with ESMTPS id BD5A4401EF;
-	Sun, 19 Jul 2020 02:11:33 +0000 (UTC)
-Received: from localhost (mr26p00im-ztdg08134401.me.com [17.110.124.68])
-	by mr85p00im-hyfv06021301.me.com (Postfix) with ESMTP id A38AB400BD;
-	Sun, 19 Jul 2020 02:11:32 +0000 (UTC)
-From: INFORMATION DESK <h12870@icloud.com>
 Subject: Internship message
-Date: Sun, 19 Jul 2020 02:11:32 -0000
-X-Mailer: iCloud MailClient2012Project61 MailServer2011B332.10000-Famine2011-0-e73dd42b508f
-Message-id: <e4960733-5b3a-4e6e-8d31-d700da6c038c@me.com>
-X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.235,18.0.687
- definitions=2020-07-18_13:2020-07-17,2020-07-18 signatures=0
-X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 suspectscore=3 malwarescore=0
- phishscore=0 bulkscore=3 spamscore=0 clxscore=1011 mlxscore=0
- mlxlogscore=623 adultscore=0 classifier=spam adjust=0 reason=mlx
- scancount=1 engine=8.0.1-2004280000 definitions=main-2007190015
-To: Undisclosed recipients:;
-Return-Path: h12870@icloud.com
-X-MS-Exchange-Organization-ExpirationStartTime: 19 Jul 2020 02:11:36.1697
- (UTC)
-X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
-X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
-X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
-X-MS-Exchange-Organization-Network-Message-Id:
- 86ea9e3d-3fe0-4b85-e19c-08d82b891095
-X-EOPAttributedMessage: 0
-X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
-X-MS-Exchange-Organization-MessageDirectionality: Incoming
-X-Forefront-Antispam-Report:
- CIP:17.58.23.188;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mr85p00im-hyfv06021301.me.com;PTR:mr85p00im-hyfv06021301.me.com;CAT:SPM;SFTY:;SFS:(4636009)(86362001)(8676002)(10290500003)(9686003)(7596003)(3480700007)(1096003)(356005)(58800400005)(7116003)(109986005)(26005)(33964004)(82202003)(36756003)(6266002)(22186003)(956004)(7696005)(564344004)(31686004)(31696002)(336012)(5660300002)(22126002)(43540500001)(127190200002);DIR:INB;SFP:;
-X-MS-PublicTrafficType: Email
-X-MS-Exchange-Organization-AuthSource:
- SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
-X-MS-Exchange-Organization-AuthAs: Anonymous
-X-MS-Office365-Filtering-Correlation-Id: 86ea9e3d-3fe0-4b85-e19c-08d82b891095
-X-MS-TrafficTypeDiagnostic: MN2PR01MB5806:
-X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
-X-MS-Exchange-Transport-Forked: True
-X-MS-Exchange-AtpMessageProperties: SA|SL
-X-MS-Oob-TLC-OOBClassifiers: OLM:1728;
-X-MS-Exchange-Organization-SCL: 5
-X-Microsoft-Antispam: BCL:0;
-X-MS-Exchange-ATPSafeLinks-Stat: 0
-X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
-X-MS-Exchange-ForwardingLoop:
- ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
-X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Jul 2020 02:11:35.9988
- (UTC)
-X-MS-Exchange-CrossTenant-Network-Message-Id: 86ea9e3d-3fe0-4b85-e19c-08d82b891095
-X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
-X-MS-Exchange-CrossTenant-AuthSource:
- SN1NAM02FT038.eop-nam02.prod.protection.outlook.com
-X-MS-Exchange-CrossTenant-AuthAs: Anonymous
-X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
-X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5806
-X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.7387852
-X-MS-Exchange-Processed-By-BccFoldering: 15.20.3174.029
-X-Microsoft-Antispam-Mailbox-Delivery:
- ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
-X-Microsoft-Antispam-Message-Info:
- =?us-ascii?Q?5P7ix2bDGjpljwjJLaKZkDfIk2Pe/w9Cet5vnOUBl4raKHuZMVb+Zrx/Wd0g?=
- =?us-ascii?Q?fsOiSSIPOV3IObBoEd07ZQSG58n4qee253CwW7qa7x89W4588zM+dR/NsTUh?=
- =?us-ascii?Q?pW2ibeixiKxnFZQdJxpCMzo4V1S0wOFwnxNR5zQw6JQKY49WhPKM3OXPaWwq?=
- =?us-ascii?Q?HmTFl0oR+gSxBtiqQJ6/N5VCXwoTiorMjvQY+QiNSCI9FXS2AFJu2dt4xyM7?=
- =?us-ascii?Q?ViQJcJ2+jNDq7Ft/CXgE8AVi3o1ClJL+v1oQayJVsEj6PmkOLftaXQitJIdc?=
- =?us-ascii?Q?b3n6KhtsqCT9DW6l5rudNOBvU89zn86OYd3cFMyUo6PrUnByhZAqoM/xU4ue?=
- =?us-ascii?Q?6wtfe/BbydzHfILUtySL/JKqwjohidaYx3EOH0FjKATDbExb7ggIkWQWZMwg?=
- =?us-ascii?Q?gdcjsOYm2d+B29hPydpSV8Qg2sezdIJ5VYD6+phzijtnJv8XJs/r0TAheIR/?=
- =?us-ascii?Q?gpYscvPyW9Zje8X1OmrKv0S4NX1abnr9j+gOS+oWmUKqNGhfIZJCnmI6xnuP?=
- =?us-ascii?Q?rO4cLgVKMm4cDJWMSYPVQkwvi/j1Zr6WLpBFk9bPjAPWZ7Fw9WRJ4kkDc3Oi?=
- =?us-ascii?Q?wd75cuAPAEaVSS9sMQAn1yJ5VdnzWOALwwqHRhSBPh50ar8NkC7GmCXc8bKT?=
- =?us-ascii?Q?djjuIsKubvsN1xt7oSN7bxXRwnRzAOzcAs9ekTzecarFL2S86dtNSeLAujrR?=
- =?us-ascii?Q?qOT15rNgsWSeY7lUNt5ratC0KLiQ5vDNRdwHFQETYPdGByWH6Va81e4/72Ot?=
- =?us-ascii?Q?eJAahZeI087SCaYGhyk/nVE4HItQ9sNQTFcl/T/zY7ive9IqJghc1Dx2lLfF?=
- =?us-ascii?Q?zH4SRU3hCwgv1g1Y/L9M1eeVlL7NbQkS9zu7dcKpWJscLvOkog06BQs0ljkn?=
- =?us-ascii?Q?yZm42gIOki7w5IE2W4omn4Io7QGJmt4sgy/QohjkMYNxQKJaq4b/bAt5vir4?=
- =?us-ascii?Q?iKPWfLJjGMTIF/WiQ+ucmcz4bzvhiPjjUxp+RJqV8SG+gWu9yXNQxyUnusy5?=
- =?us-ascii?Q?07brnX0EYKp9BxfFRntuNfkrX+i+5M+k6FSYuZZExLbVNHtWXBalViaRd3GU?=
- =?us-ascii?Q?7/Gi2PUI3HRVXMuF2vT/+2KSmqsS/uNXr3ZMQNBhnsycTETfp8eaFNfsNsnH?=
- =?us-ascii?Q?LheQfD4GutG7V7ThapcCXseon++w3ZGTUCaVUvlx26qonFcaTrassOLDx8dn?=
- =?us-ascii?Q?F2eyQ1jCjeZbZzMrBzK47b5iBwHBskDZgrdu8UdLYaU6TDTNLxY+2FXSUmZn?=
- =?us-ascii?Q?n06TXWvuefEg94EBe41Y9oPeR2OscwulWWAoaK0q5tnVeQX3FOrvwk6OTKEL?=
- =?us-ascii?Q?oCI37SkSFTsoePaXvIbI7zoV7bQ9KtpmKDQFygEnE42oJvxJRFIudTc776ze?=
- =?us-ascii?Q?K8P2Ptr0PUj9HPKu2mYyHpEmEuGjILkyIwHvXrgAqDNFpFm5QHydVkAZzPEI?=
- =?us-ascii?Q?MAlfZcUbpM5MPpGO45DpPLbVvjPQUnDmxjFzCm9z2Pddql+rVSL+/PSkLTF5?=
- =?us-ascii?Q?OLWMpszwpjLAY9YzlSXSVQnFBTOTCmm6yHL4hf5bqQwmqIHTzI+cgNbBLUCg?=
- =?us-ascii?Q?zlc2QgLcv0jblz0HgHkXRUkTgHLa+j3UR5E7B670?=
-Content-type: multipart/mixed;
-	boundary="B_3686568056_1295415873"
+From: "INFORMATION DESK" <h12071@icloud.com>
+Sender: "INFORMATION DESK" <h12071@icloud.com>
+To: "Huynh, Elise Tuyet Anh" <eth170000@utdallas.edu>,
+	"Huynh, Ethan Duc-Quang" <Ethan.Huynh@UTDallas.edu>,
+	"Huynh, Ethan" <Ethan.Huynh3@UTDallas.edu>,
+	"Huynh, Giang Thanh" <Giang.Huynh@UTDallas.edu>,
+	"Huynh, Hanson Cong Chanh Dao" <hch170330@utdallas.edu>,
+	"Huynh, Huy" <dhh170230@utdallas.edu>,
+	"Huynh, Jenifer" <Jenifer.Huynh@utdallas.edu>,
+	"Huynh, Jerry Sean" <Jerry.Huynh@utdallas.edu>,
+	"Huynh, Jimmy Duoc" <Jimmy.Huynh@UTDallas.edu>,
+	"Huynh, Josh Alan" <Josh.Huynh@UTDallas.edu>,
+	"Huynh, Kenny Minh" <Kenny.Huynh1@utdallas.edu>,
+	"Huynh, Kevin Khanh" <kkh170000@utdallas.edu>,
+	"Huynh, Kevin Vu" <Kevin.Huynh@UTDallas.edu>,
+	"Huynh, Kim Quyen Nguyen" <knh170000@utdallas.edu>,
+	"Huynh, Kim" <khh160030@utdallas.edu>,
+	"Huynh, Kriss Y N" <Krissy.Huynh@UTDallas.edu>,
+	"Huynh, Kristy" <Kristy.Huynh@UTDallas.edu>,
+	"Huynh, Lac" <Lac.Huynh@UTDallas.edu>,
+	"Huynh, Madelyn Trang" <Madelyn.Huynh@UTDallas.edu>,
+	"Huynh, Meg Thu Thanh" <Meg.Huynh@UTDallas.edu>,
+	"Huynh, Nhi Hue" <Nhi.Huynh@UTDallas.edu>,
+	"Huynh, Nhi" <Nhi.Huynh2@UTDallas.edu>,
+	"Huynh, Peter" <Peter.Huynh@UTDallas.edu>,
+	"Huynh, Phuong Hoang" <Phuong.Huynh2@utdallas.edu>,
+	"Huynh, Ricky Hai" <Ricky.Huynh@utdallas.edu>,
+	"Huynh, Samantha Dinh" <Samantha.Huynh@UTDallas.edu>,
+	"Huynh, Samuel T." <Samuel.Huynh@UTDallas.edu>,
+	"Huynh, Sophie Vo Bao" <Sophie.Huynh@UTDallas.edu>,
+	"Huynh, Steven Long" <slh150630@utdallas.edu>,
+	"Huynh, Tam Ngoc" <Tam.Huynh@UTDallas.edu>,
+	"Huynh, Thu M" <Thu.Huynh2@UTDallas.edu>,
+	"Huynh, Timmy Vinh" <tvh170000@utdallas.edu>,
+	"Huynh, Yen" <yen.huynh@utdallas.edu>,
+	"Nguyen, Huy Duc" <Huy.Nguyen7@utdallas.edu>,
+	"Nguyen, Huy Duc" <Huy.Nguyen2@UTDallas.edu>,
+	"Nguyen, Huy Tran" <Huy.Nguyen3@UTDallas.edu>,
+	"Nguyen, Huy Ngoc" <Huy.Nguyen5@UTDallas.edu>,
+	"Nguyen, Huy Bac" <Huy.Nguyen8@UTDallas.edu>,
+	"Nguyen, Huy Minh" <Huy.Nguyen@UTDallas.edu>,
+	"Nguyen, Huy Viet" <Huy.Nguyen10@utdallas.edu>,
+	"Phan, Huy Quoc" <hqp160030@utdallas.edu>,
+	"Tran, Huy Lequang" <Huy.Tran@UTDallas.edu>,
+	"Tran, Huyen Nguyen Khanh" <Huyen.Tran2@UTDallas.edu>,
+	"Tran, Huyen B" <Huyen.Tran@UTDallas.edu>,
+	"Vuong, Huy Quoc" <Huy.Vuong@UTDallas.edu>,
+	"Cho, Alan" <Alan.Cho@UTDallas.edu>,
+	"Cho, Andrew Jaehoon" <Andrew.Cho@utdallas.edu>,
+	"Cho, Daniel" <Daniel.Cho@UTDallas.edu>,
+	"Cho, Daniel" <Daniel.Cho3@UTDallas.edu>,
+	"Cho, David" <David.Cho2@utdallas.edu>,
+	"Cho, David Hyunwoo" <David.Cho@UTDallas.edu>,
+	"Cho, David Yunjae" <David.Cho1@utdallas.edu>,
+	"Cho, Jeffrey Byung Hwa" <Jeffrey.Cho@utdallas.edu>,
+	"Cho, Jennica H" <jhc180000@utdallas.edu>,
+	"Cho, Jessica" <Jessica.Cho@UTDallas.edu>,
+	"Cho, Martin Namwook" <Martin.Cho@UTDallas.edu>,
+	"Cho, Minchae" <mxc180012@utdallas.edu>,
+	"Cho, Punghee" <pxc180001@utdallas.edu>,
+	"Cho, Seo Won" <SeoWon.Cho@utdallas.edu>,
+	"Cho, Sohyun" <sxc152730@utdallas.edu>,
+	"Cho, Sohyun" <Sohyun.Cho2@UTDallas.edu>,
+	"Cho, Sophia" <Sophia.Cho@utdallas.edu>,
+	"Cho, Tiffany" <Tiffany.Cho@utdallas.edu>,
+	"Cho, Victoria" <Victoria.Cho@UTDallas.edu>,
+	"Cho, Yae-Jin" <yxc170006@utdallas.edu>,
+	"Choate, Rebecca Lynn" <Rebecca.Choate@utdallas.edu>,
+	"Choate, Ryan Michael" <Ryan.Choate@UTDallas.edu>,
+	"Chochua, Vadim" <Vadim.Chochua@utdallas.edu>,
+	"Chockan, Sanjith" <Sanjith.Chockan@UTDallas.edu>,
+	"Chodavadia, Shreeya Dinesh" <Shreeya.Chodavadia@utdallas.edu>,
+	"Chodavaram, Anush" <Anush.Chodavaram@UTDallas.edu>,
+	"Chodun, Esabella Cathryn" <Esabella.Chodun@UTDallas.edu>,
+	"Choe, Eunice Hayoon" <ehc170001@utdallas.edu>,
+	"Choe, Jinah Ina" <Jinah.Choe@utdallas.edu>,
+	"Chohan, Jashanpreet K" <Jashanpreet.Chohan@UTDallas.edu>,
+	"Chohan, Yaseen Tariq" <Yaseen.Tariq@UTDallas.edu>,
+	"Choi, Andrea Jinjoo" <Andrea.Choi@UTDallas.edu>,
+	"Choi, Andrew" <Andrew.Choi2@UTDallas.edu>,
+	"Choi, Bona" <Bona.Choi@utdallas.edu>,
+	"Choi, Casey Jay" <Casey.Choi@UTDallas.edu>,
+	"Choi, Danielle Jina" <Danielle.Choi1@utdallas.edu>,
+	"Choi, Grace Jihye" <Grace.Choi@UTDallas.edu>,
+	"Choi, Haram Kyuchan" <Haram.Choi@UTDallas.edu>,
+	"Choi, Jae Won" <JaeWon.Choi@UTDallas.edu>,
+	"Choi, Joseph Han" <Joseph.Choi2@UTDallas.edu>,
+	"Choi, Kelly" <Kelly.Choi@UTDallas.edu>,
+	"Choi, Kevin" <Kevin.Choi@utdallas.edu>,
+	"Choi, Kevin H" <Kevin.Choi2@UTDallas.edu>,
+	"Choi, Mi Joo" <MiJoo.Choi@UTDallas.edu>,
+	"Choi, Minhye" <Minhye.Choi@UTDallas.edu>,
+	"Choi, Miriam Meerim" <Miriam.Choi@UTDallas.edu>,
+	"Choi, Miyoung" <Miyoung.Choi@utdallas.edu>,
+	"Choi, Nicholas Wai" <nwc180000@utdallas.edu>,
+	"Choi, Ryan" <mxc170006@utdallas.edu>,
+	"Choi, Seoyeon" <Seoyeon.Choi@UTDallas.edu>,
+	"Choi, Seyoung" <Seyoung.Choi@UTDallas.edu>,
+	"Choi, Soohyun" <Soohyun.Choi@utdallas.edu>,
+	"Choi, Stella" <Stella.Choi2@UTDallas.edu>,
+	"Choi, Tiara" <Tiara.Choi@utdallas.edu>,
+	"Choi, Timothy Seungpil" <Timothy.Choi@UTDallas.edu>,
+	"Choi, Wonjin" <Wonjin.Choi@UTDallas.edu>,
+	"Choi, Wooyoung" <Wooyoung.Choi@utdallas.edu>,
+	"Choi, Yechan" <yxc161130@utdallas.edu>,
+	"Choi, Yein" <Yein.Choi@UTDallas.edu>,
+	"Choi, Yena" <Yena.Choi@utdallas.edu>,
+	"Choi, Yerin" <Yerin.Choi@utdallas.edu>,
+	"Choi, Yong S" <Yong.Choi@UTDallas.edu>,
+	"Choi, Yun" <Yun.Choi@UTDallas.edu>,
+	"Choi, Yuri Ann" <Yuri.Choi1@utdallas.edu>,
+	"Chokhachian, Sepideh" <Sepideh.Chokhachian@UTDallas.edu>,
+	"Choksi, Ria A" <rac170001@utdallas.edu>,
+	"Cholera, Manan Dharmeshbhai" <Manan.Cholera@UTDallas.edu>,
+	"Choma, Holly Patricia" <hpc160030@utdallas.edu>,
+	"Chong-Macias, Jessica" <Jessica.Chong-Macias@UTDallas.edu>,
+	"Chong, Annie" <Annie.Chong@UTDallas.edu>,
+	"Chong, Christian Min" <Christian.Chong@UTDallas.edu>,
+	"Chong, Christina Jungin" <cxc123030@utdallas.edu>,
+	"Chong, Joseph Adrian Setiawan" <jac170010@utdallas.edu>,
+	"Choo, Joyce" <Joyce.Choo@UTDallas.edu>,
+	"Chopada, Pranav Mahavir" <Pranav.Chopada@utdallas.edu>,
+	"Chopada, Yash Tushar" <YashTushar.Chopada@UTDallas.edu>,
+	"Choteanankarn, Orapin" <Orapin.Choteanankarn@UTDallas.edu>,
+	"Chou, Anne" <Anne.Chou@UTDallas.edu>,
+	"Chou, Caleb Young" <Caleb.Chou@UTDallas.edu>,
+	"Chou, Cris" <Cris.Chou@UTDallas.edu>,
+	"Chou, Ian Gene" <Ian.Chou@utdallas.edu>,
+	"Chou, Isaac H" <Isaac.Chou@UTDallas.edu>,
+	"Chou, Jacqueline I-Hsuan" <Jacqueline.Chou@utdallas.edu>,
+	"Chou, Owen" <Owen.Chou@UTDallas.edu>,
+	"Chou, Pei Jung" <PeiJung.Chou@UTDallas.edu>,
+	"Chou, Wei-Hsuan" <wxc152230@utdallas.edu>,
+	"Chou, Yen-Ting" <yxc170013@utdallas.edu>,
+	"Choudari, Aloksai" <Aloksai.Choudari@UTDallas.edu>,
+	"Choudhary, Aayushi" <Aayushi.Choudhary@UTDallas.edu>,
+	"Choudhary, Ankita" <Ankita.Choudhary@utdallas.edu>,
+	"Choudhary, Hrithik" <Hrithik.Choudhary@UTDallas.edu>,
+	"Choudhry, Areeb Tahir" <Areeb.Choudhry@UTDallas.edu>,
+	"Choudhry, Shazia" <Shazia.Choudhry@UTDallas.edu>,
+	"Choudhury, Shuhrat Sharar" <Shuhrat.Choudhury@UTDallas.edu>,
+	"Choudhury, Soumyadeep" <Soumyadeep.Choudhury@UTDallas.edu>,
+	"Kha, Evelyn Dang" <Evelyn.Kha@UTDallas.edu>,
+	"Khachaturyan, David" <David.Khachaturyan@utdallas.edu>,
+	"Khader, Hasina Abdulbaqi" <Hasina.Khader@utdallas.edu>,
+	"Khader, Oday Hisham" <Oday.Khader@UTDallas.edu>,
+	"Khader, Syed Sadeed" <Syed.Khader@UTDallas.edu>,
+	"Khadka, Abhisha" <Abhisha.Khadka@UTDallas.edu>,
+	"Khadka, Ism" <ixk180000@utdallas.edu>,
+	"Khadka, Sujin" <sxk180039@utdallas.edu>,
+	"Khadka, Ujjwal" <Ujjwal.Khadka@UTDallas.edu>,
+	"Khaja, Amina" <Amina.Khaja@UTDallas.edu>,
+	"Khaja, Saima" <Saima.Khaja@UTDallas.edu>,
+	"Khaja, Umar M" <Umar.Khaja@UTDallas.edu>,
+	"Khakh, Jasvee" <Jasvee.Khakh@UTDallas.edu>,
+	"Khakpour, Neda" <nxk144430@utdallas.edu>,
+	"Khakwani, Miriam Nawaal" <Miriam.Khakwani@UTDallas.edu>,
+	"Khalaf, Arwa" <Arwa.Khalaf@UTDallas.edu>,
+	"Khaleque, Muntasir Abdul" <Muntasir.Khaleque@utdallas.edu>,
+	"Khalfe, Ayesha" <Ayesha.Khalfe@utdallas.edu>,
+	"Khalfe, Nadia" <Nadia.Khalfe@utdallas.edu>,
+	"Khalid, Aj Khalid" <AjKhalid.Khalid@UTDallas.edu>,
+	"Khalid, Asma" <axk084300@utdallas.edu>,
+	"Khalid, Faraz" <Faraz.Khalid@utdallas.edu>,
+	"Khalid, Khurram" <kxk166430@utdallas.edu>,
+	"Khalid, Mamoon" <Mamoon.Khalid@UTDallas.edu>,
+	"Khalid, Maryam Maryam" <Maryam.Khalid@UTDallas.edu>,
+	"Khalid, Qanitah" <Qanitah.Khalid@utdallas.edu>,
+	"Khalid, Rifat Ibne" <Rifat.Khalid@UTDallas.edu>,
+	"Khalid, Sana" <Sana.Khalid1@utdallas.edu>,
+	"Khalid, Suhina" <Suhina.Khalid@UTDallas.edu>,
+	"Khalid, Umar" <Umar.Khalid@utdallas.edu>,
+	"Khalil, Ali Mohamed" <Ali.Khalil2@UTDallas.edu>,
+	"Khalil, Omer Abedelmonaim" <oak160030@utdallas.edu>,
+	"Khalil, Randa" <Randa.Khalil@UTDallas.edu>,
+	"Khalilullah, Taha" <Taha.Khalilullah@UTDallas.edu>,
+	"Khalilullah, Yaseen" <Yaseen.Khalilullah@UTDallas.edu>,
+	"Khamis, Mohamed" <Mohamed.Khamis@utdallas.edu>,
+	"Khamis, Mostafa" <Mostafa.Khamis@UTDallas.edu>,
+	"Khamoshi, Sarina" <Sarina.Khamoshi@UTDallas.edu>,
+	"Khamphouseng, Sydney Phone" <Sydney.Khamphouseng@UTDallas.edu>,
+	"Khamsi, Bilal" <Bilal.Khamsi@UTDallas.edu>,
+	"Khan, Aatifa" <axk180019@utdallas.edu>,
+	"Khan, Abdullah Ibn Moiez" <Abdullah.Khan2@utdallas.edu>,
+	"Khan, Adeel I" <aik180000@utdallas.edu>,
+	"Khan, Adrika" <axk180029@utdallas.edu>,
+	"Khan, Ahmed N" <ank170002@utdallas.edu>,
+	"Khan, Alehae" <axk161430@utdallas.edu>,
+	"Khan, Alina Kamal" <Alina.Khan2@utdallas.edu>,
+	"Khan, Almaas Zehra" <azk170030@utdallas.edu>,
+	"Khan, Amina" <axk170026@utdallas.edu>,
+	"Khan, Anita" <Anita.Khan@utdallas.edu>,
+	"Khan, Arnab" <Arnab.Khan@utdallas.edu>,
+	"Khan, Ayesha Muhammad" <Ayesha.Khan3@utdallas.edu>,
+	"Khan, Aymen A" <aak170003@utdallas.edu>,
+	"Khan, Danyal" <Danyal.Khan@utdallas.edu>,
+	"Khan, Farhan Ahmed" <fak170001@utdallas.edu>,
+	"Khan, Fariha Tasnim" <Fariha.Khan@UTDallas.edu>,
+	"Khan, Fatima" <Fatima.Khan7@utdallas.edu>,
+	"Khan, Fatma" <Fatma.Khan@utdallas.edu>,
+	"Khan, Fayha Raza" <Fayha.Khan@utdallas.edu>,
+	"Khan, Hiba Sohail" <hsk170000@utdallas.edu>,
+	"Khan, Hooba" <Hooba.Khan@utdallas.edu>,
+	"Khan, Imran Zia" <Imran.Khan4@utdallas.edu>,
+	"Khan, Jeanana" <Jeanana.Khan@utdallas.edu>,
+	"Khan, Jenain Iman" <Jenain.Khan@UTDallas.edu>,
+	"Khan, Kashmala Saira" <Kashmala.Khan@utdallas.edu>,
+	"Khan, Kingshuk Ismail" <Kingshuk.Khan@utdallas.edu>,
+	"Khan, Maaz Ahmed" <Maaz.Khan1@utdallas.edu>,
+	"Khan, Maha" <mxk170027@utdallas.edu>,
+	"Khan, Maliha T" <mtk160130@utdallas.edu>,
+	"Khan, Maryam" <mxk170022@utdallas.edu>,
+	"Khan, Md Arafat" <arafat@utdallas.edu>,
+	"Khan, Mohammad Faisal" <MohammadFaisal.Khan1@utdallas.edu>,
+	"Khan, Muhammad B" <mbk180000@utdallas.edu>,
+	"Khan, Mushroor" <Mushroor.Khan@utdallas.edu>,
+	"Khan, Mustafa Ali" <Mustafa.Khan2@UTDallas.edu>,
+	"Khan, Nimah" <nxk170017@utdallas.edu>,
+	"Khan, Omar A" <oak150230@utdallas.edu>,
+	"Khan, Omar Sufiyan" <Omar.Khan5@utdallas.edu>,
+	"Khan, Ramiz Ali" <rak170030@utdallas.edu>,
+	"Khan, Rehan Omer" <Rehan.Khan@utdallas.edu>,
+	"Khan, Rijaa Adil" <rak170000@utdallas.edu>,
+	"Khan, Ruhma Maryam" <rmk180000@utdallas.edu>,
+	"Khan, Sabah Kaleem" <skk170000@utdallas.edu>,
+	"Khan, Saira" <Saira.Khan@utdallas.edu>,
+	"Khan, Salek Ahmed" <Salek.Khan@utdallas.edu>,
+	"Khan, Samah S" <ssk170006@utdallas.edu>,
+	"Khan, Sameer Ali" <Sameer.Khan2@utdallas.edu>,
+	"Khan, Samreen" <Samreen.Sher@utdallas.edu>,
+	"Khan, Sania" <sxk180015@utdallas.edu>,
+	"Khan, Shahad Rahman" <Shahad.Khan@utdallas.edu>,
+	"Khan, Shayan A" <sxk145531@utdallas.edu>,
+	"Khan, Shehram Ali" <Shehram.Khan@UTDallas.edu>,
+	"Khan, Umer Muhammad" <Umer.Khan@utdallas.edu>,
+	"Khan, Yusuf" <Yusuf.Khan4@utdallas.edu>,
+	"Khan, Zahrah Anjum" <Zahrah.Khan@utdallas.edu>,
+	"Khan, Zara" <Zara.Khan@UTDallas.edu>,
+	"Bellani, Vandana G" <Vandana.Bellani@UTDallas.edu>,
+	"Chauhan, Vanshika" <vxc180000@utdallas.edu>,
+	"Dam, Van" <vanchi@utdallas.edu>,
+	"De La Cruz, Vanessa" <Vanessa.DeLaCruz@UTDallas.edu>,
+	"Eng, Vanessa Kim" <Vanessa.Eng@UTDallas.edu>,
+	"Franks, Vanlexus" <Vanlexus.Franks@utdallas.edu>,
+	"Gonzalez, Vanessa" <Vanessa.Gonzalez@UTDallas.edu>,
+	"Guidry, Vance" <Vance.Guidry@UTDallas.edu>,
+	"Guzman, Vanessa" <Vanessa.Guzman@utdallas.edu>,
+	"Idigbe, Vanessa Ifechukwude" <Vanessa.Idigbe@utdallas.edu>,
+	"Jeevanandam, Vandana" <Vandana.Jeevanandam@utdallas.edu>,
+	"Le, Van" <vtl130030@utdallas.edu>,
+	"Le, Vanessa Xn" <vxl170003@utdallas.edu>,
+	"Luong, Van Nguyen" <Van.Luong@UTDallas.edu>,
+	"Martinez Yanez, Vanessa" <Vanessa.MartinezYanez@UTDallas.edu>,
+	"Modi, Vandit" <Vandit.Modi@UTDallas.edu>,
+	"Nguyen, Van Hoang My" <Van.Nguyen3@utdallas.edu>,
+	"Nguyen, Van Thi" <Van.Nguyen@UTDallas.edu>,
+	"Patel, Vansh" <Vansh.Patel@UTDallas.edu>,
+	"Pedroza, Vanessa" <Vanessa.Pedroza@UTDallas.edu>,
+	"Peugh, Vanessa I" <Vanessa.Peugh@UTDallas.edu>,
+	"Rosales, Vanessa Elizabeth" <ver170000@utdallas.edu>,
+	"Sotelo, Vanessa Candace" <Vanessa.Sotelo@UTDallas.edu>,
+	"Srivastava, Vanshika" <vxs170005@utdallas.edu>,
+	"Van Buskirk, Gregory" <greg.vanbuskirk@utdallas.edu>,
+	"Van Cuyk, Collin Joseph" <Collin.VanCuyk@UTDallas.edu>,
+	"Van De Coevering, Nadya Jolande" <Nadya.VanDeCoevering@UTDallas.edu>,
+	"Van Easteren, Ethan Christopher" <Ethan.VanEasteren@utdallas.edu>,
+	"Van Gulick, Jordan K" <Jordan.VanGulick@UTDallas.edu>,
+	"Van Note, Sophie Anne" <Sophie.VanNote@UTDallas.edu>,
+	"Van Tilburg, Robert D" <rdv160330@utdallas.edu>,
+	"Van Zyl, Charlene" <cxv170002@utdallas.edu>,
+	"Van Zyl, Nadine" <Nadine.VanZyl@utdallas.edu>,
+	"Van, Ann Trinh Diem" <AnnTrinh.Van@UTDallas.edu>,
+	"Van, Eric" <Eric.Van@utdallas.edu>,
+	"Van, Hope Joyce" <Hope.Van@utdallas.edu>,
+	"Van, Mimi Uyen" <Mimi.Van@UTDallas.edu>,
+	"VanOver, Jordan" <Jordan.Vanover@utdallas.edu>,
+	"Van, Vanessa Tuongvi" <Vanessa.Van@UTDallas.edu>,
+	"Vance, Devin Scott" <Devin.Vance@utdallas.edu>,
+	"Vancil, Janiece M" <jmv170000@utdallas.edu>,
+	"Vancil, Jeffrey Herring" <Jeffrey.Vancil@UTDallas.edu>,
+	"Vandercook, Alexis Reed" <Alexis.Vandercook@utdallas.edu>,
+	"Vanderpool, Chassity D" <cdv170000@utdallas.edu>,
+	"Vanderpool, Heather Elizabeth" <Heather.Vanderpool@utdallas.edu>,
+	"Vaneau, Stephan" <sxv180005@utdallas.edu>,
+	"Vanga, Sai Rishabh" <SaiRishabh.Vanga@UTDallas.edu>,
+	"Vangruber, Gabi Tova Bracha" <Gabi.Vangruber@UTDallas.edu>,
+	"Vanjani, Rohan Mahesh" <Rohan.Vanjani@UTDallas.edu>,
+	"Vankamamidi, Trayi Sai" <Trayi.Vankamamidi@UTDallas.edu>,
+	"Vankayalapati, Bhanu Teja" <bxv180006@utdallas.edu>,
+	"Vannatta, David James" <David.Vannatta@UTDallas.edu>,
+	"Vannette, Joseph W" <jwv170000@utdallas.edu>,
+	"Vanoven, Triniti N" <Triniti.Vanoven@UTDallas.edu>,
+	"Vanparia, Priya Haresh" <Priya.Vanparia@utdallas.edu>,
+	"Vanparia, Shriya H" <Shriya.Vanparia@UTDallas.edu>,
+	"Vanteru, Anudeepa Reddy" <AnudeepaReddy.Vanteru@UTDallas.edu>,
+	"Vanworkum, Jacob J" <Jacob.Vanworkum@UTDallas.edu>,
+	"Vanzine, Jack" <Jack.Vanzine@UTDallas.edu>,
+	"Villegas, Vanessa" <Vanessa.Villegas@UTDallas.edu>,
+	"Vuong, Van Anh" <VanAnh.Vuong@UTDallas.edu>,
+	"White, Vanessa Grace" <Vanessa.White1@utdallas.edu>,
+	"Whitehead, Vanessa Rose" <vrw180000@utdallas.edu>,
+	"Hirani, Trushti Sona" <Trushti.Hirani@UTDallas.edu>,
+	"Ho, Trung Kien" <TrungKien.Ho@UTDallas.edu>,
+	"Nguyen, Trung" <ttn071000@utdallas.edu>,
+	"Parekh, Trusha" <Trusha.Parekh@UTDallas.edu>,
+	"Perry, Trusstin Haydon" <Trusstin.Perry@UTDallas.edu>,
+	"Sacco, Truman M" <tms170001@utdallas.edu>,
+	"Tran, Trung Hieu" <trunghieu.tran@utdallas.edu>,
+	"Truetken, Sarah Marie" <Sarah.Truetken@UTDallas.edu>,
+	"Trundle, Zachary Charles" <Zachary.Trundle@UTDallas.edu>,
+	"Truong, Anna Dieu-Huyen" <Anna.Truong@utdallas.edu>,
+	"Truong, Brandon Anh-Khoa" <Brandon.Truong@UTDallas.edu>,
+	"Truong, Christopher Minh" <Christopher.Truong@utdallas.edu>,
+	"Truong, Dang Minh" <Dang.Truong@UTDallas.edu>,
+	"Truong, Drason Bao Tam" <dbt170001@utdallas.edu>,
+	"Truong, Ethan T" <ett170000@utdallas.edu>,
+	"Truong, Huy" <Huy.Truong@UTDallas.edu>,
+	"Truong, Jesse Trung" <Jesse.Truong@UTDallas.edu>,
+	"Truong, Johnathan T." <Johnathan.Truong@UTDallas.edu>,
+	"Truong, Johnny Nguyen" <jnt170002@utdallas.edu>,
+	"Truong, Kenneth Viet" <Kenneth.Truong@UTDallas.edu>,
+	"Truong, Kenny Q" <Kenny.Truong@UTDallas.edu>,
+	"Truong, Ky Thoai" <kqt130130@utdallas.edu>,
+	"Truong, Ky Tuong Quang" <KyTuong.Truong@utdallas.edu>,
+	"Truong, Nam Le" <Nam.Truong@utdallas.edu>,
+	"Truong, Nam Quoc" <Nam.Truong4@UTDallas.edu>,
+	"Truong, Nathan Christopher" <Nathan.Truong@UTDallas.edu>,
+	"Truong, Nghi" <nitruong1996@utdallas.edu>,
+	"Truong, Quan Ong My" <Quan.Truong@UTDallas.edu>,
+	"Truong, Sarah" <skt170001@utdallas.edu>,
+	"Truong, Sarah Huynh-Mai" <Sarah.Truong@UTDallas.edu>,
+	"Truong, Sydney Yyen" <Sydney.Truong@UTDallas.edu>,
+	"Truong, TaraVy Chi" <TaraVy.Truong@UTDallas.edu>,
+	"Truong, Tiffany Ngoc Thuyen" <Tiffany.Truong2@UTDallas.edu>,
+	"Truong, Van V" <vvt170000@utdallas.edu>,
+	<thaovy.truong@utdallas.eduTotal>,
+	"Phadke, Abhishek" <Abhishek.Phadke@UTDallas.edu>,
+	"Phadke, Rishabh" <rsp160530@utdallas.edu>,
+	"Pham To, Bao Kim" <Bao.PhamTo@utdallas.edu>,
+	"Pham Vu, Akin Matthew" <Akin.PhamVu@UTDallas.edu>,
+	"Pham, Alan Thienminh" <Alan.Pham@utdallas.edu>,
+	"Pham, Andrew D" <adp170000@utdallas.edu>,
+	"Pham, Angel Xuan" <Angel.Pham@UTDallas.edu>,
+	"Pham, Angie" <Angie.Pham@UTDallas.edu>,
+	"Pham, Anh Quang" <Anh.Pham@UTDallas.edu>,
+	"Pham, Anthony" <Anthony.Pham1@utdallas.edu>,
+	"Pham, Brian Q" <bqp180000@utdallas.edu>,
+	"Pham, Brian Duy-Bao" <Brian.Pham@UTDallas.edu>,
+	"Pham, Brittney Mai" <Brittney.Pham@UTDallas.edu>,
+	"Pham, Bryan Viet" <Bryan.Pham@UTDallas.edu>,
+	"Pham, Chandler H" <Chandler.Pham@UTDallas.edu>,
+	"Pham, Charlie Hoang Long" <Charlie.Pham@UTDallas.edu>,
+	"Pham, Christine Thanh" <Chritsine.Pham@UTDallas.edu>,
+	"Pham, Christopher Tuan" <Christopher.Pham@UTDallas.edu>,
+	"Pham, Cindy" <Cindy.Pham@UTDallas.edu>,
+	"Pham, Crystalynne Bang" <Crystalynne.Pham@UTDallas.edu>,
+	"Pham, Danielle Ha" <dhp170000@utdallas.edu>,
+	"Pham, Daphne Ha" <Daphne.Pham@UTDallas.edu>,
+	"Pham, Dat Thanh" <dtp180000@utdallas.edu>,
+	"Pham, Dat T" <Dat.Pham@UTDallas.edu>,
+	"Pham, David Minh" <David.Pham1@utdallas.edu>,
+	"Pham, David Hau" <David.Pham2@UTDallas.edu>,
+	"Pham, Elizabeth Quynh-Chi" <Elizabeth.Pham1@utdallas.edu>,
+	"Pham, Helena T" <hxp170002@utdallas.edu>,
+	"Pham, Hillary Luu" <Hillary.Pham@utdallas.edu>,
+	"Pham, Huy Quang" <Huy@utdallas.edu>,
+	"Pham, Jasmine Lavarn Van" <Jasmine.Pham@UTDallas.edu>,
+	"Pham, Jasmine Tram" <Jasmine.Pham2@UTDallas.edu>,
+	"Pham, Jeffrey Bach" <Jeffrey.Pham@utdallas.edu>,
+	"Pham, Jennifer" <jxp164330@utdallas.edu>,
+	"Pham, Jennifer Diem Quynh" <jdp170001@utdallas.edu>,
+	"Pham, Jennifer Tran" <Jennifer.Pham@UTDallas.edu>,
+	"Pham, Jeremiah Huy" <Jeremiah.Pham@utdallas.edu>,
+	"Pham, Joanne Phuong-Nguyen" <Joanne.Pham@utdallas.edu>,
+	"Pham, Johnny Hoang" <Johnny.Pham@UTDallas.edu>,
+	"Pham, Justin Hai Phong" <Justin.Pham@UTDallas.edu>,
+	"Pham, Kelly Vy" <Kelly.Pham@UTDallas.edu>,
+	"Pham, Kenneth Tai" <ktp170002@utdallas.edu>,
+	"Pham, Kenny Qui-Khang" <kenny.pham@utdallas.edu>,
+	"Pham, Khang Hong" <Khang.Pham@utdallas.edu>,
+	"Pham, Khoa Nam" <Khoa.Pham@UTDallas.edu>,
+	"Pham, Kolby Huy" <Kolby.Pham@UTDallas.edu>,
+	"Pham, Kris Hoan" <Kris.Pham@UTDallas.edu>,
+	"Pham, Lauren Yvan" <Lauren.Pham@UTDallas.edu>,
+	"Pham, Lich Hong" <Lich.Pham@utdallas.edu>,
+	"Pham, Lien Thuy" <Lien.Pham@UTDallas.edu>,
+	"Pham, Lily Nguyen" <Lily.Pham@UTDallas.edu>,
+	"Pham, Linh Ha" <Linh.Pham2@UTDallas.edu>,
+	"Pham, Luan" <Luan.Pham@UTDallas.edu>,
+	"Pham, Lynn T" <Lynn.Pham2@UTDallas.edu>,
+	"Pham, Matthew Nguyen" <Matthew.Pham@UTDallas.edu>,
+	"Pham, Michael Tri" <mtp170003@utdallas.edu>,
+	"Pham, Michelle Diem-Ha" <Michelle.Pham@utdallas.edu>,
+	"Pham, Nghia Van" <Nghia.Pham@UTDallas.edu>,
+	"Pham, Nhan Vi" <nvp160530@utdallas.edu>,
+	"Pham, Nhat Minh" <Nhat.Pham2@UTDallas.edu>,
+	"Pham, Nhi Ngoc Thuy" <nnp180001@utdallas.edu>,
+	"Pham, Nhi Xuan" <Nhi.Pham@UTDallas.edu>,
+	"Pham, Nicholas Le-Duy" <Nicholas.Pham@utdallas.edu>,
+	"Pham, Paul Phuthanh" <Paul.Pham1@utdallas.edu>,
+	"Pham, Peter Long Kim" <Peter.Pham@UTDallas.edu>,
+	"Pham, Phillip Quang-Viet" <Phillip.Pham@UTDallas.edu>
+Date: Sat, 18 Jul 2020 20:06:08 -0600
+Message-ID: <661814f9-b703-4a21-bd73-c13b5a06a185@me.com>
 MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0007_01D6B104.74BDA720"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQHWXXExurZ85ZCKpUS8FC+fxZ7uag==
+Content-Language: en-us
+x-ms-publictraffictype: Email
+received-spf: Pass (protection.outlook.com: domain of icloud.com designates 17.58.23.180 as permitted sender) receiver=protection.outlook.com; client-ip=17.58.23.180; helo=mr85p00im-ztdg06021101.me.com;
+x-ms-exchange-organization-originalclientipaddress: 17.58.23.180
+x-ms-exchange-organization-originalserveripaddress: 10.152.75.50
+x-ms-exchange-organization-authsource: CY1NAM02FT010.eop-nam02.prod.protection.outlook.com
+X-MimeOLE: Produced By Microsoft MimeOLE
+x-ms-exchange-organization-submissionquotaskipped: False
 
---B_3686568056_1295415873
-Content-type: multipart/related;
-	boundary="B_3686568056_1057717118"
+This is a multi-part message in MIME format.
 
---B_3686568056_1057717118
-Content-type: multipart/alternative;
-	boundary="B_3686568056_1800127737"
-
---B_3686568056_1800127737
-Content-type: text/plain;
-	charset="UTF-8"
-Content-transfer-encoding: 7bit
+------=_NextPart_000_0007_01D6B104.74BDA720
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0008_01D6B104.74BF2DC0"
 
 
+------=_NextPart_001_0008_01D6B104.74BF2DC0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 7bit
 
---B_3686568056_1800127737
-Content-type: text/html;
-	charset="UTF-8"
-Content-transfer-encoding: quoted-printable
 
-<html><head>
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
-head><body><div><img src=3D"cid:490df2d6-c07b-476e-a7b9-9ddc43523679@icloud=
-.com" class=3D"_auto-scale " alt=3D"PastedImage-1.png" title=3D"PastedImage=
--1.png" style=3D"margin: 10px 10px 10px 0px;" data-inline-image=3D"true" da=
-ta-mce-style=3D"margin: 10px 10px 10px 0px;"></div></body></html>
 
---B_3686568056_1800127737--
+------=_NextPart_001_0008_01D6B104.74BF2DC0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
---B_3686568056_1057717118
-Content-type: image/png; name="PastedImage-1.png";
- x-mac-creator="4F50494D";
- x-mac-type="504E4766"
-Content-ID: <490df2d6-c07b-476e-a7b9-9ddc43523679@icloud.com>
-Content-disposition: inline;
-	filename="PastedImage-1.png"
-Content-transfer-encoding: base64
+<html>
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dutf-8">
+
+</head>
+<body><div><img =
+src=3D"cid:e77663ef-fd8f-4b88-a2d3-6fe2012c25bb@icloud.com" =
+class=3D"_auto-scale " alt=3D"PastedImage-1.png" =
+title=3D"PastedImage-1.png" style=3D"margin: 10px 10px 10px 0px;" =
+data-inline-image=3D"true" data-mce-style=3D"margin: 10px 10px 10px =
+0px;"></div></body></html>
+------=_NextPart_001_0008_01D6B104.74BF2DC0--
+
+------=_NextPart_000_0007_01D6B104.74BDA720
+Content-Type: image/png;
+	name="PastedImage-1.png"
+Content-Transfer-Encoding: base64
+Content-ID: <e77663ef-fd8f-4b88-a2d3-6fe2012c25bb@icloud.com>
 
 iVBORw0KGgoAAAANSUhEUgAAArwAAARYCAYAAADjvwDtAAAgAElEQVR4AeydDbaqOgyFHZcDcjyO
 xsk4GO7qz27TNIFW0OuRfdd6T+CUNPmSpqEiXBb+IwESIAESIAESIAESIIEfJnD5YdtoGgmQAAmQ
@@ -2390,6 +2685,4 @@ AAIQgAAEIPByAiS8L3cBCkAAAhCAAAQgAAEInEmAhPdMusiGAAQgAAEIQAACEHg5ARLel7sABSAA
 AQhAAAIQgAAEziRAwnsmXWRDAAIQgAAEIAABCLycAAnvy12AAhCAAAQgAAEIQAACZxL4BwxVNgRn
 B36vAAAAAElFTkSuQmCC
 
---B_3686568056_1057717118--
-
---B_3686568056_1295415873--
+------=_NextPart_000_0007_01D6B104.74BDA720--
