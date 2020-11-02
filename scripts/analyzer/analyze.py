@@ -43,6 +43,7 @@ def main(dir: str):
                 continue
 
             emails[mail.subject] = {
+                'filename': filename,
                 'hops': mail.received[-1]['hop'],
                 'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
                 'spf': spf[0] if len(spf) else None,
