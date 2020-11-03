@@ -1,4 +1,4 @@
-Parser
+Analyzer
 = 
 
 Example analyzer using mail-parser, beautifulsoup4, textblob. Automatically scans the current directory and extracts information about the email.  
