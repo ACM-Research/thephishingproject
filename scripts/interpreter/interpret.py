@@ -20,7 +20,7 @@ NON_PHISH_PATH = path.join(ROOT, "processed_data",
                            "analyzer_script", "non_phishing_analysis.json")
 PHISH_PATH = path.join(ROOT, "processed_data",
                        "analyzer_script", "phishing_analysis.json")
-NON_PHISH_VAL = 0
+NON_PHISH_VAL = -1
 PHISH_VAL = 1
 
 # Load jsons into arrays of emails
@@ -76,13 +76,13 @@ def graphNumerical(phishingResults: list, nonPhishingResults: list, testName="")
 def graphBestFit(phishingResults: list, nonPhishingResults: list, testName=""):
     """ Use least squares to fit a linear trend to the results.
 
-    Phishing emails are given a score of 1 while legitamate emails are given a score of 0.
+    Phishing emails are given a score of 1 while legitamate emails are given a score of -1.
     """
     # format for approximating system Ax = b
     matA = phishingResults + nonPhishingResults
-    vecB = [1] * len(phishingResults) + [0] * len(nonPhishingResults)
+    vecB = [PHISH_VAL] * len(phishingResults) + [NON_PHISH_VAL] * len(nonPhishingResults)
     
-    predX, residuals, rank, singulars = lstsq(matA, vecB)
+    predX, residuals, rank, singulars = lstsq(matA, vecB, rcond = None)
     predResults = numpy.dot(matA, predX)
 
     phishPredictions = predResults[:len(phishingResults)]
