@@ -1,0 +1,249 @@
+Received: from MWHPR01MB2271.prod.exchangelabs.com (2603:10b6:300:21::8) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 19:06:30
+ +0000
+Received: from SN4PR0501CA0103.namprd05.prod.outlook.com
+ (2603:10b6:803:42::20) by MWHPR01MB2271.prod.exchangelabs.com
+ (2603:10b6:300:21::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20; Thu, 22 Oct
+ 2020 19:06:28 +0000
+Received: from SN1NAM02FT048.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:42:cafe::55) by SN4PR0501CA0103.outlook.office365.com
+ (2603:10b6:803:42::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.4 via Frontend
+ Transport; Thu, 22 Oct 2020 19:06:28 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.56.231)
+ smtp.mailfrom=send.piazza.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=piazza.com;utdallas.edu; dmarc=bestguesspass action=none
+ header.from=piazza.com;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of send.piazza.com
+ designates 167.89.56.231 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.56.231;
+ helo=o2.sendgrid.piazza.com;
+Received: from o2.sendgrid.piazza.com (167.89.56.231) by
+ SN1NAM02FT048.mail.protection.outlook.com (10.152.72.202) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 19:06:28 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=piazza.com; 
+	h=from:to:in-reply-to:references:subject:mime-version:content-type; 
+	s=s1; bh=BLS9I3eDI4gHEjpfOkmoEyTg4PbxX1YnfJvWN22mN8I=; b=NxVRVci
+	G+rqD08uOCnbyE+Sbsdxok+6Pjxt23RlREN5cvHlbaXzGkUyQAUsyGbRc5ApxYnR
+	UpeulrJhbl56DU2J4orYntYYgm4EuIHViJB0WOGtomk9jVPFGBBk9KBSHN3Btu7e
+	sfk62gaxJzCF0uBaJagOrgbgY6+l8c5JjSUs=
+Received: by filter0754p1iad2.sendgrid.net with SMTP id filter0754p1iad2-27516-5F91D82D-4E
+        2020-10-22 19:06:21.19563277 +0000 UTC m=+64303.655596104
+Received: from 44nstxgkun.smtp.sendgrid.net (unknown)
+	by ismtpd0111p1mdw1.sendgrid.net (SG) with ESMTP id V6lukE8BR3epzeYk4-SYjg
+	for <zxt180005@utdallas.edu>; Thu, 22 Oct 2020 19:06:21.138 +0000 (UTC)
+Date: Thu, 22 Oct 2020 19:06:22 +0000 (UTC)
+From: CS 4337 on Piazza <no-reply@piazza.com>
+To: zxt180005@utdallas.edu
+Message-ID: <kgl74wu6jg22cv@piazza.com>
+In-Reply-To: <kg9p1ynv9l316n@piazza.com>
+References: <kg9p1ynv9l316n@piazza.com>
+Subject: Exam 1 Scores
+Content-Type: multipart/related; 
+	boundary="----=_Part_194675_972156338.1603393581076"
+X-SG-EID: C43oBG/NSnk4GhLIZcd17PGJZo6msTXE5kXjxXafQQKd3ZXZ1U7mD2MRO+whmnpKirsHqZq5iYDi6C
+ nnTsz7Nu6YNA2pgq/2fzTrM6Cvbs4/DXtZ75ICg3QeUYSOv26euOixKzlHICvZVYob/avmvFPL2Ve7
+ sUknvzzG5IakWZL3wPzMkKt2ek3gczHUMcAFYnL0J4JcuqUkJyVn8C80hOBRc+CqBPRRLi1iBFymHB
+ E=
+X-Entity-ID: JNW8vgYghlSXf2j+L819xA==
+Return-Path: bounces+5126-76f3-zxt180005=utdallas.edu@send.piazza.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 19:06:28.5260
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b15c3b2f-c11e-4c10-5893-08d876bd9480
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT048.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b15c3b2f-c11e-4c10-5893-08d876bd9480
+X-MS-TrafficTypeDiagnostic: MWHPR01MB2271:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 6514588931925263370;11878885414756329779;13475541642186351551;12389395767003867872
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:167.89.56.231;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.sendgrid.piazza.com;PTR:o2.sendgrid.piazza.com;CAT:NONE;SFS:(4636009)(286005)(36756003)(83380400001)(83170400001)(1096003)(8676002)(336012)(2160300002)(33964004)(966005)(34206002)(26005)(356005)(2616005)(7116003)(7596003)(166002)(7636003)(327265003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 19:06:28.2076
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b15c3b2f-c11e-4c10-5893-08d876bd9480
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT048.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR01MB2271
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8272126
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SGR3QVlHSEZFOGY2VENFODZ6RlJTQmhBaFBkNW1GaHNLY2JvZ0lFWStPVUtD?=
+ =?utf-8?B?TGpMeXRDQU9PSDh2dHVCTkRLUzlVVkt5bkZVV3kvdFRUck9XeDBvYnoySzEx?=
+ =?utf-8?B?bVM3QkZIL2duYlpGckJZaWdicS9WRW92aGNXOWdPcTJiSnEzYmpVdXZOdjg2?=
+ =?utf-8?B?SVFRS2RZWE1UcWlEQUVPWnROOFJwYmN2RzJ0OEJLRjRRNnRYV1hDQnhRNFZ4?=
+ =?utf-8?B?QzM2TFdJQVhsN05iaEdGUkgrNjZhRUdJTENaS3luOWs0Y1l1NVdTdzFZM25T?=
+ =?utf-8?B?bkswalRWaEM2azhjc1FkSFQwV0dMYkdRbGE5TWZtQ29ndDdNd0tjZitlbTRL?=
+ =?utf-8?B?bkVjQjVFTzNrMDF0WlNNN2tabkk1S2xlVGxLUnBVeGRaU3VEcHFhTUxWZEpM?=
+ =?utf-8?B?eDZ3UUpjclZzYjBkb1B3UjZTSEFZK0lycHEvTjluVkV5WnJreVZEaXBEMEc4?=
+ =?utf-8?B?RE05TGVKcUlVcVUwK3hKYzVVc0dnQ2hOMXNkRGdJakNmdUMvUVI4UVNKWXl0?=
+ =?utf-8?B?bmlBN3RxZG5BYkRKT3FMY2RCMzA5TjM3M2JSL2dyM1JOQkpCZVE1WDJ2Q3Z1?=
+ =?utf-8?B?dXB1dlN0a3pZUnVhdVltYmJYK3c0SG94VHNZMy9oS0F3cGFER1RqQnpQZmMz?=
+ =?utf-8?B?YnZLUmVMbGhqNzR2bDdSRUx2ZytiTnFzc3hpdDIvZnNwZnBudXZsZ0h0anN5?=
+ =?utf-8?B?Ly9Jckpaa3FhdzVlRFhVWFByVUF4VjlPaVpyM1dHWjNXcVBITG84MWdoMXN4?=
+ =?utf-8?B?VWJQTWo3WGZHQ3lNSGtUcHhXa29HS0VRaWVsMTFNbWZFcm03TTVnejY3cUlD?=
+ =?utf-8?B?SWUvbG1mNEhBN2FSbjNmOTlxQXpySlh3YmYxSVloRy9kSGQrNWIzQ2tMT1h6?=
+ =?utf-8?B?QnFjZEw2L3Z0dDJFbDhLZ2d6UWsxM0ZQd013UWpXSW5SZG5RRGM1bEpFQ1h2?=
+ =?utf-8?B?ZHVvajF2YzEzUGRheWpkaGtXZFU3NmNyUjdxZ3htaVg2bmdGSVlGR25OOS8r?=
+ =?utf-8?B?L041bFR5WE1halJPbUlOcHBTcFBRajZaQlh2Y3pFU3ZSaXdtUVd5RjloUE5t?=
+ =?utf-8?B?eitvd0trQ3BuU1RQTDlaOGFyckhRc3J2VHJBVWVRSVBQTk15NDArWnc3Yy95?=
+ =?utf-8?B?YkRiL1FNVC9MMWcyVmw5L2Q1ZjllOWVLQmtmcVlUMFhzaktGYUFxSDBzem5y?=
+ =?utf-8?B?WnYzQVI0YUl5bDRVdUx6NVF4YVdSQVNnMnVKT2JnWkljZUk3eW9HTko5dVNV?=
+ =?utf-8?B?T1dHUnVIZE1EM0RpeC8rYzNac21yd2ZTV0lYK0g2dVlGOUNTQ0FoVUpuaHZJ?=
+ =?utf-8?B?Um5kcDA0ck5YYmkxUUNyd1dORmdIMnhSQTJtdTF1L1kwTThVVGxrVFJQQ3g4?=
+ =?utf-8?B?U2MvcXVnOEhkWUNZZjB5UEVBMTFZeEw5aXFwdlh3cGVmcXI0NGQ4OG9mUkRv?=
+ =?utf-8?B?U256eU9zd1hBNk1XMDBOS3NXU3E4MGJvTU9vTWNlWkQvZFNhbkFaNk8ranc5?=
+ =?utf-8?B?NFNLaW5vT3BrVlNFQnVzaUhncFYzS2tzU2I0cTNJNmJwQlVRblY1SUIvN3BE?=
+ =?utf-8?B?QVJsdjExczRhWkJiUklRdVk0bWxtdzFRdDhEdDVtOThCa1l1RFc1K25LZjho?=
+ =?utf-8?B?dUFNUXpsbkpSbmV4alQrenBKblc0ZlVXWUJnMWVDZS85ZDlxZ0dhSEV3MXFp?=
+ =?utf-8?B?aFJjM0hOcmJFa0RTcHkxTU1pMUFlS29PVmt4Uk1vKzVHVHlQZFVQc0hwRWhI?=
+ =?utf-8?B?TEtOTUJSOG1KS0x2UFhLelZyUkwxblZPY0FzOHgvSnU4NitnbWdUdTVlS05M?=
+ =?utf-8?B?eldiSE1kVHlZd0RzL205UEFGUjBhVnRJYitvVlQyRjJlOUlWTFo1ckxWZStO?=
+ =?utf-8?B?VWpuVmJUeDE1TUNBazRVQTE4VDgwVlZzSjVjNE1tYitoT0E9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_194675_972156338.1603393581076
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_194676_35293276.1603393581076"
+
+------=_Part_194676_35293276.1603393581076
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Instructor Dr. Gity Karami posted a new Feedback.=20
+
+For section 501, we posted the grades for all students except 4 students, a=
+s=C2=A0I need to review their exams.
+we will post the grades for those 4 students by tomorrow. Thanks!
+
+Go to https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fp=
+iazza.com%2Fclass%3Fcid%3Dkg9p1ynv9l316n%26nid%3Dkdxyl1jv54n6sp%26token%3Df=
+iHLY79yR6r%26fid%3Dkgkzqhb6wvb5gg&amp;data=3D04%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637389903896607871%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiL=
+CJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DulPjFPk8zB=
+m2QeAAXj%2Fu1V70qO1A7Ke%2BCD8qcY55i50%3D&amp;reserved=3D0 to view. Search o=
+r link to this question with @258. =20
+
+Sign up for more classes at https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttp%3A%2F%2Fpiazza.com%2Futdallas&amp;data=3D04%7C01%7CJerry.Teng%4=
+0UTDallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1d9c4d4bf7b16e032d=
+15de9f6c%7C0%7C1%7C637389903896607871%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DFd=
+ytQFUImZ8qCIfTIDcHhSTXfJwXZMQdvKxEtzAf6Z0%3D&amp;reserved=3D0
+
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because zxt180005@utdallas.edu is enrolled in C=
+S 4337 at University of Texas at Dallas. Go to https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Flogin&amp;data=3D04%7C=
+01%7CJerry.Teng%40UTDallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637389903896607871%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C10=
+00&amp;sdata=3DPnsRtdN8Wc4P0vPPXpUSwtDUmoUNNU00XF50gIjTX1w%3D&amp;reserved=
+=3D0 to sign in and manage your email preferences or proceed to https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Fremov=
+e%2FfiHLY79yR6r%2Fkdxyl1jv54n6sp&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas=
+.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C1%7C637389903896617865%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DasFXpLb4kIv=
+N52q0%2Bl9mgHklC586KLaL17s1tojJXYg%3D&amp;reserved=3D0 to un-enroll from th=
+is class.=
+
+------=_Part_194676_35293276.1603393581076
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+Instructor Dr. Gity Karami posted a new Feedback. <br>
+<br>
+<p>For section 501, we posted the grades for all students except 4 students=
+, as&nbsp;I need to review their exams.</p>
+<p>we will post the grades for those 4 students by tomorrow. Thanks!</p>
+<br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fpiazza.com%2Fclass%3Fcid%3Dkg9p1ynv9l316n%26nid%3Dkdxyl1jv54n6sp%26toke=
+n%3DfiHLY79yR6r%26fid%3Dkgkzqhb6wvb5gg&amp;data=3D04%7C01%7CJerry.Teng%40UT=
+Dallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1d9c4d4bf7b16e032d15d=
+e9f6c%7C0%7C1%7C637389903896647854%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DkQGl1=
+%2FQ%2BO57QoRQQjoV6C7fa4BrRk4TxhI54i017jzk%3D&amp;reserved=3D0" originalsrc=
+=3D"https://piazza.com/class?cid=3Dkg9p1ynv9l316n&amp;nid=3Dkdxyl1jv54n6sp&=
+amp;token=3DfiHLY79yR6r&amp;fid=3Dkgkzqhb6wvb5gg" shash=3D"PbluY8LvYRsdfffo=
+jbG0X6zsgErvlA+fTIcM1m4+g70+f+lccLKfTigoxxb+vM06j425WWNSbDQ3HNSm3Cu5RuOadGJ=
+t+phpmeY673G9rK+1QvwfpEj9fRL7oos+LFeFOJEzY/pCWUHAAgvGskPYCkUGMxKEZiYVmhhwUR=
+qk6/A=3D">Click here</a> to view. Search or link to this question with @258=
+.   <br><br>Sign up for more classes at <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fpiazza.com%2Futdallas&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637389903896657853%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DUMbEfvGn31GEuDmE1SxyDpKJaTUM42p1N%2BkddbUAAy8%3D&amp=
+;reserved=3D0" originalsrc=3D"http://piazza.com/utdallas" shash=3D"ST6vJA1B=
+X8/4QJ6K/NfhsvjuaeS9TUPlisLfdqhQmXXfhZspQ1+4zfBD6ovohgEeEFno7as7wfVM+eRFRiy=
+UvhkCY239PQ8cT/Su7UVhR77tQq7HL0TpRxIrUxM24RK3TBd9kfJv0iSOx9bXyTEtRm0dyaYeCn=
+zPODL6P5K7SR8=3D">http://piazza.com/utdallas</a>.<br><br>
+<br>
+Thanks,<br>
+The Piazza Team<br>
+--<br>
+Contact us at team@piazza.com<br><br><br>
+<font size=3D"-2">
+You're receiving this email because zxt180005@utdallas.edu is enrolled in C=
+S 4337 at University of Texas at Dallas. <a href=3D"https://nam02.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Flogin&amp;data=3D=
+04%7C01%7CJerry.Teng%40UTDallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637389903896667847%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DQv2CppY8%2FS3jZWN5BBubwrhSmtWter%2BXKvhgSPVY%2FC8%3D&am=
+p;reserved=3D0" originalsrc=3D"https://piazza.com/login" shash=3D"oJxXxcnzv=
+GTjuJDDoJR6CX35zvhKIQBeVmWMpdcWsCmZp5RR+ie76khXTDUwaxQVEYey8xz1OJr8mJSB/VAI=
+JOb+u02CYqAv5gVtGVxcTnq5Q1tUPsGNN0Eg+Ofn/AqEIpePsWDuc/P4h9ALKM4yq72PRnnAfOk=
+9uZDu64ROtCQ=3D">Sign in</a> to manage your email preferences or <a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza=
+.com%2Fremove%2FfiHLY79yR6r%2Fkdxyl1jv54n6sp&amp;data=3D04%7C01%7CJerry.Ten=
+g%40UTDallas.edu%7Cb15c3b2fc11e4c10589308d876bd9480%7C8d281d1d9c4d4bf7b16e0=
+32d15de9f6c%7C0%7C1%7C637389903896667847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3DpX%2BErW0bZysmK3OhYLWkrQ%2FjMFXzVBUVvFApr%2BGLCKY%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://piazza.com/remove/fiHLY79yR6r/kdxyl1jv54n6sp" shash=
+=3D"nB+ycnAZrLxY/fIe0I+kSTOE3+mizlkkY7JwEBJiyRYYfECF4cOAmbe5vu1f+DtzS9bzke7=
+5dXVmmsadozz6FlaQG9LwuAjLb2J3YluLDjrJsHgFkB5oz1uhWZVF40loerhzj0hA/5sxAYqjHi=
+LC8z+7zgr9+VPEKV36PPJ5vnM=3D">un-enroll</a> from this class.</font>
+</html>
+
+------=_Part_194676_35293276.1603393581076--
+
+------=_Part_194675_972156338.1603393581076--

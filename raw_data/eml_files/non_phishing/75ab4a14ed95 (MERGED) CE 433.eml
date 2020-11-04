@@ -1,0 +1,243 @@
+Received: from CO2PR01MB2117.prod.exchangelabs.com (2603:10b6:102:7::24) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Fri, 2 Oct 2020 22:03:32
+ +0000
+Received: from SA9PR11CA0030.namprd11.prod.outlook.com (2603:10b6:806:6e::35)
+ by CO2PR01MB2117.prod.exchangelabs.com (2603:10b6:102:7::24) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.38; Fri, 2 Oct 2020 22:03:30 +0000
+Received: from SN1NAM02FT030.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:806:6e:cafe::e5) by SA9PR11CA0030.outlook.office365.com
+ (2603:10b6:806:6e::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.34 via Frontend
+ Transport; Fri, 2 Oct 2020 22:03:30 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.1)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.1; helo=mail-relay1-va2.blackboard.com;
+Received: from mail-relay1-va2.blackboard.com (69.196.241.1) by
+ SN1NAM02FT030.mail.protection.outlook.com (10.152.72.114) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3412.21 via Frontend Transport; Fri, 2 Oct 2020 22:03:30 +0000
+Received: from fgprd-100946-205964-app010.mhint (fgprd-100946-205964-app010.mhint [10.5.10.161])
+	by mail-relay1-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 092M2jpO019817;
+	Fri, 2 Oct 2020 22:02:46 GMT
+Date: Fri, 2 Oct 2020 17:03:25 -0500 (CDT)
+From: "Somayeh Mohammadpour - sxm155431@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Somayeh Mohammadpour - sxm155431@utdallas.edu" <sxm155431@utdallas.edu>
+To: "2208-merged-CE4337501-CS4337501":;
+Message-ID: <878177306.9372.1601676209670.JavaMail.bbuser@fgprd-100946-205964-app010>
+Subject: (MERGED) CE 4337.501 - CS 4337.501 - F20: Please Read This
+ Announcement Carefully!
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_9370_1782525331.1601676205878"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Oct 2020 22:03:30.5258
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ da7ab6cf-dfcd-4b77-e1ad-08d8671eff71
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132461498105278409;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT030.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: da7ab6cf-dfcd-4b77-e1ad-08d8671eff71
+X-MS-TrafficTypeDiagnostic: CO2PR01MB2117:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.1;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay1-va2.blackboard.com;PTR:mail-relay1-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Oct 2020 22:03:30.4528
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: da7ab6cf-dfcd-4b77-e1ad-08d8671eff71
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT030.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB2117
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3180983
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3433.032
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	g9KW7Mfq3obCkQ4zaX8Fpxa33OGJTuNkuJ9x9V5HR0JaFKIo+7/YwSls6z4nIZ1YwrKYQ2ow7cccCEFWp85bZBKZWrFZ+Fi9DVUriWRU8tPEsKJXjpK/CylreYmB54qNfL+RVw/e/8a71zpDeRVKmVaIDnIsXgMYbdYVQBhx9tBgz6IEefGgEf5SbbuCyhpy1mpc2j07Tq6s3kyx9HQhSRlCTBurN9fkFtMhNpAJ7i02lSl4WDfi0w+nZrXCduNmmT9RZXW5/OFTpTFvJVLcoM0GlIxM5b7FWBB/yCY7T3lod0Pa3M59DlYXutTJCLQpkur3gRW8cokuJ6tFBpr66OA0yjumCk3CYrHWWuahUj7jkifqUUIBsGWCxuGlPD1+kHQJtiL4VmMsuWOReVEyQ8FG7hTdbYrXmCsgRsrjjwhrXyqki+3wq5moR0p2v5Qu2qHt2wY42jseYaqXofCn5jWBPvL6cDw2WVtUoMWgZgXpUlzw2CkAQPYoVUnvxyjdhJSAyxc77jYDLUH+V7Dn6/l8U+icOGooix31/mjSRe3TZq9CGk2KnmEnlxTKFD4IKf8n3qOnqacMR9t/3cvEPwWJL5BiBQWSMgNUykKHsyib9VwigdSGROCUbQ7bNHSJD1AkhLdMbqHm0mlBRTc4NqDfytJFNH/pQ+gzoGNc5Z28HLgAK/rIBhUbjoTIBwgYDbNv3QYUfY4hWpZja3MNHDPYQcQbNkmeA90Xar/Cdel0mKsipr62p+lsuDSMO62AU4vucdct2vL7xQwNPxi3VZzAuQr08chT6Evj4U4dFtLmyctpXrMsaflmgCBkQelWvl2d3EsjJBxX2XgMiQApQv3BWeOEN59C6D63BtQEKg7nCSAWQdviqEXfQtKAb18lHFiNfFk3J+vLoNcdmPdxnf4egQyNnKYPzXLiIBaN51c=
+MIME-Version: 1.0
+
+------=_Part_9370_1782525331.1601676205878
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+           Dear All,     Assignments#1 has been graded and posted on&nbsp;e=
+-Learning. Please check it out and review the TA=E2=80=99s feedbacks. If th=
+ere is any further question, feel free to contact me.     It would be great=
+ if you consider the following items for the rest of the semester. It helps=
+ us to grade the next assignments faster.     1- Before attempting to creat=
+e a draft of your solutions, please read the submission guidelines carefull=
+y. If you are asked to submit a single&nbsp;pdf&nbsp;file you are not suppo=
+sed to upload any other types like word or more than one&nbsp;pdf&nbsp;file=
+. We expect you to submit one&nbsp;pdf&nbsp;file for all 10 questions inclu=
+ding the&nbsp;screenshot&nbsp;of the codes and results, also a debugged .rk=
+t&nbsp;file for assignment#1, for example. We did not deduct any point if y=
+ou had not followed those instructions (only for the first assignment) but =
+if it happens in the future you will get a 10 points penalty unfortunately.=
+     2- Please debug your codes before submission. If we are not able to ru=
+n your code, you may lose all the points considered for that problem.     3=
+- It is very helpful if you check out the questions asked on Piazza regular=
+ly. In that way, if you misunderstood a question there is this possibility =
+that someone else asked it and you also find the hint there. For example, s=
+ome of you did not get the point of question#1 about drawing the internal r=
+epresentation for the lisp lists however, it was asked on Piazza and the hi=
+nt was given along with the slide number of the relevant lecture note.     =
+4- Please try to read each question carefully. For instance, for questions#=
+5, 6 and 7 you need to trace your code by one of the given examples but som=
+e of you ignored that part and consequently they lost 3 points for each.   =
+  5- Please choose your partner for quizzes and those two assignments you a=
+re allowed to work with a partner, only from the section you are enrolled. =
+If you have enrolled in section 501 you cannot choose your partner from sec=
+tion 503, for example. Otherwise, there will be a 10 points penalty for the=
+ violation.     I highly encourage you to figure out the solution to each p=
+roblem according to the feedbacks posted on&nbsp;e-Learning&nbsp;if you&nbs=
+p;couldn=E2=80=99t&nbsp;gain full credit of it. It will definitely help you=
+ to solve the mid-term or final exam=E2=80=99s problems easily.     &nbsp; =
+    Best,     Somayeh&nbsp;M.               
+------=_Part_9370_1782525331.1601676205878
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>  <body>   <div class=3D"vtbegenerated">    <p style=3D"font-family: i=
+nherit; text-shadow: none !important; letter-spacing: normal !important; ma=
+rgin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: in=
+herit; font-style: inherit; font-size: 13px; text-align: justify;"><span st=
+yle=3D"font-family: inherit; text-shadow: none !important; letter-spacing: =
+normal !important; margin: 0px; padding: 0px; border: 0px; outline: 0px; fo=
+nt-weight: inherit; font-style: inherit; font-size: 12pt; line-height: 17.1=
+2px;">Dear All,</span></p>     <p style=3D"font-family: inherit; text-shado=
+w: none !important; letter-spacing: normal !important; margin: 0px 0px 1em;=
+ padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style:=
+ inherit; font-size: 13px; text-align: justify;"><span style=3D"font-family=
+: inherit; text-shadow: none !important; letter-spacing: normal !important;=
+ margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit=
+; font-style: inherit; font-size: 12pt; line-height: 17.12px;">Assignments#=
+1 has been graded and posted on&nbsp;e-Learning. Please check it out and re=
+view the TA=E2=80=99s feedbacks. If there is any further question, feel fre=
+e to contact me.</span></p>     <p style=3D"font-family: inherit; text-shad=
+ow: none !important; letter-spacing: normal !important; margin: 0px 0px 1em=
+; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style=
+: inherit; font-size: 13px; text-align: justify;"><span style=3D"font-famil=
+y: inherit; text-shadow: none !important; letter-spacing: normal !important=
+; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inheri=
+t; font-style: inherit; font-size: 12pt; line-height: 17.12px;">It would be=
+ great if you consider the following items for the rest of the semester. It=
+ helps us to grade the next assignments faster.</span></p>     <p style=3D"=
+font-family: inherit; text-shadow: none !important; letter-spacing: normal =
+!important; margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; f=
+ont-weight: inherit; font-style: inherit; font-size: 13px; text-align: just=
+ify;"><span style=3D"font-family: inherit; text-shadow: none !important; le=
+tter-spacing: normal !important; margin: 0px; padding: 0px; border: 0px; ou=
+tline: 0px; font-weight: inherit; font-style: inherit; font-size: 12pt; lin=
+e-height: 17.12px;">1- Before attempting to create a draft of your solution=
+s, please read the submission guidelines carefully. If you are asked to sub=
+mit a single&nbsp;pdf&nbsp;file you are not supposed to upload any other ty=
+pes like word or more than one&nbsp;pdf&nbsp;file. We expect you to submit =
+one&nbsp;pdf&nbsp;file for all 10 questions including the&nbsp;screenshot&n=
+bsp;of the codes and results, also a debugged .rkt&nbsp;file for assignment=
+#1, for example. We did not deduct any point if you had not followed those =
+instructions (only for the first assignment) but if it happens in the futur=
+e you will get a 10 points penalty unfortunately.</span></p>     <p style=
+=3D"font-family: inherit; text-shadow: none !important; letter-spacing: nor=
+mal !important; margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0p=
+x; font-weight: inherit; font-style: inherit; font-size: 13px; text-align: =
+justify;"><span style=3D"font-family: inherit; text-shadow: none !important=
+; letter-spacing: normal !important; margin: 0px; padding: 0px; border: 0px=
+; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 12pt;=
+ line-height: 17.12px;">2- Please debug your codes before submission. If we=
+ are not able to run your code, you may lose all the points considered for =
+that problem.</span></p>     <p style=3D"font-family: inherit; text-shadow:=
+ none !important; letter-spacing: normal !important; margin: 0px 0px 1em; p=
+adding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: i=
+nherit; font-size: 13px; text-align: justify;"><span style=3D"font-family: =
+inherit; text-shadow: none !important; letter-spacing: normal !important; m=
+argin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; =
+font-style: inherit; font-size: 12pt; line-height: 17.12px;">3- It is very =
+helpful if you check out the questions asked on Piazza regularly. In that w=
+ay, if you misunderstood a question there is this possibility that someone =
+else asked it and you also find the hint there. For example, some of you di=
+d not get the point of question#1 about drawing the internal representation=
+ for the lisp lists however, it was asked on Piazza and the hint was given =
+along with the slide number of the relevant lecture note.</span></p>     <p=
+ style=3D"font-family: inherit; text-shadow: none !important; letter-spacin=
+g: normal !important; margin: 0px 0px 1em; padding: 0px; border: 0px; outli=
+ne: 0px; font-weight: inherit; font-style: inherit; font-size: 13px; text-a=
+lign: justify;"><span style=3D"font-family: inherit; text-shadow: none !imp=
+ortant; letter-spacing: normal !important; margin: 0px; padding: 0px; borde=
+r: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size:=
+ 12pt; line-height: 17.12px;">4- Please try to read each question carefully=
+. For instance, for questions#5, 6 and 7 you need to trace your code by one=
+ of the given examples but some of you ignored that part and consequently t=
+hey lost 3 points for each.</span></p>     <p style=3D"font-family: inherit=
+; text-shadow: none !important; letter-spacing: normal !important; margin: =
+0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit;=
+ font-style: inherit; font-size: 13px; text-align: justify;"><span style=3D=
+"font-family: inherit; text-shadow: none !important; letter-spacing: normal=
+ !important; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-wei=
+ght: inherit; font-style: inherit; font-size: 12pt; line-height: 17.12px;">=
+5- Please choose your partner for quizzes and those two assignments you are=
+ allowed to work with a partner, only from the section you are enrolled. If=
+ you have enrolled in section 501 you cannot choose your partner from secti=
+on 503, for example. Otherwise, there will be a 10 points penalty for the v=
+iolation.</span></p>     <p style=3D"font-family: inherit; text-shadow: non=
+e !important; letter-spacing: normal !important; margin: 0px 0px 1em; paddi=
+ng: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inher=
+it; font-size: 13px; text-align: justify;"><span style=3D"font-family: inhe=
+rit; text-shadow: none !important; letter-spacing: normal !important; margi=
+n: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font=
+-style: inherit; font-size: 12pt; line-height: 17.12px;">I highly encourage=
+ you to figure out the solution to each problem according to the feedbacks =
+posted on&nbsp;e-Learning&nbsp;if you&nbsp;couldn=E2=80=99t&nbsp;gain full =
+credit of it. It will definitely help you to solve the mid-term or final ex=
+am=E2=80=99s problems easily.</span></p>     <p style=3D"font-family: inher=
+it; text-shadow: none !important; letter-spacing: normal !important; margin=
+: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inheri=
+t; font-style: inherit; font-size: 13px; text-align: justify;"><span style=
+=3D"font-family: inherit; text-shadow: none !important; letter-spacing: nor=
+mal !important; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-=
+weight: inherit; font-style: inherit; font-size: 12pt; line-height: 17.12px=
+;">&nbsp;</span></p>     <p style=3D"font-family: inherit; text-shadow: non=
+e !important; letter-spacing: normal !important; margin: 0px 0px 1em; paddi=
+ng: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inher=
+it; font-size: 13px; text-align: justify;"><span style=3D"font-family: inhe=
+rit; text-shadow: none !important; letter-spacing: normal !important; margi=
+n: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font=
+-style: inherit; font-size: 12pt; line-height: 17.12px;">Best,</span></p>  =
+   <p style=3D"font-family: inherit; text-shadow: none !important; letter-s=
+pacing: normal !important; margin: 0px 0px 1em; padding: 0px; border: 0px; =
+outline: 0px; font-weight: inherit; font-style: inherit; font-size: 13px; t=
+ext-align: justify;"><span style=3D"font-family: inherit; text-shadow: none=
+ !important; letter-spacing: normal !important; margin: 0px; padding: 0px; =
+border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-=
+size: 12pt; line-height: 17.12px;">Somayeh&nbsp;M.</span></p>     <p style=
+=3D"font-family: inherit; text-shadow: none !important; letter-spacing: nor=
+mal !important; margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0p=
+x; font-weight: inherit; font-style: inherit; font-size: 13px;"></p>     <p=
+><br></p>   </div>  </body> </html>=
+
+------=_Part_9370_1782525331.1601676205878--

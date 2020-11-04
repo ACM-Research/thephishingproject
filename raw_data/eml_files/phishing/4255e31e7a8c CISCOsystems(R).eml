@@ -1,0 +1,191 @@
+Received: from BL0PR01MB4180.prod.exchangelabs.com (2603:10b6:408:70::47) by
+ BN8PR01MB5314.prod.exchangelabs.com with HTTPS via
+ BN8PR04CA0034.NAMPRD04.PROD.OUTLOOK.COM; Tue, 15 Oct 2019 11:40:57 +0000
+Received: from BN6PR0101CA0022.prod.exchangelabs.com (2603:10b6:405:2a::35) by
+ BL0PR01MB4180.prod.exchangelabs.com (2603:10b6:208:44::25) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2347.16; Tue, 15 Oct 2019 11:40:54 +0000
+Received: from CY1NAM02FT016.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e45::206) by BN6PR0101CA0022.outlook.office365.com
+ (2603:10b6:405:2a::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2347.17 via Frontend
+ Transport; Tue, 15 Oct 2019 11:40:54 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.222.194)
+ smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=gmail.com;utdallas.edu; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.222.194 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.222.194; helo=mail-qk1-f194.google.com;
+Received: from mail-qk1-f194.google.com (209.85.222.194) by
+ CY1NAM02FT016.mail.protection.outlook.com (10.152.75.164) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA) id
+ 15.20.2347.16 via Frontend Transport; Tue, 15 Oct 2019 11:40:54 +0000
+Received: by mail-qk1-f194.google.com with SMTP id y189so18827231qkc.3
+        for <Jerry.Teng@utdallas.edu>; Tue, 15 Oct 2019 04:40:54 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=PMXKU7hnRzFpcg69Lxg3h0ar9BPwnix2cpKjIZtsoWA=;
+        b=sisCSqlFaJpdr8NSFEMggi1wRXTCS4NGQ6YMRi6heqzZA+ZJlPBBGzfTx8OxXrt6eW
+         QhUZlRGKXgTzfH9NmuGf5x0T1SgXxJ/HDwxTyVDm3qGL4NPs34vhVKi0sk2GPbCVgPoM
+         PpTwCTeHJCjNfDRhYEijpz8cHnE0uENOCA8SrTINrXf7zdm+Rc6/6ZC/0vNM4a723Pri
+         v19H7KTXywGlFUZT4WacJA51iFtrOC/uu/A0zlA2LdQUcGmwUqtz4SSiVb1qS8ECumns
+         0G5hPiOiWPmE2QJjvCXahMFuB1UyNFKqrMBBVzzwbTNTwEcA1N2RqLtDmRqWJ6r+8D7s
+         RVBQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=PMXKU7hnRzFpcg69Lxg3h0ar9BPwnix2cpKjIZtsoWA=;
+        b=GAB3VAkVjJP08YIAoaLxZNGCneaxgGHyhMyDrDrPFvVOw5Vs4rImglE0aek5XSuzRO
+         fwjP1UJiNjJNGq5p1xZ4uLwAkrIg/IGPYkLo9MvhTqo6HJJ+hPnVwOHBBQTjvtlHoRYz
+         H9JVnuw1rtXxcbwLMDGW7EY+6pwzZx5Hdg/frlYlOsYTRgD97ttisBG8yZyvPNkAEJC5
+         s722xWD7CkvL5+T/0SDTpqObj7taPToEQZBjXu+5h5HwAEmo/FuYb6Uz4SDG8qxKUlE7
+         aQ9j6Uu9JFybkNsZGEnfdYao3zYbSNW5cLHlNhhVY6sT6Wep5b3+svTk1rwgyjIHJlxo
+         Rcmg==
+X-Gm-Message-State: APjAAAUA8lu/1XJc5m2hgH9hpaUkn3hVWVuagXnwRTmjYRe4ozHMZlAk
+	juHtdw98FfQ2XQi0psaLz5LEx92oPmEx/4mzO1c=
+X-Google-Smtp-Source: APXvYqzMJBMORkngy8tr+X12qpmM5UatiPbuXtL1mkywiLNzkRYtDUNlwzNGy1IytWP7l4XwZr2AAM2Nd+q9z7V0pE0=
+X-Received: by 2002:a37:4ed5:: with SMTP id c204mr34244202qkb.41.1571139653761;
+ Tue, 15 Oct 2019 04:40:53 -0700 (PDT)
+From: Bob Philipps <bobphilipps3@gmail.com>
+Date: Tue, 15 Oct 2019 04:40:40 -0700
+Message-ID: <CADiZ=DoMyrptaZfAGiiu7SwMJESh7Bk_so_haKUGsQH8V_Tdrg@mail.gmail.com>
+Subject: CISCOsystems(R) PART TIME JOB OFFER
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000f47ee80594f17431"
+Return-Path: bobphilipps3@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2019 11:40:54.4560
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a2c86fbe-56c8-4ff3-3d05-08d7516489ac
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:209.85.222.194;IPV:NLI;CTRY:US;EFV:NLI;SFV:SPM;SFS:(10001);DIR:INB;SFP:;SCL:5;SRVR:BL0PR01MB4180;H:mail-qk1-f194.google.com;FPR:;SPF:None;LANG:en;CAT:SPM;
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT016.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: a2c86fbe-56c8-4ff3-3d05-08d7516489ac
+X-MS-TrafficTypeDiagnostic: BL0PR01MB4180:
+X-MS-Exchange-PUrlCount: 1
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:281;
+X-MS-Exchange-Antispam-ScannedUrls: 4795935438360928256
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2019 11:40:54.4530
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a2c86fbe-56c8-4ff3-3d05-08d7516489ac
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4180
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7924319
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2347.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;ex:0;auth:0;dest:J;ENG:(20160513016)(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SXc3ZEJtSmJFTVdiUUVVZDZzMElsZWcwN3pFKysvQmVqUE9TQ29sRG9VQ2Qx?=
+ =?utf-8?B?Wjd4RGtuSWQ1eWQ0RWNnQ21xajQvZjZHOVNqTDluemhSczhBKzIzVEJ4eEU5?=
+ =?utf-8?B?dTV1S0NTZGdPWHpKYjlkYldaVml0alhjWTRYaFdxY2l0VTc3UzJJeE9jOUhP?=
+ =?utf-8?B?R01LN0tBdzRDVy9IMjlwblJJcG9yeW5wRkllemJSaG42TW9PVHhOeXhZRU1K?=
+ =?utf-8?B?eHVlL1IrZUlQMkdwbUJJZWUxVS9MbkppWWxwek4wd0MvZ2pwRDZaaUp5d0VL?=
+ =?utf-8?B?SmpRQ1BDTXVta3JQaXpYVG5QM2FOK2oyamFkZHAyOS80a2pXWk9aSVVqQ3Q0?=
+ =?utf-8?B?RFhZMUZjQ25KTUJ1K0lrcGdyMEo3OVNwM3NNd0kxbkNxZFFkeXBVYldVK1Nu?=
+ =?utf-8?B?YTZNQm4rdUtsWjhnN0FSUnJWVGpLZ0NnTk92eXpKeS9RNEs5ZjE3V2h4THBX?=
+ =?utf-8?B?blNqU3BFVmhCWHRkR0N3MlVtUVVxWkJVaHZBd1daN1dyRXV0V2luYVhKVWRP?=
+ =?utf-8?B?ZmFOQTFuN2F2bzFESFVYTitKT250VGZSMnZhSm45RkJ4WXNWNHJrem5CTE5i?=
+ =?utf-8?B?Q2NqYjJuSGdBYThWeklJYk9jWGxQZmhjM2J1dEdZMlE5eUppci9TSU5TUmhQ?=
+ =?utf-8?B?N05mK2JqbTIzQnJqMTNWSzFWR0UzVGZqeDBBQ1EwdFN0eSswRUI1dmtVMjZz?=
+ =?utf-8?B?dDlkdVhpczhFclU4bGkzbHNYTnFPdHBkRjJiVVluQ0FmRXo5UUs4bG16cW53?=
+ =?utf-8?B?cVVzMDc5dnFwUnNyTmU4eWw1ZGZNL0k2K2Y4VDVnVjdRNkswMDU2eGplbVhh?=
+ =?utf-8?B?clMzRnNzOCtVWDVFVlR4STdLK0MvRzl2MUs4QkkwMVpETmlCZXl0MDBRdGli?=
+ =?utf-8?B?T1h2aWJmNjBLQ1BmN0NFenpRMkVBNTBkUGxzemx1Z3hyZjV5dml3NjZmR1Yx?=
+ =?utf-8?B?LzdtK0VkemRTYjltMmg2eXJHeVBYTTVwalhmOGdhbWJSUXRCYmQvYWpUMmNs?=
+ =?utf-8?B?djVjeXJwbEFhelp5K2JqUm5ha3k2RjR3dFlxTVFqU1RzZCtLeTdFdTl3THFy?=
+ =?utf-8?B?ejNUc0VUM054ZmNHbk1WYXEyb0lrcXZ4cmRsc3lmdEFwY0F5S2RWVUNMaGNZ?=
+ =?utf-8?B?MjB2cVVEM1hRTlZpMlZBQ0tZZ0NIZUladUVTZCs3RitQNHFBN1EyT2doZFpm?=
+ =?utf-8?B?dDIxMk1XaWpEYlhWQlhnWko5T1hyRWoyUXBkNFcrcmJwdGRsUytrbVMyUngy?=
+ =?utf-8?B?ekx3NFg2VjNUUmMrTCtiNURjUlRHVnY4bkJFeWNpR3RWaXFHZjdSNytmZU1R?=
+ =?utf-8?B?bGtWWk5OSjhOaUVuUnEzSU5EMHl0Smc2dVRWT2JrVXhIRVUrOFp1czNvQlNX?=
+ =?utf-8?B?NnhvVlY5bUdQTkkvZ08zcVo0OU1kWFIwRndCLzBadWtWcjFTUU1XWVIwYmU2?=
+ =?utf-8?B?TndjSC83cktKenA4K2w4OFZwVVNsdVd3M05uaFlycFRFTi9Jb2hSbmM1ekNo?=
+ =?utf-8?B?WTVSNGdnTG9JZDVaK3FNRko1TXpFUlBXVmp5bzVVZ0RwYXpnT20wc2ltd1lK?=
+ =?utf-8?B?a2ZRVlZkMnBVVk9ZZXVRd0FlZmhSdWY5eTBsMnFXVE5ubEh1aE5GZFU0Rncy?=
+ =?utf-8?B?ZXYrWUdhVGNhQkNuZUExUWMrOUU5cU1KWHZDb09KaUs4TGJGdUpVWXFPVDVw?=
+ =?utf-8?B?QlcwRjBtOUFvYVp3RkhMQzlpNHV2TW5MVGFpSmFwZXNJdVU5QzFxeTgrc3VT?=
+ =?utf-8?B?ekpBRldOaXdhcGZLamFsbXBVbDcwS3JYdEp6dWZ3RW16bkUxV1lkSVo1MUJs?=
+ =?utf-8?B?Zk9ldlg4L3daTlhTK013NmxiU1dsSTV1Qy9rVllUWHgyR0ZMd2NUU08yMWNE?=
+ =?utf-8?B?OUpPL3N2NE56cWM3bTgxaDhpcmQ3OTdyemRXWW0rS1REdFh2ZmRWN21hU0lN?=
+ =?utf-8?B?M3Juek1HZEF5Qm9VRTY1TUo1UlE4SmgxeGhTY0orZkZDck5QQy9Xbk9SMG5n?=
+ =?utf-8?B?anNIYnMvd0pDSm9qZ1R2N3RybjFDQ0F3MHRkbjVPSTNnZU44VnlOVlc4S010?=
+ =?utf-8?B?Y2dRYmFJQmNWb3dqUHJjczMwUkJMdHFqMktEUXB3VnMwbXdLVHdya3pGdEVW?=
+ =?utf-8?B?enNDOUN3OG1uVmZTZmRnZ1M3WWRVa2FKN3pSS2FGaHFySWN4blNlYjNreHNm?=
+ =?utf-8?B?UWZDRHVId1ZjVW1JMWJRdDR0MXBvVGVkeHBZcHZPVFc1eGNtb0RUUm1oSWJz?=
+ =?utf-8?Q?mHotuAZyd/R2GCNQDZL6ZrRGOUpSIxDdAgwMl+KMug=3D?=
+MIME-Version: 1.0
+
+--000000000000f47ee80594f17431
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear  Student,
+
+
+      We got your contact through your school database and I'm happy to
+inform you that our reputable company  CISCOsystems=C2=AE, is currently run=
+ning
+a student empowerment programme. This programme is to help loyal and
+hardworking students like you secure a part time job which does not deter
+you from doing any other, you just need a few hours to do this weekly and
+with an attractive weekly salary.
+
+KINDLY EMAIL BACK WITH YOUR  PERSONAL EMAIL ADDRESS AND PHONE NUMBER IF
+INTERESTED IN THIS JOB POSITION.
+
+Kind Regards,
+
+Bob Phillips,
+HR/Recruit Manager/Consultant
+CISCOsystems=C2=AE
+https://nam02.safelinks.protection.outlook.com/?url=3Dwww.cisco.com&amp;dat=
+a=3D02%7C01%7CJerry.Teng%40utdallas.edu%7Ca2c86fbe56c84ff33d0508d7516489ac%=
+7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637067364570896182&amp;sdata=
+=3D%2BFx%2F8QmgewzgEemXG16GIOkSI93sPJ%2FHVjzPXIznooo%3D&amp;reserved=3D0
+
+--000000000000f47ee80594f17431
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr"><br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signa=
+ture" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"=
+ltr"><div>Dear&nbsp; Student,</div><div><br></div><div><br></div><div>&nbsp=
+; &nbsp; &nbsp; We got your contact through your school database and I'm ha=
+ppy to inform you that our reputable company&nbsp; CISCOsystems=C2=AE, is c=
+urrently running a student empowerment programme. This programme is to help=
+ loyal and hardworking students like you secure a part time job which does =
+not deter you from doing any other, you just need a few hours to do this we=
+ekly and with an attractive weekly salary.</div><div><br></div><div>KINDLY =
+EMAIL BACK WITH YOUR&nbsp; PERSONAL EMAIL ADDRESS AND PHONE NUMBER IF INTER=
+ESTED IN THIS JOB POSITION.</div><div><br></div><div>Kind Regards,</div><di=
+v><br></div><div>Bob Phillips,</div><div>HR/Recruit Manager/Consultant</div=
+><div>CISCOsystems=C2=AE</div><div><a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttp%3A%2F%2Fwww.cisco.com&amp;data=3D02%7C01%7CJe=
+rry.Teng%40utdallas.edu%7Ca2c86fbe56c84ff33d0508d7516489ac%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C1%7C637067364570916171&amp;sdata=3DKHPuP4D012kGrSF=
+zvH2ekW%2Fd4by3ExiHCqGARoyx8Ys%3D&amp;reserved=3D0" originalsrc=3D"http://w=
+ww.cisco.com" shash=3D"oRwRkF7S&#43;BiQDno2n7vOW6aeqykVu/6pQlfA/BvYO10nq4t7=
+ZA25OkhzWYzUUJSp6sWbV&#43;c8N5135fX329KgQ7tvNGURQud1v9&#43;TG0LAdwk9ZnuX8kR=
+h7tlT9ktchEJqeC0ucUItejYEubej3H4/fN0pNquD4ykJIxAhtivNLbg=3D" target=3D"_bla=
+nk">www.cisco.com</a></div></div></div></div></div></div></div>
+
+--000000000000f47ee80594f17431--

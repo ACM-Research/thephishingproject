@@ -1,0 +1,737 @@
+Received: from DM6PR01MB4554.prod.exchangelabs.com (2603:10b6:5:7e::31) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Fri, 9 Oct 2020 17:20:15
+ +0000
+Received: from BL1PR13CA0043.namprd13.prod.outlook.com (2603:10b6:208:257::18)
+ by DM6PR01MB4554.prod.exchangelabs.com (2603:10b6:5:7e::31) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.22; Fri, 9 Oct 2020 17:20:13 +0000
+Received: from BL2NAM02FT004.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:257:cafe::8c) by BL1PR13CA0043.outlook.office365.com
+ (2603:10b6:208:257::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.13 via Frontend
+ Transport; Fri, 9 Oct 2020 17:20:13 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.158.52)
+ smtp.mailfrom=notifications.joinhandshake.com; utdallas.edu; dkim=pass
+ (signature was verified)
+ header.d=notifications.joinhandshake.com;utdallas.edu; dmarc=pass action=none
+ header.from=notifications.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ notifications.joinhandshake.com designates 192.237.158.52 as permitted
+ sender) receiver=protection.outlook.com; client-ip=192.237.158.52;
+ helo=a3.mail.joinhandshake.com;
+Received: from a3.mail.joinhandshake.com (192.237.158.52) by
+ BL2NAM02FT004.mail.protection.outlook.com (10.152.76.168) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Fri, 9 Oct 2020 17:20:10 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=notifications.joinhandshake.com; q=dns/txt; s=pic; t=1602264013;
+ h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date:
+ List-Unsubscribe: List-Unsubscribe-Post;
+ bh=lE25+f14t/rXimBjz3CXuDJGPgwdoGIHYOYn4rQhCzw=; b=n546S+tXWjF3/ZO6C7JPKj3cNGTzD9CiyB7dnCWeBo91NEFREYmEYKVjSMlcJ7xL9EYdWOWh
+ rQZaKw7j8JPrmCC0wZwjJGWl4EcmyfCJWhJxVdb3K7/gxdzel1PszjL7gXpxHwFlJ2Ey5t2O
+ siuDX78Kcd1wW+3cSCHn2Javt9s=
+X-Mailgun-Sending-Ip: 192.237.158.52
+X-Mailgun-Sid: WyIyZmUzMyIsICJ6eHQxODAwMDVAdXRkYWxsYXMuZWR1IiwgIjJkOTY3Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tezbzgy3sm2j5giydembrgaydsmjxge4dgobogexeirkdhfcdkm2bge4dkmkfiy4egjjugbxg65djmzuwgylunfxw44zonjxws3timfxgi43imfvwkltdn5wsm2b5mu3tqmtcga2dqnjqmi2tgzldg42wmodgg5rweobtgqzdanlemi4sm5dbnrsw45c7mvxgoylhmvwwk3tul5rwc3lqmfuwo3s7nfsd2njqheytajtimfxgi43imfvwkx3on52gsztjmnqxi2lpnzpwszb5he4dmnbrgezdcnrgmnqw24dbnftw4x3pmjvgky3ul52hs4dfhvcxmzlooqthepl2pb2dcobqgaydkjjugb2xizdbnrwgc4zomvshkjtqojsw22lvnvpwk3lqnrxxszlsl5uwipjrga3tsnrgoq6w433unftgsy3boruw63s7mvwwc2lmez2d2y3smvqxizk7nfxhizlsnzqwyx3nmvzxgylhmvpwgylnobqwsz3ol42taojrgathipldojswc5dfl5uw45dfojxgc3c7nvsxg43bm5ssm5dbnrsw45c7mvxgoylhmvwwk3tul5rwc3lqmfuwo3s7mrqxizk7nfsd2nztg4zdojtsmvrws4djmvxhix3tor2wizloorpwszb5ge4taobyheytmjtdmfwxayljm5xf633cnjswg5c7onxxk4tdmu6ws3tumvzg4ylmezuw45dfojxgc3c7nvsxg43bm5sv62lehu4tkojrguytgmq@notifications.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJx9kMtuwyAQRb-mLC3AxsCCRZWkv4EwTBJSAxbgqunX17Rq2qqP1Yzmce-ZcYo6OXLkFcUUE4wl4UT0oiPd_rCTe9bfE8HI4UHs7gYcU_VHb031KZbuknw8m-jK2TxCZ1NAZwVc0AkPguGJ9WA5O4ojt5PoB4qZmySqZoZYNcSTOUFoqTVhMf4UtXeKbf4Y3UT1V8PWl2IcCKFkRLetNF3AVl2vC6jD0yaIsnp5rkRgjNnGvFZn5tmUDtyKlgzBr0FDWOZ0hdw0CeZyRFV984Jg_LwVbQZTQftYIUcz6wClbOCf0O_Efw7-d697W3CK95xylMH6xbeBUlfXYmOTWAj5y7klrdmC-rBDPwDbs5gkjPT0FdBmqIQ&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378608147648364&amp;sdata=vBR8r9V%2BD8K8M%2F5v2Z0a%2BPfgBG88SGjy2rSJzO3zc7w%3D&amp;reserved=0>
+Received: by luna.mailgun.net with HTTP; Fri, 09 Oct 2020 17:18:38 +0000
+Date: Fri, 09 Oct 2020 17:18:38 +0000
+Message-Id: <20201009171838.1.DEC9D53A1851EF8C@notifications.joinhandshake.com>
+X-Mailgun-Variables: {"talent_engagement_campaign_id": "50910",
+ "handshake_notification_id": "986411216", "campaign_object_type": "Event",
+ "premium_employer_id": "10796", "talent_engagement_campaign_date_id":
+ "73727", "recipient_student_id": "19088916", "campaign_object_source":
+ "internal", "internal_message_id": "95915132"}
+X-Mailgun-Native-Send: true
+X-Mailgun-Track-Opens: true
+X-Mailgun-Track-Clicks: true
+X-Mailgun-Tag: notification_email
+X-Mailgun-Tag: create_internal_message_campaign_50910
+X-Mailgun-Tag: create_internal_message
+X-Mailgun-Require-Tls: false
+To: zxt180005@utdallas.edu
+From: Handshake <handshake@notifications.joinhandshake.com>
+Subject: Talent from General Motors has sent you a message on Handshake
+Content-Type: multipart/alternative; boundary="43963e5404b3458f956fb4a4b2e6ca46"
+Return-Path: handshake@notifications.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Oct 2020 17:20:13.4244
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3f36ed38-3aaf-4116-4860-08d86c779546
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT004.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3f36ed38-3aaf-4116-4860-08d86c779546
+X-MS-TrafficTypeDiagnostic: DM6PR01MB4554:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:6430;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 12273633648232162612;10757474213743448055;1893284931319449065;1394163253943045583;15003391144326209467;1775191476894018797;15204266458215625055;15002497827820393684;13859264177666038250;14658716725675227018
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.237.158.52;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a3.mail.joinhandshake.com;PTR:a3.mail.joinhandshake.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 2000:0x0|0x0|0x2000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Oct 2020 17:20:10.5499
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3f36ed38-3aaf-4116-4860-08d86c779546
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT004.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4554
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.5399732
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VWNOR0c2ak9CSDZMZXMyM0J6ZFBFVEJlbUE1V3htRFc5dWpKcyt1d01kZkVR?=
+ =?utf-8?B?SzFhVUlnV0N3Mk4wT1I5UlZGQTFBNnNZLzUxM3Qvcms0aXZXRCtiQ2MreGt5?=
+ =?utf-8?B?TzZyN0Uwd3Z1OFVndzBSeHBxNFBDQmRVTnYvYmNoQ21TYVpWOWRGSmJScmNh?=
+ =?utf-8?B?M2xEMWR3cWNxT09aNFh0Rm9LdE1IVzJSUm10M1ROSHJtZnhHTUVMK0VFdHNj?=
+ =?utf-8?B?MVgvUXV0K2NzTFFObGNsNWJtQUVXMzRHVDdWc25RMGNSMTQzSTgyWkF6SlYr?=
+ =?utf-8?B?dEVHRHBiYnpiamtmMmRpYWxlV1JOUnhGelBSWjdmQzB4eXV2ZVhscmE4b0ZQ?=
+ =?utf-8?B?a1pKZkkvaGMxYjJYdGpyUTZTMElLZUNIOERSdTRWVlpRN01IMXBuTUFvYy90?=
+ =?utf-8?B?NW9xUlFzMlZ4SjB2Y3BQbnNETFBxVmhlRUZySWFueVV1MXJrblRBQldPVk5F?=
+ =?utf-8?B?bFFYVFUzYXUrOWFhOU9sa0pHTXJVTmkxdGZYQytpMHVXM1pNalFONnFZaTNS?=
+ =?utf-8?B?N3ZITFdTc2dGRVdtR0FyMW13b3lHeEYzWEllNmx2QnJldXREWDFMUDM2MS9S?=
+ =?utf-8?B?aFFhdkxTcDJ3V3Z3ZnpWcUNybmR1c1VldDlZa3dTNlQrYUdRVUI4NGxyRVVM?=
+ =?utf-8?B?eUFDejJCWW5JVzJRRmRtMDdSQnlia3ZnOS95WlpnTTVYOUxjTXczclZKaVdu?=
+ =?utf-8?B?OWlMcUExQUVlMzNEeTR3eXQxeXEyYURubkhnNlFzOVZ1KzhVYmF6VWRWZHJJ?=
+ =?utf-8?B?RGJRM1p5ZWlUTEJFWitKV0FObXd1eDlNTWtHY1BiaWUydDVKV1ExZzhFOGNw?=
+ =?utf-8?B?RjZ1Q0Z4dEoveUdiVEJlbEM3RFNTYXZhSG5tbWZNdEp2bmlPWVBSNEZTQ2ho?=
+ =?utf-8?B?UHUwMmdZdG5pdDNPWDYrT28zNW8vNUVSWjhlRnhzZEx6elI4Tk9peGFkbmNI?=
+ =?utf-8?B?WXBWMyt2cjVYdnFXbDFqcjNqZ2liRkgyaWJLdFNyRS8rZXpjSFlpZ3RocEkx?=
+ =?utf-8?B?SzNSSW1PQmI0RjVhbmh3ZlgwQkY4b0lXUUJjMnNXb282RExDTURUR2t5NVNT?=
+ =?utf-8?B?YTBTWldPUmQ2VmR1Z1I3U2QxT1FweitXYkhMbDRjTHEzRkI4UVl4QmNtdjZM?=
+ =?utf-8?B?QjdmNFdxMmJ6QUxkRkNlSnp5Z3lvdFV4RGZObFRMbFdJdzVIa3VGZkhCZndH?=
+ =?utf-8?B?Nlg0NG1MTGZVUDZWeFhRRWtKUm9rRHEvL2ttWVhJcFJnbUNmclhqY1pTUjZk?=
+ =?utf-8?B?Q3Y2eVRtZ0s5Ull1cjdMeEZub3BHOGxRQWg1VXVsb051Rjhnc2craWFPMU5P?=
+ =?utf-8?B?UmUyNlJKWkphMHdhRmZZaStXdGZOd05vVy9wRXJJN3dtMERlMHVTTnlIbDdu?=
+ =?utf-8?B?YUkvRnlUQm5ZSkZ6YW5panRENXpLT094eUdLUEQxZU03VDdKOWNXcW8ySE5k?=
+ =?utf-8?B?ZGRENXNzTFgvdzVLVGdTTVRLMGtReDJYSTFEdVRrMlBWNmJsUWY1T25DSDhF?=
+ =?utf-8?B?MUs2MWNoYUlWY1IvaGNDU3lBWWZqcTBuWnExOFhkZTRtVUhrcWFmRHBCZDc3?=
+ =?utf-8?B?M2Y5TExUZDlrSnJUcit0Z0U1Rzg2cmJ5RG9MeU5SaXdMVlJuaVlpUGlyN1Rm?=
+ =?utf-8?B?L1B3SndwOVlSUWdZdWZCQnFFSkxESnRmYythZnVrdXByNFUvUkk4Z1FIbnpT?=
+ =?utf-8?B?QXRSei9HbnFEamNYeHNvd0hPUDFmTk4xMUpqUk9ub1Q0aWc1UzkzRUJidWxN?=
+ =?utf-8?B?WUlyZVBkdVJBSUtwRjVmaHJKY25iZExxeGlvQi9RMVk1RzUzenVBL2NpS09s?=
+ =?utf-8?B?LytqRENjTGE4OTZIRHFmTTUxcWVZdGEyWk92K3Q1OVhhcHVBYW8rOFdhb0lu?=
+ =?utf-8?B?VVByYjdIMW1FSGZvb3BHYXhzOHQ2NEt6TjlMT0NXMGdmQU1SbWtkNHQxWFNK?=
+ =?utf-8?B?OUZmamJKYzdVdjFDY2hlNStBajRrckJHRjJTVXYxa25TQXRGRnA2YmlRRzlw?=
+ =?utf-8?B?aWdxWGd1YndGMFpvUnkreFBFWmVSNkI0OWx4STF2cGVnZ1B6MVBqQU92Y3Mw?=
+ =?utf-8?B?czlqOG1GUEs0QnpsMjd1YWc1aHowQXN6MVllZz09?=
+MIME-Version: 1.0
+
+--43963e5404b3458f956fb4a4b2e6ca46
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Jerry,
+
+You have a new message from
+Talent Brand
+
+
+
+
+
+
+
+General Motors
+
+
+General Motors Learning Series - Automated Driving Roadmap, Active Safety, =
+Autonomous Sensing and Compute
+
+
+
+
+
+
+
+
+Wednesday, October 14th, 05:30 PM - 06:30 PM EDT =E2=80=94
+Virtual Event
+
+
+
+
+RSVP to Event =E2=86=92
+
+
+
+
+
+Important: Updated links to register for all sessions are below. Unfortunat=
+ely not all links populated correctly in our original message. We apologize=
+ for any issues you may have experienced with this and look forward to seei=
+ng you.Hi Jerry!
+We invite you to join these sessions and hear right from our GM employees=
+=C2=A0as they share their personal experience on what it's like to work for=
+ GM, projects they=E2=80=99ve worked on and available career opportunities =
+with us to jumpstart your career.
+Each topic will be presented in a live web chat twice on each day to provid=
+e options for participants in different time zones.**TO REGISTER FOR A LEAR=
+NING SERIES SESSION PREVIEWED BELOW, PLEASE OPEN THE EVENT REGISTRATION LIN=
+K(S) IN YOUR BROWSER TO RESERVE YOUR SPOT.**Series Schedule:AUTOMATED DRIVI=
+NG ROADMAP, ACTIVE SAFETY AND AUTONOMOUS SENSING AND COMPUTEWednesday, 10/1=
+45:30 =E2=80=93 6:30 PM EDT (2:30 - 3:30 PDT)
+Event registration:=C2=A0https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UMluwyAQ_=
+ZpwtFhtOHCIsvyGhc0kITUYGVw1_fpCq6ZL1EpIM5p5zFuspla1HXKaYooJxop0RDLZkGZ_2Km9=
+YFsiBTkc5W7DcZizO7nRZDeH1FxnFy4m2HQxT9CMs0cXLcyJ28FYwi2mLW85yG4YFBdkACwMQ9l=
+MEHIP4WzO4Gs7Gh-NO4feWS0KP0b3o_13wrpXsuWEUNKiSV9yjmnDtht6LM_E-CiozOG5cKTSCN=
+5ixtCdbR6uMOY-3yLoQwWhRb--ZCIxxqJ4XbM102RSA3ZFcQHvVt-Dj9N8g6VqIbhTLcr6h0bwx=
+k1lOC5gMvQuZFiCmXoPKRXDX2Y_nP4J_C8n-_7B6o51tEMLjC66Ckh5tbVWbQpLqUpMv-2meV1G=
+0J906EFgDVkoIgijby6uutk&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f=
+36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7=
+C637378608147468466&amp;sdata=3DsI%2BlLRFoq665ogpx9sOjRSLRGRNG9IO26iMyr5Y4w=
+zM%3D&amp;reserved=3D0
+OR8:30 =E2=80=93 9:30 PM EDT (5:30 =E2=80=93 6:30 PDT)
+Event registration:=C2=A0https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UNtuwyAM_=
+ZryGAEJCTzwUPXyG5ET3JYuEBTItO7rB5vWXapNsoRljn0uRnOj2o5YzSmnjFLFOiZrWbFqf9ip=
+vai3TAp2OMrdpqF-TvZkR0h29rG6ztZfwJt4gSesxtmRix5aY6iivDkxRgcBEoSo27YZajOAEoI=
+kmNCnHv0ZzuhKO4ILYM--t0aLzE_J_Wj_nbD8K9k2jHHWkklfUgpxU283_JgLQngUlOf4nDlibk=
+S-XCtyZ5uHK46pT7eA-lBAZNGvL4lJSqnIXtdkYJogVmhWEhZ0dnU9ujDNN1yKFkY71ZKkf2hEB=
+3bKw3FBSNhbn3DxMPUOY8yGv8x-OP0T-F9O5n3B6K7ueEcWHG2wBRDTaspbtCkqpcox_bYb53UZ=
+UX_SkQeBJeQclWA1fwOJP7p-&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3=
+f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637378608147468466&amp;sdata=3D97zFk%2Fgz%2Bt7ICvQJVqGp5Y0zUzvbk3XyAukLV3=
+mYzaw%3D&amp;reserved=3D0
+VEHICLE INFOTAINMENT, CONNECTIVITY, DRIVER/USER FACING SYSTEMS, CYBER SECUR=
+ITYWednesday, 10/215:30 =E2=80=93 6:30 PM EDT (2:30 =E2=80=93 3:30 PDT)
+Event registration:=C2=A0https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UMluwyAQ_=
+ZpwtFiMgQOHKMtvWAQmManBlsFV068vtGq6RK00EqPhzbzFaepUJ5DXFFNMMFZEEMlkQ5r9Yaf2=
+nG2J5ORwlLtNi-OU_dlbk_0UU3OdfBxMdGkwT9DYKaBBn6hhnMtOdSfWnUnLGJeSis4KwRwwg7I=
+ZIeYe4sVcINTWmjAbf4m9d5oXfozuR_vvhPVfya4lhJIOjXrIeU4btt3QYykzz4-CyhyeC0cqDS=
+-XW4XubNPpCjb3-TaDPlQQWvTrSyYSY8yL1zU7M44mNeBWNC8Q_Bp6CPM43WCpWggWqkNZ_9AIw=
+fixDO0CJkPvY4YlmrEPkFIx_GX2w-mfwP9ycu8LTgsmqEALWD_7Ckh5dfWt2hSWUpWYfttN07pY=
+0J906EFgDblExQmjb72augs&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f=
+36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7=
+C637378608147468466&amp;sdata=3D0Nraxi21BKvcpJ%2Bj46HMbGGIOzkHhdlgRnxpBHrfJ=
+UM%3D&amp;reserved=3D0
+OR8:30=E2=80=93 9:30 PM EDT (5:30 =E2=80=93 6:30 PDT)
+Event registration:=C2=A0https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UNtuwyAM_=
+ZryGGESAjzwMPXyGxENbksXCApkWvf1g03rNlWbZAnLHPtcrGZW9YI4zSijQKkCAbKVDTS7_Vbt=
+ePsEksP-ILebjoY5u5MbTXZzSM11duFigk0X84zNOHty0b2gklHVHeHUCw6qM9a27UkBx47LFkk=
+2E4Y8YDibM_rajsZH485hcFbzwk_J_ejwk7D-K9l3AAx6MulLzjFt2qcNO5QyMT4KKnN8KRypNL=
+xc5j25s83HK455yLeIel9BZNFvrxkkpZQXr2u2ZppMatCuJC7o3eoH9HGab7hULUCF6knWvzSiN=
+24qw3FBk3FwIeMSzDR4TKkY_jb76fRP4H852Y8Fq0UrmCALji66Ckh5tfWt2hSVUsGj3TSvy4j6=
+i448CKwhl6g4tOwdtt66CA&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f3=
+6ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C=
+637378608147468466&amp;sdata=3DG5QneW0u%2FNhLstK%2B9iw88m1fQSORoyt%2FvYE8Xs=
+NClPc%3D&amp;reserved=3D0
+We're looking forward to connecting with you!Best Regards,Nicole V.
+
+View the Message and Reply
+
+Thank you,
+
+The Handshake Team=
+
+--43963e5404b3458f956fb4a4b2e6ca46
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html style=3D"background-color:transparent"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+<title>Handshake</title>
+
+
+
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px =
+solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px=
+ solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+.campaign-card a:hover{text-decoration:none;color:inherit}
+.campaign-card .campaign-actions a:hover{text-decoration:none;color:#1569e0=
+;cursor:pointer;display:block;font-weight:500;font-size:0.9em;height:auto;l=
+ine-height:20px;text-size-adjust:100%;width:auto;word-break:break-word;padd=
+ing:0;-webkit-box-direction:normal;-webkit-font-smoothing:subpixel-antialia=
+sed;-webkit-tap-highlight-color:transparent}
+@media (max-width: 767px) {
+.avatar--mobile-md{max-width:56px}
+}
+@media (max-width: 480px) {
+.campaign-card .campaign-summary{font-size:12px;padding:8px}
+.campaign-card .campaign-summary .summary-content .summary-icon{display:non=
+e}
+.campaign-card .campaign-summary .summary-sub-content{padding:4px, 0;font-s=
+ize:10px;width:100%}
+.campaign-card .campaign-actions{padding:8px}
+}
+@media (max-width: 1050px) {
+.campaign-card .campaign-summary .summary-content .summary-icon img{width:5=
+6px;height:56px}
+}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;color:#231f20;font-size:16px;line-height:20px">
+<table class=3D"body email-layout" data-made-with-foundation=3D"" style=3D"=
+background-color:transparent;max-width:580px;table-layout:fixed;border:0;bo=
+rder-collapse:collapse;width:100%;text-align:inherit;margin:auto;padding:0"=
+>
+<tr>
+<td class=3D"email-header">
+<table style=3D"width: 100%">
+<tr>
+<td>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9kdluwyAQRb_GPFosXuCBhyj=
+Lb1gEJjGpjS17HDX9-kLSpFtaCQk0d-CeuTjNnapq4jWnnDJKFauZFDJn-Wa7VptSrJgs2XYn11=
+lBw4D-4K1BP4Q5Pw0-tCa4uTUvkNuhJ60uqBGsULJwB17vK2VLUVqlKK8PYOyeEzQdBGwgHM0R-=
+nS0ph-NP4bGO11Gf0oejzZfDZOuZFUwxllFOt0ijnMmVhnfxbWgM11nnlAlXUS9b-ZhmSxkYmMs=
+-rPHS9Mb38GU8SrJPTi_9FGGVP4o3uli-RvMtYc82If9CSw2eBlBb89xLDLpt1dkklJaxuQeeOA=
+WMk7QR6f4xtgNF5jSZIzWqiKon5igthMYhMYHhCmYLpLOc4zvM7pbbn82_pe6u15wuhY1r8kE1o=
+8-Ncy4uLQnNkWlVDH0n-PeAtV3O_ILMH1ZqVjJBH8HO2zY9g&amp;data=3D02%7C01%7CJerry=
+.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C1%7C637378608147548421&amp;sdata=3DnwLB%2Fp6as%2B495R=
+G1%2B1jdYRmXq8hxsUSK6zxIKry1GjU%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/email.notifications.joinhandshake.com/c/eJx9kdluwyAQRb_GPFosXuCBhyjLb1gEJj=
+GpjS17HDX9-kLSpFtaCQk0d-CeuTjNnapq4jWnnDJKFauZFDJn-Wa7VptSrJgs2XYn11lBw4D-4=
+K1BP4Q5Pw0-tCa4uTUvkNuhJ60uqBGsULJwB17vK2VLUVqlKK8PYOyeEzQdBGwgHM0R-nS0ph-N=
+P4bGO11Gf0oejzZfDZOuZFUwxllFOt0ijnMmVhnfxbWgM11nnlAlXUS9b-ZhmSxkYmMs-rPHS9M=
+b38GU8SrJPTi_9FGGVP4o3uli-RvMtYc82If9CSw2eBlBb89xLDLpt1dkklJaxuQeeOAWMk7QR6=
+f4xtgNF5jSZIzWqiKon5igthMYhMYHhCmYLpLOc4zvM7pbbn82_pe6u15wuhY1r8kE1o8-Ncy4u=
+LQnNkWlVDH0n-PeAtV3O_ILMH1ZqVjJBH8HO2zY9g" shash=3D"fh4MzaPjcIhH7KC08cM53JH=
+3E6yIhcjbLy6ZXv6PRjFry7YjvOlUMs/q+wNuiLFOXb498I7RBbzyIJg4MFLTuvhlxEMT/gwHvI=
+X6KX5gCclUpugRDbxB0e16o3NwKA9as7AfkszSD8Q/ryfCLcK1ZqtcIGhXFNUNsD8rwgTAG0w=
+=3D" style=3D"color:#254fa5;font-weight:inherit;color: inherit; text-decora=
+tion: none;">
+<img alt=3D"Handshake" class=3D"handshake-logo" src=3D"https://handshake-pr=
+oduction-cdn.joinhandshake.com/static_assets/hs-logo-red-lg.png" style=3D"m=
+argin-top:24px;margin-bottom:16px;width: 159px; height: 24px" title=3D"Hand=
+shake">
+</a>
+</td>
+<td class=3D"branding" style=3D"width:40px;height:40px">
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td class=3D"email-content">
+<div class=3D"feed">
+<div class=3D"row list-item">
+<div class=3D"col-md-12">
+<p style=3D"font-size:18px;line-height:28px">Hello Jerry,</p>
+<p style=3D"font-size:18px;line-height:28px">
+You have a new message from
+<b>Talent Brand</b>
+</p>
+<div class=3D"campaign-card" style=3D"border-color:#e0e0e0;border-style:sol=
+id;border-width:2px;box-sizing:border-box;color:rgba(0,0,0,0.8)">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UdluwyAQ_BrzGHEY2zzwUOX=
+4DYvCJiY12LLXUdOvLyRNeqWVkEA7w87srNPcqaomXnPKKaNUsZo1olmx1Wa7Vhspnlgj2XbXrI=
+uSxgH93luDfojz6jj42Jno5s68wMoOgXS6pFJKyhSlrqxopcBywfneuFoyVUtJ0PQQsYV4MAcI-=
+WlNGI0_xNY7LZM-Jfem7VfBjKumKhnjrCK97hDHuRBPBd-ls6AzfW8euEognJLQnB4ymRKiEIke=
+2nlYJguF2BiL_uTx3Abje5gKXmU4gPNLSDDk8kfxZjaVv3m7cMh9lOH5CBZbPI-gt1mcTPrtFVl=
+DKZUpyLtbcAsZJwhJKfUY--EMUx6U0VpVBPUDEdR2AoPQ-ogwRdMnp_Oc0vxM8hrjn8T_luAuH5=
+yuRc1rMoH1o8-EGReX7-xN0aZRaQc_x70Gqm9y5JfBvEGpmGSCvwNV0dxj&amp;data=3D02%7C=
+01%7CJerry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637378608147558414&amp;sdata=3DOxRaAcJp=
+jHy1w%2FBz5EcvC0uRiGCu2XEUmrQtk9n3Fk4%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://email.notifications.joinhandshake.com/c/eJx9UdluwyAQ_BrzGHEY2zzwUOX4=
+DYvCJiY12LLXUdOvLyRNeqWVkEA7w87srNPcqaomXnPKKaNUsZo1olmx1Wa7Vhspnlgj2XbXrIu=
+SxgH93luDfojz6jj42Jno5s68wMoOgXS6pFJKyhSlrqxopcBywfneuFoyVUtJ0PQQsYV4MAcI-W=
+lNGI0_xNY7LZM-Jfem7VfBjKumKhnjrCK97hDHuRBPBd-ls6AzfW8euEognJLQnB4ymRKiEIke2=
+nlYJguF2BiL_uTx3Abje5gKXmU4gPNLSDDk8kfxZjaVv3m7cMh9lOH5CBZbPI-gt1mcTPrtFVlD=
+KZUpyLtbcAsZJwhJKfUY--EMUx6U0VpVBPUDEdR2AoPQ-ogwRdMnp_Oc0vxM8hrjn8T_luAuH5y=
+uRc1rMoH1o8-EGReX7-xN0aZRaQc_x70Gqm9y5JfBvEGpmGSCvwNV0dxj" shash=3D"E+T7bUG=
+HRnkdhvjoRuWj65rQy2JrllG9T3Ke27/EXRk7rI+03wrMCvD8pCtarD0v8C8WmwXWsekAXUGO1a=
+gOahfYcYDdrsQxS1alcfJXnyG/707UwZzV4r0/OJO1iu/4XzK90FLR0rGa9J/kixT0lVvurzMIO=
+mhvcIa+Iq3jBC0=3D" style=3D"color:#254fa5;font-weight:inherit;text-decorati=
+on:none;color:inherit">
+<div class=3D"campaign-summary" style=3D"font-family:&quot;Suisse Int'l&quo=
+t;, -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;font-variant-ligatures:common-ligatures contextual;=
+box-sizing:border-box;padding:16px;font-weight:400;-webkit-font-smoothing:s=
+ubpixel-antialiased">
+<div class=3D"summary-content" style=3D"display:inline-flex;justify-content=
+:space-between;width:100%">
+<div class=3D"summary-text" style=3D"display:block;flex-basis:auto;flex-gro=
+w:1;flex-shrink:1;width:80%">
+<p style=3D"font-size:18px;line-height:28px;margin-top:0">
+General Motors
+</p>
+<h1 style=3D"font-weight:700;word-break:break-word;font-size:46px;line-heig=
+ht:52px;font-size:18px;font-weight:500">
+General Motors Learning Series - Automated Driving Roadmap, Active Safety, =
+Autonomous Sensing and Compute
+</h1>
+</div>
+<div class=3D"summary-icon" style=3D"display:block;flex-basis:auto;flex-gro=
+w:0;flex-shrink:1;width:15%;max-width:20%">
+<img src=3D"https://s3.amazonaws.com/handshake.production/app/public/assets=
+/institutions/10796/original/hs-emp-logo-data.?1538771702" style=3D"width:7=
+2px;height:72px">
+</div>
+</div>
+<div class=3D"summary-sub-content" style=3D"color:rgba(0,0,0,0.56);display:=
+inline-flex;justify-content:flex-start;width:85%;padding:8px, 0;font-size:1=
+2px">
+<div class=3D"sub-content" style=3D"display:block">
+Wednesday, October 14th, 05:30 PM - 06:30 PM EDT =E2=80=94
+Virtual Event
+</div>
+</div>
+</div>
+<div class=3D"campaign-actions" style=3D"display:inline-flex;justify-conten=
+t:flex-start;width:90%;padding:0 0 16px 16px">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UdluwyAQ_BrzGHEY2zzwUOX=
+4DYvCJiY12LLXUdOvLyRNeqWVkEA7w87srNPcqaomXnPKKaNUsZo1olmx1Wa7Vhspnlgj2XbXrI=
+uSxgH93luDfojz6jj42Jno5s68wMoOgXS6pFJKyhSlrqxopcBywfneuFoyVUtJ0PQQsYV4MAcI-=
+WlNGI0_xNY7LZM-Jfem7VfBjKumKhnjrCK97hDHuRBPBd-ls6AzfW8euEognJLQnB4ymRKiEIke=
+2nlYJguF2BiL_uTx3Abje5gKXmU4gPNLSDDk8kfxZjaVv3m7cMh9lOH5CBZbPI-gt1mcTPrtFVl=
+DKZUpyLtbcAsZJwhJKfUY--EMUx6U0VpVBPUDEdR2AoPQ-ogwRdMnp_Oc0vxM8hrjn8T_luAuH5=
+yuRc1rMoH1o8-EGReX7-xN0aZRaQc_x70Gqm9y5JfBvEGpmGSCvwNV0dxj&amp;data=3D02%7C=
+01%7CJerry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637378608147558414&amp;sdata=3DOxRaAcJp=
+jHy1w%2FBz5EcvC0uRiGCu2XEUmrQtk9n3Fk4%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://email.notifications.joinhandshake.com/c/eJx9UdluwyAQ_BrzGHEY2zzwUOX4=
+DYvCJiY12LLXUdOvLyRNeqWVkEA7w87srNPcqaomXnPKKaNUsZo1olmx1Wa7Vhspnlgj2XbXrIu=
+SxgH93luDfojz6jj42Jno5s68wMoOgXS6pFJKyhSlrqxopcBywfneuFoyVUtJ0PQQsYV4MAcI-W=
+lNGI0_xNY7LZM-Jfem7VfBjKumKhnjrCK97hDHuRBPBd-ls6AzfW8euEognJLQnB4ymRKiEIke2=
+nlYJguF2BiL_uTx3Abje5gKXmU4gPNLSDDk8kfxZjaVv3m7cMh9lOH5CBZbPI-gt1mcTPrtFVlD=
+KZUpyLtbcAsZJwhJKfUY--EMUx6U0VpVBPUDEdR2AoPQ-ogwRdMnp_Oc0vxM8hrjn8T_luAuH5y=
+uRc1rMoH1o8-EGReX7-xN0aZRaQc_x70Gqm9y5JfBvEGpmGSCvwNV0dxj" shash=3D"E+T7bUG=
+HRnkdhvjoRuWj65rQy2JrllG9T3Ke27/EXRk7rI+03wrMCvD8pCtarD0v8C8WmwXWsekAXUGO1a=
+gOahfYcYDdrsQxS1alcfJXnyG/707UwZzV4r0/OJO1iu/4XzK90FLR0rGa9J/kixT0lVvurzMIO=
+mhvcIa+Iq3jBC0=3D" style=3D"color:#254fa5;font-weight:inherit;color:inherit=
+;text-decoration:none;color:#1569e0;cursor:pointer;display:block;font-weigh=
+t:500;font-size:0.9em;height:auto;line-height:20px;text-size-adjust:100%;wi=
+dth:auto;word-break:break-word;padding:0;-webkit-box-direction:normal;-webk=
+it-font-smoothing:subpixel-antialiased;-webkit-tap-highlight-color:transpar=
+ent">RSVP to Event =E2=86=92</a>
+</div>
+
+</a>
+</div>
+<blockquote style=3D"margin:8px 0;background-color:#f7f7f7;border-radius:3p=
+x;padding:24px">
+<div><strong style=3D"background-color: rgb(255, 255, 0);"><em>Important: U=
+pdated links to register for all sessions are below. Unfortunately not all =
+links populated correctly in our original message. We apologize for any iss=
+ues you may have experienced with this and look forward to seeing you.</em>=
+</strong></div>
+<div><br></div>
+<div><span style=3D"color: black;">Hi Jerry!</span></div>
+<div><br></div>
+<div>
+<strong style=3D"color: black;background-color: yellow;">We invite you to j=
+oin these sessions and hear right from our GM employees&nbsp;</strong><span=
+ style=3D"color: black;">as they share their personal experience on what it=
+'s like to work for GM, projects they=E2=80=99ve worked on and available ca=
+reer opportunities with us to jumpstart your career.</span>
+</div>
+<div><br></div>
+<div><span style=3D"color: black;">Each topic will be presented in a live w=
+eb chat twice on each day to provide options for participants in different =
+time zones.</span></div>
+<div><br></div>
+<div><br></div>
+<div><strong style=3D"color: black;background-color: yellow;">**TO REGISTER=
+ FOR A LEARNING SERIES SESSION PREVIEWED BELOW, PLEASE OPEN THE EVENT REGIS=
+TRATION LINK(S) IN YOUR BROWSER TO RESERVE YOUR SPOT.**</strong></div>
+<div><br></div>
+<div><strong style=3D"color: black;background-color: yellow;">Series Schedu=
+le:</strong></div>
+<div><u style=3D"color: black;">AUTOMATED DRIVING ROADMAP, ACTIVE SAFETY AN=
+D AUTONOMOUS SENSING AND COMPUTE</u></div>
+<div><strong style=3D"color: black;">Wednesday, 10/14</strong></div>
+<div><span style=3D"color: black;">5:30 =E2=80=93 6:30 PM EDT (2:30 - 3:30 =
+PDT)</span></div>
+<div>
+<span style=3D"color: black;">Event registration:&nbsp;</span><a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.not=
+ifications.joinhandshake.com%2Fc%2FeJx9UdluwyAQ_BrzaHEYGx54qJrkNywC64TWxpZZ=
+V02_vpDep4TEambZmR284V63HQmGU04ZpZp1TAlVs3q3v9U7KW6Ykmx_ULdVQ-OMYQjOYphjqu_=
+mEM82-nS291C7eSJnwzvQA2tcQ3mjnRokMC-GYVBS28GyI0E7QsQe4smeYCqls9Niwyn2wRuZ9S=
+l5H9p_Fiy8Vm3DGGctGc0ZcUmVuKn4IR-7LD8NZRweskbKhWxaKkQlDhtOfZq31UEldtZheAh46=
+ScbRlgr3hZ6Ah-2KdNQ4FfwzWeGv9i69pD3LebjHTjs8bKA2RdxspqnR2SKUipzhht6O4421eA3=
+sqwwZaU8YxnnC6xlR0Y73RI0v4igcStYhD5EhDXaMTtNKQf5EeJLgn82_pe_vz7wphMd78gKLiy=
+hNCTcfLmLN02V0jn-7-u-BGre5MgPg-XzpGaSCf4M2nrb2w&amp;data=3D02%7C01%7CJerry.=
+Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C1%7C637378608147568416&amp;sdata=3D1ZyUhiitqTghO7aE9GR=
+CAeOTPqcBjWoiQagWetnyUN0%3D&amp;reserved=3D0" originalsrc=3D"https://email.=
+notifications.joinhandshake.com/c/eJx9UdluwyAQ_BrzaHEYGx54qJrkNywC64TWxpZZV=
+02_vpDep4TEambZmR284V63HQmGU04ZpZp1TAlVs3q3v9U7KW6Ykmx_ULdVQ-OMYQjOYphjqu_m=
+EM82-nS291C7eSJnwzvQA2tcQ3mjnRokMC-GYVBS28GyI0E7QsQe4smeYCqls9Niwyn2wRuZ9Sl=
+5H9p_Fiy8Vm3DGGctGc0ZcUmVuKn4IR-7LD8NZRweskbKhWxaKkQlDhtOfZq31UEldtZheAh46S=
+cbRlgr3hZ6Ah-2KdNQ4FfwzWeGv9i69pD3LebjHTjs8bKA2RdxspqnR2SKUipzhht6O4421eA3s=
+qwwZaU8YxnnC6xlR0Y73RI0v4igcStYhD5EhDXaMTtNKQf5EeJLgn82_pe_vz7wphMd78gKLiyh=
+NCTcfLmLN02V0jn-7-u-BGre5MgPg-XzpGaSCf4M2nrb2w" shash=3D"zAKuai8xtocBUcetr9=
+rz3pWGSN9kFPeZ0AbsFg9SymYmFhw05WRrDd87+LQd37OMKUBk2WKdnzdOaUGOEFI/H3+X22cjI=
+P1WVUaBbkyPS1ZuheF7tShhoORN474DRU/R58sxfvmaZq6yUQsdiMfIFxR2L29w2VVLgwlm0jp3=
+xro=3D" target=3D"_blank" style=3D"color:#254fa5;font-weight:inherit;color:=
+ black;background-color: yellow;"><strong>https://app.joinhandshake.com/eve=
+nts/546033</strong></a>
+</div>
+<div><span style=3D"color: black;">OR</span></div>
+<div><span style=3D"color: black;">8:30 =E2=80=93 9:30 PM EDT (5:30 =E2=80=
+=93 6:30 PDT)</span></div>
+<div>
+<span style=3D"color: black;">Event registration:&nbsp;</span><a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.not=
+ifications.joinhandshake.com%2Fc%2FeJx9UdtuwyAM_ZrwGHEpCTzwMPXyGxEFt2VLSBSc=
+at3XD9rdu01CsnVsfI6PveFeNy0JhlNOGaWatUwJVbN6s13rjRQPTEm23al1taJxxHAIzmIYY6o=
+fxxBPNvp0sk9Qu3EgJ-MFZUxq7qDhSh7a1UrtRaMkOE-1dpag7SFiB_FojzCU1NlhsuEYu-CNzP=
+yUfAztvhKWulbNijHOGtKbE-KUKvFQ8V1-dpruBWUczpkj5UTmyUJXYrfg0KVxmR1UYmMdhnPAS=
+zfY0MNc8aaUB_BhGXIZCvwGvuvM8DdZ1x7yscW4fwSHHV4mMNtCTmbz8oxMUUpl9nBBb_vephr8=
+QqYZhsyUZ0z9eIG57MhoqxuC5hcSNG4Gi9CFiDBH22elKWUjP028Ofhn43_---sHb1rR8pbM4MI=
+USkPCxZdYtGmqlM72_1z3Zqh5pyN3Asvx8gkkE_wVUzPbIA&amp;data=3D02%7C01%7CJerry.=
+Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C1%7C637378608147568416&amp;sdata=3DPQzAzT8o82aIltPiha3=
+utpwqtQ8atFWtBaeFKaezhUE%3D&amp;reserved=3D0" originalsrc=3D"https://email.=
+notifications.joinhandshake.com/c/eJx9UdtuwyAM_ZrwGHEpCTzwMPXyGxEFt2VLSBSca=
+t3XD9rdu01CsnVsfI6PveFeNy0JhlNOGaWatUwJVbN6s13rjRQPTEm23al1taJxxHAIzmIYY6of=
+xxBPNvp0sk9Qu3EgJ-MFZUxq7qDhSh7a1UrtRaMkOE-1dpag7SFiB_FojzCU1NlhsuEYu-CNzPy=
+UfAztvhKWulbNijHOGtKbE-KUKvFQ8V1-dpruBWUczpkj5UTmyUJXYrfg0KVxmR1UYmMdhnPASz=
+fY0MNc8aaUB_BhGXIZCvwGvuvM8DdZ1x7yscW4fwSHHV4mMNtCTmbz8oxMUUpl9nBBb_vephr8Q=
+qYZhsyUZ0z9eIG57MhoqxuC5hcSNG4Gi9CFiDBH22elKWUjP028Ofhn43_---sHb1rR8pbM4MIU=
+SkPCxZdYtGmqlM72_1z3Zqh5pyN3Asvx8gkkE_wVUzPbIA" shash=3D"B6MaCDhKCZ9FpQM6KU=
+k3TfONwW9xwuXvAl5Fl2fuNMrKJuVHI39RyEYjGLdQ/EDbpP84i53njPj0g6x8pxBLJXLm6in7L=
+Ncs/7GyPNKdkhqeowX5vqjUHRwt4x9tDgWZS+evIhfLF/ExLGJvUu+t5zJYLNs+IGxDyxDqH0hb=
+tdo=3D" target=3D"_blank" style=3D"color:#254fa5;font-weight:inherit;color:=
+ black;background-color: yellow;"><strong>https://app.joinhandshake.com/eve=
+nts/591039</strong></a>
+</div>
+<div><br></div>
+<div><u style=3D"color: black;">VEHICLE INFOTAINMENT, CONNECTIVITY, DRIVER/=
+USER FACING SYSTEMS, CYBER SECURITY</u></div>
+<div><strong style=3D"color: black;">Wednesday, 10/21</strong></div>
+<div><span style=3D"color: black;">5:30 =E2=80=93 6:30 PM EDT (2:30 =E2=80=
+=93 3:30 PDT)</span></div>
+<div>
+<span style=3D"color: black;">Event registration:&nbsp;</span><a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.not=
+ifications.joinhandshake.com%2Fc%2FeJx9UdmO2zAM_Brr0dAR29KDHhY5fsOgJSbR1pYN=
+iw6afv1K2bPdtoAAEkOKMxx6K71pOxas5JILzo3ohFa6FvXhuDeHRj0J3YjjSe-rHY8zhXNwQGG=
+OqX6eQ7xC9OkKP7B288Su1utWDVzKVgilBjkYJ_VwPksAz3fQICMYMVKP8QIXnErqYFogXGIfvG=
+0yP2cfQ_uvhKVudLsTQoqWjfZKtKRKPVXylB8sy3dBGcdb5kg5afLknanUaaOpT_O2OqzUARyFW=
+6B7P0EYca1kW8oT-rBNuYwFfgPfdWb4N1mPHvaxxTw8o6Oe7gvaYyFnq_31k4TmnDfZw408jCOk=
+Gv3GlhWnzJRnLON8x7XsKHhnWkb2LyRk3YpA2IdIuEYYs9KUspGfJr46-M_G__nvHx-87VQnO7a=
+iC0soDYk2X2LRZrjWJtv_57qvhtp3OvZNYDlePkEjlHwBNXvbjg&amp;data=3D02%7C01%7CJe=
+rry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C1%7C637378608147578403&amp;sdata=3DDKYZDupX1%2FaTw=
+EEOL4ARUJzl7UwuNK7TcbJTAI8G%2B6s%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//email.notifications.joinhandshake.com/c/eJx9UdmO2zAM_Brr0dAR29KDHhY5fsOgJ=
+SbR1pYNiw6afv1K2bPdtoAAEkOKMxx6K71pOxas5JILzo3ohFa6FvXhuDeHRj0J3YjjSe-rHY8z=
+hXNwQGGOqX6eQ7xC9OkKP7B288Su1utWDVzKVgilBjkYJ_VwPksAz3fQICMYMVKP8QIXnErqYFo=
+gXGIfvG0yP2cfQ_uvhKVudLsTQoqWjfZKtKRKPVXylB8sy3dBGcdb5kg5afLknanUaaOpT_O2Oq=
+zUARyFW6B7P0EYca1kW8oT-rBNuYwFfgPfdWb4N1mPHvaxxTw8o6Oe7gvaYyFnq_31k4TmnDfZw=
+408jCOkGv3GlhWnzJRnLON8x7XsKHhnWkb2LyRk3YpA2IdIuEYYs9KUspGfJr46-M_G__nvHx-8=
+7VQnO7aiC0soDYk2X2LRZrjWJtv_57qvhtp3OvZNYDlePkEjlHwBNXvbjg" shash=3D"HXftGL=
+4LF4PfmgznC4MaAjsFN28yf/shZyacQGo7naH4QlMTAgQBVz6cTCcep6SpTKBKK1J23873hb633=
++F/uXml34phk3mL34l7NIKEXWSP4PricXYh066CfAOEM46F2HQIoL7csTBmOxct5Pw0VGz6Ym6s=
+L6vAN2YZR/R4jFE=3D" target=3D"_blank" style=3D"color:#254fa5;font-weight:in=
+herit;color: black;background-color: yellow;"><strong>https://app.joinhands=
+hake.com/events/591049</strong></a>
+</div>
+<div><span style=3D"color: black;">OR</span></div>
+<div><span style=3D"color: black;">8:30=E2=80=93 9:30 PM EDT (5:30 =E2=80=
+=93 6:30 PDT)</span></div>
+<div>
+<span style=3D"color: black;">Event registration:&nbsp;</span><a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femail.not=
+ifications.joinhandshake.com%2Fc%2FeJx9UUluwzAMfI11NLREiw86FE3yDUOR2EStLRsW=
+XTR9faWk-wYIIDGkOMNhsDx0SpNoOeWUUdoxzYwwLWu3u9tuK8UNM5Lt9ua22dA0YbyL3mGcUm7=
+vp5hOLoV8cg_Q-mkkJ9tpubkTknsltBQHQbkS5nDQ1IEUVEmCboCEPaSjO8JYU-_G2cVj6mOwsv=
+BT8j60_0xY651RG8Y4U2SwJ8Q5N-Km4fvy3Dz_FFRweCwcuSSyTJaqEfsVxz5P6-KhEVvnMT5GP=
+PejiwMsDVe1PEKI61jKUOFX8E1ngb_IuvSQ9y2mwz147PE8g91VcrLY5ydkhlIqi4crBjcMLrcQ=
+VjIvMBamMmMepjMsdUdGdacI2l9I0PoFHEIfE8KS3FCU5lyM_DDx6uCfjf_5Hy4fgtVCc00W8HG=
+OtSHjGmqs2jpqTFfs_77u1VD7Rkd-CKzHKyeQTPAXEA3agg&amp;data=3D02%7C01%7CJerry.=
+Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C1%7C637378608147588397&amp;sdata=3DYSkcqqRVgiTc9rTNtKz=
+wh7JNteTDwZEhg0%2FlrYY0OlI%3D&amp;reserved=3D0" originalsrc=3D"https://emai=
+l.notifications.joinhandshake.com/c/eJx9UUluwzAMfI11NLREiw86FE3yDUOR2EStLRs=
+WXTR9faWk-wYIIDGkOMNhsDx0SpNoOeWUUdoxzYwwLWu3u9tuK8UNM5Lt9ua22dA0YbyL3mGcUm=
+7vp5hOLoV8cg_Q-mkkJ9tpubkTknsltBQHQbkS5nDQ1IEUVEmCboCEPaSjO8JYU-_G2cVj6mOws=
+vBT8j60_0xY651RG8Y4U2SwJ8Q5N-Km4fvy3Dz_FFRweCwcuSSyTJaqEfsVxz5P6-KhEVvnMT5G=
+PPejiwMsDVe1PEKI61jKUOFX8E1ngb_IuvSQ9y2mwz147PE8g91VcrLY5ydkhlIqi4crBjcMLrc=
+QVjIvMBamMmMepjMsdUdGdacI2l9I0PoFHEIfE8KS3FCU5lyM_DDx6uCfjf_5Hy4fgtVCc00W8H=
+GOtSHjGmqs2jpqTFfs_77u1VD7Rkd-CKzHKyeQTPAXEA3agg" shash=3D"JeM95tQKco6SmOPj=
+RnkSQJ+SV7kB6/LgE+UT8hzmh5etZsyhQftTQXb7mvdnEeZkUFpBLZyEePjBMxYXBs7ffV00fdd=
+9UsrwJdM109y3SyFN+3unv/xYXBDmU12iE2oVBYhN4/9sQye0wNUb24zwvhwDpRkmNYq7/h/dNo=
+jncQk=3D" target=3D"_blank" style=3D"color:#254fa5;font-weight:inherit;colo=
+r: black;background-color: yellow;"><strong>https://app.joinhandshake.com/e=
+vents/591056</strong></a>
+</div>
+<div><br></div>
+<div><span style=3D"color: black;">We're looking forward to connecting with=
+ you!</span></div>
+<div><span style=3D"color: black;">Best Regards,</span></div>
+<div><span style=3D"color: black;">Nicole V.</span></div>
+</blockquote>
+<table style=3D"width: auto"><tr><td><table><tr><td class=3D"primary-button=
+" style=3D"color:#fff;background-color:#f73b33;border:1px solid #f73b33;bor=
+der-radius:3px;text-decoration:none;margin:8px 4px 8px 0;display:inline-blo=
+ck;font-weight:500"><a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9Udt=
+uwyAM_ZrwWBloEvLAw9TLb0QUvJYuIRFxqnVfP2jX7tZNQgL5GJ-LnRauqWrmtQABHKDhNVdSLf=
+hivVk161I-cVXyzVatiiWEgfyzt4b8EKbFcfDhYIKbDuYFF3bo2UEvS6WQG7uUIK2Rcoe7HQBHU=
+GiFA2BkOgzUYtibPfb5aU0_Gr8PrXe6TPzA7kPbr4QZb1S15FzwinX6QDROhXwqxDadmZzpOvNA=
+VQLtEE4Yp6vuQqbmvp2GOVos5NpY8idP57Y3vsNYiCrDPTo_9wnGXP4o3qSm8jdllx52NzLsjmi=
+ppfOIenNKHlnUb6_EFQCUKca7VnQzGyP2iSnNGLvhjDHb5FA3FSP9gIS0jWgIWx8IYzBdUjpNKc=
+vPHK8h_tn43wrc5YPTtaxFzSJaP_rcMNHs8p21NaBUkzbw0-41UH2jY78E5v2VDS-5FO8B3967&=
+amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c=
+779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378608147588397&amp;=
+sdata=3DoMpIhH3wEFhAwnCY2JkTAvaz%2FMdlW06Ejb0M8MltlrE%3D&amp;reserved=3D0" =
+originalsrc=3D"https://email.notifications.joinhandshake.com/c/eJx9UdtuwyAM=
+_ZrwWBloEvLAw9TLb0QUvJYuIRFxqnVfP2jX7tZNQgL5GJ-LnRauqWrmtQABHKDhNVdSLfhivVk=
+161I-cVXyzVatiiWEgfyzt4b8EKbFcfDhYIKbDuYFF3bo2UEvS6WQG7uUIK2Rcoe7HQBHUGiFA2=
+BkOgzUYtibPfb5aU0_Gr8PrXe6TPzA7kPbr4QZb1S15FzwinX6QDROhXwqxDadmZzpOvNAVQLtE=
+E4Yp6vuQqbmvp2GOVos5NpY8idP57Y3vsNYiCrDPTo_9wnGXP4o3qSm8jdllx52NzLsjmippfOI=
+enNKHlnUb6_EFQCUKca7VnQzGyP2iSnNGLvhjDHb5FA3FSP9gIS0jWgIWx8IYzBdUjpNKcvPHK8=
+h_tn43wrc5YPTtaxFzSJaP_rcMNHs8p21NaBUkzbw0-41UH2jY78E5v2VDS-5FO8B3967" shas=
+h=3D"jycgznIzxsIFjARUGP7X1z2NFKljrIsudJqBMhhljnXgP+a6CUJ0d4sUdkstH7/TD0Rs6n=
+qR5C6mtlCsiBAZM67p7WZGE1KFONEDMxZzGrcErdFwM3Gtg64marHSn2wjgvrzeFcW4PiwxFQMr=
+apUMOcZcTIu6tizO4gDz7CfuNE=3D" style=3D"color:#254fa5;font-weight:inherit;t=
+ext-decoration:none;color:inherit;display:inline-block;color:#fff;padding:8=
+px 24px">View the Message and Reply</a></td></tr></table></td></tr></table>
+<p style=3D"font-size:18px;line-height:28px">
+Thank you,
+<br>
+The Handshake Team
+</p>
+
+
+</div>
+</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td class=3D"email-footer" style=3D"padding-top:16px">
+<hr class=3D"divider" style=3D"display:block;height:0;width:100%;border:0;b=
+order-top:1px solid #e0e0e0;margin:8px 0">
+<p class=3D"muted extra-small" style=3D"font-size:18px;line-height:28px;col=
+or:#7a7a7a;font-size:14px;line-height:20px">
+You received this email because Handshake partners with your school to help=
+ you grow your career. If you'd no longer like to receive emails like this =
+you can
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9UdtuwyAM_ZrwWGHSJPDAw7R=
+2vxERcFu2hETgVOu-ftBt3aZdJCRbtjnn-Nhp4VTbMa8FFxw4V9CBrOUGNrv9vdo19R3IBvYP8r=
+7a8jCTP3hryM8hbR5nH04muHQyT7ix88ROupGOW9e1cmidsIdhMHx7GLhSDdYABhiZEQP1GI7mi=
+FNJrZkW44-h9043mZ-zG2j_lbD0lWy3AAJaNuoT0ZKq-q4SD_mt5Mw4ml9UlWbCmHIExaVU0Ob0=
+G_IS8YARg8UMmKGmPs1rtFjVO2PJnz1d-sn4EWMl2tKe0Pl1ym0s5ffixyK5_A39OsNua87DI1r=
+q6bKg3p-zAyzql2cCyTlvssm3TdCtLCubMlPGWMb5grGYALxTLSP9CwlpG9EQ9j4QxmDGrDSl7P=
+Sny28W_zn434Hc9YPTXd2JjkW0fvFlINHqSiza3h3-se6bofqDjv0QWK7bKGigFq_ApeiF&amp;=
+data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c7795=
+46%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378608147598394&amp;sdat=
+a=3D53ZBe4KfxIKbLeek2%2BOgcfNuKHfH9uXmoudPsQDK1x0%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://email.notifications.joinhandshake.com/c/eJx9UdtuwyAM_Zrw=
+WGHSJPDAw7R2vxERcFu2hETgVOu-ftBt3aZdJCRbtjnn-Nhp4VTbMa8FFxw4V9CBrOUGNrv9vdo=
+19R3IBvYP8r7a8jCTP3hryM8hbR5nH04muHQyT7ix88ROupGOW9e1cmidsIdhMHx7GLhSDdYABh=
+iZEQP1GI7miFNJrZkW44-h9043mZ-zG2j_lbD0lWy3AAJaNuoT0ZKq-q4SD_mt5Mw4ml9UlWbCm=
+HIExaVU0Ob0G_IS8YARg8UMmKGmPs1rtFjVO2PJnz1d-sn4EWMl2tKe0Pl1ym0s5ffixyK5_A39=
+OsNua87DI1rq6bKg3p-zAyzql2cCyTlvssm3TdCtLCubMlPGWMb5grGYALxTLSP9CwlpG9EQ9j4=
+QxmDGrDSl7PSny28W_zn434Hc9YPTXd2JjkW0fvFlINHqSiza3h3-se6bofqDjv0QWK7bKGigFq=
+_ApeiF" shash=3D"kx9Q0GuNy6m+mZ5gVMj/F9pWpmncGILq/h2t0Vv4JnSGCbzgC4+IY4rPfq=
+BWXEsyhi3Xx7c1A4sHnVLteDKw0Qo3cOsktdYjdLXPwAUpWwIe4/4eGSbn+ECX770uOr7qPoUJC=
+wAkaCTNs2nCH2/O/IKrVGFM5Irsucq4WZO0tZ4=3D" style=3D"color:#254fa5;font-weig=
+ht:inherit">sign in</a>
+to manage your notification preferences or
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Flink.mailgun.com%2Fu%2FeJx9kMtuwyAQRb-mLC3AxsCCRZWkv4EwTBJSAxbgqunX17Rq=
+2qqP1Yzmce-ZcYo6OXLkFcUUE4wl4UT0oiPd_rCTe9bfE8HI4UHs7gYcU_VHb031KZbuknw8m-j=
+K2TxCZ1NAZwVc0AkPguGJ9WA5O4ojt5PoB4qZmySqZoZYNcSTOUFoqTVhMf4UtXeKbf4Y3UT1V8=
+PWl2IcCKFkRLetNF3AVl2vC6jD0yaIsnp5rkRgjNnGvFZn5tmUDtyKlgzBr0FDWOZ0hdw0CeZyR=
+FV984Jg_LwVbQZTQftYIUcz6wClbOCf0O_Efw7-d697W3CK95xylMH6xbeBUlfXYmOTWAj5y7kl=
+rdmC-rBDPwDbs5gkjPT0FdBmqIQ&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%=
+7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637378608147598394&amp;sdata=3D641nGMhLswETD1bEp2b2AsclTn2EJEWJndz0kEI=
+dhco%3D&amp;reserved=3D0" originalsrc=3D"https://link.mailgun.com/u/eJx9kMt=
+uwyAQRb-mLC3AxsCCRZWkv4EwTBJSAxbgqunX17Rq2qqP1Yzmce-ZcYo6OXLkFcUUE4wl4UT0oi=
+Pd_rCTe9bfE8HI4UHs7gYcU_VHb031KZbuknw8m-jK2TxCZ1NAZwVc0AkPguGJ9WA5O4ojt5PoB=
+4qZmySqZoZYNcSTOUFoqTVhMf4UtXeKbf4Y3UT1V8PWl2IcCKFkRLetNF3AVl2vC6jD0yaIsnp5=
+rkRgjNnGvFZn5tmUDtyKlgzBr0FDWOZ0hdw0CeZyRFV984Jg_LwVbQZTQftYIUcz6wClbOCf0O_=
+Efw7-d697W3CK95xylMH6xbeBUlfXYmOTWAj5y7klrdmC-rBDPwDbs5gkjPT0FdBmqIQ" shash=
+=3D"CcKGF9xqzkAcGtVexIqATyHQiJgkSB8w5UnF4fbetgXjCYcIViYZ7TVa7sYTH7wSudNeSWS=
+uiPyJ+rtLEgpOHt6Brs5tVRsCSDnUpFzBtDJGlcSiDGo1m2+QoEBTA3QsULVznxU7CMGTcu6PFV=
+WSvcavSqAUo+0/opLiWR4GYVY=3D" style=3D"color:#254fa5;font-weight:inherit">u=
+nsubscribe</a>.
+</p>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femail.notifications.joinhandshake.com%2Fc%2FeJx9kdluwyAQRb_GPFosXuCBhyj=
+Lb1gEJjGpjS17HDX9-kLSpFtaCQk0d-CeuTjNnapq4jWnnDJKFauZFDJn-Wa7VptSrJgs2XYn11=
+lBw4D-4K1BP4Q5Pw0-tCa4uTUvkNuhJ60uqBGsULJwB17vK2VLUVqlKK8PYOyeEzQdBGwgHM0R-=
+nS0ph-NP4bGO11Gf0oejzZfDZOuZFUwxllFOt0ijnMmVhnfxbWgM11nnlAlXUS9b-ZhmSxkYmMs=
+-rPHS9Mb38GU8SrJPTi_9FGGVP4o3uli-RvMtYc82If9CSw2eBlBb89xLDLpt1dkklJaxuQeeOA=
+WMk7QR6f4xtgNF5jSZIzWqiKon5igthMYhMYHhCmYLpLOc4zvM7pbbn82_pe6u15wuhY1r8kE1o=
+8-Ncy4uLQnNkWlVDH0n-PeAtV3O_ILMH1ZqVjJBH8HO2zY9g&amp;data=3D02%7C01%7CJerry=
+.Teng%40UTDallas.edu%7C3f36ed383aaf4116486008d86c779546%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C1%7C637378608147608386&amp;sdata=3DqyPOmCxWa8lxbV0WU3=
+EYrayuiAPCJgCyKk4AaCwbzT4%3D&amp;reserved=3D0" originalsrc=3D"https://email=
+.notifications.joinhandshake.com/c/eJx9kdluwyAQRb_GPFosXuCBhyjLb1gEJjGpjS17=
+HDX9-kLSpFtaCQk0d-CeuTjNnapq4jWnnDJKFauZFDJn-Wa7VptSrJgs2XYn11lBw4D-4K1BP4Q=
+5Pw0-tCa4uTUvkNuhJ60uqBGsULJwB17vK2VLUVqlKK8PYOyeEzQdBGwgHM0R-nS0ph-NP4bGO1=
+1Gf0oejzZfDZOuZFUwxllFOt0ijnMmVhnfxbWgM11nnlAlXUS9b-ZhmSxkYmMs-rPHS9Mb38GU8=
+SrJPTi_9FGGVP4o3uli-RvMtYc82If9CSw2eBlBb89xLDLpt1dkklJaxuQeeOAWMk7QR6f4xtgN=
+F5jSZIzWqiKon5igthMYhMYHhCmYLpLOc4zvM7pbbn82_pe6u15wuhY1r8kE1o8-Ncy4uLQnNkW=
+lVDH0n-PeAtV3O_ILMH1ZqVjJBH8HO2zY9g" shash=3D"pNBP+L+vor0hT4m/4S0lQ7+pMhUrH=
+ZA3hlFS6LGnD6CfqlZaEqCxGD/7JtUrZ2bB7ApV5ArfW4x7tm3zoPnNJ95pxC5F3E5xmvaEeicD=
+bXGFPnG6Qgn2jdJSK8o8Rd11kvVdaHkbCJoIfZ1tzUQuL3Nh2GG9FQxN/nezr0W+Clc=3D" sty=
+le=3D"color:#254fa5;font-weight:inherit;color: inherit; text-decoration: no=
+ne;">
+<img alt=3D"Handshake" class=3D"handshake-logo" src=3D"https://handshake-pr=
+oduction-cdn.joinhandshake.com/static_assets/hs-logo-red-lg.png" style=3D"m=
+argin-top:16px;width: 159px; height: 24px" title=3D"Handshake">
+</a>
+<p class=3D"muted extra-small" style=3D"font-size:18px;line-height:28px;col=
+or:#7a7a7a;font-size:14px;line-height:20px">P.O. Box 40770, San Francisco, =
+CA 94140</p>
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.notificatio=
+ns.joinhandshake.com/o/eJx9kMtuwyAQRb-mLC3AxsCCRZWkv4EwTBJSAxbgqunX17Rq2qqP=
+1Yzmce-ZcYo6OXLkFcUUE4wl4UT0oiPd_rCTe9bfE8HI4UHs7gYcU_VHb031KZbuknw8m-jK2Tx=
+CZ1NAZwVc0AkPguGJ9WA5O4ojt5PoB4qZmySqZoZYNcSTOUFoqTVhMf4UtXeKbf4Y3UT1V8PWl2=
+IcCKFkRLetNF3AVl2vC6jD0yaIsnp5rkRgjNnGvFZn5tmUDtyKlgzBr0FDWOZ0hdw0CeZyRFV98=
+4Jg_LwVbQZTQftYIUcz6wClbOCf0O_Efw7-d697W3CK95xylMH6xbeBUlfXYmOTWAj5y7klrdmC=
+-rBDPwDbs5gkjPT0FdBmqIQ"></body>
+</html>
+
+--43963e5404b3458f956fb4a4b2e6ca46--

@@ -1,0 +1,767 @@
+Received: from DM5PR01MB2570.prod.exchangelabs.com (2603:10b6:3:42::8) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 21:19:27
+ +0000
+Received: from SN1PR12CA0073.namprd12.prod.outlook.com (2603:10b6:802:20::44)
+ by DM5PR01MB2570.prod.exchangelabs.com (2603:10b6:3:42::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.27; Thu, 15 Oct 2020 21:19:18 +0000
+Received: from SN1NAM02FT022.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:802:20:cafe::3) by SN1PR12CA0073.outlook.office365.com
+ (2603:10b6:802:20::44) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Thu, 15 Oct 2020 21:19:18 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.148)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.148 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.148) by
+ SN1NAM02FT022.mail.protection.outlook.com (10.152.72.148) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 21:19:18 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 15 Oct 2020 16:18:58 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 15 Oct 2020 16:18:58 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 92367C00005A; Thu, 15 Oct 2020 16:18:58 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 39A0BC00005A;
+	Thu, 15 Oct 2020 16:18:44 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=poras@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  poras@utdallas.edu designates 40.107.92.80 as permitted
+  sender) identity=mailfrom; client-ip=40.107.92.80;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="poras@utdallas.edu";
+  x-sender="poras@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: JJRMHPz/MQ5p1M/I+eFq/4wptl1eYei+hR7e+uWj6dBWrpR1PRWL5b6W/MqrqWiYl9mCWZg9tn
+ Wb7m8QZRcobp6wQKHLH6HtMtQYkGEqInQOSPVRE2AQmkmpkaJN6qx5EglUykocDM6OZY2zH1dJ
+ KwmzUyKYKxsSfO3wM1ovLPRids+cJCaGt7NbwVFmaPWCQ9nYnNHj19Vvt4bMIewf9+t0X4qpwj
+ jHWz15nuWZUfZ4orRosB/ottpMtRPJFX94/jdWwQwhXNeaW1lUhUUkrfibnS4ySlQZA5vtOJAW
+ p2FrDzML1Zm7I32KHGYbRk4B
+X-IronPort-RemoteIP: 40.107.92.80
+X-IronPort-MID: 1126826
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0A7AQA/u4hfh1BcayhdAw4IBgEBAQEBAQcBARIBAQQEA?=
+ =?us-ascii?q?QFAgU+BIy9Rd1geAwcILAqNNaJUgWkCCQEBAQEBAQEBAQQBAwEjCgIEAQGES?=
+ =?us-ascii?q?gKCCSUBOBMCAwEBAQMCAwEBAQEBBAEBAQIBAQIDAgIBEwEBAX9ggQIBgUYBg?=
+ =?us-ascii?q?UoLAzEMgjcpAYMSAgEDBQEMEwgBEgEBByQMAQ8CAQgdAQEBHwcCBRAPDBQHA?=
+ =?us-ascii?q?QYDAgQBDQQBCAYUgwQBgnwBAgyfWwGBKD4CIwESLQEBAgmBBSmJVYE0gwEBA?=
+ =?us-ascii?q?QWFeQEJgT8HCYE4gySEdYU4ggCBEUOBYTwwPoFAAYJCPBUKDAkRgwOCLZAbi?=
+ =?us-ascii?q?kQmgSaQLIMWiA8DB4JqhywCgVaSDIMWigiULJFFgWeKc4YLjy8CBAIEBQIQB?=
+ =?us-ascii?q?YFrIYFZchODJAlEAQIBAg0BAgICAQECAQEIAQEBAY4cDA4JhDiJLj5DMTgCB?=
+ =?us-ascii?q?goBAQMJfIw7AYEQAQE?=
+IronPort-PHdr: =?us-ascii?q?9a23=3A+vBYmhZ6KfJPlXyxRusbsWz/LSx+4OfEezUN45?=
+ =?us-ascii?q?9isYplN5qZps68bB7h7PlgxGXEQZ/co6odzbaP7Oa+AidZvcbJmUtBWaQEbw?=
+ =?us-ascii?q?UCh8QSkl5oK+++Imq/EsTXaTcnFt9JTl5v8iLzG0FUHMHjew+a+SXqvnYdFR?=
+ =?us-ascii?q?rlKAV6OPn+FJLMgMSrzeCy/IDYbxlViDanbr5+MRe7oR/Qu8QYjoduN6k8xx?=
+ =?us-ascii?q?jUqXZUZupawn9lK0iOlBjm/Mew+5Bj8yVUu/0/8sNLTLv3caclQ7FGFToqK2?=
+ =?us-ascii?q?866tHluhnFVguP+2ATUn4KnRpSAgjK9w/1U5HsuSbnrOV92S2aPcrrTbAoXD?=
+ =?us-ascii?q?mp8qlmRAP0hCoBKjU063/chNBug61HoRKhvx1/zJDSYIGJL/p1Y6fRccoHSW?=
+ =?us-ascii?q?ZdQspdUipMCZ6+YYQSFeoMJeZWoZfgqVsSoxWwBgesC+HuyjBUiXD7xrc63/?=
+ =?us-ascii?q?g9HQzcwAAsA8wCvXLJp9v1LqcSVuW1wbHGwTjedfxW3Sz955LSch87uf2HQK?=
+ =?us-ascii?q?h+cc3LyUY1DAPJgEibpIv9PzOSzOQCqXOb4vF9VeKzlmEosQVxojy1ycc3kI?=
+ =?us-ascii?q?XGmJ8ayk3d+Ch/3Y06KsG2RlRhbt64DJtfqTuaN41uT80iQWxltik0xL0btJ?=
+ =?us-ascii?q?OnYiUEx4oryh7CZ/GFc4WG4gzuWeaeLztkmX9oerayihe2/EWk1+DwS9S53V?=
+ =?us-ascii?q?JXoyRKjNXBsG0G2RLU6siCUPR9/0Gh1C6S1wDP9+5LO0Q0la7BJJ462LI/iI?=
+ =?us-ascii?q?ccsVnFEyTrm0v2lLebe0o49uSy9ujrfrfrqoWYOoNqkA3zMbgiltS9DOgmKA?=
+ =?us-ascii?q?QCQmuW9fim2LDg/ED1WqtGguM2n6XBrpzXJNgXq6C8DgNIzoos8BeyAjKm3d?=
+ =?us-ascii?q?kdnHQIMVdIdReag4T1PVzFPer2Au2lg1u2lTdm3/DGMaPlApXKNnXNiKvsc7?=
+ =?us-ascii?q?Fg50JA0QY+0MhR6pBNBrEGO/38RFX9tNvFDh8lKAO0xPvnCNNg2Y8EQWKPGK?=
+ =?us-ascii?q?iZML/MvlCU+uIvIu6MZIkPtDb6Nvgl+/rujXg+mV8eZ6WmwZwXaHWgEvRnJU?=
+ =?us-ascii?q?WWf2bsj88OHGsWpAYyUfDmhV+YXTNXeXq+RaEx6i0jBIKjF4jDR4StgLKb3C?=
+ =?us-ascii?q?e8G51bfnhGCleWEXjybIWJQOoMaD6PLcB7ljwEUaKuS5Q72R6wqQD61qJrLv?=
+ =?us-ascii?q?DI9S0AqZLjyN916vXNmh4u7jx4Fdmd026WQmFwn2MIXCM23LtlrUxg1leMzL?=
+ =?us-ascii?q?J3g/hcFdNJ/PNFSBk1OoPBz+ZiEdD9RhrBfsuVSFahWtipHy0+Tskrz98BeU?=
+ =?us-ascii?q?ZwANGijhHY3yq2GL8ZjaGLBIAp/a3G23jxI9xyy23c2KY/klYmX9NFNXe6ia?=
+ =?us-ascii?q?5n6wjTG4nJnl2HmKm2bqQQxjbN9GeewmeVuEFYURVwUbneXXwFe0vWscn26V?=
+ =?us-ascii?q?nGT7+qE7snKRFNxtCfJatXOZXVigBdSfroI8nYb2+rlH25CQ3Akr6Hd8z3dE?=
+ =?us-ascii?q?0Z3T7BEw4Zjwwa+XKPLk4zCjr35yqUATd1U131S0ft6vVl7m6nQkYwywiRKU?=
+ =?us-ascii?q?BtyvD9rhMenrqTUdsX36kYo2E8tzl9GFK0xJTbB8fW40Irca5HJ8s97H9D1H?=
+ =?us-ascii?q?nFrEpgIpCpK6RrnRgTfxk99xfj3A4xEoVMucwrt28xihduJauc1FpaMT6UwM?=
+ =?us-ascii?q?ajFKfQLzy41hmrcKfM0xWW6NGM87xFoKAgrE/qpym0CkYr93FuyJ9Y32bKtc?=
+ =?us-ascii?q?aCNxYbTZ+kChV/zBN9vbyPJ3Blv9mOh1RxLam5tCPD0Ns1BewjjyytZMpbLL?=
+ =?us-ascii?q?jaSl3/CMRAQcildLF2wh31KBMcPOVCsqUzOpDubOOIjZaiJ/0ohze6lSJC6Y?=
+ =?us-ascii?q?F53FiL8n9kTfTBxL4Y3/2R2g+OTHHxgEr46JLNlItJZC8fEi+E8Qa5XNEDXq?=
+ =?us-ascii?q?RpZs5LBHyneYu3zYkj28eoBzhZ7F6mFxUN38r7MRaValX820VX2yF16TS/nj?=
+ =?us-ascii?q?Gx1BRpjz0gqq6Wx2rDz/mqeBccO2FNTXVvlh+wec7t149cDRLuP1BhnQDt/U?=
+ =?us-ascii?q?vgwqlHuKlzSgubCVxFeST7NSAqU6e9sKaDf98a7ZoptStNV+HvKVueS7P7v1?=
+ =?us-ascii?q?4by3a/Ry0HnG99Jmvs6s2q+n4ywHiQJ3tysnfDLMxrzE2Z5NeAGKIIm2ZART?=
+ =?us-ascii?q?F4jCmRDV+5bLzLtZ2ZkYnOtuemWievTJpWJGPzypmJrwOm+WFjBRm2hLa+ls?=
+ =?us-ascii?q?CtQm1YmWfrksJnUynFtkO2eo7x3r+SLP5rd01sDUS65sZnUNI2gs47g5ce3m?=
+ =?us-ascii?q?Ifj5Oe8C8ciWnENtNfyPGbDjJFVXsRztXS+gSgxFx7IyfD2dfiTnvEiJgpd5?=
+ =?us-ascii?q?ygb2gRwC54881aFPLe8ulfhSUsxzjw5QPJPaohxnFMk712riZd2rxBuRJxnH?=
+ =?us-ascii?q?nFROlKQg8Ae3SrzkrA7sji/vgNIj/3Kf7okhI5xIzEbvnKoxkACi+hJtF+Qm?=
+ =?us-ascii?q?koqJ04aQ2E0WWtuNvtIICCNItK5BPIy0+S3a8JePdT3rILnXQ1Y2ul5C98kr?=
+ =?us-ascii?q?dpg0A2hsPo+9TXY2Rr96akDhMKLSX7a4UL4DbxgK1Cn8GQmYeyApFmHTZNV5?=
+ =?us-ascii?q?ztKJDgWHcbsfCtblfcIHgHsn6eXIHnM0qa4UZioWjIFsn3ZWyLKHAdydx5Ah?=
+ =?us-ascii?q?SROR4GjQ=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,380,1596517200"; 
+   d="png'150?scan'150,208,217,150";a="1126826"
+X-MGA-submission: =?us-ascii?q?MDEmRm1OmIuMcFc5Q0VKbQ303vPEnuDiEVr7DE?=
+ =?us-ascii?q?ZK2eHTSfCjwk5z9YPHNvgquRO3vlqxoxzROsbX1VZmuWclIzYLXnlqP8?=
+ =?us-ascii?q?iE7QMYcVkYikjX5K9PZlXmSg2Y01tnxswitnqwzqzEk3W346Sdirxyzj?=
+ =?us-ascii?q?+f?=
+Received: from mail-bn7nam10on2080.outbound.protection.outlook.com (HELO NAM10-BN7-obe.outbound.protection.outlook.com) ([40.107.92.80])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 15 Oct 2020 16:16:40 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bsgjlrvTpqYdmsqhBrlKjzjDvrPeGGjNwv/hkMJdZ3wbELFC5mtAWN8dhCYojGUcTNb9h/iJvbDdjjB+aW6msly8fL2e80PsFRy+Sahx32Zop16w2vcgff5REjNSPDaJE1dDysP7HQtlrLJ7t+1jXL9q+dtO1efBldmzkf6HQhI0fJutn9z2KG08Xf4xi2rtIKCThW7A2cB3lPea5UvL6fbsMWNpUXOQDZD5bElgsUHV3MR9llV6P5I+3IfRgy6D4dhCTqB2/WUjhd9i7MJJKueXJCnOMBBShlMRT90NYYGoIcdguPnj/zTLXHczZLuuL6xoMFmCAxsxiotCqnEQYA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=0Ek5grQFajBWP+R70cCwLFSG8K2togHiQVt8TTPuGuo=;
+ b=Od69ilynbOPwcMOT84tQxlMftujYaR87bkAhMCwuljA8/PtY+Z6qW9Qkt6qguBAb8SIB6FC9iZsTJ7mUK04WNqNztO3vigwLAhCXACK0DfMfmV7kHQId2l/uKs8I91i+g14TUIezPB2sCzcvxNyprH3NX9ai33LbOZXabq/6e7HeAqkO3vLX0F/C2iGUCWyeEQtulzVO+t1um+/pqL13l+eogGj1ycXu5e8tK0JVIL0ZsaWjFUxE2V/79ERBEyZfQA/Ghyu7/LpLhtupusGyYf/fFK8zt2SXSxBaO+8VmIjM9mBZ1fynVwT5WZgoAnuHgogEemu5xw6XsBgEaka28Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=0Ek5grQFajBWP+R70cCwLFSG8K2togHiQVt8TTPuGuo=;
+ b=NuVwS9oQcOShAnPowLdumHTku+mnRwm3XrNt+jiW6qyCYIn5+So8xGMBGe1YOA90NhNHINKBqDWu2ByXm8hxFGzgj6tPv+3bZTN0DtKfBuEkcnX8jV/ev1Rn0L2dQUfANOUtunJiR/sQBx2Od1gWcvwPJqxLYejxsuCJFnZeTHw=
+Received: from DM6PR01MB4778.prod.exchangelabs.com (2603:10b6:5:6d::10) by
+ DM6PR01MB3627.prod.exchangelabs.com (2603:10b6:5:8a::27) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.22; Thu, 15 Oct 2020 21:16:37 +0000
+Received: from DM6PR01MB4778.prod.exchangelabs.com
+ ([fe80::24ea:712a:6723:be08]) by DM6PR01MB4778.prod.exchangelabs.com
+ ([fe80::24ea:712a:6723:be08%2]) with mapi id 15.20.3455.032; Thu, 15 Oct 2020
+ 21:16:37 +0000
+From: "Balsara, Poras" <poras@utdallas.edu>
+To: seecsundergrads <ecs.ug@lists.utdallas.edu>, "ecs.gr@lists.utdallas.edu"
+	<ecs.gr@lists.utdallas.edu>, "ecs.phd@lists.utdallas.edu"
+	<ecs.phd@lists.utdallas.edu>
+CC: "Walker, Amy" <amy.walker@utdallas.edu>
+Thread-Topic: Thank-a-Professor / Thank-a-TA Program from CTL
+Thread-Index: AQHWoyJidCqtVmr6K0Wmat5hrkLnH6mZA1lggAAmzUA=
+Date: Thu, 15 Oct 2020 21:16:37 +0000
+Message-ID: <DM6PR01MB477893624A1A7F9565DD5C33C9020@DM6PR01MB4778.prod.exchangelabs.com>
+References: <BYAPR01MB4328615B88FE89F973A45986BA020@BYAPR01MB4328.prod.exchangelabs.com>
+ <DM6PR01MB5914D78BD53D44BFE127727DCD020@DM6PR01MB5914.prod.exchangelabs.com>
+In-Reply-To: <DM6PR01MB5914D78BD53D44BFE127727DCD020@DM6PR01MB5914.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [72.180.86.225]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: e1830f7e-ddec-49b8-ba17-08d8714ff9e4
+x-ms-traffictypediagnostic: DM6PR01MB3627:|DM5PR01MB2570:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <DM6PR01MB362721646452D733C0C0FA49C9020@DM6PR01MB3627.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;OLM:9508;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ MqiYHnU9YmOsVGqeYnMD2eLcJ2JHRrN2cwdlFT0DyFYaYJmCk7UKKOyNDOI7UZYHq5GtA+opDXKgpBwqP3bE8IdWIxoklDInrp5VEmH4rQJc9RdoT43VJNC3iW5cOQCJya8xiK0VJ/eaOekaWExaRlHU1miG0UOBR7RXAo8roojkWazxYXvf3QlvZmuarJnX5Au6eND08WWRzSbNmiUpEpc8omjYY2Fa9FE6+T3OOVmsB6yZg6pjDBQHlKyF0TXv87PZFOt4hKoSqoHRp7WkWwOg8dZ+j/HwulgT/li3MhRPcUQ6szAXyRzebh7oSCp8cRbABYg9piuJnrT/1gF/tqRKbMoIvfQJw4MImc2cDqPsfJuIx07bdZkisFA2WPUltGU3WTQq47x/uXE4MuWrvw==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR01MB4778.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(396003)(136003)(376002)(366004)(39860400002)(346002)(166002)(296002)(786003)(450100002)(316002)(75432002)(66476007)(66576008)(66556008)(83380400001)(66446008)(110136005)(66946007)(64756008)(7696005)(8676002)(966005)(76116006)(26005)(6506007)(186003)(8936002)(2906002)(99936003)(478600001)(4326008)(33656002)(9686003)(5660300002)(86362001)(52536014)(71200400001)(55016002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: TL5bDDiM+APLa15xBXPwNhCTLKslOyZPuErc3KEIiDMLhsreCTBIVPcQe40jVH8spMhRpL3JsFe6YWM/Ej25A9ijj7O/qeCEIW0nog/I0Qoo2mvM8T7GQdPvn59j3xMCnxgAk4CIakw+GtuIx75ya8mHIHLChI06W9PbBHA7rBagOXTj36FOnh+tJHzt2kebLJlzItIvNVhzHg95dFW7tx15JgqVxwY4MZK3knHBrqgl36F7RbfYcnhDQx/C4dQK2mNG3NstBqVOwfp96VlOo/5FiGYhTBRLpL4DIKt4GblzR99voVAN9bggOZS+J8ctmY+775fo3HaarnC7lwNot1kzLM/z45mK6NUSbbKuWpx3X7Fqz9IWSaHB1UQRyapVQTgf/Cw7TzBPMQjcm5L7UOmsjN/ECj1zHg7VltdG+/df0v1L+kEIpUFx4XsOQ9X5z0EW02iIgb2UAXimUIFfSTG+3B1mDdfEmg01rHpLttY6cJKV0jZnl/spms69BWZ+2Fqs2cRRJJFezlV/Qlc2xmdulGK9iQh9+q/dXgqQaIhq0/8TYzVx7tAe/FUh1TAUwPpL188TPumaoUV2YFddR8zFTU33DqmdgJz3LVI3/1vDC7Db7XlvY9MMQt4Ie8vx/UjIHWeQFBB2ZRm5U3xj3w==
+Content-Type: multipart/related;
+	boundary="_005_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB3627
+Subject: [ecs.ug] FW: Thank-a-Professor / Thank-a-TA Program from CTL
+Reply-To: "Balsara, Poras" <poras@utdallas.edu>
+X-Loop: ecs.ug@lists.utdallas.edu
+X-Sequence: 120
+Errors-To: ecs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.ug>
+List-Post: <mailto:ecs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.ug/2020-10/DM6PR01MB477893624A1A7F9565DD5C33C9020%40DM6PR01MB4778.prod.exchangelabs.com>
+Return-Path: ecs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 21:19:18.1796
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e1830f7e-ddec-49b8-ba17-08d8714ff9e4
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 417ad850-60a9-43da-1ffb-08d8714f9a58
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.148;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 21:19:18.0897
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e1830f7e-ddec-49b8-ba17-08d8714ff9e4
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.148];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR01MB2570
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:09.5233932
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?FbpRmDKzoMac7boBd7YZJZeHbwlD/pBXW9MPc+DcALmiCCbELbelYo5h?=
+ =?Windows-1252?Q?eGErTLzJb67OgK0w5k/O5uLgdNrXljUsjSsh7KNyTOSfgOQG/im6vOk2?=
+ =?Windows-1252?Q?YoMKFIxnzFE/4wIE1ElEvq2AOoE+YpMvwmRgMBTa71XkDV5Isl3U7H/d?=
+ =?Windows-1252?Q?R9XAqylu6pqTuPIBdg1wFyuvz6JBW1xkT0laCg1OD/PgTid35tqWpklc?=
+ =?Windows-1252?Q?NzqlqRq/zVBpenJnYrRq2UKRSBzRZgM5fbS+/dCKfWKnDJuUw8nbGatF?=
+ =?Windows-1252?Q?Z5g1aB18eZAjhNc7ctFMt/b8OrBjCu98q5fjrXZulCFLS2ySWK19LkRY?=
+ =?Windows-1252?Q?g3+44eGLvyXYojEe+L0mJQdOYz4CuicIwtEeJKMAnXhHt02uQ3uUKWA8?=
+ =?Windows-1252?Q?Iplz2soazWyBwOo79D7mTuc9VjZwdnSiyeRIjF/mMLvR0d2IuoxDGTLC?=
+ =?Windows-1252?Q?Tbv2SSFDZzRGMb5nZpgExDdWKfIKzPsFChyTGhzot9T+Z5w2AEuqyqAw?=
+ =?Windows-1252?Q?+8NKb29oZ8RFuyEYkwMGQDJBHfU9U/XyEfIFJ03VaegGY+gaNbeShFyq?=
+ =?Windows-1252?Q?8Lfb3UUXIjFmkTimGP2+r9Lgkjzk/no4keXt4GHsrqyYc5yesJIKTU18?=
+ =?Windows-1252?Q?pX+k2xnM05gsN1uTVaWT65kdnq5SjVvn8//EmtcpU4fGPtpOgC272CsJ?=
+ =?Windows-1252?Q?IEYG6G+xbLQYHGF2H39QmY4AjvRVzxr1hSxJIz6tRFRtH8pXLo/KsdFe?=
+ =?Windows-1252?Q?e2iNl/MbRm50UY7AwpKU4Za2J5PmZ83EmpsQfyEk2N+FtmEYplSIED/n?=
+ =?Windows-1252?Q?OxXDEILpNyilbJxiait1x7867208OZ16ZlI7uSYtTvpPWu5OuKHK9++X?=
+ =?Windows-1252?Q?dR0Q1FqyBqass4rnAr+jMrRYXno4thnMWXbX+nrPVuDu7yA8rB58D6jj?=
+ =?Windows-1252?Q?goGFJfuE2mypyDXCmEaqRJQi/D6r29venUzWMUpaXlCB6ghPK8EHJAwD?=
+ =?Windows-1252?Q?DbUZdTEypyZw0OzztpSFw/YdTczCXckaLacP9aFLSgTkkN516Us3EBOn?=
+ =?Windows-1252?Q?MtJzPpBsfqO73Fudj3J0Irc63tVqjMakjHb1Z1M4zr+PI2O1pmXX2aeu?=
+ =?Windows-1252?Q?RMq3/9I7dsep1kwmnasmv4wKq714hZcfRuHmzFtG2hRQ3Se6cy1KQSok?=
+ =?Windows-1252?Q?SJstNyG80n8MPIavEIeq+Zeckr5esdVe257jgGqj7q9j8t+k2vaWH7S3?=
+ =?Windows-1252?Q?0EUTFrp5FMsP/ieCfZeE/Wdm7Pm4SOd8SyjdzKiSzqVNJozWLxws6GaR?=
+ =?Windows-1252?Q?ruLZ3DljpT/466O3opNXLdyFSIlEWLSkbbZBDOePOLbNTDBHmsGNb4j3?=
+ =?Windows-1252?Q?qxiAVafVU6JCVa9/i/tA077hJn4qIPu4cPTPuEKeg2Uib9SFK/t3JbcW?=
+ =?Windows-1252?Q?yVCF3tD7w+DekBCoO5tngSeyQzYra9jkxNUWbMB8WSzrf33HLuz50/sI?=
+ =?Windows-1252?Q?y5MGMFIPOgxvcW6lrHwWCbamjjZUBw=3D=3D?=
+MIME-Version: 1.0
+
+--_005_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_"
+
+--_000_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+Dear Students,
+Do you have an instructor you would like to thank this semester? Please con=
+sider participating in the "Thank-a-Prof / Thank-a-TA" program.
+Follow this link to access the form: https://eforms.utdallas.edu/ctl-thank-=
+program
+
+Thank a professor or teaching assistant at UT Dallas for facilitating a val=
+uable learning experience. Thank professors or teaching assistants who have=
+:
+*         Engaged you in your learning.
+*         Created an inclusive and supportive learning environment.
+*         Made it worthwhile to go to class.
+*         Made special effort to promote engagement and a personal touch in=
+ online or remote teaching.
+*         Taught you in innovative ways.
+*         Challenged you to excel inside and outside of the classroom.
+*         Inspired you to learn more and pursue your goals.
+*         Helped you overcome a difficulty or challenging learning experien=
+ce.
+How does Thank-a-Prof or Thank-a-TA work?
+1.       Compose your note using the online submission form.
+2.       Share details to tell your professor or TA why you are grateful.
+3.       Select if you want to include your name or if you prefer to remain=
+ anonymous.
+The UT Dallas Center for Teaching and Learning (CTL) will send a thank you =
+note to the instructor on your behalf.
+Questions? Please contact CTL@utdallas.edu<mailto:CTL@utdallas.edu>
+
+
+-- Poras
+
+[cid:image006.png@01D6A30E.8DEBD180]
+
+Poras T. Balsara, Ph.D.
+Associate Dean for Academic Affairs
+Professor of Electrical Engineering
+Erik Jonsson School of Engineering & Computer Science
+The University of Texas at Dallas
+800 W. Campbell Road, EC 33, Richardson, Texas 75080
+Office: ECSN 4.928  *  (972) 883-2557 *  http://www.utdallas.edu/~poras<htt=
+p://www.utdallas.edu/~poras>
+
+
+
+
+--_000_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Cambria",serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1027" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">Dear Students,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">Do you have an instructor you would like to thank this s=
+emester? Please consider participating in the &#8220;Thank-a-Prof / Thank-a=
+-TA&#8221; program.&nbsp;
+<br>
+Follow this link to access the form: <a href=3D"https://eforms.utdallas.edu=
+/ctl-thank-program">
+https://eforms.utdallas.edu/ctl-thank-program</a> <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">Thank a professor or teaching assistant at UT Dallas for=
+ facilitating a valuable learning experience. Thank professors or teaching =
+assistants who have:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Engaged you in your learning.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Created an inclusive and supportive learning environment.<o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Made it worthwhile to go to class.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Made special effort to promote engagement and a personal touch in online o=
+r remote teaching.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Taught you in innovative ways.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Challenged you to excel inside and outside of the classroom.<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Inspired you to learn more and pursue your goals.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Helped you overcome a difficulty or challenging learning experience.<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">How does Thank-a-Prof or Thank-a-TA work?<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Compose your note=
+ using the online submission form.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Share details to =
+tell your professor or TA why you are grateful.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select if you wan=
+t to include your name or if you prefer to remain anonymous.<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">The UT Dallas Center for Teaching and Learning (CTL) wil=
+l send a thank you note to the instructor on your behalf.<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">Questions? Please contact
+<a href=3D"mailto:CTL@utdallas.edu">CTL@utdallas.edu</a><o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ca=
+mbria&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:18.0pt;font-family:&quot;Ra=
+ge Italic&quot;">-- Poras<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:=
+black"><o:p></o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr>
+<td width=3D"78" rowspan=3D"5" style=3D"width:58.5pt;border:none;border-rig=
+ht:solid #008542 1.5pt;padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><!--[if gte vml 1]><v:shapetype id=3D"_x0000_t75" co=
+ordsize=3D"21600,21600" o:spt=3D"75" o:preferrelative=3D"t" path=3D"m@4@5l@=
+4@11@9@11@9@5xe" filled=3D"f" stroked=3D"f">
+<v:stroke joinstyle=3D"miter" />
+<v:formulas>
+<v:f eqn=3D"if lineDrawn pixelLineWidth 0" />
+<v:f eqn=3D"sum @0 1 0" />
+<v:f eqn=3D"sum 0 0 @1" />
+<v:f eqn=3D"prod @2 1 2" />
+<v:f eqn=3D"prod @3 21600 pixelWidth" />
+<v:f eqn=3D"prod @3 21600 pixelHeight" />
+<v:f eqn=3D"sum @0 0 1" />
+<v:f eqn=3D"prod @6 1 2" />
+<v:f eqn=3D"prod @7 21600 pixelWidth" />
+<v:f eqn=3D"sum @8 21600 0" />
+<v:f eqn=3D"prod @7 21600 pixelHeight" />
+<v:f eqn=3D"sum @10 21600 0" />
+</v:formulas>
+<v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect" />
+<o:lock v:ext=3D"edit" aspectratio=3D"t" />
+</v:shapetype><v:shape id=3D"Picture_x0020_3" o:spid=3D"_x0000_s1026" type=
+=3D"#_x0000_t75" style=3D'position:absolute;margin-left:0;margin-top:0;widt=
+h:54.75pt;height:54.75pt;z-index:251659264;visibility:visible;mso-wrap-styl=
+e:square;mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9p=
+t;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bot=
+tom:0;mso-position-horizontal:left;mso-position-horizontal-relative:text;ms=
+o-position-vertical:absolute;mso-position-vertical-relative:line;mso-width-=
+percent:0;mso-height-percent:0;mso-width-relative:page;mso-height-relative:=
+page' o:allowoverlap=3D"f">
+<v:imagedata src=3D"cid:image005.png@01D6A30E.8DEBD180" o:title=3D"" />
+<w:wrap type=3D"square" anchory=3D"line"/>
+</v:shape><![endif]--><![if !vml]><img width=3D"73" height=3D"73" style=3D"=
+width:.7604in;height:.7604in" src=3D"cid:image006.png@01D6A30E.8DEBD180" al=
+ign=3D"left" hspace=3D"12" v:shapes=3D"Picture_x0020_3"><![endif]><span sty=
+le=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:=
+black"><o:p></o:p></span></p>
+</td>
+<td width=3D"12" rowspan=3D"5" style=3D"width:9.0pt;padding:0in 0in 0in 0in=
+">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p>=
+</o:p></span></p>
+</td>
+<td width=3D"474" style=3D"width:355.5pt;padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><b><i><span style=3D"font-size:10.0pt;color:#333333"=
+>Poras T. Balsara, Ph.D.</span></i></b><span style=3D"font-size:12.0pt;font=
+-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"474" style=3D"width:355.5pt;padding:0in 0in 0in 0in"></td>
+</tr>
+<tr>
+<td width=3D"474" style=3D"width:355.5pt;padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">Assoc=
+iate Dean for Academic Affairs</span><span style=3D"font-size:12.0pt;font-f=
+amily:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">Profe=
+ssor of Electrical Engineering</span><span style=3D"font-size:12.0pt;font-f=
+amily:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"474" style=3D"width:355.5pt;padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">Erik =
+Jonsson School of Engineering &amp; Computer Science</span><span style=3D"f=
+ont-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">The U=
+niversity of Texas at Dallas</span><span style=3D"font-size:12.0pt;font-fam=
+ily:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">800 W=
+. Campbell Road, EC 33, Richardson, Texas 75080</span><span style=3D"font-s=
+ize:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></span=
+></p>
+</td>
+</tr>
+<tr>
+<td width=3D"474" valign=3D"top" style=3D"width:355.5pt;padding:0in 0in 0in=
+ 0in">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:#333333">Offic=
+e: ECSN 4.928&nbsp; &#8226;&nbsp; (972) 883-2557 &#8226;&nbsp;
+<a href=3D"http://www.utdallas.edu/~poras">www.utdallas.edu/~poras</a> </sp=
+an><span style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,=
+serif"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:10.0pt;color:black">&nbs=
+p;<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black"><o:p>&n=
+bsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_--
+
+--_005_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_
+Content-Type: image/png; name="image005.png"
+Content-Description: image005.png
+Content-Disposition: inline; filename="image005.png"; size=2702;
+	creation-date="Thu, 15 Oct 2020 21:16:37 GMT";
+	modification-date="Thu, 15 Oct 2020 21:16:37 GMT"
+Content-ID: <image005.png@01D6A30E.8DEBD180>
+Content-Transfer-Encoding: base64
+
+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
+Vf4FckA1sxH847sAAAAASUVORK5CYII=
+
+--_005_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_
+Content-Type: image/png; name="image006.png"
+Content-Description: image006.png
+Content-Disposition: inline; filename="image006.png"; size=7190;
+	creation-date="Thu, 15 Oct 2020 21:16:37 GMT";
+	modification-date="Thu, 15 Oct 2020 21:16:37 GMT"
+Content-ID: <image006.png@01D6A30E.8DEBD180>
+Content-Transfer-Encoding: base64
+
+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
+SUVORK5CYII=
+
+--_005_DM6PR01MB477893624A1A7F9565DD5C33C9020DM6PR01MB4778prod_--

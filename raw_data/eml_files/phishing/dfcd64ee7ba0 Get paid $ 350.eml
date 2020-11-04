@@ -1,0 +1,169 @@
+Received: from SN6PR01MB5086.prod.exchangelabs.com (2603:10b6:805:ba::23) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 8 Oct 2020 10:26:18
+ +0000
+Received: from BL0PR01CA0034.prod.exchangelabs.com (2603:10b6:208:71::47) by
+ SN6PR01MB5086.prod.exchangelabs.com (2603:10b6:805:ba::23) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.38; Thu, 8 Oct 2020 10:26:17 +0000
+Received: from BL2NAM02FT049.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:71:cafe::ef) by BL0PR01CA0034.outlook.office365.com
+ (2603:10b6:208:71::47) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.23 via Frontend
+ Transport; Thu, 8 Oct 2020 10:26:17 +0000
+Authentication-Results: spf=softfail (sender IP is 69.89.21.30)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=fail action=none
+ header.from=utdallas.edu;compauth=fail reason=601
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ utdallas.edu discourages use of 69.89.21.30 as permitted sender)
+Received: from qproxy5-pub.mail.unifiedlayer.com (69.89.21.30) by
+ BL2NAM02FT049.mail.protection.outlook.com (10.152.77.118) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.39 via Frontend Transport; Thu, 8 Oct 2020 10:26:16 +0000
+Received: from cmgw14.unifiedlayer.com (unknown [10.9.0.14])
+	by qproxy5.mail.unifiedlayer.com (Postfix) with ESMTP id BC25B6ACB5
+	for <jerry.teng@utdallas.edu>; Thu,  8 Oct 2020 04:26:15 -0600 (MDT)
+Received: from bh-76.webhostbox.net ([162.222.225.172])
+	by cmsmtp with ESMTP
+	id QT7nklkWMwNNlQT7nk5oUC; Thu, 08 Oct 2020 04:26:15 -0600
+X-Authority-Reason: nr=8
+X-Authority-Reason: s=1
+X-Authority-Analysis: v=2.3 cv=QpNwI26d c=1 sm=1 tr=0
+ a=KyLIKcbXZ+z9Z35bdwNsfg==:117 a=KyLIKcbXZ+z9Z35bdwNsfg==:17
+ a=d8lAdW6WVcYA:10:replyto_email_address_1 a=IkcTkHD0fZMA:10:nop_charset_1
+ a=x7bEGLp0ZPQA:10:nop_freemail a=afefHYAZSVUA:10:nop_rcvd_month_year
+ a=zu2WvcK8ktEA:10:endurance_base64_authed_username_1 a=98MR47aTE15z2CcRQ8IA:9
+ a=QEXdDO2ut3YA:10:nop_charset_2 a=NlgKJrDH5HQA:10:phone_number_3
+ a=A0aHnRYR7Tc4-zEo8hIO:22
+Received: from [160.152.248.93] (port=44032 helo=utdallas.edu)
+	by bh-76.webhostbox.net with esmtpa (Exim 4.93)
+	(envelope-from <Dr.campbell@utdallas.edu>)
+	id 1kQT7m-000ZkC-D7
+	for jerry.teng@utdallas.edu; Thu, 08 Oct 2020 10:26:15 +0000
+Reply-To: alumetproducts@gmail.com
+From: Dr.campbell@utdallas.edu
+To: jerry.teng@utdallas.edu
+Subject: Get paid $ 350 weekly
+Date: 08 Oct 2020 18:26:12 +0800
+Message-ID: <20201008182403.DE3A3CF538A82EB4@utdallas.edu>
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - bh-76.webhostbox.net
+X-AntiAbuse: Original Domain - utdallas.edu
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - utdallas.edu
+X-BWhitelist: no
+X-Source-IP: 160.152.248.93
+X-Source-L: No
+X-Exim-ID: 1kQT7m-000ZkC-D7
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-Source-Sender: (utdallas.edu) [160.152.248.93]:44032
+X-Source-Auth: info@circleadda.com
+X-Email-Count: 108
+X-Source-Cap: bWxtZGFpcnk7bnM3ODF2YXA7YmgtNzYud2ViaG9zdGJveC5uZXQ=
+X-Local-Domain: no
+Return-Path: dr.campbell@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Oct 2020 10:26:16.6029
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3d71d604-4c37-463c-7b36-08d86b7496f6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3d71d604-4c37-463c-7b36-08d86b7496f6
+X-MS-TrafficTypeDiagnostic: SN6PR01MB5086:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:165;
+X-MS-Exchange-Organization-SCL: 5
+X-Forefront-Antispam-Report:
+ CIP:69.89.21.30;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:qproxy5-pub.mail.unifiedlayer.com;PTR:qproxy5-pub.mail.unifiedlayer.com;CAT:SPOOF;SFS:(4636009)(6916009)(103936005)(2860700004)(22186003)(5660300002)(1076003)(26005)(1096003)(83380400001)(36756003)(75432002)(9686003)(8676002)(7596003)(6966003)(356005)(7636003)(7696005)(336012)(956004)(6666004)(58800400005)(37006003)(86362001)(54836003)(9786002)(4744005)(33656002)(2616005)(500100015)(17110700002);DIR:INB;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Oct 2020 10:26:16.4050
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3d71d604-4c37-463c-7b36-08d86b7496f6
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB5086
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3022592
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bEVjcEtLWDdYVmxHVm1vdVp4M0xVV2tRQ0ZmMnk5aktWN0RWbVZJZEFzVXRo?=
+ =?utf-8?B?T2hXSWpNS3hpclB3ZENiZ0VRR0svRDZ2aHozSDc2SzF0bXEwYW9GRHNIeEpK?=
+ =?utf-8?B?TVpERGlNOHNka2hpOXZZdXl1Vnd1d0h1OHNhL1IyTWZGUWwzTzFreG44eVpx?=
+ =?utf-8?B?eEFzYWpEVVA3Q0FQZHY3WkFHRzNFUWFOa1NPK1Y3ZlM3L01uRERtUllOcWJQ?=
+ =?utf-8?B?Qkg3VVYreUNZekhYcStJUldpZmJDRFpXMDgySGpDaXFPZzhuRzAvTVh4Q0Jz?=
+ =?utf-8?B?dFFCMVdyRXNNSU91em8zMEQ2cFY3c2hqYUE4bUM3aThNYW8vd3lUU2xDWEJQ?=
+ =?utf-8?B?d3RtNUNKK3JBaFFrUDBhd01Gc0hxbFFoYnZnbExHbG5hdXFKQ2FsOUF3OE1I?=
+ =?utf-8?B?cnIzMVZ6YkZqcElRd0hXekVMRkJGTVFHdFh0azJRVy83MUx5SFQybURBQWtL?=
+ =?utf-8?B?UmZIUVk0c1ZIZC95bG9DeHUwYXJ3UVp4aGVqeVc5b2FhQVRUdElTUCtOK1ps?=
+ =?utf-8?B?WC8xdTk3c0VtSDdnc1VjaFJOTmpXamdDRHQ5ckZtZVRLQzlJY3V3UTJTdFN6?=
+ =?utf-8?B?OWgyZjByVndTci8wdXlzRW5VaVExb1ExOUZPZGNCOUFwMEg4RUlJWEJPajFa?=
+ =?utf-8?B?a2NXcmIxcEt5eE5BNUt4TnRuYVlwclQ4cVphckdUWFFkZmc0RENZSm0vc3FJ?=
+ =?utf-8?B?QWhjRkR0MUxDTzl0UDIwNlVnYXJEV294RkEzenAvZXJXeWJValVvTmdtVVRM?=
+ =?utf-8?B?TTl4cGJSYlBmUi9valRVNXRiSUdENWUrRjRXTmh1TEhXQXdTVmVjUkJ0bFNF?=
+ =?utf-8?B?RVpLQzJET3RYWU1Calh2dlpoY2hyb0prTXE2RXBnSU1Xa1ptenRkeTFQYktY?=
+ =?utf-8?B?UVRFM3gyYzcxKy96YTlXWWJoUVkya3NTWGJzVlpBVHZSUk9Qd2h5Zko1dHNS?=
+ =?utf-8?B?M25sS3FrSDBXcE1US0R0VUlVRzd1WHFHVnI3dllWeVpRalkwT3NWOXJYMm9N?=
+ =?utf-8?B?dkkzbG1ka3ludEk4MVYwd0ZMS2xra2FhMldoaE5WQzQrMktrSjlSQ1RCSUVu?=
+ =?utf-8?B?dHZSR3JGSERQTk5UTnBLcmJJUWN5UE1HOVJWUElGT0dBcFdTaW5ldy9Wd0VZ?=
+ =?utf-8?B?OEFnNTJoUVRXbDdKSVVKUGdRZjdzT0hwSjBMT0lDVmo1NnRscmVaTWZ1dXZv?=
+ =?utf-8?B?a0U2c1lKQ1UzSzdHN0xUUXF2SCs2WWhMNXljSGgxYmJYN3ltbE1YYnVIL1hm?=
+ =?utf-8?B?cTlLdi94NGViYXpQaUdmeW5icC9kTjE4K1dFQTZGQldOYXJ3UkF0akYrSXJy?=
+ =?utf-8?B?R1UxaElrU29BY0cvT2svamI4eDBJa0o0TFJyZEhQTFY2cXhNQWt6RUk5ZjRR?=
+ =?utf-8?B?SHVURXMxNjhkQ253UVRUdVB1Wkt4WnR3NkNLRS95VDJCVnJvNTR6VFZXSzJG?=
+ =?utf-8?B?anplZzJpaFVzR2prbHlnUjhMbldnc3dVWTJmM2NLanZqQk1Ob1ZRR0grOVZm?=
+ =?utf-8?B?eTNxUnJXbEtzUFM0MURvK0srWTZ0QWtzY2RhYldwYWNadTBiNjhpQTYxd0FQ?=
+ =?utf-8?B?ZHBBRzlObUxnWFVZaWtoVjV4bDFGZXpUM0VpR29sVVpJQk1wTzcwSFd4MXls?=
+ =?utf-8?B?TXg5RDYwREZiZlozaWxhVVRNQjhhZG5KbTV5dUJRRi84VXZOWmdGc1hSSHo1?=
+ =?utf-8?B?NWFGYzc2R01nTmZaR0g2V2lWa0xpRnBKcms0b0RYSnp6MkIrVUt5N2E3cVRL?=
+ =?utf-8?B?aGFOSmFPU04rajNkWUxxWkt0Q1FtTDBXRlFVY0phWndtT0crUUZaaDg0cmhh?=
+ =?utf-8?B?YjVDOE5WaEhpanZ1aUdkOGJSZDV3UkVNZlVFaDgrdzMvdGg2dmlXYW1YSFVa?=
+ =?utf-8?B?ajBELzJ5ai9EUkxPZ2U2ZWltVHhRUVZGVUVvY1hHeUZDNk12anlPTG96Wm9v?=
+ =?utf-8?B?WFBUNy9HNTdZa21xeGZuV0ZzMXFMdzJESlJRamVoM29jcTBOSUFZUlVWSEVV?=
+ =?utf-8?B?a2tWZmlkd2JEV3g1cjlWZ2pUQVgrQmg3cGFFS1hIUTJnWjNJNk8zSHd4OW5N?=
+ =?utf-8?B?SmFGd1VDU2ZSZFpPaFd5WU9XSXdxV2xySXpSNTErVmlrTHVsOHlIdEpFSks2?=
+ =?utf-8?B?QXgvMGRNcjNXaHROYlArV0R3dUhaeVY2SGRqWnNFVzFZNmN5QnVzRFQ1LzBU?=
+ =?utf-8?B?bE1mdnJVekpaU2tNV1J5VUc0WHA0S0k2RWdqMGZaVGduSlpybmtCVmJtSXBB?=
+ =?utf-8?B?OHpzS3kwek0wMllpb3UxbDZSYzFkT0ltKzF2Tno5V3pkRTR5SmFnTnVsaVZs?=
+ =?utf-8?B?ZGxoMVJpcDNDYm4wZHhpdk9YZkZ4Vk00V1NsT1oyelhiL0psVU1VL2ZWMFpw?=
+ =?utf-8?B?UExFR2E0cUxqSVRWYVNaNUk4TzJoaERKK0RPWFB1VVRNdjg1djlrcC8rL2Nj?=
+ =?utf-8?B?M29RN29JVHdVallTQXpOMDdrOENCWlQvYThyQjdWemp2U2Z4U01Ud1RzQVlJ?=
+ =?utf-8?B?Yk5wSzN4WXQ2dUw4TUpFUmJ0aDhrSnVsNjIweGVxUE5zaEllekRKMG1oUjVy?=
+ =?utf-8?B?MDlhUS95WXMvL0F5OURmTDFyK2lrUkFJL0JxeWUvVDZybktFeStNSTFNclNj?=
+ =?utf-8?B?ajZ5Tmk3dkQrelh1SDVMcTRJbVpFVGtwT2lVc0d5T2FZdE1hRjZxV2NLcmlQ?=
+ =?utf-8?B?VktnVHVFOTJSSitEZVR2dzJ4Q3BlN0k0M1RiUnFqKzhNZDJCakFSY010R1k5?=
+ =?utf-8?B?OC82WkZMSVdSZ3pwLzg1Y25tZVlnRWlPb1hIbWlPMGpZTk92K0xJeXdYc3FL?=
+ =?utf-8?B?YjZYaUZtR0JuMkdXZUVTRWtmMDdLNDFtVzF2c3c1NEhMeTFPR2ZMOHFQdGNI?=
+ =?utf-8?B?NStYOEVDSzNsMko4aVlZSHVETUMzMUdHMzcyVDdEaGFrenBBVjVxQUV4UkVX?=
+ =?utf-8?Q?IDx/Elx8xWcL8Nr7?=
+MIME-Version: 1.0
+
+Get paid $ 350 weekly,
+Job available: Part-Time Administrative Assistant
+Due to the outbreak of the Coronavirus (COVID-19)
+You are eligible to work from home
+NOTE: YOU MIGHT RECEIVE THIS MESSAGE IN YOUR INBOX OR SPAM=20
+FOLDERS.
+For more information send me your full name in a text message to=20
+=E2=80=AA567 280 1652=E2=80=AC
+Dr. Campbell, John H
+
+

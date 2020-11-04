@@ -1,0 +1,248 @@
+Received: from DM5PR0102MB3400.prod.exchangelabs.com (2603:10b6:4:a4::10) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 17 Oct 2020 21:52:40
+ +0000
+Received: from DM5PR15CA0049.namprd15.prod.outlook.com (2603:10b6:3:ae::11) by
+ DM5PR0102MB3400.prod.exchangelabs.com (2603:10b6:4:a4::10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.25; Sat, 17 Oct 2020 21:52:39 +0000
+Received: from CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:ae:cafe::45) by DM5PR15CA0049.outlook.office365.com
+ (2603:10b6:3:ae::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Sat, 17 Oct 2020 21:52:39 +0000
+Authentication-Results: spf=pass (sender IP is 149.72.134.114)
+ smtp.mailfrom=bounce-sg.zoom.us; utdallas.edu; dkim=pass (signature was
+ verified) header.d=zoom.us;utdallas.edu; dmarc=pass action=none
+ header.from=zoom.us;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounce-sg.zoom.us
+ designates 149.72.134.114 as permitted sender)
+ receiver=protection.outlook.com; client-ip=149.72.134.114;
+ helo=o1.sg.zoom.us;
+Received: from o1.sg.zoom.us (149.72.134.114) by
+ CY1NAM02FT056.mail.protection.outlook.com (10.152.74.160) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Sat, 17 Oct 2020 21:52:38 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=zoom.us; 
+	h=content-transfer-encoding:content-type:from:mime-version:to:subject; 
+	s=sg; bh=dTqo7thEQB2jkfZk+BBCdX0chf/phnzQQXZnPZHSpyY=; b=R0m3v4J
+	esOz4+RDbckFKcvgdGhPt+L5CDOYEcPRGpG5qmVm1QPgbjNFS0tLxh2nkyumc3VV
+	4qVrROrYyh8B+UruxV2y3KyXd1gPNmqTgaYleGPJrrw4Gln+APC1Ul6aQCnHFcla
+	e8X2bSxC97KU5MqjKnaDKwbu/ZhbTxr7Dqaw=
+Received: by filter2614p1mdw1.sendgrid.net with SMTP id filter2614p1mdw1-23825-5F8B67A5-7
+        2020-10-17 21:52:37.464864077 +0000 UTC m=+92246.318049681
+Received: from MTU1NzAzODg (unknown)
+	by geopod-ismtpd-4-7 (SG) with HTTP id PI-tNAgKSqWwIP1C3nqCVg
+	Sat, 17 Oct 2020 21:52:37.425 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Date: Sat, 17 Oct 2020 21:52:37 +0000 (UTC)
+From: "Harsha Srikara" <no-reply@zoom.us>
+To: Jerry.Teng@UTDallas.edu
+Message-ID: <PI-tNAgKSqWwIP1C3nqCVg@geopod-ismtpd-4-7>
+Subject: Build an API Confirmation
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHpJbOht6kT1uCXzyfrXdHbrEZ1r7MSZ5ljwu1
+ j1y83g/YT1A0TRBpKII3wX+5w//hVq+0qpJhTWJElFicdMD9/iOe96xVwydHl3WpYB7bhwCxYUd8Ya
+ 1awJUvsRe+TLo5kvL1g7zAl55VM286oHJBKQaV2biXa7eiSp16TdZevjOMJNPhxMXybOPw2UaFZq7/
+ g=
+X-SG-ID: FQe39T3hAAZVe+nLebR7eBghwD5C5gbzKdc2H7KVuG5vNXPaW3nwNy83XzY+wiL+RC+M01gD/OPOK4
+ 23m5NjoigyD4GDl84nsklmYxsjc5VyJQ8k8KdZfA/kNZlEes2AHtXyj350+91LZ9Pg1rqda+aCLJgr
+ uEegTCTfQps3CmBUE6FGAhr1X+NA9ALM1SUDCIuseW0UMcQDtszDNoe8S4ArTKqSWwcIy5kP/WiGCH
+ b40Kbba1Uo3wZxzFtGZinoKubnsM2JRzEPUBIILCWc2cd1E1whpSgWLCda2LL1dbSDscAhIC4MA/bK
+ AFA+nrcUYee3iid2jOQZiDsS3FJRvnjqqzHTa/yA3TmKtIXogd3ydhVnH+5fQWODurq+rA4oN2pjAL
+ I35dZ8XXUcVvw4KEzbbu574MHyHFfEsfLpSI5ZQtJ51effLTyDqcpxmw4PZvsocrQQdKY7cxVv6l0b
+ 4R7vhTQr3mToYcjEDaLuZNNRloSNEgAy2Qr1s/XAD70XOr+ukaLaQZ0j9kwMgKTbpQ==
+X-Entity-ID: mDhfxq9OikvIkQieTwdfQA==
+Return-Path: bounces+15570388-632a-jerry.teng=utdallas.edu@bounce-sg.zoom.us
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Oct 2020 21:52:38.3914
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ aa514804-3f10-4074-537e-08d872e6f6f0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: aa514804-3f10-4074-537e-08d872e6f6f0
+X-MS-TrafficTypeDiagnostic: DM5PR0102MB3400:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:4502;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:149.72.134.114;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o1.sg.zoom.us;PTR:o1.sg.zoom.us;CAT:NONE;SFS:(4636009)(7916004)(286005)(4744005)(336012)(1096003)(966005)(36906005)(166002)(6486002)(6512007)(9686003)(356005)(8676002)(7596003)(3480700007)(83170400001)(7636003)(6916009)(36736006)(83380400001)(33716001)(26005)(2160300002)(513204002)(80162005)(80862006)(75396010);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Oct 2020 21:52:38.1845
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: aa514804-3f10-4074-537e-08d872e6f6f0
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR0102MB3400
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7987975
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WW9UTnBtT1pPNlF2bnVEaXBmK0E2aXU5UFpOMUhrWk9nQ2wzb3dyTXRRNWFT?=
+ =?utf-8?B?SnFSWGwxZXI0V1EvQ2plNWhSQ2Vmdll6SURxMUF5QlFCMk04KzlJOTkvWldq?=
+ =?utf-8?B?blhBYjkveWE4M25KZnM1NEZOTmRCOXVhWG5MTzNzTUxzRHhDblRBV1FlUi9Q?=
+ =?utf-8?B?bmdZKzlUbjAxYWpabVZ3WmNUUFJieVF1MGYzczhEemhWb0xPVWhkSG9XSnNF?=
+ =?utf-8?B?SldENzc0TXRRWGNiNThDV2JrV2piK2ZoTndxK1NwNTNPdXhuVm8wazFMTXVG?=
+ =?utf-8?B?Z1ZQdHJoTzltVWwyd21vMHJ2cERIMmJMd1RCb1J6SndYeUhMZ1lzdU1keDQ0?=
+ =?utf-8?B?QkRmNlFjdWZEbmJDY2cwSVZQVURNN0lzbFJZRnk0NlVremYxR2dOWmgxVXZP?=
+ =?utf-8?B?M0kwTXNtVG1XQklCRWZSV3dMSVkzNkorV3Y4WC95SHF1MzMrWFVYSFVwMWVN?=
+ =?utf-8?B?NFM4RDduMEJFSHZIOTh0ZkJEU3ZpQkxuVUQwdklYUzNFTVI3OFcvUmRZaHRW?=
+ =?utf-8?B?NUF5ZmFENWF6SFJkZ2hTck00NTRDdWJMRXFJVXpucWpkNTFtV1VkL21PS3RG?=
+ =?utf-8?B?SGxIdHJDT2kzMWlBNnU2Tk5aeTUvVnVuOHJSUkZBaDl6cEIyMDh3MzRGcFVz?=
+ =?utf-8?B?N2JjUHZWZU40VC9RVDB5WU9xNSs3Ykt3eXRMdWVEVkp3cUQzOStkV1VBQ25R?=
+ =?utf-8?B?c0FGbjMzN2VaREJ6cTFsL3hXK1FCTmVrdWo1TWRmZG9Id3lEeFNKSHQyTEFF?=
+ =?utf-8?B?SEhKUzhsTTJvTXpaaGFPR0w3RWtEcjBCSWdYYk1hRWdvbHhVN0l6ZEpEdklt?=
+ =?utf-8?B?anVsa0xpOTg2MDVPZnQzbVNEUXc3S0hlMHpBNnFXZE5tQisva2dZcWdMWkFZ?=
+ =?utf-8?B?eFR3OTRHV2VwWDdOSitUdlpHOFB3QkFBbnJrK3B5c2dSbXdvTFlUTXJRM3Qy?=
+ =?utf-8?B?UjcvcUl1ZE1XV3dJdVdLZ0pkMTJIek9iK0lhQWovczEvY0dLRFhab1dUODkv?=
+ =?utf-8?B?eWFnUHZ2V3BQaEdGSFdYb1BKZldXckZ0UG1aSG5IUHBVRTJRbHJHMXcvTjJX?=
+ =?utf-8?B?TTlCN2J2anJpWHh3VHFuODR4MnJ0QWVZY25yalJobzF2TzJxdjVtamFTcmd5?=
+ =?utf-8?B?V3NUN1hTV01TSTZUTGx0RDVnSWR5VHMvZkh1RmdwSitBTkU1Qk5KMGtuamF4?=
+ =?utf-8?B?b1ROeXVUNG5IVm4ya09udnZQSHRQbUpMQkxxWFRoN2NjWVk2Qi9oSlZSdzVo?=
+ =?utf-8?B?TGU5WEc1bzc2UG1ydDRIVDZtK1dPb3lhdXJXcFJ2T2FFdksyMzZiNUN5cVQw?=
+ =?utf-8?B?N3NIcEo0R0FGQUdDUWdtSkN0QlF0eHZQaTVmRjQ3K3oxUU1xMXFTVUFVblh1?=
+ =?utf-8?B?d3BTeXV2cHNHNmZTdHV6Qkd2T2JHWTlpU2J6OHJyeVZjT25jR3EvZXh1ME9T?=
+ =?utf-8?B?MVJLdnFPdm93YlhwYU1SUnpwRXJWak5EZmJHbm9EZzBFOWFaSmJiUkhwWVYw?=
+ =?utf-8?B?Sk5tNDFzTzZrd01LY2tKQVFxTVBnM3F2Y3hQWWFyUWlpTlljMDFjZzdBWlFC?=
+ =?utf-8?B?djIra1NYazc5dFBOaWRxOW5jWUl5aDlnb2t2bEQwQXVnUFVXbzllK1p4S3Rk?=
+ =?utf-8?B?M0orS05ZdWpLaWlTSHcyc25lMHhEZmIvMEEyOTU2L0Q1NDFaYlUzUnhwTnZw?=
+ =?utf-8?B?Mktwbk83TWZCL0kxcXB6c3lBZzBZWXJmSkY2Q3RPVG5iUjRTOEMwMlh4Y2J3?=
+ =?utf-8?B?Y0tsNzl0MGlkV2Fwa2YrQlVqZHNXTlo1UVZWTnlCZ1BUUjV3cngrMnR1ZXJX?=
+ =?utf-8?B?VVpXMEFkSk5PanpGSnZmekI0c3hwZ0lZaUQxYy9sa0N0NDNLUEcySWRMeEhT?=
+ =?utf-8?B?ekpPbk9GcUs5QXlCUVRzNDB0a003U2FGTTVDWUtPYm1qVDJTa29EUEJHaDJv?=
+ =?utf-8?B?ck9XUG5nMFNFYjQ4cWlTRi82bTdsSlUyWGFING4xaXh5WjluVEJaWUdoK0xv?=
+ =?utf-8?B?RFhBZjdORHRQNjAxcUJnM0kxdVMzNnVkZ29FMHQvNWw4K3RmbElXV0dMYzdj?=
+ =?utf-8?B?czA0aEx0RTk5TG9DZDgvaGdLVE9XZTJLbE9aUDRrK1VFT2hWSWV6a3ZkYkYz?=
+ =?utf-8?Q?YTciYfS9V7/w+IQr/03aLZ975?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>
+	html,body{
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.custom_logo {
+		margin: 0 auto;
+		max-width:640px;
+	}
+	.img-responsive {
+		display: block;
+		height: auto;
+		max-height: 200px;
+		align: middle;
+	}
+	.custom_image {
+		float: right;
+		margin: 10px 0 10px 10px;
+		max-width:100px;
+	}
+	.cssTab{
+	    margin-left:24px;
+	}
+	</style>
+=09
+</head>
+<body>=20
+<table style=3D"width:100%;background-color:#fff">
+<tr>
+	<td>Hi Jerry Teng,<br><br>Thank you for registering for &quot;Build an API=
+&quot;.<br><br>Please submit any questions to: harsha.srikara@acmutd.co<br>=
+<br>Date Time: Oct 17, 2020 05:00 PM Central Time (US and Canada)<br><br>Jo=
+in from PC, Mac, Linux, iOS or Android: <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fus02web.zoom.us%2Fw%2F810586091=
+67%3Ftk%3DyGni4CiJT_XVldQHw6CdQlVuUd45uWsmTEOBziRgw4k.DQIAAAAS33g4DxZ3T1hFb=
+nFPRFJTVzV0eDA3RkNzcXh3AAAAAAAAAAAAAAAAAAAAAAAAAAAA%26pwd%3DaktTOWVLM0pQMzF=
+lRVVKcDJCSVJVUT09&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7Caa514804=
+3f104074537e08d872e6f6f0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738=
+5683607442441%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DZruMUhqEZCEYwHzlYVoQT4J8FM=
+GG1Zgx83SRcl0fsq8%3D&amp;reserved=3D0" originalsrc=3D"https://us02web.zoom.=
+us/w/81058609167?tk=3DyGni4CiJT_XVldQHw6CdQlVuUd45uWsmTEOBziRgw4k.DQIAAAAS3=
+3g4DxZ3T1hFbnFPRFJTVzV0eDA3RkNzcXh3AAAAAAAAAAAAAAAAAAAAAAAAAAAA&amp;pwd=3Da=
+ktTOWVLM0pQMzFlRVVKcDJCSVJVUT09" shash=3D"KJCfKjQi2iodiBvCd7DaOpIiKUpq7wbmU=
+J8A8Fjmj22HcraJSNWztvH9biF24wmXyHvyP300pg8Q+V88tiPeD7AK+qCo1FYCnPOkpWq8Ixot=
+xZeoaYdH2dHj9YRqtsFZHtWeNGJNnu5z6S6ZuKjGp6mSLJ6i8SqC8Ve/Gdxe3YY=3D">Click H=
+ere to Join</a><br>Passcode: 504531<br>Note: This link should not be shared=
+ with others; it is unique to you.<br><a href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fus02web.zoom.us%2Fmeeting%2Fatten=
+dee%2FtZUtcuGurjIrHNPjnLGv6krIQ0gU8afFAdet%2Fics%3Fuser_id%3DwOXEnqODRSW5tx=
+07FCsqxw%26type%3Dicalendar&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%=
+7Caa5148043f104074537e08d872e6f6f0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637385683607452440%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DvQq64PWJf2Dv4Zga=
+e2oB6B5lFLuK8u1fbmxus0jtf%2Fc%3D&amp;reserved=3D0" originalsrc=3D"https://u=
+s02web.zoom.us/meeting/attendee/tZUtcuGurjIrHNPjnLGv6krIQ0gU8afFAdet/ics?us=
+er_id=3DwOXEnqODRSW5tx07FCsqxw&amp;type=3Dicalendar" shash=3D"RPE82iFhGZLO8=
+q7hvg1N/3rC070E37Gj2sowhb+RWxFL5dkVwuJps2YqzfP1CBkoDqmqNLdaaboPN7SLymziaQxZ=
+I0q4zgH2m9gJeVzBkMPBkvhc2FxQruM0+7pHju2eN0fP8J07RgkiqWBI8oESbnfm4MA5BcxWes2=
+Qa+v4U3k=3D">Add to Calendar</a>  <a href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fus02web.zoom.us%2Fmeeting%2Fattendee%=
+2FtZUtcuGurjIrHNPjnLGv6krIQ0gU8afFAdet%2Fcalendar%2Fgoogle%2Fadd%3Fuser_id%=
+3DwOXEnqODRSW5tx07FCsqxw%26type%3Dgoogle&amp;data=3D04%7C01%7Cjerry.teng%40=
+utdallas.edu%7Caa5148043f104074537e08d872e6f6f0%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C0%7C637385683607452440%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D0qb=
+C%2FD2BgGlcW3EXA2L8kCTRpmPUFHCgpce2yOy15i4%3D&amp;reserved=3D0" originalsrc=
+=3D"https://us02web.zoom.us/meeting/attendee/tZUtcuGurjIrHNPjnLGv6krIQ0gU8a=
+fFAdet/calendar/google/add?user_id=3DwOXEnqODRSW5tx07FCsqxw&amp;type=3Dgoog=
+le" shash=3D"gpuXlP+f2IdphDaBSdFTxCuMsiaXGkLlKNFLPy0zCtgil+6q9ABLGA5TBH0cg5=
+zQtqP1pBcMJIXJLt8aFtw+L+gdF3a6U6HF00N20EuvJPW65ojXGX5NeDdizKWJxkRAzKHo/ydDw=
+i5zO8KJ3YA0lE+H+gFpspiP4x6lZpGji7M=3D">Add to Google Calendar</a> &nbsp;  <=
+a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fus02web.zoom.us%2Fmeeting%2Fattendee%2FtZUtcuGurjIrHNPjnLGv6krIQ0gU8afFA=
+det%2Fcal%3Fuser_id%3DwOXEnqODRSW5tx07FCsqxw%26type%3Dyahoo&amp;data=3D04%7=
+C01%7Cjerry.teng%40utdallas.edu%7Caa5148043f104074537e08d872e6f6f0%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385683607462429%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1=
+000&amp;sdata=3DKjduyX%2BZmnAXzl%2FKbruuk0XZYU%2FCUYO3uPL6vRrn0Vs%3D&amp;re=
+served=3D0" originalsrc=3D"https://us02web.zoom.us/meeting/attendee/tZUtcuG=
+urjIrHNPjnLGv6krIQ0gU8afFAdet/cal?user_id=3DwOXEnqODRSW5tx07FCsqxw&amp;type=
+=3Dyahoo" shash=3D"q90nleJjd2cl+dxbJjL6TD5/COEfZvQNOiUXQaXDsT7LiJ3IBEHjMRBK=
+m6yKpItoK0eR9ZE/RZEXwem8SNTzd1UpKwFDsAvVdWqvZhA9phdPRg1MbphGqLwTEKjKnWiod0j=
+WMRG3zo4XlaalaH6e3Mxr8HglR2dKv/UewyFzmAs=3D">Add to Yahoo Calendar</a><br><=
+br><br>Or iPhone one-tap<br>&nbsp;&nbsp;&nbsp;&nbsp;US: +13462487799,,81058=
+609167#  or +16699009128,,81058609167# <br>Or Telephone:<br>&nbsp;&nbsp;&nb=
+sp;&nbsp;Dial(for higher quality, dial a number based on your current locat=
+ion):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US: +1 346 248 779=
+9  or +1 669 900 9128  or +1 253 215 8782  or +1 301 715 8592  or +1 312 62=
+6 6799  or +1 646 558 8656 <br>&nbsp;&nbsp;&nbsp;&nbsp;Meeting ID: 810 5860=
+ 9167<br>&nbsp;&nbsp;&nbsp;&nbsp;Passcode: 504531<br>&nbsp;&nbsp;&nbsp;&nbs=
+p;International numbers available: https://us02web.zoom.us/u/kViH5CXan<br><=
+br><br><br>You can <a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Fus02web.zoom.us%2Fmeeting%2Fregister%2FtZUtcuGurjIrH=
+NPjnLGv6krIQ0gU8afFAdet%2Fsuccess%3Fact%3Dcancel%26user_id%3DwOXEnqODRSW5tx=
+07FCsqxw&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7Caa5148043f1040745=
+37e08d872e6f6f0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738568360746=
+2429%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D6MwzblaxhRVxoGQy2vDuoyEq%2FnqbXvnca=
+pXLYOg7jfQ%3D&amp;reserved=3D0" originalsrc=3D"https://us02web.zoom.us/meet=
+ing/register/tZUtcuGurjIrHNPjnLGv6krIQ0gU8afFAdet/success?act=3Dcancel&amp;=
+user_id=3DwOXEnqODRSW5tx07FCsqxw" shash=3D"YWH+NKTgXJXoyIEf0aBiHOtSz3doVqS/=
+KM+H4eeFkWKPdxbW7nXsLkoZJbDlSBPnLiWuc/ncsViJ3WMkGorHHfehyyd7ijJFV6fu12kRxx/=
+3HQ7O8DxOsoVVzSVy6wwAy5oGMO7zDiIO7Ai6P9y6wvg9lG7fWNi5vzko6+257DQ=3D" target=
+=3D"_blank">cancel</a> your registration at any time.<br></td>=09
+</tr>
+
+<tr style=3D"height:40px">
+	<td>&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>=

@@ -1,0 +1,698 @@
+Received: from PH0PR01MB6421.prod.exchangelabs.com (2603:10b6:510:9::7) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 24 Oct 2020 16:42:54
+ +0000
+Received: from CY1PR03CA0019.namprd03.prod.outlook.com (2603:10b6:600::29) by
+ PH0PR01MB6421.prod.exchangelabs.com (2603:10b6:510:9::7) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Sat, 24 Oct 2020 16:42:50 +0000
+Received: from CY1NAM02FT012.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:600:0:cafe::e) by CY1PR03CA0019.outlook.office365.com
+ (2603:10b6:600::29) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Sat, 24 Oct 2020 16:42:50 +0000
+Authentication-Results: spf=pass (sender IP is 192.174.82.103)
+ smtp.mailfrom=itemail.trello.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=trello.com;utdallas.edu; dmarc=pass action=none
+ header.from=trello.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of itemail.trello.com
+ designates 192.174.82.103 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.174.82.103;
+ helo=mta-82-103.sparkpostmail.com;
+Received: from mta-82-103.sparkpostmail.com (192.174.82.103) by
+ CY1NAM02FT012.mail.protection.outlook.com (10.152.75.158) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Sat, 24 Oct 2020 16:42:49 +0000
+X-MSFBL: KPF3xhYjsCrVNYELDpU1cFeu1wBbrb4DIDuVmJWn/kY=|eyJzdWJhY2NvdW50X2l
+	kIjoiMCIsImN1c3RvbWVyX2lkIjoiMTgyMDcxIiwiciI6ImplcnJ5LnRlbmdAdXR
+	kYWxsYXMuZWR1IiwibWVzc2FnZV9pZCI6IjAwMWU4OTU5OTQ1ZjhhNzA5MTA2Iiw
+	idGVuYW50X2lkIjoic3BjIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=trello.com;
+	s=scph0917; t=1603557769; i=@trello.com;
+	bh=EmvdBYBrJDZQRsW0waN+itGcrm2WUyJA8Z3ElP+drIc=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=dMLEHj6T+kLwbN9Vit6PqOC+a5wqoxcrlCEd0FuRh2fHZ50A3/uPwQgROeXm6gVI5
+	 Z1C/YFudvE71Maw8UlJVWb0FU+o0MCm/scJwaQWNMYkXv7Y6bBmLHLpHPkdcBl6qGX
+	 J04BcScQS5fbT1wntJi8mdJ7aeI+sztihFib7FYQ=
+To: "Jerry Teng" <jerry.teng@utdallas.edu>
+Message-ID: <19.60.28810.989549F5@ad.mta1vrest.cc.prd.sparkpost>
+Date: Sat, 24 Oct 2020 16:42:49 +0000
+Content-Type: multipart/alternative; boundary="_----XPbeSzCr4uTZ6bx3broITA===_58/60-28810-989549F5"
+Reply-To: taco@trello.com
+Subject: Connect Trello to your favorite apps
+X-Campaign-ID: 1606747
+From: "Taco from Trello" <taco@trello.com>
+X-Message-ID: bc82478e0fd34257b4387ec535d89907
+X-Feedback-ID: 2219580:1606747:6291:iterable
+Feedback-ID: 2219580:1606747:6291:iterable
+List-Unsubscribe:
+ <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:u9EvAj4F4_HFe04JFYyuoweTu9od5U0Wotx8dFB_MqI~|eyAicmNwdF90byI6ICJqZXJyeS50ZW5nQHV0ZGFsbGFzLmVkdSIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjE4MjA3MSIsICJzdWJhY2NvdW50X2lkIjogIjAiLCAibWVzc2FnZV9pZCI6ICIwMDFlODk1OTk0NWY4YTcwOTEwNiIgfQ~~>
+List-Id: <spc.182071.0.sparkpostmail.com>
+Return-Path: msprvs1=18566ZvuBsuI1=bounces-182071@itemail.trello.com
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2020 16:42:50.1002
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 791a8792-cb85-43b8-6c4a-08d8783bd858
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT012.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 791a8792-cb85-43b8-6c4a-08d8783bd858
+X-MS-TrafficTypeDiagnostic: PH0PR01MB6421:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2201;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 10691367174333378234;10472509406921393873;579392415185486109;12886660538202241525;12004490004759322795;18305518439175143218;3540855401474507122;3039467346271315879;17784535082919270533;13713839102096950481
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.174.82.103;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mta-82-103.sparkpostmail.com;PTR:mta-82-103.sparkpostmail.com;CAT:NONE;SFS:(4636009)(286005)(76236003)(356005)(33656002)(103116003)(956004)(6486002)(66574015)(6506007)(26005)(19627405001)(118246002)(83380400001)(22186003)(33964004)(3450700001)(7636003)(7596003)(36906005)(336012)(6916009)(36736006)(1096003)(166002)(58800400005)(83170400001)(19810500001)(6512007)(8676002)(9686003)(80870200002)(32090200005)(131040200001)(9766925004);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2020 16:42:49.8323
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 791a8792-cb85-43b8-6c4a-08d8783bd858
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT012.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR01MB6421
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.8848005
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NVV3UGJHVkdGeG9XOU5ndkZPRlFFcTRXUUZQL0pTZ21PaVdCM2NMSHc3Q3dY?=
+ =?utf-8?B?VWR1VE1RcFA0Rk1uMnZSUEdDREVKM25SOVozMEJyeEJMVjNxRk84c29Xai9E?=
+ =?utf-8?B?amlpM2U4TENGQ25oWW90UzVEOXEzU1o4empwaGxoNS91ek5YSHFjYnJyVVRm?=
+ =?utf-8?B?aXN2aFd2REw2aUxqV0pYL2pGNVlvaGlpVk83dWx5cEJLRE02SVAxd2FobFkw?=
+ =?utf-8?B?RUlnZ01hbmEva1h2NWFzaFVUQ0VYbXIwc3I3Vm1zVUo3L2ZBOFRsMlk2Rmwx?=
+ =?utf-8?B?NmpTblhIWWRaSTU3QlAxTHBmd0FtTmZvb1NuQWx3Y2tsTjdjR2JjVHBwMjdh?=
+ =?utf-8?B?TWxJRDI3OUx2WjJzMk1qektvbTYyZVZNcGtycFJ3TGdacUdJemVEVEJZL2Zp?=
+ =?utf-8?B?a0RoVXl2Mm82TFhNZkRjN1k1ZnRTUHRFcFFIZHV6SnYxQkFJdTFJVmpHTFQ5?=
+ =?utf-8?B?dVcxRzFtSDlaYnVXNS9vMXBheEp2M3RxcTFTcVlPQkV2M1BiS1k1dlNpeW5Q?=
+ =?utf-8?B?YWgzMjdCc0podENhS2J2ZHAxYWx4U0RYaDlaTWlGS081cTVtUHlIYXQxU2pF?=
+ =?utf-8?B?QlJCaS93a3ZJTVZlajBrbTkxWitIRFJ5cGsyYmdwamQwTFZxSDZuN3N0czMw?=
+ =?utf-8?B?WjdCdUdwVlRSc2l1OWgwZE1MMnczcWxRb0Z4V3ZrL1lVVkFiaTFPWWtvM1Bt?=
+ =?utf-8?B?SDh3MkViUDQ3M3VlM3F5bmI2YWZZaXVueFlSZnAwUFl3Z085cTJKcUFuSS9E?=
+ =?utf-8?B?RGJITTlNbC9tNDlHaGQxcW9BMVlBRC9FZnRxQkRGWGczUCtEQzZSaGtjRkFz?=
+ =?utf-8?B?QzNTdzZBbitwYkRabElaK2ZNL2lUVUxVSlJURGRmQjFZeWcrYytYU3hNRHNo?=
+ =?utf-8?B?azllQXU2WGhiUk5nc0JIVEt2QVMxd0FHSzNYS3ZhNjB1T0drbDBqbmNDczBo?=
+ =?utf-8?B?bG9oV24yY3ZCUVhQS0x5RWY3SEVhamZYNSt6ZUt2U2U4YXFpTDZyVjRTa001?=
+ =?utf-8?B?M0ZZWERBbmI2N3NGeW12Q1dpUnlqZFkrbzk4WVZHdS8rSjFxZE8yaGc0bHF5?=
+ =?utf-8?B?R3pjNzZYNjBFODF2d0FWcGpxYW0xODlWd2VpdFU5Tld0dHI1Y0NEYUpKaDlW?=
+ =?utf-8?B?VGVkL3dnTC9KM0ZaRmZiY3VFS2JUZ09xTWltR1FqRmFMTTRoRXU1TlB2ZEhR?=
+ =?utf-8?B?NDZzQU1mVVJDUVh6MVY1b201SHJvK0ZjZVg5UFkxNDREdGRpajA3QnVmZ3hn?=
+ =?utf-8?B?UmFTL0d0R1BZRFI2bUxKVlBjYmJkemtFWW8rU3VNYTNJWjFOYjJpTHh1YjlN?=
+ =?utf-8?B?Q3Jka0RSSEYyMVJ5VlBuY1NsYUVyYXBNZUZvaWoxbHl6OUZLQTdkN1pLMGIr?=
+ =?utf-8?B?OUxINmJzMHlML1VZV21EYkZSS3JSY2dkODNjdzFQc1B5M2JGREU1ZE5lLytT?=
+ =?utf-8?B?UDhkbXVjcFhxWUhyQmIwbEEwakxOelVDY24zbTBwTkNCLzRHakE4UzR6OVp3?=
+ =?utf-8?B?N1pOczFOMjFjRURCN1RKNEs4LzJwZjQ2WDJNMWRzTWxrcUtpa1Y2Z2EzZWZ4?=
+ =?utf-8?B?eisxOEpNUW5vZVdiTVR2VWtyZVZXdjVwQ1hYU0dadWo5a2ZFYmNtNzR3Zksv?=
+ =?utf-8?B?dlRKS054cy8vUlF2MVFmSUdBNjlwdFI1cjVyQTZtNUNUVmN4eTNpckJZVkd6?=
+ =?utf-8?B?T3dlbUNjbU5YMzlSUlNLazZsS1F0cU1ybmtINkRSRTZNdjBPRjVFNzEwVGh6?=
+ =?utf-8?B?WjZob05YYjF2RU1Zb3RlemhTTUFjdERQRVhoL2dpRzRqN0l5QStmT1pmK0R5?=
+ =?utf-8?B?TEY1ZHJOK2JRMm85NWhrZVQ1eVJaQWZMSEdCOTRhTW53ald0ZENvdlpFOWtk?=
+ =?utf-8?B?YStxTThHdFJHNk1vMUNUVjRnRkhyWlc5ZTBTWmsvUGxwU1NJU24yZW51QWhK?=
+ =?utf-8?B?a1c0M1VXWlIxT1NZQ0FUOG1oNmdyaVdNZkp4b2tGaXY1aEpvM0JkUkNuNWIy?=
+ =?utf-8?B?MkMvV3JjRC81UlVmUTZsUHZKM3IxWDhQbFZqbHA4QTNsMkY4c0FWZGErUzkr?=
+ =?utf-8?B?cVhQWklHcDBPQTQyRnE0UGR2aHF1UG9aYjQyWENFOGd6Ti9KaERUcTFIMnkz?=
+ =?utf-8?B?eEFJV1cxYklBQUFUY0t2aGVweG9ESDRLVk1RQ1FndXp0emt3RU5uTnJXWXlC?=
+ =?utf-8?Q?ambw64iQGWoUMznOKi3g8bc=3D?=
+MIME-Version: 1.0
+
+--_----XPbeSzCr4uTZ6bx3broITA===_58/60-28810-989549F5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Better Together Uncover the magic of Power-Ups =0A=
+=0A=
+View in Browser =E2=86=92 =0A=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trel=
+lomail.com%2Fe%2Fevib%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc8247=
+8e0fd34257b4387ec535d89907%26_e%3DlLBatCAsA6APXCD5suy-ajgqNJlicJrYlNE2xlG_G=
+u0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-rL4KIlKYb8xTlVmkOl0PDTc4KXTDZ6tvxk5eNG_=
+e4TlrljMx74-&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb854=
+3b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373915457=
+41222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DHwPPSUjzBwTUZU%2BXnLWfqvaC8AvdJ=
+e8fh6kORKDHj4o%3D&amp;reserved=3D0>=0A=
+ <https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftrell=
+o.com%2Fpower-ups&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792=
+cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739=
+1545741222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DB5fLN4x3vJs8bmRw6RzkuCSnr7=
+Lo0DTX%2Fvesu8ZwYLM%3D&amp;reserved=3D0> =0A=
+=0A=
+=0A=
+=0A=
+Bring superpowers to your workflow with Power-Ups=E2=80=94integrations and =
+features =0A=
+that supercharge your Trello boards.=0A=
+ <https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fblog.=
+trello.com%2Ftrello-power-ups-for-remote-work&amp;data=3D04%7C01%7Cjerry.te=
+ng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiM=
+C4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=
+=3DTCjnfBcLUMz8vYjumGpKHu73Q1qZaGVJcnMve8IQE7E%3D&amp;reserved=3D0> =0A=
+Get started with Trello users=E2=80=99 most popular picks: =0A=
+=0A=
+ * Calendar <https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Ftrello.com%2Fpower-ups%2F55a5d917446f517774210011&amp;data=3D04%7C01%=
+7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&=
+amp;sdata=3DoYN%2BxNb%2F8%2F4nvsutcqVHflqtFr68SerGhnUDaxjUllM%3D&amp;reserv=
+ed=3D0>: See all =0A=
+card due dates in a monthly view =0A=
+ * Google Drive <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Ftrello.com%2Fpower-ups%2F55a5d916446f517774210006&amp;data=3D04%7=
+C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000&amp;sdata=3Dnb2sq1Khl3ZjtPvlet7oaGtY%2BONGmUx54kHJRr2YFas%3D&amp;reserv=
+ed=3D0>: =0A=
+Easily share and collaborate on your docs =0A=
+ * Custom Fields <https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Ftrello.com%2Fpower-ups%2F56d5e249a98895a9797bebb9&amp;data=3D04%=
+7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+3000&amp;sdata=3DeTYsj7KeqOA599mxm%2FmAfg2SxjO9MgkXSiwlG86Vxv0%3D&amp;reser=
+ved=3D0>: =0A=
+Display custom details on the front of cards =0A=
+Explore The Power-Up Directory <https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Ftrello.com%2Fpower-ups&amp;data=3D04%7C01%7Cjerry.=
+teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdat=
+a=3DB5fLN4x3vJs8bmRw6RzkuCSnr7Lo0DTX%2Fvesu8ZwYLM%3D&amp;reserved=3D0> =0A=
+Want more?=0A=
+ Get your productivity fix at the Trello Blog =E2=86=92 <https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fblog.trello.com%2F&amp;da=
+ta=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C3000&amp;sdata=3DmrKdbPVaXvFTvsWxNYlMKxlwpDAwzDtruA7JGD1klsc%3D&amp=
+;reserved=3D0> =0A=
+ <https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ffaceb=
+ook.com%2Ftrelloapp&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a87=
+92cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637=
+391545741222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzI=
+iLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3D0Rk5KV2Cdu5kc2bZ1ESfDEXN=
+0B9%2BegT6J9Bu%2Fi99mbc%3D&amp;reserved=3D0>=C2=A0=C2=A0  <https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftwitter.com%2Ftrello&am=
+p;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783b=
+d858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741222803%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000&amp;sdata=3DdmEu7YLrMRAnJpGku6n5w5kPLYXJYmgAe%2FwPrAOR434%=
+3D&amp;reserved=3D0>=C2=A0=C2=A0  =0A=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.li=
+nkedin.com%2Fcompany%2Ftrello&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637391545741222803%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DahdGywd2vhom6E=
+Ehv8a3j46W9cXNWqw0C3OhRfJiKis%3D&amp;reserved=3D0>=C2=A0=C2=A0  <https://na=
+m02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Finstagram.com%2Ft=
+relloapp&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86=
+c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739154574123=
+2758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3D06RspuFa8xy0Zi%2BE0E9carEErLrnNhNI3=
+xjITROlVM8%3D&amp;reserved=3D0> =0A=
+Copyright =C2=A9 2020 Trello Inc., All rights reserved.=0A=
+ 888 Broadway Floor 4 New York, NY 10003 =0A=
+View in Browser =0A=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trel=
+lomail.com%2Fe%2Fevib%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc8247=
+8e0fd34257b4387ec535d89907%26_e%3DlLBatCAsA6APXCD5suy-ajgqNJlicJrYlNE2xlG_G=
+u0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-rL4KIlKYb8xTlVmkOl0PDTc4KXTDZ6tvxk5eNG_=
+e4TlrljMx74-&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb854=
+3b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373915457=
+41232758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3D2ghzJpn0fFjKcalyhsZH8gBbf3VvR6G=
+kfHWiZMcftjk%3D&amp;reserved=3D0>=0A=
+| Privacy Policy <https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Ftrello.com%2Fprivacy&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.=
+edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637391545741232758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DmgwDWHSy3B3N=
+nshGgvnAR9v2PPfbRfW3%2FNmfaYhuPng%3D&amp;reserved=3D0?> | Manage Account =
+=0A=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftrello=
+.com%2Fmy%2Faccount&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a87=
+92cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637=
+391545741232758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzI=
+iLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DFVJUL3L0uy378E%2BMvYktkc=
+WXQpHWbNikgdU%2FTdhvxEY%3D&amp;reserved=3D0> | Unsubscribe =0A=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trel=
+lomail.com%2Fe%2FencryptedUnsubscribe%3F_r%3Dcce9a87967214196ae72b08c7283fd=
+a9%26_s%3Dbc82478e0fd34257b4387ec535d89907%26_t%3DlLBatCAsA6APXCD5suy-ajgqN=
+JlicJrYlNE2xlG_Gu36qoFn1sc8CItOMWab54xR1Lv5REkCRN80AlfKqZmRMFWOJsyStawT5nKz=
+IxWLeMrMmPMMrZGsd9Gr3zQiQ2Fm8md3JK91yzbBA4ovcQVWMH3QWl7L8W6hiHQ7CbsDZZ5lDEK=
+hsLoauYe36-wT7mC7&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792=
+cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739=
+1545741232758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DHL3%2Fg6pVuR16hFx1FvFhd0kk=
+CZyOPUMaiFNGmL8YGQ8%3D&amp;reserved=3D0>=
+
+--_----XPbeSzCr4uTZ6bx3broITA===_58/60-28810-989549F5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" xml:lang=3D"en"><h=
+ead>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width"> <title>Better Toget=
+her</title> </head> <body bgcolor=3D"#FFFFFF" style=3D"padding: 0; margin: =
+0; width: 100%; font-family: 'Helvetica', 'Arial', san-serif; max-width: 10=
+0%; ">
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"http://i-sp.trellomail.com/q/cICf0Zl0SHEe=
+bcw_K0LmFA~~/AALHNwA~/RgRhdt6JPVcDc3BjQgoAHolZlF-KcJEGUhdqZXJyeS50ZW5nQHV0Z=
+GFsbGFzLmVkdVgEAAAAAA~~"></div>
+<span style=3D"color:transparent;visibility:hidden;display:none;opacity:0;h=
+eight:0;width:0;font-size:0;">Uncover the magic of Power-Ups</span><img src=
+=3D"https://i.trellomail.com/e/eo?_t=3Dcce9a87967214196ae72b08c7283fda9&amp=
+;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3DlLBatCAsA6APXCD5suy-ajgqNJl=
+icJrYlNE2xlG_Gu36qoFn1sc8CItOMWab54xR1Lv5REkCRN80AlfKqZmRMFWOJsyStawT5nKzIx=
+WLeMrMmPMMrZGsd9Gr3zQiQ2Fm8md3JK91yzbBA4ovcQVWMH3QWl7L8W6hiHQ7CbsDZZ5lDEKhs=
+LoauYe36-wT7mC7" style=3D"border:0;width:1px;height:1px;border-width:0px!im=
+portant;display:none!important;line-height:0!important;" width=3D"1" height=
+=3D"1"><!--[if mso]><style type=3D=E2=80=9Dtext/css=E2=80=9D>body{font-fami=
+ly:Arial,sans-serif}ul,li{list-style:none;list-style-type:none;padding:0}</=
+style><![endif]--> <table bgcolor=3D"" style=3D"font-family:'Helvetica','Ar=
+ial',san-serif; margin:0; max-width:100%; padding:0; width:100%"> <tbody> <=
+tr> <td> <center> <table style=3D"margin:10px auto; max-width:100%; width:6=
+00" class=3D"preheader"> <tbody> <tr> <td width=3D"600" align=3D"right" sty=
+le=3D"font-size:12px; font-style:italic; padding-right:50px; text-align:rig=
+ht"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fi.trellomail.com%2Fe%2Fevib%3F_t%3Dcce9a87967214196ae72b08c7283fda9=
+%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3DlLBatCAsA6APXCD5suy-ajgqNJl=
+icJrYlNE2xlG_Gu0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-rL4KIlKYb8xTlVmkOl0PDTc4K=
+XTDZ6tvxk5eNG_e4TlrljMx74-&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7=
+C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C=
+1%7C637391545741780356%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DqZ4PUkGFL0Bz4lD2%=
+2Fqo%2BwdMsTszm9nko6Ta%2BBMI%2BWIs%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://i.trellomail.com/e/evib?_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3D=
+bc82478e0fd34257b4387ec535d89907&amp;_e=3DlLBatCAsA6APXCD5suy-ajgqNJlicJrYl=
+NE2xlG_Gu0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-rL4KIlKYb8xTlVmkOl0PDTc4KXTDZ6t=
+vxk5eNG_e4TlrljMx74-" shash=3D"g1We+wXkcrTiUpoYVwQKbYJCHdRA9TVQm3teP11gU2ma=
+iyKYWATdd9bJ9Stn34DBaC6K8Fv7B+piHKIpQiQ9EQY1OVpiqsOgq6SB+G/umKwutlKUUgyV+qa=
+aFHVEvx6l/SguQkHut0nvv5p/TlXnthWPgr65uDQPsMNwdyMuDIw=3D"><font color=3D"#aa=
+aaaa">View in Browser =E2=86=92</font></a></td> </tr> <tr> <td style=3D"tex=
+t-align:center"> <center><a href=3D"https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fa%2Fclick%3F_t%3Dcce9a87967=
+214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3PKTB=
+0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRIGMzCQXrqNH0TO85OK79w8YE3J_kwG3hLVrCqo=
+SAJPl2JtV_ARmFt683zGCqo6vC3tOwdMhQPH9et6SDuu753-ot5jzspTxW1MZA0QpMhYPb5mNxK=
+7PMero-WiXhD94nBrumg-NXCPP-eN6qrK0ArEVJqgHkEhlF0SWVkz9rqrGVMFZbGQfqKZyvgDBH=
+cZCx2CpU15A8Aqm93f8EmiKGmrE_syAjbhY1hV5ZmbtrE2IgBr6cGTzk6LDGHedPnRr24Iux--j=
+Iua3eiyE7XhevzIRYDFYsshZ95B40fLzffCa7JReEam92Tf--rmFF7MbQPWwhNuPRwc5Ex2UeUM=
+eRO3&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a0=
+8d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391545741780356=
+%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haW=
+wiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DKihYUOM4wOHsta%2BTX99fIQUNRr4knxXvcQwP%=
+2BcnQOPo%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/a/cli=
+ck?_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec53=
+5d89907&amp;_e=3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRIGMzCQXrqNH0TO85=
+OK79w8YE3J_kwG3hLVrCqoSAJPl2JtV_ARmFt683zGCqo6vC3tOwdMhQPH9et6SDuu753-ot5jz=
+spTxW1MZA0QpMhYPb5mNxK7PMero-WiXhD94nBrumg-NXCPP-eN6qrK0ArEVJqgHkEhlF0SWVkz=
+9rqrGVMFZbGQfqKZyvgDBHcZCx2CpU15A8Aqm93f8EmiKGmrE_syAjbhY1hV5ZmbtrE2IgBr6cG=
+Tzk6LDGHedPnRr24Iux--jIua3eiyE7XhevzIRYDFYsshZ95B40fLzffCa7JReEam92Tf--rmFF=
+7MbQPWwhNuPRwc5Ex2UeUMeRO3" shash=3D"zLA+OVY3GFN0YjhD7DsECfQj+uvISy6FBqUf6k=
+GNkNmiiey75n2TGXQ1Vrzhh68HL7oeefShnnVQU4uPMJUv5sFVv62hs0xQe2KCmp57Dh6eIJwO6=
+0yEZbb30qqtfIoxZyhjnx96/+75ZeHA3FD/SNRE7mehcsUmGtvoj9hcoao=3D"><img height=
+=3D"36" width=3D"128" alt=3D"" style=3D"display: block; margin:20px auto 0;=
+" src=3D"https://dm9d104elaxz5.cloudfront.net/Plaintext_blue%20buttons/trel=
+lo-logo-blue.png"></a></center> </td> </tr> </tbody> </table> <table style=
+=3D"margin:0 auto; max-width:100%; width:600px" class=3D"email-wrap"> <tbod=
+y> <tr> <td><!-- CONTENT --> <style type=3D"text/css">.content p{color:#444=
+;font-size:18px;line-height:24px}</style> <table bgcolor=3D"white" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background:white; borde=
+r-radius:8px; border:0; margin:0px auto; width:100%" class=3D"content"> <tb=
+ody> <tr> <td> <table border=3D"0" cellpadding=3D"30" cellspacing=3D"0"> <t=
+body> <tr> <td style=3D"color:#444444; font-size:18px; line-height:24px"> <=
+center> <p style=3D"color: #444444; text-align: left; line-height: 24px; fo=
+nt-size: 18px;"><font color=3D"#444444">Bring superpowers to your workflow =
+with Power-Ups=E2=80=94integrations and features that supercharge your Trel=
+lo boards.</font></p> <a href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fu%2Fclick%3F_t%3Dcce9a87967214=
+196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS=
+8560UK7FJd8eiS5sq-fK34ibDQqP51zN9hESDoTx7Rc9i27NFnJr8hW_mxwZSv6jtab9CEkgawt=
+iIXsV5kD1bcEHCfMJOLhqZCWYXMEwxyW-mC9iSS6uOjTaPyPTOdRFjmCYMyUoPUVrzNzNmbLcYm=
+QHsmO3SnVIpKhdMOva_aS5UcNlMyvN8K7_NKTjRrgCB0XMAu8XKdXZTcc8LtffONg31K1kZYNrH=
+rx9J0KvnbG2lQ2UNbhbTKpcafMiWZI4fwpMV0YbbIHVBllmz8uXjR6_hiWwswZ6Jfz0D5lCYxU-=
+cY72ztsa21oaKwJjhbFmC5UFmhshN211w7dIsrLyXs_qhhSM9idGZMPtU59VNTpvCaTqFgQN-Jt=
+I4h6Slo1hU5waylXBFtWw5vrg8aeqxKYlQuJkhNBMhio%253D&amp;data=3D04%7C01%7Cjerr=
+y.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C1%7C637391545741790298%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sd=
+ata=3DnALpMe98khrsaACyDEihSCyMt7GrhzSNfKkSVRjkvQw%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://i.trellomail.com/u/click?_t=3Dcce9a87967214196ae72b08c72=
+83fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3PKTB0XS8560UK7FJ=
+d8eiS5sq-fK34ibDQqP51zN9hESDoTx7Rc9i27NFnJr8hW_mxwZSv6jtab9CEkgawtiIXsV5kD1=
+bcEHCfMJOLhqZCWYXMEwxyW-mC9iSS6uOjTaPyPTOdRFjmCYMyUoPUVrzNzNmbLcYmQHsmO3SnV=
+IpKhdMOva_aS5UcNlMyvN8K7_NKTjRrgCB0XMAu8XKdXZTcc8LtffONg31K1kZYNrHrx9J0Kvnb=
+G2lQ2UNbhbTKpcafMiWZI4fwpMV0YbbIHVBllmz8uXjR6_hiWwswZ6Jfz0D5lCYxU-cY72ztsa2=
+1oaKwJjhbFmC5UFmhshN211w7dIsrLyXs_qhhSM9idGZMPtU59VNTpvCaTqFgQN-JtI4h6Slo1h=
+U5waylXBFtWw5vrg8aeqxKYlQuJkhNBMhio%3D" shash=3D"g/ppmCzJBcuZ8SjSr1nLDYP51M=
++fCVvgs831rCqRpWOMR24j7L+j3GB//iP3WcOJ8YJzv99+oxsu2ypLldgO7+u0yGZTQEZlj5GKi=
+j8BBBGw/pJ1pJdyVJhOPlRFObb5oQGahVTCsI8A60ZJOc2v5a2ytqApOn8Arn7dkO94IRI=3D">=
+<img width=3D"400" height=3D"209" alt=3D"How To Automate Your Trello Board"=
+ style=3D"border-radius:6px; margin:5px;" src=3D"https://dm9d104elaxz5.clou=
+dfront.net/Lifecycle/trello-pups-min.png"></a> <p style=3D"color: #444444; =
+text-align: left; line-height: 24px; font-size: 18px;"><font color=3D"#4444=
+44">Get started with Trello users=E2=80=99 most popular picks: </font></p> =
+<ul> <li style=3D"text-align: left; line-height: 24px; font-size: 18px; mar=
+gin: 5px 0"><a style=3D"color:026AA7" href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fa%2Fclick%3F_t%3D=
+cce9a87967214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26=
+_e%3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRI8ukN1wvAkh6_2tIL9qNlmDBUBnN=
+uBUN7PgF27S133upOLvNLIUU7e-bL3eQ1CWwdAWhbciiSUAZDuxm3amNoEGcuTqgNVEqjr-2ktu=
+41xotVxS5JMnSpaHqY04M2rfE6Uvm5Gd5qB_T0mHyhFZKg7mPL4LNgHtMpB-oc85Bw-pxcMwj66=
+zyRveYNuamWQDCaxPSUdXPhX4FYKU3JfWFGXET07S2CSViyoouRLvUE_Yc3Gbort8vYXSCIkmbj=
+9ULgROkm9oG-uk-Wi3eiUC478y1qUlyFyubOttD1xN-uM1owsbssNGEZ1424eHRLqQFwNNjRQ67=
+UW9uFixjmB1NOE2rsUvyCKZKcvAkZrVI0d0Kb-ytewFaeyfCzGxljJVhg%253D&amp;data=3D0=
+4%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391545741790298%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C3000&amp;sdata=3D7UMz1FvhTaoPhlB8O1f%2BUS9obD0cCR1mhMu4PzJbhY4%3D&amp;res=
+erved=3D0" originalsrc=3D"https://i.trellomail.com/a/click?_t=3Dcce9a879672=
+14196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3P=
+KTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRI8ukN1wvAkh6_2tIL9qNlmDBUBnNuBUN7Pg=
+F27S133upOLvNLIUU7e-bL3eQ1CWwdAWhbciiSUAZDuxm3amNoEGcuTqgNVEqjr-2ktu41xotVx=
+S5JMnSpaHqY04M2rfE6Uvm5Gd5qB_T0mHyhFZKg7mPL4LNgHtMpB-oc85Bw-pxcMwj66zyRveYN=
+uamWQDCaxPSUdXPhX4FYKU3JfWFGXET07S2CSViyoouRLvUE_Yc3Gbort8vYXSCIkmbj9ULgROk=
+m9oG-uk-Wi3eiUC478y1qUlyFyubOttD1xN-uM1owsbssNGEZ1424eHRLqQFwNNjRQ67UW9uFix=
+jmB1NOE2rsUvyCKZKcvAkZrVI0d0Kb-ytewFaeyfCzGxljJVhg%3D" shash=3D"vbnZZkvAsCR=
+eHojmmQP9uUPEdxap1XrpEU8u43m3/9HXOESxk+jXktQkUt4gG4bKTsuWUjfDb5tQdSQ6L7ciT8=
+9fMQi1y9Av+kPmvG/pvZMyCwjKlu5OUqFYT/IL2ce2BXrfeOz077nUt9wyVQwk4ZX2RkjKgsHvx=
+mDllm9MQjc=3D"><strong>Calendar</strong></a>: See all card due dates in a m=
+onthly view</li> <li style=3D"text-align: left; line-height: 24px; font-siz=
+e: 18px; margin: 5px 0"><a style=3D"color:026AA7" href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fa%2Fc=
+lick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec=
+535d89907%26_e%3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRKZUIe3PDZZ0c31ak=
+OwjwfXidlV8DQLwTP5Qk_tjHcROcmyjW81Z23xx_-KFhndL--RIPN-Y-dI0S86LyBFto_0AdXKq=
+Qgb8J09PNobpjXXedoJRfbdX6gQaMijNbTE1N9sCi0i74JfnGCJ-FGGzT3X1pYJg0aKnusHniA2=
+exvOQQWWlbbGB1eqXQDgtoabhVjr1KdG-jIwiNZ7trZljrcOtJRkgMj5hGz1O7uD1zRWVeQUJ6p=
+XObsZRVMRuDLtOecEEd2YaTUIohuXtvhSplDHoGO608gEf-ZjE_Zzacosr8-TicOilJdUJzPEXm=
+pW_lvaD9EdYP9p0ud83Y3avPMPiXKl3sAJK2O8MuFd0mo-W-3TCuEQ7A9v_5rO_zxi_nA%253D&=
+amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d878=
+3bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391545741800265%7CUn=
+known%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJ=
+XVCI6Mn0%3D%7C3000&amp;sdata=3DwEnE5PNLQRmULrs4%2Bf2rOQ24DdQT0IHTLDWVh2N4jX=
+c%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/a/click?_t=
+=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d899=
+07&amp;_e=3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRKZUIe3PDZZ0c31akOwjwf=
+XidlV8DQLwTP5Qk_tjHcROcmyjW81Z23xx_-KFhndL--RIPN-Y-dI0S86LyBFto_0AdXKqQgb8J=
+09PNobpjXXedoJRfbdX6gQaMijNbTE1N9sCi0i74JfnGCJ-FGGzT3X1pYJg0aKnusHniA2exvOQ=
+QWWlbbGB1eqXQDgtoabhVjr1KdG-jIwiNZ7trZljrcOtJRkgMj5hGz1O7uD1zRWVeQUJ6pXObsZ=
+RVMRuDLtOecEEd2YaTUIohuXtvhSplDHoGO608gEf-ZjE_Zzacosr8-TicOilJdUJzPEXmpW_lv=
+aD9EdYP9p0ud83Y3avPMPiXKl3sAJK2O8MuFd0mo-W-3TCuEQ7A9v_5rO_zxi_nA%3D" shash=
+=3D"oTSSp8Fa0BAxIhY4LkVU8UKh3SPJrrihet5YcSPVmtxm7vNElxE6VLSLWRPPor6HL5lz270=
+AVW4Sbu0+rlbfswEqaY4tvshTjNn7pJn6b/VdjxEeF7iw5+ho3MmQMr/4RbplyAxzgcTtzYgCCw=
+Sl6l+g3aDYIiDD+BmwwiMnzCM=3D"><strong>Google Drive</strong></a>: Easily sha=
+re and collaborate on your docs</li> <li style=3D"text-align: left; line-he=
+ight: 24px; font-size: 18px; margin: 5px 0"><a style=3D"color:026AA7" href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.t=
+rellomail.com%2Fa%2Fclick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc=
+82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQ=
+HkMfRJF-kDZ7nOeq_6xf6RSQ4Ef0Ls9IjFhaFROVrZvRrTnmi8IovuxzxWvV-j1Dy0vs1aEDFpe=
+Rub3FvuDJTPYq5URxkC-jtBF2JPYPOneNw5xYDGBiuS9_DRZ3YBd9URJn0nsTvBi-QpBemWv__C=
+98DdH7WUFx2rtgLLatkN7yC6ksDLbonoI7qMC7vygD6QmmzlovTetamhH3tglheiTANQx9Vc2q4=
+YePsF6lk2gFmMTWwckUYlukg3Sa3R-vK6RFFbbZvQW_dLu4CU3mTB_weauVx-zbcIHmqB5Zw0BK=
+GkYOTjeObl7Dr9rnbh70hP0XVuGdFSxM07Mk_KdTIS3TvECPstnXnLEio7uMXZTra-8J9IsZDgq=
+wOncmoyEROe7yiE%253D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8=
+792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63=
+7391545741800265%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DgZw9yINO85eGMbl8uxYAcdh=
+kP9vYWdj0J%2FlQRA95IMw%3D&amp;reserved=3D0" originalsrc=3D"https://i.trello=
+mail.com/a/click?_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd=
+34257b4387ec535d89907&amp;_e=3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRJF=
+-kDZ7nOeq_6xf6RSQ4Ef0Ls9IjFhaFROVrZvRrTnmi8IovuxzxWvV-j1Dy0vs1aEDFpeRub3Fvu=
+DJTPYq5URxkC-jtBF2JPYPOneNw5xYDGBiuS9_DRZ3YBd9URJn0nsTvBi-QpBemWv__C98DdH7W=
+UFx2rtgLLatkN7yC6ksDLbonoI7qMC7vygD6QmmzlovTetamhH3tglheiTANQx9Vc2q4YePsF6l=
+k2gFmMTWwckUYlukg3Sa3R-vK6RFFbbZvQW_dLu4CU3mTB_weauVx-zbcIHmqB5Zw0BKGkYOTje=
+Obl7Dr9rnbh70hP0XVuGdFSxM07Mk_KdTIS3TvECPstnXnLEio7uMXZTra-8J9IsZDgqwOncmoy=
+EROe7yiE%3D" shash=3D"aIHnmEUSE9Duwn6GwJ6mX0q4A+ejp0eUg0GEPCnmt8VPWlwFSac/d=
+FGDNtIoLVVS0jn9xIe+m9S3IaIYWhmzppFxeWKU8wgL+S2a5aU3iZ8L2XuH8FFIdfM7176M1m6a=
+rf2A+gUozhv6hq/5Nu7fY5pSRCul9bUO2ms3JxYV84o=3D"><strong>Custom Fields</stro=
+ng></a>: Display custom details on the front of cards</li> </ul> <center> <=
+table border=3D"0" cellpadding=3D"14" cellspacing=3D"0" style=3D"background=
+:#0079bf; border-radius:6px; color:#ffffff; cursor:pointer; display:inline-=
+block; font-size:20px; font-weight:bold; line-height:24px; margin:15px auto=
+; text-align:center" class=3D"button main"> <tbody> <tr> <td align=3D"cente=
+r" style=3D"vertical-align:middle" class=3D"emailButtonContent"><font color=
+=3D"#444444"><a class=3D"emailButtonContent" target=3D"_blank" style=3D"tex=
+t-decoration:none; padding: 0 8px;" href=3D"https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fa%2Fclick%3F_t%3Dcc=
+e9a87967214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e=
+%3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRIGMzCQXrqNH0TO85OK79w8YE3J_kwG=
+3hLVrCqoSAJPl2JtV_ARmFt683zGCqo6vC3tOwdMhQPH9et6SDuu753-ot5jzspTxW1MZA0QpMh=
+YPb5mNxK7PMero-WiXhD94nASfXxV5nj8qfGDRhYjj46LToQ6-9q-W9E4jaAzIgRDdWerAZJsaT=
+_w4Csz-jarIBHtIDvhPk6ylrMs1_9xovIT8c_vheKXK_zsQv4J4qxmpBeLsUqbo4OehQDg7LqjR=
+X2jIBhJZWWd7OIM0nZG5j_dPRLEGGOKoP9wqhYgLaR8qS7HF4xKb4Pfu4vbFa2zPybzq1hS4S2J=
+_QZUB3LwB7Cq&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb854=
+3b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373915457=
+41810216%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DZq3dMH2gNkKkdLjByti6GHMfW8jYC%2=
+BJU7RZYOy5AdMc%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com=
+/a/click?_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b43=
+87ec535d89907&amp;_e=3D3PKTB0XS8560UK7FJd8eiY1Xebp-uw2IL3krQHkMfRIGMzCQXrqN=
+H0TO85OK79w8YE3J_kwG3hLVrCqoSAJPl2JtV_ARmFt683zGCqo6vC3tOwdMhQPH9et6SDuu753=
+-ot5jzspTxW1MZA0QpMhYPb5mNxK7PMero-WiXhD94nASfXxV5nj8qfGDRhYjj46LToQ6-9q-W9=
+E4jaAzIgRDdWerAZJsaT_w4Csz-jarIBHtIDvhPk6ylrMs1_9xovIT8c_vheKXK_zsQv4J4qxmp=
+BeLsUqbo4OehQDg7LqjRX2jIBhJZWWd7OIM0nZG5j_dPRLEGGOKoP9wqhYgLaR8qS7HF4xKb4Pf=
+u4vbFa2zPybzq1hS4S2J_QZUB3LwB7Cq" shash=3D"isk222IHEx40sgcOV946GRnAgbewtSyh=
+mqVeAfnqFyhocxRV4lnut7+A0Ca4gQGS/v624chILjMi3ziP3eFJm3bcieS/gocTI2AxqmAhlLA=
+lyU2QDRvRUYlPG7v61t1Qh0/7PxfcSmXjhwX3+QDC0wMIyNhXPNRvIOAD6wZW8t4=3D"><font =
+color=3D"white">Explore The Power-Up Directory</font></a></font></td> </tr>=
+ </tbody> </table> </center> </center> </td> </tr> </tbody> </table> </td> =
+</tr> </tbody> </table> <style type=3D"text/css">.msoFix{mso-table-lspace:-=
+1pt;mso-table-rspace:-1pt}</style> <!-- FOOTER --> <table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"12" style=3D"border:0; font-size:14px; line-he=
+ight:20px; max-width:100%; width:100%"> <tbody> <tr> <td> <center><font col=
+or=3D"#777777"><em>Want more?<br> Get your productivity fix at the </em></f=
+ont><a style=3D"color:#777777" href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fu%2Fclick%3F_t%3Dcce9a87=
+967214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3P=
+KTB0XS8560UK7FJd8eiS5sq-fK34ibDQqP51zN9hGFW_2QRD7M29ejIXc-Ca4JDFKuJ0JJ3aE1D=
+DezGTZOlxrYbGw04Q7KIgEvZMbb1rSvXsRHu0CYLa-xXZAlzapFhG4mTDpjHgAe6XPqSVQiWY-c=
+axlQ1z24HHDbnFrOIaIz5WRA06sIAYJRrWNwsrE7HE0QpNQxYHJX6H2gLAfZFshTEfLysBYbQ2P=
+DaVFVbTDjPIx7_jtxz3poXf5-9QWZlouqVh8dNgI5eLF5CuZ-tPhyGWNwZYvfhFlRbf8975k7I7=
+U31CRVauiTPtQg79d7fvNCYJR94EHv-wLJlWCSh_ePZGW6B5QAiCh5qWZoUJCVnWgkZ-4QzP_FJ=
+igZrtOj&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c=
+4a08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391545741810=
+216%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DrUi2ond9LsRxmtMWUXUQigu95%2BzFDPq77y=
+fQhgprB%2BQ%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/u/=
+click?_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387e=
+c535d89907&amp;_e=3D3PKTB0XS8560UK7FJd8eiS5sq-fK34ibDQqP51zN9hGFW_2QRD7M29e=
+jIXc-Ca4JDFKuJ0JJ3aE1DDezGTZOlxrYbGw04Q7KIgEvZMbb1rSvXsRHu0CYLa-xXZAlzapFhG=
+4mTDpjHgAe6XPqSVQiWY-caxlQ1z24HHDbnFrOIaIz5WRA06sIAYJRrWNwsrE7HE0QpNQxYHJX6=
+H2gLAfZFshTEfLysBYbQ2PDaVFVbTDjPIx7_jtxz3poXf5-9QWZlouqVh8dNgI5eLF5CuZ-tPhy=
+GWNwZYvfhFlRbf8975k7I7U31CRVauiTPtQg79d7fvNCYJR94EHv-wLJlWCSh_ePZGW6B5QAiCh=
+5qWZoUJCVnWgkZ-4QzP_FJigZrtOj" shash=3D"AG87/SIziYeW8ghGlHfPn1c7nflF5luiGDO=
+WiG24IZMs2MKiPGbrKZo07kQcJaDyW6o8L/eI3i8HG/nf2XSdW8poPvbSyMaxu3bIBE6Gv1vxaR=
+B/6jSEVZcEr7sKHQi9apTVWQ+mPk0TGivEnZErnSgPHT0zqqTc2S+TGdPk6bA=3D"><font col=
+or=3D"#777777"><em>Trello Blog =E2=86=92</em></font></a></center> </td> </t=
+r> <tr> <td> <center><a style=3D"text-decoration: none; padding:8px 0;" hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.=
+trellomail.com%2Fu%2Fclick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Db=
+c82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS8560UK7FJd8eiQhXQiHoUh8n1Tnv=
+Y71pAGI5omhQForyMYmj5LY6Wbd7d8GDYz7rqfUCFaEDNSjpg8frxvw2hH_DGNUkpEqkypGd-n0=
+q4ej8UXMSux09ga7f-R-3EuQAQuSmVxkykc0-ZS589Gs3yOYLJicvHVKqIFH3fOaMViS_okpM_Y=
+pM5HJwJDIN08C8XpoOrycalRQte_Le09OAoMLmJssH3A9U8VY6982nmw2Dq6RHXzVlzZ2Mb4xfD=
+Q4Sm7sHA0q3ozCl9XFFeIvg93LKkdur5KzS040RuVmIMd_uvVeql3-EYsBxK0panB_O2buHlBLr=
+COrWfGI0Nf-Lv6oi8YkbvnCNpTZoc9TwWMSfnPG_E6gOu9Du&amp;data=3D04%7C01%7Cjerry=
+.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C1%7C637391545741820175%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sda=
+ta=3DOAbT5eG9ZzvkCJ6ZfTzKZdZ6kqTw1RS2cixnA3IqWew%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://i.trellomail.com/u/click?_t=3Dcce9a87967214196ae72b08c728=
+3fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3PKTB0XS8560UK7FJd=
+8eiQhXQiHoUh8n1TnvY71pAGI5omhQForyMYmj5LY6Wbd7d8GDYz7rqfUCFaEDNSjpg8frxvw2h=
+H_DGNUkpEqkypGd-n0q4ej8UXMSux09ga7f-R-3EuQAQuSmVxkykc0-ZS589Gs3yOYLJicvHVKq=
+IFH3fOaMViS_okpM_YpM5HJwJDIN08C8XpoOrycalRQte_Le09OAoMLmJssH3A9U8VY6982nmw2=
+Dq6RHXzVlzZ2Mb4xfDQ4Sm7sHA0q3ozCl9XFFeIvg93LKkdur5KzS040RuVmIMd_uvVeql3-EYs=
+BxK0panB_O2buHlBLrCOrWfGI0Nf-Lv6oi8YkbvnCNpTZoc9TwWMSfnPG_E6gOu9Du" shash=
+=3D"sgM9psxMZwrVR5/eDkQ3khKbju7CvvAvWKJoPNIJnGiwIsLKq0OlHWeB6g3MWBH5B4nthli=
+4LLDElSucZZQh5VC/NkDicuxP1Dzw0oBKOOh2sQ1h2GR2J3Mw/2Rq7B042nrPJW02GAUQVuUam9=
+kjN6T40wVQWIIZtDdy6SXdE6M=3D"><img width=3D"32" height=3D"32" alt=3D"" styl=
+e=3D"display: inline;" src=3D"https://dm9d104elaxz5.cloudfront.net/Plaintex=
+t_blue%20buttons/fb.png"> </a>&nbsp;&nbsp; <a style=3D"text-decoration: non=
+e; padding:8px 0;" href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fu%2Fclick%3F_t%3Dcce9a87967214196ae7=
+2b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS8560UK=
+7FJd8eiYTta7ufegtXJZONIxU9Zz6zuS2O-XvSzZFdluOR11uI4amfDfQDjGKTAtp1enlpMhYo_=
+1SADJwLvip9vNQto-G6CGGD-zXmor8lp9kFhL_ZdZxdazdV-r_DMHuyKLRYZdDU1xUJ7GJrJUYw=
+iw1b6LlwH0VqYtKhV2FyxPFxyxxAbHsSjNM9nV7Zbj3LxoMavclYFKBuDpPTefh4bFeNAfJwEcH=
+hwSddleAs3o5HMFvaD0WGeOWLVpJcNGmYmuFG1J_XsEWRH5p_C2M95dr3sGHZSFNzl8nUw_QGFu=
+2siOunhVclu-jpW_ItR7CnbxMQa4fWP-0bZlxlnhbMJENNnTXwbxPYccNXJaPXpXQegK4T&amp;=
+data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd8=
+58%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637391545741820175%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C3000&amp;sdata=3DJObD%2F7fi14nVDt7HNx%2F0%2BgeQywMs%2Bu%2Bv6LIBLy=
+KXIDw%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/u/click?=
+_t=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d8=
+9907&amp;_e=3D3PKTB0XS8560UK7FJd8eiYTta7ufegtXJZONIxU9Zz6zuS2O-XvSzZFdluOR1=
+1uI4amfDfQDjGKTAtp1enlpMhYo_1SADJwLvip9vNQto-G6CGGD-zXmor8lp9kFhL_ZdZxdazdV=
+-r_DMHuyKLRYZdDU1xUJ7GJrJUYwiw1b6LlwH0VqYtKhV2FyxPFxyxxAbHsSjNM9nV7Zbj3LxoM=
+avclYFKBuDpPTefh4bFeNAfJwEcHhwSddleAs3o5HMFvaD0WGeOWLVpJcNGmYmuFG1J_XsEWRH5=
+p_C2M95dr3sGHZSFNzl8nUw_QGFu2siOunhVclu-jpW_ItR7CnbxMQa4fWP-0bZlxlnhbMJENNn=
+TXwbxPYccNXJaPXpXQegK4T" shash=3D"i6eJT5+O+oRZJlFWGsEG301lr1N+qub9rG59/I1JH=
+sTYIV+KyDDWrBiV57eF3kCuXF0qBckjVIMBgVmhPv4i5Ho+DuF/9nzg56n6Tm+2p9/QBT/bTKyR=
+SBQ7dhqeseFQ6hWSasIljNRnvzap/pGCksfO7GMnZ80zvtwmEYXJfo4=3D"> <img width=3D"=
+32" height=3D"32" alt=3D"" style=3D"display: inline;" src=3D"https://dm9d10=
+4elaxz5.cloudfront.net/Plaintext_blue%20buttons/twitter.png"> </a>&nbsp;&nb=
+sp; <a style=3D"text-decoration: none; padding:8px 0;" href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2F=
+u%2Fclick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4=
+387ec535d89907%26_e%3D3PKTB0XS8560UK7FJd8eiZDTs3o4IPH5j71wI32fGpkNcDFtCj8Og=
+0NBxxQmeoaosGVlDSwmi65V39HxY6k9qII-ANs6crdpQkSvsw_JOd1YlV_WrPcv44jAYrbRURIZ=
+7osiXFrC8VQA7Sw81Sz5gtFqdgKVLSpWunh4CLS60SUyYE04vrIDmOmQUWJ76-uywzPoNUy4nKD=
+V_PRkm1SmnYDHAYrbUoZSv2wIxQK2A0BBuazlVmOkru3vTJg_xrJZe7dbf3RtSLK2aGSruasHb6=
+d6L5PvVMu0XtfN6EycSvXGqoMXN7m-veOKPfqmXhnWQNd39cZKKGaSPwuaGzZKOtoUp8rzvmbId=
+FeP4cgsdzFqY0SppH5yJzP6nk5L6QN_PIsM6uy_serfUEvm1hoKjg%253D%253D&amp;data=3D=
+04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741820175%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C3000&amp;sdata=3DAB7mdXppz%2BAz7ApaZaVsrVpasIT914NcAAtXzt9krFo%3D&amp;re=
+served=3D0" originalsrc=3D"https://i.trellomail.com/u/click?_t=3Dcce9a87967=
+214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3=
+PKTB0XS8560UK7FJd8eiZDTs3o4IPH5j71wI32fGpkNcDFtCj8Og0NBxxQmeoaosGVlDSwmi65V=
+39HxY6k9qII-ANs6crdpQkSvsw_JOd1YlV_WrPcv44jAYrbRURIZ7osiXFrC8VQA7Sw81Sz5gtF=
+qdgKVLSpWunh4CLS60SUyYE04vrIDmOmQUWJ76-uywzPoNUy4nKDV_PRkm1SmnYDHAYrbUoZSv2=
+wIxQK2A0BBuazlVmOkru3vTJg_xrJZe7dbf3RtSLK2aGSruasHb6d6L5PvVMu0XtfN6EycSvXGq=
+oMXN7m-veOKPfqmXhnWQNd39cZKKGaSPwuaGzZKOtoUp8rzvmbIdFeP4cgsdzFqY0SppH5yJzP6=
+nk5L6QN_PIsM6uy_serfUEvm1hoKjg%3D%3D" shash=3D"PyiJ+3EHEDal1B7KIeibfDyXjs++=
+Wj2vSGV/+EDqLOeLHus+Jb4NJBnB0RpJub9A7aToFtp5yXu/Bav/3vU8wNHN3UOqHkDODltDRIE=
+zndOuki21LOky7r+KEAvkixHtbUW0kfw1JVkaqTd8LgE+hKdV+8ID0G1jh3YdpPENHsI=3D"> <=
+img width=3D"32" height=3D"32" alt=3D"" style=3D"display: inline;" src=3D"h=
+ttps://dm9d104elaxz5.cloudfront.net/Plaintext_blue%20buttons/linkedin.png">=
+ </a>&nbsp;&nbsp; <a style=3D"text-decoration: none; padding:8px 0;" href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.t=
+rellomail.com%2Fu%2Fclick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26_m%3Dbc=
+82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS8560UK7FJd8eiS364cUgl90zayfhj=
+uuwrkcZAQMoifzEaHFDM_82Km35zEg5qvaO6Y2gxbF4lnTLh48zcG8J8Kwe0xIHopn4IQqcj4ww=
+fsqPcd-Z4C1c70GNPhbSQsdTjUrWie6K42lYgvDaGq_hbr-nJNix1tBAoH2vOj6lSQRpk21s9Wj=
+RdCkgS97fa8t0jnJdIbx0kI65dkUuPMAQRpLoe9r12DTVhb2dcCyKj61wnz6YweYD9y5cyAxuX0=
+VnOPJoNOUGU5vAfkFwGCKlIRiBQGMI5PFIX_DEel3nsz1RB8YghBBUVzynr6Am9gciN87QwqC1j=
+nyOMuajNDkZ7o8fK4IaERrmxEf_czVT4plVkuykpoavx01e&amp;data=3D04%7C01%7Cjerry.=
+teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637391545741830128%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdat=
+a=3DMRaSFwe%2BnL31BDE712bLRktnR7HbrvTDPE0zBgeZu2Q%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://i.trellomail.com/u/click?_t=3Dcce9a87967214196ae72b08c72=
+83fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3PKTB0XS8560UK7FJ=
+d8eiS364cUgl90zayfhjuuwrkcZAQMoifzEaHFDM_82Km35zEg5qvaO6Y2gxbF4lnTLh48zcG8J=
+8Kwe0xIHopn4IQqcj4wwfsqPcd-Z4C1c70GNPhbSQsdTjUrWie6K42lYgvDaGq_hbr-nJNix1tB=
+AoH2vOj6lSQRpk21s9WjRdCkgS97fa8t0jnJdIbx0kI65dkUuPMAQRpLoe9r12DTVhb2dcCyKj6=
+1wnz6YweYD9y5cyAxuX0VnOPJoNOUGU5vAfkFwGCKlIRiBQGMI5PFIX_DEel3nsz1RB8YghBBUV=
+zynr6Am9gciN87QwqC1jnyOMuajNDkZ7o8fK4IaERrmxEf_czVT4plVkuykpoavx01e" shash=
+=3D"SToY0ap9uO6E9F3trLiJV+fr72CzhoZQFEJ07tVczNUxug29WEE7Eo5UhsnBUPC740z+pzM=
+H8W5Ff6g7lEG55mxVEiDlRmP6+itPVAQZws1ARU3FI2PP7khXg82YASNtHyh2TFD67yj2zdANzb=
+c4Wq3MLbKBsTpXXNe8FSmOvj0=3D"> <img width=3D"32" height=3D"32" alt=3D"" sty=
+le=3D"display: inline;" src=3D"https://dm9d104elaxz5.cloudfront.net/Plainte=
+xt_blue%20buttons/insta.png"> </a></center> </td> </tr> <tr> <td> <center><=
+font color=3D"#777777"><em>Copyright =C2=A9 2020 Trello Inc., All rights re=
+served.<br> 888 Broadway Floor 4 New York, NY 10003</em></font></center> </=
+td> </tr> <tr> <td> <center><a href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fe%2Fevib%3F_t%3Dcce9a879=
+67214196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3DlLB=
+atCAsA6APXCD5suy-ajgqNJlicJrYlNE2xlG_Gu0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-r=
+L4KIlKYb8xTlVmkOl0PDTc4KXTDZ6tvxk5eNG_e4TlrljMx74-&amp;data=3D04%7C01%7Cjer=
+ry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C1%7C637391545741830128%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;s=
+data=3DZ62z9JXLRKgs8%2BKiQjUSE%2F7zWczjBiNIyiD17Z%2FHQrE%3D&amp;reserved=3D=
+0" originalsrc=3D"https://i.trellomail.com/e/evib?_t=3Dcce9a87967214196ae72=
+b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3DlLBatCAsA6A=
+PXCD5suy-ajgqNJlicJrYlNE2xlG_Gu0lhekfe8RmJEZ8uqUmXDpzupW-TQ2eqKYg-rL4KIlKYb=
+8xTlVmkOl0PDTc4KXTDZ6tvxk5eNG_e4TlrljMx74-" shash=3D"TBHRBakoshLIF7aVfwHVZl=
+n6VwVdk+9EJ8B7C89gP98sjP1MCvUTjUCHdxqrEPV0xku+XM2yk+TzX4WRnNes411nLDier/waM=
+OBopWk9O+8syjJ2R0ga42TY/+row4zb4R09ihmvYDUvQYe2c+cfu0YiJWTMEJgytM3hamV841U=
+=3D"><font color=3D"#aaaaaa"><em>View in Browser</em></font></a> <font colo=
+r=3D"#aaaaaa">|</font> <a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2Fa%2Fclick%3F_t%3Dcce9a8796721=
+4196ae72b08c7283fda9%26_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0X=
+S8560UK7FJd8eiSUTW1VRkwPhnqfR-dVoZ9lO1rrwV4LMzJwszJGEX6PrcseD2TW8Ez6Y23aBrH=
+2Ewrg8Y9WRj99RvPPN5WAclYV1e_iRIGZ-s5J38ovzuMQcd76FX3bHsId_1_oRR8gswAvC0bzEi=
+INqLyUlEdOsg3Jmx-GZG8Fz5OwoNikvBByJ8Up0zvSnUr1q15Q6Pok1Wm5SNCXCQ-_CBKfkCJ2j=
+fzeeV5zIVs5XNIviDDevfjthlwHDEq3cIlIx-zRRbJkgiZYFde7hu96r-nLUoxpuvwgw0QtX9oh=
+7ONuv3V76KfA2y9Pm5_jiM0RJX50zfizZXGmaK_08qR5DMkuVLXAGyJIGQEFN48-UgpZni0eNgS=
+eT&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d=
+8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741840085%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C3000&amp;sdata=3DS1GcsOTdltbdzSsjAc13lp38tl2Kxpk45yBnkqZv3=
+og%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/a/click?_t=
+=3Dcce9a87967214196ae72b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d899=
+07&amp;_e=3D3PKTB0XS8560UK7FJd8eiSUTW1VRkwPhnqfR-dVoZ9lO1rrwV4LMzJwszJGEX6P=
+rcseD2TW8Ez6Y23aBrH2Ewrg8Y9WRj99RvPPN5WAclYV1e_iRIGZ-s5J38ovzuMQcd76FX3bHsI=
+d_1_oRR8gswAvC0bzEiINqLyUlEdOsg3Jmx-GZG8Fz5OwoNikvBByJ8Up0zvSnUr1q15Q6Pok1W=
+m5SNCXCQ-_CBKfkCJ2jfzeeV5zIVs5XNIviDDevfjthlwHDEq3cIlIx-zRRbJkgiZYFde7hu96r=
+-nLUoxpuvwgw0QtX9oh7ONuv3V76KfA2y9Pm5_jiM0RJX50zfizZXGmaK_08qR5DMkuVLXAGyJI=
+GQEFN48-UgpZni0eNgSeT" shash=3D"LZc5boEYU01TS5t/IoDxxkHD4CWFBnBqgkpQIZqkQJo=
+Pwuwu/v5C0az1Ax5OGqTY51TpTBBPvxPgSzticqDsP7UEUZoOZ8eMR/GEcqwzT1O4YmKDJApT7s=
+4L2Ylb17TW1NKjLgGUPlK3qSm31cWsI61jFkMjZFz2PHXsYZLV4jU=3D"><font color=3D"#a=
+aaaaa"><em>Privacy Policy</em></font></a> <font color=3D"#aaaaaa">|</font> =
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fi.trellomail.com%2Fa%2Fclick%3F_t%3Dcce9a87967214196ae72b08c7283fda9%26=
+_m%3Dbc82478e0fd34257b4387ec535d89907%26_e%3D3PKTB0XS8560UK7FJd8eifqV2Qw9QU=
+AVacWQ6Orns45ZX7LfkSfkIe4bdt0ysd7zDBqPe5hlQGGkaDHJkcHyZklvjC9BXROKXyoG4lLsi=
+LH6dIHKsgx_vnzXtXxB39jiW7aA06FM8OQ9_Hq5YWR6JkUPgyZVeaBYl2ykC_C-E0fq7zDJu0TB=
+GnimPpFCnJuE5SxDO9RyAKJYx0JTjvBEG7-RghNiZMnlntg9ZtB846B-0Lmm8IvY63SdvX1DXPw=
+NDvmXEWc12PKh-Bfigy33CcKCt8K1t7leH1LIBVJ8wEZpae6S4E-BPw7eOvS7tmYzZpS_3Hju-b=
+6WuoQuzrM1WVrZTNN_NOH1PGyWOXi-anCtWj_buvz4W7cmR4idvAea&amp;data=3D04%7C01%7=
+Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a08d8783bd858%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637391545741840085%7CUnknown%7CTWFpbGZsb3d8=
+eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&a=
+mp;sdata=3DPdVPX8DvYrhLFff%2BnhRiruSPf405LMGlluqHyw1yXz8%3D&amp;reserved=3D=
+0" originalsrc=3D"https://i.trellomail.com/a/click?_t=3Dcce9a87967214196ae7=
+2b08c7283fda9&amp;_m=3Dbc82478e0fd34257b4387ec535d89907&amp;_e=3D3PKTB0XS85=
+60UK7FJd8eifqV2Qw9QUAVacWQ6Orns45ZX7LfkSfkIe4bdt0ysd7zDBqPe5hlQGGkaDHJkcHyZ=
+klvjC9BXROKXyoG4lLsiLH6dIHKsgx_vnzXtXxB39jiW7aA06FM8OQ9_Hq5YWR6JkUPgyZVeaBY=
+l2ykC_C-E0fq7zDJu0TBGnimPpFCnJuE5SxDO9RyAKJYx0JTjvBEG7-RghNiZMnlntg9ZtB846B=
+-0Lmm8IvY63SdvX1DXPwNDvmXEWc12PKh-Bfigy33CcKCt8K1t7leH1LIBVJ8wEZpae6S4E-BPw=
+7eOvS7tmYzZpS_3Hju-b6WuoQuzrM1WVrZTNN_NOH1PGyWOXi-anCtWj_buvz4W7cmR4idvAea"=
+ shash=3D"SaPNq0wQ8cxOffO5UTsiFcIT4eICEIgDCOpckZaGm19u5Wva1LFZ5lqgo/WMpfVIx=
+g0EJbDF71ORqKJdVcTG0aM0fqrpaw8cRuU+cBr7RIKlGsVdfHNeu1L2mXQ5eVTI98NF4z5od4np=
+r9FiCORHfN/oPUt/5NalmMchVdIEbg8=3D"><font color=3D"#aaaaaa"><em>Manage Acco=
+unt</em></font></a> <font color=3D"#aaaaaa">|</font> <a href=3D"https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fi.trellomail.com%2=
+Fe%2FencryptedUnsubscribe%3F_r%3Dcce9a87967214196ae72b08c7283fda9%26_s%3Dbc=
+82478e0fd34257b4387ec535d89907%26_t%3DlLBatCAsA6APXCD5suy-ajgqNJlicJrYlNE2x=
+lG_Gu36qoFn1sc8CItOMWab54xR1Lv5REkCRN80AlfKqZmRMFWOJsyStawT5nKzIxWLeMrMmPMM=
+rZGsd9Gr3zQiQ2Fm8md3JK91yzbBA4ovcQVWMH3QWl7L8W6hiHQ7CbsDZZ5lDEKhsLoauYe36-w=
+T7mC7&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C791a8792cb8543b86c4a=
+08d8783bd858%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739154574185004=
+4%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1ha=
+WwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3Dn%2FMPiQkn04Gt%2F0X%2F8YWpBK1OgckNfV%2=
+B1B8GJmsTUAuY%3D&amp;reserved=3D0" originalsrc=3D"https://i.trellomail.com/=
+e/encryptedUnsubscribe?_r=3Dcce9a87967214196ae72b08c7283fda9&amp;_s=3Dbc824=
+78e0fd34257b4387ec535d89907&amp;_t=3DlLBatCAsA6APXCD5suy-ajgqNJlicJrYlNE2xl=
+G_Gu36qoFn1sc8CItOMWab54xR1Lv5REkCRN80AlfKqZmRMFWOJsyStawT5nKzIxWLeMrMmPMMr=
+ZGsd9Gr3zQiQ2Fm8md3JK91yzbBA4ovcQVWMH3QWl7L8W6hiHQ7CbsDZZ5lDEKhsLoauYe36-wT=
+7mC7" shash=3D"QTekrM5vsLVz2m7iQ3L2PrfssqW2sgPAaE7u15vqo7T5V7+xEZKillVFkyW7=
+K80U/ds4YeULLMw9+i1FDlWMnSbHSgAXNl+ecanHMkOJGbPBYFB8RdYTyuIl+VJhNtg0U/LGrv5=
+dF3lXMp9j8EbTmOskBR0PWfZ/Mi95CDn/NoE=3D"><font color=3D"#aaaaaa"><em>Unsubs=
+cribe</em></font></a></center> </td> </tr> </tbody> </table> </td> </tr> </=
+tbody> </table> </center> </td> </tr> </tbody> </table>=20
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://i-sp.trel=
+lomail.com/q/mN9fzICUgZ-CeAJj2uzIug~~/AALHNwA~/RgRhdt6JPlcDc3BjQgoAHolZlF-K=
+cJEGUhdqZXJyeS50ZW5nQHV0ZGFsbGFzLmVkdVgEAAAAAA~~">
+</body> </html>=
+
+--_----XPbeSzCr4uTZ6bx3broITA===_58/60-28810-989549F5--

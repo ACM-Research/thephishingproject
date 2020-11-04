@@ -1,0 +1,146 @@
+Received: from CH2PR01MB5813.prod.exchangelabs.com (2603:10b6:610:3d::12) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sun, 25 Oct 2020 05:56:13
+ +0000
+Received: from BL0PR02CA0048.namprd02.prod.outlook.com (2603:10b6:207:3d::25)
+ by CH2PR01MB5813.prod.exchangelabs.com (2603:10b6:610:3d::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.18; Sun, 25 Oct 2020 05:56:11 +0000
+Received: from BL2NAM02FT003.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:207:3d:cafe::e3) by BL0PR02CA0048.outlook.office365.com
+ (2603:10b6:207:3d::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Sun, 25 Oct 2020 05:56:11 +0000
+Authentication-Results: spf=pass (sender IP is 192.254.112.99)
+ smtp.mailfrom=sgmail.github.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=github.com;utdallas.edu; dmarc=pass action=none
+ header.from=github.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of sgmail.github.com
+ designates 192.254.112.99 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.254.112.99;
+ helo=o4.sgmail.github.com;
+Received: from o4.sgmail.github.com (192.254.112.99) by
+ BL2NAM02FT003.mail.protection.outlook.com (10.152.76.204) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Sun, 25 Oct 2020 05:56:11 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s20150108; bh=BN0iIvT0SeebW7fWHZRaDLaWxEMqPUzF7qYYT1aVics=; b=
+	NSFoJHWho46I05RuRUqra0fqmLp2Q6PI5yK+NFMaQ3a8eCGW9a9TO3m/skEuW0oI
+	OJvI5KajwJaN5x9awXdkbs+Y7Wld5JTg8DAcHINFSJD0pwlS8qTLzqPvYNAM7R00
+	cGMR4aLLrBc3jgQn+R6gu/smpTGvU50suFhBRBVtPs0=
+Received: by filter2413p1las1.sendgrid.net with SMTP id filter2413p1las1-3509-5F95137A-1
+        2020-10-25 05:56:10.067286755 +0000 UTC m=+138049.236350162
+Received: from smtp.github.com (unknown)
+	by ismtpd0028p1iad2.sendgrid.net (SG) with ESMTP id 6hPu65zsTxytA8wa-opR5g
+	Sun, 25 Oct 2020 05:56:09.967 +0000 (UTC)
+Received: from github.com (hubbernetes-node-19f6e17.va3-iad.github.net [10.48.101.36])
+	by smtp.github.com (Postfix) with ESMTPA id CF2C43401FE;
+	Sat, 24 Oct 2020 22:56:09 -0700 (PDT)
+Date: Sun, 25 Oct 2020 05:56:10 +0000 (UTC)
+From: GitHub <noreply@github.com>
+To: JerryTeng01 <zuyuangteng@gmail.com>
+Message-ID: <5f951379cc027_1d1719b41361be@lowworker-744d6567d8-svgdk.mail>
+Subject: [GitHub] A third-party OAuth application has been added to your
+ account
+Content-Type: text/plain;
+ charset=UTF-8
+X-Auto-Response-Suppress: All
+categories: account-security,new-oauth-authorization
+X-SG-EID: C43oBG/NSnk4GhLIZcd17PGJZo6msTXE5kXjxXafQQLbRjoFqy4w/zvqk8Ly4gBY7vP75ti5H4YtxY
+ X5XWPs07HomUBG4N3wr9AYrxdS3p3n3ExvTagNoQWU6Cw5D4e46i2R4O/yf7HoGMlClB3gpGFRGtO1
+ WXnZdUBsxSeIcOWejDeXEF4OgSCset6dr/FA+wURc5SvubMRUdVWWfTz6w==
+X-SG-ID: HjuyJHjWedrv+ZABmVoKqJUGcbnIrpG8Dl8TZw63o/tYHvHAZuj7fE3sBkCPSNz92pSnrCLqO00MaT
+ UToqoVhg==
+X-Entity-ID: /f+S0XqulHHajbNb6hGdxg==
+Return-Path: bounces+848413-d18c-zxt180005=utdallas.edu@sgmail.github.com
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Oct 2020 05:56:11.4905
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7cb13a1b-6eeb-4382-28bc-08d878aaacfc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132480789714925261;(402c522f-8ec0-4321-0547-08d7a5948128);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7cb13a1b-6eeb-4382-28bc-08d878aaacfc
+X-MS-TrafficTypeDiagnostic: CH2PR01MB5813:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:3276;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 5912226127091945705;16304123083731854979;14386822116338820518
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.254.112.99;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o4.sgmail.github.com;PTR:o4.sgmail.github.com;CAT:NONE;SFS:(4636009)(286005)(7596003)(1096003)(6266002)(83170400001)(356005)(7636003)(9686003)(6666004)(426003)(6862004)(26005)(36756003)(15650500001)(966005)(336012)(83380400001)(6286002)(6966003)(8676002)(4744005)(19530500002);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Oct 2020 05:56:11.2656
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7cb13a1b-6eeb-4382-28bc-08d878aaacfc
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR01MB5813
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0340058
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MGlwVlNUTHQ3NGc1bFZyS3kxN3JtMytWNUlpVUcvWm5kYURsNU8ycDh2NFpJ?=
+ =?utf-8?B?RllKMENDS2ZFQXNock8zV0tQM0tvQk1ua0lzZmgvalZleE5XTzdNMEtDZzNU?=
+ =?utf-8?B?SHh3ZkhrbHVjOGtUYUs5aUMzaEtQa2NMUkFIbFNDUEprWGQ0enpUQmY0UGNU?=
+ =?utf-8?B?UTVhY1c4V05GdmpVS3J4Y04yVmcyV1ZlcnJVaWx4bzZRSVRuODRwWitzeFhx?=
+ =?utf-8?B?alVHNkUxNEw4YWJTV3ZFYzJRRWVERkw2ajZKRHg3ZS94ZDRGV1R0OXh2akNk?=
+ =?utf-8?B?dkRPM1pYVkVMME4wMXpNSTBHRVVCWUlGeEJFa3hiNzhvV3ZIRSs2a0lZR2sv?=
+ =?utf-8?B?ejFzYlJDS2FYRWYvNzg5VlN4ZzQ2d0Z0c2lwR0pUUnJtS3gyMnZsZTRyS000?=
+ =?utf-8?B?dG1SakVkNlpvYkFTYlVrMi8zQ0twUFI4Uy9BU0pJVlI2WGlrMXRFNktDQm1X?=
+ =?utf-8?B?UzRyM0lnSWlJSCs0N2JzY3BhZUx2dWZDQUNoQWFyRzBmMmtGMmlkWnJhYTBM?=
+ =?utf-8?B?Z3YwRlFXRGpYVksyNVgwVlhRMkpjVTNiZUlxL1pJMUdVL05adGFTN1VvV3kv?=
+ =?utf-8?B?V001YTE0WVJWK2hndHZHS2VEbTFPV210QW80UGtZaXZQME9hQjZlU1J4MmdW?=
+ =?utf-8?B?cDUwOVMvQTFTa2ZyMWVqRW02U0l4S1p5aGE3Qm5ibjRtOWRZdWlqZ2g4akhH?=
+ =?utf-8?B?MVFrMlM1WFY4dkNmK1l3U0lyQmlETkY1VHU1YmhBeWxhUm9pby8rOTF6dW9K?=
+ =?utf-8?B?WUU3ZHdDcFlSRk1nNmpVY2JvanRJbE1lNTBQQy9nZC9HZTU0RHdtaWJybWF4?=
+ =?utf-8?B?ZXdLYzJKMGVtTERKV1JOOGgySXJlNUpjVjRvUXR6K0pJaVBkcFpQL2VNcmo5?=
+ =?utf-8?B?UG9FcWpHcS9qYzZqVVc1MmptdWo2cUZkQVhVckJkc2lqTFJodTZCWjV4TXZu?=
+ =?utf-8?B?b1JZQUxWZDhXTzhGbnY0VkVRV3VWSmZDdXp2OXdXM1daRDA4MDRlWi9RSkJQ?=
+ =?utf-8?B?ZUhSQTZHbUkzVWVaQ1o0Y3haeFUvSUFuNHMvQUlvYktMK2NFNW9hdkFMbnpT?=
+ =?utf-8?B?MGJ5N2FZUHBvNmVHbDVNaEpnT1prNU1LdGQ5MnNTT2pRVWp4ZkdKS29qaits?=
+ =?utf-8?B?bEQrSFM3T00vUEZ5TVN0ckFPN1RrSjBPaXJYNk1ITFc2VWNLNTNrR29mV1VS?=
+ =?utf-8?B?QVB2QTNTd3ltN1BpVXpqdWcxb0VoRzdNcUVYQU1hUFlORy9jZ0g5TnlaL3l1?=
+ =?utf-8?B?NkJlMFRQLzVzVE42YjBoU3Qxdm5rZkdzdkJEZnJtcjNyb1IrVVp0UkQwVUQy?=
+ =?utf-8?B?TmtMTXlYK0dsVkVZRld0QlpiTXdycE1VMUxFN09LZ21mVDcwWnc3cEh0b1hX?=
+ =?utf-8?B?SUJjWk1IUW4xdDd3ZUhzNWkyOSt5OXI3Ujk0OWpkNzhqUEtNQXpicCtSaDJG?=
+ =?utf-8?B?ZTFaRjV1cnN5bVM4NVhUUnVpMUYxVmMxYm1BV2x4NHBOMWo2NDR1RUdiaW1C?=
+ =?utf-8?B?R3JFcGZiWjE4dWVHbWgzd1YyTVRaUTg2RHhIaGgxa1RlVkdXMk15MHlIL1Nv?=
+ =?utf-8?B?MlRPMlhsUXJvM0c2NHFVSjIrdE91VzV6dUh6OTUrdXNuK0RHMVFOT0tTeURs?=
+ =?utf-8?B?LzVNd2xuNytkeWJMQnJkLzUxVXpqY3dxSGFnSk45ZVBIQ1oraExZMW5TRTlo?=
+ =?utf-8?B?a2ZJZEowaHFjSnlZT1UxcTRFQURiUmMyQVFQZVRHRCthY2E4bXhFTFZPZ1ZL?=
+ =?utf-8?B?aG9HYjBCQmxaMzVORzMwUGlsaXNFYzJOV3dsT29hcVpiN3JrNGMrNDFySkIw?=
+ =?utf-8?B?K3ZQODVHd2VNbS9WYnovM0dBK1JIdDRlNlNzZFlBUnVxazZyR2dkeE1rK3Zj?=
+ =?utf-8?B?aTVxQjhZSC9HbGRPMmowRXFOWjFzWkZKeWpDSElic2U0cW9qQnp1R05iZkw5?=
+ =?utf-8?B?RXh5YlBiRGZBaHZJQXhCekFnYjdkZ1pwczBaV21TZzBvZnVmUVBTMnJGVlJO?=
+ =?utf-8?B?R2hGWjkwWlhoS0UvN3JRUHZvUGpuZ0QxVmJ0YURpUEV2dWl3YXNSUTlGeW02?=
+ =?utf-8?Q?2KRvr5?=
+MIME-Version: 1.0
+
+Hey JerryTeng01!
+
+A third-party OAuth application (Atom GitHub package) with read:org, repo, and user:email scopes was recently authorized to access your account.
+Visit https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fsettings%2Fconnections%2Fapplications%2Fc8fa41b9821cfbe1248f&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C7cb13a1b6eeb438228bc08d878aaacfc%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637392021730877541%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=yewbS%2BCm2niATZ635JvNp%2Bzyj1GkLCtzfdfDcYK5k3Y%3D&amp;reserved=0 for more information.
+
+To see this and other security events for your account, visit https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fsettings%2Fsecurity-log&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C7cb13a1b6eeb438228bc08d878aaacfc%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637392021730877541%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VcA3BZzKmqjDXILn%2BgXeiZnBudRNoHAdkNsNxZVEy2A%3D&amp;reserved=0
+
+If you run into problems, please contact support by visiting https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fcontact&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C7cb13a1b6eeb438228bc08d878aaacfc%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637392021730877541%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=zyo9K%2BeSgee8cVLQCUMvnIIhOLvDFLY46mz0IV%2F2coQ%3D&amp;reserved=0
+
+Thanks,
+The GitHub Team

@@ -1,0 +1,446 @@
+Received: from SA0PR01MB6395.prod.exchangelabs.com (2603:10b6:806:db::9) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 19 Oct 2020 08:37:46
+ +0000
+Received: from SA0PR11CA0009.namprd11.prod.outlook.com (2603:10b6:806:d3::14)
+ by SA0PR01MB6395.prod.exchangelabs.com (2603:10b6:806:db::9) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Mon, 19 Oct 2020 08:37:44 +0000
+Received: from SN1NAM02FT034.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:806:d3:cafe::c5) by SA0PR11CA0009.outlook.office365.com
+ (2603:10b6:806:d3::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.24 via Frontend
+ Transport; Mon, 19 Oct 2020 08:37:44 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ SN1NAM02FT034.mail.protection.outlook.com (10.152.72.141) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Mon, 19 Oct 2020 08:37:44 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 19 Oct 2020 03:37:23 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 19 Oct 2020 03:37:23 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id A1420C000056; Mon, 19 Oct 2020 03:37:23 -0500 (CDT)
+To: <news@lists.utdallas.edu>
+Subject: State of the University, Undeclared Major Help, Transfer Appreciation Week, Women's Summit
+From: <newscenter@utdallas.edu>
+Content-Type: text/html; charset="US-ASCII"
+Message-ID: <news.1065@anonymous>
+Reply-To: <newscenter@utdallas.edu>
+X-Loop: news@lists.utdallas.edu
+X-Sequence: 1065
+Errors-To: news-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <news-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <news.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20news>
+List-Unsubscribe: <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20news>
+List-Post: <mailto:news@lists.utdallas.edu>
+List-Owner: <mailto:news-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/news>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/news/2020-10/news.1065%40anonymous>
+Date: Mon, 19 Oct 2020 03:37:23 -0500
+Return-Path: bounce+jerry.teng==a==utdallas.edu==news@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2020 08:37:44.6735
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 80b02a81-e3d0-438a-0405-08d8740a4018
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 80b02a81-e3d0-438a-0405-08d8740a4018
+X-MS-TrafficTypeDiagnostic: SA0PR01MB6395:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:4502;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2020 08:37:44.5817
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 80b02a81-e3d0-438a-0405-08d8740a4018
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA0PR01MB6395
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7518481
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?wsCBYJPpdcnL9fRTEScrND5p6F+/x0xbix+DmMTyR/ohKuFreGSDrhr4?=
+ =?Windows-1252?Q?Ptr7B7CvF0vehvIlhWXE8PmQM4CTkYSfwhXWKJ6wolAVxIY4T6Og18B2?=
+ =?Windows-1252?Q?4As0E/mAcYHSxE+NXeLkk/Ym+uvhBt/5HI4OnASouybYJwkqxduFEamY?=
+ =?Windows-1252?Q?hymRhYSLyND5BEdUjhsaO6Vey6IyUg50ptj1IwNWCJXHIYIfTXbfihyZ?=
+ =?Windows-1252?Q?R67Zc5hS934RbV/E/NThs8mv0ODbHUOw9BRX2nzrgpJ4w5GFc/L9ZRZy?=
+ =?Windows-1252?Q?/IQtighDHiDwEptnxrLzrYoHzTZw4h6hd1Pjag0ZRvmb/LgIlSkkn4uM?=
+ =?Windows-1252?Q?YjvgoCqUdhJtjPLtvRcU4Egni1tszX1c4gp74qMm8dtE9Om0by2JzDSt?=
+ =?Windows-1252?Q?SjDNKebdEHm0oNaswvPHxw65iy6VXVXuNtvtMD4shJ/c+dd1hHl9tkfH?=
+ =?Windows-1252?Q?nSavVOklFyrBVSIhZDkpX+8xPi5VJ9apXYQn3+pnKNIwgcZkmWU2W2qX?=
+ =?Windows-1252?Q?VWYjuVDtNdZDX3EvvL9/xF34tB7wrp4h3iYzJeDPsuk600ZFnm47BNQr?=
+ =?Windows-1252?Q?V6SEcD5ki7YIbRLbDqZeooYLyXTetgw3tQa0yrGGZsmgAqvntp7JhvxA?=
+ =?Windows-1252?Q?lGXqFnQ9rLAmjcj9LdGhR8spjj+q2vmrSWsACQxigh7R42zhF/OnIEJk?=
+ =?Windows-1252?Q?PVAAkZe87HPq1NlALakUcGRlGG8pcG15tALF+/lrwIxlXIZHYnUb8bEV?=
+ =?Windows-1252?Q?NoTibhPtzpeUjL/rz0a+agjifI+L3QWNjX7Cv5gY+CRLq4irW+z12gvL?=
+ =?Windows-1252?Q?yfA/7iWfLrri8wOylyB5xpizj51+iftCvcvHXLFPQloLlK/vO3TTNvnf?=
+ =?Windows-1252?Q?E5mIG8FTGFP3USqBLTtPkZ86UzQs2UPUfLyxCLL2axGz0JpmEgNlXhH3?=
+ =?Windows-1252?Q?SawtKOJHooLk3F8lgTJHYe+eHEiMHNmvRso++6HQND+czx76wtAHwXnR?=
+ =?Windows-1252?Q?zVRHYt6/Co5sRW2znccNXfYUtU8+hjr69yWEFf4APzaq25ek+ZoCdC+m?=
+ =?Windows-1252?Q?0SAH5/jLw2YEc81xTlPO1TZ+FcbfnnlaRmwat9CQBL/opaBlwntV9MOV?=
+ =?Windows-1252?Q?DBHWKqYE/BYLwYwbGqOeGYmbCuW8IEM05UL7PTqyASCnfcT+84Iq/fQr?=
+ =?Windows-1252?Q?GaLFa9G75DmuIc6NOEk6+BGNPgckxyuJv7ps6NghHev+to6uiXXILKa5?=
+ =?Windows-1252?Q?h0t5TO93Ze5zucXDtYtMapL2O/klIOqjSNkKBSRmPr4VokarYtYzZQm9?=
+ =?Windows-1252?Q?d0vN1bUP53l8/wIOAhEj+YXnnja8ReEWkKaY7T05E4fBmUm3/rP+Jwax?=
+ =?Windows-1252?Q?ROgEGr4KvFdRvT8qWoDkW8k7HZnLPIvy15Bmh+wLempLAwhF9BZ64a24?=
+ =?Windows-1252?Q?ItUWNGbCMd6FfNZLJ8OhlQT9VJvh6kwYpq4uF7IBfuQkswZYqYGSdxll?=
+ =?Windows-1252?Q?mImjXljLGuE1VGefrgfagaI/YWgtOg=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UTD Today - October 19, 2020</title>
+<!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse:collapse;}
+        table.main-table {width:600px;}
+		body, table, td, p, a {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+	<!--[if mso]>
+    <style type="text/css">
+		body, table, td, p, a {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+	<link rel="stylesheet" href="https://use.typekit.net/roc5fuc.css">
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; max-width:100%; max-width:600px; height:auto !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration:none;}
+    .appleBody2 a {color:#fff; text-decoration:none;}
+    .appleBody3 a {color:#999999; text-decoration:none;}
+    .appleBody4 a {color:#818179; text-decoration:none;}
+    .appleFooter a {color:#999999; text-decoration:none;}
+    .appleEvents a {color:#404141; font-weight:bold; text-decoration:none;}
+  /* EVERYTHING ELSE */
+  	.icon{max-width:36px !important;}
+    @media screen and (max-width:600px) {
+      body[yahoo] .deviceWidth {width:280px !important; padding:10px 0 0 0;}
+      .deviceWidth {width:280px !important; padding:10px 0 0 0;}	
+      body[yahoo] .center {text-align:center !important;}
+      .center {text-align:center!important;}
+    	img{ max-width:100% !important; height:auto !important;}
+  	}
+</style>
+</head>
+
+<body link="#e87500" style="font-family: arial, sans-serif; min-width:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; background-color:#e3e3e3; margin:0; padding:0;" dir="ltr" lang="en-US" bgcolor="#e3e3e3" xml:lang="en-US" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+	<div id="preheader" style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">Annual State of the University Address Set for Tuesday; Exploratory Advising Provides Major Assists for Undeclared Students; See Video Highlights from October; Events Focus on Transfer Students; Summit Begins Tuesday</div>
+
+<div id="subject" style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">State of the University, Undeclared Major Help, Transfer Appreciation Week, Women's Summit</div>
+<!--[if (gte mso 9)|(IE)]>
+    <center>
+        <table><tr><td width="600">
+<![endif]-->
+  <center>
+	  <table style="margin:0 auto" width="100%">
+<tbody><tr>
+</tr><tr style="width:600px;">
+    </tr></tbody></table>
+    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#e3e3e3; max-width:600px; border-spacing:0; font-family: arial, sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; table-layout:fixed; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" class="main-table">
+      <tr>
+        <td align="center" valign="top" style="font-family: arial, sans-serif; padding:0;">
+
+
+
+
+      
+
+          
+
+
+
+
+          <!-- START 1-Column Content-->
+
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family: arial, sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+
+
+                <tr><!-- START Header Image -->
+                  <td align="center" valign="top" style="font-family: arial, sans-serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">The University of Texas at Dallas</div><a href="https://www.utdallas.edu/about/today/"><img src="https://www.utdallas.edu/news/email/template/2020-redesign/utd-today-header-2020-2.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+                </tr><!-- END Header Image -->
+				 <tr><!-- START Header Image -->
+                  <td align="center" valign="top" style="font-family: arial, sans-serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">The University of Texas at Dallas</div><a href="https://www.utdallas.edu/"><img src="https://www.utdallas.edu/news/email/template/img/university-texas-dallas.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+                </tr><!-- END Header Image -->
+
+              <tr><!-- START Date -->
+                  <td align="center" valign="top" style="font-size:19px; color:#333; padding:30px 30px 0;">October 19, 2020</td>
+              </tr><!-- END Date -->
+             
+              <!-- START Image -->
+              <tr>
+                <td align="left" valign="top" style=" padding:30px 30px 5px 30px; background-color:#fff;"><a href="https://calendar.utdallas.edu/event/state_of_the_university_1527#.X3dIsGhKh9N" width="540"><img src="https://www.utdallas.edu/news/email/2020/10/19/img/mace.jpg" alt="Annual State of the University Address Set for Tuesday" width="540" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+              </tr><!-- END Image -->
+              <tr><!-- START Body Text -->
+                  <td align="left" valign="top" style="font-size:16px; line-height:22px; color:#333; padding:15px 30px; background-color:#fff; text-align:left;">
+                    <a href="https://calendar.utdallas.edu/event/state_of_the_university_1527#.X3dIsGhKh9N" style="color:#154734; text-decoration:underline; display:inline-block; margin-bottom:10px; font-size:18px;"><strong>Annual State of the University Address Set for Tuesday</strong></a><br>
+                    UT Dallas President Richard C. Benson and representatives from the Academic Senate, Staff Council and Student Government will address the campus community during a virtual presentation at 2 p.m. Tuesday.
+                  </td>
+              </tr><!-- END Body Text -->
+
+		<tr><!-- START Button -->
+                <td style="padding:0 0 15px;" valign="top" align="center">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://calendar.utdallas.edu/" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#154734">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://calendar.utdallas.edu/" style="background-color:#154734;border-radius:4px;color:#ffffff;display:inline-block;font-family: arial, sans-serif;font-size:16px;font-weight:normal;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">EVENTS</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr>
+				<tr style="">
+                <td style="padding:0; margin:0; background: #f3f3f3;" width="100%" valign="top" align="left"><img style="vertical-align:bottom; margin:0; padding:0;width: 100%; display: block;border-radius: 0px; min-width: 100%;" src="https://www.utdallas.edu/news/email/template/2020-redesign/border-f3f3f3-1200x20.jpg" alt="" width="600" border="0"></td>
+              </tr>
+
+             
+              <!-- START Image -->
+              <tr>
+                <td align="left" valign="top" style=" padding:30px 30px 5px 30px; background-color:#fff;"><a href="https://www.utdallas.edu/news/students-teaching/exploratory-advising-2020/" width="540"><img src="https://www.utdallas.edu/news/email/2020/10/19/img/books.jpg" alt="Exploratory Advising Provides Major Assists to Students" width="540" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+              </tr><!-- END Image -->
+              <tr><!-- START Body Text -->
+                  <td align="left" valign="top" style="font-size:16px; line-height:22px; color:#333; padding:15px 30px; background-color:#fff; text-align:left;">
+                    <a href="https://www.utdallas.edu/news/students-teaching/exploratory-advising-2020/" style="color:#154734; text-decoration:underline; display:inline-block; margin-bottom:10px; font-size:18px;font-family: arial, sans-serif;"><strong>Exploratory Advising Provides Major Assists to Students</strong></a><br>
+                  The Office of Undergraduate Education offers services &#8212; from one-on-one advising to seminars &#8212; that help undeclared students explore their academic interests and find the path that fits them best. 
+                  </td>
+              </tr><!-- END Body Text -->
+         
+             
+<tr><!-- START Button -->
+                <td style="padding:15px 0;" valign="top" align="center">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.utdallas.edu/news/" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#154734">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://www.utdallas.edu/news/" style="background-color:#154734;border-radius:4px;color:#ffffff;display:inline-block;font-family: arial, sans-serif;font-size:16px;font-weight:normal;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">NEWS CENTER</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr>
+				
+				<tr style="">
+                <td style="padding:0; margin:0; background: #f3f3f3;" width="100%" valign="top" align="left"><img style="vertical-align:bottom; margin:0; padding:0;width: 100%; display: block;border-radius: 0px; min-width: 100%;" src="https://www.utdallas.edu/news/email/template/img/border-f3f3f3-1200x20.jpg" alt="" width="600" border="0"></td>
+              </tr>
+
+            
+            <!-- START 2-Column Content -->
+            <tr>
+              <td>
+
+                <table role="presentation" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;">
+                  <tr>
+                    <td>
+                    <table role="presentation" width="100%" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td style="padding:30px;">
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="150">
+                            <tr>
+                              <td valign="top" align="center" class="center"><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.fox4news.com%2Fvideo%2F859753&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660797538%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=qV%2B5qkeaAWxBTTAUKrIRJbP9hQa87Y2eCImoo5qRPBg%3D&amp;reserved=0" originalsrc="https://www.fox4news.com/video/859753" shash="kIcCxXXz1cJLaz1hSznyFchS5g00fxM409NFBO2yByz27yfR7xKaeBln5aHBq3LgPY110z+GkwWIrDauRHZszu7N9pd80T5mgU0ic6PS1J0na/xUFLWIyOznokOIeAPnEUp6zSiS8fnN+y5O8lmjnzHs68sAqcktEhdjUNA/5GA=" width="150"><img src="https://www.utdallas.edu/news/email/2020/10/19/img/johnson.jpg" alt="Twitter Imposes New Election Limits" width="150" border="0" style="border-radius:0px; width:100%; display:block;" class="deviceWidth"></a></td>
+                            </tr>
+                          </table>
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="375">
+                            <tr>
+                              <td style="font-size:16px; color:#444; font-weight:normal; text-align:left; font-family: arial, sans-serif; line-height:22px; vertical-align:top; padding:5px 20px; mso-table-lspace:0;mso-table-rspace:0; margin:0;">
+                              <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.fox4news.com%2Fvideo%2F859753&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660797538%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=qV%2B5qkeaAWxBTTAUKrIRJbP9hQa87Y2eCImoo5qRPBg%3D&amp;reserved=0" originalsrc="https://www.fox4news.com/video/859753" shash="kIcCxXXz1cJLaz1hSznyFchS5g00fxM409NFBO2yByz27yfR7xKaeBln5aHBq3LgPY110z+GkwWIrDauRHZszu7N9pd80T5mgU0ic6PS1J0na/xUFLWIyOznokOIeAPnEUp6zSiS8fnN+y5O8lmjnzHs68sAqcktEhdjUNA/5GA=" style="color:#154734; text-decoration:underline; display:inline-block; margin:10px 0; font-size:18px;"><strong><i>KDFW Fox 4:</i> Twitter Imposes New Election Limits</strong></a><br>
+                              &#8220;The one thing social media needs to do is teach people how to use it. And media literacy is the key to fighting the truth war online.&#8221;<br>
+&#8212; <a href="https://www.utdallas.edu/ah/people/faculty_detail.php?faculty_id=506" style="color:#154734; text-decoration:underline;">Dr. Janet Johnson</a>, lecturer</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+						<tr><!-- START Button -->
+                <td style="padding:0 0 15px;" valign="top" align="center">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.utdallas.edu/news/media-highlights/" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#154734">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://www.utdallas.edu/news/media-highlights/" style="background-color:#154734;border-radius:4px;color:#ffffff;display:inline-block;font-family: arial, sans-serif;font-size:16px;font-weight:normal;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">MEDIA HIGHLIGHTS</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr>
+						<tr style="">
+                <td style="padding:0; margin:0; background: #f3f3f3;" width="100%" valign="top" align="left"><img style="vertical-align:bottom; margin:0; padding:0;width: 100%; display: block;border-radius: 0px; min-width: 100%;" src="https://www.utdallas.edu/news/email/template/2020-redesign/border-f3f3f3-1200x20.jpg" alt="" width="600" border="0"></td>
+              </tr>
+                    </table>
+                    </td>
+                  </tr>
+                </table>
+    
+    
+                <table role="presentation" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;">
+                  <tr>
+                    <td>
+                    <table role="presentation" width="100%" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td style="padding:30px;">
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="150">
+                            <tr>
+                              <td valign="top" align="center" class="center"><a href="https://calendar.utdallas.edu/event/transfer_appreciation_week_2020#.X4dEytBKjcu" width="150"><img src="https://www.utdallas.edu/news/email/2020/10/19/img/transfer.jpg" alt="Transfer Appreciation Week 2020" width="150" border="0" style="border-radius:0px; width:100%; display:block;" class="deviceWidth"></a></td>
+                            </tr>
+                          </table>
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="375">
+                            <tr>
+                              <td style="font-size:16px; color:#444; font-weight:normal; text-align:left; font-family: arial, sans-serif; line-height:22px; vertical-align:top; padding:5px 20px; mso-table-lspace:0;mso-table-rspace:0; margin:0;">
+                              <a href="https://calendar.utdallas.edu/event/transfer_appreciation_week_2020#.X4dEytBKjcu" style="color:#154734; text-decoration:underline; display:inline-block; margin:10px 0; font-size:18px;"><strong>Transfer Appreciation Week 2020</strong></a><br>
+                              <strong>Oct. 19-23<br>
+Microsoft Teams</strong><br><br>
+
+Get advice, build connections with fellow Comets and participate in game night. </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+						 <tr>
+                        <td style="padding:30px;">
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="150">
+                            <tr>
+                              <td valign="top" align="center" class="center"><a href="https://calendar.utdallas.edu/event/womenssummit#.X4dEeNBKh9N" width="150"><img src="https://www.utdallas.edu/news/email/2020/10/19/img/goldin.jpg" alt="Women's Summit" width="150" border="0" style="border-radius:0px; width:100%; display:block;" class="deviceWidth"></a></td>
+                            </tr>
+                          </table>
+                          <table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" class="deviceWidth" width="375">
+                            <tr>
+                              <td style="font-size:16px; color:#444; font-weight:normal; text-align:left; font-family: arial, sans-serif; line-height:22px; vertical-align:top; padding:5px 20px; mso-table-lspace:0;mso-table-rspace:0; margin:0;">
+                              <a href="https://calendar.utdallas.edu/event/womenssummit#.X4dEeNBKh9N" style="color:#154734; text-decoration:underline; display:inline-block; margin:10px 0; font-size:18px;"><strong>Women&#8217;s Summit</strong></a><br>
+                              <strong>Oct. 20-22<br>
+Virtual</strong><br><br>
+
+Join us to foster innovation, support aspiring entrepreneurs and inspire the next leaders in business. <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fwomens-summit-tickets-120051486227&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660807495%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=BVI3QaDLd5meR5jStj7CtjGnn7kRdTVHFVCiGAplSqo%3D&amp;reserved=0" originalsrc="https://www.eventbrite.com/e/womens-summit-tickets-120051486227" shash="pdO7PnN5VNHaIx+o/TyG7WF9LmYh7SnZh3u1f0dwaW6LlXDhFrogysebI/WCj/AY/H89uQ8QZOl9HGkBB2VODPypJBMSd2GPwD1o3JJj2mlOKxAPOljH702NITTQXt3oUIZ1dFLsx2qCzATY+ck46F2RA/pv9STX5O6EXPNAnwk=" style="color:#154734; text-decoration:underline;">Register</a></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+						<tr><!-- START Button -->
+                <td style="padding:0 0 15px;" valign="top" align="center">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://calendar.utdallas.edu/" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#154734">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://calendar.utdallas.edu/" style="background-color:#154734;border-radius:4px;color:#ffffff;display:inline-block;font-family: arial, sans-serif;font-size:16px;font-weight:normal;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">EVENTS</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr>
+                    </table>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+            <!-- END 2-Column Content --> 
+
+
+
+
+              <!-- START Footer -->
+              <tr>
+                <td align="center" valign="top" style="padding:30px; background-color:#154734; color:#fff; font-size:14px; ">
+                  <a href="https://www.utdallas.edu/" style="color:#fff; outline:none; border:none; text-decoration: underline">The University of Texas at&nbsp;Dallas</a><br>
+                  800 W. Campbell Road, Richardson,&nbsp;Texas 75080<br><br>
+                  <!-- START Icons -->
+                  <table role="presentation" width="200" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <td width="24%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Futdallas&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660807495%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=Thq0hP3Qs%2BEeZXGnzUk3DbXzNeT6PSASuBoQCNAt0VM%3D&amp;reserved=0" originalsrc="https://www.facebook.com/utdallas" shash="TiYnXI40hmFbYDJ6bhX7dZkg2JzXiidXlBh1dudU2so+DdZ82HQOuKwu4zQHN5dksWBc+yEKOAkxUYnVrg9anpfNkMJWjSH3i578UmX3SGzAVBLH/CFbtiQewY8WVIc+Q2PQwSmeQKvVaOMSX8rfieN/X2+2r5uZlUbKndDL9i8=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/news/email/template/img/icon-facebook-white.png" width="36" height="36" alt="facebook" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="24%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660807495%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=ggawLawYpEtiqdcRGI3MToABhJ1cp7JBx2l2xc12JDw%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="hKpWdJMJ0SJ/zWkg36cCUVRoXReD4SBO82lFlaKQL7nyaSwBaEK7AhFfGqn0UQD2k6f/blM4UWy0+0XMa1k+6cCUje4aDllM2tWpxm9iVtAXO9ENmgXNITVcd3XP91oAqzpEL4Hn4fbVp7MhFvz7+UT2aaTgiW0aq9SbLobgt7Q=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/news/email/template/img/icon-instagram-white.png" width="36" height="36" alt="instagram" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="24%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2Fut_dallas&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660817451%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=BbM3lQbmnQRIljJ8IUElJsNZhGOyawau5F3Tc6%2BJ40U%3D&amp;reserved=0" originalsrc="https://twitter.com/ut_dallas" shash="hRpbzVoeeHqkx5PccpzHN3iuXSiKO7Qc4AQhYMSJGJpQd0ho6abDVC+jgfYvxm9Q2yDMGa0UYRRdXffZBg0j662ZYq0SD3EsF1u9Y//cHQjIEom9hmo49187i7BDfDyx5NsVDP1vt4+hj3yR2fYhD3iFSG8VRhQsDdaXLK3edrQ=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/news/email/template/img/icon-twitter-white.png" width="36" height="36" alt="twitter" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td><td width="24%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2Fuser%2FUTDallasComets&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C80b02a81e3d0438a040508d8740a4018%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386934660817451%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=JVDDpz1u95HKiZiM6dpUkZfBt5WFzcKL5sZSsg5asE0%3D&amp;reserved=0" originalsrc="https://www.youtube.com/user/UTDallasComets" shash="bxrjB1iNwMvGSTevoa6inJ7Oow4I0/A4zvI2R/QiqkP3aKcZ2eH7ha+EaXZ0uK0tnH6eb7/K8NvXkYSiQ9ehxvqpLSr3zvACgTI/2l8klRIg0YCN6jFlwe0DUAB2T+xc6o+QB7QmxfJQrdIlBlFUyQ+ZjyPZFDg5Mxzi6x5pjLI=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/news/email/template/img/icon-youtube-white.png" width="36" height="36" alt="youtube" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                    </tr>
+                  </table>
+                  <!-- END Icons -->
+                  <br>
+					UTD Today is published by the Office of Communications. <br>
+                  <a href="https://www.utdallas.edu/news/email/2020/10/19/index.html" style="color:#fff; outline:none; border:none; text-decoration: underline;">view in browser</a> | <a href="http://www.utdallas.edu/opt-out/index.php?list=news&amp;user=jerry.teng@utdallas.edu" style="color:#fff; outline:none; border:none; text-decoration: underline;">unsubscribe</a><br><br>
+                </td>
+              </tr> 
+              <tr>
+                <td align="center" valign="top" style="padding:2px; background:#333"></td>
+              </tr><!-- END Footer -->
+
+
+
+
+            </table>
+
+          <!-- END 1-Column Content -->
+
+        </td>
+      </tr>
+    </table>
+  </center>
+<!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    </center>
+<![endif]-->
+
+<!-- START Litmus Analytics -->
+<style data-ignore-inlining="">@media print{ #_t {background-image:url('https://v0e5lcb6.emltrk.com/v0e5lcb6?p&d=[UNIQUE]');}} div.OutlookMessageHeader {background-image:url('https://v0e5lcb6.emltrk.com/v0e5lcb6?f&d=[UNIQUE]')} table.moz-email-headers-table {background-image:url('https://v0e5lcb6.emltrk.com/v0e5lcb6?f&d=[UNIQUE]')} blockquote #_t {background-image:url('https://v0e5lcb6.emltrk.com/v0e5lcb6?f&d=[UNIQUE]')} #MailContainerBody #_t {background-image:url('https://v0e5lcb6.emltrk.com/v0e5lcb6?f&d=[UNIQUE]')}</style><div id="_t"></div>
+<img src="https://v0e5lcb6.emltrk.com/v0e5lcb6?d=[UNIQUE]" width="1" height="1" border="0" alt="">
+<!-- END Litmus Analytics -->
+</body>
+</html>
+

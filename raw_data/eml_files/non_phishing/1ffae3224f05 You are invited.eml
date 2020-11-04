@@ -1,0 +1,421 @@
+Received: from BN8PR01MB5619.prod.exchangelabs.com (2603:10b6:408:bc::20) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 21:22:19
+ +0000
+Received: from DM6PR08CA0017.namprd08.prod.outlook.com (2603:10b6:5:80::30) by
+ BN8PR01MB5619.prod.exchangelabs.com (2603:10b6:408:bc::20) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.26; Tue, 13 Oct 2020 21:22:16 +0000
+Received: from CY1NAM02FT033.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:5:80:cafe::d2) by DM6PR08CA0017.outlook.office365.com
+ (2603:10b6:5:80::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Tue, 13 Oct 2020 21:22:16 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ CY1NAM02FT033.mail.protection.outlook.com (10.152.75.179) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 21:22:16 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Tue, 13 Oct 2020 16:22:00 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Tue, 13 Oct 2020 16:22:00 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 82C55C000061; Tue, 13 Oct 2020 16:22:00 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (smtp.utdallas.edu [10.182.71.121])
+	by lists.utdallas.edu (Postfix) with ESMTP id 82DF4C000051
+	for <ecs.all@lists.utdallas.edu>; Tue, 13 Oct 2020 16:13:48 -0500 (CDT)
+Received: from utdex11.campus.ad.utdallas.edu (10.180.14.116) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Tue, 13 Oct 2020 16:13:48 -0500
+Received: from utdex11.campus.ad.utdallas.edu ([fe80::b5b0:fbb6:7286:c127]) by
+ utdex11.campus.ad.utdallas.edu ([fe80::b5b0:fbb6:7286:c127%20]) with mapi id
+ 15.01.1979.003; Tue, 13 Oct 2020 16:13:48 -0500
+From: "Wetterskog, Rodney" <wetterskog@utdallas.edu>
+To: "Wetterskog, Rodney" <wetterskog@utdallas.edu>
+Thread-Topic: You are invited to this Friday's Tech Titans Tech Industry
+ Luncheon Webinar featuring the 8 finalists for the Tech Innovation Award -
+ RSVP to get the access code, first come first served
+Thread-Index: AdahpNUGbdlr+x3CTqGZxalNXeeCQQ==
+Date: Tue, 13 Oct 2020 21:13:48 +0000
+Message-ID: <0b9163c1acd3412ba1dc4ad487ca7e2b@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.182.70.130]
+Content-Type: multipart/alternative;
+	boundary="_000_0b9163c1acd3412ba1dc4ad487ca7e2butdallasedu_"
+Subject: [ecs.all] You are invited to this Friday's Tech Titans Tech
+ Industry Luncheon Webinar featuring the 8 finalists for the Tech
+ Innovation Award - RSVP to get the access code, first come first served
+Reply-To: "Wetterskog, Rodney" <wetterskog@utdallas.edu>
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1364
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/0b9163c1acd3412ba1dc4ad487ca7e2b%40utdallas.edu>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5140201@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 21:22:16.3149
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 704d9718-998d-4610-8284-08d86fbe0f3e
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT033.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT033.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 704d9718-998d-4610-8284-08d86fbe0f3e
+X-MS-TrafficTypeDiagnostic: BN8PR01MB5619:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 21:22:16.2349
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 704d9718-998d-4610-8284-08d86fbe0f3e
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR01MB5619
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.5075096
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?NybvwgQKK0y4/udnXp8VXGYsqb8sK6RdEJkt0czakLT2vwMvV1cikfwp?=
+ =?Windows-1252?Q?sl1wviyikmwcXAZ4CHdv0ocl/pbinSWJ0NGxE5xtxT3RVGAH1PBJltqp?=
+ =?Windows-1252?Q?5xcCgfB7KOvQFpPxsSEibcWIv0aZaLuokoMgYicHdW1l63sTaGoBqsr3?=
+ =?Windows-1252?Q?BiljBVgFbsgHmGWRG9S4h2p8/OcjWInrAgu76aFB5XCOucnKoB4XnlA8?=
+ =?Windows-1252?Q?YUx0T3GGHSzbby0+ZRbYkTypRk6B2f/adcPDedU0MOkjkCDAjDCpjTXi?=
+ =?Windows-1252?Q?u2J3aJCbZivuSN1gSljW4Xr6Yx+Bo+ZCef4WZlMIsDtUNqezYroGbjyI?=
+ =?Windows-1252?Q?G06ksEl3uN395KeIhV9A6EJfb4aTTILeI2B3GGqRKpiIv22TkuzmukDJ?=
+ =?Windows-1252?Q?c12CdIRMPMBtdG306cY/wbZ0gzmuTfRDp9M+aE6A12SLGME5pW6yr/Ci?=
+ =?Windows-1252?Q?DW0hptd0evRxN5kYnOPj4C2l1pmZcqIN/aWZjPbjTrwv47JnIz2GLuVC?=
+ =?Windows-1252?Q?XYDOcIqxdyyIEH3xPqeHSkR7D7/jktALl0GVpwc5n+/uTk64QMKxLGdY?=
+ =?Windows-1252?Q?y2tKekwNrR6KgsRANmhMEtaUD4n1SfO08GnP3JNeKu7kKv3WFoigWQFb?=
+ =?Windows-1252?Q?3fKcxY64Lev7Uz04CjiiPGCtYDzKMqHWzfHUV9GRFyYEGmfRtSvHo9LT?=
+ =?Windows-1252?Q?0irBtVuJeVY122bCKePVd7zOayu3NZNOXIyzVDOY6EJTHg+G8B8PsdVA?=
+ =?Windows-1252?Q?uIqMSjY7eE172cdXi5WmiAYipa6dqmyDLQnIuhSGc/uVagTgkEIIbdbp?=
+ =?Windows-1252?Q?0xRr7CcCOHJcbE5b6Zx/jlwW28rRZsdP7FtFXkUOvOprvPWOtrHS/sv8?=
+ =?Windows-1252?Q?Dl994n9zTjqEjwImvFFKv2w4lvfkeoC9r6zZsgUPVD2lXgh9va1dmWG8?=
+ =?Windows-1252?Q?Nz4v+sZjsUsmtJSrztNOuOHUJOkpmH6UmNp9Cgcns4psQUw7x6Cd8c8q?=
+ =?Windows-1252?Q?Ngvw7omCcX6aRsB7sf9yOVPpaKByn1d/nnEK7KrmAQB5YK4BKp+L5W8y?=
+ =?Windows-1252?Q?6iI/GfecGMvA9tI7ZsnbY3PoANiQhv/CuGSrAjtTbV7K/jJqMjuvXrlt?=
+ =?Windows-1252?Q?rUVvyVdyRjKkQlYCxcLsJ21xV4bpn1IwMUdsVVhjSzkZoFoMkng2ekmr?=
+ =?Windows-1252?Q?hCbP7wC6Tu0JqbXTSqCF9nReIjaxZlKPT8OVwtxOxCrOrf1E9yqrVRRA?=
+ =?Windows-1252?Q?ePKIVwPCoeqiwOd+ZLcSVNsxVEEpIyPIzdW/UL9qqzZ7bX/4bO9etmoA?=
+ =?Windows-1252?Q?bZ2wcD0qBxEUEpQ1LzFMDxOW3FnLsjIkv0wLAu+EBiTQf8VZ7octF8Mg?=
+ =?Windows-1252?Q?K9k+xB/tLbQp9tzIrUEpBH51CBsWQcH9NgBebhDooMJvYdxxFaAkoGYp?=
+ =?Windows-1252?Q?ivaAgKbzBcPp6/s1WJZe5rr/OMOR+jDQnz58AcSWcoQOO0/WO632l9gk?=
+ =?Windows-1252?Q?2paf4/Bp6OTnHGHSibbfX3va+7fHQg=3D=3D?=
+MIME-Version: 1.0
+
+--_000_0b9163c1acd3412ba1dc4ad487ca7e2butdallasedu_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good afternoon,
+
+Tech Titans (techtitans.org) is holding their annual Innovation Finalists T=
+ech Industry Luncheon on 10/16 from:
+Panel Talk:                         11:45 am to 1 pm
+Network with panelists: 1 to 1:30 pm
+
+Virtually, of course.  I have some tickets as part of the UTDesign sponsors=
+hip.  Anyone interested in being a guest of UTDesign (first come/first serv=
+ed)?   The Innovators Luncheon showcases the 8 finalists for the Tech Titan=
+s Emerging Company Innovation and Corporate Innovation awards. Each finalis=
+t will discuss applications their company developed in the past year and su=
+mmarize why they believe they've been selected as a finalist.  Here's who w=
+ill present:
+
+o   Emerging Innovation Finalists - Asset Panda, Balanced Media/Technology,=
+ Hedera Hashgraph, and Spark Biomedical
+
+o   Corporate Innovation Finalists - +1 Labs at Match Group, Berry Appleman=
+ & Leiden LLP, CBRE, and Omnitracs.
+
+To learn more about the event: https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Ftechtitans.org%2Ftech-industry-lunch%2F&amp;data=3D=
+02%7C01%7CJerry.Teng%40UTDallas.edu%7C704d9718998d4610828408d86fbe0f3e%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382209396092332&amp;sdata=3DVKM=
+TTlp5C6lgn3C8%2FiF0tEPtJE3iEyRi2FNdr%2BZmqTE%3D&amp;reserved=3D0
+
+If you are interested in a free ticket, return this email.
+
+Thanks, Rod
+Rod Wetterskog, Assistant Dean
+Jonsson School of Engineering and Computer Science
+(O) 972-883-2182
+(M) 469-556-3314
+wetterskog@utdallas.edu<mailto:wetterskog@utdallas.edu>
+To schedule a meeting, please contact
+Nancy Finch
+(O) 972-883-2045
+Nancy.Finch@utdallas.edu<mailto:Nancy.Finch@utdallas.edu>
+
+
+--_000_0b9163c1acd3412ba1dc4ad487ca7e2butdallasedu_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1191987833;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2093277238 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Good afternoon, <o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Tech Titans (techtitan=
+s.org) is holding their annual Innovation Finalists Tech Industry Luncheon =
+on 10/16 from:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Panel Talk:&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:45 am to 1 pm<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Network with panelists=
+: 1 to 1:30 pm<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Virtually, of course.&=
+nbsp; I have some tickets as part of the UTDesign sponsorship.&nbsp; Anyone=
+ interested in being a guest of UTDesign (first come/first served)?&nbsp; &=
+nbsp;The Innovators Luncheon showcases the 8 finalists for
+ the Tech Titans Emerging Company Innovation and Corporate Innovation award=
+s. Each finalist will discuss applications their company developed in the p=
+ast year and summarize why they believe they&#8217;ve been selected as a fi=
+nalist.&nbsp; Here&#8217;s who will present:<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo1">
+<![if !supportLists]><span style=3D"font-family:&quot;Courier New&quot;;col=
+or:#1F4E79"><span style=3D"mso-list:Ignore">o<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"color:#1F4E79">Emerging Innov=
+ation Finalists &#8211; Asset Panda, Balanced Media/Technology, Hedera Hash=
+graph, and Spark Biomedical<o:p></o:p></span></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo1">
+<![if !supportLists]><span style=3D"font-family:&quot;Courier New&quot;;col=
+or:#1F4E79"><span style=3D"mso-list:Ignore">o<span style=3D"font:7.0pt &quo=
+t;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span><![endif]><span style=3D"color:#1F4E79">Corporate Inno=
+vation Finalists - +1 Labs at Match Group, Berry Appleman &amp; Leiden LLP,=
+ CBRE, and Omnitracs.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">To learn more about th=
+e event: <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Ftechtitans.org%2Ftech-industry-lunch%2F&amp;data=3D02%7C01%7CJ=
+erry.Teng%40UTDallas.edu%7C704d9718998d4610828408d86fbe0f3e%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637382209396112318&amp;sdata=3DWgUDcJ4UZcKKZO=
+rysLtelsvtLppx0qqNGNk9YhQHNEk%3D&amp;reserved=3D0" originalsrc=3D"https://t=
+echtitans.org/tech-industry-lunch/" shash=3D"gxHiX6okXOUfgFfE96IbIOU1TnFby8=
+o8YouEPpU5YnmDj7FZ9T2bTQwd2EbYzMeDDWvrL3KoOdJlT6iumgyTFj5Ya5WPUIlQHpk6+n0lS=
+jq/QpVAYG09KPO6wqiwKUfd4+dd/8vQAjVVCuAYKTY8+Wrq5HROy2ih36/CQ5brnZI=3D">
+<span style=3D"color:#1F4E79">https://techtitans.org/tech-industry-lunch/</=
+span></a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">If you are interested =
+in a free ticket, return this email.<br>
+&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F4E79">Thanks, Rod<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">Rod=
+ Wetterskog, Assistant Dean<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">Jon=
+sson School of Engineering and Computer Science<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">(O)=
+ 972-883-2182<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">(M)=
+ 469-556-3314<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D"><a =
+href=3D"mailto:wetterskog@utdallas.edu">wetterskog@utdallas.edu</a><o:p></o=
+:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">To =
+schedule a meeting, please contact
+<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">Nan=
+cy Finch<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D">(O)=
+ 972-883-2045<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:9.0pt;color:#1F497D"><a =
+href=3D"mailto:Nancy.Finch@utdallas.edu">Nancy.Finch@utdallas.edu</a><o:p><=
+/o:p></span></i></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_0b9163c1acd3412ba1dc4ad487ca7e2butdallasedu_--

@@ -1,0 +1,664 @@
+Received: from BY5PR01MB5922.prod.exchangelabs.com (2603:10b6:a03:1cd::18) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Mon, 5 Oct 2020 11:21:18
+ +0000
+Received: from BL0PR02CA0132.namprd02.prod.outlook.com (2603:10b6:208:35::37)
+ by BY5PR01MB5922.prod.exchangelabs.com (2603:10b6:a03:1cd::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.36; Mon, 5 Oct 2020 11:21:10 +0000
+Received: from BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:35:cafe::8d) by BL0PR02CA0132.outlook.office365.com
+ (2603:10b6:208:35::37) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.35 via Frontend
+ Transport; Mon, 5 Oct 2020 11:21:09 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ BL2NAM02FT053.mail.protection.outlook.com (10.152.76.225) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3433.39 via Frontend Transport; Mon, 5 Oct 2020 11:21:09 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 5 Oct 2020 06:20:55 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 5 Oct 2020 06:20:55 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id B013EC000052; Mon,  5 Oct 2020 06:20:55 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (smtp.utdallas.edu [10.182.71.121])
+	by lists.utdallas.edu (Postfix) with ESMTP id 65A10C000051;
+	Mon,  5 Oct 2020 06:20:40 -0500 (CDT)
+Received: from utdex02.campus.ad.utdallas.edu (10.182.71.121) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 5 Oct 2020 06:20:40 -0500
+Received: from utdex02.campus.ad.utdallas.edu ([fe80::103a:9285:9d55:be5c]) by
+ utdex02.campus.ad.utdallas.edu ([fe80::103a:9285:9d55:be5c%17]) with mapi id
+ 15.01.1979.003; Mon, 5 Oct 2020 06:20:40 -0500
+From: "Turcatti, Andrea" <turcatti@utdallas.edu>
+To: "'ecs.gr@lists.utdallas.edu'" <ecs.gr@lists.utdallas.edu>, seecsundergrads
+	<ecs.ug@lists.utdallas.edu>
+Thread-Topic: MATLAB Seminars offered to ECS students - October 14
+Thread-Index: AdaTIyfh/nuDKeFQTVKhBOBR/h11IAH5i8PA
+Date: Mon, 5 Oct 2020 11:20:39 +0000
+Message-ID: <f92aad41cc42413095d5063788c86849@utdallas.edu>
+References: <354e3fd84937400ab6c389b97dd55f1e@utdallas.edu>
+In-Reply-To: <354e3fd84937400ab6c389b97dd55f1e@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.182.70.130]
+Content-Type: multipart/related;
+	boundary="_004_f92aad41cc42413095d5063788c86849utdallasedu_";
+	type="multipart/alternative"
+Subject: [ecs.ug] MATLAB Seminars offered to ECS students - October 14
+Reply-To: "Turcatti, Andrea" <turcatti@utdallas.edu>
+X-Loop: ecs.ug@lists.utdallas.edu
+X-Sequence: 116
+Errors-To: ecs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.ug>
+List-Post: <mailto:ecs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.ug/2020-10/f92aad41cc42413095d5063788c86849%40utdallas.edu>
+Return-Path: ecs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 05 Oct 2020 11:21:09.8501
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ efd555bf-393f-4d96-ba02-08d86920c2a6
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: efd555bf-393f-4d96-ba02-08d86920c2a6
+X-MS-TrafficTypeDiagnostic: BY5PR01MB5922:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Antispam-ScannedUrls: 10690592434049755890;14220121174276625644
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Oct 2020 11:21:09.7552
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: efd555bf-393f-4d96-ba02-08d86920c2a6
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY5PR01MB5922
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:08.8736548
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3433.044
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?w9evu/pSjXRz4WhmQCChNS8ugXRNWsvhSL+63NA+6EnMq1B3+sqHIUkn?=
+ =?Windows-1252?Q?TLcwESGKhjru8vRUArX2ky1uyRixWRVRMjT8N/vQnZrB/+DMgmYd47BO?=
+ =?Windows-1252?Q?bHJA0mKx+8IODM9clVGoToDjvSS0Lhm+76OrBONbypDfd0Vsnke6ybDu?=
+ =?Windows-1252?Q?ulQCdbewiYz2l3VdY7+uc0N/jDwT3uB1r/yX3MdLboE/BKCEace3Pw/F?=
+ =?Windows-1252?Q?DfxZGkq64l0adzJ6ytWWulTQfhjd116scpjd3m7WUszk9EuWqHp76nsS?=
+ =?Windows-1252?Q?bncBzllUg8iDaePPovdviWcpD1BcLlOmEFprM8pU8/5xK1OZ/cKV2yTv?=
+ =?Windows-1252?Q?5F7EdJC8XnA/BsEBwDmJQoqwZIhbBqq8AlSd/eQnm5+QxwnpeNXoi7a0?=
+ =?Windows-1252?Q?VuiMQGglAq+SVwSWH0jJG1YN49bYdcAk6WqTgEgIiiDavkCy+Q2ik3lf?=
+ =?Windows-1252?Q?X0wj/LwgCx2gGBox5JX7AUeEEDQPermbVqANS8ZaVRn/aPAsssrf+4TI?=
+ =?Windows-1252?Q?BgPVo8HPDNHBsGCzel7LdTxTctPf+vdh6XfqsjLBP6RhrUCMs+XGcTRg?=
+ =?Windows-1252?Q?GuiTzB/7g5dideF8oCY7g0yDe5M3OgK4pP+rgwomVh2griWBHey4IHwZ?=
+ =?Windows-1252?Q?YdSnpbtW20+ME8f4VD0KXz+u1iRTe8GohN3wnpdtLZNr1A6RV/68LMGX?=
+ =?Windows-1252?Q?2mK3Qil5yaAvb2VVBQXNnyT8/Vg7DIfc5mfLujNnYz5FwYsi+zlAPIRW?=
+ =?Windows-1252?Q?uEXC58Lf55aty2DAIZIZOQDDVfj0sS2CRFYxtGufPDh6IXYyDfc7rWJW?=
+ =?Windows-1252?Q?hEgNn8yrR1j6SvH0ben16udASoiBKc8yK9KhlHwUxh6wDZDQoe10togI?=
+ =?Windows-1252?Q?xNTjX8hERMuH8aO40znzd8dmAWSlOXSQeaRNTmnyvaIKI91pR8Awu7c6?=
+ =?Windows-1252?Q?Y5+arr0MmRIcxnjmbqxaxaL4q8QoIDVHDyrHz2FQZ5QU2cP1T8HbVooa?=
+ =?Windows-1252?Q?3pRA63uqFlOtJx6Z2DdwVRepPp8L2YEWufArQ1ZrkrKKVjn6IC26FK9o?=
+ =?Windows-1252?Q?Yn+T2Nsdb4NE60p7pBcwF3+kX5P9YmMhC45L4og7pNkzb7kl+E+sipGO?=
+ =?Windows-1252?Q?tLiKCHVU/7zhKvderabWyXde4H2AUQWqA5xZJbxysNn7KjsbfbVc/gHy?=
+ =?Windows-1252?Q?BFq/zOvk37/lqoww248MYDaKZ49/TtW2m19vskwsJ+DNZ3ebq+K5Fo2j?=
+ =?Windows-1252?Q?9QaiU6Xpws0MHbbfhAFcNiPCgx3uBzlS93CpW4wPYuXpwtaqZzgGCunn?=
+ =?Windows-1252?Q?3xnlXHpLXZcd+OwMQ36xcA7ISTdRKEt+jGbx53i9t/Z/UVPJQPC4kGQc?=
+ =?Windows-1252?Q?ed+NN0F1kGQ87DhadnuR4toi6lRf5CVO4i6mOpv/U3rVnbjzYIERv8W7?=
+ =?Windows-1252?Q?6Z0MYdH7eUl/3JhA/QDJ4YyuLeyUiAqvJE3Z+EKkDzbFVxoE+icTDJbO?=
+ =?Windows-1252?Q?U0SNdqiRjdQvn85VEl43cJP3x8reFy7oIymufxRmyoOJMOCg1wr8Y3ZC?=
+ =?Windows-1252?Q?LRrYjNVxfFd2boKw80BXULTsi9VMYtRdQkzaKjXCnb+HEk+kP2VYGnF8?=
+ =?Windows-1252?Q?iFPsLVW8Web8LawLXzMEOP7r?=
+MIME-Version: 1.0
+
+--_004_f92aad41cc42413095d5063788c86849utdallasedu_
+Content-Type: multipart/alternative;
+	boundary="_000_f92aad41cc42413095d5063788c86849utdallasedu_"
+
+--_000_f92aad41cc42413095d5063788c86849utdallasedu_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+ECS students,
+
+MathWorks invites interested University of Texas at Dallas students to atte=
+nd MATLAB seminars by MathWorks. They will offer two virtual sessions, and =
+you are welcome to attend one or both.
+
+Registration is required!
+
+
+Wednesday October 14
+
+Deep Learning Overview for Images and Video with MATLAB<https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fmathworksmeeting.webex.com=
+%2Fmathworksmeeting%2Fonstage%2Fg.php%3FMTID%3De092c35bea51eb00761cca0d7c69=
+42946&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cefd555bf393f4d96ba02=
+08d86920c2a6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63737493678249541=
+7&amp;sdata=3DmX8rI8lKX3XkfO1iL9X1dxH1gcIKuJE3AFxPt3OrNZE%3D&amp;reserved=
+=3D0>
+
+1:00 p.m.-3:00 p.m.  WebEx
+
+
+
+Deep Learning is a key technology driving the current Artificial Intelligen=
+ce (AI) megatrend. You may have heard of some mainstream applications of de=
+ep learning, but how many of them would you consider applying to your engin=
+eering and science applications?
+
+
+
+MathWorks developers have purpose-built MATLAB's deep learning functionalit=
+y for engineering and science workflows. We understand that success goes be=
+yond just developing a deep learning model. Ultimately, models need to be i=
+ncorporated into an entire system design workflow to deliver a product or a=
+ service to the market.
+
+The aim of the session is to provide an overview of how MATLAB enables you =
+to take advantage of disruptive technologies like deep learning. We will:
+
+
+
+* Show where deep learning is being applied in engineering and science, and=
+ how its driving MATLAB's development.
+
+* Demonstrate a workflow for how you can research, develop and deploy your =
+own deep learning application.
+
+* Outline what MathWorks engineers can do to help support you achieve succe=
+ss with deep learning.
+
+
+
+Technologies demonstrated include:
+
+* Automating Ground Truth Image Labeling
+
+* Training and Evaluating an Object Detector
+
+* Generating optimized native embedded code
+
+
+Wednesday October 14
+
+Data Analysis with MATLAB<https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Fmathworksmeeting.webex.com%2Fmathworksmeeting%2Fonstage%=
+2Fg.php%3FMTID%3De6b63446a3132f39c5017252050b1fd48&amp;data=3D02%7C01%7CJer=
+ry.Teng%40UTDallas.edu%7Cefd555bf393f4d96ba0208d86920c2a6%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C1%7C637374936782495417&amp;sdata=3DmQuLOEXHRv751OmG=
+qiinVWJTplUe7eSXgia0gZwpe2U%3D&amp;reserved=3D0>
+
+3:00 p.m.-5:00 p.m.  WebEx
+
+
+
+In this session, you will learn how MATLAB can be used to visualize and ana=
+lyze data, perform numerical computations, and develop algorithms. Through =
+live demonstrations and examples, you will see how MATLAB can help you beco=
+me more effective in your work. This session is targeted for those who are =
+new to MATLAB. However, experienced MATLAB users may also benefit from the =
+session, as the engineer will be covering some tips and tricks from the new=
+er releases of MATLAB.
+
+
+
+Some of the highlights include:
+
+* Accessing data from many sources (excel, files, other software, hardware,=
+ etc.)
+
+* Using interactive tools for iterative exploration, design, and problem so=
+lving
+
+* Automating and capturing your work in easy-to-write scripts and programs
+* Sharing your results with others by automatically creating reports
+
+
+For more information on the workshops, contact Peter Sheridan at psherida@m=
+athworks.com<mailto:psherida@mathworks.com>
+[cid:image001.jpg@01D69AF0.65A159F0]
+
+
+
+
+--_000_f92aad41cc42413095d5063788c86849utdallasedu_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:-webkit-standard;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle26
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black">ECS stu=
+dents,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black">&nbsp;<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black">MathWor=
+ks invites interested University of Texas at Dallas students to attend MATL=
+AB seminars by MathWorks.
+</span><span style=3D"font-size:12.0pt">They<span style=3D"color:black"> wi=
+ll offer two
+</span>virtual <span style=3D"color:black">sessions, and you are welcome to=
+ attend one or both.&nbsp;
+<o:p></o:p></span></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black">Registr=
+ation is required!<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr style=3D"height:289.75pt">
+<td width=3D"440" valign=3D"top" style=3D"width:329.7pt;border:solid window=
+text 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:289.75pt">
+<p class=3D"MsoNoSpacing"><b>Wednesday October 14<o:p></o:p></b></p>
+<p class=3D"MsoNoSpacing"><b><span style=3D"font-size:10.0pt;font-family:&q=
+uot;Arial&quot;,sans-serif"><a href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fmathworksmeeting.webex.com%2Fmathworksmeeti=
+ng%2Fonstage%2Fg.php%3FMTID%3De092c35bea51eb00761cca0d7c6942946&amp;data=3D=
+02%7C01%7CJerry.Teng%40UTDallas.edu%7Cefd555bf393f4d96ba0208d86920c2a6%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637374936782525405&amp;sdata=3DGYq=
+GlhYv6j7Vr%2BSqyJd%2BE3lSBnpsWNZFbNRwPkgCS5Q%3D&amp;reserved=3D0" originals=
+rc=3D"https://mathworksmeeting.webex.com/mathworksmeeting/onstage/g.php?MTI=
+D=3De092c35bea51eb00761cca0d7c6942946" shash=3D"D8WNsp7TyaL2Ue0VOuPHNUPnJGB=
+RS1qE/HIyMpL0joQH2+++gECOAkbhuTY9fflM8nh23UzepWIUxPLBdge54essfcr3j20B9no0vh=
+Gde7eJ/WWNn9znzZpf2i/PEYo1EZ2I+YNUUfXZlozascGvWpA6oij6zNz+6/MsbOn3AJU=3D">D=
+eep Learning Overview for Images and Video with MATLAB</a></span><o:p></o:p=
+></b></p>
+<p class=3D"MsoNoSpacing"><b>1:00 p.m.-3:00 p.m.&nbsp; WebEx</b><o:p></o:p>=
+</p>
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:12.0pt;font-family:-webk=
+it-standard"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">Deep Learning is a key technology driving the curren=
+t Artificial Intelligence (AI) megatrend. You may have heard of some mainst=
+ream applications of deep learning, but how many
+ of them would you consider applying to your engineering and science applic=
+ations?<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">MathWorks developers have purpose-built MATLAB's dee=
+p learning functionality for engineering and science workflows. We understa=
+nd that success goes beyond just developing a
+ deep learning model. Ultimately, models need to be incorporated into an en=
+tire system design workflow to deliver a product or a service to the market=
+.<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">The aim of the session is to provide an overview of =
+how MATLAB enables you to take advantage of disruptive technologies like de=
+ep learning. We will:<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Show where deep learning is being applied in=
+ engineering and science, and how its driving MATLAB's development.<o:p></o=
+:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Demonstrate a workflow for how you can resea=
+rch, develop and deploy your own deep learning application.<o:p></o:p></spa=
+n></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Outline what MathWorks engineers can do to h=
+elp support you achieve success with deep learning.<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">Technologies demonstrated include:<o:p></o:p></span>=
+</p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Automating Ground Truth Image Labeling<o:p><=
+/o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Training and Evaluating an Object Detector<o=
+:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Generating optimized native embedded code<o:=
+p></o:p></span></p>
+</td>
+<td width=3D"424" valign=3D"top" style=3D"width:317.9pt;border:solid window=
+text 1.0pt;border-left:none;padding:0in 5.4pt 0in 5.4pt;height:289.75pt">
+<p class=3D"MsoNoSpacing"><b><span style=3D"font-size:10.0pt;font-family:&q=
+uot;Arial&quot;,sans-serif">Wednesday October 14<o:p></o:p></span></b></p>
+<p class=3D"MsoNoSpacing"><b><span style=3D"font-size:10.0pt;font-family:&q=
+uot;Arial&quot;,sans-serif"><a href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fmathworksmeeting.webex.com%2Fmathworksmeeti=
+ng%2Fonstage%2Fg.php%3FMTID%3De6b63446a3132f39c5017252050b1fd48&amp;data=3D=
+02%7C01%7CJerry.Teng%40UTDallas.edu%7Cefd555bf393f4d96ba0208d86920c2a6%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637374936782535391&amp;sdata=3DXNU=
+XKK%2F%2FzMVOW4s%2Frgu0MSH4wAZdAAlz4e%2BWtTZtF3s%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://mathworksmeeting.webex.com/mathworksmeeting/onstage/g.php=
+?MTID=3De6b63446a3132f39c5017252050b1fd48" shash=3D"wuNHO7VC9pD1T8h3PTo6g6x=
+CBmrYBv1kJ8e/rvapfoaGDMRktCUEEOrpkS3+DxSoWFGlj6Cvh9JPQ12d1PlSeHv/ql7SHRckfn=
+Wq0zqbLLmkXe75LvS5q4OgxA0CZnLhu0fRllLkotKHXayktnaTlGVDvjd76/wtlsZkfDHW7sI=
+=3D">Data Analysis with MATLAB</a>
+<o:p></o:p></span></b></p>
+<p class=3D"MsoNoSpacing"><b>3:00 p.m.-5:00 p.m.&nbsp; WebEx</b><o:p></o:p>=
+</p>
+<p class=3D"MsoNoSpacing"><b>&nbsp;</b><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">In this session, you will learn how MATLAB can be us=
+ed to visualize and analyze data, perform numerical computations, and devel=
+op algorithms. Through live demonstrations and
+ examples, you will see how MATLAB can help you become more effective in yo=
+ur work. This session is targeted for those who are new to MATLAB. However,=
+ experienced MATLAB users may also benefit from the session, as the enginee=
+r will be covering some tips and
+ tricks from the newer releases of MATLAB.<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">Some of the highlights include:<o:p></o:p></span></p=
+>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Accessing data from many sources (excel, fil=
+es, other software, hardware, etc.)<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Using interactive tools for iterative explor=
+ation, design, and problem solving<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:10.0pt;font-family:&quot;A=
+rial&quot;,sans-serif">&#8226; Automating and capturing your work in easy-t=
+o-write scripts and programs<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">&#8226; Sharing your results with others by automatic=
+ally creating reports</span><span style=3D"font-size:12.0pt"><o:p></o:p></s=
+pan></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Bookman Old Styl=
+e&quot;,serif;color:#1F497D"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><span style=3D"font-s=
+ize:12.0pt;color:#3C3C3C">For more information on the workshops, contact Pe=
+ter Sheridan at
+</span><span style=3D"font-size:12.0pt"><a href=3D"mailto:psherida@mathwork=
+s.com">psherida@mathworks.com</a><span style=3D"color:#1F497D"><o:p></o:p><=
+/span></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><img border=3D"0" widt=
+h=3D"300" height=3D"94" style=3D"width:3.125in;height:.9791in" id=3D"Pictur=
+e_x0020_1" src=3D"cid:image001.jpg@01D69AF0.65A159F0"><o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:#1F497D"><o:p>=
+&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:#1F497D"><o:p>=
+&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_f92aad41cc42413095d5063788c86849utdallasedu_--
+
+--_004_f92aad41cc42413095d5063788c86849utdallasedu_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=6735;
+	creation-date="Mon, 05 Oct 2020 11:20:39 GMT";
+	modification-date="Mon, 05 Oct 2020 11:20:39 GMT"
+Content-ID: <image001.jpg@01D69AF0.65A159F0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABeASwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDibj/j
+5l/3z/Oo6kuP+PmX/fP866L4e2NtqPjG2t7yCOeFo5CUcZBwvFZHiqPNLlOZor1n4l+H9K0zwsJ7
+HT7eCXz0XfGgBxzxXI/DewtdS8WLBe28c8JgdtkgyMjHNO2tjSVFxmoXOUor1H4paFpmlaBbS2Fj
+BbyNcBS0aYJG1uK6jSvC/h+XSLOSTTLJnaBGYlBkkqM0+UtYaTk432PDII9x3HoOlWa95HhPQQON
+KswP+uYqjrHhzQodGvZItOs1kSBypCDIODinykTwM97o8Uor0T4Z6Np+p6bevfWcNwySqFMi5IGK
+7Q+FtAU4bTLMH3QUrGdPBSqQUk9zwiivYNd+HGlX9s7adELO6AyhQ/Ix9CP8K8juLeS1uJIJ0KSx
+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
+SPY1q0dA1P/Z
+
+--_004_f92aad41cc42413095d5063788c86849utdallasedu_--

@@ -1,0 +1,235 @@
+Received: from SN2PR01MB2096.prod.exchangelabs.com (2603:10b6:404:79::23) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS via
+ BN6PR14CA0013.NAMPRD14.PROD.OUTLOOK.COM; Sat, 22 Aug 2020 22:23:40 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=cbukLNaMy9wqA8UqSHm/bNiQF79VLEexDfOrXvSd9PVTIYwEl0UZ8j3fI0H2VEH7r9V7Ra81Xfa/IanuKClU2I8MHF5QtEKQ1lZXUQL/UPiwj9eSWpq74Rti7HeGB2M3NrFBSEXiHNHgzD2Mbt5PvU/XodHy6ZGIAQ1udeMehSFbWO2Jaa2Fp2MjJ00q2iGUdCknwfLAbCoMTKgG089RFRYqPGRfGhWRqtyGGSV+NJ5dVGBkRRWbRw79k5UjsEmaHHt0c1ndYfkusr/VQwIYCU87oHm0SnvrexeO0njDuStm8Cuw2YU6MlRRWkKVbKbC+OQ5NYSEOaksj/lJY7SDpg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=j4x75IrfhZkvo26D4KsjBeEev6G00yVU4lQEhWa0V78=;
+ b=Y/qB/PalT0/upXit9zBC/YXecJ3ov4l0bubB3E07pRwqGFAe18ermCQ3RHUnIAsgnpbHdL1DoPQa5tP0qNDlHkpO1ztWcjj7bZSXTImRpQQvZD9nQOgfr8gdw1KIB16UEc8lhTkRDpN0tSZ5ek9uReM4i6rxiZsbGE3A85YJLqvRVT7HTK1pmNbyLkp9tfk6eH9wTxlJT4ExZMfEVEp/5zlt1ijoj1ikwsGUrNJwDOIQF+9RG9YdImits6yStpYxTEEpNcbzEjTHXS/wjJYp0zBSL97hGuEKGLI0csi0bNawJW/7cuDRBJHqSLpCs7/Ead7BngZ57qDz5rIoSHVshg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.102.50) smtp.rcpttodomain=utdallas.edu smtp.mailfrom=gvsu.edu;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=gvsu.edu;
+ dkim=pass (signature was verified) header.d=gvsu365.onmicrosoft.com; arc=pass
+ (0 oda=1 ltdi=1 spf=[1,1,smtp.mailfrom=gvsu.edu]
+ dmarc=[1,1,header.from=gvsu.edu])
+Received: from MN2PR05CA0046.namprd05.prod.outlook.com (2603:10b6:208:236::15)
+ by SN2PR01MB2096.prod.exchangelabs.com (2603:10b6:804:9::19) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3305.25; Sat, 22 Aug 2020 22:23:37 +0000
+Received: from BL2NAM02FT026.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:236:cafe::b1) by MN2PR05CA0046.outlook.office365.com
+ (2603:10b6:208:236::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3326.10 via Frontend
+ Transport; Sat, 22 Aug 2020 22:23:37 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.102.50)
+ smtp.mailfrom=gvsu.edu; UTDallas.edu; dkim=pass (signature was verified)
+ header.d=gvsu365.onmicrosoft.com;UTDallas.edu; dmarc=pass action=none
+ header.from=gvsu.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gvsu.edu designates
+ 40.107.102.50 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.107.102.50; helo=NAM04-DM6-obe.outbound.protection.outlook.com;
+Received: from NAM04-DM6-obe.outbound.protection.outlook.com (40.107.102.50)
+ by BL2NAM02FT026.mail.protection.outlook.com (10.152.77.156) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3305.24 via Frontend Transport; Sat, 22 Aug 2020 22:23:36 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=igDXxoR3OFMztFrzF3kOW2AzBRODzHciRcl7q5XK/lDkV28VqtjF1D8Ps57buox5HDdvKxeVTQkN6Fz98mqR35fQWgd968OhARzg8x/5XlxRy2QrKfVzGCIYHXKUO2CClDx7NMfLTsezdsvPcOaK2KDzRYVQLP7BRF+vhp8yiiJ566vSWRpo9AKv1XzKJhy/oGu5Dqz8IB286qhwgPhAizyXAFWcHBZyPggrhFlorqCWnLfFSpxCWIWlX2OaRRbon25CaNSJjbz3tR2/e/zDuQiUrtiV5DRPKWMtZqrGVsYBZ8C/8ooPOq5twnVC/fq88QyYB9tx+zIWptlChZaKMg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=j4x75IrfhZkvo26D4KsjBeEev6G00yVU4lQEhWa0V78=;
+ b=gKMcgNIV/QGhl5tdgPAluIBMbSL4CMtZfbGu5XKX/paaSvrSChuFPnZlApQdp7MaVcrd3Jm0Y7yd2q+/fi56sC8oXAjeTN09FCW/MPtDHf7aqIJuKSsXdRhU4N02bJ+4oziAD/nZQS+aqCcJs3eHk/M8bXzTKmQkzxHH3l/g0eLQF0lw639F77z7ob2BsF0ywmaMknJ5zSsZyZ1BnVTrzbMhunQDJqrU04E9crVi3mVmjxzLo+sY96KutxFMs+ZZ52kmR/Tfr/q+6qQSitsI/wKtTRt1WbhJ5Z7abgwM4ot3lIE3CToNIdPhpuVzI7HHMLsD71pOHxrMWgvnUgqlxw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 148.61.8.11) smtp.rcpttodomain=utdallas.edu smtp.mailfrom=gvsu.edu;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=gvsu.edu;
+ dkim=none (message not signed); arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=gvsu365.onmicrosoft.com; s=selector1-gvsu365-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=j4x75IrfhZkvo26D4KsjBeEev6G00yVU4lQEhWa0V78=;
+ b=UhAC208Nz+PV2QHWJzmtUFXvDq+o/ay7rlCwCWx+yVtweYNzITwdHuCPcZQt9/bCst1S/OTWH+reyYA5kanImrxzvWlodJHGFI1owa6LPORXZE27jWikQeMNJx76fGbkKAV6zzSk/MZirNdtc0DjKaXc+Z4IY1bSB7zh2W+3rwA=
+Received: from MWHPR08CA0045.namprd08.prod.outlook.com (2603:10b6:300:c0::19)
+ by BYAPR16MB2584.namprd16.prod.outlook.com (2603:10b6:a03:92::31) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.25; Sat, 22 Aug
+ 2020 22:23:34 +0000
+Received: from MW2NAM10FT058.eop-nam10.prod.protection.outlook.com
+ (2603:10b6:300:c0:cafe::e) by MWHPR08CA0045.outlook.office365.com
+ (2603:10b6:300:c0::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3305.24 via Frontend
+ Transport; Sat, 22 Aug 2020 22:23:33 +0000
+X-MS-Exchange-Authentication-Results: spf=pass (sender IP is 148.61.8.11)
+ smtp.mailfrom=gvsu.edu; UTDallas.edu; dkim=none (message not signed)
+ header.d=none;UTDallas.edu; dmarc=pass action=none header.from=gvsu.edu;
+Received-SPF: Pass (protection.outlook.com: domain of gvsu.edu designates
+ 148.61.8.11 as permitted sender) receiver=protection.outlook.com;
+ client-ip=148.61.8.11; helo=EX-GR2.office.ads.gvsu.edu;
+Received: from EX-GR2.office.ads.gvsu.edu (148.61.8.11) by
+ MW2NAM10FT058.mail.protection.outlook.com (10.13.154.164) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.20.3305.24 via Frontend Transport; Sat, 22 Aug 2020 22:23:33 +0000
+From: Salvatore Alaimo <alaimos@gvsu.edu>
+Subject: Covid 19 Work From Home
+Thread-Topic: Covid 19 Work From Home
+Thread-Index: AQHWeNLG4VMSQ5Ri8EWIPTuN5nxu4w==
+Date: Sat, 22 Aug 2020 22:23:11 +0000
+Message-ID: <b7aaefcf36cd4d5ea5328df963722322@gvsu.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [148.61.8.58]
+Content-Type: multipart/alternative;
+	boundary="_000_b7aaefcf36cd4d5ea5328df963722322gvsuedu_"
+To: Undisclosed recipients:;
+Return-Path: alaimos@gvsu.edu
+X-EOPAttributedMessage: 1
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 769fbaf1-8f65-4081-f796-08d846ea035a
+X-MS-TrafficTypeDiagnostic: BYAPR16MB2584:|SN2PR01MB2096:
+X-Microsoft-Antispam-PRVS:
+ <BYAPR16MB25848AA8951F3E031BE93914C3580@BYAPR16MB2584.namprd16.prod.outlook.com>
+X-MS-Oob-TLC-OOBClassifiers: OLM:4714;OLM:4714;
+X-MS-Exchange-SenderADCheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 7CxVb2311qIQc4hcm9i+KhzUTTlBO31ljvEtdU0DprP9UTlcBvUG2OvEPcYHtcRLAlbZ+xf02ekYEmD3Obku0WeOHdCQa97jaCidGH31xb8+NqXLJlhHnxg0SVfGqPYBr49u6YCMTsm+UA4pif5fD/+XNiCifOeQw0XWRqNMfyrAvL92tgJEsD8oOVv6Otwg2i5ffYgVzhWMbRMSnRyv57Ow8bA1axEXRo8XrJ+wsVI8PQajZFnyA5V3HKOmNxKfE9aQL7ApHhsYFwXr28O/77VHwXGaHIR7a3kG8ABKDLXTEGRoyBIcRQgaBFJ79qmvmD/1sRLK4KiCUoZ9OR4aBZ2QYtSwlcoTML7ocxtAg2LKIuNH4v0uuTRXjQxOFOLFTp1vVXHKeW7WKgfTINIDTw==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:148.61.8.11;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:EX-GR2.office.ads.gvsu.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(4636009)(39860400002)(376002)(136003)(396003)(346002)(46966005)(7366002)(7336002)(6666004)(478600001)(356005)(8676002)(2616005)(8936002)(7406005)(6486002)(81166007)(47076004)(70586007)(82740400003)(450100002)(956004)(70206006)(7416002)(75432002)(108616005)(24736004)(19627405001)(26005)(336012)(186003)(82310400002)(7696005)(86362001)(36906005)(296002)(109986005)(786003)(2906002)(36756003)(5660300002)(316002)(36736006);DIR:OUT;SFP:1101;
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR16MB2584
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Aug 2020 22:23:36.5510
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 769fbaf1-8f65-4081-f796-08d846ea035a
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ BL2NAM02FT026.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted:
+ BL2NAM02FT026.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT026.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 21c3f7c0-d255-4e06-1034-08d846ea0180
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:40.107.102.50;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:NAM04-DM6-obe.outbound.protection.outlook.com;PTR:mail-dm6nam08on2050.outbound.protection.outlook.com;CAT:NONE;SFS:(4636009)(336012)(36906005)(36736006)(8676002)(6666004)(8636004)(6486002)(26005)(7416002)(5660300002)(22186003)(1096003)(75432002)(7366002)(7406005)(7336002)(109986005)(7636003)(36756003)(58800400005)(450100002)(19627405001)(108616005)(2616005)(956004)(86362001)(7696005)(24736004)(127190200002);DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Aug 2020 22:23:36.3680
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 769fbaf1-8f65-4081-f796-08d846ea035a
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=b7a5cfe9-f39e-4286-877a-7a4260114654;Ip=[148.61.8.11];Helo=[EX-GR2.office.ads.gvsu.edu]
+X-MS-Exchange-CrossTenant-AuthSource: BL2NAM02FT026.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN2PR01MB2096
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.5206979
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3305.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?UqaRVy1GAxxSnPiMScUjbJKL2vCsrq9MkPKKMJau295R6BmIefYIsn4imZ?=
+ =?iso-8859-1?Q?9PddKZPom8UOdUoa99bclOTfcMwFXeuvC70TcPS2nYtdve5p2YgyvoDGM5?=
+ =?iso-8859-1?Q?hJaJQYBS2PuXuISkhCC+YrJj+T+AIvIFh55LZGHzOmWUPrsR2KawoIxks5?=
+ =?iso-8859-1?Q?DB6yDIP8Ki+il9hpZzxOdHRlCOlgBLBTfyIlVZr8MBmo1aP12w9H6oDrRp?=
+ =?iso-8859-1?Q?Segofu8bNRSGQjGzmiBdK1G82aWZt1QkIAqa3WD6O8iWllaYZOTGKha8T0?=
+ =?iso-8859-1?Q?sUO29H8DTVwTVI8v2IpyOc0zHkDw+Rbw6tH3XxPypWmmi4TNUYbIHTI+5o?=
+ =?iso-8859-1?Q?W/irPqZ2VExhtgaxSxkAjxneMrJRF3/yCAbVJxEGitduz+0Duqg2U22BuL?=
+ =?iso-8859-1?Q?dTaz7En6spLd/hWIdNmBftq1nIr1KEpj84cAGh/6ko/DSdQnWDOOimAyo5?=
+ =?iso-8859-1?Q?/dTLqEh/+GwEk2Y9PMNsdlRaSifDyruAu0fyGjDcsEFsk9H16EFwtRyzZQ?=
+ =?iso-8859-1?Q?LVD+tU/tg470CsaEpplW9UqcGVwVrJuf1c+qi5shCV5B2xOi9Q2IAVfhE5?=
+ =?iso-8859-1?Q?Xqopc8L66U/qypPyj/5btuCuUknLFUDgaTTxYUmHgekvR3kxC/lLc2Zaaa?=
+ =?iso-8859-1?Q?qt0tAfSHPZeWT/MdaJS2MTLKjbqLrZLRnXh1vdaYYrSAcNUvYz/YevwHQu?=
+ =?iso-8859-1?Q?R5nEyOC+tgQCiiqqaN97D+y6ALI0Ajbs8HCC2Opip9IvRCFPKwBZLBIkSs?=
+ =?iso-8859-1?Q?YwFNmD/8+pQnuH/DKd58Eepm77VrD6pZsWi5XgjkyLMBLUpywNeYMfy5uw?=
+ =?iso-8859-1?Q?5encT7OTsY0IGbxRSgAY9pLUJVjH1qmLgg08tMN3WnTlUedy72YYC0aJOY?=
+ =?iso-8859-1?Q?TnBY/x8a4BXnLQe8cKiikmM8fzcO1Fq5nxw3L4j4HF3BnTqexsm3oFNoE8?=
+ =?iso-8859-1?Q?1iRPrYtQgn361+rP/6rZNX4s6TBfNUsoyW4ExWYk/UdDgVVB1QFJ2LRqUa?=
+ =?iso-8859-1?Q?21Ox8NZ1twPITBb0Ifo4cLb4FRc4sugkwuEtTYzbSWUKD41LemCKQyJiA6?=
+ =?iso-8859-1?Q?UVkg6H+FkK1s3+69Y+08uqihpbo95qhcrtU6tPmz62igILEMRRD2yf+M2P?=
+ =?iso-8859-1?Q?VLZY7lPLH4/kASQL6ljsqQBgpE0/ojEl/d3tYnFWyiYCsKgZlTDS0VrI+M?=
+ =?iso-8859-1?Q?t6xJI5SfiOtcNiffS/EPKm4J9kQjzpmkFDZILksKcQHDnaBOafdOxveZla?=
+ =?iso-8859-1?Q?c9hguKzxqQNFGiR8gYQubgF4kBjQ1FdChVRmIHjhohnHxt5t3hlcvJak1d?=
+ =?iso-8859-1?Q?uScDFvSgoCn+3gXDBa5RCgrlwX9DiXmq09f3ZJYLRvi4PkMESnsWO2ongs?=
+ =?iso-8859-1?Q?Z83wuEtFi9EfLAG6CNQTq8RzVOvRYWdueL28QcsNam2smlJrlqlK95h2ef?=
+ =?iso-8859-1?Q?2UORrXPkFm+4u7XOTZT76nU9LR4NxWcF6T2/Ntx18/W/ZzedrIcbXucrKl?=
+ =?iso-8859-1?Q?T+aB0f2x/ioadr0Z468b+j?=
+MIME-Version: 1.0
+
+--_000_b7aaefcf36cd4d5ea5328df963722322gvsuedu_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings,
+
+How's your day going?
+
+Are you interested in the on-going unemployment benefits for all undergradu=
+ates?
+
+Work with Dr. Amy  Marie Hanks MD,You will only be working an hour a day, t=
+hree times a week  for  $500 weekly.. Duties are telecommute.
+
+Send "Yes I am interested" to the email : Dr.amymhanks02@gmail.com  for fur=
+ther proceedings and how to apply.
+
+Career Center
+Thanks,
+Stay Safe & Sanitized.
+
+
+--_000_b7aaefcf36cd4d5ea5328df963722322gvsuedu_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p></p>
+<div>Greetings,</div>
+<div><br>
+</div>
+<div>How's your day going?</div>
+<div><br>
+</div>
+<div>Are you interested in the on-going unemployment benefits for all under=
+graduates?</div>
+<div><br>
+</div>
+<div>Work with Dr. Amy&nbsp; Marie Hanks MD,You will only be working an hou=
+r a day, three times a week&nbsp; for&nbsp; $500 weekly.. Duties are teleco=
+mmute.</div>
+<div><br>
+</div>
+<div>Send &quot;Yes I am interested&quot; to the email : Dr.amymhanks02@gma=
+il.com&nbsp; for further proceedings and how to apply.</div>
+<div><br>
+</div>
+<div>Career Center&nbsp;</div>
+<div>Thanks,</div>
+<div>Stay Safe &amp; Sanitized.</div>
+<br>
+<p></p>
+</div>
+</body>
+</html>
+
+--_000_b7aaefcf36cd4d5ea5328df963722322gvsuedu_--

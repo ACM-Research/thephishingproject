@@ -1,0 +1,200 @@
+Received: from CO2PR01MB2038.prod.exchangelabs.com (2603:10b6:102:6::27) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Wed, 21 Oct 2020 14:09:44
+ +0000
+Received: from CY4PR19CA0041.namprd19.prod.outlook.com (2603:10b6:903:103::27)
+ by CO2PR01MB2038.prod.exchangelabs.com (2603:10b6:102:6::27) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.27; Wed, 21 Oct 2020 14:08:09 +0000
+Received: from CY1NAM02FT039.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:103:cafe::1c) by CY4PR19CA0041.outlook.office365.com
+ (2603:10b6:903:103::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Wed, 21 Oct 2020 14:08:09 +0000
+Authentication-Results: spf=pass (sender IP is 68.233.76.14)
+ smtp.mailfrom=hrtextron.textron.com; utdallas.edu; dkim=none (message not
+ signed) header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=hrtextron.textron.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of hrtextron.textron.com
+ designates 68.233.76.14 as permitted sender) receiver=protection.outlook.com;
+ client-ip=68.233.76.14; helo=chrelay.taleo.net;
+Received: from chrelay.taleo.net (68.233.76.14) by
+ CY1NAM02FT039.mail.protection.outlook.com (10.152.75.140) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.23 via Frontend Transport; Wed, 21 Oct 2020 14:08:09 +0000
+Received: from invalidemail.com by invalidemail.com; Wed, 21 Oct 2020 10:08:09 -0400 (EDT)
+From: Textron Recruiting <recruiting-noreply@hrtextron.textron.com>
+To: jerry.teng@utdallas.edu, Jerry Teng <jerry.teng@utdallas.edu>
+Message-ID: <1137463219.82941.1603289289241@127.0.0.1>
+Subject: Thank you for applying - 2021 Information Technology Intern-284368
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_82940_1543946925.1603289289240"
+Date: Wed, 21 Oct 2020 10:08:09 -0400 (EDT)
+Return-Path: recruiting-noreply@hrtextron.textron.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Oct 2020 14:08:09.6269
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 9e0764aa-da75-4662-5574-08d875cabd83
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT039.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 9e0764aa-da75-4662-5574-08d875cabd83
+X-MS-TrafficTypeDiagnostic: CO2PR01MB2038:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-ACSExecutionContext: 10/21/2020 14:08:11;10/21/2020
+ 14:09:42;{"SubmissionInfo":{"SubmissionToken":"PFRva2VuIEVuZHBvaW50PSJodHRwczovL0RNNlNOQTAzVFAzMDguZW9wLXNuYTAzLnByb2QucHJvdGVjdGlvbi5vdXRsb29rLmNvbS9zb25hcmFwaS8iIElkPSIwZWNjZjlkNC1hNjEzLWViMTEtYjBiNC0wNDA5NzNkM2UzNzIiIFJvbGU9IlN1Ym1pdHRlciIgVG9rZW5UeXBlPSJTdWJtaXNzaW9uVG9rZW4iIFNpZ25hdHVyZT0iMmVsTzJIOWJ2ckpDUSt4UmZFQWxyYlJtUXNiY1hNaFFiRjVBM1JkbTlRS1FRaVVVc01UWWNIa2ZzSFlaUmFVNDZqZzkxRzdpT0ZYNTNRSGI0dUFjZmc9PSIgU2lnbmF0dXJlVmVyc2lvbj0iVmVyc2lvbjIxIiAvPg","Identity":"72635fa1-52eb-4170-bc88-9925d3056854"}};SC;S;0;10/21/2020
+ 14:08:13;0|0|0|1|;
+X-MS-Exchange-Organization-SafeAttachmentProcessing:
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 3080479593017101779;3080479593017101779;13988000660792552269;13988000660792552269;2019949816687762699;2019949816687762699;18212003642021158413;15579473601412623074;535423654185952461;12894209164315333384;8509379805907207906;15579473601412623074;535423654185952461;12894209164315333384;18212003642021158413
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:68.233.76.14;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:chrelay.taleo.net;PTR:chrelay.taleo.net;CAT:NONE;SFS:(4636009)(33964004)(8676002)(7636003)(44144004)(86362001)(966005)(58800400005)(7596003)(14286002)(83380400001)(166002)(26005)(356005)(6916009)(5660300002)(1096003)(336012)(45080400002)(83760400001)(9686003)(71996002)(135430200001)(135440200001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 0:0x0|0x0|0x0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Oct 2020 14:08:09.5300
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9e0764aa-da75-4662-5574-08d875cabd83
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT039.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB2038
+X-MS-Exchange-Transport-EndToEndLatency: 00:01:34.4834375
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TGR5eXlQbS9EWW4rR0NoUnpaYXJ3KzFSMkh2OENaZHJCZUc5VVJmMjFyb3lE?=
+ =?utf-8?B?ODNwOTQyS0prTnlua0RZSFBBQWFnSzdNOWlaTkQwSnB2T0xxZ0srOWRDNU80?=
+ =?utf-8?B?RlNXcVRhSSszQkhQNDBBclVIcFJhMUZXak9TQ2h0b2lnNHRHYWFpZ3BuZmIz?=
+ =?utf-8?B?MmpzTm5tZ0gyc0tBMks3MlVGNlY0VE9qSWI1a0pHMlNBWWRZOWVLb2JnNmRT?=
+ =?utf-8?B?N3VGWklRdXJabEUwL1dEVGRCVmdBMXYvUE5zb0REaElSVFpqQ0VpZnBjeFQr?=
+ =?utf-8?B?aU5FcWQyNk5WeGlxcmxTMGxqek51dDk0aklGN0hmamNyaTZUK0FMQlNTdWwx?=
+ =?utf-8?B?aXZhWStUOTQvTWxVNHFIMVMxSWptQzFLZUl6eEo2TVpEVVJNSEZjeGFIM2dm?=
+ =?utf-8?B?dnE4UTB5NmVJcTVxNVV6eEdrc1ZPMitDUEswY3RBQlhBTndCT3RxOTRVTkNJ?=
+ =?utf-8?B?QkNGRVMxd3B6bmVvZGNhbDM4VlZjNGV3aVJFcysyU3ZpSElnZ0E4ZFZDRW9v?=
+ =?utf-8?B?RlhNcVQwdmRTaWVaL2pEWUNCaFF0Q3FhcHAvcnBLV0JUUElpR2tVTTM0Q29N?=
+ =?utf-8?B?M0YyK09Qckk5MkRSWDUxZlVhRmdub21seDUwT3ZPck1LYVI4Qk1OS1ExV0Vw?=
+ =?utf-8?B?MmF3WlpqQmFlc3JJcFcyK2t1Z1hSQ21aVkl2VUtSYW5RNmhnbDBpZ3NycUp0?=
+ =?utf-8?B?K3psbUJlZUI3S1hIeDZBMjN4eFdlY0l3QS9nYlR5VHNEdGlCeVN2Qk0vTnkv?=
+ =?utf-8?B?N1N5V1YzbnBMUW1lM0gxQUMxT3ltZGhvUUpUSmpTeVRwS3dHdVBrK3FEWGpr?=
+ =?utf-8?B?eWV1OW91bitwUkRsQUFmNis2OHVmVmpvM2xOTHVUWURsOEpHSGo0MnlDVmlM?=
+ =?utf-8?B?cnRiY29PN244Z2lJY0puKzlJR2N6cXdUMEpMdnV5SjQ1cXRpaGh0bmZSLzVx?=
+ =?utf-8?B?clIrWjFJTk1POFJyNlZoMjQzNDJCUVQvS0dNZ3daTkx3RlZubDZUUk5BYzc3?=
+ =?utf-8?B?UElwc0QzcVBPWEN5VDBpOEthekJGNUtBaldkblJjc2ZiTFg1RHBQeXJucmhM?=
+ =?utf-8?B?WjBJQXU2eW5NKzdUb2V3M3MvVTdZclplT3dKTkp4cFZlUmt2WTBtMU5HU254?=
+ =?utf-8?B?Wk5GN2ZjRmUxdjhWZ0NwTE5vcGdORDVPczJ2WUJGTmQ4cGI0T2xuQlQwN21I?=
+ =?utf-8?B?bFJ5YWlUVkxTcFAzQTVUazJmWjRsa1lRU2R4V29PS29TODlXbVRmZU1MTUlW?=
+ =?utf-8?B?TEtUVklKTlUrWEFwTEQxdlFtWVh0UmpQSDgvZ3U2T2ExeVhkYk5HckJEaCtU?=
+ =?utf-8?B?ZmgrcGhQRDBPMTU1Q2NwT2VnY21pakFydVpsVG1Md3l5WU1GaVozOE5yRi90?=
+ =?utf-8?B?eUh1L2thWWJ5NGdZUjRnQ0hFaHpCU3RZRWluVTlMbDNvWnMzZzlzZGpDdTJ4?=
+ =?utf-8?B?RlhicWFsOGxaSi9qd3VKZUtFczZEdElxSlVXOHc3MUZ6K09iazRjSm1yQTRN?=
+ =?utf-8?B?K28xeU4wZFRQKzVnRTlvb2JKanFLaktKa2lVYlJCL0laOEY1SXN3M3NyL0dL?=
+ =?utf-8?B?QXM1L0lqMlFZNGpldERhWmxocTBiOHpxRk43dlJhMFZORytjcGFPOGU1V1R0?=
+ =?utf-8?B?cStMOTZ3M1ArclprbFpMS3Jjc2V5bWtWd0FEZ0puSDZFeWJCTFp2Ky8wcUtw?=
+ =?utf-8?B?SWFUR0JSS25BZFBGYlFjcE4rYnZlWWlIaHRxYjF6MEVuNnpHK2dxNmVWNU1m?=
+ =?utf-8?B?YjRDaEQzR3liSkxzelhaa2FIZTN1VmpEV2w4WUp2YU5hd09jNlVoMWRrcjhr?=
+ =?utf-8?B?Ky9IN3dLcEtoZ2pGTXZ0dnF6NC8vQlF3czY0cmpPdzEwQVJaY0ZNL0Y1YUhz?=
+ =?utf-8?B?QVNMWjBEYzVRZEs2Ykt6SWM4Smg2cXZLaWNpTWV6Y1ZsTVhjM3I4Vkt2RzB6?=
+ =?utf-8?B?MGNyaUdVUmU0SUQyUlkvVDd5bjIzanhtTmNSblp0c2ozK1dCT1d2VDB2M0pp?=
+ =?utf-8?B?b3BPVHBrU1FFeDJNTFd1ZldKZjJyY05qZmo3eEc2V25ORmtaRUd0d1Zaa2cz?=
+ =?utf-8?Q?INzhN8?=
+MIME-Version: 1.0
+
+------=_Part_82940_1543946925.1603289289240
+Content-Type: text/html; charset=utf-8
+Content-Disposition: inline
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title>
+</head>
+<body style="font-family: Arial, Times New Roman, Verdana, Sans-Serif; padding: 5px 5px 5px 5px; margin: 0px; border-style: none; background-color: #ffffff">
+<div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Dear Jerry,</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div><div><div><span style="font-family:arial">We have received your application for the position of 2021 Information Technology Intern-284368 and are currently reviewing your experience and qualifications.<br>
+<br>
+If you would like to review your candidate file, or to check the status of your submission on this position, <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftextron.taleo.net%2Fcareersection%2Ftextron%2Fjobapply.ftl%3Fjob%3D284368%26lang%3Den&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835518454%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=OXhM2p47%2Fc4QPirz0LYnFIHG%2F%2FD7xaveUcIZlpdi%2FBk%3D&amp;reserved=0" originalsrc="https://textron.taleo.net/careersection/textron/jobapply.ftl?job=284368&amp;lang=en" shash="M3oxlF+LJhNq21h3mequDUpxXIubnsxaYQzoS1AkERCHX+JaNSrb7Ln5qfIKdCnmL/sZY6mpKIzP+RzbJr4WCgF7AAukT2ok8YltKk6IP7Y2BqB9wWy1akXHg0TZFqsdGq8GmeeQF1CXQExxXG3jmBcUEdX9bUtvnZ7dsrjDs/0=">click here</a>.<br>
+<br>
+If your profile corresponds to our requirements, a member of our recruiting organization will contact you soon.<br>
+<br>
+We thank you for your interest in Textron Inc..<br>
+<br>
+<br>
+<br>
+</span></div></div><div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Best regards,</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Textron Inc.</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Talent Acquisition</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div><div>Replies to this message are undeliverable and will not reach the Human Resources Department. Please do not reply.</div><div><div><span style="FONT-FAMILY: Arial">________________________________________________________<br>
+Set your account preferences anytime by accessing the <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftextron.taleo.net%2Fcareersection%2Fcareersection%2Fcandidateportal%2Fmyaccount%2FmyAccountView.jsf%3Flang%3Den%26csNo%3D10060%26portal%3D8140753014&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835518454%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=CBaVAENniz9Gqn22yfVbf103EEh%2B%2FFsADoUhxDBPVag%3D&amp;reserved=0" originalsrc="https://textron.taleo.net/careersection/careersection/candidateportal/myaccount/myAccountView.jsf?lang=en&amp;csNo=10060&amp;portal=8140753014" shash="w6pah5wiAmNlNROI0fAW3qPR8cG8J7d/gjRgITmx65nj6qf7PfR7MayC9zxZatfEbu5DJxm3j9skrHcuQpZk8kV84xtv4UrOal6OkjifEJ6zk12iT4usN9GrggaRV4f2pCl/l1OIorGrMPUPaDrigfniD/JbZ6EirHEAQtlN6fg=">My Account</a> page.<br>
+</span></div></div><div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Visit Textron's social media and follow us for information about our global network of businesses:</p>
+<ul>
+<li>Facebook: <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2FTextron.Inc&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835528446%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=%2F8n6fg5z%2B2IKXiEBvObVwFjwQ%2FlMvHiOhfKxumXAevA%3D&amp;reserved=0" originalsrc="https://www.facebook.com/Textron.Inc" shash="m8IkvQWWU2DMcbiSmNOH0Pv3lr1WKBNCjo+nMSkxzOBXBm1UD8MaPEllXgB9zooIpWLRKXH3mhybiRqsbn1dFwK+yp/pHssme0wHmHI5kSJQ0Og/MvorxaeKXaw712fM/dLhY15mJfDrnlHR1337+cS1coO83xObgWjvxee83bw=">https://www.facebook.com/Textron.Inc</a></li>
+<li>Twitter: <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2Ftextron&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835538443%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=BEcdQqcXSLHUO0REFPoIKy2DAPxb5vW8LuKj1SiKR6U%3D&amp;reserved=0" originalsrc="https://twitter.com/textron" shash="mwWwYzQWhmmIuvWmIkNakrLJR5Z5MdLHmSmESEmnLoLhrIz8aq7yC73l3D8FbJlpqP34zEnw40xSDccg/OFQGFmBC9eG4MEht2jGkKfEV9eiAC/yDiTsR+Fo3fw3twcmcu2Mm4VyusI0krtuvtmAcdS5/XAUyHFSvgZ62MN0V9o=">https://twitter.com/textron</a></li>
+<li>YouTube: <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.youtube.com%2Ftextroninc&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835538443%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=5CYAaP7nEuwpUNa2yiEddxb5dX8cyREwhco9BHZftlM%3D&amp;reserved=0" originalsrc="http://www.youtube.com/textroninc" shash="tMLFhPm+2caAEjEW9y3JEfRDxQKpjpyEjjBsrJyvvtdRcoTdC55K1VPn+Hda6uS5v0O6J9vHutfj5zogbNajWnHXue0MCW8deULx6AKngppO9RgDvi4h7ZiuLw37EdCZoCaaA44/YGpcaUgeRKIbebIH27TKWnwGMou7n+ErlG8=">http://www.youtube.com/textroninc</a></li>
+<li>LinkedIn: <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftextron&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835548435%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=alh9ecbJ9V3OXPXLps2iF95Isnyh8npklgnS%2FiIO2y8%3D&amp;reserved=0" originalsrc="http://www.linkedin.com/company/textron" shash="JG+jQhkNPDqSEFlnsOKbDROLWUiChBTtlqDGL+sz995uLuVt1I+kDWqyMHz7d/Q234O6G9KnZPweaJKJCLVIWjgbgMIdfUVGKd/Z40nAiEWGGBC2slE6W4ijJItumSCxHBLDPGKFdLJDb6HcqL6jC6B+hDlA1lN/RYYP1/2i6s8=">http://www.linkedin.com/company/textron</a></li>
+<li>Wikipedia: <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTextron&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C9e0764aada754662557408d875cabd83%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388861835548435%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0&amp;sdata=6l7UAz0ANQlY7DpUdhZFl04qFlGV1TSv3QXXmxO7jKw%3D&amp;reserved=0" originalsrc="http://en.wikipedia.org/wiki/Textron" shash="wxvTWJvoyfkFPP/15GeG7KQEUbaY9xVIimIPeaz9cPOjLhOr7QSzXd6mv98FH8lvBt9P/ov5i9fvfpG9s0SyJw3/sps+eRSacQ7dr/uQN0uiVnJH1k/vurRgqvz3GyOUkpuAzG5ONgnB5GmJL2/DCrURaL6x1f9veZRWr9bV4Uo=">http://en.wikipedia.org/wiki/Textron</a></li>
+</ul>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div></body>
+</html>
+
+------=_Part_82940_1543946925.1603289289240
+Content-Type: application/octet-stream; name=this_message_in_html.htm
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=this_message_in_html.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title></title>
+</head>
+<body style='font-family: Arial, Times New Roman, Verdana, Sans-Serif; padding: 5px 5px 5px 5px; margin: 0px; border-style: none; background-color: #ffffff'>
+<div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Dear Jerry,</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div><div><div><span style="font-family:arial">We have received your application for the position of 2021 Information Technology Intern-284368 and are currently reviewing your experience and qualifications.<br />
+<br />
+If you would like to review your candidate file, or to check the status of your submission on this position, <a href="https://textron.taleo.net/careersection/textron/jobapply.ftl?job=284368&lang=en">click here</a>.<br />
+<br />
+If your profile corresponds to our requirements, a member of our recruiting organization will contact you soon.<br />
+<br />
+We thank you for your interest in Textron Inc..<br />
+<br />
+<br />
+<br />
+</span></div></div><div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Best regards,</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Textron Inc.</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Talent Acquisition</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div><div>Replies to this message are undeliverable and will not reach the Human Resources Department. Please do not reply.</div><div><div><span style="FONT-FAMILY: Arial">________________________________________________________<br />
+Set your account preferences anytime by accessing the <a href="https://textron.taleo.net/careersection/careersection/candidateportal/myaccount/myAccountView.jsf?lang=en&csNo=10060&portal=8140753014">My Account</a> page.<br />
+</span></div></div><div><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Visit Textron&#39;s social media and follow us for information about our global network of businesses:</p>
+<ul>
+<li>Facebook: <a href="https://www.facebook.com/Textron.Inc">https://www.facebook.com/Textron.Inc</a></li>
+<li>Twitter: <a href="https://twitter.com/textron">https://twitter.com/textron</a></li>
+<li>YouTube: <a href="http://www.youtube.com/textroninc">http://www.youtube.com/textroninc</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/company/textron">http://www.linkedin.com/company/textron</a></li>
+<li>Wikipedia: <a href="http://en.wikipedia.org/wiki/Textron">http://en.wikipedia.org/wiki/Textron</a></li>
+</ul>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p>
+<p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">&nbsp;</p></div></body>
+</html>
+
+------=_Part_82940_1543946925.1603289289240--

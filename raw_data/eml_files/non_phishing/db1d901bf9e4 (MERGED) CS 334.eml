@@ -1,0 +1,93 @@
+Received: from DM5PR0101MB2954.prod.exchangelabs.com (2603:10b6:4:35::20) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 01:32:07
+ +0000
+Received: from SN6PR01CA0018.prod.exchangelabs.com (2603:10b6:805:b6::31) by
+ DM5PR0101MB2954.prod.exchangelabs.com (2603:10b6:4:35::20) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.30; Thu, 15 Oct 2020 01:32:00 +0000
+Received: from SN1NAM02FT031.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:805:b6:cafe::bd) by SN6PR01CA0018.outlook.office365.com
+ (2603:10b6:805:b6::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.24 via Frontend
+ Transport; Thu, 15 Oct 2020 01:32:00 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.6)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.6 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.6; helo=mail-relay6-va2.blackboard.com;
+Received: from mail-relay6-va2.blackboard.com (69.196.241.6) by
+ SN1NAM02FT031.mail.protection.outlook.com (10.152.72.116) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 01:32:00 +0000
+Received: from fgprd-100946-205964-app011.mhint (fgprd-100946-205964-app011.mhint [10.5.10.163])
+	by mail-relay6-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09F1VgAC029470;
+	Thu, 15 Oct 2020 01:31:47 GMT
+Date: Wed, 14 Oct 2020 20:31:54 -0500 (CDT)
+From: "Tristan Whalen - tgw100020@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Tristan Whalen - tgw100020@utdallas.edu" <tgw100020@utdallas.edu>
+To: "2208-merged-CS3341001-SE3341001":;
+Message-ID: <1319047365.4223.1602725518433.JavaMail.bbuser@fgprd-100946-205964-app011>
+Subject: (MERGED) CS 3341.001 - SE 3341.001 - F20: HW08 due Tues 10/20
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4221_2008965313.1602725514128"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 01:32:00.4249
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5ec132d5-507a-4526-0110-08d870aa1ce2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132471991204279884;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT031.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5ec132d5-507a-4526-0110-08d870aa1ce2
+X-MS-TrafficTypeDiagnostic: DM5PR0101MB2954:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd,ExtAddr
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:2399;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.6;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay6-va2.blackboard.com;PTR:mail-relay6-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 01:32:00.3300
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5ec132d5-507a-4526-0110-08d870aa1ce2
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT031.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR0101MB2954
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.0358857
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	2GBNGiMoAAgAvmFM/p3oZdA0ZjqmtetiOcw8P6kMeyvKYa0kOR7CbbEfddXJx7NO+BYce+BkRTYcFuWP02K4a/yAd3bw6mTd5uNa5YVsHgO5jGh2kTNmEy+C4sQ6TqrVzkNf2NW+TskRl7gJ3wJzAARWez4tXdnP1yWaGFiYJxnN++jhUkM+C1FclE6AR2eb+kwfuX8scd3uzQwFn2vESMRkXRRMLSRe0oXByjEHwUxeVyRnK8rfxvAr1GbSViI3HZ/6ek6gPFgNlcnJrQkPcfDY3BjD6PHb/xZTUisypUlfmdlkVtT8VEtrkQkE0Z7ujuKaXW5eqyF4hdhlsPUZrbF/kmNHDLJbk0C/8bwE/SIg2xmhjZaFneLPbPs2WvgEPsYOevIycJTBT3uVIEz2aw0wkVcDmFmMx92b4ZERyO1DhCvcPUdatZoZrQScznGTpNGyKkeL+TmNGh19g95uYlAiNSk/De6o5ChZokX6kTECRVqqBEG7HtkOlc3oM6lKpYvlrlqTARLxrz4TixObBuvhJG69tzj9XK4sA+Kxjni9sq6DxroR6e26oJvWBc9KXVYmtYVsYctUrldiezz3y/S1vktmDg5gBdTOukKbyGoq/8/EqZMmM7gdR1z47xCRSj/Hf5+o8IN+Ie+G0ubdmRzSfkuYPTjqLz/6NZEfNJw9iE6hOvx1QZ8I+4lmkbDuQ4eS5mBH3BTSsqWMGpffykYkSBzw9d2p7ovQdyKw6Lc7s+CVUpYOiUDz5oVBhJZGPZVWSMLS0FvPCuTRKUNuBh/b6agGcknNhWcI/nO4kCOeKG2FEv/eyGXZyrAu7FnzZaRdXMAbndIJ6bTeSf0GFCdxsIjuKh/LoOHL4CO/FhT+dcYPHMzHh97o1VIv13YPs2gLiwweNhUU+vaDlORSUhb250w4H+QlvMNhq9MMprQ=
+MIME-Version: 1.0
+
+------=_Part_4221_2008965313.1602725514128
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+           HW08 on Markov Chains in webwork is due Tuesday 10/20, closes 10/21.      
+------=_Part_4221_2008965313.1602725514128
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>  <body>   <div class="vtbegenerated">    <p>HW08 on Markov Chains in webwork is due Tuesday 10/20, closes 10/21.</p>   </div>  </body> </html>
+------=_Part_4221_2008965313.1602725514128--

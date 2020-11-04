@@ -1,0 +1,970 @@
+Received: from BL0PR0102MB3555.prod.exchangelabs.com (2603:10b6:408:80::18) by
+ BN8PR01MB5314.prod.exchangelabs.com with HTTPS via
+ BN8PR15CA0041.NAMPRD15.PROD.OUTLOOK.COM; Mon, 11 Nov 2019 10:24:29 +0000
+Received: from BL0PR0102CA0066.prod.exchangelabs.com (2603:10b6:208:25::43) by
+ BL0PR0102MB3555.prod.exchangelabs.com (2603:10b6:207:33::21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2430.22; Mon, 11 Nov 2019 10:24:27 +0000
+Received: from CY1NAM02FT022.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e45::204) by BL0PR0102CA0066.outlook.office365.com
+ (2603:10b6:208:25::43) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2430.20 via Frontend
+ Transport; Mon, 11 Nov 2019 10:24:27 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.160.195)
+ smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=gmail.com;utdallas.edu; dmarc=pass action=none
+ header.from=gmail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.160.195 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.160.195; helo=mail-qt1-f195.google.com;
+Received: from mail-qt1-f195.google.com (209.85.160.195) by
+ CY1NAM02FT022.mail.protection.outlook.com (10.152.75.185) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2430.20 via Frontend Transport; Mon, 11 Nov 2019 10:24:27 +0000
+Received: by mail-qt1-f195.google.com with SMTP id t20so15081087qtn.9
+        for <Jerry.Teng@utdallas.edu>; Mon, 11 Nov 2019 02:24:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=B3SKoltmQkvw7beXJDjKgnD2nXl9ljl2LDpIAVTqkS0=;
+        b=qEiuuDwOtIWBuhvMrCAi+74aCfC4lKaKQtRELJEWqPXXvhDMZozHMpzPc9jXnbaovh
+         LyEimqkIYhMGm0MUVDiIOGvfs7mroR1LOs5EbQNSO/dBG0aSNUHMiDAZArPWGktc7cBC
+         bJBGC7l+Y6iN6WHlQc2OPYsrY4AmMFOGergxf7x5RUD6x/hsWkscnhiKS4Wh4jjwOk7u
+         Et920F45wUsNtk/+rwKm4FxB5nw0nLpsPCQwWm4AkfHdD7HmdeuxvYRMi+G8+QO2HIts
+         PkW5gneugLsfYYX9MmyZ3ksbxFsLoSgWJlsoMq3YFDqJsyV11NC1wa2L8VHXa8r/YTey
+         wDkg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=B3SKoltmQkvw7beXJDjKgnD2nXl9ljl2LDpIAVTqkS0=;
+        b=A4B92MrqgPLaOflFJGJbGC0S82mBkgZOEGcAcv6E9cGo3yI05m8VWvUxlN2rtXRBCc
+         zSsdyCgcBHmjfDsS+iV0QXdugaU3fRP5bT0LtsiJnTwksOTBu3QoFsKhysm04WbqIPr0
+         eqkhKM8hKdDvuq/n7+vcAW+taDf4NmalGcT9yXARczBUVvq7dL96XAT4N1oWhWiB0MpO
+         toUfWYhjrPfap26y8KND8UEKgpy56Nk1OTSL0fO96HFxqbL+cb6QQmDxFLH7BSDoNlfp
+         VsCbDHSl8WJ2XUOapGo2PFOblJODEr4e5QrZF/QkKiIcCeK3nrbXSuKE3UurTrQH21Aa
+         VyzA==
+X-Gm-Message-State: APjAAAW1uMy/hoP9B5+Tb6Wj9UoK4L9UnLeR/cTk5rrH9Ap+WsPIHpVl
+	bBlVgQltPVN4WYQbmwhHYhAlpMpKB0Nko63KzQY=
+X-Google-Smtp-Source: APXvYqxm6n0RdHeYu/5nrD/58OGIdfTC2Rmk57AoWIWAUXQHY9HThqr7aMjbdv/v67z5Ppi02aocQyJkKa5Bu052tt4=
+X-Received: by 2002:aed:2501:: with SMTP id v1mr19659808qtc.225.1573467864896;
+ Mon, 11 Nov 2019 02:24:24 -0800 (PST)
+From: ASSISTANCE COORDINATOR <assistancecordinatorbatchb4@gmail.com>
+Date: Mon, 11 Nov 2019 11:24:20 +0100
+Message-ID: <CAKZuFL380uf7JNjLp-kX2fkm71CbsisOm+m6NHHVQmgxD9KkJQ@mail.gmail.com>
+Subject: Recruitment 2019 Job Opening
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000271c9605970f8995"
+Return-Path: assistancecordinatorbatchb4@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 11 Nov 2019 10:24:27.3691
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 0809f62f-794d-4735-92c9-08d7669154b5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:209.85.160.195;IPV:NLI;CTRY:US;EFV:NLI;SFV:SPM;SFS:(10001);DIR:INB;SFP:;SCL:5;SRVR:BL0PR0102MB3555;H:mail-qt1-f195.google.com;FPR:;SPF:None;LANG:en;CAT:SPM;
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 0809f62f-794d-4735-92c9-08d7669154b5
+X-MS-TrafficTypeDiagnostic: BL0PR0102MB3555:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 11 Nov 2019 10:24:27.3651
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0809f62f-794d-4735-92c9-08d7669154b5
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR0102MB3555
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5213388
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2430.004
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;ex:0;auth:0;dest:J;ENG:(20160513016)(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UEZiSHFad1IxUE1oZzRyRlpId1BPemp6M01XWUVqL290WHhWU0FJNTFEVzh1?=
+ =?utf-8?B?SW1qb0dvODg5ckZmOVpVOEFKWTE2aGRJcEZiZlplZW1kWHJ2WENnbXpJV1Iz?=
+ =?utf-8?B?VHp3SmNsY2x4a29WUG5rbmRYdDlUOWdVdlVGYXp6cmJqSXN0c3VmclhlTS9y?=
+ =?utf-8?B?ajhaeldPT2srSVdmUE90SVFHNGFHOTlFcXZOcWFvVUdYUUdqOUcwNEtyaVhG?=
+ =?utf-8?B?TEgyeFl4MS90MUg4WG43S3Qrb1BhSWdyWGYxYmpUeUFScHhEVFVyWTlVaGtT?=
+ =?utf-8?B?a0dCZThaQVovcE5yTjc0YWpxZG5sdmE2V3ZEckpaSzJHRElPZ0JsNTNsVmFv?=
+ =?utf-8?B?Yk9RaWNrVE0xbXFvNVk4alQrTTJQb1dXR1puZkk1OGFsWHUxL21VMHpuREQv?=
+ =?utf-8?B?Z3VXeFJhcTFXWmUyVWhkazlucFNhaHZRc3Q1TExZaFNhQkxJcE1ZS3o3UWV2?=
+ =?utf-8?B?VGlZbG5jeGNDYitzVUZrNW9xdzZpQjM3SkhDM2svbm5TN1hRZlZMNVJaUnNu?=
+ =?utf-8?B?Rm9KS285YlN6RjhldEZkSEd5YTNRUzkzQWNCR0tFMjJBZURyTlNVUnhNcFln?=
+ =?utf-8?B?cStMN3NhN2pqK0NBMUF1M1BrR2g3RUZMOW1CQTZ4Rm1lQWVBZmFVeS93MjBz?=
+ =?utf-8?B?WVFQUUhPL3BnQ1B3clFJUVVkZFhyNHFKRGxoRUxKTkFpUVp0eTBCb0Urdy80?=
+ =?utf-8?B?Uyt4OWZPRzJnUC96YUYreFpKZ0RjRzlHOHJWMnNnMW1DeDhzaXJCMEZ2Zmk4?=
+ =?utf-8?B?cTQ0eDRaSE91aG1NYVdXWTczUW1NK1pCa0lQV0FnR1BJUFlqOFMycUJKaVFJ?=
+ =?utf-8?B?MFJuTTVTd0ZNdHYwZVRWeTg2Vkx3eVdkSitndCtGS1NxWHFLSXpkNTVIeDl6?=
+ =?utf-8?B?Mk1Dak41bnB5NFJKOXJCSXJPMDdYYkpxSVRaeSs3MWpEdTMvM2RGT2ZIZnNj?=
+ =?utf-8?B?bCsrZlhWbTRPOGhqNVJ1VTY3emlMYUtrc0pMTlZ6ZjFLTWdnWWlNcWlUdjd1?=
+ =?utf-8?B?aVh4TmVQTXBvUlB2NXRiM01VY01KS25MajRxSG5JclFBU1pJQ29IRm5lSjhU?=
+ =?utf-8?B?QklkVE14clNsODgxNGMyL1Blb1R1bVFBcUFHMmZwNHNIUFVySUZhWmxFdGMr?=
+ =?utf-8?B?MGNuRndVNEZwQWltakhnQlpTaDdGeW9PM2JSUWxwZ3hPMFVjREZha3M5cE95?=
+ =?utf-8?B?Nm9OZzFDZzRyNFN6di9zdXZhY1VMeGZqVWhkS1E0bno0dG5QTEp6MlpqM2Qv?=
+ =?utf-8?B?SmliQXRuck8xZXVaS0xYaGpHbVovOXkxdWFTbkhtZEx2dHptdm5lRnJRZVNF?=
+ =?utf-8?B?bC8vSkQ3LzdiQUMwV0haT1U1UGEzbTBpWUlzU0EwRm42TFVjY2xyeXkvd0oy?=
+ =?utf-8?B?MXNxZUo2WG9OUml6MDVaS0JtbjN6a2ZxUHZQaWxVR2RuRjBNdDRhK1c3Slo2?=
+ =?utf-8?B?STdsUTdMaGFSaGVOeGFjWW1tUktWZk5zZnExbzRSTkpZcUZUQWh0ZGtKaVlv?=
+ =?utf-8?B?SFVTK1ZUd1NIek5wRUNKNU4zNm5CaXA3ekJCYkFiYXViU0JueHFMcTBIbkhE?=
+ =?utf-8?B?cDh4MVZsQmlMN2piL1lLM2NhRjZNMG01bkowWkVqdGFUOXN5WmhCcHIxSW1o?=
+ =?utf-8?B?Y0I0VmFQdWN0c010WUNJejZSeWJIdG8wLzZjUzRUSjZqREZFWnc0elZRc09L?=
+ =?utf-8?B?bnpRVm83a09NeUgxblVrMGlHRng2RzFpdUt3V1lkMFYyQ2ZuTUhQUVllTGVh?=
+ =?utf-8?B?Y04ybEg4QjM4UnFTMXpNQmZIQ0RYdUYrUlpWT2tKK3hvOHExbUdaSVUyNkVj?=
+ =?utf-8?B?bmpwK0hqbGVrY3IvY1RuOGVhd09XeURvVGRoTGVDR2FRcXgwZ0V3MDExMWRJ?=
+ =?utf-8?B?ZVoxYkxhRXNTOVFQMGhrRHJGNDZIMXBwVlpIZmVjcGsxS2xsMDh2RVZOemFR?=
+ =?utf-8?B?bW03d1g1NWI2bVZIdjlqQlgvY2VSQ2dMM0pxcU9KNEQxcloxbTJmVVhVTitn?=
+ =?utf-8?B?V3pQNkxKK0pnd2hkcFVNa3dDMWx0TmdmRkg2WXg5RHBaMTR2Mzd2Zm9rTzRv?=
+ =?utf-8?B?MzNIUGVYR1N2ZlUydFQ1b1NwVGx2NE1pQjg2RVVrVkFkbVovY210eityNTRl?=
+ =?utf-8?B?WjBDVWdMdGtsNzd1QlBxd2c0T21STGxzdDk0eEE5dmNsOVU1NkNHcmZKQ2pW?=
+ =?utf-8?B?cXpWRnk4NU9LVkNFWVlLSTNpc0xsRmtvbWU4bGJqcmluWmxXY3RicmRrcmdq?=
+ =?utf-8?B?OElFdFptcHcrbFRtTDUwUWFIaWdnPT0=?=
+MIME-Version: 1.0
+
+--000000000000271c9605970f8995
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ =C2=B7         Hours: Part Time
+=C2=B7         Contract: Job could convert to full time in the near future
+=C2=B7         Job Function: Middle man
+=C2=B7         Salary : $230 weekly
+=C2=B7         Job Level: Graduate/ Undergraduate
+=C2=B7         Company: Tata Global Beverages
+
+This is a rare opportunity for an ambitious college students, Tata Global
+Beverages Group Ltd. (formerly Tata Tea Limited) is a natural beverages
+company with a focus on Tea, Coffee and Water. Is an Indian multinational
+non-alcoholic beverages company headquartered in Kolkata, West Bengal . We
+are a business with the rich heritage and huge ambition. Over 90 percent of
+our current sales comes from branded products and 70 per cent of our Group
+turnover is generated outside India.
+Would you like to be part of our exciting journey? Are you looking for a
+long term part time position? This could be the perfect role for you! Read
+on......
+
+*Key Tasks:*
+=C2=B7         This is strictly an on-line pay job where you work with the
+buying department and liaising with our suppliers only for getting the
+supplies needed by our agents, you will be contacted whenever they need
+materials during the weekdays or you can have your own part of the work
+completed at your leisure time in school or at home.
+ Daily duties would be to report to your Supervisor,  who would be attached
+to you online, He/She we always assign logs of duty daily  and you would be
+required to work according to instructions sent to your supervisor via your
+mobile text and email.
+=C2=B7         We are employing you just to reduce the workload for us and =
+on
+our supplier and also to keep record of materials that are being ordered
+weekly. Each supplier will only order for materials once a week depending
+on the task he or she is to complete for that week.
+We respect and appreciate you. Tata Global Beverages (TGB) keeps all of
+your information private, if you feel like this advert is speaking directly
+to you, we=E2=80=99d love to hear from you. Revert back with the informatio=
+n below;
+
+Your name:
+Contact address:
+City:
+State:
+Zip code:
+Mobile number:
+Email:
+Current job:
+
+We will be reviewing applications on an ongoing basis and so please apply
+as soon as you are able so we can process your information as to consider
+it valid to commence working with us.
+
+ We look forward to hearing from you.
+
+Sincerely,
+Recruitment Team
+Tata Global Beverages (TGB)
+
+--000000000000271c9605970f8995
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div dir=3D"ltr">
+
+<div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_=
+-5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688g=
+mail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781=
+657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15518=
+10842487_29323" style=3D"color:rgb(0,0,0);font-family:&quot;Helvetica Neue&=
+quot;,Helvetica,Arial,&quot;Lucida Grande&quot;,sans-serif;font-style:norma=
+l;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;le=
+tter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;wh=
+ite-space:normal;word-spacing:0px;text-decoration-style:initial;text-decora=
+tion-color:initial;margin:0in 0in 8pt;line-height:normal;font-size:11pt"><s=
+pan id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-=
+5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gm=
+ail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82163802637816=
+57059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181=
+0842487_29324" style=3D"font-size:10pt;font-family:Symbol">=C2=B7<span id=
+=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970=
+9563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_=
+4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059g=
+mail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181084248=
+7_29325" style=3D"font-stretch:normal;font-size:7pt;line-height:normal;font=
+-family:New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</=
+span></span></span><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888=
+669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_=
+6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gm=
+ail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui=
+_3_16_0_ym19_1_1551810842487_29326" style=3D"font-family:Helvetica,sans-ser=
+if">Hours: Part Time&nbsp;</span></div><div id=3D"gmail-m_-4784943961754827=
+019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046=
+71820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25=
+62369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gma=
+il-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29327" style=3D"color:rgb(0=
+,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,&quot;Lucida G=
+rande&quot;,sans-serif;font-style:normal;font-variant-ligatures:normal;font=
+-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start=
+;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;te=
+xt-decoration-style:initial;text-decoration-color:initial;margin:0in 0in 8p=
+t;line-height:normal;font-size:11pt"><span id=3D"gmail-m_-47849439617548270=
+19gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_659280467=
+1820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_256=
+2369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmai=
+l-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29328" style=3D"font-size:10=
+pt;font-family:Symbol">=C2=B7<span id=3D"gmail-m_-4784943961754827019gmail-=
+m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046718200980=
+45gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623692738=
+28796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv553=
+9534504yui_3_16_0_ym19_1_1551810842487_29329" style=3D"font-stretch:normal;=
+font-size:7pt;line-height:normal;font-family:New">&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></span><span id=3D"gmail-m=
+_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797095637567181=
+30gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426398095=
+15687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819=
+492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29330" st=
+yle=3D"font-family:Helvetica,sans-serif">Contract:&nbsp;Job could convert t=
+o full time in the near future&nbsp;</span></div><div id=3D"gmail-m_-478494=
+3961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-=
+m_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407=
+gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281949212593=
+4236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29331" style=3D"c=
+olor:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,&quo=
+t;Lucida Grande&quot;,sans-serif;font-style:normal;font-variant-ligatures:n=
+ormal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-a=
+lign:start;text-indent:0px;text-transform:none;white-space:normal;word-spac=
+ing:0px;text-decoration-style:initial;text-decoration-color:initial;margin:=
+0in 0in 8pt;line-height:normal;font-size:11pt"><span id=3D"gmail-m_-4784943=
+961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m=
+_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407g=
+mail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934=
+236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29332" style=3D"fo=
+nt-size:10pt;font-family:Symbol">=C2=B7<span id=3D"gmail-m_-478494396175482=
+7019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804=
+671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2=
+562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gm=
+ail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29333" style=3D"font-stret=
+ch:normal;font-size:7pt;line-height:normal;font-family:New">&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></span><span id=
+=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970=
+9563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_=
+4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059g=
+mail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181084248=
+7_29334" style=3D"font-family:Helvetica,sans-serif">Job Function:&nbsp;Midd=
+le man</span></div><div id=3D"gmail-m_-4784943961754827019gmail-m_-59198886=
+69686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_6=
+358609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gma=
+il-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_=
+3_16_0_ym19_1_1551810842487_29335" style=3D"color:rgb(0,0,0);font-family:&q=
+uot;Helvetica Neue&quot;,Helvetica,Arial,&quot;Lucida Grande&quot;,sans-ser=
+if;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal=
+;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;tex=
+t-transform:none;white-space:normal;word-spacing:0px;text-decoration-style:=
+initial;text-decoration-color:initial;margin:0in 0in 8pt;line-height:normal=
+;font-size:11pt"><span id=3D"gmail-m_-4784943961754827019gmail-m_-591988866=
+9686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63=
+58609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmai=
+l-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3=
+_16_0_ym19_1_1551810842487_29336" style=3D"font-size:10pt;font-family:Symbo=
+l">=C2=B7<span id=3D"gmail-m_-4784943961754827019gmail-m_-59198886696867681=
+06gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964=
+708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-821=
+6380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym=
+19_1_1551810842487_29337" style=3D"font-stretch:normal;font-size:7pt;line-h=
+eight:normal;font-family:New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;<span>&nbsp;</span></span></span><span id=3D"gmail-m_-478494396175482701=
+9gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671=
+820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562=
+369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail=
+-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29338" style=3D"font-family:H=
+elvetica,sans-serif">Salary : $230 weekly&nbsp;</span></div><div id=3D"gmai=
+l-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797095637567=
+18130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426398=
+09515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2=
+819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29339"=
+ style=3D"color:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica=
+,Arial,&quot;Lucida Grande&quot;,sans-serif;font-style:normal;font-variant-=
+ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:no=
+rmal;text-align:start;text-indent:0px;text-transform:none;white-space:norma=
+l;word-spacing:0px;text-decoration-style:initial;text-decoration-color:init=
+ial;margin:0in 0in 8pt;line-height:normal;font-size:11pt"><span id=3D"gmail=
+-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970956375671=
+8130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263980=
+9515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28=
+19492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29340" =
+style=3D"font-size:10pt;font-family:Symbol">=C2=B7<span id=3D"gmail-m_-4784=
+943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmai=
+l-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426398095156874=
+07gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125=
+934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29341" style=3D=
+"font-stretch:normal;font-size:7pt;line-height:normal;font-family:New">&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></spa=
+n><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail=
+-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088306=
+88gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263=
+781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15=
+51810842487_29342" style=3D"font-family:Helvetica,sans-serif">Job Level:&nb=
+sp;Graduate/ Undergraduate&nbsp;</span></div><div id=3D"gmail-m_-4784943961=
+754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65=
+92804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmai=
+l-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236=
+939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29343" style=3D"color=
+:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,&quot;Lu=
+cida Grande&quot;,sans-serif;font-style:normal;font-variant-ligatures:norma=
+l;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align=
+:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:=
+0px;text-decoration-style:initial;text-decoration-color:initial;margin:0in =
+0in 8pt;line-height:normal;font-size:11pt"><span id=3D"gmail-m_-47849439617=
+54827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_659=
+2804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail=
+-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921259342369=
+39gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29344" style=3D"font-s=
+ize:10pt;font-family:Symbol">=C2=B7<span id=3D"gmail-m_-4784943961754827019=
+gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046718=
+20098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623=
+69273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-=
+yiv5539534504yui_3_16_0_ym19_1_1551810842487_29345" style=3D"font-stretch:n=
+ormal;font-size:7pt;line-height:normal;font-family:New">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></span><span id=3D"g=
+mail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797095637=
+56718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426=
+39809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-=
+m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_293=
+46" style=3D"font-family:Helvetica,sans-serif">Company: Tata Global Beverag=
+es&nbsp; &nbsp; &nbsp;</span><span id=3D"gmail-m_-4784943961754827019gmail-=
+m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046718200980=
+45gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623692738=
+28796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv553=
+9534504yui_3_16_0_ym19_1_1551810893806_30348" style=3D"font-family:Helvetic=
+a,sans-serif;font-size:11pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp;</span></div><div id=3D"gmail-m_-4784943961754827019gmail-=
+m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046718200980=
+45gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623692738=
+28796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv553=
+9534504yui_3_16_0_ym19_1_1551810842487_29349" style=3D"color:rgb(0,0,0);fon=
+t-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,&quot;Lucida Grande&quo=
+t;,sans-serif;font-style:normal;font-variant-ligatures:normal;font-variant-=
+caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-ind=
+ent:0px;text-transform:none;white-space:normal;word-spacing:0px;text-decora=
+tion-style:initial;text-decoration-color:initial;margin:0in 0in 0.0001pt;li=
+ne-height:normal;font-size:11pt"><span id=3D"gmail-m_-4784943961754827019gm=
+ail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820=
+098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369=
+273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yi=
+v5539534504yui_3_16_0_ym19_1_1551810842487_29350" style=3D"font-family:Helv=
+etica,sans-serif">This is a rare opportunity for an ambitious&nbsp;college =
+students,&nbsp;</span><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919=
+888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail=
+-m_6358609964708830688gmail-m_4442639809515687407gmail-m_256236927382879674=
+3gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504=
+yui_3_16_0_ym19_1_1551810842487_29351">Tata
+ Global Beverages Group Ltd. (formerly Tata Tea Limited)&nbsp;is a natural=
+=20
+beverages company with a focus on Tea, Coffee and Water. Is an Indian=20
+multinational non-alcoholic beverages company headquartered in Kolkata,=20
+West Bengal .&nbsp;We are a business with the rich heritage and huge=20
+ambition. Over 90 percent of our current sales comes from branded=20
+products and 70 per cent of our Group turnover is generated outside=20
+India.</span><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686=
+768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860=
+9964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_=
+-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_=
+0_ym19_1_1551810842487_29352" style=3D"font-family:New"></span></div><div i=
+d=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797=
+09563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m=
+_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059=
+gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15518108424=
+87_29353" style=3D"color:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,=
+Helvetica,Arial,&quot;Lucida Grande&quot;,sans-serif;font-style:normal;font=
+-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-s=
+pacing:normal;text-align:start;text-indent:0px;text-transform:none;white-sp=
+ace:normal;word-spacing:0px;text-decoration-style:initial;text-decoration-c=
+olor:initial;margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt"><sp=
+an id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-5=
+179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gma=
+il-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-821638026378165=
+7059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810=
+842487_29354" style=3D"font-family:Helvetica,sans-serif">Would
+ you like to be part of our exciting journey?&nbsp;Are you looking for a lo=
+ng
+ term part time position?&nbsp;This could be the perfect role for you! Read=
+=20
+on......&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div><div id=3D"gmail-m_-478494=
+3961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-=
+m_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407=
+gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281949212593=
+4236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29355" style=3D"c=
+olor:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica,Arial,&quo=
+t;Lucida Grande&quot;,sans-serif;font-style:normal;font-variant-ligatures:n=
+ormal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-a=
+lign:start;text-indent:0px;text-transform:none;white-space:normal;word-spac=
+ing:0px;text-decoration-style:initial;text-decoration-color:initial;margin:=
+0in 0in 0.0001pt;line-height:normal;font-size:11pt"><span id=3D"gmail-m_-47=
+84943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gm=
+ail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263980951568=
+7407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921=
+25934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29356" style=
+=3D"font-family:Helvetica,sans-serif">&nbsp;</span></div><div id=3D"gmail-m=
+_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797095637567181=
+30gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426398095=
+15687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819=
+492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29357" st=
+yle=3D"color:rgb(0,0,0);font-family:&quot;Helvetica Neue&quot;,Helvetica,Ar=
+ial,&quot;Lucida Grande&quot;,sans-serif;font-style:normal;font-variant-lig=
+atures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:norma=
+l;text-align:start;text-indent:0px;text-transform:none;white-space:normal;w=
+ord-spacing:0px;text-decoration-style:initial;text-decoration-color:initial=
+;margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt"><b id=3D"gmail-=
+m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718=
+130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809=
+515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281=
+9492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29358"><=
+span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_=
+-5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688g=
+mail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781=
+657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15518=
+10842487_29359" style=3D"font-family:Helvetica,sans-serif">Key Tasks:</span=
+></b><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gm=
+ail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088=
+30688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380=
+263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1=
+_1551810842487_29360" style=3D"font-family:Helvetica,sans-serif"></span></d=
+iv><div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail=
+-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088306=
+88gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263=
+781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15=
+51810842487_29361" style=3D"color:rgb(0,0,0);font-style:normal;font-variant=
+-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:n=
+ormal;text-align:start;text-indent:0px;text-transform:none;white-space:norm=
+al;word-spacing:0px;text-decoration-style:initial;text-decoration-color:ini=
+tial;margin:0in 0in 8pt;line-height:normal;background-image:none;background=
+-position:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Calibri=
+,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686=
+768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860=
+9964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_=
+-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_=
+0_ym19_1_1551810842487_29362" style=3D"font-size:10pt;font-family:Symbol">=
+=C2=B7<span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106g=
+mail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708=
+830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-821638=
+0263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_=
+1_1551810842487_29363" style=3D"font-stretch:normal;font-size:7pt;line-heig=
+ht:normal;font-family:New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+<span>&nbsp;</span></span></span><span id=3D"gmail-m_-4784943961754827019gm=
+ail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820=
+098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369=
+273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yi=
+v5539534504yui_3_16_0_ym19_1_1551810842487_29364" style=3D"font-family:Helv=
+etica,sans-serif">This
+ is strictly an on-line pay job where you work with the buying=20
+department and liaising with our suppliers&nbsp;only for getting the suppli=
+es
+ needed by our agents,&nbsp;you will be contacted whenever they need=20
+materials during the weekdays or you can have your own part of the work=20
+completed at your leisure time in school or at home. <br></span></div><div =
+style=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;f=
+ont-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:st=
+art;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px=
+;text-decoration-style:initial;text-decoration-color:initial;margin:0in 0in=
+ 8pt;line-height:normal;background-image:none;background-position:0% 0%;bac=
+kground-repeat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><span =
+id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-5179=
+709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-=
+m_4442639809515687407gmail-m_2562369273828796743gmail-m_-821638026378165705=
+9gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842=
+487_29364" style=3D"font-family:Helvetica,sans-serif">&nbsp;Daily
+ duties would be to report to your Supervisor,&nbsp; who would be attached =
+to
+ you online, He/She we always assign logs of duty daily&nbsp; and you would=
+=20
+be required to work according to instructions sent to your supervisor=20
+via your mobile text and email.<br></span></div><div id=3D"gmail-m_-4784943=
+961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m=
+_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407g=
+mail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934=
+236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29365" style=3D"co=
+lor:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;font-variant=
+-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-in=
+dent:0px;text-transform:none;white-space:normal;word-spacing:0px;text-decor=
+ation-style:initial;text-decoration-color:initial;margin:0in 0in 8pt;line-h=
+eight:normal;background-image:none;background-position:0% 0%;background-rep=
+eat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><span id=3D"gmail=
+-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970956375671=
+8130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263980=
+9515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28=
+19492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29366" =
+style=3D"font-size:10pt;font-family:Symbol">=C2=B7<span id=3D"gmail-m_-4784=
+943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmai=
+l-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426398095156874=
+07gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_2819492125=
+934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29367" style=3D=
+"font-stretch:normal;font-size:7pt;line-height:normal;font-family:New">&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span></span></spa=
+n><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail=
+-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088306=
+88gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263=
+781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_15=
+51810842487_29368" style=3D"font-family:Helvetica,sans-serif">We
+ are employing you just to reduce the workload for us and on our=20
+supplier and also to keep record of materials that are being ordered=20
+weekly.&nbsp;Each supplier will only order for materials once a week=20
+depending on the task he or she is to complete for that week.&nbsp;</span><=
+/div><div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gma=
+il-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860996470883=
+0688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82163802=
+63781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_=
+1551810842487_29369" style=3D"color:rgb(0,0,0);font-style:normal;font-varia=
+nt-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing=
+:normal;text-align:start;text-indent:0px;text-transform:none;white-space:no=
+rmal;word-spacing:0px;text-decoration-style:initial;text-decoration-color:i=
+nitial;margin:0in 0in 0.0001pt;line-height:normal;background-image:none;bac=
+kground-position:0% 0%;background-repeat:repeat;font-size:11pt;font-family:=
+Calibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-591988=
+8669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m=
+_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743g=
+mail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yu=
+i_3_16_0_ym19_1_1551810842487_29370" style=3D"font-family:Helvetica,sans-se=
+rif">We
+ respect and appreciate you. Tata Global Beverages (TGB) keeps all of=20
+your information private, if you feel like this advert is speaking=20
+directly to you, we=E2=80=99d love to hear from you. Revert back with the=20
+information below;</span></div><div id=3D"gmail-m_-4784943961754827019gmail=
+-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098=
+045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273=
+828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv55=
+39534504yui_3_16_0_ym19_1_1551810842487_29371" style=3D"color:rgb(0,0,0);fo=
+nt-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font=
+-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-tra=
+nsform:none;white-space:normal;word-spacing:0px;text-decoration-style:initi=
+al;text-decoration-color:initial;margin:0in 0in 0.0001pt;line-height:normal=
+;background-image:none;background-position:0% 0%;background-repeat:repeat;f=
+ont-size:11pt;font-family:Calibri,sans-serif"><span id=3D"gmail-m_-47849439=
+61754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_=
+6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gm=
+ail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921259342=
+36939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29372" style=3D"fon=
+t-family:Helvetica,sans-serif">&nbsp;</span></div><div id=3D"gmail-m_-47849=
+43961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail=
+-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263980951568740=
+7gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921259=
+34236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29373" style=3D"=
+color:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;font-varia=
+nt-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-=
+indent:0px;text-transform:none;white-space:normal;word-spacing:0px;text-dec=
+oration-style:initial;text-decoration-color:initial;margin:0in 0in 0.0001pt=
+;line-height:normal;background-image:none;background-position:0% 0%;backgro=
+und-repeat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><span id=
+=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970=
+9563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_=
+4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059g=
+mail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181084248=
+7_29374" style=3D"font-family:Helvetica,sans-serif">Your name:&nbsp;</span>=
+</div><div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gm=
+ail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088=
+30688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380=
+263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1=
+_1551810842487_29375" style=3D"color:rgb(0,0,0);font-style:normal;font-vari=
+ant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacin=
+g:normal;text-align:start;text-indent:0px;text-transform:none;white-space:n=
+ormal;word-spacing:0px;text-decoration-style:initial;text-decoration-color:=
+initial;margin:0in 0in 0.0001pt;line-height:normal;background-image:none;ba=
+ckground-position:0% 0%;background-repeat:repeat;font-size:11pt;font-family=
+:Calibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-59198=
+88669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-=
+m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743=
+gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504y=
+ui_3_16_0_ym19_1_1551810842487_29376" style=3D"font-family:Helvetica,sans-s=
+erif">Contact address:&nbsp;&nbsp;</span></div><div id=3D"gmail-m_-47849439=
+61754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_=
+6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gm=
+ail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921259342=
+36939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29377" style=3D"col=
+or:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;font-variant-=
+caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-ind=
+ent:0px;text-transform:none;white-space:normal;word-spacing:0px;text-decora=
+tion-style:initial;text-decoration-color:initial;margin:0in 0in 0.0001pt;li=
+ne-height:normal;background-image:none;background-position:0% 0%;background=
+-repeat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><span id=3D"g=
+mail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-51797095637=
+56718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_44426=
+39809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-=
+m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_293=
+78" style=3D"font-family:Helvetica,sans-serif">City:</span></div><div id=3D=
+"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970956=
+3756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444=
+2639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmai=
+l-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_2=
+9379" style=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatures:no=
+rmal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-al=
+ign:start;text-indent:0px;text-transform:none;white-space:normal;word-spaci=
+ng:0px;text-decoration-style:initial;text-decoration-color:initial;margin:0=
+in 0in 0.0001pt;line-height:normal;background-image:none;background-positio=
+n:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Calibri,sans-se=
+rif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gm=
+ail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647088=
+30688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380=
+263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1=
+_1551810842487_29380" style=3D"font-family:Helvetica,sans-serif">State:</sp=
+an></div><div id=3D"gmail-m_-4784943961754827019gmail-m_-591988866968676810=
+6gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647=
+08830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216=
+380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym1=
+9_1_1551810842487_29381" style=3D"color:rgb(0,0,0);font-style:normal;font-v=
+ariant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spa=
+cing:normal;text-align:start;text-indent:0px;text-transform:none;white-spac=
+e:normal;word-spacing:0px;text-decoration-style:initial;text-decoration-col=
+or:initial;margin:0in 0in 0.0001pt;line-height:normal;background-image:none=
+;background-position:0% 0%;background-repeat:repeat;font-size:11pt;font-fam=
+ily:Calibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-59=
+19888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gma=
+il-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796=
+743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv55395345=
+04yui_3_16_0_ym19_1_1551810842487_29382" style=3D"font-family:Helvetica,san=
+s-serif">Zip code:</span></div><div id=3D"gmail-m_-4784943961754827019gmail=
+-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098=
+045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273=
+828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv55=
+39534504yui_3_16_0_ym19_1_1551810842487_29383" style=3D"color:rgb(0,0,0);fo=
+nt-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font=
+-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-tra=
+nsform:none;white-space:normal;word-spacing:0px;text-decoration-style:initi=
+al;text-decoration-color:initial;margin:0in 0in 0.0001pt;line-height:normal=
+;background-image:none;background-position:0% 0%;background-repeat:repeat;f=
+ont-size:11pt;font-family:Calibri,sans-serif"><span id=3D"gmail-m_-47849439=
+61754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_=
+6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gm=
+ail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921259342=
+36939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29384" style=3D"fon=
+t-family:Helvetica,sans-serif">Mobile number:</span></div><div id=3D"gmail-=
+m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718=
+130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_4442639809=
+515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281=
+9492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29385" s=
+tyle=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;fo=
+nt-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:sta=
+rt;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;=
+text-decoration-style:initial;text-decoration-color:initial;margin:0in 0in =
+0.0001pt;line-height:normal;background-image:none;background-position:0% 0%=
+;background-repeat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><s=
+pan id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-=
+5179709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gm=
+ail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82163802637816=
+57059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181=
+0842487_29386" style=3D"font-family:Helvetica,sans-serif">Email:</span></di=
+v><div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-=
+m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860996470883068=
+8gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82163802637=
+81657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155=
+1810842487_29387" style=3D"color:rgb(0,0,0);font-style:normal;font-variant-=
+ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:no=
+rmal;text-align:start;text-indent:0px;text-transform:none;white-space:norma=
+l;word-spacing:0px;text-decoration-style:initial;text-decoration-color:init=
+ial;margin:0in 0in 0.0001pt;line-height:normal;background-image:none;backgr=
+ound-position:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Cal=
+ibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-591988866=
+9686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63=
+58609964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmai=
+l-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3=
+_16_0_ym19_1_1551810842487_29388" style=3D"font-family:Helvetica,sans-serif=
+">Current job:</span></div><div id=3D"gmail-m_-4784943961754827019gmail-m_-=
+5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098045g=
+mail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623692738287=
+96743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv553953=
+4504yui_3_16_0_ym19_1_1551810842487_29389" style=3D"color:rgb(0,0,0);font-s=
+tyle:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-wei=
+ght:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transfo=
+rm:none;white-space:normal;word-spacing:0px;text-decoration-style:initial;t=
+ext-decoration-color:initial;margin:0in 0in 0.0001pt;line-height:normal;bac=
+kground-image:none;background-position:0% 0%;background-repeat:repeat;font-=
+size:11pt;font-family:Calibri,sans-serif"><span id=3D"gmail-m_-478494396175=
+4827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592=
+804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-=
+m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281949212593423693=
+9gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29390" style=3D"font-fa=
+mily:Helvetica,sans-serif">&nbsp;</span></div><div id=3D"gmail-m_-478494396=
+1754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6=
+592804671820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gma=
+il-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_281949212593423=
+6939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29391" style=3D"colo=
+r:rgb(0,0,0);font-style:normal;font-variant-ligatures:normal;font-variant-c=
+aps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-inde=
+nt:0px;text-transform:none;white-space:normal;word-spacing:0px;text-decorat=
+ion-style:initial;text-decoration-color:initial;margin:0in 0in 0.0001pt;lin=
+e-height:normal;background-image:none;background-position:0% 0%;background-=
+repeat:repeat;font-size:11pt;font-family:Calibri,sans-serif"><span id=3D"gm=
+ail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970956375=
+6718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263=
+9809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m=
+_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_2939=
+2" style=3D"font-family:Helvetica,sans-serif">We
+ will be reviewing applications on an ongoing basis and so please apply=20
+as soon as you are able so we can process your information as to=20
+consider it valid to commence working with us.&nbsp;&nbsp;</span></div><div=
+ id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517=
+9709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail=
+-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82163802637816570=
+59gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181084=
+2487_29393" style=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatu=
+res:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;t=
+ext-align:start;text-indent:0px;text-transform:none;white-space:normal;word=
+-spacing:0px;text-decoration-style:initial;text-decoration-color:initial;ma=
+rgin:0in 0in 0.0001pt;line-height:normal;background-image:none;background-p=
+osition:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Calibri,s=
+ans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-591988866968676=
+8106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099=
+64708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8=
+216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_=
+ym19_1_1551810842487_29394" style=3D"font-family:Helvetica,sans-serif">&nbs=
+p;</span></div><div id=3D"gmail-m_-4784943961754827019gmail-m_-591988866968=
+6768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586=
+09964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m=
+_-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16=
+_0_ym19_1_1551810842487_29395" style=3D"color:rgb(0,0,0);font-style:normal;=
+font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;lett=
+er-spacing:normal;text-align:start;text-indent:0px;text-transform:none;whit=
+e-space:normal;word-spacing:0px;text-decoration-style:initial;text-decorati=
+on-color:initial;margin:0in 0in 0.0001pt;line-height:normal;background-imag=
+e:none;background-position:0% 0%;background-repeat:repeat;font-size:11pt;fo=
+nt-family:Calibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail=
+-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671820098=
+045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562369273=
+828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv55=
+39534504yui_3_16_0_ym19_1_1551810842487_29396" style=3D"font-family:Helveti=
+ca,sans-serif">&nbsp;We look forward to hearing from you.</span></div><div =
+id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-5179=
+709563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-=
+m_4442639809515687407gmail-m_2562369273828796743gmail-m_-821638026378165705=
+9gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842=
+487_29397" style=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatur=
+es:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;te=
+xt-align:start;text-indent:0px;text-transform:none;white-space:normal;word-=
+spacing:0px;text-decoration-style:initial;text-decoration-color:initial;mar=
+gin:0in 0in 0.0001pt;line-height:normal;background-image:none;background-po=
+sition:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Calibri,sa=
+ns-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768=
+106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860996=
+4708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-82=
+16380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_y=
+m19_1_1551810842487_29398" style=3D"font-family:Helvetica,sans-serif">&nbsp=
+;</span></div><div id=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686=
+768106gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_635860=
+9964708830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_=
+-8216380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_=
+0_ym19_1_1551810842487_29399" style=3D"color:rgb(0,0,0);font-style:normal;f=
+ont-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;lette=
+r-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white=
+-space:normal;word-spacing:0px;text-decoration-style:initial;text-decoratio=
+n-color:initial;margin:0in 0in 0.0001pt;line-height:normal;background-image=
+:none;background-position:0% 0%;background-repeat:repeat;font-size:11pt;fon=
+t-family:Calibri,sans-serif"><span id=3D"gmail-m_-4784943961754827019gmail-=
+m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_65928046718200980=
+45gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_25623692738=
+28796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail-yiv553=
+9534504yui_3_16_0_ym19_1_1551810842487_29400" style=3D"font-family:Helvetic=
+a,sans-serif">Sincerely,</span></div><div id=3D"gmail-m_-478494396175482701=
+9gmail-m_-5919888669686768106gmail-m_-5179709563756718130gmail-m_6592804671=
+820098045gmail-m_6358609964708830688gmail-m_4442639809515687407gmail-m_2562=
+369273828796743gmail-m_-8216380263781657059gmail-m_2819492125934236939gmail=
+-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29401" style=3D"color:rgb(0,0=
+,0);font-style:normal;font-variant-ligatures:normal;font-variant-caps:norma=
+l;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;te=
+xt-transform:none;white-space:normal;word-spacing:0px;text-decoration-style=
+:initial;text-decoration-color:initial;margin:0in 0in 0.0001pt;line-height:=
+normal;background-image:none;background-position:0% 0%;background-repeat:re=
+peat;font-size:11pt;font-family:Calibri,sans-serif"><span id=3D"gmail-m_-47=
+84943961754827019gmail-m_-5919888669686768106gmail-m_-5179709563756718130gm=
+ail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_444263980951568=
+7407gmail-m_2562369273828796743gmail-m_-8216380263781657059gmail-m_28194921=
+25934236939gmail-yiv5539534504yui_3_16_0_ym19_1_1551810842487_29402" style=
+=3D"font-family:Helvetica,sans-serif">Recruitment Team</span></div><div id=
+=3D"gmail-m_-4784943961754827019gmail-m_-5919888669686768106gmail-m_-517970=
+9563756718130gmail-m_6592804671820098045gmail-m_6358609964708830688gmail-m_=
+4442639809515687407gmail-m_2562369273828796743gmail-m_-8216380263781657059g=
+mail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym19_1_155181084248=
+7_29403" style=3D"color:rgb(0,0,0);font-style:normal;font-variant-ligatures=
+:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text=
+-align:start;text-indent:0px;text-transform:none;white-space:normal;word-sp=
+acing:0px;text-decoration-style:initial;text-decoration-color:initial;margi=
+n:0in 0in 0.0001pt;line-height:normal;background-image:none;background-posi=
+tion:0% 0%;background-repeat:repeat;font-size:11pt;font-family:Calibri,sans=
+-serif"><span id=3D"gmail-m_-4784943961754827019gmail-m_-591988866968676810=
+6gmail-m_-5179709563756718130gmail-m_6592804671820098045gmail-m_63586099647=
+08830688gmail-m_4442639809515687407gmail-m_2562369273828796743gmail-m_-8216=
+380263781657059gmail-m_2819492125934236939gmail-yiv5539534504yui_3_16_0_ym1=
+9_1_1551810842487_29404" style=3D"font-family:Helvetica,sans-serif">Tata Gl=
+obal Beverages (TGB)</span></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+--000000000000271c9605970f8995--

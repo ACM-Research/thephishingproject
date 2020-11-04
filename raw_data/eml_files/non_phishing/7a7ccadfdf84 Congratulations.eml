@@ -1,0 +1,724 @@
+Received: from CY4PR01MB2775.prod.exchangelabs.com (2603:10b6:903:de::11) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 19 Oct 2020 18:06:23
+ +0000
+Received: from SN2PR01CA0030.prod.exchangelabs.com (2603:10b6:804:2::40) by
+ CY4PR01MB2775.prod.exchangelabs.com (2603:10b6:903:de::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.25; Mon, 19 Oct 2020 18:06:18 +0000
+Received: from SN1NAM02FT011.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:804:2:cafe::95) by SN2PR01CA0030.outlook.office365.com
+ (2603:10b6:804:2::40) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Mon, 19 Oct 2020 18:06:18 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.186.13)
+ smtp.mailfrom=mandrillapp.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=digitalocean.com;utdallas.edu; dmarc=pass action=none
+ header.from=digitalocean.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mandrillapp.com
+ designates 198.2.186.13 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.186.13; helo=mail186-13.suw21.mandrillapp.com;
+Received: from mail186-13.suw21.mandrillapp.com (198.2.186.13) by
+ SN1NAM02FT011.mail.protection.outlook.com (10.152.72.82) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Mon, 19 Oct 2020 18:06:18 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=digitalocean.com;
+ h=From:Subject:List-Unsubscribe:Message-Id:To:Date:MIME-Version:Content-Type; i=no-reply@digitalocean.com;
+ bh=TwjGizJGfuXT99m7wELYwygnR9qF8U99ta1rhFLUPGU=;
+ b=hjAD9zI3VNLZ2NOGXEEK7a05XuvNW+THmusF0XxLjS8PSyJQpyE/5ZbDVf2SBqklbPdTxkF0d8v9
+   7VJcyoFQYt5IR9RaAsuLKwqIhBssaNWoeSv6qX9V5T6Z5Lri+2eZzhG7ge957Cm20lLikBSQ7Ax7
+   cI5sr59Zpcf5ijAXzNo=
+Received: from pmta02.mandrill.prod.suw01.rsglab.com (127.0.0.1) by mail186-13.suw21.mandrillapp.com id hhnapk174bkd for <zxt180005@utdallas.edu>; Mon, 19 Oct 2020 18:06:17 +0000 (envelope-from <bounce-md_30270081.5f8dd599.v1-8353cd209f28494abb9f44cb2b1a9ee4@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com; 
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1603130777; h=From : 
+ Subject : List-Unsubscribe : Message-Id : To : Date : MIME-Version : 
+ Content-Type : From : Subject : Date : X-Mandrill-User : 
+ List-Unsubscribe; bh=TwjGizJGfuXT99m7wELYwygnR9qF8U99ta1rhFLUPGU=; 
+ b=evFdpuoY0vIyhRItiC/HMz+ngC7qH+oi7XkTCnROKl7a+BoHPRRLHov1u/f6T0V8nfG9J5
+ tH986QJ2HUxUnBosVatQoAh1zWTcg6rWMy92tjBQGQW7L+eOSX6HaNwJpP05u70FTzMvsQoF
+ hfP0OlXhRQNfeBc/8muaYpCcWFWSk=
+From: Hacktoberfest <no-reply@digitalocean.com>
+Subject: Congratulations on submitting 4 PRs during Hacktoberfest!
+Return-Path:
+ bounce-md_30270081.5f8dd599.v1-8353cd209f28494abb9f44cb2b1a9ee4@mandrillapp.com
+Received: from [104.197.27.15] by mandrillapp.com id 8353cd209f28494abb9f44cb2b1a9ee4; Mon, 19 Oct 2020 18:06:17 +0000
+X-Mailer: Customer.io (RPCiBQEAAXVCClxxRp6GbOFafo6_9g==; +https://whatis.customeriomail.com)
+X-Report-Abuse-To: badactor@customer.io
+List-Unsubscribe:
+ <mailto:32.KJIEG2KCKFCUCQKYKZBUG3DYPBJHANSHMJHUMYLGN43F6OLHHU6Q====@unsubscribe2.customer.io>,
+ <https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fe.customeriomail.com%2Funsubscribe%2FRPCiBQEAAXVCClxxRp6GbOFafo6_9g%3D%3D&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832694953%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=W15HKOaE0qHn%2FMNKgQVn4Y49pE8ASMSV4TUqpDnSnlA%3D&amp;reserved=0>
+Message-Id: <RPCiBQEAAXVCClxxRp6GbOFafo6_9g.1603130777@digitalocean.com>
+To: zxt180005@utdallas.edu
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=30270081.8353cd209f28494abb9f44cb2b1a9ee4
+X-Mandrill-User: md_30270081
+Date: Mon, 19 Oct 2020 18:06:17 +0000
+Content-Type: multipart/alternative; boundary="_av-x6poOS5AJPGoyJ0Ulmil9w"
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2020 18:06:18.7042
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d5fa3782-5135-46d1-fef5-08d87459ada3
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132476043787082475;(149d775c-8673-428e-5099-08d5ece3e8b3,0964fcdf-1dd6-4fe8-dc49-08d52adbc662);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT011.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: d5fa3782-5135-46d1-fef5-08d87459ada3
+X-MS-TrafficTypeDiagnostic: CY4PR01MB2775:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:660;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:198.2.186.13;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail186-13.suw21.mandrillapp.com;PTR:mail186-13.suw21.mandrillapp.com;CAT:NONE;SFS:(4636009)(356005)(34206002)(166002)(83170400001)(83380400001)(66574015)(5660300002)(42882007)(76236003)(16799955002)(58800400005)(7596003)(36756003)(19627405001)(7636003)(7066003)(956004)(336012)(2616005)(33964004)(26005)(966005)(8676002)(1096003)(48373003)(19607625011);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2020 18:06:18.6014
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d5fa3782-5135-46d1-fef5-08d87459ada3
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT011.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR01MB2775
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0554549
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RXAvSFlzbE9TL2s3QmFlUnhraERIdTMyWmFkQkFRbEtlRlM5V1k0OS8ybUF2?=
+ =?utf-8?B?aDNveTNJa2xWWjE2NXRta3RZa2FlVDFOdHBCZXU3dnZsU3lwTXE4K0NQR0U4?=
+ =?utf-8?B?bTEwaVlPcDlkcFoxa1Vod2I0VCs4b2U5elhxb0JIS09tcUpBRVpGOWdlRDFK?=
+ =?utf-8?B?MlZNZkNhaG50cFl0QjhlSHlOQXBMQ1NmVG1ycWJ0Q3U5b3RvMEFpWWNheVBO?=
+ =?utf-8?B?RVh0VkdqM0N4NEhQdUU5UkozamdSK1VXc0hQYVBoZW9rU09OZk5TdVBvbStL?=
+ =?utf-8?B?b1ZrY2lzemI4ckJHd1M0VjNJWThUbUpvbWFOZEpSWDZJUHJxL1hrV0RNbXBj?=
+ =?utf-8?B?L0ljdXpJaFJBdmIzSTdiaFFxRFhtd2xFVEUzZXR0dFdUQzBPMTdRSEROV0Z4?=
+ =?utf-8?B?azdrZWpJd2FncGlyNjRuT0l5c3NLS0dZRDdpek11V01RQ29RZ0ZSNzAzY3M3?=
+ =?utf-8?B?VXhjaWprTWtlZUlEa2FIeXRDV0VsSkFlS3hjM2tnSnpaL3ByQnJoZEl5VGxK?=
+ =?utf-8?B?RUNSa0VUbElWcHFLY21JdDNwcTZiek95TkgwWGhSSWdYRjA5aEJiYmkyZFo5?=
+ =?utf-8?B?MTlydXFhYWtOdlYwVTZrRkJmSEg1Q1cvNExkdEpsSElST3g5YVA1UFRyMFln?=
+ =?utf-8?B?OVNSNGdKQVdTUVV6eDErTjl2OUhuZHhRNFNhLzJ6d1hNeEFPS2VadFR1ZkNM?=
+ =?utf-8?B?dVRtS3AydXpBYmN1VHpoSm0rRDk1b0lqWW8zUkw4Y1VxS1ZaMmhHZk50eHFP?=
+ =?utf-8?B?Vlp5Y0FuZG8vOUNFZEFvZzlRMTl0T0o1YzJKZlZhVzlnNEV1RS8vRUpIUXhl?=
+ =?utf-8?B?NjRIWVpGZEJJb0RaY2puOHl3azZsMHYrNCt4a0pjclBhdTRzWE04SlpFczNB?=
+ =?utf-8?B?MEJoYnhkWnBUTzJNNkZCR1VkWXo4cTVRZDd4WFNXbERtTnlvL3M0R1l5ek8z?=
+ =?utf-8?B?UVVGVGhqWjdFL3JkcTRmQitjM3BVbEhhTVFJVlNzVHZ1ZTNQS2x6b3QrbUxT?=
+ =?utf-8?B?OEhsK2NxR3k3MittZGc3UmwzcDVQb1ZGdGtRaCt4eVdTMXlrVHZkQWdLcjh2?=
+ =?utf-8?B?RnJVZFU5ekk3U1dMdWFzc2paeGtQNHIzcmpIMTdBYXdGbjJZVElJYUtWYksw?=
+ =?utf-8?B?Z0F2ZVEzZTdvZ3FTeEZDelZidlNtNGF0NXUvNU9Rb1RwUEsvSS9tY2EwZGFt?=
+ =?utf-8?B?MHluTW9EbEI5WWxWdTg1TGlIRU5xR2pvemdzc01VYkREdFJiNDhEM0JuV3Z5?=
+ =?utf-8?B?ZVk5S1BERVQxMTBxTitwNjQ1L3J0OFhwRWNZeTNCdURrU0dEZXNQcmZDc2Jy?=
+ =?utf-8?B?aWV3TGxySXl2eGxXSTVrRmxtaG1KT2EzRWJ2aldudEZ2ckdEN2RrLytENENH?=
+ =?utf-8?B?OGdZcllkL05iNTdKaVA0MHkrTHlsWnJDMHNWejdTdVg0YXcrVUZtaWtzRUVW?=
+ =?utf-8?B?dnVBcVEvVEFXV0FpeG93WlJJWXBiWnJQbkJmY0RWMU1aUzJ4ZHpmYjVsejRw?=
+ =?utf-8?B?cmNkanJIamVrcVlidVJvUm90eUM4c3llYzRldnhIdk9Mc243QWo1OS9ZNGJj?=
+ =?utf-8?B?SDd4Q256SThhWnJpdDNoeWRpTkl0ZWhVNmkzYlJvWmkva3VDVktUTGp6RHRs?=
+ =?utf-8?B?OFhSdStHUks2TGZieFFqTkg2bmNScWFyRDFKZjZzU3orSVFJeHQvS0RRQkU3?=
+ =?utf-8?B?T1VaeVF5bTFhU21Ud2tkbkR1TnI0elo0NXJ0bGthU0hBQUk1algxdW13PT0=?=
+MIME-Version: 1.0
+
+--_av-x6poOS5AJPGoyJ0Ulmil9w
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hacktoberfest 2020
+
+=C2=A0
+
+=C2=A0
+
+You did it! Congratulations on submitting four (or more) pull requests and =
+contributing to open source projects this month. Make sure you've reviewed =
+the rules ( https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fhacktoberfest.digitalocean.com%2Fhacktoberfest-update&amp;data=3D04%7C=
+01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832545024%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C10=
+00&amp;sdata=3DIhlv3RZcIH7LcPqYoH6BsLP8W1D4Z8QtU%2F2rVDid9sI%3D&amp;reserve=
+d=3D0 ).
+
+Next, here=E2=80=99s what you should expect:
+
+* Project maintainers now have 14 days to review your contributions.
+* If any requests are marked as invalid, you=E2=80=99ll need to follow up w=
+ith a new pull request to complete the Hacktoberfest challenge.
+* You can always check your current progress on your profile page ( https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fhacktoberfest.=
+digitalocean.com%2Fprofile&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7=
+Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C=
+0%7C637387275832545024%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D%2FmOSpdH8qqf7qiL=
+eucldLijFBDwNidIAf0xf9SPgCLU%3D&amp;reserved=3D0 ).
+In the meantime, head over to DEV ( https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Fdev.to%2F%3Futm_campaign%3Dhacktoberfest2020&a=
+mp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fef508d8745=
+9ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832545024%7CUnk=
+nown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJX=
+VCI6Mn0%3D%7C1000&amp;sdata=3DwiksSOodljfjg3H8lPsFfO8q1A6SbBrCcans8YL3Ap0%3=
+D&amp;reserved=3D0 ) to showcase your PRs and celebrate with fellow Hacktob=
+erfest participants. They put together a special page ( https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdev.to%2Fhacktoberfest-com=
+pletion%3Futm_campaign%3Dhacktoberfest2020&amp;data=3D04%7C01%7CJerry.Teng%=
+40UTDallas.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637387275832545024%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DU=
+%2F7Tn23XJt2VTElh%2BJLh3uhJVsPgI4UGolVo3XfoJVc%3D&amp;reserved=3D0 ) just f=
+or contributors that successfully submitted 4 PRs. Make sure to also share =
+your accomplishment in the Hacktoberfest Discord server. ( https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdiscord.gg%2Fhacktoberf=
+est&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fef508=
+d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832545024%=
+7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWw=
+iLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dnkh34FXaYK6%2BkMRxdywvUkw6yjlibRH0TmO67X=
+z0VlQ%3D&amp;reserved=3D0 )
+
+More soon,
+Hacktoberfest Team @ DigitalOcean
+
+=C2=A0
+
+Hacktoberfest 2020
+
+=C2=A0
+
+=C2=A0
+
+=C2=A0
+
+Copyright =C2=A9 2020 DigitalOcean
+Floor 10, 101 Avenue of the Americas, New York, NY, 10013
+All rights reserved.
+
+View this email in your browser ( https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttp%3A%2F%2Ftrack.customer.io%2Fdeliveries%2FRPCiBQEAAXVCClxx=
+Rp6GbOFafo6_9g%3D%3D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3=
+782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7387275832545024%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DYLmOUEWGtcm2tGQL1CoBYjX=
+z8e8Jaq87OUVGjckDQKw%3D&amp;reserved=3D0 ) | Unsubscribe ( https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Ftrack.customer.io%2Funsu=
+bscribe%2FRPCiBQEAAXVCClxxRp6GbOFafo6_9g%3D%3D&amp;data=3D04%7C01%7CJerry.T=
+eng%40UTDallas.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C0%7C637387275832545024%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3DJIambjw%2F2UpkCxkMLCBuIlF%2BuATF09gU1hNDAIpNe%2Bw%3D&amp;reserved=3D0 )
+
+
+--_av-x6poOS5AJPGoyJ0Ulmil9w
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<title>DigitalOcean</title>=20
+<style type=3D"text/css">
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none; bac=
+kground-color: #F7F7F7; -webkit-font-smoothing: antialiased; -moz-osx-font-=
+smoothing: grayscale; margin:0;padding:0;}
+        table td {border-collapse: collapse;}
+        table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt;}
+        p {margin:0; padding:0; margin-bottom:0;}
+        /*ul,
+        li {margin:0;padding:0;}*/
+        h1,h2,h3,h4,h5,h6 {margin:0;padding:0;}
+
+        body,
+        #body_style {background-color: #F7F7F7; width: 100%; min-width: 100=
+%!important;}
+       =20
+        a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+        }
+
+        .content a,
+        .content a:link,
+        .content a:visited,
+        .content a:active {color: #0080ff; text-decoration:none;}
+
+        @media only screen and (max-width: 600px) {
+            body {min-width: 100%!important;}
+            table[class~=3D"button"] {width:100% !important;}
+            p {padding-left:0; padding-right:0!important;}
+            table[class=3D"devicewidth"] {width: 100%!important; text-align=
+:center!important;}
+            table[class~=3D"tableCollapse"] {width: 100%!important;}
+            table[class~=3D"tableCollapse2"] {width: 95%!important;}
+            td[class~=3D"w22"] {width:21px!important;}
+            td[class~=3D"h26"] {height:21px!important;}
+            td[class~=3D"h20"] {height:20px!important;}
+            td[class~=3D"h24"] {height:30px!important;}
+            td[class~=3D"H29"] {height:29px!important;}
+            td[class~=3D"headline"] {font-size:30px!important; line-height:=
+ 35px!important;}
+            td[class~=3D"content"] {font-size:18px!important; line-height: =
+26.1px!important;}
+            td[class~=3D"footer"] {font-size:14px!important; line-height:16=
+px!important;}
+            td[class~=3D"footer2"] {font-size:14px!important; line-height:3=
+5px!important; padding-left:50px; padding-right:50px; }
+            a[class~=3D"mobButton"] {font-size:18px!important;}
+        }
+</style>=20
+<!--[if mso]>
+    <style>
+    * {
+      font-family: Calibri, Helvetica, sans-serif !important;
+    }
+    </style>
+    <![endif]-->=20
+<!--[if !mso]><!-->=20
+<style type=3D"text/css">
+
+                @font-face {
+                            font-family: 'Proxima Nova';
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.eot');
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.woff') format('woff'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.ttf') format('truetype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-reg-webfont.svg#ProximaNovaLight') format('svg');
+                            font-weight: normal;
+                            font-style: normal;
+
+                        }
+                @font-face {
+                            font-family: 'Proxima Nova';
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.eot');
+                            src: url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.woff') format('woff'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.ttf') format('truetype'),
+                                 url('https://assets.digitalocean.com/fonts=
+/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+                            font-weight: 100;
+                            font-style: normal;
+
+                        }
+</style>=20
+<!--<![endif]-->=20
+</head>=20
+<body bgcolor=3D"#F7F7F7" style=3D"-webkit-text-size-adjust: none; -ms-text=
+-size-adjust: none; background-color: #F7F7F7; -webkit-font-smoothing: anti=
+aliased; -moz-osx-font-smoothing: grayscale; width: 100%; min-width: 100% !=
+important; margin: 0; padding: 0;"><div style=3D"display: none; max-height:=
+ 0px; overflow: hidden; mso-hide:all;">You did it! Congratulations on submi=
+tting four (or more) pull requests and contributing to open source projects=
+ this month.</div><div style=3D"display: none; max-height: 0px; overflow: h=
+idden; mso-hide:all;">&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;</=
+div>
+  <div id=3D"body_style" style=3D"background-color: #F7F7F7; width: 100%; m=
+in-width: 100% !important;">
+<table width=3D"100%" bgcolor=3D"#F7F7F7" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" style=3D"text-align: center; border-collapse: collapse; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td style=3D"border-collapse: collapse;">
+<table bgcolor=3D"#F7F7F7" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"600" class=3D"tableCollapse2" align=3D"center" style=3D"border-co=
+llapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0px=
+ auto;">
+<!-- Start Pre Header -->=20
+<tbody>
+<tr style=3D"">
+<td bgcolor=3D"#F7F7F7" align=3D"center" style=3D"border-collapse: collapse=
+;">
+<table width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td width=3D"100%" align=3D"center" height=3D"1" style=3D"font-size: 1px; l=
+ine-height: 1px; border-collapse: collapse;">
+<div class=3D"mktEditable" id=3D"Preview-Text" style=3D"display: none; font=
+-size: 1px; color: #F7F7F7; line-height: 1px; max-height: 0px; max-width: 0=
+px; opacity: 0; overflow: hidden;">
+&nbsp;
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- End Pre Header -->=20
+<!-- *************************** -->
+<!-- Start Header Links -->=20
+<tr>=20
+<td bgcolor=3D"#F7F7F7" align=3D"right" valign=3D"top" style=3D"border-coll=
+apse: collapse;">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"right" class=3D"tableCollapse" style=3D"border-collapse: collapse; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" width=3D"100%" style=3D"border-collapse: collapse;">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"right" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt;">=20
+<tbody>
+<tr>=20
+<td class=3D"H29" height=3D"39" style=3D"font-size: 1px; line-height: 1px; =
+border-collapse: collapse;">&nbsp;</td>=20
+</tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<!-- End Header Links -->=20
+<!-- Start of Hero Banner -->=20
+<tr style=3D"">
+<td bgcolor=3D"#FFFFFF" align=3D"center" valign=3D"top" style=3D"border-col=
+lapse: collapse;">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"tableCollapse" style=3D"border-collapse: collapse; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td valign=3D"top" width=3D"100%" style=3D"border-collapse: collapse;">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"center" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td align=3D"center" class=3D"mktEditable" id=3D"headline_image" style=3D"f=
+ont-size: 1px; line-height: 1px; border-collapse: collapse;">
+<div>
+<img width=3D"100%" border=3D"0" alt=3D"Hacktoberfest 2020" style=3D"displa=
+y: block; outline: none; text-decoration: none; width: 100% !important; hei=
+ght: auto !important; border: none;" src=3D"https://marketing.nyc3.cdn.digi=
+taloceanspaces.com/Hacktoberfest/2020/hacktoberfest-2020-banner-v2.png">
+</div>
+</td>
+</tr>
+<!-- Start Spacer -->=20
+<tr>=20
+<td class=3D"h26" height=3D"36" style=3D"font-size: 1px; line-height: 1px; =
+border-collapse: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- End of Hero Banner-->=20
+<!-- Start of Main Content -->=20
+<tr style=3D"">
+<td bgcolor=3D"#FFFFFF" align=3D"center" style=3D"border-collapse: collapse=
+;">
+<table width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" class=3D"devicewidth" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody style=3D"">
+<tr style=3D"">
+<td class=3D"w22" width=3D"41" style=3D"font-size: 1px; line-height: 1px; b=
+order-collapse: collapse;">&nbsp;</td>=20
+<td class=3D"" id=3D"edit_text_1" style=3D"font-family: 'Proxima Nova', Cal=
+ibri, Helvetica, sans-serif; font-size: 16px; color: #505050; text-align: l=
+eft; line-height: 25.6px; font-weight: normal; text-transform: none; paddin=
+g-bottom: 50px; border-collapse: collapse;" align=3D"left">
+<p style=3D"margin: 0; padding: 0;"><br>You did it! Congratulations on subm=
+itting four (or more) pull requests and contributing to open source project=
+s this month. Make sure you've reviewed <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fe.customeriomail.com%2Fe%2Fc%2Fe=
+yJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09IiwiaHJlZiI6Imh0=
+dHBzOi8vaGFja3RvYmVyZmVzdC5kaWdpdGFsb2NlYW4uY29tL2hhY2t0b2JlcmZlc3QtdXBkYXR=
+lIiwibGlua19pZCI6MjAsInBvc2l0aW9uIjowfQ%2Fe8084de00063ed4ebb4d23efcfd8edbd0=
+bcdedecc73beb327054fc6a323f29a3&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.=
+edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637387275832604998%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DukG%2BsHZVqm=
+25lD6DrIakf7i5ybLP%2FI81gy6qsguO7Vg%3D&amp;reserved=3D0" originalsrc=3D"htt=
+p://e.customeriomail.com/e/c/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk=
+9GYWZvNl85Zz09IiwiaHJlZiI6Imh0dHBzOi8vaGFja3RvYmVyZmVzdC5kaWdpdGFsb2NlYW4uY=
+29tL2hhY2t0b2JlcmZlc3QtdXBkYXRlIiwibGlua19pZCI6MjAsInBvc2l0aW9uIjowfQ/e8084=
+de00063ed4ebb4d23efcfd8edbd0bcdedecc73beb327054fc6a323f29a3" shash=3D"lC8Kd=
+dpEs/zkeNMczSUc7hK54pvwotRkq/pixTsBicpCOJ6q3316zu/JBE+W1+F5ZQs5Cgnt902/R+cD=
+xlUvTGo8/y5wRDRWmKohXlYIPX9jOwR7Oj+sABgu5050FGFRGcXY9OVwh+zJHGfIl1WcGAF2qtl=
+L2LM9t6sTRJ2bIwA=3D">the rules</a>.
+
+<br><br>Next, here=E2=80=99s what you should expect:</p>
+<ol>
+<li>Project maintainers now have 14 days to review your contributions.</li>
+<li>If any requests are marked as invalid, you=E2=80=99ll need to follow up=
+ with a new pull request to complete the Hacktoberfest challenge.</li>
+<li>You can always check your current progress on your <a href=3D"https://n=
+am02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fe.customeriomail.=
+com%2Fe%2Fc%2FeyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09I=
+iwiaHJlZiI6Imh0dHBzOi8vaGFja3RvYmVyZmVzdC5kaWdpdGFsb2NlYW4uY29tL3Byb2ZpbGUi=
+LCJsaW5rX2lkIjoxLCJwb3NpdGlvbiI6MX0%2F57aad2a4cfe8d3f7d37970fa30ca1d8db0c0a=
+bd243ce61ee8b948dfa8f026a56&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%=
+7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637387275832614995%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D957WBxcGUbjWujYQ=
+sp0V5zuIPHnINB7nKOC2kmW1Sb8%3D&amp;reserved=3D0" originalsrc=3D"http://e.cu=
+stomeriomail.com/e/c/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl=
+85Zz09IiwiaHJlZiI6Imh0dHBzOi8vaGFja3RvYmVyZmVzdC5kaWdpdGFsb2NlYW4uY29tL3Byb=
+2ZpbGUiLCJsaW5rX2lkIjoxLCJwb3NpdGlvbiI6MX0/57aad2a4cfe8d3f7d37970fa30ca1d8d=
+b0c0abd243ce61ee8b948dfa8f026a56" shash=3D"HrjuVX0db+3VnFuVap+z2kMactWnab4t=
+M6V++w0t19NAjdwYEn7iJv4XoLj9yft3kajPUlQjTYUF0EW2AjfRdHtbmvyE6IYp7C0SnNOvowN=
+F0OdDwdW9saWp73RniF6i776btOixxc3GJvA97MRKqLoMBu1lfsq+DU9YfmCvsb4=3D" target=
+=3D"_blank">profile page</a>.</li>
+</ol>In the meantime, head over to <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttp%3A%2F%2Fe.customeriomail.com%2Fe%2Fc%2FeyJlbW=
+FpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09IiwiaHJlZiI6Imh0dHBzO=
+i8vZGV2LnRvP3V0bV9jYW1wYWlnbj1oYWNrdG9iZXJmZXN0MjAyMCIsImxpbmtfaWQiOjEzLCJw=
+b3NpdGlvbiI6Mn0%2F12455372f3a554cd2bc3e3d3c34efce065efe80112b08b49fb1025d64=
+9bd0706&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fe=
+f508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832624=
+986%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dfw%2B3FSWEzHK0QwVPY40uwVETIrDuQ16ot5=
+MoygQSKq0%3D&amp;reserved=3D0" originalsrc=3D"http://e.customeriomail.com/e=
+/c/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09IiwiaHJlZiI6=
+Imh0dHBzOi8vZGV2LnRvP3V0bV9jYW1wYWlnbj1oYWNrdG9iZXJmZXN0MjAyMCIsImxpbmtfaWQ=
+iOjEzLCJwb3NpdGlvbiI6Mn0/12455372f3a554cd2bc3e3d3c34efce065efe80112b08b49fb=
+1025d649bd0706" shash=3D"SneK8sRM7ZVEhXRTnoblrDMrxKFIsfZYmUlNb7X+QigQIdqaiz=
+5VlTIHRhtz6zPPNywc81Lz2r3b5WlhYSKOoDe0qE0Jr3IiKVzVxwl+L6SrGD7H9CphiySxgowoJ=
+aOb0+aRAgkuLGSQtD5wBxngeoXFb70T0CjtyhEY7SJincg=3D" target=3D"_blank">DEV</a=
+> to showcase your PRs and celebrate with fellow Hacktoberfest participants=
+. They put together a <a href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttp%3A%2F%2Fe.customeriomail.com%2Fe%2Fc%2FeyJlbWFpbF9pZCI6IlJ=
+QQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09IiwiaHJlZiI6Imh0dHBzOi8vZGV2LnRvL2=
+hhY2t0b2JlcmZlc3QtY29tcGxldGlvbj91dG1fY2FtcGFpZ249aGFja3RvYmVyZmVzdDIwMjAiL=
+CJsaW5rX2lkIjoxNSwicG9zaXRpb24iOjN9%2Fd1e8373c78e6d97cddf0926573e77b7b09c19=
+51663d228a79730520d35aa8b19&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%=
+7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637387275832624986%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DhcK8dP%2BqzQDUOl=
+XVwX5ZHxqVaIwaZPOoiUSTgr3ddGE%3D&amp;reserved=3D0" originalsrc=3D"http://e.=
+customeriomail.com/e/c/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZv=
+Nl85Zz09IiwiaHJlZiI6Imh0dHBzOi8vZGV2LnRvL2hhY2t0b2JlcmZlc3QtY29tcGxldGlvbj9=
+1dG1fY2FtcGFpZ249aGFja3RvYmVyZmVzdDIwMjAiLCJsaW5rX2lkIjoxNSwicG9zaXRpb24iOj=
+N9/d1e8373c78e6d97cddf0926573e77b7b09c1951663d228a79730520d35aa8b19" shash=
+=3D"yldRGzTcOaq/thUCvQGG+qfOPaBcnQSs2NsBRqBcTORJImPdRYbR17gsdEdCdMzGHKJ07Tx=
+voWng72y/9HBh96MIxvJY4HAxKNXfd3+Et+KlcB89bZBO7figUPHJunwv53hAdWtxoOCPxhwfTC=
+CBo9inaA2PYw4D07DP806lY8U=3D" target=3D"_blank">special page</a> just for c=
+ontributors that successfully submitted 4 PRs. Make sure to also share your=
+ accomplishment in the <a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2Fclick%2F30270081%2Fe.c=
+ustomeriomail.com%3Fp%3DeyJzIjoiX1pSN3FfTmE1UlNwUUhZTUlVOU1tamFYUDdJIiwidiI=
+6MSwicCI6IntcInVcIjozMDI3MDA4MSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvZS=
+5jdXN0b21lcmlvbWFpbC5jb21cXFwvZVxcXC9jXFxcL2V5SmxiV0ZwYkY5cFpDSTZJbEpRUTJsQ=
+1VVVkJRVmhXUTBOc2VIaFNjRFpIWWs5R1lXWnZObDg1WnowOUlpd2lhSEpsWmlJNkltaDBkSEJ6=
+T2k4dlpHbHpZMjl5WkM1blp5OW9ZV05yZEc5aVpYSm1aWE4wSWl3aWJHbHVhMTlwWkNJNk1Ua3N=
+JbkJ2YzJsMGFXOXVJam8wZlFcXFwvM2Q0MmIxMzU4MGJmNDZkMmMyZmI2MjA5MTdiYWEwNmIyNz=
+c5MjFjYTc3NDM2MWQyODJmZjgyMDQyYjRkMDMyNVwiLFwiaWRcIjpcIjgzNTNjZDIwOWYyODQ5N=
+GFiYjlmNDRjYjJiMWE5ZWU0XCIsXCJ1cmxfaWRzXCI6W1wiYWFhNjRkMmE3MzBiMTkzMjVkMjA5=
+NjBkYjAwNzBhNTVkNWQ3NTBlNFwiXX0ifQ&amp;data=3D04%7C01%7CJerry.Teng%40UTDall=
+as.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6=
+c%7C0%7C0%7C637387275832634983%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DJftxOgO55=
+C2MRa%2Fj51uH1p4mENEFpbQJWvgeDGjkv5U%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://mandrillapp.com/track/click/30270081/e.customeriomail.com?p=3DeyJzIjo=
+iX1pSN3FfTmE1UlNwUUhZTUlVOU1tamFYUDdJIiwidiI6MSwicCI6IntcInVcIjozMDI3MDA4MS=
+xcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvZS5jdXN0b21lcmlvbWFpbC5jb21cXFwvZ=
+VxcXC9jXFxcL2V5SmxiV0ZwYkY5cFpDSTZJbEpRUTJsQ1VVVkJRVmhXUTBOc2VIaFNjRFpIWWs5=
+R1lXWnZObDg1WnowOUlpd2lhSEpsWmlJNkltaDBkSEJ6T2k4dlpHbHpZMjl5WkM1blp5OW9ZV05=
+yZEc5aVpYSm1aWE4wSWl3aWJHbHVhMTlwWkNJNk1Ua3NJbkJ2YzJsMGFXOXVJam8wZlFcXFwvM2=
+Q0MmIxMzU4MGJmNDZkMmMyZmI2MjA5MTdiYWEwNmIyNzc5MjFjYTc3NDM2MWQyODJmZjgyMDQyY=
+jRkMDMyNVwiLFwiaWRcIjpcIjgzNTNjZDIwOWYyODQ5NGFiYjlmNDRjYjJiMWE5ZWU0XCIsXCJ1=
+cmxfaWRzXCI6W1wiYWFhNjRkMmE3MzBiMTkzMjVkMjA5NjBkYjAwNzBhNTVkNWQ3NTBlNFwiXX0=
+ifQ" shash=3D"W964OAyo0yMYpWRwj+p7ualRrSaN2guArpA5Oo3iLqo5T72bYWCu1jXHCUnNB=
+0TkFZ0is9ucSm8Acc8FPLikvFUeLaoz2QgSspxFuRBwU6noXYwx31NNEDa31MI+C5ytWECQIH7/=
+CNoysJC3RvesEXrVbjF8KZnV4omg9AaFJmU=3D" target=3D"_blank">Hacktoberfest Dis=
+cord server.</a>
+<br><br>More soon,<br>Hacktoberfest Team @ DigitalOcean
+
+=20
+</td>
+<td class=3D"w22" width=3D"41" style=3D"font-size: 1px; line-height: 1px; b=
+order-collapse: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"">
+<td bgcolor=3D"#FFFFFF" align=3D"center" valign=3D"top" style=3D"border-col=
+lapse: collapse;">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"tableCollapse" style=3D"border-collapse: collapse; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td valign=3D"top" width=3D"100%" style=3D"border-collapse: collapse;">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"devicewidth" align=3D"center" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr style=3D"">
+<td align=3D"center" class=3D"mktEditable" id=3D"headline_image" style=3D"f=
+ont-size: 1px; line-height: 1px; border-collapse: collapse;">
+<div>
+<img width=3D"100%" border=3D"0" alt=3D"Hacktoberfest 2020" style=3D"displa=
+y: block; outline: none; text-decoration: none; width: 100% !important; hei=
+ght: auto !important; border: none;" src=3D"https://marketing.nyc3.cdn.digi=
+taloceanspaces.com/Hacktoberfest/2020/%5BUPDATED%5D%20%20Footer%20banner.jp=
+g">
+</div>
+</td>
+</tr>
+<!-- End of Main Content -->=20
+<!-- *************************** -->
+<!-- Start of Footer -->=20
+<tr style=3D"">=20
+<td bgcolor=3D"#F7F7F7" align=3D"center" style=3D"border-collapse: collapse=
+;">=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alig=
+n=3D"center" class=3D"devicewidth" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;">=20
+<tbody>
+<tr style=3D"">=20
+
+</tr></tbody></table><table width=3D"100%" align=3D"center" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" class=3D"devicewidth" style=3D"border-col=
+lapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">=20
+<!-- Start Spacer -->=20
+<tbody>=20
+<tr>=20
+<td class=3D"h24" height=3D"10" style=3D"font-size: 1px; line-height: 1px; =
+border-collapse: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- Start of Footer Links -->=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td width=3D"41" style=3D"font-size: 1px; line-height: 1px; border-collapse=
+: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- End of Footer Links -->=20
+<!-- Start of Copyright/Address/All Right Reserved -->=20
+<tr>=20
+<td width=3D"25" style=3D"font-size: 1px; line-height: 1px; border-collapse=
+: collapse;">&nbsp;</td>=20
+<td style=3D"font-family: 'Proxima Nova', Calibri, Helvetica, sans-serif; f=
+ont-size: 12px; color: #808080; font-weight: normal; text-align: center; li=
+ne-height: 150%; border-collapse: collapse;" align=3D"center">=20
+<div>
+<em>Copyright =C2=A9 2020 DigitalOcean<br>Floor 10, 101 Avenue of the Ameri=
+cas, New York, NY, 10013<br>All rights reserved.</em>
+</div>
+<br>
+<div>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fmandrillapp.com%2Ftrack%2Fclick%2F30270081%2Fe.customeriomail.com%3Fp%3=
+DeyJzIjoicTM2MnctQjB1bFV5TUdELTBKODhRZXdxenMwIiwidiI6MSwicCI6IntcInVcIjozMD=
+I3MDA4MSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvZS5jdXN0b21lcmlvbWFpbC5jb=
+21cXFwvZGVsaXZlcmllc1xcXC9SUENpQlFFQUFYVkNDbHh4UnA2R2JPRmFmbzZfOWc9PVwiLFwi=
+aWRcIjpcIjgzNTNjZDIwOWYyODQ5NGFiYjlmNDRjYjJiMWE5ZWU0XCIsXCJ1cmxfaWRzXCI6W1w=
+iODBlYzNmZTIxZTlhNGM5MzMyNTdhNThiM2RmY2MzMjQ5MTMyZThhZVwiXX0ifQ&amp;data=3D=
+04%7C01%7CJerry.Teng%40UTDallas.edu%7Cd5fa3782513546d1fef508d87459ada3%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387275832644974%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3D%2BRPeExy%2BWGRtDviA%2BU45yEYRTSKxLta0tNk11VkIM%2BM%3D&=
+amp;reserved=3D0" originalsrc=3D"https://mandrillapp.com/track/click/302700=
+81/e.customeriomail.com?p=3DeyJzIjoicTM2MnctQjB1bFV5TUdELTBKODhRZXdxenMwIiw=
+idiI6MSwicCI6IntcInVcIjozMDI3MDA4MSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXF=
+wvZS5jdXN0b21lcmlvbWFpbC5jb21cXFwvZGVsaXZlcmllc1xcXC9SUENpQlFFQUFYVkNDbHh4U=
+nA2R2JPRmFmbzZfOWc9PVwiLFwiaWRcIjpcIjgzNTNjZDIwOWYyODQ5NGFiYjlmNDRjYjJiMWE5=
+ZWU0XCIsXCJ1cmxfaWRzXCI6W1wiODBlYzNmZTIxZTlhNGM5MzMyNTdhNThiM2RmY2MzMjQ5MTM=
+yZThhZVwiXX0ifQ" shash=3D"T1QDV5Q8Z8e7Dv0+dvCRycWJBHX3NXbH3xhwTQIvnWo5uA6HU=
+5vlwLOrI7ICcMcFE/Q0NNFuWl5L7BXd4KzjUyDdTlSe7Z1stCHYnnC8ZX8TeKSsjPE31Vi0LFrF=
+LCYqzbpf4gH8cBz9uOyQlF2H7xQWSe3EbgFM30YlbwaExpo=3D" style=3D"cursor: defaul=
+t !important; color: #606060; text-decoration: underline;">View this email =
+in your browser</a> | <a href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttp%3A%2F%2Fe.customeriomail.com%2Fe%2Fc%2FeyJlbWFpbF9pZCI6IlJ=
+QQ2lCUUVBQVhWQ0NseHhScDZHYk9GYWZvNl85Zz09IiwiaHJlZiI6Imh0dHA6Ly9lLmN1c3RvbW=
+VyaW9tYWlsLmNvbS91bnN1YnNjcmliZS9SUENpQlFFQUFYVkNDbHh4UnA2R2JPRmFmbzZfOWc9P=
+SIsImxpbmtfaWQiOjExLCJwb3NpdGlvbiI6NX0%2F67549f8c8c750ad0904c4a38851f17030e=
+f9edd0229f4bc55b28add378ea4278&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.e=
+du%7Cd5fa3782513546d1fef508d87459ada3%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C=
+0%7C0%7C637387275832644974%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DEmLiVu6Mh2qNa=
+T0%2FcP5ugqCsGsj2LmBlolZr5fh5jQA%3D&amp;reserved=3D0" originalsrc=3D"http:/=
+/e.customeriomail.com/e/c/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVhWQ0NseHhScDZHYk9GY=
+WZvNl85Zz09IiwiaHJlZiI6Imh0dHA6Ly9lLmN1c3RvbWVyaW9tYWlsLmNvbS91bnN1YnNjcmli=
+ZS9SUENpQlFFQUFYVkNDbHh4UnA2R2JPRmFmbzZfOWc9PSIsImxpbmtfaWQiOjExLCJwb3NpdGl=
+vbiI6NX0/67549f8c8c750ad0904c4a38851f17030ef9edd0229f4bc55b28add378ea4278" =
+shash=3D"pRtYhfMq4nNKlbNVukQeCoioW8dVk1mOaw6Q+FZ9qMQnsqgKVSkubThiSS0pnSk02W=
+uCgAY5hcTVCFcR5gj6PHwXMgKLm7T7ODLidtWZFVe7jAeufPaZmT5SxkpKxX4ReWCBnHpFLYcWF=
+zn1A+5JXdo43pUD8/yNC1ZoaqSo1eI=3D" style=3D"cursor: default !important; col=
+or: #606060; text-decoration: underline;">Unsubscribe</a>
+</div>
+</td>=20
+<td width=3D"25" style=3D"font-size: 1px; line-height: 1px; border-collapse=
+: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- Start Spacer -->=20
+<tr>=20
+<td width=3D"41" style=3D"font-size: 1px; line-height: 1px; border-collapse=
+: collapse;">&nbsp;</td>=20
+<td height=3D"20" style=3D"font-size: 1px; line-height: 1px; border-collaps=
+e: collapse;">&nbsp;</td>=20
+<td width=3D"41" style=3D"font-size: 1px; line-height: 1px; border-collapse=
+: collapse;">&nbsp;</td>=20
+</tr>=20
+<!-- End Spacer -->=20
+<!-- End of Copyright/Address/All Right Reserved -->=20
+</tbody>=20
+</table> =20
+</td></tr>=20
+</tbody>
+</table> </td>=20
+</tr>=20
+<!-- End of Footer -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+
+<img src=3D"http://e.customeriomail.com/e/o/eyJlbWFpbF9pZCI6IlJQQ2lCUUVBQVh=
+WQ0NseHhScDZHYk9GYWZvNl85Zz09In0=3D" style=3D"height: 1px !important; max-h=
+eight: 1px !important; max-width: 1px !important; width: 1px !important"><i=
+mg src=3D"https://mandrillapp.com/track/open.php?u=3D30270081&amp;id=3D8353=
+cd209f28494abb9f44cb2b1a9ee4" height=3D"1" width=3D"1"></body></html>
+
+
+--_av-x6poOS5AJPGoyJ0Ulmil9w--

@@ -1,0 +1,379 @@
+Received: from SN6PR01MB4093.prod.exchangelabs.com (2603:10b6:805:ae::21) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 24 Oct 2020 07:56:45
+ +0000
+Received: from CY4PR06CA0046.namprd06.prod.outlook.com (2603:10b6:903:77::32)
+ by SN6PR01MB4093.prod.exchangelabs.com (2603:10b6:805:ae::21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Sat, 24 Oct 2020 07:56:43 +0000
+Received: from CY1NAM02FT043.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:77:cafe::2d) by CY4PR06CA0046.outlook.office365.com
+ (2603:10b6:903:77::32) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Sat, 24 Oct 2020 07:56:43 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ CY1NAM02FT043.mail.protection.outlook.com (10.152.74.182) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3499.20 via Frontend Transport; Sat, 24 Oct 2020 07:56:42 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Sat, 24 Oct 2020 02:56:39 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Sat, 24 Oct 2020 02:56:39 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id EA38AC000052; Sat, 24 Oct 2020 02:56:39 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 131CFC000052
+	for <codeburners@lists.utdallas.edu>; Sat, 24 Oct 2020 02:56:34 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=ivor@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  ivor@utdallas.edu designates 40.107.237.80 as permitted
+  sender) identity=mailfrom; client-ip=40.107.237.80;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="ivor@utdallas.edu";
+  x-sender="ivor@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: mUscw0QzlOa8G7oraJTqiBFrIxwAzj+NNPpAkatqtkM7JcLyPApXY4sOJNRaHktJs4DQxMQwVh
+ sHS2atCJfETv8B4ONkVsjFJf2KSYPqjoGN+F6bq7TY3WXl0B+7jWL7aTVEZFIpZcwTCvWLAZw4
+ QNrqsWuM6KDE+MkQmO9518vayci4HPpdDuCS+zDjOTs+sgsFwMZdV3vGla2YAn8lll6Ib3zXhZ
+ 2mPyYD2EYJ7CCt6zelGT5RUVco1Q4dioO9bOpT/uqZLU2QbBVsX1Q4XksDWWMPa+XPALldIAGV
+ AlftWxHvzS+cM8hfqGpC9sYN
+X-IronPort-RemoteIP: 40.107.237.80
+X-IronPort-MID: 1244493
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0CxAQCO3ZNfh1DtayhgDnuBT4EjL1F3WB4DBwgsCo03p?=
+ =?us-ascii?q?DICCQEBAQEBAQEBAQgBEwwOAgQBAYRKAoIKJQE3Bg4CAwEBAQMCAwEBAQEBB?=
+ =?us-ascii?q?AEBAQIBAQIDAgIBEwEBAYEBYIECAYFGAYEqIwsDMQELgjcigzIuAQE4EQGBA?=
+ =?us-ascii?q?CcEGxqDBAGBfn4BAqMEAYEoPgIjARItAQECCYEFKYlcgTSDBAEBBYVkAQmBR?=
+ =?us-ascii?q?gmBOI1UggCBVIIgAYUpK4MdgiyQY4oGgT6KSZEZAweCagSJAJIXhEGdHYhyi?=
+ =?us-ascii?q?kqKdpVBAgQCBAUCEAWBaiKBWXITgyQJRAECAQINAQICAgEBAgEBCAEBAQGON?=
+ =?us-ascii?q?oNXaokuPkMxOAIGCgEBAwl8jDsBgRABAQ?=
+IronPort-PHdr: =?us-ascii?q?9a23=3A2/wSJByh2/Ksxc3XCy+O+j09IxM/srCxBDY+r6?=
+ =?us-ascii?q?Qd2uMSIJqq85mqBkHD//Il1AaPAdyEraIdwLOO7ujJYi8p2d65qncMcZhBBV?=
+ =?us-ascii?q?cuqP49uEgeOvODElDxN/XwbiY3T4xoXV5h+GynYwAOQJ6tL1LdrWev4jEMBx?=
+ =?us-ascii?q?7xKRR6JvjvGo7Vks+7y/2+94fcbglVhjexe7B/IAi5oQnMqsUbgZZpJ7osxB?=
+ =?us-ascii?q?fOvnZGYfldy3lyJVKUkRb858Ow84Bm/i9Npf8v9NNOXLvjcaggQrNWEDopM2?=
+ =?us-ascii?q?Yu5M32rhbDVheA5mEdUmoNjBVFBRXO4QzgUZfwtiv6sfd92DWfMMbrQ704RS?=
+ =?us-ascii?q?iu4qF2QxLulSwJNSM28HvPh8JwkqxVvQ6hqRJ8zY7VfI6aO+FzcbnBcd8GX2?=
+ =?us-ascii?q?dNQtpdWzFHD4ihb4UPFe0BPeNAooXzvVUBtxS+Che0COjyyTFImHj23bc03+?=
+ =?us-ascii?q?88FgzG3RIgH9UUsHnPsdX1KLodXvqxzKnM1zrDdOla1ing54jVax0sp+yHUr?=
+ =?us-ascii?q?1sf8TL00YvCx/FgUuKqYzjJz6b2PgBvmmH4+dkSe+ilmwqpgNtrzSzycogl4?=
+ =?us-ascii?q?3Ei4IVxF3a9St03pg4KcO7RUNnYdOpDIZcui6EO4Z4TM0vQ3xktSAnwbMIvp?=
+ =?us-ascii?q?67eTIFyJUhxxPHaPyIaZSI4g7iVOaKOzt3mHVleLe5ih2v8kag0vXxW8ao3F?=
+ =?us-ascii?q?pQsyZJjtvBumoT2xHd6MWLUPhw8lu51TuNywzf8PxILE8qmabBNZIt3qM8mo?=
+ =?us-ascii?q?AOvUnAHyL6gFv6ga6Kekgq/+Wk9vjrba7nq5KZKYN4lgLzP6Esl8OlBOk1Nx?=
+ =?us-ascii?q?YCU3ad9O+hzrPs51f5T69PjvAukqnWrpTaJcMDq6ChHwJb1Zsv5wimAzq7yN?=
+ =?us-ascii?q?oVnmALLFVedx2ZlYTpPEzOIOzjAve4nlSslipky+rePr37BZXNMmbMn6v9fb?=
+ =?us-ascii?q?Z87E5czhA/zddC55JIDrEBJ/XzWkzruNPECR85NhS4w+fhCNpjyoMTQW2CDr?=
+ =?us-ascii?q?ODPK/PrVOF5PgjL/eCaYIXojrwKOQp6+brjXAjmF8deaep3YEQaHC9BvlmIl?=
+ =?us-ascii?q?uZYX32gtoaDGcKohcxQ/buiF2GSzFTfGy+ULwh6TEmEI6mF5vMRpixgLyd2y?=
+ =?us-ascii?q?e2BoFZZmdbBV+SCnjoap+EW/ESZyKIOc9siTgEVbm6S489zhGirhL6y6Z6Ie?=
+ =?us-ascii?q?XO/i0YsYjs1MNv6+LNiB4y6G88M8PImWqKQ2x+g3kOSiUt9KR+ulBmjEqf3a?=
+ =?us-ascii?q?F8h/VDU9Ff+rkBBgw9OZPW0vZ8BsrpcgbAZcuSDku6TtyiBTgqCN893oldTV?=
+ =?us-ascii?q?x6HoDothnM0m7iIqESjfbDUJ0q9bj0wmT9LsJ5wm2A2aU82Qp1CvBTPHGr0/?=
+ =?us-ascii?q?YsvzPYAJTExh3DzfSDaLgc0SjR9WyK0WuJugRiXRVtVbneAy1Na1Df95L57R?=
+ =?us-ascii?q?+fE+brVfImKgtE2YiJLa4ZIsbxgwB+Tez4cM/bf3r3nm6xARiSwbbZbZTtYU?=
+ =?us-ascii?q?0AwCnUDEwNiEYe8Wvfb1oECyysonzTAHlVLXyyOx2+yeBlszv7Q1Q9lUeKZB?=
+ =?us-ascii?q?E8i+PwplgUnfyZW7UY2bdW8Csmrjx1Gh660be0Q5KBuQ17VLhAbdo55F5ck2?=
+ =?us-ascii?q?/VqkRxM4ehIKZrmlMFO1gv+Rq2iFMtUdoGwZBipWhi1AdoLKOEzF5NElHQlY?=
+ =?us-ascii?q?v9PLHaMCi6/RyibbLXxkCL1d+X/qkV7/Fr417nvQyvCg8j6yA7i58MiyTavM?=
+ =?us-ascii?q?6VSlpKAveTGg4t+hN3pq/XeHww/IqOk31nbfTo63qendMxBO41jB2neoQ6Uu?=
+ =?us-ascii?q?vMGQnsHskdH8XrJvYtng3jbwwDJshP6KI9O8evbL2L1LPhb4MC1Hq2yH9K5o?=
+ =?us-ascii?q?xwyBfG9jR7UMbVw5oMx/WRxU2KWyq23x+x98vwn45DfzQbGGGynDP8CrlWYK?=
+ =?us-ascii?q?ljLuNpQS++Zte6zdJki9vxSmZVoRS9Ukge1pbjKlKCKkbw1gpK2QELrGy7zG?=
+ =?us-ascii?q?GmmidsnWhMzOLX3TSSkbi6MktdfDYNHC470B/tOdTm04hcBRD3KVBvzFz8uw?=
+ =?us-ascii?q?773/QJ+f45djGLBx8OJ2+vcwQAGuOxrubQOpYTrs93930RCKPlPhibUuCv+R?=
+ =?us-ascii?q?JCinG6RjIMymxjL2P4/cmp+n4ywGOFciQppSKAK5gpnEXRuISHF6wWgmpORS?=
+ =?us-ascii?q?9zjSTbCwqnJ9elu82OkIvOufy/UGTnUYBPdS7szsWLsy7ehyUiRBS7m7rqy4?=
+ =?us-ascii?q?/XVDMi2Cq+7OFEECDBrRLyeI7ujvjoLP5rd01sDUS65sZnSNhz?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,411,1596517200"; 
+   d="scan'208,217";a="1244493"
+X-MGA-submission: =?us-ascii?q?MDF6NSAkz5JLqK8uTxD45OjBGVCbMPlbWNYfcK?=
+ =?us-ascii?q?1qLR8wf2dy1ADjhCMSaqafUdeGnEQiKw5tUCNlaF3EXq5/lzJa2waNNX?=
+ =?us-ascii?q?VgAM69QPpkJm1u8mRMqraqjzCXNbcC2+dc1wvavjDp6pRatSCIJwV8+c?=
+ =?us-ascii?q?rf?=
+Received: from mail-bn8nam12on2080.outbound.protection.outlook.com (HELO NAM12-BN8-obe.outbound.protection.outlook.com) ([40.107.237.80])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 24 Oct 2020 02:56:30 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ep4vOxZ68W5eIzHPoc8LxSKHKXijOcxKuACyFdAt8wkQ6Em49r4voHPGbbYPcyWjKl/WhcZOzwsU9d/pmb180e1FnrLLD830bDkZ/+uOvkqZV5h+Mxd/gNi+dcHygnGjNZJWnI4fyCHRgmEI9wOnfCX/lCnJ7pFgug5ThQvxF4s42OMZtHiN4RlmU/+Bdmby7iDI+8LOGrPdJVWmxhwJnOt4Vkp0BFnkUwslTQCJulpPalRtSm2hXvPK0uvuUp03jblMQCmaizN5uEjJlPrIgz8+sG0HexAty5ab4z0wg6yXfrEeB3siDZuEcack2cryLkmhK067QpyOegr6ihsxaQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=PqwUF33tEH8/NpwKCu1v+6c+McUkGvUx3Pv9GtTYx/U=;
+ b=VI/r8K6WcGIzBnn7jf2PtmVfw2ndV3Yl8KmySUN0TVni5d5Nfb+6J/kj+3H0DVirHbfzntdGUazJ+5/lysYUs6qyZv4/hK3Uxcc+X32SkC5lIwmVwdh61FG2YGdhl7gyASvcqaynoxZ1Bs0HKHKMzJgXyHhhn8f0+TJ+o5+vsubvdsrX3Eq3NmglHiMmuCZQjngQ3iowUIh2v1nF/7NTljhNPaIyadadMosT63WBfys0px8qxpZD/9+XeKguYQ6BAbXlwSNbxHUYWv8E+5o6ALFGEwgy7/Pd5FMzFUqC+0fFeB7cgywzGyqYXgpQgQw6ww4Y09Ar3K66PpCHiTmuIA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=PqwUF33tEH8/NpwKCu1v+6c+McUkGvUx3Pv9GtTYx/U=;
+ b=x9dE2b7Dx7by75i15/FTMS5VMsbomcTTePcWhjsprOivqqKWG35wyBShyeKYLqy9EmSOrhrn76JvV5JdOd6RDYyrX9Os3TJrXORQBZrsHTlikmid2VBfacvDNkwBBTBhbYgL7UAcjxI9UzM9yR87A1xZGFBqNGR8ZwMPIZpS06U=
+Received: from BL0PR01MB4772.prod.exchangelabs.com (2603:10b6:208:7a::22) by
+ BL0PR01MB4545.prod.exchangelabs.com (2603:10b6:208:86::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Sat, 24 Oct 2020 07:56:28 +0000
+Received: from BL0PR01MB4772.prod.exchangelabs.com
+ ([fe80::b41d:ec12:19a1:1506]) by BL0PR01MB4772.prod.exchangelabs.com
+ ([fe80::b41d:ec12:19a1:1506%3]) with mapi id 15.20.3477.029; Sat, 24 Oct 2020
+ 07:56:27 +0000
+From: "Page, Ivor" <ivor@utdallas.edu>
+To: "codeburners@lists.utdallas.edu" <codeburners@lists.utdallas.edu>
+Thread-Topic: Contest today
+Thread-Index: AQHWqdrJiS2Ns05fTU2oqPoPA867SQ==
+Date: Sat, 24 Oct 2020 07:56:27 +0000
+Message-ID: <BL0PR01MB477281E21D3FCDAC070A6625B41B0@BL0PR01MB4772.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [70.142.201.186]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 843b8458-03b0-42fd-2821-08d877f25891
+x-ms-traffictypediagnostic: BL0PR01MB4545:|SN6PR01MB4093:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <BL0PR01MB454575332092F0215AA1CFFEB41B0@BL0PR01MB4545.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:3383;OLM:3383;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ vmrnjJ4id2YcvfThju46aH3xUQDZX77NUrr/o2s9JQqH0WXVdbNGge3tmJv7H4x5CfpfXck07GV6o5Vwx70Ct1e2SVniZm8gEeiS3pDgjKAZdO1XajZVlGLNpkWCH5vAQxhuAKeqBCULomj+djw1O45wr29oQj3zGZG8bIpP1iwwILl5zpywNAj1E5NoLpC468jxGUMy3Tr3LGgTw+2VMJPEV+oCIR4G6ppW24xCemyoHe/0IeZd6apyHLUWCqlmUOzpzR6D6aHA8hoQ3ggiipwbAj5XovrkUCamlxdmt0M36DSbtr44+SR/0c+GZ5rnM2YNtgrPNiUXLLwog5lEhex/3KyI06IzLXIy7m3C4DNbPATxuNf1Mp6OO5IEgIVIG5+9+ZLNj64XgDuoNGp5/w==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL0PR01MB4772.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(39860400002)(346002)(136003)(376002)(366004)(396003)(5660300002)(296002)(66556008)(6916009)(7116003)(786003)(75432002)(316002)(19627405001)(478600001)(7696005)(8936002)(71200400001)(86362001)(6506007)(9686003)(166002)(33656002)(3480700007)(55016002)(64756008)(52536014)(558084003)(66476007)(76116006)(2906002)(26005)(8676002)(66574015)(186003)(66946007)(66446008)(966005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: pgeZCy9ZojBViqRX1D3pfR7dmJAT9+KO0bZWGa6YgpKjJXsT+rPureGx6SWyRXxBeHSDnJdOF9AWFyLFV8eEbXvG346tD7Thr1nj6pR+WKTF+9+9bp9x6OocjWC2dzMINwef4U0HYPCbupnhaMM2wMjOC9cMZbIhHtuBzlP3hyVwConoA0C4AnfODXl1P9P8zCq4JYyPNP3yPXZFNgWaG2mqyw2tsK8QQBDbUG0hhqEIPqpPke6MKJoBHAo4QrhWxKg3c2jZWt6fuSCHTbFlTZJTU2I8d1TNOi9/6doa6VcRkuypWRMkjCQAxWVP4tZ3Bv0bYGONPh+SrERVEbvsdaGZN3Y+KjIh11Q1H852srinOExn0U3CTzcf6nZBN8iIY8A7srsyCT6Yt4tFj7YnnvAjWD4BMcoQ7bArGjd7sPGNLmWovXquMOdtq0PMkbABxf8yW9SynOUu6a1zknhGBeHWukiPE54zHIG1Fo6L9oxWdUPUTQ8enWy/fQiuFs5+AATO4BATrdMY1pY2OZMaTtq2gEo9urLhg+Go9vDCPHoH/bDD5BSFThIHuL53PtJAlxSDWEWPgQHLn7Afx7eAqOt4qqZub4KmxJu04iTXNc2TM1eabd/mUGVm+MpcWopH5alVe6efX/uhEGI1Yps5ug==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_BL0PR01MB477281E21D3FCDAC070A6625B41B0BL0PR01MB4772prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4545
+Subject: [codeburners] Contest today
+Reply-To: <codeburners@lists.utdallas.edu>
+X-Loop: codeburners@lists.utdallas.edu
+X-Sequence: 335
+Errors-To: codeburners-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <codeburners-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <codeburners.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20codeburners>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20codeburners>
+List-Post: <mailto:codeburners@lists.utdallas.edu>
+List-Owner: <mailto:codeburners-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/codeburners>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/codeburners/2020-10/BL0PR01MB477281E21D3FCDAC070A6625B41B0%40BL0PR01MB4772.prod.exchangelabs.com>
+Return-Path: codeburners-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2020 07:56:42.4624
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 843b8458-03b0-42fd-2821-08d877f25891
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT043.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT043.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT043.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 9508063d-5c32-4f19-89a1-08d877f24fb1
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2020 07:56:42.3754
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 843b8458-03b0-42fd-2821-08d877f25891
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4093
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2934875
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?IHOP2D5mhcldlsNTVP8cvAwi2dbYZZHmRedjlXzwQ3C4sOa0zP/DMMoNhg?=
+ =?iso-8859-1?Q?PhskkZ5gYzkzg1FsJgqkFMX+Q9GlHpXWcPg4oISQHWi4zyV8Ak4zctr8hh?=
+ =?iso-8859-1?Q?vw7P5UKev2ThpOQ0C7hqWOugjuKKE+2xPqg0F632qW4dHb8ur7R20xTFGJ?=
+ =?iso-8859-1?Q?fxIsc5Y/gjaE2j+BrDmEGaB5H9Vt662M1SD3SwVVsi2hySm4Pb/912ldVc?=
+ =?iso-8859-1?Q?ubJliGpGy6NE7ipYvsrISbbFw1E0lFncTAPc69ZF6K/NK/DwP8XR2xzP1K?=
+ =?iso-8859-1?Q?NH/YYCGN0qlmBMygQH/eGybiSPfgdVQHmi32jtqwy6TCRCI6ILitf9RuKS?=
+ =?iso-8859-1?Q?JZk1nyYLzRo3PLQIQF4hZb1ihFpYxA/07Nb7DbFSKgpqxT2lXEPfFJ5Fou?=
+ =?iso-8859-1?Q?NzabJKuzytMeNdmqlYrlTfL7x1DBabuLWVxON7bL7pK/zbLeWMMf8+XmVK?=
+ =?iso-8859-1?Q?iY1EIpq3slS2UA5YaCG/7yxFzGihAeewFIx6/I78FdfiegccM8VI09LtWT?=
+ =?iso-8859-1?Q?nISBm8pSs8diJoh0OqjBP5Y224LCWfOo0T+HfbGsf3XpXSOiwVcV/82Fyi?=
+ =?iso-8859-1?Q?Vb0Fpbvdm5H+NQhcSUhtdMKrvIBPgsbdhfFXqozC23bExXff9dezcTTqOK?=
+ =?iso-8859-1?Q?4IxFyHfrYhrtjgKNWNmFB23eyLA31VAgkBhLmOWT/Du4NGoHNdMkAVWvPr?=
+ =?iso-8859-1?Q?z0m3wQjyFWjGfcsBVkpdluKelLUrqkZZi9RuR9umajUzqdPHHcYJWZye1g?=
+ =?iso-8859-1?Q?enTmNJn+qXcZaqeYPVmcZlfynSn6PU4H9D+E4GSFFIy4kctLj5qK4d6Hkv?=
+ =?iso-8859-1?Q?7DPss6oxCk9YynnL0hukQH833ko8H/vXbqDqaQpKpaZyey7yGl0diD9dJO?=
+ =?iso-8859-1?Q?YoVsUF3mhZ2qzTW2xMwjYBvYZWEBRi9B/kfm6EQKwnzmikd48Kz7VP2WFX?=
+ =?iso-8859-1?Q?DD46VQnvder9AtwAdmb0vPIVeSvIHCOKP1Fh9OIdN+6hNV/OB/tCbRoHc9?=
+ =?iso-8859-1?Q?tnwBIIQD4iMAzQGu6pSkGBF8Wwpua9jDu304+4tyG/AAJVFep2SlZc4V3v?=
+ =?iso-8859-1?Q?xov2NmAsj8Rf3qVCDBeUOa8bdTmynt6QjTl6Rq1RKU2O5wy3FcM21ogZoX?=
+ =?iso-8859-1?Q?pylSJ+NtQNVgB+wpSCTI7cEiOdALAUMpTf4Fuww+QU6LRELOtamEt9Qlbk?=
+ =?iso-8859-1?Q?hq49OBOWQYVD0QzQIItkvu8hwo+5Frg6URSG9nUxVokChknhNciSVfNoan?=
+ =?iso-8859-1?Q?rHIS2RrQoH7tMOe75jwP55iJsBmtIBDXn4b/QSwhyVPJlZCwUublqpIzQw?=
+ =?iso-8859-1?Q?1ngl2tneb4BFzEJ4tAZPqgWTPI8p7gxzWzw50h/hOWSiZMUXNrNrMlwCIU?=
+ =?iso-8859-1?Q?EojhNf6KD55vOf6KeDL63nn5n6t4J4CzTOoh0HhOTkIBGFWk51fTFUGzep?=
+ =?iso-8859-1?Q?Z7XF+xvXAUdOStL1EYE1qKiB2R29nO/coDZfFw=3D=3D?=
+MIME-Version: 1.0
+
+--_000_BL0PR01MB477281E21D3FCDAC070A6625B41B0BL0PR01MB4772prod_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Point your browser at https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fopen.kattis.com%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDal=
+las.edu%7C843b845803b042fd282108d877f25891%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C0%7C637391230054113442%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DmN91Oppy=
+8kozE2NdnbhH54Agine0GCxeR%2BnEGQ6bB%2F0%3D&amp;reserved=3D0 just before noo=
+n CDT on Saturday 10/24 and look for contest UTDf10.
+
+Enjoy!
+
+Ivor Page
+
+Kattis, Kattis<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fopen.kattis.com%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7=
+C843b845803b042fd282108d877f25891%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C=
+0%7C637391230054113442%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DmN91Oppy8kozE2Ndn=
+bhH54Agine0GCxeR%2BnEGQ6bB%2F0%3D&amp;reserved=3D0>
+Here you can find hundreds of programming problems to solve. If you're new =
+here you're very much welcome! Just register and start solving.
+open.kattis.com
+
+
+--_000_BL0PR01MB477281E21D3FCDAC070A6625B41B0BL0PR01MB4772prod_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Point your&nbsp;browser at&nbsp;<span style=3D"caret-color:rgb(0, 0, 0);bac=
+kground-color:rgb(255, 255, 255);display:inline !important"><a href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fopen.kattis=
+.com%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C843b845803b042fd28=
+2108d877f25891%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391230054133=
+430%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dnj4QUi%2BimN6ilO1i%2BZeXyUOh25oQyyXm=
+F6xA58PQfvI%3D&amp;reserved=3D0" originalsrc=3D"https://open.kattis.com/" s=
+hash=3D"nqH5cba33ikPu/zcgK7wwaEvP8tB9lFDnzn6Te9HnM7DyrHlVqC631m8a4VnPehZ050=
+1ex9nYzWK/FzoZhapOYl0mnJhXiAPRa3s+GPyWgQybgdMVpcomZF95Y95zwojGWXr80B1KBq8tu=
+tbS3vQzTqrbFzVXm5lX/mZXUL7VKo=3D" id=3D"LPlnk">https://open.kattis.com</a>&=
+nbsp;just before noon CDT on Saturday 10/24 and look for contest UTDf10.</s=
+pan></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color:rgb(0, 0, 0);background-color:rgb(255, 255, 255)=
+;display:inline !important"><span class=3D"Apple-converted-space"><br>
+</span></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color:rgb(0, 0, 0);background-color:rgb(255, 255, 255)=
+;display:inline !important"><span class=3D"Apple-converted-space">Enjoy!</s=
+pan></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color:rgb(0, 0, 0);background-color:rgb(255, 255, 255)=
+;display:inline !important"><span class=3D"Apple-converted-space"><br>
+</span></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color:rgb(0, 0, 0);background-color:rgb(255, 255, 255)=
+;display:inline !important"><span class=3D"Apple-converted-space">Ivor Page=
+</span></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color:rgb(0, 0, 0);background-color:rgb(255, 255, 255)=
+;display:inline !important"><span class=3D"Apple-converted-space">&nbsp;</s=
+pan></span></div>
+<div class=3D"_Entity _EType_OWALinkPreview _EId_OWALinkPreview _EReadonly_=
+1">
+<div id=3D"LPBorder_GTaHR0cHM6Ly9vcGVuLmthdHRpcy5jb20v" class=3D"LPBorder87=
+7441" style=3D"width: 100%; margin-top: 16px; margin-bottom: 16px; position=
+: relative; max-width: 800px; min-width: 424px;">
+<table id=3D"LPContainer877441" role=3D"presentation" style=3D"padding: 12p=
+x 36px 12px 12px; width: 100%; border: 1px solid rgb(200, 200, 200); border=
+-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-ra=
+dius: 2px; border-bottom-left-radius: 2px;">
+<tbody>
+<tr valign=3D"top" style=3D"border-spacing: 0px;">
+<td style=3D"width: 100%;">
+<div id=3D"LPTitle877441" style=3D"font-size: 21px; font-weight: 300; margi=
+n-right: 8px; font-family: wf_segoe-ui_light, &quot;Segoe UI Light&quot;, &=
+quot;Segoe WP Light&quot;, &quot;Segoe UI&quot;, &quot;Segoe WP&quot;, Taho=
+ma, Arial, sans-serif; margin-bottom: 12px;">
+<a target=3D"_blank" id=3D"LPUrlAnchor877441" href=3D"https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fopen.kattis.com%2F&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C843b845803b042fd282108d877f25891%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637391230054143427%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3D6XBZdGXa30Ce%2FXC75D54XYjwBLSr94RHVnqaEQfd1gg%3D&amp=
+;reserved=3D0" originalsrc=3D"https://open.kattis.com/" shash=3D"RXlM35vQCp=
+PoB2RXC9FOpy48UIpkcpbUUatd0shZ6nuY0p28gFz+p3iQ4nGW/vgpRbEo0hfu1o9IxHDl2PLlj=
+R+P/hP8YnLfZl6LEXjvMD/QIrQ2L0HTjuthUaZ6IMlIK3K+SdNS9IjCi+ngFsJrSb+qg+kInsRt=
+KDJ3DDQMlpo=3D" style=3D"text-decoration: none; color: var(--themePrimary);=
+">Kattis, Kattis</a></div>
+<div id=3D"LPDescription877441" style=3D"font-size: 14px; max-height: 100px=
+; color: rgb(102, 102, 102); font-family: wf_segoe-ui_normal, &quot;Segoe U=
+I&quot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif; margin-bottom: 12=
+px; margin-right: 8px; overflow: hidden;">
+Here you can find hundreds of programming problems to solve. If you're new =
+here you're very much welcome! Just register and start solving.</div>
+<div id=3D"LPMetadata877441" style=3D"font-size: 14px; font-weight: 400; co=
+lor: rgb(166, 166, 166); font-family: wf_segoe-ui_normal, &quot;Segoe UI&qu=
+ot;, &quot;Segoe WP&quot;, Tahoma, Arial, sans-serif;">
+open.kattis.com</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</body>
+</html>
+
+--_000_BL0PR01MB477281E21D3FCDAC070A6625B41B0BL0PR01MB4772prod_--

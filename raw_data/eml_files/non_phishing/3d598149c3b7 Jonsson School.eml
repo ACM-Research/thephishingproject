@@ -1,0 +1,1530 @@
+Received: from DM6PR01MB4235.prod.exchangelabs.com (2603:10b6:5:25::19) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 19 Oct 2020 15:51:37
+ +0000
+Received: from SA0PR11CA0071.namprd11.prod.outlook.com (2603:10b6:806:d2::16)
+ by DM6PR01MB4235.prod.exchangelabs.com (2603:10b6:5:25::19) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Mon, 19 Oct 2020 15:51:36 +0000
+Received: from SN1NAM02FT003.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:806:d2:cafe::ed) by SA0PR11CA0071.outlook.office365.com
+ (2603:10b6:806:d2::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Mon, 19 Oct 2020 15:51:36 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ SN1NAM02FT003.mail.protection.outlook.com (10.152.73.29) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Mon, 19 Oct 2020 15:51:35 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 19 Oct 2020 10:51:13 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 19 Oct 2020 10:51:13 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 2E548C000055; Mon, 19 Oct 2020 10:51:13 -0500 (CDT)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id C2494C000052
+	for <ecs.all@lists.utdallas.edu>; Mon, 19 Oct 2020 10:42:08 -0500 (CDT)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=jerry.alexander@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  jerry.alexander@utdallas.edu designates 40.107.92.46 as
+  permitted sender) identity=mailfrom; client-ip=40.107.92.46;
+  receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="jerry.alexander@utdallas.edu";
+  x-sender="jerry.alexander@utdallas.edu";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16
+  ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: P5HzxKQmUkvNTQNWNonQsap8A6vXk5FFxGaBTRLWoEB8xYohHkHNX/Vvys1155T6WVsMuyNAKS
+ z3itGGE0YzEpUWsudM+ZJxsec5meKDtgY1v4Uow8B5+o2bACch3aRsRB11nbG6K2FpKFqj4aol
+ H/GzHwLwp+xQEnS8CSkI/Fn2fH09Gkwla0xr7SH/ZPg5CttCg9zGUWuJvSzClAN6JwZPoRiQ80
+ U5JdXFmTL40nubK8fOhN6V912r3zJMxohNDbmlozFDFJsVktxudBltD8rIopxJ2O2+xNkaSTrl
+ vGoaBcxCBt2GqEPHEMwHse+L
+X-IronPort-RemoteIP: 40.107.92.46
+X-IronPort-MID: 1034363
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0AdAgCNso1fhy5cayhGFwMOEAE8DAILFYFPgSMvIwYod?=
+ =?us-ascii?q?1geAwcIFwEBEwqGE4FshTmJFpM3hQplFIERA1UBAQkBAQEBAQEBAQEIARQQB?=
+ =?us-ascii?q?QQCBAEBgVUXgSlxRAKCDiUBNgcOAgMBAQEDAgMBAQEBAQQBAQECAQECAwICA?=
+ =?us-ascii?q?RMBAQGBAWCBAgGBRgGBKiMLAzEMgjcMg0gIExMBASkBAQkEEQEYHQsBBjkUA?=
+ =?us-ascii?q?w8BBAoJCAwBAQMJgjlGBAEBgX5NAy8CBQc/oRYBgSg+AiMBEi0BAQIJgQUpi?=
+ =?us-ascii?q?CyBMGFTHYJnAQEFgTMBAwMFAQYBAxglAYMXA1UBCYFGCYE4iSSFbz4VewFDg?=
+ =?us-ascii?q?U8BETcFgi6BHAEBAgEWfwgWBwEBAgwOAgQKDhMCAgUJCIMDgiyLa4QxGQkUD?=
+ =?us-ascii?q?IoDJop8kQN4AwQDgmqJBIZchRuGGIMWgSqEFoRJlDGXMoUCgXCCdIFbgTyBd?=
+ =?us-ascii?q?0YBg16EVR+EHwIEAgQFAhAFgVsBMA8qbwEdAQsHcjEqFH0KgUEJCgwCLAECA?=
+ =?us-ascii?q?QINAQICAgEBAgEBCAEBAQGICYVwLQIOCYNOaoEBFBWBXWiDKIIXPQFDMQIBA?=
+ =?us-ascii?q?QEGDAQBAhoCBgoBAQMJfIsGAg8XgQ0BMEkXAQE?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AaQHg7hLUBuYOpiiThtmcpTZWNBhigK39O0sv0r?=
+ =?us-ascii?q?FitYgXL/r8rarrMEGX3/hxlliBBdydt6sbzbWP+Pu9EUU7or+5+EgYd5JNUx?=
+ =?us-ascii?q?JXwe43pCcHRPC/NEvgMfTxZDY7FskRHHVs/nW8LFQHUJ2mPw6arXK99yMdFQ?=
+ =?us-ascii?q?viPgRpOOv1BpTSj8Oq3Oyu5pHfeQpFiCe/bL9oLhi6sArdu8cWjIB/Nqs/1x?=
+ =?us-ascii?q?zFr2dSde9L321oP1WTnxj95se04pFu9jlbtuwi+cBdT6j0Zrw0QrNEAjsoNW?=
+ =?us-ascii?q?A1/9DrugLYTQST/HscU34ZnQRODgPY8Rz1RJbxsi/9tupgxCmXOND9QL4oVT?=
+ =?us-ascii?q?i+6apgVRjnhjoaNz4i6GHYlNB/jL5VrhKmohxw2Y/UYIeIP/Z6ca7QedYWSG?=
+ =?us-ascii?q?xPUcZLUyxKH52yYY0BAeEcOepUtpfxq14IoBCjBwejGfnvxydIiHHowKM6z+?=
+ =?us-ascii?q?ovHwLH3AM8EN0Dq27boMnpOKoITey50LfEwDPeZP1Wwzf9743IfwgvrfyQWb?=
+ =?us-ascii?q?J/b8XQxlMpFwzYkFqQs5TpNC6R2OsTqWib9ephWeyygGMgqQF+vCKvxt0si4?=
+ =?us-ascii?q?XTnI0Vzk7L9Cpjz4YzONK3VlR7bMW5EJtMqi6VLY92Qsc4TGFzoio11KAJuY?=
+ =?us-ascii?q?OicSUM1Z8oyALRZeadfIiU/hLsSvyRITFgiX9kZL6yhBm//FS8x+DiWcS50V?=
+ =?us-ascii?q?ZHozdbn9fCqn0BygDe58aaR/Zy8Ums1zaB2hzX5+9LPUw5i7TWJoAhz7Islp?=
+ =?us-ascii?q?cet1nIECHxmEXzlqCWd0Mk9/Cq6+TgY7XmoJ+cOJVyig7jKaQumtawAecmPQ?=
+ =?us-ascii?q?QUQ2eb/uG82KX//Uz5WLVFkPM2kq7DsJDfP8gUuqm5AwpN3oYk9ha/EzOm0N?=
+ =?us-ascii?q?MfnXkENl5KZBWHj43xN1HUO//0F/i/glS0nDduxvDJIqfhApLWLnjEnrfhYa?=
+ =?us-ascii?q?xx5FJbyAo21dxQ+YxUBa8HIPLvQUDxrt3YDgMnPACu3+nnD9B92psQWG2RGa?=
+ =?us-ascii?q?CWLqzTvUWU6eIoJumAfI4UuDH6K/gg/fLukGQ5lUcTfKmowZsXaH+4HvNhI0?=
+ =?us-ascii?q?WWZXrjnM0NHnsNvgo7VODqh1qCUTlcZ3a2Qa0w/C00CIWjDYvbW4CtnKGO0z?=
+ =?us-ascii?q?2/Hp1SfG9GEUqAHmn1eIWZQ/sMdCOSIslhkzwZT7ihT5Ut2g2ptA//07ZoNP?=
+ =?us-ascii?q?TU9TcEtZL+zth6+ffflRcs+jxoF8idynyNQHtwnmMUXT823bxwoVdnxlif1q?=
+ =?us-ascii?q?h4huRUFN1U5/NOVwc2L4TQz/FhC9zqVAPOYMyGR0ipQ9m8Gz0+UtUxw9oWb0?=
+ =?us-ascii?q?lmGtWikgrP3y6qArMNjbOLGYA08qXB0HfvPMZ9yGzK27Umj1kjWsdAKG2mhr?=
+ =?us-ascii?q?Vl+wjcAI7JjV2Vl6itdaQG2S7N732PzWWKvE5GSAJwVaTFXXYcZkTIsNv550?=
+ =?us-ascii?q?XCQ6WyBrQgNwtMz9OJJKhSatDxglhKWO3vNMnCb2+zgWu9AQiEyqmDYYfrY2?=
+ =?us-ascii?q?kQ0yfQBFIZnw0Q/3uKLxUyCjq8r27EETBjGlzib1vy/eR/tH+2QEo5wxyWY0?=
+ =?us-ascii?q?J61re4/x0YieCcRv4WwL4JuCIspjBpEFqg2d/dFsCOqBB7fKpGZNMw+FdH2n?=
+ =?us-ascii?q?zdtwx6JpGuN7xviFkDfwhrpk/jyg15B4dZncgtt3wl0hB+KaWF0FNdbDyY2o?=
+ =?us-ascii?q?3wOrvKJWXo5BCvcanW2k3A39mK5qcP6fM4q1P5sAGuC0oi73Fn095S03uf/J?=
+ =?us-ascii?q?nFEA0SUZfpXkY28Rh1ua3abzEy6o/Iz3FgLLW4vz3Y198tGucp0BmtctZHPK?=
+ =?us-ascii?q?OBDgDyEskaB8a0KOwtnlikdhAEM/5I9K4uP8KqbeGJ2Kq1M+dvhj2mi3lI75?=
+ =?us-ascii?q?5n0k+X6ip8VvPH0IwBw/GcxASHTC3wg0m8vcDqgYxEfy0dHnKjySj4A45cfr?=
+ =?us-ascii?q?N9cpoQCWu0OcK3wtF+ioXpW35Z716jG0gG1NW0eRqOclPyxwlQ1UANrny8gy?=
+ =?us-ascii?q?e30SF7kyx65paYiWbnx+nyfRwLN3QPDEtvl039a8Dgjd0ARlnuZgwkhBKj6U?=
+ =?us-ascii?q?vg77VHqK17K2DIB0pEYn6lAXtlV/76n76Pc8dJ5J4y9W11Xf6mcBrSHrzwuQ?=
+ =?us-ascii?q?ELlSrnEntXwjw2bRm3ppnwmxhzkySQIGsl/ymRQt152RqKvI+UfvVWxDdTGH?=
+ =?us-ascii?q?Yi02v+G0S8Mt+1/N6di5bEtKWEWnm8UoFILne5wJiJ7W277jE3XUT6w7aygt?=
+ =?us-ascii?q?3iAU4x1iqon8JyW3DwpQ3nKpLuy7z8NOtmekdyA1qp6cdgAJA4m489lJgW1X?=
+ =?us-ascii?q?UAroiJ8XMDlW7od9hXxPukPkAATjMK3dPZpTPd9hA4cSCxzpniHjWQ2cI4Id?=
+ =?us-ascii?q?mxPj5Kg2dhqcFSCKKEqrdDmHk9rl29pAPXKf9z+1VVgfkj8mQLxegNtRokyC?=
+ =?us-ascii?q?mQGJgPAUVROSjljFKF4832oKhMZWmpeKS9zwIixZb4VO7E81saBCixc4xHf2?=
+ =?us-ascii?q?c49shlNVPQzHD/oprpftXdd5NbtxGZlQvBk/kALZswkvQQgi80cWn5vHAj16?=
+ =?us-ascii?q?s6lUkyhdfj5NfBej8roPzqZ3wQfif4bM4S5Dz32KtFl5/Q34vzQ8k4X2lNXY?=
+ =?us-ascii?q?PoSOLuGzUX5pGFf06DFiMxrnCDFP/RBwiavQ1komjVAtaiM3yHLX8VwM9KWQ?=
+ =?us-ascii?q?WRLUhbiRtSUTkn1M1cdEji1In6fUF16ypErFz1sAFdjOtsOgn2VGvSvi+1dj?=
+ =?us-ascii?q?s9TJyWN1xb4hwItCK3eYSOq+l0GS9f5JioqgeAf3eDaTNPC2UYCQSUQkruNb?=
+ =?us-ascii?q?606Zzc4vCVU6CgeuDWb+zE+ok8H7+YgIii2Yx883OQO9WTazN8WuYj1BMLXG?=
+ =?us-ascii?q?glSZiB3WRVDXRRz2WUMoaavEvupnUx95jgtqytAEW2u+7tQ/NTKYk9pkrw2P?=
+ =?us-ascii?q?/bcbbW3GEgdX5Zzs9enCeUjuRAmgZU02Y3KHGsCepS7yeVFfCJw/YFAUJDM3?=
+ =?us-ascii?q?Ehc5cYisB0lghVZ5yBg4ushOch16w7Vw8eBw6mxpHhZMoBJ3yxOQHcHEiHcq?=
+ =?us-ascii?q?ycIiHGyN32ZqX6TqBMiOJTtFu7vjP+cQerez2Hk3OwBkKfdNpUhSTeByRw/Y?=
+ =?us-ascii?q?S0cxJjE2/mFY60dwG3OdtzhCZwzLEp1CrH?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,394,1596517200"; 
+   d="scan'208,217";a="1034363"
+X-MGA-submission: =?us-ascii?q?MDG9JDMbIA57k1aRiYbC9uyqEet/jOtV/k184S?=
+ =?us-ascii?q?KbazMPdCoYwvSn8hVoU1BS2lhwUMSyy7G9jP0fvtG1IfqR0mbb/RciW1?=
+ =?us-ascii?q?263+VFPaZcaLs5eH5lxgLN3p85jYfzDlPLy7uX68C2Kbtq3QNx7JDbNm?=
+ =?us-ascii?q?Dw?=
+Received: from mail-bn7nam10on2046.outbound.protection.outlook.com (HELO NAM10-BN7-obe.outbound.protection.outlook.com) ([40.107.92.46])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 19 Oct 2020 10:42:03 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Nn/KUKzSMLW/H2aoDl6lukklflNX2U89L2LD9DXnjpYu7paUs9EH0dFY2/XSc1yeAL6gkVpoSr9fxdRZnlz/Kifdh/pNNjgLddZjJwRdC5Cu1LQkxAqdAFbWbYQ6cIUfG6OMwq6HSlO/NAHVjQkaadwNUdpi79LaM5ojakA/+yu38GcS9CwOceMUlhZGwtYOGvua6j5L0eaF5LZx3RXadzM7p9usT9BF/JDil8ZIZ7sA9B379/qsOFr5kWGGTtWp0atdB6FWFoVJLFBY6toWAGCG/UQ0nZ9CEIoBJjhbbwx3/3BSDa5xzu76zMkNi+HQvsunHwh+OYk+faj+bc3tqw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=U7ihpKwM8VBB4DrhfLmLTRR+sx6iLG2BL5I9w2Oux4Y=;
+ b=BL+5HyicVUrtAXkH2NcjhaMI96XVfBo5aLzvpauAN31M5Siu7mEWLlX9Dx1SgjJOiXnM7aBeTjKDBufc4l8dz6S2FOWrziioEW4tzx7oyJnaFdtwSQnQfhWeJaUZX4O+NlmKUVMproB9Stv7GH4aLg5JxOK8rchPpTsLpg3ldOUFFv3mn8zyDm8yldJ0zOsppfN0KqalYz0LHy6EXmHywLtDSExhc/ibfkKQreSGKapgALIAUhuLrdofie2jPQprGwQyIGgYBtjUQwl1Ego0YDGr0nGGH1Kjr1k0c+U+Cn0dpem5KyKtq7faSQqEtJk7YrN/falwpQ4j7ZozqB2qFA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=U7ihpKwM8VBB4DrhfLmLTRR+sx6iLG2BL5I9w2Oux4Y=;
+ b=p4050KOWv2gqYWr6wex18M9hUeXG3VXgU8yCXrgdd91PaNSJbgpuIkKBPFUzPQvXt5kKn2HlS/LjECny63Nuuod529sE8QqhEeVbSZqLQEseDE4Zz4I+D2+QRIljM++QHYXaxHQ19b8oqZ1FZGuHjZSFU3MIPPZTQk8TPKciwuo=
+Received: from SN6PR01MB3805.prod.exchangelabs.com (2603:10b6:805:25::11) by
+ SN6PR01MB3662.prod.exchangelabs.com (2603:10b6:805:17::31) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.25; Mon, 19 Oct 2020 15:41:59 +0000
+Received: from SN6PR01MB3805.prod.exchangelabs.com
+ ([fe80::447b:c831:76e2:a887]) by SN6PR01MB3805.prod.exchangelabs.com
+ ([fe80::447b:c831:76e2:a887%6]) with mapi id 15.20.3477.028; Mon, 19 Oct 2020
+ 15:41:59 +0000
+From: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+Thread-Topic: Jonsson School Events
+Thread-Index: AdamLl2LRHgIck2XQBy1ihRQFbSepQ==
+Date: Mon, 19 Oct 2020 15:41:59 +0000
+Message-ID: <SN6PR01MB38055E70E683AD51D3384409821E0@SN6PR01MB3805.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [47.187.111.143]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 24138cf0-5dc5-4892-d70a-08d87446dbf8
+x-ms-traffictypediagnostic: SN6PR01MB3662:|DM6PR01MB4235:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <SN6PR01MB3662886429D1F4CCFEB825D1821E0@SN6PR01MB3662.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:6430;OLM:6430;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 4UNlr10UU4JRzQpLTtN2zslyiGSqQE6LrR6GqyEJApqyL0+t7GTn5bvOPNeSiWq2Y4V4Lr7EmLWCMpAyqfTv1RVJmOt2XybXlVBkCU3WtF1R3AL1GNQx1xrZ659AB7mPnkQDCcEQ1wgoWu52UajjmkPV20LJoGbYRYp9GXa8JL7KVUDAjUOz+y0D2I+agc/A+Cbf+e432nutX4ja8xpPC7TcHIy3+M6eHQoskemavbzb4AWFhXL3zYRu5JAKJxPIMqA/o1LBX/Zpa64OIQKzb7YfJBXz3ZVifgT8XcAmcSUF5XQq/V2j3pwVjdX6Z44Lz+yTcDjPCFuXbNIRdioptxv4rX5BLze7uxzJJXbetUO+qbOxoKivjc6lk6+qh6/LtUM5O3aQbrlIS5Eox7nqWPq9KG52/WflP1VOWFcN64bfrJffuprnngpvxJKugYg3
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR01MB3805.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(366004)(376002)(346002)(39860400002)(136003)(396003)(166002)(8936002)(76116006)(45080400002)(66446008)(64756008)(66556008)(66476007)(55016002)(86362001)(16119065003)(75432002)(52536014)(83380400001)(8676002)(66946007)(5660300002)(6862004)(30864003)(3480700007)(9686003)(33656002)(296002)(316002)(786003)(71200400001)(966005)(2906002)(186003)(16799955002)(26005)(6506007)(7116003)(6200100001)(7696005)(478600001)(493534005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: Y2joYswBxKxRRyiFHZHcnMY4W/yy7iq9G1DflEG0uuHEsPbXvzf8CPOxU3kx0KUGmQR4YSNRGzqr3J7c3OyuQLOuVSxbn6ZYjbRD0b34HqK+rqoCKKLt0JyC+2THC8YceyXO/i1n8Jg8lY/voMl0idlnJNdUXCb3xVsKzUJv8qhf0iWsGI5CyZvQEL+tXxTLb59ZtBVXF1xZya5gDh+2UVxQCcRDVbsTQLH1elV23L9pPKe1dCXtUWQaTuedAtHSRjd3bxeulAjSxDTDV+JfUiPi6hx2QfoVYSxIoZOrZZ4JYJyfW9AqYU1rCfYSM4YvaFDU49hVQRgPvvu6tXl+DlRCbbp5XtOi7slBFyANZ7tNDTxDcNUK88384O5GjRh4yg387KBIAjIR65dX41+qEh+Q8k2Ghx8hc7dSS7H5bcsMxtiEJZIAYcrl12+vGwueZWK822QgxHPrmouzMTvgrVALEa56Q3fun0X1CGyz8qkjFyAkbQVITqVI0PnqTgznXFmR+8rQ8i/H3hNh08U4lrf5tZLwYqLSjrZrescHIfG1EPA7BvobExApgyMB+ZQUd8ZyOzPP/dFuFpgGGeRnxR4DfkV5DStcyqhLi58VarxTBzw3zMLNbQAhTabNrgoH1RVO2JxePVS7z/DWD3X+8g==
+Content-Type: multipart/alternative;
+	boundary="_000_SN6PR01MB38055E70E683AD51D3384409821E0SN6PR01MB3805prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB3662
+Subject: [ecs.all] Jonsson School Events
+Reply-To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1369
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/SN6PR01MB38055E70E683AD51D3384409821E0%40SN6PR01MB3805.prod.exchangelabs.com>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5252890@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2020 15:51:35.9976
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 24138cf0-5dc5-4892-d70a-08d87446dbf8
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 4bd1bfcf-a140-4c9a-3f07-08d874458485
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 4
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2020 15:51:35.8856
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 24138cf0-5dc5-4892-d70a-08d87446dbf8
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4235
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5103231
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?8d4zl60ssDq9AEELTPFcitVYlc3QA/SKS7k7iNHTchlH3jN1Trcg/fs8?=
+ =?Windows-1252?Q?HEdnjibD/qCKu4CyuKlUh3XYrVcz3aAm3mZc1ezV+nwOh7oIv/pM0kT9?=
+ =?Windows-1252?Q?/6Dcrz55TcQSB5Mo3GpqIU5ABN+o9b4sKrlXwfRywVTcVzh5jV9wKQbP?=
+ =?Windows-1252?Q?gKmHaeGvbtuZ8DXO/JlknXKzOXLm8KWLaT3ndgxM4NBy2xLNFWorkSPp?=
+ =?Windows-1252?Q?aizaX9IWD0HxXdzaD+tmWRGZ6WyPc0uEyVIxKGpYUoMv24e8dHsgH9GR?=
+ =?Windows-1252?Q?ckaJgiDxKTCsC5L/XQZeaBpbUOKxJbHzGtPEwlfHAc4F7jhvjy6F/6pt?=
+ =?Windows-1252?Q?xiFYmPM72uLB8ucg/rX5LUfmX2RKlXaa4thn8yBomVOw9gYvdCn/CvWm?=
+ =?Windows-1252?Q?iJEn6WX9ng/cwBHKX1Gaj5iDJueZ8PITiHeAgeWppC/0QmRYa0h5swGB?=
+ =?Windows-1252?Q?+LpSmhNi/fTjQnAkKcWksp3vvhMvUTFqhHUXMkcx4tjL685bKeUKUfBM?=
+ =?Windows-1252?Q?U9V30KPPnrrUwnkKzsyY7elbJUi+684rN/m5w5Ws5pDjix23ySwizNe3?=
+ =?Windows-1252?Q?2cbHU2cvYe6BGR8MT9Nc2qWDg+V1iWi6dqFLQQJFJo1s9yMyww4U3m6Z?=
+ =?Windows-1252?Q?XudV4qzUJK5oiQv0sAjaMJhbY5hS4ob4DnGX1sHWo2rwkRJRLu2bzkPD?=
+ =?Windows-1252?Q?Et+UHmZb1McsFumLqO4B0bny2cPh1g9+/rKwt37QpDYofv0Y9vB+5FQa?=
+ =?Windows-1252?Q?qp8PuHkW/5vtqlFt5OXyL6VHLbjRRlFnudupoxKKI0wX2Om3mVPed1hi?=
+ =?Windows-1252?Q?HMONMnM+lOdm3fMg3pRbSheCtielGH2sigC2CAM2vkDKv9GzIZl6zwgY?=
+ =?Windows-1252?Q?bTKPKjnXT6nBENFWYroVk/2XzsmDwp32DEgkmCui/69XognRAaPjoyzd?=
+ =?Windows-1252?Q?JCtVbv+Brv+2qt+dR7lcG44X/Qh5JpHGTRlTfWdi7r29XJ7otoFCREzC?=
+ =?Windows-1252?Q?WL1lWk/XAH90CpaqugJWYNT86rzLj9NuufYe1chhDaJ++RIbBUDBetMj?=
+ =?Windows-1252?Q?67otO9cmbiUEJhB059HGhtqr0KyEaQ7/lHGrDRMHQQ4P57f7XYG+iXWi?=
+ =?Windows-1252?Q?gSU9k48QZ/I4LxgCi+eX+CIrWalr7kBpCoMz2Oy8FbI9HRWk1mi2I70d?=
+ =?Windows-1252?Q?QnfYonxpkaklbumNXtbeA1tsd9XBlEeXDZBZ576ZJEI4ug6+ZH5ESL3v?=
+ =?Windows-1252?Q?ibswzJoKj2rihCw5Q4u0wiMgP6+sGjTjKI3/MCMpJ1LAZob/5Tj2Ht9V?=
+ =?Windows-1252?Q?r/ibdY9JuC324UyG5XHkApj69+au6qTvmc76gAH4nqMBerE1a/lMwf3r?=
+ =?Windows-1252?Q?Cv9F34D6l8Hf9OoYNa+Agsxak+SOMelznd1XGBYD6J9GljYzXZuQjUWl?=
+ =?Windows-1252?Q?Y/xyMuTwM+6o9rcy41MrxDhDrpoJ15JTeY5YUvfCo95hquk+meQjoRiy?=
+ =?Windows-1252?Q?G0XSwAXBEG0gJ0CulCJ3DOxR4FOeyA=3D=3D?=
+MIME-Version: 1.0
+
+--_000_SN6PR01MB38055E70E683AD51D3384409821E0SN6PR01MB3805prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Monday, October 19
+
+Career Talk with Coach Marc and Maggie
+12:00pm - 1:00pm | Virtual
+If you are looking for a life changing event, you don't want to miss this s=
+ession with Coaches Marc and Maggie. Maggie introduced me to Coach Marc, wh=
+o coached at Florida State University for ten years and eventually transiti=
+oned to his current consulting role. He is transforming businesses and live=
+s. If you really want to join an event that will leave you inspired and rea=
+dy to tackle your career goals, this session is right for you. I can't wait=
+!! Register here: https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F560525&amp;data=3D04%7C01%=
+7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971020465%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&=
+amp;sdata=3DMLffirgI93XLWBpq1uoVQLYLmLM3nSYHzCofReGxswg%3D&amp;reserved=3D0
+
+Peace Corps: Underrepresented Populations in STEM
+3:00pm - 4:00pm | Zoom
+Discover the benefits of Peace Corps service from Returned Peace Corps Volu=
+nteers who served in STEM positions. Join us to learn about challenging, re=
+warding, and inspirational moments from their service. Ask questions about =
+the Peace Corps service experience, and gain tips to guide you through the =
+application process. Register here: https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Fapp.joinhandshake.com%2Fevents%2F595346&amp;da=
+ta=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971020465%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C1000&amp;sdata=3DoqfgW%2BU0A6HbLJ62vrZbCKiixMF%2BwCnUxblERRsc3IU%3D=
+&amp;reserved=3D0
+
+Meet our Global Head of Technology Gina Pinotti
+5:00pm - 6:30pm | Virtual
+From her first day in trading during the 1987 market crash, to moving a wor=
+kforce completely remote in under a week during a global pandemic, Gina has=
+ seen it all! Spend some time listening to what it's like to lead the techn=
+ology initiatives of a proprietary trading firm. The event will begin with =
+an introduction from Gina followed by an open format Q&A, so come prepared =
+with questions! https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fsigsurvey.typeform.com%2Fto%2FOlYck45A&amp;data=3D04%7C01%7CJerry.=
+Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637387194971020465%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdat=
+a=3DDgHlWx4nU9OQqr0mSH0cCX1IiA1wMkTVG61PR4mdTGU%3D&amp;reserved=3D0
+
+
+UT Dallas SkillsUSA Virtual Mock Interview Workshop
+7:00 pm | Join Zoom Meeting<https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Frb.gy%2Flj85gg&amp;data=3D04%7C01%7CJerry.Teng%40UTDal=
+las.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C0%7C637387194971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D16M4PUce=
+y%2FqlbHxbkP46Fms9BVh47qeaM%2B%2BAaBBkr%2F8%3D&amp;reserved=3D0>
+Join this interactive session of live mock interview practice, with general=
+, technical and behavioral questions. Let's help each other out and have fu=
+n in this season of job hunt! Tuesday, October 20
+
+UCC Virtual Power Hour: Resumes and Cover Letters: Make Yours Count!
+12:00pm - 1:00pm | Teams
+Career experts will share with you the best and most effective tips for cre=
+ating and maintaining a stellar resume where the goal is to get you that in=
+terview! Register on Handshake: https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fapp.joinhandshake.com%2Fevents%2F538765&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971030453%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DjDwJfbbSEkOgHJn6Vlq0cl5n1wmh5YCdGqeRN0aoB7w%3D&amp;r=
+eserved=3D0
+
+JCS Job Search Strategies Workshop for ECS Students
+1:00pm - 2:00pm | Teams Meeting<https://teams.microsoft.com/l/meetup-join/1=
+9%3ameeting_MWE3MDYyMTktZmNhMi00ZDViLTg4MzQtODZlYThkODA1YTdm%40thread.v2/0?=
+context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oi=
+d%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d>
+Looking for an internship but don't know where to start? This workshop cove=
+rs the basics of all things job-search, from resume and interview tips to L=
+inkedIn and job search resources. Provided by Jonsson Career Services and o=
+pen to all ECS students.
+
+Oscar Health: Women in Tech Panel
+4:00pm - 5:00pm | Virtual
+Our panelists will share their career journeys, experiences as a woman in t=
+ech, tips for interviewing and more! We will also share more information ab=
+out our 2021 technical internship and apprenticeship opportunities. RSVP he=
+re: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww=
+.eventbrite.com%2Fe%2Foscar-health-women-in-tech-panel-tickets-124136620975=
+&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87=
+446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971030453%7CU=
+nknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLC=
+JXVCI6Mn0%3D%7C1000&amp;sdata=3DQAHON1tVMfPg1%2FB1eQ6zvK63tvi%2Bv1Yl2JjSQmS=
+2puI%3D&amp;reserved=3D0
+
+Conversations in Cybersecurity with GM Financial
+5:30pm - 6:30pm | WebEx
+Join us as we speak about trending topics in the cybersecurity space. This =
+event is open to alumni and students with an interest and/or experience in =
+the cybersecurity field. Register here: https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fgmfinancial.webex.com%2Fgmfinancial%2Fonst=
+age%2Fg.php%3FMTID%3De6941fb201d9ca78b032e01cad5e4bd33&amp;data=3D04%7C01%7=
+CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971030453%7CUnknown%7CTWFpbGZsb3d8=
+eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&a=
+mp;sdata=3DfymhxkYzvuBPeCzc95zJl8Y3jCuniJDLPzir7HUwFKM%3D&amp;reserved=3D0
+
+SiriusXM + Pandora Preparing for the Technical Interview
+6:00pm - 7:00pm | Virtual
+Technical interviews are challenging and you may not be sure how to success=
+fully prepare, but never fear we got your covered! Come hear from our hirin=
+g managers on how you can best prepare for the technical component of our s=
+oftware engineering internships. We will give you tips and insight into how=
+ you can prepare and secure the internship! Space is limited so please RSVP=
+ early: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Fsiriusxm.zoom.us%2Fwebinar%2Fregister%2FWN_8zsuIGAWTUCsirSL296DQg&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971030453%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DI6oI4Grwn33JG1LaoeDlglnJroPdQVQ7vxAYeZdhILk%3D&amp;r=
+eserved=3D0
+
+Google Presents: Keeping it Clean: The Art of Clean Code with Google
+6:00pm - 6:30pm | <location>
+Why does "clean code" matter? Join us for this informative session with Goo=
+gle engineers to gain a better understanding of what clean code looks like =
+at Google, and learn about methods for implementing these best practices th=
+roughout your internships and beyond. Register and watch the event here:
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fcareers=
+onair.withgoogle.com%2Fevents%2Fclean-code&amp;data=3D04%7C01%7CJerry.Teng%=
+40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637387194971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DN=
+%2BGfaK0Z5hoLyXiMWBHJc3rtXCac93u1T9Jk28sRgT0%3D&amp;reserved=3D0
+
+National Society of Black Engineers (NSBE) Game Night
+6:30pm - 8:00pm | Zoom
+Nothing beats a fun game night to stress relief from all that studying! Joi=
+n UTD NSE for a fun night of Jack Box, games and more! Register here<https:=
+//nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdocs.google.c=
+om%2Fforms%2Fd%2Fe%2F1FAIpQLSdzNjwABDMQNUEyaqlXxYN2qcC1uMay9mGBo62DlZjQv3bp=
+Sw%2Fviewform%3Fusp%3Dsf_link&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.ed=
+u%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637387194971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DXfvyBIu5JbbMn6=
+zhbI8xzj4FnD4qoqcY4ylZ%2FGncwzA%3D&amp;reserved=3D0>.
+
+
+
+Tuesday, October 20
+
+Tuesday, Houston, We Have a Problem: Why Diversity Matters in STEM? Facilit=
+ated by Dr. Stephanie Adams
+12:00-1:00pm | Join Microsoft Teams Meeting<https://teams.microsoft.com/l/m=
+eetup-join/19%3ameeting_MGJkMDVkM2EtYWYwMC00MGJmLWFiYjktMDY2NTFkYWEzMjNi%40=
+thread.v2/0?context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6=
+c%22%2c%22Oid%22%3a%2263dfe7df-55e1-4a49-a7d5-6d94693a4c26%22%7d> | Please =
+rsvp here<https://eforms.utdallas.edu/ctl-oct-20-rsvp>
+There has been an increase in the level of the conversation about diversity=
+ in STEM. Most likely fueled by the current social movement that has achiev=
+ed world-wide attention. We must take advantage of the current momentum and=
+ re-emphasize the need for diversity in STEM.  Most STEM fields clearly are=
+ struggling to achieve a population that mirrors our national statistics, s=
+pecifically in engineering. Women and racial/ethnic minorities continue to =
+be underrepresented in nearly 100% of STEM fields. Utilizing data from the =
+National Science Foundation and the American Society for Engineering Educat=
+ion (ASEE), the audience will begin to understand the enormity of this task=
+. Armed with this information the audience will gain a better understanding=
+ of the issues and challenges faced in diversifying STEM and hear evidenced=
+ based actions and recommendations, which will equip you to address them in=
+ a positive, proactive manner such that we can increase the representation =
+of these marginalized groups.
+STEAM Career Expo
+11:00am - 5:00pm | Handshake
+At this expo, you can explore career opportunities in a variety of industri=
+es, connect with local and national employers, and chart your path to succe=
+ss! This Career Expo is virtual and will take place through Handshake's Vir=
+tual Job Fair platform. Be sure to have your Handshake account updated to t=
+ake part in this event. More Info<https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttp%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU=
+8Du1qAHcALFlVjX6AHQBMgMS0_EeD7l7hpNhUjofmeZubNWCWluUjsFSOMUEL48c8DHZaVLIQv5=
+4_-hCQSTSSCD8NX9mmDZOsG324wOeJNXellElwyyqaRGOCCTpJTRmcCME-zw0Ftrd0rGt8RW3vs=
+zUIIUP9366KB4lzRV_Cl9pTyk-BoXEMuaDwzxPjeoq55L8Z1EKFW_XDmylOKzvo9dsk98BOanJp=
+LrVMu5HwSfxjiHfwtdb4nrxuUm2vO6qO04qJM8KkN0ZgAPvUbvJw7u-OmTpK8fZot54Bfa-jD0t=
+FBe6t-5_0Akhh1bA&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05=
+dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387=
+194971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DpMWAv4gqIBXi9M6YuguO5K6yqdp=
+hWgXfZBJD5YHKmJw%3D&amp;reserved=3D0>
+
+Watch Wednesdays: Babysitters Club
+12:00pm - 1:00pm | Netflix Party
+Join the UT Dallas Gender Center as we watch the Netflix Original The Babys=
+itters Club. You must have your own Netflix account to participate. Registe=
+r here: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Fwww.eventbrite.com%2Fe%2Fwatch-wednesdays-the-babysitters-club-s1e4-ticket=
+s-115761922025&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc=
+54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738719=
+4971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DgJwaRX%2BHj8HAyZNPVUrahEST6uj=
+7FdL8n9YHolUhmbs%3D&amp;reserved=3D0
+
+JCS CPT Orientation for ECS F-1 Students
+1:00pm - 2:00pm | Teams Meeting<https://teams.microsoft.com/l/meetup-join/1=
+9%3ameeting_MzQyZTllNzctZTNhNC00YzU2LWI3OGEtMTJjNGE4NDBmZWQ4%40thread.v2/0?=
+context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oi=
+d%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d>
+Required for all international students on F-1 visas with ECS majors prior =
+to obtaining an internship.  CPT Orientation covers both academic and immig=
+ration policies pertaining to CPT.  Provided by Jonsson Career Services and=
+ open only to ECS F-1 students.
+
+Eaton National Society of Black Engineers (NSBE) Connect: A Day in the Life
+5:00pm - 6:00pm | Virtual
+Come hear from Engineers with different backgrounds share info about themse=
+lves and "What a Day in the Life" looks like for them in their respected ro=
+les. This is a great opportunity to network with Eaton Engineers and learn =
+more about the many career tracks that may be of interest to you at Eaton. =
+Register here: https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3=
+A%2F%2Ftinyurl.com%2Fy5jsnwhc&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.ed=
+u%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637387194971030453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Duk34Lh13ey7Coa=
+9TSb4m7NQ2%2FxRUEzZDOnkQ6ZK7eWw%3D&amp;reserved=3D0
+
+Goldman Sachs Wellness Series: De-stress with GS
+5:00pm - 6:00pm | Virtual
+In this session, a GS professional will lead the group in a Yoga session dr=
+iven to reduce stress and improve overall quality of wellness during the we=
+ek. Register here: https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Frecruiting360.avature.net%2Fsu%2Fc531d491dbff0eef&amp;data=3D04=
+%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d28=
+1d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7CUnknown%7CTWFpb=
+GZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7=
+C1000&amp;sdata=3DhgwBl6naIyT0nB0Cz6W0alAzBHdrz%2FupdKzIfz4%2Fm4Y%3D&amp;re=
+served=3D0
+
+Qualtrics What I Wish I Knew: Lessons from an Engineering Manager and Devel=
+oper
+5:00pm - 6:00pm | Virtual
+Hear from engineering team members and leaders about what they wish they kn=
+ew when they were in your shoes! Register here: https://www.qualtrics.com/c=
+areers/us/en/event/5f40517a4cedfd0006097e59/What-I-Wish-I-Knew-Lessons-from=
+-an-Engineering-Manager-and-Developer
+
+Thursday, October 22
+
+UT Austin Grad School 101 Talk
+3:00pm - 4:00pm | Zoom
+Are you interested in finding out more about graduate school in science and=
+ engineering? A Grad School 101 talk will be held on October 22, from 3-4pm=
+ CST. Join us and get all your questions answered! https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Futexas.zoom.us%2Fj%2F9106060903=
+5&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d8=
+7446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C1000&amp;sdata=3Dfvpxjh%2By0h9KuiVib%2FbayWRpyoYgG3DXqFmSsT=
+n0Geg%3D&amp;reserved=3D0
+
+Engineering with Impact- Trane Technologies
+3:00pm - 4:00pm | WebEx
+In the session Fernando Lagomasino, Regional General Manager at Trane will =
+provide an overview of his career journey from his beginnings as a mechanic=
+al engineer to advancing to a sales leader. Fernando will share an inside s=
+coop on the business, the impact of Trane Technologies in our local communi=
+ties, as well as his advice on establishing a diverse and meaningful engine=
+ering career. The session will also include live Q&A. Join here<https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftranetechnologies.=
+webex.com%2Fmw3300%2Fmywebex%2Fdefault.do%3Fnomenu%3Dtrue%26siteurl%3Dtrane=
+technologies%26service%3D6%26rnd%3D0.07341542720914096%26main_url%3Dhttps%2=
+53A%252F%252Ftranetechnologies.webex.com%252Fec3300%252Feventcenter%252Feve=
+nt%252FeventAction.do%253FtheAction%253Ddetail%2526%2526%2526EMK%253D483253=
+4b00000004aac77b8d0d72131ea75b5059e1ea55a19055028c14925f0972741572d0098bfc%=
+2526siteurl%253Dtranetechnologies%2526confViewID%253D175000612240396674%252=
+6encryptTicket%253DSDJTSwAAAASG4fJGH4ScxepIErayCgNrXA0s69mWghHLpahfCpfp4g2%=
+2526&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a0=
+8d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453=
+%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haW=
+wiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D5HVJkZdKvLmS0IRo%2BHu7XqrTkFw1YJLyn6gKN=
+xV6szI%3D&amp;reserved=3D0>.
+
+Axtria - Get to Know Us!
+5:00pm - 6:00pm | Zoom
+Axtrians will speak to you about what it's like working at Axtria, all the =
+projects they are working on and Axtria's culture. Join here: https://nam02=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fzoom.us%2Fj%2F831664=
+0241&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a0=
+8d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453=
+%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haW=
+wiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DAviHn%2FCBwZeE2NYBoNuGq5oXDMH9FamOzsEV5=
+wUjKSw%3D&amp;reserved=3D0
+
+Intro to Github with Girls Who Code (GWC)
+6:00pm | Bit.ly/gwc-github
+Unfamiliar with Version Control? Want to be able to collaborate on Open Sou=
+rce projects? Learn all about one of the most popular platforms for it at o=
+ur workshop!
+Society of Women Engineers & American Society of Mechanical Engineers AutoC=
+AD Event
+7:30pm | Teams Meeting<https://teams.microsoft.com/dl/launcher/launcher.htm=
+l?url=3D%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_MjQzZWYyZDktZThlYi00NmY5LW=
+IwZDMtYjhkNzM1ZWViZDUw%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%=
+25228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%2522%252c%2522Oid%2522%253a%2522fc=
+4f32d1-03e2-4a8d-a6cb-4903ee87c3d7%2522%257d%26anon%3Dtrue&type=3Dmeetup-jo=
+in&deeplinkId=3Dd25f1c84-5763-4c21-af9b-cd67afa79e46&directDl=3Dtrue&msLaun=
+ch=3Dtrue&enableMobilePage=3Dtrue&suppressPrompt=3Dtrue>
+SWE & ASME will be hosting an AutoCAD event for everyone from beginners to =
+expert level CADers. This workshop will be geared towards those who want to=
+ learn about AutoCAD - why it is still important, the basic functions for A=
+utoCAD, or layout design. The workshop will start off at the beginner level=
+ and work its way up to help the participants learn how to effectively use =
+this software in real-world applications. To be able to participate in this=
+ event you will need to have AutoCAD downloaded.
+
+The link to signup for AutoDesk Suite<https://nam02.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.autodesk.com%2Feducation%2Fstudent-softw=
+are%2Funiversity&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05=
+dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387=
+194971040453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dk87ko5HU0%2B%2Bo%2BPFBdB9NZ=
+jMLoR1RTqdwTw8JsxVtxxc%3D&amp;reserved=3D0>
+
+Friday, October 23
+
+Diverse Voices in Insurance, Hosted by The Hartford
+11:00am - 12:00pm | WebEx Register here<https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fthehartfordinterviews.webex.com%2Fthehartf=
+ordinterviews%2Fonstage%2Fg.php%3FMTID%3De4fd4b6643cb22ccfbe783c1801fe6abf&=
+amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d874=
+46dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7CUn=
+known%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJ=
+XVCI6Mn0%3D%7C1000&amp;sdata=3DKdnV3i%2BLfQ4spTxM9amht3NuVSl3IewwYL5Bv4U5Wc=
+k%3D&amp;reserved=3D0>.
+
+Join us for a panel discussion focused on Diversity & Inclusion in the Insu=
+rance Industry.  The panel will feature early in career professionals from =
+The Hartford. Panelists will provide insights on cultural experiences, tran=
+sitioning from college to career, the value of employee resource groups, ca=
+reer opportunities, and more!
+
+U.S. Department of Homeland Security (DHS) Science and Technology Directora=
+te, Professional Opportunities for the Student
+The U.S. Department of Homeland Security (DHS) Science and Technology Direc=
+torate Office of University Programs<https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fwww.dhs.gov%2Fscience-and-technology%2Foffice=
+-university-programs&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138=
+cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7387194971040453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DgO%2BTs%2FcRSoK5z5ZkTRy=
+2%2F0hZtgl5gGTj4nsxl9Zl%2FnM%3D&amp;reserved=3D0> sponsors the Professional=
+ Opportunities for the Student Workforce to Experience Research Program (HS=
+-POWER) for undergraduate and graduate students. HS-POWER is open to studen=
+ts majoring in a broad spectrum of homeland security related science, techn=
+ology, engineering and mathematics (STEM) disciplines as well as DHS missio=
+n-relevant research areas<https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Fwww.dhs.gov%2Fstrategic-planning&amp;data=3D04%7C01%7CJe=
+rry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7CUnknown%7CTWFpbGZsb3d8eyJ=
+WIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;=
+sdata=3DxADxeGcU%2FMfkRVoCOynQU5TdY99VlC3q2fvqRMaHP%2Fs%3D&amp;reserved=3D0=
+>. For more information and to apply, click here: https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fbit.ly%2FHSPOWER20&amp;data=3D04=
+%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d28=
+1d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7CUnknown%7CTWFpb=
+GZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7=
+C1000&amp;sdata=3DVgFS%2BCaXh0CtWQFuiEaxYqXkhGxDwVQ5JSU%2BfXmmXTo%3D&amp;re=
+served=3D0
+
+ Saturday, October 24
+
+Viva Volunteer
+9:00am - 12:00pm |
+
+Viva Volunteer is UT Dallas' annual service event. Hundreds of students, st=
+aff and faculty unite in service in order to serve others on Make a Differe=
+nce Day. In one morning, Comets travel to local nonprofits and serve in the=
+ spirit of making a difference in their community. This year, Viva Voluntee=
+r will be going virtual! Comets will have the opportunity to virtually volu=
+nteer for local nonprofits, as well as contribute to national and global vi=
+rtual volunteering platforms. This event will take place on Microsoft Teams=
+. Viva Volunteer will take place on Saturday, October 24 from 9:00 a.m.-12:=
+00 p.m. Once registered, you will receive more specific project details. If=
+ you have already signed up to participate in Viva Volunteer with a student=
+ group, please do not also sign up for these service options. General regis=
+tration is now open. Please register for a project below.
+Join us as we help transfer the Arolsen Archives into an accessible online =
+archive that will allow researchers to find this information easily, but mo=
+re importantly will allow families to find information about the fate of th=
+eir relatives. This collection contains millions of concentration camp and =
+imprisonment documents from WWII. We will be learning more about the archiv=
+e and its historical context, volunteering together, and reflecting on our =
+impact.  Register  Viva Volunteer - Every Name Counts<https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fforms.gle%2FiTABunGPBLoV5PX3=
+8&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d8=
+7446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C1000&amp;sdata=3DUszpZJjfpGc51WsK0eg4X%2FQGtrupxmzJj3MXdJCA=
+9Uo%3D&amp;reserved=3D0>
+Join us to create a series of thank you videos for UTD and local community =
+members who work hard to keep our communities safe and strong during this t=
+ime! We will show our appreciation to these dedicated people and share what=
+ a difference they make in our lives during this challenging time. Register=
+ Viva Volunteer - Thank You Videos<https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fforms.gle%2FheZ7eeGF9pKSW2kb7&amp;data=3D04%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971040453%7CUnknown%7CTWFpbGZsb=
+3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C100=
+0&amp;sdata=3DH%2FmbK%2BKHpTOFkH%2FxIKLanrfGty9m7aubIahJXyLo2h8%3D&amp;rese=
+rved=3D0>
+
+
+Need assistance with your job search?
+
+  *   Student Last Name: A to F, contact Mary Ann Chou Stewart <mailto:mas0=
+51000@utdallas.edu>
+  *   Student Last Name: G to N, contact  Kori Farley <mailto:kxf170001@utd=
+allas.edu>
+  *   Student Last Name: O to Z, contact  Andrea Croasdale Woudwyk <mailto:=
+axc169230@utdallas.edu>
+Best regards,
+
+Jerry Alexander-Assistant Dean for Student Development
+Jonsson Career Services
+UT Dallas Erik Jonsson School of Engineering and Computer Science
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.lin=
+kedin.com%2Fin%2Finternguy%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.ed=
+u%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637387194971040453%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dncq2buSh8T%2B2=
+F5M03ywIHnp0nhtyu8mn7zYHp%2Br7pAs%3D&amp;reserved=3D0
+972.883.4373 (forwarded to my home phone)
+
+
+--_000_SN6PR01MB38055E70E683AD51D3384409821E0SN6PR01MB3805prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-language:ZH-CN;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.dateright, li.dateright, div.dateright
+	{mso-style-name:dateright;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-language:EN-US;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:619268818;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1220473920 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><b><u><span style=3D"color:black">Monday, October 19=
+</span></u></b><span style=3D"color:black"><br>
+<br>
+<b>Career Talk with Coach Marc and Maggie</b><br>
+<b>12:00pm &#8211; 1:00pm | Virtual</b><br>
+If you are looking for a life changing event, you don't want to miss this s=
+ession with Coaches Marc and Maggie. Maggie introduced me to Coach Marc, wh=
+o coached at Florida State University for ten years and eventually transiti=
+oned to his current consulting role.
+ He is transforming businesses and lives. If you really want to join an eve=
+nt that will leave you inspired and ready to tackle your career goals, this=
+ session is right for you. I can't wait!! Register here:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F560525&amp;data=3D04%7C01%=
+7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971180367%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&=
+amp;sdata=3DPC6XpMtOSGttBMdsTyKFrUYHE9IYPz0s%2FGslMDBuzus%3D&amp;reserved=
+=3D0" originalsrc=3D"https://utdallas.joinhandshake.com/events/560525" shas=
+h=3D"OC66B+Ll6J45hhxARc3tZcAKL743U97+00El4X8z+LEG1jyJUhs/78HpQTlAGX2ALx8M8w=
+zLyz23HcnsGZUNcXsT0zN2vkebaHatkV04JMj2bQhurzjRHeTrFjvm8blEuJ0K+oaY/L1GnUFTJ=
+9TcCKhS2IFLELV7zKY3JbJy2FE=3D">https://utdallas.joinhandshake.com/events/56=
+0525</a><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Peace Corps: Underrepresented Populations in=
+ STEM</span></b><span style=3D"color:black"><br>
+<b>3:00pm &#8211; 4:00pm | Zoom</b><br>
+Discover the benefits of Peace Corps service from Returned Peace Corps Volu=
+nteers who served in STEM positions. Join us to learn about challenging, re=
+warding, and inspirational moments from their service. Ask questions about =
+the Peace Corps service experience,
+ and gain tips to guide you through the application process. Register here:=
+ </span>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fapp.joinhandshake.com%2Fevents%2F595346&amp;data=3D04%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637387194971190361%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+gyVOGtxxUghXY2layhsFVcVevNigjlNEHRDU%2BxTC53o%3D&amp;reserved=3D0" original=
+src=3D"https://app.joinhandshake.com/events/595346" shash=3D"VL7LUKERe7imQj=
+aGHOVU2/4iubiwvL2W9Tp4m42AWiWnkF/+2++Os5AdZpyL44Lgyi4l2lgk3OMWsgV9obGMcvBij=
+RQCKaKYZAzGUCNxWzi+FY0Jzg5Z49WkI8y6Rl7GKn6ugNi8n3EzCUCUclxcmxKu6f8yWGVzbxa7=
+9Lwfy84=3D">https://app.joinhandshake.com/events/595346</a><span style=3D"c=
+olor:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Meet our Global Head of Technology Gina Pino=
+tti</span></b><span style=3D"color:black"><br>
+<b>5:00pm &#8211; 6:30pm | Virtual</b><br>
+From her first day in trading during the 1987 market crash, to moving a wor=
+kforce completely remote in under a week during a global pandemic, Gina has=
+ seen it all! Spend some time listening to what it&#8217;s like to lead the=
+ technology initiatives of a proprietary
+ trading firm. The event will begin with an introduction from Gina followed=
+ by an open format Q&amp;A, so come prepared with questions!
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fsigsurvey.typeform.com%2Fto%2FOlYck45A&amp;data=3D04%7C01%7CJerr=
+y.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637387194971190361%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sd=
+ata=3DnH6NwjLaOE8T%2BlfJjz7kIJZ2%2FkkZ1NeLQ7MFqYd5rUY%3D&amp;reserved=3D0" =
+originalsrc=3D"https://sigsurvey.typeform.com/to/OlYck45A" shash=3D"a5wGE6I=
+VpBjuEDu1F/ZH2Sz/81RCQi2kxma/qj9p0kRw0MmjQnG7HGJE+yXcbj3KCoDw/mpFduDnlaRe0s=
+oyNgIWRJTGBWzQpzLjaUYRc4qHjN2oYVzq2aVloAHzWNTXCZsdzO6k4viksmNTGvewtfoVCvQdk=
+8VGg8NExj32mGY=3D">https://sigsurvey.typeform.com/to/OlYck45A</a><span clas=
+s=3D"MsoHyperlink"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span class=3D"MsoHyperlink"><o:p><span style=3D"tex=
+t-decoration:none">&nbsp;</span></o:p></span></p>
+<p><b><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-=
+serif;color:black">UT Dallas SkillsUSA</span></b><span style=3D"font-size:1=
+1.0pt;font-family:&quot;Calibri&quot;,sans-serif">&nbsp;<b>Virtual Mock Int=
+erview Workshop<span style=3D"color:black"><br>
+7:00 pm | </span></b><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Frb.gy%2Flj85gg&amp;data=3D04%7C01%7CJerry.Teng%40U=
+TDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637387194971200358%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D4bms=
+RJqdTgwiBUmvoeSVwMYmjRqwaitQqUTREnhZGnM%3D&amp;reserved=3D0" originalsrc=3D=
+"https://rb.gy/lj85gg" shash=3D"H/BRX3oywaaegGAfOAyEC+9gWqMCiUKtpuJ17UaWVs2=
+gFHkgaUtdvr/zbMlQWC0euc9PKkyaqGQsy4WlfjKafwPquGfzDqhDaLiETRYsDhX0rvbRyJqeD7=
+T85MdjnmR8Cs3LKKalcVVUHfvmDM3BBcMPws+H8w3j0+J4yRFJQ50=3D">Join
+ Zoom Meeting</a><br>
+Join this <span style=3D"color:#3C4043;letter-spacing:.15pt">interactive se=
+ssion of live mock interview practice, with general, technical and behavior=
+al questions. Let's help each other out and have fun in this season of job =
+hunt!</span>&nbsp;<b><u><span style=3D"color:black">Tuesday,
+ October 20</span></u></b><span style=3D"color:black"><br>
+<br>
+<b>UCC Virtual Power Hour: Resumes and Cover Letters: Make Yours Count!</b>=
+<br>
+<b>12:00pm &#8211; 1:00pm | Teams</b><br>
+Career experts will share with you the best and most effective tips for cre=
+ating and maintaining a stellar resume where the goal is to get you that in=
+terview! Register on Handshake:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fapp.joinhandshake.com%2Fevents%2F538765&amp;data=3D04%7C01%7CJer=
+ry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637387194971200358%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;s=
+data=3DJcPx5Bp1VRbjq7GnHRu%2F9m7Q6rDGrj%2BJ3PL4hQNS3zI%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://app.joinhandshake.com/events/538765" shash=3D"bMLJ0=
+9rI19Jexw/aejYcTFr4iXyLY/zC0iGAH0ggHvNdBfWP84sGTo76QPA7Fa3My5HNJibUav+XILsj=
+nrLnxRsUDG9MLLwF+BY526W89ErGqKXxx68bSa3in89qrqHztShFQGa2PKDykgSpsmx55eqpMKJ=
+Ho68m0bvWQXiYgMI=3D">https://app.joinhandshake.com/events/538765</a><u><spa=
+n style=3D"color:blue"><br>
+</span></u><span style=3D"color:black"><br>
+<b>JCS Job Search Strategies Workshop for ECS Students</b><br>
+<b>1:00pm &#8211; 2:00pm | </b></span><a href=3D"https://teams.microsoft.co=
+m/l/meetup-join/19%3ameeting_MWE3MDYyMTktZmNhMi00ZDViLTg4MzQtODZlYThkODA1YT=
+dm%40thread.v2/0?context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15=
+de9f6c%22%2c%22Oid%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d" targ=
+et=3D"_blank"><b>Teams
+ Meeting</b></a><span style=3D"color:black"><br>
+Looking for an internship but don&#8217;t know where to start? This worksho=
+p covers the basics of all things job-search, from resume and interview tip=
+s to LinkedIn and job search resources. Provided by Jonsson Career Services=
+ and open to all ECS students.<br>
+<br>
+<b>Oscar Health: Women in Tech Panel</b><br>
+<b>4:00pm &#8211; 5:00pm | Virtual</b><br>
+Our panelists will share their career journeys, experiences as a woman in t=
+ech, tips for interviewing and more! We will also share more information ab=
+out our 2021 technical internship and apprenticeship opportunities. RSVP he=
+re:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.eventbrite.com%2Fe%2Foscar-health-women-in-tech-panel-ticket=
+s-124136620975&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc=
+54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738719=
+4971210346%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D0ebx4G%2BH20RzDgnBoK2xJFYgNEM=
+dEJ0qXpqzV%2FM7oEs%3D&amp;reserved=3D0" originalsrc=3D"https://www.eventbri=
+te.com/e/oscar-health-women-in-tech-panel-tickets-124136620975" shash=3D"eg=
+lCrfi5x3um13Lm/h+SD5/FO9/Y8MZym4vtCwpYwSd2Z8ZPZmf/r3265+CPIqKNGOSGwfPlec/gR=
+HnTiWzaF6dG+sccOC1DdD/XF0imRpt1ypaYlmKsZdCj4FjDXUBorply+EE3HRYNhWHF5+xSv0jL=
+EcbMluOc/7h3nMHavi4=3D">https://www.eventbrite.com/e/oscar-health-women-in-=
+tech-panel-tickets-124136620975</a></span><span style=3D"font-size:11.0pt">=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><br>
+<b>Conversations in Cybersecurity with GM Financial</b><br>
+<b>5:30pm &#8211; 6:30pm | WebEx</b><br>
+Join us as we speak about trending topics in the cybersecurity space. This =
+event is open to alumni and students with an interest and/or experience in =
+the cybersecurity field. Register here:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fgmfinancial.webex.com%2Fgmfinancial%2Fonstage%2Fg.php%3FMTID%3De=
+6941fb201d9ca78b032e01cad5e4bd33&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas=
+.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C0%7C637387194971210346%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D711mBXHM0sZ=
+tYoZP8tcUcgqLdcPYpGRgMwc2KHnHOtM%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//gmfinancial.webex.com/gmfinancial/onstage/g.php?MTID=3De6941fb201d9ca78b0=
+32e01cad5e4bd33" shash=3D"Di2iKNnRtG5tYhE2StadaWd6mM9XOTVpFzb8avXDvrGqVNA06=
+htH0+QwVcmmjTgzen9D8EqrZjZUfxUK1wvJjZRtywSyWUCJdOZpssOILy/S7zHJ6vd7FI2EEo8C=
+ewSo13wZSy+tHZKlFL0/A+IQqXIPnnRuJlU8N01zqeuaHuI=3D">https://gmfinancial.web=
+ex.com/gmfinancial/onstage/g.php?MTID=3De6941fb201d9ca78b032e01cad5e4bd33</=
+a><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><br>
+<b>SiriusXM + Pandora Preparing for the Technical Interview </b><br>
+<b>6:00pm &#8211; 7:00pm | Virtual</b><br>
+Technical interviews are challenging and you may not be sure how to success=
+fully prepare, but never fear we got your covered! Come hear from our hirin=
+g managers on how you can best prepare for the technical component of our s=
+oftware engineering internships.
+ We will give you tips and insight into how you can prepare and secure the =
+internship! Space is limited so please RSVP early:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fsiriusxm.zoom.us%2Fwebinar%2Fregister%2FWN_8zsuIGAWTUCsirSL296DQ=
+g&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d8=
+7446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971220345%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C1000&amp;sdata=3DXEPCUDdnG%2B5gqYKkC8gCW98LH4Vh227CMPRa6eMZ=
+q2E%3D&amp;reserved=3D0" originalsrc=3D"https://siriusxm.zoom.us/webinar/re=
+gister/WN_8zsuIGAWTUCsirSL296DQg" shash=3D"gqEbxG+XnoFL+R3ZAj8i+roXtN/Nc0Zt=
+j+yDfRMHfkozZTlY0O0Ew2giqv1J7rU3eMxkCRWf3B/SaAd0w/PQgYAEvL5E7Q3Gd1sqvMJKtXq=
+TGBxAmd5cSCdvM0XESrrub6xJAvd9taGJll8Rg8AEhWjy/QbvkbKe3QWHdkn6lrg=3D">https:=
+//siriusxm.zoom.us/webinar/register/WN_8zsuIGAWTUCsirSL296DQg</a><span styl=
+e=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Google Presents: Keeping it Clean: The Art o=
+f Clean Code with Google</span></b><span style=3D"color:black"><br>
+<b>6:00pm &#8211; 6:30pm | &lt;location&gt;</b><br>
+Why does &quot;clean code&quot; matter? Join us for this informative sessio=
+n with Google engineers to gain a better understanding of what clean code l=
+ooks like at Google, and learn about methods for implementing these best pr=
+actices throughout your internships and beyond.
+ Register and watch the event here:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fcareersonair.withgoogle.com%2Fevents%2Fclean-cod=
+e&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d8=
+7446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971220345%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C1000&amp;sdata=3DHGuXz%2FO6lgHcYDDBWBduLxPVR4a6eY%2FLuNXArX=
+o7Epk%3D&amp;reserved=3D0" originalsrc=3D"https://careersonair.withgoogle.c=
+om/events/clean-code" shash=3D"UzU2ilaVqNKq+pDqWhNKg32mP8QoNSUAYAlq/1TZF8mR=
+mlY+aSxvSuwh2/iDSR6k76VIBHHTDa1sDQu/im7LBX0L0bfq5LjuSDU8Ft7XME44MvA4RlxNcYi=
+semt9ht1rd4mwsbRv0e2gNkAYsI1KJhsAnBAEBz1CiiVmXQeP/Tw=3D">https://careersona=
+ir.withgoogle.com/events/clean-code</a><span style=3D"color:black"><o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">National Society of Black Engineers (NSBE) G=
+ame Night</span></b><span style=3D"color:black"><br>
+<b>6:30pm &#8211; 8:00pm | Zoom</b><br>
+Nothing beats a fun game night to stress relief from all that studying! Joi=
+n UTD NSE for a fun night of Jack Box, games and more!
+</span>Register <a href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdzNjwABDMQNUE=
+yaqlXxYN2qcC1uMay9mGBo62DlZjQv3bpSw%2Fviewform%3Fusp%3Dsf_link&amp;data=3D0=
+4%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971230335%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C1000&amp;sdata=3DWjKYFBZ%2BZmHrgsTZTFZYs98ACPNh4LYyShpbcn%2FybhI%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://docs.google.com/forms/d/e/1FAIpQLSdzNjw=
+ABDMQNUEyaqlXxYN2qcC1uMay9mGBo62DlZjQv3bpSw/viewform?usp=3Dsf_link" shash=
+=3D"Ex+KsCVtWMNnzBCyKSmfuhWwiucotQWKC//2RdMZPIXpXYtfI+/ReQo4ZnH0pV5U27FqncU=
+cFpWj2DfakHNTgcFmik46K9mLTp7Us9WOnPNLVRd58rwCScRCxEXfeHUWPcxjTTo9tU2fGBsFgM=
+euvSTpKgHcr2PtOPTbSroJEQs=3D" target=3D"_blank" title=3D"Original URL: http=
+s://docs.google.com/forms/d/e/1FAIpQLSdzNjwABDMQNUEyaqlXxYN2qcC1uMay9mGBo62=
+DlZjQv3bpSw/viewform?usp=3Dsf_link. Click or tap if you trust this link.">
+here</a>.<span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><u><span style=3D"color:black"><o:p><span style=
+=3D"text-decoration:none">&nbsp;</span></o:p></span></u></b></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Tuesday, October 20<o:p></o:p></span></b></p=
+>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black;background:white">Tues=
+day, Houston, We Have a Problem: Why Diversity Matters in STEM? Facilitated=
+ by Dr. Stephanie Adams<br>
+</span></b><b><span style=3D"color:#1A1A1A;background:white">12:00-1:00pm</=
+span></b><b> |
+</b><a href=3D"https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGJkM=
+DVkM2EtYWYwMC00MGJmLWFiYjktMDY2NTFkYWEzMjNi%40thread.v2/0?context=3D%7b%22T=
+id%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%2263dfe7d=
+f-55e1-4a49-a7d5-6d94693a4c26%22%7d" target=3D"_blank"><span style=3D"color=
+:#C95100;background:white">Join
+ Microsoft Teams Meeting</span></a> | <b><span style=3D"color:#1A1A1A;backg=
+round:white">Please rsvp
+</span></b><span style=3D"color:#1A1A1A;background:white"><a href=3D"https:=
+//eforms.utdallas.edu/ctl-oct-20-rsvp" target=3D"_blank"><span style=3D"col=
+or:#C95100">here</span></a></span><span style=3D"color:#C95100;background:w=
+hite">&nbsp;</span><b><span style=3D"color:#1A1A1A;background:white"><br>
+</span></b><span style=3D"color:#1A1A1A">There has been an increase in the =
+level of the conversation about diversity in STEM. Most likely fueled by th=
+e current social movement that has achieved world-wide attention. We must t=
+ake advantage of the current momentum
+ and re-emphasize the need for diversity in STEM.&nbsp; Most STEM fields cl=
+early are struggling to achieve a population that mirrors our national stat=
+istics, specifically in engineering. Women and racial/ethnic minorities con=
+tinue to be underrepresented in nearly
+ 100% of STEM fields. Utilizing data from the National Science Foundation a=
+nd the American Society for Engineering Education (ASEE), the audience will=
+ begin to understand the enormity of this task. Armed with this information=
+ the audience will gain a better
+ understanding of the issues and challenges faced in diversifying STEM and =
+hear evidenced based actions and recommendations, which will equip you to a=
+ddress them in a positive, proactive manner such that we can increase the r=
+epresentation of these marginalized
+ groups.</span><br>
+<b><span style=3D"color:black">STEAM Career Expo</span></b><span style=3D"c=
+olor:black"><br>
+<b>11:00am &#8211; 5:00pm | Handshake</b><br>
+At this expo, you can explore career opportunities in a variety of industri=
+es, connect with local and national employers, and chart your path to succe=
+ss! This Career Expo is virtual and will take place through Handshake&#8217=
+;s Virtual Job Fair platform. Be sure
+ to have your Handshake account updated to take part in this event. </span>=
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU8Du1qAHcALFlVjX6AHQBMgM=
+S0_EeD7l7hpNhUjofmeZubNWCWluUjsFSOMUEL48c8DHZaVLIQv54_-hCQSTSSCD8NX9mmDZOsG=
+324wOeJNXellElwyyqaRGOCCTpJTRmcCME-zw0Ftrd0rGt8RW3vszUIIUP9366KB4lzRV_Cl9pT=
+yk-BoXEMuaDwzxPjeoq55L8Z1EKFW_XDmylOKzvo9dsk98BOanJpLrVMu5HwSfxjiHfwtdb4nrx=
+uUm2vO6qO04qJM8KkN0ZgAPvUbvJw7u-OmTpK8fZot54Bfa-jD0tFBe6t-5_0Akhh1bA&amp;da=
+ta=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971230335%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C1000&amp;sdata=3DHh97QCRIXwXAKEBehvjXRPa%2FVkidA8tg7gmjtxyscwE%3D&a=
+mp;reserved=3D0" originalsrc=3D"http://email.mail.joinhandshake.com/c/eJxlk=
+E1uwyAQhU8Du1qAHcALFlVjX6AHQBMgMS0_EeD7l7hpNhUjofmeZubNWCWluUjsFSOMUEL48c8D=
+HZaVLIQv54_-hCQSTSSCD8NX9mmDZOsG324wOeJNXellElwyyqaRGOCCTpJTRmcCME-zw0Ftrd0=
+rGt8RW3vszUIIUP9366KB4lzRV_Cl9pTyk-BoXEMuaDwzxPjeoq55L8Z1EKFW_XDmylOKzvo9ds=
+k98BOanJpLrVMu5HwSfxjiHfwtdb4nrxuUm2vO6qO04qJM8KkN0ZgAPvUbvJw7u-OmTpK8fZot5=
+4Bfa-jD0tFBe6t-5_0Akhh1bA" shash=3D"OyDMfjrSnhaavHD09ch0n8AspBW0zU79lbuk4t4=
+aehdioVYo5F8z9tOdIn+ckd/CfgWojMwCtFDGJLK+U5qhRJhnayMkhW54xY3ms0sDE3WJYocbFV=
+Kek0MCzVQOpeZfnkI97jaejSwShSSrFYSnlCp2hDbm3ClCCBSP1yHzxCA=3D" target=3D"_bl=
+ank" title=3D"Original URL: http://email.mail.joinhandshake.com/c/eJxlkE1uw=
+yAQhU8Du1qAHcALFlVjX6AHQBMgMS0_EeD7l7hpNhUjofmeZubNWCWluUjsFSOMUEL48c8DHZaV=
+LIQv54_-hCQSTSSCD8NX9mmDZOsG324wOeJNXellElwyyqaRGOCCTpJTRmcCME-zw0Ftrd0rGt8=
+RW3vszUIIUP9366KB4lzRV_Cl9pTyk-BoXEMuaDwzxPj"><span style=3D"color:#0070C0"=
+>More
+ Info</span></a><span style=3D"color:#1A1A1A"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Watch Wednesdays: Babysitters Club</span></b=
+><span style=3D"color:black"><br>
+<b>12:00pm &#8211; 1:00pm | Netflix Party</b><br>
+Join the UT Dallas Gender Center as we watch the Netflix Original The Babys=
+itters Club. You must have your own Netflix account to participate. Registe=
+r here:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.eventbrite.com%2Fe%2Fwatch-wednesdays-the-babysitters-club-s=
+1e4-tickets-115761922025&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C2=
+4138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%=
+7C637387194971240335%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DvC1jTWiRbVcYB1nMunK=
+pxOKlqwYsCN9OLW7%2BCFzYp4Y%3D&amp;reserved=3D0" originalsrc=3D"https://www.=
+eventbrite.com/e/watch-wednesdays-the-babysitters-club-s1e4-tickets-1157619=
+22025" shash=3D"tlkC08lDeCHAb4JlOsum60Isb5pYG2ohtqmZk4+77nd50N7XZ0PCdlhntr5=
+WZARVfx9xz0qX4EYffYJa9C1qRTH5DLYxEtBtwtD1GVe2qXsbe4u0QHQ9sMNGiRk1EeTc9Y3MJz=
+/c7G4NkaLzqhmTWbobgLebnij5KGUtQFmsyaQ=3D">https://www.eventbrite.com/e/watc=
+h-wednesdays-the-babysitters-club-s1e4-tickets-115761922025</a><span style=
+=3D"color:black;mso-fareast-language:ZH-CN"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">JCS CPT Orientation for ECS F-1 Students</sp=
+an></b><span style=3D"color:black"><br>
+<b>1:00pm &#8211; 2:00pm | </b></span><a href=3D"https://teams.microsoft.co=
+m/l/meetup-join/19%3ameeting_MzQyZTllNzctZTNhNC00YzU2LWI3OGEtMTJjNGE4NDBmZW=
+Q4%40thread.v2/0?context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15=
+de9f6c%22%2c%22Oid%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d" targ=
+et=3D"_blank"><b>Teams
+ Meeting</b></a><span style=3D"color:black"><br>
+Required for all international students on F-1 visas with ECS majors prior =
+to obtaining an internship.&nbsp; CPT Orientation covers both academic and =
+immigration policies pertaining to CPT.&nbsp; Provided by Jonsson Career Se=
+rvices and open only to ECS F-1 students.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Eaton National Society of Black Engineers (N=
+SBE) Connect: A Day in the Life</span></b><span style=3D"color:black"><br>
+<b>5:00pm &#8211; 6:00pm | Virtual</b><br>
+Come hear from Engineers with different backgrounds share info about themse=
+lves and &quot;What a Day in the Life&quot; looks like for them in their re=
+spected roles. This is a great opportunity to network with Eaton Engineers =
+and learn more about the many career tracks
+ that may be of interest to you at Eaton. Register here: </span><a href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Ftinyurl.=
+com%2Fy5jsnwhc&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc=
+54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738719=
+4971240335%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DfIOcuxpwZQCuFi0JcDmXHdTA7GxRg=
+JbdOAEDPqCzWA8%3D&amp;reserved=3D0" originalsrc=3D"http://tinyurl.com/y5jsn=
+whc" shash=3D"h0JVAncxiQ3HJEXr6zm9HFEwdC7as1clksIxk59u19McCkio9evxKMds7SxIr=
+J4e4/UXnRVCvZrZM9SfDeXelO+Hq+l7n852ibjYSOzdHNaBF+TLm/bo22yk9agRjS/o0h8zMIQE=
+L/fREJtTQnU+0DOtrRAypQBMIz1JLVSxSRg=3D">http://tinyurl.com/y5jsnwhc</a><spa=
+n style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Goldman Sachs Wellness Series: De-stress wit=
+h GS</span></b><span style=3D"color:black"><br>
+<b>5:00pm &#8211; 6:00pm | Virtual </b><br>
+In this session, a GS professional will lead the group in a Yoga session dr=
+iven to reduce stress and improve overall quality of wellness during the we=
+ek. Register here:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Frecruiting360.avature.net%2Fsu%2Fc531d491dbff0eef&amp;data=3D04%=
+7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971250326%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+1000&amp;sdata=3DYh5GirMb4DzANWm%2BsAXaHp0Ll5y9X0ssRzZL5KIHqCE%3D&amp;reser=
+ved=3D0" originalsrc=3D"https://recruiting360.avature.net/su/c531d491dbff0e=
+ef" shash=3D"XuXjpahPw89cI0UfpFy/rJEdf6c5ET6kl+a6NroucbuLpbU7KzVjRpqKMgCgcu=
+Tze6OeH2Brw4CgkQjbGSFbj/c5oPv9mMPrlXgGaowXIhr84JLULT6dvKa8Lhx77aDga1EzZDX9x=
+bnIWgQ+seRQvyV0Q9WBlc0KG0eICfjfQi0=3D">https://recruiting360.avature.net/su=
+/c531d491dbff0eef</a><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Qualtrics What I Wish I Knew: Lessons from a=
+n Engineering Manager and Developer</span></b><span style=3D"color:black"><=
+br>
+<b>5:00pm &#8211; 6:00pm | Virtual</b><br>
+Hear from engineering team members and leaders about what they wish they kn=
+ew when they were in your shoes! Register here:
+</span><a href=3D"https://www.qualtrics.com/careers/us/en/event/5f40517a4ce=
+dfd0006097e59/What-I-Wish-I-Knew-Lessons-from-an-Engineering-Manager-and-De=
+veloper">https://www.qualtrics.com/careers/us/en/event/5f40517a4cedfd000609=
+7e59/What-I-Wish-I-Knew-Lessons-from-an-Engineering-Manager-and-Developer</=
+a><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><u><span style=3D"color:black">Thursday, October 22<br>
+</span></u></b><br>
+<b><span style=3D"color:black">UT Austin Grad School 101 Talk<br>
+3:00pm &#8211; 4:00pm | Zoom</span></b><span style=3D"color:black"><br>
+Are you interested in finding out more about graduate school in science and=
+ engineering? A Grad School 101 talk will be held on October 22, from 3-4pm=
+ CST. Join us and get all your questions answered!
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Futexas.zoom.us%2Fj%2F91060609035&amp;data=3D04%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637387194971250326%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+6x30o1RUhc%2FEF1VOepZka%2BShPJD4deuJvs3RK8y3FwE%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://utexas.zoom.us/j/91060609035" shash=3D"r6ULM+VqXk+87hKjyn/=
+mTx1wM7qg9jW+XELKrSMhFjm8sNenfxQ4zdPC17DZPJGY3xmcs4mb4SX2PmwCtS1dmSq/BN813X=
+IsDBb6e/4hqOWmlvmxoYH7NXdgEjXARXu+Y6wuX+tsHoWCkO84qg+6V1GlZhI2TWhPtgiNLNR7z=
+kE=3D">https://utexas.zoom.us/j/91060609035</a><span style=3D"color:black">=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Engineering with Impact- Trane Technologies<=
+/span></b><span style=3D"color:black"><br>
+<b>3:00pm &#8211; 4:00pm | WebEx</b><br>
+In the session Fernando Lagomasino, Regional General Manager at Trane will =
+provide an overview of his career journey from his beginnings as a mechanic=
+al engineer to advancing to a sales leader. Fernando will share an inside s=
+coop on the business, the impact
+ of Trane Technologies in our local communities, as well as his advice on e=
+stablishing a diverse and meaningful engineering career. The session will a=
+lso include live Q&amp;A. Join
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Ftranetechnologies.webex.com%2Fmw3300%2Fmywebex%2Fdefault.do%3Fno=
+menu%3Dtrue%26siteurl%3Dtranetechnologies%26service%3D6%26rnd%3D0.073415427=
+20914096%26main_url%3Dhttps%253A%252F%252Ftranetechnologies.webex.com%252Fe=
+c3300%252Feventcenter%252Fevent%252FeventAction.do%253FtheAction%253Ddetail=
+%2526%2526%2526EMK%253D4832534b00000004aac77b8d0d72131ea75b5059e1ea55a19055=
+028c14925f0972741572d0098bfc%2526siteurl%253Dtranetechnologies%2526confView=
+ID%253D175000612240396674%2526encryptTicket%253DSDJTSwAAAASG4fJGH4ScxepIEra=
+yCgNrXA0s69mWghHLpahfCpfp4g2%2526&amp;data=3D04%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C0%7C637387194971260317%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiL=
+CJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D4F3n8sY7cM=
+ZDNG3x0s06RMTUACuF4RB8oQzKo7cUZnA%3D&amp;reserved=3D0" originalsrc=3D"https=
+://tranetechnologies.webex.com/mw3300/mywebex/default.do?nomenu=3Dtrue&amp;=
+siteurl=3Dtranetechnologies&amp;service=3D6&amp;rnd=3D0.07341542720914096&a=
+mp;main_url=3Dhttps%3A%2F%2Ftranetechnologies.webex.com%2Fec3300%2Feventcen=
+ter%2Fevent%2FeventAction.do%3FtheAction%3Ddetail%26%26%26EMK%3D4832534b000=
+00004aac77b8d0d72131ea75b5059e1ea55a19055028c14925f0972741572d0098bfc%26sit=
+eurl%3Dtranetechnologies%26confViewID%3D175000612240396674%26encryptTicket%=
+3DSDJTSwAAAASG4fJGH4ScxepIErayCgNrXA0s69mWghHLpahfCpfp4g2%26" shash=3D"eGqV=
+z8IJ4ohIuNAo+yPpU5diI5Hk96FmGKMnvuDEBx6utpv7e899pFtP3YRSzCCwciaoXoRoFPBroKe=
+H36W6AZFAye4tdTdmtTg5vzTAqPqdtC80qXC2N4RYlzlOpo76DZ7g4bs70joZYE5SsRQwQqRWFk=
+g+eOh7f5yQnwJk8zk=3D">here</a><span style=3D"color:black">.<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Axtria &#8211; Get to Know Us!</span></b><sp=
+an style=3D"color:black"><br>
+<b>5:00pm &#8211; 6:00pm | Zoom</b><br>
+Axtrians will speak to you about what it's like working at Axtria, all the =
+projects they are working on and Axtria's culture. Join here:
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fzoom.us%2Fj%2F8316640241&amp;data=3D04%7C01%7CJerry.Teng%40UTDal=
+las.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C0%7C637387194971260317%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DTwk0wydP=
+3M9U56suiSZbE0Le2pAKHfRa7yakkcii98Y%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://zoom.us/j/8316640241" shash=3D"r2tFwZs2I1Rr4si7JJHQTBID6cUt9cRtoWH5I7x=
+kndPCMTkAq++6XzbFREBhJdQkwR/0HthtCT8tkMdmc4SnPmrHqg6o1qNdrpg9TpVUdR2JzWLYJh=
+WjMYBaCnqRaSFrfCobbaXPsEXuchQjFP0M/4etqUuamd/kiiq+LgFnq1k=3D">https://zoom.=
+us/j/8316640241</a><span style=3D"color:black"><o:p></o:p></span></p>
+<p style=3D"margin:0in;margin-bottom:.0001pt"><span style=3D"font-size:11.0=
+pt;font-family:&quot;Calibri&quot;,sans-serif"><br>
+<b><u>Intro to Github with </u></b><b>Girls Who Code (GWC)<u> <br>
+</u>6:00pm |</b> <b>Bit.ly/gwc-github<br>
+</b>Unfamiliar with Version Control? Want to be able to collaborate on Open=
+ Source projects? Learn all about one of the most popular platforms for it =
+at our workshop!<b>
+<br>
+<span style=3D"color:black">Society of Women Engineers &amp; American Socie=
+ty of Mechanical Engineers AutoCAD Event</span></b><span style=3D"color:bla=
+ck"><br>
+<b>7:30pm | </b></span><a href=3D"https://teams.microsoft.com/dl/launcher/l=
+auncher.html?url=3D%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_MjQzZWYyZDktZTh=
+lYi00NmY5LWIwZDMtYjhkNzM1ZWViZDUw%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid=
+%2522%253a%25228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%2522%252c%2522Oid%2522%=
+253a%2522fc4f32d1-03e2-4a8d-a6cb-4903ee87c3d7%2522%257d%26anon%3Dtrue&amp;t=
+ype=3Dmeetup-join&amp;deeplinkId=3Dd25f1c84-5763-4c21-af9b-cd67afa79e46&amp=
+;directDl=3Dtrue&amp;msLaunch=3Dtrue&amp;enableMobilePage=3Dtrue&amp;suppre=
+ssPrompt=3Dtrue" target=3D"_blank">Teams
+ Meeting</a><u><span style=3D"color:blue"><br>
+</span></u>SWE &amp; ASME will be hosting an AutoCAD event for everyone fro=
+m beginners to expert level CADers. This workshop will be geared towards th=
+ose who want to learn about AutoCAD - why it is still important, the basic =
+functions for AutoCAD, or layout design.
+ The workshop will start off at the beginner level and work its way up to h=
+elp the participants learn how to effectively use this software in real-wor=
+ld applications. To be able to participate in this event you will need to h=
+ave AutoCAD downloaded.<o:p></o:p></span></p>
+<p style=3D"margin:0in;margin-bottom:.0001pt"><span style=3D"font-size:11.0=
+pt;font-family:&quot;Calibri&quot;,sans-serif"><a href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.autodesk.com%2Feduca=
+tion%2Fstudent-software%2Funiversity&amp;data=3D04%7C01%7CJerry.Teng%40UTDa=
+llas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9=
+f6c%7C0%7C0%7C637387194971260317%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMD=
+AiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DTaVylQS=
+HSfGjwGdVilfsgMe%2F34g4xex3T48NtoGr%2Fc0%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.autodesk.com/education/student-software/university" shash=
+=3D"VHtXBRExDUaRSbKfnvzaQ7FI5uq7S3HUV7PA8IiNRPE9PhgpDc/5wjh6ijFMasavFfnrOke=
+aEAO0v66bVN08+ZtYUWj0GtdxYZW7DTKmK1Y5RhBfRUt6Xwcj8pRnWXdAxiSqY+znVZei8fe9Rg=
+EXEjjIwYbZwpqTnDFiVC1Ey5k=3D" target=3D"_blank" title=3D"Original URL: http=
+s://www.autodesk.com/education/student-software/university. Click or tap if=
+ you trust this link.">The
+ link to signup for AutoDesk Suite</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><br>
+<b><u><span style=3D"color:black">Friday, October 23</span></u></b><o:p></o=
+:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Diverse Voices in Insurance, Hosted by The H=
+artford</span></b><span style=3D"color:black"><br>
+<b>11:00am &#8211; 12:00pm | WebEx </b>Register </span><a href=3D"https://n=
+am02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fthehartfordinter=
+views.webex.com%2Fthehartfordinterviews%2Fonstage%2Fg.php%3FMTID%3De4fd4b66=
+43cb22ccfbe783c1801fe6abf&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637387194971270312%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DwPg21Ud2se%2Fe%2Fv=
+DvC2Yr%2Fuq4uhFBlO33zS6jXSTWo7w%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/thehartfordinterviews.webex.com/thehartfordinterviews/onstage/g.php?MTID=
+=3De4fd4b6643cb22ccfbe783c1801fe6abf" shash=3D"EHAAYF+bHeJO8uj1Ttvuim8qkuiS=
+m6QxUqjSF1Wx+WKvpr+cW6SQyPOCg9HV+j1Q6V5Q673VCMQlkMEwHonmLwXoxjyoPJ+8TbpDdJ7=
+BRyHsTb4h+UQcNT87MXO+hOja4y9GT9H2n1qJaywxYrSr6gthWyn+b3/hSmyhpx3sYJQ=3D">he=
+re</a><span style=3D"color:black">.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><br>
+Join us for a panel discussion focused on Diversity &amp; Inclusion in the =
+Insurance Industry.&nbsp; The panel will feature early in career profession=
+als from The Hartford. Panelists will provide insights on cultural experien=
+ces, transitioning from college to career,
+ the value of employee resource groups, career opportunities, and more! </s=
+pan><o:p></o:p></p>
+<div style=3D"mso-element:para-border-div;border:none;border-top:solid #F4F=
+4F4 1.0pt;padding:4.0pt 0in 0in 0in;background:white">
+<p class=3D"dateright" style=3D"mso-margin-top-alt:3.75pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;line-height:15.0pt;=
+background:white;border:none;padding:0in">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif"=
+><br>
+<b><span style=3D"color:black">U.S. Department of Homeland Security (DHS) S=
+cience and Technology Directorate, Professional Opportunities for the Stude=
+nt</span></b><span style=3D"color:black"><br>
+</span>The&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fwww.dhs.gov%2Fscience-and-technology%2Foffice-universit=
+y-programs&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc5489=
+2d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971=
+270312%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6=
+Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DPizifhdjM0m8%2FdaEZE4nHYqHv5clLv7=
+2wfey8FKwHFk%3D&amp;reserved=3D0" originalsrc=3D"https://www.dhs.gov/scienc=
+e-and-technology/office-university-programs" shash=3D"GQeheYqptd7bLqAOhOiHp=
+K75ESc2ztGkn1L3rz8xhD1vkPIoGYu0PGvtEuzHgjUrWh3eMfne6dE/nfu+CHOGXQHrb8UXDTqx=
+S1hCQR4rrzqe5P0jYMeR2GXhpD3QoXvWusbnsIdEK9LpaixIM/fv41if8AEOUBX6GOfz0twPK2g=
+=3D" target=3D"_blank">U.S. Department of Homeland Security (DHS) Science a=
+nd Technology Directorate Office of University Programs</a>&nbsp;sponsors t=
+he Professional Opportunities
+ for the Student Workforce to Experience Research Program (HS-POWER) for un=
+dergraduate and graduate students. HS-POWER is open to students majoring in=
+ a broad spectrum of homeland security related science, technology, enginee=
+ring and mathematics (STEM) disciplines
+ as well as&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Fwww.dhs.gov%2Fstrategic-planning&amp;data=3D04%7C01%7C=
+Jerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971280307%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&am=
+p;sdata=3DWNVFG990ocYaJe%2F45TmhXwhsct8DioUpe4WiK2O2rnc%3D&amp;reserved=3D0=
+" originalsrc=3D"https://www.dhs.gov/strategic-planning" shash=3D"AQ9JYVlk9=
+8bbf9RQQMIPTaEO98/GxA8SERLgc8E8nFodPhWBdwuLfx8ieybXEePlf24Ao4QiB1emqSCLzCEF=
+v+h+0Ca1YeU1owjKb8iX9F65PCsIpBhydyEo2mleEcYTOfXWNGGkUCf0u9Gi1KoqwQ7Rysjfb6+=
+zjwUJSHyptxA=3D" target=3D"_blank">DHS mission-relevant research areas</a>.=
+ For more information and to apply, click here:
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fbit.ly%2FHSPOWER20&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C241=
+38cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637387194971280307%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DJg7hFLwaHFDYf9adrsrIU=
+TXZK3DDGs%2BIGrX9WRgL54Q%3D&amp;reserved=3D0" originalsrc=3D"https://bit.ly=
+/HSPOWER20" shash=3D"FmqC+3wd2Edsa6wP/9MK9oefFKAcptSASzq66eZDmt3T+OdxF3KXmK=
+a/PA5qCrSj97CrBnrUIYm0nWem8IwyhbuNE/Uff4Ms95jVTH8Up0C+ppeyMvxBRQ2UNSprv1A8q=
+iOAB0/pr72VQYBk2npqF/nrMEE7pitQAkT/qhIHSKQ=3D">https://bit.ly/HSPOWER20</a>=
+<u><span style=3D"color:blue"><br>
+<br>
+</span><b><span style=3D"color:#1A1A1A">&nbsp;Saturday, October 24</span></=
+b></u><b><span style=3D"color:#1A1A1A">
+<o:p></o:p></span></b></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>Viva Volunteer<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b>9:00am - 12:00pm | <o:p></o:p></b></p>
+<p style=3D"background:white"><span style=3D"font-size:11.0pt;font-family:&=
+quot;Calibri&quot;,sans-serif;color:#1A1A1A">Viva Volunteer is UT Dallas' a=
+nnual service event. Hundreds of students, staff and faculty unite in servi=
+ce in order to serve others on Make a Difference
+ Day. In one morning, Comets travel to local nonprofits and serve in the sp=
+irit of making a difference in their community. This year, Viva Volunteer w=
+ill be going virtual! Comets will have the opportunity&nbsp;to virtually vo=
+lunteer for local nonprofits, as well
+ as contribute to national and global virtual volunteering platforms. This =
+event will take place on Microsoft Teams. Viva Volunteer will take place on=
+ Saturday, October 24 from 9:00 a.m.-12:00 p.m. Once registered, you will r=
+eceive more specific project details.
+ If you have already signed up to participate in Viva Volunteer with a stud=
+ent group, please do not also sign up for these&nbsp;service options. Gener=
+al registration is now open. Please register for a project below.<br>
+<b>Join us as we help transfer the Arolsen Archives</b> into an accessible =
+online archive that will allow researchers to find this information easily,=
+ but more importantly will allow families to find information about the fat=
+e of their relatives. This collection
+ contains millions of concentration camp and imprisonment documents from WW=
+II. We will be learning more about the archive and its historical context, =
+volunteering together, and reflecting on our impact.&nbsp; Register&nbsp;
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fforms.gle%2FiTABunGPBLoV5PX38&amp;data=3D04%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C0%7C637387194971290298%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiL=
+CJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DqjYhy8lX%2=
+FR13fHQYz63JBZhEQqPPbnzNkatou2ZOfwE%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://forms.gle/iTABunGPBLoV5PX38" shash=3D"LfWmv6BhSpYxjP3D6cfo5Wo9fXvlzjJ8=
+U8qKLndyfSTJ4BM1Y9xdBIEQYBdK4IHz7dRYCbZOu67jT/CirHGFAwrYHZrc+BEucslT0vsaBkl=
+KJGb9GnNkn4DjhSqcaK52GZk0z9gFjPoFlufsNccOuvspcM1PFABK9lD5om6naj8=3D"><span =
+style=3D"color:#C95100">Viva Volunteer - Every Name Counts</span></a><br>
+<b>Join us to create a series of thank you videos for UTD and local communi=
+ty members</b> who work hard to keep our communities safe and strong during=
+ this time! We will show our appreciation to these dedicated people and sha=
+re what a difference they make in
+ our lives during this challenging time. Register&nbsp;<a href=3D"https://n=
+am02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fforms.gle%2FheZ7=
+eeGF9pKSW2kb7&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc5=
+4892d70a08d87446dbf8%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194=
+971290298%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT=
+iI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DaU8koLeVkAk37UuwnHeYeRCvRg0rG4=
+P%2BxEVynXR7zZw%3D&amp;reserved=3D0" originalsrc=3D"https://forms.gle/heZ7e=
+eGF9pKSW2kb7" shash=3D"nR3qZ298qUgQlJmA4qh1AMyrduNQbOLJBvnTs89tESLS0Ed+/Nci=
+6pjuB1E/sZjpdeeW7slIKwkOKl7V13FlQJMMxEux5emUUyR3lALQkCvbDPo74mJEobnwxmxLZCo=
+/gULe1O2Krwet9TfOUJV5Jx+78YvXudO764J/YQtC3YA=3D"><span style=3D"color:#C951=
+00">Viva Volunteer - Thank You Videos</span></a><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"box-sizing: border-box;font-variant-ligatur=
+es: no-common-ligatures;font-variant-caps: normal;orphans: 2;widows: 2;-web=
+kit-text-stroke-width: 0px;text-decoration-style: initial;text-decoration-c=
+olor: initial;word-spacing:0px">
+<o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Need assistance with your job search? <o:p></o:p></p=
+>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormalCxSpMiddle" style=3D"margin-bottom:8.0pt;mso-add-spac=
+e:auto;line-height:105%;mso-list:l0 level1 lfo1">
+Student Last Name: A to F, contact <a href=3D"mailto:mas051000@utdallas.edu=
+"><span style=3D"color:blue">Mary Ann Chou Stewart
+</span></a><o:p></o:p></li><li class=3D"MsoNormalCxSpMiddle" style=3D"margi=
+n-bottom:8.0pt;mso-add-space:auto;line-height:105%;mso-list:l0 level1 lfo1"=
+>
+Student Last Name: G to N, contact&nbsp; <a href=3D"mailto:kxf170001@utdall=
+as.edu"><span style=3D"color:blue">Kori Farley
+</span></a><o:p></o:p></li><li class=3D"MsoNormalCxSpMiddle" style=3D"margi=
+n-bottom:8.0pt;mso-add-space:auto;line-height:105%;mso-list:l0 level1 lfo1"=
+>
+Student Last Name: O to Z, contact <span style=3D"font-size:10.0pt;line-hei=
+ght:105%;color:#1F497D">
+&nbsp;</span><a href=3D"mailto:axc169230@utdallas.edu"><span style=3D"color=
+:blue">Andrea Croasdale Woudwyk
+</span></a><o:p></o:p></li></ul>
+<p class=3D"MsoNormal"><span style=3D"color:black">Best regards,<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Jerry Alexander-Assistan=
+t Dean for Student Development<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Jonsson Career Services =
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">UT Dallas Erik Jonsson S=
+chool of Engineering and Computer Science
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.linkedin.com%2Fin%2Finternguy%2F&amp;data=3D=
+04%7C01%7CJerry.Teng%40UTDallas.edu%7C24138cf05dc54892d70a08d87446dbf8%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637387194971300291%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DCMET3zzDoDOnf73BhB6PMrjGf8Qp%2BDN8xyFLouJF5bU%3D&amp;re=
+served=3D0" originalsrc=3D"https://www.linkedin.com/in/internguy/" shash=3D=
+"GXGpnnF7QydMRi+11dfBqAg0KxNMMWKpQHQPBI91HdtkyMUIk6QhGv8nxTGh/gjfYLPCYsnTt+=
+zYRm1Mn79hIJs50GScF27eRuu0azIhMGaWS5f/ZFRALAuwbATlB/Ir23AvoqkHEVMGNJZ5F4hZM=
+3CBnFeepY1n9tJx9Aq1DRM=3D"><span style=3D"color:blue">https://www.linkedin.=
+com/in/internguy/</span></a><span style=3D"color:black"><o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:black">972.883.4373 (forwarded =
+to my home phone)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SN6PR01MB38055E70E683AD51D3384409821E0SN6PR01MB3805prod_--

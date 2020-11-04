@@ -1,0 +1,93 @@
+Received: from CH2PR01MB6070.prod.exchangelabs.com (2603:10b6:610:43::12) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 22:23:09
+ +0000
+Received: from CY4PR16CA0031.namprd16.prod.outlook.com (2603:10b6:910:60::18)
+ by CH2PR01MB6070.prod.exchangelabs.com (2603:10b6:610:43::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Tue, 13 Oct 2020 22:22:57 +0000
+Received: from CY1NAM02FT041.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:910:60:cafe::90) by CY4PR16CA0031.outlook.office365.com
+ (2603:10b6:910:60::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Tue, 13 Oct 2020 22:22:57 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.1)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.1; helo=mail-relay1-va2.blackboard.com;
+Received: from mail-relay1-va2.blackboard.com (69.196.241.1) by
+ CY1NAM02FT041.mail.protection.outlook.com (10.152.74.156) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 22:22:56 +0000
+Received: from fgprd-100946-205964-app006.mhint (fgprd-100946-205964-app006.mhint [10.5.5.153])
+	by mail-relay1-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09DMMZwD018901;
+	Tue, 13 Oct 2020 22:22:47 GMT
+Date: Tue, 13 Oct 2020 17:22:53 -0500 (CDT)
+From: "Stephen Perkins - sxp127930@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Stephen Perkins - sxp127930@utdallas.edu" <sxp127930@utdallas.edu>
+To: "2208-merged-CS3377001-SE3377001":;
+Message-ID: <1915659780.1548.1602627776294.JavaMail.bbuser@fgprd-100946-205964-app006>
+Subject: (MERGED) CS 3377.001 - SE 3377.001 - F20: Exam 2 Info
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1546_1938597298.1602627773088"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 22:22:57.0862
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 01772a73-a7df-40b4-2152-08d86fc68950
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132471013770902912;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT041.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 01772a73-a7df-40b4-2152-08d86fc68950
+X-MS-TrafficTypeDiagnostic: CH2PR01MB6070:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.1;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay1-va2.blackboard.com;PTR:mail-relay1-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 22:22:56.8863
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 01772a73-a7df-40b4-2152-08d86fc68950
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT041.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR01MB6070
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:12.8189877
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	ATY8qQDEXDw6x9H8v4JsEJSWMN5sNVT1iN78DS/0NOop3xZ0sK9BwMVStot/OD1EJ1AZX46iBtAPDRRzo28Uakrnr4IqML9PmA4+HMqOeMhiuYMSyF/qZ+wghVDfmOLhB5XIe+5SUM7l6M+a1mn8QvvvXhmJIlJ7X2lonyJUmMtXkCAXmmcfETsy4bXBQ1+7z5XSPrUxcTjnsAmFTuPjT2v/IfcgzL+GwDaFVpsLHZ8f6Nl2lAS4YxS/d3EmsQSuqIV6BW84GqFDs1n4RFalfmc0nPgBr4ROu+t6v7YlPOKEF9WEFtw8JcAU2HYr55Bkc827qwhe5+kBgX0RnSuM0Xht7Ka/GZ68nONHD3ALmpLB2M+SN00MeVFCfK3zC4EQsECyaK197csgCskk9J3D7RocDve19HH2W9urVQdzI6EJmrMj0/+hmgnNR4OPoiDf9AG3YfTdzYFiiIfMmMutnCOI4u/0zrURirtpFBp8inw1afcLfiZubpbZIxumlRoyLif0As0KwBIhnmfYxZ3GnrvsSBKOP7PfVRHvpFitVUgRmAwkYD6Q0nqdwL0iwmufkiE7hHaSWmYDTR3f0AEnI3ANEO97oGrKxxny9Soble+wy+RuxlHcACkx51+aoq7x/SaPfi+YG4oXRlZTGIPvz0ZZhLiqyKHar4gpClGGRwSkTiLllGUP7V26emufWKvVQhf/LHCrFARDc22iL7WKDyzeLCMtkvwcXV4d1jBZYJ9llDTFxOJ05aSC+QMk6J3HXm2JfqH9sv36j9K8x4ytbuaUyJr+nBODwGn3pA1skvD+7AHAbqyZBoDdW/9DVDEGqVjcaiDe2cvrSJewk/MidhS4tvqUL+tJWkJx3MVsmIiw4veYPOOUnVt485PEfild7U3QuBWhJW+LMfn80pF/IQRUl1b9OuG8KFVsXskkLM4=
+MIME-Version: 1.0
+
+------=_Part_1546_1938597298.1602627773088
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+           Hi all,     Exam 2 will become available for you Thursday at 10am.&nbsp; It will be in the course homepage Exams folder.&nbsp;&nbsp;&nbsp; If you are taking it in the lecture hall, the exam will start at 10am and&nbsp;you will have 75 minutes to complete.&nbsp; If you are taking with HonorLock, you may start the exam anytime between 10am and 8pm CST.&nbsp; Once started, you will have 75 minutes to complete the exam.     This is a note to let you know that backtracking WILL BE PROHIBITED.&nbsp; You must answer each question as it is presented to you.     Regards,     Dr. Perkins           
+------=_Part_1546_1938597298.1602627773088
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>  <body>   <div class="vtbegenerated">    <p>Hi all,</p>     <p>Exam 2 will become available for you Thursday at 10am.&nbsp; It will be in the course homepage Exams folder.&nbsp;&nbsp;&nbsp; If you are taking it in the lecture hall, the exam will start at 10am and&nbsp;you will have 75 minutes to complete.&nbsp; If you are taking with HonorLock, you may start the exam anytime between 10am and 8pm CST.&nbsp; Once started, you will have 75 minutes to complete the exam.</p>     <p>This is a note to let you know that backtracking WILL BE PROHIBITED.&nbsp; You must answer each question as it is presented to you.</p>     <p>Regards,</p>     <p>Dr. Perkins</p>     <p><br></p>   </div>  </body> </html>
+------=_Part_1546_1938597298.1602627773088--

@@ -1,0 +1,282 @@
+Received: from CH2PR01MB6024.prod.exchangelabs.com (2603:10b6:610:44::26) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Wed, 21 Oct 2020 22:31:11
+ +0000
+Received: from CY4PR12CA0030.namprd12.prod.outlook.com (2603:10b6:903:129::16)
+ by CH2PR01MB6024.prod.exchangelabs.com (2603:10b6:610:44::26) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Wed, 21 Oct 2020 22:31:09 +0000
+Received: from CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:129:cafe::38) by CY4PR12CA0030.outlook.office365.com
+ (2603:10b6:903:129::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Wed, 21 Oct 2020 22:31:09 +0000
+Authentication-Results: spf=pass (sender IP is 70.42.227.152)
+ smtp.mailfrom=centurylink.com; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=centurylink.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of centurylink.com
+ designates 70.42.227.152 as permitted sender)
+ receiver=protection.outlook.com; client-ip=70.42.227.152;
+ helo=prodmail4b.successfactors.com;
+Received: from prodmail4b.successfactors.com (70.42.227.152) by
+ CY1NAM02FT009.mail.protection.outlook.com (10.152.75.12) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Wed, 21 Oct 2020 22:31:08 +0000
+IronPort-SDR: cUP3BzYnLWMiNJiR3dnl68kKuWExC0LpZgsQLOS9Ia/bfRVKrCMWBeTiHfX8P6HB8zyWPxyrHh
+ /XBplNydWU0bY7LELzywOqlrfBzZLgYOS/bZDqeHshlgZeeRCvZJmk4EiSzXFmsFrRyQDDJZDn
+ b7RafMIQXQt99rVJaa3R4stwkzchExpE6vHISjoPLNgafzPqSZBDCTQTTI9ExXNErBRHbS8oSt
+ 5k5aVnnkdl5i3iOPg5l/6KObSb6DFq+r5I2a+32NmAxUPx5JTd7YPhRQn+QEXMqcG8/1zEBhGo
+ xUo=
+Received: from pc4bsfapi45t.phx.sf.priv (HELO pc4bsfapi45t) ([10.4.41.60])
+  by prodmail4b.successfactors.com with ESMTP; 21 Oct 2020 15:31:07 -0700
+Date: Wed, 21 Oct 2020 18:31:06 -0400 (EDT)
+From: "no-reply@centurylink.com" <mylink.admin@centurylink.com>
+Reply-To: "no-reply@centurylink.com" <mylink.admin@centurylink.com>
+To: Jerry Teng <jerry.teng@utdallas.edu>
+Message-ID: <538515144.264.1603319466015.JavaMail.sfuser@pc4bsfapi45t.successfactors.com>
+Subject: This Could Be the Start of an Amazing Career! Application
+ Submission for 234688 - Intern - Information Security - Summer 2021 at
+ Lumen!
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Return-Path: mylink.admin@centurylink.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Oct 2020 22:31:09.2107
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e1c9db9c-b4ce-4566-5df9-08d8761101f2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: e1c9db9c-b4ce-4566-5df9-08d8761101f2
+X-MS-TrafficTypeDiagnostic: CH2PR01MB6024:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Antispam-ScannedUrls: 8101238204632811494
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:70.42.227.152;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:prodmail4b.successfactors.com;PTR:prodmail4b.successfactors.com;CAT:NONE;SFS:(4636009)(286005)(6916009)(26005)(15650500001)(86362001)(7636003)(7596003)(336012)(3450700001)(22186003)(9686003)(58800400005)(356005)(166002)(8676002)(1096003)(83380400001)(40822002);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Oct 2020 22:31:08.9928
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e1c9db9c-b4ce-4566-5df9-08d8761101f2
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR01MB6024
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1172741
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UkVXMm9kdDhpK3hLamg0UEJtNTVjR1NsVFRWckUxRHFXak1lT3dSRmtFWXZN?=
+ =?utf-8?B?MGt6bEtueXRPbEFZdzZLOS8rd3hQalFXTW5Hdld0TU8wT3lONzdPS3JXY1B3?=
+ =?utf-8?B?NEx3aFJ0WG5HR2dnc2hDR3NDMGRsRmxERWVCdGRoN3hoQUdEbloyR0pqUm1z?=
+ =?utf-8?B?Y1hYWGdUdmEwQkxMWG9HSnIvN1BtN2thY1RjcUplS0VZWkdKSVh6QTlGOGdH?=
+ =?utf-8?B?M3pudE1MbnQ5cEs2UzVnd25UVzc4U2lpQ2VLRUQ3dHlRbE5Wdm4wYmFlYTd0?=
+ =?utf-8?B?akN6MUdvZG9BeE1WankvejdZa2dkajNaSU14VEFCOThiRlplbTRNdzNUWUlM?=
+ =?utf-8?B?M21vT1JJdlVMV1IxZTliL0RsZDU2bFlIcVlWdU9HeG9SdkdEQThTai8wNWtD?=
+ =?utf-8?B?dnhCOThFd2VMNlJnKzd5RVBGT09FUGpwMUFDbzF4a2dVcTJPT25HUzVEL2xL?=
+ =?utf-8?B?MXQrN3BMK2JLdXduZTMrZ0p0MUYxbkdML3U5ZEsyRnl0cUIvQ3dITDNrdk55?=
+ =?utf-8?B?RkhPYVJPQTdwZGZDcEZSb1ZpZi9nbWJCWDZpelRBNGJ2cVdLQkhybnJNREJC?=
+ =?utf-8?B?eWRGQkw0SlZrU1F2QWpGNDczMm1lR0dGQnNDZlJFNVU4NnRKOTJTWUpwWXRO?=
+ =?utf-8?B?ZHVEeWdjYVJUczVGNjIwODhTaUdjVmRHdU9IcXgvQWF1YUJTSEhTN2FsclFp?=
+ =?utf-8?B?WTFpa1owK1BjK1RTMkEvR2hmU0NEQm5aS01RZ0RUaGkwMjg3ejJJTzMzNTFZ?=
+ =?utf-8?B?YXVBd0ZuOWd5YnBZU2RvV0RnNjlQamR4VVlodUNWNUo2dkhxYzFqUTNSRm9O?=
+ =?utf-8?B?UndseXBWNzNEYW5aRjNKcVpNUHdBTlB6bVFFUXVqaDRxWFZpTXp3WjV3dUpP?=
+ =?utf-8?B?Yzc3K3poQU4rcy9GVHpvU3NQdHBmR0xaSW9UMlprZ2NEVU8vNy9QZ2xkNFdU?=
+ =?utf-8?B?U25nMlBGM3BNSE9pdGQ2TFJFcitTRDFjQjIwRis4Z2FUS3dyVEF1MXJhTWNN?=
+ =?utf-8?B?Ylh5Tmw0L05kSUZ2MlZiNEc3alZSZ3p2cmJrYmJ3dk1wM2NlUmtEUXFjeWw3?=
+ =?utf-8?B?alc5d0s1OEtvamltVWlMa2RQK2hpTlV0YVBYbEdGRysyMUlkdmZIb29PMjJ0?=
+ =?utf-8?B?NHEwT0g0QjIvWkRtaUlFeG5qaVlGSFplc2xZNmhOUWtlSFVrendzVnFBOFFm?=
+ =?utf-8?B?VlQ4Mlo4bndMT2FabWVZNlpzWmxLbjRndklIZU9FcmtXZ0ovdGVKdFR2TU9q?=
+ =?utf-8?B?Yll1SUcxUGV4QlY5NmxnY1ZZTW14Yk1QaUZDRzNYUk9iT1lrL1gzREtHdks3?=
+ =?utf-8?B?MUNhWHhnUlY0R2NzSFV5NEhHL01oeTE5VWFwa1h5dVd2MCtPTExWbnBaUzBY?=
+ =?utf-8?B?ZmUzYnhld2k0b29tQStQZkVzejB6YndTZlZZVE5sUVRlM3MzemlHbDliZTZE?=
+ =?utf-8?B?d05lSXkrZVllcXBZUzE3VUdhZHZNTHpGdXlyS09hMXQzQWxtMlBHaTNEeHZY?=
+ =?utf-8?B?N0FtcWpMeEszMGI0S2I2SDJVd0VzaVo5ODVmWWR4NEdla1J4cVpCakF3MHN3?=
+ =?utf-8?B?M1NWWnBUeThZcGFmZkVuMGpJbi93OWlFVzRkYlZuTytjdUU4Yklaa3RoNEdI?=
+ =?utf-8?B?OVh4UkRpQjgvNCtBSjh5MnpoYVZCdW05cjhLQjBOYjgrOGxtOC9TR1VKTzVh?=
+ =?utf-8?B?K1FXcGhyYUVHRW5LeXdEMjBNMFdCVmsxSlU1anN6THIvR3VUME9UNHRpam5T?=
+ =?utf-8?B?MDRYa2dFUE9lS3BBWGNqT1hWaE5xMGFScytLVm9nck9sWFNGZkVPUlF6RlV5?=
+ =?utf-8?B?WTNNUVJIWDJVLzFVN0Z0RW8zVTZMNU94WkFoOXhmazJLbkJkTEd2dWk3V3px?=
+ =?utf-8?B?Sm04SHFQcjdRTVRpMkhCK2hzTUx0am5WeVpxbkw2dXNydy9FVlNjbGVhUlRM?=
+ =?utf-8?B?c0pXUDNTTTkxOHVzNEgxOGNpa3dvd09UbmVvV0ZkeUZpVmRCRDNKYWtqcWNI?=
+ =?utf-8?B?RTN4aThBN0VkK1pUMEk0ME9RbWpWS3JtdGZXdFpWOG5qRDRzOU1zaHIvd1ZV?=
+ =?utf-8?Q?OSVy/t?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+><img src=3D"data:image/png;base64,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3D">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Dear Jerry&nbsp;,&nbsp;</p>
+
+<p>Thank you for your interest in the&nbsp;Lumen&nbsp;position of Intern - =
+Information Security - Summer 2021 on requisition number 234688.&nbsp;</p>
+
+<p><strong>While we review the incoming resumes for this role, we invite yo=
+u to get to know us better!&nbsp;</strong></p>
+
+<ul>
+	<li>
+	<p><strong>More Opportunities Than Ever Before!&nbsp;</strong>=E2=80=93&nb=
+sp;Lumen is guided by our belief that humanity is at its best when technolo=
+gy advances the way we live and work. With 450,000 route fiber miles servin=
+g customers in more than 60 countries, we deliver the fastest, most secure =
+global platform for applications and data to help businesses, government an=
+d communities deliver amazing experiences.&nbsp;&nbsp;</p>
+	</li>
+	<li>
+	<p><strong>You are Now a Member of our Talent Community!&nbsp;</strong>=E2=
+=80=93&nbsp;You will be the&nbsp;first to get exclusive updates on our new =
+career opportunities and engaging content about how&nbsp;Lumen&nbsp;is&nbsp=
+;using technology to advance the way we live and work.&nbsp;</p>
+	</li>
+	<li>
+	<p><strong>Visit Us Often!</strong>&nbsp;=E2=80=93 The best way to find ou=
+t about new opportunities is to visit our&nbsp;<a href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fjobs.lumen.com%2F&amp;da=
+ta=3D04%7C01%7Cjerry.teng%40utdallas.edu%7Ce1c9db9cb4ce45665df908d8761101f2=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637389162709331693%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C3000&amp;sdata=3D0D3ouHlptV44J%2Bt3XV9pwXQF6jeeLH%2BfFRANI6iXPbA%3D=
+&amp;reserved=3D0" originalsrc=3D"https://jobs.lumen.com/" shash=3D"DgfjFMP=
+ZicVfleBiDp1jAL6TPWKr/CgENT7hlvnssHSavl6QxSICsyHk9p1lwKW+HLr9zFmMk7Vf+Aalo6=
+xkjekd4ylzY5nGjJqG3OlnJ7BZ1yfI8DGHzit9otJHvmVbKRCMTmEM3dWhGqaVJXKepENVpg5i/=
+NVAIRA6OLpKR0c=3D" target=3D"_blank">careers site</a>&nbsp;regularly.&nbsp;=
+Even better =E2=80=93 set up a personalized job alert from our Careers Site=
+ to notify you of new openings!&nbsp;</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Please visit the&nbsp;<a href=3D"https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Fjobs.lumen.com%2F&amp;data=3D04%7C01%7Cjerry.t=
+eng%40utdallas.edu%7Ce1c9db9cb4ce45665df908d8761101f2%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C1%7C637389162709331693%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=
+=3D0D3ouHlptV44J%2Bt3XV9pwXQF6jeeLH%2BfFRANI6iXPbA%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://jobs.lumen.com/" shash=3D"DgfjFMPZicVfleBiDp1jAL6TPWKr/=
+CgENT7hlvnssHSavl6QxSICsyHk9p1lwKW+HLr9zFmMk7Vf+Aalo6xkjekd4ylzY5nGjJqG3Oln=
+J7BZ1yfI8DGHzit9otJHvmVbKRCMTmEM3dWhGqaVJXKepENVpg5i/NVAIRA6OLpKR0c=3D" tar=
+get=3D"_blank">careers site</a>&nbsp;and click on the Candidate Profile lin=
+k at the top&nbsp;to&nbsp;view/edit your candidate profile or&nbsp;check th=
+e status of your application.&nbsp;&nbsp;</p>
+
+<p>Sincerely,&nbsp;<br>
+Lumen&nbsp;Talent Acquisition Team&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>We enjoy talking to our candidates as much as we value our customers, bu=
+t we may not be able to speak directly with you about this role.&nbsp;If yo=
+ur skills align closely with the role, a member of our team will reach out =
+to engage in further conversation that will take you to the next step towar=
+d rewarding career opportunities at&nbsp;Lumen!&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em>Please do not reply to this message.&nbsp;This mailbox is not monito=
+red for responses.&nbsp;</em></p>
+
+<p>&nbsp;</p>

@@ -1,0 +1,319 @@
+Received: from BN6PR01MB3281.prod.exchangelabs.com (2603:10b6:404:d8::22) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 22:40:32
+ +0000
+Received: from MN2PR13CA0028.namprd13.prod.outlook.com (2603:10b6:208:160::41)
+ by BN6PR01MB3281.prod.exchangelabs.com (2603:10b6:404:d8::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Thu, 15 Oct 2020 22:40:29 +0000
+Received: from BL2NAM02FT022.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:160:cafe::94) by MN2PR13CA0028.outlook.office365.com
+ (2603:10b6:208:160::41) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.8 via Frontend
+ Transport; Thu, 15 Oct 2020 22:40:29 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ BL2NAM02FT022.mail.protection.outlook.com (10.152.77.153) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 22:40:29 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 15 Oct 2020 17:40:19 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 15 Oct 2020 17:40:19 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 576C6C000060; Thu, 15 Oct 2020 17:40:19 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (smtp.utdallas.edu [10.182.71.121])
+	by lists.utdallas.edu (Postfix) with ESMTP id 14813C000052
+	for <ecs.all@lists.utdallas.edu>; Thu, 15 Oct 2020 17:32:02 -0500 (CDT)
+Received: from utdex11.campus.ad.utdallas.edu (10.180.14.116) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 15 Oct 2020 17:32:01 -0500
+Received: from oitpintfpm701.utdallas.edu (10.182.71.238) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 15 Oct 2020 17:32:01 -0500
+Received: by oitpintfpm701.utdallas.edu (Postfix, from userid 100001)
+	id C4F8C169D; Thu, 15 Oct 2020 17:32:01 -0500 (CDT)
+To: <ecs.all@utdallas.edu>
+From: <engineering@utdallas.edu>
+Content-Type: text/html; charset="US-ASCII"
+Reply-To: <Lucien.Finley@utdallas.edu>
+Message-ID: <20201015223201.C4F8C169D@oitpintfpm701.utdallas.edu>
+Date: Thu, 15 Oct 2020 17:32:01 -0500
+X-Validation-by: sirjohn@utdallas.edu
+Subject: [ecs.all] Registration Confirmation : 2020 TxACE Symposium
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1367
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/20201015223201.C4F8C169D%40oitpintfpm701.utdallas.edu>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5202789@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 22:40:29.6919
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 59d87722-afe6-4a63-8369-08d8715b518a
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT022.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 59d87722-afe6-4a63-8369-08d8715b518a
+X-MS-TrafficTypeDiagnostic: BN6PR01MB3281:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:3826;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 22:40:29.5960
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 59d87722-afe6-4a63-8369-08d8715b518a
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB3281
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5633657
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?6AcKgHlqrORmzcvW/COw7vkxz28Bv8THyu6iGIO3h2gs2ycGZ0T4LUhlwfGS?=
+ =?us-ascii?Q?wsbIDDm6WbwVbXSfG7nTCbiPZYSG7ImnhTerdWR8KNaQTGreD+pPWUJFOONH?=
+ =?us-ascii?Q?RB+l6qMYqd+WjGE/XgviNqbmX7DTtrlZZj3V60V2I68BLbNADhS7evlsD3Ol?=
+ =?us-ascii?Q?fXTDQrfiLCzIK9MqYUD0UI9bu15TFrj5ouHl8FtSpVNBCqlKMWV1LzESsb2a?=
+ =?us-ascii?Q?fTkWk5QHCTUFaGLDVCzz+HZFNEWKmVwqPARokt7FyuY6Iym+seUtPYLn9NTa?=
+ =?us-ascii?Q?Rjccwkd3eagcyesMaPENsrH9QReqieXKx5ooVuyyaNnMH16JueEF0ESkXN/y?=
+ =?us-ascii?Q?7wHU3TpsTwKuaZzW8dEVoYl3Wj8YHrlMJ2f1k+6Ggsrh29kS/3d3kKrtiK5j?=
+ =?us-ascii?Q?pJ1xssg3qZPqu7W+sx10IgsITjFCQRyt0NFjUFo+D6n3ifBnNwsK0l+YgSnn?=
+ =?us-ascii?Q?T0ed99bX4DupW7osNsjzu/kqqqKZFArrcbXSA871MFluYiiWo3Kq8KokTkJX?=
+ =?us-ascii?Q?e6+/WkZJmqJBzwGwKyvofM/ZbMAOq0lq27ifuug2reaZHa/RH75rjSznvD02?=
+ =?us-ascii?Q?whv6dYyCAoixr4CzXtDFZ2eabMPzkoz8QcpkNcsbvMVLoHpEkO46np7RKkG3?=
+ =?us-ascii?Q?qWrbfw3ERhCZkQRmYYBmQPkM9Kk7cCIwKC6LMzljiRvG9rMp7O2obuqLnjGc?=
+ =?us-ascii?Q?EMDS5ebmMmt+jm8BLUL0hKsFja+35pY+J6VQ3HvUnipBielFQb4v6TzMMJQP?=
+ =?us-ascii?Q?dgfOMIbgelbl93IZ4yAx+/CLYFM+e/rwSVtRhOn+hNm1xI2iNDbIQfQqdKM4?=
+ =?us-ascii?Q?HA35RTgiX5eUo4eoH+IuwLS0NULRY07xDvzEyQbNlJx43nzckxOpQhuTLDMF?=
+ =?us-ascii?Q?5OW0wGsDFgWxDf7+9f7TK75z5K0OMv085NJhOvkaVyUn/oRtSgZuB6f6T11L?=
+ =?us-ascii?Q?o1U7C39m1NerPtC/deSyzrKeALF9AvQSU0WhUelafLNub5+aRbPyCxJv5yl8?=
+ =?us-ascii?Q?4AXz55Xw9MbMlfexCi+Ss5Z4y3U61vYtzY6IJvn28OiSarh8uF1nsdTyl470?=
+ =?us-ascii?Q?GHBAJ7tQbMNeW5zYKOyUB2WYZD7w46bw7m2lmtrJ40AZXl0qhBGorsKppoPw?=
+ =?us-ascii?Q?8j3DxRli6M9yyH28esylxPdhCKh6xnb4gDxjzvHAr3YwGaDXcBGhHs8mLchb?=
+ =?us-ascii?Q?nODAvk73U2uIBUCEoVE6a3HalolNKGr4fR9Y3bLVKozWPsZ4MlFmQQ+jNNeZ?=
+ =?us-ascii?Q?dwUG6zCfIdGbqPlGS8Yd12p6pPo6SRTZb/aPgFifY2gCMqfEJy38KFbS6NpU?=
+ =?us-ascii?Q?75detT+GysZCU+zR4cAcqT+UdMO6Hx2o7EmkoR7z1xLjDMRofg2x45c75fBw?=
+ =?us-ascii?Q?xRge5YfAhdmvg7Vs0M+toKnXVrR+C72aPyhCWGLmwKghGwJ1WQ=3D=3D?=
+MIME-Version: 1.0
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <script src="https://www.utdallas.edu/websvcs/shared/jquery-1.8.0.js"></script>
+   
+
+   <title>2020 Texas Analog Center of Excellence Symposium - The University of Texas at Dallas</title>
+	<style type="text/css">
+	    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+/* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0;}
+    table{border-collapse:collapse !important;}
+    body{margin:0; padding:0; min-width:100%; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration: none;}
+    .appleBody2 a {color:#ffffff; text-decoration: none;}
+    .appleBody3 a {color: #999999; text-decoration: none;}
+    .appleBody4 a {color: #818179; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+    .appleEvents a {color: #404141; font-weight:bold; text-decoration: none;}
+	table[class="responsive-table"]{width:600px !important; height:auto !important;}    
+		
+	
+
+	@media screen and (max-width: 600px) {
+	table {width:100% !important;}
+	img{ max-width: 100% !important; height:auto !important;}
+	img[class="mobile-hide"]{display: none !important;}
+	td[class="body-copy"] {font-size:17px !important; line-height:24px !important;}
+	td[class="body-header"] {font-size:20px !important;}
+	table[class="responsive-table"]{width:100% !important;}
+	}
+	
+    </style>
+</head>
+
+<body style="margin:0; padding:0;">
+
+
+<p style="text-align: center; font-family:Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold;  color: #666; margin:10px 0 10px 0;"> Having trouble viewing this email? View it in your <a href="https://www.utdallas.edu/evites/txace/2020/txace-symposium-2020/register.html" style="color:#008542;font-weight:bold;">browser</a>
+	<br>
+<img src="https://www.utdallas.edu/evites/txace/2019/txace-symposium-2019/images/txace-header.jpg" alt="Texas Analog Center of Excellence" style="height: 40pt;margin-top:25px;"> </p>
+
+
+<table bgcolor="#c75b12" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+    <td>
+    
+    <table bgcolor="#c75b12" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tr>
+    <!--<td align="center" style="padding: 20px 0px 20px 0px;font-family:Arial, Helvetica, sans-serif; color:#ffffff; background-color: #ffffff; font-size: 20px; text-align:center; font-weight:normal; letter-spacing:4px;" bgcolor="#ffffff">-->
+	<!--<img alt="The University of Texas at Dallas" src="https://www.utdallas.edu/evites/txace-symposium-2018/images/txace-header.jpg"  border="0" style="font-family: Georgia; color:#ffffff; background-color: ffffff; font-size: 20px; text-align:center;"/ >-->
+    </td>
+    </tr>
+   </table>
+    </td>
+    </tr>
+    </table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="8px" style="table-layout: fixed;">
+    <tr>
+    <td bgcolor="#69BE28" style="height:35px; color:white; text-align: center; font-family:Arial, Helvetica, sans-serif; letter-spacing: 6px; font-size:1.2rem;">
+		
+    </td>
+    </tr>
+    </table>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;">
+    <tr>
+    <td bgcolor="#024941" align="center">
+    <table class="responsive-table" border="0" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+    <!--<td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>-->
+    <td class="body-copy" bgcolor="#024941" align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:15px; padding:15px 30px 15px 30px; line-height:22px; ">
+     
+    <!--<br /><span class="body-header" style="font-size: 26px; color:#ffb612"><strong><a href="https://utdallas.qualtrics.com/jfe/form/SV_6zNAmSE3ylcPHHn" style="color:#ffb612; text-decoration:none;"><u>Register Now</u> </a></strong><br><br>
+ <span style="color:#69be28;"><a href="https://engineering.utdallas.edu/engage/events/txace-symposium-2018/" style="color:#69be28; text-decoration:none;">2018 Texas Analog Center of Excellence Symposium </a></span></span>-->
+
+<a href="https://txace.utdallas.edu/txace-2020-symposium/"><img src="https://www.utdallas.edu/evites/txace/2020/txace-symposium-2020/images/TxACE-Virtual-Symposium-2020-eVite-Art-large.jpg" height="auto" width="600" alt="Texas Analog Center Virtual Symposium" style="margin-bottom:20px;"></a>
+<br>
+   <span style="font-weight:800; font-size: 35px; color:#FFFFFF;margin-top:20px;">October 19, 2020<br>
+	
+   <!--<a href="https://www.utdallas.edu/directions/davidson-auditorium/" style="color:#69be28; text-decoration:none;">Davidson Auditorium</a>, The University of Texas at Dallas<br /><br />--></span><br>
+   <span style="font-weight:400; font-size: 12px; color:#FFFFFF; letter-spacing: 3px;text-transform: uppercase;">Erik Jonsson school of Engineering and Computer Science</span>
+<br><br>
+		<a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.qualtrics.com%2Fjfe%2Fform%2FSV_9RHNFsytIAtnJlj&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C59d87722afe64a63836908d8715b518a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383984320983895%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3KV%2F1fTPTsLvW%2FUEkFGMeY9opszPiDxkBIdU7DWn2%2Bc%3D&amp;reserved=0" originalsrc="https://utdallas.qualtrics.com/jfe/form/SV_9RHNFsytIAtnJlj" shash="c84Lmz4oYvOfrpjgp+bT4Xq6gnl2qBSrI4vkdSAaENE8cMwlDmLZzOORUegpxDbEEAzrrDFAnon0qhhkHdMM5jm7Q6mBu3lxyRISbVQSf6e939QESMNp0lviYVQDWbVXWOX14yiKZ0bakVh/v3aHhHON9El7277x6gWNPd7H3HU="><img src="https://www.utdallas.edu/evites/txace/2020/txace-symposium-2020/images/Register.PNG" height="52" alt="" style="margin-bottom:20px;"></a>
+		<br><br>
+		
+		
+
+<div style="width:100%;">
+<span style="font-size:1.07rem; color:#FFFFFF;">
+	The symposium will feature a keynote presentation on COVID-19 testing from an IC designer's perspective, a panel session on IC design in machine learning era, and a <a href="https://centers.utdallas.edu/txace/txace-2020-symposium/2020-txace-symposium-call-for-posters/" style="color:#FFFFFF; text-decoration:underline;">poster session</a> featuring TxACE research. <!--The keynote will be presented by Dr. Arjang Hassibi, Founder and CEO of Insilixa.--><br><br>
+<span style="font-size: 20px"><strong>Keynote Speaker</strong></span><br>
+	<span style="font-size: 18px">Dr. Arjang Hassibi, Founder and CEO of InSilixa</span><br>
+
+	<span style="font-size: 18px"><strong>Keynote Title</strong>: Mass-deployable Molecular Diagnostics (MDx), including COVID-19 Testing: IC Designer Perspective</span><br><br>
+	
+	<strong>Panel Organizer</strong>: Dr. Pavan Kumar Hanumolu, Professor at University of Illinois at Urbana-Champaign<br><br><br>
+
+	<!--<span style="font-size: 20px"><strong>Other Invited Speakers will include</strong>:</span><br />
+<strong>Javier Elenes</strong>, Silicon Labs <br />
+<strong>Mikko Hakkarainen</strong>, Lutron  <br />
+<strong>Takamaro Kikkawa</strong>, Hiroshima University<br />
+<strong>Ali Niknejad</strong>, UC Berkeley <br />
+<strong>Lynn Petersen</strong>, Office of Naval Research<br />
+<strong>Hoi-Jun Yoo</strong>, Korea Advanced Institute of Science and Technology
+
+<br />-->
+	<!--
+   <strong>Rich Templeton</strong> &#8212; Chairman, President and CEO, Texas Instruments Inc. <br />
+
+  <strong>Ram K. Krishnamurthy</strong> &#8212; Sr. Research Director, Intel Labs <br />
+    
+  <strong> David Wentzloff</strong> &#8212; Associate Professor, University of Michigan<br />
+ 
+  <strong> Chris Mangelsdorf</strong> &#8212; Engineering Fellow, Analog Devices Inc.<br />
+ -->
+ <br>
+  
+ 
+  Complete details are coming soon. Questions? <br>
+  Please contact <a href="mailto:Lucien.Finley@utdallas.edu?subject=TxACE Symposium 2019" style="color:#FFFFFF; text-decoration:underline;">Lucien Finley</a>.<br><br> </span>
+	</div>	
+		<br>
+		<span style="font-size:1rem; color:#FFFFFF">800 W. Campbell Road, Richardson, Texas 75080-3021</span>
+
+    </td>
+    </tr>
+	<tr><td></td></tr>
+    
+    </table>
+    </td>
+    </tr>
+    </table>
+    
+    
+    
+    
+   <!-- </td>
+    </tr>
+    </table>-->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffb612" height="0">
+ <tr>
+    <td>
+    </td>
+    </tr>
+    </table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+    <td bgcolor="#c75b12">
+    <div align="center" style="padding: 0px 15px 0px 15px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="600">
+
+		<tr>
+    <td align="center" style="padding: 20px 0px 20px 0px;" bgcolor="#c75b12">
+    <a href="https://www.utdallas.edu/">
+		<img alt="Erik Jonsson School of Engineering and Computer Science at  The University of Texas at Dallas" src="https://www.utdallas.edu/evites/txace/2020/txace-symposium-2020/images/UTD-logo-crisp.png" border="0" style="text-align:center;">
+	</a>
+    </td>
+</tr>
+
+    </table></div>
+    </td>
+    </tr>
+    </table>	
+
+</body>
+</html>
+

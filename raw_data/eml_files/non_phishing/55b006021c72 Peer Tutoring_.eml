@@ -1,0 +1,155 @@
+Received: from DM6PR01MB5177.prod.exchangelabs.com (2603:10b6:5:e::12) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 17:59:01
+ +0000
+Received: from DM5PR20CA0035.namprd20.prod.outlook.com (2603:10b6:3:13d::21)
+ by DM6PR01MB5177.prod.exchangelabs.com (2603:10b6:5:e::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Fri, 23 Oct 2020 17:58:58 +0000
+Received: from CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:13d:cafe::d) by DM5PR20CA0035.outlook.office365.com
+ (2603:10b6:3:13d::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 17:58:58 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.1)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.1; helo=mail-relay1-va2.blackboard.com;
+Received: from mail-relay1-va2.blackboard.com (69.196.241.1) by
+ CY1NAM02FT027.mail.protection.outlook.com (10.152.75.159) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 17:58:58 +0000
+Received: from fgprd-100946-205964-app009.mhint (fgprd-100946-205964-app009.mhint [10.5.10.139])
+	by mail-relay1-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09NHpWVk014942;
+	Fri, 23 Oct 2020 17:57:56 GMT
+Date: Fri, 23 Oct 2020 12:52:29 -0500 (CDT)
+From: "Leszek Kisielewski - leskay@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Leszek Kisielewski - leskay@utdallas.edu" <leskay@utdallas.edu>
+To: "Sandbox_Math_Lab":;
+Message-ID: <1874668963.12258.1603475554192.JavaMail.bbuser@fgprd-100946-205964-app009>
+Subject: Peer Tutoring: CHEM 2323 Exam 2 Review Saturday
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_12256_1776146533.1603475549600"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 17:58:58.3068
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ccddb00c-2f7d-4592-ae27-08d8777d50cb
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132479495383098187;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ccddb00c-2f7d-4592-ae27-08d8777d50cb
+X-MS-TrafficTypeDiagnostic: DM6PR01MB5177:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-MS-Exchange-Transport-Forked: True
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.1;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay1-va2.blackboard.com;PTR:mail-relay1-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 17:58:58.0619
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ccddb00c-2f7d-4592-ae27-08d8777d50cb
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource: CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5177
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.7863234
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	DDYMHtSVObjIAgswuzTj8uE01MWTzZ+nhGZdNi1aR9YaEw3ks5pBDQ8A0Yi8PkbdjJtI556zRhwCHIuI5ktI7chNH15YJRpkhNDglCQuwfvhT2qNebhR7ftBB8PTsSPMpwoISiJk017yufchbO5Nb741Thx3j+Qc1TiwkTRP6j5R0xZzMy+A0m5Pi+lbjtLFxJPg/L30MWNAtiQFpP+CB/8xs+3OjsuyDyf9CKUMnHgVarvf6eDk03khLhw5N0uxoX91WFxWm0lKUnKkSACbEUk8sLUXG4xCbnFCbLDQjXX8vT123HMEFqeR+zFH6ZpKyFLgaXgLhs1DUjIQbJdONCI+SV7a93j4Jnwf+JRlBdzdwsIxQldHHL0381Q6Hrxt18DEJ28kzKq4TVZbq0oCiUY9jurkLjToF1vrIbxinKqtJocBukX7ogal12MRpKYGhe9gUkmAgjZW8nisAJVIj0cWsiLgqqALIO4IeuWo3az/pehzcR8/1pp6h6l7zoB+nyE+VkA02KALpqBI2EoYe9frQJ2NImSVOJ8eH2eFIU8IIGE0mZ4qNOF4zNtVp6z6AQRv61NRfm7vBVwrOMQyGYO+ITESTVR6+G6vO53u9KOj9dala7bZECamT2KzWzkAzd0Wkcxs8lpsRqWV8lEMCMkYzmMZrCb0LOZSfPMXUxlesH+WIoTXmcd+KudOsL8/3pcmKeQdy+KS74VkstWF+X+Lm4m5SG6u9fGCYVjASHnVmG7Y16F9s44Kq/5xZE6+qb9t4PDjGf0op4nyJyrtnIPDPSFyQZXh5V3PfYAf3z8cYjnEq2wlh2H8ARNrxjgsjrmDdq+QTFSR2TUpesES/jpQ8WIuT3tLgb4cmVN6zUTysyWwokPqghP11f8CVW8ifHRVboy1G3ptHCU2NyK7MzddpuXBJ1Ozc66645AzTEs=
+MIME-Version: 1.0
+
+------=_Part_12256_1776146533.1603475549600
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+           &nbsp;     &nbsp;     EVENT:&nbsp;CHEM 2323 Exam II Review     D=
+ATE:&nbsp;Saturday October 24th     TIME:&nbsp;10:00 am - 1:00 pm     Locat=
+ion:&nbsp;Elearning&nbsp;Peer Tutoring     The Student Success Center is ho=
+sting an optional CHEM 2323 Exam Review for your upcoming&nbsp; exam.      =
+                    Sign in to elearning.utdallas.edu        Select =E2=80=
+=9CPeer Tutoring=E2=80=9D under =E2=80=9CMy Organizations=E2=80=9D        C=
+omplete the form on the homepage titled =E2=80=9CComplete in order to acces=
+s Peer Tutoring virtual spaces=E2=80=9D (if you have already done this sinc=
+e visiting peer-tutoring, you can skip this step)        Select =E2=80=9CEx=
+am Reviews=E2=80=9D from the far left column        Click =E2=80=9CLink to =
+Exam Review Virtual Room=E2=80=9D        Find =E2=80=9CCHEM 2323 Exam Revie=
+ws=E2=80=9D from the drop down menu        Select the exam review date you =
+are wishing to join                  Good Luck!          
+------=_Part_12256_1776146533.1603475549600
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>  <body>   <div class=3D"vtbegenerated">    <p><span style=3D"font-siz=
+e: 15.3333px;"><b>&nbsp;</b></span></p>     <p style=3D"margin-top: 0in; ma=
+rgin-right: 167.85pt; margin-bottom: 0in; margin-left: 207.75pt; line-heigh=
+t: normal;"><span style=3D"font-size: 9.0pt; font-family: 'inherit',serif; =
+color: #111111; border: none windowtext 1.0pt; padding: 0in;">&nbsp;</span>=
+</p>     <p style=3D"margin-top: 0in; margin-right: 167.85pt; margin-bottom=
+: 12.0pt; margin-left: 207.75pt; line-height: normal;"><span style=3D"font-=
+size: 10.0pt; font-family: 'inherit',serif; color: #111111;">EVENT:&nbsp;CH=
+EM 2323 Exam II Review</span></p>     <p style=3D"margin-top: 0in; margin-r=
+ight: 167.85pt; margin-bottom: 12.0pt; margin-left: 207.75pt; line-height: =
+normal;"><span style=3D"font-size: 10.0pt; font-family: 'inherit',serif; co=
+lor: #111111;">DATE:&nbsp;Saturday October 24th</span></p>     <p style=3D"=
+margin-top: 0in; margin-right: 167.85pt; margin-bottom: 12.0pt; margin-left=
+: 207.75pt; line-height: normal;"><span style=3D"font-size: 10.0pt; font-fa=
+mily: 'inherit',serif; color: #111111;">TIME:&nbsp;10:00 am - 1:00 pm</span=
+></p>     <p style=3D"margin-top: 0in; margin-right: 167.85pt; margin-botto=
+m: 12.0pt; margin-left: 207.75pt; line-height: normal;"><span style=3D"font=
+-size: 10.0pt; font-family: 'inherit',serif; color: #111111;">Location:&nbs=
+p;Elearning&nbsp;Peer Tutoring</span></p>     <p style=3D"margin-top: 0in; =
+margin-right: 167.85pt; margin-bottom: 12.0pt; margin-left: 207.75pt; line-=
+height: normal;"><span style=3D"font-size: 10.0pt; font-family: 'inherit',s=
+erif; color: #111111;">The Student Success Center is hosting an optional CH=
+EM 2323 Exam Review for your upcoming&nbsp; exam.</span></p>     <ul>      =
+<li style=3D"list-style-type: none;">       <ul style=3D"list-style-type: d=
+isc;">        <li style=3D"margin-left: 243.75pt;"><span style=3D"font-fami=
+ly: 'inherit',serif; color: #111111; border: none windowtext 1.0pt; padding=
+: 0in;">Sign in to elearning.utdallas.edu</span></li>        <li style=3D"m=
+argin-left: 243.75pt;"><span style=3D"font-family: 'inherit',serif; color: =
+#111111; border: none windowtext 1.0pt; padding: 0in;">Select =E2=80=9CPeer=
+ Tutoring=E2=80=9D under =E2=80=9CMy Organizations=E2=80=9D</span></li>    =
+    <li style=3D"margin-left: 243.75pt;"><span style=3D"font-family: 'inher=
+it',serif; color: #111111; border: none windowtext 1.0pt; padding: 0in;">Co=
+mplete the form on the homepage titled =E2=80=9CComplete in order to access=
+ Peer Tutoring virtual spaces=E2=80=9D (if you have already done this since=
+ visiting peer-tutoring, you can skip this step)</span></li>        <li sty=
+le=3D"margin-left: 243.75pt;"><span style=3D"font-family: 'inherit',serif; =
+color: #111111; border: none windowtext 1.0pt; padding: 0in;">Select =E2=80=
+=9CExam Reviews=E2=80=9D from the far left column</span></li>        <li st=
+yle=3D"margin-left: 243.75pt;"><span style=3D"font-family: 'inherit',serif;=
+ color: #111111; border: none windowtext 1.0pt; padding: 0in;">Click =E2=80=
+=9CLink to Exam Review Virtual Room=E2=80=9D</span></li>        <li style=
+=3D"margin-left: 243.75pt;"><span style=3D"font-family: 'inherit',serif; co=
+lor: #111111; border: none windowtext 1.0pt; padding: 0in;">Find =E2=80=9CC=
+HEM 2323 Exam Reviews=E2=80=9D from the drop down menu</span></li>        <=
+li style=3D"margin-left: 243.75pt;"><span style=3D"font-family: 'inherit',s=
+erif; color: #111111; border: none windowtext 1.0pt; padding: 0in;">Select =
+the exam review date you are wishing to join</span></li>       </ul> </li> =
+    </ul>     <p style=3D"margin-top: 0in; margin-right: 167.85pt; margin-b=
+ottom: 12.0pt; margin-left: 207.75pt; line-height: normal;"><span style=3D"=
+font-size: 10.0pt; font-family: 'inherit',serif; color: #111111;">Good Luck=
+!</span></p>     <p><br></p>   </div>  </body> </html>=
+
+------=_Part_12256_1776146533.1603475549600--

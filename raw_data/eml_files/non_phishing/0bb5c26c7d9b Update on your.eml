@@ -1,0 +1,454 @@
+Received: from BL0PR01MB4131.prod.exchangelabs.com (2603:10b6:208:42::20) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 16 Oct 2020 16:55:45
+ +0000
+Received: from DM5PR07CA0158.namprd07.prod.outlook.com (2603:10b6:3:ee::24) by
+ BL0PR01MB4131.prod.exchangelabs.com (2603:10b6:208:42::20) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.25; Fri, 16 Oct 2020 16:55:41 +0000
+Received: from CY1NAM02FT010.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:ee:cafe::4d) by DM5PR07CA0158.outlook.office365.com
+ (2603:10b6:3:ee::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Fri, 16 Oct 2020 16:55:41 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.97.97)
+ smtp.mailfrom=email.ripplematch.com; utdallas.edu; dkim=fail (signature did
+ not verify) header.d=ripplematch.com;utdallas.edu; dmarc=pass action=none
+ header.from=ripplematch.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of email.ripplematch.com
+ designates 167.89.97.97 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.89.97.97; helo=o1.email.ripplematch.com;
+Received: from o1.email.ripplematch.com (167.89.97.97) by
+ CY1NAM02FT010.mail.protection.outlook.com (10.152.75.50) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Fri, 16 Oct 2020 16:55:41 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=ripplematch.com; 
+	h=content-transfer-encoding:content-type:from:mime-version:reply-to:to:subject; 
+	s=s1; bh=HWvPEm5jJUQTvEgx3MHIEN/5mZcx4A3kazCHtAWRGnw=; b=T6dJUki
+	0PD2KLPc+L+4RWcl8ckNzJ1cEuclyhEbAytUty1OTd9/SjfljGgjB1NBsDAoP3Ye
+	Kem8cv3ZyJn4KxN7gftx78hjd/jqdbTT1lC9N2wBxl+/dfbLVY2GapgQti8sxjhz
+	TLVfZXrcKlJXFZ2/Uipbz1yU74aintygwr0g=
+Received: by filter0158p1iad2.sendgrid.net with SMTP id filter0158p1iad2-3650-5F89D08C-19
+        2020-10-16 16:55:40.592813818 +0000 UTC m=+593109.678261628
+Received: from MjU0NTM3NQ (unknown)
+	by ismtpd0022p1las1.sendgrid.net (SG) with HTTP id nxKRRHRrSh-jQ8ZdBJSPTg
+	Fri, 16 Oct 2020 16:55:40.493 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 16 Oct 2020 16:55:40 +0000 (UTC)
+From: "j.montrose@sea.samsung.com via RippleMatch" <notifications@ripplematch.com>
+Reply-To: j.montrose@sea.samsung.com
+To: "Jerry Teng" <jerry.teng@utdallas.edu>
+Message-ID: <nxKRRHRrSh-jQ8ZdBJSPTg@ismtpd0022p1las1.sendgrid.net>
+Subject: Update on your event with Samsung Electronics America
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHr2jDJz0EsqxPRT24gdJ8NkvP4msFBhyzDmK5
+ 09KuCy5Yr/bm9B+qdIncz6V3VDuKYQHXC5Twkr6rVHoSHZqf46hZXTWnes+U5uKM5Ddv+WTMdzeeQ/
+ j2Rk9KTrehEHlz0CVpGuy10BdfsLS5caZnUp50LYHfPVlrQonwgp0rpFGgWYIfaFSPLPY5JfoOyEP9
+ M/9qaBMhUhK0vC6eaOMWNaXJcvui1P3/u5QaTIdQh3nbarGLfv9HT5TDB7Fo0hPAs=
+X-Entity-ID: bHphUaOIAL6NO0P+ubbTMg==
+Return-Path:
+ bounces+2545375-61fc-jerry.teng=utdallas.edu@email.ripplematch.com
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Oct 2020 16:55:41.4319
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5e0219a6-0d6b-4ddc-4d07-08d871f450ca
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT010.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5e0219a6-0d6b-4ddc-4d07-08d871f450ca
+X-MS-TrafficTypeDiagnostic: BL0PR01MB4131:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 6244298894535271238;4407419955761701506;7462973615000556349;8876733807895303089;11579752824345495165;10017454370477189098;698966360510551950;461883846486395272;114516955470356696;1265563082747806182
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.97.97;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o1.email.ripplematch.com;PTR:o1.email.ripplematch.com;CAT:NONE;SFS:(4636009)(6916009)(83170400001)(356005)(36736006)(8676002)(7596003)(7636003)(83380400001)(1096003)(166002)(5660300002)(15650500001)(6512007)(336012)(22186003)(9686003)(58800400005)(36542004)(26005)(6486002);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Oct 2020 16:55:41.2512
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5e0219a6-0d6b-4ddc-4d07-08d871f450ca
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT010.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4131
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.3863845
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NTRvQS9NU0haTjc0NlRMTER0cEcxMkp4eUV3am5zWkxJLzJsbmMvdm1uL1dM?=
+ =?utf-8?B?aHBvSFlQVnVyWm9OOHpFd1BZei80c2w4NVZESXNaaklhVW1IT2lpQjBiN1VI?=
+ =?utf-8?B?TTJzOGZjeGJ4RENQYnFIaUZjUUJadWxMQWxnMG5XTXFWQVAwRmxKWWJjTXlr?=
+ =?utf-8?B?T0Fza3E2L2VGc2JlNnNnUmw1OTBZUkRkUzdPYlBLWjVFZ0o0dTh5dGx2dDJ0?=
+ =?utf-8?B?K0JZOTdtL1lGTkFrRHd1Y1k2WkZkRG1zdkhzR0dzUkpFN3pITU00WUphRGF3?=
+ =?utf-8?B?UHRyZVY5S2Z3OE41MW1ESzVsanJsMy9LY1Yvbjl6V3RqWmxGVHdWUXdrSXVp?=
+ =?utf-8?B?RTg4YjNQV1FBM0FZa2RpU0NJZ0ZvcTRTcTh6MEEyOGtVdVVmZWZPN1RFUzQv?=
+ =?utf-8?B?VmZyczRMWVlaNjlneDFqTzEyamphYkQ1YUQzOWV0RTM1RUNLMHJYem5ULy9i?=
+ =?utf-8?B?RUtJOGIyb3YyTkpacEpCSjh6TFNqZUJQNXFXUWJhVzNTTlZlWDU4RmVkd0t3?=
+ =?utf-8?B?VUZKeWZIR2FyZ2NJaFlhU1lvdXB1bUN3ajBoaTBYRDdwSDVXck1HdnJPeTR1?=
+ =?utf-8?B?ZkJ2Qm43ZWsyVldqSlJVZm1HdXl0cTROSlVyQlJXanJSMFNoUFJSRG9OaDdv?=
+ =?utf-8?B?d21kMk90cnBIVTYvSFpaRHhKYWRGSGtFSVYrVm10T2VCU2hSdWpIcDIwWVJG?=
+ =?utf-8?B?enhtV0F1V3hQVWtpbTF0VjV2eTJYZDhBWkw3NERYdmZQZDBFcStJY3FVNTZn?=
+ =?utf-8?B?ZDRQaWVyZ0cvcEY4Zy9JaGkrRjN2N05WVS8xdFFScUo2VDIwTzgwaEpjTGZz?=
+ =?utf-8?B?L0pEaDF0MHI2TGlBMnlCUjBBbzJEaDdXZ3dYR0cydDZHSGpsdVRoVjRTUHNs?=
+ =?utf-8?B?YythVXpRN0NlNStDUitrSnhBNGtFRW8zUGNlQ3hwRjZHVU9paS9FWUUwWlRO?=
+ =?utf-8?B?Vk5mdzBKdHVMTDNxR0pkeEFEY0dGQzBjVVhWdTlvMWloZVlHckdzZ2xreVc3?=
+ =?utf-8?B?UTduR3VST3JtUEwydytXekRMVXdtNHEzcTBwTXBBYXZ5b29aVHJMcjRKcklq?=
+ =?utf-8?B?LzZtUlJ5NXluWnJQZzdVemtRS1ZPRGtIaDZrdVFkYVl6NDc5UHppTnhWZXk2?=
+ =?utf-8?B?TklVQUl4VmNsK3BudExWRHlGTWYvbHUrWWNtb09qWEpJVyt4UWRIazB6bHhW?=
+ =?utf-8?B?bWc5cWtPVHp1MVRDVFIyZlFDaEdjWHFHNlg1OGxyWDZhMVRiTnhzSVE5V3Bu?=
+ =?utf-8?B?S0JJcnBYUFZXT1Yrd001allNWnEzWW1QbExYeUhwa1VtMklpS01BRHZhS0xa?=
+ =?utf-8?B?cDJ5dEhRczB0a2tFNVpCazdtaTV0dGhyN3ZRTmdXQ29YUHBTWGNjMGJCekEx?=
+ =?utf-8?B?T1JjVlNCeDRJVFZPb2d1Z0lValRBc3cya3FIdlVOcndwVElDb3pha09pSXlH?=
+ =?utf-8?B?NGVWZjBDQThYZUxQOWxIOThlSlh5bnNvOHhyN0J4TkFGdGJkS1BuZjFVc0g1?=
+ =?utf-8?B?ZWtWd2d4ZkFzOEFGZzBIMnpmbk4zdUdjVmYyRjRRK1hYRjV3UFpkUytPZTFl?=
+ =?utf-8?B?MGl4M3JrSjUvd283ZERJUVlaeDVWeEpwN2dvcU1OSFRIbGZCKy82UjVXVVlj?=
+ =?utf-8?B?M2JxcDE2R1M3TUJaUVJnTXMwV2pEYjVhSHJKWnp1M2dFOXBhdUdodk1jeklN?=
+ =?utf-8?B?SWFPVUM5QUd3aFVvQzltUDBzRGhqQ21HLzNxM3VLY0J1WUxnTDhRbWQ5Q3pp?=
+ =?utf-8?B?N0lTTURzeEpJczhsTHNuanhKUDZUcVFUeWdKSE9ieXZja05zbnhqcWJQSnZS?=
+ =?utf-8?B?azVGZTdhMUp4dmxROG5LbkNRTllzcnEyY1lHd1JIYVpHY3RCQ2ZYU2J5ZW5P?=
+ =?utf-8?Q?R+ZNToNSbErJu?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+> </p><p>Howdy!</p><p> </p><p>We are so happy that you were able to join us=
+ at our <strong>Q&amp;A with Samsung Engineers Event</strong>! It was great=
+ to connect with top talent students &amp; new grads such as yourself. Sams=
+ung prides itself as a welcoming home for exceptional individuals.</p><p> <=
+/p><p>We wanted to take a moment to remind you of our speaker line-up:</p><=
+p> </p><p>-Samsung Electronics America: <strong>Parth Thakkar</strong> (UTD=
+ Alum) =E2=80=93 Sr. Manager - EMS/Virtualization</p><p> </p><p>-Samsung Au=
+stin Semiconductor: <strong>Rachel Reich</strong> =E2=80=93 Diffusion Ops S=
+ustaining Engineer</p><p> </p><p>-Samsung Research Americas: <strong>Navnee=
+t Sharma</strong> (UTD Alum) =E2=80=93 Hardware Engineer</p><p> </p><p>-Sam=
+sung Austin Research Center =E2=80=93 Advanced Computing Labs: <strong>Matt=
+ Streyle</strong>- Senior Physical Designer</p><p> </p><p>&nbsp;</p><p> </p=
+><p>We welcome you to explore and apply to our opportunities and <a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu25453=
+75.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcWA9diumy=
+We7IaGI87fPD8KM9mvzbrO-2BlVhtUqj-2BoKvJFkYf_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bg=
+aY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB2wGYaok-2=
+B0ur-2BINxTr6ZOadyrLK4UHqwnCp50UUSIrxZGC5qD1yj3RehwTyVYtOVXoSxLfqjdvHrJ0jPY=
+A9wwU25i8YzGPE4UXZ-2BJWwOazTWEwU9Ut4NJsiDs7sSrRJoXCbyf1tQAQDfoxvoVWlK40Q-3D=
+&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d87=
+1f450ca%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384641454563754%7CU=
+nknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLC=
+JXVCI6Mn0%3D%7C3000&amp;sdata=3DHGr4fWxsvMn9gt%2BLu9xmFJNPX9zZcvTQtdzXcf%2F=
+0ekg%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/l=
+s/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcWA9diumyWe7IaGI87fPD8KM9mvzbrO-2Bl=
+VhtUqj-2BoKvJFkYf_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE1=
+9l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB2wGYaok-2B0ur-2BINxTr6ZOadyrLK4UHqw=
+nCp50UUSIrxZGC5qD1yj3RehwTyVYtOVXoSxLfqjdvHrJ0jPYA9wwU25i8YzGPE4UXZ-2BJWwOa=
+zTWEwU9Ut4NJsiDs7sSrRJoXCbyf1tQAQDfoxvoVWlK40Q-3D" shash=3D"oQCZ6xVnOjMg5/l=
+smt5SdL6WQvS+sH5K1/K02BP1EulNR+s+dxkMrGXLMe4vJxgFORKKoqeq1CSyb7AMAglq4av4CR=
+VWTNmpdCFoHaUD36KLi2KUPpYuEcQle5/9pWJz1FEbD0JPih2sHY/rxgJUK3gmMnLpJ6+2lQUfl=
+nphyf0=3D" target=3D"_blank"><u>provide feedback for our event</u></a>.</p>=
+<p> </p><p>Thank you again for sharing your time with us at Q&amp;A with Sa=
+msung Engineers Event. We look forward to continuing to connect with you! I=
+n the meantime, we hope you stay safe and healthy.</p><p> </p><p>Warm Regar=
+ds, </p><p> </p><p>&nbsp;</p><p>Julie, Jack, Stefanie, Jennifer, Scott, </p=
+><p> </p><p>Samsung University Recruiting Team</p><p> </p><p>&nbsp;</p><p> =
+</p><p>&nbsp;</p><p> </p><p><strong>Samsung Electronics America Internships=
+ </strong></p><p> </p><p>&nbsp;</p><p>    </p><p><strong>Summer Internship =
+Link</strong></p><p>   </p><p><strong>Location</strong></p><p>     </p><p><=
+a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2F=
+cTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1-2FrnW=
+V8PYEu4UzeXvSlIFoyU7N4XiLojED20NziJ69FN2xpJUnugRZnDWAoeuAX5N11F7-2FBtSfYiG-=
+2FbDin7REPmXGi-2BzIRZHiP3G2Y1ERF8rcoyzlOiSXPdIVteLfA-3D-3DvSRb_A6np-2Bq5dXU=
+-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsd=
+tGwgf-2BRB0yzWG82CGZ8vZNUz53fr-2BtnIMsHfzrMD1YL7LvWLdidxQLFznPCi3ND-2BOF-2B=
+PuRezgc6aKpw8LTnf44Mgs-2FOuiR8YGHqfetmbytPhWnfem6xwppA3WdJ3Hb3NW9vc8J-2BRjI=
+WGzXyJ-2FCiwplMeiX3POY-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C=
+5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637384641454573748%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3Dkg0MDJhTtujd8ljAMB=
+OrweuciGH0a2iQ%2FReEbE6FlJs%3D&amp;reserved=3D0" originalsrc=3D"https://u25=
+45375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlP=
+kYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXv=
+SlIFoyU7N4XiLojED20NziJ69FN2xpJUnugRZnDWAoeuAX5N11F7-2FBtSfYiG-2FbDin7REPmX=
+Gi-2BzIRZHiP3G2Y1ERF8rcoyzlOiSXPdIVteLfA-3D-3DvSRb_A6np-2Bq5dXU-2FiKWa-2Fp5=
+HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB0y=
+zWG82CGZ8vZNUz53fr-2BtnIMsHfzrMD1YL7LvWLdidxQLFznPCi3ND-2BOF-2BPuRezgc6aKpw=
+8LTnf44Mgs-2FOuiR8YGHqfetmbytPhWnfem6xwppA3WdJ3Hb3NW9vc8J-2BRjIWGzXyJ-2FCiw=
+plMeiX3POY-3D" shash=3D"cVQK7OgTgogUixqMVuUXmImS4DurYksIk+4TQ4w7wW/Jg2xKK52=
+SoO3yk7hX976ajycycDMGRaPEKdYe1GiSUlOcupgye5oGjpzuyh9fJWKCswCG0J5/U41Znt9WkB=
+DA2qLb/oIN/Tjm8EqZd6JX9mLlijsvPonO2RZsxpS2I8M=3D" target=3D"_blank"><u>Mobi=
+le Retail Technology Intern</u></a></p><p>   </p><p>Plano, TX</p><p>     </=
+p><p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZ=
+b1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1=
+-2FrnWV8PYEu4UzeXvSmYkgsw0Olk6ssV8sSY-2FuvvmfPPGdswVsxEN29S-2F44lGSos8FJN1Y=
+FHwO-2BNBI-2FSxWhgIC7T6ugf4wfWU3SUi6pxfnNC_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bga=
+Y9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRByvP6nYFOzg=
+cUKlD8uzS7ptOdHk-2F9rc2DGzMnWEJgv3kV274PBVW5DCHLNoQykbZS3Wv7Bxq2ukqWV3Xrw2Y=
+147WvNnV4VDMI-2FFsgAPWyumAoXK-2B5IBkTN3lZDyTVYXcJc46gIc-2B48zGIRB6TP-2Bsnuw=
+-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708=
+d871f450ca%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384641454583738%=
+7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWw=
+iLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DkQyDIfldwoNnklRdlfTR4wMBSThm46d0qco2j0Hp=
+B7M%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls=
+/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXe=
+vWWAQYQYDQpPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSmYkgsw0Olk6ssV8sSY-2Fuv=
+vmfPPGdswVsxEN29S-2F44lGSos8FJN1YFHwO-2BNBI-2FSxWhgIC7T6ugf4wfWU3SUi6pxfnNC=
+_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDl=
+AOWexwHnydKsdtGwgf-2BRByvP6nYFOzgcUKlD8uzS7ptOdHk-2F9rc2DGzMnWEJgv3kV274PBV=
+W5DCHLNoQykbZS3Wv7Bxq2ukqWV3Xrw2Y147WvNnV4VDMI-2FFsgAPWyumAoXK-2B5IBkTN3lZD=
+yTVYXcJc46gIc-2B48zGIRB6TP-2Bsnuw-3D" shash=3D"Ttqkd83TGW7KzR2kvWmtpS/UnBzK=
+ZFZKtJnlnrEQMsK0WWPyzSqFZj8qazJs4bWibQZ29ETDEKbNM583m+mdANpVOoiouln3HHYyrlT=
+gf2gCzUX1i7GsEFPx5BEOt+ueeHmZsWhvjDuOZAfbDqnCtilQC/ii1SE5ZxWqrBsv35o=3D" ta=
+rget=3D"_blank"><u>Technical Support Intern</u></a></p><p>   </p><p>Plano, =
+TX</p><p>     </p><p><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomO=
+BOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3=
+DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSlIFoyU7N4XiLojED20NziJ-2BrODZzZFxYDN5FGi=
+6dm7Dnj9CPobzFrUa8SvZ9IGPoFLfDFcgvb0EAlZIMEK3BOoiB0tNJHaP9fqxw7QqX8LFg-3D-3=
+Dzi-f_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu=
+6jrDlAOWexwHnydKsdtGwgf-2BRB9pKLDSS-2BFYJDuzrJW0tNP0UeDd7biCjLdqhXsgWY8qe4g=
+UN5GOP-2B9zs-2FfO9NKE4XCqBiL0EO3slNpSQqs2IfDlDRfQkgbw8IkViROsuDuVuq17o485uB=
+4SbkNQu-2F-2FoyaWJ27FG33-2FHSXkMIimZZk7A-3D&amp;data=3D04%7C01%7Cjerry.teng=
+%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C1%7C637384641454583738%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3D=
+PYMI41hNE1l%2Fx%2BVmxOiOdDmQdnILQQcm%2BM3M5ARACfk%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B=
+-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDH=
+uPb1-2FrnWV8PYEu4UzeXvSlIFoyU7N4XiLojED20NziJ-2BrODZzZFxYDN5FGi6dm7Dnj9CPob=
+zFrUa8SvZ9IGPoFLfDFcgvb0EAlZIMEK3BOoiB0tNJHaP9fqxw7QqX8LFg-3D-3Dzi-f_A6np-2=
+Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwH=
+nydKsdtGwgf-2BRB9pKLDSS-2BFYJDuzrJW0tNP0UeDd7biCjLdqhXsgWY8qe4gUN5GOP-2B9zs=
+-2FfO9NKE4XCqBiL0EO3slNpSQqs2IfDlDRfQkgbw8IkViROsuDuVuq17o485uB4SbkNQu-2F-2=
+FoyaWJ27FG33-2FHSXkMIimZZk7A-3D" shash=3D"oYf5ZPWkNrBAmdpwpA+Jmlv+mC0xoZk9C=
+38sD19Kqbv/RVSIj+x92UIEOFPBZ44lz7pP1w0vbHPfn73xVJVwoRBVdQfTS43IA4yU3cztlJtj=
+fFOGl/XOsvhjUfh0YCIg7uD5uaGARW4Liz+gjeC5PAHS4KnHN7PCTNjT4W2CB9I=3D" target=
+=3D"_blank"><u>Mobile Security Engineer Intern</u></a></p><p>   </p><p>Plan=
+o, TX</p><p>     </p><p><a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DW=
+omOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXt=
+xx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3144bGygpzuI=
+9eq-2B4XmRoTQSWLLL8uZAyx-2BdFhI6qzYb12InD0hiIRwEUNVwLZcppvbzC-2Bykv8oy4Sd1E=
+xN0fDQ-3D-3D2Iuj_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19=
+l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB2-2BiW0xtxEk8LZPK1trldMhafCNofRXDc-2=
+B55BaDEjlSYjvAEMtHVYbLk9wCuaolRWXbliZUCwxG0pZG07SymCPVlMA4cBXMTPHLT4GV7y6NZ=
+tigXdOo3h0SYqlw2ufabQUYzlnv3wEJyHvwYRIG9NYg-3D&amp;data=3D04%7C01%7Cjerry.t=
+eng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C1%7C637384641454593740%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=
+=3D5tNDqfNA6Cooork4LN7kZpRwVfZ0nZlGbC0zae8LChc%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2F=
+Zb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb=
+1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3144bGygpzuI9eq-2B4XmRoTQSWLLL=
+8uZAyx-2BdFhI6qzYb12InD0hiIRwEUNVwLZcppvbzC-2Bykv8oy4Sd1ExN0fDQ-3D-3D2Iuj_A=
+6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAO=
+WexwHnydKsdtGwgf-2BRB2-2BiW0xtxEk8LZPK1trldMhafCNofRXDc-2B55BaDEjlSYjvAEMtH=
+VYbLk9wCuaolRWXbliZUCwxG0pZG07SymCPVlMA4cBXMTPHLT4GV7y6NZtigXdOo3h0SYqlw2uf=
+abQUYzlnv3wEJyHvwYRIG9NYg-3D" shash=3D"G8vpJZCybDlaS7kZla05NCB0YJnTYzgfceG4=
+bYavX9oMWsKeq/cu6lr0VRyKRPK+PpFsyAqYOtopssskrcQXzFuAoCub3bGGFOGSlzS9So21RMn=
+TlTxixtCdRtvGKbQ18faJ6LSiOvbRHLMQXsw4LWyjGXCSFPaQtol1F1QQx/E=3D" target=3D"=
+_blank"><u>Wireless Systems Engineer Intern</u></a></p><p>   </p><p>Plano, =
+TX</p><p>     </p><p><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomO=
+BOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3=
+DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSmBlH-2FIz4ZWHM-2FLRFLt33xApX62jsIL4hvRqd=
+F0-2BRfPZCjSASmvR67NmViAHmiJIbURJOw2a9ZCMSY4c3nhdS1mu9YA2OEfzewQbqb0GlaLLg-=
+3D-3DWRlb_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLi=
+p0eu6jrDlAOWexwHnydKsdtGwgf-2BRBxga3iZR-2B1wyIYFYdbF2SynEvHZIcpKRedKPj2lKBj=
+Bj-2Bm8vrNy-2FWwY8UICrqG4aBwLDl3TUV1B0Af4icVIgaoyR-2Bt7oVVgGIm3XoOSP3qapHlN=
+Npajjafi8lgcbQ8-2F6nHCMJi7A-2F79kb71ILJq8RQ4-3D&amp;data=3D04%7C01%7Cjerry.=
+teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C1%7C637384641454603732%7CUnknown%7CTWFpbGZsb3d8eyJWIjo=
+iMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdat=
+a=3D7iiwwIRzogHAferriVWQIomLsLjDyDWLRdDZgaE6ZSE%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2=
+FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuP=
+b1-2FrnWV8PYEu4UzeXvSmBlH-2FIz4ZWHM-2FLRFLt33xApX62jsIL4hvRqdF0-2BRfPZCjSAS=
+mvR67NmViAHmiJIbURJOw2a9ZCMSY4c3nhdS1mu9YA2OEfzewQbqb0GlaLLg-3D-3DWRlb_A6np=
+-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWex=
+wHnydKsdtGwgf-2BRBxga3iZR-2B1wyIYFYdbF2SynEvHZIcpKRedKPj2lKBjBj-2Bm8vrNy-2F=
+WwY8UICrqG4aBwLDl3TUV1B0Af4icVIgaoyR-2Bt7oVVgGIm3XoOSP3qapHlNNpajjafi8lgcbQ=
+8-2F6nHCMJi7A-2F79kb71ILJq8RQ4-3D" shash=3D"D3WEfAHxMsJmSo2zjj3fseb2TXj76Qp=
+NoNfF6mOhTVvEtIZl47+A5iJF0GUl0qN6L5+tySgRfLalBSxhIbQSZOif2h2RrErogAWcH3CE3P=
+H6/RtyNYtDR3G0zAkR7l9y0bgnoOZdygrx7ucfo79Ur8jYjWKP10YjPyTgHeb0NJo=3D" targe=
+t=3D"_blank"><u>RAN Wireless Networks Engineer Intern</u></a></p><p>   </p>=
+<p>Plano, TX</p><p>     </p><p><a href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3F=
+upn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQ=
+YDQpPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3144b=
+GygpzuI9eq-2B4XmRoTcphDPD60z1Ougy2autPSc7JGv23nvx1g4M4xYfJf2S9OTnbrBXXuu0To=
+vJPIuWMxQ-3D-3Dmz3C_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJC=
+E19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB7tZyeKRn6CWh1t5k4u7ypfvIrkLQk4ECG=
+CCWYS-2FYbjasojU4SY5Li3aP-2FoR3Z14N2jIxTRSdkHnxLmRvfWa0C9Tmb5fmihnJetFBRzpC=
+llz9-2FvSUq3q1b-2FmAXxggZyB8tUaPurO5YIoNTJyXQwtQRk-3D&amp;data=3D04%7C01%7C=
+jerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C1%7C637384641454613726%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&am=
+p;sdata=3DD4zAoFtKwMLXdvinH47gZCovyNcuonX6NORvyUTGHjI%3D&amp;reserved=3D0" =
+originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD=
+1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssy=
+dxDHuPb1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3144bGygpzuI9eq-2B4XmRo=
+TcphDPD60z1Ougy2autPSc7JGv23nvx1g4M4xYfJf2S9OTnbrBXXuu0TovJPIuWMxQ-3D-3Dmz3=
+C_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrD=
+lAOWexwHnydKsdtGwgf-2BRB7tZyeKRn6CWh1t5k4u7ypfvIrkLQk4ECGCCWYS-2FYbjasojU4S=
+Y5Li3aP-2FoR3Z14N2jIxTRSdkHnxLmRvfWa0C9Tmb5fmihnJetFBRzpCllz9-2FvSUq3q1b-2F=
+mAXxggZyB8tUaPurO5YIoNTJyXQwtQRk-3D" shash=3D"Yip1N1XoSbM67xEd98RY3DTtVmw8K=
+3zywJf7u1NqDMyScru9DDIzlE7V6KH5C5mk9oIHxhCMKTdbo+WHAkV/SLmp29A/AyfCwEdzC07m=
+3pZi2vJYQ4n3RhY40nW/kQCj20ta4g3RVXdl3SDso8zoK33UmziiwIZpwF2Sk1ZcGGg=3D" tar=
+get=3D"_blank"><u>Wireless Systems Engineer Intern</u></a></p><p>   </p><p>=
+Plano, TX</p><p>     </p><p><a href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn=
+%3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQ=
+pPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSk9IsHFueBXUubIvus7WBuoXO1kOkoX388=
+MwVBwJMZV4RWTe-2BVOgvk31srAXN9F3B2OwlA5LZwyPV9yuCLvKYXbMWQGXUQkF-2BWAh2qzTb=
+3kCQ-3D-3D3Kz__A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9=
+QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB3HmIJ3bOsL3YzzkACRf1-2F5zpokMvmKi8x-2B=
+JcaoSLVofx1Apz9C8AedXfMnIoEtz8gVzpCBfhyX0vCd6DfTDVqmy9s8bGnt0BMgXr-2FBaKB5m=
+1WB1NMLT2cocHo5ma6v0y5pF1Ru1Yx5fUNCpBOF18EY-3D&amp;data=3D04%7C01%7Cjerry.t=
+eng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C1%7C637384641454613726%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=
+=3DhW23o0t57znUYpOUdDknieuPDKY2krIrvMgJYHoKv9U%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2F=
+Zb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb=
+1-2FrnWV8PYEu4UzeXvSk9IsHFueBXUubIvus7WBuoXO1kOkoX388MwVBwJMZV4RWTe-2BVOgvk=
+31srAXN9F3B2OwlA5LZwyPV9yuCLvKYXbMWQGXUQkF-2BWAh2qzTb3kCQ-3D-3D3Kz__A6np-2B=
+q5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHn=
+ydKsdtGwgf-2BRB3HmIJ3bOsL3YzzkACRf1-2F5zpokMvmKi8x-2BJcaoSLVofx1Apz9C8AedXf=
+MnIoEtz8gVzpCBfhyX0vCd6DfTDVqmy9s8bGnt0BMgXr-2FBaKB5m1WB1NMLT2cocHo5ma6v0y5=
+pF1Ru1Yx5fUNCpBOF18EY-3D" shash=3D"PfEEP5E3KuYxM+K++6nDR2xHWV0cTpQJSkuSCQxg=
+UAjLqwy1hyP5RiAXU2s942/mETKceVbEp0IHgrZOf2eLuuYnh8YpDOLNAoZ9pWIt6CS4UMf2FdA=
+14p04RkDAdIkGGNvBW6yoQ4T2/V6VftHnf+mkK3lREItZiyEZVlBQqTo=3D" target=3D"_bla=
+nk"><u>Virtualization Orchestration Intern</u></a></p><p>   </p><p>Plano, T=
+X</p><p>     </p><p><a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOB=
+OtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3D=
+LenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSn9-2BwWLjrBfTaPqfjXB5z-2F42oEqPGq8M2f83Ta=
+Cx2pXt315NLqQXbZJEZsNDHXQIFqb5m4SJqQVcvXUpsFqKa-2BCunuf1MnMkO1Ndnk6FCii5Q-3=
+D-3D02rZ_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip=
+0eu6jrDlAOWexwHnydKsdtGwgf-2BRBzYn8Eb9hwYHqVhiNjUjy8ymQ9RZ3ASeFtiBP71MsnVDc=
+pWUdfwxVCE9aBnbZ2SlZgBoIpwTm4x3cFqiR3SurerGv88aAU2tiL3-2Bg34PRTiTzgdMAt7n2N=
+bemKClsioQ2OutT-2FZUwlbwk-2BcQm7frHo8-3D&amp;data=3D04%7C01%7Cjerry.teng%40=
+utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C1%7C637384641454623720%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=3DiM7=
+Lu1UtYXnwEf6hcmoUkS8GAcne4WfGyxQ0aC3B9no%3D&amp;reserved=3D0" originalsrc=
+=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R=
+-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1-2F=
+rnWV8PYEu4UzeXvSn9-2BwWLjrBfTaPqfjXB5z-2F42oEqPGq8M2f83TaCx2pXt315NLqQXbZJE=
+ZsNDHXQIFqb5m4SJqQVcvXUpsFqKa-2BCunuf1MnMkO1Ndnk6FCii5Q-3D-3D02rZ_A6np-2Bq5=
+dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnyd=
+KsdtGwgf-2BRBzYn8Eb9hwYHqVhiNjUjy8ymQ9RZ3ASeFtiBP71MsnVDcpWUdfwxVCE9aBnbZ2S=
+lZgBoIpwTm4x3cFqiR3SurerGv88aAU2tiL3-2Bg34PRTiTzgdMAt7n2NbemKClsioQ2OutT-2F=
+ZUwlbwk-2BcQm7frHo8-3D" shash=3D"uTYIWax0R1qGH4CUqSpiivqQOTk/Hs7jx+yfqC/oGe=
+ninros/zGWU8vrrwc/rfXC6ffuw1AAKezw/RiSFuY4qUsEMKtEYDwl7ZV1mHlL0tA3TIhwiKHTh=
++q7Yt4vNa5lOOJgXNFFI0ntREqmHjlilbc6eOlJvTXHYcEjjchEX+k=3D" target=3D"_blank=
+"><u>4G/5G Test Engineer Intern </u></a></p><p>   </p><p>Plano, TX</p><p>  =
+   </p><p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2=
+B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxD=
+HuPb1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3TD8rPyXR5vArkbe9AKoMNkHpo=
+9g1UrkIaPcGq6vfXO0AdIS-2BBov9sJwKgCOO1EzClGGk-2BKWikmHOpEFB9kW9JsfLwVPUdVzq=
+zQumVOCxs4A-3DzvbV_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE=
+19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRBxr7TZgBIjmGLG8HhmtdnF34WR1OpdjNvuF=
+VvCT6O381ufQJ-2Fwm3CifpRc-2FWUKiWJbPcC1k748KX76aEeWbe76X0N9mQfhpUhlcUD77-2F=
+0uKiL9BGIyPSne8yU-2FkmOmpCoMjFroKW-2B3wZGXFnHHRfV-2BQ-3D&amp;data=3D04%7C01=
+%7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384641454623720%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000=
+&amp;sdata=3DCyT6ul9zLlpc1xNO4r0yj10BoFrAc9Caxy8RbN5hVNo%3D&amp;reserved=3D=
+0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCw=
+geD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenr=
+ssydxDHuPb1-2FrnWV8PYEu4UzeXvSl-2F6FpNTs-2Fw6L935px0uCm3TD8rPyXR5vArkbe9AKo=
+MNkHpo9g1UrkIaPcGq6vfXO0AdIS-2BBov9sJwKgCOO1EzClGGk-2BKWikmHOpEFB9kW9JsfLwV=
+PUdVzqzQumVOCxs4A-3DzvbV_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL=
+4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRBxr7TZgBIjmGLG8HhmtdnF34WR1Op=
+djNvuFVvCT6O381ufQJ-2Fwm3CifpRc-2FWUKiWJbPcC1k748KX76aEeWbe76X0N9mQfhpUhlcU=
+D77-2F0uKiL9BGIyPSne8yU-2FkmOmpCoMjFroKW-2B3wZGXFnHHRfV-2BQ-3D" shash=3D"Fi=
+9djSXYb2Bq85LNUmKsbIkkR4JT3OmXsADKOFdR9b2AtJgImCq16zhXD+uSD6xH3GttnAtqmHLUq=
+J+cKdPKYjD8JTGvFBk58iwknWwBvcNWhK1uYE4t7ubmPCJt8g2WMvsKc5U83iKuAPiYsLzOYF8/=
+4yF6hL1bnfgRWYZBs58=3D" target=3D"_blank"><u>Wireless Networks Systems Supp=
+ort Engineer Intern</u></a></p><p>   </p><p>Plano, TX</p><p>     </p><p><a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcT=
+xDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1-2FrnWV8=
+PYEu4UzeXvSn9-2BwWLjrBfTaPqfjXB5z-2F4cjDT0RIQxoGJRaOm0Q6i3xEmloi6WFs-2Fmq32=
+jqtvJhA1bUu3YoCYcSwOTyWnz2GLSE-j_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOi=
+JDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRByb6q6FNL0XEMXfDWHDnz=
+fA6HOR95yIogoFKYp-2Fv8KWaxdMSSnMCsfZlGM2SOluFgptK8vgtDzML-2FBqJq4OmhmopWAYk=
+iK0B5OdeY-2BjcgeDYntVD-2BW-2F4d3LFpUBuzOuJaVmgAgcHUVzT52tUlRnW7gk-3D&amp;da=
+ta=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384641454633716%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C3000&amp;sdata=3D4JWRqfMeRSNaS0Wy7i9c3nPEqrD7U2Qq8Oum1O20ulA%3D&amp=
+;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=
+=3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQ=
+pPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSn9-2BwWLjrBfTaPqfjXB5z-2F4cjDT0RI=
+QxoGJRaOm0Q6i3xEmloi6WFs-2Fmq32jqtvJhA1bUu3YoCYcSwOTyWnz2GLSE-j_A6np-2Bq5dX=
+U-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKs=
+dtGwgf-2BRByb6q6FNL0XEMXfDWHDnzfA6HOR95yIogoFKYp-2Fv8KWaxdMSSnMCsfZlGM2SOlu=
+FgptK8vgtDzML-2FBqJq4OmhmopWAYkiK0B5OdeY-2BjcgeDYntVD-2BW-2F4d3LFpUBuzOuJaV=
+mgAgcHUVzT52tUlRnW7gk-3D" shash=3D"Oa9YUvYn3KqRivOSOQBuL1HXPeYKMsBd4oH0mO+o=
+TyeS6+xEhmQ7ErKRVK9qwJrgfulctDchbN6zhZXS8qauzlh9URVaTJ5bRoTGhy1dykgaxEGw6jk=
+4Pg6TZ+PWZTj4fvT+DJplvF5vHPcKAQ7gSXBuoBEFJa6D4xMSZFC3wfw=3D" target=3D"_bla=
+nk"><u>4G/5G RAN SME Intern</u></a></p><p>   </p><p>Plano, TX</p><p>     </=
+p><p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZ=
+b1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuPb1=
+-2FrnWV8PYEu4UzeXvSkQIMry1anAnpAEqeZ-2BujhQxC-2BtjAklOZ9Uw-2BZiwuvMPDB1a1Sg=
+N4UDVlXHm9gCArQflxYix-2Bu01o1rSeuA-2ByrM6O-2F8f4zFA6BJAlgJsmmLu-2BnE6yMlAur=
+eJhSjROLGGQU-3DUQ2q_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJC=
+E19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB7X9KLDus-2BvLbuJoFch1nwafnvLumDNm=
+OX29-2BAjTas6GcGpdyqp83v-2BDEAtO-2BOoB2M6UWfbscwppVLqQjKiI6olGkJYQ2bEJwRsrR=
+PBLSrmYYbXwfX-2FoEuyoTr90mwwg47aohXCkskHav8ORS74uzw8-3D&amp;data=3D04%7C01%=
+7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f450ca%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384641454643709%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&=
+amp;sdata=3DPJBAYjQ%2BLGPgFRUorZ5EdXtLm31mJlkkBIkwMaPWvk4%3D&amp;reserved=
+=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBO=
+tCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DL=
+enrssydxDHuPb1-2FrnWV8PYEu4UzeXvSkQIMry1anAnpAEqeZ-2BujhQxC-2BtjAklOZ9Uw-2B=
+ZiwuvMPDB1a1SgN4UDVlXHm9gCArQflxYix-2Bu01o1rSeuA-2ByrM6O-2F8f4zFA6BJAlgJsmm=
+Lu-2BnE6yMlAureJhSjROLGGQU-3DUQ2q_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxO=
+iJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB7X9KLDus-2BvLbuJoFc=
+h1nwafnvLumDNmOX29-2BAjTas6GcGpdyqp83v-2BDEAtO-2BOoB2M6UWfbscwppVLqQjKiI6ol=
+GkJYQ2bEJwRsrRPBLSrmYYbXwfX-2FoEuyoTr90mwwg47aohXCkskHav8ORS74uzw8-3D" shas=
+h=3D"rFGSL+t3LXgotvyrJxUfO6/ggwR7ClAD5DFZWJxLXSsdCajdBhkhaITNAcOGmBMg8JFHc/=
+MeLqWjrRmZggmyO1KcWjWStppqsA6u4+Dn+R7/Jdij/oauDyWLL9vxABiXNhmEUc5jtmuBblyeB=
+XFbqOcrl4tPeYzpekvarKpPAEo=3D" target=3D"_blank"><u>Performance Assurance E=
+ngineer (Data Science) Intern</u></a></p><p>   </p><p>Plano, TX</p><p>     =
+</p><p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2=
+FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevWWAQYQYDQpPXtxx3DLenrssydxDHuP=
+b1-2FrnWV8PYEu4UzeXvSnk2WTc32BSqYM2JdQdQnZuYQVeF6R9atpJZ-2BGEvRLQpxC-2BgvDP=
+FpXDT-2Ftzsy8sQqVmSyuJql8MGfTOnaZ72cUrn35m_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bga=
+Y9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWexwHnydKsdtGwgf-2BRB1nC6UjtC3F=
+qhNKap50REBCz1Iu8FhNMJ5wH2U3fhWGjY-2B0Hgitrfh3UcGYA7jgy3JMV8IIlpm4zmzMk5nDT=
+3kZFz1zuqlMKXuFJJRWfIgXBejPukHRBcy05iLVhsLBcRb1i1W9JyPUNNebutv-2BFDVk-3D&am=
+p;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C5e0219a60d6b4ddc4d0708d871f4=
+50ca%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384641454643709%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000&amp;sdata=3DrMLU8V8fsIHjbekU%2BDHphA5%2BG5z2WtLFWClsQRxscS=
+k%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/c=
+lick?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcTxDmM9ZOzlPkYZ4OT3Xok9aQH4XTB6zezXevW=
+WAQYQYDQpPXtxx3DLenrssydxDHuPb1-2FrnWV8PYEu4UzeXvSnk2WTc32BSqYM2JdQdQnZuYQV=
+eF6R9atpJZ-2BGEvRLQpxC-2BgvDPFpXDT-2Ftzsy8sQqVmSyuJql8MGfTOnaZ72cUrn35m_A6n=
+p-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpJCE19l9QUiLip0eu6jrDlAOWe=
+xwHnydKsdtGwgf-2BRB1nC6UjtC3FqhNKap50REBCz1Iu8FhNMJ5wH2U3fhWGjY-2B0Hgitrfh3=
+UcGYA7jgy3JMV8IIlpm4zmzMk5nDT3kZFz1zuqlMKXuFJJRWfIgXBejPukHRBcy05iLVhsLBcRb=
+1i1W9JyPUNNebutv-2BFDVk-3D" shash=3D"le3WCzA6ChtdbIB8odc7KoCtSsdbRyEh1aICt4=
+jQSgyNB91/G7jxZJrGF3ykUT/mQphW7L5IDRm/wdJm0w/Pie2F+hUkPAibP4SSKBwovS6WJHWTL=
+O8cCIuEduU/LzcvRoYjK8eQKSZ2esf7QIxmzPwk/LORFJJHKV2dshyr26Y=3D" target=3D"_b=
+lank"><u>Carrier Sales Engineer Intern</u></a></p><p>   </p><p>Ridgefield P=
+ark, NJ / Plano, TX</p><p>    </p><p>&nbsp;</p><p> </p>=

@@ -1,0 +1,920 @@
+Received: from CY4PR01MB2549.prod.exchangelabs.com (2603:10b6:903:6d::11) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Tue, 20 Oct 2020 17:57:18
+ +0000
+Received: from CY4PR20CA0048.namprd20.prod.outlook.com (2603:10b6:903:cb::34)
+ by CY4PR01MB2549.prod.exchangelabs.com (2603:10b6:903:6d::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.18; Tue, 20 Oct 2020 17:57:16 +0000
+Received: from CY1NAM02FT050.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:cb:cafe::3) by CY4PR20CA0048.outlook.office365.com
+ (2603:10b6:903:cb::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Tue, 20 Oct 2020 17:57:16 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.159.133)
+ smtp.mailfrom=mail.joinhandshake.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=mail.joinhandshake.com;utdallas.edu; dmarc=pass
+ action=none header.from=mail.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mail.joinhandshake.com
+ designates 192.237.159.133 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.237.159.133;
+ helo=a4.mail.joinhandshake.com;
+Received: from a4.mail.joinhandshake.com (192.237.159.133) by
+ CY1NAM02FT050.mail.protection.outlook.com (10.152.75.65) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Tue, 20 Oct 2020 17:57:13 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1603216636; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe:
+ List-Unsubscribe-Post; bh=IW21W/oCLbJiPb2FQqGwAjVgR6lW1FOgoVR4EZtZQag=;
+ b=HWW7Lrbif2pLFdLK0svuwmb8gt+DELsh2y8o7siTt6/1bDJtFLZy1aVGBQdDJizDuRtvcXN6
+ 5Fqj+rjXvCxpheTmL9RN15++w7Fxa8VoIMSM6+RnEkb2v22uoXahpkhEQQGc9iKsWAxtatb0
+ Z5gMBuGKGpl20Di0JipgBqkaSbU=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIzNTc3MSIsICJ6eHQxODAwMDVAdXRkYWxsYXMuZWR1IiwgIjg4Y2I4Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tqoddmi4cm2j5giydembrgazdamjxgu2tcmrogexeerbtgyzekmzwii2ugqjqg4ydijjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihuygeyrsheywizbtgeygcyrtgvqteyzzmvswgojuge3wezjqgmytcjtshv5hq5brhaydambveu2da5lumrqwy3dbomxgkzdvez2d2njygawvgy3in5xwyjtimfxgi43imfvwkx3nmfzxgx3fnvqws3c7nfsd2nrzg42tkny@mail.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJw9jksOwiAUAE8jO8l7UApdsLDqCTxA8_gkoLQk0ibG09tuXMx2ZoI1xjvDshUgAA-0Uig48vEme3GX_aiuF9DQnTqYKRf-rHlJtISW6BW5rzNLFpwTA4YgEchJRcIPMfqhQ-0iSET2tt_PigYA1O7Z1kClUOMxbGy1ysD54VOthf3F00ytTfEoTjnYfti39A-vIjQu&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a654333366408d8752194e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388134382606981%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=gsz7VMGB2m6eP9N4x5ohPUy3%2Bb2T3ciNhpqlwSCWy3E%3D&amp;reserved=0>
+X-Mailgun-Batch-Id: 5f8f2480588858a304ab81a4
+Received: by luna.mailgun.net with HTTP; Tue, 20 Oct 2020 17:55:12 +0000
+Date: Tue, 20 Oct 2020 17:55:12 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20201020175512.1.BD362E36B5CA0704@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "697557"}
+Reply-To: recruit@utdallas.edu
+X-Mailgun-Tag: 580-School
+To: zxt180005@utdallas.edu
+From: UTD University Career Center via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: Important: STEAM Career Expo Information
+Content-Type: multipart/alternative; boundary="e9436fb76e114f85a5464065cc57790b"
+Return-Path: bounce+02d017.88cb8-zxt180005=utdallas.edu@mail.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2020 17:57:16.5017
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ c8006488-0a65-4333-3664-08d8752194e0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: c8006488-0a65-4333-3664-08d8752194e0
+X-MS-TrafficTypeDiagnostic: CY4PR01MB2549:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:192.237.159.133;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a4.mail.joinhandshake.com;PTR:a4.mail.joinhandshake.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2020 17:57:13.0464
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c8006488-0a65-4333-3664-08d8752194e0
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR01MB2549
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.5741258
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TG1Uc3IvNWs4RE1kbmNrRlUwZDEybEVTa2xGOXg4MmxjL0NCN2NYa1d4TXpO?=
+ =?utf-8?B?eE12SXFLZHRZNTVYcEhzdEpWWlVjbFB0S2dsblVjSXpkb3ZlUlBxM09iQzlQ?=
+ =?utf-8?B?QnJZZDdDNlNHZUdRSVBHaWVSTUl0N0JNZDNLcmpWdmF1ckVCU2diWU0yT0Ir?=
+ =?utf-8?B?c2lvZVVydlE3OXZWNm8xUTRRQlN1L1F0dkhYcDB0M0N5YlJ0QiswaXhEd054?=
+ =?utf-8?B?VTUrSUU3LzVzQ2JRWUNBd1dKSGM3NDZaR2QwZUIzTzhySWdNek45RUlSMVRT?=
+ =?utf-8?B?d0NVVTNPdjBsUFVDa0srWStUQnlnTElRT1ZudEVOWThhU3dkN29BSlhFQUZz?=
+ =?utf-8?B?Y3kyU3JXaUZhODdLdTh6cDdyR2ZGU3dJUFUzWUMvWkM2YTY5aGt4U3BwREp0?=
+ =?utf-8?B?QjVsdkJkVEZjKzBDNmJXSTZZSHFPNWRiUFAydkJlamFhL3RIekhVOEpTZWp6?=
+ =?utf-8?B?RlB0UG5BdncrZk1hYWt0ZnhZM1JEbi9JbnhVZHErQWs1TGRHUTVUZFpqbWVN?=
+ =?utf-8?B?MUZYRmZER1NPRUpYUmx4WWFLbGlETldaWGxnOGZjaHN3N2hkUDAxQWhHa0Ru?=
+ =?utf-8?B?NDhxOGR3N3pEVE5ERWtxL2JGMWFTWEpnNklwOHovK2pOSHdHc1luS1NDZm5Z?=
+ =?utf-8?B?NjZ3SnhKODhadXpKYUVrVmdpMWNMSTFqTWJNejVaWWc4NldHS3lab3gzK1B6?=
+ =?utf-8?B?ZVlWdmc5QzRQVll2YTRId0RwRlpJR2VNNTQxUTZJZXVReHNDWGVVQ0RReHM5?=
+ =?utf-8?B?bVpzbkdXaUNzRXZZWm5oNHFQUDJNRm8zNmU1M1hKR2dsOTN0TTFFOUI5NXZZ?=
+ =?utf-8?B?SlBaTGpZNlp6cWxYamdCL0p6MXdNR2xnOWJScEtYVi9JWVpOS1V5eWY2RzlX?=
+ =?utf-8?B?aHczRUo2M0hZdVN0cVRYMG05dEVOTFRIaHIveUxOOGU5elpxZDNKUGpGUzBK?=
+ =?utf-8?B?VVZ2TTN0SEZNMEh6MnhSeThNU1h5cVpETllManB0Znp1c09hVVhVZW01ekZi?=
+ =?utf-8?B?aGNoS0QyWW9tbFd1QTUvMC93TU9HK1FKNm5pTWtXOStFTUxjQjAycTAyc0VE?=
+ =?utf-8?B?N0RWaWFUNVVLTDZjMVoyWnNWUm9rVWlnTFowa3IzcVoxbUxxcWcyWXMrSzZq?=
+ =?utf-8?B?czNyclVSMDFVZnpyUG93Y1RWU0RJTXIxS2c4MEVKRFZGQ0xibjdVbnBzVGpB?=
+ =?utf-8?B?c2ZlblpVcFdGSU0yYlBkRkR2dUtaTUxLVXhRTzZBQ2YvODVkTHJURm85TjRh?=
+ =?utf-8?B?YXlGUjRUTkpsejZudm9mTW5udnFZdXA1eFRySDhEY0Q4bmcyLzlZUXNGb2lM?=
+ =?utf-8?B?WHJuaXU2VEtFcUZ2dzdZWlJaYlJNa2RCMW93VkpiTEhjR3Qxam55OEI4cUdX?=
+ =?utf-8?B?Mmp2YTd5RmU3dUpTalBKU3VOMVN3QjFWaWxueFluVUdYejNvRjJUazRxNHJD?=
+ =?utf-8?B?VWhKOEx4ZGM0TndJNENIQjhFMVdIQ0RBWWtveG45R1A0RFJaZVFHdzJIdEhp?=
+ =?utf-8?B?Vjk4ZWdiQjB3dU5rYndnNFlQNWZUUTlqN1U3SG1VT2dBaGdDWmVRMU1xZUVP?=
+ =?utf-8?B?Rm0wNStHakxTUDJJMHdydmhreGFadnoxNVZTVkt2RlNDL3BzaGVNd3U2YTli?=
+ =?utf-8?B?dDBrdnVBLy9ZZUY1VDZLOUVjNlBuNW9HaHlNeWZsVUhIQjJ4MDkzN0s5UW50?=
+ =?utf-8?B?UjFqWko4UVhsNzdiaW9IbEpNNTZVUnYyemg3eXg3YTJhaEpQL2Z6YzRGYWw2?=
+ =?utf-8?B?RzR6SnFxQklCcFp6WlRYeGhNOGlzajd0ekI2TC9HSThVOXFWU3AvN0xSa2xX?=
+ =?utf-8?B?OEREWWJHTnJmdmRxWEVZQmlkV2VrTVArSFVJYVRya1JabTkyTUQwK0VNd2JJ?=
+ =?utf-8?B?Yk5pem85enNtZVpJTDJJejk3clZCdTdjZjhoUVFsWEZoNkJwK2tZZ1JQYVVN?=
+ =?utf-8?B?UHZHdEJ5bVV4c003dFN1d2U5QklWeTZlVUJZNjNieHdxNDNYTGJ5dzlmcStM?=
+ =?utf-8?B?SjQyVFoxV1VPdGI3Nk1uZGJFWjFyMUw0NU5vY2dVRy9ndG9jSEx5OStuY05z?=
+ =?utf-8?B?UnNpU0FGZVMyMXhKUFBId0hLY1ZFTXQ3cUVQbTB1eW1uWm5wQlR3UDdXVmo1?=
+ =?utf-8?B?NGw2Zm1GMUdIMi8xVFlxWVpuMysvQkJIdDdVOUxaT2hKQTNkaFJtRzlzOWoz?=
+ =?utf-8?B?SDBVZFlpMk8xRmVMSnpVcFdiWGZhRzBUMHVSZlpUdW5WWkt0L3JOZm5KUStp?=
+ =?utf-8?B?dGZhS085T0I4MWN6NW1BSitUZWZFUXpFaVVGMkZQMkxXQWpsNDByTWorYlVM?=
+ =?utf-8?B?Y0NvTGRUa2ttRUlGYlRKc251ZmNoQUYyWVlPUDBwSDN2a0lwZ25PU1BXSytk?=
+ =?utf-8?B?UHNMRFNNM1JRdTRVdW83b3BKa3F2VnhvanNnTkRrMFR6Y1RCOU9BOGUwbXJH?=
+ =?utf-8?B?dG9MZlROOHFxV0dKdUY2enhPNk5LWmRrYzQzM2RPYWYyODZselpXUFhKMjFV?=
+ =?utf-8?B?ZG4vT29lYWNUdTREZ0RwMzlMbXIvbGlCeWVnMjF5QkVRPT0=?=
+MIME-Version: 1.0
+
+--e9436fb76e114f85a5464065cc57790b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #154734;
+  border-color: #154734;
+  color: white;
+}
+table.button table td a {
+  border-color: #154734;
+  color: white;
+}
+a { color: #154734; }
+a:hover { color: #2c5948; }
+a:active { color: #2c5948; }
+a:visited { color: #154734; }
+table.menu th.menu-item a { color: #154734; }
+=2Ewrapper.banner { background: #154734; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: white;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #2c5948;
+  color: white;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #2c5948;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: #154734;
+}
+img.masked {
+  background: #154734;
+}
+
+
+
+
+ =20
+
+=C2=A0
+
+ =20
+
+    Greetings Jerry,
+
+The University Career Center invites you to the Fall 2020 STEAM Career Expo=
+=2E This virtual event gathers various co=
+mpanies, organizations, and other in=
+stitutions that are looking to recruit students and alumni who are interest=
+ed in various career opportunities in science, technology, engineering, art=
+s, and technology fields. To participate in this event, you may register fo=
+r this career expo and sign up for sessions with these organizations by cli=
+cking on the "Register" button below.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    If you have already registered for this event, then great! You can chec=
+k to make sure that you've signed up for the sessions that the organization=
+s have scheduled. It is important that you sign up for these sessions as th=
+is is the only way to communicate with the organizations during this event.=
+ You will also want to make sure that you have a public resume available on=
+ your Handshake profile. New organizations are also added along with new se=
+ssions so be sure to check if any new schedules appeal to you.
+
+To find out more about the Handshake virtual fairs, such as registering for=
+ employer sessions and updating your Handshake resume, click on the button =
+below.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Attending a Virtual Fair
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    We=E2=80=99re looking forward to seeing you at the STEAM Career Expo. P=
+lease read below for a few important reminders.
+
+
+Sign up for employer sessions in advance. You can only attend sessions you =
+registered for. Registration closes when a session begins or reaches capaci=
+ty. Check out this article to learn how to register.
+
+
+
+Update your profile. Some employers set qualifications to define which stud=
+ents can register for their sessions. To ensure you qualify for employer se=
+ssions, make sure your school year, major, GPA, and work authorization stat=
+us are up-to-date on your profile.
+
+
+
+Double check your technology. You=E2=80=99ll need an internet connection, s=
+peakers and a microphone, and a supported device. Learn more about technica=
+l requirements for virtual fairs here.=C2=A0
+
+=C2=A0
+If you have any additional questions about this event, please feel free to =
+reach out to recruit@utdallas.edu.
+ =20
+
+
+
+=C2=A0
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email is being sent to Jerry Teng at The University of Texas at Da=
+llas.
+   =20
+    Unsubscribe =E2=80=A2
+    Update preferences
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--e9436fb76e114f85a5464065cc57790b
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-he=
+ight:100%;background:#f5f5f5"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+.small-float-center{margin:0 auto !important;float:none !important;text-ali=
+gn:center !important}
+.small-text-center{text-align:center !important}
+.small-text-left{text-align:left !important}
+.small-text-right{text-align:right !important}
+.hide-for-large{display:block !important;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+.columns td.small-12{display:block !important;width:100% !important}
+.column td.small-12{display:block !important;width:100% !important}
+.columns th.small-12{display:block !important;width:100% !important}
+.column th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+.thumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+.thumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#2c5948}
+a:active{color:#2c5948}
+a:visited{color:#154734}
+table.button:hover table tr td a{color:white}
+table.button:active table tr td a{color:white}
+table.button table tr td a:visited{color:white}
+table.button.large:hover table tr td a{color:white}
+table.button.large:active table tr td a{color:white}
+table.button.large table tr td a:visited{color:white}
+table.button:hover table td{background:#2c5948;color:white}
+table.button:visited table td{background:#2c5948;color:white}
+table.button:active table td{background:#2c5948;color:white}
+table.button:hover table a{border-color:#2c5948}
+table.button:visited table a{border-color:#2c5948}
+table.button:active table a{border-color:#2c5948}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/17=
+01459/original/data.?1603215143" alt=3D"STEAM Career Expo" style=3D"outline=
+:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-wi=
+dth:100%;clear:both;display:block;margin:0 auto;float:none;text-align:cente=
+r;width: 600px;" width=3D"600" class=3D"float-center"></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Greetings Jerry,</div>
+<div><br></div>
+<div>The University Career Center invites you to the Fall 2020 STEAM Career=
+ Expo. This virtual event gathers various companies, organizations, and oth=
+er institutions that are looking to recruit students and alumni who are int=
+erested in various career opportunities in science, technology, engineering=
+, arts, and technology fields. To participate in this event, you may regist=
+er for this career expo and sign up for sessions with these organizations b=
+y clicking on the &quot;Register&quot; button below.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#154734;border-color:#154734;color:white;border-radiu=
+s:3px;border:none"><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlj8FuwyAMhp8mu=
+S0ypBB64NCu6wvsAZAHTkMXQgVEmvb0o1nXyyT74O-X7f93Win7oVqvOXBg9x6EYLxj3fHUS_7W=
+y6N4PcAAu2YHAf3cXaNfJlxcnvCTOhtDO2k-Yk9Ao5BIbFRWykHtFQgp1MiIQTvrqZRbbvpDw8-=
+11uJwnjH_v1ZFi4komRF9ynVkUgyy6c9zTE1_gobLtQST45osVRAwZ3N3RukhBXJ-DVWiO35AG5=
+dCS6lU7mvE4Q9juKG_LJWvizcF04UKObOt5jbp76_CFACImv_pmtzaFi0UvLzbKca5fUYwm51t2=
+3inf3_9ABO_c3E&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a6=
+54333366408d8752194e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738813=
+4382527017%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Du9nVlAQWLfM73l3B53hRdPvOwiW%2=
+BVGrJN3AwOHLlsFQ%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joi=
+nhandshake.com/c/eJxlj8FuwyAMhp8muS0ypBB64NCu6wvsAZAHTkMXQgVEmvb0o1nXyyT74O=
+-X7f93Win7oVqvOXBg9x6EYLxj3fHUS_7Wy6N4PcAAu2YHAf3cXaNfJlxcnvCTOhtDO2k-Yk9Ao=
+5BIbFRWykHtFQgp1MiIQTvrqZRbbvpDw8-11uJwnjH_v1ZFi4komRF9ynVkUgyy6c9zTE1_gobL=
+tQST45osVRAwZ3N3RukhBXJ-DVWiO35AG5dCS6lU7mvE4Q9juKG_LJWvizcF04UKObOt5jbp76_=
+CFACImv_pmtzaFi0UvLzbKca5fUYwm51t23inf3_9ABO_c3E" shash=3D"ICB1NZbxZ4CMbgBl=
+PuAyOp2TSAvX9fm7tQ/69wLJOmq3p2/w9q6A70zBIFj/ys0jEOYwHiJ6ZzLkJSaj9nr92w7CBAb=
+h7+6Xpnj8xlrsvMiXUAAjWhMWs0PDV5U/BSOyhLzpB61ZU3wiRCpxE6EtF+I2hLDfZXo5/6K99o=
+zKPYk=3D" style=3D"color:#154734;font-family:&quot;Suisse Int'l&quot;, Helv=
+etica, Arial, sans-serif;font-size:15px;font-weight:bold;color:#ffffff;text=
+-decoration:none;display:inline-block;padding:10px 20px 10px 20px;border:0 =
+solid #254fa5;border-radius:3px;border-color:#154734;color:white">
+        Register
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>If you have already registered for this event, then great! You can=
+ check to make sure that you've signed up for the sessions that the organiz=
+ations have scheduled. It is important that you sign up for these sessions =
+as this is the only way to communicate with the organizations during this e=
+vent. You will also want to make sure that you have a public resume availab=
+le on your Handshake profile. New organizations are also added along with n=
+ew sessions so be sure to check if any new schedules appeal to you.</div>
+<div><br></div>
+<div>To find out more about the Handshake virtual fairs, such as registerin=
+g for employer sessions and updating your Handshake resume, click on the bu=
+tton below.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#154734;border-color:#154734;color:white;border-radiu=
+s:3px;border:none"><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkMFuwyAQRL_Gv=
+mFhDDYcfEiapr1X6tXCQGJaDBYsUtWvL06TXirBLnqjWWD0yLmaeW1Hgglu9z0w1pKmbY6nrifP=
+XX9kTwc8YFpRvErrmo9g_SK9Tov8NI0Ka72MPaVCz7TDyvRCXMjM6MwFYfQiCRcDrt24AGyp6g4=
+VOZeV8raFCP-HFW1RpRiPcipdRrDKmf3Y9RhTITpKBopeHyaU0Eu22iAI6ABgvLb-iiR6txGydO=
+gsbay6swulntqK9BnWKYUclSlglSlN-7dMvEur0TavRTI7vkMVfJkMhfai5DM8sFw3aa--8OztB=
+DJeDRg93aypjuP3F7QcY8xKeBm0dE6mxuhcw8g4Rm9qCcHVfwFMt-fc3JPV4-9dP8UMhz4&amp;=
+data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a654333366408d8752194=
+e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388134382537018%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C1000&amp;sdata=3DzW%2BxVGgsig0h4xncmIezXnsK9WWijL3t8GcNu31gYs8%3D=
+&amp;reserved=3D0" originalsrc=3D"https://email.mail.joinhandshake.com/c/eJ=
+xlkMFuwyAQRL_GvmFhDDYcfEiapr1X6tXCQGJaDBYsUtWvL06TXirBLnqjWWD0yLmaeW1Hgglu9=
+z0w1pKmbY6nrifPXX9kTwc8YFpRvErrmo9g_SK9Tov8NI0Ka72MPaVCz7TDyvRCXMjM6MwFYfQi=
+CRcDrt24AGyp6g4VOZeV8raFCP-HFW1RpRiPcipdRrDKmf3Y9RhTITpKBopeHyaU0Eu22iAI6AB=
+gvLb-iiR6txGydOgsbay6swulntqK9BnWKYUclSlglSlN-7dMvEur0TavRTI7vkMVfJkMhfai5D=
+M8sFw3aa--8OztBDJeDRg93aypjuP3F7QcY8xKeBm0dE6mxuhcw8g4Rm9qCcHVfwFMt-fc3JPV4=
+-9dP8UMhz4" shash=3D"gkGg9teuY16OWIjrHOtkjT3hKu9SlmKto1vZJ6gI+DGet/WLSeCNzX=
+VOJ7msWU9FvhEJtWUkOMimhuRdir4pJK+txFd96vX2ax1mukjjblH+eIf0DsdcpXL/Y0DleCuuJ=
++FzIs1t3amMn4X1u7Nfy4sOLAgCZfn/K8sX6QFfrtM=3D" style=3D"color:#154734;font-=
+family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:15p=
+x;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-block;=
+padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;border=
+-color:#154734;color:white">
+        Attending a Virtual Fair
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>We=E2=80=99re looking forward to seeing you at<em> </em>the STEAM =
+Career Expo. Please read below for a few important reminders.</div>
+<div><br></div>
+<ul><li>
+<strong>Sign up for employer sessions in advance. You can only attend sessi=
+ons you registered for. Registration closes when a session begins or reache=
+s capacity. </strong><a href=3D"https://nam02.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkMluwyAURb_=
+G3tnCgLG9YJE0yQ9E6tYi8BzTMlgMUtSvL07TbioBD52r-ybFx1HexlpzjDDq9jv0fYfbrj2eCM=
+Nnwo792wENiFYUWaFN--G1W4VTcRWf0Epv65ULyiQF3C2LJHiiS0eRQlNHGWYjWm59bfia0hYrc=
+qjwpZyYt82H9D9Z0VZZHnBNjiWKkLQ0sH8JQ4hOE6F4oM27DikL01yEDrG5pqzApeb82CBocBIq=
+cjE-VOSEK8xysnP0Oez4ZEWM8z4JhJdkQelsiwQ7fkHpXSopC2VTWcnwi4XdhL67wrPTcxLhDgn=
+U_LTGOvCvR-pGhFBf9pWTEsaI2ILKdeL9iJqrXL039d_M87Odp3vWiv_U-gZtQIM4&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a654333366408d8752194e0%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388134382547008%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DXun3ysmq5O7hrcgfBDI4KPmlgFU2XXd0KQSKVtKeunA%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://email.mail.joinhandshake.com/c/eJxlkMlu=
+wyAURb_G3tnCgLG9YJE0yQ9E6tYi8BzTMlgMUtSvL07TbioBD52r-ybFx1HexlpzjDDq9jv0fYf=
+brj2eCMNnwo792wENiFYUWaFN--G1W4VTcRWf0Epv65ULyiQF3C2LJHiiS0eRQlNHGWYjWm59bf=
+ia0hYrcqjwpZyYt82H9D9Z0VZZHnBNjiWKkLQ0sH8JQ4hOE6F4oM27DikL01yEDrG5pqzApeb82=
+CBocBIqcjE-VOSEK8xysnP0Oez4ZEWM8z4JhJdkQelsiwQ7fkHpXSopC2VTWcnwi4XdhL67wrPT=
+cxLhDgnU_LTGOvCvR-pGhFBf9pWTEsaI2ILKdeL9iJqrXL039d_M87Odp3vWiv_U-gZtQIM4" s=
+hash=3D"diu+v2dUZHcsKu0xih0UuTY8OXnmkA76lxhWb7wEFvOjF10QZzeBVw5IlXBX2erXS0j=
+tLEgyZEoDTrm2FbB4nyXWbzrW9nPvQVg3K5KUaEHjkTi4Avjb156J9evHhsvanoyQgwnOHxZQKs=
+UE7Y+LWidkurgKKv+Utxwdnk8f0/E=3D" target=3D"_blank" style=3D"color:#154734"=
+><strong>Check out this article to learn how to register</strong></a><stron=
+g>.</strong>
+</li></ul>
+<div><br></div>
+<ul><li>
+<strong>Update your profile. Some employers set qualifications to define wh=
+ich students can register for their sessions. To ensure you qualify for emp=
+loyer sessions, make sure your school year, major, GPA, and </strong><a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fem=
+ail.mail.joinhandshake.com%2Fc%2FeJxVkFtuwyAQRVdj_8XiYWz8wUfSNBvoAhCBcUzDIz=
+IgVVl9sZtWqjTMoHN1hxmM4FxfeWsFQQTh7YyMYdLh7nSmA3mnw4m9HdGI-qZHXlnXfUYbFhVMW=
+tQdOh19u4gZFBCi-XXqMeHDOGPOzAzcGDwNar62Tiw5P1JDjw251Pjf5AnBQLpvzaq26JogHEqq=
+Va3ZagfbFWOGMJtGTtDY0IuLa0PPtCFDyV6mWFYNFXiVktwGhfUleTC2-CrBhl9Qx5Ah5EqHqW4=
+8_mLlH8reQuUlWJnVeoMMRu7W1K7i-ZUxRwix-h0lG-WcSh2Y0mbBODp86CVG1_6tJvdxdre0Rv=
+y89Q1psHeU&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a65433=
+3366408d8752194e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388134382=
+547008%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6=
+Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dsjj0h29bcbJAJlX5wVUzK2ec%2FNfIqGV=
+aMKyM1NVeiNE%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joinhan=
+dshake.com/c/eJxVkFtuwyAQRVdj_8XiYWz8wUfSNBvoAhCBcUzDIzIgVVl9sZtWqjTMoHN1hx=
+mM4FxfeWsFQQTh7YyMYdLh7nSmA3mnw4m9HdGI-qZHXlnXfUYbFhVMWtQdOh19u4gZFBCi-XXqM=
+eHDOGPOzAzcGDwNar62Tiw5P1JDjw251Pjf5AnBQLpvzaq26JogHEqqVa3ZagfbFWOGMJtGTtDY=
+0IuLa0PPtCFDyV6mWFYNFXiVktwGhfUleTC2-CrBhl9Qx5Ah5EqHqW48_mLlH8reQuUlWJnVeoM=
+MRu7W1K7i-ZUxRwix-h0lG-WcSh2Y0mbBODp86CVG1_6tJvdxdre0Rvy89Q1psHeU" shash=3D=
+"vezKme1flHfoKt3NcaPgQOTiS/M3ExNOSdzkNr6fvRpf5+llPCtuCFofEWFI+RaW0YOZtWENqB=
+ssx3boata/MaMqfHWaWArbyk7kAPJMdsIzyuxaeTPqYgANQQ3aGD+T0IqPwJuBjORmykACMUjMx=
+PdT0+NBnoxFgEXQ1gJ3xJM=3D" target=3D"_blank" style=3D"color:#154734"><stron=
+g>work authorization status</strong></a><strong> are up-to-date on your pro=
+file.</strong>
+</li></ul>
+<div><br></div>
+<ul><li>
+<strong>Double check your technology. You=E2=80=99ll need an internet conne=
+ction, speakers and a microphone, and a supported device. </strong><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fema=
+il.mail.joinhandshake.com%2Fc%2FeJxlkM1uwyAQhJ_GvmFhsLFz4JA0jXpuql4tzJKY1ID=
+Lj1T16YvdpJdKwKJvNMuwwPtejn2pOcEE1-vu2rYmVV0djpSRZ8oO7dMed7gpGmyEnqub03YSFs=
+IkPlQlnSknLvFFjk0HAKztMCMwjn0_yougQNl46cqZTzEuoaD7gpzyCmlZnI__m2VtkvlQFqWQq=
+_BRy1mtV8owbmtMu13doJeHCb1rUA69qs-kvTLKxoDevEtjNk3ORW2v6BwTbEJBT7PzBT02BWEp=
+miG45KXKwIgQhvV_yt8lo0AnkyW14juUzsbcKVO2y4PqHliYReirzTxZPUThryoqGDZrKD3__op=
+1j3P-PMUUQcyzCJWCVEbe9hidZY46l3-TGLY4m3vQwH_f-gGr4Y04&amp;data=3D04%7C01%7C=
+Jerry.Teng%40UTDallas.edu%7Cc80064880a654333366408d8752194e0%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637388134382557002%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&am=
+p;sdata=3DjASKwu9TQY0nWkV5bzuNzZVcYzBCq%2Fl%2Ftt7O2PGmkqs%3D&amp;reserved=
+=3D0" originalsrc=3D"https://email.mail.joinhandshake.com/c/eJxlkM1uwyAQhJ_=
+GvmFhsLFz4JA0jXpuql4tzJKY1IDLj1T16YvdpJdKwKJvNMuwwPtejn2pOcEE1-vu2rYmVV0djp=
+SRZ8oO7dMed7gpGmyEnqub03YSFsIkPlQlnSknLvFFjk0HAKztMCMwjn0_yougQNl46cqZTzEuo=
+aD7gpzyCmlZnI__m2VtkvlQFqWQq_BRy1mtV8owbmtMu13doJeHCb1rUA69qs-kvTLKxoDevEtj=
+Nk3ORW2v6BwTbEJBT7PzBT02BWEpmiG45KXKwIgQhvV_yt8lo0AnkyW14juUzsbcKVO2y4PqHli=
+YReirzTxZPUThryoqGDZrKD3__op1j3P-PMUUQcyzCJWCVEbe9hidZY46l3-TGLY4m3vQwH_f-g=
+Gr4Y04" shash=3D"dPMYKeIfeV6QgbtPHg5AVDZ6XwRIdINCzzsc2PCuN13AEaeAQVsigKMJJK=
+ZB9cJPWkAo60Tx9fq0hGTaSIiuea1B7F+scyUjOdYtHRKtpt0pIJ4mWE4VZ/t9TdFmMiCZJuVDj=
+thdzayusDSF5Z/xehihQkBx6KOs8W0YK/dRrLI=3D" target=3D"_blank" style=3D"color=
+:#154734"><strong>Learn more about technical requirements for virtual fairs=
+ here.</strong></a><strong>&nbsp;</strong>
+</li></ul>
+<div>&nbsp;</div>
+<div>If you have any additional questions about this event, please feel fre=
+e to reach out to <a href=3D"mailto:recruit@utdallas.edu" target=3D"_blank"=
+ style=3D"color:#154734">recruit@utdallas.edu</a>.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email is being sent to Jerry Teng at The University of Texas at Da=
+llas.
+    <br>
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Flink.mailgun.com%2Fu%2FeJw9jksOwiAUAE8jO8l7UApdsLDqCTxA8_gkoLQk0ibG=
+09tuXMx2ZoI1xjvDshUgAA-0Uig48vEme3GX_aiuF9DQnTqYKRf-rHlJtISW6BW5rzNLFpwTA4Y=
+gEchJRcIPMfqhQ-0iSET2tt_PigYA1O7Z1kClUOMxbGy1ysD54VOthf3F00ytTfEoTjnYfti39A=
+-vIjQu&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a654333366=
+408d8752194e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373881343825669=
+99%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1h=
+aWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DXXKKwDr4%2BOt3fpt0iPB%2FkLa8MN15GYI4a=
+Wi6J7fjrBc%3D&amp;reserved=3D0" originalsrc=3D"https://link.mailgun.com/u/e=
+Jw9jksOwiAUAE8jO8l7UApdsLDqCTxA8_gkoLQk0ibG09tuXMx2ZoI1xjvDshUgAA-0Uig48vEm=
+e3GX_aiuF9DQnTqYKRf-rHlJtISW6BW5rzNLFpwTA4YgEchJRcIPMfqhQ-0iSET2tt_PigYA1O7=
+Z1kClUOMxbGy1ysD54VOthf3F00ytTfEoTjnYfti39A-vIjQu" shash=3D"BJgaITbOJFZ1KTk=
+pQ0B99c2vN3pKnbbevcffAm6KNv9xQWFgLpoCgH4S5xAjmeSlXJPm78kkwN/p+HQqwfdhk/Fe2y=
+ZsJXC/A8VfKE5exHNloGCUCrYgb7YRMh4r8cGmmerDDmcD2H8kwQ8a21sF6K2B/TC5iu8ixtT3U=
+9yQYMw=3D" style=3D"color:#154734">Unsubscribe</a> =E2=80=A2
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlT0tuxSAQO03YFQ2TQMiCxXv9XKAH=
+iAhMFF4JRIFIVU9f3qabSrZseeEZe6O1WzQLBgFBPDlKKZALfn_rFb736i5fbzDC0A2w2xD5I4e=
+02eTLZr-Iu7yzzWiHQpAa3QCLsEjgJpDL6hdClCtqFs1W61G6_tbhR4M9jv9FLb8KnaWpmEDrSa=
+hmU65hDc7WkNN8nLTSSclRYaf5-a5CA4Bsv13V2xht4eQvVo3U8PLptpwj-7sx77aUmZ4r5uCNm=
+trU8ReTv1Dt&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cc80064880a6543=
+33366408d8752194e0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738813438=
+2566999%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DEnoKUmeeX2PooAYDN1nHLQnXasqFo0EQ=
+6VAAU3xklHg%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joinhand=
+shake.com/c/eJxlT0tuxSAQO03YFQ2TQMiCxXv9XKAHiAhMFF4JRIFIVU9f3qabSrZseeEZe6O=
+1WzQLBgFBPDlKKZALfn_rFb736i5fbzDC0A2w2xD5I4e02eTLZr-Iu7yzzWiHQpAa3QCLsEjgJp=
+DL6hdClCtqFs1W61G6_tbhR4M9jv9FLb8KnaWpmEDrSahmU65hDc7WkNN8nLTSSclRYaf5-a5CA=
+4Bsv13V2xht4eQvVo3U8PLptpwj-7sx77aUmZ4r5uCNmtrU8ReTv1Dt" shash=3D"QbpmlijQa=
+5AlbTUNIZb8/Vp7ycN4bzy0sGMbhEnyvR2L6aP0dG06rHoc2lBEzSYDHIA0/akuxEwevEAYW0R5=
+LprzSxAd/RMEQh51AN744mcvXdsaLvJ5cDrZXTZjDSdcdvzGeD82Ffsgihf3EcU6yF/BMUrMkcc=
+2XKH84awTKB8=3D" style=3D"color:#154734">Update preferences</a>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.mail.joinha=
+ndshake.com/o/eJw9jksOwiAUAE8jO8l7UApdsLDqCTxA8_gkoLQk0ibG09tuXMx2ZoI1xjvDs=
+hUgAA-0Uig48vEme3GX_aiuF9DQnTqYKRf-rHlJtISW6BW5rzNLFpwTA4YgEchJRcIPMfqhQ-0i=
+SET2tt_PigYA1O7Z1kClUOMxbGy1ysD54VOthf3F00ytTfEoTjnYfti39A-vIjQu"></body>
+</html>
+
+--e9436fb76e114f85a5464065cc57790b--

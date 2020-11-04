@@ -1,0 +1,861 @@
+Received: from MN2PR01MB5999.prod.exchangelabs.com (2603:10b6:208:18f::15) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Fri, 9 Oct 2020 21:07:24
+ +0000
+Received: from CY4PR19CA0032.namprd19.prod.outlook.com (2603:10b6:903:103::18)
+ by MN2PR01MB5999.prod.exchangelabs.com (2603:10b6:208:18f::15) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.24; Fri, 9 Oct 2020 21:07:22 +0000
+Received: from CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:103:cafe::73) by CY4PR19CA0032.outlook.office365.com
+ (2603:10b6:903:103::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.21 via Frontend
+ Transport; Fri, 9 Oct 2020 21:07:22 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.148)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.148 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.148) by
+ CY1NAM02FT014.mail.protection.outlook.com (10.152.75.142) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Fri, 9 Oct 2020 21:07:22 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Fri, 9 Oct 2020 16:07:01 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Fri, 9 Oct 2020 16:07:01 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id C5EAEC00005B; Fri,  9 Oct 2020 16:07:01 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 93B4CC000052
+	for <Students@lists.utdallas.edu>; Fri,  9 Oct 2020 15:55:43 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=Laura.Smith2@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  Laura.Smith2@utdallas.edu designates 40.107.100.46 as
+  permitted sender) identity=mailfrom; client-ip=40.107.100.46;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="Laura.Smith2@utdallas.edu";
+  x-sender="Laura.Smith2@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: 7MVszjC7p9QIXkc757BCe6mz2puSygfjlUtFMJ4HFZCa6oUIK47QC7KsYQheZQC9xi63wkG6jb
+ CcG0bqZiYndzKa9NeipTUjJzMqDS1DPZU/8MwfG5yMOr99+kuR7nE3+HhgITI37r3U3FaprQ1u
+ hbTPjH3TLTAzm/1DzEiowuYpjallH9xVBDcztXOWaV9ivIZrTfQy8DwjftXyItioxaUncYh3dk
+ CgX2xXuzhFSnQNsrGBiR2Lq42zmZvHbtiPu3sJZ3nx/fR8RGoFVbDlthTye8eSt63hj4dyrztS
+ Yuy6OEaIoWZuKy/H6hGxXz/Q
+X-IronPort-RemoteIP: 40.107.100.46
+X-IronPort-MID: 1055398
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0BJAgB2zYBfhy5kayhXBgMOg20vUWIVDkoeAwcILI0/n?=
+ =?us-ascii?q?FGGA4ERA1UBAQkBAQEBAQEBAQEIARMQCgIEAQGEBkQCghQlATgTAgMBAQEDA?=
+ =?us-ascii?q?gMBAQEBAQQBAQECAQECAwICARMBAQF/YIECAYFGAYEpIQsDMQyCNwyDSAYVE?=
+ =?us-ascii?q?wEBHQ0BBgMEEQFABzkUEgEEEwgRCYMEAYF+fwIMm2sBgSg+AiMBEi0BAQIJg?=
+ =?us-ascii?q?QUpiwmDAQEBBYEzAYF2gkcBCYFGAwaBOIkrhWc+gRFDgh2DSgKBKgEICgEjK?=
+ =?us-ascii?q?wkRgwOCLYFGAYttglMkgxmHBoEdigGRdgMDAQOCaIc1gUuSCYMTigiOTYVOg?=
+ =?us-ascii?q?VmTPYcGgU0jkRiEGQIEAgQFAhAFgWshaXBygWyBS00BAgECDQECAgIBAQIBA?=
+ =?us-ascii?q?QgBAQEBjjaDV2qJLj0BQzE3AgYKAQEDCXyNTAEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AV3BA9BMc9V75JKuuiyMl6mtUPXoX/o7sNwtQ0K?=
+ =?us-ascii?q?IMzox0K/77oMbcNUDSrc9gkEXOFd2Cra4d1KyL6uuxCSQp2tWoiDg6aptCVh?=
+ =?us-ascii?q?sI2409vjcLJ4q7M3D9N+PgdCcgHc5PBxdP9nC/NlVJSo6lPwWB6nK94iQPFR?=
+ =?us-ascii?q?rhKAF7Ovr6GpLIj8Swyuu+54Dfbx9HiTagY75+NhW7oRjeusQSgoZpN7o8xA?=
+ =?us-ascii?q?bOrnZUYepd2HlmJUiUnxby58ew+IBs/iFNsP8/9MBOTLv3cb0gQbNXEDopPW?=
+ =?us-ascii?q?Y15Nb2tRbYVguA+mEcUmQNnRVWBQXO8Qz3UY3wsiv+sep9xTWaMMjrRr06RT?=
+ =?us-ascii?q?iu86FmQwLvhykaKj4563nXhdJsg6JHrhyhoBl/zJTVYIGTKfFyeqzQcNcfSW?=
+ =?us-ascii?q?dHQ81fVTFOApmkYoUPEeQPIPpYoYf+qVsPsRSxChKhC/nzxjNUnHL6wbE20/?=
+ =?us-ascii?q?knHArb3AIgBdUOsHHModn7KakSVOG1zLXIzTnbcvhY3y3y6JXSch87r/2HQL?=
+ =?us-ascii?q?V9f8zLxkkyDQPKlE+cp5HgPzOUyuQNs3aX4vF9VeKzlmEosQVxojy1ycc3kI?=
+ =?us-ascii?q?XGmJ8ayk3d+Ch/3Y06KsG2RlRhbt64DJtfqTuaN41uT84iXm1ltzs2x7IGt5?=
+ =?us-ascii?q?O4fSUHyYoryh3bZvKHboSE/w7vWuaMLDtkgH9ofLyxiwu8/0avyODxWMa53l?=
+ =?us-ascii?q?hKoCdBkNTBsG0G2RLU6siCUPR9/0Gh1C6S1wDP9+5LO0Q0la7BJJ462LI/iI?=
+ =?us-ascii?q?ccsVnbEi/3nkX2l7OWeV8r+uiy8evnZ6/qqYObN49xkg3+PL4hldChDusjNQ?=
+ =?us-ascii?q?gOWGub9f6g273k+E31WLVLjvorkqnFrZDVPtoUqrSlDA9S14Yv8w+/Dyq839?=
+ =?us-ascii?q?QcgXkHNlNFdw6cj4TzJ17OJ/X4APGiiFqviDdm3//LMqH7DpnQMnTOkq3tca?=
+ =?us-ascii?q?th50JA0gY+wtFS64pKBrwAPP7/Rkr8uMHaAxMlLwC5xujqB8ty248CXG+PDL?=
+ =?us-ascii?q?SWPazOvVKN5O8gPueBaYsQtTbzK/Uo5ePhgHoillIfc6mp054aZXSlEfliPU?=
+ =?us-ascii?q?qVeWTgj9YdHWoEuwcyUfDmh0aDXDNWZHu+Q6Ix6zQgB427CIrOQ46gjKCH0S?=
+ =?us-ascii?q?ymBJNZfHpGBUqJEXrwd4WLRfMMaCWKL8F5jjEKUqStRoA42RyzrAH3yKNrLu?=
+ =?us-ascii?q?3P9SIGr57j08V15/HImhE16Dx0CdmS33uVT2FumWMIWyE507xjoUx8zVeD17?=
+ =?us-ascii?q?J0g/tFFdxP4/NJVQA6NZ3Gw+NmDNDyXxrNftaPSFm4XtWrGT48Qs4rz9MTf0?=
+ =?us-ascii?q?pwGc+ugg3f0ya2GbMYmL2GCIQx8q3G3njxI8h9y2zB1Kkkl1QoRNFANXC8hq?=
+ =?us-ascii?q?Fl7QTdGovJk0SFl6aqa6gRxzPN9HuewmWUuEFYVBR/Ub7fUX8Be0TWsMz15l?=
+ =?us-ascii?q?neQL+2FbQnLgxBxNafJKtWd93mkEtJRPH/ONTFeG+xn2awBQ2UxrOXdobqZn?=
+ =?us-ascii?q?kd0zjHB0gAlwAc522GORIgCSi8vmKNRABpQGnzfk/h9/VljHKgUgdg9B2XY0?=
+ =?us-ascii?q?Bny6Gd/h8OmefaVu8f17YAsTxnpjlpSgWTxdXTXpC7ogt9fOEURdog+l4NnT?=
+ =?us-ascii?q?b9vhFnN9qbKqF+hgQ2bhh7tkfq3g4xB4ldx5t55Eg2xRZ/fPrLmGhKcCmViM?=
+ =?us-ascii?q?yhYOeFA3Tu/B2pd6/d003f19DTwKoU9fAksAq47gyyHxBk8347joUMlifa54?=
+ =?us-ascii?q?3KCRpUWpX0AQ4s7xYvn7jBeWEm4p/Mk3hlMK26qDjHjvYgGfEsjC2lfstfao?=
+ =?us-ascii?q?uZCAP7F8kTHI6jJPFzwQqTYxkJPf5f+OsPB+37LKPU4KewJ64gkSmv1yJH69?=
+ =?us-ascii?q?wgjhvJq2x9Uu7Nz9AOxPTKlgeAUj79ih+mvKWV0chgbCwIFyyEzCn4BNR5e7?=
+ =?us-ascii?q?F+dIIPAHzoLsGqjtlznJ/iXXdE+UXrWwtAgZf2P0PKNxqhg0VZziF16TS/lD?=
+ =?us-ascii?q?G9ziBonj1htaeZ0CHUgqzjeBcBJm9XVTxnhFboL5KzioNSV0ypYg410Rq9sB?=
+ =?us-ascii?q?qigfED++ImdzGVHRkbGkq+Z3tvWaaxqLeYNsNU4clusS4LDbjlJAzcS6b9pg?=
+ =?us-ascii?q?tc2CTmTA48jHg2cS+nvpLhkll0kmWYeTxXpWfDcIdLwBbD5Ib0WOJd1z4CTT?=
+ =?us-ascii?q?I+hDXKTAvZXZHh7ZCPmpHPv/rrHUaoS4daNxLuzJ+A7gOm+WFjBRm2hLa+ls?=
+ =?us-ascii?q?CtQkAqlCT80ddtTyDBqh3xN5Lz2ZO9N+Z2LSwKTBfsrtB3EYZkns4slYkdjD?=
+ =?us-ascii?q?IE046N8yNNwi/jdM9W0qXkYD8RSC4XlpTLtRP91hQGTDrBxpqlBCnFhJo7IY?=
+ =?us-ascii?q?H8OiRPh2o895wYVP/SteQb23Mz+h3h80rQeaQvw21bkKN2riZc26ZQ5G9Phm?=
+ =?us-ascii?q?2cGuxARBEEe3Cz0UzOt5fn8+1WfDj9K7HojRgnxInzAu3a+lMOHyqpH/VqVS?=
+ =?us-ascii?q?5osJclOQqVgiSqs9PqJIGLP4BU6k3ckhHLi/VZJcAqjvQGwzJ9Pn7wtmEkzO?=
+ =?us-ascii?q?h9igFy2Za9v86MLGAInurxRxdcMnesNpEjvwr1hKMbpf64moWmH5FvADIOBc?=
+ =?us-ascii?q?e6UO6kGTYWvO+hOgqTQmQx?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,356,1596517200"; 
+   d="scan'208,217";a="1055398"
+X-MGA-submission: =?us-ascii?q?MDHgeqAAQwYC+bqjNh9OJNvkDkk459kYXmbg5y?=
+ =?us-ascii?q?fylzRfpzf62q/Gzgqb96OQ4Q89cyL5Mu58Oyoq8jYOPQrd/Nx8MoYYPt?=
+ =?us-ascii?q?Us3kiWZSgjj3Yv35r49rW4ctah2OGhUNlamnaE0sjvfMI3ZmZqqCjN5U?=
+ =?us-ascii?q?s6?=
+Received: from mail-bn8nam08on2046.outbound.protection.outlook.com (HELO NAM04-BN8-obe.outbound.protection.outlook.com) ([40.107.100.46])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 09 Oct 2020 15:55:40 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=VJf2U/WnzQGQsu6p6ifKwE4EuYjEEZ6wP6445GavvzstkfnMyqGq9ltC11tNf6kL7A6eeGadoGIKpB5zO0TV1lPAuLLkFpDuiWWjMmyHOaAZ1K2p+KA9gF5Et0djz1vUFgmW2LYmiXgVGNIEx37VIm31tZVGYPGd5NAfu/BIYZ7chPu1B8Zizm1np3njSt41FifQkGTs+euwMSgpJE9aInH6ki21rC2OoN4+x0dD8c53OBpSeST3RIDzHA2AfCu1/y5mVGs7izRx+uwrgHCkbq1z9JLGJaOE6FjjC4KMvHxHQ8ULhmkmReisT2r6oddQr1zCOZFiTl3Rgpeqt/c9Dw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=4Nerk7pmT6hwYuwZ5cNHwaPH4dQvDcrlSTY3n3UawDE=;
+ b=b56QCRANPao0YRih0Y/ZMbafCSNVl1Aw4JaZH5xOsGAU2Ktzf6UPMuboU7zrrZdUjWKNDy+c9Pd1XR7GCDihcAleI7vOjh9r5zRf+uydEEaFT+DnS8myijWozlxw1hwbZaSyu7lrpk1ZwjAIqmhunvvlPwGmr0tVono9UNlyAQhHTrwa6YxlkSaYM7glAoWxUizdPq5tKdR35CztP6X4Seu/ftFalU1nuPfnx3EXC9/VldpwfUjAEnMg5OCWWRol+oWlD/AwkkSkBQ2RgrxY6BtXsDwtNfHVp0tGNDQOIaPNiItvamvcFHRMGHu8AKL2U6sqKCp+ZJkshaxTWDOLpw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=4Nerk7pmT6hwYuwZ5cNHwaPH4dQvDcrlSTY3n3UawDE=;
+ b=r0iZh/4him/ISgVyi0U/E3GdqhW6Z4V2XJ8r40KIc4ThdDH0lR1Ir20UvKcH2XPFgPHrXUTuRXOYv9m2tpne+UNxznPYwDqVRdP60Sd6ulwx/vDmkXa31v5Kzm5DANrdwUW801K0SL7G7eqS2yEIEea+guJjkT+U+/pbuB2q9xs=
+Received: from SN6PR01MB5038.prod.exchangelabs.com (2603:10b6:805:bd::30) by
+ SN6PR01MB4797.prod.exchangelabs.com (2603:10b6:805:d4::33) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.22; Fri, 9 Oct 2020 20:55:37 +0000
+Received: from SN6PR01MB5038.prod.exchangelabs.com
+ ([fe80::30e6:c433:724e:5bd1]) by SN6PR01MB5038.prod.exchangelabs.com
+ ([fe80::30e6:c433:724e:5bd1%4]) with mapi id 15.20.3455.024; Fri, 9 Oct 2020
+ 20:55:37 +0000
+From: "Smith, Laura" <Laura.Smith2@utdallas.edu>
+To: StudentsList <Students@lists.utdallas.edu>
+Thread-Topic: SCC Services Available to you
+Thread-Index: AdaefoeusTa3flz4SJ2jDJUxJ4tEWQ==
+Date: Fri, 9 Oct 2020 20:55:37 +0000
+Message-ID: <SN6PR01MB5038913D6FE84F203E21B3ADAA080@SN6PR01MB5038.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [2600:1700:3e40:fb40:7d39:f57d:b7ff:9d9e]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 35902dd6-b870-4a4a-5ee5-08d86c9750d5
+x-ms-traffictypediagnostic: SN6PR01MB4797:|MN2PR01MB5999:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <SN6PR01MB4797F64A104CFF2D219A70ABAA080@SN6PR01MB4797.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;OLM:9508;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ nmmHBGAER7+A0WCY2WG0vi/2bSug82yxfsx5cU26neADXYo9jqy7QgPYxVKJk+KEPJtf4vYQYx6OHJFxy4bHoXuk0PJ5JTLLINg94M9cVAIH6esKHOel71VbaCajafc0bRrxBd3YIpmj3XICBr291a0e8j3sPLkSmVKtJH2Uxzs0I7/U000H21bRzblQX2PbTgevCZ9cd0+PkqYvZDCFTSkqmEot+bCfXA4T+h8eOxHZssJwtPi8stTs+e1OaUxXzOtzPotHdtQGnYqbaf0BSUp96JXqhA4bEEwPaUmTUATkVqnsgpOvEGuhw0twejNN5G6CxvX1w7Funo0gQuAAyjcdnlqP6tnbnhadKowVz+Aq81XhJNhOm6P/IuVrBmQ/TyHmamTfZufD1DJJUKZa+Q==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR01MB5038.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(376002)(396003)(39860400002)(346002)(136003)(366004)(6636002)(7696005)(66446008)(66556008)(2906002)(64756008)(83080400001)(8936002)(66946007)(76116006)(9686003)(5660300002)(8676002)(52536014)(166002)(6862004)(83380400001)(316002)(786003)(296002)(71200400001)(478600001)(75432002)(66476007)(186003)(6506007)(33656002)(55016002)(86362001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: uV2ytZJ5MgVW+DJqkRNmI2OZEUyJk4+40RHjO5yRJ5PvQjfOj0hqrDfxiD4fhJYzgEOaypBx9lgw8SaeiwgMroC5fKxLWP53xo+T58SNmsRTsHH0Xee/iyTDwCFa0znj25+Kn47NkW5yBCWnVCWmDl/hFG1diN4+xniwAhuY1WXWfEAXOtYXWmlGHMFLMP0w+11/V2BMf4cBduL5FtVLwROaoX5cIR087Fw2qgqwVQSEjmQz83NhZAfONqARYcAqNI0zN4oYMoqWYamax8m5Bc8Lsl7u7PQ+vd/ReX1EJD7UQu8xbuRji6wyY+OmU++R3cgAL1RkxEqg9DZUJ/oMYUm22yhZ47Ag/zPfmwz5RFVimzjxV7EVnL5zo4OkVXON8MC3DD7LUrq8cu6wTZ1qdUQIiWROrTW9LLTqY6vh4WRiJC4Ad06uyTx8zj2T9tNWKlW5yIjKvh02/ZWFg6fWNszouECXSzZwmKp5JreIfruYL/JmSkLLwYLH3lUcdVgJAgrbIOMiodNi9OMBFY9VOav23PYlaSzI2hBF5VKnw3apRZGRIaowGNo0QB6OHrvXF24t2r1Jhn+H5kVIaHqJhTWlCmj4MgAgOnS982lDdF2GEqOFYnCTYysOBVj2LE6ykqi7I+lrLE1n2aBw1SvolDJDII8BuCMiHwVnFeWkdF83sNDsMtqk1K8vBNz6x4PYb/kbg7a0J75OCYuySpqAzg==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_SN6PR01MB5038913D6FE84F203E21B3ADAA080SN6PR01MB5038prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4797
+Subject: [students] SCC Services Available to you
+Reply-To: "Smith, Laura" <Laura.Smith2@utdallas.edu>
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1446
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-10/SN6PR01MB5038913D6FE84F203E21B3ADAA080%40SN6PR01MB5038.prod.exchangelabs.com>
+Return-Path: bounce+jerry.teng==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Oct 2020 21:07:22.4947
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 35902dd6-b870-4a4a-5ee5-08d86c9750d5
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 6c8962ec-0371-4dcc-8db9-08d86c95acdd
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.148;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Oct 2020 21:07:22.4218
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 35902dd6-b870-4a4a-5ee5-08d86c9750d5
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.148];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5999
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5691567
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-7?Q?an3ZPn8ROXuLZi0b8XS5y/uLzxiFn3mCVZm2Rh1fy6tocE7XzN5JbC9oul?=
+ =?iso-8859-7?Q?N5qSyWYgN8Hbqnwxbbb+NsXLsyuB9v5f/khPWuKjPo0f9qCWgoH3TmH3vd?=
+ =?iso-8859-7?Q?XlB5ZpYXnwBln8h/3pFlKQmN6F4WzSmOVyJHwnlVFC4nNikfefPcsGOs3o?=
+ =?iso-8859-7?Q?1q40y08tu4P21AcUTGxs8tMWofOlrx+SGJVwq1Uuh4dHP/PwUwtsOrrzOt?=
+ =?iso-8859-7?Q?lAit3UVUSAJiNlGp5oMuIhC4cpPHI0bmSFue612JS1PAOFoZ8UNvBk4pZe?=
+ =?iso-8859-7?Q?1sCACJ2PGLbG0lVIolkzAHQGhdXgJv5Z98Pqo8COQZBi4Otf1xBQUrM4Zu?=
+ =?iso-8859-7?Q?kMmzyf0xcqr0GHTRN4STPIxnIYGKQmEX4M5Mmtsfq33zHjccALLBVPesW7?=
+ =?iso-8859-7?Q?11qV/Ewt0Ovcl6EEopmGmpgr4gmeSZcqw3urC0QmC5/5/7V8pzB9qMPFkv?=
+ =?iso-8859-7?Q?MSWf7h4kNh4JJBXUzJY1LFpXq/frkm8NYNoaZwn+xgVpJS2wgL056A1au3?=
+ =?iso-8859-7?Q?YCNlKBwkzJX3h1ktr3rwkPSlwdTX6fQ/He8lu1FHiJ4pWt0HtrJGgiI8zW?=
+ =?iso-8859-7?Q?RLjwkS4PEKNiiXRQ2cxff9Mnp0LN5EloE+UXQdO/zLG3oIxb8p9Bj23zuc?=
+ =?iso-8859-7?Q?95NSmR/hCUEW0PtPcf9Mb1VzizLJkL7HaLMq091ZTgSp3BTqXvaE7JSjLv?=
+ =?iso-8859-7?Q?eMIh+8UNte28NuqIszLbfYYCd2bxv06NW6ihXi98kNP5FeKV7t2fzXmzw2?=
+ =?iso-8859-7?Q?IcA1HtWv/xDrCbm1ZUVwR7VtPULAp3fHCwAMieopFjeSXEttgNGTLd4Euy?=
+ =?iso-8859-7?Q?umzAaXqFfzyETohjDrDHHDfBDAtPO2h88WXucpI8QDkVV97/8Cjp4Tipw2?=
+ =?iso-8859-7?Q?70bp1tv3+puWJJtMBKA2wRVFjxHrO+G9m7w/Tn2Z3lZRo5QcFQUTmH9n3C?=
+ =?iso-8859-7?Q?1560RSWjQE9UjSNSclGTABxMGb3XxXlzEkgUbLW9smVy+k0EJth7wGDti9?=
+ =?iso-8859-7?Q?JFhlCbJuukmIMaRVrIUbXGHicabBYPFfwgDdxC2aNBmC+ZpawdKDktIOXw?=
+ =?iso-8859-7?Q?27FRwyNM7LB6tTGvZq4Rj3H022qEIs59UBSu2T5mVkRX4NfHYm6tupwkNU?=
+ =?iso-8859-7?Q?WsPgFR/C8DtVwA5Trddy2ydc+y9jcUPw2wVq9GMDv3bYEZqDACfmD8d0Vi?=
+ =?iso-8859-7?Q?1/kf7T5abs5qkGz93PGo+/8BCOOBa6Q4unH1167zOL60nOWKmkFjC1wZBp?=
+ =?iso-8859-7?Q?q+yFonc/o74wukMz4xDfVyhWs1tRHOCaHEpRFDr6Cq5h8X39R9qlnz/nQT?=
+ =?iso-8859-7?Q?oDPzTjJuPEE/DLxOYlPF18N/Uqwc0H/EdKVSeEfjgRvBUm0Sny3tYezf9O?=
+ =?iso-8859-7?Q?s1HDSo6/EMB+oyuIzDiWEKVMxVWJipRhhEdueXYKRzx74jU+P4scmfIOND?=
+ =?iso-8859-7?Q?j06mq9OWKr1AlGbeWpX4aJTHO4oD3bxXoUON41eWdH3ZZfRiOWVqS5r9qK?=
+ =?iso-8859-7?Q?EBz40If2uDp/QcLKaKJK172IFWvu6CPj8XXibYuKlhtCr4PJANKX+g9oxE?=
+ =?iso-8859-7?Q?baenF6GmOwUt5q9N9b9GBb/ZXzRR?=
+MIME-Version: 1.0
+
+--_000_SN6PR01MB5038913D6FE84F203E21B3ADAA080SN6PR01MB5038prod_
+Content-Type: text/plain; charset="iso-8859-7"
+Content-Transfer-Encoding: quoted-printable
+
+Fall 2020 Message to Students
+
+
+
+The SCC Services Available to You
+
+
+
+The Student Counseling Center (SCC) wants you to know we are here for you. =
+During this time, mental health is being impacted more than ever, and we ar=
+e seeing a rise in depression and anxiety symptoms worldwide. These struggl=
+es are being impacted by various factors, including experiences of racializ=
+ed trauma, discrimination, loneliness and isolation, home life, struggles w=
+ith remote learning, accessibility barriers, health concerns, coping with C=
+OVID-19 and general distress around uncertainty.
+
+
+
+We want you to know that the SCC is open and offers mental health services =
+that are free and confidential.  Please see below for more information abou=
+t the services and resources that we are providing over the summer, includi=
+ng telehealth counseling sessions, webinars, virtual groups, Comet Chat, an=
+d consultations.
+
+
+
+We update our SCC website<https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Futdallas.edu%2Fcounseling%2F&amp;data=3D02%7C01%7CJerry.=
+Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;sdata=3DyMqC0PPnd7POrBxnJX7=
+GjNDKnBicf4g6I%2Frh51TXlKU%3D&amp;reserved=3D0> regularly, and you can also=
+ follow the SCC on social media =AF Instagram @utdcounseling<https://nam02.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.instagram.com%2Fu=
+tdcounseling%2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8=
+704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373787=
+44447777267&amp;sdata=3D%2BmHuNtuRT3GS6xWSKs%2BrG05yMuLxPfIyUqgBTWsPSRM%3D&=
+amp;reserved=3D0> and Facebook @utdcounseling<https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fwww.facebook.com%2Futdcounseling%2F&=
+amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c=
+9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;=
+sdata=3DttEARTHbGRIcA3qwtl74H5sm%2FR%2FyqT9nRQcltyzAwbE%3D&amp;reserved=3D0=
+>. We also have prerecorded workshops available to you on our SCC YouTube<h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.yout=
+ube.com%2Fchannel%2FUCr1UdPVS5ZbWmEJZqhyxauA%2Ffeatured&amp;data=3D02%7C01%=
+7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;sdata=3Dol099cEjH4r=
+Eh%2BXyUcfrddpAnXH4LlARCpJxxQOUtpM%3D&amp;reserved=3D0> channel. Watch, gai=
+n support, and engage in skill-building from the leisure of your home!
+
+
+
+Want a space to connect to peers around shared struggles or experiences? At=
+tend a drop-in support group. These are available to all students. Without =
+even signing up for services, you can just simply email sccgroups@utdallas.=
+edu<mailto:sccgroups@utdallas.edu> to get a link to join:
+
+=B7         Asian Experiences, Wednesdays 1-2 p.m. (meets biweekly)
+
+=B7         OUTer Space (LGBTQIA+), Fridays 2-3 p.m. (meets weekly)
+
+=B7         First Generation Students, Mondays 2-3 p.m. (meets biweekly)
+
+=B7         Gender Identity & Expression, Wednesdays 3-4 p.m. (meets biweek=
+ly)
+
+=B7         Global Connection (International Students), Tuesdays 10-11 a.m.=
+ (meets monthly)
+
+=B7         COVID-19 caretakers support, Wednesdays 2-3 p.m. (meets biweekl=
+y)
+
+
+
+Want a brief, 15-minute consultation with a SCC counselor? Look into our Co=
+met Chat program<https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Futdallas.edu%2Fcounseling%2Fcometchat%2F&amp;data=3D02%7C01%7CJer=
+ry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;sdata=3D%2F5rgzaBxNgxerD=
+oub32oU2C%2Bm9QMtUrEI0hsH9fF%2FhI%3D&amp;reserved=3D0>.
+
+
+
+Interested in additional services? Please email us at counselingcenter@utda=
+llas.edu<mailto:counselingcenter@utdallas.edu> if interested in signing up =
+for additional services or check out our webinars on our YouTube page<https=
+://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.youtube.=
+com%2Fchannel%2FUCr1UdPVS5ZbWmEJZqhyxauA%2Ffeatured&amp;data=3D02%7C01%7CJe=
+rry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;sdata=3Dol099cEjH4rEh%2=
+BXyUcfrddpAnXH4LlARCpJxxQOUtpM%3D&amp;reserved=3D0>.
+
+
+
+Need support while experiencing a crisis? Utilize our 24/7 crisis line at 9=
+72-UTD-TALK or text HOME to 741741.
+
+
+
+Feedback
+
+We would love to hear from you! Please take a moment to fill out this brief=
+ survey<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Futdallas.qualtrics.com%2Fjfe%2Fform%2FSV_a4w2j8OksmtsApn&amp;data=3D02%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637378744447777267&amp;sdata=3DF5SkzBVT8=
+vYbqJNXzMFj12CJxdVMqOrDxA0C40j2L%2FU%3D&amp;reserved=3D0> about services yo=
+u would be interested in participating in at the SCC.
+
+
+
+
+
+Sincerely,
+
+Laura Smith
+Associate Dean of Students =AF Health and Wellness Initiatives
+972-883-6391
+laura.smith2@utdallas.edu<mailto:laura.smith2@utdallas.edu>
+
+Student Affairs. You Belong Here.
+
+
+--_000_SN6PR01MB5038913D6FE84F203E21B3ADAA080SN6PR01MB5038prod_
+Content-Type: text/html; charset="iso-8859-7"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+7">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.paragraph, li.paragraph, div.paragraph
+	{mso-style-name:paragraph;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.normaltextrun
+	{mso-style-name:normaltextrun;}
+span.eop
+	{mso-style-name:eop;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:58327091;
+	mso-list-template-ids:-1008188178;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1280651310;
+	mso-list-template-ids:767739418;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"paragraph" align=3D"center" style=3D"margin:0in;margin-bottom:.=
+0001pt;text-align:center;vertical-align:baseline">
+<span class=3D"normaltextrun"><i>Fall 2020</i></span><i>&nbsp;Message to St=
+udents</i><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" align=3D"center" style=3D"margin:0in;margin-bottom:.=
+0001pt;text-align:center;vertical-align:baseline">
+&nbsp;&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>The SCC Services</b></span><b>&nbsp;Availa=
+ble to You</b><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun">The&nbsp;</span>Student Counseling Center (SC=
+C)&nbsp;wants you to know we are here for you. During this time, mental hea=
+lth is being impacted more than ever, and we are seeing a rise in depressio=
+n and anxiety symptoms worldwide. These struggles
+ are being impacted&nbsp;by various factors, including experiences of racia=
+lized&nbsp;trauma, discrimination,&nbsp;loneliness and isolation,&nbsp;home=
+ life,&nbsp;struggles with remote learning, accessibility barriers, health =
+concerns,&nbsp;coping with COVID-19&nbsp;and general distress&nbsp;around
+ uncertainty.&nbsp;<span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun">We want you to know that the&nbsp;</span><b>S=
+CC is open</b>&nbsp;and offers mental health services that are&nbsp;<b>free=
+&nbsp;and&nbsp;confidential.&nbsp;</b>&nbsp;Please see below for more infor=
+mation&nbsp;about the services and resources that we are providing over the
+ summer, including telehealth&nbsp;counseling&nbsp;sessions, webinars, virt=
+ual groups, Comet Chat,&nbsp;and consultations.&nbsp;<span class=3D"eop">&n=
+bsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun">We update&nbsp;</span>our<a href=3D"https://n=
+am02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Futdallas.edu%2Fc=
+ounseling%2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704=
+a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373787444=
+47827240&amp;sdata=3DPI%2FeklDujrQZqLHI3gtDAT7IZX1UrsMConwmTbPxVlU%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://utdallas.edu/counseling/" shash=3D"oR5O=
+pWhFnCGj+D/iCs/poFDVGW51mNH0bXkNPx+tra+WUDWnvZW6pOmHhohILbzfN4JnCrWI2p7jeeO=
+lnSj9NahDL3onzP32YwagMR/lG8Bc7Ud+oefH9N56rw2ec3M8MtynqAMFh01bwZeaiuxEk93PfN=
+XSVD8QiKk/A3VCH5c=3D" target=3D"_blank"><span class=3D"normaltextrun"><span=
+ style=3D"color:#0563C1;text-decoration:none">&nbsp;</span></span><span cla=
+ss=3D"normaltextrun"><span style=3D"color:#0563C1">SCC
+ website</span></span></a><span class=3D"normaltextrun">&nbsp;regularly, an=
+d you can a</span>lso follow the SCC on social media =AF&nbsp;<a href=3D"ht=
+tps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.insta=
+gram.com%2Futdcounseling%2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%=
+7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637378744447827240&amp;sdata=3DpfUOTWYtcI9H46Pa2NV8jqAk2Lq6q%2FNKuWqcf=
+bVm1%2Bo%3D&amp;reserved=3D0" originalsrc=3D"https://www.instagram.com/utdc=
+ounseling/" shash=3D"cJzUM8U6YXrTruQpO96/DKzjU42FMwWd84ucawzPrupmJpq1u/DZVD=
+qWrq0jiiJq2Elc+jaUiVqgCOUXAjrmKyrTh2NSticcdEvrzS52OpyTfgEpBLbU1Pg+rXbExuREp=
+9i1TrmPSMBbMFrqQ8BtNOMYEpXA/UQ3QcD5NHSyv+U=3D">Instagram @utdcounseling</a>=
+&nbsp;and
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.facebook.com%2Futdcounseling%2F&amp;data=3D02%7C01%7CJerry.Teng%40U=
+TDallas.edu%7C35902dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637378744447837237&amp;sdata=3DiJr3fScSB0E2s2xSoz%2FDIc4Ax=
+knQNhwM12uLRixBCWo%3D&amp;reserved=3D0" originalsrc=3D"https://www.facebook=
+.com/utdcounseling/" shash=3D"ptyoZBeL50COZBAIeFmMCybE9EtFFvgfhbX1JJTqSWHHT=
+2XoEvqNTVqjK2uC0YYklIfSBmFtAxoeeN7haPzp5V+Myd/gSwyMBVee8CEQgFMVl0+Tulmm+JZJ=
+9PYpFllqJFfNUMVVNpSlEr4mxQAUmf5bNCYlEbOZ6P5+Vn/74kk=3D">Facebook @utdcounse=
+ling</a>.&nbsp;We also have prerecorded workshops&nbsp;available&nbsp;to yo=
+u on&nbsp;our&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr1UdPVS5ZbWmEJZqhyxauA=
+%2Ffeatured&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704a=
+4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63737874444=
+7837237&amp;sdata=3D6%2B8rxCTB6oioMP1BllTPKyNYNiObBPcJZc9vX6hOJ%2F4%3D&amp;=
+reserved=3D0" originalsrc=3D"https://www.youtube.com/channel/UCr1UdPVS5ZbWm=
+EJZqhyxauA/featured" shash=3D"f3ie8Q4j0FPMpKvD13KCsCeVfARGueP4ycSZCU2DziwP4=
+Bp0blzJ4NvUq4EUI5FLUIpJj0ZtNKGQHBGXs0d3EzFuDF6qMU8yMvWD7p3QhcvHCQiU01IG1KIm=
+hcYQm3BmU4h1WjvbhzJQ8jJABUJQ4hdPbYgsD/tdP1xsXx0u500=3D" target=3D"_blank"><=
+span class=3D"normaltextrun"><span style=3D"color:#0563C1">SCC
+ YouTube</span></span></a><span class=3D"normaltextrun">&nbsp;channel.&nbsp=
+;Watch, gain support, and engage in skill-building from the leisure of your=
+ home!</span><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>Want a space to connect to peers around sh=
+ared struggles or experiences?</b>&nbsp;</span>Attend a&nbsp;drop-in suppor=
+t group. These are<b>&nbsp;</b>available to all students. Without even sign=
+ing up for services, you can just simply email&nbsp;<a href=3D"mailto:sccgr=
+oups@utdallas.edu" target=3D"_blank"><span class=3D"normaltextrun"><span st=
+yle=3D"color:#0563C1;text-decoration:none">sccgroups@utdallas.edu</span></s=
+pan></a><span class=3D"normaltextrun">&nbsp;to
+ get a link to join:</span><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l0 level1 lfo1;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">Asian Experien=
+ces, Wednesdays 1-2 p.m. (meets biweekly)</span><span class=3D"eop">&nbsp;<=
+/span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l1 level1 lfo2;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">OUTer</span>&n=
+bsp;Space (LGBTQIA+), Fridays 2-3 p.m. (meets weekly)<span class=3D"eop">&n=
+bsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l1 level1 lfo2;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">First Generati=
+on</span>&nbsp;Students, Mondays 2-3 p.m. (meets biweekly)<span class=3D"eo=
+p">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l1 level1 lfo2;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">Gender Identit=
+y &amp; Expression, Wednesdays 3-4 p.m. (meets biweekly)</span><span class=
+=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l1 level1 lfo2;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">Global Connect=
+ion (International&nbsp;</span>Students), Tuesdays 10-11 a.m. (meets monthl=
+y)<span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:0in;mso-=
+list:l1 level1 lfo2;vertical-align:baseline">
+<![if !supportLists]><span style=3D"font-size:10.0pt;font-family:Symbol"><s=
+pan style=3D"mso-list:Ignore">=B7<span style=3D"font:7.0pt &quot;Times New =
+Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=3D"normaltextrun">COVID-19 caret=
+akers support, Wednesdays 2-3 p.m. (meets biweekly)&nbsp;</span><span class=
+=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>Want a brief,&nbsp;</b></span><b>15-minute=
+&nbsp;consultation with a SCC counselor?</b><span class=3D"normaltextrun">&=
+nbsp;</span>Look into&nbsp;our&nbsp;<a href=3D"https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Futdallas.edu%2Fcounseling%2Fcometch=
+at%2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6b8704a4a5ee5=
+08d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63737874444783723=
+7&amp;sdata=3D902bx5DixzcJBgABnsC0Tk899HPKnLb1zu9qU%2BeRkF4%3D&amp;reserved=
+=3D0" originalsrc=3D"https://utdallas.edu/counseling/cometchat/" shash=3D"E=
+vkVDBELidWyGXna0trCvVLNY5oBMDYUI+JCdgdjAoJtCZNiiEvUvcKr7+ZqqcaUufyGqy45IK49=
+H26x19bzQdRCbtn8Kg1mSAx20okZ0/gLyC5jHFbYO/RV7fLlGRUag+l7jAPfuVpD2ajqOnsKPBA=
+fwwyikjMj/nzk23/ibgk=3D" target=3D"_blank"><span class=3D"normaltextrun"><s=
+pan style=3D"color:#0563C1;text-decoration:none">Comet
+ Chat program</span></span></a><span class=3D"normaltextrun">.</span><b>&nb=
+sp;</b><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>Interested in</b></span><b>&nbsp;additiona=
+l services?&nbsp;</b><span class=3D"normaltextrun">Please email us at&nbsp;=
+</span><a href=3D"mailto:counselingcenter@utdallas.edu" target=3D"_blank"><=
+span class=3D"normaltextrun"><span style=3D"color:#0563C1;text-decoration:n=
+one">counselingcenter@utdallas.edu</span></span></a><span class=3D"normalte=
+xtrun">&nbsp;if
+ interested in signing up for additional services or check out our webinars=
+ on&nbsp;</span>our&nbsp;<a href=3D"https://nam02.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr1UdPVS5ZbWmEJZq=
+hyxauA%2Ffeatured&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C35902dd6=
+b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63737=
+8744447847234&amp;sdata=3DiRxKKf7vDJhwiReXFR1MYYJ8aBjhLSDYhre6omaSI%2Bw%3D&=
+amp;reserved=3D0" originalsrc=3D"https://www.youtube.com/channel/UCr1UdPVS5=
+ZbWmEJZqhyxauA/featured" shash=3D"LGopUmnc6Sqog35OFx1eY7lE2VmAq1RfnbP/3ybzQ=
+IECz/jeoUKfQXt0oSIDFVtN2MmR/J27sbfnZ6sHfWJRAnCugkuFu0/GIg7BDGexr9CQ2SPgbQLq=
+K1j66e4pYS4p802xkGXhyrM89qlNBxMD31etsxQLJvjbR5rvZyT5Qh8=3D" target=3D"_blan=
+k"><span class=3D"normaltextrun"><span style=3D"color:#0563C1;text-decorati=
+on:none">YouTube
+ page</span></span></a><span class=3D"normaltextrun">.&nbsp;</span><span cl=
+ass=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>Need support while experiencing a crisis?&=
+nbsp;</b>Utilize our 24/7 crisis line at 972-UTD-TALK or text HOME to 74174=
+1.&nbsp;</span><span class=3D"eop">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+&nbsp;<o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun"><b>Feedback&nbsp;</b></span><span class=3D"eo=
+p">&nbsp;</span><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"normaltextrun">We would love to hear from you! Please take a=
+ moment to fill out this&nbsp;</span><a href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Futdallas.qualtrics.com%2Fjfe%2Ffor=
+m%2FSV_a4w2j8OksmtsApn&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C359=
+02dd6b8704a4a5ee508d86c9750d5%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637378744447857222&amp;sdata=3DETWpmaSNJ5fpxz2IfGIK3Oc8RJPLx2N2RkSHQ%2B6aIo=
+U%3D&amp;reserved=3D0" originalsrc=3D"https://utdallas.qualtrics.com/jfe/fo=
+rm/SV_a4w2j8OksmtsApn" shash=3D"jOaaWv6ZHS/TB/DHfpfnolnmxZ8f4Vxorzz7bUPFZhq=
+1sfX4goaHfk8rCdj5Sk2Y1NGxJT1E7o8SaQqbqFbhH7mFZb/171tZ3OrkTQynVzdH99etgWhM5P=
+7wnH6jhXUq7YbRJTMj3ajWxu6K3Xudq1AEv6l4wtb54RB+6Njso1A=3D" target=3D"_blank"=
+><span class=3D"normaltextrun"><span style=3D"color:#0563C1">brief survey</=
+span></span></a><span class=3D"normaltextrun">&nbsp;about
+ services you would be interested in participating in at the SCC</span>.&nb=
+sp;<span class=3D"eop">&nbsp;<o:p></o:p></span></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"eop"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span class=3D"eop"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<span style=3D"background:white">Sincerely,<o:p></o:p></span></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<b><span style=3D"background:white">Laura Smith</span></b><span style=3D"ba=
+ckground:white"><br>
+Associate Dean of Students =AF Health and Wellness Initiatives</span><br>
+<span style=3D"background:white">972-883-6391</span><br>
+<a href=3D"mailto:laura.smith2@utdallas.edu"><span style=3D"color:windowtex=
+t;background:white">laura.smith2@utdallas.edu</span></a><o:p></o:p></p>
+<p class=3D"paragraph" style=3D"margin:0in;margin-bottom:.0001pt;vertical-a=
+lign:baseline">
+<i>Student Affairs. You Belong Here.<o:p></o:p></i></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SN6PR01MB5038913D6FE84F203E21B3ADAA080SN6PR01MB5038prod_--

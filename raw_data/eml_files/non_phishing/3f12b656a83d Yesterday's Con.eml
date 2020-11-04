@@ -1,0 +1,417 @@
+Received: from CY1PR01MB2154.prod.exchangelabs.com (2a01:111:e400:c615::8) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Sun, 11 Oct 2020 14:04:19
+ +0000
+Received: from CY4PR21CA0031.namprd21.prod.outlook.com (2603:10b6:903:12b::17)
+ by CY1PR01MB2154.prod.exchangelabs.com (2a01:111:e400:c615::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.28; Sun, 11 Oct 2020 14:04:18 +0000
+Received: from CY1NAM02FT015.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:12b:cafe::c) by CY4PR21CA0031.outlook.office365.com
+ (2603:10b6:903:12b::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.10 via Frontend
+ Transport; Sun, 11 Oct 2020 14:04:18 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ CY1NAM02FT015.mail.protection.outlook.com (10.152.75.146) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Sun, 11 Oct 2020 14:04:17 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Sun, 11 Oct 2020 09:04:11 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Sun, 11 Oct 2020 09:04:11 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id E026CC000052; Sun, 11 Oct 2020 09:04:11 -0500 (CDT)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id 06A4FC000052
+	for <codeburners@lists.utdallas.edu>; Sun, 11 Oct 2020 09:04:03 -0500 (CDT)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=ivor@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  ivor@utdallas.edu designates 40.107.236.61 as permitted
+  sender) identity=mailfrom; client-ip=40.107.236.61;
+  receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="ivor@utdallas.edu";
+  x-sender="ivor@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: z8inb9DK7rW8nNwbLdJxVQf95DwKLa2pARUIB6wWeK3TnrBhm1R3vrHZreRgTU7lJtd3wpqLXw
+ 9uPtLUsE7/r1Gcd25ou6pb/A+ZOORlG1OyWNeqUWDzkk0aP+t5xWTVodefy+YUrbJCPmfPa2zi
+ dDIhqgcVWgVGVx7jZqmsnjOjCPA9r6F9EzYDzeE67cbV6rb+fhDxbPkofCOB37DV6SECnDEbYf
+ SzRV9igkF8te+3fLhfQUGUYqw++XsMyWjY0upZ1vmoh0tHCohQFz/fVBhgma9KWk3SLJlUURdY
+ 1tmtAs4Ov10FJOdxg7XhXL+H
+X-IronPort-RemoteIP: 40.107.236.61
+X-IronPort-MID: 917152
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0AQAgCoEINfhz3sayhgDnuBT4EjL1GBTx4DBwgsCo01p?=
+ =?us-ascii?q?D0CCQEBAQEBAQEBAQgBExoCBAEBhEoCghQlATcGDgIDAQEBAwIDAQEBAQEEA?=
+ =?us-ascii?q?QEBAgEBAgMCAgETAQEBf2CBAgGBRgGBKSELAzEBC4I3IoMyLgEBOBEBgQAnB?=
+ =?us-ascii?q?BsagwSBf34BApsyAYEoPgIjARItAQECCYEFKYlVgTSDAQEBBYVaAQmBRgmBO?=
+ =?us-ascii?q?I1RggCBEUOHSoNIgi2aUIE+m1YDB4JomwuhOpMioCUCBAIEBQIQBYFqIoFZc?=
+ =?us-ascii?q?hODJE0BAgECDQECAgIBAQIBAQgBAQEBjjaEQYkuPkMxNwIGCgEBAwl8jDsBg?=
+ =?us-ascii?q?RABAQ?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AKjQI1xU5hBFmJFXsxVULOkdYT2HV8LGtZVwlr6?=
+ =?us-ascii?q?E/grcLSJyIuqrYbRGEt8tkgFKBZ4jH8fUM07OQ7/m/HzFdqsnY+Fk5M7V0Hy?=
+ =?us-ascii?q?cfjssXmwFySOWkMmbcaMDQUiohAc5ZX0Vk9XzoeWJcGcL5ekGA6ibqtW1aFR?=
+ =?us-ascii?q?rwLxd6KfroEYDOkcu3y/qy+5rOaAlUmTaxe7x/IAi0oAnLtsQbgYRuJ6Qsxh?=
+ =?us-ascii?q?DUvnZGZuNayH9yK1mOhRj8/MCw/JBi8yRUpf0s8tNLXLv5caolU7FWFSwqPG?=
+ =?us-ascii?q?8p6sLlsxnDVhaP6WAHUmoKiBpIAhPK4w/8U5zsryb1rOt92C2dPc3rUbA5XC?=
+ =?us-ascii?q?mp4ql3RBP0jioMKjg0+3zVhMNtlqJWuBKvqQJizY7Ibo+bN/t+cb/Sct4BX2?=
+ =?us-ascii?q?VNQtpdWjZdDo+gcocCCfcKM+ZCr4n6olsDtRWyCxO2C+Pg1DBEnmL9064k0+?=
+ =?us-ascii?q?QmCwHK0hErEtUPsHTKq9X1LrwfUf2pzKbV1zrDa/dW1i3m6ITSbB8uvOyMUK?=
+ =?us-ascii?q?t2fMHMxkYhCxnLgU+MqYz5ITyVzOINvnCb4uZ9S+6iiHIqpgNtrzSx28ohio?=
+ =?us-ascii?q?bHi5wax13K9Ch0z5g5K92lRUNmfNOpEZhduS+aOYdrTM4vTWBltSQmx7Abv5?=
+ =?us-ascii?q?OwYSsEyIw/yhPQd/CLaZWE7g7hWeqLPzt1inNodKi+ihqv6UStyPHwWtOp3F?=
+ =?us-ascii?q?tFsCZJiMfAumwQ2xDJ98SKSfpw8l+/1TuOywze5ORJLV0omaXAKpMsx6A8mo?=
+ =?us-ascii?q?YQvEnGHCL5gkD7gaqIekk6/OWj9v7pba/8ppCGMo95kgH+Pboqmsy4Gek2Kh?=
+ =?us-ascii?q?QDUW+G9eihzbHu4FX3TbZTgv0xiabWrorWJcMGpq6lGABV1Zsj6xCiADu8yN?=
+ =?us-ascii?q?QYh34HLE5bdx2bk4jpOlbOIPbiAfe4nlSsjDNrx/fBPr3iGJnCMn/DkLL5cb?=
+ =?us-ascii?q?Z87U5T1hYzwMhQ6p5IEL0NPe7/V03ruNDGABI0Mha4zuf6BNll04MRQ2OPAq?=
+ =?us-ascii?q?uXMKPItl+I4/oiI+iSZI8SojbwMOUl5+LzgnAjnV8debOm3YANZH+mA/tmPl?=
+ =?us-ascii?q?2VYWDwjdcZDWcKog0+QfT2h12FTDFceW29X78m5jE9Fo2mF5zDS5upgLyAxy?=
+ =?us-ascii?q?e7AoZWanpbClCQDHjnbYGEW/MWZyKJOMNujCELVaXyA7MmgFulswP3wad9KO?=
+ =?us-ascii?q?fO4QUctIn/z55o++HakRU77np5A9nXmzWGSG15lH4SQTIsx4h7oFdh0RGeza?=
+ =?us-ascii?q?Rxh/hRDppe6+4fASkgMpuJhdRzBN22EiPfec3DAAKnXNK8KSwtQts1x9YVJU?=
+ =?us-ascii?q?txBoPx3Vj4wyO2DupNxPSwD5su//eEhSKjDtthy3vAyKgqhkUnRc0KD2C9m6?=
+ =?us-ascii?q?pj7FaOVYPSmhzfl632KPhFmXKL9X+DyHrIt0ZdA0ZrSauQZXkEfQPNqMjhoE?=
+ =?us-ascii?q?bLTrugE7MiZwpfztSqN7dGY9nthE4ASfv+YY6MWW+6lmauCBrN/YuiMdK0KV?=
+ =?us-ascii?q?0Uxz6VSEUfmllV/X3aaFRnQ3vnonreCSwoHlXqMQvg9ux3qXXzSUFRrUnCbl?=
+ =?us-ascii?q?NmzZKo5hIcgfiVULUe0q9MtCo6qjpyFUqwxJqKU5zZ/1UnJv4CJ41kqF5cnX?=
+ =?us-ascii?q?rUrQl8IoCtI8UAzhYFfgJ7slmvnxR7B4NckNQ7+XYjzQ58M6WdgxtKczKV24?=
+ =?us-ascii?q?y1O6WCdjG0pUjwLfSNhBeAiYXzmO9H8vkzplT9sRv8G1ErqjNn2IUIjyLZut?=
+ =?us-ascii?q?PLFAoXQdT6VUNkknoy77zcfCQ54JvZkHN2Nqzh+D7c3MgBGfcpwxKkdswZPa?=
+ =?us-ascii?q?+ZXlyXcYVSF421JeomlkL8JBMaO/p66bI4NseifuDA1aK2drUojHetimJJ55?=
+ =?us-ascii?q?p420SH+n9nUuD/2JAB0qL9vEPPR3LmgVymqMyyhZFcaGRYAD+k0Sa9Tt0Zdu?=
+ =?us-ascii?q?hocI0ME2vrP8Cn2oA0mcv2Q3ABkTzrT1IehJ31IVzDNRqlm1UXjBlfoGT7y3?=
+ =?us-ascii?q?fgiWUszHdx6PLYhXKGwvy+JkddfDcTHC86yw+reNTR7ZhSXVD0PVFxyF35ug?=
+ =?us-ascii?q?CigfAc/fs3LnGNEx1BJ3Gkdjg7AKXs7uLQMYkTuPZK+W1WSLruO1nCE+yk+k?=
+ =?us-ascii?q?JI3X+7RDkMg2xrPzCssZHkkxEok3qTIDBrtn3FdMpsxBDZotvBWfpW2TlATy?=
+ =?us-ascii?q?597FufTh21O93jpITGp9L4qum7ElmZeNhWeCjvw5mHsXLnt3B2DRS7m/mo3N?=
+ =?us-ascii?q?DrDFpj3A=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,363,1596517200"; 
+   d="scan'208,217";a="917152"
+X-MGA-submission: =?us-ascii?q?MDGA2E5r1g+2gXCHYUxq/c8ihMPsyMHzqP5tex?=
+ =?us-ascii?q?ZqWyDj6zkdX4MW0NaG8w4IJZ5l4lbmXEJvRQe6QdaEnMweXCYNdiJVGa?=
+ =?us-ascii?q?uYJ52SksRAycFObF/1N2PoFKMjL+ef2+++WeG0i4NR7a4GrSO5ketCx3?=
+ =?us-ascii?q?5a?=
+Received: from mail-bn8nam11on2061.outbound.protection.outlook.com (HELO NAM11-BN8-obe.outbound.protection.outlook.com) ([40.107.236.61])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 11 Oct 2020 09:03:58 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=akJ7AgXGIDxjOLHEFESoCjB6NNLAo58YW64o0hv4RynWM9o6qCwy88U14LLKujrOby1wQ3pBDtlguk8bSmUu7/m4BGIMzjdYbvHCZHHiqM68zXn41Qa4waATnOQjF91JkfLcplEAhUwFk9lO49sr7pnT2vTSzLqypQpjY/rJu4W8ay8XZfyzpB/rMFqomGj9L3SOncZp2mPZz96dvjbJB1c3XE1LTKjK2WG/TRGOm4/eJWQoYy62KsD70X7zwIQaXulumojiUp7snzKllirq6OI9FXPphPD3UdzgWriYbrPDqHx+Vuv3okI1j5wAOVHThu0VjwyG0GCCT30ibstLQw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xkEqI8+3SBLpbMAwGWTixDwvCfanff57BBBxbAnutmQ=;
+ b=idH1ZOUfe/RkxcybHJsvu9RxIiKaIMxPk44HyryzHSiQKH0OSnuT/HX7KfXkUaBQQ7tpt8OVU2B000gALdvBk7DVIsQAjYJxLiVE3QakkrxkvtwxUtZrpuRWHjxBLUabvlrWpGK9S/GH1hSl8ylnWqDPvUfMjoUl9xetPzu72LXu9onbMEnv0bUdVSLPX6gq93ypUaXXZzyAr5U2fwJMKIaGrukUBN/eB6zqMHfFSEKjRxaEHs5nSZjIef3DW9vYkfNvU1+dP5xvNsBB96203MeB2FsqFYWxOe33pGeyAa3c3YBugefFbcra/3+GZwsBl7Y7WfGSm53TigYasRyr9Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xkEqI8+3SBLpbMAwGWTixDwvCfanff57BBBxbAnutmQ=;
+ b=suIaTWeo6PJq9mRC6zQxI9jC6fFReM8KWvELqElVzPdIag8dbP1phxu63lhEmw68DtmHcmerByRMR59+t4CpajdU1KK5mvhXqqslyNcV7UK9+4P87ye0C6dXVAIG7E5YNKup0tU3TE0OHQXFBt/Ch3vRZ4tUF2YVP9jFC7jnMpI=
+Received: from BL0PR01MB4772.prod.exchangelabs.com (2603:10b6:208:7a::22) by
+ BL0PR01MB4226.prod.exchangelabs.com (2603:10b6:208:49::30) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.39; Sun, 11 Oct 2020 14:03:54 +0000
+Received: from BL0PR01MB4772.prod.exchangelabs.com
+ ([fe80::49cc:86fa:d445:c450]) by BL0PR01MB4772.prod.exchangelabs.com
+ ([fe80::49cc:86fa:d445:c450%6]) with mapi id 15.20.3455.029; Sun, 11 Oct 2020
+ 14:03:54 +0000
+From: "Page, Ivor" <ivor@utdallas.edu>
+To: "codeburners@lists.utdallas.edu" <codeburners@lists.utdallas.edu>
+Thread-Topic: Yesterday's Contest
+Thread-Index: AQHWn9VoskG03sRiGUGMQrajy6z3kg==
+Date: Sun, 11 Oct 2020 14:03:53 +0000
+Message-ID: <BL0PR01MB4772E90B796D0E6856CA23C1B4060@BL0PR01MB4772.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [70.142.201.186]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 3be0030a-814d-41b6-d486-08d86dee8b38
+x-ms-traffictypediagnostic: BL0PR01MB4226:|CY1PR01MB2154:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <BL0PR01MB42260DA443198811A36FDFB6B4060@BL0PR01MB4226.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8882;OLM:8882;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ lARecfbgGIveO9wgtDvlVkxTI4Pfr9mjAjgaTfOF3PgZuZw30UtZyPteWsHNWz+YefbB7Fh4s87SbfjucYGzNYnF6302MbraqD5+cDBVQ7NXqeMLjhVyPZqQjre5SxPSiSyCsE9Dr+utl9olExUatdi7i/3B2f+KGo2376b3oicabo32SszExE6bOfLU49w7Y5OMOWjnP+JJUqbGRSFJfSZrKviTJODy99HAOCz1fsAqjB/n9FHfGwlj8xAEN0Wao3nCkrR27rJbbzTGHrIdLa24iZ5SAAAHxx8PnBFvh4JGX5+5NIssKeFXLeYbwVdnUTK/CcjETr4e40pnVTBn9g==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL0PR01MB4772.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(376002)(346002)(39850400004)(136003)(396003)(366004)(7696005)(478600001)(9686003)(76116006)(66556008)(66476007)(8676002)(66446008)(64756008)(66946007)(19627405001)(26005)(786003)(296002)(6916009)(186003)(316002)(71200400001)(5660300002)(75432002)(4744005)(2906002)(86362001)(52536014)(8936002)(33656002)(6506007)(3480700007)(55016002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: 00s816mlBPMv7q5yJUz7egQChUOM3DXjOeyQFKgH25751G0PjoN6TsfVl8C0+XaF9MIkPcq29o5Lvo7OWroKB/tuasJbYBOi0JcpEoxsPUno71TnxeZh+FyQ5+uEEBq4g7fafb9nQ4PGG3XN5v+dM17kMh3d8ZH2kKsNcTwZQMAeNfkTVjJ2qwG1U3RQv/mvc1GO7F6ttmTEubyZJ+xc8dNNV4fOreZCsUuRWhsZg8YGS5draqUmSoksElaT/5CD/yzFCstQ0g4jwwwHdgCpPjFBF/+xbk6WJbarwseuk8peVPbO2f7yKntH1RZkxBFlj7k5QEO5cC87MnyKmJPaUN9KXWhi0LZGnzIMxoPB41ri7NghjvepTXK79Z2QFeeIHHYT9uzALtnXV2cjvZ7qCLP3+f+sfjPG5ZJ8RlgqTZIF9EykhuozbEJfxF4ZugCOxBLU0Yfvj+APVq9nxg/4E/L/ihGAS80vZppDm+W58nGovpIua35H8V584AlBJnlwK3RHOaaOJFsD9gg1zAE8070O5ceTLiPpOyFVQbkQKQqVpK3gaSS/hB0L/xCO4q0VtoELA6PMhKf7f0KUUi/rtiDZn8gSozmhfBRcpsPJmWEqh5OWwTVmshbMD+WPjQr7lMpPOXIAY89vFN8m8WUHEQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_BL0PR01MB4772E90B796D0E6856CA23C1B4060BL0PR01MB4772prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4226
+Subject: [codeburners] Yesterday's Contest
+Reply-To: <codeburners@lists.utdallas.edu>
+X-Loop: codeburners@lists.utdallas.edu
+X-Sequence: 330
+Errors-To: codeburners-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <codeburners-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <codeburners.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20codeburners>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20codeburners>
+List-Post: <mailto:codeburners@lists.utdallas.edu>
+List-Owner: <mailto:codeburners-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/codeburners>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/codeburners/2020-10/BL0PR01MB4772E90B796D0E6856CA23C1B4060%40BL0PR01MB4772.prod.exchangelabs.com>
+Return-Path: codeburners-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 11 Oct 2020 14:04:17.8326
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3be0030a-814d-41b6-d486-08d86dee8b38
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT015.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT015.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT015.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 7952bd2b-f615-4361-2c1b-08d86dee7d12
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 11 Oct 2020 14:04:17.7357
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3be0030a-814d-41b6-d486-08d86dee8b38
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY1PR01MB2154
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9420931
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?t1RFlxTnEEsQ7ozLGBhA3OjDikyaV/h5l2ipKvfpwDc7l6Zu7M3X9xC2OA?=
+ =?iso-8859-1?Q?eLocDmiGhFhL3RAtEjxdf7/KlE2ei5CUE0/v3rlaJ6ZGLeiTfgBF838wag?=
+ =?iso-8859-1?Q?Jg/qyknoRpPKaqOZvxZLa4MOdrt8tQThPdDEu7rqHrM/qX5jTuHD/8TTCW?=
+ =?iso-8859-1?Q?AdCXhl0MRw+sAPSpU+/c1Co/QufUPwHaMDIyof7DvqSxD2+5LY2eIZudmj?=
+ =?iso-8859-1?Q?VZlSNXEBes5LhIbm4VMtlDus4yLVXqi/tasrWFCVwDjulFHHkG6nMYUs6f?=
+ =?iso-8859-1?Q?uCizrOIp1DxCY5egFtimtcdhOjiqxBNapJrZGIEKv0BXsBJ25Nw76/Yib1?=
+ =?iso-8859-1?Q?desgWHw0m69JoqzmQpu8nI5e/rGWS26BngvzOVVCgL+DXXv1PBiLtYtFty?=
+ =?iso-8859-1?Q?0+VPxXMut4GwIklDn2pWqjVFD9rdMD4ZnfB/FmN4vN+aRja2siBJ2wPXcW?=
+ =?iso-8859-1?Q?aY8j+GHgBCxmKH8fu4easBGQZsePTIAj3eOIEe7zar+LwDCgJD9S3UZOMw?=
+ =?iso-8859-1?Q?Kw/Z/DLyxLAZkBsMCoZLSFWAN+kq88sw3dYCZPkMS8Nf3bTTJWE0BsJAJG?=
+ =?iso-8859-1?Q?HLjfSLNx9wFtatlqz3Y+Y0NiIMAesNsFUqcL/kIa1+4b53HSKY3eB3Dy8D?=
+ =?iso-8859-1?Q?WM2noKwhhtsXyAnHUCaYG2geCtpTm1vMnlS91n9DE9GqiS9cZMkjZqQjrO?=
+ =?iso-8859-1?Q?WwX0viaYjReDsozFYnKpJQtIPAcTo9GSxkOww3rdy3dh9nFJEWBQZ62iJL?=
+ =?iso-8859-1?Q?B3KFP9IiGfM0Wy8oXcg9nkhYHNk8e1lVJlIqrOELkrt3jJwowZbUYlv2lE?=
+ =?iso-8859-1?Q?QvVegZ9FVfVm7qq0/5wxCxvqjCeErQMT5ZFligiEORjqUv5q1YrEEA7Jom?=
+ =?iso-8859-1?Q?k7u93UovS2lX7KKo5Zp+lx7dbmNbzAEWTiP6UxhAM6vRGgpmaYH1RCm+NM?=
+ =?iso-8859-1?Q?U+OuLTsa1g1od93eeKTvutVvWUVNB3JjIYM2I5K1Y3w0W0RDIkthC6fxl+?=
+ =?iso-8859-1?Q?j93un03CTG0iGexrbyMctTjT/EGIa9Oobs1KgAJUwakzMvHYPRE/2fDeGq?=
+ =?iso-8859-1?Q?RbaEeE3fobRVXYqYmdXcdvPM+X78v2Tvxqlre47Mksx25eh5dvS96zEyyq?=
+ =?iso-8859-1?Q?vXM+am9+C8SxPgaVirIEjXIUFEiWG0+tJEqj8UvOv0ubmXtAUFpsrVab+t?=
+ =?iso-8859-1?Q?NqcfsqsyWW6to1uN+3pfkYqTDuoU/Kl35cMNGtuDcdkxfAGtsgKIYx6Dpp?=
+ =?iso-8859-1?Q?57G7j740iOBtb/V46tmw7cmlLdXg7ATD/P7o3wGCqn1P45FTbnvzEEu1eU?=
+ =?iso-8859-1?Q?v06orH7D8agUtazS02IcyM5kMAb9en8dDAW9i6RpH0bGGrM//XT7KlT0fk?=
+ =?iso-8859-1?Q?Jm9uA2knbx?=
+MIME-Version: 1.0
+
+--_000_BL0PR01MB4772E90B796D0E6856CA23C1B4060BL0PR01MB4772prod_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you everyone for taking part yesterday. The accolades go to Darrin, P=
+eter, Eric, David, Sunny, and Evan. These problems were on a mixture of Kna=
+psack and tricky
+precision. One ways on Shortest Paths plus DP.
+
+Note that teams of three are not-only acceptable, but are required in Regio=
+nal and World-Finals Contests.
+
+The latest iteration of dates for upcoming ICPC contest are:
+
+2020 regionals will be spring 2021.
+
+2020 WF will be in early summer, 2021.
+
+2021 NAC will be late spring in Atlanta.
+
+2021  regionals will be in the fall of 2021.
+
+We will contest again next Saturday at noon CDT.
+
+
+--_000_BL0PR01MB4772E90B796D0E6856CA23C1B4060BL0PR01MB4772prod_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Thank you everyone for taking part yesterday. The accolades go to Darrin, P=
+eter, Eric, David,&nbsp;<span style=3D"color: rgb(0, 0, 0); font-family: Ca=
+libri, Arial, Helvetica, sans-serif; font-size: 12pt; background: var(--whi=
+te);">Sunny, and Evan. These problems were
+ on a mixture of Knapsack and tricky</span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+precision. One ways on Shortest Paths plus DP.</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Note that teams of three are not-only acceptable, but are required in Regio=
+nal and World-Finals Contests.</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+The latest iteration of dates for upcoming ICPC contest are:</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important">2020<span class=3D"Apple-=
+converted-space">&nbsp;</span></span><span data-markjs=3D"true" class=3D"ma=
+rk6qra1jtmx" data-ogac=3D"" data-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"" st=
+yle=3D"margin: 0px; font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (=
+West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFo=
+nt, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14.666666984=
+558105px; color: rgb(32, 31, 30); caret-color: rgb(32, 31, 30)">regionals</=
+span><span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); f=
+ont-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;,=
+ &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Hel=
+vetica Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-=
+color: rgb(255, 255, 255); display: inline !important"><span class=3D"Apple=
+-converted-space">&nbsp;</span>will
+ be spring 2021.</span><br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important">2020
+ WF will be in early summer, 2021.</span><br style=3D"caret-color: rgb(32, =
+31, 30); color: rgb(32, 31, 30); font-family: &quot;Segoe UI&quot;, &quot;S=
+egoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, Bli=
+nkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font-size:=
+ 14.666666984558105px">
+<br style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-fam=
+ily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;=
+Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica =
+Neue&quot;, sans-serif; font-size: 14.666666984558105px">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important">2021
+ NAC will be late spring in Atlanta.</span><br style=3D"caret-color: rgb(32=
+, 31, 30); color: rgb(32, 31, 30); font-family: &quot;Segoe UI&quot;, &quot=
+;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, B=
+linkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font-siz=
+e: 14.666666984558105px">
+<br style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-fam=
+ily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;=
+Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica =
+Neue&quot;, sans-serif; font-size: 14.666666984558105px">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important">2021&nbsp;<span class=3D"=
+Apple-converted-space">&nbsp;</span></span><span data-markjs=3D"true" class=
+=3D"markgo43st22e" data-ogac=3D"" data-ogab=3D"" data-ogsc=3D"" data-ogsb=
+=3D"" style=3D"margin: 0px; font-family: &quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14.6=
+66666984558105px; color: rgb(32, 31, 30); caret-color: rgb(32, 31, 30)">reg=
+ionals</span><span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31=
+, 30); font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European=
+)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &=
+quot;Helvetica Neue&quot;, sans-serif; font-size: 14.666666984558105px; bac=
+kground-color: rgb(255, 255, 255); display: inline !important"><span class=
+=3D"Apple-converted-space">&nbsp;</span>will
+ be in the fall of 2021.</span><br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important"><br>
+</span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important">We
+ will contest again next Saturday at noon CDT.</span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"caret-color: rgb(32, 31, 30); color: rgb(32, 31, 30); font-f=
+amily: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quo=
+t;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif; font-size: 14.666666984558105px; background-color=
+: rgb(255, 255, 255); display: inline !important"><br>
+</span></div>
+</body>
+</html>
+
+--_000_BL0PR01MB4772E90B796D0E6856CA23C1B4060BL0PR01MB4772prod_--

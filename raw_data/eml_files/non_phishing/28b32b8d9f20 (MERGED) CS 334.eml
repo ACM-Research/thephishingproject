@@ -1,0 +1,93 @@
+Received: from DM6PR01MB6011.prod.exchangelabs.com (2603:10b6:5:1da::14) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 01:30:40
+ +0000
+Received: from CY4PR22CA0078.namprd22.prod.outlook.com (2603:10b6:903:ad::16)
+ by DM6PR01MB6011.prod.exchangelabs.com (2603:10b6:5:1da::14) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.28; Thu, 15 Oct 2020 01:30:32 +0000
+Received: from CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:ad:cafe::1d) by CY4PR22CA0078.outlook.office365.com
+ (2603:10b6:903:ad::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Thu, 15 Oct 2020 01:30:32 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.6)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.6 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.6; helo=mail-relay6-va2.blackboard.com;
+Received: from mail-relay6-va2.blackboard.com (69.196.241.6) by
+ CY1NAM02FT049.mail.protection.outlook.com (10.152.75.83) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 01:30:32 +0000
+Received: from fgprd-100946-205964-app011.mhint (fgprd-100946-205964-app011.mhint [10.5.10.163])
+	by mail-relay6-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09F1Tbil020269;
+	Thu, 15 Oct 2020 01:30:19 GMT
+Date: Wed, 14 Oct 2020 20:30:26 -0500 (CDT)
+From: "Tristan Whalen - tgw100020@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Tristan Whalen - tgw100020@utdallas.edu" <tgw100020@utdallas.edu>
+To: "2208-merged-CS3341001-SE3341001":;
+Message-ID: <1125298942.4220.1602725430415.JavaMail.bbuser@fgprd-100946-205964-app011>
+Subject: (MERGED) CS 3341.001 - SE 3341.001 - F20: Thursday 10/15 - Quiz 07
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4218_1085922813.1602725426122"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 01:30:32.5109
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 1a2af69d-baa3-4fc4-630c-08d870a9e87b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132471990325139453;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 1a2af69d-baa3-4fc4-630c-08d870a9e87b
+X-MS-TrafficTypeDiagnostic: DM6PR01MB6011:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd,ExtAddr
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:3173;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.6;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay6-va2.blackboard.com;PTR:mail-relay6-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 01:30:32.3856
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1a2af69d-baa3-4fc4-630c-08d870a9e87b
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT049.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB6011
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.7126244
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	wuT9gvcUkD1//1yS7jYpTwRKYlaEA+QJFcpFZva1myhGg/F/DNH76sSd3iyKhf95TuJFu9S4dmM4xOaApT3u7yjituaNju1SC3YmvI4PErkBp7s/VRclFwTnzZcFiDP2LoZyXXG2nS1h/QKKKPxmn8AGt/vMXV2WIjccbjNmQKQ5AsT0Bag4TCfn0h7qJzFET57c89rE2BEQLd+MDXduQXXvq4Q67Ow2wDMKcNk9HxXso3AC/6n3hTDW7rWZhMytF7xVf3FEk6teO8dQ1E0p26IVIks1OxawPW80l026l7kzXqrZc9BItGiJYptSin9sUqXDlOP9UdWP8+U9Cfjhtk0NaYRSGa7DHNvW9YrpF8ZoXAiiduNYihaDkne3VD2H6UzEi7lHfhBTOpAdUCHwWxsu+pzSYEoPcFDtWu7mrz5MSjzK8/hyOEMnrAiJMo/InE42n02PAWiCEkdmK5eZKQ51L6Kp8dZqGUGG4P4a5OF0zZ90L/PlF5KwswCKgGe6ijFkGULnJn1AwUWncYtO391FvgEkpbqrfTZWEbuICS2wBgITXUv9mWWVn5DIbhwRAAKXufzIn8fnk8rh+WLUfIXwashUeyS0AIMMWSCzNr0PtM/G+iQqkEufymYK6eWPgFEEgQrLAlJa9t2GdCKUsB0iFbWkpgqE+YdStrRYikVVxNNU8rIJZt5asygg7UvfA9Ntq/qdCMDkwamHw/lLGcHBs4bjY5d+D65DvlMHkyA0ZbneW/Y41ZEIBu59yRGOIc6ZIHq+XW6LwvQPa27UabOX2iROgXBnjCA7NOT77tNFsFLvS1DhKWTUY9pEZsP/uZztWTTEtR06HdS4qCrjZUx/+8OrY9eduV2RtKsFFE6RVW3M5U3K4C2ZYN3MDFnjhAYKku2EkTmEpQg3Gc8sCuwQjYRakpvD5tgnGZlXZjw=
+MIME-Version: 1.0
+
+------=_Part_4218_1085922813.1602725426122
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+           Thursday 10/15 - Quiz 07Take Quiz 07 anytime Thursday 10/15.Based on material in lectures 07-1 and 07-2.Have a probability calculator, as well as a calculator with exponential and natural log.Don't go in unprepared.Also, see Quiz 04 and Quiz 05 results in the grade book.      
+------=_Part_4218_1085922813.1602725426122
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>  <body>   <div class="vtbegenerated">    <p>Thursday 10/15 - Quiz 07<br><br>Take Quiz 07 anytime Thursday 10/15.<br><br>Based on material in lectures 07-1 and 07-2.<br><br>Have a probability calculator, as well as a calculator with exponential and natural log.<br><br>Don't go in unprepared.<br><br>Also, see Quiz 04 and Quiz 05 results in the grade book.</p>   </div>  </body> </html>
+------=_Part_4218_1085922813.1602725426122--

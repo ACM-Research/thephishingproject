@@ -1,0 +1,142 @@
+Received: from SN6PR01MB4367.prod.exchangelabs.com (2603:10b6:805:e8::24) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Tue, 20 Oct 2020 17:37:15
+ +0000
+Received: from SN2PR01CA0065.prod.exchangelabs.com (2603:10b6:800::33) by
+ SN6PR01MB4367.prod.exchangelabs.com (2603:10b6:805:e8::24) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.18; Tue, 20 Oct 2020 17:37:13 +0000
+Received: from SN1NAM02FT050.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:800:0:cafe::c9) by SN2PR01CA0065.outlook.office365.com
+ (2603:10b6:800::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Tue, 20 Oct 2020 17:37:13 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.11.40)
+ smtp.mailfrom=amazonses.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=utdallas.edu;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.11.40 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.11.40; helo=a11-40.smtp-out.amazonses.com;
+Received: from a11-40.smtp-out.amazonses.com (54.240.11.40) by
+ SN1NAM02FT050.mail.protection.outlook.com (10.152.72.128) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Tue, 20 Oct 2020 17:37:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=b3xn3vfisu3qvzlgjls24abjbrgiskry; d=utdallas.edu; t=1603215432;
+	h=Date:To:From:Reply-To:Subject:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=p8qc6N8YWQTXeWU9cvggVOZPicJ/D2C4lJarDBLMIeo=;
+	b=XUd0B8X7DQsVxx2qkvWQqspSsgzB1v2rsYekdMAFJc4TVAtxhK+IVqZoxSwgJln5
+	R0SEPnx152QvakrTIcdZN68tF9+eAH5dXqw9mytwmTqzjuYk6W6EVRNbhl8sgJZ4u7f
+	JxGwQHjqNeq49MSh4MQHRSYk7DEpSnIijculTuYw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1603215432;
+	h=Date:To:From:Reply-To:Subject:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=p8qc6N8YWQTXeWU9cvggVOZPicJ/D2C4lJarDBLMIeo=;
+	b=M4RKhmec5gVUKo5RkkzAjaGvol2D1jHXeHnHlWaPpnIofJvzb4OW9M2BiIpRNYXz
+	21VLugfT+3+GH8/pYcfxB0Ay9w9VoIl/dRUuSXx0Xy80ve3+7ZOsGZ0dQJb6MHVvO7M
+	Wl8080FTsMmHN9M5G9DQgB671WdZyuZMA4URve/o=
+Date: Tue, 20 Oct 2020 17:37:12 +0000
+To: zxt180005@utdallas.edu
+From: "Daily Health Check <redcap@utdallas.edu>" <redcap@utdallas.edu>
+Reply-To: Daily Health Check <redcap@utdallas.edu>
+Subject: Reminder: Daily Health Check Text Message Opt-in
+Message-ID: <0100017547161bd9-91fdca23-cf84-479a-b35d-109fd30a935f-000000@email.amazonses.com>
+X-Mailer: PHPMailer 6.1.7 (https://github.com/PHPMailer/PHPMailer)
+REDCAP: REDCAP
+Content-Type: multipart/alternative;
+ boundary="b1_vt6Wkkyr0VuUIpFJEnVYayZtg8DTcQSEt0AOgzviOY"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2020.10.20-54.240.11.40
+Feedback-ID: 1.us-east-1.N+NumPABHOd3apP0BwxmL5NzoHe82a9svuSQm6Kl5r8=:AmazonSES
+Return-Path:
+ 0100017547161bd9-91fdca23-cf84-479a-b35d-109fd30a935f-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2020 17:37:13.5093
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b3055e06-70fa-4f94-2111-08d8751ec7d6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b3055e06-70fa-4f94-2111-08d8751ec7d6
+X-MS-TrafficTypeDiagnostic: SN6PR01MB4367:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-UserBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:2276;
+X-Microsoft-Antispam: BCL:4;
+X-Forefront-Antispam-Report:
+ CIP:54.240.11.40;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a11-40.smtp-out.amazonses.com;PTR:a11-40.smtp-out.amazonses.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2020 17:37:13.3963
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b3055e06-70fa-4f94-2111-08d8751ec7d6
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4367
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7697673
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?U0x1U2NiUjBsRXc3MkNuVmYxMjZIRFZwVGQvYkpJYlY5NEZ4cHVJRittclVW?=
+ =?utf-8?B?SGZXcmY0clh2bTFodTJtclNLcnMxNnRBT1FWbkk5TDdFWm93YXdjYVBOWlI5?=
+ =?utf-8?B?Nkkzd09zaDZzSEZ2N0w0M20wUEVWQVJBWXk1VWNjWGxXSUVjV1JxaDBlMHJF?=
+ =?utf-8?B?dm5xbDA0VkhiRlgvUE1SZTROTlBqaDJMeGlFQld0eHB5Y0VnZThPdWxIenNr?=
+ =?utf-8?B?Q2cwY1ROelY5a0JVZnVGczFCVTJ4b2dDcUhvdng5eWZNaTZOcW9mQ1RESFVV?=
+ =?utf-8?B?Y3N1Y0hLdGJsQWxZL1RlZDVoOHJITXloREVwaUJicGZabmhMOXdlS0JsNkNZ?=
+ =?utf-8?B?U2VSa3paenlneWwrbXFPREo1N2h0ZXBKaWFOQ1dXNDlBcFIyVjJSaFhNMm42?=
+ =?utf-8?B?QmVaSUE4Y2Rhb3lkREFZMUFCSmlGY2tLTTNlUmszNit5cC9pSkEyVDBlbjl5?=
+ =?utf-8?B?c3c3cW9wTFc1VzZJTm8zY1IzOGpJWDdPeUpBWTFyeHh4U0RPMkFMekVJOU1L?=
+ =?utf-8?B?MTRCYjBXbG5Zdnc1QnJYUG5qUzNBVWdCMjh2TE9UaXc3RU9kaEEzTWFwMGJ6?=
+ =?utf-8?B?aTc0Rmo5dUNFS2hNc1hXTzdmL0xrUk8ySUtnOWxibEUrOE81b0xSMERzM3ps?=
+ =?utf-8?B?MFhiTkJnaDZjVzUvZlNLRVhud1hjWGFMTG9XdU1EdG8zVWkyREk1emxlSjFR?=
+ =?utf-8?B?R3dpOU90MWJZM3dMdmNDU2ZzL3JFVFRWRWNwaG8yWDhIbC8veHRNVTkxUHZK?=
+ =?utf-8?B?a0pUNVVxK09Ra0NnUWcvcWlTa09XTDdsVXdtdWVFaE1pbHMvTFY2TzlHaDda?=
+ =?utf-8?B?ZVJmcXA2bnl4Qmd2VjdSb1AzdTRBL3BsSm0rU1JRTFoyWHg3eTN1b1ExMStL?=
+ =?utf-8?B?NVJSd3pZV3ZEU3pTQ3d3NEk3Y2NTRmJVRDFVYzU4L1o2Q2tibDJPOStFeTRh?=
+ =?utf-8?B?K3lkZEUxRmdMZEk1V1REUVg1eThBaERPQ2w3Q2RJMmp3VHRoYm9zalNFL2xh?=
+ =?utf-8?B?bXlKSmRDVVVWN2lFbU5IUXZOMWhlQk5kRWYrSktiUGs3SVQrK1dhRGM2a1Y5?=
+ =?utf-8?B?SFN2SUltQklxU1Erc0RkTTdMSlA3VUUrbjV2RkpubytwSXhLN3o3L1ZYazdm?=
+ =?utf-8?B?VW5EamdRc2JXSmhRQWlRY3FCYTUreVE3QVUrR3BHYUZUdlpteTFxM2JpQVlM?=
+ =?utf-8?B?S1FKaWJoN1JlMWRNdHluMGU5NlAyb0F1aURoejRCcVR6MDhMTmtTRlA1SXdu?=
+ =?utf-8?B?SU8zaTJzT0FIN1RaamZmTThqYzBwYWxWS0owV1FEREpyK2ExMkU3bHVHa3dO?=
+ =?utf-8?Q?/eydZ3mwqnj4cVT7TSnjjWogtJXAv7hKdI?=
+MIME-Version: 1.0
+
+--b1_vt6Wkkyr0VuUIpFJEnVYayZtg8DTcQSEt0AOgzviOY
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hello Jerry Teng, Would you like to receive the Daily Health Check link via text message?Click this link to update your communication preference: https://redcap.utdallas.edu/surveys/?s=FKriXSprv2
+
+--b1_vt6Wkkyr0VuUIpFJEnVYayZtg8DTcQSEt0AOgzviOY
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><div style="box-sizing: border-box; font-family: 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+<div>
+<div style="font-size: 14px;">Hello Jerry Teng,</div>
+<div style="font-size: 14px;">&nbsp;</div>
+</div>
+<div>Would you like to receive the Daily Health Check link via text message?</div>
+<div>
+<div style="font-size: 14px;">Click this link to update your communication preference:</div>
+<div style="font-size: 14px;">&nbsp;</div>
+<div style="font-size: 14px;">https://redcap.utdallas.edu/surveys/?s=FKriXSprv2</div>
+</div>
+</div>
+
+
+--b1_vt6Wkkyr0VuUIpFJEnVYayZtg8DTcQSEt0AOgzviOY--

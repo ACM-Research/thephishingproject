@@ -1,0 +1,94 @@
+Received: from MW2PR0102MB3404.prod.exchangelabs.com (2603:10b6:302:3::16) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Tue, 20 Oct 2020 01:32:07
+ +0000
+Received: from MN2PR08CA0029.namprd08.prod.outlook.com (2603:10b6:208:239::34)
+ by MW2PR0102MB3404.prod.exchangelabs.com (2603:10b6:302:3::16) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.27; Tue, 20 Oct 2020 01:32:01 +0000
+Received: from BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:239:cafe::48) by MN2PR08CA0029.outlook.office365.com
+ (2603:10b6:208:239::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Tue, 20 Oct 2020 01:32:00 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.1)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.1; helo=mail-relay1-va2.blackboard.com;
+Received: from mail-relay1-va2.blackboard.com (69.196.241.1) by
+ BL2NAM02FT034.mail.protection.outlook.com (10.152.77.161) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Tue, 20 Oct 2020 01:32:00 +0000
+Received: from fgprd-100946-205964-app002.mhint (fgprd-100946-205964-app002.mhint [10.5.3.32])
+	by mail-relay1-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09K1VGph021671;
+	Tue, 20 Oct 2020 01:31:21 GMT
+Date: Mon, 19 Oct 2020 20:31:54 -0500 (CDT)
+From: "Tristan Whalen - tgw100020@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Tristan Whalen - tgw100020@utdallas.edu" <tgw100020@utdallas.edu>
+To: "2208-merged-CS3341001-SE3341001":;
+Message-ID: <48400268.14669.1603157518584.JavaMail.bbuser@fgprd-100946-205964-app002>
+Subject: (MERGED) CS 3341.001 - SE 3341.001 - F20: quiz 01 through 06
+ average for midterm
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_14667_2001563934.1603157514266"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2020 01:32:00.4194
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 90529a45-c2bf-4963-e9f5-08d87497f0f1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132476311204224786;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 90529a45-c2bf-4963-e9f5-08d87497f0f1
+X-MS-TrafficTypeDiagnostic: MW2PR0102MB3404:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:4125;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.1;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay1-va2.blackboard.com;PTR:mail-relay1-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2020 01:32:00.3864
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 90529a45-c2bf-4963-e9f5-08d87497f0f1
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW2PR0102MB3404
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.6242713
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	kDTHBZt5xn1zoNvmGMZGLIWMpMR3FSlIIWFdvWK6JqOY8XjRlKG9UVBoLe7fIISWOL4TXeeRTkExyM1PYWc5UO9VBH/df6U1IhC2j1WfocbCgKdKCnaQaCN8rJCtKL0xrFe9gTie2sv5zJjOp+9wDIWkCZ7By+PSjjUxVu5u7QHELpBj9nZu9nMaqy3L03zy1sRjUpX1X6hFiUDkLaY3C64Hbw67tNVEnaDgbNKShe0ymgvwOwz306azPUcqpbGsWRIHfCVRH7HTDmifOP9YGvHmaU/QiPbyUXQmtBHOPu5xt5PlyfGgohXRmWe7AtDJ0aK9Pt+1IR//AoKS09lJrGUsIa1deTFWXyGCbGR7frPf4DnZEF/J5o/3MyOr4ZHyA4bhWJkiuTjjQZspUBSVT8FgLGWjsJ2pix8vlhp/4N1wFjPxWOadCHBepJ+kDC7JpCxwe1XdMeKfLhDkQOITXW+cBWhlSL1DfSEV1w2BVyl5CvL5iyRQOZMH03aa8wrl3NL06FSs3VK3K2tVIcKwGLcoXWnNjdf5yJBcmmpoJPsQL8Uo/2mizEGVwHIaZsStssq0nxChx573dRjImccSW38O/FaE3jVtQlAPy5Djjn+cvC/Rs1+MTg2NDj/UPVjsgzNcZ3Af/bB1hgatyNCcWj/p5RLqhOj0zPpjmNm8JfFdxMse3nxB3qAfdj5Sh7dkxb3g63xcGOX7QBsRQKxlO4wost7EALdLP/m0o88MBRO6nZoSt3fE21PGKxbEfEO5MYb30RPgOmgYhJNKZ7l6QPmVGHjmDPLPC6NcRSyC9+VEvdTUYZvLrOB6uB6UI3JH6ClAPN83e4Dno+FV0gamnQwm8NkW8EiaRSbQO/xuu2lT9IjOF6hHIdZjIjFhHIJf3GphMJQG2lZm5gfe5VggWZeDFxCoc8OTZWa8n2bFml4=
+MIME-Version: 1.0
+
+------=_Part_14667_2001563934.1603157514266
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+           The average of quizzes 01 through 06 is used as your midterm grade. Of course, your actual, official, final course score will include the homework as one of the quizzes.      
+------=_Part_14667_2001563934.1603157514266
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>  <body>   <div class="vtbegenerated">    <p>The average of quizzes 01 through 06 is used as your midterm grade. Of course, your actual, official, final course score will include the homework as one of the quizzes.</p>   </div>  </body> </html>
+------=_Part_14667_2001563934.1603157514266--

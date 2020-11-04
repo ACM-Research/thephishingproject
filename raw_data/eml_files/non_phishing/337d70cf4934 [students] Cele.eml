@@ -1,0 +1,367 @@
+Received: from SN6PR01MB4109.prod.exchangelabs.com (2603:10b6:805:ae::11) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 21:50:16
+ +0000
+Received: from CY4PR04CA0036.namprd04.prod.outlook.com (2603:10b6:903:c6::22)
+ by SN6PR01MB4109.prod.exchangelabs.com (2603:10b6:805:ae::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.27; Thu, 15 Oct 2020 21:50:14 +0000
+Received: from CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:c6:cafe::6a) by CY4PR04CA0036.outlook.office365.com
+ (2603:10b6:903:c6::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21 via Frontend
+ Transport; Thu, 15 Oct 2020 21:50:14 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ CY1NAM02FT003.mail.protection.outlook.com (10.152.74.151) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 21:50:14 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 15 Oct 2020 16:49:53 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 15 Oct 2020 16:49:53 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 8FEF0C000057; Thu, 15 Oct 2020 16:49:53 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (exchange.utdallas.edu [10.180.14.117])
+	by lists.utdallas.edu (Postfix) with ESMTP id AB493C000057
+	for <students@lists.utdallas.edu>; Thu, 15 Oct 2020 15:37:30 -0500 (CDT)
+Received: from utdex11.campus.ad.utdallas.edu (10.180.14.116) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 15 Oct 2020 15:37:30 -0500
+Received: from oitpintfpm702.utdallas.edu (10.182.70.70) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 15 Oct 2020 15:37:30 -0500
+Received: by oitpintfpm702.utdallas.edu (Postfix, from userid 100001)
+	id 79D571F4B47; Thu, 15 Oct 2020 15:37:30 -0500 (CDT)
+To: <students@lists.utdallas.edu>
+From: <announcements@utdallas.edu>
+Content-Type: text/html; charset="iso-8859-1"
+Message-ID: <20201015203730.79D571F4B47@oitpintfpm702.utdallas.edu>
+Date: Thu, 15 Oct 2020 15:37:30 -0500
+Subject: [students] Celebrate Founders Day with UT Dallas!
+Reply-To: <announcements@utdallas.edu>
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1452
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-10/20201015203730.79D571F4B47%40oitpintfpm702.utdallas.edu>
+Return-Path: bounce+jerry.teng==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 21:50:14.4650
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f47a4153-bd8c-4b46-66cd-08d871544c53
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT003.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: f47a4153-bd8c-4b46-66cd-08d871544c53
+X-MS-TrafficTypeDiagnostic: SN6PR01MB4109:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:2399;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+Content-Transfer-Encoding: 7bit
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 21:50:14.3787
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f47a4153-bd8c-4b46-66cd-08d871544c53
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4109
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0239950
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?8BYd5mLvMAAYonGjTJHEiGPiAi+7XVyeGe+HB+AYE0+D5AHK8tBE4aEo?=
+ =?Windows-1252?Q?pdGelG8Tpsa/gosoctu1bysqLQuMkxMroawLS8eWC6kKytLPb0HFI8ud?=
+ =?Windows-1252?Q?WNePKGdtheL9OlCFevO99u0tyN6xeX6Gwz2S6riNiab+hMKo0XG4siD+?=
+ =?Windows-1252?Q?RV23yxi2yvYQAL3n1WFOXypHjU7i7yOv2pL8GBqln8puZ8Nv7JXwspGl?=
+ =?Windows-1252?Q?/Qf8aPsS4Yi1VDTkFnFoFDHyYuppubY1n64YInbIYp9A54PLgsqk7/sq?=
+ =?Windows-1252?Q?XBJ1G1mAVowHutlfPyFUhrX9Z2uMbkfmyGvPYfuHW4ObjHC7VPq05tj9?=
+ =?Windows-1252?Q?Eclt4jq4hrNma6lDHrpmrETRZsxpv9tcYTzv9+VOtA95LJteKo292Pwx?=
+ =?Windows-1252?Q?iQCO+ms6v7S7Ot5JREpfT2pBOQQvk4tdHx1eaSWk6gP4Z9/3dmH/Aecc?=
+ =?Windows-1252?Q?u0ZH1VARAiW0gxMnKj9+fm2nRs8qv/qM/uPsPfzc4vdtALihdCc2cnhQ?=
+ =?Windows-1252?Q?axGg64EffYDofsHvMMwV2vuINBEj3x1s4KeTBY1Wq6Uy9QHpXysJ2byk?=
+ =?Windows-1252?Q?A6iE0b6BKYZpZ0sJj9wyfEd69OrZbqScWg8QctXo5JnMOwNvGpGy0oq9?=
+ =?Windows-1252?Q?hMo6bYzbTtNk6pc1b1Ixxy7TRHm6FgjIwO3CFDaevH0aLdOzkQ/WlAay?=
+ =?Windows-1252?Q?9aMykc4QydhHgFy4tLsGVj5j+kAkxesjTecJArLIYrzdLI82Vyr2jyzE?=
+ =?Windows-1252?Q?+iu7pV7x24lcqzHRELU4m64irh9MJqaraRjPMOnFhU40K1m1B4wh+LEW?=
+ =?Windows-1252?Q?QL+756gteU8+nc8e+bxH35pETdAHf5Ka5DJKk/EDW8SQDzeU04OxPMuE?=
+ =?Windows-1252?Q?QfqBkJxWlQ+k5NkemJ7/5yCmP/4ZlHHU9aZAzCNbZaxKCYYnX4Qf3HgD?=
+ =?Windows-1252?Q?W9u5Qg4vkb4Nk7wJJM6JgM5t89w5wL6kHx5nT/Pop3dZU3bZdbhMxHcW?=
+ =?Windows-1252?Q?dedphpwFMd8XbDjKCKSeul8gqqM4n3mEtXE6ldxH9SNaROV6PFbklKIw?=
+ =?Windows-1252?Q?tbbLmV2R9NfUId8BEHustHhLaTJJ2dTLdY8FCnwm9TJ2JPH+o0eGEvW2?=
+ =?Windows-1252?Q?rYVKhJgzSlBECIF3mlFLD4VRmySsb7bcLxFxJvd1TJ2pSAIlpqlka70N?=
+ =?Windows-1252?Q?6W9TQFJxjJOk2CxaxRFdnA7UVGjZRLiDOg8r1i4rCPBMzIhNhG8XZ886?=
+ =?Windows-1252?Q?gG38sVlN95Ok3VBzT8rxxumKYKia/t2R9p14X4LbYGRnZm9PeEX6bDPO?=
+ =?Windows-1252?Q?NmmH6Q=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founders Day 2020 - The University of Texas at Dallas</title>
+<!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse:collapse;}
+        table.main-table {width:600px;}
+    </style>
+<![endif]-->
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; max-width:100%; max-width:600px; height:auto !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration:none;}
+    .appleBody2 a {color:#fff; text-decoration:none;}
+    .appleBody3 a {color:#999999; text-decoration:none;}
+    .appleBody4 a {color:#818179; text-decoration:none;}
+    .appleFooter a {color:#999999; text-decoration:none;}
+    .appleEvents a {color:#404141; font-weight:bold; text-decoration:none;}
+  /* EVERYTHING ELSE */
+  	.icon{max-width:36px !important;}
+    @media screen and (max-width:600px) {
+      body[yahoo] .deviceWidth {width:280px !important; padding:10px 0 0 0;}
+      .deviceWidth {width:280px !important; padding:10px 0 0 0;}	
+      body[yahoo] .center {text-align:center !important;}
+      .center {text-align:center!important;}
+    	img{ max-width:100% !important; height:auto !important;}
+  	}
+</style>
+</head>
+
+<body link="#e87500" style="font-family:sans-serif; min-width:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; background-color:#f4f4f4; margin:0; padding:0;" dir="ltr" lang="en-US" bgcolor="#f4f4f4" xml:lang="en-US" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+<!--[if (gte mso 9)|(IE)]>
+    <center>
+        <table><tr><td width="600">
+<![endif]-->
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#f4f4f4; max-width:600px; border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; table-layout:fixed; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" class="main-table">
+      <tr>
+        <td align="center" valign="top" style="font-family:sans-serif; padding:0;">
+
+
+
+
+      
+
+          
+
+
+
+
+          <!-- START 1-Column Wrapper-->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+
+
+              <!-- START UTD Header Image -->
+              <tr>
+                <td align="center" valign="top" style="font-family:sans-serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">Learn how you can win a 2020 Founders Day T-shirt. </div><a href="https://www.utdallas.edu/"><img src="https://www.utdallas.edu/evites/templates/aries/img/utd-monogram-header-orange.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+              </tr>
+              <!-- END UTD Header Image -->
+              
+              <!-- START Main Image -->
+              <tr>
+                <td align="left" valign="top" style=" padding:0; background-color:#fff;"><img src="https://www.utdallas.edu/evites/founders-day-2020/mcdermott-jonsson-green.jpg" alt="McDermott&amp;Jonsson&amp;Green. I am the Founders' Vision" width="600" style="vertical-align:bottom; margin:0; padding:0;"></td>
+              </tr>
+              <!-- END Image -->
+              
+              <!-- START Heading -->
+              <tr>
+                  <td align="center" valign="top" style="font-size:32px; color:#e87500; padding:45px 30px 0 30px;"><strong>Celebrate Founders&nbsp;Day</strong></td>
+              </tr>
+              <!-- END Heading -->
+
+              <!-- START Intro Text -->
+              <tr>
+                  <td align="center" valign="top" style="font-size:19px; line-height:26px; color:#333; padding:10px 30px 20px 30px; background-color:#fff; text-align:center;">
+                    This year&#8217;s Founders&nbsp;Day is going virtual, and you can bet that UT&nbsp;Dallas is celebrating founders Eugene McDermott, Erik Jonsson and Cecil Green in style. Join us for <strong>online contests and giveaways</strong> leading up to Founders&nbsp;Day on Thursday, October&nbsp;29. 
+                  </td>
+              </tr>
+              <!-- END Intro Text -->
+
+
+              <tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:5px 0 45px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.utdallas.edu/foundersday/" style="v-text-anchor:middle;width:260px !important;font-size:16px;" arcsize="10%" stroke="f" fillcolor="#e87500">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://www.utdallas.edu/foundersday/" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;">Learn More</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+
+
+              <!-- START Image -->
+              <tr>
+                <td align="left" valign="top" style=" padding:30px 30px 5px 30px; background-color:#fff;"><img src="https://www.utdallas.edu/evites/founders-day-2020/students-wearing-founders-day-shirts.jpg" alt="Students wearing Founders Day t-shirts" width="540" style="vertical-align:bottom; margin:0; padding:0;"></td>
+              </tr>
+              <!-- END Image -->
+
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:16px; line-height:22px; color:#333; padding:15px 30px; background-color:#fff; text-align:center;">
+                    <a href="https://www.utdallas.edu/development/forms/view.php?id=64821" style="color:#c95100; text-decoration:none; display:inline-block; margin-bottom:10px; font-size:21px;"><strong>Get Your Founders Day T-shirt</strong></a><br>
+                    One of our favorite Founders&nbsp;Day traditions includes the annual group photo. Although we can&#8217;t be together on campus, we invite you to be part of this year&#8217;s photo&nbsp;mosaic.<br><br>
+First 600 photo submission will receive this year&#8217;s <strong>Founders Day T-shirt</strong>. Offer available while supplies last. All participants will be entered into a drawing to receive a <strong>limited edition Temoc&nbsp;statue</strong>.
+                  </td>
+              </tr><!-- END Body Text -->
+
+
+              <tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:5px 0 45px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.utdallas.edu/development/forms/view.php?id=64821" style="v-text-anchor:middle;width:260px !important;font-size:16px;" arcsize="10%" stroke="f" fillcolor="#e87500">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://www.utdallas.edu/development/forms/view.php?id=64821" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;">Submit Your Photo</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+
+
+              <!-- START Image -->
+              <tr>
+                <td align="left" valign="top" style=" padding:30px 30px 5px 30px; background-color:#fff;"><img src="https://www.utdallas.edu/evites/founders-day-2020/temoc-whoosh.jpg" alt="Temoc doing the Whoosh" width="540" style="vertical-align:bottom; margin:0; padding:0;"></td>
+              </tr>
+              <!-- END Image -->
+
+              <!-- START Body Text -->
+              <tr>
+                  <td align="center" valign="top" style="font-size:16px; line-height:22px; color:#333; padding:15px 30px; background-color:#fff; text-align:center;">
+                    <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161913043&amp;sdata=bUV%2FiVgEpdblksJvYRjV7tKJbKraqWjfjCIJDWVsbbs%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="qeKBPOYR+Ix8bnvREGFyXwnK9V4WR04naKSqcQjqj5YXWOiLEPZaSP4AsTc3dAoGC0yxRlw0CWfHqLQYtuw+EKbuYxdLUEOICViAy9Ib18326TQzO/V5K7MGVz/RvHCVLSBUt6ClUJ5p2SHfiXD+fyRVKmnIdd3mFXEhxTjYlOI=" style="color:#c95100; text-decoration:none; display:inline-block; margin-bottom:10px; font-size:21px;"><strong>#UTDFoundersDay Challenge</strong></a><br>
+                    Show us your best Whoosh video on Instagram tagging <a style="color:#c95100; text-decoration:none; " href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161913043&amp;sdata=bUV%2FiVgEpdblksJvYRjV7tKJbKraqWjfjCIJDWVsbbs%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="qeKBPOYR+Ix8bnvREGFyXwnK9V4WR04naKSqcQjqj5YXWOiLEPZaSP4AsTc3dAoGC0yxRlw0CWfHqLQYtuw+EKbuYxdLUEOICViAy9Ib18326TQzO/V5K7MGVz/RvHCVLSBUt6ClUJ5p2SHfiXD+fyRVKmnIdd3mFXEhxTjYlOI="><strong>@ut_dallas</strong></a> or using #UTDFoundersDay for a chance to win a UTD swag&nbsp;bag.  
+                  </td>
+              </tr>
+              <!-- END Body Text -->
+
+
+              <tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:5px 0 85px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161923035&amp;sdata=uEd3fQR9R3LQ0opmBTPKz9ASRO8F1CALxGK6rcbGi%2FA%3D&amp;reserved=0" originalSrc="https://www.instagram.com/ut_dallas/" shash="HjDQjbcuNF8bCbTc8jiI7A5Q/2ufIA3+ppyTaVF5/j/PMKkUrqcAYKDLLt2RxjPLDbXz7gwyMgzqctwgmlN+UWxnGEyqRgKjjohMYjpliJT3JxOmyF5ZeC3ZYkwWRqypfglT1TNZV19jjF22PUcvmADQSfT8MlUeoOkHNZYSexU=" style="v-text-anchor:middle;width:260px !important;font-size:16px;" arcsize="10%" stroke="f" fillcolor="#e87500">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161923035&amp;sdata=uEd3fQR9R3LQ0opmBTPKz9ASRO8F1CALxGK6rcbGi%2FA%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="HjDQjbcuNF8bCbTc8jiI7A5Q/2ufIA3+ppyTaVF5/j/PMKkUrqcAYKDLLt2RxjPLDbXz7gwyMgzqctwgmlN+UWxnGEyqRgKjjohMYjpliJT3JxOmyF5ZeC3ZYkwWRqypfglT1TNZV19jjF22PUcvmADQSfT8MlUeoOkHNZYSexU=" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;">Learn More</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+
+
+              <!-- START Footer -->
+              <tr>
+                <td align="center" valign="top" style="padding:30px; background-color:#eaeaea; color:#555; font-size:14px; ">
+                  <strong>The University of Texas at&nbsp;Dallas</strong><br>
+                  800 W. Campbell Road<br>
+                  Richardson,&nbsp;Texas 75080<br><br>
+                  <!-- START Icons -->
+                  <table width="180" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Futdallas&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161933026&amp;sdata=QsB3Z9XxT4KotbXixMLLarp266%2B%2BZ9VOeOuvM9Y0wSQ%3D&amp;reserved=0" originalsrc="https://www.facebook.com/utdallas" shash="c78pK9crOGTo5pCtrUaRCCjxo29CJVwlyBmKG2Zs8LyxvgLsDdxc7I/TS0LiZGheCgZz3WGNUpo2yeuSCxqbzMTq/2ezReXztwWet9dN0rb57gfJMifdejJPwHsxAVpN8Lgx66wvp2g2ebIfOpSHpTIRxcX7e3USZfJe6BZtUSY=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/facebook.png" width="36" height="36" alt="facebook" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161933026&amp;sdata=xNeU0VOxqfa3kLyS0HOHwjw4h%2Bwc29k7t7Ksll0rZ24%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="cSGiw4MNZZCiyhBhusi5wByUem/H6Ug3c+Z+kmKOxlFM3c2s/daFxTdz4/eidEF+FwEriV4K0qdb8/RhDBhuHA4rJrmQhJjQUOYsZ5xY5EwpAbzTRxdM0jY6f8Bkrz4YQVAJ9N2edJAyoKF5pW0JaKElkct0wg81xxzFCgDHthw=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/instagram.png" width="36" height="36" alt="instagram" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2Fut_dallas&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cf47a4153bd8c4b4666cd08d871544c53%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637383954161943026&amp;sdata=wdpKhpOKVC7gTHKnF0oTkk51fUu5tKNKGKE45z8e32E%3D&amp;reserved=0" originalsrc="https://twitter.com/ut_dallas" shash="iiORjFGw1zDOlIbasQWaEXwEeKQzFMxLUXIRWjAUpHt7m+5ZTG5ybQkYVd7a0IaEADi5jy0YRfgDan9eCZwq/sAYtm6BLOLEg1brtjA/s9xqv0D0pRPNcty/I5ABCwHgio1yYciTlLJGPmHiKIO6EcO96MlCZHPJQwYhkK8z24w=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/twitter.png" width="36" height="36" alt="twitter" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                    </tr>
+                  </table>
+                  <!-- END Icons -->
+                  <br>
+                  View this email in your <a href="https://www.utdallas.edu/evites/founders-day-2020/index.html" style="color:#555; outline:none; border:none;">browser</a>.<br><br>
+                </td>
+              </tr> 
+              <tr>
+                <td align="center" valign="top" style="padding:2px; background:#e87500"></td>
+              </tr><!-- END Footer -->
+
+
+
+
+            </table>
+
+          <!-- END 1-Column Wrapper -->
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        </td>
+      </tr>
+    </table>
+  </center>
+<!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    </center>
+<![endif]-->
+
+</body>
+</html>
+

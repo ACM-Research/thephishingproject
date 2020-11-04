@@ -1,0 +1,320 @@
+Received: from DM6PR01MB3803.prod.exchangelabs.com (2603:10b6:5:8e::30) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 17 Oct 2020 06:27:47
+ +0000
+Received: from BL0PR1501CA0011.namprd15.prod.outlook.com
+ (2603:10b6:207:17::24) by DM6PR01MB3803.prod.exchangelabs.com
+ (2603:10b6:5:8e::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.28; Sat, 17 Oct
+ 2020 06:27:46 +0000
+Received: from BL2NAM02FT032.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:207:17:cafe::78) by BL0PR1501CA0011.outlook.office365.com
+ (2603:10b6:207:17::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Sat, 17 Oct 2020 06:27:46 +0000
+Authentication-Results: spf=pass (sender IP is 149.72.168.230)
+ smtp.mailfrom=sg01.recruiting.caci.com; utdallas.edu; dkim=pass (signature
+ was verified) header.d=recruiting.caci.com;utdallas.edu; dmarc=pass
+ action=none header.from=caci.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of sg01.recruiting.caci.com
+ designates 149.72.168.230 as permitted sender)
+ receiver=protection.outlook.com; client-ip=149.72.168.230;
+ helo=o41.sg01.recruiting.caci.com;
+Received: from o41.sg01.recruiting.caci.com (149.72.168.230) by
+ BL2NAM02FT032.mail.protection.outlook.com (10.152.77.169) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Sat, 17 Oct 2020 06:27:45 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=recruiting.caci.com; 
+	h=mime-version:sender:from:to:subject:content-type:content-transfer-encoding; 
+	s=s1; bh=MTZWHXtTEl3/0V6/LwmRvfSpBQ2uegG+0NSH6nGWpaI=; b=lDevqs2
+	H+4aSzJyi5/BvyL2EoLLVKr1KefNFYLxqsMkjV9kA44b0YPZTH1swspDra0V6WaA
+	4VhvuwYBYC8R9Y1Jtf5rKq3ddk/FcdiSbIE5XV0PwtxD4vRZnpCeKzPQtrvpyEe9
+	lpr+/8Hg0Wnf3ITvuhXdSGlU5NI/MWnWXnAc=
+Received: by filter0874p1iad2.sendgrid.net with SMTP id filter0874p1iad2-25818-5F8A8EE1-9
+        2020-10-17 06:27:45.746913803 +0000 UTC m=+640687.199150905
+Received: from smtp01.smashfly.com (unknown)
+	by ismtpd0009p1las1.sendgrid.net (SG) with ESMTP id 562X1FNWSJalpMeOFnzbVA
+	for <Jerry.Teng@UTDallas.edu>; Sat, 17 Oct 2020 06:27:45.559 +0000 (UTC)
+Received: from SFIntServices03 (sfintservices03.smashfly.com [10.110.65.85])
+	by smtp01.smashfly.com (Postfix) with ESMTP id 21778406967
+	for <Jerry.Teng@UTDallas.edu>; Sat, 17 Oct 2020 02:26:24 -0400 (EDT)
+X-CID: 0
+X-EID: 38525910
+X-CLID: 12332
+X-CTID: 3144917
+Sender: "CACI Talent Acquisition Team" <careers@recruiting.caci.com>
+From: "CACI Talent Acquisition Team" <donotreply@caci.com>
+To: Jerry.Teng@UTDallas.edu
+Date: Sat, 17 Oct 2020 06:27:45 +0000 (UTC)
+Subject: Thank You for Joining our Talent Network
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <562X1FNWSJalpMeOFnzbVA@ismtpd0009p1las1.sendgrid.net>
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHqF1lNA/KUxnJTcQqoDOh+HqZnXkQm0cgJ4+2
+ Nk2miGXrVDmnxgR14eGAY82SMLnnSoEsgdXs7YADp/KKh/GAZpIES3ElDzmJ45BZDiTLHIQzSfoRT8
+ wlwsU11Y1rDN4soZOOGUARDlnsrTY6r240uycesYzUfxo84EDdnvOgrHGoA3DLGsWE/Lg7Zkp1gF25
+ G0vezQ14s9ZyvzDb22XCQx
+X-Entity-ID: uoeNoFxKB9/Gnh/ToeDHjQ==
+Return-Path:
+ bounces+10192679-52b3-jerry.teng=utdallas.edu@sg01.recruiting.caci.com
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Oct 2020 06:27:45.9043
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 48a3ccf9-9007-48ca-c649-08d87265c2d6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT032.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 48a3ccf9-9007-48ca-c649-08d87265c2d6
+X-MS-TrafficTypeDiagnostic: DM6PR01MB3803:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 15246424700300876022;5514653176435791407;3613457231917163842;4539629564272151494;15551253722669648364;16556417013288149727;9649894281614066965
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:149.72.168.230;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o41.sg01.recruiting.caci.com;PTR:o41.sg01.recruiting.caci.com;CAT:NONE;SFS:(4636009)(4744005)(6916009)(166002)(26005)(76236003)(36906005)(2160300002)(9686003)(83380400001)(356005)(336012)(66574015)(83170400001)(6266002)(1096003)(58800400005)(7846003)(5660300002)(7596003)(8676002)(22186003)(7636003)(6666004)(2490100001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 3000:0x0|0x0|0x3000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Oct 2020 06:27:45.8394
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 48a3ccf9-9007-48ca-c649-08d87265c2d6
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT032.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB3803
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1340696
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?bBXt1bQ02HN51LnYq4OC3FbGGuX9ulSq4gLexzXvmINOpIFggvY2hEqV?=
+ =?Windows-1252?Q?9Jz1lJGSyUPhi7PiJx6O9fDM76RYgklAhsmJXz3JTvsqT3EKWtwfYhqX?=
+ =?Windows-1252?Q?yg5sXnMPEhWy/Sb3mMOaIOBvw9HVJwDqfIAMLfuW7NEJaeVbGjTjUaMp?=
+ =?Windows-1252?Q?BL8HsBCgc/ruTYX+z/69HWo43Hg5vPFUY3rtyzBS25RAA6osnOQcsnd/?=
+ =?Windows-1252?Q?lEXFeVbMyvHucLEMdXgasNUXdbddw7jPcAQvAgj0Zpiy1lLN089jSN/G?=
+ =?Windows-1252?Q?4XZ1VWNKIzIqDJ98WM4CMGxpYksHIYTB+cIqu2ZxTpvRF3heEjQRlREt?=
+ =?Windows-1252?Q?7ViCt3MbNIheHCC+4d/PrEu6UnkKhrdL61msgQrk60e+Ks8QHm9Z+Byz?=
+ =?Windows-1252?Q?8KuQJFl9rk6PbAUoPM09HGv3VausG3mj/F0grz5N8uO2fCSmytNB9Fdt?=
+ =?Windows-1252?Q?CkCY9EIYD1rI6k8hmk+v3a5LC3QaRUTMlgeHKzEY961qPzd4NF/coDAA?=
+ =?Windows-1252?Q?fMsKPVXpJ20MnRdGZiM96TUkQdbjezcCNc6USZQBV0VhKbKtnsBf8FMg?=
+ =?Windows-1252?Q?ConaITQ97PY5n8zj/KA5aMmd2M3qdYPj1YqZNCrdfwyWIRemeqeTQUI+?=
+ =?Windows-1252?Q?INqGVF+rdnHg21wZRPdqIN7qKvHbzcYfaAEZQczZvX9j2BXb0uTLCDn3?=
+ =?Windows-1252?Q?4+ddIvwwoZ4OIuVIhgW1RatVTOD2Fkk/wSFcUmUZy6l5aebPygFYcoPE?=
+ =?Windows-1252?Q?Okhgq0L7Xl7o9G9XEwjsWTaqZKLPOLYdEJbiRHSxmL/wSW8mDRk6FUJb?=
+ =?Windows-1252?Q?To3aQnikH3NE3P3sWd56w7TBC4y4/eqU91+f9CB7u7uPSJlY8YPNClPj?=
+ =?Windows-1252?Q?V1vJneSvCEwqciXoLpalknQ1JwwwVR8ty8wGqZYc98STWhLxteMtijT8?=
+ =?Windows-1252?Q?qeXt/5JZ3kM9yssC0ivMMy2Zyyu0miVQyvD+NXIcGnPEsO0tN0IWru8h?=
+ =?Windows-1252?Q?YUHhNqYnhH6PluPDSuFMdvLiBKAxHIWN/Ols4dbyTwXuAm4GoNkUZqGT?=
+ =?Windows-1252?Q?saurtv3BjddoxJqN5JSHGoSzSSDnPHc+Klb0zX1kCDydGUyT3ldbN4DV?=
+ =?Windows-1252?Q?NzzPCf0AJdNe1D1aovfhlP4ianEqGf0WPpunR3SVBUwr91RwtFtwAvB6?=
+ =?Windows-1252?Q?nmv7kozuAlqJ4oo0xp1zWeYMbsuSy2kewt9VWBYXxFjIBTijKJPIQVqY?=
+ =?Windows-1252?Q?hOZDHb9DaNnYZTkVuXhR4E6ld9OxuVjA8FdiIkWqh3uPfuPqrGjetRgO?=
+ =?Windows-1252?Q?TFejzbnG7E0mfxkblDKwpxLiomGGyk7xazt/LRJRk/fthDPfV9mHULG3?=
+ =?Windows-1252?Q?4g6pQNljYRXn+W5q1lOM1KvEXzsx0RTCwgDEjZo8sd+bZNe68MOiArwO?=
+ =?Windows-1252?Q?W6cHzvs9eijMe9QoPu7xnJEhizc2ZtXOhq8YaIOIAfCm/KHJvLzraMuO?=
+ =?Windows-1252?Q?Ied+I8Jl/mgIulhPho9K1U54yD2teg=3D=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><div style=3D"text-align: center;"><a style=3D"font-size: 10px;" href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu1019267=
+9.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3Ddje-2BztvpPk7VzLuqYdYQAbAC8KUk7pluon=
+ytSXGeCdFhpnQrd3Ms2bbw9YwHZyjg-2B6Wfkz3aLpgUsLg6cZju7Dcr43FNdx3xEmudgImgaE3=
+0GMeOt6eFpAOOqC40Er-2FLlkq0cmsSi8HPCRBWxhDl0NRseTkSkt-2FnSjG-2Bs1UC0Zy9tWmG=
+Z-2FSnfWNl-2FiySbtMN6e-2BDGKnHuDaPPnMGyx2ZlA-3D-3Djqnv_A6np-2Bq5dXU-2FiKWa-=
+2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2Btu=
+I3qztyquJf6XYVQvxjgA0mnO6VSKl9Fn3-2BxSFYBpi265e3rIS9sde8RaKY959pRBpC8Eyk7G7=
+6qB-2Bvxp4sVl9hpcfE-2BmzQsQrFAbBVywj0yQwz7-2FEU-2F7v5guI58-2BEfTgTTjKO0SeWZ=
+wVY9STubOf0-2BcGk834-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C48=
+a3ccf9900748cac64908d87265c2d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7=
+C637385128677315847&amp;sdata=3DBT%2Fg2yvgUCXxlQL%2FQwbv1RWwUPZtrQYcdWox%2B=
+8beLBc%3D&amp;reserved=3D0" originalsrc=3D"https://u10192679.ct.sendgrid.ne=
+t/ls/click?upn=3Ddje-2BztvpPk7VzLuqYdYQAbAC8KUk7pluonytSXGeCdFhpnQrd3Ms2bbw=
+9YwHZyjg-2B6Wfkz3aLpgUsLg6cZju7Dcr43FNdx3xEmudgImgaE30GMeOt6eFpAOOqC40Er-2F=
+Llkq0cmsSi8HPCRBWxhDl0NRseTkSkt-2FnSjG-2Bs1UC0Zy9tWmGZ-2FSnfWNl-2FiySbtMN6e=
+-2BDGKnHuDaPPnMGyx2ZlA-3D-3Djqnv_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOi=
+JDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyquJf6XYVQvxjgA0m=
+nO6VSKl9Fn3-2BxSFYBpi265e3rIS9sde8RaKY959pRBpC8Eyk7G76qB-2Bvxp4sVl9hpcfE-2B=
+mzQsQrFAbBVywj0yQwz7-2FEU-2F7v5guI58-2BEfTgTTjKO0SeWZwVY9STubOf0-2BcGk834-3=
+D" shash=3D"KjLQ6Db6YJiKRCLQkS1jMUZbgVbEOWjDyGp/ID03Mz3ZDgRjT5cGBpfe2DSiQqr=
+O8Pw7nxspTOqVZcsH7SLaNXDwjP5+daubsDcEYBIlmE1MgM3xpCfvLsfd3G7Bi78ONXwXHXIcoP=
+z5QOVmKG/RH92VU9gVL2/CnxGBZ9XyY70=3D">Email not displaying correctly? Click=
+ here to view in a browser.</a></div><p style=3D"text-align: center;"><span=
+ style=3D"font-family: Arial;"><img src=3D"https://recruit.smashfly.com/Sma=
+shFlyMedia/Images/12332/aa1b5fe5-7377-4755-8ca7-f3a08aac3909.png" alt=3D"" =
+style=3D"width: 145px; height: 78px; left: 303px;"></span></p>=0D
+<p><span style=3D"font-family: Arial;"><br>=0D
+<span style=3D"font-family: &quot;Lucida Sans Unicode&quot;;"><font size=3D=
+"2"><span style=3D"color: rgb(12, 12, 12);">Dear Jerry,&nbsp;</span></font>=
+</span></span></p>=0D
+<p><span style=3D"font-family: &quot;Lucida Sans Unicode&quot;; color: rgb(=
+12, 12, 12);"><font size=3D"2">Hello and welcome to the CACI Talent Network=
+!</font></span></p>=0D
+<p><span style=3D"font-family: &quot;Lucida Sans Unicode&quot;; color: rgb(=
+12, 12, 12);"><font size=3D"2">Thank you for your interest in this position=
+, and in the future, we look forward to bringing you news and information a=
+bout future job opportunities with CACI. You can expect to hear from us on =
+occasion, but you can also keep up with us on our social media platforms at=
+ any time &#8211; these are linked below. There you will gain insights into=
+ our culture, our employees, and our business.</font></span></p>=0D
+<p><span style=3D"font-size: small; font-family: &quot;Lucida Sans Unicode&=
+quot;; color: rgb(12, 12, 12);">Thanks again and we look forward to staying=
+ connected with you!</span></p>=0D
+<p><span style=3D"font-family: &quot;Lucida Sans Unicode&quot;; color: rgb(=
+12, 12, 12);"><font size=3D"2">Sincerely,</font></span></p>=0D
+<p><span style=3D"font-family: Arial;;font-family: &quot;Lucida Sans Unicod=
+e&quot;;"><font size=3D"2"><span style=3D"color: rgb(12, 12, 12);">The CACI=
+ Talent Acquisition Team</span></font></span></p>=0D
+<p><span style=3D"font-family: Arial;">=0D
+<p><span style=3D"font-family: Arial; color: rgb(38, 38, 38);"><strong styl=
+e=3D"font-size: 12px; line-height: 24px;">Connect with Us</strong><span sty=
+le=3D"font-size: 12px; font-weight: 600; line-height: 24px;"><br>=0D
+</span></span><a href=3D"https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fu10192679.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOQwsd29UAq=
+ikHRJcoz0DnidzUx1AVjAIZl4NV04L0x-2B7roNwRC9qmts-2B8j356BGJjg-2B6PtAvqe7cjAK=
+qveU4Jg-3D-3D2ZP7_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlP=
+FPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyu3V7lzbwM2ZUdVmM6uF6d-2BngQyXpE=
+0QOPOtPeL-2FZx-2FG-2BUhv84zS8Z480b-2BZCXfcAHQjgeZ8wynOz0TR-2BNBO92Ij3i77hEN=
+fqgCbnE1pEyTRe7kvL-2FhwP84Q9UPx0SIJD9sUVdVN1vQ-2FLNiSi5ioHwI-3D&amp;data=3D=
+02%7C01%7Cjerry.teng%40utdallas.edu%7C48a3ccf9900748cac64908d87265c2d6%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637385128677325843&amp;sdata=3DjDf=
+fbfPmUkXtVrGS6DYP51hPERWOJMZF92n2mVGjiLg%3D&amp;reserved=3D0" originalsrc=
+=3D"https://u10192679.ct.sendgrid.net/ls/click?upn=3DOQwsd29UAqikHRJcoz0Dni=
+dzUx1AVjAIZl4NV04L0x-2B7roNwRC9qmts-2B8j356BGJjg-2B6PtAvqe7cjAKqveU4Jg-3D-3=
+D2ZP7_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2=
+B-2FfyG47RizZt5F71zBP-2BtuI3qztyu3V7lzbwM2ZUdVmM6uF6d-2BngQyXpE0QOPOtPeL-2F=
+Zx-2FG-2BUhv84zS8Z480b-2BZCXfcAHQjgeZ8wynOz0TR-2BNBO92Ij3i77hENfqgCbnE1pEyT=
+Re7kvL-2FhwP84Q9UPx0SIJD9sUVdVN1vQ-2FLNiSi5ioHwI-3D" shash=3D"v0F7CV1OZ/RoO=
+hhrHw+wPcXqud7iMVOABflK6Pze2qsN44CA4LZAESG/XpY//GoPlWN/qE6O8V4u5hvyZbjW1eoR=
+ihux13gmyzCSqjse2u+s7c5hqKmcV8K4npKNwb3ua0WWm0MH1gXszd9PjK9MpuqUs1FumMMnE5Q=
+atEd0Nek=3D" target=3D"_blank" style=3D"line-height: 1.42857; background-co=
+lor: #ffffff;"><img alt=3D"" src=3D"https://recruit.smashfly.com/SmashFlyMe=
+dia/Images/12332/dfe1f0ea-6cb7-4c3d-8714-6e0744a3943a.png"></a><a href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu1019267=
+9.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOQwsd29UAqikHRJcoz0DnidzUx1AVjAIZl4N=
+V04L0x-2BQShVpK9Dgpp1MzMdeyEuknliviEhZuuNKuXxF-2B51j5Q-3D-3DeDe2_A6np-2Bq5d=
+XU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F=
+71zBP-2BtuI3qztyqic-2BWq-2BYVwfdfjKwQ2KSRPj9YYMcyGZsS5lWXfD-2BDtfI9HYmeIdEw=
+CXoTwvKP71JRsgJ9dNl0UjZDXcUKX-2BG6-2BdhCQmGXoBNmtjexqnsG4p2ZqDhHUVfxd6l961c=
+xactcqa2yt7lYIp1SGnDkkgcJM-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C48a3ccf9900748cac64908d87265c2d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C1%7C637385128677335835&amp;sdata=3Dd1VsySiohzINwu4SupljMtuBkOYw2GXT2uQuH=
+P1lLFg%3D&amp;reserved=3D0" originalsrc=3D"https://u10192679.ct.sendgrid.ne=
+t/ls/click?upn=3DOQwsd29UAqikHRJcoz0DnidzUx1AVjAIZl4NV04L0x-2BQShVpK9Dgpp1M=
+zMdeyEuknliviEhZuuNKuXxF-2B51j5Q-3D-3DeDe2_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bga=
+Y9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyqic-2B=
+Wq-2BYVwfdfjKwQ2KSRPj9YYMcyGZsS5lWXfD-2BDtfI9HYmeIdEwCXoTwvKP71JRsgJ9dNl0Uj=
+ZDXcUKX-2BG6-2BdhCQmGXoBNmtjexqnsG4p2ZqDhHUVfxd6l961cxactcqa2yt7lYIp1SGnDkk=
+gcJM-3D" shash=3D"DwhBg4yrzus8AHs8zKwlaVd2oDgocoC6gLG0T5ububPmfrAiuTzR8Xbvx=
+pAPaXxWMcdWXgwWesZlYhUTsPvzw1Fhh9Qt0cjj0oE8iJTB152RfMV2PuqtCRbMs2gy2BcdJ4Es=
+Zl/d9V4p0nowrs4MHVdcZRaJYdcLo3ETTxkIRi8=3D" target=3D"_blank" style=3D"line=
+-height: 1.42857; background-color: #ffffff;"><img alt=3D"" src=3D"https://=
+recruit.smashfly.com/SmashFlyMedia/Images/12332/4303e432-4ab0-40a3-b5f8-3e9=
+0fa2a0ae3.png"></a><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Fu10192679.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOQwsd=
+29UAqikHRJcoz0DnidzUx1AVjAIZl4NV04L0x8VxZ-2BFxOMLM17OkANeQegIR8THzp2t7jm7Fx=
+vUDhKy3g-3D-3DcJQc_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMl=
+PFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyuV2asLVpTHtxVtVQ7kfMlQB9ReCNtb=
+PpaBERh8bVqw0La4S2oCGFhWwmQsE-2FVSz64blcyxfGUFrDZTYQs7eT12zk67fB1E2qbMgKJMJ=
+xFfXzeeTmW-2FTVsgIVjTTnI93R209AFB-2F3JRnMoXPcGC1Q5k-3D&amp;data=3D02%7C01%7=
+Cjerry.teng%40utdallas.edu%7C48a3ccf9900748cac64908d87265c2d6%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C1%7C637385128677335835&amp;sdata=3DJztVAWWrKYK1=
+KRu%2Bl9fQxDUrm0FoUWo7oaUSfbbzIwE%3D&amp;reserved=3D0" originalsrc=3D"https=
+://u10192679.ct.sendgrid.net/ls/click?upn=3DOQwsd29UAqikHRJcoz0DnidzUx1AVjA=
+IZl4NV04L0x8VxZ-2BFxOMLM17OkANeQegIR8THzp2t7jm7FxvUDhKy3g-3D-3DcJQc_A6np-2B=
+q5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZ=
+t5F71zBP-2BtuI3qztyuV2asLVpTHtxVtVQ7kfMlQB9ReCNtbPpaBERh8bVqw0La4S2oCGFhWwm=
+QsE-2FVSz64blcyxfGUFrDZTYQs7eT12zk67fB1E2qbMgKJMJxFfXzeeTmW-2FTVsgIVjTTnI93=
+R209AFB-2F3JRnMoXPcGC1Q5k-3D" shash=3D"vRrNswtfp9F/+39xSyR2IXB0w3Vn6fPP9j2B=
+ODSyrNCj0qpjmvTf8RF2yiqN+hEefztG39iwVzM/x0awmMBO6sKmbJYAvMO96P5jSR2+iezNd6G=
+FjA0Jsd9/83pcGBHbw7bj/bLBwNCYY3PWpZ1I3Oxb57DTHevDF/VN3RSPNrA=3D" target=3D"=
+_blank" style=3D"line-height: 1.42857; background-color: #ffffff;"><img alt=
+=3D"" src=3D"https://recruit.smashfly.com/SmashFlyMedia/Images/12332/48b731=
+4f-7aec-400b-bd66-c93537de1dcd.png"></a><a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10192679.ct.sendgrid.net%2Fls%=
+2Fclick%3Fupn%3DOQwsd29UAqikHRJcoz0DnidzUx1AVjAIZl4NV04L0x9j7XW4F0qg6T24MB9=
+P-2FCW3fi83Ir2VG-2BGGNJexpuErcg-3D-3Do_Il_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY=
+9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyjOhZWH-=
+2BUy1UuX78KHwQIT41UN0mL81AAFj0frPvKA5NFy9z-2BQT-2F7RTTVDyUeO2CL2sGuMeaNr2vK=
+9IVlGUP7B6s2tO0zGyKAHBwwDfzh7bFcKbtvDnvOE7ZJOjhIyEnOAOhq3qLsSU1u5weD9U3v1E-=
+3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C48a3ccf9900748cac64908d=
+87265c2d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637385128677345829&a=
+mp;sdata=3DFBhrSDwVnScWOesbONgR31y98wt1GoeU9yCmrALdMB8%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://u10192679.ct.sendgrid.net/ls/click?upn=3DOQwsd29UAq=
+ikHRJcoz0DnidzUx1AVjAIZl4NV04L0x9j7XW4F0qg6T24MB9P-2FCW3fi83Ir2VG-2BGGNJexp=
+uErcg-3D-3Do_Il_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFP=
+XS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyjOhZWH-2BUy1UuX78KHwQIT41UN0mL81A=
+AFj0frPvKA5NFy9z-2BQT-2F7RTTVDyUeO2CL2sGuMeaNr2vK9IVlGUP7B6s2tO0zGyKAHBwwDf=
+zh7bFcKbtvDnvOE7ZJOjhIyEnOAOhq3qLsSU1u5weD9U3v1E-3D" shash=3D"cI3jFwFUNsq+S=
+nLMRe8JQIIXduaw3UpURaxPI8vEVpHDqo+Kz+Cb5QSUzRpPaKTG9AxmzU8ni/SJQRmg0nP6PNL1=
+6oamAPGWQL4OEz+5twoZ9FYouMNn+U1zojI4s/n/sPmIlMNFrUn5KbfnWuFfdd3l8WxkpUJFQaF=
+OM1MJ/9k=3D" target=3D"_blank" style=3D"line-height: 1.42857; background-co=
+lor: #ffffff;"><img alt=3D"" src=3D"https://recruit.smashfly.com/SmashFlyMe=
+dia/Images/12332/8899f6ed-294b-4995-83d8-ee4ed5022d4d.png"></a></p>=0D
+<p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fu10192679.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DOQwsd29UAqikHRJcoz0Dn=
+k5dQxcVWM3buFtchK8gSCdbB0Y0iHYFPej4Y3cABnfD9EYrQV-2FbLhGNStf5cVK4uQ-3D-3DQ5=
+cJ_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2=
+FfyG47RizZt5F71zBP-2BtuI3qztyoeXDYeeSyjwkiox3dyWaXPLnHmjUXbT-2FgHUxN1zpn4Ny=
+P-2FIEOd7RFR9bxCqhhjrRKOU-2BOMP-2BZYCdZWwQ6O0YBgzBc0uVlWVJWlGrGBu9Pd4lANY8e=
+a1F4W832QaDyEE7tEx-2F5P0SsBwgFWrljJ1L-2BM-3D&amp;data=3D02%7C01%7Cjerry.ten=
+g%40utdallas.edu%7C48a3ccf9900748cac64908d87265c2d6%7C8d281d1d9c4d4bf7b16e0=
+32d15de9f6c%7C0%7C1%7C637385128677345829&amp;sdata=3DcTgbV%2BqE4NWK5HanA1Lv=
+S9YqiFa9PP6jYlZyvGDFP48%3D&amp;reserved=3D0" originalsrc=3D"https://u101926=
+79.ct.sendgrid.net/ls/click?upn=3DOQwsd29UAqikHRJcoz0Dnk5dQxcVWM3buFtchK8gS=
+CdbB0Y0iHYFPej4Y3cABnfD9EYrQV-2FbLhGNStf5cVK4uQ-3D-3DQ5cJ_A6np-2Bq5dXU-2FiK=
+Wa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2=
+BtuI3qztyoeXDYeeSyjwkiox3dyWaXPLnHmjUXbT-2FgHUxN1zpn4NyP-2FIEOd7RFR9bxCqhhj=
+rRKOU-2BOMP-2BZYCdZWwQ6O0YBgzBc0uVlWVJWlGrGBu9Pd4lANY8ea1F4W832QaDyEE7tEx-2=
+F5P0SsBwgFWrljJ1L-2BM-3D" shash=3D"YaQDoMP24dRJnRmmT0gmcHFKCvcccB6HVG0nlgJ3=
+kVF5rwa7M6E0iKD91s79E8SmfFNBAB1a4x0jFw/BV6AqSijaNY3XRsV5yS55Bahd0KUaoStU981=
+JVpzReczLxeVOr2AebKG8r4gFVwC2srXUQGPnOsq80WNMkMGQcHB3sqI=3D" target=3D"_bla=
+nk"></a></p>=0D
+<br>=0D
+<span style=3D"color: rgb(216, 216, 216); font-size: 10px;"><em>=0D
+&nbsp;</em></span></span></p><br><div style=3D"text-align: center;">Click <=
+a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fu10192679.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3Ddje-2BztvpPk7VzLuqYdYQAWZ=
+2GhuhPdyjgexHxuuUiUr2WyajBpAz6CLsrtn4wXMWCmrETFxf2W7EzD1mP9YL-2FF-2FxO0Jpl9=
+o9hRC1FXv48DUCD55cQAICOLzYXICk9aFXMhevzzxbS8-2FgLtCmjCnNGYaf1o0xWs1-2F-2Fd3=
+kDjAON4Hnn3lmJ0dLJVAy-2But43FG9LMpNBNbksGEPll3ar0cc7HOBXfCFyDB-2F-2Fw2vsAGk=
+22Teww6WpFQUhC1siYIlutFwDns1_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHk=
+D3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyuOJ9oK-2FliBrvOsNS2N=
+sGcardtmMdSEhpFkC2UV0kBFsXs6ERKt6PIh83DCzbElIdR8qJ-2Faob1EdJ3t9WdLLzKoEoI02=
+sQMFwJewIbyHQEDquqx4iTQQplJvCYho3UnJsPG4z4QTv2Y7OeKFtzevNNQ-3D&amp;data=3D0=
+2%7C01%7Cjerry.teng%40utdallas.edu%7C48a3ccf9900748cac64908d87265c2d6%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637385128677355823&amp;sdata=3DyrDB=
+f2TTCdIogDZt9Pba156sX1BEzuI%2BCJXqN5JbkyI%3D&amp;reserved=3D0" originalsrc=
+=3D"https://u10192679.ct.sendgrid.net/ls/click?upn=3Ddje-2BztvpPk7VzLuqYdYQ=
+AWZ2GhuhPdyjgexHxuuUiUr2WyajBpAz6CLsrtn4wXMWCmrETFxf2W7EzD1mP9YL-2FF-2FxO0J=
+pl9o9hRC1FXv48DUCD55cQAICOLzYXICk9aFXMhevzzxbS8-2FgLtCmjCnNGYaf1o0xWs1-2F-2=
+Fd3kDjAON4Hnn3lmJ0dLJVAy-2But43FG9LMpNBNbksGEPll3ar0cc7HOBXfCFyDB-2F-2Fw2vs=
+AGk22Teww6WpFQUhC1siYIlutFwDns1_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJ=
+DHkD3AL4NpwMlPFPXS57Mi0E-2B-2FfyG47RizZt5F71zBP-2BtuI3qztyuOJ9oK-2FliBrvOsN=
+S2NsGcardtmMdSEhpFkC2UV0kBFsXs6ERKt6PIh83DCzbElIdR8qJ-2Faob1EdJ3t9WdLLzKoEo=
+I02sQMFwJewIbyHQEDquqx4iTQQplJvCYho3UnJsPG4z4QTv2Y7OeKFtzevNNQ-3D" shash=3D=
+"pO8hB8TC3i5ozALU4BM966xISnCDeBVpLi2jxMMoNDXCtIdIIOZ+5f9tDbNyGgvyUEhn0ruI0l=
+JEzlMAeCpoQVhVOw1OSwOmi0SwxWdYe7iztMffxy9I7LmyOE7XhT7vgI8jF4xC9W8m5jjj15mGp=
+7uwmhifx64Ce975g4QDcxA=3D">here</a> to remove yourself from future email ca=
+mpaigns</div> <img src=3D"http://adtrk.tw/tp/rj6-erRRk_e.K?c=3D2beLe">=20
+
+<img src=3D"https://u10192679.ct.sendgrid.net/wf/open?upn=3DMGGRiqc4lL-2FL4=
+BMe4zMytnsquGILASSvJbu-2FHMoy9EXmkm-2B3HB5LWUzEJXsicH-2FEhqCfe1mf3N9jw-2BvO=
+vyR51aL9NMdSgB9wiNCYrVHj9M48Qr6PPRln5-2B9MHUyLYGvwQxuwMRCUtGWYpRZCZYhAnWOjc=
+nJk9vZzUVBDper4ICPI5qkaVYBtlouOkLRuFLP1527D0g4kGZujHnlLZUuCxOHfy1KHMHqRmShR=
+MmX8P68-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:=
+1px !important;width:1px !important;border-width:0 !important;margin-top:0 =
+!important;margin-bottom:0 !important;margin-right:0 !important;margin-left=
+:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-=
+right:0 !important;padding-left:0 !important;">

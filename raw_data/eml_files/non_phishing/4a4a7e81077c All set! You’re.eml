@@ -1,0 +1,691 @@
+Received: from SJ0PR01MB6126.prod.exchangelabs.com (2603:10b6:a03:29b::8) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 15 Oct 2020 23:32:10
+ +0000
+Received: from BL1PR13CA0057.namprd13.prod.outlook.com (2603:10b6:208:257::32)
+ by SJ0PR01MB6126.prod.exchangelabs.com (2603:10b6:a03:29b::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Thu, 15 Oct 2020 23:32:07 +0000
+Received: from BL2NAM02FT037.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:257:cafe::9b) by BL1PR13CA0057.outlook.office365.com
+ (2603:10b6:208:257::32) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.4 via Frontend
+ Transport; Thu, 15 Oct 2020 23:32:07 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.158.52)
+ smtp.mailfrom=notifications.joinhandshake.com; utdallas.edu; dkim=pass
+ (signature was verified)
+ header.d=notifications.joinhandshake.com;utdallas.edu; dmarc=pass action=none
+ header.from=notifications.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ notifications.joinhandshake.com designates 192.237.158.52 as permitted
+ sender) receiver=protection.outlook.com; client-ip=192.237.158.52;
+ helo=a3.mail.joinhandshake.com;
+Received: from a3.mail.joinhandshake.com (192.237.158.52) by
+ BL2NAM02FT037.mail.protection.outlook.com (10.152.77.11) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Thu, 15 Oct 2020 23:32:02 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=notifications.joinhandshake.com; q=dns/txt; s=pic; t=1602804726;
+ h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date:
+ List-Unsubscribe: List-Unsubscribe-Post;
+ bh=IJ0OYoUFJNzWHTTvaWyHcQxrZJqsrPRDg2zaxnUku3M=; b=oRFio2IqxuLtakWyCerL0RWoZZ+wWTUox8LQ7eLehB2sxNp1yRpY9qWAA62Qtptxx6UGakMX
+ 6S6dt3vXuJ6IyRScpKQgO6/vyH6XGGqSNdyL9bglrqPIk0OwNoe/dZWRNJXa3XCpwCscWJbY
+ kTc9l8wvvuTPYyG991fwltejhKk=
+X-Mailgun-Sending-Ip: 192.237.158.52
+X-Mailgun-Sid: WyIyZmUzMyIsICJ6eHQxODAwMDVAdXRkYWxsYXMuZWR1IiwgIjJkOTY3Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tezbzgy3sm2j5giydembrgaytkmrtgmytinjogexdarjzgzcugrsbgiyeeokgijddejjugbxg65djmzuwgylunfxw44zonjxws3timfxgi43imfvwkltdn5wsm2b5gi2tgmdcgu2ggmzsme2tcnlfg42wkyzrgu4wkmryme4dkmldgu2cm4r5pj4himjygaydanjfgqyhk5demfwgyyltfzswi5jgoq6wc5dumvxgizlfl53wk3ddn5wwkx3fnvqws3a@notifications.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJwNzEsOgjAQANDTyLKZmTJ8Fl2IgWuQsR1DtZRESjSeXt4BXnAU-qatoiMgQEAma7FmgwbGvhlv05Vg6KdhoksNeSvxEb2UuOXdPLeYF8lhX-Slxm9rtThiC3euvSVhZG1ZPXKv1EnH6Lmu3u73LdgBAJ_hUYKkJLvRcFTFSSmag-r80XR-OusqMf0B9XcyOg&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384015295699416%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=MfRCQBvgXAlUfJDsKHF7NjNhulL5EKt4q8%2BSIeWQ3NY%3D&amp;reserved=0>
+Received: by luna.mailgun.net with HTTP; Thu, 15 Oct 2020 23:31:45 +0000
+Date: Thu, 15 Oct 2020 23:31:45 +0000
+Message-Id: <20201015233145.1.0E96ECFA20B9FBF2@notifications.joinhandshake.com>
+X-Mailgun-Native-Send: true
+X-Mailgun-Track-Opens: true
+X-Mailgun-Track-Clicks: false
+X-Mailgun-Tag: attendee_welcome_email
+X-Mailgun-Require-Tls: false
+To: zxt180005@utdallas.edu
+From: Handshake <handshake@notifications.joinhandshake.com>
+Subject: =?utf-8?q?All_set!_You=E2=80=99re_registered_for_Career_Expo_Day?=
+ =?utf-8?q?s=3A_STEAM_Career_Expo?=
+Content-Type: multipart/alternative; boundary="4dce755f8cc1431c965c0fc9bc69a2d7"
+Return-Path: handshake@notifications.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Oct 2020 23:32:06.9811
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3d1ede33-d808-41d5-55aa-08d8716287ab
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT037.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3d1ede33-d808-41d5-55aa-08d8716287ab
+X-MS-TrafficTypeDiagnostic: SJ0PR01MB6126:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:192.237.158.52;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a3.mail.joinhandshake.com;PTR:a3.mail.joinhandshake.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Oct 2020 23:32:02.6060
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3d1ede33-d808-41d5-55aa-08d8716287ab
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT037.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR01MB6126
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.5229534
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?T05NbGFGSUczM3pYK2xhNWo3TktSQTZoeFYreDZYT212V2txajc2TW52TnpI?=
+ =?utf-8?B?QXE4MXlBQUZYdVRLanljRERXa1V0M0NsTkdrZjlrM3hyRG9obExpTkVYVklG?=
+ =?utf-8?B?R3JCcEdJd25tSTI2NVNWdWZLb0ViVC9ZSlJkSXJ0NzZsOHpFM3JsaHBFM0s3?=
+ =?utf-8?B?Vkc4MVVWSElQUkh6SWhDVGVKRmJGaWVxOW5zMy9KMmlYSHZuVEFOcms3djZt?=
+ =?utf-8?B?cFZQdEQvU0RJRXhBaUJZeVNrMDlwL2dyOU5rQzAwZytwZEd4U01aRWY0azhm?=
+ =?utf-8?B?MWhjOW1tVEFFWU9jOVRreEUzbDNlbFZXeHV1QUxDbm1wWW9mN3Z4Ty9GSGVV?=
+ =?utf-8?B?L3NjMC8wN2JrMWdNbHdsUlVBekFnWU9GbCtmdmcrZktpTEVwbnBqM1R3Y2ZI?=
+ =?utf-8?B?NlVjbldWd1RwVFkxU3pOSGtvK2RrUnZxMjZ5QmJkZHluNlR4REJLR3ppdnh3?=
+ =?utf-8?B?NzNjZjBYMmtzT2M1ZG03UFR0ajlyamZQOThoWkpCSEcvUlRuLzRqcmVvQkk4?=
+ =?utf-8?B?UjBBdzFBNkx1WEpQdGNJNU42VjBlN0FUV2ZlTXBCRzBaRVEwSTJoWGVsUGpt?=
+ =?utf-8?B?VVVTSEl1VkxkTC83ZExZMzc1NHhzeEtHSlRKYzF0bmZHV0R0WXVoREZtNUFM?=
+ =?utf-8?B?RVpqbm5SN3R5eS9xK0NtYWI4Mm5Sc2lYTmMxaUFGaVpXbmRrVHRJa1R2aUxh?=
+ =?utf-8?B?WWFKTnUvdVZpbCs3SWlDME1iUllFcThkTFFQSDZwc3I3YlgrU2JvZUJsY3pE?=
+ =?utf-8?B?MWd4bWRYZUJzMVF1R1E1NlJaRDk0THNFOTdFWmRDTjhJUk5QVFNBRU1RRjc3?=
+ =?utf-8?B?UjhnOFdDbzVCUjlUVFJuait2ZkJjTGJGUC94K2psK3ZPZmVTaWhvbUswRWdK?=
+ =?utf-8?B?TDBRSmo1Z2xuaDRneWlxSHF5UWJQUEVqTkswZmwwMmppUlFlaTNDYTNsbm1C?=
+ =?utf-8?B?NEFXL2ZpbTdnT29kend1bXFWL0V5dzJ6VC9rNDBFdFRIaFUxTjNIdS82NUVz?=
+ =?utf-8?B?bEtNUm95dVVJNFFlMEM4VkpIMVJlOU5WNGZqaHNQd2hycUlRLzFZcjFvUEFm?=
+ =?utf-8?B?UFBtREFHbnJqWDVSQlUvbE1wQ1NrbFVXS1hzOGYzNzM2d3N3UkRZUEh0eEpD?=
+ =?utf-8?B?QTNPcW1zcnNmVUwzbzlESW45cjVkbisvczBselRFd3dQbWFkV1A5c3FZL3BM?=
+ =?utf-8?B?MGgxSUxudnNSRnNHVEwrOWl4LzdjR2dJblBITGxra0hoY3g2QTk3bVZyVUlI?=
+ =?utf-8?B?bmpiYmVoNXJaZSt5MUlXa083ai91SGNhMzZLbUNVWklrUFVuV2JQSEJkcklM?=
+ =?utf-8?B?TTF3eGpiaSthZ3lJNnBiRzNDK0dTeElYdVlWSmxBTHRtbEdzeHJlOGRhcjJk?=
+ =?utf-8?B?MC9kSC9LQjdEM2s1TndaVEJyNUdJRjVMaVZ6d2lqNWJJQllzTlJFRlZyNkFG?=
+ =?utf-8?B?WUZweEtzZUh1UkRPUGRHbE5QVUwyalVPbFNOUmdWaXRFbmo5c3V2WWJWcmpJ?=
+ =?utf-8?B?d2pqWXpUV3E0ZnVlZXlXYjErYkY1endFNmVGWU5nejdrMDlkMVlNWWtTR2Nr?=
+ =?utf-8?B?R0d1ZWZFZHpEbjN5NFRYMEM4bGpPbFRscWFKWmZYKzU2d1ducDBST3FHUDVs?=
+ =?utf-8?B?YWJaakt3MlZjT2xsakNpdmVZenFvZE90WGV1dmQ5clZvZVcvc0djNVZGVG9u?=
+ =?utf-8?B?TEYxbnBHVUIvT0hDaDZZNnJtNHNQcG5RUFl2VXBxeWlVWFdNeUNIbUFFcmcz?=
+ =?utf-8?B?TTZUZFV1VWpJS3NNYW1jcjBTc0VqT1UyUERBc3d1bmE0dElEc0gycisvM0VO?=
+ =?utf-8?B?SzFpK0N1NTNXMytPaVBkdSs5K1h1OFNNRzRIQm5nRURsYU1sVkRCM1VTTklV?=
+ =?utf-8?B?emN6VEgrU29NMWJhUXdGZjV6U2dhQk9jVTdnQmFJRzBpVHdwMUpzNk1TSDlY?=
+ =?utf-8?B?Lzh0RnF2b1F0azQ3OG1BVzV2MG9sdFc0c1B0NjNtbEJjWnFuSUVmQjkrUi9v?=
+ =?utf-8?B?WjY3UjdmNzg3d0pMNXVwVk9IVkV4WjNYYlZQUmlsUGNXTEdtRzlIUmQ5anpD?=
+ =?utf-8?B?UUp5OW8vRU9KaFFDdlRCWjBKV1lRaWNRNG5Tdz09?=
+MIME-Version: 1.0
+
+--4dce755f8cc1431c965c0fc9bc69a2d7
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Next step: Sign up for sessions with employers
+
+
+You=E2=80=99re registered! Let's get your schedule set up.
+
+
+Career Expo Days: STEAM Career Expo
+
+
+Wednesday, October 21st, 11:00 am - 5:00 pm CDT
+
+
+What's next?
+
+
+1. Secure your spot with the employers you want to meet! Be sure to sign up=
+ early for the sessions you want to attend.
+
+
+2. Make sure your graduation date, school year, major, GPA and work authori=
+zation are correct on your profile. Recruiters use profile information to i=
+nvite students to 1:1 sessions.
+
+
+3. Upload your updated resume to Your Documents and set it to visible. Recr=
+uiters share resumes with hiring managers after an event.
+
+Sign up for sessions
+
+A note from The University of Texas at Dallas
+
+University
+Career Center=E2=80=99s Fall 2020 STEAM Career ExpoThank you
+for choosing to attend the Fall 2020 STEAM Career Expo hosted by UT Dallas.=
+ The
+Fall 2020 STEAM Career Expo will be taking place on Wednesday, October 21, =
+2020,
+from 11:00 AM to 5:00 PM. This event will be taking place through Handshake=
+=E2=80=99s
+virtual fairs platform. As part of this platform, students must sign up for
+group sessions and individual one-on-one sessions as scheduled by
+organizations.
+
+=C2=A0
+
+At this
+fair, you=E2=80=99ll be able to engage with organizations in a variety of f=
+ormats,
+including:
+
+
+Video, audio, and chat communications with
+recruiters
+Group sessions with up to fifty students
+One-on-one meetings scheduled in advance or
+after a group session
+By having your resume updated and uploaded on
+Handshake
+
+
+=C2=A0
+
+For more
+information about this platform, the following resources are available to y=
+ou:
+
+
+Help Article: Video Requirements and
+Troubleshooting for Students=20
+Help Article: Handshake's Guide to Attending a
+Virtual Fair for Students=20
+Student Blog: Prepare for Virtual Recruiting this
+Summer=20
+Student Blog: 10 Tips for Attending a Virtual
+Career Fair=20
+
+
+If you have
+any additional questions about this event, please feel free to reach out to=
+ recruit@utdallas.edu.
+
+Professional Business Attire Is Recommended. Dress like you would for your
+dream interview! While this event is virtual, you should still look your be=
+st
+should recruiters decide to do a video chat to network.
+
+=C2=A0
+
+Handshake Account Required. Currently enrolled students automatically have =
+a
+Handshake account created for them. Please be sure to update your Handshake
+profile. UT Dallas Alumni, please create a Handshake account, or contact ca=
+reercenter@utdallas.edu for assistance. (This Career Expo is not
+open to the public.)
+
+
+
+Be Prepared: To prepare for the different scenarios you'll
+encounter at the Expo, attend the seminar "How To Work A Career Expo Like
+A Pro" or visit our website at http://www.utdallas.edu/career=C2=A0to view =
+the Career Expo Online Guide, online
+presentations, podcasts, and video spots.
+
+
+
+Please register for the Career Expo Days
+so we can gauge student/alumni attendance.
+
+
+
+By registering for this event, you are
+authorizing The University of Texas at Dallas, and those acting pursuant to=
+ its
+authority to:
+
+
+Record your participation and
+     appearance on videotape, audiotape, film, photograph or any other medi=
+um.
+Use your name, likeness, voice and
+     biographical material in connection with these recordings.
+Exhibit or distribute such recording
+     in whole or in part without restrictions or limitation for any educati=
+onal
+     or promotional purpose, which The University of Texas at Dallas, and t=
+hose
+     acting pursuant to its authority, deem appropriate.
+Exhibit or distribute any written
+     documentation in whole or in part without restrictions or limitation f=
+or
+     any educational or promotional purpose, which The University of Texas =
+at
+     Dallas, and those acting pursuant to its authority, deem appropriate.
+
+
+Accommodations
+If you need a reasonable accommodation because
+of a disability to fully participate in this event, please contact our Empl=
+oyer
+Relations Team at recruit@utdallas.edu. Please make the request as soon as
+possible to allow enough time to arrange the reasonable accommodation.
+
+
+
+Questions? Contact:
+Employer
+Relations Team
+Email:=C2=A0Recruit@utdallas.edu
+Office:=C2=A0972-883-6124=
+
+--4dce755f8cc1431c965c0fc9bc69a2d7
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html style=3D"background-color:transparent"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+<title>Handshake</title>
+
+
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px =
+solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px=
+ solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+.external-link:hover{color:#190083;text-decoration:underline}
+.external-link:focus{color:#190083}
+@media (max-width: 767px) {
+.avatar--mobile-md{max-width:56px}
+}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;color:#231f20;font-size:16px;line-height:20px">
+<table class=3D"body email-layout" data-made-with-foundation=3D"" style=3D"=
+background-color:transparent;max-width:580px;table-layout:fixed;border:0;bo=
+rder-collapse:collapse;width:100%;text-align:inherit;margin:auto;padding:0"=
+>
+<tr>
+<td class=3D"email-header">
+<table style=3D"width: 100%">
+<tr>
+<td>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Futdallas.joinhandshake.com%2F%3Futm_source%3Dnotifier%26utm_medium%3Dem=
+ail%26utm_campaign%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637384015295639675%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+SggIouOuTBwVwhEQZA2LAckNp6oKusdyQJRbkFQLmLw%3D&amp;reserved=3D0" originalsr=
+c=3D"https://utdallas.joinhandshake.com/?utm_source=3Dnotifier&amp;utm_medi=
+um=3Demail&amp;utm_campaign=3Dattendee_welcome_email" shash=3D"tfImRKuSn0kv=
+6shMujZJkGmQbhVWSeY6OyKfZL6Rh/N2XljoQAJS2jTkPH3SoDrIeohqui0dNNU1QRSacGXTaXo=
+83lu0unjgLTBcW0N3YkNLxyvu6vDJkeseLJ/5LkYD647Y8Mz4aqNlPOHPuryEVVmX+XrW8UZVPK=
+xILVZti6w=3D" style=3D"color:#254fa5;font-weight:inherit;color: inherit; te=
+xt-decoration: none;">
+<img alt=3D"Handshake" class=3D"handshake-logo" src=3D"https://handshake-pr=
+oduction-cdn.joinhandshake.com/static_assets/hs-logo-red-lg.png" style=3D"m=
+argin-top:24px;margin-bottom:16px;width: 159px; height: 24px" title=3D"Hand=
+shake">
+</a>
+</td>
+<td class=3D"branding" style=3D"width:40px;height:40px">
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td class=3D"email-content">
+<span style=3D"display:none;font-size:1px;color:#ffffff;line-height:1px;max=
+-height:0;opacity:0;overflow:hidden;">
+Next step: Sign up for sessions with employers
+</span>
+<h2 style=3D"font-weight:700;word-break:break-word;font-size:39px;line-heig=
+ht:44px">
+You=E2=80=99re registered! Let's get your schedule set up.
+</h2>
+<h4 style=3D"font-weight:700;word-break:break-word;font-size:27px;line-heig=
+ht:32px">
+Career Expo Days: STEAM Career Expo
+</h4>
+<p id=3D"date-range" style=3D"font-size:18px;line-height:28px">
+Wednesday, October 21st, 11:00 am - 5:00 pm CDT
+</p>
+<h4 style=3D"font-weight:700;word-break:break-word;font-size:27px;line-heig=
+ht:32px">
+What's next?
+</h4>
+<p style=3D"font-size:18px;line-height:28px">
+1. Secure your spot with the employers you want to meet! Be sure to sign up=
+ early for the sessions you want to attend.
+</p>
+<p style=3D"font-size:18px;line-height:28px">
+2. Make sure your graduation date, school year, major, GPA and work authori=
+zation are correct on your profile. Recruiters use profile information to i=
+nvite students to 1:1 sessions.
+</p>
+<p style=3D"font-size:18px;line-height:28px">
+3. Upload your updated resume to <a class=3D"external-link" href=3D"https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fapp.joinhandsh=
+ake.com%2Fusers%2F19088916%2Fdocuments%3Futm_source%3Dnotifier%26utm_medium=
+%3Demail%26utm_campaign%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry=
+.Teng%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637384015295649629%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sda=
+ta=3DiXEzq6iEeuMZk8SZyqze3de3sc1rQZQp%2BS5%2Fq8M5N30%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://app.joinhandshake.com/users/19088916/documents?utm_so=
+urce=3Dnotifier&amp;utm_medium=3Demail&amp;utm_campaign=3Dattendee_welcome_=
+email" shash=3D"HaDbDEfOoVFOT5AhxUtT8eHGxwtxW6Tk37H68I1Fxox45zkAIY6vlYcFtt0=
+H/F3xc4end+/RdtP6lNAMeSvtRXlC4hVfEWNx0HLPxo3Qduw7LNo7CAYELRNk0oqDnDk7URiyIr=
+Ur500C8rKzQRXbys4fV8PZcb43KJG/KDnVxVc=3D" style=3D"color:#254fa5;font-weigh=
+t:inherit;color:black;text-decoration:none;font-weight:700">Your Documents<=
+/a> and set it to visible. Recruiters share resumes with hiring managers af=
+ter an event.
+</p>
+<table style=3D"width: auto"><tr><td><table><tr><td class=3D"primary-button=
+" style=3D"color:#fff;background-color:#f73b33;border:1px solid #f73b33;bor=
+der-radius:3px;text-decoration:none;margin:8px 4px 8px 0;display:inline-blo=
+ck;font-weight:500"><a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fapp.joinhandshake.com%2Fcareer_fairs%2F16576%3Futm_=
+source%3Dnotifier%26utm_medium%3Demail%26utm_campaign%3Dattendee_welcome_em=
+ail%23sessions&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C3d1ede33d80=
+841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738401=
+5295649629%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DxOmhS2pWu10mgiD1b026tc50yxI5v=
+RrOGxZn3Ezl2qg%3D&amp;reserved=3D0" originalsrc=3D"https://app.joinhandshak=
+e.com/career_fairs/16576?utm_source=3Dnotifier&amp;utm_medium=3Demail&amp;u=
+tm_campaign=3Dattendee_welcome_email#sessions" shash=3D"opcD0mYG4AyLQcAmEcn=
+/yuGfKyeCYfu06Nc4OYd9On67+M6qbvp6y73li8dUw/ymowf03GAYLOL9bIoP5TSo1qEPTNQ40+=
+jj2MkwJOhGZWFFRhiVtIHh9xNn/8v9a+/N5el7DFifMvousi+V5i+5/UkkSX0qC2LyBePceeLX+=
+vs=3D" style=3D"color:#254fa5;font-weight:inherit;text-decoration:none;colo=
+r:inherit;display:inline-block;color:#fff;padding:8px 24px">Sign up for ses=
+sions</a></td></tr></table></td></tr></table>
+<h4 style=3D"font-weight:700;word-break:break-word;font-size:27px;line-heig=
+ht:32px">
+A note from The University of Texas at Dallas
+</h4>
+<div class=3D"sanitized-html-container">
+<p class=3D"wysiwyg-text-align-center" style=3D"font-size:18px;line-height:=
+28px"><span class=3D"wysiwyg-color-black"><b>University
+Career Center=E2=80=99s Fall 2020 STEAM Career Expo<br></b></span></p>
+<p style=3D"font-size:18px;line-height:28px">Thank you
+for choosing to attend the Fall 2020 STEAM Career Expo hosted by UT Dallas.=
+ The
+Fall 2020 STEAM Career Expo will be taking place on Wednesday, October 21, =
+2020,
+from 11:00 AM to 5:00 PM. This event will be taking place through Handshake=
+=E2=80=99s
+virtual fairs platform. As part of this platform, students must sign up for
+group sessions and individual one-on-one sessions as scheduled by
+organizations.</p>
+
+<p style=3D"font-size:18px;line-height:28px">&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px">At this
+fair, you=E2=80=99ll be able to engage with organizations in a variety of f=
+ormats,
+including:</p>
+
+<ul style=3D"margin:0 0 8px;padding:0 0 0 16px">
+<li>Video, audio, and chat communications with
+recruiters</li>
+<li>Group sessions with up to fifty students</li>
+<li>One-on-one meetings scheduled in advance or
+after a group session</li>
+<li>By having your resume updated and uploaded on
+Handshake</li>
+</ul>
+
+<p style=3D"font-size:18px;line-height:28px">&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px">For more
+information about this platform, the following resources are available to y=
+ou:</p>
+
+<ul style=3D"margin:0 0 8px;padding:0 0 0 16px">
+<li><a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fsupport.joinhandshake.com%2Fhc%2Fen-us%2Farticles=
+%2F360051037914%3Futm_source%3Dnotifier%26utm_medium%3Demail%26utm_campaign=
+%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637384015295649629%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D9kdbEbAhV%2BurSaEq=
+k5eRjX4UUXTOGzSjzr7uA5yLLVk%3D&amp;reserved=3D0" originalsrc=3D"https://sup=
+port.joinhandshake.com/hc/en-us/articles/360051037914?utm_source=3Dnotifier=
+&amp;utm_medium=3Demail&amp;utm_campaign=3Dattendee_welcome_email" shash=3D=
+"hykPoUNGgGAlfvAZ55D8Clv58aaMHc9oOq9+G8+UvyTZR+veR7j4j0ut+JvhwIhnyS8hfCi71X=
+ApanBgYXnaTfrN2S17unvl33OXUkIW+xbsW2sQUSBjlNuOfDDHSnAq48/YL2O66+oHkMdkZF1iw=
+FhSnJoQHM2rUTuoSYy/x9c=3D" style=3D"color:#254fa5;font-weight:inherit">Help=
+ Article: Video Requirements and
+Troubleshooting for Students </a></li>
+<li><a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fsupport.joinhandshake.com%2Fhc%2Fen-us%2Farticles=
+%2F360049934274%3Futm_source%3Dnotifier%26utm_medium%3Demail%26utm_campaign=
+%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637384015295659585%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DpllzoaAGdAWDtVVYPU=
+JiRRenEVsme%2FF4MBeUaqRg768%3D&amp;reserved=3D0" originalsrc=3D"https://sup=
+port.joinhandshake.com/hc/en-us/articles/360049934274?utm_source=3Dnotifier=
+&amp;utm_medium=3Demail&amp;utm_campaign=3Dattendee_welcome_email" shash=3D=
+"GxQevZl1b5D8VfoH+qywJyVG0UzMIkSLe36IkN+IyNsifcBV72VVGGk+vp3CwOEVC1gViIlYyk=
+EkbWpN8nGYFS9FE/G7Hgbw4cBlBCGfXrjsH3wEXS4IFAZggtxlw7T+pCejqhoOlMrZ45cRoPqea=
+vrlgX7sKa10Hu6joR+2/ms=3D" style=3D"color:#254fa5;font-weight:inherit">Help=
+ Article: Handshake's Guide to Attending a
+Virtual Fair for Students </a></li>
+<li><a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Flearn.joinhandshake.com%2Fstudents%2Fprepare-for-=
+virtual-recruitment-challenge%2F%3Futm_source%3Dnotifier%26utm_medium%3Dema=
+il%26utm_campaign%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry.Teng%=
+40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637384015295659585%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DN=
+%2FMq8NNDBJ4ZXrjJDTL2EUv%2FtqcBr4IIUyORfipzqxc%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://learn.joinhandshake.com/students/prepare-for-virtual-recrui=
+tment-challenge/?utm_source=3Dnotifier&amp;utm_medium=3Demail&amp;utm_campa=
+ign=3Dattendee_welcome_email" shash=3D"oBZe/XqFaNDXQcFX87TEy+S4dWglvqG0DNsw=
+qzDMQ9mSNguVuzsUTvtDdm5SowlNoZ00fOXur0pKayM40EULdwZYMQN57z3xTOV2/qFjfvi3vCv=
+T30/mamLmB1V2m3bzyiMMFxFGKDEdZ8BdC5YQvT5kmEbkOJh5Srro91sYtI0=3D" style=3D"c=
+olor:#254fa5;font-weight:inherit">Student Blog: Prepare for Virtual Recruit=
+ing this
+Summer </a></li>
+<li><a target=3D"_blank" href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Flearn.joinhandshake.com%2Fstudents%2Fattending-a-=
+virtual-career-fair-here-are-10-tips-you-need-to-know%2F%3Futm_source%3Dnot=
+ifier%26utm_medium%3Demail%26utm_campaign%3Dattendee_welcome_email&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384015295659585%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3D8jZxsfxsrCXmWVOTj7W%2B7k9e%2FUwxSOqIO963PPIGSJM%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://learn.joinhandshake.com/students/at=
+tending-a-virtual-career-fair-here-are-10-tips-you-need-to-know/?utm_source=
+=3Dnotifier&amp;utm_medium=3Demail&amp;utm_campaign=3Dattendee_welcome_emai=
+l" shash=3D"YFwb6yNzm9EH7bLIvqkk4l52y2bQiw4DaG7wjdnybp61oAst2tzzKAg7hdfL3Ve=
+ZkVyvRc8OTle5b55ApoDqbXmpAC8R4ObSo6jxR1d222BLjOAEDKb2HYKEuce3u9tEKMDFCWEm+l=
+WCzgkIdz4NboBgXacHKBbhb66iiiyPNnc=3D" style=3D"color:#254fa5;font-weight:in=
+herit">Student Blog: 10 Tips for Attending a Virtual
+Career Fair </a></li>
+</ul>
+
+<p style=3D"font-size:18px;line-height:28px">If you have
+any additional questions about this event, please feel free to reach out to=
+ <a target=3D"_blank" style=3D"color:#254fa5;font-weight:inherit">recruit@u=
+tdallas.edu</a>.</p>
+<br><p style=3D"font-size:18px;line-height:28px"><b>
+<br>
+Professional Business Attire Is Recommended</b>. Dress like you would for y=
+our
+dream interview! While this event is virtual, you should still look your be=
+st
+should recruiters decide to do a video chat to network.</p>
+
+<p style=3D"font-size:18px;line-height:28px">&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px"><b>Handshake Account Required<=
+/b>. Currently enrolled students automatically have a
+Handshake account created for them. Please be sure to update your Handshake
+profile. UT Dallas Alumni, please create a Handshake account, or contact <a=
+ target=3D"_blank" style=3D"color:#254fa5;font-weight:inherit">careercenter=
+@utdallas.edu</a> for assistance. <i>(This Career Expo is not
+open to the public.)</i><b><br>
+<br>
+</b><b></b></p>
+
+<p style=3D"font-size:18px;line-height:28px"><b>Be Prepared</b>: To prepare=
+ for the different scenarios you'll
+encounter at the Expo, attend the seminar &quot;How To Work A Career Expo L=
+ike
+A Pro&quot; or visit our website at <a target=3D"_blank" href=3D"http://www=
+.utdallas.edu/career?utm_source=3Dnotifier&amp;utm_medium=3Demail&amp;utm_c=
+ampaign=3Dattendee_welcome_email" style=3D"color:#254fa5;font-weight:inheri=
+t">www.utdallas.edu/career</a>&nbsp;to view the Career Expo Online Guide, o=
+nline
+presentations, podcasts, and video spots.<br>
+<br>
+</p>
+
+<p style=3D"font-size:18px;line-height:28px"><b><i>Please register for the =
+Career Expo Days
+so we can gauge student/alumni attendance.</i></b><br>
+<br>
+</p>
+
+<p style=3D"font-size:18px;line-height:28px">By registering for this event,=
+ you are
+authorizing The University of Texas at Dallas, and those acting pursuant to=
+ its
+authority to:</p>
+
+<ul style=3D"margin:0 0 8px;padding:0 0 0 16px">
+<li>Record your participation and
+     appearance on videotape, audiotape, film, photograph or any other medi=
+um.</li>
+<li>Use your name, likeness, voice and
+     biographical material in connection with these recordings.</li>
+<li>Exhibit or distribute such recording
+     in whole or in part without restrictions or limitation for any educati=
+onal
+     or promotional purpose, which The University of Texas at Dallas, and t=
+hose
+     acting pursuant to its authority, deem appropriate.</li>
+<li>Exhibit or distribute any written
+     documentation in whole or in part without restrictions or limitation f=
+or
+     any educational or promotional purpose, which The University of Texas =
+at
+     Dallas, and those acting pursuant to its authority, deem appropriate.<=
+/li>
+</ul>
+
+<p style=3D"font-size:18px;line-height:28px"><span class=3D"wysiwyg-color-g=
+reen"><b>Accommodations</b></span><br>
+<span class=3D"wysiwyg-color-black">If you need a reasonable accommodation =
+because
+of a disability to fully participate in this event, please contact our Empl=
+oyer
+Relations Team at recruit@utdallas.edu. Please make the request as soon as
+possible to allow enough time to arrange the reasonable accommodation.</spa=
+n><b><br>
+<br>
+</b></p>
+
+<b>Questions? Contact:</b><br>
+Employer
+Relations Team<br>
+<b>Email:</b>&nbsp;Recruit@utdallas.edu<br>
+<b>Office:</b>&nbsp;972-883-6124<br><br>
+</div>
+
+
+</td>
+</tr>
+<tr>
+<td class=3D"email-footer" style=3D"padding-top:16px">
+<hr class=3D"divider" style=3D"display:block;height:0;width:100%;border:0;b=
+order-top:1px solid #e0e0e0;margin:8px 0">
+<p class=3D"muted extra-small" style=3D"font-size:18px;line-height:28px;col=
+or:#7a7a7a;font-size:14px;line-height:20px">
+If you'd no longer like to receive emails like this you can
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Futdallas.joinhandshake.com%2Flogin%3Futm_source%3Dnotifier%26utm_medium=
+%3Demail%26utm_campaign%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry=
+.Teng%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637384015295669532%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sda=
+ta=3DmDOZH8IzdOc5RIQbeW1IdaeO1gv7mOjCaTu322xMGtg%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://utdallas.joinhandshake.com/login?utm_source=3Dnotifier&am=
+p;utm_medium=3Demail&amp;utm_campaign=3Dattendee_welcome_email" shash=3D"Zd=
+plSfzOIWQIWButUUx8AqZQ5ALpf6XZbnwgo47nfnTjgCbfFMgwoe2iBYSIJW3+/rt7wq71yJatC=
+gFDEjmIySScEu/Da3hHyoesD8ZP8/z3wOqhJesqKQnpWRD2aBcmIfnOL0QTn6zk92ZwBxzDuy0X=
+5mit09waV4ck/xKL2cY=3D" style=3D"color:#254fa5;font-weight:inherit">sign in=
+</a>
+to manage your notification preferences or
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Flink.mailgun.com%2Fu%2FeJwNzEsOgjAQANDTyLKZmTJ8Fl2IgWuQsR1DtZRESjSeXt4B=
+XnAU-qatoiMgQEAma7FmgwbGvhlv05Vg6KdhoksNeSvxEb2UuOXdPLeYF8lhX-Slxm9rtThiC3e=
+uvSVhZG1ZPXKv1EnH6Lmu3u73LdgBAJ_hUYKkJLvRcFTFSSmag-r80XR-OusqMf0B9XcyOg&amp=
+;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C3d1ede33d80841d555aa08d871628=
+7ab%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384015295669532%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C1000&amp;sdata=3DTENn5%2BWBR4oZem3T07e%2B59JcCjtWYh%2FEojj7ZatWl=
+Fw%3D&amp;reserved=3D0" originalsrc=3D"https://link.mailgun.com/u/eJwNzEsOg=
+jAQANDTyLKZmTJ8Fl2IgWuQsR1DtZRESjSeXt4BXnAU-qatoiMgQEAma7FmgwbGvhlv05Vg6Kdh=
+oksNeSvxEb2UuOXdPLeYF8lhX-Slxm9rtThiC3euvSVhZG1ZPXKv1EnH6Lmu3u73LdgBAJ_hUYK=
+kJLvRcFTFSSmag-r80XR-OusqMf0B9XcyOg" shash=3D"xDEW5KlKWwt5c2Hxt/Ym/6iAzkp8u=
+2RxD+8S0gpyEztqFHPoHX7hLTZlS/0XlRrV3We2HW65zefD5MUp2BMU3NVfYL7k/GK+rfjh+UQN=
+8x0XzT9NdwfgGm/X19TaIpCGOySAMo9sy61OUGr90OVdIi/HaAfhegwzaBxUszMkyJo=3D" sty=
+le=3D"color:#254fa5;font-weight:inherit">unsubscribe</a>.
+</p>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Futdallas.joinhandshake.com%2F%3Futm_source%3Dnotifier%26utm_medium%3Dem=
+ail%26utm_campaign%3Dattendee_welcome_email&amp;data=3D04%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C3d1ede33d80841d555aa08d8716287ab%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637384015295679500%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+7wUBwCDd2M%2B9Vs8wSyNutRUR3UClx67gXX%2BbCogxKeM%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://utdallas.joinhandshake.com/?utm_source=3Dnotifier&amp;utm_=
+medium=3Demail&amp;utm_campaign=3Dattendee_welcome_email" shash=3D"jqBgJp5m=
+1BEzy3gkqaqnLTfcnUy9o2P4WsL4oLuI+0YtKCdOZlK+2S07VgS7Ne9jeJb9v7XtLW8s7eVG+vU=
+T+jiFYYzDaSpa+o0mcIM2b6tUu/9mXJXPMYFuh5QrHS6HrVfeUOmyoz5kN28iOspBc1dnLqqpLR=
+sf/ZpUhpYOONA=3D" style=3D"color:#254fa5;font-weight:inherit;color: inherit=
+; text-decoration: none;">
+<img alt=3D"Handshake" class=3D"handshake-logo" src=3D"https://handshake-pr=
+oduction-cdn.joinhandshake.com/static_assets/hs-logo-red-lg.png" style=3D"m=
+argin-top:16px;width: 159px; height: 24px" title=3D"Handshake">
+</a>
+<p class=3D"muted extra-small" style=3D"font-size:18px;line-height:28px;col=
+or:#7a7a7a;font-size:14px;line-height:20px">P.O. Box 40770, San Francisco, =
+CA 94140</p>
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.notificatio=
+ns.joinhandshake.com/o/eJwNzEsOgjAQANDTyLKZmTJ8Fl2IgWuQsR1DtZRESjSeXt4BXnAU=
+-qatoiMgQEAma7FmgwbGvhlv05Vg6KdhoksNeSvxEb2UuOXdPLeYF8lhX-Slxm9rtThiC3euvSV=
+hZG1ZPXKv1EnH6Lmu3u73LdgBAJ_hUYKkJLvRcFTFSSmag-r80XR-OusqMf0B9XcyOg"></body=
+>
+</html>
+
+--4dce755f8cc1431c965c0fc9bc69a2d7--

@@ -1,0 +1,113 @@
+Received: from MWHPR0101MB3199.prod.exchangelabs.com (2603:10b6:301:2b::19) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 19:02:03
+ +0000
+Received: from MN2PR10CA0006.namprd10.prod.outlook.com (2603:10b6:208:120::19)
+ by MWHPR0101MB3199.prod.exchangelabs.com (2603:10b6:301:2b::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21; Fri, 23 Oct
+ 2020 19:01:58 +0000
+Received: from BL2NAM02FT010.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:120:cafe::33) by MN2PR10CA0006.outlook.office365.com
+ (2603:10b6:208:120::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 19:01:58 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.1)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.1; helo=mail-relay1-va2.blackboard.com;
+Received: from mail-relay1-va2.blackboard.com (69.196.241.1) by
+ BL2NAM02FT010.mail.protection.outlook.com (10.152.77.53) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 19:01:58 +0000
+Received: from fgprd-100946-205964-app009.mhint (fgprd-100946-205964-app009.mhint [10.5.10.139])
+	by mail-relay1-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09NJ0vZw023863;
+	Fri, 23 Oct 2020 19:00:57 GMT
+Date: Fri, 23 Oct 2020 14:01:55 -0500 (CDT)
+From: "Terrell Bennett - trb052000@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Terrell Bennett - trb052000@utdallas.edu" <trb052000@utdallas.edu>
+To: "2208-merged-EPCS2200SEC001-EPCS3200SEC001":;
+Message-ID: <34906393.12432.1603479718157.JavaMail.bbuser@fgprd-100946-205964-app009>
+Subject: (MERGED) EPICS - F20: Material for class Monday
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_12430_1727413916.1603479715119"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 19:01:58.5534
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cc74a33c-68d0-40fd-899c-08d877861dff
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132479533185564357;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT010.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cc74a33c-68d0-40fd-899c-08d877861dff
+X-MS-TrafficTypeDiagnostic: MWHPR0101MB3199:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.1;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay1-va2.blackboard.com;PTR:mail-relay1-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 19:01:58.4324
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cc74a33c-68d0-40fd-899c-08d877861dff
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT010.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR0101MB3199
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0592611
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	oa/Mhw96ArB9gb9h8JNj7vntWnDf8123liNHFykfvDX1FRJamQvNZfNY6Nb/YMLzXs2gQdl5jKKWzdGM73OS8rCMWZlNnuqYCbAufF+K08JF1qE4sY/HOjzHQtE9OLcEnzwbc3x91l7emDUS6tb8c2BvjKVLILO7+hnjA9J8kvV3Z786QPlyQMgQb/YpviqNRVixZo5ChVM9NNpb8tZS0LmJaoeT56wLoZCGqKYhlYyTtylYItO2ZjKlqvCgcEYdH5zi2BaN3ueIW01wVrVsJHtqmpUtRjgrauKejOHZOz9m/4DSpB6ys/3FbAYd9nIhVTKMFx3z+YmTwcesvyO1JoMjJz7VnQbZ+Og9E91BFQhlBeftd3vm9F958jbxwR6rUaYnyYAWfzLkQet1b9a5zep8Vg/Y1qiPugKfrfFJpXUBZWrIZW8/hp30p+riZ31fdaoibmL/UNxO7b6bveO0tftK0fwxY3d7E0MdH0U9/8cLxtOGEa4Jj9U1/uJ6Ic0/2FQrCnB/Q/tiso6stmVwT/kwej+w1a2pZGS9Cf6DAMxcAJEKOT60jemK5v4QNDZOKpk2EGOdu+Z6/T3JNgF/x4RdaeudW4JqOGQgUl6edAhxxX2wlaVoXYStbnNJzkPd1tLJTwCiFEaMZ4Uq/PrYk+flMNxewL6Tah+cMi9KnQyhxDQqtA5QlxTMr4C4mfwQGJ8VRNZjW1NN2HW4djbpa1VJme9gc3tFsAnthhhilRV+EXfoVKPxnW4xau3BXpULl0UOVBbsgYliEji4Irxx1Ww8HLMpWMGoEolmJ4WhPmk3RqP+VOM8Zpqsq2cmtVst0iRXcQmOnoCClOzCKBeYqjN1nlpS6NerhA7Owc+xJPziKhj8cJEPzHBKELDJxAJqMzq6pEpqQfaFw4TNqP9ix/s3d6XPp3FJhQZCRKfSi60=
+MIME-Version: 1.0
+
+------=_Part_12430_1727413916.1603479715119
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+All,
+For Monday's class,=C2=A0please review the material listed below:
+
+2200=C2=A0-=C2=A0Watch the video on Delivery in the Materials folder on ele=
+arning
+3200 - Watch the videos on Float/Slack
+
+Thanks,
+Terrell
+
+------=_Part_12430_1727413916.1603479715119
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+>All,</p>
+<p>For Monday's class,&nbsp;please review the material listed below:</p>
+<ul>
+<li>2200&nbsp;-&nbsp;Watch the video on Delivery in the Materials folder on=
+ elearning</li>
+<li>3200 - Watch the videos on Float/Slack</li>
+</ul>
+<p>Thanks,</p>
+<p>Terrell</p>
+<p></p>=
+
+------=_Part_12430_1727413916.1603479715119--

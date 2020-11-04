@@ -1,0 +1,570 @@
+Received: from BL0PR0102MB3458.prod.exchangelabs.com (2603:10b6:207:1a::23) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 07:32:19
+ +0000
+Received: from SA0PR11CA0052.namprd11.prod.outlook.com (2603:10b6:806:d0::27)
+ by BL0PR0102MB3458.prod.exchangelabs.com (2603:10b6:207:1a::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.26; Tue, 13 Oct
+ 2020 07:32:15 +0000
+Received: from SN1NAM02FT024.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:806:d0:cafe::7c) by SA0PR11CA0052.outlook.office365.com
+ (2603:10b6:806:d0::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Tue, 13 Oct 2020 07:32:15 +0000
+Authentication-Results: spf=pass (sender IP is 65.55.52.237)
+ smtp.mailfrom=microsoft.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=microsoft.com;utdallas.edu; dmarc=pass action=none
+ header.from=microsoft.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of microsoft.com designates
+ 65.55.52.237 as permitted sender) receiver=protection.outlook.com;
+ client-ip=65.55.52.237; helo=smtpi.msn.com;
+Received: from smtpi.msn.com (65.55.52.237) by
+ SN1NAM02FT024.mail.protection.outlook.com (10.152.72.127) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 07:32:14 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+	s=s1024; t=1602574334; h=From:Subject:Date:Message-ID:To:MIME-Version
+	:Content-Type:Content-Transfer-Encoding; bh=Qq7R5xtkpmy63ptrnZaFhBCvbr1Sm
+	Jg7RdMahIl4qgs=; b=L4c/Nne7NQ7F+9NJOOcSWR4ePiyO00RjaMzsMdVCR6RJDmgY9PML9a
+	LY1AAUiOX8qHWjjatS9ZSuNcOJFhhJYoVrOMdz6prQRdHwLgAdgU/WIUtkIoquT112PWbHdWa
+	0PfklW8v3Xa1axYwTZV6EB54PGhVSZl83msOrTP/XyHk=;
+From: Microsoft Azure <azure-noreply@microsoft.com>
+To: <zxt180005@utdallas.edu>
+Date: Tue, 13 Oct 2020 07:32:14 +0000
+Subject: Action required: Update certificate pinning for your applications
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <e9ebe2a1-6179-4609-8258-a6c768a8ada0@CO1GMEHUB08.gme.gbl>
+Return-Path: azure-noreply@microsoft.com
+X-DKIM-Signer: DkimX (v1.11.111)
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 07:32:15.0873
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 26602b53-7a71-4eeb-3c17-08d86f4a1b66
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT024.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 26602b53-7a71-4eeb-3c17-08d86f4a1b66
+X-MS-TrafficTypeDiagnostic: BL0PR0102MB3458:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 15547546543360191386;7364504151761133882;691102256282997498;3969111447291405979;14931373402081910526;9784433595241111939;11316623690713803492;3847428930064200985;9163131662428094509;3419831218191129235
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:65.55.52.237;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:smtpi.msn.com;PTR:co1gmehub08.msn.com;CAT:NONE;SFS:(4636009)(47530400004)(286005)(6486002)(6506007)(66574015)(6862004)(15650500001)(336012)(166002)(44246019)(956004)(356005)(19627405001)(83380400001)(6512007)(9686003)(31686004)(83080400001)(36736006)(26005)(31696002)(8676002)(1096003)(21615005)(52230400001)(10290500003)(86362001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 0:0x0|0x0|0x0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 07:32:14.9403
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 26602b53-7a71-4eeb-3c17-08d86f4a1b66
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT024.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR0102MB3458
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.8980913
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?l2AXKsEijPLc/LoWGGY45MgsyfvWaIm/gEeu9SeITd3Giqe7Vka1SRiQPM8Y?=
+ =?us-ascii?Q?+9dACnrqXLLmk0RC4Y8fJFglgzwrUD9MClAG/7jS6QYzmt0yS3Nkub8BsBjD?=
+ =?us-ascii?Q?rLYMCQcq1K/s+ZpvwJ2zsbaAWc6NV6+GNiIETaTKi5QG2TzBrB7cjgyvMdyV?=
+ =?us-ascii?Q?BSs4iibDHL2HunNTIPdUuYVNFGZSQ4LRvGS4g8zbAcjHxOLZ1d/NlucAFF0q?=
+ =?us-ascii?Q?l4cWCeOyzgoqcVvXW/tX5c5UvvSBDGAf01eR4zOaMEfw7MTFvQEFW+dkja+8?=
+ =?us-ascii?Q?YcG6MtZEgfsDwamDwlIiDv/kpe+qoDQ4Tcvgi0MX1Ud/kvNaG4vrKzy2V072?=
+ =?us-ascii?Q?OyzkrrDri31wFzNqrxyr7diaQWd7+A814nGiRXIsF/RTbVs09dmusguxkmm1?=
+ =?us-ascii?Q?dXqrRLanuYEC5vMz6B30PmU9+eEsCs+TrWYhKHSey7bqB3EPGCZQA+kTFH0U?=
+ =?us-ascii?Q?g67GAPa1EaeSMOzUBJ2LwBzqEqeztCUjU5dWPwGC6qYIcFEoyqP9UVcGHH1Z?=
+ =?us-ascii?Q?ry+HOzihOif8meeQ9pLzyCMQsix7ema2/ln2m0KzXI2EunCX/yJnfFQD0kZ/?=
+ =?us-ascii?Q?vuw/fqZXyb+QWHUct52pSXeusLaqQBDFbvQm+XTqTimUzE6yv2G3JKXhGe3l?=
+ =?us-ascii?Q?UOp9VncFle+DzPvQFaSSdIjTY6oEyOYUgXqOEVIv3u+kFEa/qritOFV63Ume?=
+ =?us-ascii?Q?TqmGVAl667LE1rFeQ2p3PhqrroiVsyVbAfGbp/hEUVxEuN5WUOy5luRQazts?=
+ =?us-ascii?Q?iouSGTcLX4iXIYUr5vAOEw5Wa6YMCmx47rhQ7GHxBIaNxYhVh4SYWLUNhsNc?=
+ =?us-ascii?Q?gK0fwShKJCizq6T5BdxM/LUY8TlEf8UztFVOsioNuONAgb11X6NoLQq2CtZ4?=
+ =?us-ascii?Q?IoTGhJ6wOawHH/pL10OIyTcKFapqAlFhRUXqmlljhd6U4dpQ2Cw32sSs9sBK?=
+ =?us-ascii?Q?z6PooNKiu5t3KC/8hOHKDCB8X4JUhOCydIoVFZ4hajrAuWnoLFfI/i2tUq4P?=
+ =?us-ascii?Q?7VD2Tms0pFcHXyz2ie+AuZMJ2gJJmqq/ncZiPyA4JQIo8vjkBFoJUQW9wP1n?=
+ =?us-ascii?Q?WgeaN2bwd+FHWMiLHKEW5S82NcrA+udMVs+elpgC2SDZPgYy2UoM1kdqDpA7?=
+ =?us-ascii?Q?r56pErS0iHDAMXPdRdqhyatjTjYz49lUjMageZw5gDKbuFLMLSro7BDZkHrt?=
+ =?us-ascii?Q?yDQHH67m4rfXbSk4+dXUOu+lZaokCLTxbAeZWSNxaFo7dH3zE7a403ycee4o?=
+ =?us-ascii?Q?3lXs5aeA7jbopWgugaY+kovq45OJrAvUp7XbB0AwlTxxWlYg6oMdiCXdBTno?=
+ =?us-ascii?Q?bVjDP92vN5aXOWcuDGXJSmX/X/rYsuuhCKUTlNGuzpZNZxpqeu96xvIFsVs/?=
+ =?us-ascii?Q?3VwOvvm64eRnsEuVBkzmTvrjDb+CDy26kgzbTWTzI2wQGuC51dTX+wOvv3qh?=
+ =?us-ascii?Q?dWA0IGRBVzJ503lMWXQs8DP19tKncui0A1kE/EDUDvlRFbzCZ1cdpI+CqOhO?=
+ =?us-ascii?Q?vKkoz/sZfflwG1Q=3D?=
+MIME-Version: 1.0
+
+<!-- SUBJECT: Action required: Update certificate pinning for your applicat=
+ions --><!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+    <title></title>
+
+    <style>
+
+        .preheader {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0;
+            color: #f4f4f4;
+            height: 0;
+            width: 0;
+            line-height: 1px;
+            font-size: 1px;
+            max-height: 0;
+            max-width: 0;
+            overflow: hidden;
+        }
+
+        .main-container {
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            /*color: #1a1a1a;*/
+            margin: auto;
+            max-width: 616px !important;
+       =20
+        }
+
+        .body-container {
+            padding: 10px 25px 0px 25px;
+        }
+
+        .body-text {
+            line-height: 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .bold {
+            font-weight: 600 !important;
+        }
+
+        .body-link {
+            color: #0072c6;
+            text-decoration: none;
+        }
+
+
+        .body-text-title {
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            padding: 0;
+            margin-bottom: 10px;
+            line-height: 30px;
+            font-size: 24px;
+        =20
+        }
+
+        .body-text-header {
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            padding: 0;
+            margin-bottom: 10px;
+            line-height: 26px;
+            font-size: 20px;
+         =20
+        }
+
+        .body-table {
+            display: inline-block;
+            border: none;
+            border-collapse: collapse;
+            margin: 15px 0px 15px 0px;
+        }
+
+        .table-cell {
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            /*color: #1a1a1a;*/
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .code {
+            background: #f4f4f4;
+            background-color: #f4f4f4;
+            border-radius: 3px;
+            color: #1a1a1a;
+            display: inline-block;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            margin: 2px;
+            padding: 2px;
+            max-width: 616px;
+            overflow-wrap: break-word;
+           =20
+         =20
+
+        }
+
+        .accountinfo-container {
+            padding: 0px 25px 25px 25px;
+        }
+
+        .accountinfo-card {
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 15px;
+        }
+
+        .survey-container {
+            padding: 0px 25px 15px 25px;
+        }
+
+        .survey-link {
+            color: #4875c7;
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 5px;
+            Margin: 0;
+            text-align: center;
+            line-height: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .footer-container {
+            padding: 25px;
+            background-color: #f4f4f4;
+        }
+
+        .azurelogo-container {
+            padding: 0px 30px 0px 25px;
+           =20
+        }
+
+        .azure-logo {
+            height: 22px !important;
+            width: 155px !important;
+        }
+
+        .microsoft-logo {
+            outline: none;
+            text-decoration: none;
+            width: 103px;
+            max-width: 100%;
+            clear: both;
+            display: block;
+            height: 22px;
+        }
+
+        .footer-text {
+            Margin: 0;
+            color: #6a6a6a;
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            padding: 0;
+            text-align: left;
+            line-height: 18px !important;
+            font-size: 12px !important;
+            Margin-bottom: 6px;
+            word-wrap: normal;
+        }
+
+        .footer-link {
+            color: #6a6a6a;
+            font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSyst=
+emFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+
+        .social-icon {
+            height: 16px !important;
+            width: 26px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body style=3D"background-color: #ffffff">
+
+
+    <div class=3D"preheader">
+        <!--BEGIN PREHEADER TEXT-->
+        We're updating our TLS certificates for Azure Services
+        <!--END PREHEADER TEXT-->
+    </div>
+
+
+
+    <!-- {preview} -->
+
+    <table class=3D"main-container" align=3D"center" width=3D"616">
+        <tbody>
+            <tr>
+                <td class=3D"azurelogo-container">
+                    <img class=3D"azure-logo" src=3D"https://cxpsncdn1.azur=
+eedge.net/cxpsnemail/LogoAzureGrey.png" alt=3D"Microsoft Azure" title=3D"Mi=
+crosoft Azure" height=3D"22" width=3D"155">
+                </td>
+            </tr>
+            <tr>
+                <td class=3D"body-container">
+                    <div style=3D"border-bottom: 1px solid #dddddd; padding=
+-bottom: 15px; max-width: 616px; overflow-wrap: break-word;">
+                        <h1 class=3D"body-text-title">Action required: Revi=
+ew your Azure Services Certificate Authorities</h1>
+
+<p class=3D"body-text">
+We are updating Azure services in a phased manner to use Transport Layer Se=
+curity (TLS) certificates from a different set of Root Certificate Authorit=
+ies (CAs). This began <span class=3D"bold">13</span> <span class=3D"bold">A=
+ugust 2020. </span>=20
+</p>
+
+<p class=3D"body-text">
+<span class=3D"bold">Your applications may be impacted if you explicitly sp=
+ecify a list of acceptable CAs (a practice known as <em>certificate pinning=
+</em>).</span>=20
+</p>
+
+<p class=3D"body-text">
+We're making this change because the current CA certificates do not comply =
+with one of the CA/Browser Forum Baseline requirements. This was reported o=
+n 1 July 2020 and impacts multiple popular Public Key Infrastructure (PKI) =
+providers worldwide. Today, most of the TLS certificates used by Azure serv=
+ices are issued from the <em>Baltimore CyberTrust Root</em> PKI. Following =
+this change, Azure services will use certificates issued by a different set=
+ of CAs (Certificate Authorities), chaining up to different Root CAs.
+</p>
+
+<h2 class=3D"body-text-header">
+Required action
+</h2>
+<p class=3D"body-text">
+Review <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Faka.ms%2FAzureCertUpdate&amp;data=3D02%7C01%7CJerry.Teng%40UTDal=
+las.edu%7C26602b537a714eeb3c1708d86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C1%7C637381711396500147&amp;sdata=3D%2F4%2F5lxMkzwYnQLzaPDk9WspvDo3=
+9NjyatE4muGjp7%2FA%3D&amp;reserved=3D0" originalsrc=3D"https://aka.ms/Azure=
+CertUpdate" shash=3D"hIqj4FWF3sVWt4xL8BvbZMfa5tZDLFJvLwLf/LgFXfeIqY8bwA8D9K=
+BbBnBHteBMDxYrz4vCcLC8TnJjjZBo8Qtjcd9q3KDePIEf6r/S79V3Jd487Rx7LV5GZ6AdlcYAI=
+R0UmaKduCm/c+PVUiD6Ec9BvaYZhmEmdmpglWnNKjE=3D" target=3D"_blank" class=3D"b=
+ody-link">our documentation</a> which describes how to check if your applic=
+ation is impacted, and how to mitigate it. It includes the list of all the =
+CAs that you must trust when using Azure services.=20
+</p>
+
+<p class=3D"body-text">
+If you have questions, get answers from community experts in <a href=3D"htt=
+ps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fdocs.micro=
+soft.com%2Fen-us%2Fanswers%2Fquestions%2F117444%2Freminder-azure-tls-certif=
+icate-changes.html&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C26602b5=
+37a714eeb3c1708d86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373=
+81711396510139&amp;sdata=3D9NWEHGglnZtZ1Gu%2FKJCzIi8WwGatLWr4JTsgaJr0Ico%3D=
+&amp;reserved=3D0" originalsrc=3D"https://docs.microsoft.com/en-us/answers/=
+questions/117444/reminder-azure-tls-certificate-changes.html" shash=3D"Qlhh=
+w38GKmbeKovTxIHSst9XixKpuKX5r4696an3utkZVW4KdG6s3xo4KgXIHHPDHFtI+nQGt8c601r=
+IplRT563n4k+eQaxQmDXl073JRpuHhXLXeLBr5tEikM+upm0PiWBgPi5xt0SAvFa1e4V7Zr4VQF=
+4zY1JDoSPqPic3Bhg=3D" target=3D"_blank" class=3D"body-link">Microsoft Q&amp=
+;A</a>. =20
+</p>
+
+<p class=3D"body-text">
+=20
+</p>
+
+<p class=3D"body-text">
+If you have a support plan and you need technical help, please <a href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fportal.a=
+zure.com%2F%23blade%2FMicrosoft_Azure_Support%2FHelpAndSupportBlade%2Foverv=
+iew&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C26602b537a714eeb3c1708=
+d86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637381711396510139&=
+amp;sdata=3Dmfz8AV4o%2BbrI1Vx7ErqWK6Sz0Q1lZKaADa8Tyo6iOiM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://portal.azure.com/#blade/Microsoft_Azure_Suppor=
+t/HelpAndSupportBlade/overview" shash=3D"POfDlQWzX2SyJpGv4RfDFsjLxicwHmhTLR=
+XkEfyz1baykAUWUiinjkK8pANR+EGqMtMvWsi2Z1imbTFkJNC9ZFz1rWaEHal2mPfa3uKZsP7Go=
+BCZsOo9NByLOIubh96dFjdxYB4ukHXmk7jDwrCow0zPSmIWjkf2yCQZQzV1RB8=3D" target=
+=3D"_blank" class=3D"body-link">create a support request</a>:=20
+</p>
+
+
+
+<ol>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Issue type</span>, select <span class=3D"bold">T=
+echnical.</span>=20
+</li>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Subscription</span>, select your subscription.=20
+</li>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Service</span>, select <span class=3D"bold">My S=
+ervices</span>, then select <em>your service for this issue.  </em>
+</li>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Summary, </span>type a description of your issue=
+.=20
+</li>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Problem type, </span>select <em>the</em> <em>opt=
+ion that best suits your description.</em>
+</li>
+
+<li class=3D"body-text">
+Under <span class=3D"bold">Problem subtype, </span>select <em>the option th=
+at best suits your description. </em>
+</li>
+
+</ol>
+
+
+                    </div>
+                </td>
+            </tr>
+           =20
+            <!-- {BEGIN SURVEY SECTION} -->
+            <tr>
+                <td class=3D"survey-container">
+                    <p class=3D"body-text">
+Please help us improve our communication by telling us what you think about=
+ this email in a <a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Faka.ms%2FAzureTLSNotificationSurvey&amp;data=3D02%7C01=
+%7CJerry.Teng%40UTDallas.edu%7C26602b537a714eeb3c1708d86f4a1b66%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637381711396520127&amp;sdata=3Dn6MGj3VUgd=
+elxK8UbyB6TqFfLHfMIpQU93K%2B%2BsrWeqk%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://aka.ms/AzureTLSNotificationSurvey" shash=3D"CaQRNDR5cqvz3kI1ZeRxGrhP=
+bT7Hi7NSKoWjn1Dl/bIZAKDSoVc6J0GXoo9Mky1iPE8NSkvrv312dr3h2fnu8QK+f5SKy3F3cog=
+rYONjKV4aJH/dPpXZFMDVggt74JW64hW0jIUM4dhGAjy7vcjRQDUZy4Zp5AMaf/4xVH+J9UI=3D=
+" target=3D"_blank" class=3D"body-link">survey</a>
+</p>
+
+
+                </td>
+            </tr>
+            <!-- {END SURVEY SECTION} -->
+
+            <tr>
+                <td class=3D"footer-container">
+
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fmicrosoftazure&amp;data=3D02%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7C26602b537a714eeb3c1708d86f4a1b66%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637381711396520127&amp;sdata=3DwRTKEbFCT=
+hQBS9WyRY7e9RzvW9mdpNa1AMsuBEr0AV8%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://www.facebook.com/microsoftazure" shash=3D"RRkZ2bFtkNlE9Bvp48cP4OqLJbWHz=
+6wu6h8YcFdJChFpz82UkNmq3IDJWye8HtRyCGCBpIbiZa8mwkj0YseJkpC1LMgxiCME8ZuQ/7Pr=
+NjuEKL6FNZI3iS9RJHo0myILt6VE3ORtZz0KxBiGyJae78ip44gytL+t8gp3O/GdZVI=3D" tar=
+get=3D"_blank" style=3D"text-decoration: none; border: none;">
+                        <img src=3D"https://cxpsncdn1.azureedge.net/cxpsnem=
+ail/facebook-grey.png" alt=3D"Facebook" title=3D"Facebook" class=3D"social-=
+icon" height=3D"16" width=3D"17" style=3D"width: 17px;">
+                    </a>
+
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Ftwitter.com%2Fazure&amp;data=3D02%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C26602b537a714eeb3c1708d86f4a1b66%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C1%7C637381711396530119&amp;sdata=3D2uI3JUXDSFSCrEEkLsOUkJf=
+ijkvvrnrWlBLjw4WeUck%3D&amp;reserved=3D0" originalsrc=3D"https://twitter.co=
+m/azure" shash=3D"GFPJKT0rZB2+HR/hP6YX+yFYk4p6PFKMf5GTuN0rC13xwZd1sIdLDPs8/=
+EJsCtJEAw/HqizGeA0ROiWmHSTSUQKIQwYdaAYD2RUwjjCn0ATy0+MRYN6hOm3Rtewo7PsCVG9g=
+q5dKf5x4Oqiwc3ttUg4he8lR+wJupt99zjG8TvE=3D" target=3D"_blank" style=3D"text=
+-decoration: none; border: none;">
+                        <img src=3D"https://cxpsncdn1.azureedge.net/cxpsnem=
+ail/twitter-grey.png" alt=3D"Twitter" title=3D"Twitter" class=3D"social-ico=
+n" height=3D"16" width=3D"26">
+                    </a>
+
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fuser%2Fwindowsazure&amp;data=3D02=
+%7C01%7CJerry.Teng%40UTDallas.edu%7C26602b537a714eeb3c1708d86f4a1b66%7C8d28=
+1d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637381711396530119&amp;sdata=3DZiRao=
+zOEHL1%2B%2F6yX32lvYBAoPGTQx%2BvDl%2FnI8tdhoQM%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://www.youtube.com/user/windowsazure" shash=3D"QKHS5JrcVuNXh+x=
+81t9FZOKc6bz8a5s9SeH8iBtINgpishZoAlXZJyDJ61sRRQepxUrzEJD5/xblHPfAuIDA9X17dK=
+Kop4E+r2mWA0OGjfDu2+wkHZ4afQNx9fxLeQ9qGOfUy27RNrBLbrk81XWzlJir+yk9O+1/Qjx+r=
+EyoalE=3D" target=3D"_blank" style=3D"text-decoration: none; border: none;"=
+>
+                        <img src=3D"https://cxpsncdn1.azureedge.net/cxpsnem=
+ail/youtube-grey.png" alt=3D"YouTube" title=3D"YouTube" class=3D"social-ico=
+n" height=3D"16" width=3D"26">
+                    </a>
+
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmicrosoft-developers%=
+2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C26602b537a714eeb3c1708d=
+86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637381711396540124&a=
+mp;sdata=3DOMWnJx5fYLPbVlYaOHMbpsu8KkmGOPrUrunuUd6R65I%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://www.linkedin.com/showcase/microsoft-developers/" sh=
+ash=3D"OyfQWGyHoqkRKy7TIX8LMicGZHcMQSbRrV9SMlJnn0SaVB9AvW3hdwh/iIQu2hWQXjkW=
+/wB9T+UczcWycMLJ6z0byH12LlL0PG3cwBXNMSWwabut785/lOo4VgYvW52G9xnsFmrIRZr5FYY=
+Rs/2h5IYNkv2mq+e2a77bxr8rHQc=3D" target=3D"_blank" style=3D"text-decoration=
+: none; border: none;">
+                        <img src=3D"https://cxpsncdn1.azureedge.net/cxpsnem=
+ail/linkedin-grey.png" alt=3D"LinkedIn" title=3D"LinkedIn" class=3D"social-=
+icon" height=3D"16" width=3D"26">
+                    </a>
+
+                    <p class=3D"footer-text">
+                        This message from Microsoft is an important part of=
+ a program, service, or product that you or your company purchased or parti=
+cipates in. Microsoft respects your privacy. Please read our
+                        <a class=3D"footer-link" href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fprivacy.microsoft.com%2Fp=
+rivacystatement&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C26602b537a=
+714eeb3c1708d86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373817=
+11396540124&amp;sdata=3DGvwchGtAQS6QarVauA0mh1o0mFCTEe7cf28ghqMv7T0%3D&amp;=
+reserved=3D0" originalsrc=3D"https://privacy.microsoft.com/privacystatement=
+" shash=3D"QV9JZG5Z77nb0781C8I6pTaRrlpfZ+6vb/XdZ/TKDBu0AazyYNTKMy1JkvCmL4jB=
+STiw7DPcXFBfi11TePkS9bV5GFznatMvBE6szuRIrY/pV0R/MAqZ6JeAw/ArGIYSXSaPYhd5kt8=
+herljxlxCGRV43HpNoHzqZNdjOw+1Tc0=3D" target=3D"_blank" title=3D"Privacy Sta=
+tement">
+                            Privacy Statement</a>.
+                    </p>
+                    <p class=3D"footer-text">
+                        This is a mandatory service communication. To set y=
+our contact preferences for other communications, visit the
+                        <a class=3D"footer-link" href=3D"https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Faccount.microsoft.com%2Fa=
+ccount%2FManageMyAccount&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C2=
+6602b537a714eeb3c1708d86f4a1b66%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637381711396550113&amp;sdata=3D7cUBzXLhkHLGSwpnjgwX630ICUfboymgXQTwOt5kgh=
+I%3D&amp;reserved=3D0" originalsrc=3D"https://account.microsoft.com/account=
+/ManageMyAccount" shash=3D"qVPsUrR0pQ5itqevjSGxQJbQquC8bWg6DleynbNksUHBznfR=
+DYSH9Kl54e2Dyz0yPWPhJ6E1oa5khAJEzSfOGmLqrbWBk8hWj0Q3b8pE0EPVbYZUNA5WrLs5DR+=
+8n2/NLxruEbOplwPe9j+KVvUQqC++EUPdJnqA5ptqpV26FK8=3D" target=3D"_blank" titl=
+e=3D"Promotional Communications Manager">
+                            Promotional Communications Manager</a>.
+                    </p>
+                    <p class=3D"footer-text">
+                        Microsoft Corporation, <span class=3D"no-wrap" styl=
+e=3D"display: inline-block;word-break: keep-all; text-decoration: none;">On=
+e Microsoft Way, Redmond, WA 98052</span>
+                    </p>
+                    <img class=3D"microsoft-logo" src=3D"https://cxpsncdn1.=
+azureedge.net/cxpsnemail/LogoMicrosoftGrey.png" alt=3D"Microsoft" title=3D"=
+Microsoft" height=3D"22" width=3D"103">
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
+

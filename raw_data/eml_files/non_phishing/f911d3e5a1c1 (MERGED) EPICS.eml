@@ -1,0 +1,166 @@
+Received: from MN2PR01MB6094.prod.exchangelabs.com (2603:10b6:208:18c::16) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 8 Oct 2020 12:19:18
+ +0000
+Received: from SA9PR03CA0019.namprd03.prod.outlook.com (2603:10b6:806:20::24)
+ by MN2PR01MB6094.prod.exchangelabs.com (2603:10b6:208:18c::16) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3412.22; Thu, 8 Oct 2020 12:19:04 +0000
+Received: from SN1NAM02FT025.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:806:20:cafe::5c) by SA9PR03CA0019.outlook.office365.com
+ (2603:10b6:806:20::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3412.25 via Frontend
+ Transport; Thu, 8 Oct 2020 12:19:03 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.6)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.6 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.6; helo=mail-relay6-va2.blackboard.com;
+Received: from mail-relay6-va2.blackboard.com (69.196.241.6) by
+ SN1NAM02FT025.mail.protection.outlook.com (10.152.72.87) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.39 via Frontend Transport; Thu, 8 Oct 2020 12:19:02 +0000
+Received: from fgprd-100946-205964-app009.mhint (fgprd-100946-205964-app009.mhint [10.5.10.139])
+	by mail-relay6-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 098CHqw9013463;
+	Thu, 8 Oct 2020 12:17:52 GMT
+Date: Thu, 8 Oct 2020 07:18:59 -0500 (CDT)
+From: "Andrea Turcatti - amt101000@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Andrea Turcatti - amt101000@utdallas.edu" <amt101000@utdallas.edu>
+To: "2208-merged-EPCS2200SEC001-EPCS3200SEC001":;
+Message-ID: <2031871626.24492.1602159542419.JavaMail.bbuser@fgprd-100946-205964-app009>
+Subject: (MERGED) EPICS - F20: Workshop Opportunity! October 27 7pm
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_24490_971991517.1602159539147"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Oct 2020 12:19:03.1634
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 18111358-71b4-4122-874b-08d86b845825
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132466331431664749;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT025.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 18111358-71b4-4122-874b-08d86b845825
+X-MS-TrafficTypeDiagnostic: MN2PR01MB6094:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd,ExtAddr
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:3968;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.6;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay6-va2.blackboard.com;PTR:mail-relay6-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Oct 2020 12:19:02.9975
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 18111358-71b4-4122-874b-08d86b845825
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource: SN1NAM02FT025.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB6094
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:15.5935735
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZGt0ZDc0bi9mcXdBUkFpd3E3K3hKZWYrbjIzenZVM1lJNURWUHJobVZLTTJh?=
+ =?utf-8?B?RStQUXZ0Yi9DWkRvQVgvZFdSUCtmWjM2dGxOeC8vV1J3L2lOV3pjTm9tRWM1?=
+ =?utf-8?B?c1cwWjRia3F4THhTdlBMNFpmeTBjcjc2SEI3cmt1eUY0NlJrUDR3bmJGUWE0?=
+ =?utf-8?B?RGFlMkJQTzlkdm5QdnRiVDV5ejU3ck84bWt5Z2MyUktWWWZMNk00UW44ajF5?=
+ =?utf-8?B?eEE3aTZNT2F1YnMvNUtOS2UyczFFRWZKNWt1b2I1Mnl4MUMzWlFNRm4raGZY?=
+ =?utf-8?B?Q1Zjdk1MYUhrMm9pdFVxdzVZbWd2V3l3dXF5MW55U2oxMFBoejZ2S1lRRnNi?=
+ =?utf-8?B?VXljTEdtbkRkY25TcVhuSGFDb3E1MXZnL0pqVEF5by94L1YyKzhRUkI3ZW95?=
+ =?utf-8?B?eUd3SlFDckx4aWtmTW84N2ZwWU82NENsYmVDNWRSTlQ5b0JMMEdnVHdSekI4?=
+ =?utf-8?B?bXlqdXF2cHoydTgyZFBJRTlZQ0lIV1NCVkpqU0podmJUZHRIcWJVMk9yclJo?=
+ =?utf-8?B?d0pGL3NYeEdPMHAxRkV3OFRBQVpJSzBLUllSR1BJYzMvaDB6eTRUUG1YMll1?=
+ =?utf-8?B?SDR6R3lNZnpzcStjTmJZd2V4Ym05Uk1RS2ZFVVg3eUFYcjUxUnNHaEhoRkpC?=
+ =?utf-8?B?bW9JL1dZVi9QNkRkQkJKZkhnc2NQOENwd2hzZkJ0SllLMEJxOXBUREJLblc3?=
+ =?utf-8?B?amI1blMwVVdEbW12a3BBWGw3Z0NsZjh0dUtkcmJyMWFCL09yZm44ckoyc2Er?=
+ =?utf-8?B?bm1tT1lONlpOUCtBQ2FmbEpIdlI1UzJrd2FmUWJ3bVFxT0JyOStBY1pHUkJs?=
+ =?utf-8?B?NG9zUFhPL0ZtVGZvY2JIT3J0K1RnUE1majMxanpZN2VBcnJWYjBNeWgzVGtS?=
+ =?utf-8?B?SzZDa1BqTjJIbHBMbXk1eG9CZjBONEJLRDFTcWxGeUJXbDJWV2E2RlJoYWEz?=
+ =?utf-8?B?ZWpxT0hNTmd1Q25qUFNQNkIwTjUrc1U1M29QVkRjdHV2N0FMQnp4VHBqbXQw?=
+ =?utf-8?B?QU1uNzRqaFBSblIxb3pNTDhJN2xKZUh5aFUrQ0xYYXQwalZhT3A0OFlJQ3Rm?=
+ =?utf-8?B?NXRaVDVnV1VzYnRBM0poVGtGczZEbWw0blNYL05GUUF0NWE0aHQ3UXh2U2pN?=
+ =?utf-8?B?NGhBNzVLcEx4cWRqVlUwOVVybDVkL093Sy96MFR3c0ZGWjgzWHNvbDBvUFJW?=
+ =?utf-8?B?RkNpRXhqK2pWc2VRRWFXNlltaUQyLzNKZWwva3JGQ2swSVhpYnN2QTZOK3Zj?=
+ =?utf-8?B?aHdhZllrOEsyUDZNZGdMaXJubWZHRU15dzNPa2dzcW1xaDBUOXdDTlhMTE1K?=
+ =?utf-8?Q?obKll0i+lbL8kkng2j3n5hXys6/XFS1Ekf?=
+MIME-Version: 1.0
+
+------=_Part_24490_971991517.1602159539147
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Workshop Opportunity! October 27 =E2=80=93 7:00 pm
+Registration is needed for this workshop. Open to the first 40 students. Th=
+e cost for the workshop is $15; all who register will get about $70 in part=
+s and TI gifts shipped directly to their home in time for the workshop.=C2=
+=A0 Students who register MUST attend the workshop.=C2=A0 If they register =
+and don=E2=80=99t show they will not be allowed to attend any of the remain=
+ing TI Tuesday workshops this academic year.=C2=A0=20
+Students will need a computer with internet connectivity for the workshop o=
+n WebEx, and a registered myTI account prior to the event.
+Build your very own gaming console using a Real Time Operating System (RTOS=
+)!
+Who has not wanted to make their own version of a portable gaming device fr=
+om scratch and create their own games? We will show how you can get started=
+ using TI-RTOS and the TI LaunchPad=E2=84=A2 ecosystem. Get a hands-on deep=
+ dive into the MSP432 LaunchPad=E2=84=A2 development=C2=A0kit and the Simpl=
+eLink=E2=84=A2 family of products and learn where to find additional resour=
+ces to progress your knowledge of building any system using RTOS.=20
+The EPICS Team
+------=_Part_24490_971991517.1602159539147
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+><span style=3D"font-size: medium;"><b>Workshop Opportunity! October 27 =E2=
+=80=93 7:00 pm</b></span></p>
+<p><span style=3D"font-size: medium;"><b><a href=3D"https://nam02.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.eventbrite.com%2Fe%2Fti-bu=
+ild-your-very-own-gaming-console-using-a-real-time-operating-system-tickets=
+-123701784367%3Faff%3Dutdoffical&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas=
+.edu%7C1811135871b44122874b08d86b845825%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C0%7C637377563584761496&amp;sdata=3DSNMSAlIeufC72gCuuqTtxYxstD6CjLP3Jg=
+FwP6%2FeBLI%3D&amp;reserved=3D0" originalsrc=3D"https://www.eventbrite.com/=
+e/ti-build-your-very-own-gaming-console-using-a-real-time-operating-system-=
+tickets-123701784367?aff=3Dutdoffical" shash=3D"mzapeyvv973ZJj6aQ2SOxCjpbhu=
+TvWEAMzKt/kfQz284o6AEdpMxWwtX/Iq2aV76iz6AAUUbl2g3cRshq2m8zYL79bIjNKTbBIfmkh=
+1M9J5UNMTr4anGpu22Gm1D8gT+NZqmr7OOARpxLX2zJS6DFjLpXHYvydLkVjr+04zJ1uM=3D">R=
+egistration</a> is needed for this workshop. Open to the first 40 students.=
+ <span style=3D"color: black;">The cost for the workshop is $15; </span>all=
+ who register will get about $70 in parts and TI gifts shipped directly to =
+their home in time for the workshop.&nbsp; Students who register MUST atten=
+d the workshop.&nbsp; If they register and don=E2=80=99t show they will not=
+ be allowed to attend any of the remaining TI Tuesday workshops this academ=
+ic year.&nbsp; </b></span></p>
+<p><span style=3D"font-size: medium;"><b>Students will need a computer with=
+ internet connectivity for the workshop on WebEx<span style=3D"text-decorat=
+ion: underline;">,</span> and a registered myTI account prior to the event.=
+</b></span></p>
+<p><b><span style=3D"font-size: 14.0pt;">Build your very own gaming console=
+ using a Real Time Operating System (RTOS)!</span></b></p>
+<p><span style=3D"font-size: 14.0pt;">Who has not wanted to make their own =
+version of a portable gaming device from scratch and create their own games=
+? We will show how you can get started using TI-RTOS and the TI LaunchPad=
+=E2=84=A2 ecosystem. Get a hands-on deep dive into the MSP432 LaunchPad=E2=
+=84=A2 development&nbsp;kit and the SimpleLink=E2=84=A2 family of products =
+and learn where to find additional resources to progress your knowledge of =
+building any system using RTOS. </span></p>
+<p>The EPICS Team</p>=
+
+------=_Part_24490_971991517.1602159539147--

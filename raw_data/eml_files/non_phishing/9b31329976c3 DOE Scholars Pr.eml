@@ -1,0 +1,921 @@
+Received: from CO2PR01MB2103.prod.exchangelabs.com (2603:10b6:102:17::21) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 16 Oct 2020 21:14:16
+ +0000
+Received: from MN2PR18CA0015.namprd18.prod.outlook.com (2603:10b6:208:23c::20)
+ by CO2PR01MB2103.prod.exchangelabs.com (2603:10b6:102:17::21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.26; Fri, 16 Oct 2020 21:14:13 +0000
+Received: from BL2NAM02FT060.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:23c::4) by MN2PR18CA0015.outlook.office365.com
+ (2603:10b6:208:23c::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Fri, 16 Oct 2020 21:14:12 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ BL2NAM02FT060.mail.protection.outlook.com (10.152.76.124) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.23 via Frontend Transport; Fri, 16 Oct 2020 21:14:12 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Fri, 16 Oct 2020 16:13:54 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Fri, 16 Oct 2020 16:13:54 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 95FB3C000054; Fri, 16 Oct 2020 16:13:54 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id B2723C000051
+	for <ecs.ug@lists.utdallas.edu>; Fri, 16 Oct 2020 16:13:44 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=ECS_ADU@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  ECS_ADU@utdallas.edu designates 40.107.223.75 as permitted
+  sender) identity=mailfrom; client-ip=40.107.223.75;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="ECS_ADU@utdallas.edu";
+  x-sender="ECS_ADU@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: QdxALDQyLJFMQ8QgID7Q1U1ISj8bjG4EUP9/426y3FkuxZceyMQcWFqH+Ru+0v1qHztUlLCQbx
+ x6GqEtVzmIErJjhklPAH9Z2vvAE94nag9r0HXjAbINZDe1LbGIDldfzEF406T7ynBBmPdQOkKb
+ jXvRFkok7oumD8XOmpTCzVC5nBYZHCn60XzAD7Z1B7LtCz06dJBZF257ezWSBJkss3IQnlubZN
+ EW8I0sjDXcNhK805jvVSooUMBLfAEFUflewv8fOcpQT8IsQWDLrb5s3pnK2DxRrwroUlbqy2m3
+ IZnrIfX7raf11UE0+5eRpyPm
+X-IronPort-RemoteIP: 40.107.223.75
+X-IronPort-MID: 1148060
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0ByAAAaDIpfh0vfayhdAw4PAQEBAQkBEgEFBQFAgT4FA?=
+ =?us-ascii?q?QsBgSIvIy4YAV5YHgMHCCwKjTiIE5o8gWAJAgkBAQEBAQEBAQEIARgBCQsCB?=
+ =?us-ascii?q?AEBgWyCXgKCDCUBNwYOAgMBAQEDAgMBAQEBAQQBAQECAQECAwICARMBAQGBA?=
+ =?us-ascii?q?WCBAgGBRgGBTQsDMQyCNwUCAx8HgwsBAQEBAQISGxMBAQwdBgkPAgEIEQQBA?=
+ =?us-ascii?q?SEHBzEBFAcBAQUDAQEECAsIDgcEAYJ/BAEBgX5NAy4BAgyhDQGBKD4CIwESL?=
+ =?us-ascii?q?QEBAgmBBSmIExk8dGFTgwQBAQWBMwEDBQkDPwGDHANVAQkNgTkDBoE4AYZSi?=
+ =?us-ascii?q?D5AgVSBYTcFMD6CXAECAReBBwoBCwcBIx8MCRGDA4IskBwiFIoPnR0NHYJKi?=
+ =?us-ascii?q?QSCNI9agxaKCJQwhX+YI5U5AgQCBAUCEAWBaiIPWmAJB3KDNxM6AQIBAg0BA?=
+ =?us-ascii?q?gICAQECAQEIAQEBAVSNJSMag1dqgRWIGT5DMQIBAQEzAgYKAQEDCXyLBgImM?=
+ =?us-ascii?q?VwBgRABAQ?=
+IronPort-PHdr: =?us-ascii?q?9a23=3A1+JN0RB8KEGkNpldidV9UyQJP3N1i/DPJgcQr6?=
+ =?us-ascii?q?AfoPdwSP36pcmwAkXT6L1XgUPTWs2DsrQY0rWQ7f2rADZQqb+681k6OKRWUB?=
+ =?us-ascii?q?EEjchE1ycBO+WiTXPBEfjxciYhF95DXlI2t1uyMExSBdqsLwaK+i764jEdAA?=
+ =?us-ascii?q?jwOhRoLerpBIHSk9631+ev8JHPfglEnjWwba5wIRmsrAjctsYajZZ8Jqsy1x?=
+ =?us-ascii?q?DEvmZGd+NKyG1yOFmdhQz85sC+/J5i9yRfpfcs/NNeXKv5Yqo1U6VWACwpPG?=
+ =?us-ascii?q?4p6sLrswLDTRaU6XsHTmoWiBtIDBPb4xz8Q5z8rzH1tut52CmdIM32UbU5Ui?=
+ =?us-ascii?q?ms4qt3VBPljjoMODAj8GHTl8d+kqRVrhy8rBB72oLZYISZOfxjda3fYNwaX3?=
+ =?us-ascii?q?JMUMZPWSJcHoOyYYgBD+QDMuZZs4byqEADogGiCQWwHu7j1iNEimHw0KYn0+?=
+ =?us-ascii?q?ohCwbG3Ak4EtwBrnnasc36ObscX++70aLFyjrNYu1L1zjl9IXGfB4urOqRXb?=
+ =?us-ascii?q?JsbMXe000vFwffgVWLs4DqIS6a1vkUvmWd8uFvWv6hhXQ9pAFtvjig2N0sio?=
+ =?us-ascii?q?/Ri44JyV3J+yp3zYkoKNGkTEN3fMCoHIdNuy+UN4Z4QswvTnx0tCom1LAKpI?=
+ =?us-ascii?q?O2cDUExZkm2hPSdfOJfoyH7x/tVuucJypzinxieLK6nRmy8E6gx/X9V8m11l?=
+ =?us-ascii?q?ZKsjRKkt3Itn8TyxPT9tKLRed6/kekwTqP0B3T6v1AIUAzkqrbKIQtzaI3lp?=
+ =?us-ascii?q?oWqUjDGTX2l1/rjKOMeUUk/fao5uL6abvlvp+RL4B5hh3kPqgzhsCyA/40Ph?=
+ =?us-ascii?q?YQU2WV4+ix1r3u8VXkTLlUivA6iLTVvI3GKcgBuKK0DBFZ3pwi5hqnETur0c?=
+ =?us-ascii?q?gUkHcCIV5YZB6IlInkNlTUL/zkA/qyhkqgnTN1yP3DO7DtH5vAI37em7n7Z7?=
+ =?us-ascii?q?l98VRTyA8rwNBf+Z1UDrYBLerrVELts9LUEwI1PxW6zejgCdhxz4QeVnmRDa?=
+ =?us-ascii?q?ODN6PSrEOI6fkoI+mRYo8apSzxK+A/5/7pkX82h0MSfbWo3ZsQbnC0BPNmI1?=
+ =?us-ascii?q?iFYXrohdcBFmQKshAiQ+ztjV2OST9TZ3CsUKIg/jw2B56qAZ3eSoyxgrGNxj?=
+ =?us-ascii?q?m3EoNYa2xcCF2BEW/kd4CeVPcNbCKSLNVhkjsBVbW5RIEsywyguxfmxrRpIO?=
+ =?us-ascii?q?XZ4TAYtY7+29dv4+3TkQs99SduA8uDzm6NUnl4nnkUSD8uwKB/vUt9x0+d3q?=
+ =?us-ascii?q?dkmPxUD8FT5/xSXwc+NJ7c1PB6C8voVgLcYteGVUypQtGiAT4rVdI92cEBbF?=
+ =?us-ascii?q?tgG4bqsxbYwiD/BrYUk6CMVpAz/7nX33/1Ltxm43Hc1bIsyV48S9YJOmq41Z?=
+ =?us-ascii?q?N57BXZJ5LMlxCcnqeuaaNO0CnA72yDym6HplpwVxRxSqiDWmoWew3Zqsqq2k?=
+ =?us-ascii?q?SXVLKjAq86NAdM08GYI6dRIonkhk4AWfjLPNXFf3n3hnu8DBKMz6jKYYb3LT?=
+ =?us-ascii?q?YzxiLYXWUvqDc60UvOYSUVPRCIj1/2ESBiHFbraliq/OVj/iDoBnQoxh2HOh?=
+ =?us-ascii?q?Uyn4G+/QQY0LnBEalB968YuContzR/FUq82NSTMdebug59Z/sMM94m6Q0B1W?=
+ =?us-ascii?q?mF6lAke8DmLrhig05YeANy7Av1zxsiMoxbioAxqW8yig97KKaWylREIh6z5q?=
+ =?us-ascii?q?fZFoD/N3X+9RSrYrWQ113DiYzEwKoE5fUmplmmhzmHSxN/oU1uyMIdk3aH78?=
+ =?us-ascii?q?+MDAFODM6oFxpx9gB6oqGcaS44tcvY0nhlMK/8tTGnuZphKcAe/T+MQv9CLK?=
+ =?us-ascii?q?+NEAv7CIsXC9XmJOExmlevZw4JJ6gOrOhtZ5zgLaHdnvH2dO971Cqrl2FG/J?=
+ =?us-ascii?q?xw3ifuv2JnR+jE0oxEi/CU0w2bVivt2VKos8T5g4dBNnkZGmuyzzShBZYEOv?=
+ =?us-ascii?q?U0JN5UTz30eIvom4Yb5dalQXNT+V+9CklT1dSgI1ySZACggVQViQIWuXyiiW?=
+ =?us-ascii?q?2zyDkn9lNh5qeZwiHKxPzvMRQdPWseDkRJtmDFDbWckswWVUysZhNvmRe4rx?=
+ =?us-ascii?q?WfpeATtOFkIm/fTF0dNQXdFFZLfpaYq6aOaspL4YhuvClKGrf0cRWRTbjzpA?=
+ =?us-ascii?q?Ef2iXoEj5F3D4McDeuq8ac/VQymCeHIX10tnacZdBoyEKV+onHXfAIlGlOVG?=
+ =?us-ascii?q?xihDLQHFT5I9S54YDeicLYqu7nMgDpHpxLLXu3lcXR7m3jozUtWED3nujvyI?=
+ =?us-ascii?q?G/V1FijmmjkYEtDHuArQ6gMNSxkf3iaaQ/OBEvXQOZiYIyG5kiwNJo2NdMhj?=
+ =?us-ascii?q?5CwM3SpCVPkH+tY49SgfusNSNUFzBXm4aHsk+5iCgBZjqI39yrDHzFm5k4Po?=
+ =?us-ascii?q?DobD9OgXBvqJwaQKaS57hZkSYnuUK2oUTJe/9hkzwByPwornkHn+UOvwlrxS?=
+ =?us-ascii?q?KYZ9JaVQxROSimzkXa35WFtKxSIV2XX/213Ut6k8qmCeje8BxAVH/9fp45Wy?=
+ =?us-ascii?q?J885cmPQ=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,383,1596517200"; 
+   d="scan'208,217";a="1148060"
+X-MGA-submission: =?us-ascii?q?MDHNUNXK9FYly0VUTNL2/IHZ6AS/cFPxlmFwRy?=
+ =?us-ascii?q?BEmzLoEWS9i7u3/IaT+O7rSZEq5PZzRz2ES5ILETNSPbD+jN3J3LSHz2?=
+ =?us-ascii?q?fywvgAjVTLnTyLo17NlrjySl4Rw2gguDz9TtXtbO3a+SouyUDmlRpgO1?=
+ =?us-ascii?q?7i?=
+Received: from mail-dm6nam11on2075.outbound.protection.outlook.com (HELO NAM11-DM6-obe.outbound.protection.outlook.com) ([40.107.223.75])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 16 Oct 2020 16:13:43 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=PaCKVIR5h3dPM+RapZ6/3VPwTkMIpoVJNm4dddGuWnRsya2tnbq1kvsCNcAF1/4Gvdg4911s2dLQPMgjaeC/X3Y1chIeLAJK9ZKorQcmDEqrj4ckEZCRlvnidFBrNaTnstO/nweXTAK0dUojaj+uW0ue73HEL/pVllnBP4OLecWWLh5zVpu2e6wbD6vOKYs3cfUPRwLyjjj5Vo2N6BKGbIWjBY2vX7078IxEuMV8qTyetPCSronfF+g93daJY+6/1Irp9RylmPWeeULcqRLQIimiLjCt4u/DPChLGycPyXScFTRl5o2Npnw8aPs7Lt0P1J0wDXNvXFXeFniHsD0xiw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=uQBYYaL3TgmtMuDDD7x0f+b/3WeKNb5SGT34OTMn+V0=;
+ b=Ld43MNIcwzHy55idQdADFtn1v+nQcqOpyzu8EelkyV4V96Fs4XYE/G3oYot2i33BLUab8XwCuFRktdIml6KyIygTv/VItXTw1xfjT4d3gpbQx3wZTtcsFLuOx9Av4VfZuR4EspDgHrGGH1iaX45rFbCgUceYcrBmjYpwg7Xb5WiOWAOGy0qzQUVuc367+Gfhrx+EbDQRllGGeYvaFpHoaBPflLLFJGljrMZeaiIOJl/07a80kkLx+b2I57VHeBOEavbnieQ7HlIXNlHBj2bbFFVNG2T4vxNdMAw/dJgBJxlRTIlm5mMH/dJ0cmWYjxRY0lK2Jdg4FLF6q0u2edqBvQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=uQBYYaL3TgmtMuDDD7x0f+b/3WeKNb5SGT34OTMn+V0=;
+ b=AGKBm3mFFS6Wnz7kSzEiqNqxw7s5+SdBKqwrPcqNDvRnkHlb4SicJUHrY3al7xwVPb/MepcDvbfSskj/50DsNIPD3CSy+/59I1zyLBLHocuZaJJlmfb4Q6jls41uQA9XVOuFF+mRmEjmhKyckUmEzrnszZlsxXuyeYWIKqKowZw=
+Received: from SJ0PR01MB6208.prod.exchangelabs.com (2603:10b6:a03:29e::13) by
+ SJ0PR01MB6239.prod.exchangelabs.com (2603:10b6:a03:29d::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Fri, 16 Oct 2020 21:13:41 +0000
+Received: from SJ0PR01MB6208.prod.exchangelabs.com
+ ([fe80::6914:7064:c1ab:fa26]) by SJ0PR01MB6208.prod.exchangelabs.com
+ ([fe80::6914:7064:c1ab:fa26%6]) with mapi id 15.20.3477.025; Fri, 16 Oct 2020
+ 21:13:38 +0000
+From: ECS_ADU <ECS_ADU@utdallas.edu>
+To: seecsundergrads <ecs.ug@lists.utdallas.edu>
+Thread-Topic: DOE Scholars Program - Accepting Applications
+Thread-Index: Adaj9yiKzOyBdotqTFOLdoZJpZ9fkgACcLMg
+Date: Fri, 16 Oct 2020 21:13:38 +0000
+Message-ID: <SJ0PR01MB620843506D5120F5A14BD82BEB030@SJ0PR01MB6208.prod.exchangelabs.com>
+References: <LYRIS-2589676-78962-2020.10.16-16.05.58--amy.walker#utdallas.edu@listserv.orau.org>
+In-Reply-To: <LYRIS-2589676-78962-2020.10.16-16.05.58--amy.walker#utdallas.edu@listserv.orau.org>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-originating-ip: [129.110.242.6]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 328a60d7-aaa7-4268-c25b-08d872186e41
+x-ms-traffictypediagnostic: SJ0PR01MB6239:|CO2PR01MB2103:
+x-ms-exchange-sharedmailbox-routingagent-processed: True
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <SJ0PR01MB623964FB7516820E51CAA62FEC030@SJ0PR01MB6239.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;OLM:9508;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ ia5wyfZmGCm0pUc+2kzV2mnm1nXYJFAg88LkigL+zzr3M7df+31hDp0GSR0m7oEb5JhM/YjhRgo0Lio3SEdyZe5fFYR2ZsUCv0s9YmMtiCJY7YVXv8IsWuW78/YpHzvNl/FtfzKfVrutng0/MZPl9oisPLgW2sL9kUzfpcQnTk+AamtoQzZ6BKrE+rlnWuOwiN0icghapSmCVQdJV8Oa3W+5JxAUjiO0x2jpKT26fTWxm1iPcf2wYm1JJsFdSOBI27BsRqeXv7uLj54LQKEqUnfnjF2UJmfOcBMbVa1FPZdM653eDOCSNgeJJSTYc06eQP3jULWFbEBNO2xxoWO/JWcU0amPtXGI+GBpgLVeIYImVJD4X0YMb7crE6jZHrQynssVFUbxBSpxSdX5eu7L1w==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR01MB6208.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(376002)(396003)(346002)(366004)(136003)(39860400002)(478600001)(86362001)(33656002)(75432002)(966005)(2906002)(52536014)(53546011)(6506007)(8936002)(55016002)(186003)(7696005)(26005)(71200400001)(76116006)(316002)(64756008)(786003)(66556008)(166002)(8676002)(83380400001)(9686003)(66476007)(5660300002)(6916009)(66446008)(296002)(66946007);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: 2J/NLOZ2aKS+Ptr87uwq09kkYfESLtoRVlknmXtixtX/8lX9zCQOP4xuJaicC4A6gI5u24qphA5/zTdCN0KGqqpSpsoQn9cLkrtpI3co098DAi8o5JugO/DTFK7EQwJj0wqMmpSGVVF0H9WRMQWcRhhghRv+jGr0r8IEeAodq0u66y0rTV6CPgdNcVh+3Vl5C7EotyCExFrvAIe9STx+A6awHntybSloYZPK1KMMn/8lBS22FhwFvVVlGWQv2e+kYoH/3pfkmvk2zkrlcEyJtpMya90K/Y8uJ4AYI2CnnNl4ITVe4F1EEYde2HHm9jjpGpXm5bc5kYz5+1DliwfDM8AOp952eqhdBxGO2XSDLdSVVDOzwp27zZXoLh88irwFaXT0M9J9ligBUr29VG21sjRQzybMra8FWwQA5FE/m3Aw9KsaSPwT97CsorPAg/+pNXlIrKfxGWdLESQCPwqfkckQW3WgjmmrHAtrI0Mwdh2G2yG10Wqoi6eh/JcnET+6W79ALIa5rjHyrIQ4AlLUQL6k9FEx1abs64f0c7enVoLl/An5Ut9zlgENmlccDb11Q/UxZCGZgBrZRqhsvSccfeyV+y0eLDfo8vohtW9RoF0u3TOxGDzDOgFSM2MbfWnapWLQjZ7wqZ51YovBHcKRfQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR01MB620843506D5120F5A14BD82BEB030SJ0PR01MB6208prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR01MB6239
+Subject: [ecs.ug] FW: DOE Scholars Program - Accepting Applications
+Reply-To: ECS_ADU <ECS_ADU@utdallas.edu>
+X-Loop: ecs.ug@lists.utdallas.edu
+X-Sequence: 121
+Errors-To: ecs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.ug>
+List-Post: <mailto:ecs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.ug/2020-10/SJ0PR01MB620843506D5120F5A14BD82BEB030%40SJ0PR01MB6208.prod.exchangelabs.com>
+Return-Path: ecs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Oct 2020 21:14:12.7510
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 328a60d7-aaa7-4268-c25b-08d872186e41
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT060.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT060.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ BL2NAM02FT060.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ c1219346-3e01-46e6-2249-08d8721859f5
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Exchange-Antispam-ScannedUrls:
+ 11301581505392684549;8301881507624039328;9811005049952982937
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 3
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Oct 2020 21:14:12.6680
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 328a60d7-aaa7-4268-c25b-08d872186e41
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB2103
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.4881698
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?cXfhVwMymDetxVhzXrkgFTvXengFgdumgOb9WTVKaStBxld2a3GRIkSCwnQJ?=
+ =?us-ascii?Q?p+GNvbiJlt0yfF8D6eo/jaPfq0sBsUtqjz9tBhLxLsKxBE54mvzxPI1blZYo?=
+ =?us-ascii?Q?IPxejEezfJOaVosAl4TPPuyQWsj76VSIteaofJiTtrc5Cn+2cpS9htXq4cjo?=
+ =?us-ascii?Q?mEkKNWZGqQzJTn5tJDtUiX1z8KPUjl8NHORC4ao9RgD7hfMojlZj2t4viYt/?=
+ =?us-ascii?Q?OyH0qHsPD/7MkJ2ZXG3feWpm9wFu8M0zwLIWuDCcjUF43QIIVkaG5EAA5viI?=
+ =?us-ascii?Q?Pd1c9JY3boQ216xYjmJMIejujLjfc6DmqXP9tgoWL2wjdVQ36KdMAsFx7v9T?=
+ =?us-ascii?Q?qhDO4kf3MaAN3Gg7MdGzsnunznZFd85lpY84061sZuawzmIdUlWrMrijno1o?=
+ =?us-ascii?Q?CxsCIB6S0y/7XrprsG2B4HdokXfXh4bnrvNq4gqjI+3Uu4sFrubiRtbbTint?=
+ =?us-ascii?Q?Ap/bcdu+wfLn7JtRzE/rmRdRZ8U95nSBCK6TnZRjHyyRC3/HnuxuVN4ghieo?=
+ =?us-ascii?Q?7XjBEF/2u1s/lhIf4l0nQZHZLSccxvu9NLN3BF3fFo/NUBPDPRltBfDDuuLF?=
+ =?us-ascii?Q?JxuAUj9FjrRyFLwDAzJRi3o8VTpGRSguSoStna1jdNr9TuHh2VLFjUz5bVfo?=
+ =?us-ascii?Q?Id519CF7SMGdRHmP0zRJcP6g0ZKhHBSaRmatlg6xHNE9HJLHnPlu4q7ImYBv?=
+ =?us-ascii?Q?CP1edmxOz6pYzfwcOb2XY4cPh4oAoUnZwEm97Xw/sHaFeaoQDvH10ClTko5r?=
+ =?us-ascii?Q?etAnt1GoC0KYKAKi8KURHZqpPvNGdIC4nY9MIKD7UGvZPtZyRl2pV8EoIcnN?=
+ =?us-ascii?Q?BfK5f7EgsRwST68J3jUhn3/le2SoKiTmnhfaVADU1zoCaJRHCJ+N80JKxpmR?=
+ =?us-ascii?Q?8GVXQa9mxo5jMc0Eg8K3bZLN5fzKCo2sxTIP0uOmSeSDApNgPnk6K3YamPwZ?=
+ =?us-ascii?Q?AeG4LsTxj0Khshgu3nSsYcj5q9r2b6mfO3Xzuuk2XRWz4glxz5o40TKsp9i/?=
+ =?us-ascii?Q?4Ry90H82vxu5USsGPNk8k8Mj2pEG4Ge2scN/1HmH187peXcQ0Lj/I4Cue1xm?=
+ =?us-ascii?Q?tv4avNcoSQ9EcOy5TTWltONPpa7niRlAe7s49WGTWS/urqYrSGZMqe5qm1zR?=
+ =?us-ascii?Q?aVfGL6Ep3NhYCvAq9jlNUaeRR9oAjySX/i7HPBRmxQy6EiUah1H/0OGUAFjO?=
+ =?us-ascii?Q?st54+LF97PUfIwilnQJMdAU+UhBly0BbjYiao+flBWQmPXRfUH6pUlKElWFF?=
+ =?us-ascii?Q?JNucrWQHaQNsI++NWu9+m0vuZ/T4ACzPwAjU5XAoMORNzUjrhkd/OIM4KVgf?=
+ =?us-ascii?Q?q3n8IIY8Ueo/EmTZRgEKfiSy?=
+MIME-Version: 1.0
+
+--_000_SJ0PR01MB620843506D5120F5A14BD82BEB030SJ0PR01MB6208prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good afternoon,
+
+Please find information below about the DOE Scholars Program.
+
+Best Wishes,
+Dr. W.
+
+************************************************
+Dr. Amy V. Walker
+Associate Dean for Undergraduate Education,
+Professor of Materials Science and Engineering,
+Erik Jonsson School of Engineering and Computer Science,
+University of Texas at Dallas,
+800 W. Campbell Rd,
+Richardson
+TX 75080
+
+Ph: 972 883 5780
+Fax: 972 883 5725
+
+From: DOE Scholars <doescholars@orau.org>
+Sent: Friday, October 16, 2020 3:06 PM
+To: Walker, Amy <amy.walker@utdallas.edu>
+Subject: DOE Scholars Program - Accepting Applications
+
+Now accepting applications for:
+DOE Scholars Program
+
+The DOE Scholars Program introduces students and recent college graduates t=
+o the U.S. Department of Energy (DOE) mission and operations.
+
+Why should I apply?
+Being selected as a DOE Scholar offers the following benefits:
+
+  *   Stipends starting at $600 per week for undergraduates and $650 per we=
+ek for graduate students and post graduates during the internship period
+  *   Limited travel reimbursement to/from assigned location
+  *   Direct exposure to and participation in projects and activities in DO=
+E mission-relevant research areas
+  *   Identification of career goals and opportunities
+  *   Development of professional networks with leading scientists and subj=
+ect matter experts
+
+
+Eligibility
+
+  *   Be a U.S. citizen
+  *   Be an undergraduate, graduate student, or recent graduate of an accre=
+dited institution of higher education majoring in science, technology, engi=
+neering, mathematics, and related areas.
+  *   Must be pursuing a degree or have received a degree within 5 years of=
+ their starting date in a science, technology, engineering or mathematics (=
+STEM) discipline or have demonstrated interest or experience in a STEM fiel=
+d that supports the DOE mission.
+
+How to Apply
+Applications and supporting materials must be submitted at
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.zin=
+tellect.com%2FOpportunity%2FDetails%2FDOE-Scholars-2021&amp;data=3D02%7C01%=
+7CJerry.Teng%40UTDallas.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384796556496306&amp;sdata=3DV6bnmRkTclb=
+fZQGQUbifni8UMoGDOp7ANWeSJwDLasg%3D&amp;reserved=3D0<https://nam02.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.zintellect.com%2FOpportun=
+ity%2FDetails%2FDOE-Scholars-2021&amp;data=3D02%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637384796556496306&amp;sdata=3DV6bnmRkTclbfZQGQUbifni8UMoGDOp7AN=
+WeSJwDLasg%3D&amp;reserved=3D0>
+
+Deadline
+January 4, 2021 11:59:00 PM Eastern Time Zone
+
+For more information
+Visit https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fo=
+rise.orau.gov%2Fdoescholars&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%=
+7C328a60d7aaa74268c25b08d872186e41%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C1%7C637384796556496306&amp;sdata=3DIcwU91IN2nfDF13Q7BGMW0LrydLay0Dz8hytRQz=
+5%2BuA%3D&amp;reserved=3D0<https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Forise.orau.gov%2Fdoescholars&amp;data=3D02%7C01%7CJerry=
+.Teng%40UTDallas.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C1%7C637384796556496306&amp;sdata=3DIcwU91IN2nfDF13Q7B=
+GMW0LrydLay0Dz8hytRQz5%2BuA%3D&amp;reserved=3D0>
+Download program flyer:  https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Forise.orau.gov%2Fdoescholars%2Ffiles%2Fdoe-scholars-flier=
+.pdf&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C328a60d7aaa74268c25b0=
+8d872186e41%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384796556496306=
+&amp;sdata=3DASA4KMn9XSXI0QuPIr79%2FGp5EEqeHt0cVIz2BW8qqBc%3D&amp;reserved=
+=3D0<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2For=
+ise.orau.gov%2Fdoescholars%2Ffiles%2Fdoe-scholars-flier.pdf&amp;data=3D02%7=
+C01%7CJerry.Teng%40UTDallas.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d281d=
+1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384796556496306&amp;sdata=3DASA4KMn=
+9XSXI0QuPIr79%2FGp5EEqeHt0cVIz2BW8qqBc%3D&amp;reserved=3D0>
+
+Questions?
+doescholars@orise.orau.gov<mailto:doescholars@orise.orau.gov>
+
+Please share this information with friends and colleagues who might be inte=
+rested in opportunities with DOE.
+
+DOE has partnered with the Oak Ridge Institute for Science and Education (O=
+RISE) to manage this program.
+To unsubscribe, please click here<mailto:doescholars@orise.orau.gov> or sen=
+d an email to doescholars@orise.orau.gov<mailto:doescholars@orise.orau.gov>=
+ with the subject line UNSUBSCRIBE.
+
+
+
+---
+
+--_000_SJ0PR01MB620843506D5120F5A14BD82BEB030SJ0PR01MB6208prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:231232011;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1486374018 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:313728504;
+	mso-list-template-ids:-744618914;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:523130699;
+	mso-list-type:hybrid;
+	mso-list-template-ids:814913978 67698689 67698691 67698693 67698689 676986=
+91 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1926987160;
+	mso-list-template-ids:527075762;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Good afternoon,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please find informatio=
+n below about the DOE Scholars Program.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Best Wishes,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dr. W.<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">**********************=
+**************************<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dr. Amy V. Walker<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Associate Dean for Und=
+ergraduate Education,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Professor of Materials=
+ Science and Engineering,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Erik Jonsson School of=
+ Engineering and Computer Science,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">University of Texas at=
+ Dallas,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">800 W. Campbell Rd,<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Richardson<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">TX 75080<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Ph: 972 883 5780<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Fax: 972 883 5725<o:p>=
+</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> DOE Scholars &lt;doescholars@orau.org&g=
+t; <br>
+<b>Sent:</b> Friday, October 16, 2020 3:06 PM<br>
+<b>To:</b> Walker, Amy &lt;amy.walker@utdallas.edu&gt;<br>
+<b>Subject:</b> DOE Scholars Program - Accepting Applications<o:p></o:p></p=
+>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:18.0pt;color:black">Now =
+accepting applications for:</span></b><span style=3D"font-size:16.0pt;color=
+:black">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:16.0pt;color:black">DOE Sch=
+olars Program<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN" style=3D"font-size:18.0pt;font-=
+family:&quot;Helvetica&quot;,sans-serif;color:#035B9E">The DOE Scholars Pro=
+gram introduces students and recent college graduates to the U.S. Departmen=
+t of Energy (DOE) mission and operations.</span></b><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>Why should I apply?<o:p></o:p></b></p>
+<p class=3D"MsoNormal">Being selected as a DOE Scholar offers the following=
+ benefits:<o:p></o:p></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo3">Stipends starting=
+ at $600 per week for undergraduates and $650 per week for graduate student=
+s and post graduates during the internship period<o:p></o:p></li><li class=
+=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo3">Limited travel reimburseme=
+nt to/from assigned location<o:p></o:p></li><li class=3D"MsoNormal" style=
+=3D"mso-list:l0 level1 lfo3">Direct exposure to and participation in projec=
+ts and activities in DOE mission-relevant research areas<o:p></o:p></li><li=
+ class=3D"MsoNormal" style=3D"mso-list:l0 level1 lfo3">Identification of ca=
+reer goals and opportunities<o:p></o:p></li><li class=3D"MsoNormal" style=
+=3D"mso-list:l0 level1 lfo3">Development of professional networks with lead=
+ing scientists and subject matter experts<o:p></o:p></li></ul>
+<p class=3D"MsoNormalCxSpMiddle" style=3D"margin-left:.5in;mso-add-space:au=
+to"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN">Eligibility<o:p></o:p></span></=
+b></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"color:black;mso-list:l2 level1 lfo6">Be a =
+U.S. citizen<o:p></o:p></li><li class=3D"MsoNormal" style=3D"color:black;ms=
+o-list:l2 level1 lfo6"><span style=3D"color:windowtext">Be an undergraduate=
+, graduate student, or recent graduate of an accredited institution of high=
+er education majoring in science, technology, engineering, mathematics,
+ and related areas.</span><o:p></o:p></li><li class=3D"MsoNormal" style=3D"=
+color:black;mso-list:l2 level1 lfo6"><span style=3D"color:windowtext">Must =
+be pursuing a degree or have received a degree within 5 years of their star=
+ting date in a science, technology, engineering or mathematics (STEM) disci=
+pline
+<b>or </b>have demonstrated interest or experience in a STEM field that sup=
+ports the DOE mission.&nbsp;
+</span><o:p></o:p></li></ul>
+<p class=3D"MsoNormal"><b><span style=3D"color:black"><o:p>&nbsp;</o:p></sp=
+an></b></p>
+<p class=3D"MsoNormal"><b>How to Apply<o:p></o:p></b></p>
+<p class=3D"MsoNormal">Applications and supporting materials must be submit=
+ted at<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.zintellect.com%2FOpportunity%2FDetails%2FDOE=
+-Scholars-2021&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C328a60d7aaa=
+74268c25b08d872186e41%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63738479=
+6556546284&amp;sdata=3DVHbtf1mTaoGW2RV%2Ba6Qr69bO%2BSSRRj9gME5l34J3s44%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://www.zintellect.com/Opportunity/Deta=
+ils/DOE-Scholars-2021" shash=3D"mi7LnLQyMoSMrqqCa/QxXf7HGECg6zCA0OwkRW7I3ja=
+T2Kr4gOfmAZL8MsmEaysjc/3GLv+r4JUSSx2tiHP9wM0IEeMoKkFBe7KV6HR0EhYoom4i4dP0Lh=
+2CwzEvdkawjvpbPSIug19rb+KAS4XyF0K+yeMbHELsayeGSS/7g3Q=3D"><span style=3D"co=
+lor:blue">https://www.zintellect.com/Opportunity/Details/DOE-Scholars-2021<=
+/span></a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>Deadline<o:p></o:p></b></p>
+<p class=3D"MsoNormal">January 4, 2021 11:59:00 PM Eastern Time Zone<o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b>For more information</b><o:p></o:p></p>
+<p class=3D"MsoNormal">Visit <a href=3D"https://nam02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Forise.orau.gov%2Fdoescholars&amp;data=3D02=
+%7C01%7CJerry.Teng%40UTDallas.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d28=
+1d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637384796556556289&amp;sdata=3D3npeq=
+CUIEn%2BxzF7ox%2F1yTMyH1ZnFXXfonWfqXdbL6JU%3D&amp;reserved=3D0" originalsrc=
+=3D"https://orise.orau.gov/doescholars" shash=3D"d3LOAfGCzK3yBEAcRUZs+l4UgQ=
+QykPhoVI/GZL6v4XkEPURWG7btzchL7E1g5++a6BcADF2ePphH0WWbioMR+FJyIHUbLjsYD/sHS=
+Tvp1ML6EHih+6ozNSRUbMtvORaYxfkopqWdrUAvJlv5awvhET8RlI1ZqlkkP7Ue8O2Tf2g=3D">
+<span style=3D"color:blue">https://orise.orau.gov/doescholars</span></a><u>=
+<span style=3D"color:blue"><o:p></o:p></span></u></p>
+<p class=3D"MsoNormal">Download program flyer:&nbsp; <a href=3D"https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Forise.orau.gov%2Fd=
+oescholars%2Ffiles%2Fdoe-scholars-flier.pdf&amp;data=3D02%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C328a60d7aaa74268c25b08d872186e41%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C1%7C637384796556566279&amp;sdata=3D1alx2dCbPetSUCs%2BLgZv%=
+2BdypSa%2Blus9QvIOfGgZrc2w%3D&amp;reserved=3D0" originalsrc=3D"https://oris=
+e.orau.gov/doescholars/files/doe-scholars-flier.pdf" shash=3D"wniQeQsZ6iiU9=
+UUzUpRTspJVgB9yns8Ovlr99UVG+6dyO07zDd2DJLi3+jgsMuSS0L5wX8F0L3RuSX0m7uDXPUyK=
+3VTVbb6pKHmFOrAfKLYLOg3NamcrEyfgEbrvf238exXShJrOPObnb5t7tx+gWSmb7i6XoOq+mdP=
+tpYUm23I=3D">
+<span style=3D"color:blue">https://orise.orau.gov/doescholars/files/doe-sch=
+olars-flier.pdf</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Questions?<o:p></o:p>=
+</span></b></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:doescholars@orise.orau.gov"><span =
+style=3D"color:blue">doescholars@orise.orau.gov</span></a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please share this information with friends and colle=
+agues who might be interested in opportunities with DOE.<o:p></o:p></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:black"><o:p>&nbsp;</o:p></sp=
+an></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:black">DOE has partnered wit=
+h the Oak Ridge Institute for Science and Education (ORISE) to manage this =
+program.<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:auto"><i>To unsubscribe,=
+ please click
+</i><a href=3D"mailto:doescholars@orise.orau.gov"><b><i><span style=3D"colo=
+r:blue">here</span></i></b></a><i>&nbsp;or send an email to
+</i><a href=3D"mailto:doescholars@orise.orau.gov"><b><span style=3D"color:b=
+lue">doescholars@orise.orau.gov</span></b></a><i> with the subject line UNS=
+UBSCRIBE.</i><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p>---<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR01MB620843506D5120F5A14BD82BEB030SJ0PR01MB6208prod_--

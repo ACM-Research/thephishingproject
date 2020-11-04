@@ -1,0 +1,792 @@
+Received: from BN6PR01MB2577.prod.exchangelabs.com (2603:10b6:404:57::15) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Mon, 12 Oct 2020 15:01:50
+ +0000
+Received: from SN4PR0201CA0009.namprd02.prod.outlook.com
+ (2603:10b6:803:2b::19) by BN6PR01MB2577.prod.exchangelabs.com
+ (2603:10b6:404:57::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.24; Mon, 12 Oct
+ 2020 15:01:46 +0000
+Received: from SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:2b:cafe::d2) by SN4PR0201CA0009.outlook.office365.com
+ (2603:10b6:803:2b::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.21 via Frontend
+ Transport; Mon, 12 Oct 2020 15:01:46 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.36.225)
+ smtp.mailfrom=em8199.nvidia.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=nvidia.com;utdallas.edu; dmarc=pass action=none
+ header.from=nvidia.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em8199.nvidia.com
+ designates 167.89.36.225 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.36.225;
+ helo=o24.ptr6223.rainfocus.com;
+Received: from o24.ptr6223.rainfocus.com (167.89.36.225) by
+ SN1NAM02FT021.mail.protection.outlook.com (10.152.72.144) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Mon, 12 Oct 2020 15:01:46 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nvidia.com;
+	h=content-transfer-encoding:content-type:from:mime-version:subject:
+	reply-to:to;
+	s=r1; bh=YpB6j9cQlrLh8FBDyfjXlPpYzyLybSNIch4d/NfLv5I=;
+	b=tTyYub0EjsFGo9ZVkGA9U9MWdt+cFpBNEYy3BiXHOH60+hc2ViyRltIZWlo5vrXoONRi
+	vBXmCo91CiCm7MUdnLYkhGf3hXQsZdVd5iGH3WHmzrM3QamsOMQkkS57b0i5ebqsmxIYk1
+	nNs8dloJaMSMAW1mjY4vHLJ+07Wy89IO8=
+Received: by filterdrecv-p3iad2-6fcd869f88-qx6vb with SMTP id filterdrecv-p3iad2-6fcd869f88-qx6vb-20-5F846FD9-152
+        2020-10-12 15:01:45.702492305 +0000 UTC m=+404828.027303131
+Received: from MTA1MTU3MTE (unknown)
+	by ismtpd0021p1las1.sendgrid.net (SG)
+	with HTTP
+	id XPDoCSQnTx69VoP2Cxc_tQ
+	Mon, 12 Oct 2020 15:01:45.542 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Mon, 12 Oct 2020 15:01:45 +0000 (UTC)
+From: GTC Conference Team <GTC_US@nvidia.com>
+Message-ID: <XPDoCSQnTx69VoP2Cxc_tQ@ismtpd0021p1las1.sendgrid.net>
+Subject: GTC comes to a close, but the learning continues
+Reply-To: GTC_US@nvidia.com
+X-SG-EID:
+ =?us-ascii?Q?ncN7+pc0jd=2Fqy6zIKwmSJ5XuC4dzqE+KMbEpEJQrrqtUNez2LRGXZgY5EQosSz?=
+ =?us-ascii?Q?mc6+E1JZO6d5DCxRukLUE=2FPvUbq5ZDGXj2U5uCK?=
+ =?us-ascii?Q?X8bDGTJL0RRb+G6V4QgPXV6=2FPl4vzDl5Knirk7B?=
+ =?us-ascii?Q?zKPgvxV2vfY19DwmY=2Fvp2vNJWobD75yBzUurJvu?=
+ =?us-ascii?Q?SYHpWmLQPPBbl5UPaZJ9H+qeK=2F6jbd7xhXxWRbR?=
+ =?us-ascii?Q?pmNQeCXjuEiu66nsckEuUU8HlVU3pM=2FrhDsfq7O?=
+ =?us-ascii?Q?JMrK5DmmGcu6eoiy6bqHA=3D=3D?=
+X-SG-ID:
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb+BWlvUMNDUYDLXxauqMLihNJ7yF+M0JcYEorqTDWr?=
+ =?us-ascii?Q?1xlX+sqqPkIoBf7VWrDzeqT29YXysx5gnGqJYf=2F?=
+ =?us-ascii?Q?gu7k=2FOyvRGAnAdaVxBdwEgjh1DF9BHMc0uFCej=2F?=
+ =?us-ascii?Q?LI+aMBnyI6WJ0ps8pJRmwkaFbTAsEo+2vp0Db8N?=
+ =?us-ascii?Q?CUBHjnPRAGH+=2FA1e7h=2F0wPkXoK0q4Bz0ebA=3D=3D?=
+To: jerry.teng@utdallas.edu
+X-Entity-ID: 9T3hWc58XiEPppp2cc2+nw==
+Return-Path: bounces+10515711-5ce9-jerry.teng=utdallas.edu@em8199.nvidia.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2020 15:01:46.6001
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 02bb7d28-80b6-4126-bd20-08d86ebfbd42
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 02bb7d28-80b6-4126-bd20-08d86ebfbd42
+X-MS-TrafficTypeDiagnostic: BN6PR01MB2577:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:5516;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.36.225;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o24.ptr6223.rainfocus.com;PTR:o24.ptr6223.rainfocus.com;CAT:NONE;SFS:(4636009)(6512007)(6916009)(36736006)(9686003)(76236003)(58800400005)(1096003)(336012)(83170400001)(26005)(6486002)(83380400001)(3450700001)(5660300002)(7636003)(7596003)(2160300002)(166002)(83080400001)(8676002)(356005)(6506007);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2020 15:01:46.4292
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 02bb7d28-80b6-4126-bd20-08d86ebfbd42
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2577
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.5533780
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.029
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?WaZ9ngrPANBweTjlCMEjQ8uldBbQgZKYL09HA8hlRHKMdVqRun64utUT?=
+ =?Windows-1252?Q?kl1Vb6sYuTai/m2DED0Z9ZyI1X6Nvs/MlyDxwFFdS1BM2WqOZbwTwbgd?=
+ =?Windows-1252?Q?cckrb8NWsAOMilS9Kbl9A4NVy7MGsn9iKemRUwnW90ta8oPkCDd8TQUG?=
+ =?Windows-1252?Q?s4LkJGuSXFSJjgg57DJ/zlmPeIPZyoubJtrD7rGT5AnpZm0Rmi9ds3P+?=
+ =?Windows-1252?Q?Hs0UB/kVqFX8Gufy1V7v8x92TrX1qTjnft8155OCaFflOfDwid1kJzDQ?=
+ =?Windows-1252?Q?2U2fkIJU8U6urlZf/dssJSBdhg0+r8FT8y2t3IWS+nzSCvp8vJfktcrx?=
+ =?Windows-1252?Q?HiAf10tg5M2WcM2r54Qy1Un4aWcd6I+wY/WamChs5H3DZt/9bSkYaXAR?=
+ =?Windows-1252?Q?xT2Sv50R3AKxoQhCp41XXDqZKhfLxMmKIe4Mu7qEgA5e/vjP5PMeWfMT?=
+ =?Windows-1252?Q?nylURdw1F9oS8QUqul5NqmAcnBGj2kDUsXBu8XgCM/bkoOx1Xw2+WNIG?=
+ =?Windows-1252?Q?Q/2v1skHdU36jz9rMaBZaBYwil958eAIjxeiZW2EA2mWeXMpjSscQSPa?=
+ =?Windows-1252?Q?WWcSpgCNUuawKFlS50x3InStRJD2q3LYXiAoyzkIS9AsFKduT2fmjrbM?=
+ =?Windows-1252?Q?UKR28eRc4rxuibr1/8ltIik9ldApfygf9SmJLWBMAn+ut9fQlGDRqCbt?=
+ =?Windows-1252?Q?17SazMzZMhzBLA9Z2OuXWn8640E09zs8osZFYPd/JLWZzeGzDk7gR5zF?=
+ =?Windows-1252?Q?S0BvZA4P+adJbCdTM8prF3yfJOMF6udM7OqzshkIogeMQ2VeWBgClqOL?=
+ =?Windows-1252?Q?nf8xNyfq5tCTKoYTkzkECzUA7hPh3bR0XVWHIMuR2ugXiOO0cZnxByTR?=
+ =?Windows-1252?Q?cQlUP0KxLP8kEThM8omtfcE1jsqmG9oV/eFxR2ZJ3FSgiHmErhYc20Nf?=
+ =?Windows-1252?Q?NNgHuvhRPP0GGNJ/4+HNMCMvG/YNcmO2eQjK05Fnrt/0RJzboxrAGh2m?=
+ =?Windows-1252?Q?7oJTTPiEpoObCU7nnq8kBAAsbZZpjsPa7a9pLnPHe8y190H97yWymD9G?=
+ =?Windows-1252?Q?cCDWiG4cmdbGgKI5XRggHQuNPEGIfrhK626hCLB6wmKiqlGe/5HQA+QS?=
+ =?Windows-1252?Q?KbRf78lmsMbpjntbOELoNjjTVQwUkEsccOSLeJQWUpWvS4fCugbR9ZDr?=
+ =?Windows-1252?Q?8DT9gzFpUpd0qqM7uNvYI43OzpxPENt7b7+t2/xxJhg9/K9SSREbqB2Q?=
+ =?Windows-1252?Q?hZejQZ5WlnVNTjUckVj97N3B5aKNhkpQPgvMO7zu?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><title>GTC</title>
+	<style type=3D"text/css">@font-face {
+	      font-family: 'DINPro-Regular';
+	      font-style: normal;
+	      font-weight: normal;
+	      src: local('DINPro-Regular'), url(https://images.nvidia.com/newslett=
+ers/fonts/DINPro_Regular.woff2) format('woff2'), url(https://images.nvidia.=
+com/newsletters/fonts/DINPro_Regular.otf) format('embedded-opentype'), url(=
+https://images.nvidia.com/newsletters/fonts/DINPro_Regular.ttf)         for=
+mat('truetype'), url(https://images.nvidia.com/newsletters/fonts/DINPro_Reg=
+ular.woff) format('woff'), url(https://images.nvidia.com/newsletters/fonts/=
+DINPro_Regular.svg) format('svg');
+	      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+0=
+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+		   -webkit-font-smoothing:antialiased;
+		  -moz-osx-font-smoothing:grayscale;
+           mso-font-alt: 'Arial';
+	   }
+
+a {
+color: #76b900;
+}
+
+@media only screen and (max-width: 480px) {=20
+
+.logo {
+text-align:center !important;
+}
+
+}
+	</style>
+</head>
+<body><!--Full width outer table start-->
+<table bgcolor=3D"#EEEEEE" class=3D"editable mce-edit-focus" style=3D"width=
+: 100%; position: relative;">
+	<tbody>
+		<tr>
+			<td><!--[if (gte mso 9)|(IE)]>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"680" a=
+lign=3D"center" role=3D"presentation"><tr><td>
+    <![endif]-->
+			<table align=3D"center" bgcolor=3D"#EEEEEE" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"margin: 0px auto; max-width: 680px; width: 10=
+0%; min-width: 300px;" width=3D"680">
+				<tbody>
+					<tr>
+						<td align=3D"center" style=3D"padding: 32px 0px;">
+						<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"width: 100%; min-width: 100%; table-layou=
+t: fixed;" width=3D"680">
+							<tbody>
+								<tr>
+									<td align=3D"center" valign=3D"top">
+									<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"table-layout: fixed; width: 100%; min-width: 100%;" width=
+=3D"680">
+										<tbody>
+											<tr>
+												<td align=3D"center" style=3D"padding: 0px 30px 0px 30px; width=
+: 100%; min-width: 100%;" valign=3D"top">
+												<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"width: 100%; min-width: 100%;" width=3D"88%">
+													<tbody>
+														<tr>
+															<td align=3D"" class=3D"logo" style=3D"text-align: left" val=
+ign=3D"bottom"><a href=3D"https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DyzMVwOpMy=
+qjEucmaPfKXU-2B7NuXbztMm8zp-2BGyfl3SgI-3DpbEG_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2=
+BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz8=
+44XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdwqFDbB-2FqNpNn=
+3Le1hCX9wNeUxAtEw7-2FHQCYFdI01m-2BTGvOa6kY52JxDEytuuaawPFatUQh2jRJfsH5fa77C=
+8J-2FYZD1yFxAEc0O3YJ-2FDUumPXVYW0gIPqeROO2EpiXUepbeA95-2FiCimlI3gr36n8gWcvS=
+7shsremDqTlKDA6-2Fk3egKHjFhhtf2Pv-2FCemuahLfHB-2FUAhaGix2Kcx82BD5t462W-2FRL=
+MsqFaELm0iyXxhDXQI1RYoMeJG365xMfmnwTPxiwa-2FDcNNNZLYbGkk2FHH4-3D&amp;data=
+=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105033152&amp;sdata=3D=
+K9E4GWLNDBZg2ij4eMYlWlFU841VUWG4pGY2IQIcxU8%3D&amp;reserved=3D0" originalsr=
+c=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DyzMVwOpMyqjEucmaPfKXU=
+-2B7NuXbztMm8zp-2BGyfl3SgI-3DpbEG_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxO=
+iJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSf=
+af-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdwqFDbB-2FqNpNn3Le1hCX9wNeU=
+xAtEw7-2FHQCYFdI01m-2BTGvOa6kY52JxDEytuuaawPFatUQh2jRJfsH5fa77C8J-2FYZD1yFx=
+AEc0O3YJ-2FDUumPXVYW0gIPqeROO2EpiXUepbeA95-2FiCimlI3gr36n8gWcvS7shsremDqTlK=
+DA6-2Fk3egKHjFhhtf2Pv-2FCemuahLfHB-2FUAhaGix2Kcx82BD5t462W-2FRLMsqFaELm0iyX=
+xhDXQI1RYoMeJG365xMfmnwTPxiwa-2FDcNNNZLYbGkk2FHH4-3D" shash=3D"xXW8OZhitYF2=
+SC7XiUNqD82u++dtkaX9apQyZfMnjUtyn+rT0Ux1FvTka17jCz3npSDwlgD8Y0QWKJGZrnTUMWU=
+kYV4mECP9xCgf/7yMTU+EWzQkGZ2dMVHyRRFqrieibu3ug6bmYM4rFBBt/HYo+zABVh0qQHGAaQ=
+ZgQZQS4Yc=3D" rel=3D"noreferrer noopener" target=3D"_blank" title=3D"NVIDIA=
+"><img alt=3D"NVIDIA" height=3D"45" src=3D"https://info.nvidia.com/rs/156-O=
+FN-742/images/NVIDIA_Logo_H_ForScreen_ForLightBG.jpg" style=3D"margin: 0px;=
+ padding: 0px; border: 0px none; width: 130px; height: 45px;" width=3D"130&=
+quot;"></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+												<div align=3D"center"><a href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclic=
+k%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B5x0Y5MRytmypazpGiv7=
+M3gIkTz_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-=
+2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9=
+-2Bg8psC6lA0f8y5NtH8qrd-2BDCN-2Fg-2BMs9-2FkFm3r3HSK0ySixy8-2FUXqnVbdE4Yj3V4=
+FYbBAVlM39DIsG4O4m-2FUSZtIYQO6h3ho5TBlpFMvLEzTePFPW3c5chY0i0b6QxEeS8sSyObmH=
+Dl7t-2FYe45dT29HZI2hgrWs0YNkj8N9ugChbjZM6yEk-2BSJGjoS0EKEy-2FZXHocXdicwl8uh=
+VVnmu3nvmAfj513nNBVi3ML37TZdg1eiiAceieG1fFYQnPZswXcwj2CVI-2BXfv8vuB6oQh9M1A=
+lWEalSfwQx8fTLzxk3i2A-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C0=
+2bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%=
+7C637381117105043142&amp;sdata=3DARIKWrd0VVKzC2pJR8m%2FFirO%2B6nI5W5TUQSXC8=
+GYAug%3D&amp;reserved=3D0" originalsrc=3D"https://u10515711.ct.sendgrid.net=
+/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B5x0Y5MRytmypa=
+zpGiv7M3gIkTz_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmF=
+cZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL0=
+28yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BDCN-2Fg-2BMs9-2FkFm3r3HSK0ySixy8-2FUXqnVbdE=
+4Yj3V4FYbBAVlM39DIsG4O4m-2FUSZtIYQO6h3ho5TBlpFMvLEzTePFPW3c5chY0i0b6QxEeS8s=
+SyObmHDl7t-2FYe45dT29HZI2hgrWs0YNkj8N9ugChbjZM6yEk-2BSJGjoS0EKEy-2FZXHocXdi=
+cwl8uhVVnmu3nvmAfj513nNBVi3ML37TZdg1eiiAceieG1fFYQnPZswXcwj2CVI-2BXfv8vuB6o=
+Qh9M1AlWEalSfwQx8fTLzxk3i2A-3D" shash=3D"Am2stSj7LRt8veg8K1IImjoXHgWWnYwHqk=
+ryxvYFq8UmuKyeFn9b3nndhiv+WkdiEivrAsQAZl3XOQ9HBp3dS2qZMVLlqSFxzY4jzCBPAMY5T=
+7zhAUlXrUarw3731CGMEbEkqUkyM2aiyyN/FYfuCpjt8M53fC5u0QE0b9rbQfE=3D"><img ali=
+gn=3D"middle" alt=3D"NVIDIA" src=3D"https://developer.download.nvidia.com/v=
+ideo/gputechconf/gtc/2020/gtc-email-logo.png" style=3D"display: block; bord=
+er: 0px none; width: 100%;"></a></div>
+												</td>
+											</tr>
+											<tr>
+												<td align=3D"center" style=3D"padding: 30px 40px 30px 40px;" va=
+lign=3D"top">
+												<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"width: 100%; min-width: 100%;" width=3D"88%">
+													<tbody>
+														<tr>
+															<td align=3D"center" valign=3D"top">
+															<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"width: 100%; min-width: 100%;" width=3D"88%">
+																<tbody>
+																	<tr>
+																		<td align=3D"left" style=3D"color: #1a1a1a; font-family: =
+'DINPro-Regular', Helvetica, Arial, 'Sans-Serif'; font-size: 14px;line-heig=
+ht: 130%">Hello Jerry<br>
+																		&nbsp;
+																		<p>The programming for our largest-ever GTC has now wrapp=
+ed up and -- wow -- what a week!&nbsp; More than 36K+ joined us from 50+ co=
+untries, tuning into more than 1K&nbsp;sessions covering 40 topic areas in =
+five languages.</p>
+
+																		<p>If you haven&#8217;t yet watched NVIDIA CEO Jensen Hua=
+ng&#8217;s keynote, make sure to <a href=3D"https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclick=
+%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B47YZSp6tvlaGI6Cee3-2=
+BBLJQzxUOC-2BYsBTTXwLp6B3IHw-3D-3Di0zu_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2=
+BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK9=
+36kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdxpODl8jyj-2BDhZytLSU8=
+QJNzJGDBUiQ0F3Q9lhnT8-2FZxmYdjqS86jNw-2FMxcXo9lWTsutuRuT7QaJ7ihtTw1ysGSlWje=
+hw5lYRrWbs8Lc5SMdvdbxzsG7g2WE1W4DyknHlKvgjDGZVVk4ayfQf5RFJFR74kUJ2NxYJXb6cd=
+PdAqU1HIeVGrYgZazBkXRlwX7VnsoHz-2BouFYBZ4s-2Bu-2BPbm1IGdXUdnIw5B1rIUShLqqnL=
+c-2Ft6OKjfdI-2F0ZPZJglEYzzCc3ycA7ZlqYkw39lQKhmeQ-3D&amp;data=3D02%7C01%7Cje=
+rry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637381117105053141&amp;sdata=3DTcrukUyga04GmZv=
+6q6U%2FfIoj2EXDlpV33g4o6vp6Aec%3D&amp;reserved=3D0" originalsrc=3D"https://=
+u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vH=
+kExpwhC35-2B47YZSp6tvlaGI6Cee3-2BBLJQzxUOC-2BYsBTTXwLp6B3IHw-3D-3Di0zu_A6np=
+-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyD=
+nnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0=
+f8y5NtH8qrdxpODl8jyj-2BDhZytLSU8QJNzJGDBUiQ0F3Q9lhnT8-2FZxmYdjqS86jNw-2FMxc=
+Xo9lWTsutuRuT7QaJ7ihtTw1ysGSlWjehw5lYRrWbs8Lc5SMdvdbxzsG7g2WE1W4DyknHlKvgjD=
+GZVVk4ayfQf5RFJFR74kUJ2NxYJXb6cdPdAqU1HIeVGrYgZazBkXRlwX7VnsoHz-2BouFYBZ4s-=
+2Bu-2BPbm1IGdXUdnIw5B1rIUShLqqnLc-2Ft6OKjfdI-2F0ZPZJglEYzzCc3ycA7ZlqYkw39lQ=
+KhmeQ-3D" shash=3D"vqDq6nvezLOYJPlCf/Q13ABmFjEnMtqmgrnVJfP7OFOrtqp48kKzFsS6=
+I6m8utm+A7FysbhiRf3bxdQ4wWlAkSWHquNjqKYwPYHdXu4XyjujF9zqGs1vP+AIgzUKdiJznRx=
+4or6NW90a1hriiG8fujIgwSiA4NywcgK2NAkCkoQ=3D">catch up here</a> - you don&#8=
+217;t want to miss the groundbreaking announcements across healthcare, data=
+ science, robotics, automotive, and more.</p>
+
+																		<p>Over its 11 years, NVIDIA GTC has always been about sh=
+aring innovative approaches, and exploring&nbsp;how accelerated computing a=
+nd AI are transforming how we work and live. But GTC 2020 took this to a ne=
+w level.</p>
+
+																		<p>It brought together an incredible collection of talent=
+ - developers, researchers, engineers, and technologists - from a variety o=
+f industries. More than 1400 people were trained on the latest AI, deep lea=
+rning, and data science tools by our <a href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fc=
+lick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B6SLrOC8Epyytu-2B=
+d8sfzycU6DpNRodJ-2FLlU9A6AaM-2FNPRzdpCgMI6Z9SfdVHppFi0Q-3DbDxT_A6np-2Bq5dXU=
+-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt=
+2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8=
+qrdxNkjy-2BU1cG6smQIylpKzYWHg-2BGJAWC1RckCmeFizKPOKg-2B9D06okYpK8NpJ4ZeMhwZ=
+xfj6DUt8Nrr7CJ572xNNswnjMivRw9QEPcCS4910oJMDrMh6lY6HQ0cOkvgYKedvwYWf8-2BaZS=
+jIl00krp4SYrf1CNQdSvAN1kHT5s3c3V0peWJAdIBpbS-2FwUYE45m4A0kRveX16WTzXB9ElD2i=
+j64MrP0TQfg-2BrWPaU9OX9rdSrgQphbsf80Q1Zj2JFjHFLialaFsR4G70aBPohiRdwA-3D&amp=
+;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfb=
+d42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105053141&amp;sda=
+ta=3DjGZWeoTL%2FwHTDLXWbJf83XnEgOyiaOzYjK4wUPi5hIY%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-=
+2FWfuupLvxV1eWdLC0vHkExpwhC35-2B6SLrOC8Epyytu-2Bd8sfzycU6DpNRodJ-2FLlU9A6Aa=
+M-2FNPRzdpCgMI6Z9SfdVHppFi0Q-3DbDxT_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2Bol=
+xOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936k=
+Sfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdxNkjy-2BU1cG6smQIylpKzYW=
+Hg-2BGJAWC1RckCmeFizKPOKg-2B9D06okYpK8NpJ4ZeMhwZxfj6DUt8Nrr7CJ572xNNswnjMiv=
+Rw9QEPcCS4910oJMDrMh6lY6HQ0cOkvgYKedvwYWf8-2BaZSjIl00krp4SYrf1CNQdSvAN1kHT5=
+s3c3V0peWJAdIBpbS-2FwUYE45m4A0kRveX16WTzXB9ElD2ij64MrP0TQfg-2BrWPaU9OX9rdSr=
+gQphbsf80Q1Zj2JFjHFLialaFsR4G70aBPohiRdwA-3D" shash=3D"OGeoUli9q+12sV23CCQG=
+jENKrv+9Yj+PX1SHZwH4pZ8oCgMCE2exqtiXyKrZtCcaSv4abSUM4NDfsuKKxN0ic2LjBYKwVLq=
+hNRJEOzh4DEyYmAjff8UratYiui8Me0glNxdrko5qnWkaIBAo/YxLmRrp8/Uinyx1bBMm1EqZQr=
+g=3D">Deep Learning Institute</a>, enabling them to shape the next generati=
+on of AI-powered applications. And new connections were made during online =
+networking events that were, frankly, more successful than we ever thought =
+possible.&nbsp;</p>
+
+																		<p>We&#8217;re very grateful for your participation. We&#=
+8217;d also like to thank our 1,100 speakers and more than 80+ sponsors, wh=
+o made this all possible.&nbsp;</p>
+
+																		<p>We hope you enjoyed attending GTC as much as we enjoye=
+d hosting you. To help us make our next event better, I kindly ask you to p=
+rovide your feedback through surveys in the <a href=3D"https://nam02.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2=
+Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvwAwy9ctZ8o8cTFFIxn7R4Ktrju32dgwf=
+dryL8G1KqR-2FpeNEn0oRznTwKIr5ztYFkTQAc4yiESFj26-2BCtIU0ij8-3D_iDR_A6np-2Bq5=
+dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoy=
+OBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5N=
+tH8qrdy7GUrk3lMuWgZcQeRxTWeQH-2BEYAmBf00pmMXQTatoraz8kish1b4KB7lUkdCU7ZndVi=
+Gcrxpn5ROB20VoZVp9UzfVcHjSoT5OaPIKAnCrGWZY9-2BjIj2tmRDOQHQlQ5-2FW3-2F63oxiv=
+4Wsj0QStQ2C4OWhaP8WqHU1eGBVHjH0BMEv1UNujeq6ooQ-2BGpnx8xrTfmw-2FOlMI1jPVpW0G=
+8F01oIowka0vgHaNjwx0XuUamS5A-2B8i58cJyo1ikSMPwvWK5ZmAA-2FUzxthYMON2kJEC6cOA=
+-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008=
+d86ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105063129&=
+amp;sdata=3DMSP1Y9gd3IQIpsddu6SwvMLyJrfVfrmAA0ytCzLoduE%3D&amp;reserved=3D0=
+" originalsrc=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdD=
+Xs3u-2FWfuupLvwAwy9ctZ8o8cTFFIxn7R4Ktrju32dgwfdryL8G1KqR-2FpeNEn0oRznTwKIr5=
+ztYFkTQAc4yiESFj26-2BCtIU0ij8-3D_iDR_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2Bo=
+lxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936=
+kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdy7GUrk3lMuWgZcQeRxTWeQH=
+-2BEYAmBf00pmMXQTatoraz8kish1b4KB7lUkdCU7ZndViGcrxpn5ROB20VoZVp9UzfVcHjSoT5=
+OaPIKAnCrGWZY9-2BjIj2tmRDOQHQlQ5-2FW3-2F63oxiv4Wsj0QStQ2C4OWhaP8WqHU1eGBVHj=
+H0BMEv1UNujeq6ooQ-2BGpnx8xrTfmw-2FOlMI1jPVpW0G8F01oIowka0vgHaNjwx0XuUamS5A-=
+2B8i58cJyo1ikSMPwvWK5ZmAA-2FUzxthYMON2kJEC6cOA-3D" shash=3D"xXEz/6k1jnuATcp=
+t7K7AJVGpS8ZYijS+E9E7f3fU6Pr7hVa/3XxmFPRUDJvtm771mXxc4qspzmcryXkzuHRgTfbEzo=
+zpBXRs1rdx61LLiMYjF66B0DyvOIULI32YLX6kciFJDvnhfTs7DdvOGtPxhMz1OoGWN7H6ma/HO=
+0Ozc3o=3D">GTC app</a> or your <a href=3D"https://nam02.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclick%3=
+Fupn%3DFckAc9WdDXs3u-2FWfuupLvwsU7R8vtTsm99vZEQxfIpE1tGClYlyJQHSPtC-2BnTBPm=
+mJ2-2BuqtPpJGpVaz8tjz8aLTxwy84GM8FWBVSdFJElgg-3DVb24_A6np-2Bq5dXU-2FiKWa-2F=
+p5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu=
+4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdwpFpGKr=
+JR75XzT2yA8Csgqr7ix6E5O3bZs8H3tLbu2y8jdnCmn-2Fsp9PdPErQ4snxus4sFMkawFNYKFWC=
+rhezg39d5UaCEdaBaPuXsulEk7DhGybQEPqBolQAOab-2BF8zNEwX-2B7T74c6YzpJ-2BBX3XFy=
+S7D9EQ-2FuOlFxS4mkPY9LIwhxupdfeUaVYQkeoOVkMpba-2BMvq1RnzsFFolcDWfh6-2BrqVAp=
+FaP-2FaVu3WLK9Ib5kBiu-2FQXcH7BVkB6b-2Fyd9bvxZGS08ALFuvbMcjE6lNChV8-3D&amp;d=
+ata=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd4=
+2%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105073129&amp;sdata=
+=3DsANjNkAdX1CZwK1PzmQz1fhNnm9TIAHIvpiacixZzyw%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWf=
+uupLvwsU7R8vtTsm99vZEQxfIpE1tGClYlyJQHSPtC-2BnTBPmmJ2-2BuqtPpJGpVaz8tjz8aLT=
+xwy84GM8FWBVSdFJElgg-3DVb24_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD=
+3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2Bp=
+U0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdwpFpGKrJR75XzT2yA8Csgqr7ix6E5O3b=
+Zs8H3tLbu2y8jdnCmn-2Fsp9PdPErQ4snxus4sFMkawFNYKFWCrhezg39d5UaCEdaBaPuXsulEk=
+7DhGybQEPqBolQAOab-2BF8zNEwX-2B7T74c6YzpJ-2BBX3XFyS7D9EQ-2FuOlFxS4mkPY9LIwh=
+xupdfeUaVYQkeoOVkMpba-2BMvq1RnzsFFolcDWfh6-2BrqVApFaP-2FaVu3WLK9Ib5kBiu-2FQ=
+XcH7BVkB6b-2Fyd9bvxZGS08ALFuvbMcjE6lNChV8-3D" shash=3D"WKevxHn6TKz6iFbqUvi7=
+ciRaSFlk5A9tr4O1zRFx0ln6aOJV4SsbkIrkROyla9EU3Hr52spJGIDyhG/ylpD/Kc5Q24+lRML=
+dol251MWaMupra6kJUgzB1tJWFNFFoRF3k4iRetZYKsTPHamSuPV06uwXU9/Zqi/p+/vtIzjHIe=
+o=3D">registration dashboard</a>.&nbsp;</p>
+
+																		<p>You can continue learning by exploring sessions you ma=
+y have missed, or revisiting those you found most interesting, in the <a hr=
+ef=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu=
+10515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvxV1eWd=
+LC0vHkExpwhC35-2B6JoAaitm2cNF4dKBsCkVPulay4Nbn6P-2BzD2MHnftO1S-2BMOQlERfTGS=
+v3tvNSB0OR9zKyCGf3gu3mglRoox9z6RTOtAY2Kqbg-2BeBts0LQpvrw-3D-3D1UDc_A6np-2Bq=
+5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKo=
+yOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5=
+NtH8qrd6YB-2B7rbTw9oIa2cUBKUQmgYNme7BytVp-2FI2mHm8EYwdzlFZH5TBL64eemn20xHF-=
+2FlNSaXJykBGrLyzqivAthQ2Ab8zy2prEcZ7zAM3ZQsMReo0RH50-2BkTDtQmyRZmIZohANbVp9=
+Ee5gFb5s364EQGmWgDhaNil45K99F-2BC9fr1uVRCE3rSKLs9rgQQlGw2X0GuaZPeRpfODdTWg8=
+6bUFXQ9lqRmqKJV2yLYcrcqQQSJvVnI9QbiXUmOoFAI0hZIqP-2FGmJ2gAfgj2CLpbol7EPM-3D=
+&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86=
+ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105073129&amp=
+;sdata=3DJt0PsbkQe2kDq1CBmMt%2FjD6kXREfMdojV%2FD%2F6eu5KIw%3D&amp;reserved=
+=3D0" originalsrc=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc=
+9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B6JoAaitm2cNF4dKBsCkVPulay4Nbn6P-2B=
+zD2MHnftO1S-2BMOQlERfTGSv3tvNSB0OR9zKyCGf3gu3mglRoox9z6RTOtAY2Kqbg-2BeBts0L=
+Qpvrw-3D-3D1UDc_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KT=
+mFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48g=
+L028yGQ9-2Bg8psC6lA0f8y5NtH8qrd6YB-2B7rbTw9oIa2cUBKUQmgYNme7BytVp-2FI2mHm8E=
+YwdzlFZH5TBL64eemn20xHF-2FlNSaXJykBGrLyzqivAthQ2Ab8zy2prEcZ7zAM3ZQsMReo0RH5=
+0-2BkTDtQmyRZmIZohANbVp9Ee5gFb5s364EQGmWgDhaNil45K99F-2BC9fr1uVRCE3rSKLs9rg=
+QQlGw2X0GuaZPeRpfODdTWg86bUFXQ9lqRmqKJV2yLYcrcqQQSJvVnI9QbiXUmOoFAI0hZIqP-2=
+FGmJ2gAfgj2CLpbol7EPM-3D" shash=3D"cZMIHAGWhJ2BOmU7u9B+ritP0Fl4c6Jpz01a24tA=
+qf8iDWoGf+dmks4rz5zrN7C9dzfRN1/yiSjq4Vm4pUaZPV1YXC5o6ctooWPjqcghTYVZZ4LRZ+c=
+44/EjqHfm8ta6evJCreXo5TvA4p1eeK5wsGqt7nfUIO7AtikKR14nMAQ=3D">Session Schedu=
+ler</a> any time over the next 30 days.&nbsp;</p>
+
+																		<p>We hope to see you again in the spring for our next GT=
+C with even more breakthrough discoveries.</p>
+
+																		<p>&nbsp;</p>
+
+																		<p><strong>Best,</strong></p>
+
+																		<p><strong>Greg Estes</strong></p>
+
+																		<p><strong>VP Developer Programs, NVIDIA</strong></p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style=3D"background-color:#EEEEEE; padding:8px 0px; line-heigh=
+t: 8px; font-size:8px; ">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align=3D"center">
+									<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width: 100%; min-width: 100%;" width=3D=
+"680">
+										<tbody>
+											<tr>
+												<td align=3D"center" style=3D"padding: 30px 40px 0px 40px;" val=
+ign=3D"top">
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width: 100%; min-width: 100%;" width=3D"88%">
+													<tbody>
+														<tr>
+															<td align=3D"center" valign=3D"top">
+															<table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"width: 100%; min-width: 100%; margin-left: auto; marg=
+in-right: auto;" width=3D"88%">
+																<tbody>
+																	<tr>
+																		<td align=3D"center"><span style=3D"color: #76b900; font-=
+family: 'DINPro-Light', 'Trebuchet MS', Arial, Helvetica, 'Sans-Serif'; fon=
+t-size: 18px; line-height: 24px;">FOLLOW US</span></td>
+																	</tr>
+																	<tr>
+																		<td height=3D"16" style=3D"line-height: 16px; font-size: =
+16px;"><img alt=3D"" border=3D"0" height=3D"1" src=3D"http://info.nvidia.co=
+m/rs/156-OFN-742/images/spacer.gif" style=3D"display: block;" width=3D"1"><=
+/td>
+																	</tr>
+																	<tr>
+																		<td align=3D"center" valign=3D"top">
+																		<table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0">
+																			<tbody>
+																				<tr>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLvxKInesd3=
+Kk195J2HS9DNZaYDeYLOZfKUun4zkj19-2BRCRPGV_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY=
+9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844Xp=
+CK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd8Po6c2O19Qq2Wqy4Zj=
+tJoHrMyX8PKFg2Lo-2BJl9ymZIpdrJSr4OVvNHLzElXu0bq2p0EfZQrqqVp8DySc84gi4n0Wcbo=
+kpGZ2tAV7sHkcECtzdie4WQ0-2BPLcAyuwalgGl6DExq2cDlr7rH4Xf3NrLUE-2FC1cFhM8XgXR=
+w0Yi1SZxRyBE8CZUaAevNAnWONIVPxvFlQ3TiJaMldWU35oIMWqaReHySNeVilbFyUKm5FfCd02=
+aTYOqBllQYFQh-2FeBRHrIZt4gW-2BuecSXJoygz26yhs-3D&amp;data=3D02%7C01%7Cjerry=
+.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637381117105083130&amp;sdata=3DWaZcLw2wW5AHMcTlWE=
+s7q%2Fxww9uI5FsQfIJ4%2FST04vs%3D&amp;reserved=3D0" originalsrc=3D"https://u=
+10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLvxKInesd3Kk19=
+5J2HS9DNZaYDeYLOZfKUun4zkj19-2BRCRPGV_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2B=
+olxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK93=
+6kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd8Po6c2O19Qq2Wqy4ZjtJoH=
+rMyX8PKFg2Lo-2BJl9ymZIpdrJSr4OVvNHLzElXu0bq2p0EfZQrqqVp8DySc84gi4n0WcbokpGZ=
+2tAV7sHkcECtzdie4WQ0-2BPLcAyuwalgGl6DExq2cDlr7rH4Xf3NrLUE-2FC1cFhM8XgXRw0Yi=
+1SZxRyBE8CZUaAevNAnWONIVPxvFlQ3TiJaMldWU35oIMWqaReHySNeVilbFyUKm5FfCd02aTYO=
+qBllQYFQh-2FeBRHrIZt4gW-2BuecSXJoygz26yhs-3D" shash=3D"OO52dsnVF4CC+CtZE5QL=
+02NZesvI6l1rkQjQ0YU5FHEg/t+/2X49KxevOjfvfiijZrIGO9ZXfbwu8GFjXlQTBJjMdgygIX0=
+5qR+RuaI6s2eo4DAWpffiwEhmmBb07YCkmEHTlfoI+46AsSa4TLQpdMp+Sabb7FZ7NbxtpGSu7M=
+Y=3D" rel=3D"noreferrer noopener" target=3D"_blank"><img alt=3D"Facebook" s=
+rc=3D"http://info.nvidianews.com/rs/nvidia/images/nv-social_icons-gaming-fb=
+.png" style=3D"max-width: 25px; border-width: 0px; border-style: solid; mar=
+gin: 0px; width: 25px;"></a></td>
+																					<td width=3D"10">&nbsp;</td>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv1MAZyI7h=
+RcqEn7n0cNI-2F5-2BdaL0IJB1UdRWMBwwyy0NLm82p_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bg=
+aY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844=
+XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd40rbs0ZIAc4ln1vo=
+u-2B9EewVGKAUhuOkCg-2BOATDvTk5banxwot-2B8YKmB9UCJGRVEkieKL-2Fy1zOAUIPbabjFT=
+U0gLTUBLROb2ETEVm2aYEsRwfBW5oG6eLw4uF5X1gPyoHOGvk6a1mBpVpWB-2F9mE5jnZ18b6A1=
+7zy-2FJVrnIINmPcxkZwGtLh2iScptaPSM7FL4l7W4lZQaogwHD1wMrbxj4qW6mJF7VlYg9b0Ga=
+HbQ6716pstYz-2BUY30V1ZtovkgIi5AKfxftyZxdVeH5vYaTvGM-3D&amp;data=3D02%7C01%7=
+Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105093117&amp;sdata=3D8pr11T8GP6vU=
+c%2BoZzBpGjmCp1TGyXYbiGhe9JOaYCe8%3D&amp;reserved=3D0" originalsrc=3D"https=
+://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLv1MAZyI7h=
+RcqEn7n0cNI-2F5-2BdaL0IJB1UdRWMBwwyy0NLm82p_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2Bg=
+aY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844=
+XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd40rbs0ZIAc4ln1vo=
+u-2B9EewVGKAUhuOkCg-2BOATDvTk5banxwot-2B8YKmB9UCJGRVEkieKL-2Fy1zOAUIPbabjFT=
+U0gLTUBLROb2ETEVm2aYEsRwfBW5oG6eLw4uF5X1gPyoHOGvk6a1mBpVpWB-2F9mE5jnZ18b6A1=
+7zy-2FJVrnIINmPcxkZwGtLh2iScptaPSM7FL4l7W4lZQaogwHD1wMrbxj4qW6mJF7VlYg9b0Ga=
+HbQ6716pstYz-2BUY30V1ZtovkgIi5AKfxftyZxdVeH5vYaTvGM-3D" shash=3D"boS7tDDmbm=
+O1p5r6kO1xs2iUfn+Z6Asu+UOa1a8wAhh9tpW6qx5sBjtOYL9U5GR7MAYOYPulmDaHen4izWgDB=
+4a0E9aB9a7IQ8DryUSh0vY74sKV8FtyDKE/vs6R86GZrEKkMUBn0khodKomZwh0meA7brHSOM/K=
+S9dOkwWokM0=3D" rel=3D"noreferrer noopener" target=3D"_blank"><img alt=3D"T=
+witter" src=3D"http://info.nvidianews.com/rs/nvidia/images/nv-social_icons-=
+gaming-tw.png" style=3D"max-width: 25px; border-width: 0px; border-style: s=
+olid; margin: 0px; width: 25px;"></a></td>
+																					<td width=3D"10">&nbsp;</td>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv2jYjl1yU=
+i6ziE0Ms7AcVIePWLGbqKVCz2leyeZDA5OrI0Gi_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-=
+2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK=
+936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd3S-2F76rhzz2InfiQHPZ=
+-2FMh7gqf3CuwoRoL5B8E4Dd4YBX9ahKHrdSORXVmW3KVBkqhofb5f80QRUlR3Fpb5jEVaMMKgb=
+u7qtO7LohZ4aoMvWryuPQGXm1EhU4CNS4lmwpct8yPYTcR8siQ-2BDo5a6BAO0GglBYWCH-2BZ0=
+iXToIY6DOOupc0vvff42Mcjo7NRQYHq7MReJf7zr4ba6gJnM-2FlXPJX8n8FSvQyyHNkr6R2sUw=
+DuKwQXqIAhaHDBIUdM586EIAvYRGNI20Lqe0tXU1aSk-3D&amp;data=3D02%7C01%7Cjerry.t=
+eng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C0%7C637381117105103116&amp;sdata=3DRYNsYGyp%2BSPWQkiPLL=
+215G%2BSud94Rfm%2FbqlT3CKwnhI%3D&amp;reserved=3D0" originalsrc=3D"https://u=
+10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLv2jYjl1yUi6zi=
+E0Ms7AcVIePWLGbqKVCz2leyeZDA5OrI0Gi_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2Bol=
+xOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936k=
+Sfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd3S-2F76rhzz2InfiQHPZ-2FM=
+h7gqf3CuwoRoL5B8E4Dd4YBX9ahKHrdSORXVmW3KVBkqhofb5f80QRUlR3Fpb5jEVaMMKgbu7qt=
+O7LohZ4aoMvWryuPQGXm1EhU4CNS4lmwpct8yPYTcR8siQ-2BDo5a6BAO0GglBYWCH-2BZ0iXTo=
+IY6DOOupc0vvff42Mcjo7NRQYHq7MReJf7zr4ba6gJnM-2FlXPJX8n8FSvQyyHNkr6R2sUwDuKw=
+QXqIAhaHDBIUdM586EIAvYRGNI20Lqe0tXU1aSk-3D" shash=3D"buRli7RgKQ7Kq86djSqsw1=
+usa3B1g+L/+nQcooiTb694LDNjLdMmYuRPmBLs9P8Du8H1KwbCbz6NN9yL6AX4ZyyDymfwjZMxb=
+I0EGUUpqL5h9m2uVQYH7DmRPFlE0i4rEJ3Xg9nSQRKIZEuPkkNXhgfiUTapLH8nq0fg634aH58=
+=3D" rel=3D"noreferrer noopener" target=3D"_blank"><img alt=3D"YouTube" src=
+=3D"http://info.nvidianews.com/rs/nvidia/images/nv-social_icons-gaming-yt.p=
+ng" style=3D"max-width: 25px; border-width: 0px; border-style: solid; margi=
+n: 0px; width: 25px;"></a></td>
+																					<td width=3D"10">&nbsp;</td>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv5GbCi25U=
+cdPU5LNtR5lgAyKW4-2FpxCWt5xsMfjsLSIeKY3Q9_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY=
+9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844Xp=
+CK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BRD6UgjSMUAZ9XKU=
+waAC-2Bdd33U95LuhX5EQmYNDvCpOPUI00l5HqLF4PacwpEMAkYmAYgAoVAH2iqmS5ViDvVEqPN=
+vI5qssmiMh4jJeER9DCKYB3Bfz0edxcKwRkg9-2Bstl-2BaKAgHUlJvmFCUxnaPkHAnYFZKVVX2=
+eywB2Jj5duryc0xVNmjjv46zyRqdG3T-2FF4Y0f2O9-2BrcnTVjraQlHqRVllLBn9-2FSEW0all=
+L0E-2Fy5SxMRVtOBAzJeoTNJ72YsRzkLFEwoiXhjCPfXCMSyzt4-3D&amp;data=3D02%7C01%7=
+Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105103116&amp;sdata=3DWQEa2aIrhTJL=
+VsvXiHFKAnDEuo7S6p3M%2Fc7w4gkvYQ0%3D&amp;reserved=3D0" originalsrc=3D"https=
+://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLv5GbCi25U=
+cdPU5LNtR5lgAyKW4-2FpxCWt5xsMfjsLSIeKY3Q9_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY=
+9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844Xp=
+CK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BRD6UgjSMUAZ9XKU=
+waAC-2Bdd33U95LuhX5EQmYNDvCpOPUI00l5HqLF4PacwpEMAkYmAYgAoVAH2iqmS5ViDvVEqPN=
+vI5qssmiMh4jJeER9DCKYB3Bfz0edxcKwRkg9-2Bstl-2BaKAgHUlJvmFCUxnaPkHAnYFZKVVX2=
+eywB2Jj5duryc0xVNmjjv46zyRqdG3T-2FF4Y0f2O9-2BrcnTVjraQlHqRVllLBn9-2FSEW0all=
+L0E-2Fy5SxMRVtOBAzJeoTNJ72YsRzkLFEwoiXhjCPfXCMSyzt4-3D" shash=3D"PVFgQAsWdN=
+m6FwgaVfKc2kgEDU0lk6ZFH9KcWNsAtD9xQ1ZTf/TtrW2dBzqJz4PidNcEEm/4Xv3LMRwvKr6lV=
+R7a2x+wlVpJ0mdUZdLKbqONBcBOm/MEK3VVJ94O3VFSwj1ZkrxGeREUeqbsGmToTFQ7U3Q79fcX=
+3x1JL3wRi7k=3D" rel=3D"noreferrer noopener" target=3D"_blank"><img alt=3D"I=
+nstagram" src=3D"http://info.nvidianews.com/rs/nvidia/images/nv-social_icon=
+s-gaming-in.png" style=3D"max-width: 25px; border-width: 0px; border-style:=
+ solid; margin: 0px; width: 25px;"></a></td>
+																					<td width=3D"10">&nbsp;</td>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv21CjMa7n=
+5IR4aM3J5wZJMMaCm9GZ4uDkMb-2FMnCP8CkMVe2ctkqSi0TsgdKHStjXTg-3D-3DHjr0_A6np-=
+2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDn=
+nKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f=
+8y5NtH8qrd-2BIM6WpCiVXdRGKk-2F2lzVqbshBdfcvMQr5ycSi4O7IYvE2iNn4vbeJl52pLpCf=
+5732izFkEdtYneV3myGPKiDgA9XlAv96fn1LELb94U80usfJqch1chFiLrHEEJc-2FYzYBDS6iz=
+3us81OHLAdzDJxT6dxZxxkIn6t5-2Fu5fxf7IxMef-2BGpJ1IXlH5cpoW8wlA2KGS-2BLPkVtQC=
+ba3eQG98Kh8Ue6libV4eqaQznK9gmDQkzY80GkvOHTmhNsZKtPvPNjBualZPqaAeflx0cpZ6N7Q=
+-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008=
+d86ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381117105113126&=
+amp;sdata=3DtsYlYN6q5vJqwwHtRVfCcTVuRUUrOk4oPFJIxm0mjXw%3D&amp;reserved=3D0=
+" originalsrc=3D"https://u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdD=
+Xs3u-2FWfuupLv21CjMa7n5IR4aM3J5wZJMMaCm9GZ4uDkMb-2FMnCP8CkMVe2ctkqSi0TsgdKH=
+StjXTg-3D-3DHjr0_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0K=
+TmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48=
+gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BIM6WpCiVXdRGKk-2F2lzVqbshBdfcvMQr5ycSi4O=
+7IYvE2iNn4vbeJl52pLpCf5732izFkEdtYneV3myGPKiDgA9XlAv96fn1LELb94U80usfJqch1c=
+hFiLrHEEJc-2FYzYBDS6iz3us81OHLAdzDJxT6dxZxxkIn6t5-2Fu5fxf7IxMef-2BGpJ1IXlH5=
+cpoW8wlA2KGS-2BLPkVtQCba3eQG98Kh8Ue6libV4eqaQznK9gmDQkzY80GkvOHTmhNsZKtPvPN=
+jBualZPqaAeflx0cpZ6N7Q-3D" shash=3D"UnYKurwfYe1i60styn9l4dpzYT6A1ilRHMGK79P=
+nvqfev4a7aapRYIotRwLb3HaiMXRZjHHYFedlAU/qeRWspjtzjov+pHjThlDYh3RMaa4+BztZ9u=
+tt+m6TnbZdBCi7VrHUyPaEIh5ssxmOYZHRfcbNdnJPT8lxn/I+mj5HFC0=3D" rel=3D"norefe=
+rrer noopener" target=3D"_blank"><img alt=3D"LinkedIn" src=3D"http://info.n=
+vidianews.com/rs/nvidia/images/nv-social_icons-gaming-li.png" style=3D"max-=
+width: 25px; border-width: 0px; border-style: solid; margin: 0px; width: 25=
+px;"></a></td>
+																					<td width=3D"10">&nbsp;</td>
+																					<td align=3D"center" style=3D"color: #ffffff;"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu10=
+515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv4LTxu2h3=
+RUHzCoDzw1zeSapNBjdvYmmI0NawRVamQ-2FWkPcS_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY=
+9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844Xp=
+CK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BEPDsEu0PAgS91nG=
+wOUwBhHO2I7rRLR0CBcFXiHSK8tiTyluwL-2B-2BqbDq-2FNDMDJ3CYYpOs0c6lCwauOFRib8ys=
+jfzU6HINbGI9qThNJIti8n3B42VLAhrNWM1NaWChP2hKoIaaFpphYR0R1t6Ai3LCIgvzU1uBDbL=
+TPoN5KLf-2FUUq4i2LIg4KX2r9qBcFQpUs7gN1259FUgdjME5VRiTcE5O-2Fob9R3XmEli4klLH=
+1mhf47xWFsHwTYqwErwCuZmn2GzBQ9-2BCYff6TimX4ACTAtw-3D&amp;data=3D02%7C01%7Cj=
+erry.teng%40utdallas.edu%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637381117105123109&amp;sdata=3DszCBMr1ywjhLMn=
+6KiUe5ZLUHgZa%2F3fHWpOzekuWTq5s%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/u10515711.ct.sendgrid.net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLv4LTxu2h3RU=
+HzCoDzw1zeSapNBjdvYmmI0NawRVamQ-2FWkPcS_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-=
+2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK=
+936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd-2BEPDsEu0PAgS91nGwO=
+UwBhHO2I7rRLR0CBcFXiHSK8tiTyluwL-2B-2BqbDq-2FNDMDJ3CYYpOs0c6lCwauOFRib8ysjf=
+zU6HINbGI9qThNJIti8n3B42VLAhrNWM1NaWChP2hKoIaaFpphYR0R1t6Ai3LCIgvzU1uBDbLTP=
+oN5KLf-2FUUq4i2LIg4KX2r9qBcFQpUs7gN1259FUgdjME5VRiTcE5O-2Fob9R3XmEli4klLH1m=
+hf47xWFsHwTYqwErwCuZmn2GzBQ9-2BCYff6TimX4ACTAtw-3D" shash=3D"pUhivCxiEoWorU=
+vTHDNJXMjX0HEDkXeV7LxvvUKYoj4zCDdCfi99bweUrGcp++Nv/9wLb4Uu2GWxP52fM5Vp+nAIn=
+KI/6SY0GBkBFmfnkWjxOzj1Y1sInOJErMpGZC7F4l6B8Q0k/sITlBY6elUbLJbNgeQ7e6aCHAVe=
+gYaH77g=3D" rel=3D"noreferrer noopener" target=3D"_blank"><img alt=3D"NVIDI=
+A Blog" height=3D"25" src=3D"http://images.nvidia.com/content/APAC/newslett=
+ers/icons/nvidia_blog_icon.png" style=3D"max-width: 25px; border-width: 0px=
+; border-style: solid; margin: 0px; width: 25px;" width=3D"25"></a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td align=3D"center" style=3D"padding: 30px 40px 30px 40px;" va=
+lign=3D"top">
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width: 100%; min-width: 100%;" width=3D"88%">
+													<tbody>
+														<tr>
+															<td align=3D"center" valign=3D"top">
+															<table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"width: 100%; min-width: 100%; margin-left: auto; marg=
+in-right: auto;" width=3D"88%">
+																<tbody>
+																	<tr>
+																		<td align=3D"center"><span style=3D"font-family: 'DINPro-=
+Regular', Helvetica, Arial, 'Sans-Serif'; font-size: 12px; color: #999999;"=
+><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuupLv=
+xV1eWdLC0vHkExpwhC35-2B6rbdX-2FO5gpQxw6Jc2QyOlUB3043ingXdVbs5EDdne4Bw-3D-3D=
+C3f4_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2Bd=
+paKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2B=
+g8psC6lA0f8y5NtH8qrdzu8SdtxtSm73e0lworunWueWEGYvuxw5beBtlUzEUQM-2FAyWxWv2FF=
+2Cbc-2BxQt-2Fi-2FpEtrcAmf-2BF2q-2BxGYBN0RkOBW1-2FmzOw6oLQcw7hA6qD-2BetFqQ8R=
+TUm9sFZMaIbmSv7BGk1c97qrwt1BVQdWB-2FuFltwTgkbNUXBLRzQybztd12WMRPEKWYTtyE75a=
+-2Fjka6cw2fAv3n7aHnUb2UGinWUdWAPTboSxtKQU4hcuPEctqEcuQiQ2hxtN7Z-2FCkqjCPV-2=
+B7-2BXQjkXC3lFv-2BHSPos77s-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C02bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637381117105123109&amp;sdata=3DOHY5nK24Fz0ykbw8Y5sqJ%2BEsi8IxzPW1nF2=
+pJYh23WI%3D&amp;reserved=3D0" originalsrc=3D"https://u10515711.ct.sendgrid.=
+net/ls/click?upn=3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B6rbdX-2FO5=
+gpQxw6Jc2QyOlUB3043ingXdVbs5EDdne4Bw-3D-3DC3f4_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-=
+2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz=
+844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrdzu8SdtxtSm73e=
+0lworunWueWEGYvuxw5beBtlUzEUQM-2FAyWxWv2FF2Cbc-2BxQt-2Fi-2FpEtrcAmf-2BF2q-2=
+BxGYBN0RkOBW1-2FmzOw6oLQcw7hA6qD-2BetFqQ8RTUm9sFZMaIbmSv7BGk1c97qrwt1BVQdWB=
+-2FuFltwTgkbNUXBLRzQybztd12WMRPEKWYTtyE75a-2Fjka6cw2fAv3n7aHnUb2UGinWUdWAPT=
+boSxtKQU4hcuPEctqEcuQiQ2hxtN7Z-2FCkqjCPV-2B7-2BXQjkXC3lFv-2BHSPos77s-3D" sh=
+ash=3D"k1HmKySlhj07/ZePHhrs/T3SzaQiQdLVkQ1kqqZ8yJkk/I23kf4v0L6QHgWwAGojUmmr=
+QCtMYUaMC1zJNw+ngW4RVZ3uqZbiMrk/eLVSBoGDydnF2qD4I+0rmy5HsyFZFJWBzj9nabYamk+=
+yneyBaM9pE+bxeeglHUUA77zfZnw=3D" rel=3D"noreferrer noopener" style=3D"font-=
+family: 'DINPro-Regular', Helvetica, Arial, 'Sans-Serif'; font-size: 12px; =
+color: #999999; text-decoration: none;" target=3D"_blank">Privacy Center</a=
+> | <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fu10515711.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DFckAc9WdDXs3u-2FWfuu=
+pLvxV1eWdLC0vHkExpwhC35-2B4ZZgY0OeO9uiCNyUtRgCcdfl5HdpNrtfEKOJL-2FHBBa0Q-3D=
+-3DZhN9_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-=
+2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK936kSfaf-2BpU0rtclfrP48gL028yGQ9=
+-2Bg8psC6lA0f8y5NtH8qrd99Krp1XHvy5HYI7QQbg-2FHFBtBXde2DQFhN8s6a13tU94ZIeIgf=
+Q51iyEemb22J0G0tbWEHtzzVR9hOnjadFH8KjqmLd7v6eFS6SPhXzpUwxCcQme9VBVupSlk-2BK=
+a5YNalJjX-2BSmM-2F8vgsG1Wf-2FIOMESeIr-2FnaWJK-2Bo84-2Fvb5SysfOoW6svdudrUGyc=
+uNVRyWnV32upz9isQANf8FQpmNT5skI8XNvZaLzOrZEAgVluRpK5rq0lKofPL5y4-2B-2FyAvHr=
+hz3sUkocxa5ZKRyy6kTAw-3D&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C0=
+2bb7d2880b64126bd2008d86ebfbd42%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%=
+7C637381117105133102&amp;sdata=3DeEodtm5heSVSt5IXXN1K3W4USCK5rB63RUUhFVwugh=
+U%3D&amp;reserved=3D0" originalsrc=3D"https://u10515711.ct.sendgrid.net/ls/=
+click?upn=3DFckAc9WdDXs3u-2FWfuupLvxV1eWdLC0vHkExpwhC35-2B4ZZgY0OeO9uiCNyUt=
+RgCcdfl5HdpNrtfEKOJL-2FHBBa0Q-3D-3DZhN9_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-=
+2BolxOiJDHkD3AL4NrA3j0KTmFcZf1l-2BdpaKV4KDyDnnKoyOBt2TStU3FuYu4KCNKz844XpCK=
+936kSfaf-2BpU0rtclfrP48gL028yGQ9-2Bg8psC6lA0f8y5NtH8qrd99Krp1XHvy5HYI7QQbg-=
+2FHFBtBXde2DQFhN8s6a13tU94ZIeIgfQ51iyEemb22J0G0tbWEHtzzVR9hOnjadFH8KjqmLd7v=
+6eFS6SPhXzpUwxCcQme9VBVupSlk-2BKa5YNalJjX-2BSmM-2F8vgsG1Wf-2FIOMESeIr-2FnaW=
+JK-2Bo84-2Fvb5SysfOoW6svdudrUGycuNVRyWnV32upz9isQANf8FQpmNT5skI8XNvZaLzOrZE=
+AgVluRpK5rq0lKofPL5y4-2B-2FyAvHrhz3sUkocxa5ZKRyy6kTAw-3D" shash=3D"CvicUVpp=
+Iet9BhxgdyjKjYGWOEEZ0tPp5Y6h4nLF4kL6UtQFWgEW7WePsPriTAU78oIuME4CgKfQsJsnsCM=
+Vl7mB09t3G234+n6GXUXb4i8PhvD7rUi7UkI+ySENPfS/VklU0oiYas0fbfA1gu0TuOdMi1oaJm=
+ZJRO+ZD6DUTCw=3D" rel=3D"noreferrer noopener" style=3D"color: #999999; text=
+-decoration: none;" target=3D"_blank">Contact Us</a></span></td>
+																	</tr>
+																	<tr>
+																		<td height=3D"5"><span style=3D"font-family: 'DINPro-Regu=
+lar', Helvetica, Arial, 'Sans-Serif'; font-size: 12px; color: #999999;"><im=
+g alt=3D"" border=3D"0" height=3D"1" src=3D"http://info.nvidia.com/rs/156-O=
+FN-742/images/spacer.gif" width=3D"1"></span></td>
+																	</tr>
+																	<tr>
+																		<td align=3D"center"><span style=3D"font-family: 'DINPro-=
+Regular', Helvetica, Arial, 'Sans-Serif'; font-size: 12px; color: #999999;"=
+>&copy; 2020 NVIDIA Corporation. All rights reserved.</span></td>
+																	</tr>
+																	<tr>
+																		<td align=3D"center"><span style=3D"font-family: 'DINPro-=
+Regular', Helvetica, Arial, 'Sans-Serif'; font-size: 12px; color: #999999;"=
+>NVIDIA Corporation, 2788 San Tomas Expressway, Santa Clara, CA 95051.</spa=
+n></td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<!--padding -->
+					</tr>
+				</tbody>
+			</table>
+			<!--inner table ---><!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    <![endif]--></td>
+		</tr>
+	</tbody>
+</table>
+<img src=3D"https://u10515711.ct.sendgrid.net/wf/open?upn=3DMGGRiqc4lL-2FL4=
+BMe4zMytnsquGILASSvJbu-2FHMoy9EUKptjOBlfHolQ-2FJY9gG142nhuwxqVBDPUGrhVmwfbi=
+bMPBlzVumh0aurOSLsxAlgBxctSHuNb0S2nrPeJPokzvrPXp23YgeH0grBcj87crhKZFdRMJWP-=
+2FOy1LmsH5ZqusRumJCrcBhyPjkz9mLxrbLDZIso2V9zcVgj57Or3DqgusXo2i-2FW1G1rrZQtP=
+o7khu5Cjxfzhcjdf5qOTIM6eLK0qwPeeE-2B4Zv55iho3j3GXd-2BQinIWaJsq4jsF2t1ZR8YwW=
+1HZVYCFrq6PwA-2Bv3qfcJ1TRfSgv3yLjhyPI-2BnUCAFdN9fjv0zyb8fosl9Tra1PqP6lm-2FB=
+mkTWBqz9eDBa4SlKzIO2T3rUBoLo4wVEIhcNWSxlEfZiEe-2F5OabDk1BTc-3D" alt=3D"" wi=
+dth=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:1p=
+x !important;border-width:0 !important;margin-top:0 !important;margin-botto=
+m:0 !important;margin-right:0 !important;margin-left:0 !important;padding-t=
+op:0 !important;padding-bottom:0 !important;padding-right:0 !important;padd=
+ing-left:0 !important;"></body>
+</html>

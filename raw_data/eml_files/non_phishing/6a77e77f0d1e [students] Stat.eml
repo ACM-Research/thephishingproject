@@ -1,0 +1,313 @@
+Received: from CY4PR01MB2311.prod.exchangelabs.com (2603:10b6:903:24::12) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 19 Oct 2020 13:36:50
+ +0000
+Received: from SN6PR08CA0028.namprd08.prod.outlook.com (2603:10b6:805:66::41)
+ by CY4PR01MB2311.prod.exchangelabs.com (2603:10b6:903:24::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.28; Mon, 19 Oct 2020 13:36:48 +0000
+Received: from SN1NAM02FT008.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:805:66:cafe::1a) by SN6PR08CA0028.outlook.office365.com
+ (2603:10b6:805:66::41) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Mon, 19 Oct 2020 13:36:48 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ SN1NAM02FT008.mail.protection.outlook.com (10.152.72.119) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Mon, 19 Oct 2020 13:36:48 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 19 Oct 2020 08:36:11 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 19 Oct 2020 08:36:11 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 43ED7C00005B; Mon, 19 Oct 2020 08:36:11 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (smtp.utdallas.edu [10.180.14.116])
+	by lists.utdallas.edu (Postfix) with ESMTP id DA5B9C000051
+	for <students@lists.utdallas.edu>; Mon, 19 Oct 2020 08:18:23 -0500 (CDT)
+Received: from utdex02.campus.ad.utdallas.edu (10.182.71.121) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 19 Oct 2020 08:18:23 -0500
+Received: from oitpintfpm701.utdallas.edu (10.182.71.238) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 19 Oct 2020 08:18:23 -0500
+Received: by oitpintfpm701.utdallas.edu (Postfix, from userid 100001)
+	id AC79016C554; Mon, 19 Oct 2020 08:18:23 -0500 (CDT)
+To: <students@lists.utdallas.edu>
+From: <announcements@utdallas.edu>
+Content-Type: text/html; charset="iso-8859-1"
+Message-ID: <20201019131823.AC79016C554@oitpintfpm701.utdallas.edu>
+Date: Mon, 19 Oct 2020 08:18:23 -0500
+Subject: [students] State of the University
+Reply-To: <announcements@utdallas.edu>
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1457
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-10/20201019131823.AC79016C554%40oitpintfpm701.utdallas.edu>
+Return-Path: bounce+jerry.teng==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2020 13:36:48.6203
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7ae0c566-fd15-4a45-0030-08d874340785
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT008.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 7ae0c566-fd15-4a45-0030-08d874340785
+X-MS-TrafficTypeDiagnostic: CY4PR01MB2311:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:5516;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+Content-Transfer-Encoding: 7bit
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2020 13:36:48.5483
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7ae0c566-fd15-4a45-0030-08d874340785
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR01MB2311
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8210186
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?TUsX7q1gX9WuQksstVOy1OaRs+gDPOjqWsg1KvVb8vh8rv3NzA5lWfKixG?=
+ =?iso-8859-1?Q?xnOTbDCJ896iDs7lo89/GWxOTYfmmJVfrJfDQGuQqY8sjOBv6V96N+I5B7?=
+ =?iso-8859-1?Q?7V+RZxtWtKh7DopHEXR/TVgyS93o8K0DiLIqv7cPuRV4QDQFVyvVEKeKKX?=
+ =?iso-8859-1?Q?pe+VZLlZYOTAhSYpS3xOiYdLHY62VHHt7Py/53A/YJA5nfVFDMwh+hJlNM?=
+ =?iso-8859-1?Q?hPt8v2hgFZqZf1ec0XIG5WcCxMvyGJe2XNmxE/PKQ0vUtmJdmfy1iAfOND?=
+ =?iso-8859-1?Q?8kF0sgjJZbCHF70O9FS5BmdcEZN+gtZ2B3X8AbNgy4slnqoJ8oApn4vG+c?=
+ =?iso-8859-1?Q?6udOHkumji0UPJ/dfW1vFKnr3F+A41Z9KQdT7hP+jlftRnOIWXZ7MW3C1a?=
+ =?iso-8859-1?Q?483W0TWvFl+qfA4v13oQVdD3eJ7by5wrkeNL8KbHdpK97RsmzxKbrZ+Vo0?=
+ =?iso-8859-1?Q?fFJ8VB8/8MMxoAIled+NbifDydP8A5FqF+MFX3yWuQNRDFpxoNhJvAZpRC?=
+ =?iso-8859-1?Q?KsgPa4fRAfuZlvlhVe+BcBoVjUuutt018tawHl7ptS6It5uOfidiYt6M5c?=
+ =?iso-8859-1?Q?DdjSOSxL1ZGh9KeJHrgakt/a5JVIPykRbeiIbVKGPI36yiHOnpSgm76ZX/?=
+ =?iso-8859-1?Q?GdJd8Vy+iVqx47WbpYirzoNWKGv82+PzWHLaBOZhTpirRgTZh7K7vMTFuH?=
+ =?iso-8859-1?Q?NnZUZRnSzIbksIUzYq3wJ4OGQEvV8j/Hg/kkk0KlB+avg8tguLntJQrIee?=
+ =?iso-8859-1?Q?PDehedL0UzpEroTVDSEIv1e5J3HXctXY/ja9CROXL5/9pxFtagiX2IZ57U?=
+ =?iso-8859-1?Q?BjZIBujo7KL1tYdWdn4WIxLerroMbxHebojkhXzYDIKYeoKGGNARqDT/dh?=
+ =?iso-8859-1?Q?/bzJsVbZ8v67rbMdh9q0833OV7wc9rH5Sk2IgizYzhstwQ9VscqfB25xRq?=
+ =?iso-8859-1?Q?/snQzePG22fV89SNLVz7umV4mv445p3ef8XACjWxV73H3+dE/0XGN0XK+D?=
+ =?iso-8859-1?Q?pGBuE0zNCyE3PhCL002e2bqF7rybgtMrBxH89SMFS3qIs6xTF8cK4VSnML?=
+ =?iso-8859-1?Q?tH6esJtwIUIX6kNQCAVX3iK3L+wWX3bnVQd0x5uDzAEEpltZQPZjVmXi4X?=
+ =?iso-8859-1?Q?0C4xZrFdqD7vfY1ihM+ebrsRNrb119nDOrGQoBtbqu2f5zsyElNlsBcdpN?=
+ =?iso-8859-1?Q?Tlk2EELLfAqjUkPd8W7guxwd5oXWk189syRG7hS6OeCf10k2OkKbZRZDLl?=
+ =?iso-8859-1?Q?H5QIRPr8Sh+AOKhZEby1q+m5tjT2OgOnomK7yuMGQm/WcoEy0zw6/nADCE?=
+ =?iso-8859-1?Q?8nWyo0eo48GuAbvsrl4eJge+4nuqprhtlT+/XQ9eOF72WADmqJDzt/h05L?=
+ =?iso-8859-1?Q?f/DvOuH8Lt8gvsu+QSx1J1V+bBMgpYKFUw/3vSD7kC3J/V3KYlYU2f6Zd7?=
+ =?iso-8859-1?Q?o5dmW4HH0pIgkiSFwfmdkvbKKJ6psRUA6jbClSO6wtoETMykmCc97QPhEc?=
+ =?iso-8859-1?Q?8Razl+BIT1cJC+qNu0UUszVRxh4+Fn/tXPuhZfGF7M7Od1kApnENV9pPVS?=
+ =?iso-8859-1?Q?o6D5IYQp+5h5CiUJaDaRIwTH2hF/LqFzZ8JamfFMCmK4+e74nA=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The University of Texas at Dallas</title>
+<!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse:collapse;}
+        table.main-table {width:600px;}
+    </style>
+<![endif]-->
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; max-width:100%; max-width:600px; height:auto !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration:none;}
+    .appleBody2 a {color:#fff; text-decoration:none;}
+    .appleBody3 a {color:#999999; text-decoration:none;}
+    .appleBody4 a {color:#818179; text-decoration:none;}
+    .appleFooter a {color:#999999; text-decoration:none;}
+    .appleEvents a {color:#404141; font-weight:bold; text-decoration:none;}
+  /* EVERYTHING ELSE */
+  	.icon{max-width:36px !important;}
+    @media screen and (max-width:600px) {
+      body[yahoo] .deviceWidth {width:280px !important; padding:10px 0 0 0;}
+      .deviceWidth {width:280px !important; padding:10px 0 0 0;}	
+      body[yahoo] .center {text-align:center !important;}
+      .center {text-align:center!important;}
+    	img{ max-width:100% !important; height:auto !important;}
+  	}
+</style>
+</head>
+
+<body link="#c95100" style="font-family:serif; min-width:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; background-color:#e3e3e3; margin:0; padding:0;" dir="ltr" lang="en-US" bgcolor="#e3e3e3" xml:lang="en-US" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+<!--[if (gte mso 9)|(IE)]>
+    <center>
+        <table><tr><td width="600">
+<![endif]-->
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#e3e3e3; max-width:600px; border-spacing:0; font-family:serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; table-layout:fixed; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" class="main-table">
+      <tr>
+        <td align="center" valign="top" style="font-family:serif; padding:0;">
+
+
+
+
+          <!-- START Header Image -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+                <tr>
+                  <td align="center" valign="top" style="font-family:serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">The University of Texas at Dallas</div><a href="https://www.utdallas.edu/"><img src="https://www.utdallas.edu/evites/templates/centaurus/img/utd-emblem-header-green.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+                </tr>
+            </table>
+
+          <!-- END Header Image -->
+
+
+
+
+          <!-- START Content-->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:19px; line-height:24px; color:#333; padding:45px 30px 10px 30px; background-color:#fff; text-align:center; ">
+                    <a href="https://www.utdallas.edu/" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ddd;">The University of Texas at&nbsp;Dallas</a><br><br>
+                    <em>invites you to&nbsp;the</em>
+                  </td>
+              </tr><!-- END Body Text -->
+              <tr><!-- START Heading -->
+                  <td align="center" valign="top" style="font-size:32px; color:#154734; padding:10px 30px; font-variant: small-caps"><strong>State of the University Address</strong></td>
+              </tr><!-- END Heading -->
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:19px; line-height:24px; color:#333; padding:10px 30px 30px 30px; background-color:#fff; text-align:center;">
+                    <em>by</em><br><br>
+                    President Richard C. Benson<br><br>
+                    Tuesday, October 20<br>
+                    2 p.m.
+                  </td>
+              </tr>
+              <tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:5px 0 15px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.utdallas.edu/sotu/" style="v-text-anchor:middle;width:260px !important;font-size:16px;" arcsize="10%" stroke="f" fillcolor="#154734">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://www.utdallas.edu/sotu/" style="background-color:#154734;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;">Watch Online</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+                    
+                    
+                    
+                    
+                    
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:19px; line-height:24px; color:#333; padding:10px 30px 60px 30px; background-color:#fff; text-align:center;">                    
+                    <em>with remarks from leaders of&nbsp;the</em><br><br>
+                    Academic Senate<br>
+                    Staff Council<br>
+                    Student Government
+                  </td>
+              </tr><!-- END Body Text -->
+            </table>
+
+          <!-- END Content -->
+
+
+
+
+
+
+
+
+
+          <!-- START Footer -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="border-spacing:0; color:#666; font-size:14px; line-height:20px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#f2f2f2;" bgcolor="#f2f2f2">
+              <tr>
+                <td align="center" valign="top" style="padding:30px;">
+                  <a href="https://www.utdallas.edu/" style="color:#666; outline:none; border:none;">The University of Texas at&nbsp;Dallas</a><br>
+                  800 W. Campbell Road, Richardson,&nbsp;Texas 75080<br><br>
+                  View this email in your <a href="https://www.utdallas.edu/evites/state-of-the-university-2020/index.html" style="color:#666; outline:none; border:none;">browser</a>.<br><br>
+                </td>
+              </tr>
+            </table>
+
+          <!-- END Footer -->
+
+
+
+
+          <!-- START Bar -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#154734;" bgcolor="#154734">
+                <tr>
+                  <td align="center" valign="top" style="padding:2px;">
+                    </td>
+                </tr>
+            </table>
+
+          <!-- END Bar -->
+
+
+
+        </td>
+      </tr>
+    </table>
+  </center>
+<!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    </center>
+<![endif]-->
+
+<!-- START Litmus Analytics -->
+<style data-ignore-inlining="">@media print{ #_t { background-image: url('https://cbxapalu.emltrk.com/cbxapalu?p&d=');}} div.OutlookMessageHeader {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} table.moz-email-headers-table {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} blockquote #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} #MailContainerBody #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')}</style><div id="_t"></div>
+<img src="https://cbxapalu.emltrk.com/cbxapalu?d=" width="1" height="1" border="0" alt="" style="width:1px; height:1px">
+<!-- END Litmus Analytics -->
+</body>
+</html>
+

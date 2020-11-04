@@ -1,0 +1,557 @@
+Received: from SN6PR0102MB3423.prod.exchangelabs.com (2603:10b6:805:10::23) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Tue, 20 Oct 2020 21:50:13
+ +0000
+Received: from SN4PR0501CA0134.namprd05.prod.outlook.com
+ (2603:10b6:803:2c::12) by SN6PR0102MB3423.prod.exchangelabs.com
+ (2603:10b6:805:10::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18; Tue, 20 Oct
+ 2020 21:50:11 +0000
+Received: from SN1NAM02FT016.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:2c:cafe::9b) by SN4PR0501CA0134.outlook.office365.com
+ (2603:10b6:803:2c::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.9 via Frontend
+ Transport; Tue, 20 Oct 2020 21:50:11 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ SN1NAM02FT016.mail.protection.outlook.com (10.152.72.113) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Tue, 20 Oct 2020 21:50:11 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Tue, 20 Oct 2020 16:49:49 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Tue, 20 Oct 2020 16:49:49 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id DC41CC000051; Tue, 20 Oct 2020 16:49:49 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id BEFA6C000052
+	for <ecs.all@lists.utdallas.edu>; Tue, 20 Oct 2020 16:40:24 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=Kathryn.Owens1@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  Kathryn.Owens1@utdallas.edu designates 40.107.236.76 as
+  permitted sender) identity=mailfrom; client-ip=40.107.236.76;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="Kathryn.Owens1@utdallas.edu";
+  x-sender="Kathryn.Owens1@utdallas.edu";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16
+  ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: Q54uInJHSNc6mjkWSsOC6JYtO1ktqRn3f43VkkC3Glwp6PW0iwwptO/ekKkpQUogcgZkE7/KxH
+ lMssNebeFj0Rz6mK1jjF8EuBFjrdwNYxuKPFmYUzV/a0kx9B5QfQp4883m5BSwtDo7xEVk8Apw
+ U/X0HdLr+vg6bB8xtvKgZX/jdI5nF7dJ+dw2BXvbUEbt8fHEOqr2uYyG3VfQg7yDHyRsQX920G
+ a47QXUibjXIGcGYTf8VqD0yPOsjah/j/jBZfa2iuJRS/FUnIEO8aoy/LTX+n88PL2UOTVbiMEd
+ CMuZYwHwMq2aFMWpS5OB4RH8
+X-IronPort-RemoteIP: 40.107.236.76
+X-IronPort-MID: 1196099
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0AkAAA5WI9fh0zsayhdAw4PAQEBAQkBEgEFBQFAgTsIA?=
+ =?us-ascii?q?QsBgSIvUWIVWCEHCCyMYmCiQRSBZgECAgkBAQEBAQEBAQEEAQMBIgsCBAEBg?=
+ =?us-ascii?q?WyCXgKCBiUBNAkOAgMBAQEDAgMBAQEBAQQBAQECAQECAwICARMBAQGBAWCBA?=
+ =?us-ascii?q?gGBRgGBKiMLAzEMgjcigxsBCQEMEwgBEgEBHQkSEQElAQEBCgITCQUQAQwCD?=
+ =?us-ascii?q?BQQAgEEEgEGAgYUgn8EAQGCSwMvAgyfZQGBKD4CIwESLQEBAgmBBSmIIYE7g?=
+ =?us-ascii?q?TSDBAEBBYEzAQMEg2gDVQEJgT8HAwaBOAGGUoFIgn6DfD6BD0WCGIM4FwQXg?=
+ =?us-ascii?q?QwhCBMrCRGDA4IsgUYBjmkQiiWBTIo6g0qEXwNeBIZJgUIDAwEDgmqHLAKBV?=
+ =?us-ascii?q?keRS4MWig0XlCCRUYVqhnKVQAIEAgQFAhAFgVQ4D4FKcoFsgQ0+EzoBAgECD?=
+ =?us-ascii?q?QECAgIBAQIBAQgBAQEBjhwMDgmBLoIgaoNUhVo+QzECAQEBMAMCBgoBAQMJf?=
+ =?us-ascii?q?I1MAQE?=
+IronPort-PHdr: =?us-ascii?q?9a23=3A2bRV/hHugcFTR7CwZ/2Y5p1GYnF86YWxBRYc79?=
+ =?us-ascii?q?8ds5kLTJ76psmzbnLW6fgltlLVR4KTs6sC17OJ9f+7EjVdvt6oizMrSNR0TR?=
+ =?us-ascii?q?gLiMEbzUQLIfWuLgnFFsPsdDEwB89YVVVorDmROElRH9viNRWJ+iXhpTEdFQ?=
+ =?us-ascii?q?/iOgVrO+/7BpDdj9it1+C15pbffxhEiCCybL9vLhi6twfcu8cZjYd/Kqs8yA?=
+ =?us-ascii?q?bCr2dVdehR2W5mP0+YkQzm5se38p5j8iBQtOwk+sVdT6j0fLk2QKJBAjg+PG?=
+ =?us-ascii?q?87+MPktR/YTQuS/XQcSXkZkgBJAwfe8h73WIr6vzbguep83CmaOtD2TawxVD?=
+ =?us-ascii?q?+/4apnVAPkhSEaPDM/7WrZiNF/jLhDrRyhuRJx3pLUbo+WOvp/YqzScsgXRX?=
+ =?us-ascii?q?BdUspNTSFNHp+wY5UJAuEcPehYtY79p14WoBewHAetCv3gyjlThnPuwKY01v?=
+ =?us-ascii?q?4uER3G3Aw6H9MOtnrYp8jyOakXS++10KnIzS/DbvNQwzvz8YbJfQ4nofGXQL?=
+ =?us-ascii?q?59atfRyVUyGAzfilWQrZbqPyiP2usTrmeb8vNtWOSygGEotw9/uCKgxtswio?=
+ =?us-ascii?q?bXnIIVzEjJ+ytlzYsrJNC1R1B2bNGlHZZTuS+WK4p7Tt4/T2x0uSs21rkLt5?=
+ =?us-ascii?q?G4cSUX1Jgq2R/SZuCbfoWK/B/vSPidLSpkiH9jZbmxiRGy8U26xe39UMm5yE?=
+ =?us-ascii?q?tKrjZYndbWsnAN0wbc6tOdRvRj40ihxC6D1wXS6u5YO0A0krHbK5kvwr4sjJ?=
+ =?us-ascii?q?YcrUPDHirulEXxka+WakEk+u+v6+TkeLnpupicN4pshgH6MqUunNCwDf4kPQ?=
+ =?us-ascii?q?gJWmiX4f6z1L758kHjRbVKlfs7mbTavpDCPckWqbK1DxVI3oo/6RuzFSmq3d?=
+ =?us-ascii?q?oZkHUdLl9IeQqLg5boNl3SLv31CPSyj0ivnTt2wv3LPaHuDonTInXGjrjuY6?=
+ =?us-ascii?q?hx5kxZxQYu0dxS6JFZB7QOLf3vXkL+qdnVAxA4PgOowevqDdZw24cFVm2UGq?=
+ =?us-ascii?q?OVLqLfvUOG6+8qPuWAeJQatTf4JvQ7+/Ljjno0lUIecKSt2JYabW60EupgLk?=
+ =?us-ascii?q?6Ee3TjmM0BHn0PvgcmTOzlllmCUTlLaniqQ68y4Sw3BJ+/AYreXo6gg6WN3C?=
+ =?us-ascii?q?CgEZJIfGxGDU2MEWvzeIWDRvcMbj+dLtV5kjweUrihV5Eu2g2ytA/7zLpnKP?=
+ =?us-ascii?q?DY+ioFtZL/0Nh14OrTlRIo+TNoCMSd1nmBT2BynmwWWz87xK9yrVBnxlueza?=
+ =?us-ascii?q?R1geZUGcJd6v5ISAs3N5/Rw/R/C9/oWwLBetmJSEyhQtWjGTw/S8g+w8MOY0?=
+ =?us-ascii?q?ZnG9SiiArP0TOkArALkbyLH4E4/7nB33jtOsly0XLG1K07gFk9WMdAK3Cphr?=
+ =?us-ascii?q?Nn+wjJG4HJi1mZl7qtdakEwiHC6HyDwXCUs0FcVA59SqHFXXEEZkvKttT1/F?=
+ =?us-ascii?q?7CT6OzBrs9NgtBzdSNKrBQZtL3kFpGWaSrBNOLbmmq3W60AV7cy7iXKoPuf0?=
+ =?us-ascii?q?0Z3T7BEw4Zjwwa+XKPLk4zCjr38EzECzk7X3XwbkX3taFdoW+7VF4yhUneTE?=
+ =?us-ascii?q?R916Ck/FgymvGaUKo7w64IsSMloi4yEVqgiYGFQ+GcrhZsKf0PKeg2501KgD?=
+ =?us-ascii?q?qD7V5UI4CgIqZ+h1UXbwVwuQbU2g5qDplbzpV4oWgjlkxyIv7FjAoEK3WZxZ?=
+ =?us-ascii?q?D1KvvcLWyhtAu3Zfvu00rFmM2T5r9J7f05r1v5uwT8NUM+82921Z9yzHaa/c?=
+ =?us-ascii?q?ziERYeWJb1W11x+hRn/uuIWCQ26oLK2HEpCpGa72ScieogH/Btihu7do0ZMK?=
+ =?us-ascii?q?jYSVOrVpFcBtCuLfxskF+sPFoIO+Vb9ah8OM3DFbPO+6e3PPxxmnSBkmlB+9?=
+ =?us-ascii?q?lVz16A/i54Q/WO0poYi/2VxQqIUT7ggUzp7pixwNgbI2tJQCzgl2DtH+szLu?=
+ =?us-ascii?q?VqcJwOCHuyLsH/3dh4i5P3GjZZ+FOlG1IayZqscBuWYUb62F4Y3kAWrHq73C?=
+ =?us-ascii?q?qgmmAs1Whx8ezFh3KInLqxEXhPcnRGT2Rjk1r2dIWvhopcXEP0MlRw0Ufj5F?=
+ =?us-ascii?q?76wrgdr6N6fAyxCQ9FeTb7K2Z6X+6+rL2HNoRs4Y8oqzRRFsOjbFaBE5bgvx?=
+ =?us-ascii?q?cT1yfqBC1TyC1xJFTI8t3p2gd3jm6QNiM5j3PFedthw1H4+9HaXqd5wyYKTS?=
+ =?us-ascii?q?18gCKRC1ShdYrMn53ch9LIteawUHikX5tYfHzw1Y23sy2/9D4iEVilkvu0gN?=
+ =?us-ascii?q?GiDRki3HqxyYxxTSuR5kWZAMGjx+GgPOlgZEUtGFLs958wBNRlioVpzJAIhS?=
+ =?us-ascii?q?pG3tPEpzxf1z+0aIgT2LqiPiZVA2dTnJiNplCigRMGTDrBxpqlBCjHhJI5P5?=
+ =?us-ascii?q?/iJDtRg3517tgWWv7MsPoYwm0t5AL/9F2ZYOAjzG0UkaJ8sSdD0e9V4FJ/nG?=
+ =?us-ascii?q?LBUtVwVQFZJXK+zR3QtoLn9fwFajr3KurikxYu1dGnB7WfrgwOQ273dtE6By?=
+ =?us-ascii?q?hs485jMVXKlnru9oXjf9qWZtUW03/c21LJi+wfccNjpr8xnSNifFnFkzggwu?=
+ =?us-ascii?q?8/gwZp2Mjm7pWbJ2xp+KuiRBNUK2+sag=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,399,1596517200"; 
+   d="jpg'145?scan'145,208,217,145";a="1196099"
+X-MGA-submission: =?us-ascii?q?MDGxnNTLC8VL2uN0LP6pZHRa7covrIru+MEJlp?=
+ =?us-ascii?q?F2sl1mlw9vlZ0a0e9no+igfQiTPlkLAE/EzwfgsV+1cpprwmP25N/fDc?=
+ =?us-ascii?q?9tprOS9Ntz8E0zg01yLFMf6hQW0PhYdWfTlytYF5xU68Syt6RVxzaiIE?=
+ =?us-ascii?q?6b?=
+Received: from mail-bn8nam11on2076.outbound.protection.outlook.com (HELO NAM11-BN8-obe.outbound.protection.outlook.com) ([40.107.236.76])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 20 Oct 2020 16:40:21 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=dx3h/BGDfX0fvRXHj8NwT1LEJi49cn1/bhe8NUW0WC1ikyxCJc5ClxiLU++7HZY+LVNrgWRk+pa8NvYtWFRUeUi0oBMafF2rh9Pu3ZeTdG0QmWsS11NnrnntqwjTUohs+IudV0r/34FJRa4gZIm3vPq/CO5dSKUkjZsFHwobBaBInZf22ztwAJt0XLGP1qhac0YJ5D95e5Ljb9j0yIbr3+9Qg8xFaxkf1dlwuVE3zWRwnwHvJMW5xihGFH/VcD8L1K3ucms3MM/EqcqIVgnj6+i2w3vrEgh5Rntkp5UeJ1ohBs2CzaCN0zqG8Y1zyvSKPRjVwWyWOrVdL0LKg1ovkQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=F2uGIDnMxT8u+mLuYQt/HFcT25XzOzx8gufU5+t0KpA=;
+ b=Hsnvqr9dk2iB4ga1qkWOOryY04ZrM7/vtF5p71lAPPN4VJkLqB1jNGCDvaVskYHZjHEFUAnQZdYgGpav1aUNFyFZwbcV3JlAinrnHVILYzxNIdV2Hpg3owaaUhTkYVxcOhHw6d8cDVlDhHuFpHkPVUiAbR8B3XKEUWfl29/xrWiixAN8s1sZ3J30Ob4v2JNkUqGWuBP7je/h/ybMV89gI84yLhuPd4CDL2NI94jfC7SK9ngSHqMjs3RKf44s8+1taySgzUWBdWEKW1fjrz4NM+lT0WD7v4+eAqpnFUT5q6bpGY1pQLM9dTVajood5JuLc36nBHuQik1cNZJwGrj+bQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=F2uGIDnMxT8u+mLuYQt/HFcT25XzOzx8gufU5+t0KpA=;
+ b=OBYZ0q0Jgl/HL9DBr28ouumUOSl0CCAl0ZlS3++HQbpFY1oy1WlZhv7Dvw70N34h90ZUXbkAtljY8JgHnYCAte84MNCVQcrdHWL09pTpvkNiT2Q9tm/MbC5oJpNOo8wvVl+JoVWXXG4iEHe2GDZn7hAnPu6AYyjettWbzpnLspo=
+Received: from MN2PR01MB5773.prod.exchangelabs.com (2603:10b6:208:189::22) by
+ MN2PR01MB5967.prod.exchangelabs.com (2603:10b6:208:192::32) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.28; Tue, 20 Oct 2020 21:40:18 +0000
+Received: from MN2PR01MB5773.prod.exchangelabs.com
+ ([fe80::58f9:307:3f7d:848c]) by MN2PR01MB5773.prod.exchangelabs.com
+ ([fe80::58f9:307:3f7d:848c%6]) with mapi id 15.20.3477.028; Tue, 20 Oct 2020
+ 21:40:18 +0000
+From: "Owens, Kathryn" <Kathryn.Owens1@utdallas.edu>
+To: ecs.all <ecs.all@lists.utdallas.edu>
+Thread-Topic: Quantum Seminar Series
+Thread-Index: AdanKZIZJC7PHqZ4Q6qXryupbrRHkQ==
+Date: Tue, 20 Oct 2020 21:40:18 +0000
+Message-ID: <MN2PR01MB57738D3A128D217FE047FB36BA1F0@MN2PR01MB5773.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [2603:8081:8c02:ee27:1048:4c9d:46c7:89bb]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 95d1fbd2-b912-4dc1-7261-08d875421eac
+x-ms-traffictypediagnostic: MN2PR01MB5967:|SN6PR0102MB3423:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <MN2PR01MB5967BBE2E75D78F691C5EE45BA1F0@MN2PR01MB5967.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8273;OLM:8273;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ j/3dj3jpD8bu7mI5KREWJH9i+zQgcpTbo2vjkE6uToITrwGbB4o2xz7O1y5cmQW6jRRSRTJHDnl3z1vhZNHh9iwByzGq1aRr7hdDBjlz9a1KuELEylabmzOMoeahtssqOAkaf+K/mGnTC0VT6z0HDcFIYmcubOyyUs0GS54L+o+z54uzvUCE5favS6IkQJD9YqcVTB0Nqdwo5bQzjhtvP7Qz04V20o3EaajdSWsFiHKhCml/ifaD2bUNvwt2mMfgEdvbuobuigQT7DHcLCvs3MU9zNpLbcxx6gr+nq5p0Mr57o5CIKRTgnHy6fGlr6UV+spi/r9EQN2UgQ5M9QhRLJMhoboNUy89QGGffgj5/HxNM8knEyv45EO377b886Idxd11QkWqgipVJ6drahtETg==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MN2PR01MB5773.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(376002)(396003)(346002)(366004)(39860400002)(136003)(66946007)(55016002)(75432002)(316002)(478600001)(296002)(45080400002)(6916009)(86362001)(8936002)(9686003)(8676002)(966005)(7116003)(786003)(186003)(2906002)(66556008)(64756008)(66476007)(33656002)(71200400001)(7696005)(6506007)(76116006)(66446008)(3480700007)(5660300002)(52536014)(166002)(83380400001)(99936003)(66616009);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: /2A5Y2HeFytJCGrOHaZJk7bhoBbdmXgwPgLToKSGEIzBDTmI0kSCcqMJxveTpTl04Gjy8um7V8F3X5Sl4kB97LC71QOUT7RVBHV1QztDp2tDiSaAmuskSXCWKT+LAxtiQb7n2wCsn0P/SYMfHmboKzyKU0/7VqR35WZKWoP/MOcPrn1XPodk/dVZP2iVkSReBis9DqLdeUOF37L+cdBC2T9g0aUFMIWCfQYWvn8CtB1I+UTWKuFlpXh5TPXpKyxUhHLjDI4+1VfuY5iet0CTR1P1ud826RQ7JtCY1EPu4eKgFKIN1JgETD93q2bFjHdT9DoiTZJFyC6xGUPH+GsIWZxgy/AJqyFBmFQsZCyJCrLBn1kLgNnavgL843rHqp+qviBsgiWTpOlLNx0a7A6TbicMP5cHtKxvK5tLf6/FA2DLuVtBKOXMyGDOtRvUWJE94KE7qv9wT9q3rxB7HqdgNM/2T4DFBVpuG9r6/VMHtnYHJfZ2Fz0jAbu04jnirlt1P6V/PsJUq5hNnkZ8Nw33QCxt39Ft0QggcYgo+PAghxosjrDkbbBcyUZ2WQQjvBKZQT13CjjTJ9GxcfXK6HqqaTz4Rg5EpdW0zX+0MxXt+wSQ3CRHIBIf6d3yVPzlfx19UP/wsk5p+SzLoJ2Q3U+Dml4eLW8rwao37ivdQ7oIU79LId0HQ9sT1l9MrbI6WrNnB0pLMRsk/CNSaK+KAb/yXA==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/related;
+	boundary="_004_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5967
+Subject: [ecs.all] Quantum Seminar Series
+Reply-To: "Owens, Kathryn" <Kathryn.Owens1@utdallas.edu>
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1370
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/MN2PR01MB57738D3A128D217FE047FB36BA1F0%40MN2PR01MB5773.prod.exchangelabs.com>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5291996@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2020 21:50:11.5834
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 95d1fbd2-b912-4dc1-7261-08d875421eac
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT016.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT016.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT016.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ d5ac26f5-3667-4c4d-284b-08d87540bd52
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 2
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2020 21:50:11.5074
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 95d1fbd2-b912-4dc1-7261-08d875421eac
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR0102MB3423
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2545058
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?X63TAjxNjDirPYLU+/VQaMP4wtWYW5T7ipQ654s3XuzFHhGbxOCZCs2Y?=
+ =?Windows-1252?Q?QEQGkCUSDnJ5bIn0oKfCwDznTtfvZqV39ad1sHqWSRl//2vvmDGk9toL?=
+ =?Windows-1252?Q?a3xWvCyT7busxvAwjwOy22a7wzL6QeBX6GbuJyj5wgEypbrHQJMDepYH?=
+ =?Windows-1252?Q?MT66yobu15cHRRWYpbRNLW8bsTEcVEtWE8UoM1RT+QI6JhNE35LmBw+9?=
+ =?Windows-1252?Q?i8pp7uCtkDc7327he+rsQ0qRFG0nXUJHmrSAcVIoxfq/4Jo/Kt10CCcl?=
+ =?Windows-1252?Q?8IvLRmh+VSVuiksLpeQGaqrk3FV0m1a8vqcDQjUN8Ck+l/K1sAs+kGNX?=
+ =?Windows-1252?Q?2v/3MbBlr6oUhYcq+DoSl3ZHvDiX1xrqKj1mwOKOwrFnpSfwf1FxROtl?=
+ =?Windows-1252?Q?gmUDC3EZ4DfUacYBRT/SupXlLbMs7uDw+55dQPjtNx2Nd3MjcMSmJqO3?=
+ =?Windows-1252?Q?HfCqP+brRDYaV0Tbn69Ens6unXdHNgWylRisb5yYCG3BNTIU2ZrBj7LK?=
+ =?Windows-1252?Q?pAQMFnGfMWjXKX3g91YwP0Agb76F4vnUX+lGtkTF1t0y/7a2xBIzvqPM?=
+ =?Windows-1252?Q?zB7nyzWkKy7Y/Nf/2FNytQW4a4yCfl8wSF8LrtEsEdkF4IyA0hI7e/rd?=
+ =?Windows-1252?Q?ymYDeYeuIS6rLRtfFPpjuvzCCT6LaVhhOOSgnglc8hshouJLok46Y1rW?=
+ =?Windows-1252?Q?3rSfEPdI3GGTwQcLKIHevBjke5Bb5kPlnJmdwFPlzFdbxExZA9WFWylQ?=
+ =?Windows-1252?Q?taIp6GE99M1dC/kGKNF6v4gAzwyfrXhTs9P9Z1S9tJmZeplcP7UDk9DJ?=
+ =?Windows-1252?Q?m+G0ZRvHUNofijEx38EWGGdr5ernYdO2YyguXm19xDwBFZyFQZGzPmUt?=
+ =?Windows-1252?Q?/qbncQ3m9sQ4DHXWa9sBbtK9cU0gEvW4CGyxZ7R3K5EgkBSyxToqxztx?=
+ =?Windows-1252?Q?wrtGkbN/C+XNZ49YJ88rABEcKI16a0kKd3GJwrt49tFULQ+lQCtei1uC?=
+ =?Windows-1252?Q?0JELzQShOQ5+1kLjlza5vZKjDnU84Xa1MuK/DUD0M9mAIqzccwpD+OVf?=
+ =?Windows-1252?Q?wGjU1YCJ/RLgKQpdqCYSsPbDT0o9F3sYXDsGwHrRewTAuMMqUzSwB/cG?=
+ =?Windows-1252?Q?SHUUJ3FRSv3CHo4zxlJzbHQoFiG0J8cgH3Yv8hpBSXjJYfLiolFmKzz6?=
+ =?Windows-1252?Q?IrJf9uENM1G5cGfMBVJekJFGbU99yMXLgVZDIHkCjC+EjqDR26Jbpo2B?=
+ =?Windows-1252?Q?J+zzHOtYM9dKamTkPC8A9GLkpvYUZtl3xg+GlJJDJIeJFJdYEJ02WQbv?=
+ =?Windows-1252?Q?AY0woz5M6d0ukd/Cy3VdsMKjVIsBdHauj74W2CHkbQat9oap+18MtmUH?=
+ =?Windows-1252?Q?P6UM5SVD4btM3fJYBQ+gZ5lvZ9rE0FYImP6PP/v0Bqdf83GTXJGSKXBF?=
+ =?Windows-1252?Q?1U6Lnb/BBQg3DZYRx3v9/UH4uVcmOo/F5ZUuERWgTKRVYMmXpED739nM?=
+ =?Windows-1252?Q?XUJwyTR/nfTRBwz53wiRZP8heLePuE2hXpl6OtfLf1ZOu8Q/zTaJdJy8?=
+ =?Windows-1252?Q?gbCfQlp0YnurJguyKyf6aURxjN3URsTPgMmFcuPnrO504+xltafxx0Nm?=
+ =?Windows-1252?Q?P3XPw60+M5abYm8mD/nu6JASuksyE7wfGPOyqTVPe48xO0aUD5cWkPsD?=
+ =?Windows-1252?Q?CSWlHdjcoQo=3D?=
+MIME-Version: 1.0
+
+--_004_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_
+Content-Type: multipart/alternative;
+	boundary="_000_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_"
+
+--_000_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+Dear colleagues,
+
+Please join me this Thursday, October 22, at 1:00 PM for our quantum semina=
+r series. Our speaker this week will be Marina Radulaski from UC Davis. Pro=
+f. Radulaski has led investigations into novel color centers in semiconduct=
+ors, which are promising platforms for exploring and utilizing quantum mech=
+anical between light and matter. Here talk is entitled "Color Center Quantu=
+m Nanophotonics." More information can be found here: https://centers.utdal=
+las.edu/qdc/seminar-series/
+
+The talk will be accessible via MS Teams using the following link:
+
+Join Microsoft Teams Meeting<https://teams.microsoft.com/l/meetup-join/19%3=
+a23dfffb73d9b4351943a4459876c5536%40thread.tacv2/1599500659736?context=3D%7=
+b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a%22de=
+5ed43e-8453-46d2-b10f-2af01a17ac01%22%7d>
++1 737-220-2208<tel:+1%20737-220-2208,,328376199#> United States, Austin (T=
+oll)
+Conference ID: 328 376 199#
+Local numbers<https://dialin.teams.microsoft.com/6eb18d3a-9fbc-4cc6-8e11-3e=
+b9074615da?id=3D328376199> | Reset PIN<https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fmysettings.lync.com%2Fpstnconferencing&amp;=
+data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C95d1fbd2b9124dc1726108d875421e=
+ac%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388274136729262%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C1000&amp;sdata=3DYOxmaZWlvoxVZSPhauBbN9T%2F5mhEd60YCAKpvlC%2B5vc%=
+3D&amp;reserved=3D0> | Learn more about Teams<https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Faka.ms%2FJoinTeamsMeeting&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C95d1fbd2b9124dc1726108d875421eac%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637388274136729262%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DvOjxNcVdRygaDwmNQLRmDuVTGlFR1M03E97MO7BP6JQ%3D&amp;r=
+eserved=3D0> | Meeting options<https://teams.microsoft.com/meetingOptions/?=
+organizerId=3Dde5ed43e-8453-46d2-b10f-2af01a17ac01&tenantId=3D8d281d1d-9c4d=
+-4bf7-b16e-032d15de9f6c&threadId=3D19_23dfffb73d9b4351943a4459876c5536@thre=
+ad.tacv2&messageId=3D1599500659736&language=3Den-US>
+
+Hope to see you all there!
+
+Best,
+
+Dr. Michael Kolodrubetz
+Assistant Professor of Physics
+University of Texas at Dallas
+mkolodru@utdallas.edu<mailto:mkolodru@utdallas.edu>
+
+
+
+----------------------------------
+Dr. Michael Kolodrubetz
+Assistant Professor of Physics
+University of Texas at Dallas
+mkolodru@utdallas.edu<mailto:mkolodru@utdallas.edu>
+
+
+
+Kathryn Owens
+Administrative Assistant
+Department of Systems Engineering
+The University of Texas at Dallas
+800 W. Campbell Rd. EC39, Richardson, TX 75080
+P:972-883-4479
+[cid:image001.jpg@01CD64B9.66F65740]
+
+
+--_000_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Segoe UI Semibold";
+	panose-1:2 11 7 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear colleagues,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please join me this <b>Thursday, October 22, at 1:00=
+ PM</b> for our quantum seminar series. Our speaker this week will be Marin=
+a Radulaski from UC Davis. Prof. Radulaski has led investigations into nove=
+l color centers in semiconductors,
+ which are promising platforms for exploring and utilizing quantum mechanic=
+al between light and matter. Here talk is entitled &#8220;Color Center Quan=
+tum Nanophotonics.&#8221; More information can be found here:
+<a href=3D"https://centers.utdallas.edu/qdc/seminar-series/">https://center=
+s.utdallas.edu/qdc/seminar-series/</a>
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The talk will be accessible via MS Teams using the f=
+ollowing link:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://teams.microsoft.com/l/meetup-join=
+/19%3a23dfffb73d9b4351943a4459876c5536%40thread.tacv2/1599500659736?context=
+=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oid%22%3a=
+%22de5ed43e-8453-46d2-b10f-2af01a17ac01%22%7d" target=3D"_blank"><span styl=
+e=3D"font-size:13.5pt;font-family:&quot;Segoe UI Semibold&quot;,sans-serif;=
+color:#6264A7">Join
+ Microsoft Teams Meeting</span></a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"tel:+1%20737-220-2208,,328376199# " targe=
+t=3D"_blank"><span style=3D"font-size:10.5pt;color:#6264A7">+1 737-220-2208=
+</span></a>
+<span style=3D"font-size:9.0pt">United States, Austin (Toll) </span><o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt">Conference ID: </spa=
+n><span style=3D"font-size:10.5pt">328 376 199#
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"https://dialin.teams.microsoft.com/6eb18d=
+3a-9fbc-4cc6-8e11-3eb9074615da?id=3D328376199" target=3D"_blank"><span styl=
+e=3D"font-size:9.0pt;color:#6264A7">Local numbers</span></a> |
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fmysettings.lync.com%2Fpstnconferencing&amp;data=3D04%7C01%7CJerry.Teng%=
+40UTDallas.edu%7C95d1fbd2b9124dc1726108d875421eac%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637388274136769237%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DY=
+DofmSKhBs6ohKPuKQ5ziFFbkH7kTCv4gi6W1HrCl%2Bg%3D&amp;reserved=3D0" originals=
+rc=3D"https://mysettings.lync.com/pstnconferencing" shash=3D"aBkKSI0biDBYxY=
+d+e0Xgc80weyOGcJNzuJFJooaev5YlWt1drXQo6K+yXIVHHn6SE93pLWaiQA1M+MjZHPN49IYDx=
+/UZ8VO3huhj9FFSebLfISDmcPPUrwQeUKyfO/xXt9O/MAX7zC3A37rdXWeoQO+GBrFyMMB6A62m=
+bHogZ9k=3D" target=3D"_blank">
+<span style=3D"font-size:9.0pt;color:#6264A7">Reset PIN</span></a> | <a hre=
+f=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fak=
+a.ms%2FJoinTeamsMeeting&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C95=
+d1fbd2b9124dc1726108d875421eac%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7=
+C637388274136779234%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D2j7WEpfC1P3ivt3egiLj=
+80nARKY4vS9Qe0RVibpL8lE%3D&amp;reserved=3D0" originalsrc=3D"https://aka.ms/=
+JoinTeamsMeeting" shash=3D"XdywVTyiehMcyTEZOWNrtRoGMFmbQ1xI7fxGsOfVJIrGNeJQ=
+4swX8NNi/nYFyF6IrDuXK4n+mtCM+OAcOgwJ9+d39oqZwnKTBk9krRKFJ3vXHdkfI1MIxCyg6ph=
+IdTf20lEBT47E/DA2NSAOEZMRPYrz5Bl3G5XN6Bt3QLABwaw=3D" target=3D"_blank">
+<span style=3D"font-size:9.0pt;color:#6264A7">Learn more about Teams</span>=
+</a> | <a href=3D"https://teams.microsoft.com/meetingOptions/?organizerId=
+=3Dde5ed43e-8453-46d2-b10f-2af01a17ac01&amp;tenantId=3D8d281d1d-9c4d-4bf7-b=
+16e-032d15de9f6c&amp;threadId=3D19_23dfffb73d9b4351943a4459876c5536@thread.=
+tacv2&amp;messageId=3D1599500659736&amp;language=3Den-US" target=3D"_blank"=
+>
+<span style=3D"font-size:9.0pt;color:#6264A7">Meeting options</span></a><o:=
+p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hope to see you all there!<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Best, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dr. Michael Kolodrubetz<o:p></o:p></p>
+<p class=3D"MsoNormal">Assistant Professor of Physics<o:p></o:p></p>
+<p class=3D"MsoNormal">University of Texas at Dallas<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:mkolodru@utdallas.edu">mkolodru@ut=
+dallas.edu</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">----------------------------------<o:p></o:p></p>
+<p class=3D"MsoNormal">Dr. Michael Kolodrubetz<o:p></o:p></p>
+<p class=3D"MsoNormal">Assistant Professor of Physics<o:p></o:p></p>
+<p class=3D"MsoNormal">University of Texas at Dallas<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:mkolodru@utdallas.edu">mkolodru@ut=
+dallas.edu</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;font-family:&quot=
+;Bradley Hand ITC&quot;">Kathryn Owens<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ca=
+mbria&quot;,serif">Administrative Assistant<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt">Department of Syste=
+ms Engineering</span><span style=3D"font-size:10.0pt"><o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt">The University of T=
+exas at Dallas<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt">800 W. Campbell Rd.=
+ EC39, Richardson, TX 75080<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt">P:972-883-4479 <o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><img border=3D"0" widt=
+h=3D"93" height=3D"33" style=3D"width:.9722in;height:.3472in" id=3D"Picture=
+_x0020_1" src=3D"cid:image001.jpg@01D6A6FF.B10192F0" alt=3D"cid:image001.jp=
+g@01CD64B9.66F65740"></span><span style=3D"font-size:14.0pt;font-family:&qu=
+ot;Bradley Hand ITC&quot;;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_--
+
+--_004_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1477;
+	creation-date="Tue, 20 Oct 2020 21:40:18 GMT";
+	modification-date="Tue, 20 Oct 2020 21:40:18 GMT"
+Content-ID: <image001.jpg@01D6A6FF.B10192F0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAhAF0DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2avOP
+F3/IyXH+6n/oIrrpfFelwSvFLLIkiHDK0TZB/KsCWOw8Qavqdz+8eOKASIysVzhcEEEe1edjZRrQ
+UISV7/oz0sFGVGbnOLtb9UXvB+q2UOlLay3Ecc4djtc4yCeME8V07SxopZpEUDuTivLbOO1lhle5
+jcKrp8yv0Utg8Y54q+LGwfQJtSEE3yT+WIzN1XjqcdeaxoYyUaajZaL8F8jbEYOEqjldq77dX8z0
+UHIyOlLXL+GbqIaZqEVlM2YnMkYk+YhSox+oIp9treoP4cGrN5Mm0kyQ7SuVBxwc9a7o4mLim+zf
+3bnBLCyUml3S+/Y6Wisxddtnm0+MZ/01SyE/w8ZAP15H4U59UZNcTTvIBLxeb5m/tnHTHWtfaw7m
+Xsp9vM0aKzr3VGtNStLQQBzdEhX34245ORir0siwxPI5wqAsT7CqU020uhLg0k31H0VmR65BJoJ1
+Ta3lqhZk7gjjH50kmq3CJG8Vn9pjkXIeCTcPp0qfaw3uV7Gd7W8il4r0T+0bP7RawhruMjp1de49
+/Wsrw1pV5BbXc00LrFcRtBjad6n+9t7iu2orGWFhKr7TqbQxc40vZdDymREs7ea381JZHZQdgICh
+SeuQOc9qvxXlsPCktgZx9peYSBdrdOOM468Ve8Z6OLa4GoQKdkxxKAOFb1/H/PWrvgnTrZ7Jr541
+efzCqsedgGOleZChNVnSXb8D1J14Ogqr7p/Mb4b0K9sba6uJ4sPPDsjiz8349hU9ppWoJ4X/ALKM
+CxyyEq8jOCqqTnPHJOO1dPRXpxwkIpJN7NffueXLFzlJyaW6f3bHM3WhXD6MI7fzFuIHUwKSvG3g
+HPuMnr1NWRb3r+IbfUJLRgi2vluA6khyc8c9K3aKv6vFO6fb8CfrMmrNd/xMG5t7+61fT7t7Qqlu
+8hZQ65CkYHfk96uSm9upPLaBoYTIPm3KSFHOTz3OBj0FaVFUqKV9XqS6zdtFp/w5z1pYX2ny6jDF
+bCe1mcSRh2UAkkbwR2BGarSeHr2O5dtFmfT4WALo75BbnoBnFdVRUPDQatqWsVNO+n9fgFFFFdBz
+DJv9S/8AumsHwj/qtQ/6+j/IUUVz1P40PmdFP+DP5HQ0UUV0HOFFFFABRRRQAUUUUAf/2Q==
+
+--_004_MN2PR01MB57738D3A128D217FE047FB36BA1F0MN2PR01MB5773prod_--

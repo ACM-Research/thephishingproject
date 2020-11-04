@@ -1,0 +1,1049 @@
+Received: from DM6PR01MB5433.prod.exchangelabs.com (2603:10b6:5:17e::18) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 00:45:43
+ +0000
+Received: from CY4PR12CA0027.namprd12.prod.outlook.com (2603:10b6:903:129::13)
+ by DM6PR01MB5433.prod.exchangelabs.com (2603:10b6:5:17e::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.27; Fri, 23 Oct 2020 00:45:40 +0000
+Received: from CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:129:cafe::23) by CY4PR12CA0027.outlook.office365.com
+ (2603:10b6:903:129::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 00:45:39 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.77.8)
+ smtp.mailfrom=email.ripplematch.com; utdallas.edu; dkim=fail (signature did
+ not verify) header.d=ripplematch.com;utdallas.edu; dmarc=pass action=none
+ header.from=ripplematch.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of email.ripplematch.com
+ designates 167.89.77.8 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.89.77.8; helo=o2.email.ripplematch.co;
+Received: from o2.email.ripplematch.co (167.89.77.8) by
+ CY1NAM02FT006.mail.protection.outlook.com (10.152.74.104) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 00:45:39 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=ripplematch.com; 
+	h=content-type:from:mime-version:reply-to:subject:to:list-unsubscribe; 
+	s=s1; bh=NZbgBTysn5x53dqHyBOmNvQiyZmXo6q4pluQwpDzhqw=; b=pEy7nnx
+	KJYVGmQtVpRnu1oMSv9XdOUg0oVB04yKrHK9QmVpdTY80jbEiZg7ax2oEf6mmEqO
+	Ov2FClAF/Ug7nSsRLTH8kzE5B50FnfOoJL0+EH66CF9FKTsLf9Cp1ML6RK1ltcRT
+	7XESrVNLCpinxGeML7Jr5lTpcQlUTnM8lphA=
+Content-Type: multipart/alternative; boundary=e4713e23af2e2c9febddf00189d0aba6e3d6c140f88ed1a32bf59b87b77a
+Date: Fri, 23 Oct 2020 00:45:38 +0000 (UTC)
+From: "RippleMatch" <katebeckman@ripplematch.com>
+Reply-To: katebeckman@ripplematch.com
+Subject: Happening Next Week: RippleMatch Career Week
+To: jerry.teng@utdallas.edu
+Message-ID: <lkwY62q5S0CfYm-h7xEBZw@ismtpd0100p1mdw1.sendgrid.net>
+List-Unsubscribe:
+ <mailto:unsubscribe@email.ripplematch.com?subject=https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fu2545375.ct.sendgrid.net%2Fasm%2Funsubscribe%2F*q*user_id%3D2545375*a*data%3DQnROq1dKXEXCCWqbjBa_2keyUBHJNox1H5I9mhrDKoT2K176nrF-Ce2nWq8UEtjtkJwk31ob0f2CNggEkAviUPrAAAIFjtpNbJgJw0H7z5vQdB0g4I4xBMI2lOtBZCIGg1qu4u_W6KiPfXmlS8-j7aCFI6W6VwFqfDebqUitso31PEcHfF4vA2M_cOhvfU9z5a1sUxzaeucJzURz7Ky8C7DFjs55lzp9xxfGVTeoA8srpbEv54fI19f32sq48XlNZIiIhr6VxHVCe3HCOxpOVGc-Agpxa4vXSje2O3kh1y73rXuh5ZGPuTQ-eqGgai1PMkKD8j4xQVWGNce0_Y-u6em4Mo5x3CnoOqsosKqqFyhD4AFNTDWVwAdIF5S6tMk9YwWwlIE39LO4I_IGK5eupfVXi4HUVh7gnmGpHfLP5uxXuZ2xiRVHgSx-99hqUKHoQ_eLcwpkWxQvMeTU6QRwAPaS7FWmbHb4V13Z2oz4BEV7s3kSqV0syiFjPpn8C8pUXr6w7NYI9lzc06MupMwHhLJZI-z-k0FwAv1ouooTfSkhtir-KvBPZ3VHleF3ajOA8n33Z7sIjdDUY6Cbwc6adg1_EaAP0ZrbbuJDv40X2JA%3D&amp;data=04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107430151632%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL
+	jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=Rg%2FbejeYiiBOI5%2FtrWF%2BtIwYfVspUNu4JPfdbyDHTqM%3D&amp;reserved=0>
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHpp2Mv3iUvOHUpjwIaSSkRFb1RXLpAP1IaZww
+ UVsToUONEJHzLauZQ8VccPZo+gYdhaayQiEPuohRsriwxO+kHe4qUopL3AjYUj/eGIeadvpetk8jED
+ /yjvSyFFnkC3v58VXtwSUT+Q2FuHDQEN+u1eIt1KucfeefbOfPvJKvBg3PfscFg8kA51LKexOeu6ru
+ 8JZpgmIGVeS7KSI4k43HOE
+X-SG-ID: Z2FxZazunBjVeNuNdzHDqrF8mxuCpi0krmont6YQrP3Z+FVm2ZGNyanQrO5Np6RKsaDIUJC9srvqlR
+ qeUwOcwqgnORqFsTTg5O5AGCemRmCdXnmCn+vljiGTLb9IyIFRFaVBwd+HZ0vV+NwCwjCNeUMWUZpW
+ yC2o3e2VBIVjwcF9mVxkAgLOuT2PcuviE4/YW5bHm0jvk0vjEmjCD1Lwis0VoolKp1gn1c4BjhL5Et
+ 4=
+X-Entity-ID: bHphUaOIAL6NO0P+ubbTMg==
+Return-Path:
+ bounces+2545375-61fc-jerry.teng=utdallas.edu@email.ripplematch.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 00:45:39.8564
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 956e70fd-a491-440a-ec7d-08d876ecf6d6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 956e70fd-a491-440a-ec7d-08d876ecf6d6
+X-MS-TrafficTypeDiagnostic: DM6PR01MB5433:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.77.8;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.email.ripplematch.co;PTR:o2.email.ripplematch.co;CAT:NONE;SFS:(4636009)(6486002)(6506007)(3450700001)(1096003)(166002)(956004)(356005)(83170400001)(5660300002)(36736006)(8676002)(58800400005)(336012)(83380400001)(26005)(76236003)(33964004)(9686003)(36906005)(6512007)(6916009)(7636003)(19627405001)(966005)(7596003)(42660200005)(223384002);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 00:45:39.3977
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 956e70fd-a491-440a-ec7d-08d876ecf6d6
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5433
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9463143
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VUNvUkNKZEV5bkpPSGZDL29ReDhyUHdSazRZOFhWZG10UmcyYVVNREZYcXQ1?=
+ =?utf-8?B?eGF2dC8zNzNuTUEvN3ZsaU9aMDlIbForODg4N2pFMExRTFU0WThpRG9CUisz?=
+ =?utf-8?B?eXYxZWNtald6ZzBsY2NXQUF6ZnhobWdpaUMyRGExdWlRZ0ZQcEZlbUwrcWNF?=
+ =?utf-8?B?ZnJIaDlTRllhYWJZZHRxZ0cyaE9HUUVwanJhbUZVUTJTVlVqczJLUmdmcjJj?=
+ =?utf-8?B?M2tnakpjenR5Nk0ycTl4YmdTNktTd1kyaG1rN3QzdXN2OHNNdHQ0cnhFNFNO?=
+ =?utf-8?B?L0pJSTRwR2JOTHlrR3NBZmVRcmFqeUFORGdHNGx6bEMrQ0p0eWFielRldG55?=
+ =?utf-8?B?ZzZQWDdSVkZjVmlyNVViNyt5U2VyQ05obUF2bnlobFY1a3EwbDU0S3o5Z3Jp?=
+ =?utf-8?B?S1RMd3Y5SThuV3c4QUROK3Y1M2d3MlVuSEMrL0x2bTlDTFdhaTBCZ2U4ZFpa?=
+ =?utf-8?B?WDJnWTdxYXhlZktmVWdOM1JZSnMwSlRUdllScG5NM1Z3SmxXbzZ3TWVTb3d6?=
+ =?utf-8?B?bHo3LzM1Tlc4dCtxTnd4M3ZQR2x6c2JVL0FvTmc1NmlpSlhSZXVZdCtvL1d5?=
+ =?utf-8?B?Z0I1dWY5OXpqemtGeTRiejBHQ3d2WFlnaFRZQy9NT3RuL0RMYXBibnlRaFNq?=
+ =?utf-8?B?OVNZUUFkWXVrK1FyOHIzYXQzaXpJSnJlZ2h5UmFnUHlGZ2ZOL092Y29lQVNH?=
+ =?utf-8?B?d1FGZ055TTFKMG8xUUdKbHYwOFkwSWFHcDkwSEtqVmF4V2JKeS9sOGFjYzB5?=
+ =?utf-8?B?SWFTWXByL3Zndm9GUG9wWnpianpjelpyZ2tNeGUvR3dIVjZYRTY0NU1qZnhQ?=
+ =?utf-8?B?VHgrR1pJWlByVlQrUk9OaVZ4VjlXRVV1YWRPaGhRYmlFbnZPUjBQamVrcWcv?=
+ =?utf-8?B?SGdSbHpTSkZPMWVDbFJPSlR4eFlSS0N1MXFkUks4OGZzK0kzQjFRYVp2SjZx?=
+ =?utf-8?B?ZS9MemFydEVYRUhaUk1oWXF5OHJiWjNCcHIzckRYby9XVVorbW5jMG1IU3ln?=
+ =?utf-8?B?a3pjb2VmRldkWThKTGRDTXFCWExRYjhCS3k1OXRhZUl3RFdYdTZxM1ZNbytB?=
+ =?utf-8?B?SGFORE94ME9oSlpKWWxzYmkwSjdnVkU1bE5VaTZLMmt1a2lZckdCZHlIQTY1?=
+ =?utf-8?B?UmZtTTY5S3ljclpmT1MzTzdaRmNBcjBvM2U3Q0NSZ1hZREhIUWNIeDlsMS9C?=
+ =?utf-8?B?eHArZnVmUjgzU1FjMzVKcmJpRmhtaGFxYXA3RkJsc1VJbjNocXBuS0pqdGFM?=
+ =?utf-8?B?Q25DWEtvaitOZzF5N1JIRGtWYzdiNkV6TEI2UzkxSkVkNExyUHBOTi9HWWRi?=
+ =?utf-8?B?cW11K0JRVk9UMklVenFXWWVPMnRiOU5kSzNpWlMwT2gxeDU5MmhlaVVQZjE4?=
+ =?utf-8?B?MWVsWHBDcFU3UWpkd1ZKbnJLcUxnZFlyUHBuZlZRTU1KdTY2NVFsQTFvdCtn?=
+ =?utf-8?B?LzVnWCthems5NlF3TTY1OXR4eU1yQ1FENzc0bWxQRC9WQW5qTmVxUUxXUHVG?=
+ =?utf-8?B?QnA3NWJpU0QvQjgzKzhjQi9TQkE2MnVKWWx5RFp6NkxGOHV6V2pOaHhKWVla?=
+ =?utf-8?B?SVB4Q1AxNmt1QWtwZkorWENxMXFvUUNvNU1DUWZGRjhtYU14UUE2cWJIOGo0?=
+ =?utf-8?B?aHNHVWNwb0EyWG9lTEpQaTVzbC9YVmZVUW8rNDFid1J3NXdScUoxdys4S3dG?=
+ =?utf-8?B?MHFVTU9XRFlmT2FUMFhubGNJWlBUTjYyb0s4Ni90eGkwSjRrVDBNWmE0anlj?=
+ =?utf-8?B?ekVnVXZubUdrNnZtMDNNWk9tMWxQeFdXeGhXbnpTQzRFTE5vYWRRaW5KZWMw?=
+ =?utf-8?B?M1lOeXBvRm5xZUM1bHphSW1zbE1VWkpNN29NZkt2T3Bac1czT3pDdkFNV2d1?=
+ =?utf-8?B?clh6YmVPUUR3NWNYNG4wYjZhQkFiWWZmT2pweFZIb1ZXb1gxQWozL2hUR1Vs?=
+ =?utf-8?B?QkprQW9TbnczZlpveVZpcHIrM01RZ1B3aGdmWHlvRmNHQ3YrUmtNRHRvRldt?=
+ =?utf-8?B?MXJGSEJ0RWlnPT0=?=
+MIME-Version: 1.0
+
+--e4713e23af2e2c9febddf00189d0aba6e3d6c140f88ed1a32bf59b87b77a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Explore opportunities with 26 companies
+
+.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; f=
+ont: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+
+Still searching for a job or internship? We wanted to send out one final re=
+minder to sign up for RippleMatch Career Week!
+
+All next week, RippleMatch is hosting live, multi-company info sessions to =
+make it easy for you to discover what's out there.=C2=A0
+
+26=C2=A0companies, 6=C2=A0info sessions =E2=80=93 click the button below to=
+ explore available=C2=A0sessions and=C2=A0hear directly from recruiters on =
+available opportunities and what makes their company a great place to work.
+
+Explore Info Sessions https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fresources.ripplematch.com%2Fcareer-week-fall-2020&amp;data=
+=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107429981732%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3D%2BVDYObI3iVtIl7qvB0f9TNsiw6Fcy0yQCNkGWDZzgo4%3D&amp=
+;reserved=3D0
+
+.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; f=
+ont: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+
+FEATURING
+
+Session Guide: Recommended Picks
+
+.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; f=
+ont: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+
+=E2=80=A2 Are you a liberal arts or humanities major=C2=A0worried about job=
+ security in a tough economic landscape? You might never have considered a =
+career in insurance =E2=80=93 but did you know our company partners actuall=
+y seek out liberal arts majors due to their critical thinking and communica=
+tion skills?=C2=A0Sign up to learn about available opportunities with our e=
+mployer partners in this=C2=A0industry https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fripplematch.com%2Fevent%2Fripplematch-caree=
+r-conversations%2F1802afc3%2F&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C956e70fda491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637390107429991730%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DHAho%2FQSMtBT6=
+bbPpyhk5zlZyd5CAHYV58RDGsC65EW8%3D&amp;reserved=3D0.=C2=A0
+
+=E2=80=A2 Are you wondering how tech companies are approaching D&I?
+
+If you're a computer science or other technical major=C2=A0and you're curio=
+us which companies have clear plans to prioritize representation and build =
+inclusive cultures,=C2=A0=C2=A0sign up to learn how these tech companies ar=
+e building a diverse and inclusive culture, as well as their available oppo=
+rtunities. https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fripplematch.com%2Fevent%2Fripplematch-career-conversations%2F2a4d3faa%2=
+F&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d8=
+76ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107429991730%7C=
+Unknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiL=
+CJXVCI6Mn0%3D%7C1000&amp;sdata=3DjTYxS5d3CexZuklLdEVa0GAQajVGgzUzvvUFV%2Fv9=
+UkE%3D&amp;reserved=3D0=C2=A0
+
+=E2=80=A2 Are you the president of a campus club?=C2=A0If you've held a lea=
+dership role on campus or at a part-time job, you need to learn about Leade=
+rship Development or Rotational Programs.=C2=A0These programs give you expo=
+sure to multiple business units and are meant to set you up for a fast-trac=
+k to management. Sign up to learn about four of these programs and how to s=
+tand out when applying. https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fripplematch.com%2Fevent%2Fripplematch-career-conversations=
+%2Ffe456e5a%2F&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda49=
+1440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739010=
+7429991730%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D3MzJexuMZeB4idq4p6I4QdwNc5ImP=
+PgsFyfw81j3B2U%3D&amp;reserved=3D0=C2=A0
+
+=E2=80=A2 Do you like working with people?=C2=A0If you like solving complex=
+ challenges and communicating effectively, you should consider a career in =
+consulting or client services.=C2=A0Sign up to learn about this space and a=
+vailable opportunities=C2=A0from five consulting and client services=C2=A0f=
+irms https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fri=
+pplematch.com%2Fevent%2Fripplematch-career-conversations%2F09bf3186%2F&amp;=
+data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6=
+d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107429991730%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C1000&amp;sdata=3DfsMeu%2FNTh%2BjP9PyYCi5jsYxEJfOw%2BRulKJ3fo9DFz%=
+2Fw%3D&amp;reserved=3D0!
+
+=E2=80=A2 Looking to start your career in an innovative industry?=C2=A0If y=
+ou're interested in how tech is revolutionizing how markets move,=C2=A0sign=
+ up to hear from three trading firms that have carved out a space in the fi=
+ntech industry. https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fripplematch.com%2Fevent%2Fripplematch-career-conversations%2F20f5c=
+518%2F&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7=
+d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373901074299917=
+30%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1h=
+aWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dve7wS9tf5DxBGOCjg25dGqqTfdHDvG3JY%2BD=
+YDmFltX4%3D&amp;reserved=3D0
+
+=E2=80=A2 Searching for a summer internship?=C2=A0Sign up to hear from five=
+ companies with internship opportunities for majors from business to engine=
+ering to english. https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fripplematch.com%2Fevent%2Fripplematch-career-conversations%2Ffcc=
+8ca4f%2F&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440ae=
+c7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739010742999=
+1730%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DmgkrbiYHyDHD2KpL9A7pmFsnucCHVh%2FWw=
+HviBZcovmE%3D&amp;reserved=3D0
+
+Spots are limited =E2=80=93 click the links to save your spot!
+
+Already have a job or internship? Forward this email to a friend so they ca=
+n sign up for any of the sessions listed above. These events are open to al=
+l students, even if they don't have an existing RippleMatch profile!
+
+RippleMatch
+
+5 West 19th Street, 6th Floor, New York, NY 10011=20
+
+Unsubscribe https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fu2545375.ct.sendgrid.net%2Fasm%2Funsubscribe%2F%3Fuser_id%3D2545375%26=
+data%3DQnROq1dKXEXCCWqbjBa_2keyUBHJNox1H5I9mhrDKoT2K176nrF-Ce2nWq8UEtjtkJwk=
+31ob0f2CNggEkAviUPrAAAIFjtpNbJgJw0H7z5vQdB0g4I4xBMI2lOtBZCIGg1qu4u_W6KiPfXm=
+lS8-j7aCFI6W6VwFqfDebqUitso31PEcHfF4vA2M_cOhvfU9z5a1sUxzaeucJzURz7Ky8C7DFjs=
+55lzp9xxfGVTeoA8srpbEv54fI19f32sq48XlNZIiIhr6VxHVCe3HCOxpOVGc-Agpxa4vXSje2O=
+3kh1y73rXuh5ZGPuTQ-eqGgai1PMkKD8j4xQVWGNce0_Y-u6em4Mo5x3CnoOqsosKqqFyhD4AFN=
+TDWVwAdIF5S6tMk9YwWwlIE39LO4I_IGK5eupfVXi4HUVh7gnmGpHfLP5uxXuZ2xiRVHgSx-99h=
+qUKHoQ_eLcwpkWxQvMeTU6QRwAPaS7FWmbHb4V13Z2oz4BEV7s3kSqV0syiFjPpn8C8pUXr6w7N=
+YI9lzc06MupMwHhLJZI-z-k0FwAv1ouooTfSkhtir-KvBPZ3VHleF3ajOA8n33Z7sIjdDUY6Cbw=
+c6adg1_EaAP0ZrbbuJDv40X2JA%3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C956e70fda491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637390107429991730%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DsPcLEN31FFZ9de=
+VH3Gdc48%2BDBeJooXkzNqF1UFEBax4%3D&amp;reserved=3D0 - Unsubscribe Preferenc=
+es https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu254=
+5375.ct.sendgrid.net%2Fasm%2F%3Fuser_id%3D2545375%26data%3DciD3nzeCZ80omh8Q=
+Y7z0ClcxsbqD0SxZf34N2P5eN1V-heby24sD6xjOJL2tGYHdBVdhl3vkwRrLh7BVEqFf6QwskHn=
+h6sRZU73PGz3VgnQ7z45PZ3X2ngaC5aowz1TQ20aGVl65U4caN3kv9QdfrYdbHdLKgxkTgFjYhW=
+e-itoAg1pVTK2vfTKQA1AIPuKgHqW1ohKKcVo-AIuB1MvZoSb7f-_vWJ4fWlQegg_8ewMIH5Ksj=
+cMgFNu-ZdSh2TWquvZqKwTydzZCcBYxTgnnFLChSgokluBPf7WQ5J-vqsjiBj6af37lCpB8KCPc=
+b5FGUFgVn5phQ2_z5iFRXDjdo0NxE6h97O_UIG4IwX-KNECnz9f5iob_8_BpmVISDnhkez1CNi_=
+4_7x6AMdc5BRWkRd9ffnG2funALIZzmyLYk7dvu-U5JdTzxYjx8BjFGtHAK1koigHvzQyvJ1Fp8=
+oXwXs0o0rrEQbAusUsanFHJXQf65qkZph9B3OyaAYNeUeH5YtJgYr0lYB1QjtahggSld3naATTc=
+YDQXMvot9Eny-bGGt3Y7D0f-N9PfRAiisX3GwKK4lQqUZ9uZtNVmOc4Mw%3D%3D&amp;data=3D=
+04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107429991730%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DyFVwNnEDhyUH5TiEmxhbRqhiHgvir%2FDW3ECCmHJeTHM%3D&amp;re=
+served=3D0=
+
+--e4713e23af2e2c9febddf00189d0aba6e3d6c140f88ed1a32bf59b87b77a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html data-editor-version=3D"2" class=3D"=
+sg-campaigns" xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1, minimum-scale=3D1, maximum-scale=3D1"><!--[if !mso]><!-->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEdge"><!--<![endif=
+]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <style type=3D"text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+    <style type=3D"text/css">
+      body, p, div {
+        font-family: arial;
+        font-size: 14px;
+      }
+      body {
+        color: #000000;
+      }
+      body a {
+        color: #3b8beb;
+        text-decoration: none;
+      }
+      p { margin: 0; padding: 0; }
+      table.wrapper {
+        width:100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      @media screen and (max-width:480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+            text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 480px !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+    </style>
+    <!--user entered Head Start-->
+   =20
+     <!--End Head user entered-->
+  </head>
+  <body>
+    <center class=3D"wrapper" data-link-color=3D"#3b8beb" data-body-style=
+=3D"font-size: 14px; font-family: arial; color: #000000; background-color: =
+#ebebeb;">
+      <div class=3D"webkit">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"10=
+0%" class=3D"wrapper" bgcolor=3D"#ebebeb">
+          <tr>
+            <td valign=3D"top" bgcolor=3D"#ebebeb" width=3D"100%">
+              <table width=3D"100%" role=3D"content-container" class=3D"out=
+er" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                <tr>
+                  <td width=3D"100%">
+                    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0">
+                      <tr>
+                        <td>
+                          <!--[if mso]>
+                          <center>
+                          <table><tr><td width=3D"600">
+                          <![endif]-->
+                          <table width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" style=3D"width: 100%; max-width:600px;" align=3D"cent=
+er">
+                            <tr>
+                              <td role=3D"modules-container" style=3D"paddi=
+ng: 0px 0px 0px 0px; color: #000000; text-align: left;" bgcolor=3D"#ffffff"=
+ width=3D"100%" align=3D"left">
+                               =20
+    <table class=3D"module preheader preheader-hide" role=3D"module" data-t=
+ype=3D"preheader" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"display: none !important; mso-hide: all; visibility: hidden=
+; opacity: 0; color: transparent; height: 0; width: 0;">
+      <tr>
+        <td role=3D"module-content">
+          <p>Explore opportunities with 26 companies</p>
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"wrapper" role=3D"module" data-type=3D"image" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout=
+: fixed;">
+      <tr>
+        <td style=3D"font-size:6px;line-height:10px;padding:10px 0px 10px 0=
+px;" valign=3D"top" align=3D"center">
+          <img class=3D"max-width" border=3D"0" style=3D"display:block;colo=
+r:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;fon=
+t-size:16px;max-width:100% !important;width:100%;height:auto !important;" s=
+rc=3D"https://marketing-image-production.s3.amazonaws.com/uploads/206c0ad41=
+bbb81532b8bb31cad3ec9123de79d61431f470d89e187d6d35982f2032e045edad1688bea5a=
+fad9f0b490e7a33dc70119c9e8dbe1a30daeb5def104.png" alt=3D"" width=3D"600">
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:25px 040px 020px 040px;text-align:inherit;line=
+-height:22px;" height=3D"100%" valign=3D"top" bgcolor=3D"">
+            <div dir=3D"ltr">
+<p dir=3D"ltr" style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: =
+0pt; text-align: center;">
+<style type=3D"text/css">.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0p=
+x; text-align: justify; font: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+</style>
+</p>
+
+<div>
+<div>
+<div dir=3D"auto"><span style=3D"font-size:16px;"><span style=3D"font-famil=
+y:verdana,geneva,sans-serif;"><strong>Still searching for a job or internsh=
+ip? </strong>We wanted to send out one final reminder to sign up for Ripple=
+Match Career Week!<br>
+<br>
+All next week, RippleMatch is hosting live, multi-company info sessions to =
+make it easy for you to discover what's out there.&nbsp;<br>
+<br>
+<strong>26&nbsp;companies, 6&nbsp;info sessions</strong> =E2=80=93 click th=
+e button below to explore available&nbsp;sessions and&nbsp;hear directly fr=
+om recruiters on available opportunities and what makes their company a gre=
+at place to work.</span></span></div>
+</div>
+</div>
+</div>
+
+        </td>
+      </tr>
+    </table>
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"module" =
+data-role=3D"module-button" data-type=3D"button" role=3D"module" style=3D"t=
+able-layout:fixed" width=3D"100%"><tbody><tr><td align=3D"center" class=3D"=
+outer-td" style=3D"padding:025px 0px 020px 0px"><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"button-css__deep-table___2OZyb wrappe=
+r-mobile" style=3D"text-align:center"><tbody><tr><td align=3D"center" bgcol=
+or=3D"#3b8beb" class=3D"inner-td" style=3D"border-radius:6px;font-size:16px=
+;text-align:center;background-color:inherit"><a style=3D"background-color:#=
+3b8beb;border:1px solid #333333;border-color:#3b8beb;border-radius:100px;bo=
+rder-width:1px;color:#ffffff;display:inline-block;font-family:verdana,genev=
+a,sans-serif;font-size:14px;font-weight:bold;line-height:20px;padding:012px=
+ 18px 12px 18px;text-align:center;text-decoration:none" href=3D"https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgr=
+id.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcZ7CopnB4PhoA2GE-2Bt0=
+Ts3KlIVrjHP61xaa3TMzzNAhpTwWV96DmkfDXw5de8to7yQ-3D-3D_oUR_A6np-2Bq5dXU-2FiK=
+Wa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6=
+hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4F=
+fkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtm=
+KMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovoc0lDmJAqprH=
+plNVAsH0gje4LRqlcXfearqNMQnYZjqol26vx0Gmd1zJfAgC5oPtRveuBoeeBzi4TZuaaQQuG8y=
+XQnWZsYjMGE8gxsnXKAs9-2F5x2wE1QqKLp7k3GD2zQ1WQhVCKRG-2By9ABeINRnqtYWztNcUNW=
+sc-2FL962i7JxWsjwu21EyOJYECwBueZgGoC2y-2FDm6nPbpKHZM7HNBYyBc-3D&amp;data=3D=
+04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107430071679%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DGBwX1S%2Bga3g6Sq0wkIHFZC0O%2F%2FKj5tesLgYJpzxObN4%3D&am=
+p;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?up=
+n=3DWomOBOtCwgeD1-2B-2FZb1R-2FcZ7CopnB4PhoA2GE-2Bt0Ts3KlIVrjHP61xaa3TMzzNAh=
+pTwWV96DmkfDXw5de8to7yQ-3D-3D_oUR_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxO=
+iJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8N=
+Nmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQ=
+SNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT=
+4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovoc0lDmJAqprHplNVAsH0gje4LRqlcXfearqN=
+MQnYZjqol26vx0Gmd1zJfAgC5oPtRveuBoeeBzi4TZuaaQQuG8yXQnWZsYjMGE8gxsnXKAs9-2F=
+5x2wE1QqKLp7k3GD2zQ1WQhVCKRG-2By9ABeINRnqtYWztNcUNWsc-2FL962i7JxWsjwu21EyOJ=
+YECwBueZgGoC2y-2FDm6nPbpKHZM7HNBYyBc-3D" shash=3D"QaszrsbHil1/AcCoYbDoT9S1u=
+G02ChUFoJ31btfO2Bqh9EjTopuhwK2AMVuGKNo4ZndBeQgjOChA21QJQFx9v0qTrY08Mv/ieYRj=
+DElkZsz0hoAUHRgM1ZL+O10vkx5YmUNuo/89VCDXSVyFn6X4KqRfsJgvCVW3+TnnZIn/gSE=3D"=
+ target=3D"_blank">Explore Info Sessions</a></td></tr></tbody></table></td>=
+</tr></tbody></table>
+    <table class=3D"module" role=3D"module" data-type=3D"divider" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layou=
+t: fixed;">
+      <tr>
+        <td style=3D"padding:10px 0px 20px 0px;" role=3D"module-content" he=
+ight=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"5px" style=3D"line-height:5px; font-size:5=
+px;">
+            <tr>
+              <td style=3D"padding: 0px 0px 5px 0px;" bgcolor=3D"#3b8beb"><=
+/td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:25px 040px 020px 040px;text-align:inherit;line=
+-height:22px;" height=3D"100%" valign=3D"top" bgcolor=3D"">
+            <div dir=3D"ltr">
+<p dir=3D"ltr" style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: =
+0pt; text-align: center;">
+<style type=3D"text/css">.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0p=
+x; text-align: justify; font: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+</style>
+</p>
+
+<div>
+<div>
+<div dir=3D"auto" style=3D"text-align: center;"><strong><span style=3D"font=
+-size:18px;"><span style=3D"font-family:verdana,geneva,sans-serif;">FEATURI=
+NG</span></span></strong></div>
+</div>
+</div>
+</div>
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"wrapper" role=3D"module" data-type=3D"image" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout=
+: fixed;">
+      <tr>
+        <td style=3D"font-size:6px;line-height:10px;padding:0px 30px 0px 40=
+px;" valign=3D"top" align=3D"center">
+          <img class=3D"max-width" border=3D"0" style=3D"display:block;colo=
+r:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;fon=
+t-size:16px;max-width:100% !important;width:100%;height:auto !important;" s=
+rc=3D"https://marketing-image-production.s3.amazonaws.com/uploads/cba83c23b=
+f3ae4c5f305bbd758289ec75e0e601a89f4e3c0e0757180864d6fb3d94c0c0f58dba3a54b16=
+37b90481aaa5552e93767a58b244109957f117dc4933.png" alt=3D"" width=3D"600">
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"divider" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layou=
+t: fixed;">
+      <tr>
+        <td style=3D"padding:30px 0px 20px 0px;" role=3D"module-content" he=
+ight=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"5px" style=3D"line-height:5px; font-size:5=
+px;">
+            <tr>
+              <td style=3D"padding: 0px 0px 5px 0px;" bgcolor=3D"#3b8beb"><=
+/td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:025px 20px 20px 20px;line-height:22px;text-ali=
+gn:inherit;" height=3D"100%" valign=3D"top" bgcolor=3D"">
+            <div style=3D"text-align: center;"><span style=3D"font-size:18p=
+x;"><span style=3D"color:#2A66D8;"><strong><span style=3D"font-family:verda=
+na,geneva,sans-serif;">Session Guide: Recommended Picks</span></strong></sp=
+an></span></div>
+
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:15px 040px 00px 040px;text-align:inherit;line-=
+height:22px;" height=3D"100%" valign=3D"top" bgcolor=3D"">
+            <div dir=3D"ltr">
+<p dir=3D"ltr" style=3D"line-height: 1.38; margin-top: 0pt; margin-bottom: =
+0pt; text-align: center;">
+<style type=3D"text/css">.sg-campaigns p.p1 {margin: 0.0px 0.0px 0.0px 0.0p=
+x; text-align: justify; font: 12.0px Montserrat}
+.sg-campaigns span.s1 {text-decoration: underline ; color: #0044d6}
+</style>
+</p>
+
+<div><span style=3D"font-size: 14px;"><font face=3D"verdana, geneva, sans-s=
+erif" style=3D""><b>=E2=80=A2 </b><strong>Are you a <span style=3D"backgrou=
+nd-color:#FFFF00;">liberal arts or humanities major</span>&nbsp;worried abo=
+ut job security in a tough economic landscape?</strong><b> You might never =
+have considered a career in insurance =E2=80=93 but did you know our compan=
+y partners actually seek out liberal arts majors due to their critical thin=
+king and communication skills?</b></font></span><strong><span style=3D"font=
+-size:14px;"><font face=3D"verdana, geneva, sans-serif">&nbsp;<u><a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu25453=
+75.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW=
+8cC3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA-2FpBCrSz0MzU=
+I9KHf2xiHN4-3DdYS2_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bW=
+Cdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9x=
+UM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1Q=
+T3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2=
+BGhsjJ-2FJU4EdkJFMVr9bovhKzX3irtdirKOb5mj4eM9LNgOIfZfbuH9-2BzDsYTrMY4RWpNOh=
+T8xdtzbpXu57xpaX3r0eK-2BVIsFHwXPEacUXrlL-2B5wRzPas82XoJlAf6yPUxz4SYYxYLy3uZ=
+d5egnGf-2FDznU-2FhbCp56vAXR3RMKskRzhy65Uk5lWLA5OPMwu2tnH2A6Z-2F0s58e3F1Tw0p=
+F470DHLmhxJ8RKWPMdPVjISUU-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu=
+%7C956e70fda491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C0%7C637390107430071679%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DaWD5AMmiFlxVKtN=
+SrBwae6EuQV813nQ4bc7B16ITQ0w%3D&amp;reserved=3D0" originalsrc=3D"https://u2=
+545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8c=
+C3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA-2FpBCrSz0MzUI9=
+KHf2xiHN4-3DdYS2_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCd=
+d34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM=
+1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3=
+UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BG=
+hsjJ-2FJU4EdkJFMVr9bovhKzX3irtdirKOb5mj4eM9LNgOIfZfbuH9-2BzDsYTrMY4RWpNOhT8=
+xdtzbpXu57xpaX3r0eK-2BVIsFHwXPEacUXrlL-2B5wRzPas82XoJlAf6yPUxz4SYYxYLy3uZd5=
+egnGf-2FDznU-2FhbCp56vAXR3RMKskRzhy65Uk5lWLA5OPMwu2tnH2A6Z-2F0s58e3F1Tw0pF4=
+70DHLmhxJ8RKWPMdPVjISUU-3D" shash=3D"PCniCLzh9pw7Cbfedf4OS4f5m6jRdRsZAFgAr1=
+s3478RbYTRnOJRsRdHhEVEbt1RL77iEEd8lVLVaXOqOgDjsos32KSGsqTKJQ73Ox4Qt3RM6XWF4=
+Dv6VbB+e6tcbTZkLxQhwFENPvbJMuDjr+WEIq9hMbvvAcohRXK1EcSIZ9w=3D">Sign up to l=
+earn about available opportunities with our employer partners in this&nbsp;=
+industry</a>.&nbsp;</u></font></span></strong></div>
+
+<div>
+<div>&nbsp;</div>
+
+<div>
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);"><span style=3D"font-weight: 600; background: transparen=
+t; font-size: inherit; color: inherit;"><span style=3D"font-size: 14px;"><f=
+ont face=3D"verdana, geneva, sans-serif">=E2=80=A2 Are you wondering how te=
+ch companies are approaching D&amp;I?</font></span></span></div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);">
+<div style=3D"font-size: 14px;"><span style=3D"font-size: 14px;"><font face=
+=3D"verdana, geneva, sans-serif">If you're a <span style=3D"background-colo=
+r:#FFFF00;">computer science or other technical major</span>&nbsp;and you'r=
+e curious which companies have clear plans to prioritize representation and=
+ build inclusive cultures,&nbsp;&nbsp;<u><strong><a href=3D"https://nam02.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.n=
+et%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBPR=
+O1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiAyIyJBHL9rqzZO-2FK1HaYG-2FY-3D=
+OWgk_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2=
+BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzle=
+Kd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC=
+-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4Ed=
+kJFMVr9bovg0sEj27hNIHUL6RSU3uf-2BHFrgnQ7avPtruuknNu0HzueqyzzAx40DkjElxxwWlW=
+Wp1tpJANj1-2FVzWthJxR-2Fk6D-2FrIPCD-2FucXC4YUTKmiHk4VPLeH1E4kNESUm4zcPgSSow=
+0oMFkXPQbqjBKoKnSiX2ossaC0GwzKNalBR2ktzMrJyTgx-2BhF9SfHsWSBbOTk7kWYqIsVp9aL=
+0qyBJVsD-2FHA-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda=
+491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390=
+107430081672%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DEcz46Z5Vs%2BcVzGrVhJm0Xmoqk=
+atLfpXKVV1ZIgs6QjU%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.=
+sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZB=
+tBPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiAyIyJBHL9rqzZO-2FK1HaYG-2F=
+Y-3DOWgk_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopV=
+FL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5f=
+kzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZe=
+CFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJ=
+U4EdkJFMVr9bovg0sEj27hNIHUL6RSU3uf-2BHFrgnQ7avPtruuknNu0HzueqyzzAx40DkjElxx=
+wWlWWp1tpJANj1-2FVzWthJxR-2Fk6D-2FrIPCD-2FucXC4YUTKmiHk4VPLeH1E4kNESUm4zcPg=
+SSow0oMFkXPQbqjBKoKnSiX2ossaC0GwzKNalBR2ktzMrJyTgx-2BhF9SfHsWSBbOTk7kWYqIsV=
+p9aL0qyBJVsD-2FHA-3D" shash=3D"R0/VzZr3G0CW3FvlrzVChJfkkef3HhO2hBEhynS9d5VD=
+Hz6mj13jUTYSpxYOQtsgnsRfNHMDvwHF9Oi5aIhn/IwY9zU88jrQN6aGuL3GHNRyLl5Ib7CTMgQ=
++iyzvWgn6p05ZFE0b5bSd8RvcORO06EWO4VMceGmDjx7m/CQ86pY=3D">sign up to learn h=
+ow these tech companies are building a diverse and inclusive culture, as we=
+ll as their available opportunities.</a></strong>&nbsp;</u></font></span></=
+div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+
+<div>
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);"><span style=3D"font-weight: 600; background: transparen=
+t; font-size: inherit; color: inherit;"><span style=3D"font-size: 14px;"><f=
+ont face=3D"verdana, geneva, sans-serif">=E2=80=A2 <span style=3D"backgroun=
+d-color:#FFFF00;">Are you the president of a campus club?</span>&nbsp;</fon=
+t></span></span><span style=3D"font-family:verdana,geneva,sans-serif;">If y=
+ou've held a leadership role on campus or at a part-time job, you need to l=
+earn about Leadership Development or Rotational Programs.&nbsp;These progra=
+ms give you exposure to multiple business units and are meant to set you up=
+ for a fast-track to management. <u><strong><a href=3D"https://nam02.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2F=
+ls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBPRO1-2F=
+5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA9EojfeFfGADICuYMnFDq4s-3DXGa0_A6np=
+-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1=
+oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrP=
+RXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZc=
+A0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bo=
+vooFR2mUE48pvYS5T5-2BRIxZJXNkdL3zzCgOP7t4CIUrepi1fcb5LT-2BvzJ1wsODAZZQw-2Ff=
+mN31FwDyCj2MstZK5ozp2FBwRKrAHML-2B6D20m3WrOJB3ZnQ8yQq0rWGus3-2Fmlwc8targutR=
+udvBVLH6bxQR-2B2Pk57KHPPl7eEZgxeSRI230FJ68QwyYxcE-2B-2Ffy7Qt5vZ-2FyL3Fljr3z=
+nIqXuMRM-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda49144=
+0aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739010743=
+0081672%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DAV9pL3KH3mjqOCfK9Ey5u%2BETkNjjga=
+lT9m5iCzi%2BQYk%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sen=
+dgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBP=
+RO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA9EojfeFfGADICuYMnFDq4s-3DXGa=
+0_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8=
+mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5=
+SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2B=
+bp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJF=
+MVr9bovooFR2mUE48pvYS5T5-2BRIxZJXNkdL3zzCgOP7t4CIUrepi1fcb5LT-2BvzJ1wsODAZZ=
+Qw-2FfmN31FwDyCj2MstZK5ozp2FBwRKrAHML-2B6D20m3WrOJB3ZnQ8yQq0rWGus3-2Fmlwc8t=
+argutRudvBVLH6bxQR-2B2Pk57KHPPl7eEZgxeSRI230FJ68QwyYxcE-2B-2Ffy7Qt5vZ-2FyL3=
+Fljr3znIqXuMRM-3D" shash=3D"yTX2ULhAovPJAU/25jXGe2orkTP+BXhSX5X4gQ/nFM3FmYg=
+MOaMca3BYZ+UnJ5XTjxTTlDdl4A6t38va7FABuM7TY1kOs0EPgL7NTKtyk/qb6i9JjNMwpk3gPA=
+4XsuHTJdC2h47haqzG0VSAfz9LqXxO6P3doLVvlpy+L0jaJVU=3D">Sign up to learn abou=
+t four of these programs and how to stand out when applying.</a></strong></=
+u></span><span style=3D"font-size: 14px;"><font face=3D"verdana, geneva, sa=
+ns-serif">&nbsp;</font></span><br>
+&nbsp;</div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);"><span style=3D"font-style: normal; font-variant-ligatur=
+es: normal; font-variant-caps: normal; font-weight: 600; font-family: arial=
+; font-size: inherit; color: inherit; background: transparent;"><span style=
+=3D"font-size: 14px;"><font face=3D"verdana, geneva, sans-serif">=E2=80=A2 =
+<span style=3D"background-color:#FFFF00;">Do you like working with people</=
+span><span style=3D"font-size: 14px;"><span style=3D"background-color:#FFFF=
+00;">?</span></span>&nbsp;</font></span></span><span style=3D"font-style: n=
+ormal; font-variant-ligatures: normal; font-variant-caps: normal; font-weig=
+ht: 400; font-family: verdana, geneva, sans-serif; font-size: 14px; color: =
+rgb(0, 0, 0);">If you like solving complex challenges and communicating eff=
+ectively, you should consider a career in consulting or client services.&nb=
+sp;<u><span style=3D"font-weight: 600; background: transparent; font-size: =
+inherit; color: inherit;"><a href=3D"https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3=
+DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH9wlh=
+JVikO8LxS-2Fy-2BVBTGjiA64j-2BMC-2Br3SQESBCQq-2Bqu24-3DFkU1_A6np-2Bq5dXU-2Fi=
+KWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs=
+6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4=
+FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqt=
+mKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovg75dNwiKRsA=
+RqmX55knxKOYkSygDrqtnxHqB4M2U1W-2Bazlzr-2FXsipgafar-2BR2usGyl4gYaRkbZy336ME=
+wPGaRN9QX-2F7UlfXGUforghBipawXxIVZC11C7lCRlX0wiIWhzZmbRZHOdnpoVaIsLd7Z6cwrr=
+2HwsH9VsyCD7oh84k5qlCIcHkxX0Vd-2Bvx2YxbmO1pas69RaHe4f7E3wVQi2BE-3D&amp;data=
+=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107430091671%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3D0zCFeVM41rBrK%2BIDLZ6MsZ1r17B1Yk8pdz30yi%2Fp5lQ%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/ls/click?u=
+pn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH=
+9wlhJVikO8LxS-2Fy-2BVBTGjiA64j-2BMC-2Br3SQESBCQq-2Bqu24-3DFkU1_A6np-2Bq5dXU=
+-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU=
+-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R2=
+9IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbry=
+KQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovg75dNwi=
+KRsARqmX55knxKOYkSygDrqtnxHqB4M2U1W-2Bazlzr-2FXsipgafar-2BR2usGyl4gYaRkbZy3=
+36MEwPGaRN9QX-2F7UlfXGUforghBipawXxIVZC11C7lCRlX0wiIWhzZmbRZHOdnpoVaIsLd7Z6=
+cwrr2HwsH9VsyCD7oh84k5qlCIcHkxX0Vd-2Bvx2YxbmO1pas69RaHe4f7E3wVQi2BE-3D" sha=
+sh=3D"MjWrFmdkofpUPhEDIT7xeOnqHbfUXKdogPI2gLFFNP2Ofv2lXYMhaXFcGp4ddXnjw51zA=
+z8P2qT8wdnm5eOJBWMeltEbkYZQ0Djvb9x4hMygjq+hHW0CMpiSRD6wLV+YbfdZ41JpDzo9VPCY=
+iHfRN8vbkEAkU2LU9CFQpxrzJ/c=3D" style=3D"font-size: 14px;">Sign up to learn=
+ about this space and available opportunities&nbsp;from five consulting and=
+ client services&nbsp;firms</a>!</span></u></span></div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);">&nbsp;</div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);"><span style=3D"font-style: normal; font-variant-ligatur=
+es: normal; font-variant-caps: normal; font-weight: 600; font-family: arial=
+; font-size: inherit; color: inherit; background: transparent;"><span style=
+=3D"font-size: 14px;"><font face=3D"verdana, geneva, sans-serif">=E2=80=A2 =
+Looking to start your career in an innovative industry<span style=3D"font-s=
+ize: 14px;"><span style=3D"font-size: 14px;">?</span></span>&nbsp;</font></=
+span></span><span style=3D"font-style: normal; font-variant-ligatures: norm=
+al; font-variant-caps: normal; font-weight: 400; font-family: verdana, gene=
+va, sans-serif; font-size: 14px; color: rgb(0, 0, 0);">If you're <span styl=
+e=3D"background-color:#FFFF00;">interested in how tech is revolutionizing h=
+ow markets move</span>,&nbsp;<u><span style=3D"font-weight: 600; font-size:=
+ inherit; background: transparent; color: inherit;"><a href=3D"https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgri=
+d.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBt=
+BPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA59ojrSJxDsnbMv4jwMiMJw-3DE=
+pIy_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2B=
+U8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleK=
+d5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-=
+2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4Edk=
+JFMVr9bovsX4p5ieInkJg-2Bhre7nwF3sBadu-2FjRosHbZtrhjqahPJk4Uo-2BMs0DaHcGFxHs=
+lkTKEcA0Wy50z4nek3LREqdt9NVu3XKj-2BgkViyUp80TeCb5yAem-2FdmWYVQXp3MLzUQOf3Nq=
+OcF3XHKLw92SeZPvJwjggxA5nRJ5phc9qxnkz3FYqqtChpeTMirJmYaz4txm2u2HrR5LAj5BZiX=
+4bWb3Vug-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda49144=
+0aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739010743=
+0091671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DZRgHOtO93qVcE0Y4DLNVV%2FecdeFu4B=
+i%2Fez6ClMOJ3mY%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sen=
+dgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtBP=
+RO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA59ojrSJxDsnbMv4jwMiMJw-3DEpI=
+y_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8=
+mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5=
+SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNeYE37OHMI1N1QT3UuA-2BZeCFEC-2B=
+bp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJF=
+MVr9bovsX4p5ieInkJg-2Bhre7nwF3sBadu-2FjRosHbZtrhjqahPJk4Uo-2BMs0DaHcGFxHslk=
+TKEcA0Wy50z4nek3LREqdt9NVu3XKj-2BgkViyUp80TeCb5yAem-2FdmWYVQXp3MLzUQOf3NqOc=
+F3XHKLw92SeZPvJwjggxA5nRJ5phc9qxnkz3FYqqtChpeTMirJmYaz4txm2u2HrR5LAj5BZiX4b=
+Wb3Vug-3D" shash=3D"a9cmd67qh1dDWweH1eXMoif1HFkfx2wd3Am0AoaKrHiXuhBIMVD8Hm8=
+2Pbj7l38JNBPvZLMPhpWWwwI4fQMTAwsV/1QQMWduxFNKtHPcsoRItziHnVWlp8i2g6I+1Ehy4j=
+zKycrKLgUc29m1TyBlipe9pzt4T+GYZU/lPmEkB5c=3D" style=3D"font-size: 14px;">si=
+gn up to hear from three trading firms that have carved out a space in the =
+fintech industry.</a></span></u></span></div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);">&nbsp;</div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);"><span style=3D"font-style: normal; font-variant-ligatur=
+es: normal; font-variant-caps: normal; font-weight: 600; font-family: arial=
+; font-size: inherit; color: inherit; background: transparent;"><span style=
+=3D"font-size: 14px;"><font face=3D"verdana, geneva, sans-serif">=E2=80=A2 =
+<span style=3D"background-color:#FFFF00;">Searching for a summer internship=
+</span><span style=3D"font-size: 14px;"><span style=3D"font-size: 14px;"><s=
+pan style=3D"background-color:#FFFF00;">?</span></span></span>&nbsp;</font>=
+</span></span><u><span style=3D"font-style: normal; font-variant-ligatures:=
+ normal; font-variant-caps: normal; font-weight: 400; font-family: verdana,=
+ geneva, sans-serif; font-size: 14px; color: rgb(0, 0, 0);"><span style=3D"=
+font-weight: 600; font-size: inherit; background: transparent; color: inher=
+it;"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZ=
+b1R-2FcadEzcLsW8cC3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGj=
+iA0dh6E-2BI5u8yy7bgeQ7mbsc-3DUFeO_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxO=
+iJDHkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8N=
+Nmt-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQ=
+SNeYE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT=
+4RlafSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovv2OAn2Vbp0aNPYzvqRlveR86OOnzQmtQhtU0=
+lL-2BpOZAAo2ua4fwpUgQYb5SjHPdy0rl-2B5iftkTK2b4riVBhF4DnPTRWQi4FsFtB7zUycEe3=
+eAYjXixQ5y3NVql2qDtvOU8WU3yp9BDtglzQQBeC1DULWxVT84acXMB8j9kqGmdpCIOrmEtf-2F=
+gfhtH6kmXCcZvaBzbCEtaP5HVFzRXO-2BkV8-3D&amp;data=3D04%7C01%7Cjerry.teng%40u=
+tdallas.edu%7C956e70fda491440aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637390107430101671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DBjo9=
+XFWxwhY%2FGWWgH31guvTnTXs7L97aZ9Xda4CnORs%3D&amp;reserved=3D0" originalsrc=
+=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R=
+-2FcadEzcLsW8cC3aDUfSeZBtBPRO1-2F5UKMoEta0rI0MH9wlhJVikO8LxS-2Fy-2BVBTGjiA0=
+dh6E-2BI5u8yy7bgeQ7mbsc-3DUFeO_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJD=
+HkD3AL4Nr2bWCdd34FiopVFL-2BU8mIfkm1oc-2BCEU-2Fs6hFxW6mgq6fXCEWaxUkRn2w8NNmt=
+-2F3IKjWeB9xUM1Doy6Z5fkzleKd5SGysrPRXwNu9R29IO4FfkimieqoQNj4SnevAxWLlmmQSNe=
+YE37OHMI1N1QT3UuA-2BZeCFEC-2Bbp4dZcA0fPEbryKQqtmKMUjRFZJ58tPGW6k4Twxe8HT4Rl=
+afSj-2FzpB-2BGhsjJ-2FJU4EdkJFMVr9bovv2OAn2Vbp0aNPYzvqRlveR86OOnzQmtQhtU0lL-=
+2BpOZAAo2ua4fwpUgQYb5SjHPdy0rl-2B5iftkTK2b4riVBhF4DnPTRWQi4FsFtB7zUycEe3eAY=
+jXixQ5y3NVql2qDtvOU8WU3yp9BDtglzQQBeC1DULWxVT84acXMB8j9kqGmdpCIOrmEtf-2Fgfh=
+tH6kmXCcZvaBzbCEtaP5HVFzRXO-2BkV8-3D" shash=3D"sV4K1zPFv2fWaoRUcfNA710W43z+=
+1uhAn9BBF4ZeETmLf8+js2YtkZUsgKrDQumfN4ubw9DUBQDmw6qOSmkZKBYCjP6qOnEJMZFp/Rp=
+h0mTQCQP0/9PZ5Dh11k9df8SicmEjxK4VUtdcmAP7ueaaqfny0oYZ8Wa0k+P9h8HZwWg=3D" st=
+yle=3D"font-size: 14px;">Sign up to hear from five companies with internshi=
+p opportunities for majors from business to engineering to english.</a></sp=
+an></span></u></div>
+</div>
+
+<div><br>
+<span style=3D"font-family:verdana,geneva,sans-serif;"><strong>Spots are li=
+mited =E2=80=93 click the links to save your spot!</strong><br>
+<br>
+<em>Already have a job or internship? Forward this email to a friend so the=
+y can sign up for any of the sessions listed above. These events are open t=
+o all students, even if they don't have an existing RippleMatch profile!</e=
+m></span></div>
+
+<div style=3D"font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; font-family: arial; font-size: 14px; co=
+lor: rgb(0, 0, 0);">&nbsp;</div>
+</div>
+</div>
+
+        </td>
+      </tr>
+    </table>
+ =20
+    <table class=3D"module" role=3D"module" data-type=3D"divider" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layou=
+t: fixed;">
+      <tr>
+        <td style=3D"padding:20px 0px 0px 0px;" role=3D"module-content" hei=
+ght=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"3px" style=3D"line-height:3px; font-size:3=
+px;">
+            <tr>
+              <td style=3D"padding: 0px 0px 3px 0px;" bgcolor=3D"#3B8BEB"><=
+/td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  <div data-role=3D"module-unsubscribe" class=3D"module unsubscribe-css__un=
+subscribe___2CDlR" role=3D"module" data-type=3D"unsubscribe" style=3D"color=
+:#444444;font-size:12px;line-height:20px;padding:16px 16px 16px 16px;text-a=
+lign:center"><div class=3D"Unsubscribe--addressLine"><p class=3D"Unsubscrib=
+e--senderName" style=3D"font-family:Arial,Helvetica, sans-serif;font-size:1=
+2px;line-height:20px">RippleMatch</p><p style=3D"font-family:Arial,Helvetic=
+a, sans-serif;font-size:12px;line-height:20px"><span class=3D"Unsubscribe--=
+senderAddress">5 West 19th Street, 6th Floor</span>, <span class=3D"Unsubsc=
+ribe--senderCity">New York</span>, <span class=3D"Unsubscribe--senderState"=
+>NY</span> <span class=3D"Unsubscribe--senderZip">10011</span> </p></div><p=
+ style=3D"font-family:Arial,Helvetica, sans-serif;font-size:12px;line-heigh=
+t:20px"><a class=3D"Unsubscribe--unsubscribeLink" href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net=
+%2Fasm%2Funsubscribe%2F%3Fuser_id%3D2545375%26data%3DQnROq1dKXEXCCWqbjBa_2k=
+eyUBHJNox1H5I9mhrDKoT2K176nrF-Ce2nWq8UEtjtkJwk31ob0f2CNggEkAviUPrAAAIFjtpNb=
+JgJw0H7z5vQdB0g4I4xBMI2lOtBZCIGg1qu4u_W6KiPfXmlS8-j7aCFI6W6VwFqfDebqUitso31=
+PEcHfF4vA2M_cOhvfU9z5a1sUxzaeucJzURz7Ky8C7DFjs55lzp9xxfGVTeoA8srpbEv54fI19f=
+32sq48XlNZIiIhr6VxHVCe3HCOxpOVGc-Agpxa4vXSje2O3kh1y73rXuh5ZGPuTQ-eqGgai1PMk=
+KD8j4xQVWGNce0_Y-u6em4Mo5x3CnoOqsosKqqFyhD4AFNTDWVwAdIF5S6tMk9YwWwlIE39LO4I=
+_IGK5eupfVXi4HUVh7gnmGpHfLP5uxXuZ2xiRVHgSx-99hqUKHoQ_eLcwpkWxQvMeTU6QRwAPaS=
+7FWmbHb4V13Z2oz4BEV7s3kSqV0syiFjPpn8C8pUXr6w7NYI9lzc06MupMwHhLJZI-z-k0FwAv1=
+ouooTfSkhtir-KvBPZ3VHleF3ajOA8n33Z7sIjdDUY6Cbwc6adg1_EaAP0ZrbbuJDv40X2JA%3D=
+&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda491440aec7d08d87=
+6ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390107430101671%7CU=
+nknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLC=
+JXVCI6Mn0%3D%7C1000&amp;sdata=3D5NIITBBsrBg8mINf6nwpg7%2FAgP8VtzNAS89kSDyFU=
+84%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.ct.sendgrid.net/asm=
+/unsubscribe/?user_id=3D2545375&amp;data=3DQnROq1dKXEXCCWqbjBa_2keyUBHJNox1=
+H5I9mhrDKoT2K176nrF-Ce2nWq8UEtjtkJwk31ob0f2CNggEkAviUPrAAAIFjtpNbJgJw0H7z5v=
+QdB0g4I4xBMI2lOtBZCIGg1qu4u_W6KiPfXmlS8-j7aCFI6W6VwFqfDebqUitso31PEcHfF4vA2=
+M_cOhvfU9z5a1sUxzaeucJzURz7Ky8C7DFjs55lzp9xxfGVTeoA8srpbEv54fI19f32sq48XlNZ=
+IiIhr6VxHVCe3HCOxpOVGc-Agpxa4vXSje2O3kh1y73rXuh5ZGPuTQ-eqGgai1PMkKD8j4xQVWG=
+Nce0_Y-u6em4Mo5x3CnoOqsosKqqFyhD4AFNTDWVwAdIF5S6tMk9YwWwlIE39LO4I_IGK5eupfV=
+Xi4HUVh7gnmGpHfLP5uxXuZ2xiRVHgSx-99hqUKHoQ_eLcwpkWxQvMeTU6QRwAPaS7FWmbHb4V1=
+3Z2oz4BEV7s3kSqV0syiFjPpn8C8pUXr6w7NYI9lzc06MupMwHhLJZI-z-k0FwAv1ouooTfSkht=
+ir-KvBPZ3VHleF3ajOA8n33Z7sIjdDUY6Cbwc6adg1_EaAP0ZrbbuJDv40X2JA=3D" shash=3D=
+"ikyjWD2eZqEDrRN0HAfnY5ZdHGgR+DhaAajrBD8cHMDMEEzjy4rqylAL0LCeiNboRqL8puBDEp=
+YmU9ExHSu21qJF250idaEUPGTaGIxAKWC0mIDxa46Oc1uAC3P96a+m/wsqub1NUe9+8z1lFmr/w=
+NHmv3eDICSVzsG0UzEE+p0=3D">Unsubscribe</a> - <a class=3D"Unsubscribe--unsub=
+scribePreferences" href=3D"https://nam02.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2Fasm%2F%3Fuser_id%3D2545375%2=
+6data%3DciD3nzeCZ80omh8QY7z0ClcxsbqD0SxZf34N2P5eN1V-heby24sD6xjOJL2tGYHdBVd=
+hl3vkwRrLh7BVEqFf6QwskHnh6sRZU73PGz3VgnQ7z45PZ3X2ngaC5aowz1TQ20aGVl65U4caN3=
+kv9QdfrYdbHdLKgxkTgFjYhWe-itoAg1pVTK2vfTKQA1AIPuKgHqW1ohKKcVo-AIuB1MvZoSb7f=
+-_vWJ4fWlQegg_8ewMIH5KsjcMgFNu-ZdSh2TWquvZqKwTydzZCcBYxTgnnFLChSgokluBPf7WQ=
+5J-vqsjiBj6af37lCpB8KCPcb5FGUFgVn5phQ2_z5iFRXDjdo0NxE6h97O_UIG4IwX-KNECnz9f=
+5iob_8_BpmVISDnhkez1CNi_4_7x6AMdc5BRWkRd9ffnG2funALIZzmyLYk7dvu-U5JdTzxYjx8=
+BjFGtHAK1koigHvzQyvJ1Fp8oXwXs0o0rrEQbAusUsanFHJXQf65qkZph9B3OyaAYNeUeH5YtJg=
+Yr0lYB1QjtahggSld3naATTcYDQXMvot9Eny-bGGt3Y7D0f-N9PfRAiisX3GwKK4lQqUZ9uZtNV=
+mOc4Mw%3D%3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C956e70fda4914=
+40aec7d08d876ecf6d6%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373901074=
+30111659%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DK%2Bp2%2BRjI9ucr3MZbAty4Qn%2FMn=
+itvxuOdBkOSO5%2BDKkk%3D&amp;reserved=3D0" originalsrc=3D"https://u2545375.c=
+t.sendgrid.net/asm/?user_id=3D2545375&amp;data=3DciD3nzeCZ80omh8QY7z0Clcxsb=
+qD0SxZf34N2P5eN1V-heby24sD6xjOJL2tGYHdBVdhl3vkwRrLh7BVEqFf6QwskHnh6sRZU73PG=
+z3VgnQ7z45PZ3X2ngaC5aowz1TQ20aGVl65U4caN3kv9QdfrYdbHdLKgxkTgFjYhWe-itoAg1pV=
+TK2vfTKQA1AIPuKgHqW1ohKKcVo-AIuB1MvZoSb7f-_vWJ4fWlQegg_8ewMIH5KsjcMgFNu-ZdS=
+h2TWquvZqKwTydzZCcBYxTgnnFLChSgokluBPf7WQ5J-vqsjiBj6af37lCpB8KCPcb5FGUFgVn5=
+phQ2_z5iFRXDjdo0NxE6h97O_UIG4IwX-KNECnz9f5iob_8_BpmVISDnhkez1CNi_4_7x6AMdc5=
+BRWkRd9ffnG2funALIZzmyLYk7dvu-U5JdTzxYjx8BjFGtHAK1koigHvzQyvJ1Fp8oXwXs0o0rr=
+EQbAusUsanFHJXQf65qkZph9B3OyaAYNeUeH5YtJgYr0lYB1QjtahggSld3naATTcYDQXMvot9E=
+ny-bGGt3Y7D0f-N9PfRAiisX3GwKK4lQqUZ9uZtNVmOc4Mw=3D=3D" shash=3D"B6McPD/sFL/=
+7f2ua+gR/Ga9T41ui0JgDkEko3k/jQjE1jspPIG1GeMM2PxLhi09i1akO7YUyc9CZXOjJ636v4w=
+HNrb+cvu8T4G33pL8STlZhicxPLO2277OMb00mpU6ozbTeC1zFPrU4R1D4mccxYUfTiIyTGXRR3=
+etEAxcG4bY=3D">Unsubscribe Preferences</a></p></div>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if mso]>
+                          </td></tr></table>
+                          </center>
+                          <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+ =20
+<img src=3D"https://u2545375.ct.sendgrid.net/wf/open?upn=3DMGGRiqc4lL-2FL4B=
+Me4zMytnsquGILASSvJbu-2FHMoy9EW-2Bnn-2BtX6izmJQ43pXoop1MpH4sQJrz0k-2BHQO9O1=
+4rDVvxJQ0vVGtitBHlmZBCVDSuLgQEJVwu7hw7jzXoC7qEiSRDbS0cS55LYSK8Lgp-2F9MJGzC-=
+2FINLC6Au-2FC55ewxTN1ZcIlAIkpY9l6VnOkTpd-2BNFe1ZxLPpb-2BjzMt-2Bhy8g5tZArjAy=
+M8wWq-2BNtbumFHwblIdvDHMsLaSsH-2B1x4Nk-2FJb1opRuydXIhawp3mHXd5tDjOwkIk0TUlf=
+3yurGDnoYf3KEvaj6FoM3vjTU8-2Fwj35xRuxbDyqHFzZ7OYIEOOt-2F3HJ8W4ndWDZa88UyoSM=
+pCrjhdTfAEQVaszaTLR3rBpyjHoHcX7ighLGdTVYBWExTCeZSR3GEgqzqhD4uUbIldePFECsL5T=
+I2FmA2YoB1phGqgjt4du-2B4tE4kv2T7RYmgB8Zi6-2F5Ely-2FMpNq9AyCvXiw-3D" alt=3D"=
+" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;widt=
+h:1px !important;border-width:0 !important;margin-top:0 !important;margin-b=
+ottom:0 !important;margin-right:0 !important;margin-left:0 !important;paddi=
+ng-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;=
+padding-left:0 !important;">
+</body>
+</html>
+
+--e4713e23af2e2c9febddf00189d0aba6e3d6c140f88ed1a32bf59b87b77a--

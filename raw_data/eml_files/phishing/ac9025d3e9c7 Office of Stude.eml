@@ -1,0 +1,187 @@
+Received: from DM6PR01MB5707.prod.exchangelabs.com (2603:10b6:404:121::33) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS via
+ BN6PR18CA0023.NAMPRD18.PROD.OUTLOOK.COM; Thu, 2 Jul 2020 08:18:11 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=ZngXTl5DwQpZRPbg/X3bytD/N+fYK5Ol03pG+ruiK1jjPGYzQjB3H63Uv77NMmJoXsBj3bM8v8a9J9GhqzLT8lSA3/nx7s02vkkEqw0QnBMyNwx7uRk5JPpsxLu4BvFgOHrBLByoQELSVIxJ7mO+IVfrb1F3jd7MqHVY6xTbF2A4RnR/fYjOtklXiOyU7rXggjD6+0wl+G9/GFjV0fpWFwsFfbDzeF2xmUmZHm4Op5KMS7kQdbBJieP9s4x9Ta9fKCEC4Z93T8gzcMN1xw4qGc9gD77uzDkjnEepQ3PwjzGOQlZiUi7IBVfdK+R9SMr3NFI5cGor3Jz3JGqPEltS0w==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=nUnHnYprR8aHlWP6FQQ9unqc6B5FC0+6WPLKHkh6WEU=;
+ b=TpK3HrWOJ8FCqNLoyspIPNiXNOmGFLqLha3wwH+QVSj86gWUtUtpZYPctUnCWiAptFibc2UTNzpNUHaAi/a8NC3V5M6VKUynA6gGGDTOyIXEOfZsgL4JmuuUfOoQU8B+H01p9Zpssy1RnsjLYycSCwrpOtOTmQot+fLUORDcqn/8A4qaAqOADnQ6mvNRiluE1TxX4HQacXbZwj0riR/R/kQZi9hYVsKS3PHzBczav5kjlUkehKEdjT4nrFVFGLFtBnafONRSf0YOTFXR+FDba3OxFxEIM2fUn/NhQ+RU05cwP/l4U73pu5u5kayp5YS5yk9sHiCKOZSkI5X2PiANVw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.92.127) smtp.rcpttodomain=utdallas.edu smtp.mailfrom=siu.edu;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=siu.edu;
+ dkim=none (message not signed); arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=siu.edu] dkim=[1,1,header.d=siu.edu]
+ dmarc=[1,1,header.from=siu.edu])
+Received: from SN6PR08CA0009.namprd08.prod.outlook.com (2603:10b6:805:66::22)
+ by DM6PR01MB5707.prod.exchangelabs.com (2603:10b6:5:159::24) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3153.20; Thu, 2 Jul 2020 08:18:02 +0000
+Received: from SN1NAM02FT036.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:805:66:cafe::d0) by SN6PR08CA0009.outlook.office365.com
+ (2603:10b6:805:66::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3153.20 via Frontend
+ Transport; Thu, 2 Jul 2020 08:18:02 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.92.127)
+ smtp.mailfrom=siu.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=siu.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of siu.edu designates
+ 40.107.92.127 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.107.92.127; helo=NAM10-BN7-obe.outbound.protection.outlook.com;
+Received: from NAM10-BN7-obe.outbound.protection.outlook.com (40.107.92.127)
+ by SN1NAM02FT036.mail.protection.outlook.com (10.152.72.149) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3153.24 via Frontend Transport; Thu, 2 Jul 2020 08:18:01 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=EQdrvvhy8NVo1O+C9vXHgwxM+fvxy3OmXu/H8fkDB6hlroYENOqU7rYpB4HaM/wmhgPNtHsiU/JmhCLO1wyoMlSFX4iQTt2q/C/kb93zkVBgMMMni5gP3lNsHsOuJyNyp2ThSO0ibL3/hN89mC/w9gV5sZ5vO4k/8gDFynw4mIzFVcc4h7iC7tsEe8ZNXi/i9uRVgdJ9dt2NP8WsuYKYUbJr5zWqYRWdu/C7qFSvQehtMUUud0S/69d2TwxjoLDRh2ZWq6jiCv8YsujFJ898E7j9g4GcvrU8ldTq1ddf68hD7YWLnWCWBDrH1Oy26MQi/IvicTltDmmfl3CMOCnjwA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=nUnHnYprR8aHlWP6FQQ9unqc6B5FC0+6WPLKHkh6WEU=;
+ b=CREJ778QYmS1+kM+8fyuNuIXAeJrZ4TmSVIHKa/KeYC8/6XsFu7TzoHofFgz/iLPzRXJ4fvraALx0i3480SG0na/p7c8BmgCuM1ub9DDUOiMIXjPLtxd3sagzOk66Orkqj93PKeQyFJQmU9hkAYTXGPvgi8xiCDfcRceWemMwoDR2RjrBiEIy7L5tnmzzjdMi4lcug2y70a3/EvYp4nZTjC67UgILyd7X6vY4mcgyup+cVUWoQeoGsGQP8+gC334wzZ4HnM3bpiOF7OzcEEpwSEDRbZ+PMNLjLF9o45KP2l4sdM4S+RAn9TPi6U9No/vJslmjUGoly1Qn/80rMmY9Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=siu.edu; dmarc=pass action=none header.from=siu.edu; dkim=pass
+ header.d=siu.edu; arc=none
+Received: from CY4PR0701MB3746.namprd07.prod.outlook.com
+ (2603:10b6:910:8d::35) by CY4PR0701MB3651.namprd07.prod.outlook.com
+ (2603:10b6:910:8a::36) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3131.25; Thu, 2 Jul
+ 2020 08:18:00 +0000
+Received: from CY4PR0701MB3746.namprd07.prod.outlook.com
+ ([fe80::246c:b80d:c1ad:33f3]) by CY4PR0701MB3746.namprd07.prod.outlook.com
+ ([fe80::246c:b80d:c1ad:33f3%4]) with mapi id 15.20.3131.028; Thu, 2 Jul 2020
+ 08:18:00 +0000
+From: "Burris, Carson L" <carson.burris@siu.edu>
+Subject: Office of Student With Disabilities
+Thread-Topic: Office of Student With Disabilities
+Thread-Index: AQHWUElM+LFOzDfaj0mLTJCx4i1VaA==
+Date: Thu, 2 Jul 2020 08:18:00 +0000
+Message-ID:
+ <CY4PR0701MB3746326B160B8D1AC859DF03EE6D0@CY4PR0701MB3746.namprd07.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=none action=none header.from=siu.edu;
+x-originating-ip: [199.116.115.144]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 6438d9db-1809-482d-8921-08d81e606ffa
+x-ms-traffictypediagnostic: CY4PR0701MB3651:|DM6PR01MB5707:
+x-microsoft-antispam-prvs:
+ <CY4PR0701MB365127AC70B746103E0EBF5BEE6D0@CY4PR0701MB3651.namprd07.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:6108;OLM:6108;
+x-forefront-prvs: 0452022BE1
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ lzZdTCYf/Mi8VVUv8AWSqx1+nXKEH+1ux/FIJ9vDNPHLt9XN3Re8/WrFn1zeGdB3IdbsAHaRPekPfzdcUTSuxfakcUqmWeKrmF2sCY2muqCkQURNj7cgFkRicvqhigmwIHslh6zbJcI77cY2etRizSRCAOFFb+SbGhbk+N2z1sgVV1RnJZUiOqk9kddnCzOTpAlLy9ovtTEJvdSDU1hibAvoCMLV7iPNuuV3RgxPmfgnQiDAeG46+JtplCL2t0iA2c/KHLfDUI3B2GHLIv4NCktewcgdXhSHhpW1ChkM+aLb/M3/hi6eFbDrWNakbDvG1FhPePcd3iPr3FQs45H+Yg==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CY4PR0701MB3746.namprd07.prod.outlook.com;PTR:;CAT:NONE;SFTY:;SFS:(4636009)(346002)(136003)(366004)(376002)(39860400002)(396003)(83380400001)(86362001)(66446008)(558084003)(66946007)(66556008)(66476007)(8676002)(55016002)(2906002)(55236004)(7696005)(6506007)(186003)(26005)(19627405001)(76116006)(9686003)(33656002)(52536014)(7416002)(450100002)(5660300002)(7406005)(64756008)(75432002)(316002)(786003)(296002)(478600001)(71200400001)(109986005)(8936002);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata:
+ rbO9vPqrTpHEr4LWqvsLrA/MvJ/FCVb2TmxGbrnLVlHtInAK5YsQkR8/Mk1OLF2ZeRGbIRDRMlUU2uvTjJyzufERDMhtMcwq1tSi79ZjRElt8SJVHwV8tWlecWB+6JiEhW4z9f4ukjDiNx7wcXKrt2xxeTlQ3aI/MYQExESjqdIGeoUb2w/NwvD/AvlJkij6ub7+99GptuQ1SrXyKf8rVR4/thlA7PDiR57go4wfKjf+VX9bpMlT3SdZ3DO9BoxTfv45eq8sfTaisEGhC75Fw+IhhFd05SPmZ003cY1M39/1LfuwSovJwnEQsAWuiRLv7MJj5g1aTmTDsTDLJj1CE28zhDCwDNK80jU9bmCSkSmoc3XJ9jBjOYGX8M3x3av/4eWSFWLOAdaYVhicEmXZKWOic4jIXVeGwH7TBCrYooI3M7kC6pNESbEsEhxKpRDRfcip5HPnl1mad1OCX4DMbJaTFDKQS3+Dtgwn6e2kOpPh8+D+72Bex3RR13vQsfC0
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_CY4PR0701MB3746326B160B8D1AC859DF03EE6D0CY4PR0701MB3746_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0701MB3651
+To: Undisclosed recipients:;
+Return-Path: carson.burris@siu.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Jul 2020 08:18:01.7308
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6438d9db-1809-482d-8921-08d81e606ffa
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted:
+ SN1NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:40.107.92.127;CTRY:US;LANG:en;SCL:6;SRV:;IPV:NLI;SFV:SPM;H:NAM10-BN7-obe.outbound.protection.outlook.com;PTR:mail-bn7nam10on2127.outbound.protection.outlook.com;CAT:SPM;SFTY:;SFS:(4636009)(83320400002)(83310400002)(83280400002)(83300400002)(5660300002)(22186003)(1096003)(8636004)(52536014)(8676002)(26005)(33656002)(55016002)(450100002)(9686003)(75432002)(109986005)(83290400002)(6506007)(7696005)(7636003)(7406005)(58800400005)(83380400001)(36906005)(356005)(336012)(86362001)(19627405001)(7416002)(127190200002);DIR:INB;SFP:;
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 6840a534-c7b2-4883-9d12-08d81e606f35
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 6
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Jul 2020 08:18:01.5527
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6438d9db-1809-482d-8921-08d81e606ffa
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource: SN1NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5707
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:10.2023704
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3153.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;auth:0;dest:J;ENG:(20160513016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?W9BsNcU0OU7PnE4CLYn4gmQDUH6YPUcQNRdR8Q0zl2Bu2Am6AhmdpED9XG?=
+ =?iso-8859-1?Q?YlJhVXKnI8Sx2GgwSUmxaktxUpUL/GbtGDx+fy6/xD7FEV5IfV1S2ZP1I8?=
+ =?iso-8859-1?Q?B9ZWG6hAGyA9PFR1/a5lUmYsN6K1a/5eplQXEggHfR65eTNYZgVVHRF4Es?=
+ =?iso-8859-1?Q?8aNy72BzbrSkkx5nA6nvCRNiXXmHrSmZez5vjaOWXi9v9j4W/+0TNwNFFI?=
+ =?iso-8859-1?Q?nWDgUPiDswvdadfQngD25flGfb6ws0zJD3hFZnnezcXOT5VgOo3a/2xtk2?=
+ =?iso-8859-1?Q?ruIjVJnFehhhidbNpAqaVyCbbWXnFalx8mSMcDALUilIC6fnVq3gMFYdAg?=
+ =?iso-8859-1?Q?cxBQ9WZRVtfG42yqXwXRfsU6mSXe8T8AXTWhI/mjy3koPiaT8kRENopZlX?=
+ =?iso-8859-1?Q?J2zfNp4sTVgSgPf4Ayjj0PQ48Qn12JaDeb1FhpQPcJ2X14VZFXwJmphHln?=
+ =?iso-8859-1?Q?74UfXJ6aX5qUrKWykHNl8VAuLgH+ETys9YysIlAwSgy2uncppTd56XKun8?=
+ =?iso-8859-1?Q?HnkxZFOLm/JaBu2u8gNNTRn7aj/Bn/+J1kxOqMaeLHcj+MWrvCG6Cpfbid?=
+ =?iso-8859-1?Q?919KuUH0h9bufGZDo4XMie4XEQH38pj2vSEtNDq9ijOXSCJapmWknrAdRB?=
+ =?iso-8859-1?Q?uJiXTX+1UAaGHIWHIx6ANHEEmXPGV5USElX3JqaYpmRZaGBzSK14NVy5LA?=
+ =?iso-8859-1?Q?hSndzsI8tt4lz9rA7DTeTmMD9Vs9AayOp2SwLtIFMolYZeyaCg21qlH//a?=
+ =?iso-8859-1?Q?iOMgLb1oSH4qP2gC2jcRjcsrl2q0KHaF11DOL/jnYUBk8wZJzYPGVkw4b9?=
+ =?iso-8859-1?Q?juu81TTA7wVy3mbLA1ADYyk3tOvColCModGrW5HUdSeIobwa91bUosUahZ?=
+ =?iso-8859-1?Q?ObLs5GRmjrQue0hPtKiedYmm2TPuOOW3DAYLO+iLW2ZyyMr/OYSetF3dYI?=
+ =?iso-8859-1?Q?+IjJRl0U3+i8zMUsy/eM4xWGS5KsyVSMlH2dNZGqgRG+rBlh18HLW3PapC?=
+ =?iso-8859-1?Q?FXl0SF5o4bWB/ZNKe4daT3iNQUs44g7bo8X0hoqtrWwANNsMKTtxEH6AQo?=
+ =?iso-8859-1?Q?owNAGFXO9Wl7hVSAqcUYV8/KnqdAirgEKLxuRD3Jc3WdPlf9xFKcYbiJXM?=
+ =?iso-8859-1?Q?lApgHbCdnG7Xhy/y9qI+YuxGSImNovwFmLhvYQ5dcfrS0GqGM+1FpN/BM6?=
+ =?iso-8859-1?Q?W85GmyMQIR1p/APxo53lFgFGADIVMToYuYnGk2kkbYQKSwsL240DofVwg/?=
+ =?iso-8859-1?Q?ESYwwD2L/37moICXRXwTLgIy6Mez6bLzriTm/YPZVetmOUtcyCqyOlYj8Z?=
+ =?iso-8859-1?Q?7i401G3n6lelOMW4oOQ/KEzyK8LXOrirt+WoO6O3s33QRECYvRhPM5fyVW?=
+ =?iso-8859-1?Q?v+2ozHZ5xPV+Zs5gQKmxjxNJjRyW05HSKfsOx6shnxz4kIOsezHaFCKNqE?=
+ =?iso-8859-1?Q?RSmMJkoODD6+9DX6SbnwJCBUetzwk0NUu/vG1ZvihFAKLHXkMSL4x9Lxgp?=
+ =?iso-8859-1?Q?t3xWAm3IhVkyn5ssOfhdjJc01vnCNBJTSBtJfxYj0SKPiul7oHu/D5FpOX?=
+ =?iso-8859-1?Q?gKJ4Nv+t4H39OI2hTPQ5rEbZFg23YRNZofFYyTCCVzc3n4+jHaH5ZR22hI?=
+ =?iso-8859-1?Q?49gVFbZBv2+mP/SFQ3xxAlgosbtYSNmimkscjjDKsM9ytY4Eic04Aj91n7?=
+ =?iso-8859-1?Q?D0+Zp6XokD4wlWs0tQMgwu5Nl97fXxGaSqywnH8Ul3/hkdy3NGBrWFExuH?=
+ =?iso-8859-1?Q?S0FCFwPmAXNabdX31N5p8A8U3lVtsi0w76/pWyalGnsLIw?=
+MIME-Version: 1.0
+
+--_000_CY4PR0701MB3746326B160B8D1AC859DF03EE6D0CY4PR0701MB3746_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings to you! Would you allow this internship opportunity and get $450 =
+every week? For more details visit https: //wp.me/ Pc6Dhm-5 and apply. Note=
+: To access the website please remove the space between the letters.
+
+--_000_CY4PR0701MB3746326B160B8D1AC859DF03EE6D0CY4PR0701MB3746_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+Greetings to you! Would you allow this internship opportunity and get $450 =
+every week? For more details visit https: //wp.me/ Pc6Dhm-5 and apply. Note=
+: To access the website please remove the space between the letters.
+</body>
+</html>
+
+--_000_CY4PR0701MB3746326B160B8D1AC859DF03EE6D0CY4PR0701MB3746_--

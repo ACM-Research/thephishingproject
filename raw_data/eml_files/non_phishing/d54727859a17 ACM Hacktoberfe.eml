@@ -1,0 +1,985 @@
+Received: from DM6PR01MB4986.prod.exchangelabs.com (2603:10b6:5:5f::15) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Mon, 12 Oct 2020 17:19:06
+ +0000
+Received: from DM5PR08CA0060.namprd08.prod.outlook.com (2603:10b6:4:60::49) by
+ DM6PR01MB4986.prod.exchangelabs.com (2603:10b6:5:5f::15) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.29; Mon, 12 Oct 2020 17:19:04 +0000
+Received: from CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:4:60:cafe::19) by DM5PR08CA0060.outlook.office365.com
+ (2603:10b6:4:60::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.21 via Frontend
+ Transport; Mon, 12 Oct 2020 17:19:04 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ CY1NAM02FT009.mail.protection.outlook.com (10.152.75.12) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Mon, 12 Oct 2020 17:19:04 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 12 Oct 2020 12:18:48 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 12 Oct 2020 12:18:48 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 89C29C000055; Mon, 12 Oct 2020 12:18:48 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 14F35C000054
+	for <ecs.all@lists.utdallas.edu>; Mon, 12 Oct 2020 12:10:21 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=john.cole@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  john.cole@utdallas.edu designates 40.107.93.60 as permitted
+  sender) identity=mailfrom; client-ip=40.107.93.60;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="john.cole@utdallas.edu";
+  x-sender="john.cole@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: a4Zjok7UmCo1ddvD5//BjDh7mP1KSppC+NlrMsoMPTLI6+VXVZasbF/lhiiNsGIbjudWDps5hD
+ xVUhpnWO1DXVwBt6nxhvG/SMCsSVFJgbnmuKMevMqmiJi8WO3oa94ukeNMVeLorAxLBBCO6cz7
+ fPe/CTR7zTGSAIRC6LYWdeYhyViVFpKyIq6aMk4b7tjSpRmcUwudn1/Vc8U11W5gfLM+HAZIqQ
+ MfTQp9Q3byCZqv22Lh1lZBxkzcyVVHYYPHmrjFnyISGSJqJswBr5KFPDEhML2MDtwaMNmjwAYa
+ +zudtw46H7+rwTIl28IV/jrV
+X-IronPort-RemoteIP: 40.107.93.60
+X-IronPort-MID: 1072342
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0A5BAAVjYRfhzxdayhgDg8BATwBBQUBAgEJARWBUYEhL?=
+ =?us-ascii?q?ykod1geAwcILAqCZYpQoVt5gREDVQIJAQEBAQEBAQEBCAEmBwIEAQGBbAGCX?=
+ =?us-ascii?q?QKCFyUBOBMCAwEBAQMCAwEBAQEBBAEBAQIBAQIDAgIBEwEBAX9ggQIBgUYBg?=
+ =?us-ascii?q?UoLAzEMgjcigxoCAQMSGxMBAS8JDwIBCDECBQEGBzIUBwEGAwIEEwgWBII5R?=
+ =?us-ascii?q?gQBAYF+TQMuAQIMM5llAYEoPgIjARItAQECCYEFKYlVgTSDAQEBBYEzAYNQA?=
+ =?us-ascii?q?1UBCYFGCYEhFwGFUUyIdT40gSCCGDU+gX1fAgEBAQURgREBEgEjKysHgk8cg?=
+ =?us-ascii?q?i2NN4J5AwUgAol2JotakRQDBAOCaIc2SYECgQyQfoMVgSqIXhWUCJE9hVyGe?=
+ =?us-ascii?q?m+HDokHhDACBAIEBQIQBYFrIQ9acHIxHYJpCQo6AQIBAg0BAgICAQECAQEIA?=
+ =?us-ascii?q?QEBAY15PYNRBmqDb4U/PkMxAgEBAREhAgYKAQEDCXxAikiBMwE0XAEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3ANKUd1xNh/Pkn0v4JXUQl6mtUPXoX/o7sNwtQ0K?=
+ =?us-ascii?q?IMzox0K/z5psbcNUDSrc9gkEXOFd2Cra4d1KyL7Ou/CSQp2tWoiDg6aptCVh?=
+ =?us-ascii?q?sI2409vjcLJ4q7M3D9N+PgdCcgHc5PBxdP9nC/NlVJSo6lPwWB6nK94iQPFR?=
+ =?us-ascii?q?rhKAF7Ovr6GpLIj8Swyuu+54Dfbx9HiTagY75+NhW7oAfeusQUgoZpN7o8xA?=
+ =?us-ascii?q?bOrnZUYepd2HlmJUiUnxby58ew+IBs/iFNsP8/9MBOTLv3cb0gQbNXEDopPW?=
+ =?us-ascii?q?Y15Nb2tRbYVguA+mEcUmQNnRVWBQXO8Qz3UY3wsiv+sep9xTWaMMjrRr06RT?=
+ =?us-ascii?q?iu86FmQwLuhSwaNTA27XvXh9RwgqxFvRyhuxJxzY3aYI6XNfpxYqzScMgASm?=
+ =?us-ascii?q?ZdQspcTTBNDp+iY4YJEuEPPfxYr474p1YWoxezGw6sBOfxxTNQm3T42ao60+?=
+ =?us-ascii?q?QnEQ3IwQctGNAOsHPUrNXzLqsdTee1zK3WwjjYcvNWxSry55LMchAlu/6MRq?=
+ =?us-ascii?q?h8ftTMxkkyDg7IiEibpoP5MT2PzOsNr3Sb4PR6VeKpk2Mqqh19rySvyMoulI?=
+ =?us-ascii?q?TEhIIYxF/a+Ch9wos4Jty1RFJnbNOqHpVdtiOXOpV0T84hTWxmtyQ3x74FtJ?=
+ =?us-ascii?q?O6fyUHyokryhjCYPKJdIiI5wjsVOeXITpgnn1qZLe/hwuu8Ue90OHzSs603E?=
+ =?us-ascii?q?5NripYjtnMsncN1xvQ6sSdVvR9+UKh1S6L1wDS7OFEIl47mrfaK54n2LI/ip?=
+ =?us-ascii?q?0TsUHFEyTrm0v2lLebe0o49uSy9ujrfrfrqoWYOoJ6kA3zM7giltS7DOk6KA?=
+ =?us-ascii?q?QDW2yW9f6h2LH/40H1WqhGg/M4n6XBrpzXJNgXq6C8DgNIzoos8BeyAjKm3d?=
+ =?us-ascii?q?kdg3UKIldIdReJgoT1PVzFPer2Au2lg1u2lTdm3/DGMaPlApXKNnXNiKvsc7?=
+ =?us-ascii?q?Fg50JA0QY9w9dR6pNNBrEGO/38RFX9tNvFDh8lKAO0xPvnCNNg2Y8EQWKPGK?=
+ =?us-ascii?q?iZML/MvlCU+uIvIu6MZIkPtDb6Nvgl+/rujXg+mV8eZ6WmwZwXaHWgEvRnJU?=
+ =?us-ascii?q?WWf2bsj88OHGsWpAYyUfDmhV+YXTNXaXu+RaMx6i0jBIKjF4jDR4StgLKb3C?=
+ =?us-ascii?q?e8G51bfmJGCleMEXfubYmLR/AMaCaMLcJ6jzwESaWuRJUl1RGqrgD60KBrIf?=
+ =?us-ascii?q?TJ9S0FrZ7jzsR65/XPlREu8jx5F9qS3H2WT21uhGwIQzs20bt7oUx80VeDzb?=
+ =?us-ascii?q?N4j+ZFFdxP+vxGSAM6NZrGwOxhEdz9RB/OfsraAGqhF9itGnc4StZ5l9IFeA?=
+ =?us-ascii?q?B0H9GKihHYwzHsHqMZnriPDYdy/67BiSvfPcF4njzt060syxEERctJfyXyhK?=
+ =?us-ascii?q?l/8U7YAIrEu1iFm6+uca0HmiPB6THQniK1oEhEXVsoAu3+VncFax6O946rz1?=
+ =?us-ascii?q?7eT7KoFbUsOxdAzsjHEKZRd9n1lgoeFvr4MY6YY2ntxjvpQErOx6uMaZqscG?=
+ =?us-ascii?q?IYj23GEEZRqwkI5j6dMBQmQCKoombQFjtrQFDoY0Wq+u56pVumUkM9ywWDdA?=
+ =?us-ascii?q?ts26fsoEwviPeRSu0e0vc/gAl88mQmJF+mxJqWBsGJ/Uxhd/kBPYp4vBFGzW?=
+ =?us-ascii?q?Lcp0p2OZnyZ6xlg1cfdUxwsSaMn111DYVG18MtqH4C0RZ+IKac2UgHej+FlZ?=
+ =?us-ascii?q?z9IbzYLGDu8QvnN/aQgwmBlofNvPlXoP0j403upgSoClYv/xAFm5FO3n2Q64?=
+ =?us-ascii?q?+LRAseXJTtU1omoh1zprXUeC44tMvf0XxhN7XxsyeXh4pvXbN6jEf7OYkHY8?=
+ =?us-ascii?q?bmXEfoHsYXBtajMrkngFHzKBIPYL0OretoecK+d/6WnqWsObUF/nrugGJZ7Y?=
+ =?us-ascii?q?R6yk/J+TB7T7uC3ZEFxbeT2Q+KfyrggF6ltsns341IeHtBewj3gTihH4NXaq?=
+ =?us-ascii?q?BoKMwJDmeoZcawwthWmoLhUnpc/UXlCl8bkpzhaV+ZaFrz2hdV3EIcrCm8gS?=
+ =?us-ascii?q?WPyDpwgmJMzOLXzGnUzu/lbhZCJn9TSTwokwL3OYbtxYNSTA2yYgMujhfg+U?=
+ =?us-ascii?q?vq2/0RuvFkN2eKJCUANynuczM+Cu3h7PzaJZYIsc5gsD0LArjkJwnCFfil5U?=
+ =?us-ascii?q?Ndin2rHnMClm1hMWjy4tOh2UQ90T74Tj47rWKFK5gomVGDu5qEA6YWh2VORT?=
+ =?us-ascii?q?Em22PeXgHuZoDwr9vIz8+R4KfiBwfDHtVSaXe5l4rY7XnivDQ4D0HnxKLh3Y?=
+ =?us-ascii?q?G3WQk82ivm29Q4Tj3GoFDkeI732q+mMOVhOE51GFv77Mk8EYZ79+l4zNQZ3X?=
+ =?us-ascii?q?xQ38THzT88iW72dO5j9+f7ZXsJSyQMxoeJshX51ERnKnuSgY/1SyfEzw=3D=?=
+ =?us-ascii?q?3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,367,1596517200"; 
+   d="scan'208,217";a="1072342"
+X-MGA-submission: =?us-ascii?q?MDEIvwI3R/WiPt2BUJb7GGjsplvr8DRy8JAZ9R?=
+ =?us-ascii?q?/+kKaJ1jt1hiD1OGn2noqB28THEyhFcPjc2lEB0zle28rk2PB30PTnLa?=
+ =?us-ascii?q?q1FOo5UUdsS/z7A9ckVGjm5lVoCR9T3lAEpJV+8tio1fXSOB5f4OLSYu?=
+ =?us-ascii?q?mR?=
+Received: from mail-dm6nam10on2060.outbound.protection.outlook.com (HELO NAM10-DM6-obe.outbound.protection.outlook.com) ([40.107.93.60])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 12 Oct 2020 12:10:20 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=gjO1VuTHviYCpwqAAo/xgOdlbW+noqOy61s46z7ZuiK8QU22F+HK45DvRB5SLYvkb99a0uvftGCKP3JKNeKXjqGpuhFBX8uZPWJRy6hF+mRqPsF44jg5BHtDS/2Jl+GKSnHR5mmVqMnT/IKJm2iNka+uZoszYX/hldhujTMKRSWfkd397wnRk5d15lp0ZYpGLn7cBoS734uDsBzMp8hc2CDCmROlzCEnUYgQf9VLLlH9GPTguQ30p/laUT+4iZXwPKu3coSEoYZIVEgtD+z+1nG/k+2E1kmcesJcNECOrcQhgoK2p9lWZW32FCv2hWnGUSFt7CUNr/H4xKNI72zc3w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Ndl7sh5olGUehvVesaJtsB1CiHG/acjGMLfhuyiJdQQ=;
+ b=YeKYV6xxzBLjtfWhd2hi9o+4CeTi7ZU+8YwAOrMBwCtAQfwzta/c/5XSgMOu7x5ZUD/o3NSW+AJq4/0whttdH+Zsif7jYNUWXGCmndXqBBkki1+NbeuyBsthdmB2wcVDrzEAlremEwNSvjAvyFz+crsbHARJOCg9eDrhQzLXI+0+cYX9uChLyRLm2Vz6klDRMjCQdl5nZZn+vrHDMYACtTpTDyI3i9om4GkgoCjUl2HrqoU5xhjV5kLYLg53qEElyqtqpZKo5KoKp+TC8co+/i3lG1NcFsJ9jHXkaQCh9jTT1I0oCy5HKu4hmGAeGeYPWvbqBFWf4QmzoZ1E4WFp1A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Ndl7sh5olGUehvVesaJtsB1CiHG/acjGMLfhuyiJdQQ=;
+ b=i7OluILXgWySzTvwAoTcHiZ3ucy5yr5ABqSMC+Wd/0bBU7ZoEjov8uSkIYDXejSIZ0QB59I9/g5ceqT2Ww7hsiAjkIQpZXNQ5BcjzrhoL2DcYOXi7S+6aS/RfpFtwRnmj0w26VGvKCykkU1CbnVGF2MgKu3ZHLTqwAbV7w17gU4=
+Received: from DM6PR01MB4186.prod.exchangelabs.com (2603:10b6:5:23::30) by
+ DM5PR0101MB2956.prod.exchangelabs.com (2603:10b6:4:2c::14) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.26; Mon, 12 Oct 2020 17:10:16 +0000
+Received: from DM6PR01MB4186.prod.exchangelabs.com
+ ([fe80::d146:baf4:307d:716e]) by DM6PR01MB4186.prod.exchangelabs.com
+ ([fe80::d146:baf4:307d:716e%7]) with mapi id 15.20.3455.030; Mon, 12 Oct 2020
+ 17:10:16 +0000
+From: "Cole, John" <john.cole@utdallas.edu>
+To: ecs.all <ecs.all@lists.utdallas.edu>
+Thread-Topic: ACM Hacktoberfest!
+Thread-Index: AQHWoKmm9nDPO9h+cUuGLZo26GuWu6mUM4XQ
+Date: Mon, 12 Oct 2020 17:10:16 +0000
+Message-ID: <DM6PR01MB418653FF5065D3B56C56FCA69E070@DM6PR01MB4186.prod.exchangelabs.com>
+References: <SN6PR01MB4767D3B936C067CE729D237BDC070@SN6PR01MB4767.prod.exchangelabs.com>
+In-Reply-To: <SN6PR01MB4767D3B936C067CE729D237BDC070@SN6PR01MB4767.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [97.99.102.133]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: d268d5e1-7313-4ba5-075b-08d86ed2eb59
+x-ms-traffictypediagnostic: DM5PR0101MB2956:|DM6PR01MB4986:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <DM5PR0101MB2956258C30E76AA68014E2899E070@DM5PR0101MB2956.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:10000;OLM:10000;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 0kYfT1SgYpyed063Vnbc6RAgfrL77TLD96SQAiRzyIZ+YxxJuIw854Izb5hOZddFKuvGLuvfnAXFiFFgM2E5zF+jPocjrrksFcMJA8ihBSVZVq4ryWnqV1iW6Kt/WqKcXvxhpym+yD6LJwpPFRCccO1U7e0UnQtaT6nnJ72z7huv5dnQuLBIzpDMtW5PFo4EntymmX2ZlLNElu2EYLQSQrnpf1w+f+4zLSsmL0XO4LVqum/cspWVE3NMeEeAmNPbFs0vXbiZ43QfRUNI7wyPlNgTIDmdgZM7SOhMV40vCe8M7TNFFhlq7qfAlRKoTybd4j2f2WdGuJrAyCdbu8kTq66KoN0rzwRIEijPsYXiQll/FN7hUUnKrpDZ5vnL3wt6ZNKl4LRK8eI6D6SSEk2Ysxa/V7UTZFUuHqXunayWoL8=
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR01MB4186.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(346002)(39860400002)(366004)(396003)(136003)(376002)(76116006)(66476007)(316002)(33656002)(64756008)(66556008)(66446008)(786003)(66946007)(8676002)(76236003)(9686003)(83380400001)(6916009)(966005)(296002)(478600001)(52536014)(166002)(2906002)(86362001)(71200400001)(5660300002)(55016002)(19627405001)(6506007)(186003)(8936002)(7696005)(75432002)(7116003)(26005)(42660200005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: YHI05AgC9xJX3xs/6Ti4+9uSmBgkf6qqrUimLhPB0GSRR8BawCN3k+KtEowvPciY9iSjAhz0fkx98JxAuGsCcf3Up7pWRZEuUVJi6VEqlk3LSnMSSnuBYJLfHKWPx3gsPhb7piOmC2ZA3skYvhhkyf7Ad4ujOaF/FHsRWocV7TikASn+g9iJFa2BAeiajLa3Te8DwFXhhTxUiHvFv74DYqmfq0OX7C1E0EO84oFULBJljrddvaBBihrsUGdyT+tcLghwRkt91H0pjROgrNS1kBWfcr5seBJpEwaQxjxbu+OIODUfsN58F3S7wSXYQGvHQ9GIg4zW7m5YmfvsH7Qez8J7ME3ol+wuY0VIpacSRiOTTkX+nXobKndVj9r61dXFx04MBJrwdq1cuaJ9cB3w+sK4qK9jk4uVXX2nfCTWxdLgmFdqUQKSkxUPnXRi86IhXCOgisMyZZIGWMgalzsRZbSGDVANABdH6nu+DVdECxz8Rcv4qCMJ2/+kix2+t6FK7x3jImPXV4fcue4mHNtq7/ErIJ8dOCr9Tx039Nex+pKpoOtGWTAnHpNhWmKTRoPKZ7BPkkgFNNsSrk+LuCeC4BZbqB0WsUOu8NVYV4hIAjaKTDKdLEDre7Z6e9UQfDqVnufSx2Ll2D9OQW+iVz0S8g==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR01MB418653FF5065D3B56C56FCA69E070DM6PR01MB4186prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR0101MB2956
+Subject: [ecs.all] FW: ACM Hacktoberfest!
+Reply-To: "Cole, John" <john.cole@utdallas.edu>
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1362
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/DM6PR01MB418653FF5065D3B56C56FCA69E070%40DM6PR01MB4186.prod.exchangelabs.com>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5105129@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Oct 2020 17:19:04.3593
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d268d5e1-7313-4ba5-075b-08d86ed2eb59
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 62963b3c-bca0-4fb0-5218-08d86ed1b0ba
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 7
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Oct 2020 17:19:04.2733
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d268d5e1-7313-4ba5-075b-08d86ed2eb59
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4986
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5554449
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.029
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?MewUpKQT8D0AYqAdBncb9L/4bnGXcNeyLKDRTSASdjgPFbOruFbeV5i4?=
+ =?Windows-1252?Q?7LXJYUla36gIYvjtJnDkbncp3NEuikaeFanWkp1zSnFOfU3oYOIZcqai?=
+ =?Windows-1252?Q?e3XYxUPX4VDjTmyZe9ichPWfSXaDLbmE808yjhIchQbcn0ce1CbI2lTp?=
+ =?Windows-1252?Q?vl2rPMaKoXyhv/aR3YtFkzRgnY6r9lrctxjNH/q0MfJLP0WJFGupPXWx?=
+ =?Windows-1252?Q?pT3UCAjrUS526vjlVRtuBXA19b+P785ikBJc7qZDILraEOJd3odLNE3f?=
+ =?Windows-1252?Q?6f189q9iFvNdQmHt6x9CWT03BXGiL37TdP4ZNM71yLP208vZXrZgzhoj?=
+ =?Windows-1252?Q?LMleu4kPUKgm9pFXAgLXOryrF/R7AdfGrJNybAL8TSgdccbXME3TNuCt?=
+ =?Windows-1252?Q?j9P82Bktm/wmKzkWEMEHErCljdwyU2Ru/5pcHwGKq4jWU4/O4r295eaW?=
+ =?Windows-1252?Q?zQCmx4OltlAMCYg8KmNti0xwuztOaJA7VbyvtP57BoMrsqyQtZznfTbo?=
+ =?Windows-1252?Q?li3R3tn8Yt8IC4jzvuKTt+TN1UnMy6xHUoAmtIuOYpIgdcu5jct9LiAW?=
+ =?Windows-1252?Q?DGunm60abqUgJ2ubHgCpuT8zWTiW/Mqg8Poun41VYOyo35Wm9+jhOyYd?=
+ =?Windows-1252?Q?dwYj0ueTBFSV44xV4tdkDmjF42D9WuYut9xN46w3Zac82IayJ2ENcr1M?=
+ =?Windows-1252?Q?1VxoIbdJPLAMP/OmBbkDVWTnwHtHDPQmJPFNiFXxVzRZnEyZ9G4vGI/I?=
+ =?Windows-1252?Q?UEDkqbGu7cJl4WYWtdeoWM8mw7vqxVjWTbMCweRkDqtvTwVJXIaRCbNF?=
+ =?Windows-1252?Q?mdw9U6qDOAUlZFV0pAMVPiC5tpvB/RDDIeQ5ufQDUu4p6NCSy5WbyEWJ?=
+ =?Windows-1252?Q?H/ko/bL20EeClxkjQ1z/3Cpx995f8EMAcE/XSVzHxwr6k60w9L4dSpBe?=
+ =?Windows-1252?Q?gDEkvMJq/IRoY5QUZkLCVux7pir03uq7++onvg/APIb/HgsGcBwIVICo?=
+ =?Windows-1252?Q?mWmc6IJ4QUtWoaxkdD0HvDBAwhJFQshj+4E+upz7XeguhfwhSiDqK2W+?=
+ =?Windows-1252?Q?Q3/k+YeF5+HkT+IMrPNRd3p2sDEwOT4jiNzdP7uKLz7O27AwEnR2kmom?=
+ =?Windows-1252?Q?nKYaTRTgr3+4cO6oSOWsZMCdGjfRwq3pYDF/JrkrUJwkChBhLAQSXkuY?=
+ =?Windows-1252?Q?AENyvds6bFif0HngFQEkKUoBE2Prbx2e47waEZ9o0iahFvc61XYnshL2?=
+ =?Windows-1252?Q?AgkRLGjfj5+NfLfDQ1j23iX5QRk4N/fFE/YI0lgzX2LRvmdSjjrPUpB8?=
+ =?Windows-1252?Q?91bwYo3JStsEoDHMgT+Z0f1qoAF3UYkLhHTnXJC8VrYYmo5YMLB9yfvA?=
+ =?Windows-1252?Q?9mC4an0zGOU1enZYYDIAOEkjRMhycFq4sePSrHhwTMVUB1dSXYXHkXWO?=
+ =?Windows-1252?Q?9Lm1cxVxMIxfZ8rVqw02rF2p8233pUn91oWowjDwSdI=3D?=
+MIME-Version: 1.0
+
+--_000_DM6PR01MB418653FF5065D3B56C56FCA69E070DM6PR01MB4186prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Another great ACM event.  See the link in the flyer if you have questions.
+
+[https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcdn.mca=
+uto-images-production.sendgrid.net%2Fea5fbfdddf66403a%2F30418fa6-1b8d-488c-=
+a9eb-dd5558ef0ae1%2F867x880.png&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.=
+edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637381199464988976&amp;sdata=3D9JbmUwiIGc09pJmnn1U6QPSvXqjiWYjigxK=
+KoZ3zzs8%3D&amp;reserved=3D0]
+
+
+Hello!
+
+
+
+ACM, in collaboration with other student organizations, is hosting a 12-hou=
+r Hacktoberfest event on October 17th! Apply today at https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fapply.acmutd.co%2Fhack&amp;d=
+ata=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb5=
+9%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381199464988976&amp;sdata=
+=3DMPn3Wv%2BkMWCAcJeH%2F8VVkfHYlWnFvJShHPGDBwSkoFQ%3D&amp;reserved=3D0<http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Furl3110.acmu=
+td.co%2Fls%2Fclick%3Fupn%3DlyCYecX4UqqhB5KKwfZcSBmsU-2FtlCUpM1RVVdZ6YRrwiot=
+pqYPacxfu0qpvP00nYZZtK_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8Ku71I35=
+oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2FgqzAfHBu=
+9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ-2FH3Ls=
+X7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYHeqwvfZV=
+zos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sxk7S1DDH=
+8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS0eGeddj=
+JPj9bCSeYCoXVBgszNzEOnG2kXlqFzRE3OMZMqrNHWW4LBYpY0eu6kgrRLk0MFlwsDCVh32LmMi=
+YmpuCpOLg2tVghWOV-2BFfsm087RtTCKGK0hSWHOvpq7WSkJZZOzpta8T4dQZVnPt0UblYCkgC3=
+eA2NwVrk3UqTo1h0LLLwgYeVtfPj8Oa&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.=
+edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637381199464988976&amp;sdata=3DObZlvqwlpft2qZT6NoFGe7lQx8fproeJCjt=
+lOFAV%2BHg%3D&amp;reserved=3D0>!
+
+
+
+We're hosting workshops, speakers, and discussions about open source at UT =
+Dallas with our partner organizations, to help you navigate the world of op=
+en source and introduce yourself to important concepts in Computer Science,=
+ like version control.
+
+
+
+Each division of ACM will be hosting an independent workshop which will wal=
+k you through different steps of a project cycle and teach you how to use a=
+n API, build a personal website, development with React, among many other t=
+hings.
+
+
+
+At this event, you will have the opportunity to make 4 independent pull req=
+uests on Github contributing to open source projects by ACM, allowing you t=
+o win a free shirt and swag, courtesy of DigitalOcean. We also will be givi=
+ng participants an inside look into OpenSource development at UT Dallas, ma=
+ke some very important announcements about these projects, and show you how=
+ to get involved.
+
+
+
+We'll also have an amazing list of guest speakers to cover topics like the =
+MLH fellowship, women in tech, and transitioning into a successful cs caree=
+r from our amazing network of ACM alumni and partner organizations.
+
+
+
+This event is completely free and you can register by going to https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fhacktoberfest.acmut=
+d.co%2F&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cd268d5e173134ba507=
+5b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381199464988=
+976&amp;sdata=3D%2FW7nYrPP1%2BYjrtmwL4X5mZyW843IDDGCMH6KRdoYehM%3D&amp;rese=
+rved=3D0<https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2=
+Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3DlyCYecX4UqqhB5KKwfZcSK1tTWMBj3DP3DG=
+45Y-2Fba5fNTDRGd71I1Fy2k56yPIWyg3vc_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGP=
+ObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-=
+2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavW=
+Wwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit=
+4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS=
+0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK=
+2o7YeS0eGeddjJPj9bCSeU6RA4vq71uQPSIwJ2LGAsG34P-2FPOkn08AwkO3kbndfexbh8m1skH=
+3cCY-2B7yepCzMYRhK6raexXHoUdweTWzgwfagkTF09BDMN2Kn4i-2BfQG9Q-2FXy3rgPqs0RXu=
+KGyq639eBV091lQzo3dLHBTHbyxjFpKoDZ9U2ZgUgzXh4x8nmy&amp;data=3D02%7C01%7CJer=
+ry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637381199464988976&amp;sdata=3DjLTi%2BnC9LYwLTn=
+E%2BIb7blqD9yDOVoVNs8cZlmG%2ByXj4%3D&amp;reserved=3D0> and filling out the =
+form. Make sure you join our discord<https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttp%3A%2F%2Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdY=
+LEMCXWclHkzey-2FdSYNx437yCTjBJXUKMBxhQYhyXVe4Of6izfX54u8SDNJj3oK3_Iw6-2B8DU=
+E-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9g=
+TpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2B=
+hi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzT=
+AOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRB=
+vtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3c=
+JxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS0eGeddjJPj9bCSedC0TMqzuKoJJGJdQLLnHP2R-=
+2FSlDVLObWAop5IczxJRGuAQh8hfvFq-2FEFc5TKiGjlkkrs0E1IFE-2FAVYzNyfB6opWvfJqMG=
+bbqktMCBoytqSFL6MZC4rYXV1B7NycXNhKb2icPPXAka5FNpIUji5fg5E7cFaqmmUKLsjAMfZ3Z=
+fzo&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08=
+d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381199464998970&=
+amp;sdata=3D4Ph%2BpGyRQ4Y3LXxUrCGzNWx2IyW9vLsiAl6NYs5nFPw%3D&amp;reserved=
+=3D0> (acmutd.co/discord<https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttp%3A%2F%2Facmutd.co%2Fdiscord&amp;data=3D02%7C01%7CJerry.Teng%40UTDa=
+llas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9=
+f6c%7C0%7C0%7C637381199464998970&amp;sdata=3DJyhiFuKmWBrkFGioGzBVamRE5SgZYX=
+gUyvHVD1aoHJI%3D&amp;reserved=3D0>) and verify with your first and last nam=
+e to view the channels where the event will be taking place!
+
+
+
+If you have any questions or concerns, please let us know through an email =
+to hacktoberfest@acmutd.co<mailto:hacktoberfest@acmutd.co>, or by messaging=
+ a staff member on discord.
+
+
+
+Thanks!
+
+ACM Hacktoberfest Team
+
+[https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcdn.mca=
+uto-images-production.sendgrid.net%2Fea5fbfdddf66403a%2F705b54d4-8972-40ef-=
+b341-a33293fb372d%2F64x69.png&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.ed=
+u%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637381199464998970&amp;sdata=3DgkAMOfb7j4U%2BxgKXSa65PKBDNAOwp3wofKS=
+N2F18KT4%3D&amp;reserved=3D0]
+
+
+[Facebook]<https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdYLEMCXWclHkzey-2FdSZ3qNsS75=
+vUMex9A-2B8R8C3AtkF3u8Py-2FfJteK5Iqk7EwWCXa_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0=
+MWfroqGPObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2B=
+hc3FeCf-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ=
+4Sl2mavWWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCB=
+VB-2Beit4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1=
+yt-2FPMS0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B=
+2BxBCMkK2o7YeS0eGeddjJPj9bCSeQD2gdVWuZ9SBOZSI98y3GAv8GqsVfVxzL-2FLRQdVbEM-2=
+BVkKfrScJJjCRHTZonoufxJ41oo3BR2RTr35-2BsTFBk1aSMcFEkTUrWerDVn6GDGVMtY4YxOrW=
+uQyvOYJEo7rx5vDsElIOIiIxkWyaCwDNAmInzDyJ0Pq0NEf2dT2qjPcs&amp;data=3D02%7C01=
+%7CJerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381199464998970&amp;sdata=3DswiJ%2BaZW=
+cORyUiSxcCzEXdemX3WheWQDYkd2Rh56taA%3D&amp;reserved=3D0>
+[Instagram]<https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdYLEMCXWclHkzey-2FdSf9JDubx=
+dKJRUsrG1UNNSVxifBiTsfY8WfIIaCfIn7xgrIOq_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWf=
+roqGPObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3=
+FeCf-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl=
+2mavWWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-=
+2Beit4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-=
+2FPMS0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2Bx=
+BCMkK2o7YeS0eGeddjJPj9bCSeRGs4gPRK1buWJqgWkQLHbiMh5cMH7fF-2FQj691Uxo9dTUA9e=
+yexNezegOafjYLwl4RwpMqnFdXzncIi1Ai4txwXS5LYtPJcfKf0Jfqf8NU9K6nu1FS6cIDzRkBL=
+6PJv8appmRle9Y0qfxtcx6TFf2szNM-2BJmINwaq2LbRCRrO-2Fop&amp;data=3D02%7C01%7C=
+Jerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637381199464998970&amp;sdata=3DX4morNQ4yALhL=
+YgBtT1A1cy%2BA3PTimASppdGtNtGvVU%3D&amp;reserved=3D0>
+[LinkedIn]<https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fwww.linkedin.com%2Fcompany%2Facmutd&amp;data=3D02%7C01%7CJerry.Teng%40UT=
+Dallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15d=
+e9f6c%7C0%7C0%7C637381199465008962&amp;sdata=3DHVaM6JOAmIjoOq0hyMDuN4o06wBR=
+XqTEIMmujffqPj0%3D&amp;reserved=3D0>
+
+
+
+
+--_000_DM6PR01MB418653FF5065D3B56C56FCA69E070DM6PR01MB4186prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Proxima Nova";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.xmsohyperlink
+	{mso-style-name:x_msohyperlink;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Another great ACM event.&nbsp; See the link in the f=
+lyer if you have questions.<o:p></o:p></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:black"><o:p>&n=
+bsp;</o:p></span></p>
+</div>
+</div>
+<div>
+<div>
+<div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#11194C">
+<tbody>
+<tr>
+<td width=3D"100%" valign=3D"top" style=3D"width:100.0%;padding:0in 0in 0in=
+ 0in">
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td width=3D"100%" style=3D"width:100.0%;padding:0in 0in 0in 0in">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:0in 0in 0in 0in">
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"max-width:525.0pt">
+<tbody>
+<tr>
+<td width=3D"100%" style=3D"width:100.0%;padding:15.0pt 7.5pt 7.5pt 7.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:7.5pt"><span style=3D"font-size:4.5pt;color:white"><img width=3D"204" s=
+tyle=3D"width:2.125in" id=3D"x__x005f_x0000_i1030" src=3D"http://cdn.mcauto=
+-images-production.sendgrid.net/ea5fbfdddf66403a/30418fa6-1b8d-488c-a9eb-dd=
+5558ef0ae1/867x880.png"></span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal"><span style=3D"display:none"><o:p>&nbsp;</o:p></span=
+></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:13.5pt 0in 13.5pt 0in;text-align:inheri=
+t">
+<div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">Hello!</span><o:p></o:p></=
+p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">ACM, in collaboration with=
+ other student organizations, is hosting a&nbsp;<strong><span style=3D"font=
+-family:&quot;Proxima Nova&quot;,serif">12-hour Hacktoberfest</span></stron=
+g>&nbsp;event
+ on&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,serif"=
+>October 17th</span></strong>! Apply today at&nbsp;</span><span style=3D"fo=
+nt-size:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:#F192DE"=
+><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3DlyCYecX4UqqhB5KKwfZcSBmsU-2FtlCU=
+pM1RVVdZ6YRrwiotpqYPacxfu0qpvP00nYZZtK_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfro=
+qGPObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3Fe=
+Cf-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2m=
+avWWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2B=
+eit4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2F=
+PMS0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBC=
+MkK2o7YeS0eGeddjJPj9bCSeYCoXVBgszNzEOnG2kXlqFzRE3OMZMqrNHWW4LBYpY0eu6kgrRLk=
+0MFlwsDCVh32LmMiYmpuCpOLg2tVghWOV-2BFfsm087RtTCKGK0hSWHOvpq7WSkJZZOzpta8T4d=
+QZVnPt0UblYCkgC3eA2NwVrk3UqTo1h0LLLwgYeVtfPj8Oa&amp;data=3D02%7C01%7CJerry.=
+Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b1=
+6e032d15de9f6c%7C0%7C0%7C637381199465068928&amp;sdata=3DzwuFl5DaHoOlVQk8RJv=
+F82ajhdGR%2Fw6BHioPO5gYmqo%3D&amp;reserved=3D0" originalsrc=3D"http://url31=
+10.acmutd.co/ls/click?upn=3DlyCYecX4UqqhB5KKwfZcSBmsU-2FtlCUpM1RVVdZ6YRrwio=
+tpqYPacxfu0qpvP00nYZZtK_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8Ku71I3=
+5oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2FgqzAfHB=
+u9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ-2FH3L=
+sX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYHeqwvfZ=
+Vzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sxk7S1DD=
+H8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS0eGedd=
+jJPj9bCSeYCoXVBgszNzEOnG2kXlqFzRE3OMZMqrNHWW4LBYpY0eu6kgrRLk0MFlwsDCVh32LmM=
+iYmpuCpOLg2tVghWOV-2BFfsm087RtTCKGK0hSWHOvpq7WSkJZZOzpta8T4dQZVnPt0UblYCkgC=
+3eA2NwVrk3UqTo1h0LLLwgYeVtfPj8Oa" shash=3D"egwrFZA5Q+fMZmmIvy17uLT4zzpcwwKs=
+oLEOr56tvjOtwkdzkBk0Am+LLBiun+oUbZIDnSUGke3zkoZMyPuxMk90GEvqe0aYNUhs1j/y5NB=
+3Q5nxbGbVJSBhWJbY9HDxaURFYaSceGE6e45IgQ6ZI7PkIDvS2ZrKli/28q8AZi8=3D" target=
+=3D"_blank"><span style=3D"font-size:11.0pt;font-family:&quot;Proxima Nova&=
+quot;,serif;color:#F192DE;text-decoration:none">https://apply.acmutd.co/hac=
+k</span></a></span><span style=3D"font-family:&quot;Proxima Nova&quot;,seri=
+f;color:white">!</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">We&#8217;re hosting worksh=
+ops, speakers, and discussions about open source at UT Dallas with our part=
+ner organizations, to help you navigate the world of open
+ source and introduce yourself to important concepts in Computer Science, l=
+ike version control.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">Each division of ACM will =
+be hosting an independent workshop which will walk you through different st=
+eps of a project cycle and teach you how to&nbsp;<strong><span style=3D"fon=
+t-family:&quot;Proxima Nova&quot;,serif">use
+ an API</span></strong>, build a&nbsp;<strong><span style=3D"font-family:&q=
+uot;Proxima Nova&quot;,serif">personal website</span></strong>, development=
+ with&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,seri=
+f">React</span></strong>, among many other things.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">At this event, you will ha=
+ve the opportunity to make 4 independent pull requests on Github contributi=
+ng to open source projects by ACM, allowing you
+ to&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,serif"=
+>win a free shirt and swag</span></strong>, courtesy of DigitalOcean. We al=
+so will be giving participants an inside look into OpenSource development a=
+t UT Dallas, make some very important announcements
+ about these projects, and show you how to get involved.</span><o:p></o:p><=
+/p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">We&#8217;ll also have an a=
+mazing list of guest speakers to cover topics like the&nbsp;<strong><span s=
+tyle=3D"font-family:&quot;Proxima Nova&quot;,serif">MLH fellowship</span></=
+strong>,&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,s=
+erif">women
+ in tech</span></strong>, and transitioning into a successful cs career fro=
+m our&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,seri=
+f">amazing network</span></strong>&nbsp;of&nbsp;<strong><span style=3D"font=
+-family:&quot;Proxima Nova&quot;,serif">ACM alumni</span></strong>&nbsp;and=
+&nbsp;<strong><span style=3D"font-family:&quot;Proxima Nova&quot;,serif">pa=
+rtner
+ organizations</span></strong>.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">This event is completely f=
+ree and you can register by going to&nbsp;</span><span style=3D"font-size:1=
+0.5pt;font-family:&quot;Times New Roman&quot;,serif;color:#FF8AE2"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Furl3=
+110.acmutd.co%2Fls%2Fclick%3Fupn%3DlyCYecX4UqqhB5KKwfZcSK1tTWMBj3DP3DG45Y-2=
+Fba5fNTDRGd71I1Fy2k56yPIWyg3vc_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o=
+8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2F=
+gqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2Z=
+Q-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmY=
+HeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2s=
+xk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7Ye=
+S0eGeddjJPj9bCSeU6RA4vq71uQPSIwJ2LGAsG34P-2FPOkn08AwkO3kbndfexbh8m1skH3cCY-=
+2B7yepCzMYRhK6raexXHoUdweTWzgwfagkTF09BDMN2Kn4i-2BfQG9Q-2FXy3rgPqs0RXuKGyq6=
+39eBV091lQzo3dLHBTHbyxjFpKoDZ9U2ZgUgzXh4x8nmy&amp;data=3D02%7C01%7CJerry.Te=
+ng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637381199465078920&amp;sdata=3DT4xR5Fq2AuN0Rz3Lg6yWn=
+tgjisZubpLexEDgO%2B%2BxUD0%3D&amp;reserved=3D0" originalsrc=3D"http://url31=
+10.acmutd.co/ls/click?upn=3DlyCYecX4UqqhB5KKwfZcSK1tTWMBj3DP3DG45Y-2Fba5fNT=
+DRGd71I1Fy2k56yPIWyg3vc_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8Ku71I3=
+5oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2FgqzAfHB=
+u9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ-2FH3L=
+sX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYHeqwvfZ=
+Vzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sxk7S1DD=
+H8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS0eGedd=
+jJPj9bCSeU6RA4vq71uQPSIwJ2LGAsG34P-2FPOkn08AwkO3kbndfexbh8m1skH3cCY-2B7yepC=
+zMYRhK6raexXHoUdweTWzgwfagkTF09BDMN2Kn4i-2BfQG9Q-2FXy3rgPqs0RXuKGyq639eBV09=
+1lQzo3dLHBTHbyxjFpKoDZ9U2ZgUgzXh4x8nmy" shash=3D"Nlrja35T4c8jrEhB+22ivfetM2=
+R4XycwM74yE4Y2q/bTRFjXJEHhAbuaRFZ9ai0ttfxzlmrC7cxbBcxwbxzi6WqwN4upcCih646Ev=
+dYg7smmoRdBOHYeS3dGevAFjLFDxP6oyRkBGefj/Vycs1pgO7GwO4isY9v7RTmBPv6GvPg=3D" =
+target=3D"_blank" title=3D"&lt;span style=3D&quot;font-size: 11pt; font-fam=
+ily: &amp;quot;Proxima Nova&amp;quot;, sans-serif; color: rgb(17, 85, 204);=
+ background-color: transparent; font-weight: 400; font-style: normal; font-=
+variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asi=
+"><span style=3D"font-size:11.0pt;font-family:&quot;Proxima Nova&quot;,seri=
+f;color:#FF8AE2">https://hacktoberfest.acmutd.co/</span></a></span><span st=
+yle=3D"font-family:&quot;Proxima Nova&quot;,serif;color:white">&nbsp;and
+ filling out the form. Make sure you join our&nbsp;</span><span style=3D"fo=
+nt-size:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:#FF8AE2"=
+><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Furl3110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdYLEMCXWclHkzey-2FdSYNx437y=
+CTjBJXUKMBxhQYhyXVe4Of6izfX54u8SDNJj3oK3_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWf=
+roqGPObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3=
+FeCf-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl=
+2mavWWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-=
+2Beit4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-=
+2FPMS0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2Bx=
+BCMkK2o7YeS0eGeddjJPj9bCSedC0TMqzuKoJJGJdQLLnHP2R-2FSlDVLObWAop5IczxJRGuAQh=
+8hfvFq-2FEFc5TKiGjlkkrs0E1IFE-2FAVYzNyfB6opWvfJqMGbbqktMCBoytqSFL6MZC4rYXV1=
+B7NycXNhKb2icPPXAka5FNpIUji5fg5E7cFaqmmUKLsjAMfZ3Zfzo&amp;data=3D02%7C01%7C=
+Jerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637381199465088916&amp;sdata=3DDVW0MSQ9eybLD=
+2dSgK0ppN03lMj3Dk%2F3Qmo4x2cmzRk%3D&amp;reserved=3D0" originalsrc=3D"http:/=
+/url3110.acmutd.co/ls/click?upn=3Da5-2BdYLEMCXWclHkzey-2FdSYNx437yCTjBJXUKM=
+BxhQYhyXVe4Of6izfX54u8SDNJj3oK3_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9=
+o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2=
+FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2=
+ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKm=
+YHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2=
+sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7Y=
+eS0eGeddjJPj9bCSedC0TMqzuKoJJGJdQLLnHP2R-2FSlDVLObWAop5IczxJRGuAQh8hfvFq-2F=
+EFc5TKiGjlkkrs0E1IFE-2FAVYzNyfB6opWvfJqMGbbqktMCBoytqSFL6MZC4rYXV1B7NycXNhK=
+b2icPPXAka5FNpIUji5fg5E7cFaqmmUKLsjAMfZ3Zfzo" shash=3D"kbbFnzmdP3Zbk0W//BWQ=
+IT5wRhWNuqtQbxowkGQL5sTRPNID7VgupqqK7Sz5+Ms5IjCEmeewI+pj0UVYlEbpvklHpOc2KoF=
+VhOYxRKSnhCc+7pLmSq4oDolFA2O72OnwWGp1tSevFP6+tSBHLflPLtPOH9djz8JNV9YV5cgE1f=
+4=3D" target=3D"_blank" title=3D"&lt;span style=3D&quot;font-size: 11pt; fo=
+nt-family: &amp;quot;Proxima Nova&amp;quot;, sans-serif; color: rgb(17, 85,=
+ 204); background-color: transparent; font-weight: 400; font-style: normal;=
+ font-variant-ligatures: normal; font-variant-caps: normal; font-variant-ea=
+st-asi"><span style=3D"font-size:11.0pt;font-family:&quot;Proxima Nova&quot=
+;,serif;color:#FF8AE2">discord</span></a></span><span style=3D"font-family:=
+&quot;Proxima Nova&quot;,serif;color:white">&nbsp;(<a href=3D"https://nam02=
+.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Facmutd.co%2Fdiscord&a=
+mp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed=
+2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637381199465088916&amp;s=
+data=3DtVxga1fQMvpv9Q01xXxZC6c8BKUFKJQzF3XS0dhY4pw%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"http://acmutd.co/discord" shash=3D"JiaVM390eCkIGSs4yL4U7vn04NQk=
+iIbZCOXrlDwYdmN7tnJqP9RdqQvdZJVW2Tuzv91zyTkuxYFQLzvJ5RN+4QwL6EfsFkFInKBKNgb=
+p3cNreo37pM4207XGyOCOV6ysqwht4v2vNRVYsX/N6biiGKVgqkUG7e7gVPY6ciIImaI=3D" ta=
+rget=3D"_blank"><span style=3D"color:white;text-decoration:none">acmutd.co/=
+discord</span></a>)
+ and verify with your first and last name to view the channels where the ev=
+ent will be taking place!</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-fa=
+mily:&quot;Proxima Nova&quot;,serif;color:white">If you have any questions =
+or concerns, please let us know through an email to&nbsp;</span><span class=
+=3D"xmsohyperlink"><u><span style=3D"font-family:&quot;Proxima Nova&quot;,s=
+erif;color:#FF8AE2"><a href=3D"mailto:hacktoberfest@acmutd.co" target=3D"_b=
+lank">hacktoberfest@acmutd.co</a></span></u></span><span style=3D"font-fami=
+ly:&quot;Proxima Nova&quot;,serif;color:white">,
+ or by messaging a staff member on discord.</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Times New Roman&quot;,serif;color:white">&nbsp;=
+</span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Proxima Nova&quot;,serif;color:white">Thanks!</=
+span><o:p></o:p></p>
+</div>
+<div>
+<p class=3D"xmsonormal" style=3D"line-height:16.5pt"><span style=3D"font-si=
+ze:10.5pt;font-family:&quot;Proxima Nova&quot;,serif;color:white">ACM Hackt=
+oberfest Team</span><o:p></o:p></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<p class=3D"xmsonormal" align=3D"center" style=3D"text-align:center;line-he=
+ight:7.5pt">
+<span style=3D"font-size:4.5pt;color:white"><img border=3D"0" width=3D"68" =
+style=3D"width:.7083in" id=3D"x__x005f_x0000_i1029" src=3D"http://cdn.mcaut=
+o-images-production.sendgrid.net/ea5fbfdddf66403a/705b54d4-8972-40ef-b341-a=
+33293fb372d/64x69.png"></span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal"><span style=3D"display:none"><o:p>&nbsp;</o:p></span=
+></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:0in 0in 22.5pt 0in"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:white">&nbsp;</span><o:p></o:p>=
+</p>
+</div>
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:0in 3.75pt 0in 3.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Furl3=
+110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdYLEMCXWclHkzey-2FdSZ3qNsS75vUMex9A=
+-2B8R8C3AtkF3u8Py-2FfJteK5Iqk7EwWCXa_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqG=
+PObG9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf=
+-2B-2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mav=
+WWwd2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Bei=
+t4ZKmYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPM=
+S0Bl2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMk=
+K2o7YeS0eGeddjJPj9bCSeQD2gdVWuZ9SBOZSI98y3GAv8GqsVfVxzL-2FLRQdVbEM-2BVkKfrS=
+cJJjCRHTZonoufxJ41oo3BR2RTr35-2BsTFBk1aSMcFEkTUrWerDVn6GDGVMtY4YxOrWuQyvOYJ=
+Eo7rx5vDsElIOIiIxkWyaCwDNAmInzDyJ0Pq0NEf2dT2qjPcs&amp;data=3D02%7C01%7CJerr=
+y.Teng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637381199465098914&amp;sdata=3DWIwJDDOab1e2hZ0JU=
+dbKW9qFBRaCpg6h1L0i5Qa6Cqw%3D&amp;reserved=3D0" originalsrc=3D"http://url31=
+10.acmutd.co/ls/click?upn=3Da5-2BdYLEMCXWclHkzey-2FdSZ3qNsS75vUMex9A-2B8R8C=
+3AtkF3u8Py-2FfJteK5Iqk7EwWCXa_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8=
+Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2Fg=
+qzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ=
+-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYH=
+eqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sx=
+k7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS=
+0eGeddjJPj9bCSeQD2gdVWuZ9SBOZSI98y3GAv8GqsVfVxzL-2FLRQdVbEM-2BVkKfrScJJjCRH=
+TZonoufxJ41oo3BR2RTr35-2BsTFBk1aSMcFEkTUrWerDVn6GDGVMtY4YxOrWuQyvOYJEo7rx5v=
+DsElIOIiIxkWyaCwDNAmInzDyJ0Pq0NEf2dT2qjPcs" shash=3D"O7m6Ke6dotzKnzQjFaDMKA=
+v/wBVAe+DiyghJQdxXlc1rkuwknsQkwlJ77xPAYNeNWby7SbvumH9uvHLho81C4r3iRFM/PnZEO=
+Co5tEIU53aok4MFu40lHa81TT6/nsEZiC5Szphz5+ZF36EDd5lvYlhQAPYgd4cuU+nZrCnurD8=
+=3D" target=3D"_blank" title=3D"&quot;Facebook&quot; t "><span style=3D"col=
+or:white;background:#3B579D;text-decoration:none"><img border=3D"0" width=
+=3D"22" height=3D"22" style=3D"width:.2291in;height:.2291in" id=3D"x__x005f=
+_x0000_i1028" src=3D"https://marketing-image-production.s3.amazonaws.com/so=
+cial/white/facebook.png" alt=3D"Facebook"></span></a><o:p></o:p></p>
+</td>
+<td style=3D"padding:0in 3.75pt 0in 3.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Furl3=
+110.acmutd.co%2Fls%2Fclick%3Fupn%3Da5-2BdYLEMCXWclHkzey-2FdSf9JDubxdKJRUsrG=
+1UNNSVxifBiTsfY8WfIIaCfIn7xgrIOq_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG=
+9o8Ku71I35oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-=
+2FgqzAfHBu9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd=
+2ZQ-2FH3LsX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZK=
+mYHeqwvfZVzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl=
+2sxk7S1DDH8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7=
+YeS0eGeddjJPj9bCSeRGs4gPRK1buWJqgWkQLHbiMh5cMH7fF-2FQj691Uxo9dTUA9eyexNezeg=
+OafjYLwl4RwpMqnFdXzncIi1Ai4txwXS5LYtPJcfKf0Jfqf8NU9K6nu1FS6cIDzRkBL6PJv8app=
+mRle9Y0qfxtcx6TFf2szNM-2BJmINwaq2LbRCRrO-2Fop&amp;data=3D02%7C01%7CJerry.Te=
+ng%40UTDallas.edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637381199465108912&amp;sdata=3Daw%2FUfyLvHf0xssQK1r4=
+vUU9Ur8ziAPQ539WQ4BEcjiI%3D&amp;reserved=3D0" originalsrc=3D"http://url3110=
+.acmutd.co/ls/click?upn=3Da5-2BdYLEMCXWclHkzey-2FdSf9JDubxdKJRUsrG1UNNSVxif=
+BiTsfY8WfIIaCfIn7xgrIOq_Iw6-2B8DUE-2BZZ-2BZ9TtSrzytBku0MWfroqGPObG9o8Ku71I3=
+5oX4HobEFivTPDVZMphH0ghAyQjY6TA9gTpHg0WiNZRutjkm4RpP-2Bhc3FeCf-2B-2FgqzAfHB=
+u9J7-2FySjNs6xR8cwe4YfDXNgoxob-2Bhi0XZFgYLQ5gMBdj-2BTkJ4Sl2mavWWwd2ZQ-2FH3L=
+sX7wAeIS5kG6qwVi732GbhntAEoxXGKzTAOp7aUiviWXWY6t3SG3dCBVB-2Beit4ZKmYHeqwvfZ=
+Vzos99VqdP9G5hsZOtyVxVZJncCUW8ZRBvtbilILJUIkuSp-2BBwks1yt-2FPMS0Bl2sxk7S1DD=
+H8bgMZ-2F2-2FRyZbJzJISYVJB3PfCc3cJxaeJqy5hNmubJlFgZl07B2BxBCMkK2o7YeS0eGedd=
+jJPj9bCSeRGs4gPRK1buWJqgWkQLHbiMh5cMH7fF-2FQj691Uxo9dTUA9eyexNezegOafjYLwl4=
+RwpMqnFdXzncIi1Ai4txwXS5LYtPJcfKf0Jfqf8NU9K6nu1FS6cIDzRkBL6PJv8appmRle9Y0qf=
+xtcx6TFf2szNM-2BJmINwaq2LbRCRrO-2Fop" shash=3D"pY+ne/8By2F1cToUtdeY6k5kd6pI=
+ZigeJE/3CU6vQeieOD7NUZCOgpllkUYxUY28g9ZZDz3G/v1JzT3UlJBkbKywR8ZKqtfwiAkxYj1=
+pHq7BGCSlyQVWLeNbcWrH6VDUBymi9+38tgzlPa0GL1MQXaB1N0b4CzsfW+zomk8JZi0=3D" ta=
+rget=3D"_blank" title=3D"&quot;Instagram&quot; t "><span style=3D"color:whi=
+te;background:#7F4B30;text-decoration:none"><img border=3D"0" width=3D"22" =
+height=3D"22" style=3D"width:.2291in;height:.2291in" id=3D"x__x005f_x0000_i=
+1027" src=3D"https://marketing-image-production.s3.amazonaws.com/social/whi=
+te/instagram.png" alt=3D"Instagram"></span></a><o:p></o:p></p>
+</td>
+<td style=3D"padding:0in 3.75pt 0in 3.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.=
+linkedin.com%2Fcompany%2Facmutd&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.=
+edu%7Cd268d5e173134ba5075b08d86ed2eb59%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637381199465108912&amp;sdata=3D5J0pZv3VrayNZy0f30dV3t02oX2jaRcWzKq=
+ASF88Nfo%3D&amp;reserved=3D0" originalsrc=3D"http://www.linkedin.com/compan=
+y/acmutd" shash=3D"cQqFHzL/ECcUem1O19QAoYNHFztXTXBZTHWsGehhuR637BkO8cDqqlf9=
+dTJYVmGLB73ZE3zT9AdO8clIi3EDx+hMVebdEGEXtt7jwGsT1gm2t0lik1OQklOHCXqA5IlVKuy=
+o3b3FFf+Q1JUJjpPyC4UeKgIPSCP5kWHRTf5Alig=3D" target=3D"_blank" title=3D"&qu=
+ot;LinkedIn&quot; t "><span style=3D"color:white;background:#0077B5;text-de=
+coration:none"><img border=3D"0" width=3D"22" height=3D"22" style=3D"width:=
+.2291in;height:.2291in" id=3D"x__x005f_x0000_i1026" src=3D"https://marketin=
+g-image-production.s3.amazonaws.com/social/white/linkedin.png" alt=3D"Linke=
+dIn"></span></a><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<div>
+<div>
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt">
+<p class=3D"xmsonormal" style=3D"mso-margin-top-alt:0in;margin-right:.5in;m=
+argin-bottom:5.0pt;margin-left:.5in">
+<span style=3D"color:white"><img border=3D"0" width=3D"1" height=3D"1" styl=
+e=3D"width:.0104in;height:.0104in" id=3D"x__x005f_x0000_i1025" src=3D"http:=
+//url3110.acmutd.co/wf/open?upn=3DTRnEVnJA9nvwwQx9eRZ59pq5wd-2Fz9DKnOdIBolG=
+ZRxgqw3ULK6Fn9NiLTi4yFIx-2BPMwH56hJazSdNvQwrIFLxh9zlyxCcp9BKbhPNS1ANaWpix7Y=
+JRBsTgkJ9do5f-2FbSmn9uP9p5nyqAuNFIirZCPIDjsZErhdTdg414YuuWmJhpToxvX2INkOQn6=
+JKrlZvJhfQS8Sn1vnuIAFkbVIzByZm33Dh0eHJrrm04sPstezXzOxLnUYbnsxcdY-2FzNSbXryB=
+IIIs903MD0wMYO8QN-2FwLa33e24Jp8hfrdBue2DjQRp6utMV0YJSDMNfmRDQIhyAwWExzN4J4L=
+9NTRw-2FSr669qHMu2lNL7lihAjBusEzghq-2BbFcgxXth9CiHmQQznAq8Sc3RqCEFp8ooR11mn=
+EZmO5zYbHJOUGhSynToUbpMiQQlEQftuoT8gzI2vaqLYJ2HRkgbDcCmPU-2Fly9xcqwhUcoYi4J=
+U-2FiH0j90Ng9M5c7OyNBhFDzUAbFmAEJPcnb6X6jqeZ3VyHNAhH89VmeP4-2Be-2F4U-2B8qr2=
+-2F7px9j6ysQ3bSWznW0CFJpoZc6wgntZYGw"></span><o:p></o:p></p>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_DM6PR01MB418653FF5065D3B56C56FCA69E070DM6PR01MB4186prod_--

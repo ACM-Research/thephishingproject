@@ -1,0 +1,856 @@
+Received: from DM6PR01MB4332.prod.exchangelabs.com (2603:10b6:5:76::29) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 13 Oct 2020 18:17:35
+ +0000
+Received: from SN4PR0501CA0074.namprd05.prod.outlook.com
+ (2603:10b6:803:22::12) by DM6PR01MB4332.prod.exchangelabs.com
+ (2603:10b6:5:76::29) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.28; Tue, 13 Oct
+ 2020 18:17:32 +0000
+Received: from SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:22:cafe::63) by SN4PR0501CA0074.outlook.office365.com
+ (2603:10b6:803:22::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.11 via Frontend
+ Transport; Tue, 13 Oct 2020 18:17:32 +0000
+Authentication-Results: spf=pass (sender IP is 12.130.137.244)
+ smtp.mailfrom=em.efollett.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=em.efollett.com;utdallas.edu; dmarc=pass action=none
+ header.from=em.efollett.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em.efollett.com
+ designates 12.130.137.244 as permitted sender)
+ receiver=protection.outlook.com; client-ip=12.130.137.244;
+ helo=omp.em.efollett.com;
+Received: from omp.em.efollett.com (12.130.137.244) by
+ SN1NAM02FT021.mail.protection.outlook.com (10.152.72.144) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.25 via Frontend Transport; Tue, 13 Oct 2020 18:17:32 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=efollett; d=em.efollett.com;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:List-Unsubscribe:List-Unsubscribe-Post:Message-ID;
+ i=yourbookstore@em.efollett.com;
+ bh=/9t7hy+IGWIbLxPnlqsqyPntTT2nKbqekefv1gpzN1s=;
+ b=gTca+kJx1N9p5LYdzP6G5nEWVxkGJz1HD6X8CBVnQd5VbwhHX0EdcDig2O4kMEHS49p/8J2g8Dwi
+   Y80LXDiyurXlkXMOd62Ec3GSKarBg3mu9tgljoEAhv5XYWyiFfY8gumhsWUvkPW0zP4pBeVtNX6p
+   n69pMrp+zs2G1vNN3bw=
+Received: by omp.em.efollett.com id hgnnjo2lr0ou for <zxt180005@utdallas.edu>; Tue, 13 Oct 2020 11:12:59 -0700 (envelope-from <yourbookstore@em.efollett.com>)
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 13 Oct 2020 11:12:59 -0700
+To: zxt180005@utdallas.edu
+From: =?UTF-8?B?VW5pdmVyc2l0eSBvZiBUZXhhcyBhdCBEYWxsYXMgQm9va3N0bw==?=
+	=?UTF-8?B?cmU=?=
+ <yourbookstore@em.efollett.com>
+Reply-To: =?UTF-8?B?VW5pdmVyc2l0eSBvZiBUZXhhcyBhdCBEYWxsYXMgQm9va3N0bw==?=
+	=?UTF-8?B?cmU=?=
+ <reply@em.efollett.com>
+Subject: =?UTF-8?B?4pyoVGEtRGEhIFByaW1lIFNhdmluZ3Mgb24gSGF0c+KcqA==?=
+Feedback-ID: 7266:149393802:oraclersys
+List-Unsubscribe:
+ <mailto:unsubscribe-AQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeO@imh.rsys2.com?subject=List-Unsubscribe>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fem.efollett.com%2Fpub%2Foptout%2FUnsubscribeOneStepConfirmAction%3FYES%3Dtrue%26_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeO%26_ei_%3DEolaGGF4SNMvxFF7KucKuWN4zhBpzywrPgRApAzlwjfVdeVtlSh-nUFn85R3Sd1Aoiuk7cSy9Eo&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547881131&amp;sdata=rcAIF4s5x7OsAIRPytJwYfkrnY1EswpHkPzM%2F9ZL378%3D&amp;reserved=0.>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-sgxh1: FzflSCRRRYxmlKHttHkQLKm
+X-rext: 6.interact2.EpWhVeNdtjT3vAOywYJfQZjJ7IeYbcZNAVZ3lEEkebRKAifg3ChpDlc35sp69xSZreVw
+X-cid: fheg.128275642
+X-ei: ElFxfQs_Jw9W4ASmY8zttEU
+Message-ID: <0.1.22D.965.1D6A18C7B62ACBA.0@omp.em.efollett.com>
+Return-Path: yourbookstore@em.efollett.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Oct 2020 18:17:32.2448
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ fe4d4cc6-be48-47f4-a44a-08d86fa4409f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: fe4d4cc6-be48-47f4-a44a-08d86fa4409f
+X-MS-TrafficTypeDiagnostic: DM6PR01MB4332:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:4;
+X-Forefront-Antispam-Report:
+ CIP:12.130.137.244;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:omp.em.efollett.com;PTR:omp.em.efollett.com;CAT:NONE;SFS:(4636009)(286005)(1096003)(34206002)(42186006)(19627405001)(19630485002)(26005)(4744005)(86362001)(356005)(166002)(76236003)(7596003)(7636003)(83380400001)(103116003)(82870400002)(83080400001)(33656002)(426003)(336012);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Oct 2020 18:17:32.1299
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: fe4d4cc6-be48-47f4-a44a-08d86fa4409f
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB4332
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9220782
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UHIyNFJYQlRlUmhCU05vc2xyVzR6NldLZUJMQnJJRXpZeS9uaGU4VWtrYVQv?=
+ =?utf-8?B?a05WRGorYUFwc3cwT0pvUGoxRE9jMkVyMGZIK2JkeDJDRlFNRGxob2p0SFpX?=
+ =?utf-8?B?RS95RmhhOGd4dXNML2xob1RoN1hHZytKQ2VrVlRkb1dLN1A5Ui9qczQ5TTdt?=
+ =?utf-8?B?QUhKd1dONjc5ZE1tSVVSNnBFSUNHaERlT0RiLys4Zk5mNG5hUzlXZ043Wi96?=
+ =?utf-8?B?Wm92eFkxUkdCaVRxYjFPQU1IY05PTVdvbkJaNnVNS2NhUWRnTUZnbG10a2dY?=
+ =?utf-8?B?SlBFUVQrcStKdTQ1UTdESTJUSzZTalB4RWk4YkFabE9rNkNSVTlvcXpFOVFZ?=
+ =?utf-8?B?c2I2WEs1TGUzc1BqMW5SOUFZNWUwMXpld3Y2L2xJTFhnVjdjemM0c1hKMUlR?=
+ =?utf-8?B?UlJWa1FaYU5wTnFtM1ZqZW9BbDJ5dVEwM2hFMkdoMm9kV2t0cVFyWTd0M2gz?=
+ =?utf-8?B?d0p4TXp2WkR2UXJrd1hKMEJ5WnJsY0o1d1hQcStVOGI1ZXhBL25xWExuaEJr?=
+ =?utf-8?B?TWUyTnlTY0NLKzVxYVVUNzhRRG9iRnl5dmNkMU5hUkxaeFNrV0tBSEZRaCtL?=
+ =?utf-8?B?cDJDRmNhMGhpeGoxa25JdTY1QUtINVplMVRGenMzbGNlSTFsSHlSbmc3U2FB?=
+ =?utf-8?B?cFNUL0FFaGc3bmR5T3BhZVRVL01nNHR6a25VV3FaNmw1c1F6M3c2YmVZQWI0?=
+ =?utf-8?B?eUhFeUluV1UydzhXN1NTcFQ3dVlCNkpzYUptVVZjcGpVL1N4cGU4K1NKY1hX?=
+ =?utf-8?B?ckQ3am9wT251QTR2Y0kzbWZzOC9jemlwMlNXeGhFMG9DTEtXZC9MOGNJN0RQ?=
+ =?utf-8?B?ZjZjYmJKdEsvejdvcTBaSG1NeXpzUXZSSFVHWlQ0TTlDZ0twaERMR2pBZEJs?=
+ =?utf-8?B?OFU2MCt6SlBaVEtRaUsrQk9uT0k2WVlTdE1LelErdEFXWTErSXNYUmxMWVhK?=
+ =?utf-8?B?b3ExYVlGUi9zZ2oxU2FHbWZlNW9vNHRSbU12VmNnUk9WTmZaVmJmMlZSb2J3?=
+ =?utf-8?B?d0Q1VFhXVEYrTWF0eE01MHhvQmxMMjFqTEdzL3Y5aVFrcHRhTDJNbnVVK0k5?=
+ =?utf-8?B?dVl6WVRwcDM3emYva3JwNm5MeVc5c1M1NU9GTFYwM0dFVnJHUTNaZHBlRE5Z?=
+ =?utf-8?B?QmpUMXMyMFdkT2FjaVBDQlkxcEViSEpwcjZOcTRRZ1pYYk5TVSt6Rjl4Z1lw?=
+ =?utf-8?B?Um1PTENEbmV6a0Z4OHJtZVg4SFFVRGs0TldYaTBuSHkvK3VDeDVRUDl4OFJJ?=
+ =?utf-8?B?Ymw2SmNvMS9BWlN1YnU2a3Y2bUNVd09aMURXVVZkQ21CYVBxM0pSRW5Zais1?=
+ =?utf-8?B?cmVjbDAxK1dvSmgyN2tyWUFFNTAvTzNPOXo2WVVON2ZYaDBvRXNJTjl3ZUtN?=
+ =?utf-8?B?Q3k1R1pKYWtYcmo5alliTVQxYWg5Yk5kOVY0NFoybGZhQUx5Wkd5RFRTZEVo?=
+ =?utf-8?B?ZDVIei9rWlNUWGllYkNhWlM4YXU3UDlHSmY0ZTBNRmNma1BOL3FXZ2lBaCtF?=
+ =?utf-8?B?M2xEd3IvRmdnUjJ0NnZiS0F2TjMrRXpJVVhEVkpuQ3FteVQxKzRIZnVyNjh0?=
+ =?utf-8?B?dWFWL0dMM1NXSVhBVHptUFBGNVNNUDZOd2l5b0ovcXhCOUxlanJHZEx4UWFa?=
+ =?utf-8?B?SFJmRWF4SW9qNERhWmpVL0szQllZcm91dFhvclFTWW9jUjVzRmFIMnFRWXNR?=
+ =?utf-8?B?UmgrYkxIeE83a3VSSTJjWlNOMmhIeXZWR3VuTkp6dHI4clJuM3NKdVJ4NkQ0?=
+ =?utf-8?B?NG5xV1BNNUg1ayt3N0VkcFdqWkN1U2xwZ3B5akFPdXRsNnpzTnZsWXRqTUp5?=
+ =?utf-8?Q?zx62fLDl5zGWUBC7R5FLQqMNKJGi7zDONzIDI=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html style=3D"opacity: 1;" x=
+mlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Your Bookstore</title>
+	=09
+		<!-- utf-8 works for most cases -->
+		<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+		<!-- Forcing initial-scale shouldn't be necessary -->
+		<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+		<!-- Use the latest (edge) version of IE rendering engine -->
+		<meta name=3D"x-apple-disable-message-reformatting">
+		<!-- Disable auto-scale in iOS 10 Mail entirely -->
+		<!-- CSS Reset : BEGIN -->
+		<style>
+			/* What it does: Remove spaces around the email design added by some ema=
+il clients. */
+			/* Beware: It can remove the padding / margin and add a background color=
+ to the compose a reply window. */
+			html,
+			body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			}
+			/* What it does: Stops email clients resizing small text. */
+			* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			}
+			/* What it does: Centers email on Android 4.4 */
+			div[style*=3D"margin: 16px 0"] {
+			margin: 0 !important;
+			}
+			/* What it does: Stops Outlook from adding extra spacing to tables. */
+			table,
+			td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			}
+			/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table al=
+ignment bug. Applies table-layout to the first 2 tables then removes for an=
+ything nested deeper. */
+			table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+			}
+            table table  {
+			table-layout: auto;
+			}
+			table table table {
+			table-layout: auto;
+			}
+			/* What it does: Uses a better rendering method when resizing images in =
+IE. */
+			img {
+			-ms-interpolation-mode:bicubic;
+			}
+			/* What it does: A work-around for email clients meddling in triggered l=
+inks. */
+			*[x-apple-data-detectors],  /* iOS */
+			.x-gmail-data-detectors,    /* Gmail */
+			.x-gmail-data-detectors *,
+			.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+			}
+			/* What it does: Prevents Gmail from displaying a download button on lar=
+ge, non-linked images. */
+			.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+			}
+			/* If the above doesn't work, add a .g-img class to any image in questio=
+n. */
+			img.g-img + div {
+			display: none !important;
+			}
+			/* What it does: Prevents underlining the button text in Windows 10 */
+			.button-link {
+			text-decoration: none !important;
+			}
+            .mobileShow {display: none;}
+            .gmailHide {display: none;}
+			/* What it does: Removes right gutter in Gmail iOS app: https://github.c=
+om/TedGoas/Cerberus/issues/89  */
+			/* Create one of these media queries for each additional viewport size y=
+ou'd like to fix */
+			/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+            /* What it does: Forces elements to resize to the full width of=
+ their container. Useful for resizing images beyond their max-width. */
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+             a.couponLine1 { text-decoration: none !important; font-weight:=
+ bold; font-family: sans-serif; font-size: 56; line-height: 56px; color: #4=
+14141; font-family:'Montserat','Arial','Helvetica'}
+        	 a.couponLine2 { text-decoration: none !important; font-weight: no=
+rmal; font-family: sans-serif; font-size: 36px; line-height: 40px; color: #=
+414141; font-family:'Montserat','Arial','Helvetica'}
+        	 a.couponLine3 { text-decoration: none !important; font-weight: bo=
+ld; font-family: sans-serif; font-size: 40px; line-height: 50px; color: #41=
+4141; font-family:'Montserat','Arial','Helvetica'}
+            @media only screen and (width: 320px),(width:375px),(width:414p=
+x){
+            u ~ div {min-width: 100vw;}
+            }
+
+			@media only screen and (min-device-width: 320px) and (max-device-width: =
+374px) {
+			.email-container {
+			min-width: 320px !important;
+                } =20
+			}
+			/* iPhone 6, 6S, 7, 8, and X */
+			@media only screen and (min-device-width: 375px) and (max-device-width: =
+413px) {
+			.email-container {
+			min-width: 375px !important;
+			}
+
+			}
+			/* iPhone 6+, 7+, and 8+ */
+			@media only screen and (min-device-width: 414px) {
+			.email-container {
+			min-width: 414px !important;
+			}
+			}
+            @media only screen and (max-width: 481px) {
+
+            /* Media query for displaying content in mobile email clients *=
+/
+            .imghide { max-height: none !important; font-size: 12px !import=
+ant; display: block !important; }
+
+            /* globals */
+            .FS11 { font-size: 11px !important; }
+            td.FS11_nav { padding: 3px !important; }
+            .FS11_nav { font-size: 10px !important; padding: 0px 0px;}
+            .hide { display: none !important; }
+            .wrap { display: block !important; }
+            .center { text-align:center !important; }
+            .centercenter { margin-left:auto!important; margin-right:auto !=
+important; padding:0 !important; }
+            .mobilecontent {
+            display: inline !important;
+            overflow : auto !important;
+            width: auto !important;
+            max-height: inherit !important; }
+            table table table table {
+			  table-layout: auto;
+			}=20
+            }
+             @media only screen and (min-width: 320px) and (max-width: 480p=
+x) {
+                   td.FS11_nav { padding: 2px !important; }
+            a.FS11_nav {font-weight: normal !important; font-size: 9px !imp=
+ortant; padding: 0; }
+             table{
+			  table-layout: auto !important;
+			}=20
+                 table table table table {
+			  table-layout: auto;
+			}=20
+            }
+           =20
+      =20
+    @media only screen and (max-width: 380px) {
+         a.couponLine1 span { text-decoration: none !important; font-weight=
+: bold; font-family: sans-serif; font-size: 32px !important; line-height: 4=
+4px !important; color: #414141; font-family:'Montserat','Arial','Helvetica'=
+}
+         a.couponLine2 { text-decoration: none !important; font-weight: nor=
+mal; font-family: sans-serif; font-size: 26px !important; line-height: 32px=
+ !important; color: #414141; font-family:'Montserat','Arial','Helvetica'}
+         a.couponLine3 { text-decoration: none !important; font-weight: bol=
+d; font-family: sans-serif; font-size: 20px !important; line-height: 24px !=
+important; color: #414141; font-family:'Montserat','Arial','Helvetica'}
+         table table table table {
+			  table-layout: auto;
+			}  =20
+    }
+		</style>
+		<!-- CSS Reset : END -->
+		<!-- What it does: Makes background images in 72ppi Outlook render at cor=
+rect size. -->
+		<!--[if gte mso 9]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:AllowPNG/>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->
+	</head>
+    =20
+	<body width=3D"100%" bgcolor=3D"#ffffff" style=3D"margin: 0; padding: 0px;=
+ mso-line-height-rule: exactly;">
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bg=
+color=3D"#ffffff">
+		<tr>
+			<td>
+				<div style=3D"max-width: 600px; margin: auto; webkit-text-size-adjust: =
+100%;" class=3D"email-container">
+					<!--[if mso]>
+					<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"600" =
+align=3D"center">
+						<tr>
+							<td>
+								<![endif]-->
+								<!-- Email Body : BEGIN -->
+								<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"ce=
+nter" width=3D"100%" style=3D"max-width: 600px; webkit-text-size-adjust: 10=
+0%;">
+<style type=3D"text/css">
+@media only screen and (max-width: 481px) {
+            .FS11 { font-size: 11px !important; }
+            td.FS11_nav { padding: 3px !important; }
+            .FS11_nav { font-size: 10px !important; padding: 0px 0px;}\
+            }
+@media only screen and (max-width: 480px) {
+                td.FS11_nav { padding: 2px !important; }
+            	a.FS11_nav, a.FS11_nav:visited {text-decoration: none !importa=
+nt; font-weight: normal !important; font-size: 9px !important; padding: 0; =
+}
+    @media only screen and (max-width:320px) {
+                td.FS11_nav { padding: 1px !important; }
+            	a.FS11_nav, a.FS11_nav:visited {text-decoration: none !importa=
+nt; font-weight: normal !important; font-size: 6px !important; padding: 0; =
+overflow: nowrap }
+            }
+</style>
+<!-- Spacer : BEGIN -->
+<tr>
+	<td bgcolor=3D"#FFFFFF" height=3D"10" width=3D"500" style=3D"line-height:1=
+0px; font-size:0px;"></td>
+</tr>
+<!--  Spacer : END -->
+<tr>
+	<td>
+		<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" st=
+yle=3D"font-size: 14px; text-align: left; max-width:600px; -webkit-text-siz=
+e-adjust: 100%;">
+			<tr>
+				<td height=3D"18" width=3D"70%" style=3D"text-align: left; font-family:=
+ sans-serif; font-size: 14px; line-height: 18px; color:#808080; padding:10p=
+x;">
+                                              	<a href=3D"https://nam02.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fem.efollett.com%2Fpub%2F=
+cc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6ze=
+zdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%253DSSBRWSSCT%26_ei_%3DEhP3AJP=
+H8nr2wFqwV6ni-2GJPoPY42ondx45LFRSkuMvOp_FcJhHUjPfu5_jMapCvl-l8S1K3FIFxLJpjG=
+l02wXijZvb4vzb8nnLUILvqaRG3FUdF4wIVBOxsSpJQTrht8d0QljaLr8r8rqj2nJRp4IaLIs-e=
+u7_8EUqjcOA5yTlDIB1wrQojM2PlvaMIyByVtK64cAe2z-m_xTT_OT77Tm622pzFrGxzYTgjP_d=
+BTqQWxeBCcI9OKnn-8TMqrn0S9v3pmSmSgqz6CIcs8y0SI088rCQS2gflgntpZdZzXtzL6asUQr=
+568gr8H59mHUu.%26_di_%3D46dpotgf1rcjqub0s9b2bgcvvgebb1pnmtihviin73ub9o1hk49=
+g&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d8=
+6fa4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547791182&am=
+p;sdata=3D5EJ5ODkziiThNpYlxXuroCHOsP9H1cAauD3hcHIZ7Kk%3D&amp;reserved=3D0" =
+originalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQ=
+Gi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLz=
+eOVXtpKX%3DSSBRWSSCT&amp;_ei_=3DEhP3AJPH8nr2wFqwV6ni-2GJPoPY42ondx45LFRSkuM=
+vOp_FcJhHUjPfu5_jMapCvl-l8S1K3FIFxLJpjGl02wXijZvb4vzb8nnLUILvqaRG3FUdF4wIVB=
+OxsSpJQTrht8d0QljaLr8r8rqj2nJRp4IaLIs-eu7_8EUqjcOA5yTlDIB1wrQojM2PlvaMIyByV=
+tK64cAe2z-m_xTT_OT77Tm622pzFrGxzYTgjP_dBTqQWxeBCcI9OKnn-8TMqrn0S9v3pmSmSgqz=
+6CIcs8y0SI088rCQS2gflgntpZdZzXtzL6asUQr568gr8H59mHUu.&amp;_di_=3D46dpotgf1r=
+cjqub0s9b2bgcvvgebb1pnmtihviin73ub9o1hk49g" shash=3D"TtP76JZV7AI2nHB8rGPeCH=
+lNHZNIMn8RkunHLkgMlXvbDW3yNJpqgJfxFz2Ce5pFg09BiSdE6RKEwCff8VHSck29jx+k4VZ95=
+zcRYXSpQ1Yvgi01W67Els6X2z1p78fKK/idH/NcLV4GKgJaQ5n/yAiK/hVZV5Jtn8+ZGWJrbTk=
+=3D" style=3D"text-decoration: none; color:#808080;" target=3D"blank">Shop =
+early for prime selection &gt;</a>
+                   =20
+				</td>
+				<td height=3D"18" width=3D"30%" style=3D"text-align: right; font-family=
+: sans-serif; font-size: 14px; line-height: 18px; color: #555555; padding:1=
+0px;">
+				=09
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQp=
+glLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiA=
+Dzf1zdjLzeOVXtpKX%253DSSBRWSTRT%26_ei_%3DEiwPQ42l-mBFJGD0ZPxQdvmjA2haBB00Yb=
+emlJDPQ8uaVuyY7y0rDyOZVs24PJ_ZKca83dNYAKsRILIMRWyJYBaIvv3GcEFF_IkneqVw4mcac=
+UATms3NMRhmp0QiYKCf2T9lXPFh6w58qqrWLIwqwYEWeYcUGmrQZxCSSVrDW92dkTfvO19VGnJR=
+1nmaxO0XobVDZAp9A5iMCzhDfG_MlKRWt6YpLzHXVimUJ8bffTVweeywi49eP5d6UMSNk_6TV2-=
+2aZDgdeuK65u2p9iTd2f3LM.%26_di_%3Dr6hmdu4hqc1pvtp9dutcqfe6r7kn0a24maoeicsbc=
+o0ghc08gk8g&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847=
+f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738209854=
+7791182&amp;sdata=3DzIwEUyhx2bu%2F6idcvJdBDTdfSfH6cCY7FdcCiFrBf2I%3D&amp;re=
+served=3D0" originalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3D=
+AQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUY=
+kiADzf1zdjLzeOVXtpKX%3DSSBRWSTRT&amp;_ei_=3DEiwPQ42l-mBFJGD0ZPxQdvmjA2haBB0=
+0YbemlJDPQ8uaVuyY7y0rDyOZVs24PJ_ZKca83dNYAKsRILIMRWyJYBaIvv3GcEFF_IkneqVw4m=
+cacUATms3NMRhmp0QiYKCf2T9lXPFh6w58qqrWLIwqwYEWeYcUGmrQZxCSSVrDW92dkTfvO19VG=
+nJR1nmaxO0XobVDZAp9A5iMCzhDfG_MlKRWt6YpLzHXVimUJ8bffTVweeywi49eP5d6UMSNk_6T=
+V2-2aZDgdeuK65u2p9iTd2f3LM.&amp;_di_=3Dr6hmdu4hqc1pvtp9dutcqfe6r7kn0a24maoe=
+icsbco0ghc08gk8g" shash=3D"ykQreqn1RDhw5JTn7wAa/mqZOusXfOkLPes5uUFCNarFjZH/=
+aEVH3Z8Np87vhuUWKKYnLqtiJ62/595NxBj6Wa35/FXDF6uBPKJJ9WBf4YEMtiGLCBe727T0gEa=
+GEErwdpbI/q51R7vvbUGOwoozSMwscp442MrzWnS6rmPI0Pw=3D" style=3D"text-decorati=
+on: underline; color:#808080;">View Online</a>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- STORE LOGO Container : BEGIN -->
+<tr>
+	<td bgcolor=3D"#FFFFFF" style=3D"padding:10px;" align=3D"center" class=3D"=
+center">
+		<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4ozeLvK=
+lr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%=
+253DSSBRWSTTT%26_ei_%3DEhP3AJPH8nr2wFqwV6ni-2G85hNY1XE-9d4CcBs0RgORNUmc3wcF=
+o2UPBNp5pch2N8B9ZI6dKbuXUoCurP78LO-TrwP1tA1dZmR7l1OEnJJCzrLFBZbvt8aBSv0X3Cm=
+obG3d1Qil6sol92hx_M9q9TZLdPlgdJtu5ejoNsjIqj3Q0CTS5IPR_y_D8ay9kINN7Dtz_O-XIu=
+7FeXN8TlWvTeg0ZraW1bUkcgOojMrAoAMcMg0e8e3cYaQtd2riFPSLKQHzUj1NXoNVCAO4LtHG8=
+XoizzZZSGkW9u8rJyjv1r9Gg9Z5u89PDO8I.%26_di_%3D23g9m6i5hi75shge7kpbfkju7rfms=
+f3ok43gicig28g14klsmqsg&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe=
+4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7=
+C637382098547801175&amp;sdata=3D5ESTlwhAk6ioZ1Bz4mCy2zEl0YTsgDEdH2ypeFkf8JI=
+%3D&amp;reserved=3D0" originalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3D=
+X0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pM=
+nU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSTTT&amp;_ei_=3DEhP3AJPH8nr2wFqwV6ni-=
+2G85hNY1XE-9d4CcBs0RgORNUmc3wcFo2UPBNp5pch2N8B9ZI6dKbuXUoCurP78LO-TrwP1tA1d=
+ZmR7l1OEnJJCzrLFBZbvt8aBSv0X3CmobG3d1Qil6sol92hx_M9q9TZLdPlgdJtu5ejoNsjIqj3=
+Q0CTS5IPR_y_D8ay9kINN7Dtz_O-XIu7FeXN8TlWvTeg0ZraW1bUkcgOojMrAoAMcMg0e8e3cYa=
+Qtd2riFPSLKQHzUj1NXoNVCAO4LtHG8XoizzZZSGkW9u8rJyjv1r9Gg9Z5u89PDO8I.&amp;_di=
+_=3D23g9m6i5hi75shge7kpbfkju7rfmsf3ok43gicig28g14klsmqsg" shash=3D"SCYSG4bS=
+zGuw148NkDZriQwXaBjDVxzDH/5TqMCjz3YYC3ze+Zlvyic3sHkDeSltG6gycBPbfuyyux+ZJ+h=
+4x37Fjx9a8nYGY0TaoJxxIBwZxDftZ0hNE+q2kNt5919m3GFeUMafxFWkkbCU9qrXVLjaFNuqt0=
+OfU0vE0jdnL2c=3D" target=3D"_blank">
+        <img src=3D"https://bkstr.scene7.com/is/image/Bkstr/1163" alt=3D"Un=
+iversity of Texas at Dallas Bookstore" border=3D"0" width=3D"220">
+		</a>
+	</td>
+</tr>
+<!-- STORE LOGO Container : END -->
+<!-- 5 Even Columns : BEGIN -->
+<tr>
+	<td bgcolor=3D"#ff9900" align=3D"center" height=3D"100%" valign=3D"top" wi=
+dth=3D"100%">
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+width=3D"100%" style=3D"max-width:600px; -webkit-text-size-adjust: 100%;">
+              <tbody>
+			<tr>
+				<td align=3D"left" valign=3D"top" width=3D"100%">
+					<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%"=
+ style=3D"font-size: 13px; text-align: left; max-width:600px; -webkit-text-=
+size-adjust: 100%;">
+                       <tbody>
+                        <tr>
+							<td height=3D"18" width=3D"20%" style=3D"white-space:nowrap;text-ali=
+gn: center; width: 20%; font-family: sans-serif; font-size: 12px; font-weig=
+ht: bold; line-height: 18px; color: #555555; padding: 10px; border-right:1p=
+x solid #ffffff" class=3D"FS11_nav">
+							<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4o=
+zeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVX=
+tpKX%253DSSBRWSTWT%26_ei_%3DEhP3AJPH8nr2wFqwV6ni-2GPjlVFa0b89cqefsZI_yn3Dgz=
+_7L6EqYkag6ss3lc1MXUyRKwmEYDawRG4HhkiLDlfQaiKQKOQa7A5j-ips73yFrRJh11hIfePtR=
+oWAVWjlPRimK6JdDc0SaKbGiN-wxKF92JHdTR9MV-zK6jqA8O7iawWhtzcawBdWelSnCG_dJCuO=
+GwWXnDadIj0QJzRWq0JkwMMpoag93EhPEcuk_9aWQTvOp23i_NZegAc1ETKZiFtgGQcw6V46jy5=
+0qez90PaMnjfJiwfb5fBNQjqjqts56cU1-dUB2-b1VfklNG8gY6IgxCCHruUnb2ehM.%26_di_%=
+3D1ei0435or9a138rb8bt7a5tj5phubtoutjgpp1ig2lr51k3lglf0&amp;data=3D02%7C01%7=
+CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547801175&amp;sdata=3DSj63wGnSsdb7=
+mylGjrF9XIko%2FFFG0vv%2F3DSJjNTUGJc%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO=
+5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWST=
+WT&amp;_ei_=3DEhP3AJPH8nr2wFqwV6ni-2GPjlVFa0b89cqefsZI_yn3Dgz_7L6EqYkag6ss3=
+lc1MXUyRKwmEYDawRG4HhkiLDlfQaiKQKOQa7A5j-ips73yFrRJh11hIfePtRoWAVWjlPRimK6J=
+dDc0SaKbGiN-wxKF92JHdTR9MV-zK6jqA8O7iawWhtzcawBdWelSnCG_dJCuOGwWXnDadIj0QJz=
+RWq0JkwMMpoag93EhPEcuk_9aWQTvOp23i_NZegAc1ETKZiFtgGQcw6V46jy50qez90PaMnjfJi=
+wfb5fBNQjqjqts56cU1-dUB2-b1VfklNG8gY6IgxCCHruUnb2ehM.&amp;_di_=3D1ei0435or9=
+a138rb8bt7a5tj5phubtoutjgpp1ig2lr51k3lglf0" shash=3D"fZKZ0idFHsucYdTT1SN4Ep=
+1QYOnDnZ4369enVyVrVt7zkjChMUAc0Fbj/U5pnesCkBaj9Hj9mwKFSCWZRfbAOdYKtpcY9W5EA=
+O1LEXX1UKdXSImOoIk0BxrNq/uYXeZq/NiVHO3EvjimQw6fj9GJrmr5cGjT4ICaG2YCuAyD5Lg=
+=3D" style=3D"text-decoration: none; color: #ffffff;" class=3D"FS11_nav" ta=
+rget=3D"_blank">CLOTHING</a>
+							</td>
+							<td height=3D"18" width=3D"20%" style=3D"white-space:nowrap;text-ali=
+gn: center; width: 20%; font-family: sans-serif; font-size: 12px; font-weig=
+ht: bold; line-height: 18px; color: #555555; padding: 10px; border-right:1p=
+x solid #ffffff" class=3D"FS11_nav">
+								<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%253DSSBRWSTAT%26_ei_%3DEhP3AJPH8nr2wFqwV6ni-2EU_7r_qT5YN6yUqL-PkpX24w=
+mU8TAm95MHAM1o-56LPtbc56BDk99pGSR9bYnPlY219p0AkEKtkn9ryvKWMs5K2kFIrMsusFV6u=
+9RMlx7wayH1hmmnx0PFsJpnjDope3h5LniOsjhHiFErVNzumV-D_z6aaaynLLrr1KD9-dedQegJ=
+o8aG9Mt7iCpX-m7pxZBvUt-x9JelAhHeC8nDsq_Avc3VY4LvS_X4uJJk9DKzr072fmrErxvw1vB=
+Uo-LYLJsjgWERIDcVGiF4DGqN9bmgNo5IiU5VbtE2EhkKWVPSjs634nMrYiMt9gjR79mEaiK4f0=
+pM1GG6AC_h.%26_di_%3Dq7qu9a51hfukhcqhdqrn1mqk6e27nui1jtfc1pu67g8mdkd9s2h0&a=
+mp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa=
+4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547811170&amp;s=
+data=3DKphOeSiLS4HLSQjkf6Q7iKR9E4OiC0ysIZrMvfjUbUQ%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%3DSSBRWSTAT&amp;_ei_=3DEhP3AJPH8nr2wFqwV6ni-2EU_7r_qT5YN6yUqL-PkpX24w=
+mU8TAm95MHAM1o-56LPtbc56BDk99pGSR9bYnPlY219p0AkEKtkn9ryvKWMs5K2kFIrMsusFV6u=
+9RMlx7wayH1hmmnx0PFsJpnjDope3h5LniOsjhHiFErVNzumV-D_z6aaaynLLrr1KD9-dedQegJ=
+o8aG9Mt7iCpX-m7pxZBvUt-x9JelAhHeC8nDsq_Avc3VY4LvS_X4uJJk9DKzr072fmrErxvw1vB=
+Uo-LYLJsjgWERIDcVGiF4DGqN9bmgNo5IiU5VbtE2EhkKWVPSjs634nMrYiMt9gjR79mEaiK4f0=
+pM1GG6AC_h.&amp;_di_=3Dq7qu9a51hfukhcqhdqrn1mqk6e27nui1jtfc1pu67g8mdkd9s2h0=
+" shash=3D"GqxAfcQwyMdia/5L06WNuYnbbAv37BRkUBJVrN2GLHDXAtE+AILYFVSjZ68SgqJ0=
+01JRxFNV/+v51ldElwBJZjbEko/obtxzYO6so4zrb+2F2ZLk1bQWDbIAM5Cpc8WKblF0HuB7TlX=
+JiB5kqxhipRwbL/eEnoMPLM/6HJrqnb4=3D" style=3D"text-decoration: none; color:=
+ #ffffff;" class=3D"FS11_nav" target=3D"_blank">TEXTBOOKS</a>=09
+                                </td>
+							<td height=3D"18" width=3D"17%" style=3D"white-space:nowrap;text-ali=
+gn: center; width: 17%; font-family: sans-serif; font-size: 12px; font-weig=
+ht: bold; line-height: 18px; color: #555555; padding: 10px; border-right:1p=
+x solid #ffffff" class=3D"FS11_nav">
+								<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%253DSSBRWSTCT%26_ei_%3DEhP3AJPH8nr2wFqwV6ni-2EmuytJOlc8pEYrE9tawiSeva=
+8hSd6JUAQ4kedHxL1uhTgG_7RAIvzeIQnVTo8RzFR9VF7fhk8cdR4B9bAYrlZGr57zDUCC9eIC-=
+XhjRq-JI7tTyIXVeX-iboPG8IJONojMY2KOVmTUS0MGRkgkghunfAO3pMqSjloOcORNeHT8KuZE=
+LrnC4mXC3geOhStkw-pJAbuVCqiTyTboORj4Xf5gcnYYUVxAP86GwrYRAxzndVPYhWOui7wAZ0D=
+9Bz2zslSB0rEwha77BYaE6f35rcl8F0y85unGKay_vbWpZDBfag.%26_di_%3D0j1s3ni2ce6jc=
+j86rk0fvh6o52llcnaasvo6scdroo2oi3pdkcjg&amp;data=3D02%7C01%7CJerry.Teng%40U=
+TDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637382098547811170&amp;sdata=3Dc%2FmIrdg6IFw%2FtAPznFhmMKG=
+4Olz5TlgTtcUix5TyWmc%3D&amp;reserved=3D0" originalsrc=3D"https://em.efollet=
+t.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJ=
+zdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSTCT&amp;_ei_=3DE=
+hP3AJPH8nr2wFqwV6ni-2EmuytJOlc8pEYrE9tawiSeva8hSd6JUAQ4kedHxL1uhTgG_7RAIvze=
+IQnVTo8RzFR9VF7fhk8cdR4B9bAYrlZGr57zDUCC9eIC-XhjRq-JI7tTyIXVeX-iboPG8IJONoj=
+MY2KOVmTUS0MGRkgkghunfAO3pMqSjloOcORNeHT8KuZELrnC4mXC3geOhStkw-pJAbuVCqiTyT=
+boORj4Xf5gcnYYUVxAP86GwrYRAxzndVPYhWOui7wAZ0D9Bz2zslSB0rEwha77BYaE6f35rcl8F=
+0y85unGKay_vbWpZDBfag.&amp;_di_=3D0j1s3ni2ce6jcj86rk0fvh6o52llcnaasvo6scdro=
+o2oi3pdkcjg" shash=3D"fRI/FdAlcqzPBTYvDcv9/5HE3pd29ksq1KYhLIu5UH8yrqrrT3VzT=
+0hcDLF6EqcGmlncgVgjZ/kwfIUvWcWZMltO5klkgWhRtVPlensPP3nrfNOI9qBKiZYTLjygeOkM=
+hFEge+tbzvmwOgllB/YmXc3XJLk/1scx+syjrldMFqk=3D" style=3D"text-decoration: n=
+one; color: #ffffff;" class=3D"FS11_nav" target=3D"_blank">GIFTS</a>
+							</td>
+							<td height=3D"18" width=3D"22%" style=3D"white-space:nowrap;text-ali=
+gn: center;  width: 22%; font-family: sans-serif; font-size: 12px; font-wei=
+ght: bold; line-height: 18px; color: #555555; padding: 10p; border-right:1p=
+x solid #ffffff" class=3D"FS11_nav">
+								<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%253DSSBRWSURT%26_ei_%3DEhP3AJPH8nr2wFqwV6ni-2GrDxvJDRDlRlCg42Y9COFgGw=
+QAdCV7jdKYPQG26hb3O_5TspluyFFQrV7OcIqewFyaJ2SVv4dTwHmpG7vqOTjL3Cy845TLEzG3D=
+ygXE3JYFH2JAuvZ1td7ZnXUeb9IAqjadnEvpyU8I5tTiI9oSt50n8PfE-jr1ErrKQcOmoDjjkhS=
+TgiJ7kaWO4nXoTjeyH3pDabixMZgdV_516FcT-qwSF6gE2zvnfh8UX1_uxEj8znncC5PyHauv__=
+iwwTcYG1x-EiO-Ype0ceHabrOirqx3NdexOzghzyIh9nVi1RkCfFKK2Ocp0XT-TQ.%26_di_%3D=
+2j5neju99mjfkuve0srminb9r4cbhlpq9qt578m55fu08vri5qj0&amp;data=3D02%7C01%7CJ=
+erry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637382098547821166&amp;sdata=3DLjwXW5%2Bd764r=
+JzFAwPnW8HyanjvhJkCBRSmEYhcuc70%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMz=
+azdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSURT&a=
+mp;_ei_=3DEhP3AJPH8nr2wFqwV6ni-2GrDxvJDRDlRlCg42Y9COFgGwQAdCV7jdKYPQG26hb3O=
+_5TspluyFFQrV7OcIqewFyaJ2SVv4dTwHmpG7vqOTjL3Cy845TLEzG3DygXE3JYFH2JAuvZ1td7=
+ZnXUeb9IAqjadnEvpyU8I5tTiI9oSt50n8PfE-jr1ErrKQcOmoDjjkhSTgiJ7kaWO4nXoTjeyH3=
+pDabixMZgdV_516FcT-qwSF6gE2zvnfh8UX1_uxEj8znncC5PyHauv__iwwTcYG1x-EiO-Ype0c=
+eHabrOirqx3NdexOzghzyIh9nVi1RkCfFKK2Ocp0XT-TQ.&amp;_di_=3D2j5neju99mjfkuve0=
+srminb9r4cbhlpq9qt578m55fu08vri5qj0" shash=3D"AdfvCAxir7aEf0pBFONECr+2UhpFW=
+y9qKsZOKQgZ41z/g50g4cNjcfyp54acPughLcHSLkjGYzgt7eaLxqkqBTsYLMTD5uK7YAaI29Ka=
+snPNrm9M6rwydBDvup3AsDVU+DKvlMgDbMuiy5TYDMGuRqYxknFtxemVNXV/u3hf1Po=3D" sty=
+le=3D"text-decoration: none; color: #ffffff;" class=3D"FS11_nav" target=3D"=
+_blank">ELECTRONICS</a>
+							</td>
+							<td height=3D"18" width=3D"20%" style=3D"white-space:nowrap;text-ali=
+gn: center; width: 20%; font-family: sans-serif; font-size: 12px; font-weig=
+ht: bold; line-height: 18px; color: #555555; padding: 10px;" class=3D"FS11_=
+nav">
+								<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%253DSSBRWSUTT%26_ei_%3DEtZj8MMpyLiDjAxxkeC3rijHhk7Yz57mFQjqCa0JkGjgmX=
+VwUHdiKcUloXgFlzMXkH90cSmsk1hAN_KkzbS5ybkVfVxV9npLIlf3JOuyw_TO_sAm-wkxdNOiB=
+nw-Z1a89fpMOuRHKngwhp7GqLfS8tWXSp_F7Gkni7o9LMeDA3Zn5CSRZXqhq592__xg0IDCO6br=
+m5cKI3dE4nJEHf8LN1AbEkjQ9ZIfN72ycves50Yv8CMRXRLUQPOuozSkWnmJzM6JVKdX3Tk6sXJ=
+doKrCNQw26_fg5BpW6F6Iln4IO4U2QedBUPe2mdxSI74S63w1687XOSebymShSnAP_xe4pUtfMG=
+Pvx_U.%26_di_%3Dhrrp83ijpvces66crck8s9fj6hjlfm7g2en6ppv2curp52kghkk0&amp;da=
+ta=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547821166&amp;sdata=
+=3D1Sybx5lXb9xhzTui7zPexi5MZR2o%2BW8BOWwsgYAG%2Fck%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4=
+ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOV=
+XtpKX%3DSSBRWSUTT&amp;_ei_=3DEtZj8MMpyLiDjAxxkeC3rijHhk7Yz57mFQjqCa0JkGjgmX=
+VwUHdiKcUloXgFlzMXkH90cSmsk1hAN_KkzbS5ybkVfVxV9npLIlf3JOuyw_TO_sAm-wkxdNOiB=
+nw-Z1a89fpMOuRHKngwhp7GqLfS8tWXSp_F7Gkni7o9LMeDA3Zn5CSRZXqhq592__xg0IDCO6br=
+m5cKI3dE4nJEHf8LN1AbEkjQ9ZIfN72ycves50Yv8CMRXRLUQPOuozSkWnmJzM6JVKdX3Tk6sXJ=
+doKrCNQw26_fg5BpW6F6Iln4IO4U2QedBUPe2mdxSI74S63w1687XOSebymShSnAP_xe4pUtfMG=
+Pvx_U.&amp;_di_=3Dhrrp83ijpvces66crck8s9fj6hjlfm7g2en6ppv2curp52kghkk0" sha=
+sh=3D"vNkvbhfZTBPPdPnqNYeO0VplWtOEUMPa8MUTCAFXQ8gFS8P2nzLBUVQL0u2oW/e12Mzqy=
+OLBtxl1EUZH5A3pEq66Nf3Lnt5rsR9FhJw2ScbMsxO/TpxXzaZCSRh6D9ep8Tg+0uZKUILQQd2W=
+EjN842B6rscnujRgs7EBFXSv4aw=3D" style=3D"text-decoration: none; color: #fff=
+fff;" class=3D"FS11_nav" target=3D"_blank">SALE</a>
+							</td>
+						</tr>
+                           </tbody>
+					</table>
+				</td>
+			</tr>
+               </tbody>
+		</table>
+	</td>
+</tr>
+<!-- Two Even Columns : END -->
+<!-- Spacer : BEGIN -->
+<tr>
+	<td bgcolor=3D"#FFFFFF" height=3D"10" style=3D"line-height:10px; font-size=
+:0px;"></td>
+</tr>
+<!-- Spacer : END -->                                =20
+                                =20
+<!-- Banner Image, Flush : BEGIN -->
+<tr>
+    <td bgcolor=3D"#ffffff" align=3D"center" style=3D"max-width:600px; -web=
+kit-text-size-adjust: 100%;">
+               <a href=3D"https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjH=
+JlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1z=
+djLzeOVXtpKX%253DSSBRWSUWT%26_ei_%3DEqKDiGOUr3U3gBstjnFNOLGgpXUWesKcRNwEbpG=
+RdqXCoNZHdRWjNWuyR2JHrXzq2kPzUB8BUH9LRljld0KDDSJUTCUTyy0SperrEFyyE2SABU_DDw=
+SvevAPCmRcZptkEGrC0UrWsgP1BkOW_LQicNVj0vfb45vDd_EBhlcSkBZv7KdVfYE1Mn4FKJSUd=
+1LhLNhH8RBoCkh2zDVHJQars5hAUgAtIIT7ioSjcI4CCFcaPKKxupTC0eUIy642I0t4Zf4C-Tb1=
+YMbGKpwBDAb17PH9BsAT8bGJJ1hw_iLvfH9NumIX5p32bbZP0oQV5Vg.%26_di_%3Dm2n87r7bh=
+gslta68hokr8o7hbs0256fqgt3spa9l1isjj49rfpj0&amp;data=3D02%7C01%7CJerry.Teng=
+%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637382098547831168&amp;sdata=3DnkS1ZdAOh8%2BHQZ4Qt0aZq=
+u3TfU841ZYiMyTEroJmhDo%3D&amp;reserved=3D0" originalsrc=3D"https://em.efoll=
+ett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5=
+IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSUWT&amp;_ei_=
+=3DEqKDiGOUr3U3gBstjnFNOLGgpXUWesKcRNwEbpGRdqXCoNZHdRWjNWuyR2JHrXzq2kPzUB8B=
+UH9LRljld0KDDSJUTCUTyy0SperrEFyyE2SABU_DDwSvevAPCmRcZptkEGrC0UrWsgP1BkOW_LQ=
+icNVj0vfb45vDd_EBhlcSkBZv7KdVfYE1Mn4FKJSUd1LhLNhH8RBoCkh2zDVHJQars5hAUgAtII=
+T7ioSjcI4CCFcaPKKxupTC0eUIy642I0t4Zf4C-Tb1YMbGKpwBDAb17PH9BsAT8bGJJ1hw_iLvf=
+H9NumIX5p32bbZP0oQV5Vg.&amp;_di_=3Dm2n87r7bhgslta68hokr8o7hbs0256fqgt3spa9l=
+1isjj49rfpj0" shash=3D"C1fYGdKKRkqECUtiTVGi2ymHr0bhFP9NMNKP8R7OPGh07d9sySEh=
+/3/odamrSK7rAf+vbbCyifIS+DjDY1BWWIY0E0B7fBZ4R4lb/d+juX3Slt2vApY91IQPq4TMF7k=
+MYwPkVquk/ISK9xmWG1SImr5iWkZwXwX2vYmmI4yewuc=3D" target=3D"_blank"><img src=
+=3D"http://static.cdn.responsys.net/i2/responsysimages/content/fheg/NTNL_20=
+1013_Hats_25PercentOff_Send1_Banner1.gif" width=3D"600" height=3D"" alt=3D"=
+25 Percent Off Hats. Shop Now&gt;" border=3D"0" align=3D"center" style=3D"w=
+idth: 600px; max-width: 100%; height: auto; font-family: sans-serif; font-s=
+ize: 15px; line-height: 140%; margin: auto;" class=3D"g-img"></a><br>
+    </td>
+</tr>                                       =20
+						=09
+                              =20
+
+                              =20
+                              =20
+                                                       =20
+                                =20
+                           	=09
+                                =20
+                                =20
+                                                =20
+                                    <tr>
+                                       =20
+										<td width=3D"100%" bgcolor=3D"#ffffff" style=3D"padding: 20px; fo=
+nt-family: Arial, 'Helvetica', sans-serif; font-size: 10px; line-height: 14=
+0%; color: #000;">
+					=09
+
+
+        <!-- show 1 disclaimer -->
+		*Hat sale is in-store and online. Not valid on lululemon or hair accessor=
+ies, other exclusions may apply. Valid until 11:59 PM CT on 10/15/20. Pleas=
+e check store hours on the website for in-store shopping availability. <br>=
+<br>
+        <!-- show 1 disclaimer -->
+		<b>A note to our customers:</b> Factors related to COVID-19 including soc=
+ially distancing our staff, supply-chain issues from our vendors, and extra=
+ordinary shipping volumes have come together to create occasional delays in=
+ fulfillment of orders. Thank you for your understanding and patronage.<br>=
+<br>
+										</td>=20
+									</tr>
+									<!-- Banner Image, Flush : END -->                                =
+        =20
+<!-- 1 Column Text : BEGIN -->
+<tr>
+	<td bgcolor=3D"#FFFFFF">
+		<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" st=
+yle=3D"max-width: 100%; -webkit-text-size-adjust: 100%; border-top: 1px #00=
+0000 solid;">=20
+            <tbody>
+			<tr>
+				<td bgcolor=3D"#FFFFFF" style=3D"padding: 20px 40px 40px 40px;font-fami=
+ly: Arial, 'Helvetica', sans-serif; font-size: 10px; line-height: 140%; col=
+or: #000000;" align=3D"center">
+                        						This is a promotional message sent to zxt1800=
+05@utdallas.edu by University of Texas at Dallas Bookstore. To ensure deliv=
+ery to your inbox, please add yourbookstore@em.efollett.com to your address=
+ book.<br><br>
+					=09
+                    <a href=3D"https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQp=
+glLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiA=
+Dzf1zdjLzeOVXtpKX%253DSSBRWSUCT%26_ei_%3DEiwPQ42l-mBFJGD0ZPxQdvmjA2haBB00Yb=
+emlJDPQ8uaVuyY7y0rDyOZVs24PJ_ZK6S6oOQ4lZz19-dkwyuNNpuQEul0EGYmsccJpUJcx2Az9=
+Mar9GzazrSeuTw6M77JE2YtztIdwQ0PKC30jA-0Kapldl8.%26_di_%3Doaeo9919fqi1v11e8k=
+bl1f0esqo9htk2a2qovop2k1vucnqumsk0&amp;data=3D02%7C01%7CJerry.Teng%40UTDall=
+as.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6=
+c%7C0%7C0%7C637382098547831168&amp;sdata=3D%2FFNsAKHBs6NPb9f06EB%2FC5NSy%2F=
+yLOhys%2B%2BCdy%2BiSXdY%3D&amp;reserved=3D0" originalsrc=3D"https://em.efol=
+lett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL=
+5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSUCT&amp;_ei_=
+=3DEiwPQ42l-mBFJGD0ZPxQdvmjA2haBB00YbemlJDPQ8uaVuyY7y0rDyOZVs24PJ_ZK6S6oOQ4=
+lZz19-dkwyuNNpuQEul0EGYmsccJpUJcx2Az9Mar9GzazrSeuTw6M77JE2YtztIdwQ0PKC30jA-=
+0Kapldl8.&amp;_di_=3Doaeo9919fqi1v11e8kbl1f0esqo9htk2a2qovop2k1vucnqumsk0" =
+shash=3D"HM/m3VS+cwDmOVhJcLlFyu68G9sF4j09Y8e4baxG0sEzxtCr+QJRhhDqPu/e8BRlv4=
+1sthHzSJGLgNmuFaXkJ+Npc/gQJ3Z7HDfdyBujtLrMbPAZCxsmxDTkYEP+Rl843q8yrTWYLRYBN=
+01zZ+y5yGmznrUPTDSDpp1KJornBt0=3D" style=3D"font-family: Arial, 'Helvetica'=
+, sans-serif; color: #000;" target=3D"_blank">Unsubscribe</a> | <a href=3D"=
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fem.efol=
+lett.com%2Fpub%2Fcc%3F_ri_%3DX0Gzc2X%253DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMz=
+azdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%253DSSBRWSUCT=
+%26_ei_%3DEqzVxEHAocRw4S5JQ7gx1CK2affHgACxaxyj5ackgVOkBK61u-aIgYE-IBDtsEP8F=
+t1RAfIHR9Z1VrqgGyMTvTeSw8Irj9jdpQqhv1IZzhHM8WB0xCJd9yeVWTTwiAP5pBp9SPdEIdKG=
+crMuT8ovaz0aRMb-qC_Fy3me9JCe3kxxmPEbN1BRkiwjOT6YLiBb9ilNNOzlK38t8JrBN2quADl=
+OkY1mnGC5I8xUbvXZOaYkk-PCX0U7neEbZmhWKBhiWRjxYSvG5PoGIBg.%26_di_%3Dvgf9vgb1=
+m5r10kc88pmrecn3t0riipo2nnl2g8200bkkko8i49ug&amp;data=3D02%7C01%7CJerry.Ten=
+g%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86fa4409f%7C8d281d1d9c4d4bf7b16e0=
+32d15de9f6c%7C0%7C0%7C637382098547841157&amp;sdata=3DHf7FNe1Q3qNuv2oTQFMci6=
+Fvyo3JaPrdsqAlT25fpqQ%3D&amp;reserved=3D0" originalsrc=3D"https://em.efolle=
+tt.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5I=
+Jzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%3DSSBRWSUCT&amp;_ei_=3D=
+EqzVxEHAocRw4S5JQ7gx1CK2affHgACxaxyj5ackgVOkBK61u-aIgYE-IBDtsEP8Ft1RAfIHR9Z=
+1VrqgGyMTvTeSw8Irj9jdpQqhv1IZzhHM8WB0xCJd9yeVWTTwiAP5pBp9SPdEIdKGcrMuT8ovaz=
+0aRMb-qC_Fy3me9JCe3kxxmPEbN1BRkiwjOT6YLiBb9ilNNOzlK38t8JrBN2quADlOkY1mnGC5I=
+8xUbvXZOaYkk-PCX0U7neEbZmhWKBhiWRjxYSvG5PoGIBg.&amp;_di_=3Dvgf9vgb1m5r10kc8=
+8pmrecn3t0riipo2nnl2g8200bkkko8i49ug" shash=3D"iJrVy2BoUPqa9uW3EXePdWaSuAAp=
+W4n8AxsWKpWx7TaUfT6+MSjOeKo8mxQBIGyPCiFAzamlmRbMD61dGh+PLfq7r4WR7rMvzpsUFAU=
+9RBLPv17JtXj48KdV7b1zTrg3yQn8X8bPdWM3iOv592sqqhoCNbGsRitwEAKUAfTD+jU=3D" st=
+yle=3D"font-family: Arial, 'Helvetica', sans-serif; color:#000;" target=3D"=
+_blank">Manage your preferences</a> |  <a href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fem.efollett.com%2Fpub%2Fcc%3F_ri=
+_%3DX0Gzc2X%253DAQpglLjHJlTQGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsL=
+I0d6pMnU8oi9tJUYkiADzf1zdjLzeOVXtpKX%253DSSBRWSWRT%26_ei_%3DEmL5_9Jyo8JUjoW=
+fuDJo7thWjVKa7WlYAARsEmcGVmnjkFaZKNIF6C9jLpIySpDZ7Z3v2HHauJ9b2rNILvhK-RjpB5=
+xEfwqagq8AxIJQL5o8ZobkqA8mDSWcMr4ZPasyBw0l4kbZnMOeCO1BYR6u_cHv_LvyiPhjc5Krf=
+FfvUMwl10j23MrUpCBH9twJCcS9s5rDqLJkKhVQk7XdObGznjF3ZHniFxdQVHRD4FLoHfeaRKXh=
+rfr1jcRwWU0UhTvT2Afw3HssVTQBPhmT8EYEEi3m8nIIqwuQWAmAWCT0UXQIbWZlM5Heqs79iBa=
+aBZVgBgnhfM.%26_di_%3Dfh5gk77tci3bngvg89memeoqptr5fqlff1eo50gp5ub63pnkqqgg&=
+amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7Cfe4d4cc6be4847f4a44a08d86f=
+a4409f%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637382098547841157&amp;=
+sdata=3DOASqGXt5%2BEIP4VdGtffPwatCef3G4F3yU3SKGgyAOFA%3D&amp;reserved=3D0" =
+originalsrc=3D"https://em.efollett.com/pub/cc?_ri_=3DX0Gzc2X%3DAQpglLjHJlTQ=
+Gi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjLz=
+eOVXtpKX%3DSSBRWSWRT&amp;_ei_=3DEmL5_9Jyo8JUjoWfuDJo7thWjVKa7WlYAARsEmcGVmn=
+jkFaZKNIF6C9jLpIySpDZ7Z3v2HHauJ9b2rNILvhK-RjpB5xEfwqagq8AxIJQL5o8ZobkqA8mDS=
+WcMr4ZPasyBw0l4kbZnMOeCO1BYR6u_cHv_LvyiPhjc5KrfFfvUMwl10j23MrUpCBH9twJCcS9s=
+5rDqLJkKhVQk7XdObGznjF3ZHniFxdQVHRD4FLoHfeaRKXhrfr1jcRwWU0UhTvT2Afw3HssVTQB=
+PhmT8EYEEi3m8nIIqwuQWAmAWCT0UXQIbWZlM5Heqs79iBaaBZVgBgnhfM.&amp;_di_=3Dfh5g=
+k77tci3bngvg89memeoqptr5fqlff1eo50gp5ub63pnkqqgg" shash=3D"x8johiqlV/zPKQD0=
+t/R12vw8rJt3Dw+235ZMKrN4/F6BeylVLkrv+QOPyVlY9rREBuel2QtU+CqAHDncthmp5f/mZFX=
+afNBJ4jN2WLyuxFHqf3LKg0PIZSNsHjiVcxDUx+thAJEvv8fB4ROOtcjbmFG55WSLqNLbRja+s9=
+KZ/sY=3D" style=3D"font-family: Arial, 'Helvetica', sans-serif; color:#000;=
+" target=3D"_blank">Privacy Policy</a><br><br>
+
+						=C2=A9 Follett Higher Education Group | 3 Westbrook Corporate Center,=
+ Suite 200 | Westchester, IL 60154
+                    =09
+						<!-- BEGIN DOTOMI -->
+						<img height=3D"1" width=3D"1" border=3D"0" src=3D"http://login.dotomi=
+.com/ucm/UCMController?dtm_com=3D2&amp;dtm_cid=3D2554&amp;dtm_cmagic=3D8c59=
+fd&amp;dtm_fid=3D103&amp;dtm_format=3D6&amp;cli_promo_id=3D99&amp;dtm_email=
+_hash=3D9d04cce0ba3ce6486b0409a0716ec503&amp;dtm_user_id=3D00000&amp;dtmc_d=
+rop_id=3D2020-10-13">
+						<!-- END DOTOMI -->
+						<!-- BEGIN LIVECLICKER: you must add the LIVECLICKER campaign ID to y=
+our dynamic variables as an assignment for this pixel to work. -->
+						<!-- END LIVECLICKER: you must add LIVECLICKER =3D Y to your campaign=
+ as an assignment for this pixel to work. -->
+                   =20
+                    <!-- BEGIN  IMPACT RADIUS Tracking Pixel -->
+                    <img height=3D"0" width=3D"0" src=3D"https://efollett.7=
+eer.net/i/177360/202336/2379?adcampaign=3DNTNL_201013_Hats_25PercentOff_Sen=
+d1" style=3D"position:absolute;visibility:hidden;" borde=3D"0">
+                     <!-- END  IMPACT RADIUS Tracking Pixel -->
+				</td>
+			</tr>
+            </tbody>
+		</table>
+	</td>
+</tr>
+<!-- 1 Column Text : END -->                               =20
+                              =20
+								</table>
+								<!-- old doc -->
+								<p>
+								</p>
+				</div>
+				</td>
+				</tr>
+				</table><table cellpadding=3D"0" cellspacing=3D"0" style=3D"border: 0px=
+; padding: 0px; margin: 0px; position: absolute; display: none; float: left=
+">
+<tr>
+<td height=3D"1" style=3D"font-size: 1px; line-height: 1px; padding: 0px;">
+<br><img src=3D"https://em.efollett.com/pub/as?_ri_=3DX0Gzc2X%3DAQpglLjHJlT=
+QGi4ozeLvKlr2UN6wPO5cMzazdrcBbL5IJzdv6zezdUtGGsLI0d6pMnU8oi9tJUYkiADzf1zdjL=
+zeOVXHkMX%3Dw&amp;_ei_=3DEolaGGF4SNMvxFF7KucKuWN4zhBpzywrPgRApAzlwjfVdeVtlS=
+h-nUFn85R3Sd1Aoiuk7cSy9Eo."><!-- </img> -->
+<br><!--Start BK pixel--><img src=3D"https://tags.bluekai.com/site/60147?e_=
+id_s60147=3Ddfdbd0cd674016a9babfcb71d7db935aa6f2dc19b70a182f1697b5833945c67=
+6&amp;e_id_m60147=3D9d04cce0ba3ce6486b0409a0716ec503" height=3D"1" width=3D=
+"1"><br><br><!--End BK pixel-->
+</td>
+</tr>
+</table>
+	</body>
+</html>
+
+

@@ -1,0 +1,453 @@
+Received: from SN6PR01MB4270.prod.exchangelabs.com (2603:10b6:805:b1::28) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Sat, 17 Oct 2020 05:41:10
+ +0000
+Received: from SN4PR0501CA0053.namprd05.prod.outlook.com
+ (2603:10b6:803:41::30) by SN6PR01MB4270.prod.exchangelabs.com
+ (2603:10b6:805:b1::28) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.27; Sat, 17 Oct
+ 2020 05:41:05 +0000
+Received: from SN1NAM02FT020.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:41:cafe::e8) by SN4PR0501CA0053.outlook.office365.com
+ (2603:10b6:803:41::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.10 via Frontend
+ Transport; Sat, 17 Oct 2020 05:41:05 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.52.121)
+ smtp.mailfrom=sg01.emailjobdelivery.com; utdallas.edu; dkim=pass (signature
+ was verified) header.d=emailjobdelivery.com;utdallas.edu; dmarc=fail
+ action=none header.from=intel.com;compauth=pass reason=117
+Received-SPF: Pass (protection.outlook.com: domain of
+ sg01.emailjobdelivery.com designates 167.89.52.121 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.52.121;
+ helo=o5.sg01.emailjobdelivery.com;
+Received: from o5.sg01.emailjobdelivery.com (167.89.52.121) by
+ SN1NAM02FT020.mail.protection.outlook.com (10.152.72.139) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Sat, 17 Oct 2020 05:41:03 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=emailjobdelivery.com; 
+	h=mime-version:sender:from:to:subject:content-type:content-transfer-encoding; 
+	s=s1; bh=0njvR5xMYj0bn7C5PJrXw9bsGyT8J5nHY3jrdrFUBSc=; b=dQZErgd
+	0WPHAymBxxPuQ382oBULyZ1YaU7//z2yIxlqIlZy0iX1S3orpwVqgh+LKFWkEGnx
+	EROdWaIv0C5CGhi2CJSSH1C1CRRvwEVJin08v6dDohIge7pninxuRJSUrdyOjfLV
+	Qgr647KMECRRHW6S3FlPIU5W9nLNKbIwJxbU=
+Received: by filter2687p1mdw1.sendgrid.net with SMTP id filter2687p1mdw1-11525-5F8A83EE-3
+        2020-10-17 05:41:02.659530133 +0000 UTC m=+637977.973311208
+Received: from smtp02.smashfly.com (unknown)
+	by ismtpd0012p1las1.sendgrid.net (SG) with ESMTP id 4wBiiHDhTnOEw7t7Z222EQ
+	for <Jerry.Teng@UTDallas.edu>; Sat, 17 Oct 2020 05:41:02.500 +0000 (UTC)
+Received: from SFIntServices03 (sfintservices03.smashfly.com [10.110.65.85])
+	by smtp02.smashfly.com (Postfix) with ESMTP id 1D973406674
+	for <Jerry.Teng@UTDallas.edu>; Sat, 17 Oct 2020 01:40:50 -0400 (EDT)
+X-CID: 0
+X-EID: 38485760
+X-CLID: 11143
+X-CTID: 2564018
+Sender: "Ivy from Intel Careers" <donotreply@intel.com>
+From: "Ivy from Intel Careers" <donotreply@intel.com>
+To: Jerry.Teng@UTDallas.edu
+Date: Sat, 17 Oct 2020 05:41:02 +0000 (UTC)
+Subject: Discover Information Technology Careers at Intel
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <4wBiiHDhTnOEw7t7Z222EQ@ismtpd0012p1las1.sendgrid.net>
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHpJXPYDrN09aQLQEJa3BntZUsqdCliovajnc8
+ 7AAWv4UBF2+OQOHQL9GhMqKspagK8Xb8lAcuFddcgQoGUxym39WTvA/tntQNzCeuOthhfxIKmoCAL9
+ ddZyOk/e2NbPDGJZdbLnHeepweFWh4YM56rEHFvzwqpwLEFOvVk/PT7uX7Nr7opPatO+g2vDAs9g0W
+ jwUGxtSbmWs7nf95a89mCl
+X-Entity-ID: I6zUlejDWkpnU/po2WjDlQ==
+Return-Path:
+ bounces+6810016-2412-jerry.teng=utdallas.edu@sg01.emailjobdelivery.com
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Oct 2020 05:41:04.4732
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 446fa0f4-9287-41da-4fd7-08d8725f3d0e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT020.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 446fa0f4-9287-41da-4fd7-08d8725f3d0e
+X-MS-TrafficTypeDiagnostic: SN6PR01MB4270:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:167.89.52.121;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o5.sg01.emailjobdelivery.com;PTR:o5.sg01.emailjobdelivery.com;CAT:NONE;SFS:(4636009)(286005)(7066003)(336012)(83380400001)(66574015)(58800400005)(76236003)(42882007)(6266002)(166002)(6666004)(9686003)(83170400001)(6916009)(1096003)(8676002)(7846003)(26005)(356005)(7596003)(7636003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Oct 2020 05:41:03.4047
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 446fa0f4-9287-41da-4fd7-08d8725f3d0e
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT020.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4270
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.5041804
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?dYH6Wr4ZktEMFJR0EjWTcwxDN9lyffDx/NsBoSZeugqiE9VddVSxyKpW?=
+ =?Windows-1252?Q?D19sX0OeQobkSpZO0G0x35p0Ncl7VYfgNcukpCqY3XcjrEe+1Tae0eVv?=
+ =?Windows-1252?Q?EBKs1/p5hFIUiGJYwwVpX/CRUx1/Z3ADb5foLsUKJoh+h+Rd+Jb7s3i3?=
+ =?Windows-1252?Q?xCi0B3PAcvcpC4dY43+bpeQtRHX95p9Jtvlqu/CQqhHWNtjxpwy625wv?=
+ =?Windows-1252?Q?Fr8lcpeCVUUxESlyRVbBz+pugTnh8h+J6UlBQdRLeDtKG4LvKGACIX5A?=
+ =?Windows-1252?Q?s9qfji14lEpgVvp+E6PGnvmKWZhnA2Hil1z5oL2zoBd7HaBqNlGWwvEy?=
+ =?Windows-1252?Q?JXr4WfMpcYtHY86Vwti1SOvbJWW0smOWyB9zZAyRR6/5s+irvu1h8CGo?=
+ =?Windows-1252?Q?fUUiK4Y991cIg5aGVAKdR7Ask7mFgZVjfcSapwZ9wRpg04JPKZgDwVGY?=
+ =?Windows-1252?Q?m2WpANzsfNCfcB+SLtvmtc7th3VzJ3tymIQQqfzTEPcRtaJdyGVMinye?=
+ =?Windows-1252?Q?bWP0pngfvGR6LxB/oFXzxhx4vi6JRAJy0uAdgu864NnPjSKCNJ+t5ySi?=
+ =?Windows-1252?Q?Fu5MD4UqQUmUcX04wONuoE7ad12A76WIeI3aQ4jN3QlZxrEKdRhkiSzd?=
+ =?Windows-1252?Q?RDy2hz4x9aAo0dkdWRagNbMB2Q9WPVS2t+nucCNMIT3nNS2HjrdHwBx/?=
+ =?Windows-1252?Q?X2mxTu6tb7Go5SN7etuwagAg7tNZDhw9P39ZeQ9Ibz2Bf1ax07BZpc4i?=
+ =?Windows-1252?Q?hlFMAjhKT8WiBSH86pnW/fJZ31RRlCK/OklcvZEA17TI6kvR9wMOCgN5?=
+ =?Windows-1252?Q?sHVA7aPTY/EgzVw0Wmk91QnuB767fsU+inYw2ND5tig20xOkboPDnxtP?=
+ =?Windows-1252?Q?GR2Af9IucXoIMIgzgLNzIy5nmypgx9ZitZCzWtmqVfqUbq8Rw1Vd8Ohe?=
+ =?Windows-1252?Q?KxfAOEZA0ZaV22cfWqPAcuOQpETnBSj2+nnIo9YOFb4iXxomWaN39yN7?=
+ =?Windows-1252?Q?8l43DOE9QKwAx9hscfgBK7y9GlPSxusMBxKRONaVXG3Ci1HUP8zrqbeo?=
+ =?Windows-1252?Q?zStCOqMcQHphw9bvbbx826GVJdrgkzXHJN7f6uxdZtDvpNd4YEuf8vmk?=
+ =?Windows-1252?Q?6VkU4IBwH/B20+2hKJ2DeIPG6UzdIMfiefV61DFahIGh/iCKQhnbnG9z?=
+ =?Windows-1252?Q?PiVpz6OpryNUsP+NiwLn1aZg0NlISAKHNiMDmIhbWMh2bGfLIWGg3C/o?=
+ =?Windows-1252?Q?lQ7KRbxdn5uEsAhXiiidQw3Gcm+fkIN22PZmZQ6IgwceJ3y8AmPxLjGN?=
+ =?Windows-1252?Q?9UDhqZYqj9/69Mz8jyr2Z6EAWNvBv6JzTAxhpw9ZiJMwG/t9XD0yv7q0?=
+ =?Windows-1252?Q?Dex2Slqo8ln9zCHrvZ1uEcP4v6OxgzJUoFWmyGieFO0gGiImb5LCx4si?=
+ =?Windows-1252?Q?4PgSfWKc4Xqi6NZ5l0G4obIsFJY284TSK45G2KjWwl94bCQy1eEDDKyf?=
+ =?Windows-1252?Q?gJkMZJDaWZpgh6U8cS9UifTpBCp6VdER0QlarktC7OPi8hb+eDOLcXmL?=
+ =?Windows-1252?Q?2HElfLyRrwrqJtDt?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><div style=3D"text-align: center;"><a style=3D"font-size: 10px;" href=3D"h=
+ttps://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.jobp=
+resentations.com%2Femail.aspx%2FoHnOhE0kCJrzm4iTAXaaPLiJ8GaaU9L3MM1a7M53ESd=
+09V4DuMSL0LDJL%252bDskHWXea%252bF3PjaOMw%253d&amp;data=3D02%7C01%7Cjerry.te=
+ng%40utdallas.edu%7C446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637385100705238001&amp;sdata=3DoeqTFRv7NiWH0pg%2F0Ig=
+T7SQcqP9SDzEDS0XJss9AprE%3D&amp;reserved=3D0" originalsrc=3D"https://www.jo=
+bpresentations.com/email.aspx/oHnOhE0kCJrzm4iTAXaaPLiJ8GaaU9L3MM1a7M53ESd09=
+V4DuMSL0LDJL%2bDskHWXea%2bF3PjaOMw%3d" shash=3D"e06PTLJPQ11PqPofmPZmqktNYG4=
+sl0ACQm2gpU3vKFicZ97kqxOhXAx+KqqrYwrxSO3JULqeGYMHRA5O+IfKWRQ+1N87hJcyjM40Tu=
+Qa15eZfW92p7ygd/8s9NWNdXd9S0XL83xV3SMgypbborBSZOPpx50ujJRn9iMy4X6a6FU=3D">E=
+mail not displaying correctly? Click here to view in a browser.</a></div><t=
+able width=3D"604px;" align=3D"center" width:604px;=3D"" height:=3D"" 904px=
+;=3D"">
+    <tbody>
+    </tbody>
+    <tbody>
+        <tr>
+            <td style=3D"text-align: left;">
+            <p><img src=3D"https://prod-content01.smashfly.com/Images/11143=
+/11143_9614_AoP.IT.Email%20Banner_dist.jpg" alt=3D"" style=3D""></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style=3D"text-align: right;"><span style=3D"font-size: 10px;=
+"><span style=3D"font-family: Tahoma;">&nbsp;<a href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm=
+_MiDy_EQWd_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.e=
+du%7C446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C=
+0%7C0%7C637385100705248002&amp;sdata=3DpkolDvKRNnfu66oOk29OEjuzShwVCpS7ups%=
+2Fhuqk9%2FM%3D&amp;reserved=3D0" originalsrc=3D"http://career.intel.com/tp/=
+Usm_MiDy_EQWd_wpZ.CwUwC.zMy.e_J_K" shash=3D"c9ZcTJcj/4T6QJ1O5WeWjvj8VE8OA6Y=
+X9qS79kMO7zO+TPRunz6n7zEWiwQnAN//jk3/KDpjRYW9ip3tFMwLRZUMnn7R6UiXC/fp2nCRTF=
+TTKpHdrMvVxmK18ix9dVz2846bo8mUK94932HncK4tCUawrFMpjB7aP+0b0VyMboI=3D" ;=3D"=
+" font-family:=3D"" tahoma;=3D"" text-align:=3D"" center;?=3D""><img src=3D=
+"https://recruit.smashfly.com/SmashFlyMedia/Images/11143/df4865ee-45d5-4bc1=
+-a7a0-0ab7ff7000a1.png" alt=3D""></a><span style=3D"text-align: center; bac=
+kground-color: rgb(250, 250, 250); font-family: tahoma; color: rgb(80, 80, =
+80);">&nbsp;</span><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy_qkG0_wpZ.CwUwC.zMy.e=
+_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446fa0f4928741da4fd70=
+8d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385100705248002=
+&amp;sdata=3DAnqays1ThKkpiPq3voShQAL2bJWWKS4istFtyTRZ%2F5w%3D&amp;reserved=
+=3D0" originalsrc=3D"http://career.intel.com/tp/Usm_MiDy_qkG0_wpZ.CwUwC.zMy=
+.e_J_K" shash=3D"jVug1N0qnAIVAZhAk44/VCUDphUl/3Y3n0yWqrJzdvgmSfO4Uz86Uxfo7J=
+/BllopYECCYzxDzSkfeXGM5/Qe+9pVODSHB7mEloFCdtPRMb6/EJ1Cx8mJ47Pfvrioav6ZvZWV4=
+rn8cRK8yxdNOArH+7RP5vSjfl5aVvj+F0lXItY=3D" style=3D"background-color: rgb(2=
+55, 255, 255); font-family: tahoma; text-align: center;"><img src=3D"https:=
+//recruit.smashfly.com/SmashFlyMedia/Images/11143/97e23589-3bcc-42f3-b758-9=
+1bceea383f8.png" alt=3D""></a><span style=3D"text-align: center; background=
+-color: rgb(250, 250, 250); font-family: tahoma; color: rgb(80, 80, 80);">&=
+nbsp;</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy_T3zN_wpZ.CwUwC.zMy.e_J_K&a=
+mp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446fa0f4928741da4fd708d8725=
+f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385100705257995&amp;s=
+data=3DUW52zL1KOxTU0bmXnR%2Fy2zJ6W%2FLwSLmu8lRJYfkHQO8%3D&amp;reserved=3D0"=
+ originalsrc=3D"http://career.intel.com/tp/Usm_MiDy_T3zN_wpZ.CwUwC.zMy.e_J_=
+K" shash=3D"QfOji8Fd3oiVwhUo4WuLbIJLcsAJZRREP56KBjbaXVxap6FE8kJolevWOFL1Qxg=
+Gesp4O8HVUz2u0jhMaBUeQ5XYF9QqKV8PR/k6R8EZBdgszEQi5rRviqJu/No/HDPtWJFgj+Rtdv=
+JUqjd0Cy39YPK7Nph8kPA+AGkuHPccVo8=3D" style=3D"background-color: rgb(255, 2=
+55, 255); font-family: tahoma; text-align: center;"><img src=3D"https://rec=
+ruit.smashfly.com/SmashFlyMedia/Images/11143/aced21c9-62c1-473c-915f-0accf8=
+8e01ee.png" alt=3D""></a><span style=3D"text-align: center; font-family: ta=
+homa; color: rgb(80, 80, 80);">&nbsp;</span><a href=3D"https://nam02.safeli=
+nks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_=
+MiDy_5Nik_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.ed=
+u%7C446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637385100705257995&amp;sdata=3DmJ%2Bzg9Sj2q6rtjpfsXZsFX5Cs9hzS2p7VbC=
+lnAoQqr0%3D&amp;reserved=3D0" originalsrc=3D"http://career.intel.com/tp/Usm=
+_MiDy_5Nik_wpZ.CwUwC.zMy.e_J_K" shash=3D"THrUFwigQBR0I6+ybdLLO7IwHd8ER1RG02=
+k5TDU6cPGohEXMnZXVALxulFFfQ1deym/lKdoYLLvpswVP0zkjwQd5kCGrD0vqGD1aWsIMmU96Y=
+/ioWCeJFnjR68hbJ7b6Q8lPvOGTzhNUnQay3UP+T1onTNV5LQsVh1vJeNcX90Q=3D" style=3D=
+"background-color: rgb(255, 255, 255); font-family: tahoma; text-align: cen=
+ter;"><img src=3D"https://recruit.smashfly.com/SmashFlyMedia/Images/11143/c=
+c75f35e-a43a-42ed-bbd9-2a53949cdbde.png" alt=3D""></a><span style=3D"text-a=
+lign: center; background-color: rgb(250, 250, 250); font-family: tahoma; co=
+lor: rgb(80, 80, 80);">&nbsp;</span><a href=3D"https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy_hhS=
+7_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446f=
+a0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37385100705267988&amp;sdata=3DWvMFoO417qeaugyUfPkAx6XgCGmndjflttjlj1g32ww%3=
+D&amp;reserved=3D0" originalsrc=3D"http://career.intel.com/tp/Usm_MiDy_hhS7=
+_wpZ.CwUwC.zMy.e_J_K" shash=3D"XLbpTRoWU8zC9RxKlmGf8pvz998LDa52VjNIA8QHU9iJ=
+JIXRNhjgrRa1PVW4fb2WwH2OIwMWV6/kpMrsJy/9qdpFGfD9CFOEv+FUahPb42NcZJAGliRJHpA=
+nNYhIbFEznEjy4g/+XHykbxijVbFXCasp4UXNJSfezcJQhx1sdfw=3D" style=3D"backgroun=
+d-color: rgb(255, 255, 255); font-family: Helvetica; text-align: center;"><=
+img src=3D"https://recruit.smashfly.com/SmashFlyMedia/Images/11143/dfa95a5f=
+-899d-4c27-aa8b-a7b47ce24bec.png" alt=3D""></a></span><span style=3D"backgr=
+ound-color: transparent; font-family: Tahoma;"></span></span></p>
+            <p style=3D"text-align: right;"><span style=3D"background-color=
+: transparent; font-family: Tahoma; font-size: 10px;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <table style=3D"width: 600px; height: 111px;">
+                <tbody>
+                    <tr>
+                        <td>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">Hi&nbsp;Jerry,</span></p>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">I&#8217;m thrilled that you are interested in careers at Inte=
+l and in reviewing your interests and background that you&#8217;ve shared w=
+ith us,&nbsp; I&#8217;d like to take this time to tell you more about amazi=
+ng opportunities in information technology at Intel.</span></p>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center; height: 40px;">
+                        <p><strong style=3D"background-color: transparent;"=
+><span style=3D"font-family: Verdana; color: rgb(89, 89, 89);">WHY INFORMAT=
+ION TECHNOLOGY AT INTEL</span></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">Information Technology professionals provide advanced analyti=
+cs, emerging data center technologies, and cloud based solutions to help ad=
+vance Intel&#8217;s products and services in the marketplace. As an Intel I=
+T professional, you&#8217;ll have the chance to explore, design, and evalua=
+te innovative technologies for worldwide business challenges. This may incl=
+ude creating mobile apps with leading-edge software platforms, developing a=
+nd implementing enterprise applications, working on advanced analytics proj=
+ects, designing robust information security architectures, or supporting st=
+ate-of-the-art data center environments.</span></p>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center; height: 40px;">
+                        <p><strong><span style=3D"font-family: Verdana; col=
+or: rgb(89, 89, 89);">PROJECTS THAT MATTER</span></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center;"><img src=3D"https=
+://prod-content01.smashfly.com/Images/11143/11143_9586_AoP.IT.Projects_dist=
+.jpg" alt=3D"" style=3D"">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: left;">
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">&nbsp;</span></p>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">As Intel IT releases their 2016-2017 IT Annual Performance Re=
+port, Paula Tolliver Intel vice president and chief information officer dis=
+cusses what drove her to join Intel, the future she sees for Information Te=
+chnology and her plans to accelerate the pace of business through IT innova=
+tion.</span></p>
+                        <p style=3D"text-align: center;"><a href=3D"https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.co=
+m%2Ftp%2FUsm_MiDy_K1BU_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%=
+40utdallas.edu%7C446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637385100705267988&amp;sdata=3Di0uKNkhKsNpME4yBy0KcEV5E=
+0nxYMRr2fzQZmMEbhM0%3D&amp;reserved=3D0" originalsrc=3D"http://career.intel=
+.com/tp/Usm_MiDy_K1BU_wpZ.CwUwC.zMy.e_J_K" shash=3D"JhvpfVnNy9UxNwyU40P3rZC=
++mQ6kVnLFliQ6vbqERXQnZSg9gAcngfuRc8ucwu8acKN9CW07MIyGrlgU+pkIkb6PsGTyknjAO1=
+tPi8gpzrVv4FgIcn5HMSd8HyBphX3eUMlG4fxHTa4KwYYBjChAiEUTC03V25jh3qzN5kCjBzE=
+=3D"><img src=3D"https://prod-content01.smashfly.com/Images/11143/11143_744=
+7_ADG_Learn%20More%202_dist.png" alt=3D"" style=3D"text-align: center;"></a=
+></p>
+                        <p style=3D"text-align: center;">&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center; height: 40px;">
+                        <p><strong>&nbsp;<span style=3D"font-family: Verdan=
+a; color: rgb(89, 89, 89);">OUR PEOPLE</span></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center;"><img src=3D"https=
+://prod-content01.smashfly.com/Images/11143/11143_9585_AoP.IT.Our%20People_=
+dist.jpg" alt=3D"" style=3D"">&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: left;">
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">&nbsp;</span></p>
+                        <p><span style=3D"font-family: Verdana; color: rgb(=
+89, 89, 89);">Meet Itay who works as a graduate engineer at Intel.&nbsp; We=
+ asked what he enjoys about working in IT: &#8220;The most exciting thing i=
+s that my work has so many different applications. Our team solves a wide v=
+ariety of AI problems across Manufacturing, Health and Marketing fields. We=
+ work on computer vision (images, videos), Natural Language Processing and =
+Reinforcement Learning (automated decisions).&#8221;</span></p>
+                        <p style=3D"text-align: center;">&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: center; height: 40px;">
+                        <p><strong><span style=3D"font-family: Verdana; col=
+or: rgb(89, 89, 89);">EXPLORE MORE</span></strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"text-align: left;"><span style=3D"font=
+-family: Verdana; color: rgb(89, 89, 89);">If you haven&#8217;t already, be=
+ sure to check out our&nbsp;<a href=3D"https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy_wKur_wpZ.Cw=
+UwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446fa0f49287=
+41da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385100=
+705267988&amp;sdata=3DTfg1vmxBnchceT%2F5gCD81ndNeP5UzLcaUdUjh5Y6wZs%3D&amp;=
+reserved=3D0" originalsrc=3D"http://career.intel.com/tp/Usm_MiDy_wKur_wpZ.C=
+wUwC.zMy.e_J_K" shash=3D"Bwlc2biiJkYToiXmV9AHZPw4ytftxatGUT6aZ++OuSyP6AI2gp=
+glZo/B4c5LOg2dbq5149MLTLpwPWYLY95o8GgYZU8Q0Wb7ciKwfAzV5sBLP5kJzYou3Mx+GsKok=
+3pATN8wQ8gIiFnkv9qU4ZjWqx/uKIbosp8Gp9h5Qh1iVBk=3D">Information Technology C=
+areer Track</a>&nbsp;webpage to learn more about all of our opportunities i=
+n this space.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <span style=3D"background-color: transparent; color: rgb(89, 89=
+, 89);">
+            <div><span style=3D"background-color: transparent; font-family:=
+ Verdana; color: rgb(89, 89, 89);">&nbsp;</span></div>
+            <div><span style=3D"background-color: transparent; font-family:=
+ Verdana; color: rgb(89, 89, 89);">&nbsp;</span></div>
+            <div><span style=3D"background-color: transparent; font-family:=
+ Verdana; color: rgb(89, 89, 89);">Thanks,<br>
+            Ivy, Intel Careers<br>
+            <br>
+            </span></div>
+            <p style=3D"text-align: left;"><span style=3D"font-family: Verd=
+ana; font-size: 13px; color: rgb(89, 89, 89);"><em style=3D"">Any changes t=
+o your work history? Complete this&nbsp;<a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy=
+_YeeE_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C=
+446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637385100705277985&amp;sdata=3DziMNM8iC9e2tJVU9XFzikk8ObKWr4wJKw1rnxLJrK=
+ZU%3D&amp;reserved=3D0" originalsrc=3D"http://career.intel.com/tp/Usm_MiDy_=
+YeeE_wpZ.CwUwC.zMy.e_J_K" shash=3D"tSA5RWO4tADGOqT1X//dLlUvv616Y3ekI4LgVoFV=
+p1dLS5BMzmWdVwAAMScErVUSDyWpXnW1jKTy+F3+byXm7WysAj/+Wsz5bdBkyNPzN2Zc7Hrapjs=
+tnqbiXjxi7nm/ybD9nsDBLqLxDhII67/jXqt7cyJomxNuuN17Eth0Ij8=3D">online form</a=
+> to provide up to date information about yourself, and in doing so, this w=
+ill help us find that perfect opportunity that fits your experience and bac=
+kground.</em></span></p>
+            </span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class=3D"" style=3D"width: 604px; height: 100%; text-align:=
+ center;"> <span style=3D"text-align: center; font-family: Tahoma; color: r=
+gb(89, 89, 89);"><span style=3D"font-size: 11px;"><sup style=3D"">&copy;</s=
+up>Intel&nbsp;Corporation</span><span style=3D"font-family: Tahoma;"><span =
+style=3D"text-align: center; font-family: Tahoma; color: rgb(89, 89, 89);">=
+<span style=3D"font-size: 11px;">&nbsp;</span><span style=3D"font-size: 11p=
+x;">|&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttp%3A%2F%2Fcareer.intel.com%2Ftp%2FUsm_MiDy_AyNb_wpZ.CwUwC.zMy.e_J_K&a=
+mp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446fa0f4928741da4fd708d8725=
+f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385100705277985&amp;s=
+data=3DJHxUALIv8Rr3FacLBpQk7aT12KjjEk5tiGX%2FKZUed50%3D&amp;reserved=3D0" o=
+riginalsrc=3D"http://career.intel.com/tp/Usm_MiDy_AyNb_wpZ.CwUwC.zMy.e_J_K"=
+ shash=3D"SsVx6lidhsJ2CZg+BF1Ih0PXUTwbZBGRlkuEsnX4ZsJSLPWkuCDlXohhPvnilYbPp=
+JLeMoyaoQ7YpKDN1vFvwPTrGcWDLYyZOeMP7a0IpejEYmclv3FCI0/T0mWyRdERg4aa1yprF73q=
+kHXr/4xxC8UP5S8ByFGfHa4HDtl6vHA=3D" style=3D"">PRIVACY</a>&nbsp;| <a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcare=
+er.intel.com%2Ftp%2FUsm_MiDy_nI6y_wpZ.CwUwC.zMy.e_J_K&amp;data=3D02%7C01%7C=
+jerry.teng%40utdallas.edu%7C446fa0f4928741da4fd708d8725f3d0e%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637385100705287977&amp;sdata=3DJCjvzHDKKhTgS=
+aD0a1hkK%2BzBTnWjMEfnlq9bTv49ZeQ%3D&amp;reserved=3D0" originalsrc=3D"http:/=
+/career.intel.com/tp/Usm_MiDy_nI6y_wpZ.CwUwC.zMy.e_J_K" shash=3D"kf/LVRSdEM=
+RyZTRZ6yz8aw+dydXK/nYB1PdcRi6aQcSrBBygdXMUvoQzwaR9EMWQXLAbLATOdQHhK2rQk0+uz=
+9Q/w9llFRLpLqnfI/inAKgKfdM/E3KPPUDrNWJeybHk80Shu+wM7crvcan6ysRi6md9ymRGf/L0=
+Ylb4ZMH1kas=3D">COOKIES</a></span></span><br>
+            </span></span></td>
+        </tr>
+        <tr>
+            <td style=3D"width: 604px; height: 100%; text-align: center;">
+            <p><span style=3D"font-size: 11px;"><span style=3D"text-align: =
+center; font-family: Tahoma; color: rgb(89, 89, 89);"><strong>Corporate&nbs=
+p;Headquarters</strong> </span><br style=3D"color: rgb(89, 89, 89); text-al=
+ign: center;">
+            <span style=3D"text-align: center; font-family: Tahoma; color: =
+rgb(89, 89, 89);">2200 Mission College Blvd</span><br style=3D"color: rgb(8=
+9, 89, 89); text-align: center;">
+            <span style=3D"text-align: center; font-family: Tahoma; color: =
+rgb(89, 89, 89);">Santa Clara, CA&nbsp; 95054-1537</span><br style=3D"color=
+: rgb(89, 89, 89); text-align: center;">
+            <span style=3D"text-align: center; font-family: Tahoma; color: =
+rgb(89, 89, 89);">UNITED STATES</span></span></p>
+            <p><span style=3D"text-align: center; font-size: 11px; font-fam=
+ily: Tahoma; color: rgb(89, 89, 89);"><a href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.applytracking.com%2FSubscript=
+ion%2FSubscriptionOptionsForCampaigns%3Fx%3DxYZegIW840M%252ffap%252fKMEi3vH=
+T80JSxGIDhxeLbyruN7PoMuz7r9ECpOxCj4NTQiyzXcRFLfbxzIBkKyzL5h%252fDIfRQT5IPVF=
+tF&amp;data=3D02%7C01%7Cjerry.teng%40utdallas.edu%7C446fa0f4928741da4fd708d=
+8725f3d0e%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637385100705287977&a=
+mp;sdata=3DU9xej%2FcpOG3BRA1mjr0CC4T70XTFvHO6wfRv6kTTHNU%3D&amp;reserved=3D=
+0" originalsrc=3D"https://www.applytracking.com/Subscription/SubscriptionOp=
+tionsForCampaigns?x=3DxYZegIW840M%2ffap%2fKMEi3vHT80JSxGIDhxeLbyruN7PoMuz7r=
+9ECpOxCj4NTQiyzXcRFLfbxzIBkKyzL5h%2fDIfRQT5IPVFtF" shash=3D"bbm7GjfGhOnoPFT=
+PzSwIQ9N/kLSg4Y+LZqFb9uHbRRpS4i5udlsc/aT2cXt2OOGCXHaaTii0CfS2txx2Z26sic0Wj8=
+aXHp6EiFs/NpQavt/iWuAm456GhP56CsYzts4+YSd+G9Cg6sS6+0bd5ZgISPCXbA/omnEeyr672=
+K5pIAs=3D">Click here to be removed from future mailings</a></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br> <img src=3D"http://career.intel.com/tp/rj6_RB6ik_e_K?c=3D2bTu4">=20
+
+<img src=3D"http://sg01-link.emailjobdelivery.com/wf/open?upn=3DMGGRiqc4lL-=
+2FL4BMe4zMytnsquGILASSvJbu-2FHMoy9EW-2FiMOJGokv3x7w6LviIfagY-2FsZjaX2xUTFBW=
+P850JTy9uA2HKhmeiYlBiYfIr8RHfZAx55rsx9iXzxGYGp6karG1bTVxxLzwVNA4j3Bj3RUR4bP=
+8IAPj9eLrwpheCiIWElZrrhtbNt-2FHvZ2g-2FJPXlvikRuLNA6gBe4xdo5W-2FTA1BdzqjSr4K=
+3xuvs6QVt6zAY-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"h=
+eight:1px !important;width:1px !important;border-width:0 !important;margin-=
+top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margi=
+n-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;pa=
+dding-right:0 !important;padding-left:0 !important;">

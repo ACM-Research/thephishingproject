@@ -1,0 +1,986 @@
+Received: from MN2PR01MB5566.prod.exchangelabs.com (2603:10b6:208:118::28) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Tue, 6 Oct 2020 09:02:18
+ +0000
+Received: from MN2PR17CA0002.namprd17.prod.outlook.com (2603:10b6:208:15e::15)
+ by MN2PR01MB5566.prod.exchangelabs.com (2603:10b6:208:118::28) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.34; Tue, 6 Oct 2020 09:02:14 +0000
+Received: from BL2NAM02FT036.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:15e:cafe::b1) by MN2PR17CA0002.outlook.office365.com
+ (2603:10b6:208:15e::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.37 via Frontend
+ Transport; Tue, 6 Oct 2020 09:02:13 +0000
+Authentication-Results: spf=pass (sender IP is 95.172.66.185)
+ smtp.mailfrom=cisco.avature.net; UTDallas.edu; dkim=pass (signature was
+ verified) header.d=avature.net;UTDallas.edu; dmarc=pass action=none
+ header.from=cisco.avature.net;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of cisco.avature.net
+ designates 95.172.66.185 as permitted sender)
+ receiver=protection.outlook.com; client-ip=95.172.66.185;
+ helo=mail-gu03-crm-ms01.avature.net;
+Received: from mail-gu03-crm-ms01.avature.net (95.172.66.185) by
+ BL2NAM02FT036.mail.protection.outlook.com (10.152.77.154) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.39 via Frontend Transport; Tue, 6 Oct 2020 09:02:13 +0000
+Received: from cisco.avature.net (mail-gu03-crm-sg01.xcade.net [172.21.2.184])
+	by mail-gu03-crm-ms01.avature.net (Postfix) with ESMTP id C3F886009F
+	for <Jerry.Teng@UTDallas.edu>; Tue,  6 Oct 2020 09:02:11 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/relaxed; d=avature.net;
+	s=dkim.instances; t=1601974931;
+	bh=yvTOYHng0Y/BnL3VKprDU4o0oOWzYdI8Zy3U18+JmBo=;
+	h=Date:To:From:Reply-To:Subject;
+	b=ZLWvoGd4/ZhczrQv6h1A4u0UufBQbTPKgi7TeYgO7yU0DIbVLFPDk3hVdtk28U+Fe
+	 TIe6A9dS6SdaxB5OvODhHlr55iCCTt0BwQtIHx18xcUnbc1+vEqY/7I38CoN2gdYMV
+	 DxD5UXOsPEmstqtiKoLhAe2Sgx9nbTa4V7PRLZYc=
+Date: Tue, 6 Oct 2020 09:02:11 +0000
+To: Jerry.Teng@UTDallas.edu
+From: Cisco Recruiting <donotreply@cisco.avature.net>
+Reply-To: Cisco Recruiting <donotreply@cisco.avature.net>
+Subject: DUO Security Internship Program - Info Session
+Message-ID: <jw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9@cisco.avature.net>
+Content-Transfer-Encoding: 8bit
+Content-Type: multipart/alternative;
+ boundary="=_8d4cf7b84cc1a4292f9235e176d99f71"; charset=UTF-8
+Return-Path: bounces-jw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9@cisco.avature.net
+X-MS-Exchange-Organization-ExpirationStartTime: 06 Oct 2020 09:02:13.6893
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 04edacac-e444-4230-4958-08d869d68453
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 04edacac-e444-4230-4958-08d869d68453
+X-MS-TrafficTypeDiagnostic: MN2PR01MB5566:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 13228240717001704449;6304803578109965292;15328773137895021945;2028643682426256589;10013831071655796595;11567477514764134666;3696254874425828406;14620326672715300625;11850368846258539092;6622264404751384034
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:95.172.66.185;CTRY:DE;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-gu03-crm-ms01.avature.net;PTR:mail-gu03-crm-ms01.avature.net;CAT:NONE;SFS:(4636009)(286005)(356005)(166002)(7636003)(83380400001)(83080400001)(7596003)(3450700001)(55016002)(6266002)(15650500001)(966005)(58800400005)(15188155005)(8676002)(16799955002)(76236003)(19627405001)(336012)(2616005)(33964004)(7696005)(6916009)(7066003)(1096003)(26005)(81512002)(19623215001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 06 Oct 2020 09:02:13.4674
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 04edacac-e444-4230-4958-08d869d68453
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT036.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5566
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2624089
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3433.044
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?amN4aXgyL084MThtUGVEeDJVK2poWmFlaXBWdjduTnp2S3c4L3NjbDZzaXRZ?=
+ =?utf-8?B?RGxNOWh2OGdET3dYNkJwVVV3SnJNOFhsdEE0b2xVeDQ3OWUzZjQrWVVWVlA3?=
+ =?utf-8?B?WmRTSVNBKzFHUXVPV2lmVDk0L1N6d3FLdFk2YXk3WkFtTjdxMWJhVk11UHRZ?=
+ =?utf-8?B?OW5COVhwYUkwSmlwNVdxK1prVkxqdVFhSkNRbitSaFJWUjJaNVZrS05yQkRW?=
+ =?utf-8?B?dlczZXBUSjZCWjQ0eXltdVNyejhnSXZKR1Q3bVRMTkt6aXhyamh1SUVhZzlO?=
+ =?utf-8?B?OWpja3NlTk1JWHA3TncyaFJBd0RvcEQ4V1l3bk1Hd0dGcmlPOXpRRllMSkd6?=
+ =?utf-8?B?UzZCS25XMjRkV0F3WnNDSU9lUEV3d2JQM2MrN0ZjeTRIMlYyVmRRUS9rU2dM?=
+ =?utf-8?B?SGI2TzI4YjRxN216NHFHUGZDSGcrN0k2U3JmcnQrN3NtMGlFYTVrTzEraGVO?=
+ =?utf-8?B?VW9CcHdDTE0wcVE1ZHlCK3EzRmNtd2hRWGNpYVk5Smp4S1l4aEFySHo3bmlP?=
+ =?utf-8?B?ZHlUUm5tZDJYREx4b3F4TnJnNEtiN1BzQVdEb2Qza3pyS3p6MHJuMVlMam4r?=
+ =?utf-8?B?eHcxZm9iM2didkd2MmJBQTNlUzhYd1NaUkFLSnpMYVIydWlIc1c0OHVYMDNK?=
+ =?utf-8?B?dzlpWVI3STl6VEtHd2YzazBHZmlKS0gvenM1VmVDK1BieVhpNVFuN1Z5bHVM?=
+ =?utf-8?B?SHkvLzVpa290OExtRStvL0RubVd3U1k1Ri9KUjhnZ05sZzcvb2RiNjZNaFIy?=
+ =?utf-8?B?SkhvdTZGekx0Lys4R1hEb0szOTBRdithUktJZ2lLcEN5RHQzb1doYkJCTkI3?=
+ =?utf-8?B?RDlCM0JkOG1WRG5ZMnhmTTY0RTM1QlBhRHV5bUZvbmZmalZUVXdaUTdjRlFG?=
+ =?utf-8?B?Y1gzZDBRQldTekpaOWFlbmZ4cWNnNStGL21kNm9ualFrbGRTdHZXMzJJeTIv?=
+ =?utf-8?B?V2gxd2F1WjBXRUN3WFNIL2pKS3k2SWQ5eGk1UGhqU2d2VWhFdDdLUTZ3dndH?=
+ =?utf-8?B?dTM5M2lvQnFuYUdPdmpQVEo1d3FzcjBJTUZIRU1WYTE0WkhsaDJ1djd4Yy8r?=
+ =?utf-8?B?ak5QeWVjNzZ0TTEyMlZCb1FSa1ZiZEx1Y3Q3dXRZcVg4SFlNWUNQUU9DdnpQ?=
+ =?utf-8?B?c3ZpQW9SaGRRcWx5dzJEK1o0MVA1SGp0dEx4RkJqQURUYjZHbWROT0Y0M2RJ?=
+ =?utf-8?B?U3lXWTRzZHpycjRJcUJYVUhIdjZyWUJGSUs2T3AxaEtuS2d6RmY5VzlKdFBN?=
+ =?utf-8?B?cnlMaEwzdkR2cjVGMk9sd1pYRDAzM0lGQ20vMGRrL0hhN0J0Q2hHY09XSUMz?=
+ =?utf-8?B?VDBWU3ZwNjU5amQyaHh3Sm12OExwTlFFMElQdWFZY2Z6amtpaWwyWGw2SlVm?=
+ =?utf-8?B?N2pTWmdXd0loY2ZhcWZzVXM2ZHdvTnc0VDNxMTByS1M4OU1nK3lxOG15Si9T?=
+ =?utf-8?B?SERWUC9uSy9RTjNzQWtId3A5WXlseHcwdmRhRTZyd1AyWU9VYlNobXA5SWY5?=
+ =?utf-8?B?UmZwMEFiQ3ZzUVVnSTN1SjRHSksxT25FcDJMVlFBY0pyclI2QnlxVWZnZEI0?=
+ =?utf-8?B?VlYwYnBWcDFGUWJ5alhaSXRDd3U4MGlsb1IxTEZlaFJmenB5V3cxeFF1czAr?=
+ =?utf-8?B?SWV5elMzS2s3UTU5VElJTjBOK0tTMGZHUzl3RmRoSGViMUJsbzJvTUdRMWxR?=
+ =?utf-8?B?UHdnMTVHeEtsNGRHRE1Hc2dReWozSTRsb1VoTmNEeDRBOHZkNzNpblFCejUx?=
+ =?utf-8?B?SkZKVkJyZWU5S1p2c0VJS1NtdEI5aDZJZ3BUOXp2VkFGaERydUxXb3BTek9n?=
+ =?utf-8?B?R0hvTVYrZWc0Nk5IR2RPcmc2TkthNVdEZUJHUWtLQ2U1L2hnYXBoMU04OUV5?=
+ =?utf-8?B?SkRiMDlvNFdPUW45a005TWd0RzY3QjdSQnpjenkxOXpPbHgzaHFkS0kvSG90?=
+ =?utf-8?B?K1VMNzlsUWNVSzcxdUJKODUrcG9nMUVIMVNwK2JOQlFwczFBeUlrRUtPcXU0?=
+ =?utf-8?B?cGxmRDBMOTNDcGNYOWo0USs2M0xsZU04ZFNJajVBZGFhSkxQaXNQRXZ5YnJ4?=
+ =?utf-8?Q?+nN/jy?=
+MIME-Version: 1.0
+
+--=_8d4cf7b84cc1a4292f9235e176d99f71
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Hello,
+
+ Your Cisco event is approaching and we look forward to seeing you there! P=
+lease see below for event details.
+
+ Event: DUO Security Internship Program - Info Session
+ Date: 07-Oct-2020
+ Start Time: 06:00pm
+ End Time: 07:00pm
+ Time Zone: Eastern Time
+ Location: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fcisco.webex.com%2Fcisco%2Fonstage%2Fg.php%3FMTID%3De20e706af4cc664c2ecd=
+64137fe5387a8&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C04edacace444=
+4230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637375717=
+385760020&amp;sdata=3Dwh7H6m0vlteb66UARApos4KTy5AHxkRTusVOcQqcI50%3D&amp;re=
+served=3D0 // Password: DuoEvent2020
+
+ Best Regards,
+ Cisco Recruiting
+
+ Email ID: 2602 =20
+
+  	 This address is unattended and cannot help with questions or requests. =
+To receive these auto-notifications, please add [1] donotreply@cisco.avatur=
+e.net to your address book. =20
+
+ 	 Follow We Are Cisco  [2]  [3]  [4]  [5]  [6]  [7]  =20
+
+  	 (c)2020 Cisco and/or its affiliates  	 [8] Jobs Help  [9] Cisco.com  [1=
+0] Privacy Statement  [11] Trademarks =20
+
+ =20
+
+References
+
+	Visible links
+	1. mailto:donotreply@cisco.avature.net
+	2. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D9%26transformedUrl%3D1f967fb8ecad0140d3b0d058b9c55cd53b382991=
+e45f9ec65df35b0d467e1738&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C0=
+4edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637375717385760020&amp;sdata=3DrQL5%2BzdekNQkd7utu%2BfsdpjTEqXota3EmcdK%2=
+FCIWGE4%3D&amp;reserved=3D0
+	3. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D11%26transformedUrl%3D83c2bfbc4a2e07d034a7bcc141277bf4d875650=
+0ea34194b763164537ef869ae&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3De%2BBj%2BbfYD4VJG0IYnml%2Fh0YbVEcCiMx07ry=
+m15mnxvY%3D&amp;reserved=3D0
+	4. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D7%26transformedUrl%3D8abb328873b7aa57e9b0e9166ab497b511c5ffe8=
+03d46301b71b8f8e40983897&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C0=
+4edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637375717385770015&amp;sdata=3DJkqicLlRvjgN2AiPMmVGMETQSeZm09nd6RCPBlKNVv=
+8%3D&amp;reserved=3D0
+	5. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D12%26transformedUrl%3Dfd859bace0ab79d3fd5615e3c5dd13292df3149=
+c44ce3222f8479210ddf32768&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3DqegqZgOghAkhsQghGzpJDsLcork%2BULIYcnV13d6=
+T0zk%3D&amp;reserved=3D0
+	6. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D10%26transformedUrl%3Dda02517f3ceb37a5cf115e2cedfb8183e5f2b1d=
+343545956a1a67d7b1f209e84&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3DIHTvBngFmFT0M8mGRLHYOzydiMU3irhp364XClE2H=
+jE%3D&amp;reserved=3D0
+	7. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D13%26transformedUrl%3D56427cf1efc5e7d1fc6810e4f98f010268aeb9c=
+5b95564f38dddbd318d799408&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3Drk%2FxbxXku1Wnr%2BL%2BMt0V7bQXwKkGSzhrCo5=
+DmdQm9Rc%3D&amp;reserved=3D0
+	8. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D1%26transformedUrl%3D2d6000c6b9ed8dfe59922d55af97c76aafb9c7d3=
+a9e6ab1b491d1e4549e83384&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C0=
+4edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637375717385770015&amp;sdata=3DcyYC6%2FL6v6WKFjsVCAq9KSPi6vBiZJYJ6zVg85OU=
+aVs%3D&amp;reserved=3D0
+	9. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisc=
+o.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hB=
+iSe9%26link%3D2%26transformedUrl%3Dfb74e6d0fe6faa1024954db75cdac56c19fda3b6=
+37638a62096e52069baddf53&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C0=
+4edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%=
+7C637375717385770015&amp;sdata=3D4e5M9bMUHBfuJFoL53A9yRdr14iIyDmCui1ZlzTj6J=
+c%3D&amp;reserved=3D0
+	10. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcis=
+co.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6h=
+BiSe9%26link%3D3%26transformedUrl%3D8ba6c3152a196fb0e9044aa1250c925791867ee=
+602165b4987059a1ec1a0320b&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3DEHneCoBQ6sxYSbP%2BxS8gemlKN9maeHK955taBgJ=
+9WOA%3D&amp;reserved=3D0
+	11. https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcis=
+co.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6h=
+BiSe9%26link%3D4%26transformedUrl%3Dd8bd82b6be349d52d297620e9dd6dd613dd476c=
+5ffe2400dd754a1f9b9fe9abd&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C=
+04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1=
+%7C637375717385770015&amp;sdata=3D8%2BBn7I3OQgzL9HuIA1zJMUDMsAXdeVEG23WvIcs=
+iQ4g%3D&amp;reserved=3D0
+
+--=_8d4cf7b84cc1a4292f9235e176d99f71
+Content-Type: multipart/related;
+ boundary="=_525674d0fbb2f594a64f15059b3f1aba"
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge,chrome=3D1">
+<meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+
+<style type=3D"text/css">
+   =20
+    body,#bodyTable, #bodyCell, #bodyCell{height:100% !important; margin:0;=
+ padding:0; width:100% !important;font-family:Arial, "Lucida Grande", sans-=
+serif;}
+    table{border-collapse:collapse;}
+    table[id=3DbodyTable] {width:100%!important;margin:auto;max-width:600px=
+!important;color:#7A7A7A;font-weight:normal;}
+    img, a img{border:0; outline:none; text-decoration:none;height:auto; li=
+ne-height:100%;}
+    a {text-decoration:none !important;border-bottom: none; color:#007FAB;l=
+ine-height: 20px;}
+    .jobMatches > a {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .jobMatches > a:last-child {
+        margin-bottom: 0;
+    }
+    p {
+        color: #58585b;
+        font-family: Arial;
+        font-size: 14px;
+        margin: 0;
+        line-height: 20px;
+    }
+    ul {
+        margin: 0;
+        padding: 0 0 0 14px;
+    }
+    ul li {
+        margin-top: 12px;
+    }
+    h1, h2, h3, h4, h5, h6{color:#585858; font-weight:normal; font-family:A=
+rial; font-size:20px; line-height:125%; text-align:Left; letter-spacing:nor=
+mal;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0=
+;padding-bottom:0;padding-left:0;padding-right:0;}
+   =20
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}=20
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass f=
+ont, .ExternalClass td, .ExternalClass div{line-height:100%;}=20
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}=20
+    #outlook a{padding:0;}=20
+    img{-ms-interpolation-mode: bicubic;display:block;outline:none; text-de=
+coration:none;}=20
+    body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webki=
+t-text-size-adjust:100%; font-weight:normal!important;}=20
+    .ExternalClass td[class=3D"ecxflexibleContainerBox"] h3 {padding-top: 1=
+0px !important;}=20
+
+   =20
+
+   =20
+    h1{display:block;font-size:34px;font-style:normal;font-weight:bold;line=
+-height:100%;}
+    h2 {
+        color: #58585b;
+        font-family: Arial;
+        font-size: 29px;
+        line-height: 35px;
+    }
+    h3{
+        color: #58585b;
+        font-family: Arial;
+        font-size: 19px;
+        line-height: 25px;
+    }
+    h4{display:block;font-size:14px;font-style:normal;font-weight:bold;line=
+-height:100%; margin-top: 20px;}
+    h5 {
+        color: #58585b;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+    .flexibleImage{height:auto;}
+    .linkRemoveBorder{border-bottom:0 !important;}
+    table[class=3DflexibleContainerCellDivider] {padding-bottom:0 !importan=
+t;padding-top:0 !important;}
+   =20
+    span[class=3Dios-color-hack] a {color:#007FAB!important;text-decoration=
+:none!important;}=20
+    span[class=3Dios-color-hack2] a {color:#007FAB!important;text-decoratio=
+n:none!important;}
+    span[class=3Dios-color-hack3] a {color:#007FAB!important;text-decoratio=
+n:none!important;}
+   =20
+    .a[href^=3D"tel"], a[href^=3D"sms"] {text-decoration:none!important;col=
+or:#007FAB!important;pointer-events:none!important;cursor:default!important=
+;}
+    .mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {text-deco=
+ration:none!important;color:#007FAB!important;pointer-events:auto!important=
+;cursor:default!important;}
+    table tr[class=3D"oneColumnMobile"]{display: none;}
+   =20
+    @media only screen and (max-width: 480px){
+       =20
+        body{width:100% !important; min-width:100% !important;}=20
+
+       =20
+       =20
+       =20
+        table[id=3D"emailBody"],
+        table[class=3D"flexibleContainer"],
+        td[class=3D"flexibleContainerCell"] {width:100% !important;}
+        td[class=3D"flexibleContainerBox"], td[class=3D"flexibleContainerBo=
+x"] table {display: block;width: 100%;text-align: left;}
+       =20
+        td[class=3D"imageContent"] img {height:auto !important; width:100% =
+!important; max-width:100% !important; }
+        img[class=3D"flexibleImage"]{height:auto !important; width:100% !im=
+portant;max-width:100% !important;}
+        img[class=3D"flexibleImageSmall"]{height:auto !important; width:aut=
+o !important;}
+       =20
+        table[class=3D"flexibleContainerBoxNext"]{padding-top: 10px !import=
+ant;}
+        table tr[class=3D"twoColumns"]{display: none;}
+        table tr[class=3D"oneColumnMobile"]{display: block; padding-bottom:=
+ 20px !important;}
+    }
+
+   =20
+
+    @media only screen and (-webkit-device-pixel-ratio:.75){
+   =20
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio:1){
+   =20
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio:1.5){
+   =20
+    }
+   =20
+
+   =20
+    .uCase {
+        text-transform: uppercase;
+    }
+    .mTop12 {
+        margin-top: 12px;
+    }
+    .mTop16 {
+        margin-top: 16px;
+    }
+    .mTop24 {
+        margin-top: 24px;
+    }
+    .mTop32 {
+        margin-top: 32px;
+    }
+    .mBottom8 {
+        margin-bottom: 8px;
+    }
+    .mBottom12 {
+        margin-bottom: 12px;
+    }
+    .mBottom24 {
+        margin-bottom: 24px;
+    }
+    .mBottom32 {
+        margin-bottom: 32px;
+    }
+</style>
+
+
+
+
+
+
+
+<center>
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%"=
+ width=3D"100%" id=3D"bodyTable" style=3D"table-layout: fixed;max-width:100=
+% !important;width: 100% !important;min-width: 100% !important;" bgcolor=3D=
+"#f2f2f2">
+        <tr>
+            <td align=3D"center" valign=3D"top" id=3D"bodyCell">
+
+               =20
+               =20
+                <table bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"600" id=3D"emailBody" style=3D"border:1px solid #=
+C6C7CA; border-bottom: none;">
+                   =20
+                    <tr>
+                        <td style=3D"height: 34px; width: 600px; background=
+-color: #fff; padding-top: 20px; padding-bottom: 20px; padding-left: 20px;"=
+>
+                            <img src=3D"cid:16019749315f7c3293beb9570875608=
+1">
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td align=3D"center" valign=3D"top">
+                           =20
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top">
+                                       =20
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"600" class=3D"flexibleContainer">
+                                            <tr>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"600" class=3D"flexibleContainerCell" style=3D"padding-top=
+:40px; padding-right:20px; padding-bottom:40px; padding-left: 20px;">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" valign=3D"top">
+
+                                                               =20
+                                                                <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                                                    <tr>
+                                                                        <td=
+ valign=3D"top" class=3D"textContent" style=3D"text-align:left;font-family:=
+Arial,sans-serif;font-size:14px; color:#58585B;line-height:20px;">
+                                                                           =
+ Hello,<div><br>
+Your Cisco event is approaching and we look forward to seeing you there! Pl=
+ease see below for event details.<br>
+<br>
+Event: DUO Security Internship Program - Info Session<br>
+Date: 07-Oct-2020<br>
+Start Time: 06:00pm<br>
+End Time: 07:00pm<br>
+Time Zone: Eastern Time<br>
+Location: https://cisco.webex.com/cisco/onstage/g.php?MTID=3De20e706af4cc66=
+4c2ecd64137fe5387a8  // Password: DuoEvent2020<br><br></div><div>
+Best Regards,</div><div>
+Cisco Recruiting<br>
+<br>
+<br>
+Email ID: 2602</div>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                               =20
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                           =20
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td align=3D"center" valign=3D"top">
+                           =20
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top">
+                                       =20
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"600" class=3D"flexibleContainer">
+                                            <tr>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"600" class=3D"flexibleContainerCell">
+
+                                                   =20
+                                                    <table border=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+                                                        <tr>
+                                                            <td valign=3D"t=
+op" class=3D"textContent" style=3D"background-color:#e8ebf1; text-align:lef=
+t;font-family:Arial,sans-serif;font-size:12px; color:#58585B;line-height:18=
+px; letter-spacing:0.2px; padding-top: 32px; padding-bottom: 32px; padding-=
+left: 20px; padding-right: 20px;">
+
+                                                                This addres=
+s is unattended and cannot help with questions or requests. To receive thes=
+e auto-notifications, please add <a href=3D"mailto:donotreply@cisco.avature=
+.net" style=3D"text-decoration:none !important;border-bottom: none; color:#=
+007FAB;line-height: 20px;-ms-text-size-adjust:100%; -webkit-text-size-adjus=
+t:100%; font-weight:normal!important;"><span style=3D"color:#007FAB;">donot=
+reply@cisco.avature.net</span></a> to your address book.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                   =20
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                           =20
+                        </td>
+                    </tr>
+                   =20
+
+                   =20
+                    <tr>
+                        <td align=3D"center" valign=3D"top">
+                           =20
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top">
+                                       =20
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"600" class=3D"flexibleContainer" bgcolor=3D"#=
+f1f3f7">
+                                            <tr>
+                                                <td align=3D"center" valign=
+=3D"top" width=3D"600" class=3D"flexibleContainerCell" style=3D"padding-top=
+:24px; padding-right:20px; padding-bottom:20px; padding-left: 20px; border-=
+bottom: 1px solid #c6c7ca;">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                                        <tr>
+                                                            <td align=3D"le=
+ft" valign=3D"top">
+
+                                                               =20
+                                                                <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"4">
+                                                                    <tr><td=
+>
+                                                                        <sp=
+an style=3D"text-align:left;font-family:Arial,sans-serif;font-size:12px; co=
+lor:#58585B;line-height:18px;display:inline-block;vertical-align:middle; pa=
+dding-bottom: 0;">Follow&nbsp;We&nbsp;Are&nbsp;Cisco</span>
+                                                                        <sp=
+an style=3D"display:inline-block;vertical-align:middle;">
+
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D9%26transformedUrl%3D1f967fb8ecad0140d3b0d058b9c55cd5=
+3b382991e45f9ec65df35b0d467e1738&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas=
+.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C1%7C637375717385829979&amp;sdata=3DYftNtOXbBDwkfillIvnZoqCqO3CVsRp7KG=
+B1TLv%2Fh7o%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.net/ma=
+ilRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D9&=
+amp;transformedUrl=3D1f967fb8ecad0140d3b0d058b9c55cd53b382991e45f9ec65df35b=
+0d467e1738" shash=3D"TBTtelP/KUdRtfnk23+0TVw4Y2tyYB180JlurD+C/JSAyWvKmhtQxT=
+Ah/zVbHuf5xFUwpR/XJG7WTLx7W0AqlJuLU7GfI5RC5SEb+nxpKz3rq5f42ZcT0lR0nQKUCnK4t=
+zCm7OWVpCp1QnsYV4ijcb+U485v8E+FBXeWmfUrMtg=3D" style=3D"text-decoration:non=
+e !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms-text-=
+size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!importa=
+nt;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315f7c329=
+3bec75970404133" style=3D"display:inline-block;" alt=3D"Instagram" width=3D=
+"25" border=3D"0"></a>
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D11%26transformedUrl%3D83c2bfbc4a2e07d034a7bcc141277bf=
+4d8756500ea34194b763164537ef869ae&amp;data=3D02%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637375717385839975&amp;sdata=3D%2FGHBSOe4sR9opDPjqLH85HUvbJc%2Bn=
+icIR8k%2FpnMsHMA%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.n=
+et/mailRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=
+=3D11&amp;transformedUrl=3D83c2bfbc4a2e07d034a7bcc141277bf4d8756500ea34194b=
+763164537ef869ae" shash=3D"fWjionDybf5JFEmR/QUxlaEnSvjOjthk6HxI4lYyAvg37RsI=
+Kd/eC7hj5Q5ApANQqdt3AJi66bGrQ5oThPk2RnyvHORtFW+VMtP6ENOVggSUw7x8fuYYMyNtk1E=
+GWtsiSd1TmkGRD3/Nf78FtmWgJSIDeuENxb37Td+WMjhB+ng=3D" style=3D"text-decorati=
+on:none !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms=
+-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!i=
+mportant;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315=
+f7c3293bed20628297905" style=3D"display:inline-block;" alt=3D"Twitter" widt=
+h=3D"25" border=3D"0"></a>
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D7%26transformedUrl%3D8abb328873b7aa57e9b0e9166ab497b5=
+11c5ffe803d46301b71b8f8e40983897&amp;data=3D02%7C01%7CJerry.Teng%40UTDallas=
+.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C1%7C637375717385839975&amp;sdata=3DLUUAzf1AQnFevAMwNY8dwP0YQ3oyy2zy1u=
+%2ByfVWYi%2Bc%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.net/=
+mailRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D=
+7&amp;transformedUrl=3D8abb328873b7aa57e9b0e9166ab497b511c5ffe803d46301b71b=
+8f8e40983897" shash=3D"gZIFY/tyWKDlYSal9pjypZALJ4iRYajyb8OiqCWm/2QoJ/20jnG/=
+/bhy8554CukBfFi5aFliYWW4AO4//gM6sT/40zNKh4k5KhpWzb41C0Ly3sout8QoMbnZezTpzM9=
+qz962ZiI7y2zqkGmRhoT5V3fqj169qEwR5j43vQIbX0A=3D" style=3D"text-decoration:n=
+one !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms-tex=
+t-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!impor=
+tant;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315f7c3=
+293bedc4970107030" style=3D"display:inline-block;" alt=3D"Facebook" width=
+=3D"26" border=3D"0"></a>
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D12%26transformedUrl%3Dfd859bace0ab79d3fd5615e3c5dd132=
+92df3149c44ce3222f8479210ddf32768&amp;data=3D02%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637375717385849969&amp;sdata=3DezvjvgWYlu1TH3FqaGRdDdLIqgiG2XRd3=
+KlZGZvW2dg%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.net/mai=
+lRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D12&=
+amp;transformedUrl=3Dfd859bace0ab79d3fd5615e3c5dd13292df3149c44ce3222f84792=
+10ddf32768" shash=3D"XTqejaMHWWeUUjzmf5tF8vr1/J9JShcu523hwTKVd7RPETvKxIbGoQ=
+2+/0BHTQE/+Ql0SEzDvAOgT8Ciu/0hJya2Xfc0w+0Rqko/z+JIctvTO5Nxnaa74SXeIlhEraD6L=
+U/bUciUifiKiQCWAB8ACJlMAcrfgLTUw1MZEe9PWpc=3D" style=3D"text-decoration:non=
+e !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms-text-=
+size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!importa=
+nt;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315f7c329=
+3beec2628155297" style=3D"display:inline-block;" alt=3D"Linkedin" width=3D"=
+25" border=3D"0"></a>
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D10%26transformedUrl%3Dda02517f3ceb37a5cf115e2cedfb818=
+3e5f2b1d343545956a1a67d7b1f209e84&amp;data=3D02%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637375717385849969&amp;sdata=3DCaKnByeL1VkWt3qykExCKgAuaMa6KR9Lp=
+igG7Bn33gM%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.net/mai=
+lRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D10&=
+amp;transformedUrl=3Dda02517f3ceb37a5cf115e2cedfb8183e5f2b1d343545956a1a67d=
+7b1f209e84" shash=3D"GdVnfVfn7U5oMF81jyaunmtbF4BQNeEMOmXx00Sd4temkYQEHSlUVW=
+HkQ+RNxWSK62s200cqQkTWUffTBSMiJvRX30Xxtu0wxJq4dkBveVvm8VTOlpwZU19+wu3VuiUCK=
+PYTybYZ7cvflrNc20r2QURlkB++sjf7IOTe8KF6a2g=3D" style=3D"text-decoration:non=
+e !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms-text-=
+size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!importa=
+nt;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315f7c329=
+3befcd810434664" style=3D"display:inline-block;" alt=3D"" width=3D"25" bord=
+er=3D"0"></a>
+                                                                           =
+ <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2=
+F%2Fcisco.avature.net%2FmailRedir.php%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7=
+qmm9i6hBiSe9%26link%3D13%26transformedUrl%3D56427cf1efc5e7d1fc6810e4f98f010=
+268aeb9c5b95564f38dddbd318d799408&amp;data=3D02%7C01%7CJerry.Teng%40UTDalla=
+s.edu%7C04edacace4444230495808d869d68453%7C8d281d1d9c4d4bf7b16e032d15de9f6c=
+%7C0%7C1%7C637375717385859963&amp;sdata=3DD30SyMpfNrwKV2R6cV%2B54h4gTh7DNJC=
+%2FS3qQcnsmAsg%3D&amp;reserved=3D0" originalsrc=3D"http://cisco.avature.net=
+/mailRedir.php?u=3D1&amp;code=3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=
+=3D13&amp;transformedUrl=3D56427cf1efc5e7d1fc6810e4f98f010268aeb9c5b95564f3=
+8dddbd318d799408" shash=3D"BUNhOp3dSwdq3Sihh1X6sU1nNlWrWu8wOd5T5ZkvXVZo2a9l=
+8/JOgxMslZYBLQxdx40L+Do8E3oAbQSKF17X34huAIMBdMgxLj8izdlqBN4mDdQrsxwV/qjmi1g=
+Ega+zx4UuDZipXHa6MYroWMdj9SbCHrq5IaPFWT2siPK6uu4=3D" style=3D"text-decorati=
+on:none !important;border-bottom: none; color:#007FAB;line-height: 20px;-ms=
+-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!i=
+mportant;text-decoration: none;padding: 0 8px;"><img src=3D"cid:16019749315=
+f7c3293bf0c6272911978" style=3D"display:inline-block;" alt=3D"YouTube" widt=
+h=3D"25" border=3D"0"></a></span>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                               =20
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                           =20
+                        </td>
+                    </tr>
+                   =20
+                    <tr>
+                        <td bgcolor=3D"#f2f2f2" style=3D"border-left: 1px s=
+olid #f2f2f2; border-right: 1px solid #f2f2f2;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"width: 100%;">
+                                <tr>
+                                    <td style=3D"height: 12px;"></td>
+                                </tr>
+                                <tr>
+                                    <td width=3D"40%" style=3D"padding-left=
+: 20px; font-size: 10px; letter-spacing: 0.2px; color: #58585b;">
+                                        =C2=A92020 Cisco and/or its affilia=
+tes
+                                    </td>
+                                    <td width=3D"60%" style=3D"text-align: =
+right; font-size: 10px; letter-spacing: 0.2px;">
+                                        <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisco.avature.net%2FmailRedir.ph=
+p%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9%26link%3D1%26transforme=
+dUrl%3D2d6000c6b9ed8dfe59922d55af97c76aafb9c7d3a9e6ab1b491d1e4549e83384&amp=
+;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C04edacace4444230495808d869d68=
+453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637375717385859963&amp;sda=
+ta=3DBYfEp%2B3A7sDtlnLSChS9jH3gW45MeR5kgPckoEAKToM%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"http://cisco.avature.net/mailRedir.php?u=3D1&amp;code=3Djw2M3gx=
+46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D1&amp;transformedUrl=3D2d6000c6b9ed8df=
+e59922d55af97c76aafb9c7d3a9e6ab1b491d1e4549e83384" shash=3D"O1nLQe5n0iPI9Q8=
+4GOvHh/aUdj0AGSAkYDT2JdTFuHaLRhQe4rk6L8iAT/65EvArq5JYRfY5e3fnoHKuHrHPC+n8C4=
+H02wT5BiiZuyPTGHU+vwhhdiiiWCXQgPsIFRE7iCE3GW81SG+qUshecj2pYKXfHncYCJhBwClHN=
+HobLg8=3D" style=3D"text-decoration:none !important;border-bottom: none; co=
+lor:#007FAB;line-height: 20px;-ms-text-size-adjust:100%; -webkit-text-size-=
+adjust:100%; font-weight:normal!important;"><span style=3D"color:#007FAB;">=
+Jobs Help</span></a>&nbsp;
+                                        <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisco.avature.net%2FmailRedir.ph=
+p%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9%26link%3D2%26transforme=
+dUrl%3Dfb74e6d0fe6faa1024954db75cdac56c19fda3b637638a62096e52069baddf53&amp=
+;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C04edacace4444230495808d869d68=
+453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637375717385869957&amp;sda=
+ta=3Di1Jjz22Ych8i2orCq%2Br3hxZr%2B%2B7iBgKefYaSwQiPeHw%3D&amp;reserved=3D0"=
+ originalsrc=3D"http://cisco.avature.net/mailRedir.php?u=3D1&amp;code=3Djw2=
+M3gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D2&amp;transformedUrl=3Dfb74e6d0fe6=
+faa1024954db75cdac56c19fda3b637638a62096e52069baddf53" shash=3D"UvKGj6W4eQ8=
+m/orOqVYOji5Zb2bNwPjzr7DMcajb95i4p/NuoDnsjrWiBbgkkH5NPVc7bLSg74Vjvjb6kBfBgX=
+xk492LQbFoGSdJ/5QA2YXoSV7BKj5PVaTKaFcp8xapmIghQD9qjYzAMx25SHUJf5uJDVw0dgvgi=
+8OKwZ+8+/0=3D" style=3D"text-decoration:none !important;border-bottom: none=
+; color:#007FAB;line-height: 20px;-ms-text-size-adjust:100%; -webkit-text-s=
+ize-adjust:100%; font-weight:normal!important;"><span style=3D"color:#007FA=
+B;">Cisco.com</span></a>&nbsp;
+                                        <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisco.avature.net%2FmailRedir.ph=
+p%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9%26link%3D3%26transforme=
+dUrl%3D8ba6c3152a196fb0e9044aa1250c925791867ee602165b4987059a1ec1a0320b&amp=
+;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C04edacace4444230495808d869d68=
+453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637375717385869957&amp;sda=
+ta=3Dkn626Z0XuL%2BKMvZ%2BHxME2bCUD3EEXbuTVedPuDkqIlA%3D&amp;reserved=3D0" o=
+riginalsrc=3D"http://cisco.avature.net/mailRedir.php?u=3D1&amp;code=3Djw2M3=
+gx46pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D3&amp;transformedUrl=3D8ba6c3152a196=
+fb0e9044aa1250c925791867ee602165b4987059a1ec1a0320b" shash=3D"A5sXXhxmczFfl=
+Tn8hN7COgwKE4A9SaSSOJGfcLlEO4wFPDIuloojTuc486UNGF1yUSsAo/BcpIjSAkvcQY/hq/yg=
+eMvmhNC9BMhegKi9aNVbNHqjHz/IQtebzZXwUKV7Uj63fY+1CSi6u5CpIo1Ew4v/yW7+nJrrKYB=
+ycVxiSq4=3D" style=3D"text-decoration:none !important;border-bottom: none; =
+color:#007FAB;line-height: 20px;-ms-text-size-adjust:100%; -webkit-text-siz=
+e-adjust:100%; font-weight:normal!important;"><span style=3D"color:#007FAB;=
+">Privacy Statement</span></a>&nbsp;
+                                        <a href=3D"https://nam02.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fcisco.avature.net%2FmailRedir.ph=
+p%3Fu%3D1%26code%3Djw2M3gx46pI_-m-kwDU7qmm9i6hBiSe9%26link%3D4%26transforme=
+dUrl%3Dd8bd82b6be349d52d297620e9dd6dd613dd476c5ffe2400dd754a1f9b9fe9abd&amp=
+;data=3D02%7C01%7CJerry.Teng%40UTDallas.edu%7C04edacace4444230495808d869d68=
+453%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637375717385879953&amp;sda=
+ta=3D1HX8S0YVPP8GkGKqBIY46ElPVkxTZRm2MlR2vQamd8M%3D&amp;reserved=3D0" origi=
+nalsrc=3D"http://cisco.avature.net/mailRedir.php?u=3D1&amp;code=3Djw2M3gx46=
+pI_-m-kwDU7qmm9i6hBiSe9&amp;link=3D4&amp;transformedUrl=3Dd8bd82b6be349d52d=
+297620e9dd6dd613dd476c5ffe2400dd754a1f9b9fe9abd" shash=3D"ersKPPAlfA9FosZ/M=
+Z21yAzzDiOUxuRXc61yYjbXxxi295kHlqeYjWmMGPCX+q9YTuqWgnyrGEzICBrZxmSmJXll5gf7=
+Aoq3uqViWbiOMq6iNwuttXHsN+D751qWU9sRa1jLooM3guVgg93G+vpr5/Em2afm7Js0TEPpqrE=
+8F5o=3D" style=3D"text-decoration:none !important;border-bottom: none; colo=
+r:#007FAB;line-height: 20px;-ms-text-size-adjust:100%; -webkit-text-size-ad=
+just:100%; font-weight:normal!important;"><span style=3D"color:#007FAB;">Tr=
+ademarks</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=3D"height: 32px;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+               =20
+            </td>
+        </tr>
+    </table>
+</center>
+<img width=3D"1" height=3D"1" src=3D"https://cisco.avature.net/mailPix/jw2M=
+3gx46pI_-m-kwDU7qmm9i6hBiSe9">=
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293beb95708756081>
+Content-Type: image/png; charset=binary;
+ name=logoheader.png
+Content-Disposition: inline;
+ filename=logoheader.png;
+ size=1239
+
+iVBORw0KGgoAAAANSUhEUgAAADwAAAAhCAYAAACFtMg3AAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gkREwoqTdl+1wAABGRJREFUWMPtmG1ollUYx3+PepbN
+mZUpaUWu6LilyApbRKOXISbFM/NLZDY6IpYFgVF9yPWhPlgUI2VRXxp0MGrZaqDGkFVgrRdr80MI
+iqdyD4ws6YVeiM0dbX25Hjrc3dtz3/d6HLUduDnv57qu+1xv/5MbHR1lKpUZWTcq65qVdV5Z11Zu
+JpV1bUKredIEBhqBWUD+LFxMXmg1TqbAU0ul/6tlVgnbuRowwCve6K8S2lsF8ChQ8EZ3pLTV9UA1
+0OqNHkm45ypgM2C90UcmJDDwEnALsBRYm5DvdcAzwKiy7n1v9A8JGV8AvA7kgG+A3QnptQJNwMok
+Nl5Kpc+X+rwUFzVb6hwwJ8W+ObInPCNJKfJ2wbQNj6XSyrq9wE3Aam/0F2WMp/OBz6V7vTf6pzLS
+qgd6gI+80U3RG84D84A1Zf7By4Er5VteZlprRKb8eCqd+x9pb27ahgOBC1JH49gnUh9MceZRwAOD
+wMnI3CAwIt9gZO6kjJ2WM5KWgxFeichSiBN4JVDnje6MbHoYuBzYlpS6OL1LgVpv9FBk7jhQA9RI
+O5wbAmqBS1I6zm3AEuE1PK8TqBPZ/tbzrPBQWfeqZGEFb3R1mdHSgAhlvdEbJyuX3g8MA11nwfS6
+hNb+CXuy6QeAaYGnEDwUh3Eu0AAslnBz2Bt9OAbWVQBHvNF9MfDtOkAB3wH93uifY+jMEzoXib0e
+8kZ/PQZPi4EbgUrgOPCpN/rMv4GHNwHPAfNLZDEvC7LaCfTJ3hkyfn9k/U7gkYBGDnhCvqpgXUGw
+cchPpcDBzRHeB5R1W7zRPZlVWln3ENAeI2zScjfwgAh7GjgG/BKz7llge0TYOH5mird+MOaiqoFu
+Zd3tmW5YwPjz0h0F2gSQV6QAGDcH7Ru80f1y9tyATg3wuHRH5OGgW7SlPnLeRuA2aZ8AnhYtuAvY
+BMwE2pV1V3ijh9Oq9J0BeH/RG701mPswocDhS8cOZd0O4F1v9O/B+D2BlrV4o1uDufdiBC7+mEZv
+9DHp9yjrPLAFWASsBvamVemlQXt3RpVuB4rOqQF4Bygo68Kbrw3ab5Y4r66YOwfCFsuuCARNbcM+
+aM/NIq03uiB57C7gVxleBHSK54/SqSpx5Klx+AmfkkayCHwoaD+mrFMZhR7wRt8nIW2PDC8AVkg7
+DGEt4rHHKp9JfY2yLh/4gYoIuOnLEpb2CVS7DFgF9Cvr3pI/ucobXZ8gft8KnAMMABdGvP1vUr8G
+PCUPcfcCS5R13fIgt8wbfUew5wWg6IW7lHUdwuNaYJmMfwn0phbYG31KWbdBkvVKuZEVKS+4Cdga
+M97rjT4qdH6UWN8hvDTI9w8c643+QFm3HWiRtc0xTnK9N/rPTHHYG90rGdK+iF3EvTN/DBwAwszo
+j8iaIbHndRE6b0sIOwCcGY+ON/pJYEPkgWAYeAO4tvgjJ4yWlHWzgYvFyZzwRieCWJIZLZTut95o
+X2J9VTG19EZ/X2LtQtG+kudOaXj4F/OkcBSord2LAAAAAElFTkSuQmCC
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293bec75970404133>
+Content-Type: image/png; charset=binary;
+ name=iconIG.png
+Content-Disposition: inline;
+ filename=iconIG.png;
+ size=680
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTEwkQelm0lgAAAjVJREFUSMe1ld9LUwEUxz/3Tod3
+C2NsYKUuXeBS+qFI+1GRc89lZj5EUAT9RREFIfSDUb5EvVaaZYGYT3MDN6Vt0FpJ4n646W2/7u1B
+qEabu6Y7j+fA93M438M5QiYrq8GAn+mp18iyzH5GV7eN0StXEeKJVfXe3TuoqkIjon9gEDGVSjUM
+ALD6/RsiDQ5FVWmqVRRFEbPZgiBq62Nra5NcNlu1VhUiSRI3b93GbLZo7lhVVWbeTvFpfk4bpMfe
+qwmwshJmORxGEODc+Qs4XW7tEL1er6n75XCYYMAPgNXaRY/dXn30ezFVEIQ/QrraUk1aBfP5n8y+
+nyEaiWAwGnG63HiGvZw8dRqA9vYOSqXi7iEbGxn0ej0tLRIvXzwnGvkMQDK5ztf4F65dv4HNdoxM
+Jo2ilGvq7Dgu35NHhJaWyOWyvwF/R3Bx24/Jpz7CodD/QQCam5srZl/hibid1+l0O2rUhSQScYzG
+A9iP9/5jev/AILIsk0yu76hR1/jAoh+Hw83I5THmLB+JxaIYJAMOpwur9SjTb15RLpf3BikWi0w+
+8zE6Ns6Qx8uQxwtAuVziw+w7Fhbm626mphVOp1M8fjhBR6eVtrY28vk8sViUzVxO0/pXhRQKBQAc
+TjfpdKrKbTPQ13eiItfR2UmpVNIOWVkO4XKf5YzDuesDqRkiyzITD+439tQDKIrC2tqPfXlcDf+M
+oiAgmkwmBKFxrEOHjyC2th7k4qURJEnad0BXtw3PsJdf94fNW1kjdD0AAAAASUVORK5CYII=
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293bed20628297905>
+Content-Type: image/png; charset=binary;
+ name=iconTW.png
+Content-Disposition: inline;
+ filename=iconTW.png;
+ size=673
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTEwciLA3ImAAAAi5JREFUSMe9ldtrE0EYxc+MJukK
+bghspElqLq1NUi/Qmhp8VJ+1ttZqC4r4J4n4JqKIIj4IffRWrUlsqYjFEmJLGyVpdnMhG5LsJmwT
+uj4ZKNnEDWY9b/N9A7/hfDNnSLlaVze+r+Pd29eo1+vop7y+YUzPzIKkM1n1wf17UNV9GKHxiRBo
+qVQyDAAAWYEHhcHaV1XjIQBwWKtICO1qISEEockwgmMnAQBbmz/wZW0VlB6C1WqFKBb/DpmemUU0
+soxCIa8Jmbp6DadOn2mt3W4PxifOglKKly+et+3XtMvt8eD2nbvwB4JtPZdr6ADgjzjOjkajgUBw
+TB9ELBYxMMDg+tw85m4sYOi4u9UbdDg72ijwPFY+R/XNJBpZxs2FW6CUYtQfwKg/gGqlAp7PwGw2
+d4TkcoL+wYcmwxDFIjjO3qodZVkEWLbrLapUKpp1TbtkWT4A0CuB5/VDlt6/wW461RMgk9mFJFX1
+QxRFQSwWgSDwuiFrqysdex1fvCRJ4DhOF+DXzyQSiXjvkFxWwONHDxGPb0CW5S7DLmNx8VXXQ3TN
+rnK5jEI+D7PZpNkXxSKePX0CWZJ6yy6LxYJz4fPwen1wOF0wmdoBzWYT69++4uOHJeztKb0HpKIo
+iEU/geczGBk5Ac5+DEcYBo1mE6WSiHQqha3NBGq12r+lsKqqSO5sI7mz3Zeo/y//ieEQSgiozWYD
+IcaxBh1OUJa14vKVKTAM03eA1zeMCxcv4TfPishrjCZdKwAAAABJRU5ErkJggg==
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293bedc4970107030>
+Content-Type: image/png; charset=binary;
+ name=iconFB.png
+Content-Disposition: inline;
+ filename=iconFB.png;
+ size=480
+
+iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTEwgP7kqIIgAAAW1JREFUSMftlN0rg1Ecxz/nma29
+FLaah5s9C7Hc4RIbkYSVK4mU/xGlmRBphokLFC68724vLvbimeNCPdFW1vZMLnyvzu97fud8Ot9+
+HZF5zcnzs1OimxHy+RxmSQhBZ1c3s+E5XC4XSjabYX1t1VQIgJSS25trdrajACipVAop32mUksnk
+J4gGS0oJQFM9lwQCffQPDNKmtmOxKEgpOYofsr+3W9ZbMygYGmN4JFTm2x2Oiv01Ref1tjE0HKy4
+VywUKvo1vainN4AQwqi3ohFeXp4ByKTT5oEcTqexLhTyHMYOfjyjmDVVDQdVq6qjs1ptzC8sAuBx
+ewzfZrOxtLxi1FeXF5wcx2sHKYqCpvkr+JZv/vPT4+9EVywW64uuVNKJx2MAaD4Ntb0DAF3XSSSO
+jb6H+7v6QLquE41sADAxOfUF9Gb4f2Lq/kH/IOOXV9ytboRoHE9V1U9Qc0sL0zNh7HaH6RCf5md0
+bByAD/mwcRixnoo8AAAAAElFTkSuQmCC
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293beec2628155297>
+Content-Type: image/png; charset=binary;
+ name=iconLI.png
+Content-Disposition: inline;
+ filename=iconLI.png;
+ size=582
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTExEKBSDVtQAAAdNJREFUSMftk09rE0EYxn+7NGRD
+NRJsUm1lm0Rrg5emCsUiqPXiwVYUv4KIX0fEk4ifoyb1Ik0b0eaPF4nJNlWzTbN2l+hh13TJeJFI
+NdJIdunF5zbvzPCb55n3ldrfbPGuXCSbWcG2bbxUPJHkzt17SJ8aTfHk8SOE6OKH0nOXkC3L8g0A
+0NzRkfFZXSH+BpFQp+JMTJ7xBDTSr3hraZnZ9EUAXq5m2FhfGwrS14mqxg90yLDqC8nnc7iui+PY
+vM6v+xPX5ts3FAsFhOgihPAHMpueIxobB0CrVdFqVZJnzzH5sxF2m030nQYLC1eIxcaxHZtyqUj1
+Q2VwyPT0DOdnUgB8d5weZH7+MgBbWxo3T45xPBzu3UmlLrCafUF+IzfYnxymRCJJUFHQG5/pdDq9
++tVriyhKaDAnh8lxbJ4/e4plmUSjMe4/eIgkyQQCAVR1ikrl/fBONK2GZZkAGEYL0zR7e6PHRr2J
+y913f1vv/4pmJOANxJNh/A/5p4nPrb2iXCoCsLf3BYBSYZOP9ToA7a/tA+ezmRWCQQWAlrE7GETX
+G3/UDKOFYbT6vnR7u360ccmShByJRJAk/1inTk8gh8MnWFq+TSgU8hwQTyS5vniDH4twqN+j5Pvg
+AAAAAElFTkSuQmCC
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293befcd810434664>
+Content-Type: image/png; charset=binary;
+ name=iconUK.png
+Content-Disposition: inline;
+ filename=iconUK.png;
+ size=534
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTEwk1MV1g0QAAAaNJREFUSMft081KG1EUwPH/jLMJ
+jlNC4iIasTTGBDExhVrppqXrfkTbhxDBhxHENxGtitAa3LQhGtOqUNw0E3MnGkKNQyHMhwsFFZHR
+OIEuPLt7OPf8LvfcK/1t/nP393dZWV7CNE/xLyTi8WE+ZKeQKtUjd2F+Dtu26ES8GJ9ArtePOwYA
+6HoZxavoWWyIlxOvaJ6cYBhVhBDUDEGr1boT4jiON5Kd/EwgELhYPQfAdR0ajQaGITCEQIgqevnP
+rbAncglAbuMrul5G0zQ07QmapjE4+JTRVJr1tVUODn63h1yN3MY3wL2WC4d76Y8OUKsZt+6T7zdG
+90Ym0tfPu/cfiUT6/ELai0fkEfmPkWAw6FmjtNNYkmRisSHSmQyJRBLXdajXj/1BQqEw6bEMqdQY
+ak8PAIcVnc3NnH/I9MwsALZtUSoVyf/4TvWw8vDrsiwLRTkvO202KRTybBXymKZ558N5Il+WF0km
+R/j1s8Te3i6OY997hp7ITnGbneJ2+89XlpFDoTBdXUrH/kg0OoCsqirZqU90d6s+t5eIxxO8fvOW
+M23CleGsOu0fAAAAAElFTkSuQmCC
+
+--=_525674d0fbb2f594a64f15059b3f1aba
+Content-Transfer-Encoding: base64
+Content-ID: <16019749315f7c3293bf0c6272911978>
+Content-Type: image/png; charset=binary;
+ name=iconYT.png
+Content-Disposition: inline;
+ filename=iconYT.png;
+ size=946
+
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgTEwgpPEcN3wAAAz9JREFUSMe1ls1vG1UUxX9vPLZx
+Ynk8DsV2FrHjVipWCmpVWuG2KR8CiQWtUtEiugapgEBCLPg/EGIPohViiUBIBRaoVYA4DSRO0sT5
+cIiDQ5zG9ac8nsGeYUFlZNlO6jS83Rxd3aN73jl3niiWNWs2Mc2PP9xE0zQO8oSHI4xdeg2xkdmy
+Pv3kYyzL5P84x0+cRMrn810JRo49xZmzo7hcLi5feQOn09kzydZfm8i7FVTKZV56+RUKhTyK14uu
+6z2TmJaFtFtBOr2OJAlisbMkFxcIBgf54MOPePvd9+nv72fs0mVCoTBvvnUNh8PRtc+uJJZlsbK8
+jD8QZCm5SHTkGFN34hiGQXg4wsDAAE7nY/gDQYSQ9kcCsJZapVKpsL2dRZIkarUauq4jSbaHlmxP
+EsMwqNf/fiSHSb0UG7rO0FAIVVXRtCqWZfFs7Aymubv95b0a53I7TMYnAJiMTzB6/jl2EvdYXVnB
+Ltvpd7tZXl6iXq937SEScwvWjS8+awI2m41odARXX1/vulgW6+t/sL2dbUJP+APtk1x5/SqRw0f2
+rb9pmnz15XXW1lKd5fJ6VSKHjzA/P8tmJtPEVdXHM6dON7/n52abG6HtkiWJp4+faCFpuXjHg7Uh
+yzK6rjMZ/5VyqdTWKJVaJZVa7TqNXbbv7a6jR6OcGz0PwMlTp3n80CE2NzPMz81SKhYBKJeK3L71
+E4ZhoOs1fh6/TXzil44GkB9G5zvxCRSvl8TMNBcujgGQyWRIp9Moipdcbofk4gKGYSCEQFG8vZN0
+nPbJKMVigWKxQD5/H7fbjaZp1Go1FOURwtjifSEQQvzrqIZJtVolEBzE7w/sP/GVSrkl2ZpWRa/V
+sNls2Gw2QuEwhqFT6mCUFpJGl9S6+vpYuHsXSRJN7M+NDbLZLfz+AEOhEL9NTbGUTOIPBNrWTEvi
+hRBce+c9fL6BtiVZKORRFC+yLGOaDSwL8vdz+ANBALLZLRx2B6rPx7fffE1i5vfOibcsixvXPycW
+O4fH42mbqJDPt2HFB5YGaJgNxsdvkZiZ/k8qIZBVVUUIqfmfL5dKfH/zuwN7SASCg0gej8KrFy7i
+crkO/KUSHo7w/Asv8g8Mv1NHqEHEpQAAAABJRU5ErkJggg==
+
+--=_525674d0fbb2f594a64f15059b3f1aba--
+
+--=_8d4cf7b84cc1a4292f9235e176d99f71--

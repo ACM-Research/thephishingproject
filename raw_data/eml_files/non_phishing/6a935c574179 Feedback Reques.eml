@@ -1,0 +1,641 @@
+Received: from BYAPR01MB4839.prod.exchangelabs.com (2603:10b6:a03:8c::30) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 15:51:01
+ +0000
+Received: from BL1PR13CA0257.namprd13.prod.outlook.com (2603:10b6:208:2ba::22)
+ by BYAPR01MB4839.prod.exchangelabs.com (2603:10b6:a03:8c::30) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.22; Thu, 22 Oct 2020 15:50:56 +0000
+Received: from BL2NAM02FT061.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:2ba:cafe::38) by BL1PR13CA0257.outlook.office365.com
+ (2603:10b6:208:2ba::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.10 via Frontend
+ Transport; Thu, 22 Oct 2020 15:50:56 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.159.133)
+ smtp.mailfrom=mail.joinhandshake.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=mail.joinhandshake.com;utdallas.edu; dmarc=pass
+ action=none header.from=mail.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mail.joinhandshake.com
+ designates 192.237.159.133 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.237.159.133;
+ helo=a4.mail.joinhandshake.com;
+Received: from a4.mail.joinhandshake.com (192.237.159.133) by
+ BL2NAM02FT061.mail.protection.outlook.com (10.152.77.7) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 15:50:56 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1603381856; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe:
+ List-Unsubscribe-Post; bh=gToT6BicuoJSvw/gzSqiGD0UWrAKF2x1uOuDE0O/+FA=;
+ b=jsBeGItxoBV8S6cgrpp0THIQm8ZldN+gXhLa4DhQWdCzzeqDFY+UQbMVvyUjm/lV/o03n5tT
+ On9qW3a2Yxoo+4URzNixDIRt58jWuXIzDYAL9gX4NZX29pvpLPxM96wL5WlvrT1ElQ1MUGM7
+ ilAh7gzUAwpDzmKuNmiHZ+0j1OU=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIzNTc3MSIsICJ6eHQxODAwMDVAdXRkYWxsYXMuZWR1IiwgIjg4Y2I4Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tqoddmi4cm2j5giydembrgazdemjvgq4teojogexemocche3tqqzvijdekobviq4emjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihvstqndbmi2tgodfgntgmntdmu4timbvgaygmnzwgiygimjqg43wmjtshv5hq5brhaydambveu2da5lumrqwy3dbomxgkzdvez2d2njygawvgy3in5xwyjtimfxgi43imfvwkx3nmfzxgx3fnvqws3c7nfsd2nzqga2danq@mail.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJw9zUsOwiAUBdDVyExyoVBeB0yqdgMuoEE-aZWWRNrEuHp14gbOCZbI34jNVkJCQEqhVSc7LvhAfWfopPvhQvpMw0FhcXPm9zKvk1tDndwjcl8WNtlIyt10Q7FJqfWxU9BAMq1EEDAmsad9vzZBAPTX2bfgcnaVx7CzzWrC8eqnUjL7w-Piah3jbxznYA2g0H4AyN40LA&amp;data=04%7C01%7CJerry.Teng%40UTDallas.edu%7C8e38db307ab643449d9b08d876a2438a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389786609715220%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=h8Aa11lz8p7VdAntbUAJqOrWGoXxwGTn2QrsCYJSMvg%3D&amp;reserved=0>
+X-Mailgun-Batch-Id: 5f91aa0aa03b63d673427057
+Received: by luna.mailgun.net with HTTP; Thu, 22 Oct 2020 15:49:29 +0000
+Date: Thu, 22 Oct 2020 15:49:29 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20201022154929.1.F8B978C5BFE85D8F@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "700406"}
+Reply-To: recruit@utdallas.edu
+X-Mailgun-Tag: 580-School
+To: zxt180005@utdallas.edu
+From: UTD University Career Center via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: Feedback Requested: Fall 2020 STEAM Career Expo
+Content-Type: multipart/alternative; boundary="6ef2ef99ff1f473097076be870d729e6"
+Return-Path: bounce+02d017.88cb8-zxt180005=utdallas.edu@mail.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 15:50:56.2862
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 8e38db30-7ab6-4344-9d9b-08d876a2438a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT061.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 8e38db30-7ab6-4344-9d9b-08d876a2438a
+X-MS-TrafficTypeDiagnostic: BYAPR01MB4839:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:192.237.159.133;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a4.mail.joinhandshake.com;PTR:a4.mail.joinhandshake.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 15:50:56.1453
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8e38db30-7ab6-4344-9d9b-08d876a2438a
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT061.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR01MB4839
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2698185
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?OU5FUEl1eXdSRHFrQnN4c1RadWtSeXVNeVlBOTdzai9QYXRJUkJRbTFXa0xE?=
+ =?utf-8?B?cUNUL3RkcjJKYm50cngrWnBTTlQvU3JBeEQ4aEpoazZpb2hURk1COU5WSno4?=
+ =?utf-8?B?TkpEQ0JsUmhvYkZEdi9weXVJa1FZcEtvRDd6bU43S2RNdWYwODBFbytSUXBQ?=
+ =?utf-8?B?dzd4cStFdTVRNmI5NStJMHNLQUQ0cjBpa1czdENzSU5YWGZUTHZMc2t2ells?=
+ =?utf-8?B?UThlcDZJTHlTaGEyTGZwYTZuMk5rWDBTdVEwL29EeVdmQVgxK0ZhS2VnUU43?=
+ =?utf-8?B?U1o1RGRtSlVHWUx2TUk4WjFjV2gyNDJrTmFFaVg3cDVPbGIzS2JDdEJmLytO?=
+ =?utf-8?B?M1ZaY0ppVFNuVG1CYk5jd29KMUpPQ3ArNXhYYzcvREhQbHlLTXNZdkVIMmpt?=
+ =?utf-8?B?cTlUekV4VnlpS21mZ3VVQnNkYUt3QmZMWG1EeFhNRUJlQkJ3bllyUXg3V3lL?=
+ =?utf-8?B?UGMyMys2NGlvV1JjdU9YT3Vab2NjcER0VVhXV1RERFR5anNBenhEN0svakNN?=
+ =?utf-8?B?Yks3a1YyeTY0NzgvZTg3VGhMMU5QdjVlK0lUSEdMeHNpVlNadWkzbk9pK0t1?=
+ =?utf-8?B?Z1QzMityZlpKMnQ2UURZTFNqNW1BbUlnMStTdHZ5K3JYdW90blViVVQzWjhE?=
+ =?utf-8?B?Vzd6RzhKMDRhQmN2U2ZkT2lGMks0WnJzcC93WWF3UHMzdmc5L24zbC9TSmxY?=
+ =?utf-8?B?V3RvUlFBMEFnZG11TWpweHdkcStjZUdjOVNUSENOZjFwcTFnZC90VlI2Vmt0?=
+ =?utf-8?B?bWNXeXlSeEhrMnErb2xwellJMzhiaDliTXNwZkFZakNBQys2UEZzRlUyWTFp?=
+ =?utf-8?B?UzZORjl4RVRrWHV4UzJFQmZzb3AyWVU0U3lXam5IT3NhdzAyUVp3OEFPRTgy?=
+ =?utf-8?B?VzVtVHpJSHQ4amFDYVNJVWMvdVVPVUtjL0VKMTUxNDlpelVJb0xWUWJaQW9i?=
+ =?utf-8?B?aDcxMUxzZjBaSUw4M0FJNWZIcEpyV3JrcUQrN01pN0kxb1Z6TzFLeUdidFpK?=
+ =?utf-8?B?cVpYSjJKODExeENpcnlxaWN0Rkt6QWJQMC9hZGJvVVZZemlaMmdJb2ZWdkR0?=
+ =?utf-8?B?V2JnWGQ4VGg1WE44dlIvYXc2SHZSVk1TQlZFM2NQeEgwaDRnbE9DVE1DRXdD?=
+ =?utf-8?B?b1J4bEY0MndRaHhCYkpYVTgvUzlLc04wTEUxTjc3NjhZcEhoSGVzUmp5dElZ?=
+ =?utf-8?B?dW5ZWHluNGd3NzROZHVybHdmRWpZQnVMWmxNQ0JrWUhFQnVqTDIxem5uNnNZ?=
+ =?utf-8?B?ell6cEZ5T3BPSnlxT00wNEtLS1lyYjQ4dzl6ZFpxZWVxNkZNTTYxMmRzMysx?=
+ =?utf-8?B?bXI5dUMxc3AyeWlReXFPa3pNNm1kZ2d2dFhlQVlyRmdaZ1RQZXIzWXpIVlZs?=
+ =?utf-8?B?emNvejQ3TjFJQkEva1VNSXZhOGJWc3RSQnZRSHo3cmtKQ3k5aUtLTzQ1OGtx?=
+ =?utf-8?B?R0V3WHBKaFl4bzFUR2RrdUdVMEFyMjBiZVRRMUwxZlQzVVAvZGt0M1dpRHFw?=
+ =?utf-8?B?aHUzc0UvWE1UNXhVbTkxL3NtSSsrMG1ZRUloYnFCeDNqekp3ZE45ZzY2cmdI?=
+ =?utf-8?B?SzBXRXBHZTJ1N1U2ZVZLTVJqV2RKNytGeDJGbS9QOEdYU1F5WS96N3FITGhn?=
+ =?utf-8?B?ZkpQSnRmaCtmRVhYT2R4RlRRQk1IQkp6dzdTbTZ3UXg1ekhZZk0xNnI5VGts?=
+ =?utf-8?B?RTR6UkVYa2V1SEVuK2ZDTjFTcVp3aDB4OGRpanhmcTg1Sk12RDA2VVp1RUk5?=
+ =?utf-8?B?NSt2Mjk5VFhUTTRqSnhvVDRIQ2lKc0JqUnloMllpVnFtLzdrYU9zMGcyS21B?=
+ =?utf-8?B?Vnc2VEU5K3UvUHNkVXFBdmVwaDRLU1pJa2lJRGczdXhkUy9qZVlnZk00WVRB?=
+ =?utf-8?B?Z3FvWkNNNWoyckVCWUJBcExiV3FORWRrOXlxVWRjQ0t0OE1KV2M2ejVkRlk5?=
+ =?utf-8?B?TU0zNHg2NzU4QUJiTUtUSHpPbUIwOTFiUHorT080eVJSdm16KzE1ZGl4OHNU?=
+ =?utf-8?B?dHdzRCtkLzd2eWxzaTVVY203aU9jaSt5YzY0R2dIcWpzbDBxQnNsNWp4NU81?=
+ =?utf-8?B?dkU1d0wxT3FJVmk1eFhEZWgzSzF6clFqUC90aUhELzJVeFhOdEZqN1dlbUhu?=
+ =?utf-8?B?ZUd4RWJ6MG43aFhGR2djLzhMZTV5TzFPdGQ5dTMwa1NPWXUwQXByeGprc2Zl?=
+ =?utf-8?B?bkpqNFBER0c4Q3M5RTViT0wwR3ZjUHkzRFlMVlJmL2h2SmY0WTBPMDhPQStK?=
+ =?utf-8?B?cmYrR0JWUzFFNWJNTVJEK2dTTjdPVlQ5bDluYWZmeVJYaG5PTi9PZHg1SVVn?=
+ =?utf-8?B?Mkt2RE5jOFhaa09GRjRCQlFnWXNXT012cFZhOHV0U1ZDVmxhcENTWGQzWXY5?=
+ =?utf-8?B?N2lvNkMwcVlvVE9kZlVZL0o3ZnlZckpOaUp0WWRwamtsWUxBNGJieUVLY3g1?=
+ =?utf-8?B?V3p2am5BcCtqNGRycmQ3d0RWZjFEQmJ6RVBEOGNiMEdIcWlWZUVzVHBLVkl1?=
+ =?utf-8?B?UWwrSXhWdmZsZWtCa2c1cHBiNmVpdG1LUCttQm5iaEN3PT0=?=
+MIME-Version: 1.0
+
+--6ef2ef99ff1f473097076be870d729e6
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #154734;
+  border-color: #154734;
+  color: white;
+}
+table.button table td a {
+  border-color: #154734;
+  color: white;
+}
+a { color: #154734; }
+a:hover { color: #2c5948; }
+a:active { color: #2c5948; }
+a:visited { color: #154734; }
+table.menu th.menu-item a { color: #154734; }
+=2Ewrapper.banner { background: #154734; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: white;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #2c5948;
+  color: white;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #2c5948;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: #154734;
+}
+img.masked {
+  background: #154734;
+}
+
+
+
+
+ =20
+
+=C2=A0
+
+ =20
+
+    Hello Jerry,
+
+Thank you for registering for the Fall 2020 STEAM Career Expo. We hope that=
+ you were able to explore different career opportunities in various industr=
+ies in the science, technology, engineering, arts, and mathematics fields, =
+and that you are now more prepared for your future career.
+
+We would like to ask if you can complete an optional feedback form about th=
+is event. The responses will be used to improve future career expos and are=
+ recorded anonymously.
+
+You may complete the feedback form by clicking on the "Feedback" button bel=
+ow.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Feedback
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email is being sent to Jerry Teng at The University of Texas at Da=
+llas.
+   =20
+    Unsubscribe =E2=80=A2
+    Update preferences
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--6ef2ef99ff1f473097076be870d729e6
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-he=
+ight:100%;background:#f5f5f5"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+.small-float-center{margin:0 auto !important;float:none !important;text-ali=
+gn:center !important}
+.small-text-center{text-align:center !important}
+.small-text-left{text-align:left !important}
+.small-text-right{text-align:right !important}
+.hide-for-large{display:block !important;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+.columns td.small-12{display:block !important;width:100% !important}
+.column td.small-12{display:block !important;width:100% !important}
+.columns th.small-12{display:block !important;width:100% !important}
+.column th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+.thumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+.thumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#2c5948}
+a:active{color:#2c5948}
+a:visited{color:#154734}
+table.button:hover table tr td a{color:white}
+table.button:active table tr td a{color:white}
+table.button table tr td a:visited{color:white}
+table.button.large:hover table tr td a{color:white}
+table.button.large:active table tr td a{color:white}
+table.button.large table tr td a:visited{color:white}
+table.button:hover table td{background:#2c5948;color:white}
+table.button:visited table td{background:#2c5948;color:white}
+table.button:active table td{background:#2c5948;color:white}
+table.button:hover table a{border-color:#2c5948}
+table.button:visited table a{border-color:#2c5948}
+table.button:active table a{border-color:#2c5948}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/17=
+05667/original/data.?1603381319" alt=3D"STEAM Career Expo" style=3D"outline=
+:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-wi=
+dth:100%;clear:both;display:block;margin:0 auto;float:none;text-align:cente=
+r;width: 600px;" width=3D"600" class=3D"float-center"></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Hello Jerry,</div>
+<div><br></div>
+<div>Thank you for registering for the Fall 2020 STEAM Career Expo. We hope=
+ that you were able to explore different career opportunities in various in=
+dustries in the science, technology, engineering, arts, and mathematics fie=
+lds, and that you are now more prepared for your future career.</div>
+<div><br></div>
+<div>We would like to ask if you can complete an optional feedback form abo=
+ut this event. The responses will be used to improve future career expos an=
+d are recorded anonymously.</div>
+<div><br></div>
+<div>You may complete the feedback form by clicking on the &quot;Feedback&q=
+uot; button below.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#154734;border-color:#154734;color:white;border-radiu=
+s:3px;border:none"><a href=3D"https://nam02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJw9kMtOwzAQRb8m2=
+RFNnLh1Fl60lEiIZQVCbCzXj8bFjosfCPh6nFIqjUaaczUzV1dSQsSB1IYiQNACQi3uBzQ0bTOS=
+7bAm93g7PhC8I2PVg-PGNidv5onPMk78XTXCu3qiAwdAfStWQgzApcK6H2QLBwlEaa1lbemU0jl=
+W3aZCY6mcJLeWx-Yjc5uCEXG5VISTVqVrH5Zh_8IIeRSfb_D0ivX383lddaP1oep2UKFVTo5Fn4=
+NQBTgeI1sMqnCVnJImuyKpBV-h8HNScyp0DdDD6h9zd-bmOBeeZ8MSD0eVlGSX1VgH-vOVWgIAu=
+MRwM69krhPFBO72YvLe1rdc2MXOZZsZSf9-_QISanZf&amp;data=3D04%7C01%7CJerry.Teng=
+%40UTDallas.edu%7C8e38db307ab643449d9b08d876a2438a%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637389786609675238%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+%2Bt7Jy14pZ%2FLREOd2ivkQdGbSK2gTESx4UIrpFsTXDlk%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://email.mail.joinhandshake.com/c/eJw9kMtOwzAQRb8m2RFNnLh1Fl6=
+0lEiIZQVCbCzXj8bFjosfCPh6nFIqjUaaczUzV1dSQsSB1IYiQNACQi3uBzQ0bTOS7bAm93g7Ph=
+C8I2PVg-PGNidv5onPMk78XTXCu3qiAwdAfStWQgzApcK6H2QLBwlEaa1lbemU0jlW3aZCY6mcJ=
+LeWx-Yjc5uCEXG5VISTVqVrH5Zh_8IIeRSfb_D0ivX383lddaP1oep2UKFVTo5Fn4NQBTgeI1sM=
+qnCVnJImuyKpBV-h8HNScyp0DdDD6h9zd-bmOBeeZ8MSD0eVlGSX1VgH-vOVWgIAuMRwM69krhP=
+FBO72YvLe1rdc2MXOZZsZSf9-_QISanZf" shash=3D"pazmcy0RlAUU8Otip2z8hhfv7FW5moj=
+Af1HnRt47Na6RhK6EXAPxhPY052A7FmFq6IQUaMhFRsTttrVf+2g/+9JNCN2Tg/sWvU29MNSpGp=
+R6FofQe+qUvjY9sympTWKPdeIuBa8sa798vipJh7RnTSkmxnuZvY9h0Ik36x2jVI0=3D" style=
+=3D"color:#154734;font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, s=
+ans-serif;font-size:15px;font-weight:bold;color:#ffffff;text-decoration:non=
+e;display:inline-block;padding:10px 20px 10px 20px;border:0 solid #254fa5;b=
+order-radius:3px;border-color:#154734;color:white">
+        Feedback
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email is being sent to Jerry Teng at The University of Texas at Da=
+llas.
+    <br>
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Flink.mailgun.com%2Fu%2FeJw9zUsOwiAUBdDVyExyoVBeB0yqdgMuoEE-aZWWRNrE=
+uHp14gbOCZbI34jNVkJCQEqhVSc7LvhAfWfopPvhQvpMw0FhcXPm9zKvk1tDndwjcl8WNtlIyt1=
+0Q7FJqfWxU9BAMq1EEDAmsad9vzZBAPTX2bfgcnaVx7CzzWrC8eqnUjL7w-Piah3jbxznYA2g0H=
+4AyN40LA&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C8e38db307ab643449=
+d9b08d876a2438a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738978660968=
+5229%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DuhWpDM6dEPeOXZo3YpLnFIc2kg2bflm5zqi=
+8b4q1d8M%3D&amp;reserved=3D0" originalsrc=3D"https://link.mailgun.com/u/eJw=
+9zUsOwiAUBdDVyExyoVBeB0yqdgMuoEE-aZWWRNrEuHp14gbOCZbI34jNVkJCQEqhVSc7LvhAfW=
+fopPvhQvpMw0FhcXPm9zKvk1tDndwjcl8WNtlIyt10Q7FJqfWxU9BAMq1EEDAmsad9vzZBAPTX2=
+bfgcnaVx7CzzWrC8eqnUjL7w-Piah3jbxznYA2g0H4AyN40LA" shash=3D"D2vlX+OH645fBnQ=
+PgbdJAg0ut43K4ZRZ43JKzIHcqpTb+quCtf4JhXhWmX1Fq9P0kymYsAF1Hbug5lAIV/iKK9qywr=
+x7rW6TME0liYMYp6Nx0kcuXVU8zj5jsbnpqDKgbH/FEBGWEP8tSHI1KS8+4/VMf+mhQx5G9nLDN=
+AgUt5o=3D" style=3D"color:#154734">Unsubscribe</a> =E2=80=A2
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlTztuxSAQPI3pghYemKWgyEviC-QA=
+1oL3ySS2sQyWopw-TpMm0kgzmmI-U0BMEUUOGjQo0FpZ47WXSg549w5f7H14Q_uKQ2dgpbzIj5K=
+3mbapzvTJMpVVzCHaqFzU1kQTtWNyFJ1jjv0tOe2VF0uYW9trd3vu9HCB9v1_0OWflY96sfKA6F=
+V_ya20_MiJWi7buB_84IO3xFUc4furKQQAe20720TLQlXydIoWLMLTe5pLWcRfx7hSrSP_vhjzF=
+ByAgf4H61NROg&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7C8e38db307ab6=
+43449d9b08d876a2438a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389786=
+609685229%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT=
+iI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D2r4InIYxgrF7Z72RxZxh3I6APd3LSV=
+eex4SgN06rXpU%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joinha=
+ndshake.com/c/eJxlTztuxSAQPI3pghYemKWgyEviC-QA1oL3ySS2sQyWopw-TpMm0kgzmmI-U=
+0BMEUUOGjQo0FpZ47WXSg549w5f7H14Q_uKQ2dgpbzIj5K3mbapzvTJMpVVzCHaqFzU1kQTtWNy=
+FJ1jjv0tOe2VF0uYW9trd3vu9HCB9v1_0OWflY96sfKA6FV_ya20_MiJWi7buB_84IO3xFUc4fu=
+rKQQAe20720TLQlXydIoWLMLTe5pLWcRfx7hSrSP_vhjzFByAgf4H61NROg" shash=3D"SzY6m=
+O7ne2AAxxeSrLOIsJ01tA/GpP+9fbZ95IPDf1PvJzUtXmYv8Ul0WL1szzuXKQv9uZZ0FY6bKJMy=
+BRPITL0WGJSweIGcX710qD2VPwmnfZKFouKeV9uI9sFqShejHuJLT7hIpAbNHe9qnoRQ3dkbZlL=
+44OcUc+zy46L131c=3D" style=3D"color:#154734">Update preferences</a>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.mail.joinha=
+ndshake.com/o/eJw9zUsOwiAUBdDVyExyoVBeB0yqdgMuoEE-aZWWRNrEuHp14gbOCZbI34jNV=
+kJCQEqhVSc7LvhAfWfopPvhQvpMw0FhcXPm9zKvk1tDndwjcl8WNtlIyt10Q7FJqfWxU9BAMq1E=
+EDAmsad9vzZBAPTX2bfgcnaVx7CzzWrC8eqnUjL7w-Piah3jbxznYA2g0H4AyN40LA"></body>
+</html>
+
+--6ef2ef99ff1f473097076be870d729e6--

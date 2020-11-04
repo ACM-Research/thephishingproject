@@ -1,0 +1,857 @@
+Received: from CY4PR0101MB2966.prod.exchangelabs.com (2603:10b6:910:46::30) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Tue, 20 Oct 2020 18:11:18
+ +0000
+Received: from MN2PR06CA0020.namprd06.prod.outlook.com (2603:10b6:208:23d::25)
+ by CY4PR0101MB2966.prod.exchangelabs.com (2603:10b6:910:46::30) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.28; Tue, 20 Oct
+ 2020 18:11:16 +0000
+Received: from BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:23d:cafe::80) by MN2PR06CA0020.outlook.office365.com
+ (2603:10b6:208:23d::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Tue, 20 Oct 2020 18:11:16 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.215.82)
+ smtp.mailfrom=bounce.email.microsoft.com; utdallas.edu; dkim=pass (signature
+ was verified) header.d=email.microsoft.com;utdallas.edu; dmarc=pass
+ action=none header.from=email.microsoft.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce.email.microsoft.com designates 199.15.215.82 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.215.82;
+ helo=em-sj-82.mktomail.com;
+Received: from em-sj-82.mktomail.com (199.15.215.82) by
+ BL2NAM02FT034.mail.protection.outlook.com (10.152.77.161) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Tue, 20 Oct 2020 18:11:16 +0000
+X-MSFBL: J74GFjjrfqwHopQfofLLKsvZWWI4+j6V4++18qYRegI=|eyJnIjoiYmctc2otMDE
+	iLCJiIjoiZHZwLTE5OS0xNS0yMTQtNDkiLCJyIjoiamVycnkudGVuZ0B1dGRhbGx
+	hcy5lZHUiLCJ1IjoiMTU3LUdRRS0zODI6ODkwMTYwOjc2Nzc3Mjo0NjY0OTI3OjA
+	6NzQ3OTI1Ojk6MjQxODIwNToxMTIzODgzOTQ4LTI5In0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1603217472;
+	s=m1; d=email.microsoft.com; i=@email.microsoft.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=oxsdSdsbLgQSO75CSfcmN6IfU5qNFZtFVpfEUnXgdlA=;
+	b=jkTe4svn4OMFxwKTnhUX9ChtRXhwzrw/SBSLOlllOv5daoja6xlURLjOMWmWyScN
+	S3InGjItcrnxfXGJsHi345VNZOXty894f4tCh0g95kHwSl6SSdKchqFz+Kd+MFPm/wd
+	G+TVx2PUp1viNM6e3M9uN7qMTsYXE4eTuy9xRiB8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1603217472;
+	s=m1; d=mktomail.com; i=@mktomail.com;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	bh=oxsdSdsbLgQSO75CSfcmN6IfU5qNFZtFVpfEUnXgdlA=;
+	b=EbERSJbn8hAqWilg4TROhiXHpfMbiztzNSQGROSEiBlTB9PfU00E6p5trMw32soW
+	JpOKocVrpEz49TsD9IJmGKP2MKNzaDm/nJZWHWGCSKlh2A74aqAH2MYHlAKnCztJ6dE
+	mLySLpAfEYzApNRVH6jTjv0NxfEP2Rn+dj8Ez0sM=
+Date: Tue, 20 Oct 2020 13:11:12 -0500 (CDT)
+From: Microsoft <email@email.microsoft.com>
+Reply-To: replyto@microsoft.com
+To: jerry.teng@utdallas.edu
+Message-ID: <493909722.2064355281.1603217472694.JavaMail.mktmail@sjmas04.marketo.org>
+Subject: =?UTF-8?Q?Webinar:_Empower_your_institution=E2=80=99s_s?=
+ =?UTF-8?Q?ecurity_operations_with_Azure_Sentinel?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2064355280_541467317.1603217472694"
+X-Binding: bg-sj-01
+X-MarketoID: 157-GQE-382:890160:767772:4664927:0:747925:9:2418205:1123883948-29
+X-MktArchive: false
+List-Unsubscribe:
+ <mailto:IRGWY5JXNNMXSWBZOI3DKVCSL5LFIYSCOJJWKUJXPFEGERTCMNZU6R3DI5JHARSZJZQVCPI.2418205.747925.9@unsub-sj.mktomail.com>
+X-Mailfrom: 157-GQE-382.0.2418205.0.0.747925.9.1123883948-29@bounce.email.microsoft.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path:
+ 157-GQE-382.0.2418205.0.0.747925.9.1123883948-29@bounce.email.microsoft.com
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2020 18:11:16.3455
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 07c7e700-3c9f-4715-325f-08d875238976
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132476910763485058;(4d29bbe7-9268-40c6-23cc-08d4a395902b);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 07c7e700-3c9f-4715-325f-08d875238976
+X-MS-TrafficTypeDiagnostic: CY4PR0101MB2966:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:6430;
+X-MS-Exchange-Antispam-ScannedUrls:
+ 13078166646148401835;1811548474888178734;3816595293075783261;6723186104912131902;11548604654822849353;2956577898114224846;14781968430516172590;15051315072411173448
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:199.15.215.82;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:em-sj-82.mktomail.com;PTR:em-sj-82.mktomail.com;CAT:NONE;SFS:(4636009)(76236003)(1096003)(15650500001)(33964004)(6506007)(60390400001)(26005)(6916009)(5660300002)(956004)(83170400001)(19627405001)(9686003)(6512007)(36736006)(83380400001)(166002)(7636003)(7596003)(2160300002)(6666004)(336012)(16799955002)(356005)(52230400001)(118246002)(6486002)(10290500003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 2000:0x0|0x0|0x2000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2020 18:11:16.0876
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 07c7e700-3c9f-4715-325f-08d875238976
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0101MB2966
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3917919
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TXFTTU8ycUx2K3BrK2tTQy9tVlJIUU1XU3Bwd3J2QmlCcUN4T3hhSE8rWGZP?=
+ =?utf-8?B?cURyV0FqaUllcVZwUFkvM2pCRWloZjJadS9ZVjBCU2ZIVnVzVnY4aW1NZmFT?=
+ =?utf-8?B?MkFhSmZSeEhsOGRXL2xmWXNPV2ZNaUlZcS9FUUdjMEZ0Vm1uZkJ2THYrc2FP?=
+ =?utf-8?B?Ujl3NWRFM0lUZVBRSkFNbkM3QWVud1c2Q2hoSm80RGVNdmFETS92VmZWNnRl?=
+ =?utf-8?B?L3pQTjJ2VFFnV2ZGUzZLMVJjZUt1ZVk0TkxHNkt1T25GSW1ycUtVYzFqOURL?=
+ =?utf-8?B?NHFVdEFKYmZaWUNSUXd1Z3g0aStxVU5BaTNGQ0dNM2M2QUJLV0NnUm1BTmRF?=
+ =?utf-8?B?aFp4VFkycWlRMXR6bUxNWFFkUDF4Q0xhWnlzZFZrejFLYzZmOFh3MWczdFE0?=
+ =?utf-8?B?QTRCcWYzNHJZTmYzNkZYR2FnT0p6SVRCYWhvaC9yalRZS2kwdlphOXAyclBR?=
+ =?utf-8?B?WjFFcnJxTkxOMzludi9HNlJPUXZrRlZpY0VTY0pnQWxxTVpTOERISjVGV2Nl?=
+ =?utf-8?B?b3pxaXZEWmc4bWhYR05uYjMyN045VzBYNXhCemJyVDA1YUk4UW1RUFprT0Vh?=
+ =?utf-8?B?bkZzMTdrc25pZ1ZwTndHZHB0NS81S210UjcyK1N2RlIraGRBQTF1NDRaTjNL?=
+ =?utf-8?B?KzBXakVQRmxkLzR0YVFqWiszMi9FTDdXWDBONU5wZjBEREk2SGlXMEFmUkJi?=
+ =?utf-8?B?OTBzZEdrUXhtR3kxRDgwVXg5bS9GWlBpdy9HNGM0OXN2Mk9aa3B4a1VnZndI?=
+ =?utf-8?B?cXJLaStZbjBvMjcyenh1aWhoYWNQa3RJK0dQcHBkcnJSSzUyZW1CWHRVb2xG?=
+ =?utf-8?B?c0tzNU9tQlBaSXJ6RE10MmZza2NjV1RDaWhPMXlSN3VNdU9IZUQ0WXN1RHEw?=
+ =?utf-8?B?RllYY2h3cVF4bk1xTERSR3E3NFhSS2RmT1ZCa0RRdEtzYUR4VkdjSVVRK21o?=
+ =?utf-8?B?MW4xblE1T3R3ejZ6c1Jhd291aDRHYWRUaTlKRkRHQ2Z0ZG9qTUp6TjA4YXBW?=
+ =?utf-8?B?dVYyN3FrSzdGRWE5NEIzMENHQStsM1NNZGo3R01remUrY0JaRjNpRitiZTBj?=
+ =?utf-8?B?Q2Vsdnh4c1V5NnJUaEZCVFFtZmpnYTBQcit1UkloaExyMDI2TkgyQkFJV1lh?=
+ =?utf-8?B?WDlCMXYvVzd4TXpOZXNMajN3bVhxcVc2OGR0cXBpYitlOWRpQm1BeXlxTEYy?=
+ =?utf-8?B?MThBeDVpcUlXaEdjYlFXWWhVR3V6cWc1WDEybEJwajVXWWpvMFhqelhlUUVK?=
+ =?utf-8?B?VEFBQ1poZXhCZGFTU25rSHpDK3NsL2xMcC9YM0pNT2xMeUlrTFRmMkE1c2VF?=
+ =?utf-8?B?QkZEQURKSHhYMEVSeWpDakd5OGVvMVJyVFlpUDV4WkJNUW1TMVo1bnhxNHFJ?=
+ =?utf-8?B?d0UzU080SWNRMTltT1dGYzdtZmtDR0ZJeTdTL1I2U1VwZ2xpMWs1S2pIaENF?=
+ =?utf-8?B?L2dQMnMxdDN4WDM2Mnl1bkxDSUNPdzdlWlROdWFlVStmN0pNMys3K3ZQcmVV?=
+ =?utf-8?B?NThON1RzVGxFM0hqSk9Td1NSMlZpYTI2NlFvc1czN09xL1YrV3EzNE5yaHd4?=
+ =?utf-8?B?TERPSDdESVpoeXc4NXVKUHcwSVg2TDRNNW1JUXJ5RW5ndWFtZG5oVEJSUzVq?=
+ =?utf-8?B?aVlxQ2ROejNNQ2YrOW45OVNVenNQWWU5WEd0QXdGZGdVaG10WVd2Rmg5bDJY?=
+ =?utf-8?B?OU9vQXVXSGlzQ2F0VlpPNkIrQVRkRWhoZTVtNGJxSU90Q29IQnIwemJYNmdP?=
+ =?utf-8?B?cUFmNHpKTG40OW1Da3NzekIwRlhYZmtqSVdBd1Z4MDNSeTB5OVE4b2dURVR5?=
+ =?utf-8?B?VFlRUmc2Q3pZZklGckxlQnR5RklGVjBSWVlsbCtTZTRmbDhKM0hHejhmbU0y?=
+ =?utf-8?Q?OenYX7o2N+UK5?=
+MIME-Version: 1.0
+
+------=_Part_2064355280_541467317.1603217472694
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+  <[[https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fin=
+fo.microsoft.com%2Findex.php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTld=
+RM05qQmlNVFE1Tm1FMiIsInQiOiIyTThrMjNXelBoU2svMlB2WUFBNFB4TmtHQXZTNWF3ZlFpUm=
+xNWHNyWkV0cUZqTWxmMnU0aUJuUE9DNlQvUFBXM0UwTE5VRTZoNThtc0E4Uk1XS2pGLzE1TjFMc=
+TRHOCtGN09kMk1YV2Y0UFREUktUYWpmN2swd0NRTTVXRUtOL3VPblB0MEdtTFJIbTVCN3Niby9O=
+UWc9PSJ9&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f47153=
+25f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C63738814278133=
+9881%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3DpQCATxAlziaua9yviPHCUe7TKciiusNORYh=
+vfu5%2Brbk%3D&amp;reserved=3D0]]>
+Having trouble viewing this email? | View as web page <[[https://nam02.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Finfo.microsoft.com%2Finde=
+x.php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTldRM05qQmlNVFE1Tm1FMiIsIn=
+QiOiIyTThrMjNXelBoU2svMlB2WUFBNFB4TmtHQXZTNWF3ZlFpUmxNWHNyWkV0cUZqTWxmMnU0a=
+UJuUE9DNlQvUFBXM0UwTE5VRTZoNThtc0E4Uk1XS2pGLzE1TjFMcTRHOCtGN09kMk1YV2Y0UFRE=
+UktUYWpmN2swd0NRTTVXRUtOL3VPblB0MEdtTFJIbTVCN3Niby9OUWc9PSJ9&amp;data=3D04%=
+7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781339881%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+2000&amp;sdata=3DpQCATxAlziaua9yviPHCUe7TKciiusNORYhvfu5%2Brbk%3D&amp;reser=
+ved=3D0]]>
+
+
+<[[https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.=
+microsoft.com%2Fsecurity%2Fbusiness&amp;data=3D04%7C01%7Cjerry.teng%40utdal=
+las.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C1%7C637388142781349874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3D5HTGYQnx=
+wuXLnPfEeUWhb68MJS9tuWcxJQUqIaNU0IA%3D&amp;reserved=3D0]]>
+ <[[https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww=
+.microsoft.com%2Fsecurity%2Fbusiness&amp;data=3D04%7C01%7Cjerry.teng%40utda=
+llas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9=
+f6c%7C0%7C1%7C637388142781349874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMD=
+AiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3D5HTGYQn=
+xwuXLnPfEeUWhb68MJS9tuWcxJQUqIaNU0IA%3D&amp;reserved=3D0]]>
+
+Enable Microsoft Threat Protection in education
+
+
+
+
+<p><strong>WEBINAR</strong><br />October 22, 2020 |&nbsp;2:00&nbsp;PM&nbsp;=
+ET / 11:00&nbsp;AM&nbsp;PT</p> <p><span style=3D"font-size: 18px;"><strong>=
+Bird&rsquo;s-eye view: Help spot threats before they cause&nbsp;harm</stron=
+g></span></p> <p>In this security session for education, you&rsquo;ll learn=
+ about Azure Sentinel, the new cloud-native security information and event =
+management (SIEM) solution with built-in AI and automation. Traditional SIE=
+M solutions are failing to protect today&rsquo;s infrastructure from the in=
+creasing volume and speed of threats and cyberattacks. Security operations =
+(SecOps) teams spend far too much time and money on tasks such as infrastru=
+cture setup and&nbsp;maintenance.</p> <p>In this session, you&rsquo;ll lear=
+n more about the key benefits of Azure Sentinel and how it&nbsp;can:</p> <u=
+l> <li>Put the cloud and large-scale intelligence from decades of Microsoft=
+ security experience to work&nbsp;quickly.</li> <li>Ingest several log type=
+s at no cost including Microsoft Threat Protection products, Azure activity=
+ logs, and Office 365 audit&nbsp;logs.</li> <li>Make your threat detection =
+and response smarter and faster with&nbsp;AI.</li> <li>Eliminate security i=
+nfrastructure setup and maintenance, and elastically scale to meet your sec=
+urity needs-while reducing IT&nbsp;costs.</li> </ul> <p>Join this webinar t=
+o learn how Azure Sentinel is transforming&nbsp;SecOps.</p>
+
+
+
+Enable Microsoft Threat Protection in education=20
+ =20
+=20
+
+
+
+
+Register now <https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Femails.microsoft.com%2Fdc%2F2af1LV4LJ-ebCJlCeJI_oF9N0fUll8QhS6BAn7uJ=
+1P2Nqg0PSXmDwddouoB44X0tJvoyHlqSUg-CptrRz9e7B9-ydU1Gn0OM2NrQMTatlKAz_xR5l9V=
+K18F6Tn86pJvKu5cFla2iBVA2fGxBpGgnIftA5SGAi-phREXNrfKWby0WFBjWKC7whOcemvi918=
+o4%2FDGi3t0H1EQy007eGqW0s0EH&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu=
+%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C1%7C637388142781349874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3D%2BpBOZjCsQkV%2=
+F8xmV4qPl0ksVLaAWEh7ikWCdhSyJL6k%3D&amp;reserved=3D0>
+
+
+
+
+
+
+Privacy Statement <https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Femails.microsoft.com%2Fs0j7eqG0yQWI1GtH3s00E0E&amp;data=3D04%7C=
+01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781349874%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C20=
+00&amp;sdata=3DiwO8bf2tcJUNacZoNn0uV47F8ifFFSDQ7%2FdKduurMU4%3D&amp;reserve=
+d=3D0> | Unsubscribe <[[https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Faccount.microsoft.com%2Fprofile%2Funsubscribe%3FCTID%3D0%2=
+6ECID%3D%252FVpX30k6os%252BjouW%252FktOk66DH%252BuurhJd2lw6KOupo%252Bsk%253=
+D%26K%3D2e457293-4a45-46c4-b68a-4c9fb4d5efda%26PID%3D18049%26TID%3De8bbc280=
+-76ee-423a-9cc0-e8523bd2542b&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu=
+%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C1%7C637388142781349874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3D9mWn8BEc1c%2FY%=
+2FT6NhRbU07XQePJX4sjv0EzxlGbq1Xk%3D&amp;reserved=3D0]]>
+=20
+Microsoft Corporation<br>One Microsoft Way<br>Redmond, WA 98052
+
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femails=
+.microsoft.com%2FUHJs03E0qQtGE700GW1e0ky&amp;data=3D04%7C01%7Cjerry.teng%40=
+utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C1%7C637388142781349874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3D02Z=
+bxP5KKRvSD5T5PIuUCTHBWxOgcIjlGgiDh27Vi04%3D&amp;reserved=3D0>
+
+.
+
+------=_Part_2064355280_541467317.1603217472694
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=20
+<meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+<meta name=3D"format-detection" content=3D"date=3Dno">=20
+<meta name=3D"format-detection" content=3D"address=3Dno">=20
+<meta name=3D"format-detection" content=3D"email=3Dno">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<!--[if mso]>
+<style>
+                .-mso-banner {padding: 0 0 0 1px;border-right:#E3E3E3 1px s=
+olid;}
+        </style>
+<![endif]-->=20
+<style type=3D"text/css">
+                body{font-size:0;line-height:0;mso-line-height-rule:exactly=
+;padding:0;margin:0;}
+                table{border-collapse:collapse;margin:0;-ms-text-size-adjus=
+t:auto;-webkit-text-size-adjust:100%;mso-table-lspace:0pt; mso-table-rspace=
+:0pt; border-spacing: 0;}
+                table td {border-collapse:collapse!important; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;}
+                tr{font-size:0;mso-line-height-alt:0px;mso-margin-top-alt:0=
+px;mso-line-height-rule:exactly;}
+                td{margin:0;padding:0;mso-line-height-rule:exactly;}
+                input::-moz-focus-inner{border:0;outline:0;}
+                .hide {display:none !important;}
+                .appleLinksWhite a {color:#ffffff; text-decoration: none;}
+                .rest_paragraph p {margin:0; padding:0; margin-bottom:0;}
+                @media screen and (max-device-width:480px),(max-width:480px=
+)
+                {
+                 .mob_full_width{width:100%!important;min-width:100%!import=
+ant;max-width:100%!important;display:table!important;}
+                 .mob_full_width_image{width:100%!important; height:auto!im=
+portant;}
+                 .mob_center{text-align:center!important;}
+                 .mob_padding{padding-left:24px !important;padding-right:24=
+px !important;}
+                 .mob_padding0{padding-left:0!important;padding-right:0!imp=
+ortant;margin-left: 0!important; margin-top: 0px!important;}
+                 .mob_paddingR0{padding-left:10px!important;padding-right:0=
+!important;}
+                 .mob_height{height:auto!important;padding-top:10px!importa=
+nt;}
+                 .mobhide{display:none!important;}
+                 .box_height{height: auto!important;}
+                 .box_mobile_bottom{margin-bottom: 20px;}
+                }
+               =20
+
+</style>=20
+<!--[if gte mso 9]>
+                <xml>
+                        <o:OfficeDocumentSettings>
+                                <o:AllowPNG/>
+                                <o:PixelsPerInch>96</o:PixelsPerInch>
+                        </o:OfficeDocumentSettings>
+                </xml>
+<![endif]-->=20
+<title>Microsoft</title>=20
+</head>=20
+<body bgcolor=3D"#E3E3E3" leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0=
+" marginheight=3D"0" style=3D"">
+<!-- Wrapper -->=20
+<div style=3D"display:none; font-size:1px; color:#ffffff; line-height:1px; =
+max-height:0px; max-width:0px; opacity:0; overflow:hidden; ">
+<div class=3D"mktEditable" id=3D"Preheader_Text" style=3D"">
+<span class=3D"preheader"></span>
+<p align=3D"right"> <a style=3D"text-decoration: none; color: #0078D4; font=
+-weight: bold;" title=3D"View as a web page" href=3D"https://nam02.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Finfo.microsoft.com%2Findex.ph=
+p%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTldRM05qQmlNVFE1Tm1FMiIsInQiOi=
+IyTThrMjNXelBoU2svMlB2WUFBNFB4TmtHQXZTNWF3ZlFpUmxNWHNyWkV0cUZqTWxmMnU0aUJuU=
+E9DNlQvUFBXM0UwTE5VRTZoNThtc0E4Uk1XS2pGLzE1TjFMcTRHOCtGN09kMk1YV2Y0UFREUktU=
+YWpmN2swd0NRTTVXRUtOL3VPblB0MEdtTFJIbTVCN3Niby9OUWc9PSJ9&amp;data=3D04%7C01=
+%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9=
+c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781429838%7CUnknown%7CTWFpbGZsb3=
+d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000=
+&amp;sdata=3DEKmPWVFJE6Wn3hg8HD2CQT5Y166hYul1kfiC20ehLpI%3D&amp;reserved=3D=
+0" originalsrc=3D"https://info.microsoft.com/index.php/email/emailWebview?m=
+kt_tok=3DeyJpIjoiTldRM05qQmlNVFE1Tm1FMiIsInQiOiIyTThrMjNXelBoU2svMlB2WUFBNF=
+B4TmtHQXZTNWF3ZlFpUmxNWHNyWkV0cUZqTWxmMnU0aUJuUE9DNlQvUFBXM0UwTE5VRTZoNThtc=
+0E4Uk1XS2pGLzE1TjFMcTRHOCtGN09kMk1YV2Y0UFREUktUYWpmN2swd0NRTTVXRUtOL3VPblB0=
+MEdtTFJIbTVCN3Niby9OUWc9PSJ9" shash=3D"Ft4D+qo8qi3Q9/TsON3G/F/AaHyqIXaD/w8z=
+Ed4oF6kIZAyUqZLqogzgFi/m74ob6zPqt4AYJkoPZ9WpFWz5LZ5YLvqghQMQxbWWablgxljfIc0=
+WF/ZRo4vaSczMhExc8bVuzmoE4aYE9HCkNZ23B3cJQ9kdpVxCu/0k4OjS8KI=3D"></a></p>
+</div>
+</div>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" style=3D"">
+<tbody>
+<tr style=3D"">
+<td width=3D"100%" valign=3D"top" bgcolor=3D"#E3E3E3" align=3D"center" styl=
+e=3D"">
+<table class=3D"mob_full_width" width=3D"640" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" align=3D"center" style=3D"width:640px; min-width:640px;=
+ max-width:640px; ">
+<tbody style=3D"">
+<tr style=3D"">
+<td bgcolor=3D"#E3E3E3" style=3D"">
+<div class=3D"mktEditable" id=3D"DNT-Header_Text" style=3D"">
+<table width=3D"100%" style=3D"min-width: 100%; width: 100%;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mob_padding" style=3D"padding: 24px 24px 12px 0px;" bgcolor=3D=
+"#e3e3e3">
+<table width=3D"100%" align=3D"center" class=3D"mob_full_width" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"right" id=3D"webview" style=3D"color: #5e5e5e; font-family: 'S=
+egoe UI', SUWR, Arial, Sans-Serif; font-weight: 400; font-size: 10px; line-=
+height: 12px;">Having trouble viewing this email? | <a style=3D"text-decora=
+tion: none; border-bottom: 1px solid #5E5E5E;" href=3D"https://nam02.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Finfo.microsoft.com%2Findex.=
+php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTldRM05qQmlNVFE1Tm1FMiIsInQi=
+OiIyTThrMjNXelBoU2svMlB2WUFBNFB4TmtHQXZTNWF3ZlFpUmxNWHNyWkV0cUZqTWxmMnU0aUJ=
+uUE9DNlQvUFBXM0UwTE5VRTZoNThtc0E4Uk1XS2pGLzE1TjFMcTRHOCtGN09kMk1YV2Y0UFREUk=
+tUYWpmN2swd0NRTTVXRUtOL3VPblB0MEdtTFJIbTVCN3Niby9OUWc9PSJ9&amp;data=3D04%7C=
+01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781439819%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C20=
+00&amp;sdata=3DoIzJpJ0vdra1bMBO6R3h%2F0LEb90GstyrsceZ0QGKafc%3D&amp;reserve=
+d=3D0" originalsrc=3D"https://info.microsoft.com/index.php/email/emailWebvi=
+ew?mkt_tok=3DeyJpIjoiTldRM05qQmlNVFE1Tm1FMiIsInQiOiIyTThrMjNXelBoU2svMlB2WU=
+FBNFB4TmtHQXZTNWF3ZlFpUmxNWHNyWkV0cUZqTWxmMnU0aUJuUE9DNlQvUFBXM0UwTE5VRTZoN=
+Thtc0E4Uk1XS2pGLzE1TjFMcTRHOCtGN09kMk1YV2Y0UFREUktUYWpmN2swd0NRTTVXRUtOL3VP=
+blB0MEdtTFJIbTVCN3Niby9OUWc9PSJ9" shash=3D"mAC2uYlGTOWnlQs9YffRAdO5yTsEkFdM=
+eW8Xa4P7LulkbCQLNeIvNAUZ1f+fnnn3/wDfJKpHIdTn7geWTtAMcseB6QeNy1fVAdSs0+m7Csz=
+tft3JZs9K9xp2veskXP1LupvfGP/9l+DZBqKUehmViZ692N4vNPCOUNOGQU3gwr4=3D" target=
+=3D"_blank"><strong style=3D"font-weight: 400; color: #5e5e5e;">View as web=
+ page</strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center" style=3D"">
+<tbody>
+<tr style=3D"">
+<td bgcolor=3D"#FFFFFF" style=3D"">
+<div class=3D"mktEditable" id=3D"DNT-Header_Logos" style=3D"">
+<table width=3D"100%" style=3D"min-width: 100%; width: 100%;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" align=3D"center" style=3D"min-width: 100%;" bgcolor=
+=3D"#ffffff" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"mob_padding" style=3D"padding: 24px 24px 24px 2=
+4px;"><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Fwww.microsoft.com%2Fsecurity%2Fbusiness&amp;data=3D04%7C01%7Cjerr=
+y.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C1%7C637388142781449815%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sd=
+ata=3DjYCiA1RDBuJqFQwkzBZBr1zPWWzUg3m8GFFi17tNRTw%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://www.microsoft.com/security/business" shash=3D"Zzer3csEv4=
+Pk9tOO/SkPQVBt0x/6r3Bb+hrwGTun7QsVur0z2JmhRmW3Y35mAvB0KXsgisp6uPoy/PuiA7doF=
+BIKntxfzWXwhdIYSzto2rJsMV3wHM/P6AwVT129GAPt19to4i1ReyguyYmaAd6FZ7RaTMcL/tHx=
+jZD5sDAUVqg=3D"><img width=3D"" height=3D"21" style=3D"display: inline-bloc=
+k;" alt=3D"Microsoft Security" src=3D"https://info.microsoft.com/rs/157-GQE=
+-382/images/EN-BASICE-Logo-MSFTLogo.png" border=3D"0"></a></td>
+<td align=3D"right" class=3D"mob_padding" style=3D"padding: 24px 24px 24px =
+24px; color: #171717; font-size: 25px; line-height: 30px; font-family: 'Seg=
+oe UI',SUWR,Arial,Sans-Serif; font-weight: 400;"><a style=3D"text-decoratio=
+n: none;" href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.microsoft.com%2Fsecurity%2Fbusiness&amp;data=3D04%7C01%7Cjer=
+ry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C1%7C637388142781449815%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;s=
+data=3DjYCiA1RDBuJqFQwkzBZBr1zPWWzUg3m8GFFi17tNRTw%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://www.microsoft.com/security/business" shash=3D"Zzer3csEv=
+4Pk9tOO/SkPQVBt0x/6r3Bb+hrwGTun7QsVur0z2JmhRmW3Y35mAvB0KXsgisp6uPoy/PuiA7do=
+FBIKntxfzWXwhdIYSzto2rJsMV3wHM/P6AwVT129GAPt19to4i1ReyguyYmaAd6FZ7RaTMcL/tH=
+xjZD5sDAUVqg=3D" target=3D"_blank"><strong style=3D"font-weight: 400; color=
+: #171717;"></strong></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"mktEditable" id=3D"A zone - Banner" style=3D"">
+<table align=3D"center" bgcolor=3D"#0078D4" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"mob_padding mob_full_width" style=3D"background-=
+color: #0078D4;" width=3D"640">=20
+<tbody>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px; font-family: =
+'Segoe UI Semilight','Segoe UI Regular',SUWR,Arial,Sans-Serif;">&nbsp;</td>=
+=20
+</tr>=20
+<tr>=20
+<td align=3D"left" class=3D"mob_padding0">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"width: 100%; min-width: 100%;" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" style=3D"font-family: 'Segoe UI','Segoe UI Regular',SUWR=
+,Arial,Sans-Serif; font-size: 28px; mso-line-height-rule: exactly; line-hei=
+ght: 32px; color: #ffffff; text-align: left; padding: 0px 24px 0px 24px;">E=
+nable Microsoft Threat Protection in education</td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px; font-family: =
+'Segoe UI','Segoe UI Regular',SUWR,Arial,Sans-Serif;">&nbsp;</td>=20
+</tr>=20
+<!-- Full banner image -->=20
+<tr>=20
+<td align=3D"center" bgcolor=3D"#505050">=20
+<table class=3D"mob_full_width mobhide" style=3D"width: 640px;" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" border=3D"0" width=3D"640">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding: 0 0 0 0;" align=3D"center"><img width=3D"100%" style=
+=3D"display: inline-block;" class=3D"mob_full_width_image" src=3D"https://i=
+nfo.microsoft.com/rs/157-GQE-382/images/EN-EMAILSND-Banner-SREMD68822-600X1=
+00ltr.png" alt=3D"Enable Microsoft Threat Protection in education" align=3D=
+"center" border=3D"0"></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+Emergency Message Zone" style=3D"">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>
+<div class=3D"mktEditable" id=3D"B zone - Body" style=3D"">
+<table align=3D"center" bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"mob_padding mob_full_width" style=3D"background-=
+color: #ffffff;" width=3D"640">=20
+<tbody>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px; font-family: =
+'Segoe UI','Segoe UI Regular',SUWR,Arial,Sans-Serif; font-weight: 400;" bgc=
+olor=3D"#ffffff">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table width=3D"100%" align=3D"left" style=3D"width: 100%; min-width: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" class=3D"mob_padding" style=3D"color: #464646; font-size=
+: 15px; font-family: 'Segoe UI','Segoe UI Regular',SUWR,Arial,Sans-Serif; f=
+ont-weight: 400; line-height: 20px; padding-left: 24px; padding-right: 24px=
+; text-align: left;"><p><strong>WEBINAR</strong><br>October 22, 2020 |&nbsp=
+;2:00&nbsp;PM&nbsp;ET / 11:00&nbsp;AM&nbsp;PT</p> <p><span style=3D"font-si=
+ze: 18px;"><strong>Bird=E2=80=99s-eye view: Help spot threats before they c=
+ause&nbsp;harm</strong></span></p> <p>In this security session for educatio=
+n, you=E2=80=99ll learn about Azure Sentinel, the new cloud-native security=
+ information and event management (SIEM) solution with built-in AI and auto=
+mation. Traditional SIEM solutions are failing to protect today=E2=80=99s i=
+nfrastructure from the increasing volume and speed of threats and cyberatta=
+cks. Security operations (SecOps) teams spend far too much time and money o=
+n tasks such as infrastructure setup and&nbsp;maintenance.</p> <p>In this s=
+ession, you=E2=80=99ll learn more about the key benefits of Azure Sentinel =
+and how it&nbsp;can:</p> <ul> <li>Put the cloud and large-scale intelligenc=
+e from decades of Microsoft security experience to work&nbsp;quickly.</li> =
+<li>Ingest several log types at no cost including Microsoft Threat Protecti=
+on products, Azure activity logs, and Office 365 audit&nbsp;logs.</li> <li>=
+Make your threat detection and response smarter and faster with&nbsp;AI.</l=
+i> <li>Eliminate security infrastructure setup and maintenance, and elastic=
+ally scale to meet your security needs-while reducing IT&nbsp;costs.</li> <=
+/ul> <p>Join this webinar to learn how Azure Sentinel is transforming&nbsp;=
+SecOps.</p></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table width=3D"100%" align=3D"left" style=3D"width: 100%; min-width: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" class=3D"mob_padding" style=3D"color: #464646; font-size=
+: 15px; font-family: 'Segoe UI','Segoe UI Regular',SUWR,Arial,Sans-Serif; f=
+ont-weight: 400; line-height: 20px; padding-left: 24px; padding-right: 24px=
+; text-align: left;"><strong>Enable Microsoft Threat Protection in educatio=
+n</strong> <br>  <br> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td valign=3D"top" style=3D"border-collapse: separate; padding: 0px 0px 0px=
+;">
+<!--
+                CTA
+            -->=20
+<!--[if (gte mso 9)|(IE)]>
+<table width=3D"" align=3D"center" style=3D"margin: 0px auto; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"background: #0078D4; border=
+-collapse: separate; display: block; font-family: 'Segoe UI','Segoe UI Regu=
+lar',SUWR,Arial,Sans-Serif; font-size: 20px; line-height: 40px; padding: 0p=
+x 24px 8px 24px; text-align: center; text-decoration: none;" bgcolor=3D"#00=
+78D4"><a style=3D"text-decoration: none;" href=3D
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femails=
+.microsoft.com%2Fdc%2FzSgS2A6q0riGfHtfc6vB4q1IAnlzx6-0ovqcO1KcRm7S8AeH98Hct=
+tCpM-mD9Kwgs32sEeKpSrYoKvy2yraM39fdAdKe_h4QZxdR1cz6JWv51UsQ8pVeTv39ATOMvhya=
+6pLX_uxfp4jMMqaXXsmic7TrKbtilMhUyXaFhGRm6e0uc-icDi2EW4on4oh6-3dZDDlNofuUWLl=
+gLzMHU6DlW1iWNmQQRk-gnu-Jyua8a-c%3D%2FDGi3t0H1EQy007eGqW0s0EH&amp;data=3D04=
+%7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d28=
+1d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781459806%7CUnknown%7CTWFpb=
+GZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7=
+C2000&amp;sdata=3DtVx7Ss7KD0b0mxFJ%2FUfvEw6KQ8c2%2FZrMd%2Fru5D%2F8vZ0%3D&am=
+p;reserved=3D0" originalSrc=3D"https://emails.microsoft.com/dc/zSgS2A6q0riG=
+fHtfc6vB4q1IAnlzx6-0ovqcO1KcRm7S8AeH98HcttCpM-mD9Kwgs32sEeKpSrYoKvy2yraM39f=
+dAdKe_h4QZxdR1cz6JWv51UsQ8pVeTv39ATOMvhya6pLX_uxfp4jMMqaXXsmic7TrKbtilMhUyX=
+aFhGRm6e0uc-icDi2EW4on4oh6-3dZDDlNofuUWLlgLzMHU6DlW1iWNmQQRk-gnu-Jyua8a-c=
+=3D/DGi3t0H1EQy007eGqW0s0EH" shash=3D"wToBL3/qwzOSz9SBFdsk0D/19U2IN41BOQb86=
+kODVy0geHCRv4kjXAPJ4OMOIXZSnzgWHzxh6siqVKa30igH8KQs55bYf/06dza6IjzLx6qweG8N=
+wZbgF/d3FylPAQajZ6m5i//rZv4xIS7XbpakV3JHxZe0vFb8F+RcRS45Spc=3D" target=3D"_=
+blank"
+><strong style=3D"font-weight: normal; color: #ffffff;">Register now &gt;</=
+strong></a></td>
+</tr>
+</tbody>
+</table>
+
+<![endif]-->=20
+<!--[if (!mso)&(!IE)]><!-- -->=20
+<table width=3D"" align=3D"center" style=3D"margin: 0px auto; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" style=3D"background: #0078D4; border=
+-collapse: separate; display: block; font-family: 'Segoe UI','Segoe UI Regu=
+lar',SUWR,Arial,Sans-Serif; font-size: 20px; line-height: 40px; padding: 0p=
+x 24px 0px 24px; text-align: center; text-decoration: none;" bgcolor=3D"#00=
+78D4"><a style=3D"text-decoration: none;" href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Femails.microsoft.com%2Fdc%2FzSgS=
+2A6q0riGfHtfc6vB4q1IAnlzx6-0ovqcO1KcRm7S8AeH98HcttCpM-mD9Kwgs32sEeKpSrYoKvy=
+2yraM39fdAdKe_h4QZxdR1cz6JWv51UsQ8pVeTv39ATOMvhya6pLX_uxfp4jMMqaXXsmic7TrKb=
+tilMhUyXaFhGRm6e0uc-icDi2EW4on4oh6-3dZDDlNofuUWLlgLzMHU6DlW1iWNmQQRk-gnu-Jy=
+ua8a-c%3D%2FDGi3t0H1EQy007eGqW0s0EH&amp;data=3D04%7C01%7Cjerry.teng%40utdal=
+las.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C1%7C637388142781469799%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3DI%2FD8NY=
+HQRdrUhY22bPit7%2FAP%2FfjZngMarJO3fC%2FfiQs%3D&amp;reserved=3D0" originalsr=
+c=3D"https://emails.microsoft.com/dc/zSgS2A6q0riGfHtfc6vB4q1IAnlzx6-0ovqcO1=
+KcRm7S8AeH98HcttCpM-mD9Kwgs32sEeKpSrYoKvy2yraM39fdAdKe_h4QZxdR1cz6JWv51UsQ8=
+pVeTv39ATOMvhya6pLX_uxfp4jMMqaXXsmic7TrKbtilMhUyXaFhGRm6e0uc-icDi2EW4on4oh6=
+-3dZDDlNofuUWLlgLzMHU6DlW1iWNmQQRk-gnu-Jyua8a-c=3D/DGi3t0H1EQy007eGqW0s0EH"=
+ shash=3D"KD2hjJkhc1aYT/w/NYQULeZcYHSSqq/9W1OewiLO/BmGIb6AxUQekNS/HzSu8+FVN=
+wEJrELcJYnKCaWrhCr2GQSjbeWIwT+sraH8G0ctm5jEv+29AOO9Dqtr+hwpdrcb4f/crlAPo3BQ=
+9n4WjjAT+AVkGsAyUbgRUS3FGWnKa18=3D" target=3D"_blank"><strong style=3D"font=
+-weight: normal; color: #ffffff;">Register now &gt;</strong></a></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--<![endif]--></td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<table width=3D"100%" align=3D"left" style=3D"width: 100%; min-width: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"mob_full_width"=
+>=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" width=3D"50" class=3D"mobhide">&nbsp;</td=
+>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff">&nbsp;</td>=20
+<td align=3D"left" valign=3D"top" width=3D"50" class=3D"mobhide">&nbsp;</td=
+>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" width=3D"140" class=3D"mobhide">&nbsp;</t=
+d>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" width=3D"50" class=3D"mobhide">&nbsp;&nbs=
+p;</td>=20
+<td height=3D"24" style=3D"font-size: 1px; line-height: 24px;" bgcolor=3D"#=
+ffffff"></td>=20
+<td align=3D"left" valign=3D"top" width=3D"50" class=3D"mobhide">&nbsp;</td=
+>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+C zone - CTA" style=3D"">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+D zone - Related Resources" style=3D"">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+E zone - CTA" style=3D"">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div>
+<!-- Footer: Legal message and address-->=20
+<table bgcolor=3D"#5E5E5E" width=3D"640" style=3D"width:640px; " border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"mob_paddin=
+g0 mob_full_width">
+<tbody>
+<tr style=3D"">
+<td class=3D"mob_padding0" style=3D"padding:24px 24px 24px 24px; " bgcolor=
+=3D"#F2F2F2">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"width:100%; min-width:100%; ">
+<tbody>
+<tr style=3D"">
+<td class=3D"mob_padding" align=3D"left" style=3D"font-family:'Segoe UI Reg=
+ular',SUWR,Arial,Sans-Serif; font-size:10px; line-height:12px; color:#5E5E5=
+E; ">
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+DNT-Social" style=3D"">
+<!--[if (gte mso 9)|(IE)]>=20
+
+<![endif]--> <!--[if (!mso)&(!IE)]><!-- -->
+<div height=3D"0" style=3D"font-size: 0px; line-height: 0px;">&nbsp;</div>
+<!--<![endif]-->
+</div></td>
+</tr>
+<tr style=3D"">
+<td class=3D"mob_padding" align=3D"left" style=3D"font-family:'Segoe UI Reg=
+ular',SUWR,Arial,Sans-Serif; font-size:10px; line-height:12px; color:#5E5E5=
+E; ">
+<div class=3D"mktEditable rest_paragraph mktEditable rest_paragraph" id=3D"=
+DNT-Footer" style=3D"">
+<div align=3D"left" class=3D"rest_paragraph"><!--[if (gte mso 9)|(IE)]>=20
+        <p style=3D"color: #5E5E5E;"><a style=3D"text-decoration: underline=
+; color: #5e5e5e;" href=3D
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Femails=
+.microsoft.com%2Fs0j7eqG0yQWI1GtH3s00E0E&amp;data=3D04%7C01%7Cjerry.teng%40=
+utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C1%7C637388142781469799%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3Dzh5=
+aoDNp3%2Ff3YIdph8Mkiu9McOjIumC5331SrJfMtaw%3D&amp;reserved=3D0" originalSrc=
+=3D"https://emails.microsoft.com/s0j7eqG0yQWI1GtH3s00E0E" shash=3D"Llw1o+i2=
+LMekzhfkVuqboNuRBXuTIrj/mODnHy4zAdrgKEt2fN3assfuQCHb1b0tewdbdql2+rniufmNl+5=
+woSkeuNFzajF9940UPnNnx/x4KyEFoAfjLzdXZh4DBRdrUBHPXXgW0QMd9zcF2WmiUGpsGDX0p3=
+oWC0uRtaK7vgI=3D"
+><strong style=3D"font-weight: normal; color:#5E5E5E;">Privacy Statement</s=
+trong></a> | <a style=3D"text-decoration: underline;" href=3D"https://nam02=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Faccount.microsoft.co=
+m%2Fprofile%2Funsubscribe%3FCTID%3D0%26ECID%3D%252FVpX30k6os%252BjouW%252Fk=
+tOk66DH%252BuurhJd2lw6KOupo%252Bsk%253D%26K%3D2e457293-4a45-46c4-b68a-4c9fb=
+4d5efda%26PID%3D18049%26TID%3De8bbc280-76ee-423a-9cc0-e8523bd2542b&amp;data=
+=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781479794%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C2000&amp;sdata=3Dv9Hjp%2BZy2yjVTlWDTHFqqXIz1nx4Ykz8aQG6A4myqaA%3D&amp=
+;reserved=3D0" originalSrc=3D"https://account.microsoft.com/profile/unsubsc=
+ribe?CTID=3D0&ECID=3D%2FVpX30k6os%2BjouW%2FktOk66DH%2BuurhJd2lw6KOupo%2Bsk%=
+3D&K=3D2e457293-4a45-46c4-b68a-4c9fb4d5efda&PID=3D18049&TID=3De8bbc280-76ee=
+-423a-9cc0-e8523bd2542b" shash=3D"sHIUMfkcuFpFaxq7IydHhfY1WBKYM9nV2G8m/0MEr=
+XJbzONubNnQXt16zBZ06nfdj5TreL53vBZCqyN+fK7/lVbtI/aM4Z1yYxYoUHSibWPkY/x/wda8=
+GiYnEL5ogvCdU2CbnY8djr1MVOimqcrgTxtGQvwOscSmAcYks4XrKJs=3D"><strong style=
+=3D"font-weight: normal; color:#5E5E5E;">Unsubscribe</strong></a></p>
+        <![endif]--><!--[if (!mso)&(!IE)]><!-- -->
+<p style=3D"color: #5e5e5e;"><a style=3D"text-decoration: none; border-bott=
+om: 1px solid #5E5E5E; color: #5e5e5e;" href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Femails.microsoft.com%2Fs0j7eqG0yQW=
+I1GtH3s00E0E&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f4=
+715325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C6373881427=
+81479794%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3DZBu094G1gn69B5ZAFz5KNQVJXAk0EYe=
+nnARK%2Fcg32AQ%3D&amp;reserved=3D0" originalsrc=3D"https://emails.microsoft=
+.com/s0j7eqG0yQWI1GtH3s00E0E" shash=3D"FepunIAuFnz27SLkgfZdK8NunVnss7/kVouA=
+PKe4DCdsTa4pcTOOkbL7LkOo9TV7uSo/pAYJeqDbd54MZAzjqze3rc3MFwM/7AcmTDLBBUuPviH=
+4I6r6KzoNVrJD88UKyP8zj72l+ZJACRWscd7vW5VDEoIbez3grpZ6CIoxKXE=3D"><strong st=
+yle=3D"font-weight: normal; color: #5e5e5e;">Privacy Statement</strong></a>=
+ | <a style=3D"text-decoration: none; border-bottom: 1px solid #5E5E5E;" hr=
+ef=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fa=
+ccount.microsoft.com%2Fprofile%2Funsubscribe%3FCTID%3D0%26ECID%3D%252FVpX30=
+k6os%252BjouW%252FktOk66DH%252BuurhJd2lw6KOupo%252Bsk%253D%26K%3D2e457293-4=
+a45-46c4-b68a-4c9fb4d5efda%26PID%3D18049%26TID%3De8bbc280-76ee-423a-9cc0-e8=
+523bd2542b&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C07c7e7003c9f471=
+5325f08d875238976%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781=
+489788%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6=
+Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;sdata=3DbFDDXfgQWqSVB%2F3xexR4N9053b281iO=
+CuJL7IH3vA60%3D&amp;reserved=3D0" originalsrc=3D"https://account.microsoft.=
+com/profile/unsubscribe?CTID=3D0&amp;ECID=3D%2FVpX30k6os%2BjouW%2FktOk66DH%=
+2BuurhJd2lw6KOupo%2Bsk%3D&amp;K=3D2e457293-4a45-46c4-b68a-4c9fb4d5efda&amp;=
+PID=3D18049&amp;TID=3De8bbc280-76ee-423a-9cc0-e8523bd2542b" shash=3D"v/FfgW=
+Gynv0BDB7YqnpnQSLsRuoqA4qKD6fpfjVWDIv33ClgkONVbrDMf7s+Gz0YbXd5i1FVe89W696oj=
+ljbQDO4gaFywOgbsGlHY1vhDL8dTfFjVhvStimXBJBKSKa+JM3yx8cyTvU2WanedfbP2QNmmzga=
+4uNHkd8MDPIDcVs=3D"><strong style=3D"font-weight: normal; color: #5e5e5e;">=
+Unsubscribe</strong></a></p>
+<!--<![endif]-->
+<p>&nbsp;</p>
+<p style=3D"color: #5e5e5e;">Microsoft Corporation<br>One Microsoft Way<br>=
+Redmond, WA 98052</p>
+</div>
+<br>
+<div>
+<p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Femails.microsoft.com%2FUHJs03E0qQtGE700GW1e0ky&amp;data=3D04%7C01%7C=
+jerry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C1%7C637388142781499786%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&am=
+p;sdata=3DjqXkEf%2FxcSJa%2Bi5tJS2W1g6xvloWr7h7fUVvY2Yo7jQ%3D&amp;reserved=
+=3D0" originalsrc=3D"https://emails.microsoft.com/UHJs03E0qQtGE700GW1e0ky" =
+shash=3D"XW2Uc774sgqhB64+47OyJF95C4mCcKlZfaEbwscQEH65sZD7H0MFxIl628+bEV4jLn=
+LJGqkirCFswBrhtQFANgXcwLP04uxheH6rdxWngAB0LKXcEhKplamXh8sY/1bhLzxKVBAbxE6tY=
+ow4gC3pzCc1MuOMqGH07l/scJNpCtE=3D"><img width=3D"75" height=3D"16" align=3D=
+"left" alt=3D"Microsoft" src=3D"https://info.microsoft.com/rs/157-GQE-382/i=
+mages/EN-BASICE-Logo-MSFTLogo.png" border=3D"0"></a></p>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>=20
+<td height=3D"48" style=3D"font-size: 1px; line-height: 48px; font-family: =
+'Segoe UI Semilight','Segoe UI Regular',SUWR,Arial,Sans-Serif;">&nbsp;</td>=
+=20
+</tr>=20
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Femails.microsoft.com%2FGGQ1E900yl3UG0Eq0et0sWH&amp;data=3D04%7C01%7Cjer=
+ry.teng%40utdallas.edu%7C07c7e7003c9f4715325f08d875238976%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C1%7C637388142781509779%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000&amp;s=
+data=3DDC4BYVAvgW4nBvxeu7NKRPRW61nNpGnLuSeE5jQJS%2BY%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://emails.microsoft.com/GGQ1E900yl3UG0Eq0et0sWH" shash=
+=3D"nPbB1gTXSBOeKStNUw955jUzTwvnfsMUHlqe4bdAf7pGmKIS1pbrq/bVjktyi4EmMJ+cZgG=
+hT68ZyQk7DgPGFXy/7lS0tDbxbOU1t+eEZ7ZOwNdqjpZ+G/DdtepLlDv6Fr+iM7+4jV7uDq6nxO=
+zNis3CfS0lbfnrJtBK+EuLBME=3D"></a>
+<img src=3D"https://emails.microsoft.com/trk?t=3D1&amp;mid=3DMTU3LUdRRS0zOD=
+I6ODkwMTYwOjc2Nzc3Mjo0NjY0OTI3OjA6NzQ3OTI1Ojk6MjQxODIwNToxMTIzODgzOTQ4LTI5O=
+mplcnJ5LnRlbmdAdXRkYWxsYXMuZWR1" width=3D"1" height=3D"1" style=3D"display:=
+none !important;" alt=3D"">
+
+<!-- footer -->
+</body>
+</html>=
+
+------=_Part_2064355280_541467317.1603217472694--

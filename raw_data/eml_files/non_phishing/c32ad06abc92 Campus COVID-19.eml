@@ -1,0 +1,497 @@
+Received: from BN8PR01MB5617.prod.exchangelabs.com (2603:10b6:408:af::18) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Fri, 9 Oct 2020 21:51:51
+ +0000
+Received: from CY4PR20CA0017.namprd20.prod.outlook.com (2603:10b6:903:98::27)
+ by BN8PR01MB5617.prod.exchangelabs.com (2603:10b6:408:af::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.38; Fri, 9 Oct 2020 21:51:50 +0000
+Received: from CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:98:cafe::9a) by CY4PR20CA0017.outlook.office365.com
+ (2603:10b6:903:98::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.21 via Frontend
+ Transport; Fri, 9 Oct 2020 21:51:50 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ CY1NAM02FT040.mail.protection.outlook.com (10.152.75.135) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3455.25 via Frontend Transport; Fri, 9 Oct 2020 21:51:50 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Fri, 9 Oct 2020 16:51:34 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Fri, 9 Oct 2020 16:51:34 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id DE9E6C00005B; Fri,  9 Oct 2020 16:51:34 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (exchange.utdallas.edu [10.182.71.117])
+	by lists.utdallas.edu (Postfix) with ESMTP id 6192AC000052;
+	Fri,  9 Oct 2020 16:30:06 -0500 (CDT)
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Fri, 9 Oct 2020 16:30:06 -0500
+Received: from utdex12.campus.ad.utdallas.edu ([fe80::3475:a591:3cec:a29a]) by
+ utdex12.campus.ad.utdallas.edu ([fe80::3475:a591:3cec:a29a%20]) with mapi id
+ 15.01.1979.003; Fri, 9 Oct 2020 16:30:06 -0500
+From: OEMCP <OEMCP@utdallas.edu>
+Thread-Topic: Campus COVID-19 Notification - October 9, 2020
+Thread-Index: AdaecszAm1f/qamARZ6agWneBUerLg==
+Date: Fri, 9 Oct 2020 21:30:06 +0000
+Message-ID: <952d6fa0edb94aa199e919eb76f0fdea@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.182.70.130]
+Content-Type: multipart/alternative;
+	boundary="_000_952d6fa0edb94aa199e919eb76f0fdeautdallasedu_"
+Subject: [students] Campus COVID-19 Notification - October 9, 2020
+Reply-To: OEMCP <OEMCP@utdallas.edu>
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1447
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-10/952d6fa0edb94aa199e919eb76f0fdea%40utdallas.edu>
+To: Undisclosed recipients:;
+Return-Path: bounce+jerry.teng==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Oct 2020 21:51:50.3213
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4687db5a-28ef-40d2-6779-08d86c9d86fb
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT040.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 4687db5a-28ef-40d2-6779-08d86c9d86fb
+X-MS-TrafficTypeDiagnostic: BN8PR01MB5617:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:4125;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Oct 2020 21:51:50.2303
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4687db5a-28ef-40d2-6779-08d86c9d86fb
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR01MB5617
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6604767
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?DlCAArsfLzLH6BxquJ7VimSM8mQ+qkvzaUzAZE3jVp6YV7Qxkqfxx2JV?=
+ =?Windows-1252?Q?NXa98s3MQ0CJ6FxDm99uDoaWB6SvMcyrzg896FAA1x1fF/Ozueio/2ty?=
+ =?Windows-1252?Q?eR3k7eQixqfTpoIOmXLmW9fTYzLU/cJsTr1ma4N6mZGTAOv3JqiUf6Dk?=
+ =?Windows-1252?Q?zWkelQdPZyFXR2oteJBiyRnNoSn/YH4aRs6Iu290nfmJizWr5ucUq3de?=
+ =?Windows-1252?Q?f0eyfenkxbSTlcW4kMkTdCwH0cewjqPShj+iMBFhX2yz75jusPZDLSBp?=
+ =?Windows-1252?Q?wUmnsG4WoTlvSuGQxIl9YXtnG8yJIWdSwTVT4G2cSfY8s8FfEjz7QRsi?=
+ =?Windows-1252?Q?S/kzkCwxgwNiWhFzfl5XONhcqi62E7N9B3BeuCboFtkH6TGEnlf+OrE/?=
+ =?Windows-1252?Q?Hwey/pAakUpp+RDvaKFQbbb0LH8ctc5y4G8wGAbD1bjSeYgNIErzYO4q?=
+ =?Windows-1252?Q?O4kDrvClTPM/kAXz0Xb7y78evdK3moTtm6esuJuwkD+YH/HvYye/3cpI?=
+ =?Windows-1252?Q?iit47Lkq05XPw64oz6fo76A3XTocAqz2qLDY4y/2WQoQd05N4fXyygmd?=
+ =?Windows-1252?Q?sI7C86zSFRYvyTExnddovfpiBw8e9TNuTGTE2cGeZ/IEy3hAOcdiAffB?=
+ =?Windows-1252?Q?OO2r9PYt9aFTsY2CPBBFu61r6dBsEuupqbOl+gCerL9IQBq6dh695Sti?=
+ =?Windows-1252?Q?MYiZW3ea7Hp4kr05BQAyzsW2Sg9ijNuSTVjXFo01xgl5VHD6aQubXgSr?=
+ =?Windows-1252?Q?jYijrKeyLEjThZ54XKy8gy/g6i88YZqNg9bKlRIrg1Yq5JyPS1OEL8Th?=
+ =?Windows-1252?Q?jPNU+HTtMeRuH65mRov94+mb8K/zDnMIW/N99ZPucuQBV8l9Kk0aaz3y?=
+ =?Windows-1252?Q?WP+V4N+hUUCxqak2ZD9+Rue0jFP2roBD/K15P0tTNSlE2zWcB0zFPv9f?=
+ =?Windows-1252?Q?f+fiUFoAtXrH1g9wRwR3LCJxsfwK0Qvw9pjn+ThlJ5SuxFTApEgDrOUZ?=
+ =?Windows-1252?Q?b3uC+jp6N94m8uCSMxYpqkZRrv9Z4VvvOQLmj3yhlSq6XxKzeQ1OJPms?=
+ =?Windows-1252?Q?Uk2M5sqlPfOLH8+FMImoiXsdS9mOD+88v/O6tJ1SiP9JNd/ACoGvUj0m?=
+ =?Windows-1252?Q?81wwLkbkGbo25+/ewaQje1uBUrOFy87QI07cA4O9jKmNjv8Yh2oPlnY4?=
+ =?Windows-1252?Q?4BLLPuWy8iBs/2mD4zfmNtU8HaTj0o7hfXfH7P8fieXdrxiRdMWnBLIs?=
+ =?Windows-1252?Q?ZBg+VtOlqW9tg3/RMVggsWz3eSUr7iXoiOVpQx+n?=
+MIME-Version: 1.0
+
+--_000_952d6fa0edb94aa199e919eb76f0fdeautdallasedu_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Campus COVID-19 Notification
+
+October 9, 2020
+
+Dear UT Dallas Community,
+
+The University was notified of the following positive COVID-19 case(s) on t=
+he date(s) listed below:
+
+
+  *   October 9, 2020 - UT Dallas student who lives in Canyon Creek Heights=
+ South (CCHS). The individual did not visit any other campus buildings. The=
+ University has notified the UT Dallas-affiliated close contacts of this in=
+dividual, as defined by the CDC guidelines.
+  *   October 8, 2020 - UT Dallas student who lives off campus and visited =
+the Research and Operations Center West (ROW) building. It was determined t=
+hat the individual did not have any close contacts as defined by the CDC gu=
+idelines.
+
+
+Cleaning and disinfection protocols have been completed for the locations l=
+isted above.
+
+The University will work with county and state health officials to monitor =
+this situation.
+
+Please continue practicing social distancing and following CDC guidelines, =
+including routine hand-washing and wearing masks.
+
+Please look to our website<https://www.utdallas.edu/coronavirus/> for more =
+information.
+
+Thank you and continue to stay safe and healthy.
+
+Mariah Phipps-Jack, CEM, TEM
+Director of Emergency Management & Continuity Planning
+
+
+
+--_000_952d6fa0edb94aa199e919eb76f0fdeautdallasedu_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EmailStyle18
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:351692703;
+	mso-list-template-ids:153271836;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:2006474360;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-608025166 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:white;border-collaps=
+e:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"background:#124734;padding:33.75pt 22.5pt 0in 2=
+2.5pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:8.0pt;line-height:105%"><b><s=
+pan style=3D"font-size:21.0pt;line-height:105%;font-family:&quot;Arial&quot=
+;,sans-serif;color:white">Campus COVID-19 Notification</span></b><o:p></o:p=
+></p>
+</td>
+</tr>
+<tr style=3D"height:22.5pt">
+<td valign=3D"top" style=3D"padding:11.25pt 22.5pt 11.25pt 22.5pt;height:22=
+.5pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:8.0pt;line-height:105%"><span=
+ style=3D"font-size:14.5pt;line-height:105%;font-family:&quot;Arial&quot;,s=
+ans-serif;color:#154734">October 9, 2020</span><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:246.15pt">
+<td valign=3D"top" style=3D"padding:11.25pt 22.5pt 45.0pt 22.5pt;height:246=
+.15pt">
+<p class=3D"MsoNormal" style=3D"line-height:105%"><span style=3D"font-famil=
+y:&quot;Arial&quot;,sans-serif;color:#333333">Dear UT Dallas Community,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%"><span style=3D"font-famil=
+y:&quot;Arial&quot;,sans-serif;color:#333333"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%"><span style=3D"font-famil=
+y:&quot;Arial&quot;,sans-serif;color:#333333">The University was notified o=
+f the following positive COVID-19 case(s) on the date(s) listed below:<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%"><span style=3D"font-famil=
+y:&quot;Arial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:8.0pt;line-hei=
+ght:105%;mso-list:l1 level1 lfo3">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif">October 9, 2020 &#=
+8211; UT Dallas student who lives in Canyon Creek Heights South (CCHS). The=
+ individual did not visit any other campus buildings. The University has no=
+tified the UT Dallas-affiliated close contacts of
+ this individual, as defined by the CDC guidelines.<o:p></o:p></span></li><=
+li class=3D"MsoNormal" style=3D"color:#333333;margin-bottom:8.0pt;line-heig=
+ht:105%;mso-list:l1 level1 lfo3">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif">October 8, 2020 &#=
+8211; UT Dallas student who lives off campus and visited the Research and O=
+perations Center West (ROW) building. It was determined that the individual=
+ did not have any close contacts as defined by the
+ CDC guidelines. <o:p></o:p></span></li></ul>
+<p class=3D"MsoNormalCxSpMiddle" style=3D"margin-left:.5in;mso-add-space:au=
+to;line-height:105%">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#333333">&nbs=
+p;</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333">Cleaning and disinfection p=
+rotocols have been completed for the locations listed above.
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333"><o:p>&nbsp;</o:p></span></p=
+>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333">The University will work wi=
+th county and state health officials to monitor this situation.<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%;vertical-align:baseline"><=
+span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#333333">Pleas=
+e continue practicing social distancing and following CDC guidelines, inclu=
+ding routine hand-washing and wearing masks.</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333"><br>
+Please look to </span><a href=3D"https://www.utdallas.edu/coronavirus/"><sp=
+an style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#C95100">our&nbs=
+p;website</span></a><span style=3D"font-family:&quot;Arial&quot;,sans-serif=
+;color:#333333"> for more information.
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333">Thank you and continue to s=
+tay safe and healthy.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333"><o:p>&nbsp;</o:p></span></p=
+>
+<p class=3D"MsoNormal" style=3D"line-height:16.5pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif;color:#333333">Mariah Phipps-Jack, CEM, TE=
+M<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:8.0pt;line-height:16.5pt"><sp=
+an style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#333333">Directo=
+r of Emergency Management &amp; Continuity Planning</span><o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_952d6fa0edb94aa199e919eb76f0fdeautdallasedu_--

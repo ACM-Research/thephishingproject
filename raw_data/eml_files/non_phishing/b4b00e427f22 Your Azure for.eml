@@ -1,0 +1,1803 @@
+Received: from DM6PR01MB3994.prod.exchangelabs.com (2603:10b6:5:92::15) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 11:36:02
+ +0000
+Received: from CY4PR1701CA0014.namprd17.prod.outlook.com
+ (2603:10b6:910:5e::24) by DM6PR01MB3994.prod.exchangelabs.com
+ (2603:10b6:5:92::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.21; Thu, 22 Oct
+ 2020 11:36:00 +0000
+Received: from CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:910:5e:cafe::d4) by CY4PR1701CA0014.outlook.office365.com
+ (2603:10b6:910:5e::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Thu, 22 Oct 2020 11:36:00 +0000
+Authentication-Results: spf=pass (sender IP is 104.214.25.77)
+ smtp.mailfrom=microsoft.com; utdallas.edu; dkim=pass (signature was verified)
+ header.d=microsoft.com;utdallas.edu; dmarc=pass action=none
+ header.from=microsoft.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of microsoft.com designates
+ 104.214.25.77 as permitted sender) receiver=protection.outlook.com;
+ client-ip=104.214.25.77; helo=waws-prod-sn1-7d1530ba.cloudapp.net;
+Received: from waws-prod-sn1-7d1530ba.cloudapp.net (104.214.25.77) by
+ CY1NAM02FT056.mail.protection.outlook.com (10.152.74.160) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 11:35:59 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=microsoft.com; s=s1024-meo;
+	c=relaxed/relaxed; i=azure-noreply@microsoft.com; t=1603366559;
+	h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=YSTdmOj+4cdwvRgb3AqlXVAcaB2chSvbW/ig27xdEY4=;
+	b=TcLiK7wopNoBfFkd0EwuMPaq0X84HnH+1iMTf1+v4w8pbVx8KD3VZ3cvDrnCcm94Cd9QlmHOyrQ
+	U1dQQ9iPlzl9VXc0eGlSQbktS9mq9FzmjzmQKXyThdiIqRTyFbwkZO3diMhHy2xE49+VAvq/rDY34
+	IpbekQrBqoqXHgZ+WkI=
+From: Microsoft Azure <azure-noreply@microsoft.com>
+Date: Thu, 22 Oct 2020 11:35:59 +0000
+Subject: Your Azure for students credit has =?utf-8?b?ZXhwaXJlZOKAlGxlYXJu?=
+ how to save your data
+Message-Id: <7619ffa2-941b-434e-994e-181689a76b7b@az.southcentralus.production.microsoft.com>
+To: zxt180005@utdallas.edu
+Content-Type: multipart/alternative; boundary="=-Tsc6hIEpcoLzmonzOwa7vw=="
+Return-Path: azure-noreply@microsoft.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 11:35:59.9765
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f8c8bc58-5c82-43e3-fb31-08d8767ea63a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: f8c8bc58-5c82-43e3-fb31-08d8767ea63a
+X-MS-TrafficTypeDiagnostic: DM6PR01MB3994:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2958;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:104.214.25.77;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:waws-prod-sn1-7d1530ba.cloudapp.net;PTR:waws-prod-sn1-7d1530ba.cloudapp.net;CAT:NONE;SFS:(4636009)(47530400004)(286005)(6486002)(956004)(10290500003)(36906005)(118246002)(31696002)(6506007)(36736006)(52230400001)(26005)(966005)(33964004)(7636003)(336012)(166002)(356005)(1096003)(7596003)(31686004)(34206002)(86362001)(83380400001)(6512007)(19627405001)(16503001)(559001)(579004);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 11:35:59.8552
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f8c8bc58-5c82-43e3-fb31-08d8767ea63a
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT056.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB3994
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3965423
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WStMNkQrQWFna3ZPVERCN0xWdXYvSERFbGxXV045ZkkvVFJCY09wUGw3dFJB?=
+ =?utf-8?B?NlZyYVoza2VMVENWakdqbFZCWko4ZEIrL3Rob3FucWN1c3dSUTMvSjRwbVB2?=
+ =?utf-8?B?MFk0VFlkeWl6KzFHQ1hVM2JDWkRubTVnYkE4M3pDekpSeWNEdllVd0dveFh4?=
+ =?utf-8?B?NnBoVXg5MW93NGY3eWliL0ZrblZzODVsQmVrbVlnMlB4Mk9WSXVrYkVIeWNQ?=
+ =?utf-8?B?NDh0d3RvOG4zQisxMlNFaTAwejh3RXlFaEhhU01LcVJCRGF1ajhVTjAyYWZo?=
+ =?utf-8?B?V2kzZDM4bWovdGVsRFhBbFJCNjRQZ0E1L1FHbVF1cjhFak52c0lQTDYzYUIw?=
+ =?utf-8?B?S28wSmlkNkRVSG0xYTJVUzhOYWhlWHNZV0FsNm1SRkJhVmlKWG9BZjNXbHNJ?=
+ =?utf-8?B?NzJsNzdCK0svaE5QdlRLS3pZYnl5ZWhYUUo2ZlNEWlNxWkt4N3JPSmRMbDdY?=
+ =?utf-8?B?aGNhWWZTcGI2REh6Z09TMEhzWmZteDZ4Q0FLMkNlTUdHbUhlSldVcElQSDZF?=
+ =?utf-8?B?QmwxM003RzFvdk9JeFdFRnloSUdFYkJwWEFyNzdzQk5uMldwOVQzQWlxV0p4?=
+ =?utf-8?B?eVFRL1c4N0pYend6TGFQQWV4WGZnZWZpK2ludVM3Qi9TdUFyUnhEY2FnaGky?=
+ =?utf-8?B?ZlFnOVN2SDY4NE9MMnZycXNzeG10dHZ4OEh6b0Y0MFZaZFRKZktBQjczYmZL?=
+ =?utf-8?B?R1FZUmFvV2lEQnd4cHFJVURFR1E1QmtMWGVEV0xTM0tQRnFva3hrWWZ1ZVpN?=
+ =?utf-8?B?NGM5UGs5eFlmdld3YUJtU3pOY3hFNmZXOXB0YjQzRTRoNitad1o0Z2NZb1RL?=
+ =?utf-8?B?YlBlVSt0dmVLTzJmUWE3UGoycFhnR2xMN0d5TlZzakhuU1RxZVdPeFdiZGM0?=
+ =?utf-8?B?RnlwVjhZQzRwbCsxR09aZCtrQkVaVG1iT3gvM3hxc0tidTVHQnZYS1FDaWo0?=
+ =?utf-8?B?VnNwc3lhbWtoMEM5RlNqcjZMNkl1alZkMnN5UmE1QzFId2JNUW9oT29mazJK?=
+ =?utf-8?B?dnYxZ09xWjlMN3Y5QjNzY3dzUUgxL0llMERBZzQxRnk4cktuUENoMDdJSHp3?=
+ =?utf-8?B?dmdBdlVNV0dBLzUweHJTK0RCVXNVejZFenFXL091R0FGckFzMU12WU5hVGxO?=
+ =?utf-8?B?bXhFbndrSER6UU5mNUxCd2t3OEJTbERRSm9OajdQbDNjTk5qL0JLRUhYOU1k?=
+ =?utf-8?B?OFp4UUtJeDZ5ZmppMEFDay81cUhnMERhYUNKV25tTGdQQ2o1UlZHRVI4VVNh?=
+ =?utf-8?B?RVpOd25pd2JSMlhNZDR4TGVxV1N5a081R2NXUlVJdWZjRlEySHJSM3FZQzJo?=
+ =?utf-8?B?cjJvM2d2Y0tOWWU1SHhNaTVXV21kcWRxVm9EMWJULzkyQ1ZYWXl4S09PTmRZ?=
+ =?utf-8?B?SlpTQXhtOXpIR1BWVnRoUWJZNkNVS0xlcTBZN0J5d3g4TlFxaXlhTHBpaW1p?=
+ =?utf-8?B?RzB1ZTVSS3NnazRPK0I0V0FpR0h5anFtMmhTUWM0VXdXNE53ZjF5M0p3Sm9w?=
+ =?utf-8?B?VUZ5N00vb2FWR0RQNmEraFpUVnd1OUhXbDlnQmRlSzlvVkltM1BJL3hzNHVl?=
+ =?utf-8?B?ZENPQ2FjTVRNRHpNdmJzdW9tS0dsQlZHdDk3OTFRRGdOcHlzaU0wVmtzSzk3?=
+ =?utf-8?B?bUJWL00vU1BUNmtxZUdZWjlzWUVnQXdIVjRoRlBtbXlLOWh1S0RqVU5jbWty?=
+ =?utf-8?B?SnEySWk1YkVNdnVRc24zZENPOUxSZklMbzliSmhXNFBpMy9OZktXR0k5ODFa?=
+ =?utf-8?B?ZkVkQ1lnRTRIU2FaVUdjL0VPSFdMWnUzZTFPbjNXL3FCbEgzbHIzdWczUTdX?=
+ =?utf-8?B?b2xranU5WU5qcE83NjVmaUpHcDVtNVRrTTNRdm9Md2hGK1c4R0lRMXp0aGVz?=
+ =?utf-8?B?RXp3eEdTSVJYcXhJdXloOWpTN0hIQnV4Vi9XU2JjRThJS3lMdjJFSEV4YzFZ?=
+ =?utf-8?B?RHpGMUhWTGV3Y3ZOTG15dms1OWpmNllPQWxQbDQ3eVg1em90N1h1Q2hOV3hV?=
+ =?utf-8?Q?/F37v0J/blcrTTHkmJEZl+dzXAmI50=3D?=
+MIME-Version: 1.0
+
+--=-Tsc6hIEpcoLzmonzOwa7vw==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Microsoft Azure
+
+Upgrade now to keep building in Azure
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Your free credit has expired, so we=E2=80=99ve disabled your subscription a=
+nd services. It's an easy fix=E2=80=94just upgrade to a pay-as-you-go subsc=
+ription to keep using all your configured services and data in place. You g=
+et:
+
+- 12 months of popular products for free.
+  https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure=
+.microsoft.com%2Fen-us%2Ffree%2F%2312-months-free&amp;data=3D04%7C01%7CJerr=
+y.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637389633619991260%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sd=
+ata=3DsEwPGBHqQE2%2F6R%2F6pVNB6SLtGalLby7XeH9oHO0UCqk%3D&amp;reserved=3D0
+
+- More than 25 products that are always free.
+  https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure=
+.microsoft.com%2Fen-us%2Ffree%2F%23always-free&amp;data=3D04%7C01%7CJerry.T=
+eng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C0%7C637389633619991260%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3DJOdgx2FPzrCGixkf5qnnDvc3WgkfZanYwYsuMhhhJfU%3D&amp;reserved=3D0
+
+For everything else, only pay for what you use each month. It=E2=80=99s eas=
+y to cancel, any time.
+
+Sign up for a new subscription >>
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Faccount=
+.azure.com%2FSubscriptions&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7=
+Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C=
+0%7C637389633619991260%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DlyP2nAfjvF03KWU3I=
+0fHD0DZLFGbHWIM1ymZ594OwLM%3D&amp;reserved=3D0
+
+We'll keep your subscription data before permanently deleting it on October=
+ 22, 2020. Please log in and save any important data before then.
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fportal.=
+azure.com%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c824=
+3e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373896336=
+19991260%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DUNsnTzFXDpoNGqi72ZPt1YD97JF5xNB=
+rMg8fqrAzNwo%3D&amp;reserved=3D0 Resume using your services with minimal in=
+terruption if you upgrade before October 22, 2020.
+
+Submit a support ticket if you need more help.
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fportal.=
+azure.com%2F%23blade%2FMicrosoft_Azure_Support%2FHelpAndSupportBlade%2Fnews=
+upportrequest%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585=
+c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389=
+633619991260%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DoRN2wm5rt8m4cxgylGp6WP6eq7g=
+QFIIcI6Uq2H3eQ2g%3D&amp;reserved=3D0
+
+Thank you,
+Your Azure team
+
+--------------------------------------------------
+
+Facebook: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fwww.facebook.com%2Fmicrosoftazure&amp;data=3D04%7C01%7CJerry.Teng%40UTDa=
+llas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9=
+f6c%7C0%7C0%7C637389633620001255%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMD=
+AiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D6Ae5Hn0=
+AvoyBy6SmswMzUurAJUmQWqs0IgMqJEJzgqc%3D&amp;reserved=3D0
+Twitter: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Ftwitter.com%2Fazure&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8=
+bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37389633620001255%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luM=
+zIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DVVreKdE5U8uzIq7y4DB1Hp=
+DZzx162HJyOFYtndzsXfI%3D&amp;reserved=3D0
+YouTube: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fwww.youtube.com%2Fuser%2Fwindowsazure&amp;data=3D04%7C01%7CJerry.Teng%40U=
+TDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15=
+de9f6c%7C0%7C0%7C637389633620001255%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DjUhH=
+Vo%2Bu9Rb2nXkkStipy0I3t9GTuYLgFvCBKx2FVcE%3D&amp;reserved=3D0
+LinkedIn: https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fwww.linkedin.com%2Fshowcase%2Fmicrosoft-developers&amp;data=3D04%7C01%7C=
+Jerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d=
+4bf7b16e032d15de9f6c%7C0%7C0%7C637389633620001255%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&am=
+p;sdata=3DjRB24A61qePAhbd3vFrW3WW4mhLxJtd0gUIvXwIq1XQ%3D&amp;reserved=3D0
+
+Privacy Statement: https://nam02.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fgo.microsoft.com%2Ffwlink%2F%3FLinkId%3D521839&amp;data=3D04%7C=
+01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389633620001255%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C10=
+00&amp;sdata=3DiQw%2BD9FUi9zvlZXAC6MnuSfNuTV2Kl2yW54TD05nLIk%3D&amp;reserve=
+d=3D0
+
+Microsoft Corporation, One Microsoft Way, Redmond, WA 98052
+
+
+--=-Tsc6hIEpcoLzmonzOwa7vw==
+Content-Type: text/html; charset=utf-8
+Content-Id: <C3TQGCNRZBU4.H0XWDUW68HE42@RD00155DFEE17A>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"https://www.w3.org/1999/x=
+html" lang=3D"en" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:=
+schemas-microsoft-com:office:office" style=3D"min-height: 100%;background: =
+#ffffff"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"messageId" content=3D"7619ffa2-941b-434e-994e-181689a76b7=
+b">
+    <meta name=3D"cloud" content=3D"AZ">
+
+       =20
+
+    <title>
+       =20
+	Your Azure for students credit has expired=E2=80=94learn how to save your =
+data
+
+    </title>
+
+      <style id=3D"mediaqueries">@media only screen and (max-width: 640px) =
+{
+  .wrap-dangler {
+    padding-right: 10% !important;
+    mso-padding-right-alt: 10% !important;
+  }
+
+  .wrap-dangler.small-text-center .wrap-dangler.text-center {
+    padding-left: 10% !important;
+    mso-padding-left-alt: 10% !important;
+    padding-right: 10% !important;
+    mso-padding-right-alt: 10% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  p.comment-border-right {
+    margin-left: 0 !important;
+    Margin-left: 0 !important;
+    mso-margin-left-alt: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  p.comment-border-left {
+    margin-left: 0 !important;
+    Margin-left: 0 !important;
+    mso-margin-left-alt: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .small-float-left {
+    margin-left: 0 !important;
+    float: none !important;
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .wrap-dangler {
+    padding-right: 10% !important;
+    mso-padding-right-alt: 10% !important;
+  }
+
+  .wrap-dangler.small-text-center .wrap-dangler.text-center {
+    padding-left: 10% !important;
+    mso-padding-left-alt: 10% !important;
+    padding-right: 10% !important;
+    mso-padding-right-alt: 10% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  p.comment-border-right {
+    margin-left: 0 !important;
+    Margin-left: 0 !important;
+    mso-margin-left-alt: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  p.comment-border-left {
+    margin-left: 0 !important;
+    Margin-left: 0 !important;
+    mso-margin-left-alt: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .small-float-left {
+    margin-left: 0 !important;
+    float: none !important;
+    text-align: left !important;
+  }
+}
+
+@media only screen {
+  html {
+    min-height: 100%;
+    background: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .small-float-center {
+    margin: 0 auto !important;
+    float: none !important;
+    text-align: center !important;
+  }
+
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  .small-text-right {
+    text-align: right !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .hide-for-large {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  table.body table.container .hide-for-large,
+  table.body table.container .row.hide-for-large {
+    display: table !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  table.body table.container .callout-inner.hide-for-large {
+    display: table-cell !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  table.body table.container .show-for-large {
+    display: none !important;
+    width: 0;
+    mso-hide: all;
+    overflow: hidden;
+  }
+}
+
+@media only screen {
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu.small-vertical .menu-item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  table.body img {
+    width: auto;
+    height: auto;
+  }
+
+  table.body center {
+    min-width: 0 !important;
+  }
+
+  table.body .container {
+    width: 95% !important;
+  }
+
+  table.body .columns,
+  table.body .column {
+    height: auto !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  table.body .columns .column,
+  table.body .columns .columns,
+  table.body .column .column,
+  table.body .column .columns {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  table.body .collapse .columns,
+  table.body .collapse .column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  td.small-1,
+  th.small-1 {
+    display: inline-block !important;
+    width: 8.33333% !important;
+  }
+
+  td.small-2,
+  th.small-2 {
+    display: inline-block !important;
+    width: 16.66667% !important;
+  }
+
+  td.small-3,
+  th.small-3 {
+    display: inline-block !important;
+    width: 25% !important;
+  }
+
+  td.small-4,
+  th.small-4 {
+    display: inline-block !important;
+    width: 33.33333% !important;
+  }
+
+  td.small-5,
+  th.small-5 {
+    display: inline-block !important;
+    width: 41.66667% !important;
+  }
+
+  td.small-6,
+  th.small-6 {
+    display: inline-block !important;
+    width: 50% !important;
+  }
+
+  td.small-7,
+  th.small-7 {
+    display: inline-block !important;
+    width: 58.33333% !important;
+  }
+
+  td.small-8,
+  th.small-8 {
+    display: inline-block !important;
+    width: 66.66667% !important;
+  }
+
+  td.small-9,
+  th.small-9 {
+    display: inline-block !important;
+    width: 75% !important;
+  }
+
+  td.small-10,
+  th.small-10 {
+    display: inline-block !important;
+    width: 83.33333% !important;
+  }
+
+  td.small-11,
+  th.small-11 {
+    display: inline-block !important;
+    width: 91.66667% !important;
+  }
+
+  td.small-12,
+  th.small-12 {
+    display: inline-block !important;
+    width: 100% !important;
+  }
+
+  .columns td.small-12,
+  .column td.small-12,
+  .columns th.small-12,
+  .column th.small-12 {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  table.body td.small-offset-1,
+  table.body th.small-offset-1 {
+    margin-left: 8.33333% !important;
+    Margin-left: 8.33333% !important;
+  }
+
+  table.body td.small-offset-2,
+  table.body th.small-offset-2 {
+    margin-left: 16.66667% !important;
+    Margin-left: 16.66667% !important;
+  }
+
+  table.body td.small-offset-3,
+  table.body th.small-offset-3 {
+    margin-left: 25% !important;
+    Margin-left: 25% !important;
+  }
+
+  table.body td.small-offset-4,
+  table.body th.small-offset-4 {
+    margin-left: 33.33333% !important;
+    Margin-left: 33.33333% !important;
+  }
+
+  table.body td.small-offset-5,
+  table.body th.small-offset-5 {
+    margin-left: 41.66667% !important;
+    Margin-left: 41.66667% !important;
+  }
+
+  table.body td.small-offset-6,
+  table.body th.small-offset-6 {
+    margin-left: 50% !important;
+    Margin-left: 50% !important;
+  }
+
+  table.body td.small-offset-7,
+  table.body th.small-offset-7 {
+    margin-left: 58.33333% !important;
+    Margin-left: 58.33333% !important;
+  }
+
+  table.body td.small-offset-8,
+  table.body th.small-offset-8 {
+    margin-left: 66.66667% !important;
+    Margin-left: 66.66667% !important;
+  }
+
+  table.body td.small-offset-9,
+  table.body th.small-offset-9 {
+    margin-left: 75% !important;
+    Margin-left: 75% !important;
+  }
+
+  table.body td.small-offset-10,
+  table.body th.small-offset-10 {
+    margin-left: 83.33333% !important;
+    Margin-left: 83.33333% !important;
+  }
+
+  table.body td.small-offset-11,
+  table.body th.small-offset-11 {
+    margin-left: 91.66667% !important;
+    Margin-left: 91.66667% !important;
+  }
+
+  table.body table.columns td.expander,
+  table.body table.columns th.expander {
+    display: none !important;
+  }
+
+  table.body .right-text-pad,
+  table.body .text-pad-right {
+    padding-left: 12px !important;
+  }
+
+  table.body .left-text-pad,
+  table.body .text-pad-left {
+    padding-right: 12px !important;
+  }
+
+  table.menu {
+    width: 100% !important;
+  }
+
+  table.menu td,
+  table.menu th {
+    width: auto !important;
+    display: inline-block !important;
+  }
+
+  table.menu.vertical td,
+  table.menu.vertical th,
+  table.menu.small-vertical td,
+  table.menu.small-vertical th {
+    display: block !important;
+  }
+
+  table.menu[align=3D"center"] {
+    width: auto !important;
+  }
+
+  table.button.small-expand,
+  table.button.small-expanded {
+    width: 100% !important;
+  }
+
+  table.button.small-expand table,
+  table.button.small-expanded table {
+    width: 100%;
+  }
+
+  table.button.small-expand table a,
+  table.button.small-expanded table a {
+    text-align: center !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  table.button.small-expand center,
+  table.button.small-expanded center {
+    min-width: 0;
+  }
+}
+
+@media (min-resolution: 1dpi) {
+  body[data-outlook-cycle] .main-container > table {
+    width: 640px;
+  }
+
+  body[data-outlook-cycle] .container-wide .main-container > table {
+    width: 888px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .outer-wrapper > tbody > tr > .wrapper-inner,
+  table.body .columns,
+  table.body .column {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .main-container > .float-center {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  body.container-wide .main-container > table {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  table.button.secondary a {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .header-right-column table.button table td a {
+    font-size: 13px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table th:first-child {
+    padding-bottom: 0px !important;
+    mso-padding-bottom-alt: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table td,
+  .section .card-table th:last-child {
+    padding-top: 0px !important;
+    mso-padding-top-alt: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table.mobile-padding td {
+    padding-top: 8px !important;
+    mso-padding-top-alt: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table tr.border-top td,
+  .section .card-table tr.border-top th:last-child {
+    border: none !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table.no-stack tr.border-top td,
+  .section .card-table.no-stack tr.border-top th {
+    border-top: 1px solid #dedede !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-table.no-stack th,
+  .section .card-table.no-stack td {
+    padding-top: 8px !important;
+    mso-padding-top-alt: 8px !important;
+    padding-bottom: 8px !important;
+    mso-padding-bottom-alt: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-row .columns.first {
+    padding-bottom: 0px !important;
+    mso-padding-bottom-alt: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section .card-row .columns.last {
+    padding-top: 0px !important;
+    mso-padding-top-alt: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header-section .stack-for-small th {
+    display: block;
+    width: 100% !important;
+  }
+
+  .header-section .stack-for-small .header-right-column {
+    padding-bottom: 0 !important;
+    padding-top: 24px !important;
+  }
+
+  .header-section .stack-for-small .header-right-column,
+  .header-section .stack-for-small .header-right-column p {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .list-row .columns.first,
+  .list-row .list-items {
+    padding-bottom: 0 !important;
+    mso-padding-bottom-alt: 0 !important;
+  }
+
+  .list-row .columns.last,
+  .list-row .list-items {
+    padding-top: 0 !important;
+    mso-padding-top-alt: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .number-bar .interior-bar td {
+    padding-top: 0px !important;
+    mso-padding-top-alt: 0px !important;
+    padding-bottom: 0px !important;
+    mso-padding-bottom-alt: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .small-display-block {
+    display: block !important;
+  }
+
+  .small-text-medium {
+    font-size: 18px !important;
+  }
+
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  .small-bottom-padding-8 {
+    padding-bottom: 8px !important;
+    mso-padding-bottom-alt: 8px !important;
+  }
+
+  .small-top-padding-0 {
+    padding-top: 0 !important;
+    mso-padding-top-alt: 0 !important;
+  }
+
+  .video-container img {
+    margin-bottom: 10px;
+    Margin-bottom: 10px;
+    mso-margin-bottom-alt: 10px;
+  }
+
+  .video-container .video-thumbnail img {
+    max-width: 580px;
+    width: 300px;
+  }
+
+  .list-items p {
+    text-align: left !important;
+    font-size: 20px;
+  }
+
+  .list-items p,
+  .list-items img {
+    line-height: 13px !important;
+    mso-line-height-alt: 13px;
+    margin-bottom: 8px;
+    Margin-bottom: 8px;
+    mso-margin-bottom-alt: 8px;
+    text-align: left;
+  }
+
+  .list-items img {
+    vertical-align: middle !important;
+    margin-top: 5px !important;
+  }
+
+  .list-items.bullet-small th img {
+    padding-top: 0;
+    mso-padding-top-alt: 0;
+  }
+
+  table.body {
+    min-width: 320px !important;
+  }
+
+  table.body .main-container {
+    padding: 0 !important;
+  }
+
+  table.body .main-container > table.container {
+    min-width: 300px !important;
+  }
+
+  table.body table.container {
+    width: 100% !important;
+  }
+
+  .header-section img {
+    height: auto !important;
+  }
+
+  .header-section .small-6,
+  .header-section .large-3,
+  .header-section .large-6 {
+    margin-top: 0px;
+    Margin-top: 0px;
+    mso-margin-top-alt: 0px;
+    margin-bottom: 0px;
+    Margin-bottom: 0px;
+    mso-margin-bottom-alt: 0px;
+  }
+
+  .header-section .heading-container {
+    margin-bottom: 0px;
+    Margin-bottom: 0px;
+    mso-margin-bottom-alt: 0px;
+  }
+
+  .header-section .heading-container p {
+    font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-s=
+erif;
+  }
+
+  .header-section p.amount-title {
+    line-height: 16px;
+    mso-line-height-alt: 16px;
+    font-size: 12px !important;
+    word-wrap: break-word !important;
+    margin: 0 15px 10px 15px;
+    mso-margin-alt: 0 15px 10px 15px;
+    padding-top: 0 !important;
+  }
+
+  .header-section p.amount-value {
+    font-size: 24px;
+    line-height: 18px;
+    mso-line-height-alt: 18px;
+    margin: 0 15px 10px 15px;
+    mso-margin-alt: 0 15px 10px 15px;
+    padding: 0;
+  }
+
+  .section .columns {
+    padding-top: 0px;
+    mso-padding-top-alt: 0px;
+    padding-bottom: 0px;
+    mso-padding-bottom-alt: 0px;
+  }
+
+  .section .show-for-small {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    mso-height-alt: auto !important;
+    max-height: none !important;
+    mso-max-height-alt: none !important;
+    mso-hide: none !important;
+    overflow: visible !important;
+  }
+
+  table.footer-template p {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  .wrapper.wrapper-inner-540-large .wrapper-inner .container {
+    width: 100%;
+  }
+
+  .wrapper.wrapper-inner-20 .wrapper-inner {
+    padding-left: 0px !important;
+    mso-padding-left-alt: 0px !important;
+    padding-right: 20px !important;
+    mso-padding-right-alt: 20px !important;
+  }
+
+  .no-pad-for-small table th {
+    padding-left: 0px !important;
+    mso-padding-left-alt: 0px !important;
+    padding-right: 0px !important;
+    mso-padding-right-alt: 0px !important;
+  }
+
+  .large-pad-left table th {
+    padding-left: 0px !important;
+    mso-padding-left-alt: 0px !important;
+  }
+
+  .large-pad-right table th {
+    padding-right: 0px !important;
+    mso-padding-right-alt: 0px !important;
+  }
+
+  .max-width img {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .max-width img {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .button {
+    min-width: 132px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .standard-table td {
+    padding-bottom: 5px !important;
+    mso-padding-bottom-alt: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .power-bi.container-mooncake .header-section img {
+    height: auto !important;
+    max-height: 16px;
+    max-width: 100%;
+  }
+}</style>
+
+    <!--[if gte (gte mso 9)|(IE)]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <style>
+            li {
+                text-align:-webkit-match-parent;
+                display:list-item;
+                text-indent: -1em;
+            }
+
+            .alert span,
+            .arrow-link,
+            b,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            .heading-group th,
+            strong,
+            .card-table th,
+            .header-right-column,
+            .styled-table th,
+            .styled-table td,
+            .text-heading1,
+            .text-heading2,
+            .text-heading3,
+            .text-heading4,
+            .text-heading5,
+            table.button a,
+            .wrapper-inner a,
+            .wrapper-inner p {
+                font-weight: 400 !important;
+            }
+        </style>
+    <![endif]-->
+</head>
+
+
+
+<body class=3D" ltr" dir=3D"ltr" style=3D"width: 100% !important;min-width:=
+ 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;Margin: 0;p=
+adding: 0;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-si=
+zing: border-box;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &qu=
+ot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;padding-top: 0;=
+padding-right: 0;padding-bottom: 0;padding-left: 0;text-align: left;line-he=
+ight: 20px;font-size: 14px">
+    <div class=3D"preheader" style=3D"display: none !important;visibility: =
+hidden !important;opacity: 0;color: #f4f4f4;height: 0;width: 0;line-height:=
+ 1px;font-size: 1px;max-height: 0;max-width: 0;overflow: hidden;mso-hide: a=
+ll">Keep your data by upgrading your subscription.&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<=
+/div>
+
+  <table role=3D"presentation" class=3D"body " data-made-with-foundation=3D=
+"data-made-with-foundation" style=3D"border-spacing: 0;border-collapse: col=
+lapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;ver=
+tical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: =
+-1pt;background: #ffffff;height: 100%;width: 100%;color: #1a1a1f;font-famil=
+y: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif=
+;font-weight: 400;Margin: 0;line-height: 20px;font-size: 14px">
+    <tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;p=
+adding-left: 0;vertical-align: top;text-align: left">
+      <td class=3D"float-center" align=3D"center" valign=3D"top" style=3D"w=
+ord-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto=
+;border-collapse: collapse !important;padding-top: 0;padding-right: 0;paddi=
+ng-bottom: 0;padding-left: 0;vertical-align: top;text-align: center;color: =
+#1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;,=
+ Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-height: 20px;font-s=
+ize: 14px;float: none">
+        <center class=3D"main-container" style=3D"width: 100%;min-width: 64=
+0px">
+          <table role=3D"presentation" bgcolor=3D"#ffffff" align=3D"center"=
+ class=3D"float-center" style=3D"border-spacing: 0;border-collapse: collaps=
+e;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertica=
+l-align: top;text-align: center;mso-table-lspace: -1pt;mso-table-rspace: -1=
+pt;Margin: 0 auto;float: none">
+            <tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bot=
+tom: 0;padding-left: 0;vertical-align: top;text-align: left">
+              <td style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz=
+-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padding-t=
+op: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: to=
+p;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &=
+quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;lin=
+e-height: 20px;font-size: 14px">
+               =20
+
+<table role=3D"presentation" dir=3D"ltr" align=3D"center" class=3D"containe=
+r header-container section" style=3D"border-spacing: 0;border-collapse: col=
+lapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;ver=
+tical-align: top;text-align: inherit;mso-table-lspace: -1pt;mso-table-rspac=
+e: -1pt;background: #ffffff;width: 640px;Margin: 0 auto"><tbody><tr style=
+=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;verti=
+cal-align: top;text-align: left"><td style=3D"word-wrap: break-word;-webkit=
+-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !=
+important;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0=
+;vertical-align: top;text-align: left;color: #1a1a1f;font-family: Segoe UI,=
+ SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight=
+: 400;Margin: 0;line-height: 20px;font-size: 14px">
+    <table role=3D"presentation" align=3D"left" class=3D"wrapper outer-wrap=
+per text-left" style=3D"border-spacing: 0;border-collapse: collapse;padding=
+-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: =
+top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 1=
+00%"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;=
+padding-left: 0;vertical-align: top;text-align: left"><td class=3D"wrapper-=
+inner" style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: a=
+uto;hyphens: auto;border-collapse: collapse !important;padding-top: 0;paddi=
+ng-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-alig=
+n: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvet=
+ica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line-height: 2=
+0px;font-size: 14px;mso-padding-top-alt: 0;mso-padding-bottom-alt: 0">
+        <table role=3D"presentation" align=3D"left" class=3D"row header-sec=
+tion text-left" style=3D"border-spacing: 0;border-collapse: collapse;paddin=
+g-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align:=
+ top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding=
+: 0;width: 100%;position: relative;display: table"><tbody><tr style=3D"padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left">
+            <th class=3D"text-left small-12 large-12 columns first last" al=
+ign=3D"left" style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyph=
+ens: auto;hyphens: auto;border-collapse: collapse !important;padding-top: 2=
+4px;padding-right: 24px;padding-bottom: 24px;padding-left: 24px;vertical-al=
+ign: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Ro=
+boto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin=
+: 0 auto;line-height: 20px;font-size: 14px;width: 616px;mso-padding-top-alt=
+: 24px;mso-padding-bottom-alt: 24px"><table role=3D"presentation" style=3D"=
+border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0=
+;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso=
+-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%"><tbody><tr style=3D=
+"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical=
+-align: top;text-align: left"><th style=3D"word-wrap: break-word;-webkit-hy=
+phens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !imp=
+ortant;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;ve=
+rtical-align: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, Se=
+goeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 4=
+00;Margin: 0;line-height: 20px;font-size: 14px">
+                <img height=3D"20" width=3D"140" src=3D"https://aeocdn.azur=
+eedge.net/mediahandler/azure-emails-templates/production/shared/images/temp=
+lates/shared/images/logos/microsoft-azure-2x.png" alt=3D"Microsoft Azure" t=
+itle=3D"Microsoft Azure" class=3D"logo-microsoft-azure text-left" style=3D"=
+outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: =
+140px;max-width: 100%;clear: both;display: block;height: 20px">
+            </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+        </tr></tbody></table>
+    </td></tr></tbody></table>
+</td></tr></tbody></table>
+
+
+
+
+
+<table role=3D"presentation" align=3D"center" class=3D"container template-c=
+ontainer section" style=3D"border-spacing: 0;border-collapse: collapse;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: inherit;mso-table-lspace: -1pt;mso-table-rspace: -1pt;ba=
+ckground: #ffffff;width: 640px;Margin: 0 auto"><tbody><tr style=3D"padding-=
+top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: t=
+op;text-align: left"><td style=3D"word-wrap: break-word;-webkit-hyphens: au=
+to;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;pa=
+dding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-al=
+ign: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Ro=
+boto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin=
+: 0;line-height: 20px;font-size: 14px">
+    <table role=3D"presentation" class=3D"wrapper outer-wrapper" align=3D"c=
+enter" style=3D"border-spacing: 0;border-collapse: collapse;padding-top: 0;=
+padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text=
+-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%"><tb=
+ody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-=
+left: 0;vertical-align: top;text-align: left"><td class=3D"wrapper-inner" s=
+tyle=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyph=
+ens: auto;border-collapse: collapse !important;padding-top: 6px;padding-rig=
+ht: 0;padding-bottom: 12px;padding-left: 0;vertical-align: top;text-align: =
+left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica=
+ Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line-height: 20px=
+;font-size: 14px;mso-padding-top-alt: 6px;mso-padding-bottom-alt: 12px">
+            <center style=3D"width: 100%;min-width: 640px">
+                <table role=3D"presentation" align=3D"center" class=3D"row =
+float-center" style=3D"border-spacing: 0;border-collapse: collapse;padding-=
+top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: t=
+op;text-align: center;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding=
+: 0;width: 100%;position: relative;Margin: 0 auto;float: none;display: tabl=
+e"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;pa=
+dding-left: 0;vertical-align: top;text-align: left">
+                    <th class=3D"small-12 large-12 columns first last" styl=
+e=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens=
+: auto;border-collapse: collapse !important;padding-top: 6px;padding-right:=
+ 24px;padding-bottom: 12px;padding-left: 24px;vertical-align: top;text-alig=
+n: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvet=
+ica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-heig=
+ht: 20px;font-size: 14px;width: 616px;mso-padding-top-alt: 6px;mso-padding-=
+bottom-alt: 12px"><table role=3D"presentation" style=3D"border-spacing: 0;b=
+order-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;=
+padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt=
+;mso-table-rspace: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;pad=
+ding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-al=
+ign: left"><th style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hy=
+phens: auto;hyphens: auto;border-collapse: collapse !important;padding-top:=
+ 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;t=
+ext-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quo=
+t;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line-h=
+eight: 20px;font-size: 14px">
+                        <h1 style=3D"font-family: Segoe UI Semibold, SegoeU=
+ISemibold, Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sa=
+ns-serif;font-weight: 600;color: inherit;padding-top: 0;padding-right: 0;pa=
+dding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;line-height: 36p=
+x;word-wrap: normal;Margin-bottom: 16px;font-size: 28px;mso-line-height-alt=
+: 36px;-webkit-hyphens: none;-moz-hyphens: none;-ms-hyphens: none;hypens: n=
+one;letter-spacing: -.01em;-webkit-text-size-adjust: none">Upgrade now to k=
+eep building in Azure</h1>
+                        <p style=3D"color: #1a1a1f;font-family: Segoe UI, S=
+egoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: =
+400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margi=
+n: 0;text-align: left;line-height: 24px;font-size: 16px;Margin-bottom: 12px=
+;mso-line-height-alt: 24px;word-wrap: normal;-webkit-text-size-adjust: none=
+;mso-margin-bottom-alt: 12px"><strong style=3D"font-family: Segoe UI Semibo=
+ld, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;,=
+ Arial, sans-serif;font-weight: 600">Your free credit has expired, so we=E2=
+=80=99ve disabled your subscription and services.</strong> It's an easy fix=
+=E2=80=94just upgrade to a pay-as-you-go subscription to keep using all you=
+r configured services and data in place. You get:</p>
+                        <ul class=3D"list-items" style=3D"Margin-bottom: 15=
+px;mso-margin-bottom-alt: 15px;Margin-left: 17px;mso-margin-left-alt: 17px;=
+padding: 0px;mso-padding-alt: 0px;-webkit-padding-start: 0px">
+                            <li style=3D"font-size: 16px;line-height: 24px;=
+mso-line-height-alt: 24px;Margin-top: 4px;mso-margin-top-alt: 4px;Margin-bo=
+ttom: 4px;mso-margin-bottom-alt: 4px;Margin-left: 0px;mso-margin-left-alt: =
+0px;Margin-right: 0px;mso-margin-right-alt: 0px;text-align: -webkit-match-p=
+arent;display: list-item">12 months of popular products for <a href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure.micro=
+soft.com%2Femail%2F%3Fdestination%3D%252Fen-us%252Ffree%252F%252312-months-=
+free%26p%3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD0x=
+Mi1tb250aHMtZnJlZQ%253D%253D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu=
+%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C0%7C637389633620071207%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DLIqCFar38QLoF2o=
+BBK3LZOna7jfUSZ7sgpG9wfxR5c8%3D&amp;reserved=3D0" originalsrc=3D"https://az=
+ure.microsoft.com/email/?destination=3D%2Fen-us%2Ffree%2F%2312-months-free&=
+amp;p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD0xMi1=
+tb250aHMtZnJlZQ%3D%3D" shash=3D"mdFm1jyZNPMlHjmQG9k0ikNvFpk6aQJHq4Xd2Drx3el=
+fP1hemetfHwqD2577plklhskeUuJ0HEFECszTUyvZsaZBi13K8oNoAJq5J/uSRw0wg0USRV4FNW=
+c9NGyvuKSY4wX89N/u/VXA4bsa4pepNCe7iUCGY2jRR6ahDuNoxS4=3D" style=3D"color: #=
+0078d4;text-decoration: none;font-family: Segoe UI, SegoeUI, Roboto, &quot;=
+Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;padding: 0;text-al=
+ign: left;line-height: 20px;text-underline: none;mso-text-underline: none">=
+free</a>.</li>
+                            <li style=3D"font-size: 16px;line-height: 24px;=
+mso-line-height-alt: 24px;Margin-top: 4px;mso-margin-top-alt: 4px;Margin-bo=
+ttom: 4px;mso-margin-bottom-alt: 4px;Margin-left: 0px;mso-margin-left-alt: =
+0px;Margin-right: 0px;mso-margin-right-alt: 0px;text-align: -webkit-match-p=
+arent;display: list-item">More than 25 products that are <a href=3D"https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure.microsof=
+t.com%2Femail%2F%3Fdestination%3D%252Fen-us%252Ffree%252F%2523always-free%2=
+6p%3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1hbHdheX=
+MtZnJlZQ%253D%253D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc5=
+85c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373=
+89633620081206%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DLsDy8AamRzLfKX2v9oZ3Bzer1=
+w1Yk%2BADuTYqFOC%2BcOc%3D&amp;reserved=3D0" originalsrc=3D"https://azure.mi=
+crosoft.com/email/?destination=3D%2Fen-us%2Ffree%2F%23always-free&amp;p=3Db=
+T03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1hbHdheXMtZnJl=
+ZQ%3D%3D" shash=3D"jwmO6p7AXNdsY5+bmS077MpMOH+lSz2RQWV/0V7wY+G8DhMF48HJ8Eao=
+vtkaBxDwtc6Rwi3q9aRFJqVeCpmBpA5p0YPqGXlz36L2T/Y78hqBqwuwyCp1Iu/AnXhMJs7Hsvw=
+jdPfft7RXob0RBStPWsuig2Uqhd6UMKXkwzcufBY=3D" style=3D"color: #0078d4;text-d=
+ecoration: none;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neu=
+e&quot;, Arial, sans-serif;font-weight: 400;padding: 0;text-align: left;lin=
+e-height: 20px;text-underline: none;mso-text-underline: none">always free</=
+a>.</li>
+                        </ul>
+                        <p style=3D"color: #1a1a1f;font-family: Segoe UI, S=
+egoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: =
+400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margi=
+n: 0;text-align: left;line-height: 24px;font-size: 16px;Margin-bottom: 0;ms=
+o-line-height-alt: 24px;word-wrap: normal;-webkit-text-size-adjust: none;Ma=
+rgin-top: 12px;mso-margin-top-alt: 12px;mso-margin-bottom-alt: 0">For every=
+thing else, only pay for what you use each month. It=E2=80=99s easy to canc=
+el, any time.</p>
+                    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+                </tr></tbody></table>
+                <table role=3D"presentation" align=3D"center" class=3D"row =
+float-center" style=3D"border-spacing: 0;border-collapse: collapse;padding-=
+top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: t=
+op;text-align: center;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding=
+: 0;width: 100%;position: relative;Margin: 0 auto;float: none;display: tabl=
+e"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;pa=
+dding-left: 0;vertical-align: top;text-align: left">
+                    <th class=3D"small-12 large-12 columns first last" styl=
+e=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens=
+: auto;border-collapse: collapse !important;padding-top: 12px;padding-right=
+: 24px;padding-bottom: 12px;padding-left: 24px;vertical-align: top;text-ali=
+gn: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helve=
+tica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-hei=
+ght: 20px;font-size: 14px;width: 616px;mso-padding-top-alt: 12px;mso-paddin=
+g-bottom-alt: 12px"><table role=3D"presentation" style=3D"border-spacing: 0=
+;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: =
+0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1=
+pt;mso-table-rspace: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;p=
+adding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-=
+align: left"><th style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-=
+hyphens: auto;hyphens: auto;border-collapse: collapse !important;padding-to=
+p: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top=
+;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &q=
+uot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line=
+-height: 20px;font-size: 14px">
+                        <table role=3D"presentation" class=3D"button" style=
+=3D"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-righ=
+t: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left=
+;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: auto;Margin: 0"><tbod=
+y><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-le=
+ft: 0;vertical-align: top;text-align: left"><td style=3D"word-wrap: break-w=
+ord;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse:=
+ collapse !important;padding-top: 0;padding-right: 0;padding-bottom: 0;padd=
+ing-left: 0;vertical-align: top;text-align: left;color: #1a1a1f;font-family=
+: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;=
+font-weight: 400;Margin: 0;line-height: 20px;font-size: 14px"><table role=
+=3D"presentation" style=3D"border-spacing: 0;border-collapse: collapse;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width=
+: 100%"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom:=
+ 0;padding-left: 0;vertical-align: top;text-align: left"><td style=3D"word-=
+wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;bor=
+der-collapse: collapse !important;padding-top: 0;padding-right: 0;padding-b=
+ottom: 0;padding-left: 0;vertical-align: top;text-align: center;color: #fff=
+fff;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Ari=
+al, sans-serif;font-weight: 400;Margin: 0;line-height: 20px;font-size: 14px=
+;background: #0078d4;border: 0;border-radius: 2px"><a href=3D"https://nam02=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.com%=
+2Femail%2F%3Fdestination%3Dhttps%253A%252F%252Faccount.azure.com%252FSubscr=
+iptions%26p%3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mb=
+D1TdWJzY3JpcHRpb25z&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc=
+585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637=
+389633620081206%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzI=
+iLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DHpjyvp2KsOV5AD8QdA83xS%2=
+B0ZZFtVMNKNcU024Dc0Cc%3D&amp;reserved=3D0" originalsrc=3D"https://azure.mic=
+rosoft.com/email/?destination=3Dhttps%3A%2F%2Faccount.azure.com%2FSubscript=
+ions&amp;p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD=
+1TdWJzY3JpcHRpb25z" shash=3D"kJr+d4q4B6K6pDJXUnOVcgcpzxl0jGMms3kMQDSw5r6AJX=
+ADtTL7TtPfUV1LsTsMr9xdueL4mGMzuDeuvjnR2ywpbAc23sFEkUGzMTr1YAhwGE0v1lFXIewhO=
+tpZSn+Jr28Q/ay/wx05YTUZdPdAPVJwAXIwzAJLWD+e5lTPo5Y=3D" style=3D"color: #fff=
+fff;text-decoration: none;font-family: Segoe UI Semibold, SegoeUISemibold, =
+Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;fo=
+nt-weight: 600;padding: 12px 16px 12px 16px;text-align: left;line-height: 1=
+;text-underline: none;mso-text-underline: none;font-size: 16px;display: inl=
+ine-block;border: 0 solid #0078d4;border-radius: 2px;mso-border-alt: 8px so=
+lid #0078d4;mso-padding-alt: 0">Sign up for a new subscription &gt;</a></td=
+></tr></tbody></table></td></tr></tbody></table>
+                    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+                </tr></tbody></table>
+                <table role=3D"presentation" align=3D"center" class=3D"row =
+float-center" style=3D"border-spacing: 0;border-collapse: collapse;padding-=
+top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: t=
+op;text-align: center;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding=
+: 0;width: 100%;position: relative;Margin: 0 auto;float: none;display: tabl=
+e"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;pa=
+dding-left: 0;vertical-align: top;text-align: left">
+                    <th class=3D"small-12 large-12 columns first last" styl=
+e=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens=
+: auto;border-collapse: collapse !important;padding-top: 12px;padding-right=
+: 24px;padding-bottom: 12px;padding-left: 24px;vertical-align: top;text-ali=
+gn: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helve=
+tica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-hei=
+ght: 20px;font-size: 14px;width: 616px;mso-padding-top-alt: 12px;mso-paddin=
+g-bottom-alt: 12px"><table role=3D"presentation" style=3D"border-spacing: 0=
+;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: =
+0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1=
+pt;mso-table-rspace: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;p=
+adding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-=
+align: left"><th style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-=
+hyphens: auto;hyphens: auto;border-collapse: collapse !important;padding-to=
+p: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top=
+;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &q=
+uot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line=
+-height: 20px;font-size: 14px">
+                        <p style=3D"color: #1a1a1f;font-family: Segoe UI, S=
+egoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: =
+400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margi=
+n: 0;text-align: left;line-height: 24px;font-size: 16px;Margin-bottom: 12px=
+;mso-line-height-alt: 24px;word-wrap: normal;-webkit-text-size-adjust: none=
+;mso-margin-bottom-alt: 12px">
+                            We'll keep your subscription data before perman=
+ently deleting it on October 22, 2020. <strong style=3D"font-family: Segoe =
+UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, &quot;Helvetica Ne=
+ue&quot;, Arial, sans-serif;font-weight: 600">Please <a href=3D"https://nam=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.co=
+m%2Femail%2F%3Fdestination%3Dhttps%253A%252F%252Fportal.azure.com%252F%26p%=
+3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1wb3J0YWwuY=
+Xp1cmUuY29t&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243=
+e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738963362=
+0081206%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DY81yQINF3uF80AQh8LVVPjDvjahiV21m=
+REGequBGGVs%3D&amp;reserved=3D0" originalsrc=3D"https://azure.microsoft.com=
+/email/?destination=3Dhttps%3A%2F%2Fportal.azure.com%2F&amp;p=3DbT03NjE5ZmZ=
+hMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1wb3J0YWwuYXp1cmUuY29t" =
+shash=3D"iSgSyeZZN9oScGqPP7tUnAf/hvh5fE0OjO0NIiE+Fr7xCBrX5zWazrRBzArP0IvfUK=
+2cnky2jqDrWD9IHMao00obN33E1SY85sr2zeHcALnix/jMrhVz14SAEKbdiRSTn9usG/Job0idV=
+YCoVSIASxQEydCJsYlPrPt0jdCQwiM=3D" style=3D"color: #0078d4;text-decoration:=
+ none;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, R=
+oboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 600;paddi=
+ng: 0;text-align: left;line-height: 20px;text-underline: none;mso-text-unde=
+rline: none;Margin: inherit;mso-margin-alt: inherit">log in</a> and save an=
+y important data before then.</strong> Resume using your services with mini=
+mal interruption if you upgrade before October 22, 2020.
+                        </p>
+                       =20
+<p style=3D"color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;He=
+lvetica Neue&quot;, Arial, sans-serif;font-weight: 400;padding-top: 0;paddi=
+ng-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;li=
+ne-height: 24px;font-size: 16px;Margin-bottom: 0;mso-line-height-alt: 24px;=
+word-wrap: normal;-webkit-text-size-adjust: none;mso-margin-bottom-alt: 0">
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3Dhttps%253A%252F%252F=
+portal.azure.com%252F%2523blade%252FMicrosoft_Azure_Support%252FHelpAndSupp=
+ortBlade%252Fnewsupportrequest%252F%26p%3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0Z=
+S0xODE2ODlhNzZiN2ImdT1hZW8mbD1wb3J0YWwlM0FuZXctc3VwcG9ydC1yZXF1ZXN0&amp;dat=
+a=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%=
+7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389633620091203%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C1000&amp;sdata=3Da3iuxrUxW1%2BQQBL8y4cHR8GcBakIj6uYA%2FD%2B0tCnGgE%3=
+D&amp;reserved=3D0" originalsrc=3D"https://azure.microsoft.com/email/?desti=
+nation=3Dhttps%3A%2F%2Fportal.azure.com%2F%23blade%2FMicrosoft_Azure_Suppor=
+t%2FHelpAndSupportBlade%2Fnewsupportrequest%2F&amp;p=3DbT03NjE5ZmZhMi05NDFi=
+LTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1wb3J0YWwlM0FuZXctc3VwcG9ydC1yZXF=
+1ZXN0" shash=3D"bUH6dQfKJJdigw5QYo3xFiBo0y0DUHEBVlfEo4SKyjQOhm4GMcNJWwKy12k=
+elBR8YNRqUjfDx64OmUXsK1wgHqLAJZ3lXjKl8lRPX4KTmgQuFSLXYgHdTdhSdm/Qvvg7fWbh4J=
+gtp86rl9tAvGpt80TzaV7/agqUKhm+7u5ihQA=3D" style=3D"color: #0078d4;text-deco=
+ration: none;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&q=
+uot;, Arial, sans-serif;font-weight: 400;padding: 0;text-align: left;line-h=
+eight: 20px;text-underline: none;mso-text-underline: none;Margin: inherit;m=
+so-margin-alt: inherit">Submit a support ticket</a> if you need more help.
+</p>
+                    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+                </tr></tbody></table>
+                <table role=3D"presentation" align=3D"center" class=3D"row =
+float-center" style=3D"border-spacing: 0;border-collapse: collapse;padding-=
+top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: t=
+op;text-align: center;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding=
+: 0;width: 100%;position: relative;Margin: 0 auto;float: none;display: tabl=
+e"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;pa=
+dding-left: 0;vertical-align: top;text-align: left">
+                    <th class=3D"small-12 large-12 columns first last" styl=
+e=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens=
+: auto;border-collapse: collapse !important;padding-top: 12px;padding-right=
+: 24px;padding-bottom: 12px;padding-left: 24px;vertical-align: top;text-ali=
+gn: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helve=
+tica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-hei=
+ght: 20px;font-size: 14px;width: 616px;mso-padding-top-alt: 12px;mso-paddin=
+g-bottom-alt: 12px"><table role=3D"presentation" style=3D"border-spacing: 0=
+;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: =
+0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1=
+pt;mso-table-rspace: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;p=
+adding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-=
+align: left"><th style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-=
+hyphens: auto;hyphens: auto;border-collapse: collapse !important;padding-to=
+p: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top=
+;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &q=
+uot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line=
+-height: 20px;font-size: 14px">
+                        <p style=3D"color: #1a1a1f;font-family: Segoe UI, S=
+egoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: =
+400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margi=
+n: 0;text-align: left;line-height: 24px;font-size: 16px;Margin-bottom: 0;ms=
+o-line-height-alt: 24px;word-wrap: normal;-webkit-text-size-adjust: none;ms=
+o-margin-bottom-alt: 0">Thank you,<br>Your Azure team</p>
+                    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+                </tr></tbody></table>
+            </center>
+        </td></tr></tbody></table>
+</td></tr></tbody></table>
+                <table role=3D"presentation" dir=3D"ltr" align=3D"center" c=
+lass=3D"container footer-template" style=3D"border-spacing: 0;border-collap=
+se: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left=
+: 0;vertical-align: top;text-align: inherit;mso-table-lspace: -1pt;mso-tabl=
+e-rspace: -1pt;background: #ffffff;width: 640px;Margin: 0 auto"><tbody><tr =
+style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;=
+vertical-align: top;text-align: left"><td style=3D"word-wrap: break-word;-w=
+ebkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: colla=
+pse !important;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-le=
+ft: 0;vertical-align: top;text-align: left;color: #1a1a1f;font-family: Sego=
+e UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-w=
+eight: 400;Margin: 0;line-height: 20px;font-size: 14px">
+                  <table role=3D"presentation" class=3D"wrapper outer-wrapp=
+er footer-wrapper" align=3D"center" style=3D"border-spacing: 0;border-colla=
+pse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-lef=
+t: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-=
+rspace: -1pt;width: 100%;background-color: #f3f2f1"><tbody><tr style=3D"pad=
+ding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-ali=
+gn: top;text-align: left"><td class=3D"wrapper-inner" style=3D"word-wrap: b=
+reak-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-col=
+lapse: collapse !important;padding-top: 12px;padding-right: 0;padding-botto=
+m: 12px;padding-left: 0;vertical-align: top;text-align: left;color: #1a1a1f=
+;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial,=
+ sans-serif;font-weight: 400;Margin: 0;line-height: 20px;font-size: 14px;ms=
+o-padding-top-alt: 12px;mso-padding-bottom-alt: 12px">
+                    <center style=3D"width: 100%;min-width: 640px">
+
+
+<table role=3D"presentation" class=3D"row image-row" style=3D"border-spacin=
+g: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bott=
+om: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace=
+: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;dis=
+play: table"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bo=
+ttom: 0;padding-left: 0;vertical-align: top;text-align: left">
+    <th class=3D"small-12 large-12 columns first last" style=3D"word-wrap: =
+break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-co=
+llapse: collapse !important;padding-top: 12px;padding-right: 24px;padding-b=
+ottom: 0px;padding-left: 24px;vertical-align: top;text-align: left;color: #=
+1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, =
+Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-height: 20px;font-si=
+ze: 14px;width: auto;mso-padding-top-alt: 12px;mso-padding-bottom-alt: 0px"=
+><table role=3D"presentation" style=3D"border-spacing: 0;border-collapse: c=
+ollapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;v=
+ertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace=
+: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;padding-right: 0;pad=
+ding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left"><th st=
+yle=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphe=
+ns: auto;border-collapse: collapse !important;padding-top: 0;padding-right:=
+ 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;c=
+olor: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&=
+quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line-height: 20px;font-=
+size: 14px">
+        <table role=3D"presentation" class=3D"social-links" valign=3D"middl=
+e" style=3D"border-spacing: 0;border-collapse: collapse;padding-top: 0;padd=
+ing-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-ali=
+gn: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: auto">
+            <tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bot=
+tom: 0;padding-left: 0;vertical-align: top;text-align: left">
+                    <td style=3D"word-wrap: break-word;-webkit-hyphens: aut=
+o;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;pad=
+ding-top: 0;padding-right: 8px;padding-bottom: 0;padding-left: 0;vertical-a=
+lign: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, R=
+oboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margi=
+n: 0;line-height: 1;font-size: 14px">
+                        <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3D=
+https%253A%252F%252Fwww.facebook.com%252Fmicrosoftazure%26p%3DbT03NjE5ZmZhM=
+i05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIlM0FmYWNlYm9vaw%2=
+53D%253D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3f=
+b3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738963362009=
+1203%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik=
+1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DaFyG2DgXac72gR%2By4pgB%2BfTaT4vLDCk=
+gPk5pZ6ykVx8%3D&amp;reserved=3D0" originalsrc=3D"https://azure.microsoft.co=
+m/email/?destination=3Dhttps%3A%2F%2Fwww.facebook.com%2Fmicrosoftazure&amp;=
+p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXI=
+lM0FmYWNlYm9vaw%3D%3D" shash=3D"dEzBRYj87vJ7owLtU6bsFK5idpz0vpcqrDRA00n9QbR=
+f44EJvagWxIthMeamZFbgjeJDrM0cVlV1Utyacw5zMLnflbZKHs5izpQfR5vKTZC+AgFn8QhjQN=
+i3zCEpC287wEJrlkyxSs+5Z+opO41EDfKH/pB3kO2pp/8Y08d8k0w=3D" style=3D"color: #=
+605E5C;text-decoration: underline;font-family: Segoe UI, SegoeUI, Roboto, &=
+quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;padding: 0;te=
+xt-align: left;line-height: 20px;display: inline-block;text-underline: sing=
+le"><img height=3D"16" width=3D"auto" src=3D"https://aeocdn.azureedge.net/m=
+ediahandler/azure-emails-templates/production/shared/images/templates/share=
+d/images/logos/footer-facebook-4x.png" alt=3D"Facebook" title=3D"Facebook" =
+class=3D"social-facebook" style=3D"outline: none;text-decoration: none;-ms-=
+interpolation-mode: bicubic;width: auto;max-width: 100%;clear: none;display=
+: inline;border: none;height: 16px"></a>
+                    </td>
+                                                    <td style=3D"word-wrap:=
+ break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-c=
+ollapse: collapse !important;padding-top: 0;padding-right: 8px;padding-bott=
+om: 0;padding-left: 0;vertical-align: top;text-align: left;color: #1a1a1f;f=
+ont-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, s=
+ans-serif;font-weight: 400;Margin: 0;line-height: 1;font-size: 14px">
+                        <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3D=
+https%253A%252F%252Ftwitter.com%252Fazure%26p%3DbT03NjE5ZmZhMi05NDFiLTQzNGU=
+tOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIlM0F0d2l0dGVy&amp;data=3D04%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389633620101193%7CUnknown%7CTWFpbGZsb=
+3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C100=
+0&amp;sdata=3DNOwsK%2B1QFyrIT0x3BFRNhsmwN7hqgpDCmh8IWmzpjnE%3D&amp;reserved=
+=3D0" originalsrc=3D"https://azure.microsoft.com/email/?destination=3Dhttps=
+%3A%2F%2Ftwitter.com%2Fazure&amp;p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xOD=
+E2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIlM0F0d2l0dGVy" shash=3D"ZLp9kUND0PwgSixA7+=
+60thGo/YWxmllRvIcoQD67nSAUGKZ8R8mhTry4DSu6+EhLNXthcO5b48kePNA3+xYFfCJ0JlG5D=
+Eu9zkVivHLr/domR6eBPRxPWloHEqQDX/ZBxrXRLbCW3xfZEUvbBS73hkcvL6FwHkq1vqw/PisP=
+fs4=3D" style=3D"color: #605E5C;text-decoration: underline;font-family: Seg=
+oe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-=
+weight: 400;padding: 0;text-align: left;line-height: 20px;display: inline-b=
+lock;text-underline: single"><img height=3D"16" width=3D"18" src=3D"https:/=
+/aeocdn.azureedge.net/mediahandler/azure-emails-templates/production/shared=
+/images/templates/shared/images/logos/footer-twitter-4x.png" alt=3D"Twitter=
+" title=3D"Twitter" class=3D"social-twitter" style=3D"outline: none;text-de=
+coration: none;-ms-interpolation-mode: bicubic;width: 18px;max-width: 100%;=
+clear: none;display: inline;border: none;height: 16px"></a>
+                    </td>
+                                    <td style=3D"word-wrap: break-word;-web=
+kit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collaps=
+e !important;padding-top: 0;padding-right: 8px;padding-bottom: 0;padding-le=
+ft: 0;vertical-align: top;text-align: left;color: #1a1a1f;font-family: Sego=
+e UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-w=
+eight: 400;Margin: 0;line-height: 1;font-size: 14px">
+                        <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3D=
+https%253A%252F%252Fwww.youtube.com%252Fuser%252Fwindowsazure%26p%3DbT03NjE=
+5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIlM0F5b3V0dW=
+Jl&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585c8243e3fb3108d=
+8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389633620101193%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C1000&amp;sdata=3DMpTlz%2BspMeEgVl03%2FVnkAi8J9dNUKGH6sYr8f=
+rf3TqE%3D&amp;reserved=3D0" originalsrc=3D"https://azure.microsoft.com/emai=
+l/?destination=3Dhttps%3A%2F%2Fwww.youtube.com%2Fuser%2Fwindowsazure&amp;p=
+=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIl=
+M0F5b3V0dWJl" shash=3D"nFZlw+wKYwliscip5AuNJixFV8lW+L5XEoa68JJWp35dYD6hyXvh=
+ui50dlut5owYg4RwZAlBELlRxaUJ1z2hy3kFl22e5nbqj5E0g+HuYx5WxwpZX1LHPlsslZrd1ZM=
+jlvs2I8loQe54AmR1Yybso4VfhiAL/d9FvENHHR6MTsI=3D" style=3D"color: #605E5C;te=
+xt-decoration: underline;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helv=
+etica Neue&quot;, Arial, sans-serif;font-weight: 400;padding: 0;text-align:=
+ left;line-height: 20px;display: inline-block;text-underline: single"><img =
+height=3D"16" width=3D"24" src=3D"https://aeocdn.azureedge.net/mediahandler=
+/azure-emails-templates/production/shared/images/templates/shared/images/lo=
+gos/footer-youtube-4x.png" alt=3D"YouTube" title=3D"YouTube" class=3D"socia=
+l-youtube" style=3D"outline: none;text-decoration: none;-ms-interpolation-m=
+ode: bicubic;width: 24px;max-width: 100%;clear: none;display: inline;border=
+: none;height: 16px"></a>
+                    </td>
+                                    <td style=3D"word-wrap: break-word;-web=
+kit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collaps=
+e !important;padding-top: 0;padding-right: 8px;padding-bottom: 0;padding-le=
+ft: 0;vertical-align: top;text-align: left;color: #1a1a1f;font-family: Sego=
+e UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-w=
+eight: 400;Margin: 0;line-height: 1;font-size: 14px">
+                        <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3D=
+https%253A%252F%252Fwww.linkedin.com%252Fshowcase%252Fmicrosoft-developers%=
+26p%3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290Z=
+XIlM0FsaW5rZWRpbg%253D%253D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%=
+7Cf8c8bc585c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7=
+C0%7C637389633620111189%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DbRnT%2BE9Cesg4xj=
+lq%2FvbanGtztaZPTsbOw1vjwWEZUoU%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/azure.microsoft.com/email/?destination=3Dhttps%3A%2F%2Fwww.linkedin.com%2F=
+showcase%2Fmicrosoft-developers&amp;p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0=
+xODE2ODlhNzZiN2ImdT1hZW8mbD1mb290ZXIlM0FsaW5rZWRpbg%3D%3D" shash=3D"y76jqF8=
+HMAB/BlKGXlVZcem1sOsuHxXqrQccOtmps8F40gVhsEEcL2tN++llCLozKWLLWbcNKzhBA9mZWW=
+ueKShkxnBocsXRpo+KQ0MfBAumoln0kdFHSzF/UxY1CvktFFcYb9fL/2m84stwPCoqSlZS3Gt2+=
+VlguZwr7/QDuoY=3D" style=3D"color: #605E5C;text-decoration: underline;font-=
+family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-=
+serif;font-weight: 400;padding: 0;text-align: left;line-height: 20px;displa=
+y: inline-block;text-underline: single"><img height=3D"16" width=3D"16" src=
+=3D"https://aeocdn.azureedge.net/mediahandler/azure-emails-templates/produc=
+tion/shared/images/templates/shared/images/logos/footer-linkedin-4x.png" al=
+t=3D"LinkedIn" title=3D"LinkedIn" class=3D"social-icon" style=3D"outline: n=
+one;text-decoration: none;-ms-interpolation-mode: bicubic;width: 16px;max-w=
+idth: 100%;clear: none;display: inline;border: none;height: 16px"></a>
+                    </td>
+                                                </tr>
+        </tbody></table>
+    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+</tr></tbody></table>
+
+
+   =20
+<table role=3D"presentation" class=3D"row" style=3D"border-spacing: 0;borde=
+r-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padd=
+ing-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso=
+-table-rspace: -1pt;padding: 0;width: 100%;position: relative;display: tabl=
+e"><tbody><tr style=3D"padding-top: 0;padding-right: 0;padding-bottom: 0;pa=
+dding-left: 0;vertical-align: top;text-align: left">
+    <th class=3D"small-12 large-12 columns first last" style=3D"word-wrap: =
+break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-co=
+llapse: collapse !important;padding-top: 12px;padding-right: 24px;padding-b=
+ottom: 12px;padding-left: 24px;vertical-align: top;text-align: left;color: =
+#1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;,=
+ Arial, sans-serif;font-weight: 400;Margin: 0 auto;line-height: 20px;font-s=
+ize: 14px;width: auto;mso-padding-top-alt: 12px;mso-padding-bottom-alt: 12p=
+x"><table role=3D"presentation" style=3D"border-spacing: 0;border-collapse:=
+ collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0=
+;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspa=
+ce: -1pt;width: 100%"><tbody><tr style=3D"padding-top: 0;padding-right: 0;p=
+adding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left"><th =
+style=3D"word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyp=
+hens: auto;border-collapse: collapse !important;padding-top: 0;padding-righ=
+t: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left=
+;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neu=
+e&quot;, Arial, sans-serif;font-weight: 400;Margin: 0;line-height: 20px;fon=
+t-size: 14px">       =20
+        <p class=3D"margin-bottom-0" style=3D"color: #605E5C;font-family: S=
+egoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;fon=
+t-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-lef=
+t: 0;Margin: 0;text-align: left;line-height: 16px;font-size: 12px;Margin-bo=
+ttom: 0px !important;mso-line-height-alt: 16px;word-wrap: normal;-webkit-te=
+xt-size-adjust: none;mso-margin-bottom-alt: 0px !important">
+
+            <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fazure.microsoft.com%2Femail%2F%3Fdestination%3Dhttps%253A%=
+252F%252Fgo.microsoft.com%252Ffwlink%252F%253FLinkId%253D521839%26p%3DbT03N=
+jE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2ImdT1hZW8mbD1wcml2YWN5LXN0YXRl=
+bWVudA%253D%253D&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cf8c8bc585=
+c8243e3fb3108d8767ea63a%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389=
+633620111189%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D%2BtCOJEO7G2FNStJAgSUaiEteQ=
+mPN%2FtAuDLJXKoVBXFc%3D&amp;reserved=3D0" originalsrc=3D"https://azure.micr=
+osoft.com/email/?destination=3Dhttps%3A%2F%2Fgo.microsoft.com%2Ffwlink%2F%3=
+FLinkId%3D521839&amp;p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2=
+ImdT1hZW8mbD1wcml2YWN5LXN0YXRlbWVudA%3D%3D" shash=3D"czHVOQOpKw1mJWCKWAWErA=
+7NdczaHo7dTzYYdCTfqh8mVwQcK8/HuDA/mABJvUxE+VQioBgclHcC/0R37NR6aCW9ffaDMpLeP=
+KnN5jAv6fiqE0ZLwNrGWHap4M3pNPIRYmHcjI5SQbRI5lmt2QelUDyP/65AuSM1cfUads0XqSc=
+=3D" title=3D"Privacy Statement" style=3D"color: #605E5C;text-decoration: u=
+nderline;font-family: Segoe UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;=
+, Arial, sans-serif;font-weight: 400;padding: 0;text-align: left;line-heigh=
+t: 20px;display: inline-block;text-underline: single">Privacy Statement</a>=
+           =20
+        </p>
+        <p class=3D"margin-top-8" style=3D"color: #605E5C;font-family: Sego=
+e UI, SegoeUI, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-w=
+eight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: =
+0;Margin: 0;text-align: left;line-height: 16px;font-size: 12px;Margin-botto=
+m: 12px;mso-line-height-alt: 16px;word-wrap: normal;-webkit-text-size-adjus=
+t: none;Margin-top: 8px;mso-margin-top-alt: 8px">Microsoft Corporation, <sp=
+an class=3D"no-wrap" style=3D"display: inline-block;word-break: keep-all">O=
+ne Microsoft Way, =E2=80=8BRedmond, WA 98052=E2=80=8B</span></p>
+        <img height=3D"20" width=3D"94" class=3D"logo-microsoft" src=3D"htt=
+ps://aeocdn.azureedge.net/mediahandler/azure-emails-templates/production/sh=
+ared/images/templates/shared/images/logos/microsoft-logo-2x.png" alt=3D"Mic=
+rosoft" title=3D"Microsoft" style=3D"outline: none;text-decoration: none;-m=
+s-interpolation-mode: bicubic;width: 94px;max-width: 100%;clear: both;displ=
+ay: block;height: 20px">
+    </th>
+<th class=3D"expander" style=3D"word-wrap: break-word;-webkit-hyphens: auto=
+;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;padd=
+ing-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-alig=
+n: top;text-align: left;color: #1a1a1f;font-family: Segoe UI, SegoeUI, Robo=
+to, &quot;Helvetica Neue&quot;, Arial, sans-serif;font-weight: 400;Margin: =
+0;line-height: 20px;font-size: 14px;visibility: hidden;width: 0;padding: 0 =
+!important"></th></tr></tbody></table></th>
+</tr></tbody></table>
+
+                    </center>
+                  </td></tr></tbody></table>
+                </td></tr></tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+      <img height=3D"" width=3D"auto" src=3D"https://azure.microsoft.com/em=
+ailtrackingpixel/?p=3DbT03NjE5ZmZhMi05NDFiLTQzNGUtOTk0ZS0xODE2ODlhNzZiN2Imd=
+T1hZW8%3D" alt=3D"" role=3D"presentation" style=3D"outline: none;text-decor=
+ation: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;cle=
+ar: both;display: block">
+
+
+</body></html>=
+
+--=-Tsc6hIEpcoLzmonzOwa7vw==--

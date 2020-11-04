@@ -1,0 +1,238 @@
+Received: from MN2PR01MB5325.prod.exchangelabs.com (2603:10b6:404:b4::13) by
+ BN8PR01MB5314.prod.exchangelabs.com with HTTPS via
+ BN6PR2001CA0003.NAMPRD20.PROD.OUTLOOK.COM; Mon, 15 Jul 2019 11:51:35 +0000
+Received: from BL0PR01CA0018.prod.exchangelabs.com (2603:10b6:208:71::31) by
+ MN2PR01MB5325.prod.exchangelabs.com (2603:10b6:208:10f::26) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2073.14; Mon, 15 Jul 2019 11:51:33 +0000
+Received: from CY1NAM02FT029.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e45::202) by BL0PR01CA0018.outlook.office365.com
+ (2603:10b6:208:71::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2073.14 via Frontend
+ Transport; Mon, 15 Jul 2019 11:51:32 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=gmail.com; cometmail.mail.onmicrosoft.com; dkim=pass (signature
+ was verified) header.d=gmail.com;cometmail.mail.onmicrosoft.com; dmarc=pass
+ action=none header.from=gmail.com;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ gmail.com discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ CY1NAM02FT029.mail.protection.outlook.com (10.152.75.143) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.2032.15 via Frontend Transport; Mon, 15 Jul 2019 11:51:32 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1713.5; Mon, 15 Jul 2019 06:51:16 -0500
+Received: from esa1.hc50-71.r1.ces.cisco.com (35.160.62.18) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1713.5 via Frontend Transport; Mon, 15 Jul 2019 06:51:16 -0500
+X-IronPort-RemoteIP: 209.85.208.193
+X-IronPort-MID: 41222439
+X-IronPort-Reputation: -1.2
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: VALID_SOURCES
+X-IronPort-MailFlowPolicy: $ACCEPTED
+IronPort-PHdr: =?us-ascii?q?9a23=3AWgsq3x3H8v6dnSROsmDT+DRfVm0co7zxezQtwd?=
+ =?us-ascii?q?8Zse0eLPad9pjvdHbS+e9qxAeQG9mCsbQZ26GN4ujJYi8p2d65qncMcZhBBV?=
+ =?us-ascii?q?cuqP49uEgeOvODElDxN/XwbiY3T4xoXV5h+GynYwAOQJ6tL1LdrWev4jEMBx?=
+ =?us-ascii?q?7xKRR6JvjvGo7Vks+7y/2+94fcbglVmjaxe7N/IRa5oQjfssQdnJdvJLs2xh?=
+ =?us-ascii?q?bVuHVDZv5YxXlvJVKdnhb84tm/8Zt++ClOuPwv6tBNX7zic6s3UbJXAjImM3?=
+ =?us-ascii?q?so5MLwrhnMURGP5noHXWoIlBdDHhXI4wv7Xpf1tSv6q/Z91SyHNsD4Ubw4RT?=
+ =?us-ascii?q?Kv5LptRBPvjCkHMCU2/n/JhcxrkKJXuQyupxpmz4DWZ4GVMeRxf63afdMARm?=
+ =?us-ascii?q?pKQ8JdWiJdDo+gaocCCfcKM+RFoInnv1YBohuwCwevCu3y1DFHmmL70LYg3O?=
+ =?us-ascii?q?g9CwzLxhAsE84MvXnSsd77NL0SUeewzKTQyTXMcfRW0irm6IfUdRAhve2MVq?=
+ =?us-ascii?q?93fMrV10YvEBjFgUmXqYz5IzOZy+cAv3aA4upvUOKgkW8nqwVrrjezwccsj5?=
+ =?us-ascii?q?DEi4QIwV7H7SV02Jg5KcG8RUJhYtOpEIFcuz+GO4Z1WM8uXmVltSg8x7Ybo5?=
+ =?us-ascii?q?C0ZjIKx44ixxPHa/yIbYyI4hX7WeaUOzh4hXZldKu7hxaw7ESs0+P8WtSw3V?=
+ =?us-ascii?q?tEtCZFnd7MtncC1xzX9MeLUOdy/kCk2TqX1gDT7P9LIVwsmKbFN5IsxqQ8m5?=
+ =?us-ascii?q?kTvEjZACP6hEb7gLWLekgg9OWk8+Hnba/npp+YOY90kAb+MqE2l8y7H+s4NR?=
+ =?us-ascii?q?MOUHSc+eSgyL3v4E70TKtRg/05l6nWqpHaJcABqqGlBA9V154v6wyjADe+zN?=
+ =?us-ascii?q?QYgX4HIUpBdh2ZlYjpIVHPLOrmA/ihhVSsnyxmx+3aPrL8GJrNKnzDn636fb?=
+ =?us-ascii?q?pn9UFT1Rcznphj4MdpDL0AO/b0QUL9/ObVBR4hMgGy3/2vXNFw0ZgVXn6TW/?=
+ =?us-ascii?q?/DGKzXuF6MoOkoJr/fSpUSvWP5Jv9t/PXpkWNxzVsQerKi2ocLMSDiNvtjKk?=
+ =?us-ascii?q?SdJ3Hrh4FSQi8xogMiQbmz2xW5WjlJaiPpB/ox?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0FoGgCHaCxdWMHQVdFlHAEBAQQBAQc?=
+ =?us-ascii?q?EAQGBZwKBE4ECJQEBgUcUFIQcG4ECgl6OaYEjiiomdEaEJwOJSYErPAkBAQE?=
+ =?us-ascii?q?BAQEBAQEIBQgiAQEChyQjOQUNAQMBAQEDAQECAQMCAQECAwEXDAoGKYU8CQy?=
+ =?us-ascii?q?CRgEEAQEBAQMDAwEBDAERTTswAQEBAQEBAQEBAR8CLSkBQx0BGx4DEgkHAzQ?=
+ =?us-ascii?q?CJAERAQUBCBqFHwEDHZt+gx88iyGBFQUBF4J6BYRAChknDV8DgTwCBxKBIgG?=
+ =?us-ascii?q?LXoIWNoMBPIR6BQESAYMpglgEgS0BAQGKVYkulS8BBgIBPoFACRRhhzmDEAJ?=
+ =?us-ascii?q?LhWKCMxuCLZVdpR4PIYFHZSNxcIEBbYFOgUp3g3GKcyIwjWiCQwEB?=
+X-IPAS-Result: =?us-ascii?q?A0FoGgCHaCxdWMHQVdFlHAEBAQQBAQcEAQGBZwKBE4ECJ?=
+ =?us-ascii?q?QEBgUcUFIQcG4ECgl6OaYEjiiomdEaEJwOJSYErPAkBAQEBAQEBAQEIBQgiA?=
+ =?us-ascii?q?QEChyQjOQUNAQMBAQEDAQECAQMCAQECAwEXDAoGKYU8CQyCRgEEAQEBAQMDA?=
+ =?us-ascii?q?wEBDAERTTswAQEBAQEBAQEBAR8CLSkBQx0BGx4DEgkHAzQCJAERAQUBCBqFH?=
+ =?us-ascii?q?wEDHZt+gx88iyGBFQUBF4J6BYRAChknDV8DgTwCBxKBIgGLXoIWNoMBPIR6B?=
+ =?us-ascii?q?QESAYMpglgEgS0BAQGKVYkulS8BBgIBPoFACRRhhzmDEAJLhWKCMxuCLZVdp?=
+ =?us-ascii?q?R4PIYFHZSNxcIEBbYFOgUp3g3GKcyIwjWiCQwEB?=
+X-IronPort-AV: E=Sophos;i="5.63,493,1557205200"; 
+   d="scan'208,217";a="41222439"
+X-MGA-submission: =?us-ascii?q?MDFZVWK2cKy7e8rBd+GfOfnqURIMxj5M0j0F0L?=
+ =?us-ascii?q?CBT+1OFZ7MiMpVYeK+10GWBjY2m8Eboq/GJSBwT+73hXQPqo3t6+jePk?=
+ =?us-ascii?q?m04d/JN4M0g2zqF3AcbizIoLPj3xWqbZA1wix3J74Uwg3w0Xth10Sz7b?=
+ =?us-ascii?q?OjjwKxoreRzbIY/wG4nCHNhA=3D=3D?=
+Received: from mail-lj1-f193.google.com ([209.85.208.193])
+  by esa1.hc50-71.r1.ces.cisco.com with ESMTP/TLS/AES128-GCM-SHA256; 15 Jul 2019 06:50:51 -0500
+Received: by mail-lj1-f193.google.com with SMTP id p17so15888653ljg.1
+        for <Jerry.Teng@utdallas.edu>; Mon, 15 Jul 2019 04:50:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=sFQr+SOtOsbs2YbZazkOaBZHPd1cTv5xg/4CNHIdvpQ=;
+        b=dgkNXkbCY89CKDJkAZDpHyMDTe5PKnHSHJwRO2BQiYd2L7WGbUJ5LvWXGfNT5SR1xq
+         KyE9OaMKanBsoccSs7eaYkdQMSU5VpFSiTuK1HWCxv+FJ6rLusxaM+6buGrgCS3kqyh9
+         Uflbx8iwAbxqwErvhcEo06KQi+6t1PfHljqYJgKyOXHFK/3RfsRZ6PnkQCJ1TGg99H21
+         oOZFJc+yvCKICV/hg/tPY44bVJitSQhA90/0GDdzLGFH3H8lLYt9CcDuaz//F6I7pxpl
+         /9GAgEEtg3i7SwB/YZUsgWdcvsM9pm5HG4aCc/h+8cEqcu8fW6z53i9unEgmoGI8fwTx
+         dMBg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=sFQr+SOtOsbs2YbZazkOaBZHPd1cTv5xg/4CNHIdvpQ=;
+        b=onH979cPLRAwCBJTAAstNAc16Q83/uoaDk/fum24Xvm8gHakWg60tvFk3Dn/hLIAeR
+         qkaZw9tOS9PF98pGFOC7hDOpx7J4hZ1RsTUhB+MqKEjJbwUDChVAjJoCKZVk1aFq0rpK
+         dzdgroLsbYvYFDwcoJBSxr+agLJZJP852J9FS73WQy4jMOQ1ZKHw1MbjnCoCwjubdchN
+         mH6pNwX7TX1FDCoJ1Em5cXJ5wXTRJSzm3ZONY3+qqT9G0ngvL6Lo26SRFJrzqEYe5DUV
+         dAgqWCPVl/mgusOHYMoTra4+iFoKdFG8jlMk3akdNhKIouLMN9V/PnxfE5VcSzPHLPx6
+         NNMg==
+X-Gm-Message-State: APjAAAXjgulMEp2Rbp5O99ITHi1xWBoJCWQcOkkPfqimnYMwFXEA2jVp
+	Ji8hdZcA2uMxVNLDKCXxqr7wJKxXajOANAXqGN8=
+X-Google-Smtp-Source: APXvYqzXpDWMbtA20dKJAkZlxW+2AebSBwgaOqvwdHqjQhZQXp9I923UoOpc2+4f2dlRdm62pL54nhg6xnCQko1+ShE=
+X-Received: by 2002:a2e:9198:: with SMTP id f24mr14083187ljg.221.1563191449720;
+ Mon, 15 Jul 2019 04:50:49 -0700 (PDT)
+From: leo scott <leoscott182@gmail.com>
+Date: Mon, 15 Jul 2019 04:50:38 -0700
+Message-ID: <CAJ4Cbk3UAHgriGN3ygcsORik6XgH6k2TuJ8FFt0Sy-KRY+RGGg@mail.gmail.com>
+Subject: STUDENT PART-TIME JOB OFFER(R)
+To: Undislosed Recipients <leoscott182@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000013a019058db6df32"
+Return-Path: leoscott182@gmail.com
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Jul 2019 11:51:32.4423
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ de336ccd-bb06-4ec5-38a0-08d7091ac7f0
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT029.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT029.eop-nam02.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;IPV:NLI;CTRY:US;EFV:NLI;SFV:SPM;SFS:(10001)(4636009)(2980300002)(189003)(199004)(8156004)(5660300002)(71190400001)(413944005)(55446002)(6666004)(356004)(42186006)(61266001)(86362001)(126002)(53936002)(33964004)(16586007)(22186003)(68736007)(486006)(55236004)(476003)(216553004)(69596002)(95326003)(26005)(498394004)(6200100001)(76482006)(156004)(73392003)(58800400005)(81166006)(59536001)(1411001)(81156014)(8936002)(8676002)(6862004)(305945005)(336012)(1096003)(8576002)(82202003)(10480200003);DIR:INB;SFP:;SCL:5;SRVR:MN2PR01MB5325;H:webmail.utdallas.edu;FPR:;SPF:SoftFail;LANG:en;PTR:InfoDomainNonexistent;MX:1;A:1;CAT:SPM;
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: de336ccd-bb06-4ec5-38a0-08d7091ac7f0
+X-Microsoft-Antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(7168020)(4627221)(201703031133081)(8559020)(8990200)(5600148)(711020)(4605104)(4709080)(1401327)(2017052603328);SRVR:MN2PR01MB5325;
+X-MS-TrafficTypeDiagnostic: MN2PR01MB5325:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:269;
+X-MS-Exchange-Organization-SCL: 5
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Jul 2019 11:51:32.3432
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: de336ccd-bb06-4ec5-38a0-08d7091ac7f0
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR01MB5325
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.4629966
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2073.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:1;ex:0;auth:0;dest:J;ENG:(20160513016)(750119)(520011016)(944506356)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?bW1kNTE4R04zU3NUbk1Mc283WHBwaWQwV1c5NFdzMTl5UTVyQXYyTE56Z3Jp?=
+ =?utf-8?B?OHZpV3ZGeVN6bVI1NG04Mmpab1NqOHlxVVBtam5Pd0I0UVIva3ZpeHUzYyta?=
+ =?utf-8?B?VmF4alUrY1ZLRDVQTHBKZWxtR2Ryc0ZOV2NxZjZmSWlHajRVTzV4WlRYTlpP?=
+ =?utf-8?B?bEpGM1hlVmRZUVBHUXUxWkhyWUNxU3k2RkoybDFMWkl2dU9kZnRJZFhuejMx?=
+ =?utf-8?B?U2tsdk9aU25pa0syMVQrRk5rNDB0MFAxMWQ1NmdjSmFoV28vRHV5dzFLbWpj?=
+ =?utf-8?B?VlVZVUVWZ2o3NXpXMTRvcFN5eEcwVC9CQkFUem96amRYNEhhdGhhNDJ4bmFU?=
+ =?utf-8?B?VFFBdWNjTVB4RUVXdG9pSjZNdHM2NXFTMTRvUCtaQWdzdXM3aGJuT0hYV3oy?=
+ =?utf-8?B?RDlWN29Db0c2UXl0N2pET2djQThYTitXSzhYYkIwamxsaHpMWnZsZFFuaVhM?=
+ =?utf-8?B?bmlYVlBoZ0ZGQnZwdWZmZkJUVXFpQTNZV1lreUhic2YxNW9IVVZzTUpCekhm?=
+ =?utf-8?B?Z3Z3TGZGYzEwcVMwZzJvckgwdExJNnVrVEpIN0o4aEdnL002elR1TGM0SExh?=
+ =?utf-8?B?LzhvQnI5MmVPQVRZVnUwUmtPQU91UFd2OHo1TmZTTGJ3eVo4ek1LSmh5ZGps?=
+ =?utf-8?B?U2czblhyWk1RUC83cEJOMW05c2FZSlhubHB6TVowQjVnSnZvb2RpMFN6OVFn?=
+ =?utf-8?B?b0x1a0w0UFVJblprWk5UaTRqQmtlVFkvaWF0YWhLODlTMW16WGpMV2EvZnhF?=
+ =?utf-8?B?Uk5MN09hT3lFSkw1ZjNEeVVuSk51c2FmUjZoMmhNVEhNTG0veUlMTkVGS283?=
+ =?utf-8?B?OTZYVnJsdk96Y3AvbFMzSDVabDRFUVdZZ0tQQWZLaEpUcTVQT3FIQjYyUm1l?=
+ =?utf-8?B?bmM1d0t3d2hjSzZKWVh4cnFNY2ZFU244czdjNWZYdlpUdnEvb3FYVnE1QTFQ?=
+ =?utf-8?B?MXZib2drNUlTVHRCWS9UYTE5L2VWY0Z1TE41NUdDMWswN2JRc2x0d3dML3VX?=
+ =?utf-8?B?c0Y2OTdzYTczVzlKdVBrZlcrU0dDYTZKeVJKaTFmU3FuUDhmb0JxK2FqQVhF?=
+ =?utf-8?B?L3RqbEVMbmlrSEcvUDdDVHo1a25mSnhNbjMvWEI0ZG00bUpORWFiLzJsSTMv?=
+ =?utf-8?B?MkM0bThDTDN4VklHNE5vMHkwOFhQSm9UN3VmL3BxL0VxNEI1eDJQOWVhcm1v?=
+ =?utf-8?B?QkZnM1JpWUkyUllwamtFLzJSSFNiUGxlK2MrbUxZZ3MzMVQyVlVnRHVwczZm?=
+ =?utf-8?B?dER4RDdxY3BoK25BbnRtL1dJUSsxT2lmQ0R2eDVreEt1T1dwV0NZK1g5Y044?=
+ =?utf-8?B?N1BGMVBqM2dybzhCbFYzUHgydkxQTGtpYUVqVkZrZWZuRmY3Q25pTkJ5dkNz?=
+ =?utf-8?B?R2JuZ25OcDYwb09pMnFlTTNabHBweitBQnBIdGd3ZDUxRStyT0kreTJkSjBU?=
+ =?utf-8?B?TlpRQjRBNjlGQTZkVEdQZkhYYlBKbjdrczRPc0ZtSWwzQUJkRGNSL2ViMmhJ?=
+ =?utf-8?B?ZzI4UTkrU0lER1JpVytwVzJjVXA0YklMWmhxQytPVlN2VHVUR2tid3dEOFRw?=
+ =?utf-8?B?VWVOVUtPbmh5TVRvQ2pZOC96cWtuY0RzR1dXc1B3TzdNWUZaaGNBM3V4WldE?=
+ =?utf-8?B?SUlVbm9pZWtkUTB6MFM3ODh6RHhrVmdqUG9pQTJmMXk3ZXhSZXZQSlNGelBm?=
+ =?utf-8?B?L1dCYUtkZ1FkNUVJaTVpSkhBeFhsV0srT2tMaGxwWFkxcTlLa0Z1RXpLMm53?=
+ =?utf-8?B?Tk82dGJ4MGFja3hKblhkRWk1d1FreXhIUk5lQk9KenFIY0J5Ny9LcEREcXRa?=
+ =?utf-8?Q?4/tYj4B9CEUkhkBVc7M4V9VjAhJPV1EOgQwSo=3D?=
+MIME-Version: 1.0
+
+--00000000000013a019058db6df32
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear  Student,
+
+      We got your contact through your school database and I'm happy to
+inform you that
+our reputable company Elkay Manufacturing Inc=C2=AE,
+is currently running a student empowerment programme.
+This programme is to help loyal and hardworking students like you
+ secure a part time job which does not deter you from doing any other,
+ you just need a few hours to do this weekly and with an attractive weekly
+salary.
+
+KINDLY EMAIL BACK WITH IF YOU ARE INTERESTED IN THIS JOB POSITION.
+
+Kind Regards,
+
+*Leo Scott*,
+HR/Recruit Manager/Consultant
+Elkay Manufacturing Inc=C2=AE
+
+--00000000000013a019058db6df32
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr"><div><font face=3D"times new roman, serif">Dear&nbsp; Studen=
+t,</font></div><div><font face=3D"times new roman, serif"><br></font></div>=
+<div><font face=3D"times new roman, serif">&nbsp; &nbsp; &nbsp; We got your=
+ contact through your school database and I'm happy to inform you that&nbsp=
+;</font></div><div><font face=3D"times new roman, serif">our reputable comp=
+any Elkay Manufacturing Inc=C2=AE,&nbsp;</font></div><div><font face=3D"tim=
+es new roman, serif">is currently running a student empowerment programme.&=
+nbsp;</font></div><div><font face=3D"times new roman, serif">This programme=
+ is to help loyal and hardworking students like you</font></div><div><font =
+face=3D"times new roman, serif">&nbsp;secure a part time job which does not=
+ deter you from doing any other,</font></div><div><font face=3D"times new r=
+oman, serif">&nbsp;you just need a few hours to do this weekly and with an =
+attractive weekly salary.</font></div><div><font face=3D"times new roman, s=
+erif"><br></font></div><div><font face=3D"times new roman, serif">KINDLY EM=
+AIL BACK WITH IF YOU ARE INTERESTED IN THIS JOB POSITION.</font></div><div>=
+<font face=3D"times new roman, serif"><br></font></div><div><font face=3D"t=
+imes new roman, serif">Kind Regards,</font></div><div><span style=3D"font-f=
+amily:&quot;times new roman&quot;,serif"><br></span></div><div style=3D"fon=
+t-size:12.8px"><span style=3D"font-size:small;font-family:&quot;times new r=
+oman&quot;,serif"><b>Leo Scott</b>,</span><br></div><div><font face=3D"time=
+s new roman, serif">HR/Recruit Manager/Consultant</font></div><div><font fa=
+ce=3D"times new roman, serif">Elkay Manufacturing Inc=C2=AE</font></div></d=
+iv>
+
+--00000000000013a019058db6df32--

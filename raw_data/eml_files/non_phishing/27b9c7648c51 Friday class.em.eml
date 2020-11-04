@@ -1,0 +1,576 @@
+Received: from BL0PR01MB4819.prod.exchangelabs.com (2603:10b6:208:73::32) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 19 Oct 2020 02:38:11
+ +0000
+Received: from DM6PR02CA0114.namprd02.prod.outlook.com (2603:10b6:5:1b4::16)
+ by BL0PR01MB4819.prod.exchangelabs.com (2603:10b6:208:73::32) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.27; Mon, 19 Oct 2020 02:38:07 +0000
+Received: from CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:5:1b4:cafe::d3) by DM6PR02CA0114.outlook.office365.com
+ (2603:10b6:5:1b4::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.20 via Frontend
+ Transport; Mon, 19 Oct 2020 02:38:06 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=UTDallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ CY1NAM02FT027.mail.protection.outlook.com (10.152.75.159) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3477.21 via Frontend Transport; Mon, 19 Oct 2020 02:38:06 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Sun, 18 Oct 2020 21:38:05 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Sun, 18 Oct 2020 21:38:05 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 7C0F1C000053; Sun, 18 Oct 2020 21:38:05 -0500 (CDT)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id 09429C000052
+	for <codeburners@lists.utdallas.edu>; Sun, 18 Oct 2020 21:37:59 -0500 (CDT)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=Bhadrachalam.Chitturi@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  Bhadrachalam.Chitturi@utdallas.edu designates 40.107.92.50 as
+  permitted sender) identity=mailfrom; client-ip=40.107.92.50;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="Bhadrachalam.Chitturi@utdallas.edu";
+  x-sender="Bhadrachalam.Chitturi@utdallas.edu";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16
+  ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: xND0F6O07WvbGXjnwLE8k352CRQWnGJ3f78wRQ8rPOszT21f4DX6T34f35b0/qx2SxJx+Ycdo0
+ 7J9wGp+11W6duuhg8M2/wy0Ks0pJaN6rnZWWT4mPQo0wnRdipWypPQldClZS2Bn7aBYjfb1igl
+ kZ2/y6GMdrThF/NrqwI2FBH1K34q+neA5Pk/LNkj8lojOJ4rhn//r1vTz1YTkbas+GlIRejpAi
+ sxCSmeUDHiZN/pviX4och3HDX3FThmhAqasacVSFxEMe73QQWxdxvdoE5zZeEwLkbVzMEysi2/
+ jlQ7nLGKiWw9hLu/XNZW5eSH
+X-IronPort-RemoteIP: 40.107.92.50
+X-IronPort-MID: 1154452
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0AQAgD9+oxfhzJcayhgDnuCcgEuUWIVLCwhBwgsCo04i?=
+ =?us-ascii?q?BSaPIFbAwsCCQEBAQEBAQEBAQQBAwEYAQ4GAgQBAYRKAoIMJQE4EwIDAQEBA?=
+ =?us-ascii?q?wIDAQEBAQEEAQEBAgEBAgMCAgETAQEBgQFggQIBgUYBgU0LAzEBC4I3IoMZA?=
+ =?us-ascii?q?QEBAQMBES4BAQcWGw8CAQgRBAEBLwImCh0IAgQTCAYUgwQBgm0PAQIMoFQBg?=
+ =?us-ascii?q?Sg+AiMBEi0BAQIJgQUpiGh0gTSDBAEBBYFGQoN4AQmBPwcJgSEXgVONQD6BV?=
+ =?us-ascii?q?IIdMD6CXAMBF4EMPCsNgnQcgiyaYYFECI1HCY4BAwQDgmqETYJfgViLFIZ7g?=
+ =?us-ascii?q?xaKCZQxkzGKc5U6AgQCBAUCEAWBayEsgS1yWoJdCToKAQIBAg0BAgICAQECA?=
+ =?us-ascii?q?QEIAQEBAY42g1dqg2+FPz5DMTgCBgoBAQMJfIw7AYEQAQE?=
+IronPort-PHdr: =?us-ascii?q?9a23=3APKkOHxFjPe15Z8Iry4cYh51GYnF86YWxBRYc79?=
+ =?us-ascii?q?8ds5kLTJ76ps2ybnLW6fgltlLVR4KTs6sC17OJ9f+4EjBfqb+681k6OKRWUB?=
+ =?us-ascii?q?EEjchE1ycBO+WiTXPBEfjxciYhF95DXlI2t1uyMExSBdqsLwaK+i764jEdAA?=
+ =?us-ascii?q?jwOhRoLerpBIHSk9631+ev8JHPfglEnjWwba5wIRmsrwjdqsYajIRgJ60s1h?=
+ =?us-ascii?q?bHv3xEdvhMy2h1P1yThRH85smx/J5n7Stdvu8q+tBDX6vnYak2VKRUAzs6PW?=
+ =?us-ascii?q?874s3rrgTDQhCU5nQASGUWkwFHDBbD4RrnQ5r+qCr6tu562CmHIc37SK0/VD?=
+ =?us-ascii?q?q+46t3ThLjlSEKPCM7/m7KkMx9lKJVrgy8qRxjzYDaY4+VO/h/fqzBctwXXm?=
+ =?us-ascii?q?9BUtpNWyFbHo+wc5UDAuwcNuhYtYn9oF4OoAOwCQSyBOPvyyNIhmPr3a0g0u?=
+ =?us-ascii?q?QtCRzN0REgH90UrXvUts/6O7sSUe+vyKnH1zDDY/1L0jr69YXIcgouruyWXb?=
+ =?us-ascii?q?1qbcXRyVMgFwffgVWVs4DoITOV1uURs2iH8upgT+OvhnUppA9vrDag3MMsio?=
+ =?us-ascii?q?3TiYIO0FzL6zh2wJssKNC+VUV0bsKqHoFKuCGGK4t5XNkiQ2dwtSsn1rELuI?=
+ =?us-ascii?q?C2cTQLxZk62hLTdeKKfoqK7x79SeudPSp1iXB5dL6jhxu//lasxOP9W8Wo0l?=
+ =?us-ascii?q?tHrDZJn9fSun0J2RHe7NWMRPV6/kekwzmP1gbT5/lEIU8uiaXbKIAuwqQqlp?=
+ =?us-ascii?q?UJt0TDHTX6l1nxjK+TcEgv5+um6/z/b7jpupOQLZJ4hh38P6g0nsGzH/40Pw?=
+ =?us-ascii?q?gSU2SD/emx1qfv8En9TblQkPE6jrTVvIrHKcgHqaO1GxFZ34c/5xuxCjqqzc?=
+ =?us-ascii?q?gUkmIGIV9AYh2Lk4bkNlTKLfzlCPqyhkqgnCttyvvbJLPuGI/NIWLGkLr5fb?=
+ =?us-ascii?q?Zy9UpcyA0rwN5H+59aDawNLO7qVkLsrNLVDAY1MwuvzOn5Etl90Z4eWX6UDa?=
+ =?us-ascii?q?+eLaPSt0KH6vg3I+mWY48VpCjyJOQ55/7vin85n0URfa603ZsLbHC4GfNmI0?=
+ =?us-ascii?q?aDbXXwhdcBFH8Gvgs4TOP0lF2PSTFea2qoU64h+j02CpiqAIPdSoy3gLGNwD?=
+ =?us-ascii?q?+3HphMaWBHDlCMH23od4KBW/oUdS+SItVunSEeVbe7V4Ah1QuhtAvgxLpiNO?=
+ =?us-ascii?q?bZ5C0YtZP/1Nhp+u3TjxAy+CdpD8SBzm6CVWV0nmcSSD8txqxwv1Fyykqb3a?=
+ =?us-ascii?q?hin/NYDcBT5+9OUgoiKZHcyPF1BM7pVQLcZNeJTkipQs+9ATwqStIxwsQOY1?=
+ =?us-ascii?q?pmG9m4kxDDwzelDKURl7yPHpM06bjQ0GbsKMZgmD760/xrhF4qT8FSL2urnL?=
+ =?us-ascii?q?VX8wnIG5WPjlmVnqKufL9a0SLQvi/Xxm2CsUtFSgh9S77tWXEEelCQsMj170?=
+ =?us-ascii?q?fGRqToBLg6ZFhv08mHf+Fhatz1kUhcRbOrEtTXb3i4kGe5AR+NjPvYRorjd3?=
+ =?us-ascii?q?8U1yXUDEEB1SsT/GqaKBI/Lhqdj2vaCDV1U1/jfhW/oqFFtHqnQxpsnEmxZE?=
+ =?us-ascii?q?p72u/toERHrOGAS/4VwrMPsTsgrDMxJlumwtbKEIra9Qd6df8aYdhhvQsekD?=
+ =?us-ascii?q?6fthR9O4zmJKdn1RYFawoih0r1zF1sD5lY180jrXck1g13fIiY2V9bfjiY1J?=
+ =?us-ascii?q?T5P/v8Kmju4A21aobLxl3X1NKf4eEC5Olh8QfZsQqkF1Qv/zBc6/cIjibO3p?=
+ =?us-ascii?q?zRF0JSXIn4CAA3/EQn++ifPm88/4PRxTtnNqzm+jPF3tsoAqMixHPCN591MK?=
+ =?us-ascii?q?qIDgb5E8QeDs3oA+wrh0S0dBMsIfxe/aowNtjgevebkKKmJ+dvmju6gH8PvN?=
+ =?us-ascii?q?g7ixrTsXsmDLOQl58eppPQlhOKTTL9kEusvojslIZIaCtTVmuzxC74BZJAM6?=
+ =?us-ascii?q?h7fIIFE2CrcIW8wtRzgYKoWmYNqAblXgtZnp7zP0fKPDmflUVK2E8aoGKqg3?=
+ =?us-ascii?q?611DUu1TEi8vfDhWmSheX6dB8XfGVMQToH7x+kLI6qgtQdREXtYRIukU7vz0?=
+ =?us-ascii?q?bzy7JSr6R2K2DWB2xIfjTqMntjerasurOGZ8dUrp4krG8ENYb0KUDfUbP7rx?=
+ =?us-ascii?q?YAhmnJH2JS3jkwdzius5C/tBx7lH6ANndbsWbVcMV0zAyZ6dDBD600vHJOVG?=
+ =?us-ascii?q?xzjj/ZAUK5Nt+i8ICPj5n0tea6RjHpRthJfCLs14/FqDqj6DggH0ikh/7q0I?=
+ =?us-ascii?q?6Cc0BywWrh2tJtTymNsBvsftyhyfGhKew+NkhwWA2gs4wrQMcm1NN33cxY2G?=
+ =?us-ascii?q?BG1MnNuyNfziGrd40cgPybDjJFRCZXkYOPplG9gAs7aCrOnt6xV23BkJI5O5?=
+ =?us-ascii?q?/mPSVOnHp6tp8CCb/KvuZNxXIn+wPh/wyNOaAvzHBBmZ5MoDYbm79b4gN1l3?=
+ =?us-ascii?q?fEW+lAExUAZn6+0EjYp9G4p6FKaGv9aqC+2Axmh9e9AbqeowZaHnHkZpMlGi?=
+ =?us-ascii?q?w25cJ6VTCEmDj67oWuIYiCXZcorhSR1iz4oa1QIZM1mOANgHM7a3/hsXQhz+?=
+ =?us-ascii?q?cgyxFiwMPjsQ=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,393,1596517200"; 
+   d="cpp'?zip'48?scan'48,208,217,48";a="1154452"
+X-MGA-submission: =?us-ascii?q?MDHidgfyYTZzPR3MFyCaR+Tjv5cOdlU96Dioup?=
+ =?us-ascii?q?0toXZvrWRkqdp77Hsf6WocQh+j4IjWH67Tk/Y5DV0zwDPTPnVV8LuCWr?=
+ =?us-ascii?q?NtShcOj6mIya55dYlcXh2Ey5QjPehXK5Y1i34jMl/WUdPnja0O0t4nAm?=
+ =?us-ascii?q?2G?=
+Received: from mail-bn7nam10on2050.outbound.protection.outlook.com (HELO NAM10-BN7-obe.outbound.protection.outlook.com) ([40.107.92.50])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 18 Oct 2020 21:37:57 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=fXcItlLSWV59gFq8Wp7v+IYU0Aj3N2V4NI2dBBBWa7jJCca+CqSJ+DWbEDTtBGszaJa1vq46yRjbDD3sKVDHnhUKUg6qB5NvMBKjBkrozgwzNkYg+kkauGQrIPZRQfGt+Wkkrx8zjiTY6WNEqFxwxWUfqQUrZxjBMYeBbc7KyB6iyT0tJdIvyJOvEc6Ttw2rEytTCVWad9B6HehffxKpQ+raeOFpYIeNM21gHWNg+izFhsGjZQNecVCr5LSOiJTHFb8tOiF4lYjKlkr91TCGBrLcS9Gfcm/oqySKRYT3sW7VQre/ZGnX9TyKWPTTUnAdUhyV4el/w05wnAHaBU+R4A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=L+fclAECkqm/tm238JTszlhLJSxtfy6I6UFS6FjBUmA=;
+ b=F3srj+Pt+lwe8802EjpACF8rUT6NQZLQ7/grr1gMqdi+jnqnD2X2v4CiY+T3mmRGnRQssmjJdimzDyWQV46arOFSgqVp+WWjWYln7U9m9741ArGkw6BmzQUXZnYY5+H6941iXw10NsJLBx/Htx+dG87O2AoUa1Icwj7hBicWepjvAlKtgdszdw6pPLvd0CfplhKMJUkg3Flcit3MeZNAYwIe8gLA1dUeFeycS3xrn0r0mv1ItMcDpF9J5ajRWi19Hlr3283AQQKU90JiuoXMkluAZF3aWX0IZbMv8iJbU9029/H4n3awzzXDMVYoVWsNR1iTpTAWPIl0XHQHb+j39A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=L+fclAECkqm/tm238JTszlhLJSxtfy6I6UFS6FjBUmA=;
+ b=c1e2Mq3LbNR2H0ZWWvsXGaj21bq65sj4vO6tanZLxFE5Y/i2oWtndt6JtHdlSXhvGH9iCtJTjM/InxWiwpj4NFSfGPA4wYBv4VLB2E+rIpjl0Wvn6sdZDwwzYcBRUAUnnuZcbZAqozCeCJZe1RzWJcMKKWBncN9So8uciC5di4s=
+Received: from BYAPR01MB5302.prod.exchangelabs.com (2603:10b6:a03:91::20) by
+ BYAPR01MB3894.prod.exchangelabs.com (2603:10b6:a02:85::23) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Mon, 19 Oct 2020 02:36:09 +0000
+Received: from BYAPR01MB5302.prod.exchangelabs.com
+ ([fe80::c47d:fbd3:6aa7:744b]) by BYAPR01MB5302.prod.exchangelabs.com
+ ([fe80::c47d:fbd3:6aa7:744b%7]) with mapi id 15.20.3477.027; Mon, 19 Oct 2020
+ 02:36:09 +0000
+From: "Chitturi, Bhadrachalam" <Bhadrachalam.Chitturi@UTDallas.edu>
+To: "codeburners@lists.utdallas.edu" <codeburners@lists.utdallas.edu>
+Thread-Topic: Friday class
+Thread-Index: AQHWo/ziGeDfm/maX0iMWPaBI8Pk46ma5ADzgANU/24=
+Date: Mon, 19 Oct 2020 02:36:09 +0000
+Message-ID: <BYAPR01MB53025565A6AC9FA73CF94A4A821E0@BYAPR01MB5302.prod.exchangelabs.com>
+References: <BYAPR01MB5302D345F1DFD5B22CC6EEBC82030@BYAPR01MB5302.prod.exchangelabs.com>,<BYAPR01MB5302F2698FB2C843F541E60D82030@BYAPR01MB5302.prod.exchangelabs.com>
+In-Reply-To: <BYAPR01MB5302F2698FB2C843F541E60D82030@BYAPR01MB5302.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [97.99.201.104]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: bf214f44-66b0-4546-daf6-08d873d80286
+x-ms-traffictypediagnostic: BYAPR01MB3894:|BL0PR01MB4819:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <BYAPR01MB38947A6DE2B979BED064ABFB821E0@BYAPR01MB3894.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8273;OLM:8273;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ gYBXeYiygsuiFOF0l0kqdG5nsQq0XfOxRhvSPKSyLnywsIlUEYDt06eBIF1HjPCydXUpxDnT1TjvEity47QSoAv6jw6+wrVbBTTaoAlDdZLHPkizGVvP7ITgWfk3oxdzSTiIpjkchuqQtLCrChg6nmNGPvS01Qt8F6iAzMr6Mquo80jwjE/KQ4v0MpBIF0jDlxMFHFRREAh1JGn62l6WWAEQ9Lq5kqrbZhOCug5PjXfSbJHF7FXq83+vwfNmMRLslQAWzhR/7TLDDZUatxpuGFdO/yPbILf8qSs/6vLECnV0DHPlpeqOrUHs2FOQ/27ZlPHDx1iCxUG0kuWd13pP9vIf6FUWwXc517YHykrzAKYjZ+nDQL08+MFn7KCpAGRYV3phE5plEeur9J9o8YgR7Q==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BYAPR01MB5302.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(39860400002)(366004)(396003)(346002)(376002)(136003)(33656002)(99936003)(86362001)(786003)(478600001)(296002)(316002)(966005)(19627405001)(75432002)(8676002)(8936002)(2906002)(7116003)(6916009)(7696005)(3480700007)(26005)(186003)(53546011)(15974865002)(6506007)(83380400001)(166002)(55016002)(66556008)(66446008)(66476007)(64756008)(66616009)(52536014)(66946007)(76116006)(9686003)(5660300002)(71200400001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: 9m39tAjE49StID2yz5YTYD/mTRyH9cJ8YogkEXZ9qMUYm6euUcUKRFbJvC5ft1kO8UmXXWPv4MfUmJE1Ss6wPMWD9ZoupE141mN/Gg3iDON3/ztZXAtWAMsEudQ2G5WdpNLj61DGR7w32N3Ww9JjdgLeqg1LGL0FfbAdmetllsjUvjYPmhlgcOcvxG7ZTTkvCAVBnU3k84LDp3D2rGI3KPJBBgWejJqn4y65A6Ybgpv1mprmhszLD1fdorYzgryeznBDwXxytWNrQq/ZprA5qNQVEsrhNRRZBK6qssTNj3jfEJJCeyUJU9a6jgH6pGOi+g/J20qF+FRqvcZgF6auO0Xr0nYpKqG6wynLMoe4ucGEwQ6zBUgXJh0pC55fR3O3j84t6G/3L9nZhGIY2X3kxsa+tkwd0NBMvJpvAxKmEktrnkGTp1uCgTp0Ov1iXAPI/RCIy5aP6L6u+dJWVyRHyu7C/p76JO3m5taWtZQW4Oz021mDSqt5I2s8u5OrZ3k9fRH5RppHfM/hqm5toEUBb386PAZsRaXw+LB8TJvVstB3BxcJ/THNp4cdMhtiZVqMc/CRPqGIDPWb7hqA7RtMseRHXsrU3VOVwjEKp8PkmDrd8OxbQg5yrixozk367cJysOCd+BPlKp7Q4JMjKAyFBA==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/mixed;
+	boundary="_004_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR01MB3894
+Subject: Re: [codeburners] Friday class
+Reply-To: <codeburners@lists.utdallas.edu>
+X-Loop: codeburners@lists.utdallas.edu
+X-Sequence: 334
+Errors-To: codeburners-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <codeburners-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <codeburners.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20codeburners>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20codeburners>
+List-Post: <mailto:codeburners@lists.utdallas.edu>
+List-Owner: <mailto:codeburners-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/codeburners>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/codeburners/2020-10/BYAPR01MB53025565A6AC9FA73CF94A4A821E0%40BYAPR01MB5302.prod.exchangelabs.com>
+Return-Path: codeburners-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2020 02:38:06.5447
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ bf214f44-66b0-4546-daf6-08d873d80286
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT027.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ b23923e6-5690-415c-126d-08d873d7bce5
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Exchange-Organization-ACSExecutionContext: 10/19/2020 02:38:10;10/19/2020
+ 02:38:10;;SC;S;0;01/01/0001 00:00:00;0|0|0|0|;
+X-MS-Exchange-Organization-SafeAttachmentProcessing:
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2020 02:38:06.4568
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: bf214f44-66b0-4546-daf6-08d873d80286
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4819
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.1626197
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?InAWne64/UXOL+yYPtlI0yOkSa+WGub9VPyWVrp6FInl48peuqpDlQ+CvMH/?=
+ =?us-ascii?Q?lEX9cP5MPpdrEaHwY4u7a/GXbl/TNl7Q59kg+QzBLw/hYrGapW3uril0tfqF?=
+ =?us-ascii?Q?F1I3WXPBu3AF+7hSw/QkUPC5G/qxCXTumzx4EUfwt2AAH6GUGCGjyWipPELy?=
+ =?us-ascii?Q?09922tWimAkZXbZjjZSDIwl6CA6eH67tSHo8E1lwsSwGAHM+POfbiG0BXkLp?=
+ =?us-ascii?Q?4SHhFETva1vNmbzwGpFz+lYxNk0tIyz416EJExO8HaqVRyPmhJ5gGF566DZG?=
+ =?us-ascii?Q?WJaUYXkAZlE107nkcM6pM6LwkDX2kFYP96YAZ4VwjKfW0aI1YKIv+iCW/+j7?=
+ =?us-ascii?Q?jQelqYWKb/bwDdd6iZvcTHuPXgmPSUs1aM0VMyB21hFBxvybb8L2t14y9ApR?=
+ =?us-ascii?Q?zhsa59HVO9aW8aWq1bplY6FrMWqJYzfq2zIqx9K4I3NtTBnM9j8+H1XgQC9L?=
+ =?us-ascii?Q?W8mjTZsvuRRd1DzLfKlCbvagBLgD5ciehTQRw/WTNRlDz7mmJ5rcMABrAcr4?=
+ =?us-ascii?Q?+BHr7uGz+ZP+XafaKAgKVcCuGTer7Zu0DKzIWsrLlfsFRlFNyvA+fKKDHhI7?=
+ =?us-ascii?Q?7KfkQ3qq+ka+E7Ug3Z1O5UMupxS6XTRi6Uec5NLszl6wFbMMld4k32Rxxqd5?=
+ =?us-ascii?Q?8TjgmkPVsG83IveOvcDBhmxE64zfPEVMUjTg9dLUN6+1PCD45Cy2yNeaZT0i?=
+ =?us-ascii?Q?GJtx57N2QlSwWGoJ+aUW2sMk2eWztmYi6kND+3zC09Tw6cV9lLTBkgGsCnyi?=
+ =?us-ascii?Q?BuuMj+XFc7zRDarwfrCFJbeJZ41FNQrg/8TV10VcIotkrAEgiFOr32Z0QmXr?=
+ =?us-ascii?Q?1i3pK2jMCabfaOdv0DUktEUqaxp6USPQnp0w0WuosbZ96oEQy8sP8IJAtTUJ?=
+ =?us-ascii?Q?/x+vPki2YT26B6+Wq6J4/9NhLt/WKBos5xPwmY5K/JJiZr7boGQ62z5QV+Df?=
+ =?us-ascii?Q?Eo02AqltuUxxKCjQH9NSAXksMOC3MYYw2/8KczayRQHlDglSbU5igVZHwjyF?=
+ =?us-ascii?Q?KSgXD1pOSTMoGwNFc25L59tzUAn/Acg3/7SqpqZHifTwVPBMZXtNCNWHXRI9?=
+ =?us-ascii?Q?104e+W2WW79F927HiDkRtEV2K+I60b8YiBK0A9YytBUFe7mmIIflFy8Ybg/0?=
+ =?us-ascii?Q?Ka1gDn9GZLrqo5nWXP97tLjcmjb981HNJF0EvgDjEEnePRq988S2GnuQRPJS?=
+ =?us-ascii?Q?IPuo6+QsSEV4XqVb2n89XKoayz3EzPnN3w2PjceymADiMcgCVT1WE8dtr46A?=
+ =?us-ascii?Q?eOQYh8MkS82RJnDYcSZNhB5WazFLtFNOdLRSlYdw7Rp7GfYrpXG6wVcUca2t?=
+ =?us-ascii?Q?qQNGYEonl7si4jl8y9I/W6X2x77t3ROnGtRFfEdYdAmW8cGJhalKqnQzaoBV?=
+ =?us-ascii?Q?7dC0OvcsMED+dQZgfzFqW+cGjmlFtE6DMc1ISSd/GSbIeCW06rqK7t9DNWXj?=
+ =?us-ascii?Q?p4p3ijUzLHoJodYg+u0JIdfmoaaRaYm3twK1K27YUj8sAnCXotWZIzkCENvK?=
+ =?us-ascii?Q?/kBOBWz8AQ46PX/agdPZiGUzfnDqe8+oXfrV78Is5BNLh0JdbniWC/PYug?=
+ =?us-ascii?Q?=3D=3D?=
+MIME-Version: 1.0
+
+--_004_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_
+Content-Type: multipart/alternative;
+	boundary="_000_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_"
+
+--_000_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Please find some basic code of the current topics that we are covering.
+Regards
+________________________________
+From: Chitturi, Bhadrachalam <Bhadrachalam.Chitturi@UTDallas.edu>
+Sent: Friday, October 16, 2020 6:42 PM
+To: codeburners@lists.utdallas.edu <codeburners@lists.utdallas.edu>
+Subject: Re: Friday class
+
+Hi,
+This might have some problems suitable for us.
+Regards
+
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.hac=
+kerrank.com%2Fdomains%2Fmathematics%3Ffilters%255Bstatus%255D%255B%255D%3Du=
+nsolved%26filters%255Bsubdomains%255D%255B%255D%3Dcombinatorics&amp;data=3D=
+04%7C01%7CJerry.Teng%40UTDallas.edu%7Cbf214f4466b04546daf608d873d80286%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386718916021809%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DOzEsQvHVQZR%2F5lguxLgCiBjFfwNL3fESr09UkLhNTbo%3D&amp;re=
+served=3D0
+[https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fhrcdn.=
+net%2Fog%2Fdefault.jpg&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cbf2=
+14f4466b04546daf608d873d80286%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637386718916021809%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DOMtEKIp6tpbRV0QQhGDUl=
+hlVUhvgw5Q2cTmMWiBBNSE%3D&amp;reserved=3D0]<https://nam02.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fwww.hackerrank.com%2Fdomains%2Fmathema=
+tics%3Ffilters%255Bstatus%255D%255B%255D%3Dunsolved%26filters%255Bsubdomain=
+s%255D%255B%255D%3Dcombinatorics&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas=
+.edu%7Cbf214f4466b04546daf608d873d80286%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C0%7C637386718916021809%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DOzEsQvHVQZR=
+%2F5lguxLgCiBjFfwNL3fESr09UkLhNTbo%3D&amp;reserved=3D0>
+Solve Mathematics Code Challenges<https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.hackerrank.com%2Fdomains%2Fmathematics%3Ffil=
+ters%255Bstatus%255D%255B%255D%3Dunsolved%26filters%255Bsubdomains%255D%255=
+B%255D%3Dcombinatorics&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cbf2=
+14f4466b04546daf608d873d80286%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637386718916021809%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DOzEsQvHVQZR%2F5lguxLg=
+CiBjFfwNL3fESr09UkLhNTbo%3D&amp;reserved=3D0>
+Without mathematics, there's nothing you can do. Everything around you is m=
+athematics. Everything around you is numbers.
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.hack=
+errank.com%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cbf214f4466b0=
+4546daf608d873d80286%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386718=
+916021809%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT=
+iI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dz%2BuRuS1b0Efd6gegkulkCU8scXFd=
+Ao7wy3EzXGS5pFE%3D&amp;reserved=3D0
+
+________________________________
+From: Chitturi, Bhadrachalam
+Sent: Friday, October 16, 2020 3:43 PM
+To: codeburners@lists.utdallas.edu <codeburners@lists.utdallas.edu>
+Subject: Friday class
+
+Dear students,
+We studied Inclusion-exclusion, Totient function and Segmented sieve.
+We will revise them and start on binomial theorem and combinatorics.
+
+Regards,
+
+Bhadrachalam Chitturi
+
+Associate Professor of Instruction,
+
+Department of CS, ECS, UT Dallas.
+
+--_000_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Please find some basic code of the current topics that we are covering.</di=
+v>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Regards</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Chitturi, Bhadrachala=
+m &lt;Bhadrachalam.Chitturi@UTDallas.edu&gt;<br>
+<b>Sent:</b> Friday, October 16, 2020 6:42 PM<br>
+<b>To:</b> codeburners@lists.utdallas.edu &lt;codeburners@lists.utdallas.ed=
+u&gt;<br>
+<b>Subject:</b> Re: Friday class</font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+Hi,</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+This might have some problems suitable for us.</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+Regards</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.hackerrank.com%2Fdomains%2Fmathematics%3Ffilters%255Bstatus%255D%25=
+5B%255D%3Dunsolved%26filters%255Bsubdomains%255D%255B%255D%3Dcombinatorics&=
+amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Cbf214f4466b04546daf608d873=
+d80286%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637386718916051794%7CUn=
+known%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJ=
+XVCI6Mn0%3D%7C1000&amp;sdata=3D9hJ1PlvJqOAHXMeqSTGjRmb8Y2NgNSsFhYMkTQ6w7ig%=
+3D&amp;reserved=3D0" originalsrc=3D"https://www.hackerrank.com/domains/math=
+ematics?filters%5Bstatus%5D%5B%5D=3Dunsolved&amp;filters%5Bsubdomains%5D%5B=
+%5D=3Dcombinatorics" shash=3D"LFD1Za9+B9HlyfYBKC+HjoNx5suKpuRLH7LHqTbu2bazl=
+HuawE3GOMRMfXgdBfDwVA8Pp0nfQw6TzD3DdrIEoy/iOVAwoukf6XA3TzEZe6uwCE8/qm9542qk=
+F1IBEkZVOdZFPYSbTt82aHa5msncP8yMkRIUNfRRkk05xfh7EJI=3D" id=3D"LPlnk">https:=
+//www.hackerrank.com/domains/mathematics?filters%5Bstatus%5D%5B%5D=3Dunsolv=
+ed&amp;filters%5Bsubdomains%5D%5B%5D=3Dcombinatorics</a><br>
+</div>
+<div class=3D"x__Entity x__EType_OWALinkPreview x__EId_OWALinkPreview x__ER=
+eadonly_1">
+<div id=3D"LPBorder_GTaHR0cHM6Ly93d3cuaGFja2VycmFuay5jb20vZG9tYWlucy9tYXRoZ=
+W1hdGljcz9maWx0ZXJzJTVCc3RhdHVzJTVEJTVCJTVEPXVuc29sdmVkJmZpbHRlcnMlNUJzdWJk=
+b21haW5zJTVEJTVCJTVEPWNvbWJpbmF0b3JpY3M." class=3D"x_LPBorder622037" style=
+=3D"width:100%; margin-top:16px; margin-bottom:16px; max-width:800px; min-w=
+idth:424px">
+<table id=3D"LPContainer622037" role=3D"presentation" style=3D"padding:12px=
+ 36px 12px 12px; width:100%; border-width:1px; border-style:solid; border-c=
+olor:rgb(200,200,200); border-radius:2px">
+<tbody>
+<tr valign=3D"top" style=3D"border-spacing:0px">
+<td>
+<div id=3D"LPImageContainer622037" style=3D"margin-right:12px; height:128px=
+; overflow:hidden; width:240px">
+<a target=3D"_blank" id=3D"LPImageAnchor622037" href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.hackerrank.com%2Fdomai=
+ns%2Fmathematics%3Ffilters%255Bstatus%255D%255B%255D%3Dunsolved%26filters%2=
+55Bsubdomains%255D%255B%255D%3Dcombinatorics&amp;data=3D04%7C01%7CJerry.Ten=
+g%40UTDallas.edu%7Cbf214f4466b04546daf608d873d80286%7C8d281d1d9c4d4bf7b16e0=
+32d15de9f6c%7C0%7C0%7C637386718916061786%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3DLNa1VR34mqvTB1ATAHzMmDLZGoPRWdz3Qhzmav0dX40%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://www.hackerrank.com/domains/mathematics?filters%5Bstatus%5D%=
+5B%5D=3Dunsolved&amp;filters%5Bsubdomains%5D%5B%5D=3Dcombinatorics" shash=
+=3D"d5LoEjMIkL/skN0UaZvwwJq9xPss3CIG3KuKWEbAUsQzt2CXilevilLWqCSFAxBM515oHQ6=
+9jzBKr2gO9tlnUNLdpXTfUUGyZ5hIEXzNASGJ04YcjqYE4q2FT1BJzEzNj87RekPSsJMFLIkzHT=
+Duj5u0iaJ9kLUksI5nOMGNFnQ=3D"><img id=3D"LPThumbnailImageId622037" alt=3D""=
+ height=3D"128" width=3D"240" style=3D"display:block" src=3D"https://hrcdn.=
+net/og/default.jpg"></a></div>
+</td>
+<td style=3D"width:100%">
+<div id=3D"LPTitle622037" style=3D"font-size:21px; font-weight:300; margin-=
+right:8px; font-family:wf_segoe-ui_light,&quot;Segoe UI Light&quot;,&quot;S=
+egoe WP Light&quot;,&quot;Segoe UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,=
+sans-serif; margin-bottom:12px">
+<a target=3D"_blank" id=3D"LPUrlAnchor622037" href=3D"https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.hackerrank.com%2Fdomains=
+%2Fmathematics%3Ffilters%255Bstatus%255D%255B%255D%3Dunsolved%26filters%255=
+Bsubdomains%255D%255B%255D%3Dcombinatorics&amp;data=3D04%7C01%7CJerry.Teng%=
+40UTDallas.edu%7Cbf214f4466b04546daf608d873d80286%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637386718916061786%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DL=
+Na1VR34mqvTB1ATAHzMmDLZGoPRWdz3Qhzmav0dX40%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.hackerrank.com/domains/mathematics?filters%5Bstatus%5D%5B%5=
+D=3Dunsolved&amp;filters%5Bsubdomains%5D%5B%5D=3Dcombinatorics" shash=3D"d5=
+LoEjMIkL/skN0UaZvwwJq9xPss3CIG3KuKWEbAUsQzt2CXilevilLWqCSFAxBM515oHQ69jzBKr=
+2gO9tlnUNLdpXTfUUGyZ5hIEXzNASGJ04YcjqYE4q2FT1BJzEzNj87RekPSsJMFLIkzHTDuj5u0=
+iaJ9kLUksI5nOMGNFnQ=3D" style=3D"text-decoration:none">Solve Mathematics Co=
+de Challenges</a></div>
+<div id=3D"LPDescription622037" style=3D"font-size:14px; max-height:100px; =
+color:rgb(102,102,102); font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;=
+,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif; margin-bottom:12px; margin-r=
+ight:8px; overflow:hidden">
+Without mathematics, there's nothing you can do. Everything around you is m=
+athematics. Everything around you is numbers.</div>
+<div id=3D"LPMetadata622037" style=3D"font-size:14px; font-weight:400; colo=
+r:rgb(166,166,166); font-family:wf_segoe-ui_normal,&quot;Segoe UI&quot;,&qu=
+ot;Segoe WP&quot;,Tahoma,Arial,sans-serif">
+www.hackerrank.com</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<div id=3D"x_appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" =
+color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Chitturi, Bhadracha=
+lam<br>
+<b>Sent:</b> Friday, October 16, 2020 3:43 PM<br>
+<b>To:</b> codeburners@lists.utdallas.edu &lt;codeburners@lists.utdallas.ed=
+u&gt;<br>
+<b>Subject:</b> Friday class</font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+Dear students,</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+We studied Inclusion-exclusion, Totient function and Segmented sieve.</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+We will revise them and start on binomial theorem and combinatorics.</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+Regards,</div>
+<div>
+<div id=3D"x_x_Signature">
+<div>
+<div id=3D"x_x_divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; c=
+olor:#000000; font-family:Calibri,Helvetica,sans-serif">
+<p style=3D"margin-top:0px; margin-bottom:0px">Bhadrachalam Chitturi<br>
+</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Associate Professor of Instr=
+uction,</p>
+<p style=3D"margin-top:0px; margin-bottom:0px">Department of CS, ECS, UT Da=
+llas.<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_--
+
+--_004_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_
+Content-Type: application/x-zip-compressed; name="Codefornumbertheory.zip"
+Content-Description: Codefornumbertheory.zip
+Content-Disposition: attachment; filename="Codefornumbertheory.zip";
+	size=1819; creation-date="Mon, 19 Oct 2020 02:35:57 GMT";
+	modification-date="Mon, 19 Oct 2020 02:36:09 GMT"
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_BYAPR01MB53025565A6AC9FA73CF94A4A821E0BYAPR01MB5302prod_--

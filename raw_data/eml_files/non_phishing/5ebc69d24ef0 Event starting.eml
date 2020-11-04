@@ -1,0 +1,202 @@
+Received: from BN6PR01MB2433.prod.exchangelabs.com (2603:10b6:404:5d::12) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Wed, 14 Oct 2020 21:45:24
+ +0000
+Received: from DM5PR11CA0024.namprd11.prod.outlook.com (2603:10b6:3:115::34)
+ by BN6PR01MB2433.prod.exchangelabs.com (2603:10b6:404:5d::12) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Wed, 14 Oct 2020 21:45:22 +0000
+Received: from CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:115:cafe::b0) by DM5PR11CA0024.outlook.office365.com
+ (2603:10b6:3:115::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.22 via Frontend
+ Transport; Wed, 14 Oct 2020 21:45:22 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.77.8)
+ smtp.mailfrom=email.ripplematch.com; utdallas.edu; dkim=fail (signature did
+ not verify) header.d=ripplematch.com;utdallas.edu; dmarc=pass action=none
+ header.from=ripplematch.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of email.ripplematch.com
+ designates 167.89.77.8 as permitted sender) receiver=protection.outlook.com;
+ client-ip=167.89.77.8; helo=o2.email.ripplematch.co;
+Received: from o2.email.ripplematch.co (167.89.77.8) by
+ CY1NAM02FT006.mail.protection.outlook.com (10.152.74.104) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Wed, 14 Oct 2020 21:45:22 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=ripplematch.com; 
+	h=content-transfer-encoding:content-type:from:mime-version:to:subject; 
+	s=s1; bh=w1EwCggd2PpRXkhrJV+A3Gs/dWI2+ZNXyC/Ut7aIJHA=; b=giPmuHT
+	l+rWgX/m09ikkDqkyFW00n6wLdFN1oJmxX9oMeKdH/ngWsasDuj1qdojjDs0zr56
+	GZ/Y3t4CQWz+DoOl9sjYW3ar+ss7PVJdO4eiihUQFUCoTH8JeHassJV6Ih8R7Hv9
+	nv8MzXv4IFH+lfjnJHoofg85xdbFPzBSrxP8=
+Received: by filter1184p1iad2.sendgrid.net with SMTP id filter1184p1iad2-1654-5F877171-28
+        2020-10-14 21:45:21.786642913 +0000 UTC m=+436748.979305174
+Received: from MjU0NTM3NQ (unknown)
+	by ismtpd0002p1sjc2.sendgrid.net (SG) with HTTP id gb94Yo26RbCr98ZJLAf8MQ
+	Wed, 14 Oct 2020 21:45:21.675 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 14 Oct 2020 21:45:21 +0000 (UTC)
+From: "RippleMatch" <noreply@ripplematch.com>
+To: "Jerry Teng" <jerry.teng@utdallas.edu>
+Message-ID: <gb94Yo26RbCr98ZJLAf8MQ@ismtpd0002p1sjc2.sendgrid.net>
+Subject: Event starting soon with Samsung Electronics America
+X-SG-EID: SL3EWB5TqP8lMVAuzF2VpLCs+QLCgrzoTvUNLl/iyHp49SELaaNTJ+R60ytM8XAiMtBatF0MpjP0yE
+ iGmdj2hL9Ffx0eCbLqL8cy4AROPcUsAcP023B9i/1+S+2WJ+Z1wG6FrGL2uP8FSxND66SJif7wR13+
+ EVe/1crdBjyI2hz2eLmGOiEvtmFJzo1cQnmT1wU+GXJOBaVobLw3iVBvUdUmf2S+8tlmaCG/mg/CN9
+ 4=
+X-Entity-ID: bHphUaOIAL6NO0P+ubbTMg==
+Return-Path:
+ bounces+2545375-61fc-jerry.teng=utdallas.edu@email.ripplematch.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Oct 2020 21:45:22.4769
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 8a3c6fc1-b790-4203-cd62-08d8708a73df
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 8a3c6fc1-b790-4203-cd62-08d8708a73df
+X-MS-TrafficTypeDiagnostic: BN6PR01MB2433:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2958;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:167.89.77.8;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o2.email.ripplematch.co;PTR:o2.email.ripplematch.co;CAT:NONE;SFS:(4636009)(26005)(6916009)(58800400005)(6486002)(9686003)(6506007)(4744005)(6512007)(36906005)(36736006)(8676002)(83170400001)(166002)(5660300002)(356005)(1096003)(83080400001)(7596003)(7636003)(336012);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Oct 2020 21:45:22.3290
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8a3c6fc1-b790-4203-cd62-08d8708a73df
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT006.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2433
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1615200
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?d2hBaHRZdk9UaHVqUnRqeWd0cy9oRElIVVVGdEo5SFROYnR1K1E4TFltaWMx?=
+ =?utf-8?B?Vk9WeUhhMnAzeHM0dnZUMVc2c24wTGx6NXFLMVE1azBWSCtyL0hDRVdRR0pE?=
+ =?utf-8?B?TEdMUUxhdEp5NUdtU29ZVHhOYnlOY0s5NlB0WkJDOW1na09JRDQvL2RGV2VV?=
+ =?utf-8?B?SUhIb3ZnUDJFTXcrMkdNYnI0dDN6azhZTDFlLzYvV2tEdFlFVzN4OTFMV1Ba?=
+ =?utf-8?B?ZTQ4dFlIQkhLNVc5OC9Gd3pTYk1HMDRtNUFrRkpPVGVNQXRuTFlDckVHaEJk?=
+ =?utf-8?B?bDhTSXZ0TVZTUXBnZ1ArUG1DUEsweUVMYWVWdmJHWmNzdlhXbUtGbmtUWkw3?=
+ =?utf-8?B?K0F2NUJrelhSTjkvWmRzRHY4RFV2ODArTnprNzYvNkJJZ0hlUW9xalFHLzZy?=
+ =?utf-8?B?K1UycEpEZnRsMHNSWkVWaGNrOGpZS1Mzb3kyVXdsWm90bHRhNVkwdmYzV3dO?=
+ =?utf-8?B?Nnl3YjdKeklaeC90WUc3V2JLZy95M0JwNHJhN2k1VDBMK0dmelJGQ2N5UktN?=
+ =?utf-8?B?Z0FDTlhmeE1uQzZ1MjlwVE5XaWFUMGN0bkVJYVltV3VGeS9pZHBjNWMzcGJp?=
+ =?utf-8?B?bWQ0Ui9LbmthcW9TM21GT1EzQktmOGtiYWtDSUtrTUcyTmE5bkROUU1SZ25Y?=
+ =?utf-8?B?dnprNFpQbGppQ0dWUXpRbzlrZThCbG5lRU5RUnBnSWlnbWgvb3laOVFxNS9V?=
+ =?utf-8?B?a1NVOS9tLzVtRVJ2OWcvNlJMNkFHSGZYa0VuOFhhc0lHd1RnSXVmb3YrRXdH?=
+ =?utf-8?B?WlZNL0hsQmFQd3FxZlBqdjB4dkZ1T2JHVTE3aDIrSmE1M0FtaUdMWStTakZw?=
+ =?utf-8?B?SDlkUklCQUxIUXdTYk1lNWxwdzl4TnFrb0hTN2xDS0dKSHFvOU11L0FaM3V0?=
+ =?utf-8?B?dU1rS0dRRmtCYzVPUVNqWFhNbTlMcVQwY0toSWVXMlhoRjNRUXVJWUp1V3h5?=
+ =?utf-8?B?dkY3WlBTMTlVVFZITnFUZzJOT1lWell1RkxNaWY4dVlOV3IreHc1S2pzSTF2?=
+ =?utf-8?B?cXJoT2hvWlVEdzN5VXJPV2xTOEcvdE9weE50bWVxSUhaY2p5aStycTRKUjVh?=
+ =?utf-8?B?bUNBTEtJcFJBcU5OdlBHT21CaUF6blp1aWJQbGszUnMvS2dnQU5ibmpMcUp2?=
+ =?utf-8?B?U2c5QWZEaTJyRHY5VVVJbjZUd1BqMjNlL3hSYTBkSytjT2xvSFg5SnlyQSty?=
+ =?utf-8?B?NzNDMlYyaHBqdzY4dDR0V3ZXa0NBL21VaTFuMFl2b01Zck9LTE84RGRKaEsz?=
+ =?utf-8?B?QmhmaVA2OFhtb2FqbWVKWk5yelU0K1NCVHlrbXNnU01aV1F4R0NHTWhJdC9C?=
+ =?utf-8?B?K1NOcEUvOTc5U2FJVis0K0hzMStIMFkzOGtCWjhDSkxvWE10QUVRWExkSXJB?=
+ =?utf-8?B?TnhYSVJCaytTWi9zcm5UUE1ZMXFiNk1sMi9mT2JLbXh5VmM0TStaMXZwcU9Q?=
+ =?utf-8?B?dXlNRzNkY29rOWdvS29nM0RucEY5TTI4ZDlrN05USUFLQU9wZ0FoRDRvakJ2?=
+ =?utf-8?B?QnFZdmlDNjRBT29sYTVrSmFtMG1LQk9PYjNHOFpmTU5aYUtjeTRnVGxpbXlC?=
+ =?utf-8?B?dHhveHdiOVRvMUxYbHJBS00zTEVjTDVESk1hRThVREFBTStpN2tyVG9obWZh?=
+ =?utf-8?B?bHJNL3phOWM3VGRwMGhMdDZGQnQwYnVPV2RQK29kUWZvU1l2SU56dDg3eXda?=
+ =?utf-8?B?QlYrdzYyRGg3Q0o0MENja0xoVFlWbFVrZFFUVTJ1SEg1a3lWQ2RNekhOL3dU?=
+ =?utf-8?B?K0dGeEhpU3hyTzg4cjExaEo4R1ZhQVFHeFd2cHd1ci9GTWx4STRwMlM5SWlG?=
+ =?utf-8?B?WHpCZnhIVXBUcFQ5WVpMNC80TUM3SUlXcVYwSUZhNGlxdTBwcGppYW1nVk1T?=
+ =?utf-8?Q?RbCDrrCIRk7CM?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+>Hi Jerry,</p>
+
+<p>
+  Your event with Samsung Electronics America is starting shortly.
+  You can see details on your event and how to join below.
+  For more information, visit the event page <a href=3D"https://nam02.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fu2545375.ct.sendgrid.net%2=
+Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3aDUfSeZBtAEqb1IW=
+PVkF86brkLHvU6J-2B2MBMTxl8cHDsqUPoJNMob8tOlc3jxcOyyeS3BZlC68-3DfKDX_A6np-2B=
+q5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpXgKR9aNSt5EguOr4XNM7AhY3A7-2B=
+JqPPvIN2nPqPCFq4MGnRzSIZOKNfVgQyCRdla3Z9XNItsmRZIBT5CFca0is36ich80Hq3gHyYfL=
+M8Qso0QKyM7A8Lq2rbiLKQHFcWzH9V8I-2B0NaCghPQdpNjCtMgqVYs6dS-2BQfZY3vuutg8e8H=
+4KFEB6d2pYZXmDiPx6Q-3D&amp;data=3D04%7C01%7Cjerry.teng%40utdallas.edu%7C8a3=
+c6fc1b7904203cd6208d8708a73df%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637383087244641168%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D4%2BYMsL15UyOlGdhR%2B=
+ILr1zWuYagkI0TPyZ5zXebxWLY%3D&amp;reserved=3D0" originalsrc=3D"https://u254=
+5375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb1R-2FcadEzcLsW8cC3=
+aDUfSeZBtAEqb1IWPVkF86brkLHvU6J-2B2MBMTxl8cHDsqUPoJNMob8tOlc3jxcOyyeS3BZlC6=
+8-3DfKDX_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpXgKR9aNSt5Egu=
+Or4XNM7AhY3A7-2BJqPPvIN2nPqPCFq4MGnRzSIZOKNfVgQyCRdla3Z9XNItsmRZIBT5CFca0is=
+36ich80Hq3gHyYfLM8Qso0QKyM7A8Lq2rbiLKQHFcWzH9V8I-2B0NaCghPQdpNjCtMgqVYs6dS-=
+2BQfZY3vuutg8e8H4KFEB6d2pYZXmDiPx6Q-3D" shash=3D"KsachAdsmFLL4SmDp06da73+u0=
+S4e7uznyOH2b5l0vE0wktgwuWq/2g5Xqw0KtUAKkvdaK/XsEetAASisVAw58srln21wKezpY7OM=
+uLQOe3QzEX7KP+83T2gFj0qr6SLD1nf0DIlL93oMcXOskoBpmAg8yGcPfaU+73yIswN47w=3D" =
+title=3D"Samsung - UTD Clubs Panel">here</a>.
+</p>
+
+<hr>
+
+<p><strong>How to join the event:</strong></p>
+
+<p>To join the web conference,
+  click the <strong>Join Event</strong> button below at your event start ti=
+me: Oct 14, 2020 6:00PM EDT.
+  <strong>This link will check you in to the event, so do not share this li=
+nk with other Event attendees.</strong></p>
+
+<p>
+ =20
+  <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Fu2545375.ct.sendgrid.net%2Fls%2Fclick%3Fupn%3DWomOBOtCwgeD1-2B-2FZb1R=
+-2FcadEzcLsW8cC3aDUfSeZBtDtMxmt-2B5wwtxthJDJvH7x-2BZJtr0weOjddWNMj-2Ba9fKWA=
+-3D-3DiiJu_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpXgKR9aNSt5E=
+guOr4XNM7AhY3A7-2BJqPPvIN2nPqPCFq4Hwvo4QhE0vwvL4Er8DOMdKm0wQ8f66WCTGLGnv2-2=
+FXSWwXpeuVz-2BmyIghNqjC6ZVzaAqH6ntZePqLxcCBa81gwoKyh-2Bs3CI77viTiBJCDSwvbEG=
+ksKB9pBSgfVuRVMEkBTfuDwwkX44bmMTqkZBmIk-3D&amp;data=3D04%7C01%7Cjerry.teng%=
+40utdallas.edu%7C8a3c6fc1b7904203cd6208d8708a73df%7C8d281d1d9c4d4bf7b16e032=
+d15de9f6c%7C0%7C0%7C637383087244651169%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4w=
+LjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D8=
+nNTY2a6lhAnxPfp1GWtbpOEPqr8Td%2FQPgo3BeC8Kd4%3D&amp;reserved=3D0" originals=
+rc=3D"https://u2545375.ct.sendgrid.net/ls/click?upn=3DWomOBOtCwgeD1-2B-2FZb=
+1R-2FcadEzcLsW8cC3aDUfSeZBtDtMxmt-2B5wwtxthJDJvH7x-2BZJtr0weOjddWNMj-2Ba9fK=
+WA-3D-3DiiJu_A6np-2Bq5dXU-2FiKWa-2Fp5HTh-2BgaY9-2BolxOiJDHkD3AL4NpXgKR9aNSt=
+5EguOr4XNM7AhY3A7-2BJqPPvIN2nPqPCFq4Hwvo4QhE0vwvL4Er8DOMdKm0wQ8f66WCTGLGnv2=
+-2FXSWwXpeuVz-2BmyIghNqjC6ZVzaAqH6ntZePqLxcCBa81gwoKyh-2Bs3CI77viTiBJCDSwvb=
+EGksKB9pBSgfVuRVMEkBTfuDwwkX44bmMTqkZBmIk-3D" shash=3D"DCweNm3agSIsqTnK0xpT=
+2KXujqZSj+mXDpL4qYgHK/sznCZVLPf41GWLUoFNaJU+2MWTYJOCPLjQ+/Op9uANk3XhRJL9RN3=
+/dHL4Naomc5+6OtO/yGZuISXBdHbtMHbi5oSXPARyb8K6FCearcH6Zbn/b4OHQZjc1ig7EKW30u=
+k=3D" style=3D"color:#FFFFFF;background-color:#2967d8;border:1px solid #296=
+7d8;padding:10px 25px;margin:5px 5px 5px 0px;border-radius: 2px; font-famil=
+y: Arial;text-decoration: none; display: inline-block;">
+  Join Event
+</a>
+ =20
+</p>
+
+
+<p>
+<p><strong>Event Details:</strong></p>
+<ul>
+  <li>Event: Samsung - UTD Clubs Panel</li>
+  <li>Time: Oct 14, 2020 6:00PM =E2=80=94 8:00PM EDT</li>
+  <li>Company: Samsung Electronics America</li>
+  <li>Location: This is a virtual event. Join the event using instructions =
+below.</li>
+  <li>Other Instructions: <p><br></p></li>
+</ul>
+</p>=

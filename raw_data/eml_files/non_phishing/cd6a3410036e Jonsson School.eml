@@ -1,0 +1,1100 @@
+Received: from BL0PR01MB5092.prod.exchangelabs.com (2603:10b6:208:67::18) by
+ BL0PR01MB4548.prod.exchangelabs.com with HTTPS; Mon, 26 Oct 2020 17:24:48
+ +0000
+Received: from MN2PR19CA0045.namprd19.prod.outlook.com (2603:10b6:208:19b::22)
+ by BL0PR01MB5092.prod.exchangelabs.com (2603:10b6:208:67::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.25; Mon, 26 Oct 2020 17:24:46 +0000
+Received: from BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:19b:cafe::a7) by MN2PR19CA0045.outlook.office365.com
+ (2603:10b6:208:19b::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3477.25 via Frontend
+ Transport; Mon, 26 Oct 2020 17:24:46 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ BL2NAM02FT035.mail.protection.outlook.com (10.152.77.157) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3499.20 via Frontend Transport; Mon, 26 Oct 2020 17:24:46 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Mon, 26 Oct 2020 12:24:11 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Mon, 26 Oct 2020 12:24:11 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id B3BF3C00005B; Mon, 26 Oct 2020 12:24:11 -0500 (CDT)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id 267F3C000052
+	for <ecs.all@lists.utdallas.edu>; Mon, 26 Oct 2020 12:16:13 -0500 (CDT)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=jerry.alexander@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  jerry.alexander@utdallas.edu designates 40.107.70.68 as
+  permitted sender) identity=mailfrom; client-ip=40.107.70.68;
+  receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="jerry.alexander@utdallas.edu";
+  x-sender="jerry.alexander@utdallas.edu";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16
+  ip4:52.100.0.0/14 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: KH81MXtyq5ixt1CU6WTPRkCrgPLLpqedLgz6fBBVh+u6h1ennFjOVUOxLnwMVNZS9OPfR3yXR6
+ DpjB5me/zQ/2mWxyp64rL7yubX6qio7A2A3Muai/xdKR7SkHSCpXxErgshhVWrwyktjvN8y1dR
+ F3anu1asdp1bQy5a3XavqaYGr6JXZVMxuEXNTiE4Rrrag0y38/Fnf6cvXxb7Glwkd1uZMcMqVK
+ vn3Vb7oCoOy8dq7C2WQQDvh2GhJIuolhXpsNjjWu7bsurFuDQliJ0coyTsj5VXTm0ZI+4DxRxM
+ YVFWDfDYGJ0RNzWSQo7k606S
+X-IronPort-RemoteIP: 40.107.70.68
+X-IronPort-MID: 1133358
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0DXBACXA5dfh0RGayhdAw57gnIvKSh3WB4DBwgXAQETC?=
+ =?us-ascii?q?od+hTmJEIISmQ8CAgkBAQEBAQEBAQEIAQQPEwcCBAEBgWyCXgKCDCUBOBMCA?=
+ =?us-ascii?q?wEBAQMCAwEBAQEBBAEBAQIBAQIDAgIBEwEBAYEBYIECAYFGAYEqIwsDMQyCN?=
+ =?us-ascii?q?wyDSBsTAQEpAg0RAUAHORQSAQQTCAwBBgeCOSoXBQQBAYF+TQMvAgyVfwGBK?=
+ =?us-ascii?q?D4CIwESLQEBAgmBBymIJIE4gTSDBAEBBYEzAQsBg1UDVQEJgUYJgTiJJoVwP?=
+ =?us-ascii?q?oEQAUOBTxIXIAWCLlpCAQECF4E0FCsJEYMDgiyQIBoIFAwCigYmnHoDBAOCa?=
+ =?us-ascii?q?okEkheDF4oNlDqeM5EDhD8CBAIEBQIQBYFBKiEPKoEgcjGBOwqBQQkKOgECA?=
+ =?us-ascii?q?QINAQICAgEBAgEBCAEBAQGONoNXam6DAYU/PQFDMQIBAQEzAgYKAQEDCXyMO?=
+ =?us-ascii?q?wGBEAEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AWpIWoROOI5fNepJb/ool6mtUPXoX/o7sNwtQ0K?=
+ =?us-ascii?q?IMzox0K/j7pMbcNUDSrc9gkEXOFd2Cra4d1KyG7Ou9CSQp2tWoiDg6aptCVh?=
+ =?us-ascii?q?sI2409vjcLJ4q7M3D9N+PgdCcgHc5PBxdP9nC/NlVJSo6lPwWB6nK94iQPFR?=
+ =?us-ascii?q?rhKAF7Ovr6GpLIj8Swyuu+54Dfbx9HiTagY75+Nha7oAfeusQWgoZpN7o8xA?=
+ =?us-ascii?q?bOrnZUYepd2HlmJUiUnxby58ew+IBs/iFNsP8/9MBOTLv3cb0gQbNXEDopPW?=
+ =?us-ascii?q?Y15Nb2tRbYVguA+mEcUmQNnRVWBQXO8Qz3UY3wsiv+sep9xTWaMMjrRr06RT?=
+ =?us-ascii?q?iu86FmQwLvhykaKj4563nXhdJsg6JHrhyhoBl/zJTVYIGTKfFyeqzQcNcfSW?=
+ =?us-ascii?q?dHQ81fVTFOApmkYoUPEeQPIPpYoYf+qVsPsRSxChKhC/nzxjNUnHL6wbE23/?=
+ =?us-ascii?q?onHArb3AIgBdUOsHHModn7KKoSVf66zabSwjXFcvxZxy395JDVeR4lv/6MR6?=
+ =?us-ascii?q?hwcMrfxUIyEA7FjEufqZb/PzKVzOgCqWyb4PRvVO21jW4oth9+oiK0y8cxlo?=
+ =?us-ascii?q?nGm5gaylTA9Spj24Y5P8O3R1NmYdO9FpZbqi6VOZdsTMw4X2FopDg1yqcAuZ?=
+ =?us-ascii?q?OjYiUEx5opyh7eZvKHb4SF/w7uWeaeLDtli39odq+zihaw/EWk1+DxV9S53V?=
+ =?us-ascii?q?REoydGnNfBt38D2hPd58WGVvZw/kGs0iuB2QDU7+FLO0E0lazDJp483r4/i4?=
+ =?us-ascii?q?AfvlreES/rgEn5krGWeVsi+ui08OvneLTmpoOCOINulg7+NaEultS4AeQlLg?=
+ =?us-ascii?q?gOW2+b+eO/1LH54UL5R7BKguU5kqnet5DaKsAbqbCjDwBJ1YYj7g6zDzOg0N?=
+ =?us-ascii?q?QbhnkLNl1Fdw+fg4jrPFHOIfb4DfeljFSqjThr3PDGMafiAprTNHTMjLDhfb?=
+ =?us-ascii?q?Nl505ZyQo80cpf55VPCrEGLvLzRlX9u8DfDh88KwC72OHnCNJ814wEXWKPBr?=
+ =?us-ascii?q?GWMKXIvVCU4eIvJvGAZYEUuDbhK/gl6PnujXg2mV8ZY6alx4cYaHe9Hvh+OU?=
+ =?us-ascii?q?WWf2bjgswGEWcOowoyVvDliFqHUTJLZna9Q6M85jQgCI68EYjDQYWtjKSb0y?=
+ =?us-ascii?q?elBJJWen1GCkqSHnvycYWLResMZDqPIs99jzMLT7yhS4s72hG1rgP11adoLv?=
+ =?us-ascii?q?fM9i0ctJLj0tt16PPOmhEz8zx4FdiS02aIT2xyg2gGRCc20bhwrEBh0FuPzL?=
+ =?us-ascii?q?R0jv5CGdFR+/9FSAY3OJ3Ew+F1Cd3+QB/Nc9SLRVq8X9mqHCw9Qsgsz9IBbU?=
+ =?us-ascii?q?txA8uugxHf0yekBrIZiqCHC4c1/6/Z3HX9O8ZwxnPY2KQhilQrR9ZDOXCgi6?=
+ =?us-ascii?q?Vi7QbcHZTJnF+cl6uydaQTwirN9GCbwGSWoExWVxJ8XKrcUX4CfkXasM315k?=
+ =?us-ascii?q?TZQLCwE7gnNRZBydKZJatNd93pi0hJSO37ONTEZGKxh3m/CgqUxrONa4rqfX?=
+ =?us-ascii?q?8R3CLACEgYlwAT+nGGNQskCii9pGLeCSRiFVPpY0zy7elzsHy2QlMuww2Xc0?=
+ =?us-ascii?q?Fs1aC59xwJifCGSv4e3aoIuCI7pDV1GFa90cjWC92Fpwd5fqVTf8k94E1H1G?=
+ =?us-ascii?q?7DrQN9OoKvLq94iV4Ybgt4oVnu2g5qCoVcjMcltncqzA5oJqKDyl9OaS6X3Y?=
+ =?us-ascii?q?3oNr3NNmby5Ayva7LR2lzGztmZ5rwP5O4ipFXnuAGkDU4i83R809lJyHuQ/I?=
+ =?us-ascii?q?jKDBYPXp3rVkY38wJ1p6rAbiYj+ozUyC4kDa7h+BbG1sIgAuco0FLoXdpFKr?=
+ =?us-ascii?q?LOXFvwHtcAFo6nLOE6kl6lYwgsIfxe/aowNtjgevebjv2FJuFlyXiPiWlX6Y?=
+ =?us-ascii?q?Zx31jIvwhxUPTZld5RwfyCxBrBXjPxnF6nvs3tsZ1YaTgWGmOkjyXoGdgCNe?=
+ =?us-ascii?q?VJYY8XBDL2cIWMzdJkisuxCiQCpne+G1ML3tOochOOblv7mDddzlkTvWf4x3?=
+ =?us-ascii?q?m11DUt1TEi8vfDhWmSheX6dB8XfGVMQToqlk/idLC9lMtSR020d04snRqh61?=
+ =?us-ascii?q?z9wv1Zqb5lPi/aRUpYdi76IntKT7e8v76GatUJ5Z816H8Faum3bFGER7K4mC?=
+ =?us-ascii?q?M0jni8TVNX3ytzNzyxs8y/nxcm1T7EaSo1rWLZfNE2zhDatpTQQvtY3zxOQy?=
+ =?us-ascii?q?cd63GfBFWmJcjv9NGZh57Fvu2kf3+9WpRXdSDwi46MqWO36HZrDhu2g/2o0o?=
+ =?us-ascii?q?G/V1Fijmmkj580BW3Bt3OeKsHz2r6/MP57c0UgH1L658dgW8l/noY2mJAMyC?=
+ =?us-ascii?q?0fj5SR82AAlDS7OtFa1KTiKXsVEGJThYeNv066gAs9fiHspcqxTHiWz8p/as?=
+ =?us-ascii?q?Pvb3gfg2Q95JwXVP7RsPpFhStwshyzqgeCBJo11job1/Yq72YXxu8Tvw94hC?=
+ =?us-ascii?q?eQGKoDW0BcMDzlkRiF9fijsKleYGKmav692Fc0zrXDRPmS5xpRXnr0YMJoHy?=
+ =?us-ascii?q?Jq9NQ5OVbBwHT15oz+UMTMYdsXshSP1RrMkqIGTfB53upPji1hN2XnuHQjwO?=
+ =?us-ascii?q?NulgRg6pa8uJnUY3Uo5q+yBQRUcyHkf85GsC+4lr5Qx4zFuuLnVoUkADgAW4?=
+ =?us-ascii?q?HkCO6lAC5H/+qyLB6ASXU9sivJReKZTFXZsAE+6CuSW5GzayPLfD9AlYokHF?=
+ =?us-ascii?q?/FYxUB5WJcFDQiwsxkTEbznJSnKAEhoWlNrl/g9kkVkr4ua0a5CiGH4173Ij?=
+ =?us-ascii?q?YsFsrFJUIPvFgbvhXbbZTGvLA0Q3E9nNXprRTTeDaSP10aVDhQCELYXwuxbP?=
+ =?us-ascii?q?7ytZHB9eOcG+azfeDWb7nIsfZZS/qD2ZOo1M1h4iqIMcKMeHJlCphZkgIGVH?=
+ =?us-ascii?q?R9UZ2IyQVKcDQekmf2V+DeoR69/iNtqcXmrKb2RA7m4Y+GEP1fPcg9oh0=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,420,1596517200"; 
+   d="scan'208,217";a="1133358"
+X-MGA-submission: =?us-ascii?q?MDFTO58RYc+Ey1cuXhfJ6+NTHbSv/fKV3iWuaI?=
+ =?us-ascii?q?d7HFkHry+v16GJIcd4b1PwdC/Jin+Ka/ZvgFFz1/PWE6pWECL9BgSmhM?=
+ =?us-ascii?q?mgcvIVHSnDcex6gXBjiePoCUL/IrHBHHT7luxAvp+WnOOpr3oMSiZ6dy?=
+ =?us-ascii?q?yv?=
+Received: from mail-eopbgr700068.outbound.protection.outlook.com (HELO NAM04-SN1-obe.outbound.protection.outlook.com) ([40.107.70.68])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 26 Oct 2020 12:16:08 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=HxiiEelO6xwShAweG7ya8GMt+Q5Uanfu99dDUkz6y4ZI7BA76X1wbIXxSc21+jc0AOT8Vo0zOgs8IZQ/JSAgh4HiHguk59YoL71ii6rQ7d47bLTb4CGSD0j5s+bk5xKuGakn+I93GoydVdLQ1dgNZpSh8V/AxQ36WbnLRugaBjj/tvWyTKuomLp5LRW+4n1B7ukvjyjd6gjGepGngGbOsl+x7VFvj2YL9ty7Vw67o1HFLQtx8yYlRM+yg7Ai6aKn2mX+kEL7LyM4Ngyf/xA2xMoIcRxC4g+Lx4iCt8khzpW59vo43NQ2kAtOaLf4+iY8tPmNR3R/NxohRCjZUaO3mg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=chsd5Bu85YuKUXBnKt4+FZFEpvqyO3vyDLv8+C0sk2Q=;
+ b=aTllx09m3K5GhQsrvAEalZdeaANvaTgO/VORSMMzSSylmNiBq+MBSbQrDE4D1a9nQsfdF+sNSM/5GeFxRvlD24+d1akIppKcjOm4wrcHME2yXfhkGcMY1LKG2+awnUTZyoSt1de9PPjrHIqQ1OD6gmxBy9B3ISMzSFGKIqElNvhDumWvxpMlG1KXlUPV4W+Gqs6R9hChQRlT/1dTvPvSdq4ipnreMn85KyLlzOitxKiXgdpNpf4o+l8eW14gYZPh9i76g/n3xFgOA5yJeaFUl+uSWRjxstKDtwV07P2cj3wslBh/BfMFsRBlcIxLsAyGT/VgkgyCWrOcq7tXNJTHrA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=chsd5Bu85YuKUXBnKt4+FZFEpvqyO3vyDLv8+C0sk2Q=;
+ b=XYF8p2jm84/Y2zc8utW/kym2cB68obxHRMCJEIrvgYw30rIPXrtMEAdtXm65xbCjH46EMAraXJ9F/8r9Fazw+PbUF9Xt1+3qW6jLe+4D2/fvMvOGxrqPV70lt4hZ8vnArta5TEGIxygbxIXOG38cCnxuMTfV7qbKILTYQFLIUsU=
+Received: from SN6PR01MB3805.prod.exchangelabs.com (2603:10b6:805:25::11) by
+ SN2PR01MB2109.prod.exchangelabs.com (2603:10b6:804:a::20) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Mon, 26 Oct 2020 17:16:04 +0000
+Received: from SN6PR01MB3805.prod.exchangelabs.com
+ ([fe80::447b:c831:76e2:a887]) by SN6PR01MB3805.prod.exchangelabs.com
+ ([fe80::447b:c831:76e2:a887%6]) with mapi id 15.20.3477.029; Mon, 26 Oct 2020
+ 17:16:04 +0000
+From: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+Thread-Topic: Jonsson School Events
+Thread-Index: Adaru7fM2HOHFoGURF6m+/onVvadGg==
+Date: Mon, 26 Oct 2020 17:16:04 +0000
+Message-ID: <SN6PR01MB3805BBFCF2E2A63797C1C97F82190@SN6PR01MB3805.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [47.187.111.143]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: cac89138-eb08-402a-8837-08d879d40930
+x-ms-traffictypediagnostic: SN2PR01MB2109:|BL0PR01MB5092:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <SN2PR01MB2109B87C23CCC2BE79AD910982190@SN2PR01MB2109.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8882;OLM:8882;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ 8TxYeCfZKXwIvqPxvV8FElNjJwwFM6Xd8YGqYzzBBkLO8YfV2UwRSACsk85aCtTJGQou+3VIlPWFt6IRFtszB3aDxheee+tHyGCPFbqb34vZ9NSRj0e+Y0bNbFPsdv+kQ0egAgp5LcbaiiyFjPtnqGYg6JNsXvLPWWjo4N+IpyldcEXRtMjXJfP4Dw091JQKZHghYSs8l+CSW8j/NKnZLvXjBDLLWwE/fcHVERGu4KcX2S2/GBakaoljPoJzz2Z6r466V6lrFH/mGDSTLPazd08mZfBCj7UugAMyyWPsT/69OzEmpkP8pm5ksuw+vuyQiYX1rURuddz1ZvdIHFnBfelRZJOVeFnm7wT7ziHpFzyGTD4G2sgvb4Wqvab9dRw9O/Z6lMS4EQdrkFWRaQA1EmUfrZVHtt310jnUWdWkGN2lGyzCdmVuL5zFK6lGHn02g+dxQU3yeYu6+A1WOWjzUw==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR01MB3805.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(136003)(346002)(376002)(396003)(39860400002)(366004)(8936002)(7116003)(6506007)(2906002)(6862004)(166002)(33656002)(9686003)(55016002)(75432002)(83380400001)(66946007)(76116006)(66556008)(64756008)(66476007)(66446008)(3480700007)(52536014)(7066003)(45080400002)(786003)(186003)(5660300002)(86362001)(8676002)(296002)(316002)(478600001)(71200400001)(966005)(7696005)(26005)(6200100001)(556474002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: uO7HiMNSZeRzKQtsFBQEkmVNsiopmHL0o+ZnkdnYww5RGrz4j0us2d25TqUagkFlAypL5yDBaRaziXDE0MivH3d9Os7ujepGOlE4B/VDPu/PBPgvGqY+uMU2744fS0hL3nJMUHL3f7Z55cHGctI3Z8mmRPJ0QWfGpI6YzLPRmSf8/tDaSIO5NZg4uvQ0xiNCIkdNRbf4JBMWX+rqn1HwX70BNXGNnEZ9LYsq5wv8vT9H9zS7u6BmvfvoAhC6Bs8SW8k4gYBDsTuLI4XSR9fPFoezzwLG8bInt5ENmmrCzXKvZmf16FqsiiBOKhv61iPRGHH7khKke7TWwfkb1LIk+kYGDT84yokeNIANfoVMunma9BoVXerBN2K2oEsWRu6cf07zUqWXkIPTmOoXE/06b3+ZL2VCdhJAROgUukF0OHdgrYGli5GLghZJJh9SMMxPlUYsKSnRLR93P5MuqCVI/IqoalntG5IHOw564HrD2HkJcQyqoJLnkrmyctDlLoObzn3Y/wqyxdps829+w6Xs2jHBdZIhEtS2v1jwfXWflZu+50j3ZXR7V1Unt2jsihslZhxpf3i2OEzQlVgnqxx75hcRpmBTFlw4wmWrOCOUQfz7HqIU0pXSufE32x2roPEISODqiV+/emHXgCJ4P+rkwg==
+Content-Type: multipart/alternative;
+	boundary="_000_SN6PR01MB3805BBFCF2E2A63797C1C97F82190SN6PR01MB3805prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN2PR01MB2109
+Subject: [ecs.all] Jonsson School Events
+Reply-To: "Alexander, Jerry" <jerry.alexander@utdallas.edu>
+X-Loop: ecs.all@lists.utdallas.edu
+X-Sequence: 1372
+Errors-To: ecs.all-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <ecs.all-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <ecs.all.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.all>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.all>
+List-Post: <mailto:ecs.all@lists.utdallas.edu>
+List-Owner: <mailto:ecs.all-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.all>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.all/2020-10/SN6PR01MB3805BBFCF2E2A63797C1C97F82190%40SN6PR01MB3805.prod.exchangelabs.com>
+Return-Path:
+ bounce+jerry.teng==a==utdallas.edu==ecs.all==5374124@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Oct 2020 17:24:46.7128
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cac89138-eb08-402a-8837-08d879d40930
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 6848d9e8-19e0-4f68-b62f-08d879d2d1f5
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 2
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Oct 2020 17:24:46.6258
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cac89138-eb08-402a-8837-08d879d40930
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB5092
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6887872
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?JtXsRgkhfRvY01IqEUi5jtsK4vD1yKaA6Cqeo1VOTDu+dQoo/05+UHbh?=
+ =?Windows-1252?Q?qTmPFEGzjMMLYGhtYzDWFlOs4TTU6bP7EZUaGfQsjBMyzV1HWcaAM2Ox?=
+ =?Windows-1252?Q?P890fVQ+tqMwJkxB876tlreDe7s/YMJj/kv6IIa/4EHNMMKxI3TMSGkq?=
+ =?Windows-1252?Q?1v914B6/O/g34uliYMbXWt98qqsm5gcOtyGupgFOF9JFhgNTDRcb1hRF?=
+ =?Windows-1252?Q?B4gt6Z2crHiUgLjZLB6t539ArN/o61idu0CcT2Hif1r12VQt6G/zHKMy?=
+ =?Windows-1252?Q?LVITZj/OWnU0OnYMCRdXLRJK27WNVGO/Tf1k9faWQ4MZt8I8b/E4eIDF?=
+ =?Windows-1252?Q?4z+FX+uf4c5fLs7klRjEjkOhGIkMh8JxKbRURfST8hFNgmYSAq/3a4hH?=
+ =?Windows-1252?Q?70QwJOf3PPerkfDgpSgwMftxJADpSOJQ5xZxXdt1g8XZS33aKLpQiM76?=
+ =?Windows-1252?Q?B54pr27mswPWwZdFje3NXX6hh4MeoD2ur1M9wCtuD6kHwLiJeC6GUAmD?=
+ =?Windows-1252?Q?HvBQ/6iMpS7t6spPmM0HJsYqvZsj1OizphIVz0uztUk+ma0M6UveFLBh?=
+ =?Windows-1252?Q?JgfcN3K2FCUOHm+kDfXlLMw1GuSPhdfNFY0FtWg15giTAFVgcw0MMUfQ?=
+ =?Windows-1252?Q?PP7eHNFTrtUxwhNdXBSKElfRFutYrbLOE0HJgFZStGtaZJPLYBosfRDG?=
+ =?Windows-1252?Q?pwkLJwMnIxDoU9AoILZEWEHC1GhwKs/qQAw+IjQdyA1/u18v/qmXtPMQ?=
+ =?Windows-1252?Q?xLQNY5qtsSDj4DywrQp8k4SQhZWPdJB+HBWmSLfc/UMG1tOcG04gX6Y1?=
+ =?Windows-1252?Q?SW0M+OAFCF7JETOpDqm6AmTiL/RabAX7pb5CPdSp8MN7HT+wFOntu/zg?=
+ =?Windows-1252?Q?q7EZAjt1Fk6TpdHbOozzNOLaUyIqr34BjjhrQRuPlDd2E+t1gIQ914S2?=
+ =?Windows-1252?Q?BFsT1eASTsXjcj2TawxlB25dG689FMSrCcvipNiR7Xh16I+Uu3Moz5Ms?=
+ =?Windows-1252?Q?L3+UuM2P2cLQpF+yznlCcO4wF9pg7aOqzARB8Tt0lWv+GoBTXHl1qUrI?=
+ =?Windows-1252?Q?UgZkXBuJ4hALvYGTlh0f7zwhpo5RJA0IJxmHu+sg8xgYnwjlJccYpVEV?=
+ =?Windows-1252?Q?Ri8pu/HSe1gnd5ejdV4/8hrUzJ0cWpH8foTY4r4iRF2EiitqNhKCldm/?=
+ =?Windows-1252?Q?jeH1fZaHtMYf/0as6s6v+PCg1mTzVhaNG01yyQKrZwOfiaX5cwWJ9w3o?=
+ =?Windows-1252?Q?tsX0c8wQqCa/w6mWx/5jmQZPriD9J2Cb/xYg/lMw6fF7vKwkp03VXDL5?=
+ =?Windows-1252?Q?/kMm4Y8FQtJSQYFO2jdoIC1KSkXSkisZRQUbdtOgAWkAAXG2nE5CPksw?=
+ =?Windows-1252?Q?Z4fZlv5Sdp7LP/JmhP7xtFgq9CWwT7NRCtipnPZ2JAa451Zc+aouafTj?=
+ =?Windows-1252?Q?aFO2kS+Hi7BABteBKU/HGQ9Q8pMHFR1+8wAtBSIZlaQcZegN5mTOxfwW?=
+ =?Windows-1252?Q?mCHJY+DOWouLxjy5f/zpZkYLR9Grmg=3D=3D?=
+MIME-Version: 1.0
+
+--_000_SN6PR01MB3805BBFCF2E2A63797C1C97F82190SN6PR01MB3805prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Monday, October 26
+
+EPPS Pathways to Employment: Cyber and Security
+12:00pm - 1:00pm | Teams<https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttp%3A%2F%2Futd.edu%2Ft%2F6428&amp;data=3D04%7C01%7CJerry.Teng%40UTDal=
+las.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f=
+6c%7C0%7C0%7C637393298882765383%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D5Lo5PbRy=
+vxrEg%2FmF76iMmBzuJrE7sWjkhaPLxf8CJoQ%3D&amp;reserved=3D0>
+Join us for a Q and A panel with successful EPPS Alumni and supporters curr=
+ently employed in Cyber and Security Industries. Panel members will share p=
+ersonal stories about their journeys and how time at UTD contributed to the=
+ir success. Participants will have the opportunity to ask panelist question=
+s during a scheduled Q & A session.
+
+Oscar Health: Diversity in Tech Panel
+4:00pm - 5:00pm | Virtual
+Our panelists will share their career journeys, experiences as a person of =
+color in tech, and more! We will also share more information about our 2021=
+ technical internship and apprenticeship opportunities. Please RSVP<https:/=
+/nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.eventbrite=
+.com%2Fe%2Foscar-health-diversity-in-tech-panel-tickets-124292256485&amp;da=
+ta=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930=
+%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882765383%7CUnknown%=
+7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6M=
+n0%3D%7C1000&amp;sdata=3DlqvNf3KMwoxj0PZBL%2FhyUQCDL45miZ22r2ym8EDLiVg%3D&a=
+mp;reserved=3D0> by October 26 by 4 PM to receive the google webinar link a=
+nd more details.
+
+UT Dallas SkillsUSA Virtual Mock Interview Workshop
+7:00pm | Virtual
+Join us for an interactive session of live mock interview practice, with ge=
+neral, technical and behavioral questions. Let's help each other out and ha=
+ve fun in this season of job hunt! RSVP here and add event to your calendar=
+!<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fcalen=
+dar.google.com%2Fevent%3Faction%3DTEMPLATE%26tmeid%3DaGRkMjlnMDk3dWFiczcxaz=
+g2bm9sYWgxcDQgdXRkLnNraWxsc3VzYUBt%26tmsrc%3Dutd.skillsusa%2540gmail.com&am=
+p;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d4=
+0930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882765383%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C1000&amp;sdata=3D6TMFSrASff%2B81pER3bp43xDJMek0MWrBJVpSeJuxfYY%=
+3D&amp;reserved=3D0>
+
+Tuesday, October 27
+
+United States Patent and Trademark Office: Veterans Innovation and Entrepre=
+neurship Program
+12:00pm - 3:30pm | Virtual
+The USPTO is offering a free online program for veterans, where independent=
+ inventors, entrepreneurs, small business owners, and intellectual property=
+ (IP) professionals can connect and learn about useful resources. View the =
+agenda and register for the event<https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Flnks.gd%2Fl%2FeyJhbGciOiJIUzI1NiJ9.eyJidWxsZXRpb=
+l9saW5rX2lkIjoxMDEsInVyaSI6ImJwMjpjbGljayIsImJ1bGxldGluX2lkIjoiMjAyMDEwMjAu=
+MjkwNDg0MDEiLCJ1cmwiOiJodHRwczovL3d3dy51c3B0by5nb3YvbGVhcm5pbmctYW5kLXJlc29=
+1cmNlcy9pbnZlbnRvcnMtYW5kLWVudHJlcHJlbmV1cnMvYXR0ZW5kLXZldGVyYW5zLWlubm92YX=
+Rpb24tYW5kLWVudHJlcHJlbmV1cnNoaXA_dXRtX2NhbXBhaWduPXN1YnNjcmlwdGlvbmNlbnRlc=
+iZ1dG1fY29udGVudD0mdXRtX21lZGl1bT1lbWFpbCZ1dG1fbmFtZT0mdXRtX3NvdXJjZT1nb3Zk=
+ZWxpdmVyeSZ1dG1fdGVybT0ifQ.Pd_gBnDkMCGZHqezhFcPhNlqE5piqcmzMqqhXv3iZ3o%2Fs%=
+2F901902008%2Fbr%2F87134766181-l&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas=
+.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%=
+7C0%7C0%7C637393298882765383%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLC=
+JQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D51WWlITxP51=
+i84hwxuqCTOcqXJpEZ7aZY9EgqGbR%2BA8%3D&amp;reserved=3D0> on the USPTO websit=
+e.
+
+Skyworks Solutions Tech Talk: UT Dallas
+5:00pm - 6:30pm | Teams
+At Skyworks we are an innovator of high-performance analog semiconductors. =
+We welcome you to come learn more about who we are and the opportunities av=
+ailable! Engineering Director, Scott will be reviewing resumes for open 202=
+1 positions.  If you are interested in this opportunity, please send your r=
+esume to jenn.townsend@skyworksinc.com<mailto:jenn.townsend@skyworksinc.com=
+>. Register on Handshake<https://nam02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F583386&amp;data=3D0=
+4%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d2=
+81d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7CTWFp=
+bGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%=
+7C1000&amp;sdata=3DqWFXET4YwZ6ooFRlSJ7gd4dOAWOK%2BoTsMvPzMnolocs%3D&amp;res=
+erved=3D0>!
+
+Wednesday, October 28
+
+Online Networking Tips with Wonsulting
+12:00pm - 1:00pm | Virtual
+Wonsulting was founded in 2019 with a mission of turning underdogs into win=
+ners: helping those who come from non-target schools/non-traditional backgr=
+ounds to get them into their dream careers. So far, we've helped tens of th=
+ousands receive offers from top companies including the Googles, Deloittes,=
+ and Goldman Sachs of the world. Check them out on Linkedin! They have agre=
+ed to come to UTD to share networking tips!! You don't want to miss this! R=
+egister on Handshake<https://nam02.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F581381&amp;data=3D04%7C=
+01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1=
+d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7CTWFpbGZs=
+b3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C10=
+00&amp;sdata=3DJUkr9xw%2Bck4kzBZM39mO9kzzwIXnYMH9765ymsgbyJ0%3D&amp;reserve=
+d=3D0>.
+Academic Job Search and CVs Workshop
+12:00pm - 1:00pm | Register here<https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F537912&amp;=
+data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d409=
+30%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C1000&amp;sdata=3DVwKomcMKetyRO4%2FTMoi4L%2F2IHombYLP9dN9W4J25iwE%=
+3D&amp;reserved=3D0>
+Find out most effective ways to conduct your academic job search and how to=
+ make your CV stand out.
+
+JCS CPT Orientation for ECS F-1 Students
+1:00pm - 2:00pm | Teams Meeting<https://teams.microsoft.com/l/meetup-join/1=
+9%3ameeting_OGRkN2U0NGQtYzhhYy00ZjBmLWIxYjktMzk0MDI0ZTExYTZl%40thread.v2/0?=
+context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oi=
+d%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d>
+Required for all international students on F-1 visas with ECS majors prior =
+to obtaining an internship.  CPT Orientation covers both academic and immig=
+ration policies pertaining to CPT.  Provided by Jonsson Career Services and=
+ open only to ECS F-1 students.
+
+Diversity Career Success Series - Diversity Employer Panel
+3:00pm - 4:00pm | Teams
+Listen to experts in learning about what's going on with Diversity, Equity,=
+ and Inclusion in the workplace. This virtual panel brings employers and st=
+udents together for an intimate discussion about important and pressing top=
+ics in the workplace surrounding diversity dialogues. Register on Handshake=
+<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Futdall=
+as.joinhandshake.com%2Fevents%2F573956&amp;data=3D04%7C01%7CJerry.Teng%40UT=
+Dallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15d=
+e9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DkkKUe=
+h%2Bgql0vqAiaaXWgb5j2LD9CJl1ys4XJLaECuh4%3D&amp;reserved=3D0>.
+
+Booz Allen Hamilton: Diversity in the Workplace Virtual Roundtable
+3:00pm - 4:30pm | Virtual
+Are you a current student determined to make the world better? If so, join =
+us for a virtual panel discussion and learn about Booz Allen's culture of i=
+nnovation and commitment to diversity, equity, and inclusion. Here, we not =
+only solve our clients' toughest challenges, we're also building stronger c=
+ommunities. We celebrate diversity, powered by creativity, and are united b=
+y purpose. Register here.<https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Fcareers.boozallen.com%2Fevents%2FJobDetail%3FjobId%3D318=
+05&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d=
+879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7=
+CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwi=
+LCJXVCI6Mn0%3D%7C1000&amp;sdata=3DsL3wf2ZAwMcHp96wCPk3qunHNJDiGdg5Mt9lVIJVI=
+ZE%3D&amp;reserved=3D0>
+
+Coding Practice with Kick Start: Welcome to Coding Practice with Kick Start=
+!
+6:30pm - 7:00pm | Virtual
+Looking to brush up on your coding skills? Want to try something new? Then =
+join us for Coding Practice with Kick Start! Work your way through five alg=
+orithmic and mathematical problems on the Kick Start platform in a week-lon=
+g practice session from October 28 - November 4. Register and tune in for t=
+he event here<https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3=
+A%2F%2Fcodingcompetitionsonair.withgoogle.com%2Fevents%2Fkickstart&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DUHuVN%2Bc0r1nr2W4gyFXJpmTWD%2FlCBy2Xm%2BqXXaUkhAw%3D=
+&amp;reserved=3D0>.
+
+Thursday, October 29
+
+Equal Pay Day
+12:00pm - 1:00pm | Virtual
+Women from the soccer field and the science field to Hollywood and beyond a=
+re speaking up about salary inequality. Join us in our recognition of Equal=
+ Pay Day with a discussion about the gender pay gap. Register.<https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.eventbrite.com%=
+2Fe%2Fequal-pay-day-tickets-116833938455&amp;data=3D04%7C01%7CJerry.Teng%40=
+UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d1=
+5de9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DfFV=
+zO6Lbui5tkutMeYP0R4k34xKJYnfer68l1%2BNfUNY%3D&amp;reserved=3D0>
+
+UCC ExP - Internship 101
+3:00pm - 4:00pm | Teams
+Join us to explore tangible strategies and resources you can use to find an=
+ internship that aligns with your interests and career goals. We'll also sh=
+are tips on how to successfully market yourself during the internship searc=
+h process, and how to evaluate internship offers from employers. Please reg=
+ister for this event on Handshake<https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F533300&amp=
+;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40=
+930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C1000&amp;sdata=3DVnfp06%2BG4xoxcgdoyK0iSPR2bSIkDzlHXUkZVuh4ae8%3=
+D&amp;reserved=3D0> TODAY! A link for the event will be sent once you regis=
+ter for the event.
+
+NSA Cybersecurity
+3:00pm - 4:00pm | Virtual
+NSA Cybersecurity is changing the cybersecurity game! Learn how you could b=
+e a part of this diverse team of problem solvers. Register here.<https://na=
+m02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ficag1.recsolu.com=
+%2Fexternal%2Fevents%2FX2-etNettEkmz84izZXXXQ&amp;data=3D04%7C01%7CJerry.Te=
+ng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e=
+032d15de9f6c%7C0%7C0%7C637393298882775375%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiM=
+C4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3DG9gxLp2oFYzs%2FU8EvJ1M%2FZ0BWjv5iR1bWhXnlM9XaqM%3D&amp;reserved=3D0>
+
+You're Invited! Schwab Campus Talks: What is it Like to Work at Schwab? A C=
+onversation with LatinX Community Advocates
+4:30pm - 6:00pm | Virtual
+Schwab Campus Recruiting is thrilled to invite you to participate in Schwab=
+ Campus Talks! Schwab Campus Talks is a virtual series of educational discu=
+ssions, which will include employees from various lines of business, backgr=
+ounds, and expertise who will focus on specific topics in the finance indus=
+try. These discussions are meant to be both informational and engaging, so =
+we encourage you to ask questions and to converse with our speakers. Please=
+ register for this event here.<https://nam02.safelinks.protection.outlook.c=
+om/?url=3Dhttp%3A%2F%2Fcareer-schwab.icims.com%2Fconnect%3FeventId%3D142557=
+%26shareLink%3D1&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138e=
+b08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393=
+298882775375%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DLjpAbPUglJXhsUVANmmGD4fTrmA=
+R9v1Nd9M%2FxvmYY0I%3D&amp;reserved=3D0>
+
+Friday, October 30
+
+Invest in Yourself Here Goldman Sachs Development Series: Investing in Data=
+ Storytelling
+12:00pm - 1:00pm | Virtual
+A GS professional from the Engineering division will be leading a session a=
+round data analytics as well as giving an introduction to a system known as=
+ Altryx. Register here.<https://nam02.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Frecruiting360.avature.net%2Fsu%2Fbbdd4219a938863c&amp;data=
+=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7=
+C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882785369%7CUnknown%7C=
+TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0=
+%3D%7C1000&amp;sdata=3DX%2FqqovxNx52v4ms489FgzYeNp9ftm%2Brqv8bXgOAwVvA%3D&a=
+mp;reserved=3D0>
+
+JCS Interview Preparation Workshop for ECS Students
+1:00pm - 2:00pm | Teams Meeting<https://teams.microsoft.com/l/meetup-join/1=
+9%3ameeting_MWNjOTAzNjYtOWY2My00YmZhLTg5ZmEtZTVkZWUyYTRmYjY2%40thread.v2/0?=
+context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%22%2c%22Oi=
+d%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d>
+Are you ready for your interview?  Let the JCS help you prepare for your in=
+ternship interview.  In this workshop we will discuss common interview ques=
+tions and the best ways to prepare for an interview.  Provided by Jonsson C=
+areer Services and open to all ECS students.
+
+Celebrate Founders Days
+This year's Founders Day is going virtual, and you can bet that UT Dallas i=
+s celebrating founders Eugene McDermott, Erik Jonsson and Cecil Green in st=
+yle. Join us for online contests and giveaways leading up to Founders Day o=
+n Thursday, October 29. Learn more.<https://www.utdallas.edu/foundersday/>
+
+
+Need assistance with your job search?
+
+  *   Student Last Name: A to F, contact Mary Ann Chou Stewart <mailto:mas0=
+51000@utdallas.edu>
+  *   Student Last Name: G to N, contact  Kori Farley <mailto:kxf170001@utd=
+allas.edu>
+  *   Student Last Name: O to Z, contact  Andrea Croasdale Woudwyk <mailto:=
+axc169230@utdallas.edu>
+
+
+Jerry Alexander-Assistant Dean for Student Development
+Jonsson Career Services
+UT Dallas Erik Jonsson School of Engineering and Computer Science
+https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.lin=
+kedin.com%2Fin%2Finternguy%2F&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.ed=
+u%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0=
+%7C0%7C637393298882785369%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D1GepNEacTqPBGi=
+dQq6nYXT%2Fm9RWRYXGBdVKDXejqpiE%3D&amp;reserved=3D0
+972.883.4373 (forwarded to my home phone)
+
+
+--_000_SN6PR01MB3805BBFCF2E2A63797C1C97F82190SN6PR01MB3805prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:619268818;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1220473920 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><b><u><span style=3D"color:black">Monday, October 26=
+</span></u></b><span style=3D"color:black"><br>
+<br>
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black">EPPS Pathways to Empl=
+oyment: Cyber and Security</span></b><span style=3D"color:black"><br>
+<b>12:00pm &#8211; 1:00pm | </b></span><a href=3D"https://nam02.safelinks.p=
+rotection.outlook.com/?url=3Dhttp%3A%2F%2Futd.edu%2Ft%2F6428&amp;data=3D04%=
+7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882875319%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+1000&amp;sdata=3Dk5%2FMwkcOKCQVNWPp5Hn6pJG4Fy9axTtEHFrlaSqWyiE%3D&amp;reser=
+ved=3D0" originalsrc=3D"http://utd.edu/t/6428" shash=3D"mZTI9BIRdC7x87r5DGW=
+do4UwWxdB3XnK/q4mgIYIEo97EnbH6QjH1FE5zxEeBZLz6o74j0SIHXByob9RoE6HJcyksK27U9=
+LeI+Fwl627FFaUJzSTmZF/wjzuLrMfQgkZ49PmhcjQ/04lH0Dhu37sy7Bl4pmYQiWfklup2YinF=
+kk=3D"><b>Teams</b></a><span style=3D"color:black"><br>
+Join us for a Q and A panel with successful EPPS Alumni and supporters curr=
+ently employed in Cyber and Security Industries. Panel members will share p=
+ersonal stories about their journeys and how time at UTD contributed to the=
+ir success. Participants will have
+ the opportunity to ask panelist questions during a scheduled Q &amp; A ses=
+sion. <br>
+</span><br>
+<b><span style=3D"color:black">Oscar Health: Diversity in Tech Panel</span>=
+</b><span style=3D"color:black"><br>
+<b>4:00pm &#8211; 5:00pm | Virtual</b><br>
+Our panelists will share their career journeys, experiences as a person of =
+color in tech, and more! We will also share more information about our 2021=
+ technical internship and apprenticeship opportunities. Please
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.eventbrite.com%2Fe%2Foscar-health-diversity-in-tech-panel-ti=
+ckets-124292256485&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac8913=
+8eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373=
+93298882875319%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DYRxdkHLa%2BOyUCEE7IqnJeMC=
+Xp%2B8Ec8ZicudzhSkA%2BN4%3D&amp;reserved=3D0" originalsrc=3D"https://www.ev=
+entbrite.com/e/oscar-health-diversity-in-tech-panel-tickets-124292256485" s=
+hash=3D"LTA079Ma6qebB24XbjDy/WLR3ic8uqh8c087oqQUU7SxkZI+4E3qcGkBGiy/yPTnjN5=
+oKdFgoTlEHe+GyY/AgBKEvpbZ2D8PHbBdKqdEXcv3IoWL4BjSfYk3qbUn7iKs4Wddys3J+Wqvia=
+aymu56brjnnL09yGtgJ/uMnfVvdjA=3D">RSVP</a><span style=3D"color:black"> by O=
+ctober 26 by 4 PM to receive the google webinar link and more details.</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">UT Dallas SkillsUSA Virtual Mock Interview W=
+orkshop</span></b><span style=3D"color:black"><br>
+<b>7:00pm | Virtual</b><br>
+Join us for an interactive session of live mock interview practice, with ge=
+neral, technical and behavioral questions. Let's help each other out and ha=
+ve fun in this season of job hunt!
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fcalendar.google.com%2Fevent%3Faction%3DTEMPLATE%26tmeid%3DaGRkMj=
+lnMDk3dWFiczcxazg2bm9sYWgxcDQgdXRkLnNraWxsc3VzYUBt%26tmsrc%3Dutd.skillsusa%=
+2540gmail.com&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08=
+402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298=
+882885318%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT=
+iI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DVNMUgzZXBS9q9mBF%2FNRW%2BimXfB=
+faww4Y12Xk1WeJt%2F4%3D&amp;reserved=3D0" originalsrc=3D"https://calendar.go=
+ogle.com/event?action=3DTEMPLATE&amp;tmeid=3DaGRkMjlnMDk3dWFiczcxazg2bm9sYW=
+gxcDQgdXRkLnNraWxsc3VzYUBt&amp;tmsrc=3Dutd.skillsusa%40gmail.com" shash=3D"=
+gufEjzF2SAo9PVgr/ap5cJP2GKJ+BqIOo/R7VTfzixmHKluwD6nSBbkZJBSryU2iv6u4JbyquM4=
+zxt5MUhElgG7tjqwL9FSMkOBl9L2af65qzfZp2qCWBLy6wLf8xHdYAZ3J3nBaS2Z3dD10Yyq3tC=
+T8iDUwwBWDQB4aXE4Z0jI=3D" target=3D"_blank" title=3D"Original URL: https://=
+calendar.google.com/event?action=3DTEMPLATE&amp;tmeid=3DaGRkMjlnMDk3dWFiczc=
+xazg2bm9sYWgxcDQgdXRkLnNraWxsc3VzYUBt&amp;tmsrc=3Dutd.skillsusa%40gmail.com=
+. Click or tap if you trust this link.">RSVP
+ here and add event to your calendar!</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><u><span style=3D"color:black">Tuesday, October 2=
+7</span></u></b><span style=3D"color:black"><br>
+<br>
+<b>United States Patent and Trademark Office: Veterans Innovation and Entre=
+preneurship Program</b><br>
+<b>12:00pm &#8211; 3:30pm | Virtual</b><br>
+</span><span style=3D"color:black">The USPTO is offering a free online prog=
+ram&nbsp;for veterans, where independent inventors, entrepreneurs, small bu=
+siness owners, and intellectual property (IP) professionals can connect and=
+ learn about useful&nbsp;resources.&nbsp;</span><a href=3D"https://nam02.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Flnks.gd%2Fl%2FeyJhbGciO=
+iJIUzI1NiJ9.eyJidWxsZXRpbl9saW5rX2lkIjoxMDEsInVyaSI6ImJwMjpjbGljayIsImJ1bGx=
+ldGluX2lkIjoiMjAyMDEwMjAuMjkwNDg0MDEiLCJ1cmwiOiJodHRwczovL3d3dy51c3B0by5nb3=
+YvbGVhcm5pbmctYW5kLXJlc291cmNlcy9pbnZlbnRvcnMtYW5kLWVudHJlcHJlbmV1cnMvYXR0Z=
+W5kLXZldGVyYW5zLWlubm92YXRpb24tYW5kLWVudHJlcHJlbmV1cnNoaXA_dXRtX2NhbXBhaWdu=
+PXN1YnNjcmlwdGlvbmNlbnRlciZ1dG1fY29udGVudD0mdXRtX21lZGl1bT1lbWFpbCZ1dG1fbmF=
+tZT0mdXRtX3NvdXJjZT1nb3ZkZWxpdmVyeSZ1dG1fdGVybT0ifQ.Pd_gBnDkMCGZHqezhFcPhNl=
+qE5piqcmzMqqhXv3iZ3o%2Fs%2F901902008%2Fbr%2F87134766181-l&amp;data=3D04%7C0=
+1%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882885318%7CUnknown%7CTWFpbGZsb=
+3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C100=
+0&amp;sdata=3DQSTZX7%2Bw9vvP5pXOhJxy8I1zxE%2BkaYEmrO5U9qOzano%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://lnks.gd/l/eyJhbGciOiJIUzI1NiJ9.eyJidWxsZXRpb=
+l9saW5rX2lkIjoxMDEsInVyaSI6ImJwMjpjbGljayIsImJ1bGxldGluX2lkIjoiMjAyMDEwMjAu=
+MjkwNDg0MDEiLCJ1cmwiOiJodHRwczovL3d3dy51c3B0by5nb3YvbGVhcm5pbmctYW5kLXJlc29=
+1cmNlcy9pbnZlbnRvcnMtYW5kLWVudHJlcHJlbmV1cnMvYXR0ZW5kLXZldGVyYW5zLWlubm92YX=
+Rpb24tYW5kLWVudHJlcHJlbmV1cnNoaXA_dXRtX2NhbXBhaWduPXN1YnNjcmlwdGlvbmNlbnRlc=
+iZ1dG1fY29udGVudD0mdXRtX21lZGl1bT1lbWFpbCZ1dG1fbmFtZT0mdXRtX3NvdXJjZT1nb3Zk=
+ZWxpdmVyeSZ1dG1fdGVybT0ifQ.Pd_gBnDkMCGZHqezhFcPhNlqE5piqcmzMqqhXv3iZ3o/s/90=
+1902008/br/87134766181-l" shash=3D"CDB81sksIm5UTroQQyfCFQ89XXaXErWB1w3KszB3=
+mhWSFgdUFpm85rQpn1LhKpLpkCh0nXi/9WnVzrcXtQxWHF8raFGTTdht0oLCA1YcE6RE1SLslfh=
+CyzcV+V7dr+ltDi1RilwyZwhQhIFLoz5qwI0RkAIdGIVFoVRnByFPY1I=3D" target=3D"_bla=
+nk" title=3D"Original URL: https://lnks.gd/l/eyJhbGciOiJIUzI1NiJ9.eyJidWxsZ=
+XRpbl9saW5rX2lkIjoxMDEsInVyaSI6ImJwMjpjbGljayIsImJ1bGxldGluX2lkIjoiMjAyMDEw=
+MjAuMjkwNDg0MDEiLCJ1cmwiOiJodHRwczovL3d3dy51c3B0by5nb3YvbGVhcm5pbmctYW5kLXJ=
+lc291cmNlcy9pbnZlbnRvcnMtYW5kLWVudHJlcHJlbm"><span style=3D"color:#0000EE">=
+View
+ the agenda and register for the event</span></a><span style=3D"color:black=
+"> on the USPTO website.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Skyworks Solutions Te=
+ch Talk: UT Dallas</span></b><span style=3D"color:black"><br>
+<b>5:00pm &#8211; 6:30pm | Teams</b><br>
+At Skyworks we are an innovator of high-performance analog semiconductors. =
+We welcome you to come learn more about who we are and the opportunities av=
+ailable! Engineering Director, Scott will be reviewing resumes for open 202=
+1 positions.&nbsp; If you are interested
+ in this opportunity, please send your resume to </span><a href=3D"mailto:j=
+enn.townsend@skyworksinc.com">jenn.townsend@skyworksinc.com</a><span style=
+=3D"color:black">. Register on
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F583386&amp;data=3D04%7C01%=
+7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882895311%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&=
+amp;sdata=3DVFPvZB5ExmwwDVOy6JlMWGsxdBB86gq3hU4oZnkXJS8%3D&amp;reserved=3D0=
+" originalsrc=3D"https://utdallas.joinhandshake.com/events/583386" shash=3D=
+"MQ18bGKCA1Kg9E0wzvylWugkyaegP3jOO1sdrLtRvc45ZLHaSab5eN4npswEhdx1CASWRLX4y6=
+lJtbbRg/ioBh9K2cLDKnAtd+7KfmzOC4Ra5MT2pVmMJWSRP09mb7KudjED7WmI+1DF9RgEmwR0O=
+E/PyLNIanr3tVicXPJhj8c=3D">Handshake</a><span style=3D"color:black">!<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><u><span style=3D"color:black">Wednesday, October=
+ 28</span></u></b><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Online Networking Tips with Wonsulting</span=
+></b><span style=3D"color:black"><br>
+<b>12:00pm &#8211; 1:00pm | Virtual</b><br>
+Wonsulting was founded in 2019 with a mission of turning underdogs into win=
+ners: helping those who come from non-target schools/non-traditional backgr=
+ounds to get them into their dream careers. So far, we've helped tens of th=
+ousands receive offers from top
+ companies including the Googles, Deloittes, and Goldman Sachs of the world=
+. Check them out on Linkedin! They have agreed to come to UTD to share netw=
+orking tips!! You don't want to miss this! Register on
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F581381&amp;data=3D04%7C01%=
+7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882905306%7CUnknown%7CTWFpbGZsb3d=
+8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&=
+amp;sdata=3De%2FxuxZcXBxCLSva%2F7bXUlNW0%2BJoVscP7H0RF9O9Fg3w%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://utdallas.joinhandshake.com/events/581381" sh=
+ash=3D"Olde3vQXof4ze2tlfeJgoBjaJ9VeSjDJ7TArmHiIPapHVM7fHAPRuIV2uYVxzcnwYnz4=
+4RZb/KJt7mlhwiHVgBalj8QaMKRd1KkLi7/fU6/dfqXaX2a9fnLXTtZmUEbFjCkD6iBvzUDbtd+=
+uvhcCzoBrdz1f3p891rQI465lW7c=3D">Handshake</a><span style=3D"color:black">.=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black">Academic Job Search a=
+nd CVs Workshop<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:black">12:00pm &#8211; 1:00p=
+m | <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Futdallas.joinhandshake.com%2Fevents%2F537912&amp;data=3D04%7C01%7CJ=
+erry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637393298882905306%7CUnknown%7CTWFpbGZsb3d8ey=
+JWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp=
+;sdata=3Dmxa3D8APj1XVqc2w0m%2FzxD7yJgPEvoS8uVhIVohgSQ8%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://utdallas.joinhandshake.com/events/537912" shash=3D"=
+U6o+Zhdw85mgvzcsZbnspXj89jnwqyIJRAWbU6WKZWW3UXLpWOoQakMbbgeluIC8jvXITUa9Y99=
+wBImIylwcQPIc78dpgIUfHrT7YkkUBJ4ep9lRJCot3AE9bGgnn8YJ/6JqumaMQYk9/Gg2ULRMvS=
+AzK+X0WIwEMu4E8zt6qlY=3D">
+Register here</a><br>
+</span></b>Find out most effective ways to conduct your academic job search=
+ and how to make your CV stand out.<o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">JCS CPT Orientation for ECS F-1 Students</sp=
+an></b><span style=3D"color:black"><br>
+<b>1:00pm &#8211; 2:00pm | </b></span><a href=3D"https://teams.microsoft.co=
+m/l/meetup-join/19%3ameeting_OGRkN2U0NGQtYzhhYy00ZjBmLWIxYjktMzk0MDI0ZTExYT=
+Zl%40thread.v2/0?context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15=
+de9f6c%22%2c%22Oid%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d" targ=
+et=3D"_blank"><b>Teams
+ Meeting</b></a><span style=3D"color:black"><br>
+Required for all international students on F-1 visas with ECS majors prior =
+to obtaining an internship.&nbsp; CPT Orientation covers both academic and =
+immigration policies pertaining to CPT.&nbsp; Provided by Jonsson Career Se=
+rvices and open only to ECS F-1 students.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Diversity Career Success Series - Diversity =
+Employer Panel</span></b><span style=3D"color:black"><br>
+<b>3:00pm &#8211; 4:00pm | Teams</b><br>
+Listen to experts in learning about what&#8217;s going on with Diversity, E=
+quity, and Inclusion in the workplace. This virtual panel brings employers =
+and students together for an intimate discussion about important and pressi=
+ng topics in the workplace surrounding
+ diversity dialogues. Register on </span><a href=3D"https://nam02.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Futdallas.joinhandshake.com%2Fe=
+vents%2F573956&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb0=
+8402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739329=
+8882905306%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DWxeh%2B6XWn6O1bvwyURpHDDeqKKU=
+ymV7avk%2FA9DBeNns%3D&amp;reserved=3D0" originalsrc=3D"https://utdallas.joi=
+nhandshake.com/events/573956" shash=3D"EdbilnNq8UeIn+6ucQRdBmtARNyknlV/H273=
+9WbhxgB/4Z3Blm3vad2AftmeWzr04ueRkXSMK5onf9oOitJ+klmf1Do/aGdA4xZj9PtrLTZKGpW=
+QvQer9NCRQcnWK1vezYwFdFlixq17e9ZF6fwWHgG2UgAr544Fi2OF35rPtho=3D">Handshake<=
+/a><span style=3D"color:black">.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Booz Allen Hamilton: Diversity in the Workpl=
+ace Virtual Roundtable</span></b><span style=3D"color:black"><br>
+<b>3:00pm &#8211; 4:30pm | Virtual<o:p></o:p></b></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Are you a current studen=
+t determined to make the world better? If so, join us for a virtual panel d=
+iscussion and learn about Booz Allen&#8217;s culture of innovation and comm=
+itment to diversity, equity, and inclusion.
+ Here, we not only solve our clients&#8217; toughest challenges, we&#8217;r=
+e also building stronger communities. We celebrate diversity, powered by cr=
+eativity, and are united by purpose. Register
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fcareers.boozallen.com%2Fevents%2FJobDetail%3FjobId%3D31805&amp;d=
+ata=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d4093=
+0%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882915299%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6=
+Mn0%3D%7C1000&amp;sdata=3DSqpIsVu4%2FaoKMUCc%2BcW6838nW%2BI0cGLhudRJF6wL%2F=
+b4%3D&amp;reserved=3D0" originalsrc=3D"https://careers.boozallen.com/events=
+/JobDetail?jobId=3D31805" shash=3D"azq+f3MxvG8ob1dn+Bj2l6dzo22z11fwqp/T41ra=
+dnsAPPkvBO+8ShZwfGxVRHui5phDVjHWGLqrNd0nyU18DX9injmVMKY/tm7iQMpWbPLpypoGyc4=
+4Ifa/0O5xdcBmZH1wUcYHb3SNCbw98A3LFHN6Is6K7esqjpbvABqkeYY=3D">here.</a><o:p>=
+</o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Coding Practice with Kick Start: Welcome to =
+Coding Practice with Kick Start!</span></b><span style=3D"color:black"><br>
+<b>6:30pm &#8211; 7:00pm | Virtual</b><br>
+Looking to brush up on your coding skills? Want to try something new? Then =
+join us for Coding Practice with Kick Start! Work your way through five alg=
+orithmic and mathematical problems on the Kick Start platform in a week-lon=
+g practice session from October
+ 28 - November 4. Register and tune in for the event </span><a href=3D"http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fcodingcompe=
+titionsonair.withgoogle.com%2Fevents%2Fkickstart&amp;data=3D04%7C01%7CJerry=
+.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b=
+16e032d15de9f6c%7C0%7C0%7C637393298882915299%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sda=
+ta=3DCdmXYsz8wrajN6cXDrScb0mT3UoDOlpuN%2FYvJGWv7HY%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://codingcompetitionsonair.withgoogle.com/events/kickstart=
+" shash=3D"fWMu0zUxmSU9sLXXixq4szC8f7UR4g+Gou4BUDXu/WYkkISY5j37D8UxkanWBRjC=
+nimNyWWwvyC+LZt9+FS3HR3Okqc9DrQsUDJSThAploEDAEeECvScbFlQekb/EjaWhJHXOmwNvp2=
+TOSwn3XaokEQUz3nFX8cTYJIl9ZXHgkA=3D">here</a><span style=3D"color:black">.<=
+/span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><u><span style=3D"color:black">Thursday, October 29</span></u></b><o:p><=
+/o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Equal Pay Day</span></b><span style=3D"color=
+:black"><br>
+<b>12:00pm &#8211; 1:00pm | Virtual</b><br>
+Women from the soccer field and the science field to Hollywood and beyond a=
+re speaking up about salary inequality. Join us in our recognition of Equal=
+ Pay Day with a discussion about the gender pay gap.
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.eventbrite.com%2Fe%2Fequal-pay-day-tickets-116833938455&amp;=
+data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d409=
+30%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882925293%7CUnknow=
+n%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI=
+6Mn0%3D%7C1000&amp;sdata=3DvyU2AK8N45zWWOg1HOM6lxs8IlTauYC8x08QMS9SFws%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://www.eventbrite.com/e/equal-pay-day-=
+tickets-116833938455" shash=3D"DHIx8+H701XbLKmsZX2gFdc6HCodBPKOKLri9lek6Iar=
+slayuNsbeJxpRTwLi4YwKC9aEWR/q+BPPv0sMnvTnmRdBuKiZiEkUSJ2Rr54v5tDGRZmULSiRno=
+r6YGyTe+4S/iDGbkLuWpWsG7Sb8+8+vg3fqnitEAYXaminHU/Aeo=3D">Register.</a><span=
+ style=3D"color:black"><br>
+</span><br>
+<b><span style=3D"color:black">UCC ExP &#8211; Internship 101</span></b><sp=
+an style=3D"color:black"><br>
+<b>3:00pm &#8211; 4:00pm | Teams</b><br>
+Join us to explore tangible strategies and resources you can use to find an=
+ internship that aligns with your interests and career goals. We&#8217;ll a=
+lso share tips on how to successfully market yourself during the internship=
+ search process, and how to evaluate internship
+ offers from employers. Please register for this event on </span><a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Futdall=
+as.joinhandshake.com%2Fevents%2F533300&amp;data=3D04%7C01%7CJerry.Teng%40UT=
+Dallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281d1d9c4d4bf7b16e032d15d=
+e9f6c%7C0%7C0%7C637393298882925293%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Da%2Fc=
+zwOxyPcdBCpVEJ%2BnHJqFFt7udkuG7BUpHmmlb5sY%3D&amp;reserved=3D0" originalsrc=
+=3D"https://utdallas.joinhandshake.com/events/533300" shash=3D"C3OOlhuKGQrz=
+tw/ngQphAnv+wJQufFlO2FwJ9qzWyNyWrVQ0Lt/k/3RnZWPcfpG16B9zKHf+q3y9gaq7sn6hzqV=
+wDBBk9CS74wbvxL4TaSfpwNTxI00GfPKmgxMHnkqnf69z8srUtkhhYo8ZXGg71sRs0WDQ9bAkD1=
+XGK5KXWVI=3D">Handshake</a><span style=3D"color:black"> TODAY! A link for t=
+he event will be sent once you register for the event.</span><o:p></o:p></p=
+>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">NSA Cybersecurity</span></b><span style=3D"c=
+olor:black"><br>
+<b>3:00pm &#8211; 4:00pm | Virtual</b><br>
+NSA Cybersecurity is changing the cybersecurity game! Learn how you could b=
+e a part of this diverse team of problem solvers. Register
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Ficag1.recsolu.com%2Fexternal%2Fevents%2FX2-etNettEkmz84izZXXXQ&a=
+mp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d=
+40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882935281%7CUnk=
+nown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJX=
+VCI6Mn0%3D%7C1000&amp;sdata=3DhJE7XV%2BNKgwwz7SzI0VrRjvfaAMLIg7tlPNk9DUcXYA=
+%3D&amp;reserved=3D0" originalsrc=3D"https://icag1.recsolu.com/external/eve=
+nts/X2-etNettEkmz84izZXXXQ" shash=3D"PRvNUaC/AJdyM4socLQk+lg11j94y/S9ylbg5w=
+djZB9suT+zfjTkYQ6aALmlWz1xgyKbUy5tk3Iq0Gf6rKXXbELUcazZehCj90/mZg6woAqi5cA0x=
+FVQo2aZAhXc0wrBtwCne8lf+vTNKSmPchZQ9LGLuGNMe+Wjdr4oX8BAM1Y=3D">here.</a><sp=
+an style=3D"color:black">
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">You're Invited! Schwab Campus Talks: What is=
+ it Like to Work at Schwab? A Conversation with LatinX Community Advocates<=
+/span></b><span style=3D"color:black"><br>
+<b>4:30pm &#8211; 6:00pm | Virtual</b><br>
+Schwab Campus Recruiting is thrilled to invite you to participate in Schwab=
+ Campus Talks! Schwab Campus Talks is a virtual series of educational discu=
+ssions, which will include employees from various lines of business, backgr=
+ounds, and expertise who will focus
+ on specific topics in the finance industry. These discussions are meant to=
+ be both informational and engaging, so we encourage you to ask questions a=
+nd to converse with our speakers. Please register for this event
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fcareer-schwab.icims.com%2Fconnect%3FeventId%3D142557%26shareLink%=
+3D1&amp;data=3D04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708=
+d879d40930%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882935281%=
+7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWw=
+iLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DcrH0gwBKVcoP5efXjK0Br2e6HOOpiDuUNB7iUiVC=
+zUI%3D&amp;reserved=3D0" originalsrc=3D"http://career-schwab.icims.com/conn=
+ect?eventId=3D142557&amp;shareLink=3D1" shash=3D"blyz/ZmJWPCuWbIpmZ2ILS1+sy=
+BCWpHhS7i/nwy9v2XpEYHt4p6VTx74H4wfc8pijHR9mVLktYAU7wsXiAFpEDC+EU3NMFiMzOdG8=
+GDxqf+LzjcDWun6rU1nuC79pD+AN9beW45FBym520JDnGtKS1rY3INBXeV6i4FjuBM0wlg=3D">=
+here.</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><u><span style=3D"color:black">Friday, October 30</span></u></b><o:p></o=
+:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Invest in Yourself Here Goldman Sachs Develo=
+pment Series: Investing in Data Storytelling</span></b><span style=3D"color=
+:black"><br>
+<b>12:00pm &#8211; 1:00pm | Virtual</b><br>
+A GS professional from the Engineering division will be leading a session a=
+round data analytics as well as giving an introduction to a system known as=
+ Altryx. Register
+</span><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Frecruiting360.avature.net%2Fsu%2Fbbdd4219a938863c&amp;data=3D04%=
+7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882945277%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+1000&amp;sdata=3DQPmEFp9oSF8D9Er%2BHRPiJrN7swGxEz1f8IK%2FYCBNgwc%3D&amp;res=
+erved=3D0" originalsrc=3D"https://recruiting360.avature.net/su/bbdd4219a938=
+863c" shash=3D"amDkTgNFJ8Kd0fdQMcl+n8OtVx63IX0iNWUrflLNMYl1AwDYYCfAsC1lO/vN=
+NreEHHRWPqeLhOCDeywqK51EJ1LI9Nj+TG8GdT9VRPn0EE7gCXP/NToK2fDFwYzPCllzZn1+Dz7=
+vuW+Tvi2lDkdwU+VikRBYD/mdOupllS0A2+E=3D">here.</a><span style=3D"color:blac=
+k">
+</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">JCS Interview Preparation Workshop for ECS S=
+tudents</span></b><span style=3D"color:black"><br>
+<b>1:00pm &#8211; 2:00pm | </b></span><a href=3D"https://teams.microsoft.co=
+m/l/meetup-join/19%3ameeting_MWNjOTAzNjYtOWY2My00YmZhLTg5ZmEtZTVkZWUyYTRmYj=
+Y2%40thread.v2/0?context=3D%7b%22Tid%22%3a%228d281d1d-9c4d-4bf7-b16e-032d15=
+de9f6c%22%2c%22Oid%22%3a%22c799f37e-348c-4f70-b355-b14daaae1a7f%22%7d" targ=
+et=3D"_blank"><b>Teams
+ Meeting</b></a><span style=3D"color:black"><br>
+Are you ready for your interview?&nbsp; Let the JCS help you prepare for yo=
+ur internship interview.&nbsp; In this workshop we will discuss common inte=
+rview questions and the best ways to prepare for an interview.&nbsp; Provid=
+ed by Jonsson Career Services and open to all ECS
+ students.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><br>
+<b><span style=3D"color:black">Celebrate Founders Days</span></b><span styl=
+e=3D"color:black"><br>
+This year&#8217;s Founders Day is going virtual, and you can bet that UT Da=
+llas is celebrating founders Eugene McDermott, Erik Jonsson and Cecil Green=
+ in style. Join us for online contests and giveaways leading up to Founders=
+ Day on Thursday, October 29.</span>
+<a href=3D"https://www.utdallas.edu/foundersday/">Learn more.</a> <o:p></o:=
+p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Need assistance with your job search? <o:p></o:p></p=
+>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormalCxSpMiddle" style=3D"margin-bottom:8.0pt;mso-add-spac=
+e:auto;line-height:105%;mso-list:l0 level1 lfo1">
+Student Last Name: A to F, contact <a href=3D"mailto:mas051000@utdallas.edu=
+"><span style=3D"color:blue">Mary Ann Chou Stewart
+</span></a><o:p></o:p></li><li class=3D"MsoNormalCxSpMiddle" style=3D"margi=
+n-bottom:8.0pt;mso-add-space:auto;line-height:105%;mso-list:l0 level1 lfo1"=
+>
+Student Last Name: G to N, contact&nbsp; <a href=3D"mailto:kxf170001@utdall=
+as.edu"><span style=3D"color:blue">Kori Farley
+</span></a><o:p></o:p></li><li class=3D"MsoNormalCxSpMiddle" style=3D"margi=
+n-bottom:8.0pt;mso-add-space:auto;line-height:105%;mso-list:l0 level1 lfo1"=
+>
+Student Last Name: O to Z, contact <span style=3D"font-size:10.0pt;line-hei=
+ght:105%;color:#1F497D">
+&nbsp;</span><a href=3D"mailto:axc169230@utdallas.edu"><span style=3D"color=
+:blue">Andrea Croasdale Woudwyk
+</span></a><o:p></o:p></li></ul>
+<p class=3D"MsoNormalCxSpMiddle" style=3D"mso-margin-top-alt:0in;margin-rig=
+ht:0in;margin-bottom:8.0pt;margin-left:.5in;mso-add-space:auto;line-height:=
+105%">
+<o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Jerry Alexander-Assistan=
+t Dean for Student Development<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Jonsson Career Services =
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">UT Dallas Erik Jonsson S=
+chool of Engineering and Computer Science
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><a href=3D"https://nam02.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fwww.linkedin.com%2Fin%2Finternguy%2F&amp;data=3D=
+04%7C01%7CJerry.Teng%40UTDallas.edu%7Ccac89138eb08402a883708d879d40930%7C8d=
+281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637393298882945277%7CUnknown%7CTWF=
+pbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D=
+%7C1000&amp;sdata=3DAc4uPYuAIxXa4tieFod6SS1ayveZNiHt5hL654GGBOw%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://www.linkedin.com/in/internguy/" shash=3D"N=
+wmDJGEGVRcNNqHbYfTMGllhgSCOyDWwBWGGGjIJVhdhEBKOKFR/npHIh5bboylBjivPJJpQ+GOi=
+zhcRnxsdsqbMolyHPytemFfAcTLHegxDOQqS/eLQQoCd8xrk2p9vj7du2FVd8y2qOroA+/+YKPQ=
+vukLcBwuCqJOAFYRXnLQ=3D"><span style=3D"color:blue">https://www.linkedin.co=
+m/in/internguy/</span></a><span style=3D"color:black"><o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"color:black">972.883.4373 (forwarded =
+to my home phone)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SN6PR01MB3805BBFCF2E2A63797C1C97F82190SN6PR01MB3805prod_--

@@ -1,0 +1,289 @@
+Received: from SN6PR01MB4269.prod.exchangelabs.com (2603:10b6:805:ad::23) by
+ BN6PR01MB2340.prod.exchangelabs.com with HTTPS; Thu, 8 Oct 2020 15:38:28
+ +0000
+Received: from CY4PR15CA0006.namprd15.prod.outlook.com (2603:10b6:910:14::16)
+ by SN6PR01MB4269.prod.exchangelabs.com (2603:10b6:805:ad::23) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.32; Thu, 8 Oct 2020 15:38:27 +0000
+Received: from CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:910:14:cafe::e1) by CY4PR15CA0006.outlook.office365.com
+ (2603:10b6:910:14::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.23 via Frontend
+ Transport; Thu, 8 Oct 2020 15:38:27 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ CY1NAM02FT014.mail.protection.outlook.com (10.152.75.142) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3433.39 via Frontend Transport; Thu, 8 Oct 2020 15:38:27 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 8 Oct 2020 10:38:06 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 8 Oct 2020 10:38:06 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 298F7C00006F; Thu,  8 Oct 2020 10:38:06 -0500 (CDT)
+Received: from ExchLists.utdallas.edu (smtp.utdallas.edu [10.182.71.121])
+	by lists.utdallas.edu (Postfix) with ESMTP id 71C64C000051
+	for <students@lists.utdallas.edu>; Thu,  8 Oct 2020 10:23:33 -0500 (CDT)
+Received: from utdex02.campus.ad.utdallas.edu (10.182.71.121) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Thu, 8 Oct 2020 10:23:33 -0500
+Received: from oitpintfpm702.utdallas.edu (10.182.70.70) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Thu, 8 Oct 2020 10:23:33 -0500
+Received: by oitpintfpm702.utdallas.edu (Postfix, from userid 100001)
+	id 41DF81F4B47; Thu,  8 Oct 2020 10:23:33 -0500 (CDT)
+To: <students@lists.utdallas.edu>
+From: <nate.howe@utdallas.edu>
+Content-Type: text/html; charset="iso-8859-1"
+Reply-To: <nate.howe@utdallas.edu>
+Message-ID: <20201008152333.41DF81F4B47@oitpintfpm702.utdallas.edu>
+Date: Thu, 8 Oct 2020 10:23:33 -0500
+Subject: [students] October is Cybersecurity Awareness Month!
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1444
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-10/20201008152333.41DF81F4B47%40oitpintfpm702.utdallas.edu>
+Return-Path: bounce+jerry.teng==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Oct 2020 15:38:27.4092
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 072af816-ee94-4012-8cc1-08d86ba03364
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT014.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: 072af816-ee94-4012-8cc1-08d86ba03364
+X-MS-TrafficTypeDiagnostic: SN6PR01MB4269:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:3631;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+Content-Transfer-Encoding: 7bit
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Oct 2020 15:38:27.3262
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 072af816-ee94-4012-8cc1-08d86ba03364
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB4269
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4079608
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?36dpGwfSIgN6T3DA1OggyMkrD/DOlPKyLoRjdWE1j23Zw4WbUa2fzjHptH?=
+ =?iso-8859-1?Q?AF91xjr+wBo0dHPpqtw9PfA+pFpyOusu89xUQOtil71ArmuwEBMsF3UWi2?=
+ =?iso-8859-1?Q?o5d/oDy1xCZLBNc2hMuhfE8xNAKLevZVY9Ki624XElHPQF04ykSrArP8p+?=
+ =?iso-8859-1?Q?rLfXhJF8TSi0lN0RXq4GGZG3GSaFcO5LBr4bLrgBKKOzlCeflCb3J/AYbe?=
+ =?iso-8859-1?Q?5846lsPGF8eoq1TVjLrNNu0gvBIF7RcAB3WQH2PMRk34Cr/GCFYrvNri3S?=
+ =?iso-8859-1?Q?70jMdX9rxb4NkusmWWFg3fh+gbfM9YgmXMKkc0ntuo0pZFXjCXoB/oD/FJ?=
+ =?iso-8859-1?Q?cvtShjEO/wTYtP/dwL2rmmRWFrmRbrEMDFrwJ0I2DOzt9IE66I6Hgq66pt?=
+ =?iso-8859-1?Q?pKcDjHnZ8M/Dw3JZTwvUUXQPy8yof6zussNixHT9dfLglwzRXUYE1oKlOA?=
+ =?iso-8859-1?Q?3gOsylLYwA3Oops/3tkiU0nLNe1+8wDQv8JVNdID23CJroITUqGDq5bvaE?=
+ =?iso-8859-1?Q?IAmigHKgY3RyW48P90tjDxWjCuidxjWeBCpjZoE1v+LJwLlm0G9wXtasMA?=
+ =?iso-8859-1?Q?aNFlu3BAX47i6s3QcM41l9D/aXXrpccOLZm1Mtziy2UYh93ycXuVs77bfU?=
+ =?iso-8859-1?Q?uobcIVJQgZXaEmrxX2iPbafDodqT6W3tY1ZmOqzcaO6YXI/lOXlOfqZrRk?=
+ =?iso-8859-1?Q?N9UzaXEp80W2sTjvfJa/Ac9bS8lmhkvg+DnNETML/RCDPVkglyxeijlUvn?=
+ =?iso-8859-1?Q?5VtoZv4cHQwFoQurWKJ4VGZf2S8AJmnnc5LYDGyvRrLJFICYvQGfScyDro?=
+ =?iso-8859-1?Q?5t25I336UP/ivYyxrQmQ/tdTG247gNFqvbipqIWBc0HQHyyoW8fvGItw+s?=
+ =?iso-8859-1?Q?qLQJZJrAgrAS3N2sbOL6bTMRPmTaGokcxKumn6e/Jzqw6GlzVJnr+YvZhW?=
+ =?iso-8859-1?Q?WEcT4+ix7asSO1pHGNzipGKk/junO+bE9mlfUg4MbW2cWa3dJ9HJOdcjDx?=
+ =?iso-8859-1?Q?x+CThxIQYFIGj0ccslr9Agd7uaxeu2zLCINJjceFYKtwqZmd3atthOX+PS?=
+ =?iso-8859-1?Q?65tyHfRroeU6pu9hE3Ixz1rilXf7rKF5e7LgxFOCVXxnSt5FoPehiYVRYC?=
+ =?iso-8859-1?Q?hMIepU9SAg1QZhJtGOvMpJaWkC9BapSxS8jjBsixCew2QFtX1UvFLwhaoy?=
+ =?iso-8859-1?Q?XqU2WnYGeVmTAcBMs6pzVYzdUAR730+6VO6XDV5zsdhZw/5gQi674aM510?=
+ =?iso-8859-1?Q?+z9ws6VYxkfxthWZXgXA=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The University of Texas at Dallas</title>
+<!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse:collapse;}
+        table.main-table {width:600px;}
+    </style>
+<![endif]-->
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; max-width:100%; max-width:600px; height:auto !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration:none;}
+    .appleBody2 a {color:#fff; text-decoration:none;}
+    .appleBody3 a {color:#999999; text-decoration:none;}
+    .appleBody4 a {color:#818179; text-decoration:none;}
+    .appleFooter a {color:#999999; text-decoration:none;}
+    .appleEvents a {color:#404141; font-weight:bold; text-decoration:none;}
+  /* EVERYTHING ELSE */
+  	.icon{max-width:36px !important;}
+    @media screen and (max-width:600px) {
+      body[yahoo] .deviceWidth {width:280px !important; padding:10px 0 0 0;}
+      .deviceWidth {width:280px !important; padding:10px 0 0 0;}	
+      body[yahoo] .center {text-align:center !important;}
+      .center {text-align:center!important;}
+    	img{ max-width:100% !important; height:auto !important;}
+  	}
+</style>
+</head>
+
+<body link="#e87500" style="font-family:sans-serif; min-width:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; background-color:#e3e3e3; margin:0; padding:0;" dir="ltr" lang="en-US" bgcolor="#e3e3e3" xml:lang="en-US" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+<!--[if (gte mso 9)|(IE)]>
+    <center>
+        <table><tr><td width="600">
+<![endif]-->
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#e3e3e3; max-width:600px; border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; table-layout:fixed; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" class="main-table">
+      <tr>
+        <td align="left" valign="top" style="font-family:sans-serif; padding:0;">
+
+
+
+
+          <!-- START Header Image -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+                <tr>
+                  <td align="center" valign="top" style="font-family:sans-serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">The University of Texas at Dallas</div><a href="https://www.utdallas.edu/"><img src="https://www.utdallas.edu/evites/templates/aries/img/utd-monogram-header-orange.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+                </tr>
+            </table>
+
+          <!-- END Header Image -->
+
+
+
+
+          <!-- START Content-->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+              <tr><!-- START Image -->
+                <td align="left" valign="top" style="padding:0; background-color:#fff;"><img src="https://www.utdallas.edu/evites/cybersecurity-awareness/utdallas_46171521.jpg" alt="photo of student typing on laptop" width="600" style="vertical-align:bottom; margin:0; padding:0;"></td>
+              </tr><!-- END Image -->
+              <tr><!-- START Heading -->
+                  <td align="left" valign="top" style="font-size:16px; color:#e87500; padding:45px 30px 5px 30px;"><strong><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.edu%2Finfosecurity%2Fcybersecurity-awareness-month%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C072af816ee9440128cc108d86ba03364%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637377683083183971&amp;sdata=ECnAr40NBLSypdRnm4tsg5T1Au6x9koqxqHMc3nuH%2FI%3D&amp;reserved=0" originalsrc="https://utdallas.edu/infosecurity/cybersecurity-awareness-month/" shash="XQsoDnTGfNX7RhK56YPnfyn9zfTKLF9TTxWMg4lVciPey//dRUttD2ZfrInUjvIQo2ttFJdWKqIuX6hRiwryzJoTsczQnKUCEBVSYG70t2BZOoc6bERfEedo827cDWW+gy1aKDkNfE/DAHRqzzsdQFK3frcJYZFBTihzSicNQHs=" style="color:#e87500; text-decoration:none; border-bottom:1px solid #ccc;">Learn Safety Tips from Experts During Cybersecurity Month</a></strong></td>
+              </tr><!-- END Heading -->
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:14px; line-height:22px; color:#333; padding:15px 30px 60px 30px; background-color:#fff; text-align:left;">
+                    Every day the campus community works together to stop cybercriminals. As many of us work and study remotely, it is even more important that we take steps to protect devices and the information we access.<br><br> 
+During National Cybersecurity Awareness Month, the <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.edu%2Finfosecurity&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C072af816ee9440128cc108d86ba03364%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637377683083183971&amp;sdata=ZHtZsgDED8KHdphig2HPNU0zAa0sFhWcvXFoABT69mE%3D&amp;reserved=0" originalsrc="https://utdallas.edu/infosecurity" shash="DOp8G3S07IZRffSE66ASOnwjl1YxgOnQVie/Y3P+MQd1U/m5BY7qgOtxB24Unezcd8gM7Dmykj+ePw1OkrlfCUsflMSXmbEeeKgada1iMMITBU2I6YlSwSOEuhTs8Ddv3O0YQlD+3OMfu5mnD82+rYJSIRgfFeDcyhAEb6YJ2z8=" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">Information Security Office</a> (ISO) is promoting safe computing habits and sharing information about the latest defenses.<br><br> 
+ISO will offer weekly <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.edu%2Finfosecurity%2Fblog%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C072af816ee9440128cc108d86ba03364%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637377683083183971&amp;sdata=%2FxEKdUgBbDCd5N2fgpcltXxxao2BC7m1a72gYCREi0M%3D&amp;reserved=0" originalsrc="https://utdallas.edu/infosecurity/blog/" shash="h74Jl6lyGCc52eivKRs6nfyLNfUQlitdb5h9EX0lamP3rrPCPpwX4s0yE00qdu0aj1Lpd//tf5TFi/9jzGDhsE3gD9z3Uzk/TTTni0MB6VArcdZGOCgqI7wDR662AEQidAr7166YSU7/6O+iFjsfipNIQNI06oyjXpm6jlkABBc=" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">blog posts</a> on these important topics:
+<ul>					  
+<li>Identifying fake job opportunities</li> 
+<li>Staying safe while working and studying remotely</li>  
+<li>Smarter password management</li> 
+<li>Patching every device</li>  
+<li>Identifying email scams</li> 
+</ul>	
+Additionally, Nate Howe, chief information security officer, will conduct a live Ask Me [Almost] Anything session on <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.reddit.com%2Fuser%2FUTDallasInfoSec%2F&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C072af816ee9440128cc108d86ba03364%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637377683083193959&amp;sdata=P2uvQjtxwBetCfoO6ZEHlHd5ZPxqBr3P2QBLn2oqZ7c%3D&amp;reserved=0" originalsrc="https://www.reddit.com/user/UTDallasInfoSec/" shash="eRloE1n5F6Qc9ru0GsTGtqUz7NEUhL1sPXI5ZD3rHjd3W8OPDq0WiVBtkJh4QThptqqyCf/mHt9WiqPD+UNHlJPv0W2cZN9Ls8LtuQfUqVENz7LpTAs1TZpqH1krxgqVrvgN0lQDwxbMt1aghJGosxi8n5oV91dC7AnzyJi4bnw=" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">Reddit</a>, Oct. 28-30. ISO analysts will also visit student organizations to answer questions and discuss career opportunities in cybersecurity.<br><br>
+Faculty and staff are encouraged to share this information. For more information, visit the <a href="https://www.utdallas.edu/infosecurity" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">ISO website</a> or email <a href="mailto:infosecurity@utdallas.edu" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">infosecurity@utdallas.edu</a>.
+
+                  </td>
+              </tr><!-- END Body Text -->
+            </table>
+
+          <!-- END Content -->
+
+
+
+
+
+
+
+
+
+          <!-- START Footer -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="border-spacing:0; color:#666; font-size:14px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#f2f2f2;" bgcolor="#f2f2f2">
+              <tr>
+                <td align="center" valign="top" style="padding:30px 20px;">
+                  <a href="https://www.utdallas.edu/" style="color:#666; outline:none; border:none; text-decoration:none">The University of Texas at&nbsp;Dallas</a><br>
+                  800 W. Campbell Road, Richardson,&nbsp;Texas 75080<br><br>
+                  View this email in your <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.edu%2Fevites%2Fcybersecurity-awareness%2Findex.html&amp;data=02%7C01%7CJerry.Teng%40UTDallas.edu%7C072af816ee9440128cc108d86ba03364%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637377683083193959&amp;sdata=ReCs7LgSHJCMR9KrjC0ylAsWafz8MdWbTK4ynlKV%2ByQ%3D&amp;reserved=0" originalsrc="https://utdallas.edu/evites/cybersecurity-awareness/index.html" shash="hlwiojCRV3Tb+8dOj8rNdm2Hn4N5BysBTG/X+7w9osQGSaxpO/xPppn5jA3tsL3rLm8tikUy63gnIBDofScbUJk+r/71Ub/GpCujRiA98h2I9zGsMzuDmV1S3dn2aU0aaS4vS5BKl4p5Ptbv9AJcAgyL13TE2koI9KMrP/FvmZ4=" style="color:#666; outline:none; border:none;">browser</a>.<br><br>
+                </td>
+              </tr>
+            </table>
+
+          <!-- END Footer -->
+
+
+
+
+          <!-- START Orange Bar -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#e87500;" bgcolor="#e87500">
+                <tr>
+                  <td align="center" valign="top" style="padding:2px;">
+                    </td>
+                </tr>
+            </table>
+
+          <!-- END Orange Bar -->
+
+
+
+        </td>
+      </tr>
+    </table>
+  </center>
+<!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    </center>
+<![endif]-->
+
+<!-- START Litmus Analytics -->
+<style data-ignore-inlining="">@media print{ #_t { background-image: url('https://cbxapalu.emltrk.com/cbxapalu?p&d=');}} div.OutlookMessageHeader {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} table.moz-email-headers-table {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} blockquote #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} #MailContainerBody #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')}</style><div id="_t"></div>
+<img src="https://cbxapalu.emltrk.com/cbxapalu?d=" width="1" height="1" border="0" alt="" style="width:1px; height:1px">
+<!-- END Litmus Analytics -->
+</body>
+</html>
+
+
