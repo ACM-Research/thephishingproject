@@ -1,0 +1,93 @@
+Received: from BYAPR01MB4680.prod.exchangelabs.com (2603:10b6:a03:84::19) by
+ SN6PR0102MB3599.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 19:39:54
+ +0000
+Received: from CY4PR03CA0021.namprd03.prod.outlook.com (2603:10b6:903:33::31)
+ by BYAPR01MB4680.prod.exchangelabs.com (2603:10b6:a03:84::19) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Thu, 22 Oct 2020 19:39:42 +0000
+Received: from CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:33:cafe::1) by CY4PR03CA0021.outlook.office365.com
+ (2603:10b6:903:33::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Thu, 22 Oct 2020 19:39:42 +0000
+Authentication-Results: spf=pass (sender IP is 69.196.241.6)
+ smtp.mailfrom=utdallas.edu; utdallas.edu; dkim=none (message not signed)
+ header.d=none;utdallas.edu; dmarc=pass action=none
+ header.from=utdallas.edu;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of utdallas.edu designates
+ 69.196.241.6 as permitted sender) receiver=protection.outlook.com;
+ client-ip=69.196.241.6; helo=mail-relay6-va2.blackboard.com;
+Received: from mail-relay6-va2.blackboard.com (69.196.241.6) by
+ CY1NAM02FT009.mail.protection.outlook.com (10.152.75.12) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 19:39:41 +0000
+Received: from fgprd-100946-205964-app003.mhint (fgprd-100946-205964-app003.mhint [10.5.3.33])
+	by mail-relay6-va2.blackboard.com (Sentrion-MTA-4.3.2/Sentrion-MTA-4.3.2) with ESMTP id 09MJcBUS007896;
+	Thu, 22 Oct 2020 19:38:47 GMT
+Date: Thu, 22 Oct 2020 14:39:38 -0500 (CDT)
+From: "Irene Marroquin - ixm033000@utdallas.edu" <eLearning-Notification@utdallas.edu>
+Reply-To: "Irene Marroquin - ixm033000@utdallas.edu" <ixm033000@utdallas.edu>
+To: "2208-UTDAL-ECS-1100-SEC502-86118":;
+Message-ID: <1181596557.23134.1603395580970.JavaMail.bbuser@fgprd-100946-205964-app003>
+Subject: ECS 1100.502 - Introduction to Engineering and Computer Science -
+ F20: Policy Quiz Retake
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_23132_1351270922.1603395578317"
+Return-Path: eLearning-Notification@utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 19:39:41.8700
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b5866fef-0ca0-4333-7dfa-08d876c238a0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132478691818730270;(e0eefec1-770c-4e69-5d10-08d7a32ef162,6b975fa1-5cac-4c47-4e49-08d81bb3d4cf);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b5866fef-0ca0-4333-7dfa-08d876c238a0
+X-MS-TrafficTypeDiagnostic: BYAPR01MB4680:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-blackbaud-Policy3: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:4125;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:69.196.241.6;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mail-relay6-va2.blackboard.com;PTR:mail-relay6-va2.blackboard.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 19:39:41.6431
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b5866fef-0ca0-4333-7dfa-08d876c238a0
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource: CY1NAM02FT009.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR01MB4680
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:13.3002884
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	fOsHGiCAVLuN6jQws4vOAcNsY1M+Q8l6EaN07lDslThGHBAPeqtp4zXV/nL6Qri1Gyf7toEEAa2d9oxfALtwXK47aB9zwQisLAtWihA6oM6toOCgWL0x8Xh1OixbZ9pzkIYYp2MsM97dkEPwB75D/K/CSvqmh/MJBaXY4emfppMFZQTfj+peA61fHyzTRdm2r9Q1RkQJLosgRNDMXg2FHe5kdDaO9Zaw7LsVD7HPZM2s8RF0rUhuqc556XbGmYPdKosSeBOcNHQItnc869f5nv+4i1lZ9szYPX7huTGQX5sh+b3tpo5CmLBglGvhucbrOfb5A4Ow/Pn12C8fRKv+/uNBVVFM+31QwjLDfI/EnLsDt58vBioFeyJxYDBB3KpgL1e1EdOrA0v5j0jI3QqTp50oTPNUaKqdQkJNnHfeVkiSCGitavZbLHKyINlNG8mL2CoF2JW0GTcsFh+CttcXs1MvCU4TBVxs5zLQ3CMR3PwOeKi+mrxjHap8G6avna8MFW6p72X246MGwEGW1zcJ9BQ1yJyYO4iGbOflC2TCU9XP6QLXr9d+F6y+FiPLax4eo3s0J3JOTQT+jrhNKSfrRHdIvUNjFKDcE0AYBxVPFPoIgKUQmdgxaV2taxOBG9RqTGClxELAzzBe1tZJA8qeqvpceIiD0vv9CcLtMMFJOp7pSRS8cZaB4PyX26G1f7H1fDbG05kCeQrFL2qlm8cQR/X/lBqUOM4RgK4rqIPB4G+4nEYD2MQK5+G8iHIKwNKTBntfyxqPu1fWWZdhQ6zDyni8veAMklTdn0PAhjGjBiM7EyMAUJx6cyLXb8Fz/112MZtt7c/3gzRHPXyux72Cus4lebpT11g0Q9lbZ3WgHOE+tqPOoUuoPkM144F4pqQNh7nvgCKrYUrSzuSRsnwTN7zHPkcJe1Z0fAxIMJEeooY=
+MIME-Version: 1.0
+
+------=_Part_23132_1351270922.1603395578317
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+            I have added a policy quiz retake.&nbsp;You have the option to take this quiz to replace the grade of the first policy quiz.&nbsp;I will take the best of the two grades.&nbsp;       
+------=_Part_23132_1351270922.1603395578317
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>  <body>   <div class="vtbegenerated">    <p><span style="color: #ff0000;"><strong> I have added a policy quiz retake.&nbsp;You have the option to take this quiz to replace the grade of the first policy quiz.&nbsp;I will take the best of the two grades.&nbsp; </strong></span></p>   </div>  </body> </html>
+------=_Part_23132_1351270922.1603395578317--

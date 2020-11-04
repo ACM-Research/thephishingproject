@@ -1,0 +1,189 @@
+Received: from SJ0PR01MB6416.prod.exchangelabs.com (2603:10b6:a03:295::9) by
+ SN6PR0102MB3599.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 12:10:19
+ +0000
+Received: from CY4PR02CA0001.namprd02.prod.outlook.com (2603:10b6:903:18::11)
+ by SJ0PR01MB6416.prod.exchangelabs.com (2603:10b6:a03:295::9) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Thu, 22 Oct 2020 12:10:17 +0000
+Received: from CY1NAM02FT034.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:18:cafe::83) by CY4PR02CA0001.outlook.office365.com
+ (2603:10b6:903:18::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Thu, 22 Oct 2020 12:10:17 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.101.215)
+ smtp.mailfrom=send.piazza.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=piazza.com;utdallas.edu; dmarc=bestguesspass action=none
+ header.from=piazza.com;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of send.piazza.com
+ designates 167.89.101.215 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.101.215;
+ helo=o4.sendgrid.piazza.com;
+Received: from o4.sendgrid.piazza.com (167.89.101.215) by
+ CY1NAM02FT034.mail.protection.outlook.com (10.152.75.190) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 12:10:17 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=piazza.com; 
+	h=from:to:references:subject:mime-version:content-type; s=s1; 
+	bh=TeH7FmpvyTt7Su8ScPo22jFZHJt9PnOVje0cU2xtIM0=; b=mqhvje9qHhRsr
+	AzZYP16uHiWDVbfnyhC9dbj4y6J2sXZGaHrrzlb5YuqTqkNol7yYDZaRoGApWyIV
+	YlJgnBDXLhSGfmLac0RCktHjIq6lXGzEVg0wsD8mfJRSQjXpq3ZDH/eP50rfFtqz
+	Aebt/FtTEfgfoqG0YesBm+kTMhZGo4=
+Received: by filter0532p1iad2.sendgrid.net with SMTP id filter0532p1iad2-30470-5F9176A8-5E
+        2020-10-22 12:10:16.497188521 +0000 UTC m=+40226.377601739
+Received: from 44nstxgkun.smtp.sendgrid.net (unknown)
+	by ismtpd0139p1mdw1.sendgrid.net (SG) with ESMTP id ZM06CWA_RVCSsgAk9bGeCg
+	for <jtt190006@utdallas.edu>; Thu, 22 Oct 2020 12:10:16.405 +0000 (UTC)
+Date: Thu, 22 Oct 2020 12:10:16 +0000 (UTC)
+From: CS 2337 on Piazza <no-reply@piazza.com>
+To: jtt190006@utdallas.edu
+Message-ID: <869638357.113486.1603368616346@prod-task01.ae.piazza.com>
+References: <null_u@piazza.com>
+Subject: Activity Digest since 3:01AM for CS 2337 on Piazza
+Content-Type: multipart/related; 
+	boundary="----=_Part_113484_1461235095.1603368616346"
+X-SG-EID: WPwLAJ14+SJT7QnNIWhgUO1jb8VrrEF9FIIxElOjTeMF4apyuZM7IavkJAevuRJZWjvdJ3crLdjeIf
+ H7cBTo5dnzQJYenlnShCD4GF/lFt1eflTB8H+lMeSFEDSV4odtgyswzp3vpLJOQusvYrfXFtYhOoDI
+ oprmYUJV1b9F2lW4x/kkJ89J55Iy1RpeVJfRJ6F425iOL13VUQcqlkB75F4cZPV3awruGckz33MIg5
+ c=
+X-Entity-ID: JNW8vgYghlSXf2j+L819xA==
+Return-Path: bounces+5126-683e-jtt190006=utdallas.edu@send.piazza.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 12:10:17.3554
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a88d9943-2c48-4b73-1776-08d876837086
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: a88d9943-2c48-4b73-1776-08d876837086
+X-MS-TrafficTypeDiagnostic: SJ0PR01MB6416:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2150;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:167.89.101.215;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o4.sendgrid.piazza.com;PTR:o4.sendgrid.piazza.com;CAT:NONE;SFS:(4636009)(286005)(1096003)(83380400001)(26005)(7036003)(336012)(83170400001)(166002)(356005)(8676002)(2160300002)(7636003)(7596003)(34206002)(966005)(33964004)(327265003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 12:10:17.2165
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a88d9943-2c48-4b73-1776-08d876837086
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT034.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR01MB6416
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2653189
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SkJPM0g4anl2RnhSMmJmd1VTOFE5N0ZDUmhOLys1SFNKRU0yUDZTbWlaSjcv?=
+ =?utf-8?B?eVJUcTRDRlBPaGZ0dUcvL0dXelNUb0prWHRwZDJzTTJVMjA2Y2ROdXVaZi9x?=
+ =?utf-8?B?Y01SQit4Sy9iTlRvMEpIdkFEK1ZKamo3bmZ5VVZYL0NiMzVrei83VEpUL05q?=
+ =?utf-8?B?dkthSmloSmRpQ1N4S0wvMThXNHY0Tm1qd1hEOGo4SDVxcW52TnNndEVkK2dD?=
+ =?utf-8?B?QmtJbVpFRzIvSlhBL0hISFRjWWIyNGNsWitMaFZCS1dHTURBZWoyU0pQdUdn?=
+ =?utf-8?B?WWhGdTMyTDlwc29oN0h5YTIzcmdJd1c2cnR3azhsR1R0RFVpT1pRZmpnMkRr?=
+ =?utf-8?B?eDBsaHBkK1MydTM4WDRUZll5TTF0RVFiS1Y0YXoxOUg3K3ZTTyt3ZVVsekps?=
+ =?utf-8?B?ekNVR3hLZVFNbDdLVmJmL3dIYkNvUGl2OFppWjBKeE5zMFM0OVRuTmVsT2M2?=
+ =?utf-8?B?RS85ZlJaVjVaMktzQkVMcWZmdnMvajRxZkZWSmFEWnh6a0hBWE95NkNOeDU2?=
+ =?utf-8?B?ZjQ2NTlTQUxKYXMrZExPZHlMekt2WTFpVHJSV1pwUXplcXlFNWVhMi9kcEcv?=
+ =?utf-8?B?bXlRTHNqWnFJSHF4UkNpaGZwdENZTEthaHlHY0szNVNHU3NpYjVvTWk0MVgw?=
+ =?utf-8?B?dHZCTURwSGk5UkNya0lObnF2SnVlb29WMjFyOUVWZ1ovWEJMOXBHNlBvR2VP?=
+ =?utf-8?B?eXNpbWVERFZIVmx6UTZJZ2Yvbmd4WEdDQStEcVlwK0NPdlBiUk9Wc2tHTWgy?=
+ =?utf-8?B?MForblp6aEFRZlVaQVhWS3BXL0cwR1ZIaTFHTkEyRzIycUVha3llUzhRd0Jj?=
+ =?utf-8?B?MUQyVm5hWnB5WkNJNDNiSGlIMWRDSWl5V2k2enI3Y0JVOUt6YldjVDJ4b1lK?=
+ =?utf-8?B?TnQyaXgwRmphS3gxM2cza0diM3hJbzA3OVh4MFRvd3p6bVhlSWtCRkZWeXZI?=
+ =?utf-8?B?d2Nrc3FRcWF2eFA2YklRakV3dDRXd1ZsaHBPMnFzcmhTZ2llNUp4NmZRbzhE?=
+ =?utf-8?B?eGo1dHFKL1dXVklCY0pHTFo4TXEwczdDeWtLdUEvcExhQXB5aEdodUVGL2pl?=
+ =?utf-8?B?S1lURy9Rb0FHUi83SmFESjEwS1RSUFl6YmhTRUQ2WmExMDlKc1Y3ejJYNDJn?=
+ =?utf-8?B?Q2c2N0FlNGh0SkM2TEtIbjhxNjZFbFFqeGp6OE5QYVU2dDl5aFhubWlaNk1D?=
+ =?utf-8?B?Lys4Qkg2VmlteW5ROHNla21sd09JNmV6SGJqcFROSFlORWIvK1BvV21lZlZF?=
+ =?utf-8?B?V3dSZzF5eG1HY3ZiUVRsaTZZRVBwQUVHQWVRMEczOFJXMUZMMmdQM2owdlQz?=
+ =?utf-8?B?WjJINm4wTDlsYVhGMmkrM0pqaGkwZDF6alZuUklHZEwrSy9VSkJMNFVzK2lz?=
+ =?utf-8?B?dGJoME1rdzhyRXliaXRwYjdNWEI3L1YwS3pOSWh3V3pJQjN5Q3gxRWRadWR1?=
+ =?utf-8?B?ekxqYkZjaDlIV1h4V3liMzY3aFVDVngvWHlCakJNS21yUnFLd0l3cUs4YUUv?=
+ =?utf-8?B?NXdaWFM2QzdLR2VTYmlSaVZFQklLK1dMajdFaFgwSi9POHVLdHdkam10OXJn?=
+ =?utf-8?B?cnhkZk1ySXZmUFNwZDdpWldRUDJYQ2xDWUxSYmZRaU9NTytQbjI4T3NZemJP?=
+ =?utf-8?B?K0RCQVJ3a1hBeEk1RGhoRkRGVG5WSlFNbnQ1VVV0UStVaHl0aThKMGJuQnpU?=
+ =?utf-8?B?R05DMDRUL3h3aTdNR3N6T0JveUo4K3VZRVk5WmFYdkRoU0ZMaC9ENHJKZm9O?=
+ =?utf-8?B?NzR5anpVSHNEMlR3cS9lalNka1JTUksvOTJlM1FwVldHRzdwRmNEUDFOMjlk?=
+ =?utf-8?B?MW5wRkRVZXg1aWgvcWhIVWxwekY3ODA4TDhQbU5wY1RUK1RaRXVFV0grUC9n?=
+ =?utf-8?B?emE1Q1dWTW5vdGRMWWVLRnUzdyt1SnVFa2t1RGNrRXJYWHc9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_113484_1461235095.1603368616346
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_113485_1695442185.1603368616346"
+
+------=_Part_113485_1695442185.1603368616346
+Content-Type: text/plain; charset=UTF-8
+
+Your email preferences are currently set to a 4-hour Auto Digest, so you'll receive at most one email every 4 hours. You can customize your email preferences from your Account Settings page in the top right of your dashboard.
+
+Here's what has happened in CS 2337 on Piazza:
+
+------------------------------------------------------------
+Question Regarding Creating BSTree object  (10/22/20 3:01 AM)
+
+I am having trouble creating the BSTree object in main().
+
+I have decided to have Node pointers and DVD pointers within them.
+
+Is this the correct way to create it? I am reading the second line as BSTree will be created and will contain Node objects containing DVD pointers within them
+
+Node<DVD*> *node1 = new Node<DVD*>(new DVD(....,...,..,)); // how I will be creating the nodes and DVDs
+BSTree<Node<DVD*>> kiosk(); // how I am currently creating the BSTree right now in main()
+
+Go to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fclass%3Fcid%3Dkgkjdyq1cjmc0%26nid%3Dkdkny0h2flh4wp%26token%3D9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192330640%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=t4KqcBA%2Byw0VL%2FqEEK6BgUzbpbl9le1YIl%2BEn%2FzfPMY%3D&amp;reserved=0 to view.
+
+------------------------------------------------------------
+
+
+
+Thanks, 
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because jtt190006@utdallas.edu is enrolled in CS 2337 at University of Texas at Dallas. Go to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flogin&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192330640%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RuZI6iV5za2Umm2iYW4ezdCd7W7pjVra0a3DAVZmHz4%3D&amp;reserved=0 to sign in and manage your email preferences or proceed to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192330640%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=v3sFw%2FyFFBOf2W4U%2Boe7nl20TRyh%2F8GaAJP9KWmSB%2Fg%3D&amp;reserved=0 to un-enroll from this class.
+If you already have a Piazza account under another email address, link jtt190006@utdallas.edu to that account here: https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flink_accounts%2F9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192330640%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=LleupTVpdpKpNZ0Zrtr5vW0FPKlXpHl%2B73gflhWf4GE%3D&amp;reserved=0
+------=_Part_113485_1695442185.1603368616346
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+Your email preferences are currently set to a 4-hour Auto Digest, so you'll receive at most one email every 4 hours. You can customize your email preferences from your Account Settings page in the top right of your dashboard.<br>
+<br>
+Here's what has happened in CS 2337 on Piazza:<br>
+<br><hr>
+<b>Question Regarding Creating BSTree object</b>  <i>10/22/20 3:01 AM</i><br><br>
+<p>I am having trouble creating the BSTree object in main().</p>
+<p></p>
+<p>I have decided to have Node pointers and DVD pointers within them.</p>
+<p></p>
+<p>Is this the correct way to create it? I am reading the second line as BSTree will be created and will contain Node objects containing DVD pointers within them</p>
+<pre class="prettyprint">
+Node&lt;DVD*&gt; *node1 = new Node&lt;DVD*&gt;(new DVD(....,...,..,)); // how I will be creating the nodes and DVDs
+BSTree&lt;Node&lt;DVD*&gt;&gt; kiosk(); // how I am currently creating the BSTree right now in main()</pre><br>
+<br>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fclass%3Fcid%3Dkgkjdyq1cjmc0%26nid%3Dkdkny0h2flh4wp%26token%3D9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192350548%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=v3F0sKKCnBcuDvejPomTxsli%2Fr6SITlsT0Zh6pNbZ2I%3D&amp;reserved=0" originalsrc="https://piazza.com/class?cid=kgkjdyq1cjmc0&amp;nid=kdkny0h2flh4wp&amp;token=9NDsAQ4j0O3" shash="qOttXeC0cWQ8UdHFE29LJkMFISoRjzlCclfvfmDiO0hZGNQwE/muhMxgHUbwa+ZzIpvku4fJhStfioiEpAtrkhQTH3KQfDtAg3x307Hu7ETM9x1Vz3riNoGNReCMRPYqG3jRB+5G5vJ5gbN1zV3DP97zOciu9acH31bEGnX7wm0=">Click here</a> to view.<br>
+<br><hr> <br>
+<br>Thanks,<br>The Piazza Team<br>--<br>Contact us at team@piazza.com<br><br>
+<font size="-2">
+You're receiving this email because jtt190006@utdallas.edu is enrolled in CS 2337 at University of Texas at Dallas. <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flogin&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192360511%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=uFOwS1P1g9uWNdVKG2wnpPjoWkPHLTji0QkZLxSyWL4%3D&amp;reserved=0" originalsrc="https://piazza.com/login" shash="T0kce9yI5w0yKPqP8SNMKksTxPu2obhB/FSH4gWICl/rawfgxXBhUZ34U7W9o9aMQaAWy+bhAd3+SkHQZ7IPqH8v2XBR7GXMML5KdS4p0JR8+cMMeezXFaWbGTdAOEdVhpUKwwQbVsy1cVOMASKo65b9YCFjFb/oCTCB+vPohB8=">Sign in</a> to manage your email preferences or <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192360511%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=Re2S%2BOyicZMkXdzuUB%2BohHCbZWoOpvs7sWjvkf3jtlI%3D&amp;reserved=0" originalsrc="https://piazza.com/remove/9NDsAQ4j0O3/kdkny0h2flh4wp" shash="rOrRsMjndRBnCaFryhIS/mjVyRmAm7TkfJZilj9LVHqv/WZdKrzRSLQflXm5bPH2yXpJh3A1Rgoc0vo3QBHt4+1mPBTOTaHv3C5FHA+sZ3eHSYi3i9hsxwDGiEy+V5dGx2isXfekqjJ+mJd0bcQdm8x42ZWiOZS3ujecGXgzP18=">un-enroll</a> from this class.<br>If you already have a Piazza account under another email address, link jtt190006@utdallas.edu to that account <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flink_accounts%2F9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca88d99432c484b73177608d876837086%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389654192370463%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=ER1cxG9LT2tKk3ltkbivnkJXbi05kL3AkR6ZdmUlXT0%3D&amp;reserved=0" originalsrc="https://piazza.com/link_accounts/9NDsAQ4j0O3" shash="Jce/TcVcq3Q/63xKbqB0Sxvy+CRH1Wh9XfB8elv78ysuuV+raeJcKZYZ2n0OG+XShGZ1dhEQuafALPk7AcUCfnTO+hZWDMfnBATWGYXVqoek9wTbqvsJvPUn9IMRunWkGMYdYuiCwbvMhbQHLQ/AJ7Q7uUacnQVVjfa+S9j1MWM=">here</a>.</font>
+</html>
+------=_Part_113485_1695442185.1603368616346--
+
+------=_Part_113484_1461235095.1603368616346--

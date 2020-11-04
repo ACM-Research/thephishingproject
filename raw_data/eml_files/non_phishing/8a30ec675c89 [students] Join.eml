@@ -1,0 +1,335 @@
+Received: from SN6PR01MB3822.prod.exchangelabs.com (2603:10b6:805:22::31) by
+ SA0PR01MB6347.prod.exchangelabs.com with HTTPS; Mon, 2 Nov 2020 15:52:37
+ +0000
+Received: from MN2PR20CA0036.namprd20.prod.outlook.com (2603:10b6:208:e8::49)
+ by SN6PR01MB3822.prod.exchangelabs.com (2603:10b6:805:22::31) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.29; Mon, 2 Nov 2020 15:52:35 +0000
+Received: from BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:e8:cafe::d8) by MN2PR20CA0036.outlook.office365.com
+ (2603:10b6:208:e8::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.19 via Frontend
+ Transport; Mon, 2 Nov 2020 15:52:35 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.146)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;cometmail.mail.onmicrosoft.com; dmarc=fail
+ action=none header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.146 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.146) by
+ BL2NAM02FT053.mail.protection.outlook.com (10.152.76.225) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3520.15 via Frontend Transport; Mon, 2 Nov 2020 15:52:35 +0000
+Received: from utdex01.campus.ad.utdallas.edu (10.182.71.117) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2106.2; Mon, 2 Nov 2020 09:52:00 -0600
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server id
+ 15.1.2106.2 via Frontend Transport; Mon, 2 Nov 2020 09:52:00 -0600
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id 38991C000052; Mon,  2 Nov 2020 09:52:00 -0600 (CST)
+Received: from ExchLists.utdallas.edu (exchange.utdallas.edu [10.182.71.117])
+	by lists.utdallas.edu (Postfix) with ESMTP id E95D6C000053
+	for <students@lists.utdallas.edu>; Mon,  2 Nov 2020 09:18:30 -0600 (CST)
+Received: from utdex02.campus.ad.utdallas.edu (10.182.71.121) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2106.2; Mon, 2 Nov 2020 09:18:30 -0600
+Received: from oitpfpm702.utdallas.edu (10.182.70.67) by
+ utdex02.campus.ad.utdallas.edu (10.182.71.121) with Microsoft SMTP Server id
+ 15.1.2106.2 via Frontend Transport; Mon, 2 Nov 2020 09:18:30 -0600
+Received: by oitpfpm702.utdallas.edu (Postfix, from userid 100001)
+	id B34311E4A85; Mon,  2 Nov 2020 09:18:30 -0600 (CST)
+To: <students@lists.utdallas.edu>
+From: <gwfair@utdallas.edu>
+Content-Type: text/html; charset="iso-8859-1"
+Reply-To: <rpeterson@utdallas.edu>
+Message-ID: <20201102151830.B34311E4A85@oitpfpm702.utdallas.edu>
+Date: Mon, 2 Nov 2020 09:18:30 -0600
+Subject: [students] Join Us: Women Leading In Diversity Awards
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1475
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-11/20201102151830.B34311E4A85%40oitpfpm702.utdallas.edu>
+Return-Path: bounce+jesse.truong==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex02.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Nov 2020 15:52:35.8423
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a19da096-0d68-4b37-eac7-08d87f47516c
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT053.eop-nam02.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id: a19da096-0d68-4b37-eac7-08d87f47516c
+X-MS-TrafficTypeDiagnostic: SN6PR01MB3822:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+Content-Transfer-Encoding: 7bit
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Nov 2020 15:52:35.7483
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a19da096-0d68-4b37-eac7-08d87f47516c
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.146];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR01MB3822
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4586269
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.030
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?3YbOGPsYBlQlBk+dyvaeeHQuiQUJXcCsWXvUg5VoE4KfBoa+9z5XdTRaKl?=
+ =?iso-8859-1?Q?F8j54kB8ZXAdNv0jC3Px49oPRC4p6bMFakGJCJojNK6c7NN5mm7/+KHiP9?=
+ =?iso-8859-1?Q?vMc0cOEC+NT6ltm6A4gonm6Y57Uy3+NV3UGnCUmfbl5Sk3CjFcXe18W4Au?=
+ =?iso-8859-1?Q?G/Ie1S4ZrH3MBkL+UP08K/vc7lRCBz3SqWVp2CYGgTAfCZKDtu7YnwmpCq?=
+ =?iso-8859-1?Q?dJBaqtMMzKsu1hW3UDXkJHt0Eu+i6cbAn5KTZADSSwtwIRSlcaPU+8Coll?=
+ =?iso-8859-1?Q?pwU06Ms/Edlf4TN5PZCN9hLbmnPMHxlDLzqRjBSBvBlAwvYKStdYhyUrC9?=
+ =?iso-8859-1?Q?EpLKvQzsZ812q1c/w2zO2Co3SUzvyQBklq0IQrM3+tnoSw/fdzjxGv0bXB?=
+ =?iso-8859-1?Q?dZ3J299UFSOs+lMDVeIvgVpkuZG9or9RS+k6rF4dA7/7S1BC80AnX3ZEK9?=
+ =?iso-8859-1?Q?4kVomLMede1Ey2XonnjCOjayWN0QPDcAaHtem081FndV5nqCNHKly02tTJ?=
+ =?iso-8859-1?Q?oo7KId2MjHI6vwu8vbkCyKn9NybSlYWg+jZhrwpIKhUvD0CrrooSCb8bbx?=
+ =?iso-8859-1?Q?Nm2wM/QgKNVFTm8d8RvwHRAWeNYLwy7y6mLr9PuB5wGKSvO5tH3Cf7Id3N?=
+ =?iso-8859-1?Q?S4FQoJkUS7UalYoyCF28Uy5sVi0Qsc99/86C8DEXowjJwMI5KO3uZJinxF?=
+ =?iso-8859-1?Q?OCDnkGZjl4YvXPpgx7EUStU6Qh/hcIEK9MnZbYCMxtSfVEBCIJey8E6mIc?=
+ =?iso-8859-1?Q?uenznwCqkSajqJ0+zC44jhNlfFpNBAh3tFUaKlBAGLZIXmsjaqvCdK8jsJ?=
+ =?iso-8859-1?Q?2/CGAQFynHnnAOH0wScBr5bXpMznOMbNapt5+2oQlv8mI+1S4vGbAkDKdN?=
+ =?iso-8859-1?Q?F8hYkt/7DirmD3RVPGAAlbrgzUSZY5VDr+WwXWjMbPe5h/f+Z9VJttU3BL?=
+ =?iso-8859-1?Q?EAD11WKQqP5dJHFhLJbFAd5CSBQxltPdEu3MFHdLspl6LSdvWPesIettvx?=
+ =?iso-8859-1?Q?U5pi2vShT2OrwfQLpAffZ5EPR7qtLt3/tFpMsn3RNfTfmOro5U5TdkSosB?=
+ =?iso-8859-1?Q?EeDk2/617thCvLVXdB5pVjZAQNyW3xIw/n5tAyV8mcgrNaxUtRZtlawL4x?=
+ =?iso-8859-1?Q?q3BoBvwuZ5sadXXDvLT+eaIaYPuZvAVxWLHqprT16zByd/6W+1QTr3FTKy?=
+ =?iso-8859-1?Q?Md+s/jqpWjrr6f0L3NWNrKdwHmZl4sAXz1giAW+27JzjtxTzJELgFNzM3E?=
+ =?iso-8859-1?Q?CF4dJ5twW9PPaM9tOvvj0Z46jd9kSJmLe0n6NqQ1nh/iJQT1Ujn7BrH7uB?=
+ =?iso-8859-1?Q?TiCqJQuv/dJcCny8FKq7mTfsPfflQx0FWkckjIZYhb2/k0W1LSgrTT4Ue0?=
+ =?iso-8859-1?Q?RFp3DAYnQD?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The University of Texas at Dallas</title>
+<!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse:collapse;}
+        table.main-table {width:600px;}
+    </style>
+<![endif]-->
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+  /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; max-width:100%; max-width:600px; height:auto !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    .appleBody a {color:#88b3bf; text-decoration:none;}
+    .appleBody2 a {color:#fff; text-decoration:none;}
+    .appleBody3 a {color:#999999; text-decoration:none;}
+    .appleBody4 a {color:#818179; text-decoration:none;}
+    .appleFooter a {color:#999999; text-decoration:none;}
+    .appleEvents a {color:#404141; font-weight:bold; text-decoration:none;}
+  /* EVERYTHING ELSE */
+  	.icon{max-width:36px !important;}
+    @media screen and (max-width:600px) {
+      body[yahoo] .deviceWidth {width:280px !important; padding:10px 0 0 0;}
+      .deviceWidth {width:280px !important; padding:10px 0 0 0;}	
+      body[yahoo] .center {text-align:center !important;}
+      .center {text-align:center!important;}
+    	img{ max-width:100% !important; height:auto !important;}
+  	}
+</style>
+</head>
+
+<body link="#e87500" style="font-family:sans-serif; min-width:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; background-color:#e3e3e3; margin:0; padding:0;" dir="ltr" lang="en-US" bgcolor="#e3e3e3" xml:lang="en-US" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+<!--[if (gte mso 9)|(IE)]>
+    <center>
+        <table><tr><td width="600">
+<![endif]-->
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#e3e3e3; max-width:600px; border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; table-layout:fixed; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;" class="main-table">
+      <tr>
+        <td align="left" valign="top" style="font-family:sans-serif; padding:0;">
+
+
+
+
+          <!-- START Header Image -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+                <tr>
+                  <td align="center" valign="top" style="font-family:sans-serif; padding:0;"><div style="display:none !important;font-size:1px;color:#fff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">The University of Texas at Dallas</div><a href="https://www.utdallas.edu/"><img src="https://www.utdallas.edu/evites/templates/aries/img/utd-monogram-header-orange.png" alt="The University of Texas at Dallas" width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+                </tr>
+            </table>
+
+          <!-- END Header Image -->
+
+
+
+
+          <!-- START Content-->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; font-family:sans-serif; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#fff;" bgcolor="#fff">
+              <tr><!-- START Image -->
+                <td align="left" valign="top" style="padding:0; background-color:#fff;"><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Futdallas.qualtrics.com%2Fjfe%2Fform%2FSV_9XJ2u5Ben32xb5r&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571902163%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=51GrCtNYsTKHuMhpAbvYwGXwL5A1ByemZZOMhiaBY2Q%3D&amp;reserved=0" originalsrc="https://utdallas.qualtrics.com/jfe/form/SV_9XJ2u5Ben32xb5r" shash="gXvrpn9X4JZlHvBV3QlNkDZSzL2RN+uX1aqJdERMZfwQBqesB5Shi12mnnZ8x3e73RaWMEtw46zn/GKOmOq7wwluhvpy+qFcgJztgUFVTNRVNqxZ22/5c4So+gq4n8RMensUeyq5AYTyLiInPEJqSq5tXaGvETRCZf0cH/DvAaM=" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;"><img src="https://www.utdallas.edu/evites/women-diversity-awards-2020/diversity-awards-banner2.jpg" alt="Graphic for Women Leading in Diversity Awards: Making It Matter has a chessboard background with logos for the Office of Diversity and Community Engagement and the Womenâ&#8364;&#8482;s ERG." width="600" style="vertical-align:bottom; margin:0; padding:0;"></a></td>
+              </tr><!-- END Image -->
+              <tr><!-- START Heading -->
+                  <td align="center" valign="top" style="font-size:20px; color:#e87500; padding:45px 30px 10px 30px;"><strong>Women Leading In Diversity Awards: Making it Matter</strong></td>
+              </tr><!-- END Heading -->
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:14px; line-height:22px; color:#333; padding:10px 30px; background-color:#fff; text-align:left;">
+                    Join a virtual celebration of the 100th anniversary of the passage of 19th Amendment to the U.S. Constitution, which prohibits citizens from being denied the right to vote based on sex. The program will recognize the long, challenging fight for the inclusion of all women's voices in casting their votes at the annual Women Leading in Diversity event.<br><br>
+The Office of Diversity and Community Engagement and the University's Women Employee Resource Group (ERG) will honor three campus figures and one community champion who have helped make The University of Texas at Dallas an inclusive campus. The free event will be held virtually from 3 to 4 p.m. on Thursday, Nov. 12 via Microsoft Teams. 
+<br><br>
+                    <center><strong>Thursday, November 12</strong><br>
+                    3-4 P.M. CDT<br><br>
+                    Microsoft Teams</center>
+                  </td>
+              </tr><!-- END Body Text -->
+              <tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:15px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGRjMWUwM2YtMWQxMC00NTFiLWFkOTktM2YyMWM0NmE5ZGM1%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%2522%252c%2522Oid%2522%253a%2522d76ab94e-9461-43c4-97e7-6262912b44d3%2522%252c%2522IsBroadcastMeeting%2522%253atrue%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=88daf2c3-cc10-42da-af3c-428b992cfeaf&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#e87500">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NGRjMWUwM2YtMWQxMC00NTFiLWFkOTktM2YyMWM0NmE5ZGM1%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25228d281d1d-9c4d-4bf7-b16e-032d15de9f6c%2522%252c%2522Oid%2522%253a%2522d76ab94e-9461-43c4-97e7-6262912b44d3%2522%252c%2522IsBroadcastMeeting%2522%253atrue%257d%26anon%3Dtrue&amp;type=meetup-join&amp;deeplinkId=88daf2c3-cc10-42da-af3c-428b992cfeaf&amp;directDl=true&amp;msLaunch=true&amp;enableMobilePage=true&amp;suppressPrompt=true" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">Attend the LIVE Event</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+				
+				<tr><!-- START Button -->
+                <td align="center" valign="top" style="padding:15px 0;">
+                  <div><!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fwomen-leading-in-diversity-awards-making-it-matter-tickets-126129425507&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571912162%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=zRbuTv3n%2B4WjQ5tFzakHOdnA57KUqeKXOhfONdS1Mbc%3D&amp;reserved=0" originalSrc="https://www.eventbrite.com/e/women-leading-in-diversity-awards-making-it-matter-tickets-126129425507" shash="v1bmxBv1NQCwVKfQvPR+cYShCUivBlvETN5ZjsZ4HGIPh0Arh1BvEO4xJw9hBe/jlha8Jpu6dy69kY6annWIaD09Mo9zRiDi44Ib3s/BXc0qcpL9GGatNk7ta66ztVu4zVoIXwCOc567dF/4I9M2k0TuhwLKYOap+R3BLCLaeYw=" style="height:40px;v-text-anchor:middle;width:190px;" arcsize="10%" stroke="f" fillcolor="#e87500">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eventbrite.com%2Fe%2Fwomen-leading-in-diversity-awards-making-it-matter-tickets-126129425507&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571912162%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=zRbuTv3n%2B4WjQ5tFzakHOdnA57KUqeKXOhfONdS1Mbc%3D&amp;reserved=0" originalsrc="https://www.eventbrite.com/e/women-leading-in-diversity-awards-making-it-matter-tickets-126129425507" shash="v1bmxBv1NQCwVKfQvPR+cYShCUivBlvETN5ZjsZ4HGIPh0Arh1BvEO4xJw9hBe/jlha8Jpu6dy69kY6annWIaD09Mo9zRiDi44Ib3s/BXc0qcpL9GGatNk7ta66ztVu4zVoIXwCOc567dF/4I9M2k0TuhwLKYOap+R3BLCLaeYw=" style="background-color:#e87500;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:190px;-webkit-text-size-adjust:none;">Register</a>
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]--></div>
+                </td>
+              </tr><!-- END Button -->
+				
+              <tr><!-- START Body Text -->
+                  <td align="center" valign="top" style="font-size:14px; line-height:22px; color:#333; padding:10px 30px 60px 30px; background-color:#fff; text-align:left;">
+				<center><strong>Logistics</strong></center><br>
+					  
+					  The Women Leading in Diversity Awards will be conducted in Microsoft Teams as a live event. While not required, <a href="https://www.utdallas.edu/oit/howto/microsoft-teams/" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">downloading Microsoft Teams</a> to your desktop or laptop computer will provide the fastest access to the event. The <a href="https://www.utdallas.edu/oit/howto/microsoft-teams/#installing-teams-mobile-app" style="color:#c95100; text-decoration:none; border-bottom:1px solid #ccc;">Microsoft Teams app</a> is necessary to participate via mobile devices.<br><br>
+
+All audience members will be muted when entering the meeting and will have the opportunity to pose questions in writing via the Q-and-A function on the right side of the screen. Live closed captioning is available to all attendees. Please look for the CC button when you join the meeting.<br><br>
+
+Should you have specific questions related to technical issues you are encountering during the event, please call the UT Dallas Help Desk at 972-883-2911.
+
+					  
+                  </td>
+              </tr><!-- END Body Text -->
+            </table>
+
+          <!-- END Content -->
+
+
+
+
+          <!-- START Footer -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="border-spacing:0; color:#666; font-size:14px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#f2f2f2;" bgcolor="#f2f2f2">
+              <tr>
+                <td align="center" valign="top" style="padding:30px 20px;">
+                  The University of Texas at&nbsp;Dallas<br>
+                  800 W. Campbell Road, Richardson,&nbsp;Texas 75080<br><br>
+                  <a href="https://www.utdallas.edu/" style="color:#666; outline:none; border:none;">www.utdallas.edu</a><br><br>
+                  <!-- START Icons -->
+                  <table width="180" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Futdallas&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571912162%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=2iUKib0Q12%2BwtZLm6V%2FKmHmN%2F9TODT8%2FlLWmzJMfYBs%3D&amp;reserved=0" originalsrc="https://www.facebook.com/utdallas" shash="gHk8Gg17iPSW7mH9LFbmwauY314eMZw5gA2Q242r0EHul9lrXpyrW43jmXdw8lrXMLUpoy3iEgvIQfCoUUBmxsGQyN1zhhsGSu+v40Ekf1rvvCm6STttLIGqdj1iSS5Yr/SdvDKF5goLzXuaBKytVu2H3ciQce4uph7EbGfXmxw=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/facebook.png" width="36" height="36" alt="facebook" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fut_dallas%2F&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571922153%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=8liaNLGKEZinw%2B9PKFKqQGtlJ1Ut06DbURMj4nGxFlM%3D&amp;reserved=0" originalsrc="https://www.instagram.com/ut_dallas/" shash="FZ7FUsTtfCKOnqTsQSEhCbnz1U3iwGXgcJOu7RyQAuPs7wjbAtRgEe/dLAdZRbgRCffl0posdJDCKJRSu9mLVbgzVgl9++1s/m8wlg4Uv14LFw+SjlD6ILEFKqa2g82HH4q6LQQsDec+82XI18K9VsaJJ6nR+nnPb9nQagMCgXE=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/instagram.png" width="36" height="36" alt="instagram" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                      <td width="33%" align="center" valign="top" style="padding:0;">
+                        <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2Fut_dallas&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7Ca19da0960d684b37eac708d87f47516c%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637399291571922153%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=sSguq5xt1gwIz7PN3gLr5I5soEyAG7Vit0TNGT59puc%3D&amp;reserved=0" originalsrc="https://twitter.com/ut_dallas" shash="hoVrCWz2LrDyh/mPKpk4c7/rHdjaBujbkPiURsbXs7fh0D3emUqRmZGQ8STaEJtjOFNdm8tqbPLN+eiuT3sPG1s1OrBgn8rX7KuHaPRL21bS20tuBl9W9buU855AGws8IqFw8IUhnkIzyQfYH8RRcz0DhW8gPUeOu5guuqsfsBI=" style="color:#e87500; outline:none; border:none;"><img src="https://www.utdallas.edu/evites/templates/aries/img/twitter.png" width="36" height="36" alt="twitter" style="color:#666; font-size:16px; margin:0; padding:0; border:none;" class="icon"></a></td>
+                    </tr>
+                  </table>
+                  <!-- END Icons -->
+                  <br>
+                  View this email in your <a href="https://www.utdallas.edu/evites/women-diversity-awards-2020/index.html" style="color:#666; outline:none; border:none;">browser</a>.<br><br>
+                </td>
+              </tr>
+            </table>
+
+          <!-- END Footer -->
+
+
+
+
+          <!-- START Orange Bar -->
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; background-color:#e87500;" bgcolor="#e87500">
+                <tr>
+                  <td align="center" valign="top" style="padding:2px;">
+                    </td>
+                </tr>
+            </table>
+
+          <!-- END Orange Bar -->
+
+
+
+        </td>
+      </tr>
+    </table>
+  </center>
+<!--[if (gte mso 9)|(IE)]>
+    </td></tr></table>
+    </center>
+<![endif]-->
+
+<!-- START Litmus Analytics -->
+<style data-ignore-inlining="">@media print{ #_t { background-image: url('https://cbxapalu.emltrk.com/cbxapalu?p&d=');}} div.OutlookMessageHeader {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} table.moz-email-headers-table {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} blockquote #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')} #MailContainerBody #_t {background-image:url('https://cbxapalu.emltrk.com/cbxapalu?f&d=')}</style><div id="_t"></div>
+<img src="https://cbxapalu.emltrk.com/cbxapalu?d=" width="1" height="1" border="0" alt="" style="width:1px; height:1px">
+<!-- END Litmus Analytics -->
+</body>
+</html>
+

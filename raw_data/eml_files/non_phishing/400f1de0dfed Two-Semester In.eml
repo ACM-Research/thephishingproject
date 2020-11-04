@@ -1,0 +1,384 @@
+Received: from BL0PR01MB4916.prod.exchangelabs.com (2603:10b6:208:63::18) by
+ SA0PR01MB6347.prod.exchangelabs.com with HTTPS; Mon, 2 Nov 2020 01:46:43
+ +0000
+Received: from CY4PR2201CA0002.namprd22.prod.outlook.com
+ (2603:10b6:910:5f::12) by BL0PR01MB4916.prod.exchangelabs.com
+ (2603:10b6:208:63::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.28; Mon, 2 Nov
+ 2020 01:46:34 +0000
+Received: from CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:910:5f:cafe::9c) by CY4PR2201CA0002.outlook.office365.com
+ (2603:10b6:910:5f::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Mon, 2 Nov 2020 01:46:34 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.145)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.145 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.145) by
+ CY1NAM02FT021.mail.protection.outlook.com (10.152.75.187) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3520.15 via Frontend Transport; Mon, 2 Nov 2020 01:46:33 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex01.campus.ad.utdallas.edu (10.182.71.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2106.2; Sun, 1 Nov 2020 19:46:20 -0600
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.2106.2 via Frontend Transport; Sun, 1 Nov 2020 19:46:20 -0600
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id CF14EC000054; Sun,  1 Nov 2020 19:46:20 -0600 (CST)
+Received: from esa2.hc4541-4.iphmx.com (esa2.hc4541-4.iphmx.com [68.232.135.253])
+	by lists.utdallas.edu (Postfix) with ESMTP id D5532C000052;
+	Sun,  1 Nov 2020 19:46:09 -0600 (CST)
+Authentication-Results-Original: esa2.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=aldhahir@utdallas.edu
+Received-SPF: Pass (esa2.hc4541-4.iphmx.com: domain of
+  aldhahir@utdallas.edu designates 40.107.237.62 as permitted
+  sender) identity=mailfrom; client-ip=40.107.237.62;
+  receiver=esa2.hc4541-4.iphmx.com;
+  envelope-from="aldhahir@utdallas.edu";
+  x-sender="aldhahir@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: RCmL7Z8Po84NA9eewQnv8Jodf58EKHeWO2qC2+OLIijn/RAhpToN7w+wE4vT6Rl8HRroS7AJ6f
+ 8/4AolP4EMxn5sIxdnFLdx49SY5MI/G/rN8NKv9OQFd9s9Vot3Dmuqs2cH7iD0Z7pm0AJN6DGE
+ Wc4jy2T70TGQyyVLo7bMfbBGx90gCj0iFdZ/3wAkornhPhiK1i6JHHFnG/yXcH0LewCneaLxHT
+ rRNITCAtPnJyvprr+cNpjY3mf015vl6nUciy2MkeW8xF+iG9wrdXO8kvq/EYz3PhbD+5evtH2g
+ 5x4HclOoxVVW/Y+v7WJ+lS81
+X-IronPort-RemoteIP: 40.107.237.62
+X-IronPort-MID: 1323402
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0ALBABMZJ9fhz7tayhhDggIAQELEgxAgUQLgSMvUXdYH?=
+ =?us-ascii?q?gMHCC6NQqI/FIFoAgkBAQEBAQEBAQEIARMMDgIEAQGESgKCCCUBNgcOAgMBA?=
+ =?us-ascii?q?QEDAgMBAQEBAQQBAQECAQECAwICARMBAQEBgQRggQIBgUYBgSojCwMxDII3I?=
+ =?us-ascii?q?oMyFwQTAQEHMREBAgp0JgEEARoODIMEAYF+fwIMoDwBgSg+AiMBEi0BAQIJg?=
+ =?us-ascii?q?QcpiVyBKQuDBAEBBYV4AQmBRgmBOIVdg0qELoFBP4FUgh+EcjyDSIIsmnydJ?=
+ =?us-ascii?q?gqCbJsogxiKEZRBiHqKUKA/AgQCBAUCEAWBWwcqgVlyEzuCaQlEAQIBAg0BA?=
+ =?us-ascii?q?gICAQECAQEIAQEBAY4cGoRBiS5AQzE4AgYKAQEDCXyNTAEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AHILAIxCu9U2NTnRf71IjUyQJP3N1i/DPJgcQr6?=
+ =?us-ascii?q?AfoPdwSP35r8qwAkXT6L1XgUPTWs2DsrQY0rWQ6vi4EjVZqb+681k6OKRWUB?=
+ =?us-ascii?q?EEjchE1ycBO+WiTXPBEfjxciYhF95DXlI2t1uyMExSBdqsLwaK+i764jEdAA?=
+ =?us-ascii?q?jwOhRoLerpBIHSk9631+ev8JHPfglEnjWwba5wIRmssAndqtUajYR/Jqos1x?=
+ =?us-ascii?q?DEvmZGd+NKyG1yOFmdhQz85sC+/J5i9yRfpfcs/NNeXKv5Yqo1U6VWACwpPG?=
+ =?us-ascii?q?4p6sLrswLDTRaU6XsHTmoWiBtIDBPb4xz8Q5z8rzH1tut52CmdIM32UbU5Ui?=
+ =?us-ascii?q?ms4qt3VBPljjoMOjgk+2/Vl8NwlrpWrhK/qRJi347bY5ubOvR9cKPcYdwVSn?=
+ =?us-ascii?q?FMUdxNWyBdGI6wc5cDA/QHMO1Fr4f9vVwOrR6mCAWiGO7vziZEiHH23aIg0+?=
+ =?us-ascii?q?QhEBvG0BQ9FNwWqnvUq9v1O70WUey70aLFyi/Mb/dL1jf98ofIchEhoeuXUL?=
+ =?us-ascii?q?Jtbcre1FMgFwfBjlqKsozpJS2a2fkQs2WC6edrSO2ghXI9pQ5rvjiv2tkjip?=
+ =?us-ascii?q?PPho8N1lzJ6Cd0zoYpKdC4TEN2Zd2pHpVfuSyVOYZ7X80sTm52tCg11LELvZ?=
+ =?us-ascii?q?62cDQOxZk62RLTduKKfoyW7x/gVOicPTF1j29rdrK4gha960mgyuvkW8mpzF?=
+ =?us-ascii?q?ZFszBKkt3Itn8XzBzf8NaIReZg/kqnxD2B1BjT5/lLLEwoj6bXNoItz7wqmp?=
+ =?us-ascii?q?YNv0nOHDX6lUTogKOOaEkp+/Sk5/jib7n7pJKQK5N4hwTjPqgzh8CzHOE1Pw?=
+ =?us-ascii?q?oQU2WY5eix0b3u8EnlTLhPjvA7kqbUvZHfKMgGu6K0AABY34M95BuwDDqqzs?=
+ =?us-ascii?q?wUkWcGIV5Zdh+KipXlN03VL/35CPqyg1GhnTV1yP3DO7DsDIjBI37em7n7Z7?=
+ =?us-ascii?q?l98VRTyA8rwNBf+Z1UDrYBLerrVELts9LUEwE1PxWpzuj/C9hxz4QeVnmRDa?=
+ =?us-ascii?q?ODN6PSrEOI6fkoI+mRYo8apSzxK+A/5/7pkX82h0MSfbWo3ZsQbnC0BPNmI1?=
+ =?us-ascii?q?iFYXrohdcBFmQKshAiQ+ztjV2OST9TZ3CsUKIg/jw2B56qAZ3eSoyxgrGNxj?=
+ =?us-ascii?q?m3E5NUa2xcC12AD2/kd4CeVPcNbCKSLNVhkjsBVbW5UYAh0QyhtA/gxLpnL+?=
+ =?us-ascii?q?rU4DYVtY//1Ndo/eLTkRUy+iZvD8iHzW6CUnx0knsSRzAqxKB/vVB9ylCb3K?=
+ =?us-ascii?q?dmn/NYDsZf6O1XXQsgKJ7cwPd3C9TzWgLaYteJU0yqQsi6AT4sVN0xx9sObF?=
+ =?us-ascii?q?xmG9m4kB/MwjeqCacPl7OXHJw07r7c33/pKslj13nGz7MtgEU4TcdVKG2mib?=
+ =?us-ascii?q?Vy9wzSB47Sj0WZjLymdbkA3CHQ7miDyW6Os1tDUAJqT6rKQG0fbFPMrdvl/k?=
+ =?us-ascii?q?PCU6OuCbM/PwRf1cGCMbFGZcHyjVlcWffjN8/TY2awm2erGRaI3amAbJf2e2?=
+ =?us-ascii?q?oAxirdDEwEnBoI/XqcKwcxGzqh8CriC2ljHkmpbk6q7OY2/H6wVQk5wkeXYG?=
+ =?us-ascii?q?Vl1qGp4VgImfCVT/caxfQJtDp37315F0371N+QFtXI8wdqZ+NXbJUg739D1H?=
+ =?us-ascii?q?nFrEpgIpCpK6RrnRgTfxkh+wvj3A4xAZ4GjMdi+H4h10x5MuSF33tFdiiExt?=
+ =?us-ascii?q?btJrHeLm3751aiZ7OAiX/E19PDsI4Lrdg4olXipkXhMEMl/XxjmZEB2n+Q5p?=
+ =?us-ascii?q?zKDRA6TI79W0Iz/gM8qr3HNHpur7jI3GFhZPHn+gTJ3MgkUbN/kESJYstfPa?=
+ =?us-ascii?q?WYFQT7D8wdAY2UJfc3n0SyMENWMftbrug0NJ/7K6LDhOiqJOZljHStimEUqJ?=
+ =?us-ascii?q?tl3Be0/jFnAvXNw45DxviZ2gWdUDKphVOtssn3mJpseC0eF267wDOiCYJMP/?=
+ =?us-ascii?q?cgR4sABGawLsHy/e1Q2se9CUZR70XrR14d0ZXveRHOMgCkmFEW1FwXpGzhki?=
+ =?us-ascii?q?y9nXR4lDQgr6zX2yKroayqfR4LOmdLRXNKkEvgKIywhstcUUS1JwQkjxqq40?=
+ =?us-ascii?q?/myrMT+Pw5djGMBx0TIG6odSlrSeOou6CHYtJT5Z9N020fS+m6bV2AC/b8rx?=
+ =?us-ascii?q?YczyL/Dj5bzTE/eSutv8axlBh7hWSBaXdr+SaBP5gomlGFv4OaG6QCu1hODD?=
+ =?us-ascii?q?N1gjTWGFWmatSy9I/Sl5yf77znEj7nV4VTdDmtxoSF507ZrSVnBwOym/erl5?=
+ =?us-ascii?q?jpCw8/hGXy09VqXCXJtj7hfoXi06CzKqRqclQiVzqeo4JqX5pzlIc9nsRa0H?=
+ =?us-ascii?q?wWhpyV/GAvjHv/ONFf0Lm4YXYQD21D05ve5w7r31dmJ3SCytfiTnuqxc1ldo?=
+ =?us-ascii?q?rfACteymcn4stNEqvR8K1ckH4/vA+jtQyIK6s1jnIHxPAp8nJfn+wZpF9n0H?=
+ =?us-ascii?q?CGGr5LeCsQdS30y0bUt5bv9uMPIj7oKOX41VIiz4z5Suja/UcEHi6+I8lqHD?=
+ =?us-ascii?q?csvJgldguUiDurrNmjIYW1D5pbtwXIwU6Y064Jd9Rp0KJN3HUvOHqj7ycsk7?=
+ =?us-ascii?q?dp1EU3j5/m5NDVeSIxrMfbSlZZLmOnPcpLo2O01P8MkJrOhNL9WckxUjQNV5?=
+ =?us-ascii?q?/1Qf/6CyocubL/LQGSHTYgq3CdX73CAQuY70QgpHXKdvLjfzSeIH1TlIQwdF?=
+ =?us-ascii?q?ymPEVaxTsscnA/l589GBqtwZW9Ilpl6jkV4lfj7BZA17AxOg=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,443,1596517200"; 
+   d="scan'208,217";a="1323402"
+X-MGA-submission: =?us-ascii?q?MDFggsBpl+2m9JSqNzuTnSbelxl5j9Qs/VLKjg?=
+ =?us-ascii?q?gruFHZcL3RKWRxo69taKhtgghrK7pVSuqZuF74A1C90WVlQDH0aRoNhz?=
+ =?us-ascii?q?AkKTXHZPAUklKw7AXqM/zz4bLNkz+/HkuBLnu0GyoxyKOzyXTA8vRIe6?=
+ =?us-ascii?q?vb?=
+Received: from mail-bn8nam12on2062.outbound.protection.outlook.com (HELO NAM12-BN8-obe.outbound.protection.outlook.com) ([40.107.237.62])
+  by esa2.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 01 Nov 2020 19:46:06 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=lYBQ2jAdXzEdcwI75iFuXdru/0+oKm671t2vUS0EnG6nEk+xkRDE/s81tHLueTQcOAuHP353RDAVBfc2Xy+Ql3x6slnZ3aeFzi1iFTByJgfrLJxy8g3fevpFNHQ0qLXHWBgm+qCauTBeH2dMh6zN1MpooZLu4AUx4KndxeFejzwW8oPU6Qg4XlBxfBsQN67YQ/EgtQSWw7oXQ5jn50uXwgNPXFS3wPTtoEpUAGNL9akT+HJBUIBezhwbKjTPCdWeq5ekeALgCImVWQrYSLFYpZpKrWiVL29GpSf+2zOJ5jiZ3im2taYTGpvCurmALBFqaDED6AwXWiwuQXvoi/DnFw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=eFGU3kDEHVRQswOz5hFO3q1Y97TPiHHCGOjE7rnQYuY=;
+ b=Jj4Wsj2v03Stvzt/Cgae5pgyfatp3W2WEPLjU8TFwMYgYoKSXpZm+zcewI/J2JMdM1bit1W+ehBTVTZ78gK9LxkFSRQvkzGS92n1s4Gaj42AYqieXXebOdSmktZyDiUSuto7p1wzwhfoYeQeQiOFphqNWm77d8LUy8fNp9rCmjTVBxnm3c+0oKZqol4+Hn1vDV/MspRlp/lgoViDDTb7NxWEBy024Z7wZN1Hbg/dXlwnijlFlPYEUnmuh1G4NJ8dc5d3sp8f+iiulrMq8wtbqWzmxj+A3ntbg3AXxo0ZEow52L8ro85RwIdN9UbpIHx4o30yXZgysLdVd9DISNyNVQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=eFGU3kDEHVRQswOz5hFO3q1Y97TPiHHCGOjE7rnQYuY=;
+ b=VAdlEfjTUlSFNEyApGIVKi3dh04qe2Y08jA9jiZ+fvIyNuV3sGBuyaymPjNDxdT2gvpX1VgowQUfL7qakK8eZEQF8Jgx+6nKF4NoxpENRPL6Lh/qEuQEkena/jEniMWKVUeNGAzfscnlOgHqEvkScwlNZi5ZknetPHfNmS+rHFU=
+Received: from DM6PR01MB4554.prod.exchangelabs.com (2603:10b6:5:7e::31) by
+ DM6PR01MB5292.prod.exchangelabs.com (2603:10b6:5:61::18) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.29; Mon, 2 Nov 2020 01:46:03 +0000
+Received: from DM6PR01MB4554.prod.exchangelabs.com
+ ([fe80::802f:7e87:e724:2197]) by DM6PR01MB4554.prod.exchangelabs.com
+ ([fe80::802f:7e87:e724:2197%6]) with mapi id 15.20.3499.030; Mon, 2 Nov 2020
+ 01:46:03 +0000
+From: "Al-Dhahir, Naofal" <aldhahir@utdallas.edu>
+To: ecs.ee.ug <ecs.ee.ug@lists.utdallas.edu>, ecs.ce.ug
+	<ecs.ce.ug@lists.utdallas.edu>, ecs.cs.ug <ecs.cs.ug@lists.utdallas.edu>
+Thread-Topic: Two-Semester Internship
+Thread-Index: AdawuKPJqpfRxjE0SGGBVylPjNPZng==
+Date: Mon, 2 Nov 2020 01:46:03 +0000
+Message-ID: <DM6PR01MB45548EAEAD9CDC220184184FA5100@DM6PR01MB4554.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [2600:1700:1111:7280:590:5546:1184:e482]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 84488ed9-ebd2-4e8c-2b63-08d87ed12108
+x-ms-traffictypediagnostic: DM6PR01MB5292:|BL0PR01MB4916:
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <DM6PR01MB5292048C6B936C3D9F20D70DA5100@DM6PR01MB5292.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:5516;OLM:5516;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ TgYTbUOY8BtypwQnPoJ3jkihpBq3Ar2lzlokI8kmw5FGHAJk0Vz5Pom42iv3G0MDwoZDzGKHzEpDg9ZwBoToPNhLY12h424EhYV8tpmirGkW40k4Ni7mTqnDQADGAeEoJN7BdDQ1emVKk6Kzs3dkh9shUe0tYv0uqYcpd1ipeDfXlSNcuqd5sdgUMaEvitnEbNVALQjluOWkZZQxzJvCrGq6SgaaLr3ZQ+xhmgObbgnOHERJUVlrM8M92n/rmZBx5EjBQMsrlC0yGuTekEULYUsRAsAzQ+A2UCbVw+X4rLIsH06K/DJ9VnrY4CqrxrUsGNo61r8nFmbgWqyeF4CbnduJSoA3Fibt2O2bEMNMxNJbjqyb5lFN/0tStoMaGYEvANdZalWUaR4ycExFgySPnw==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DM6PR01MB4554.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(346002)(376002)(39850400004)(136003)(366004)(396003)(83380400001)(64756008)(66446008)(66946007)(76116006)(86362001)(450100002)(6506007)(66556008)(110136005)(316002)(296002)(478600001)(166002)(786003)(186003)(2906002)(3480700007)(66476007)(7696005)(71200400001)(8676002)(8936002)(4744005)(9686003)(33656002)(52536014)(5660300002)(75432002)(55016002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: 9IsvL06s3b7pY/YctKq89fwNEQoTX13PdvmbZSLUckPxPlivn2JlGobIXh465H2JqBowGMMlkPfSmN2H9oFl964cmblLp0AEb4z7DYJNe9cdhzkP+Sxy8YOJjPGtMsqEPCLdEGGUVlCDDjVXaB5nAjogM1/TVsrxjk++2xDoxrrrp5cLzew4XK/nXheV4zbPyzos8dN7ikaiaQLQEVWPDSfGlc98v49FQpJ9TNsSaTmZd8wPWzYN2KJzdzonCVvhHcsdE0T0RcsrKp393EGOtZvKAduIxdb5kYaQspSehKgYvSq2xKeyOV2+r3HNqgdVEF7BbcRZa6sfnQuswJwQ4/Rl6iwLGK/OHSrBtjQg5fYaxngRkO91D3Ws3anhu/HBBW+CHJDaGTkdTyB5AdXpBZBgOjwBgJm2sxN55ZsSbNPkZ0R9CKrQp0hbz1XP3suWDUG4rSfI/kddZGOwvk3vykYtEn+fnUKPezRq+wOx+8M4TJ+VyJb2x9PK4xAYqst4AbGd5Z1GtVwiWG7I5d4YtbxkRIHbQeCINlzru2iCkjyk4IuSGYyBR9HE0X+lL/GLQtfmpebYy2xvnJqLq2yhGNGvLAF8Xml5/0w3oKbc6fbLjg/2X2jcM52UHleSLxfC+gU1PjE0uD1+/pZ058pFiQQl/K0hFST8jHp6MUPI8Yi/Vuenf6TlfbSh3SlOinyh0XhpV85HdHctHyDR+vrhVQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR01MB45548EAEAD9CDC220184184FA5100DM6PR01MB4554prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5292
+Subject: [ecs.cs.ug] Two-Semester Internship
+Reply-To: "Al-Dhahir, Naofal" <aldhahir@utdallas.edu>
+X-Loop: ecs.cs.ug@lists.utdallas.edu
+X-Sequence: 1190
+Errors-To: ecs.cs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+X-no-archive: yes
+List-Id: <ecs.cs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.cs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.cs.ug>
+List-Post: <mailto:ecs.cs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.cs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.cs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.cs.ug/2020-11/DM6PR01MB45548EAEAD9CDC220184184FA5100%40DM6PR01MB4554.prod.exchangelabs.com>
+Return-Path: ecs.cs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex01.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Nov 2020 01:46:34.0368
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 84488ed9-ebd2-4e8c-2b63-08d87ed12108
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 5762c751-c03b-4e16-fbfc-08d87ed10ee1
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.145;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Nov 2020 01:46:33.9514
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 84488ed9-ebd2-4e8c-2b63-08d87ed12108
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.145];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4916
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:09.8338032
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.030
+Importance: high
+X-Priority: 1
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?4/suWDseZ4A/7lIl7yOwHrQf7VFK+JGBkMCOe83T9tu2pGMdTd/qeE6R9qAQ?=
+ =?us-ascii?Q?ZIgt8SUsIENXjH10WwNTIMOe9REpMYXmLA7+oO+V5w+MJJVP6x/wJapHXEb2?=
+ =?us-ascii?Q?PGYSeVG/AVKT/F9b3FyWblsMQTZwxqLqmr6S7kREvTXhFsOiv5gpIepHVP/B?=
+ =?us-ascii?Q?9cPWAXTlvYi3rul1/oxM2tTBRrFWPCPMQu3lNuoi2OmI4jyyPfY4KWMqQ0Mo?=
+ =?us-ascii?Q?z4k2KMcDqQSNisulQuOjz0XSwpvaKtpwAqNQjQOoe1pwyqwW+bGQYPIRQ6Z+?=
+ =?us-ascii?Q?oF8RoukoJB8W/D75zRIWwINygTssyY/2xrriWx+KS0dLRaITqTOCf7HMsFZg?=
+ =?us-ascii?Q?HNZuy0MHKnHrCDy9mkgzKKxhZ0RDstRw0B9ZK1E2ij06Ur89eAjUNJcf9BA3?=
+ =?us-ascii?Q?r3TnfJrXvYu//rFyyHC5FaWBksCfC0YCrW9uj75CzfA6FGS33f4dh1WspW2K?=
+ =?us-ascii?Q?aVzC7ho+G/Edo3OLUU5bLZZ4pdib1ryxe482ieHFyjAxcy+03DP8lLfwHOm6?=
+ =?us-ascii?Q?nMMvkCaA2kLZI2YjpGnEmCw56+t97cqaKkPm7uib2cjYZyXwRH8Cg+zr2fyV?=
+ =?us-ascii?Q?cEAbPNzrE0btP+WhUebvDYLMsO9vQsXx/NsoTN+pBO7pp5E39qNC4usjpUu7?=
+ =?us-ascii?Q?BVKYXqLJqr0KYvmOWbavkgaeKV+G8U5JiCxNqs+MSGPLA20rewY/9ZN9Soh9?=
+ =?us-ascii?Q?dq07HdVfGU4PH84qaJQWfMbOAHc0xeOupm6rqB+iklGgPmxQguH443hm2IST?=
+ =?us-ascii?Q?Hsc5eF9skD5lR8es3IndY2m3T2MVHfJMFJo1QGryO6GXiLp233yumTJbkIMy?=
+ =?us-ascii?Q?cPlRRvAVDL8ixphNGFMdWOG0fgkGYZykZoSC6Q/BdnGkKdBBqyskTqQ1JZW0?=
+ =?us-ascii?Q?Ak9lxAAwAs3Tvokly9RCC6/fyBNoqoiwagv+PNuyeae0n10CZ9lJ6efLICVU?=
+ =?us-ascii?Q?UDVDlPdUgBXNzkeQqj3VdpwyQVg438TM/XdTDIvGgP0QqfHyX0EHVuPlaJsR?=
+ =?us-ascii?Q?KMdNMRqqj6vw3lfddsHOp4fwETwHLu2naZ1cZ/zdT4Zz/t5ixsSo48IqK28A?=
+ =?us-ascii?Q?we066tZomXCLhq5vMNTq2LeMfRNSFdKG4GwD6ZVWhSiydFewm/v3N5hNdsOI?=
+ =?us-ascii?Q?r8WB87AceRBw55Qt8hWw/NJ9M+BXNgSLqDickZcoFOgXaoYlTU/eCbDdbtQZ?=
+ =?us-ascii?Q?nf1nenLCjigVo4O4QrVcC/GD07GDB/We+/gohL4ChzfrZRJeDI18+mz4fVer?=
+ =?us-ascii?Q?QbjkSbjIr+KAHGXjv1PCa8hbbGlh+uPxIy6oIKEDzOTwoTz8gS1FZJMBNbwm?=
+ =?us-ascii?Q?AXhjFowNTe0wdfJ2OXMjEo+uC073uRm4HpSD8768NSlJZjnn8S7CwPCJgyvG?=
+ =?us-ascii?Q?2QV9WcVEMGulR5PhDSMSlRG7RpPbe8Bs8xmlUCouZ1gx9OtMuP122In2oD53?=
+ =?us-ascii?Q?tKVtEFtDI3fZZKTE+KoBdG+/cRznbHZvw/uLDjW47kMz7wD7SJ+TySFVN6c1?=
+ =?us-ascii?Q?qbX9aQB+m2c7n10AuQ77xycr2YTqH77lhorF9IeGOKvF4s5WQc5Qi/U3Vw?=
+ =?us-ascii?Q?=3D=3D?=
+MIME-Version: 1.0
+
+--_000_DM6PR01MB45548EAEAD9CDC220184184FA5100DM6PR01MB4554prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+Dear EE/CE/CS Undergraduate Students
+
+Multiple two-semester internships funded by the Texas
+ Analog Center of Excellence (TxACE) at UT-Dallas
+is available starting January 2021.
+
+If interested and have a GPA of 3.85 or higher, please
+ send me your CV, expected graduation date, and list of
+engineering courses taken and corresponding grades by November 10.
+
+
+
+
+Best Regards,
+
+Naofal Aldhahir
+
+ECE Dept. Associate Head for UG Education
+Editor-in-Chief IEEE Transactions on Communications
+http://www.utdallas.edu/~aldhahir<http://www.utdallas.edu/~aldhahir>
+
+
+--_000_DM6PR01MB45548EAEAD9CDC220184184FA5100DM6PR01MB4554prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear EE/CE/CS Undergraduate Students<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Multiple two-semester internships funded by the Texa=
+s <o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;Analog Center of Excellence (TxACE) at UT-Dall=
+as <o:p></o:p></p>
+<p class=3D"MsoNormal">is available starting January 2021.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">If interested and have a <b>GPA of 3.85 or higher</b=
+>, please
+<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;send me your CV, expected graduation date, and=
+ list of <o:p>
+</o:p></p>
+<p class=3D"MsoNormal">engineering courses taken and corresponding grades b=
+y <b>November 10</b>.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Best Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Naofal Aldhahir<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">ECE Dept. Associate Head for UG Education<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal">Editor-in-Chief IEEE Transactions on Communications<=
+o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.utdallas.edu/~aldhahir">www.ut=
+dallas.edu/~aldhahir</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DM6PR01MB45548EAEAD9CDC220184184FA5100DM6PR01MB4554prod_--

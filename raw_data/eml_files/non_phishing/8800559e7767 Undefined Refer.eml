@@ -1,0 +1,280 @@
+Received: from MW2PR0102MB3467.prod.exchangelabs.com (2603:10b6:302:3::29) by
+ SN6PR0102MB3599.prod.exchangelabs.com with HTTPS; Thu, 22 Oct 2020 21:30:26
+ +0000
+Received: from SN1PR12CA0084.namprd12.prod.outlook.com (2603:10b6:802:21::19)
+ by MW2PR0102MB3467.prod.exchangelabs.com (2603:10b6:302:3::29) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.23; Thu, 22 Oct 2020 21:30:24 +0000
+Received: from SN1NAM02FT037.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:802:21:cafe::d5) by SN1PR12CA0084.outlook.office365.com
+ (2603:10b6:802:21::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Thu, 22 Oct 2020 21:30:24 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.101.215)
+ smtp.mailfrom=send.piazza.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=piazza.com;utdallas.edu; dmarc=bestguesspass action=none
+ header.from=piazza.com;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of send.piazza.com
+ designates 167.89.101.215 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.101.215;
+ helo=o4.sendgrid.piazza.com;
+Received: from o4.sendgrid.piazza.com (167.89.101.215) by
+ SN1NAM02FT037.mail.protection.outlook.com (10.152.72.89) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Thu, 22 Oct 2020 21:30:23 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=piazza.com; 
+	h=from:to:in-reply-to:references:subject:mime-version:content-type; 
+	s=s1; bh=7T5oSz5SYEgPExlGL40vBQO3TXnvwLYOeenq+J/3xFI=; b=KLgOS+3
+	CA5fTzYpq1ITyPNxWJBATANSkQmcbZ4P+0FrDKDzbVBpdBCHRxkrC3P4GKULzUCx
+	Q3dg+PwtGzm1RgWIMG9wUXnw0utUz2W8uJOlzcJ3Tr8zCpbUtQJ+y3mS/zsuF+j6
+	qok/pjGmOc5XedbvzEZIVBAoItKttWislN3w=
+Received: by filter1247p1iad2.sendgrid.net with SMTP id filter1247p1iad2-15153-5F91F9EE-50
+        2020-10-22 21:30:22.829049873 +0000 UTC m=+72268.405995927
+Received: from 44nstxgkun.smtp.sendgrid.net (unknown)
+	by ismtpd0121p1mdw1.sendgrid.net (SG) with ESMTP id hEY5G-8JTjGnmMVYP-zAog
+	for <jtt190006@utdallas.edu>; Thu, 22 Oct 2020 21:30:22.767 +0000 (UTC)
+Date: Thu, 22 Oct 2020 21:30:22 +0000 (UTC)
+From: CS 2337 on Piazza <no-reply@piazza.com>
+To: jtt190006@utdallas.edu
+Message-ID: <kglca57s73vk9@piazza.com>
+In-Reply-To: <kglca57s73vk9@piazza.com>
+References: <kglca57s73vk9@piazza.com>
+Subject: Undefined Reference
+Content-Type: multipart/related; 
+	boundary="----=_Part_231522_453201407.1603402222703"
+X-SG-EID: WPwLAJ14+SJT7QnNIWhgUO1jb8VrrEF9FIIxElOjTePosoh0emdWF0HOtJDy3P1w0d4Ho/ggmvzSa+
+ fsdbrGLElQNLx+BLzYxA5d2xFrSON1hU5UtkIoqKPokqpmWW/y1LgAgo4p4fliPkzXJTXwn9rexLKG
+ yl1AApKyBOdPUKe9fxmuSR6QULlxCxCiRHpwotT3BZkh0hQs3EPfBcCtif9Lue6uONEdK4jwznhwUZ
+ E=
+X-Entity-ID: JNW8vgYghlSXf2j+L819xA==
+Return-Path: bounces+5126-683e-jtt190006=utdallas.edu@send.piazza.com
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2020 21:30:24.0481
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 816ef2b2-8d26-44c1-70a1-08d876d1afac
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT037.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 816ef2b2-8d26-44c1-70a1-08d876d1afac
+X-MS-TrafficTypeDiagnostic: MW2PR0102MB3467:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:565;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:167.89.101.215;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o4.sendgrid.piazza.com;PTR:o4.sendgrid.piazza.com;CAT:NONE;SFS:(4636009)(286005)(8676002)(36756003)(7636003)(7596003)(33964004)(7116003)(3480700007)(2160300002)(336012)(83170400001)(166002)(966005)(356005)(1096003)(83380400001)(2616005)(26005)(34206002)(327265003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2020 21:30:23.5893
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 816ef2b2-8d26-44c1-70a1-08d876d1afac
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT037.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW2PR0102MB3467
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7250051
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SXRVcmRjdUJ1eXFMYnR2QUpibXNLem14b0VJblBPVkhmNTd4UG5oUjQzMW1m?=
+ =?utf-8?B?SWtINlNCcUoxdHE0enp6bXY3T0dOOC8wRmZqdEZZc3I4Z29KejVEZWVOWWlS?=
+ =?utf-8?B?N1RydnVLenViWWJvN0ZWcUpUd1g3VzRxQ2hBQVBlYlJlakZ2djd3M0xNeW9R?=
+ =?utf-8?B?Q2JDOGhwTFc1UWZTYlExRXYrRlNqV2J0YlJvWE1ySWY5Q3lReUtFR0x4RXkr?=
+ =?utf-8?B?cTRiVHM0NURSdU9lRFR4Sm5JQW5NWFUxYklEUGo3ZjhSWWNKeUNOVFpwQitY?=
+ =?utf-8?B?NDFKVTd5LzNSQjZwMWR3K29nMlVaTWREaVMwYzlnSi9GSkFOYURZZ01UQVdu?=
+ =?utf-8?B?OW1tTVdGNW1nbGJoWGptMlo2MVptSUxxb1ZHdmd3UzJpbm5KYmZuY3p0N2lR?=
+ =?utf-8?B?Y3V1SjNVWXhmZkhWSWhXRUpTdHFPZ2pQbTM2Y1c4ZmhtbmdTeVI0U2hVdjBu?=
+ =?utf-8?B?M2JmanM3N1JGYnppWHFHUnpJYlJPYkdKc0N5ck9PY0NCWmdwTXA3MmlKdWxZ?=
+ =?utf-8?B?QkRVakdyVlY4bnY5akk3amxSNWkrREpGcjlQTnY3MW5qY1JEVkZ3ZzNnY0hQ?=
+ =?utf-8?B?U3pCMmRDd0Y4R2FTeklpTDNvRkk1MS9xbTh4cThSOUp6ck5YbTU5MFoxMWk4?=
+ =?utf-8?B?OWNIcHJON2lpQ1RVY2NTZGZNUWRMZGRyWEVjeU5MbitpWlZtVFR6NVB6U21L?=
+ =?utf-8?B?TnhkVEZ4eGVuNWdLcWp4N2dQYnZybmQwZmVkSW9HQkZ5ZGc4clYyMUs0RXFx?=
+ =?utf-8?B?TUM4S0dwYVI0bFdObEhpdnQ5QUlxU3pmd3JuRzgySVRWeHJuSGpHZWlqSEsw?=
+ =?utf-8?B?cGJoZnRmV2pGODF4SllmeVJ4VXZINGlUOWVNZWhsa3hhWmVKNk80Slp3RkRo?=
+ =?utf-8?B?VWxDRjhYMHVzS2l5OWUvQ2cyVjlSc1NtVlYwWjRsckdKMDAxQ1NCVmI2dHhh?=
+ =?utf-8?B?cm0rVVJ3ODhibHVwQWczR0VnbzlYVElSdlpzOFE0TjRQVm5ndGRyRlI2eDhH?=
+ =?utf-8?B?Ni9JemN5TEdoYTBCWWdCQm9KYU5BTjdZVWtOelpCakZLOVVNcGhrOTNDbHB4?=
+ =?utf-8?B?ZGM5NEZmYTZCNkVzNlBSTUlVclJHVHRvOHpZZW1QSzQzaG44eUVGTEJzTHMr?=
+ =?utf-8?B?TWVCeUFEc0dTajdNS2NvcVB2STdhZ09BMW9BY3VBbWRwM2lUb3NDWVNVeXBM?=
+ =?utf-8?B?Z0pWVEQ3ZmphT0IvSzltb0ljZTJLNTRtWXpmdVRvR0V2RnpieXBFazBtWlVT?=
+ =?utf-8?B?UnBFMnpmSVY3djY2aHJDNEkvM3FzbGw1ZlN4VmdnZTlQNC9JSytpWm9KT0cx?=
+ =?utf-8?B?WE1FNFRNWTMrMXhLeXdpZlVqZUQ4Z0Y2WnpVcmZ4VlNUdTBMT1BOSlEwa0Vs?=
+ =?utf-8?B?ZFE2dnlHL0Izd1c4N2diY1FqbzU1eFhxelExRmJINU1PdHcxY29OUG1qSGR1?=
+ =?utf-8?B?ZnpEL2lnZkVBZTl4V3FMREI0Y0ZxMHFKNDZzMGJ4UUMvemxwczF5L3BId3d0?=
+ =?utf-8?B?cGJUMEJJYzhvazRuL1ZwREhpWU5SVURPMGY2ZTNxb2NydmpXT2J2cXl1L2Q1?=
+ =?utf-8?B?RnFya2o4cHo0OUZSVW5MakJpZHpTODVzQTlURElWWlZJMUpZWlVxUVBPT1Fw?=
+ =?utf-8?B?QVNjT0dHd1YxSEFjWFVLVUxaQ2pHaGlRNWkvRXc0c0hiY3ViYWtPaU5SUHd2?=
+ =?utf-8?B?VHZCSHhRRC93RXV1Wk9PcHZrcnpXN3F4eDZKdk5VWEFicGF3bE03TXY5WENa?=
+ =?utf-8?B?ck1sTVprQ0tYWktTK09kdDNqb3dHSGZNcTJQU2t0MHhvaHpVV0piek0wZVNT?=
+ =?utf-8?B?b0wvdWtTdnFlZWJpR1pTRXNKcExTYTNOcUdrM3paRTRnWWFMK0xFU2FiTkdI?=
+ =?utf-8?B?M3U5ODcrLzFOSm1NSDBDQXk2RWVXQWg5VmNZNnNTeEVxZXc9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_231522_453201407.1603402222703
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_231523_2078457630.1603402222703"
+
+------=_Part_231523_2078457630.1603402222703
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Your classmate posted a new Question.=20
+
+Undefined Reference
+
+When I perform=C2=A0
+BSTree <DVD> tree ("sample_inventory.dat");
+I get the error
+||=3D=3D=3D Build: Debug in Project3Implementation (compiler: GNU GCC Compi=
+ler) =3D=3D=3D|obj\Debug\main.o||In function `main':|C:\Homeworks\Project3I=
+mplementation\main.cpp|14|undefined reference to `BSTree<DVD>::BSTree(std::=
+__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)=
+'|C:\Homeworks\Project3Implementation\main.cpp|14|undefined reference to `B=
+STree<DVD>::~BSTree()'|||error: ld returned 1 exit status|||=3D=3D=3D Build=
+ failed: 3 error(s), 0 warning(s) (0 minute(s), 1 second(s)) =3D=3D=3D|
+
+Go to https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fp=
+iazza.com%2Fclass%3Fcid%3Dkglca57s73vk9%26nid%3Dkdkny0h2flh4wp%26token%3D9N=
+DsAQ4j0O3&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%7C816ef2b28d2644=
+c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738999025=
+9905909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DADeHbfdBGKTKJThtzajTxEmnKLOwxp1a=
+CcJWtgW1u4c%3D&amp;reserved=3D0 to view. Search or link to this question wi=
+th @354. Follow it to get notified when a response comes in: https://nam02.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Ffollow%2=
+Fkglca57s73vk9%2F9NDsAQ4j0O3%2Fbac7a39c&amp;data=3D04%7C01%7CJesse.Truong%4=
+0UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e032d=
+15de9f6c%7C0%7C0%7C637389990259905909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D39=
+NCNdMbW6UDVSVrp7qwgq33t4hJ9nW0VIc1jFTLzYI%3D&amp;reserved=3D0=20
+
+Sign up for more classes at https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttp%3A%2F%2Fpiazza.com%2Futdallas&amp;data=3D04%7C01%7CJesse.Truong=
+%40UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637389990259905909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+yw5x%2BlcmYVyqzFtYT5RbrDUiuoQdvhrOy3EtSbRJkl0%3D&amp;reserved=3D0
+
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because jtt190006@utdallas.edu is enrolled in C=
+S 2337 at University of Texas at Dallas. Go to https://nam02.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Flogin&amp;data=3D04%7C=
+01%7CJesse.Truong%40UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281=
+d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389990259905909%7CUnknown%7CTWFpbG=
+Zsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C=
+1000&amp;sdata=3DBBjwwOhJ55JLf0%2BW5hCmqZ46xYaxzWBbHqxNfx8c4o4%3D&amp;reser=
+ved=3D0 to sign in and manage your email preferences or proceed to https://=
+nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Fre=
+move%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=3D04%7C01%7CJesse.Truong%40UTD=
+allas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e032d15de=
+9f6c%7C0%7C0%7C637389990259905909%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwM=
+DAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DzKFrDK=
+jo1D6dVFIC%2BQo6r0sLPHc2l2Z9NY2izyby63E%3D&amp;reserved=3D0 to un-enroll fr=
+om this class.=
+
+------=_Part_231523_2078457630.1603402222703
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+Your classmate posted a new Question. <br><br>
+<b>Undefined Reference</b><br>
+<br>
+<p>When I perform&nbsp;</p>
+<p>BSTree &lt;DVD&gt; tree (&quot;sample_inventory.dat&quot;);</p>
+<p>I get the error</p>
+<p>||=3D=3D=3D Build: Debug in Project3Implementation (compiler: GNU GCC Co=
+mpiler) =3D=3D=3D|<br>obj\Debug\main.o||In function `main':|<br>C:\Homework=
+s\Project3Implementation\main.cpp|14|undefined reference to `BSTree&lt;DVD&=
+gt;::BSTree(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt=
+;, std::allocator&lt;char&gt; &gt;)'|<br>C:\Homeworks\Project3Implementatio=
+n\main.cpp|14|undefined reference to `BSTree&lt;DVD&gt;::~BSTree()'|<br>||e=
+rror: ld returned 1 exit status|<br>||=3D=3D=3D Build failed: 3 error(s), 0=
+ warning(s) (0 minute(s), 1 second(s)) =3D=3D=3D|</p>
+<br>
+<br>
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fpiazza.com%2Fclass%3Fcid%3Dkglca57s73vk9%26nid%3Dkdkny0h2flh4wp%26token=
+%3D9NDsAQ4j0O3&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%7C816ef2b28=
+d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389=
+990259945885%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D42t5iiPy7yte7WuPjXJ2fLMjoM6=
+rP2YolGTMUOPkdLE%3D&amp;reserved=3D0" originalsrc=3D"https://piazza.com/cla=
+ss?cid=3Dkglca57s73vk9&amp;nid=3Dkdkny0h2flh4wp&amp;token=3D9NDsAQ4j0O3" sh=
+ash=3D"BMug8ETIItV9RuSZ/va/bYm51BhkStshDypwC7she0Q1IMWk7P/HyMc9BccnomFn3Dq+=
+beeAu0pRm/xaf76mwlsk4gRseA1bqyb2sPH4ZGIRQEyrtEY5cygSbxzcoSfEZCx13ojvJp836zO=
+UhvfXY3bDboU9zfIvgNZQIohO/Wk=3D">Click here</a> to view. Search or link to =
+this question with @354.  <a href=3D"https://nam02.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Ffollow%2Fkglca57s73vk9%2F9NDsAQ4=
+j0O3%2Fbac7a39c&amp;data=3D04%7C01%7CJesse.Truong%40UTDallas.edu%7C816ef2b2=
+8d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738=
+9990259945885%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DOQySEqMSd%2Fi5C2VIg8vcBlZ%=
+2BOmqi%2F7yB050hWIX71oA%3D&amp;reserved=3D0" originalsrc=3D"https://piazza.=
+com/follow/kglca57s73vk9/9NDsAQ4j0O3/bac7a39c" shash=3D"xxL4F3f2GGljn4dxu6S=
+aQXdOBeOrwRQnM9JPqC48Z/58/xQ16pfok844tPuqgLprX39M56znOJvbIuhJUW+vIdGf+g5Cp+=
+i3MihBl59SEeATGFexdNYvQjOLLtJqpFXKLGKYY37y0wMVrZaB/DcUUdlj+MDgdl+bNI8E66J7C=
+CM=3D">Follow it</a> to get notified when a response comes in. <br><br>Sign=
+ up for more classes at <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttp%3A%2F%2Fpiazza.com%2Futdallas&amp;data=3D04%7C01%7CJesse=
+.Truong%40UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281d1d9c4d4bf=
+7b16e032d15de9f6c%7C0%7C0%7C637389990259955881%7CUnknown%7CTWFpbGZsb3d8eyJW=
+IjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;s=
+data=3DTNSC9ZnpI0CHXuh4sTjgQC8I2kcjNuE%2BDNtmsC6LMd4%3D&amp;reserved=3D0" o=
+riginalsrc=3D"http://piazza.com/utdallas" shash=3D"EHZ+XPsobriDukxS6agXl9hW=
+yVE0hEboZkQJOAFosDkaE0yYhX55Dt5D0MFVcRV5fboOv7zZIF3s7mOOywsgLhSrweUroR5MumY=
+Bv64M0a+gbeDKvofQTfvQVPiNs2B8zrsBwTsnNCAdsl3SzhMxhku5F4L3mQn38Wb9ezvcEaw=3D=
+">http://piazza.com/utdallas</a>.<br><br><br>
+<br>
+Thanks,<br>
+The Piazza Team<br>
+--<br>
+Contact us at team@piazza.com<br><br><br>
+<font size=3D"-2">
+You're receiving this email because jtt190006@utdallas.edu is enrolled in C=
+S 2337 at University of Texas at Dallas. <a href=3D"https://nam02.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza.com%2Flogin&amp;data=3D=
+04%7C01%7CJesse.Truong%40UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C=
+8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637389990259955881%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C1000&amp;sdata=3DecifFYisknG072b9QiLyXsAvGRBo%2BRDY9ptHelC%2FsPI%3D&am=
+p;reserved=3D0" originalsrc=3D"https://piazza.com/login" shash=3D"OeMRf9XIf=
++GdVVDjQ55k7nQSaHIO70z0ewxtpaX7UW+ebfdGbHQzwmj3356fo2J++E/POOjqy1P4U3ULBepN=
+q9JwjzrdBTffJpywf6orfqDNwMVhsSiTSH1QjBo10xcng7T5GbmtBNFjHpEaiO80aUlgRcD3uoM=
+wm/pIO5yS5O0=3D">Sign in</a> to manage your email preferences or <a href=3D=
+"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpiazza=
+.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=3D04%7C01%7CJesse.Tru=
+ong%40UTDallas.edu%7C816ef2b28d2644c170a108d876d1afac%7C8d281d1d9c4d4bf7b16=
+e032d15de9f6c%7C0%7C0%7C637389990259965877%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi=
+MC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=
+=3D4586M6EgirqfjLSUcGZOQT9nNogBUNiNlBKWPNWO9IQ%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://piazza.com/remove/9NDsAQ4j0O3/kdkny0h2flh4wp" shash=3D"ViMQ=
+QAF6+AqBk7XiL+QSFkK/WKMAPkz3/0MSkOpzv8GvvijxUcctx54E7B1Up+gZ9abrnjPlMp0auqh=
+JMfSlHy7Y25jsSZ/2aHUyRQiCxqaQV4l1OFwyJDeeHBcC1OEuCrkEdZ6ptha8nX9aYmtoq+tEOG=
+KpafiTH783IDSeZNs=3D">un-enroll</a> from this class.</font>
+</html>
+
+------=_Part_231523_2078457630.1603402222703--
+
+------=_Part_231522_453201407.1603402222703--

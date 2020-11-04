@@ -1,0 +1,176 @@
+Received: from BN6PR01MB2563.prod.exchangelabs.com (2603:10b6:404:53::17) by
+ SN6PR0102MB3599.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 04:03:58
+ +0000
+Received: from MN2PR06CA0005.namprd06.prod.outlook.com (2603:10b6:208:23d::10)
+ by BN6PR01MB2563.prod.exchangelabs.com (2603:10b6:404:53::17) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21; Fri, 23 Oct 2020 04:03:56 +0000
+Received: from BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:23d:cafe::4c) by MN2PR06CA0005.outlook.office365.com
+ (2603:10b6:208:23d::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 04:03:56 +0000
+Authentication-Results: spf=pass (sender IP is 167.89.101.215)
+ smtp.mailfrom=send.piazza.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=piazza.com;utdallas.edu; dmarc=bestguesspass action=none
+ header.from=piazza.com;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of send.piazza.com
+ designates 167.89.101.215 as permitted sender)
+ receiver=protection.outlook.com; client-ip=167.89.101.215;
+ helo=o4.sendgrid.piazza.com;
+Received: from o4.sendgrid.piazza.com (167.89.101.215) by
+ BL2NAM02FT035.mail.protection.outlook.com (10.152.77.157) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 04:03:55 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=piazza.com; 
+	h=from:to:in-reply-to:references:subject:mime-version:content-type; 
+	s=s1; bh=UqNypqiq0cBvfdUkrhPZxT3uIbdQg3Z/1+xHuuVX1ss=; b=lU8yGSQ
+	BXM26ehfwjjsAfEiXkwS4Rp8V9fib03ZNzMSXZgtE0n+UMvKsAJheDui1lNR4I5k
+	PUZbpi6hgeV6cZeVWIjLRu64vMMciGUFOn9V2T5D1znImvmeVmrSpPy0Ab6xojYK
+	+VkaKgyq1YGSjDwRumCSciFQ5tsVeVRR2AGw=
+Received: by filter2339p1mdw1.sendgrid.net with SMTP id filter2339p1mdw1-13021-5F92562B-C
+        2020-10-23 04:03:55.408457926 +0000 UTC m=+38513.307848746
+Received: from 44nstxgkun.smtp.sendgrid.net (unknown)
+	by ismtpd0123p1mdw1.sendgrid.net (SG) with ESMTP id TSIC16oER2afuRqaw1hxBA
+	for <jtt190006@utdallas.edu>; Fri, 23 Oct 2020 04:03:55.386 +0000 (UTC)
+Date: Fri, 23 Oct 2020 04:03:55 +0000 (UTC)
+From: CS 2337 on Piazza <no-reply@piazza.com>
+To: jtt190006@utdallas.edu
+Message-ID: <kglqc9dgxfh3ps@piazza.com>
+In-Reply-To: <kglqc9dgxfh3ps@piazza.com>
+References: <kglqc9dgxfh3ps@piazza.com>
+Subject: Program not opening the file
+Content-Type: multipart/related; 
+	boundary="----=_Part_360663_1787532723.1603425835332"
+X-SG-EID: WPwLAJ14+SJT7QnNIWhgUO1jb8VrrEF9FIIxElOjTePaR5DeluFOzvVG3eRdkObW9/yl3iN6aFQJQV
+ 5x3k1pIAeF+XPDKrYGRVVl65eTfe/fqSxpKi9fjz9hPKUA8gmbME62JtLNkKBfebe3YSDIWb3gy+SC
+ FnG9JjOUYoO/R5qXATc2JpxNR1R6lHK0S+e62xC4fLPpMKpdiARWexqSuwA6iF9/VTQcISwKKqS7PW
+ k=
+X-Entity-ID: JNW8vgYghlSXf2j+L819xA==
+Return-Path: bounces+5126-683e-jtt190006=utdallas.edu@send.piazza.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 04:03:55.8109
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 9517834f-7ddd-4508-85e3-08d87708a961
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 9517834f-7ddd-4508-85e3-08d87708a961
+X-MS-TrafficTypeDiagnostic: BN6PR01MB2563:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:167.89.101.215;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o4.sendgrid.piazza.com;PTR:o4.sendgrid.piazza.com;CAT:NONE;SFS:(4636009)(286005)(336012)(8676002)(166002)(356005)(1096003)(34206002)(83170400001)(2616005)(26005)(33964004)(7596003)(2160300002)(83380400001)(7636003)(36756003)(966005)(327265003);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 04:03:55.7440
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9517834f-7ddd-4508-85e3-08d87708a961
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL2NAM02FT035.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2563
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2131404
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?dVF4cEhzeXJJNUIzS0FFY0cxd01BTU1kSUJGbEdEMm12NGRjbW1VOEZ5N3JQ?=
+ =?utf-8?B?OVZwbFplbFNINjhYMnF6NmR3Mk9keTRrbXpIMEQ5OE1wNXFEMXlNckZJZCtS?=
+ =?utf-8?B?NnUzeFJBdmxPWmxVbzI1UnAwbU42MEorVzF6anJ4dHkreWtOVytCYjdXSHJx?=
+ =?utf-8?B?WDJoZldFQ1RWOW52cmQ4UG5iWk5ZdklSN0NCdDc2aVNNNk8vNmVOazBLR0JE?=
+ =?utf-8?B?WTR0RWxxZzhOQTRadUdDaEEwNEJuZVlkcWkreVZKdFhzUEptL0lkYkhoTGhU?=
+ =?utf-8?B?bmRuTGxOeW5GSnY5Qnlzb3FlMklmcUtuRTB6NDJJVkZmelkxLzVySC9aeFdE?=
+ =?utf-8?B?czdPdzdoc3M4cHNyWVZUd29ZK3pTWTk5TUdLM0FBcFhkTm9lQnRUVG1CVVBu?=
+ =?utf-8?B?RjRiTmdYblE2ZWRuNG50b2hpaEFqajIyc1ltYS9OdkxnSjYwQTBPck0zM1V5?=
+ =?utf-8?B?NVBlaDdTUUdqbi9YUkpLYzZxOGIyRmg1NzFPdkV5bURXdTg2T1VIejBqdndD?=
+ =?utf-8?B?T2ttc0JnMndxVXlNcHk1LzRaQ0x3dlF0ODFScjNwSC95bmplbk1ETEZ0NzZn?=
+ =?utf-8?B?emhIZjFYa3RscmdoNFlNT2xSY200RU9nL2lLcEZ5dWpIc2grWDdqMmlUdTVn?=
+ =?utf-8?B?a1h3dU1CVWFva0VmQlRjdmQ2NWFZOWQ5d2d6a0VlMFRJNGlGeUtlMWdyOGR1?=
+ =?utf-8?B?MTRDcE4rRVloTlEramgxYVFLZ3FnaUpaRVVNcEJhU3ZMOUNOVGpTaUU3YW02?=
+ =?utf-8?B?dlkrbytDUjZTeHB0Qk9KZVQ0ZzIxWUkrd0tVaGNCSkljeGE3MUp0SEdXcFdD?=
+ =?utf-8?B?c1VmaE1ac3ZsNGVFb3R4akI1cTlKd2EzR3RlbE1OditvUGlQUjVtTFV4TE9J?=
+ =?utf-8?B?OGpDNFMvTHptVGZlMTVIVUVxNWQ5cjlFcDhHUTFZR2NSL1h3ellybExpeFVt?=
+ =?utf-8?B?SnZHQjlhK0FML1haY1JoWVM2R0UzbHgxT2xnV05QQSt1Mi9lNlF5TTdPNGNL?=
+ =?utf-8?B?U0taZG54c2lNRkFzMW54UVJzZWVJQkU4WGY0eTNBUUpEanlYeHRHUW5NQit2?=
+ =?utf-8?B?Z0ZtSzUraWZvYjVSOWN3bGZ0aHp6NzVvdTlab0p1S1I5RXBQajhkWGxZd2N2?=
+ =?utf-8?B?VjhCYTE5VmRBOWE0VlU0Q3RCN2RVb2JYMzZyZlN6Q1NFd3l2aURQYklVS3hj?=
+ =?utf-8?B?YnprNzhTNjFTa3JoNVhPc2Z1RGpGOXZBV0tzZzdjd3RVUHJiT2F0N0xISGVZ?=
+ =?utf-8?B?ZG5BK3RpS3FLL1BoYktZczZSR1FpcjBVTmUySTJXcm5uWXVkTGpmb3N0SzJH?=
+ =?utf-8?B?enVIS0xnY1p6UDY5R3FxdnNObkswNGpsZXloOWZ5bnF6bGtEVzBoeVl1TGxz?=
+ =?utf-8?B?Y1lZVkZSRlJ2cGdNbDhmV1l5UDJqT1NiRHkySmpEeGxKY1ptWFhWdXB5cXlj?=
+ =?utf-8?B?Y0RzK1oyMitDVGVycEhqMzZpMWRyb3FQRGFUaXNxbm1HNk82c1E2MVRIZDd2?=
+ =?utf-8?B?RDJ0S2dHbmI5c0krTllycUFhS0d4RFhwcElTK2JuTlMraklUcUNVd0c4aHg1?=
+ =?utf-8?B?VWZwU0R2N3lHVGw2amswMUhYMlZPbmtrUStLemFQR0pLc2lQN3V3eVJCYnBl?=
+ =?utf-8?B?SlRMRUdOVGljUkExZjV2WG92ejhKWTFjR1JvVHBBMFpkTEw3c2J2dW5hcW9J?=
+ =?utf-8?B?ZGo4ZDhBL3R3b1RpQ3BPWHhxcmZjYjVTTSsvd3d2Njd5OGVwTjZpeGJzbDJQ?=
+ =?utf-8?B?cTBNSUNLaUpyTFhxbld0ZFhaa1V1MHkxVHE1K2dUbi92d0ZIN0pxbEp4MVRu?=
+ =?utf-8?B?RnZvNVVTNWlOQ0hGSThYcmxueXBNempBbGl5ZFFhNnExc0JzUDgrV1RwOWZD?=
+ =?utf-8?B?cGlDKzE4UTVjK0RFY0JMcDh4TXRnQ21Hbkd1KytpcDV6d1E9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_360663_1787532723.1603425835332
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_360664_1112320243.1603425835332"
+
+------=_Part_360664_1112320243.1603425835332
+Content-Type: text/plain; charset=UTF-8
+
+Your classmate posted a new Question. 
+
+Program not opening the file
+
+I am having some technical difficulties when running the code in zybooks. It keeps throwing me this error when I know it has to do with the fact that the file is never opened to be read.
+
+
+Go to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fclass%3Fcid%3Dkglqc9dgxfh3ps%26nid%3Dkdkny0h2flh4wp%26token%3D9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387288843%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=ou82FkLCtZZ4wxltJH4xbP9mCdSqKPYzDHyWkUodwOc%3D&amp;reserved=0 to view. Search or link to this question with @356. Follow it to get notified when a response comes in: https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Ffollow%2Fkglqc9dgxfh3ps%2F9NDsAQ4j0O3%2F5898ce8e&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387298839%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RWB1hJlA4GxaCf0QjmekaKhA1H5WeAYxMILkhwE%2Boro%3D&amp;reserved=0 
+
+Sign up for more classes at https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fpiazza.com%2Futdallas&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387298839%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=xBhkOWOTLKriISw5RWtlsM13JAUUOAQHeb5oQtEz7qk%3D&amp;reserved=0
+
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because jtt190006@utdallas.edu is enrolled in CS 2337 at University of Texas at Dallas. Go to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flogin&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387298839%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=U53lEwgxba%2FA3O3rR%2ByFPg%2FAA99fkNu1wVw%2FBIparZw%3D&amp;reserved=0 to sign in and manage your email preferences or proceed to https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387298839%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=SN0iaU33TKm3hcMaFO6aElb3ESIrLWVvHhau9HyvnZU%3D&amp;reserved=0 to un-enroll from this class.
+------=_Part_360664_1112320243.1603425835332
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+Your classmate posted a new Question. <br><br>
+<b>Program not opening the file</b><br>
+<br>
+<p>I am having some technical difficulties when running the code in zybooks. It keeps throwing me this error when I know it has to do with the fact that the file is never opened to be read.</p>
+<p><img src="https://piazza.com/redirect/s3?bucket=uploads&amp;prefix=paste%2Fkdt5os6d2kc6vc%2Fef8f1bc418aa68ea4a3a907ce148203fa74dd4bb11fc539c06423af39804ed9c%2Fimage.png" alt="image.png" width="1000"></p>
+<br>
+<br>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fclass%3Fcid%3Dkglqc9dgxfh3ps%26nid%3Dkdkny0h2flh4wp%26token%3D9NDsAQ4j0O3&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387338822%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=hRCsb%2BdYPpSLlLeBknVA%2FR2kwbBjQKH9VCs275dAV08%3D&amp;reserved=0" originalsrc="https://piazza.com/class?cid=kglqc9dgxfh3ps&amp;nid=kdkny0h2flh4wp&amp;token=9NDsAQ4j0O3" shash="PI0TwE8h5fjpY7sw20PPEAycYYO3Q1IZL9U2iR7oSIRhN+JXzFsJfeB92B9X5siC+g4Su7+ATn4hcftE+2F5PUO2IRfugV++wcSJQbxeTUqpk6p2k1cGpwYvhWYBSiVNfMwYv/ioVx3OFoe4qBfok0gocXQoFx5zQDaYGavmM5k=">Click here</a> to view. Search or link to this question with @356.  <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Ffollow%2Fkglqc9dgxfh3ps%2F9NDsAQ4j0O3%2F5898ce8e&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387348822%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=nWg2VreyHyg37kKBMatY8BTnDOteYqAaAh2BDJPCPOA%3D&amp;reserved=0" originalsrc="https://piazza.com/follow/kglqc9dgxfh3ps/9NDsAQ4j0O3/5898ce8e" shash="CAZQuThYSBU8hDt5NrTPWTmZAe8AO++sR3LYJv56yTp3hb41w3ihSqp4smm4IAHazyE/4XXew0JMWxhE6mNQ4bPZ4Kb35sIlmk/GhjP4aOGJzBJ+HcxxDOAgs/9stu5BFg1r4r5KD+lJC4+z76FI56L3HbxXbQ7NrotbsT3cNfM=">Follow it</a> to get notified when a response comes in. <br><br>Sign up for more classes at <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fpiazza.com%2Futdallas&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387348822%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=%2F1YGpHTjLgIAKQC39wNaYJZ2SmcIXNXj1w%2F9hYSslvc%3D&amp;reserved=0" originalsrc="http://piazza.com/utdallas" shash="fDxa55euZp7uhAnSatrp/944Vg70tba434KzWLpK6PmFn1uGShJXmvSDAm+aKAWSeXLZ6nWM+V1ZJ6sAAaAu00aDul07ekZr+4KOKLGqH7y3Y0c69zCSFVb2a3D4APDOu8+QWNZTw/C+wTCvt6m/fOzw62ObxGM2bbD87yxdq7c=">http://piazza.com/utdallas</a>.<br><br><br>
+<br>
+Thanks,<br>
+The Piazza Team<br>
+--<br>
+Contact us at team@piazza.com<br><br><br>
+<font size="-2">
+You're receiving this email because jtt190006@utdallas.edu is enrolled in CS 2337 at University of Texas at Dallas. <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Flogin&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387358815%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=vfKeVsW3wj8F%2BhO%2BscfpM%2FyQ1mSxlT3tFiVgvi2wKRs%3D&amp;reserved=0" originalsrc="https://piazza.com/login" shash="MLMne4bOp5/8FpVE2VskrKwEDX6EoVA/zk0XKTHqHasjsb5su4h2TYdkeQ54Rw2K7CvMC2Ug2TvW838qioWW3SRdx0Rqaybnn005BGRvTR6mMyTqXj1wxv/+9yS+d2FdymQfEgtEKTaMJxgoYEbmIVj0ZQkX9HCBgATeyL509R4=">Sign in</a> to manage your email preferences or <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpiazza.com%2Fremove%2F9NDsAQ4j0O3%2Fkdkny0h2flh4wp&amp;data=04%7C01%7CJesse.Truong%40UTDallas.edu%7C9517834f7ddd450885e308d87708a961%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390226387368813%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=zVu1nwxOp7b6yiYN8pmEOj5jgYWqBN%2FLn0ip3PZryAw%3D&amp;reserved=0" originalsrc="https://piazza.com/remove/9NDsAQ4j0O3/kdkny0h2flh4wp" shash="CF6wubNSE/3azVaBVOMFseql6kyGvrE8tGToBiQVJaC8J6vbeIkoM8/pfH8JiT3Sgy7NVFlLcNqNe0FCPERnjViiCQiyePMvKMwOQyV9xSopeLBds5IXs70qVIDxVs5AqEGLnsb93urAcxBapODcbiMceNoXo/64E3LITmT0IfU=">un-enroll</a> from this class.</font>
+</html>
+
+------=_Part_360664_1112320243.1603425835332--
+
+------=_Part_360663_1787532723.1603425835332--

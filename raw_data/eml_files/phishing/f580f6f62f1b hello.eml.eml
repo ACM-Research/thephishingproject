@@ -1,0 +1,64 @@
+Subject: hello
+Date: Thu, 22 Oct 2020 01:50:44 -0600
+From: "James Charles" <jamescharless354@gmail.com>
+Sender: "James Charles" <jamescharless354@gmail.com>
+Message-ID: <CABJjid6+5xmSfs4hapeOCbjbYYbV+r5khDLFhd6DWfp+=OLwdw@mail.gmail.com>
+To: "Chen, Anthony J" <Anthony.Chen2@UTDallas.edu>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0003_01D6B231.236EBD90"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQHWqEgYAyeBtWcjUkCXvbNYjGX4uQ==
+Content-Language: en-us
+x-ms-publictraffictype: Email
+received-spf: Pass (protection.outlook.com: domain of gmail.com designates 209.85.167.68 as permitted sender) receiver=protection.outlook.com; client-ip=209.85.167.68; helo=mail-lf1-f68.google.com;
+x-ms-exchange-organization-originalserveripaddress: 10.152.75.65
+x-ms-exchange-organization-originalclientipaddress: 209.85.167.68
+x-ms-exchange-organization-authsource: CY1NAM02FT050.eop-nam02.prod.protection.outlook.com
+x-ms-exchange-organization-submissionquotaskipped: False
+x-ms-office365-filtering-correlation-id: a9dd6442-caa9-41f2-d753-08d8765f3a22
+x-ms-traffictypediagnostic: CO2PR01MB2136:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtFwd
+x-ms-exchange-transport-forked: True
+x-ms-oob-tlc-oobclassifiers: OLM:3173;
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report: CIP:209.85.167.68;CTRY:US;LANG:en;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:mail-lf1-f68.google.com;PTR:mail-lf1-f68.google.com;CAT:SPM;SFS:(4636009)(42186006)(7116003)(4300700001)(33964004)(3480700007)(22186003)(55446002)(6916009)(26005)(7636003)(564344004)(7596003)(82202003)(1096003)(8676002)(356005)(6666004)(58800400005)(73392003)(5660300002)(86362001)(336012)(76482006)(2160300002)(14353004)(204593002)(220243001);DIR:INB;
+x-ms-exchange-forwardingloop: ForwardingHandled;8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+x-ms-exchange-crosstenant-originalarrivaltime: 22 Oct 2020 07:51:04.2227 (UTC)
+x-ms-exchange-crosstenant-network-message-id: a9dd6442-caa9-41f2-d753-08d8765f3a22
+x-ms-exchange-crosstenant-id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+x-ms-exchange-crosstenant-authsource: CY1NAM02FT050.eop-nam02.prod.protection.outlook.com
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-transport-crosstenantheadersstamped: CO2PR01MB2136
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20161025;        h=mime-version:from:date:message-id:subject:to;        bh=DEmZaMgJRCkzo8uzSIm35aucpvawTucyDbul5ETuLAc=;        b=IKmzqNFZAyhQzGpcrL2kVTAJGVt7ZYDoVy1ydFq0sf0uR19TIoOMA9/zUYU+7bIXWe         Cxule/c3sh4AMGPRdOYiOOlrB2wep/RigTSkWtIa2q53QnvmEzZDOnAvxMlQGTrqwDTd         +iMykQcvoLTmnt/aBOLzHd1zOPA4LY+qQT935vz/akCho8+4OSwwipMgPqDh0i5vUdEv         u0LodTdc5KvVbIblEvqgBp0fe8HqoLTf9Qdvb9uv5WNOCvt7WyRwz2svwIJTTVYAwtmf         6bhxujlfeC9amdOlLZjeopli/uUb7VygDihuFyRH8lOsJe8MLYvIzpS4x2zUS65sBsw2         mfoA==
+x-eopattributedmessage: 0
+authentication-results: spf=pass (sender IP is 209.85.167.68) smtp.mailfrom=gmail.com; utdallas.edu; dkim=pass (signature was verified) header.d=gmail.com;utdallas.edu; dmarc=pass action=none header.from=gmail.com;compauth=pass reason=100
+x-eoptenantattributedmessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+x-gm-message-state: AOAM530EV6XhOedKWhx0I0lRYJfJ/lhjo1TlkTqezymqWofTYAF5NWwH	Ej/Y/R0OKd8P9r3QHWAVXlx4Coa+dzumjwOQnGz4mYGfpCYvsF+J
+x-google-smtp-source: ABdhPJyCA7B5nHa1/nptDDwHzlWIV+X6RhxBoodmJFMML6otJrUtGSM7Opo6EG5KMsKaGXrsLmLfHQ30g0Ce2oqWMFk=
+X-MimeOLE: Produced By Microsoft MimeOLE
+x-received: by 2002:a19:fc1c:: with SMTP id a28mr453723lfi.517.1603353062284; Thu, 22 Oct 2020 00:51:02 -0700 (PDT)
+x-google-dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20161025;        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;        bh=DEmZaMgJRCkzo8uzSIm35aucpvawTucyDbul5ETuLAc=;        b=hraSpdj7JT4qdU8/xpXB5hNXHrDZfd+MxbVeuNdQG99J0aBXtYGEKEfAoAJSpb3ZzI         VPo4nbwrDH0gro4bH72JJFwPm9pSn6759K15YeAkrSvo6b+MiezOxpuU8T65L+5cTn2e         ZsntsY+cITH8htcwc1e0yPWf2IDIZiNNiqS9oe1AP9/yGZj6NjsI3yBrr1IfIenqYzx6         ZDI/p9hpkWbuA4XAnwsMBT0yZeEbG5FE23tHcuzAAffv9nh2fEstfi20diFwylf5Qgsh         6vpdslf9oHtNh9KcOT1uYsuNggta6YcpCM5vPAFxIAuXlzjFpUz+K8kLFeY8EFI6jAvc         21ZA==
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0003_01D6B231.236EBD90
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+      Part time job for the University of Texas at Dallas Students. Reply 
+back if you are interested
+
+
+------=_NextPart_000_0003_01D6B231.236EBD90
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">&nbsp; &nbsp; &nbsp; Part time job for the University =
+of Texas at Dallas Students. Reply back if you are interested&nbsp; =
+&nbsp; &nbsp;&nbsp;<br></div>
+
+------=_NextPart_000_0003_01D6B231.236EBD90--
