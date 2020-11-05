@@ -1,0 +1,612 @@
+Received: from MW4PR01MB6258.prod.exchangelabs.com (2603:10b6:303:66::6) by
+ SN6PR01MB3806.prod.exchangelabs.com with HTTPS; Fri, 16 Oct 2020 19:03:48
+ +0000
+Received: from CY4PR13CA0075.namprd13.prod.outlook.com (2603:10b6:903:152::13)
+ by MW4PR01MB6258.prod.exchangelabs.com (2603:10b6:303:66::6) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3455.23; Fri, 16 Oct 2020 19:03:43 +0000
+Received: from CY1NAM02FT017.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:903:152:cafe::b0) by CY4PR13CA0075.outlook.office365.com
+ (2603:10b6:903:152::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.11 via Frontend
+ Transport; Fri, 16 Oct 2020 19:03:43 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.214.201)
+ smtp.mailfrom=em-sj-77.mktomail.com; UTDALLAS.EDU; dkim=pass (signature was
+ verified) header.d=mheducation.com;UTDALLAS.EDU; dmarc=pass action=none
+ header.from=mheducation.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em-sj-77.mktomail.com
+ designates 199.15.214.201 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.214.201;
+ helo=em-sj-01.mktomail.com;
+Received: from em-sj-01.mktomail.com (199.15.214.201) by
+ CY1NAM02FT017.mail.protection.outlook.com (10.152.75.181) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.21 via Frontend Transport; Fri, 16 Oct 2020 19:03:43 +0000
+X-MSFBL: bs4ZJDWINwN93Nslq5h/g2rqrAWLPgyinohUresVvcc=|eyJnIjoiYmctc2otMDE
+	iLCJiIjoiZHZwLTE5OS0xNS0yMTQtMjAxIiwidSI6IjEyOC1TSlctMzQ3OjA6MTQ
+	3MzE4OjU0MTI3MToxNDY1MTQ4OjE1NzYyNTo5OjI1MjMxMDg6MjExMzU2Nzg0Iiw
+	iciI6IkFYVDE5MDA1OEB1dGRhbGxhcy5lZHUifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1602875020;
+	s=m1; d=mheducation.com; i=@mheducation.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=7uPl1w5c/tVj8Qi6Ed18I+VYBLra3rj7DUGrVcCzmHw=;
+	b=nRlrzDPYrQMoulpyjswAHARDZXAYU0ImaYIBPqs9SkwGRQ0q+arLv5Ks6iPRXq4u
+	5Jwm//TP/uAtKwuLaknbrYHW5mflDTs0Iyd7PIvAdlG7VIglD3d743Ce7adU1GXsVaQ
+	fW6M4wlRUUBdixas2WeuU1JxdZZvuoayyzKMtheo=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1602875020;
+	s=m1; d=mktomail.com; i=@mktomail.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=7uPl1w5c/tVj8Qi6Ed18I+VYBLra3rj7DUGrVcCzmHw=;
+	b=Yn94H7wrZGcm1QKp9W36ITOYQauFfYe9mGNJLRN6EvKfRbInhRkPqtlNlA8FqAHp
+	qR9r9VEf5R4LWbhimzZjSq4J9+wgwy/dyeFVk2q8P+rIrWEQzyeaj7tyJNBI7BSHMlX
+	LyZG+izpZBTFPIaRkPXSDwQSLqZpGA7DStcFNdaE=
+Date: Fri, 16 Oct 2020 14:03:40 -0500 (CDT)
+From: McGraw Hill Study Solutions <connectnews@mheducation.com>
+Reply-To: connectnews@mheducation.com
+To: AXT190058@UTDALLAS.EDU
+Message-ID: <1150954654.39712657.1602875020121@sjmktmail-batch1h.marketo.org>
+Subject: =?UTF-8?Q?ABIGAIL,_get_redi_to_ace_you?=
+ =?UTF-8?Q?r_Discrete_Mathematics_exam=E2=80=A6?=
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_39712656_1732230576.1602875020121"
+X-Binding: bg-sj-01
+List-Unsubscribe:
+ <mailto:NFZFC6TUOVGW6UCNOFRHI32FM5XXEMKXMVWHQM3DJVFEGMZNKBVG4MDQMNKUE5TWIRKUCPI=.2523108.157625.9@unsub-sj.mktomail.com>
+X-PVIQ: mkto-128SJW347-000001-000002-523108
+X-MarketoID: 128-SJW-347:0:147318:541271:1465148:157625:9:2523108:211356784
+X-Mailfrom: 128-SJW-347.0.2523108.0.0.157625.9.211356784@em-sj-77.mktomail.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path:
+ 128-SJW-347.0.2523108.0.0.157625.9.211356784@em-sj-77.mktomail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Oct 2020 19:03:43.1303
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ be0834d9-7349-4277-73d3-08d872063370
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132473486231333108;(4d29bbe7-9268-40c6-23cc-08d4a395902b);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: be0834d9-7349-4277-73d3-08d872063370
+X-MS-TrafficTypeDiagnostic: MW4PR01MB6258:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:2000;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:199.15.214.201;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:em-sj-01.mktomail.com;PTR:em-sj-01.mktomail.com;CAT:NONE;SFS:(4636009)(286005)(26005)(6512007)(42882007)(34206002)(7036003)(83170400001)(336012)(36736006)(16799955002)(19627405001)(956004)(1096003)(966005)(7596003)(3450700001)(33964004)(166002)(9686003)(118246002)(356005)(6486002)(83380400001)(7636003)(6506007)(19625735003)(76236003)(94166001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Oct 2020 19:03:43.0293
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: be0834d9-7349-4277-73d3-08d872063370
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR01MB6258
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.5196327
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MmNMRFRMeXptalV1ak52Sy9VMWNCa0JkU3pITnF6bXh2ejNEZ3hQOFkzbEtZ?=
+ =?utf-8?B?ZThXVWtnRkI3NVJYWVF5c292aG5SRmdmZVFHalpKSi82UERyTHUrUmh5eGJr?=
+ =?utf-8?B?YVZoTGhYRmp2dUlxQ09tbWVDM0FLZExxdWRKc1IrYVc0WHFPN1RnM28yczlB?=
+ =?utf-8?B?WUNCR0hRT2NsaGw1aFZzOVVjcDlUbmJHd3p4RktrUEUxZHdLL2Q4MDNmMkI4?=
+ =?utf-8?B?SEVMS1BLNTZsYjQrcWZTcEpoNzBSUHJJTzUyVG4xZ3E5U3U5Q29jZGE5d2dT?=
+ =?utf-8?B?WG9wK2pEbkYxWE1PTnlmalByM3BoTFFiSGowTDN3K01zTTRwWm1xWHpYbldE?=
+ =?utf-8?B?RjIzYU54a3lCYU5ycTRXa2p0bjZEK2hFT3V6T3F5K055SzVTaXBnTmgyaGFu?=
+ =?utf-8?B?MmFOMFFoSGJXcHBDdHRaSGl1YnFINkZ3SGlUMWh4R2ZGazFMd3Fpcy80QnVQ?=
+ =?utf-8?B?dWcyYUdrSThiUHpMVDg2YkRFcVNhVTlOV0k0L253Zm8wdDVYYng1WmIveklW?=
+ =?utf-8?B?UGpQVVZCTW00dUZlc0ZyS1FVMCtydFJLWUV2b1krc3dQTTdkTmZFaDRLUkxV?=
+ =?utf-8?B?bWtySkFkUEw0aHRUWitjUUhpTGVNZnNVMXpoYTYyZk42eDgvZVV2RnZscUNz?=
+ =?utf-8?B?V0N6UFVCREdqMDl0bW1naWkwdHJ4SzZEdDVnNVJObmlRbi9YS1ZUciswZXFS?=
+ =?utf-8?B?N25sQjY5QldkUFRMaDh6ODd0eU5PNTFzVGlUc0h2SnFlRkQ0SWFoY3JCTDEy?=
+ =?utf-8?B?NGp5NDJQVEZ6QU1OWkx4YmhIWStiNFJIRUoyb3dsbG5neFlRYTY5aks4ODIy?=
+ =?utf-8?B?empHQTBDb3AxTE1QT1JObTdJbU9ZTC9GRzdwd3BFQWRJeTVMNExUUG1HWTVr?=
+ =?utf-8?B?MFltbys4eU42WXU5RWFadERQY2MxUDNoaGpYNUl1MVVCdFVOYjkzM1FZL1Bh?=
+ =?utf-8?B?alF4UVBkMzQvaGIwcEc1VXZieEZQVGYxeTdNc2FOOFdrU1hUZUhib3JrbVpI?=
+ =?utf-8?B?OFliR2hvemJUUjdOYXNxWUZkVHBLRUFZWVkrT3RyY1k3TWVmWGRpRG1JUlY3?=
+ =?utf-8?B?T1pDcEFNQnZOemNrK1NobmpJd3RGRkJGR0FIbGxRNUl5Ky9IWUl4ajBnZkwr?=
+ =?utf-8?B?NWZuZjRWNFBOdFFvWlo3UDArUGlPK1k5Z1VvRjZSYlgvSUN4ay9XOC9Zd0tI?=
+ =?utf-8?B?d0I2QkxhUGNROFlQUDVGL0VuenUrQTlyTEJRMjQxa0RnVTZDeDBBM0dJL3l2?=
+ =?utf-8?B?OFNPdTI5UjJGalRWTi82bG5OaDJzMVp4MzhhMThYdFBXQThCbEtZNFo0WnE2?=
+ =?utf-8?B?d1VqdGp4UmcwMk9xMEE5MVFaOVRsanV1MklMYTEySm1KSVFxc0VMQ0RMQ2gr?=
+ =?utf-8?B?eTFNVm1CTG1JVGduUHBCMlBtOU1DaVdoTzVBT2dibFpkRCtvdGllNzFFVGxS?=
+ =?utf-8?B?N2V6RWJ6djVZaFhXK0V1ZEErbUNXOG5KM3B5cTgwNlZZcVhDSUhRbVRMVEoz?=
+ =?utf-8?B?NnR1dHhwdktPSjdFQVg0eTAyZEc3UDl2Z1pxTXFPTmNYRnY0aVF2LzcwbWhy?=
+ =?utf-8?B?cHBZVWpvZHVUek0yQ0hkWXMwaHc2TnhVSGxqd0tJNk9ZdmxtWitDYld6WFpF?=
+ =?utf-8?B?dXVFWjN3TlFSRHR6ZmI3bk4yNGxpRk5pcGdiYTF3UzNEcFpibUF5U1lnMXJL?=
+ =?utf-8?B?U2dNby9SSllXc0VNS0FManppaW9WYjFaZEFkSWJRd3NiaXBrQlU4K3hnPT0=?=
+MIME-Version: 1.0
+
+------=_Part_39712656_1732230576.1602875020121
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+To view this email as a web page, go to the following address: https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Finfo.mheducation.com=
+%2Findex.php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiTldZeVpqZGlOR0V3TUd=
+FMyIsInQiOiJSeXpYNGtMdm5sQ3I3M3lDcHhSN0NLYXR1czdWNzZZK0ZBbHdSSzFxbHZzcEpUS0=
+VPTm1pamtIREMxVXo2ZkNCL0g5TUJlb0xpeFNOZEQwelZLc0F5QmxydnE4dEZ5VnlES2lvN0ZtN=
+mwrR21JOTNUOEtrOVh4VHVUQTVpVm9DdWZ0clhqTEpVRTFvRG9Gbm0zODlmM0E9PSJ9&amp;dat=
+a=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d87206=
+3370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282061540&amp;sd=
+ata=3DQirw9oiR7%2F5HsF8f26sgA3LC3ZgiMTiBv8fOmzC%2FsVU%3D&amp;reserved=3D0
+
+Hi=C2=A0ABIGAIL,
+
+
+Register for McGraw Hill redi to access FREE digital flashcards designed sp=
+ecifically for Discrete Mathematics. Also, get exclusive offers when you si=
+gn up, including a FREE hour of tutoring and access to our student success =
+center.
+SIGN UP FOR FREE <https://nam02.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fgo.mheducation.com%2Fdc%2FsexSRKMlDTRw0RI-5R6cSXafJTCxijJcpLJPuK6=
+WqgFgrIu4YUYgyndBS8AUmzNiMQizi2eyElI9geX3ZXyiJF9ZvQgR6oyrZPFLdgWbaIkV2Yb90q=
+WWvxfI8soRJ1O3ASLVht041xwn0GkpQyEqdFwoIDy6zUZxwTDoemR9wahNagLkJBci1Ao9Q_K4N=
+7iD70FaAzP3bz9nO0NhZr7x0FKstvrY1Ri8GNvO3oyJNeEOD-HV0EXIVsBTNkaINXgFaIfGuAnO=
+7nkew7M98YNkqQ%3D%3D%2Fri0C0W0b5Js7yoSKo0eP0x0&amp;data=3D02%7C01%7CAbigail=
+.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4b=
+f7b16e032d15de9f6c%7C0%7C0%7C637384718282061540&amp;sdata=3D68a8yW2Q1nmAUa0=
+lnwQiR%2B%2BiuQyEclccsg9pFclmK0M%3D&amp;reserved=3D0>
+McGraw Hill cares about your privacy. To opt-out of receiving marketing com=
+munications, please select <a href=3D "https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2Fz0Py0x700eiJoybKSoo5W00=
+&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d3=
+08d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63738471828206154=
+0&amp;sdata=3DYkb65bERIqEgbwvi8vvl8gNFAlQ1G1HoUAzGaBEagp8%3D&amp;reserved=
+=3D0" target=3D"_blank" style=3D"text-decoration: underline; color: #692146=
+;" >UNSUBSCRIBE</a>. You may still continue to receive transactional emails=
+ such as password resets, product updates, and product training. You can fi=
+nd further information around our privacy practices in the <a href=3D "http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducati=
+on.com%2FI0KezSy07iopox0P0b0JW05&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTD=
+allas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de=
+9f6c%7C0%7C0%7C637384718282061540&amp;sdata=3D%2BKdQX%2FhhhSlQLB73%2FYSJF%2=
+Fp54ckjELOjshnabi5H%2BE0%3D&amp;reserved=3D0" target=3D"_blank" style=3D"te=
+xt-decoration: underline; color: #692146;" >McGraw Hill Privacy Center</a>,=
+ by contacting the McGraw Hill Higher Education Privacy Office by mail at 5=
+01 Bell Street, Dubuque, IA 52001, or by emailing <a href=3D "https://nam02=
+.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2F=
+NJ00ASPx00eKobW5qoi0y07&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu=
+%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%=
+7C0%7C637384718282061540&amp;sdata=3DGqxPKHMzzkT1erHGkJIPY4RtUpERUUcNf3E971=
+KBCIk%3D&amp;reserved=3D0" target=3D"_blank" style=3D"text-decoration: unde=
+rline; color: #692146;" >PrivacyOfficerMHHE@mheducation.com</a>.
+
+.
+
+------=_Part_39712656_1732230576.1602875020121
+Content-Type: text/html; charset=UTF-8
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Because learning changes everything.</title> 
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0 "> 
+<meta name="format-detection" content="telephone=no">          
+<style type="text/css">
+      body { margin: 0; padding: 0; -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !important; }
+      img { border: 0 !important; outline: none !important; }
+      p { Margin: 0px !important; Padding: 0px !important; }
+      table { border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; }
+      td, a, span { border-collapse: collapse; mso-line-height-rule: exactly; }
+      .ExternalClass * { line-height: 100%; }
+      .em_defaultlink a { color: inherit !important; text-decoration: none !important; }
+      .em_g_img + div { display: none; }
+      .em_black a { color: #000000; text-decoration: none; }
+      .em_white a { color: #ffffff; text-decoration: none; }
+      .em_yellow a { color: #ffcd00; text-decoration: none; }
+      @media only screen and (min-width:481px) and (max-width:599px) {
+      .em_main_table { width: 100% !important; }
+      .em_wrapper { width: 100% !important; }
+      .em_hide { display: none !important; }
+      .em_full_img { width: 100% !important; height: auto !important; }
+      .em_center { text-align: center !important; }
+      .em_side10 { width: 10px !important; }
+      .em_aside10 { padding: 0px 10px !important; }
+      .em_ptop { padding-top: 10px !important; }
+      .em_h20 { height: 20px !important; font-size: 1px!important; line-height: 1px!important; }
+      .em_hauto { height: auto !important; }
+      }
+      @media screen and (max-width: 480px) {
+      .em_main_table { width: 100% !important; }
+      .em_wrapper { width: 100% !important; }
+      .em_hide { display: none !important; }
+      .em_full_img { width: 100% !important; height: auto !important; }
+      .em_center { text-align: center !important; }
+      .em_side10 { width: 10px !important; }
+      .em_aside10 { padding: 0px 10px !important; }
+      .em_ptop { padding-top: 10px !important; }
+      .em_h20 { height: 20px !important; font-size: 1px!important; line-height: 1px!important; }
+      .em_hauto { height: auto !important; }
+      u + .em_body .em_full_wrap { width: 100% !important; width: 100vw !important; }
+      }
+    </style> 
+<!--[if gte mso 9]>
+    <style type="text/css">
+      .none { display: none !important; }
+      .block { display: block !important; text-align:center !important; }
+      .em_outlooksol { mso-hide: all !important; overflow: hidden !important; max-height: 0 !important; width: 0 !important; display: none !important; line-height: 0 !important; max-width: 0 !important;}
+      .em_social_img { padding:0px 10px 0px 0px !important;}
+    </style>
+    <![endif]--> 
+</head> 
+<body class="em_body" style="margin:0px auto; padding:0px;"><style type="text/css">div#emailPreHeader{ display: none !important; }</style><div id="emailPreHeader" style="mso-hide:all; visibility:hidden; opacity:0; color:transparent; mso-line-height-rule:exactly; line-height:0; font-size:0px; overflow:hidden; border-width:0; display:none !important;">Get redi today. Ace your exam tomorrow. </div>
+<div style="text-align: center"><font face="Verdana" size="1"><a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fv%2FCJo00y0I7ebS0oxy0P5KW0i&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282111321&amp;sdata=tLn%2FoZaypaOh6esRpeWgq860%2FlpwhNqHVD8iFZnUCvk%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/v/CJo00y0I7ebS0oxy0P5KW0i" shash="DlyiBEdxuOjLhme4vthywC1q8VJyCiKq4OMxXBLYhKl5KzOUCKiFic4e4nQpuopI6YhOdaenMwdz7t15WjnqpCEv2q//jbaz74GM49DIjZoS2i5B3WlCQu/aOiRJHhsuaZPGCQ7Y4y4nDw97t1NHI9k8EfxPhyTpPvJKO1syets=">View this email as a web page</a><br><br></font></div>
+ 
+<!-- == Body Section == --> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="em_full_wrap"> 
+<tbody>
+<tr> 
+<td align="center" valign="top"> 
+<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoContainer" id="Template">
+<tr class="mktoModule" id="Header"> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<table align="center" width="600" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:600px; table-layout:fixed;" bgcolor="#ffffff"> 
+<tbody> 
+<tr> 
+<td height="12" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td align="center" valign="top" class="em_aside10"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top"> 
+<div class="mktoImg" id="img1" mktolockimgsize="true">
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2FwJyWoixS70050oKre0P0B0b&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282121279&amp;sdata=In%2BI2TDVjHc9vZnCpKW8i%2FjeaxGjwNYCZ%2BKuh25bzZk%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/wJyWoixS70050oKre0P0B0b" shash="JpY/ddLetvBOHleg9x8JslkMeF6yUGer/7Ew7kzIbYrEQazIF/WMdPbHQcRVPwZRHZxPGwYmoNMmYsRwQZOoxLw2poKlGbsD/v36VX5ldegG0eo3CPLj0uF549j2yzyZJGVcbQhyAV/S7nMH9bRJilQXwaql39CIdjQhy3mil7w=" target="_blank" style="text-decoration:none;"><img src="http://info.mheducation.com/rs/128-SJW-347/images/Redi Logos 20AUG2020_With _Beta__PNG_MHE-redi-Logo-BETA-FullColor-Red.png" width="167" alt="Mc Graw Hill Education" style="display:block; font-family:Arial, sans-serif; font-size:15px; line-height:18px; color:#000000; max-width:167px;" border="0"></a>
+</div> </td> 
+<td align="right" valign="top"> 
+<table border="0" cellspacing="0" cellpadding="0" align="right"> 
+<tbody> 
+<tr> 
+<td height="3" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td class="em_black" align="right" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:15px; line-height:18px; color:#000000;"> 
+<div class="mktoText" id="text_1"></div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="12" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>
+<tr class="mktoModule" id="Hero_Medium_230_600"> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px; table-layout:fixed;" class="em_wrapper" bgcolor="#e7eff1"> 
+<tbody> 
+<tr> 
+<td background="http://info.mheducation.com/rs/128-SJW-347/images/MHE-Redi-EmailHeader-non-redi.png" height="220" style="background-position:center top; background-repeat:no-repeat; background-size:cover;" align="center" valign="top"> 
+<!--[if gte mso 9]>
+                              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:220px;">
+                                <v:fill type="tile" src="http://info.mheducation.com/rs/128-SJW-347/images/MHE-Redi-EmailHeader-non-redi.png" color="#f6f6f6" />
+                                <v:textbox inset="0,0,0,0">
+                                  <![endif]--> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td width="65" style="width:65px;" class="em_side10">&nbsp;</td> 
+<td align="center" valign="top"> 
+<table width="205" border="0" cellspacing="0" cellpadding="0" align="center" style="width:205px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td height="40" style="height:40px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td align="left" valign="top"> 
+<table width="205" border="0" cellspacing="0" cellpadding="0" align="left" style="width:205px;"> 
+<tbody> 
+<tr> 
+<td class="em_yellow" align="left" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:26px; line-height:28px; color:#ffcd00;"> 
+<div class="mktoText" id="text_4"> 
+<p><br></p> 
+</div> </td> 
+</tr> 
+<tr> 
+<td height="12" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td height="8" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td class="em_white" align="left" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:18px; line-height:20px; color:#ffffff;"> 
+<div class="mktoText" id="text_5"> 
+<p><br></p> 
+</div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="20" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+<td width="330" style="width:330px;" class="em_side10">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<!--[if gte mso 9]>
+                                </v:textbox>
+                              </v:rect>
+                              <![endif]--> </td> 
+</tr> 
+<tr> 
+<td height="28" style="height:28px;" class="em_h20">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>
+<tr class="mktoModule" id="Letter_v1_no_image"> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px; table-layout:fixed;" class="em_wrapper" bgcolor="#e7eff1"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" style="padding:0px 25px;" class="em_aside10"> 
+<table width="550" border="0" cellspacing="0" cellpadding="0" align="center" style="width:550px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" bgcolor="#ffffff" style="padding:0px 30px;" class="em_aside10"> 
+<table width="490" border="0" cellspacing="0" cellpadding="0" align="center" style="width:490px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td height="27" style="height:27px;" class="em_h20">&nbsp;</td> 
+</tr> 
+<tr> 
+<td class="em_black" align="left" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:13px; line-height:15px; color:#000000;"> 
+<div class="mktoText" id="text_9"> 
+<p>Hi&nbsp;ABIGAIL,</p> 
+<p><br>Register for McGraw Hill redi to access FREE digital flashcards designed specifically for Discrete Mathematics. Also, get exclusive offers when you sign up, including a FREE hour of tutoring and access to our student success center.<br></p> 
+</div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>
+<tr class="mktoModule" id="One_CTA_Section"> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px; table-layout:fixed;" class="em_wrapper" bgcolor="#e7eff1"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" style="padding:0px 25px;" class="em_aside10"> 
+<table width="550" border="0" cellspacing="0" cellpadding="0" align="center" style="width:550px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" bgcolor="#ffffff" style="padding:0px 30px;" class="em_aside10"> 
+<table width="490" border="0" cellspacing="0" cellpadding="0" align="center" style="width:490px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top" height="0" class="em_outlooksol"> 
+<table border="0" cellspacing="0" cellpadding="0" align="left"> 
+<tbody> 
+<tr> 
+<td align="left" valign="top"> 
+<table border="0" cellspacing="0" cellpadding="0" class="block" style="display:block;"> 
+<tbody> 
+<tr> 
+<td height="16" style="height:16px;line-height:1px;font-size:1px;display:block;" class="block">&nbsp;</td> 
+</tr> 
+<tr> 
+<td align="left" valign="top" style="display:block;" class="block"> 
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#e21a23" style="display:block;text-align:center;"> 
+<tbody> 
+<tr> 
+<td align="center" valign="middle" class="block" height="30" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:12px; color:#ffffff; font-weight:600; text-transform:uppercase;padding:0px 20px;text-align:center;"> 
+<div id="Content_Text2S" class="mktoText"> 
+<p><span style="color: #ffffff;"><a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fdc%2FsexSRKMlDTRw0RI-5R6cSXafJTCxijJcpLJPuK6WqgFgrIu4YUYgyndBS8AUmzNiMQizi2eyElI9geX3ZXyiJF9ZvQgR6oyrZPFLdgWbaIkV2Yb90qWWvxfI8soRJ1O3ASLVht041xwn0GkpQyEqdFwoIDy6zUZxwTDoemR9wahNagLkJBci1Ao9Q_K4N7iD70FaAzP3bz9nO0NhZr7x0FKstvrY1Ri8GNvO3oyJNeEOD-HV0EXIVsBTNkaINXgFaIfGuAnO7nkew7M98YNkqQ%3D%3D%2Fri0C0W0b5Js7yoSKo0eP0x0&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282121279&amp;sdata=v1WVQwfQZZvPKUIMjgSIWLbf9TXqY3XsmNKcGoS0CfE%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/dc/sexSRKMlDTRw0RI-5R6cSXafJTCxijJcpLJPuK6WqgFgrIu4YUYgyndBS8AUmzNiMQizi2eyElI9geX3ZXyiJF9ZvQgR6oyrZPFLdgWbaIkV2Yb90qWWvxfI8soRJ1O3ASLVht041xwn0GkpQyEqdFwoIDy6zUZxwTDoemR9wahNagLkJBci1Ao9Q_K4N7iD70FaAzP3bz9nO0NhZr7x0FKstvrY1Ri8GNvO3oyJNeEOD-HV0EXIVsBTNkaINXgFaIfGuAnO7nkew7M98YNkqQ==/ri0C0W0b5Js7yoSKo0eP0x0" shash="jGTq36kcfnMoP+xk7bt6uwnXIYlj4npqbkzVHvzb5X9erJWRzv/Ez7tzl1eMVpoGNcVGjqZvBTbFWwKCx5VQl+H69GDAVtICMhouROK5SN9p8LQG484vbEapu/gv/9rgCxKjwjW3pieW4hSFmsCERx2BHRnMtvzaKeP9m614uks=" target="_blank" title="SIGN UP FOR FREE" id="" style="color: #ffffff;">SIGN UP FOR FREE</a></span></p> 
+</div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="16" style="font-size:1px; line-height:1px;">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>
+<tr class="mktoModule" id="Sincerely_Two_Column_Section0a326143-d29f-479c-bd9b-0cb2312fb6f0"> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px; table-layout:fixed;" class="em_wrapper" bgcolor="#e7eff1"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" style="padding:0px 25px;" class="em_aside10"> 
+<table width="550" border="0" cellspacing="0" cellpadding="0" align="center" style="width:550px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top" bgcolor="#ffffff" style="padding:0px 30px;" class="em_aside10"> 
+<table width="490" border="0" cellspacing="0" cellpadding="0" align="center" style="width:490px;" class="em_wrapper"> 
+<tbody> 
+<tr> 
+<td class="em_black" align="left" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:13px; line-height:15px; color:#000000;"> 
+<div class="mktoText" id="text_12A0a326143-d29f-479c-bd9b-0cb2312fb6f0"></div> </td> 
+</tr> 
+<tr> 
+<td height="25" style="height:25px;" class="em_h20">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="26" style="height:26px;" class="em_h20">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>
+</table> 
+<!--Footer--> </td>
+</tr>
+<tr> 
+<td align="center" valign="top"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+<tbody>
+<tr> 
+<td align="center" valign="top"> 
+<table align="center" width="600" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:600px; table-layout:fixed;"> 
+<tbody>
+<tr> 
+<td class="em_hide" style="line-height:1px;min-width:600px;background-color:#e7eff1;" bgcolor="#e7eff1"><img alt="" src="images/spacer.gif" height="1" width="600" style="max-height:1px; min-height:1px; display:block; width:600px; min-width:600px;" border="0"></td> 
+</tr> 
+<tr> 
+<td height="6" style="font-size:1px; line-height:1px;" bgcolor="#ffce00">&nbsp;</td> 
+</tr> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;" class="em_wrapper"> 
+<tbody>
+<tr> 
+<td width="20" style="width:20px;" class="em_side10">&nbsp;</td> 
+<td align="center" valign="top"> 
+<table width="560" border="0" cellspacing="0" cellpadding="0" align="center" style="width:560px;" class="em_wrapper"> 
+<tbody>
+<tr> 
+<td height="23" style="height:23px;" class="em_h20">&nbsp;</td> 
+</tr> 
+<tr> 
+<td align="center" valign="top"> 
+<table width="100" border="0" cellspacing="0" cellpadding="0" align="center" style="width:100px;"> 
+<tbody>
+<tr> 
+<td align="left" valign="top"> 
+<div>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fh7oKDiJ05S000Pxboe00Wty&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282121279&amp;sdata=C3yYmadWw%2BICOUDItAzrcQz1NL%2BH4umLXEqQPxhMgd4%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/h7oKDiJ05S000Pxboe00Wty" shash="WDXwggY9cbHR61KkBFX25KgKB2ZpLX4X/GiGFVGXvoZecDfLQQevxlR/ujGGBKdfGWwZL5VKULhLyfO48hrWsiwnJgNtkj+CmvI2QKhFUZ/NOEaNv1XmvrhlQaQTVdwsYvtUK0bTApCLTt/P2zYbZ+sudVXrtZ3mr4dNXYU+iQA=" target="_blank" style="text-decoration:none;"><img src="http://info.mheducation.com/rs/128-SJW-347/images/1542228240600_fb.jpg" width="21" height="21" alt="fb" style="display:block; font-family:Arial, sans-serif; font-size:9px; line-height:12px; color:#000000; max-width:21px;" border="0"></a>
+</div> </td> 
+<td width="5" style="width:5px;"></td> 
+<td align="left" valign="top"> 
+<div>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fn0So0Eu00Po70WJ0yKe5xbi&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282131236&amp;sdata=0WisaM%2BgTUFGBeEixD6I6fezdM4a13TzBwUV0Ukof4k%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/n0So0Eu00Po70WJ0yKe5xbi" shash="R26WigH9ncdRbz8bN2xBtGbxS/fYXGbxrv95/mSLTUNz3hILR4Lk2Tm6XBeDUm3lORoyqybtNcTk/NAfXWZUEpCfW6x3zHlB54Mhhh9RkiVRg19DlH1fNzMbUUVxPzSdj1HUsBzWeoi7XMFLcYBrgM+Vwv/2MC2Vaot8AuuKN78=" target="_blank" style="text-decoration:none;"><img src="http://info.mheducation.com/rs/128-SJW-347/images/1542228240600_yt.jpg" width="21" height="21" alt="yt" style="display:block; font-family:Arial, sans-serif; font-size:9px; line-height:12px; color:#000000; max-width:21px;" border="0"></a>
+</div> </td> 
+<td width="5" style="width:5px;"></td> 
+<td align="left" valign="top"> 
+<div>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2FqKWS0xey7v0oib50J0oF00P&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282131236&amp;sdata=Rvhh9FuIB3VobJhHtKPDvIKMWUB2VWCBKJAAtPG%2BCLs%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/qKWS0xey7v0oib50J0oF00P" shash="C93DP0OB3A9H07b8Oe+3BOZXeprQfkf/K/RGb0y/64Vt4f3mQfofAQrCo0pEAJnZ7dKpIwSCeFn75b0ZKjwzTYB0PTjlZjDjc9rU1OXSa+a6dGmOyMO3Vr2J0dI5UVFT7D15fDU3g2B6JUPiUITONEKT3ddNZhNhMFOyejW3UpE=" target="_blank" style="text-decoration:none;"><img src="http://info.mheducation.com/rs/128-SJW-347/images/1542228240600_insta.jpg" width="21" height="21" alt="insta" style="display:block; font-family:Arial, sans-serif; font-size:9px; line-height:12px; color:#000000; max-width:21px;" border="0"></a>
+</div> </td> 
+<td width="5" style="width:5px;"></td> 
+<td align="left" valign="top"> 
+<div>
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2FlbJPw0007Kyo5W0xi0o0GeS&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282131236&amp;sdata=%2B9sEucD%2Fv%2BFFwXvUbhaI%2B1uK8UuxEM%2B74cX1hAEk0w4%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/lbJPw0007Kyo5W0xi0o0GeS" shash="MVnCbCftuvKg0Sy215yOAF9msSdshdi5Rew9VW24DMrDuARU/MXQVcZaxutmVa0kRWzN5mmt2xWW/wFL5s2yusgOJWWCqyAR79GxgV+HyXJt3QSbUR7DaKhbJruQgFgpJC8vPTXuv49hFpwkxXcyRy4eAycGRj6zNs/45Sl2h0s=" target="_blank" style="text-decoration:none;"><img src="http://info.mheducation.com/rs/128-SJW-347/images/1542228240600_tw.jpg" width="21" height="21" alt="tw" style="display:block; font-family:Arial, sans-serif; font-size:9px; line-height:12px; color:#000000; max-width:21px;" border="0"></a>
+</div> </td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+<tr> 
+<td height="23" style="height:23px;" class="em_h20">&nbsp;</td> 
+</tr> 
+<tr> 
+<td class="em_black" align="center" valign="top" style="font-family:'Proxima Nova', Arial, sans-serif; font-size:10px; line-height:13px; color:#000000;"> 
+<div class="mktoText" id="footertext">
+McGraw Hill cares about your privacy. To opt-out of receiving marketing communications, please select <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fz0Py0x700eiJoybKSoo5W00&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282141190&amp;sdata=S9RxSzERMUXTTcpAGOhoSada%2B34pk8l9G63zaRNasMM%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/z0Py0x700eiJoybKSoo5W00" shash="rytLmXMNtEEf7CbQTksVUyC61LqwYduaOydMNX/gkHy6JYSPeJqm3ctm9+gLbuS7c7YSZb6U76ECIFLvpVsYoS5CgdpwA1C7eQbQHjA+H79zgltGbJyidmFuIKtqIQUsPw3Rhe2LeufV/Y6BmQbzKN5EnhrFJnckG4n1qboy42M=" target="_blank" style="text-decoration: underline; color: #692146;">UNSUBSCRIBE</a>. You may still continue to receive transactional emails such as password resets, product updates, and product training. You can find further information around our privacy practices in the <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2FI0KezSy07iopox0P0b0JW05&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282141190&amp;sdata=IsvF3CJbHHij%2FgWhF77E1d8q6DZwMs9ij4amfaCF2IQ%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/I0KezSy07iopox0P0b0JW05" shash="JQUXk0+aulKP4XtDpDRVNJhj2TRqrm855I+eR5usJr79BKO0ERCsTBxz1Uu5q9ShJy7UOpk30T0+JznfgN6GFf/Equ9x/oxlaWjmt0C4uO6ARAXIRoSk5xRfWYqqFluDoEKyKMmuInEcKkVqartzLYoDNWOiBP/PFGt2oI9ZReE=" target="_blank" style="text-decoration: underline; color: #692146;">McGraw Hill Privacy Center</a>, by contacting the McGraw Hill Higher Education Privacy Office by mail at 501 Bell Street, Dubuque, IA 52001, or by emailing <a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2FNJ00ASPx00eKobW5qoi0y07&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282141190&amp;sdata=y1TkGAfU77%2FHTIjOoTCKkQnHMLV6dY7UBJV0XgEf9j8%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/NJ00ASPx00eKobW5qoi0y07" shash="ZI9RH5MAyK9WNo7lIAm0Zhd6VqQFmREIr6hY0CTI3WJsjEFZ/NaX7rCONcQo/FyBRSNW/99QUhQiiFN9eUql4exhxRsvinvdgIS3tDqtCoUQLHJsoSCR8wCKPGHfk+i65HBOBuCikIeM492LgaRQz/9wb+c1eBU1uxdErIXGWHk=" target="_blank" style="text-decoration: underline; color: #692146;">PrivacyOfficerMHHE@mheducation.com</a>.
+</div> </td> 
+</tr> 
+<tr> 
+<td height="42" style="height:42px;" class="em_h20">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> </td> 
+<td width="20" style="width:20px;" class="em_side10">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+<!--Footer-->   
+</tbody>
+</table> 
+<!-- == //Body Section == --> 
+<a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fgo.mheducation.com%2Fme00ox00i5PxK7oyJbH0SW0&amp;data=02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7Cbe0834d97349427773d308d872063370%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637384718282151147&amp;sdata=4EBruVxkp61lKFCmUSE89yfl8rhB7PuK%2FLx5yFYVcBw%3D&amp;reserved=0" originalsrc="http://go.mheducation.com/me00ox00i5PxK7oyJbH0SW0" shash="frMu7Ufa2n0kL05zCI4qOe7gHBR7M8rUvlSLIQL6qh1u381Ebuett0E3RczhmiT5yBDhL0Oc0o6ODnw9guRggUkPtzXyYeZkVIoYeursjlV6FftzzNZ4TdyyN+e+47NKJXSVniYeQH7gXBWpAxsejJ8tGMnrXuLk79uqVgdqCjA="></a>
+<img src="http://go.mheducation.com/trk?t=1&amp;mid=MTI4LVNKVy0zNDc6MDoxNDczMTg6NTQxMjcxOjE0NjUxNDg6MTU3NjI1Ojk6MjUyMzEwODoyMTEzNTY3ODQ6QVhUMTkwMDU4QFVUREFMTEFTLkVEVQ%3D%3D" width="1" height="1" style="display:none !important;" alt="">
+
+&nbsp;
+</body>
+</html>
+------=_Part_39712656_1732230576.1602875020121--

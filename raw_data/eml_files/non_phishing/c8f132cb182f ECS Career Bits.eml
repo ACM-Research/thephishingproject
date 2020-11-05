@@ -1,0 +1,1145 @@
+Received: from CH2PR01MB5927.prod.exchangelabs.com (2603:10b6:610:3e::30) by
+ SN6PR01MB3806.prod.exchangelabs.com with HTTPS; Fri, 23 Oct 2020 15:04:28
+ +0000
+Received: from DM5PR19CA0064.namprd19.prod.outlook.com (2603:10b6:3:116::26)
+ by CH2PR01MB5927.prod.exchangelabs.com (2603:10b6:610:3e::30) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3477.20; Fri, 23 Oct 2020 15:04:26 +0000
+Received: from CY1NAM02FT007.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:3:116:cafe::be) by DM5PR19CA0064.outlook.office365.com
+ (2603:10b6:3:116::26) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.18 via Frontend
+ Transport; Fri, 23 Oct 2020 15:04:26 +0000
+Authentication-Results: spf=pass (sender IP is 192.237.159.131)
+ smtp.mailfrom=mail.joinhandshake.com; utdallas.edu; dkim=pass (signature was
+ verified) header.d=mail.joinhandshake.com;utdallas.edu; dmarc=pass
+ action=none header.from=mail.joinhandshake.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mail.joinhandshake.com
+ designates 192.237.159.131 as permitted sender)
+ receiver=protection.outlook.com; client-ip=192.237.159.131;
+ helo=a1.mail.joinhandshake.com;
+Received: from a1.mail.joinhandshake.com (192.237.159.131) by
+ CY1NAM02FT007.mail.protection.outlook.com (10.152.75.5) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.20 via Frontend Transport; Fri, 23 Oct 2020 15:04:25 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1603465466; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe:
+ List-Unsubscribe-Post; bh=assDdVRbBujLAKkqWBr4X6LsEucagmI4I60oytqjZ3k=;
+ b=F87Dzyf/Pkk+LJtHGrZK7UJgS6AB8U4Jt3NdqSssEEcoBfBSiPhP6xRY/UIGQN+PYHXAusit
+ CUTc7BbTYqyF0YfZGmuceS72QWXc+EAoGlg07NTCKY0Zvvtb5cjhbmnhOjlUtUXU1uESAlQD
+ 0q2GQub2dueLHPT6VFH9+01vCRs=
+X-Mailgun-Sending-Ip: 192.237.159.131
+X-Mailgun-Sid: WyJjMjFiMCIsICJheHQxOTAwNThAdXRkYWxsYXMuZWR1IiwgIjg4Y2I4Il0=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe:
+ <mailto:u+mq6tqoddmi4cm2j5giydembrgazdgmjvgaytenbogexdqqztgrcdiqjzim2tamrqiiydsjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihuyteyleheztoodbhe2wizjuga3tgmjsha3tsobtgmzdozrqmu2dcjtshvqxq5brheydanjyeu2da5lumrqwy3dbomxgkzdvez2d2njygawvgy3in5xwyjtimfxgi43imfvwkx3nmfzxgx3fnvqws3c7nfsd2nrzhazdsna@mail.joinhandshake.com>,
+ <https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.mailgun.com%2Fu%2FeJw9zU0OwiAQQOHTyE4yw48MCxZab-ABmrFgQGlJpE08vnXj-iXfi4FoupMoQYECBKXRAiojUdKgzdWc_WD3cgF_MDBzqfLZypJ5iT3zK8mpzSIHVBy9dsTexmTAaVTkPGmt3AOSQfEO_FnRA1janW2NXCt3meIm1mAJjrcpt1bFHx5n7n1Mv-NYYjh5Ut58AUvrMxM&amp;data=04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390622686609687%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=aYfacEnHrInbkCMGiCJcEHEahbCDpyVRmy3%2Fx5Ea6lI%3D&amp;reserved=0>
+X-Mailgun-Batch-Id: 5f92f044abdbaddfeb7828e6
+Received: by luna.mailgun.net with HTTP; Fri, 23 Oct 2020 15:01:24 +0000
+Date: Fri, 23 Oct 2020 15:01:24 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20201023150124.1.8C34D4A9C5020B09@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "698294"}
+Reply-To: eric.green@utdallas.edu
+X-Mailgun-Tag: 580-School
+To: axt190058@utdallas.edu
+From: Eric Green via joinhandshake.com <handshake@mail.joinhandshake.com>
+Subject: ECS Career Bits - October
+Content-Type: multipart/alternative; boundary="d8385b34de624eebae196f8a88a300be"
+Return-Path: bounce+56d041.88cb8-axt190058=utdallas.edu@mail.joinhandshake.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2020 15:04:26.3020
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 2a4b1df4-988d-4d69-8ee4-08d87764eefe
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT007.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 2a4b1df4-988d-4d69-8ee4-08d87764eefe
+X-MS-TrafficTypeDiagnostic: CH2PR01MB5927:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-WHITELIST-IPBased-Inbound: Triggered
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-Microsoft-Antispam: BCL:2;
+X-Forefront-Antispam-Report:
+ CIP:192.237.159.131;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:a1.mail.joinhandshake.com;PTR:a1.mail.joinhandshake.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2020 15:04:25.0466
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2a4b1df4-988d-4d69-8ee4-08d87764eefe
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ CY1NAM02FT007.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR01MB5927
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9166360
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3477.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?d2FEenlXRkZOa3N5aEhVVTI0WWJrSlpaVmdIZWwyWm9tKzlxYVF3ejhCVUpw?=
+ =?utf-8?B?MzZaRnUzZm9pZjUvaHZ1eVdFcWFRMU5yajhOOG0zV3U4a1Z1Vjk2T1RDVmJy?=
+ =?utf-8?B?MVVZSDhqZFJoUFBvMnlmYWlFcUJOd0VyQzhWcUNnM0JUaWV3QnYwd0FyMGxS?=
+ =?utf-8?B?OWg0Rk9zcHMzR240Ti9WdFdCa3FoU1BOaWRaTHR0dlVZWEl2T2dLRlE3UTdE?=
+ =?utf-8?B?VmRxZEtqU1V2TWRKZXQvR01CckVIdjRISWIzUDZXTmlsclNTdzdnN3BQTmM2?=
+ =?utf-8?B?KzBrOHF0ckV1L0VmWWxiQWFpOXZld1kyYUNnb25HVDNqd2RUNkVOcEw3d3VH?=
+ =?utf-8?B?Y2tBNy80ZWI2RXlvYnBheFlHMHppTm9xOFJmbUhlN3hOZHdXRWVsaW4zT0dL?=
+ =?utf-8?B?aVhaY2c0ZWZTQUNIaUlrSHZjbW9FUldobm5hVmFTTDIyYSswSWV1d1N3dlRP?=
+ =?utf-8?B?UnFpUE45Z09ma0NkWWNUU2ZkbEZLbjBLckJNd2FnL0FJV1BTdWV4a2dtZHR3?=
+ =?utf-8?B?Zng2QjZJQWV0cjlxMnlFNkRYcXB0cHpJM1NUcmsrcFVnZ0dzU3Z3dG9NTHk1?=
+ =?utf-8?B?N1FJZWRRSFhuMW1SS3g2bHF4ZEtEWms3STBnZGVuY0xtdEdFNXNaL3dhOEYv?=
+ =?utf-8?B?bW9qSVNFMGk3UTB5NlNjRjJHandLL3VSSE5qZ21tU1k1RVc1S1B1UlZoSXpT?=
+ =?utf-8?B?SnJ2cVhZZll0aE53Q21JT0ordlNTZTBBNkZURVJML2kzdnlJa3RxSDVHeG9I?=
+ =?utf-8?B?TGdncm5rWWIwSzBkaEhueHFwQUh0RFdCdU5XajZjelA1S0FUKzBCMWlHMVFZ?=
+ =?utf-8?B?Y0laMWZRKzVDd3gxb1ZKZkFMZVlVVXo0Q1RrNDcyYnFpR0hzdmhwU2JPMUIy?=
+ =?utf-8?B?djg0NWROZ1BxWTExK2hnYTd3a3dVQXJWZWRpOGtrbm5VcDBqeTIzNk9QbHR5?=
+ =?utf-8?B?TlR5WGJocm5VYytydkdzQWhYZlI1cDR2NElwcEZhc1RGNDdsWitvYm42SnBL?=
+ =?utf-8?B?RzkvYW9GSk1HUUpqL3c3Ni9DYjJaOHZRdngyVFlYM3ZLODBDT3FmYmhlZTlX?=
+ =?utf-8?B?MG9jSFFaenhsTFozNE0yOFlGMWI5c3hDVWhtNUxWcXFiaXlEUS9URU9GOUNm?=
+ =?utf-8?B?aUFrY0V3SzhSaDN0dklaUjN1bUJGaHRDeGF1NnRJdU9VdEswM3RoMzFISW5u?=
+ =?utf-8?B?QWtDTUNwSk9wOGE5Ly9GRFlVSFpxTkIxcXJCak9NS0RCQkdObWdheUFUNlQ2?=
+ =?utf-8?B?SEVxaEdSZUd1ZHY1a0V6WTk5d0tqc0tSSmw5RXFxSXc0YjREMlJBVEV4cytN?=
+ =?utf-8?B?WTNDR05EbW9PQXBTTmpYaEVTRTBRdFM1cjQvcnhFZHNiZ1FEK1dHY0cveW1I?=
+ =?utf-8?B?Q0xGVFBBQm1NWG9qTmM4Ymd5UzZ5QkZmSEF6aThxelpIZ2U1Um41OWhoRlVC?=
+ =?utf-8?B?N2V3OHRPWXVlTGNRUmtHMjNtWC9GblJJb09qOG14WUp0U0lvejcrWVZ5dS9h?=
+ =?utf-8?B?TG44MmxtazFEU3cvU05YbXNNbTNGdTRwYXFOL0ZDNlJKUm5Nb2hiNFFCTkV1?=
+ =?utf-8?B?Mk0rN2VoSStjYjh6VFJ5TmxvdFJQZVJNMXR3RCtiVXNlVkxsMDhjRTJtd0pZ?=
+ =?utf-8?B?THpkYUoyMEF5OS9CN0lQdFRHRm5uQStORjRhSkk2SThuTW5jMmUwOXdJelo1?=
+ =?utf-8?B?VFg1Z3ZGajhpdlJYcHdKTXhxVW9YS1VFQ2FsSjRYVGNYQVhPUFQrZWErejNJ?=
+ =?utf-8?B?WTc1S0F2dG4wY0cvVFNjZ1ZnOEFCMUd6aFZzK21INmNOTm9va1JpSEtFVWFt?=
+ =?utf-8?B?cFd6WHBFd3NUNFIzN2hpK0x5djRKRWIwdU1zdzFNT1g5bGh3TFZUMGU3RU9U?=
+ =?utf-8?B?QmpNWTA0Tm1Rc25EbFEycXRDR2JOcmd4bGxxRFdsWitIbEdNaHhUOWZmeGR1?=
+ =?utf-8?B?ZEYvYVBZLzAzaTVVVEtUMjlPaW5udWRISy84MGYxUEoxOW1ORE5rOVZvcFlN?=
+ =?utf-8?B?SFBod2M1WUhKcGdpY1hyWVl1MEFhRUwvNDQ1bytDZlZ5TC82bERaTUdFbSth?=
+ =?utf-8?B?RlRWYkZQSFc4VSswa2VBc1V4UVZBWWpFbEtsK2VrV1ZKMXNnL3hPNWlqV2h5?=
+ =?utf-8?B?OFBERmZaWVZId3VRME9SWk5Ka1QrU3lXZVZTTWhuUmNWeGxkRmZZSUE3NlBC?=
+ =?utf-8?Q?0YIrZPD6quy0o+WHUNb7zz2VXMfK1bevOUBqP5lL9ns6?=
+MIME-Version: 1.0
+
+--d8385b34de624eebae196f8a88a300be
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #d56b03;
+  border-color: #d56b03;
+  color: white;
+}
+table.button table td a {
+  border-color: #d56b03;
+  color: white;
+}
+a { color: #d56b03; }
+a:hover { color: #d9791c; }
+a:active { color: #d9791c; }
+a:visited { color: #d56b03; }
+table.menu th.menu-item a { color: #d56b03; }
+=2Ewrapper.banner { background: #d56b03; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: white;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #d9791c;
+  color: white;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #d9791c;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: #d56b03;
+}
+img.masked {
+  background: #d56b03;
+}
+
+
+
+
+ =20
+
+=C2=A0
+
+ =20
+
+    October 23
+
+Hi ECS Students!
+
+We are getting closer to the end of the semester! I hope that you finished =
+up your mid-terms strong and practiced self-care as well.
+
+As always, we are here to help! You can check out all of our events and mak=
+e an appointment through your Handshake=C2=A0account.
+
+I also wanted to share an article I found very relevant and timely. Network=
+ing can be difficult in this increasingly digital age, so here are 4 Types =
+of Networking Emails you might find useful.
+
+
+Sincerely,
+Eric Green
+Career Consultant - NSM & ECS
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+=C2=A0
+
+ =20
+
+    FEATURED EVENTS
+
+Online Networking Tips with Wonsulting
+October 28th | 12 p.m. | More Info
+
+
+We are partnering with a company called Wonsulting, who has helped over tho=
+usands of underdogs achieve their career goals. They are coming to share th=
+eir top tips for online networking. You don't want to miss it!
+
+Internship Week
+November 2 - 6 | More Info
+
+
+The first week of November is our first ever Internship Week. We'll be part=
+nering with organizations across the campus and region to bring you a range=
+ of topics all centered around internships. Sessions include:
+
+Nov 2:=C2=A0Internship Week Kickoff Event=C2=A0| 11 a.m.
+Nov 2:=C2=A0Education Employer Panel=C2=A0| 4:30 p.m.
+Nov 3:=C2=A0International Student Internship Panel=C2=A0| 11 a.m.
+Nov 3:=C2=A0STEM Employer Panel=C2=A0| 3 p.m.
+Nov 4:=C2=A0Dedicated to Diversity=C2=A0| 4:30 p.m.
+Nov 5:=C2=A0Making HERstory: Womxn Empowered=C2=A0| 11 a.m.
+Nov 5:=C2=A0Internship Scams: Recognize and Avoid=C2=A0| 3 p.m.
+Nov 6:=C2=A0Design your Experience=C2=A0| 11 a.m.
+Nov 6:=C2=A0Arts & Technology Employer Panel=C2=A0| 3 p.m.
+
+Career Development Summit
+November 14 | 10 a.m. - 1 p.m. | More Info
+
+
+This conference style event will be an excellent opportunity to hear from f=
+ellow students, alumni, employers and organizations on trending topics in t=
+he career development pipeline. Register Now!
+
+
+
+OTHER UCC EVENTS
+
+Workshops
+Oct 28:=C2=A0Academic Job Search & CV=E2=80=99s=C2=A0| 12 p.m.
+Oct 29:=C2=A0Internship 101=C2=A0| 3 p.m.
+Nov 4:=C2=A0How to Ace the Behavioral Interview=C2=A0| 12 p.m.
+Nov 11:=C2=A0How to Conduct A Virtual Job Search=C2=A0| 12 p.m.
+
+Employer Panels and Career Expos
+
+=EF=BB=BFOct 26: EPPS Pathways to Employment: Cyber Security | 12 p.m.
+Oct 28:=C2=A0Diversity Employer Panel=C2=A0| 3 p.m.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email is being sent to Abigail Thomas at The University of Texas a=
+t Dallas.
+   =20
+    Unsubscribe =E2=80=A2
+    Update preferences
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--d8385b34de624eebae196f8a88a300be
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-he=
+ight:100%;background:#f5f5f5"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+.small-float-center{margin:0 auto !important;float:none !important;text-ali=
+gn:center !important}
+.small-text-center{text-align:center !important}
+.small-text-left{text-align:left !important}
+.small-text-right{text-align:right !important}
+.hide-for-large{display:block !important;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+.columns td.small-12{display:block !important;width:100% !important}
+.column td.small-12{display:block !important;width:100% !important}
+.columns th.small-12{display:block !important;width:100% !important}
+.column th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+.thumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+.thumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#d9791c}
+a:active{color:#d9791c}
+a:visited{color:#d56b03}
+table.button:hover table tr td a{color:white}
+table.button:active table tr td a{color:white}
+table.button table tr td a:visited{color:white}
+table.button.large:hover table tr td a{color:white}
+table.button.large:active table tr td a{color:white}
+table.button.large table tr td a:visited{color:white}
+table.button:hover table td{background:#d9791c;color:white}
+table.button:visited table td{background:#d9791c;color:white}
+table.button:active table td{background:#d9791c;color:white}
+table.button:hover table a{border-color:#d9791c}
+table.button:visited table a{border-color:#d9791c}
+table.button:active table a{border-color:#d9791c}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/15=
+62856/original/data.?1596735782" alt=3D"UCC Newsletter" style=3D"outline:no=
+ne;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width=
+:100%;clear:both;display:block;margin:0 auto;float:none;text-align:center;w=
+idth: 600px;" width=3D"600" class=3D"float-center"></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div class=3D"ql-align-right" style=3D"text-align:right"><strong>Octobe=
+r 23</strong></div>
+<div><br></div>
+<div>Hi ECS Students!</div>
+<div><br></div>
+<div>We are getting closer to the end of the semester! I hope that you fini=
+shed up your mid-terms strong and practiced self-care as well.</div>
+<div><br></div>
+<div>As always, we are here to help! You can check out all of our events an=
+d make an appointment through your <a href=3D"https://nam02.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2Fe=
+Jxlj8tuwyAQRb_G7GphHgYWLNJE-YF-AJoaGtPyiAxI_fxiN82m0qzO0Z25Y7WUy7tEXhNM8IQJ=
+nTieCBunUZ4pu7CTOvNuXrEaGI7gw_iZfVoh2bLClxuXHNGqsRByZqAWQoUgApj6cLPtlHchuEV=
+Br7Xey0BPA7n2adVCCFD-b9s9vYa8DfSCBzK3Gk3JbVtcBxFKMXsLtz1UdNa32JXb8QMuOVWXaq=
+ezkkSxPwzxDv6WOm_JmwrbzVVnzREtaNPwXSeFMZf912dDZxuqmkv88rasOQf0rGuOOkfaeKt_b=
+_0As_BsFw&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df4988=
+d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739062=
+2686439781%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dxl1J%2BpVAgx4zk6BEH0XfKMV5roG=
+bFzcYZA7ldJGEGeE%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joi=
+nhandshake.com/c/eJxlj8tuwyAQRb_G7GphHgYWLNJE-YF-AJoaGtPyiAxI_fxiN82m0qzO0Z=
+25Y7WUy7tEXhNM8IQJnTieCBunUZ4pu7CTOvNuXrEaGI7gw_iZfVoh2bLClxuXHNGqsRByZqAWQ=
+oUgApj6cLPtlHchuEVBr7Xey0BPA7n2adVCCFD-b9s9vYa8DfSCBzK3Gk3JbVtcBxFKMXsLtz1U=
+dNa32JXb8QMuOVWXaqezkkSxPwzxDv6WOm_JmwrbzVVnzREtaNPwXSeFMZf912dDZxuqmkv88ra=
+sOQf0rGuOOkfaeKt_b_0As_BsFw" shash=3D"t8UfiC60vLFeM3Uw7znasT1BDEVx6ViqITO9W=
+AjEbdmeQoVNzy5Gq972T8Zb83luG0Iqm0q5HFeb0tUz5NGBJzKXv9a3zQ8+BJN/x8IWNaIgRI92=
+3NrFgU5RuX1zEmCA5HzObzGECyi/Uoba3osYA7SP9gA3HP9CTr8KDBSDqk0=3D" target=3D"_=
+blank" style=3D"color:#d56b03"><strong>Handshake</strong></a>&nbsp;account.=
+</div>
+<div><br></div>
+<div>I also wanted to share an article I found very relevant and timely. Ne=
+tworking can be difficult in this increasingly digital age, so here are <a =
+href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Femail.mail.joinhandshake.com%2Fc%2FeJxFkMFuhCAURb9GdxhAUVi4mI6ZpOt-gAF5M9I=
+BMYC1_fvidNomLyH3cN_NzdM955PipekppphgWhOGCW0qUvFz3QzNSZxZ_nnBomiwk8ZW794ss1=
+x0nOUdqsm7cu6VwEy1SgnJ6qkTHQchGmiVFkITeWWl7eeU1ljUp4Je8uz7Xn3IzaYjIGtl_S3md=
+4G0-3A3yy2LBqWvFSLyV_TPERwtIsoN0Ox3lDzag0mA0gyuqC9FPRS03ZIbo9_CBFkTjAhDFD-5=
+A222bB0eSU84SbdKc1sOO6GE8MwDXCFAGF-HTLuuO5j14bD8bvklwZIyaQWnoilDLz8TERgznu-=
+1JS2tlbECvZWpZxyjt2n23pZ_BxydjHF8NBmN7n9ivgErHH_T&amp;data=3D04%7C01%7CAbig=
+ail.Thomas2%40UTDallas.edu%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4=
+d4bf7b16e032d15de9f6c%7C0%7C0%7C637390622686449775%7CUnknown%7CTWFpbGZsb3d8=
+eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&a=
+mp;sdata=3DSGmdROQJ5oSkFPAymoSr%2FM0fh2ekrkP1XEfklO4JFXg%3D&amp;reserved=3D=
+0" originalsrc=3D"https://email.mail.joinhandshake.com/c/eJxFkMFuhCAURb9Gdx=
+hAUVi4mI6ZpOt-gAF5M9IBMYC1_fvidNomLyH3cN_NzdM955PipekppphgWhOGCW0qUvFz3QzNS=
+ZxZ_nnBomiwk8ZW794ss1x0nOUdqsm7cu6VwEy1SgnJ6qkTHQchGmiVFkITeWWl7eeU1ljUp4Je=
+8uz7Xn3IzaYjIGtl_S3md4G0-3A3yy2LBqWvFSLyV_TPERwtIsoN0Ox3lDzag0mA0gyuqC9FPRS=
+03ZIbo9_CBFkTjAhDFD-5A222bB0eSU84SbdKc1sOO6GE8MwDXCFAGF-HTLuuO5j14bD8bvklwZ=
+IyaQWnoilDLz8TERgznu-1JS2tlbECvZWpZxyjt2n23pZ_BxydjHF8NBmN7n9ivgErHH_T" sha=
+sh=3D"pm+gBJGr18S5E0Ia3KnvRIzewxqPPOR3FxpIQwxiawxIAvVw2JxUKrE+1+kJUK+6vYff1=
+S98GpIjx0VAknXJJde3/5w1OASHP82wiDw9GQCq18Bbzm78D3Qw4FY4IdmA2k7LTKXbXnunh9fm=
+a2f2lbB+NyS9EsvNhYHrABUmw5U=3D" target=3D"_blank" style=3D"color:#d56b03"><=
+strong>4 Types of Networking Emails</strong></a> you might find useful.</di=
+v>
+<div><br></div>
+<div><br></div>
+<div>Sincerely,</div>
+<div><a href=3D"mailto:Eric.Green@utdallas.edu" target=3D"_blank" style=3D"=
+color:#d56b03"><strong>Eric Green</strong></a></div>
+<div>Career Consultant - NSM &amp; ECS</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/15=
+84653/original/data.?1598209835" alt=3D"STUDENT HIGHLIGHTS" style=3D"outlin=
+e:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-w=
+idth:100%;clear:both;display:block;margin:0 auto;float:none;text-align:cent=
+er;width: 600px;" width=3D"600" class=3D"float-center"></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><strong><u>FEATURED EVENTS</u></strong></div>
+<div><br></div>
+<div><strong>Online Networking Tips with Wonsulting</strong></div>
+<div>October 28th | 12 p.m. | <a href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlj0=
+1uwyAQhU8Du1r82njBIk2UC_QACAOJSfmJDFQ9fombZlNpFqPv6b15Y6UQZhHQS4IIwohQzBEmb=
+MCDOFJ2Yof5yLvyjmbAUNQ-DLfs06qTLav-dIPJEa5y0ssykfFymZ0Z8WIQ4eTCNOKOCs7oBINc=
+a70XQA-AnPu0anUIuvxP66L7cqmWvnCBqcCAnkPeAD1RQMZWoyq5bcZ1EHUp6lHKbU8pOutb7JJ=
+74Cc0OdWe2Ok4CzKzP6zjXftr6rwlr6rerq46q3ZrgZvU3xXPCHHRX38VdrbBKrlAbx9mzTnAV3=
+u119ndylv5e-sHiv1xUQ&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C=
+2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0=
+%7C637390622686459766%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV=
+2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DwLjw6nyC9EfO3ebFxO=
+8hclbMcfvMQ5yqPQg8Nu9bKb8%3D&amp;reserved=3D0" originalsrc=3D"https://email=
+.mail.joinhandshake.com/c/eJxlj01uwyAQhU8Du1r82njBIk2UC_QACAOJSfmJDFQ9fombZ=
+lNpFqPv6b15Y6UQZhHQS4IIwohQzBEmbMCDOFJ2Yof5yLvyjmbAUNQ-DLfs06qTLav-dIPJEa5y=
+0ssykfFymZ0Z8WIQ4eTCNOKOCs7oBINca70XQA-AnPu0anUIuvxP66L7cqmWvnCBqcCAnkPeAD1=
+RQMZWoyq5bcZ1EHUp6lHKbU8pOutb7JJ74Cc0OdWe2Ok4CzKzP6zjXftr6rwlr6rerq46q3ZrgZ=
+vU3xXPCHHRX38VdrbBKrlAbx9mzTnAV3u119ndylv5e-sHiv1xUQ" shash=3D"Y3cU9TXmn8TK=
+hy7r1k0LljBIUSEL4wAnO2MMHemq46Tb/uKgQtqU3swAIR1/+q1+sY2FZWiiEt4So8wyisUKXsR=
+QYJeWLgASCHWbWHHDSO6C1M9fwDhDUe8/+y+DchKgUZjqKnM5jj+mPd+lxRIhduk0LFVpkRVfkZ=
+hyOmcYljQ=3D" target=3D"_blank" style=3D"color:#d56b03">More Info</a>
+</div>
+<div><br></div>
+<div>We are partnering with a company called Wonsulting, who has helped ove=
+r thousands of underdogs achieve their career goals. They are coming to sha=
+re their top tips for online networking. You don't want to miss it!</div>
+<div><br></div>
+<div><strong>Internship Week</strong></div>
+<div>November 2 - 6 | <a href=3D"https://nam02.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxNkM1uwjAQhJ=
+8muRH5J06cgw8UxAv0AaLFXojBP5HtqDx-DaVVpT19o5kdjVFS6rNsrWKEEUoYp4JQ1ne0kwfeH=
+_v9dBBV-SBT0xMP1nW3aMMCweQF7tjp6NtFjRMVZzloGEYpBhwFpxc5an7pKbCx5ju1lLLmhu8b=
+dqqnISGmbisGnIPcodkqxceKyWIoFtxuTfGawOfKbSiYQl7s-oV4fybwk4up4ce-YcNW_JzjljR=
+W4CHn-dkT01vyaOzmq4RP_IY61shQKh0myabfGA1-BXsNlW_BzgXSFQua-WXNbVLwKHQiRMi6xv=
+_ybVFCkt2nXmJ07d8886vOyz1bo35-fQM7inlV&amp;data=3D04%7C01%7CAbigail.Thomas2=
+%40UTDallas.edu%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e03=
+2d15de9f6c%7C0%7C0%7C637390622686459766%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D=
+ygCAoYJnNEcsm2cQpQW1KAAxj3q43AitWCfXc7%2Fg%2FmA%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://email.mail.joinhandshake.com/c/eJxNkM1uwjAQhJ8muRH5J06cgw8=
+UxAv0AaLFXojBP5HtqDx-DaVVpT19o5kdjVFS6rNsrWKEEUoYp4JQ1ne0kwfeH_v9dBBV-SBT0x=
+MP1nW3aMMCweQF7tjp6NtFjRMVZzloGEYpBhwFpxc5an7pKbCx5ju1lLLmhu8bdqqnISGmbisGn=
+IPcodkqxceKyWIoFtxuTfGawOfKbSiYQl7s-oV4fybwk4up4ce-YcNW_JzjljRW4CHn-dkT01vy=
+aOzmq4RP_IY61shQKh0myabfGA1-BXsNlW_BzgXSFQua-WXNbVLwKHQiRMi6xv_ybVFCkt2nXmJ=
+07d8886vOyz1bo35-fQM7inlV" shash=3D"DhgMedfv/olL2uRXyjn26rUNNh/B2cdQJa9T+/K=
+Ez1mRPpRRb6U7z34tj8M0N3THHVVs5LvAt5yVDDjoxoq7ywzqBAH7XgCRdXd8lvuKghBp65l9Hd=
+AQ4wGzDat7q8QxGr+tfdqlfm/lqvLq4hzcGeb/EmRxWOoUBZbrVbBFMkc=3D" target=3D"_bl=
+ank" style=3D"color:#d56b03">More Info</a>
+</div>
+<div><br></div>
+<div>The first week of November is our first ever Internship Week. We'll be=
+ partnering with organizations across the campus and region to bring you a =
+range of topics all centered around internships. Sessions include:</div>
+<div><br></div>
+<div>Nov 2:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkMtuwyAQRb8G72o=
+ND9uwYJEmyg_0AyziwTEtj8jgqp9f4qTZVGKBzh0d7oBayukiG6cZMKDAOO2AMtHSVh65OImDOn=
+Y1eQdFBATjfPuZXFxMxLyYL9tOKTSL7nEQw2BnJRENndEO0wySmQtC1aFqvF5KuWXCD4Sd69kKG=
+u9N_m-rof22seR66TjnQAk_-7QSfhKE9VsJY07bOtkKgsl5vJey6zMKFt0WamTv-AknE27GXWPF=
+W3RjMevVFovjPlPf6R_67m88xVILVNIryZRoVm1-ClUAnayf8KpucWuK7iS8fUxLSr557THuxXb=
+96FA_NL-gcHSO&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df=
+4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373=
+90622686469776%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dz%2FoEXC%2BU3BdFvr5%2BGfX=
+p58emU5Way6ClOMASa0c4YIQ%3D&amp;reserved=3D0" originalsrc=3D"https://email.=
+mail.joinhandshake.com/c/eJxlkMtuwyAQRb8G72oND9uwYJEmyg_0AyziwTEtj8jgqp9f4q=
+TZVGKBzh0d7oBayukiG6cZMKDAOO2AMtHSVh65OImDOnY1eQdFBATjfPuZXFxMxLyYL9tOKTSL7=
+nEQw2BnJRENndEO0wySmQtC1aFqvF5KuWXCD4Sd69kKGu9N_m-rof22seR66TjnQAk_-7QSfhKE=
+9VsJY07bOtkKgsl5vJey6zMKFt0WamTv-AknE27GXWPFW3RjMevVFovjPlPf6R_67m88xVILVNI=
+ryZRoVm1-ClUAnayf8KpucWuK7iS8fUxLSr557THuxXb96FA_NL-gcHSO" shash=3D"I1DLr1B=
+iGow5+0e3BBMrcW3mfgNNahCuIq0ip/AFpFnAqGZzjcyR9zwprKyfCXNsvfnEI+AgvrM3/tAr4z=
+DoHrxsGQ0Np/fTzP04mAh3OYKjxGgVjlw/mlVZ3ro48tgbDVZ5cdJg0+giGNO5N7jH/Oct/CVem=
+teaZ/RAeRA4YYA=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Intern=
+ship Week Kickoff Event</strong></a>&nbsp;| 11 a.m.</div>
+<div>Nov 2:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU-Dd7X=
+4NyxYpIlygR7AwgbHtPxEBqoev9hJs6k0i9H3Rm_ejFFCzJPonMIQQwQxQQwiTHvUizOhF3qSZ9=
+aUdygBhUE7338mF1cdTV71l-3nFLpVacH1wAZmFiRaMw3TxBdupRkkHuBCO6_WUu4ZkBPA11a1G=
+O29zv_dmmi_bSy5NYwQAjEgV582QC4MYF5LGHOq22wbCDrncQ9lt6cUrHE1NMnu-AlnHe7a3WLD=
+Nbqx6O1mizXjMdP28Ic9_xtPsbQAO5ECS9ptSv8UJCFkoj3hFd2a2hXFBHz7mNeUfPe6YzyCHfa=
+jM-ph8wsX_nQR&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df=
+4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373=
+90622686479765%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DSb1ua84YEOS10QKRyDONMtZZG=
+sRJB4Wfp2AECwjYu9E%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.j=
+oinhandshake.com/c/eJxlkE1uwyAQhU-Dd7X4NyxYpIlygR7AwgbHtPxEBqoev9hJs6k0i9H3=
+Rm_ejFFCzJPonMIQQwQxQQwiTHvUizOhF3qSZ9aUdygBhUE7338mF1cdTV71l-3nFLpVacH1wAZ=
+mFiRaMw3TxBdupRkkHuBCO6_WUu4ZkBPA11a1GO29zv_dmmi_bSy5NYwQAjEgV582QC4MYF5LGH=
+Oq22wbCDrncQ9lt6cUrHE1NMnu-AlnHe7a3WLDNbqx6O1mizXjMdP28Ic9_xtPsbQAO5ECS9ptS=
+v8UJCFkoj3hFd2a2hXFBHz7mNeUfPe6YzyCHfajM-ph8wsX_nQR" shash=3D"unnUn7uFkBj/0=
+OjsAY/s2VTn6GAGxzKgNpNf6QuHEh7kx6TrBDpzVORU7RFWTAfvhvYZ6O1hxz0jrwlUZq0Ej82e=
+yvWCibm+qIbJGi61tg0M9M8LqIPDbust9Yf19a4kdZaKGXuRj9KstLPw5t+v6VLOCbMp9YHd8E+=
+f1OkGYXo=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Education Em=
+ployer Panel</strong></a>&nbsp;| 4:30 p.m.</div>
+<div>Nov 3:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlUMtuwyAQ_Bq41Vr=
+zsPGBQ5ooP9APsIhZx7RgIgNVP784SXOptIfVzGhmdq1Waroo6jQDBi0w3kpomWjaRh25OInDcJ=
+SVeYeBCAjG-eYzunUxq02L-cJmioEuGmbB0F76bpb9bDnjEo3ophlB9m0vFfV6yfmWCD8Qdq5Ts=
+jXem_TfrZL4jWtOdZGcc-CEn33cCD91hHUlhzHFsk1YgWBSGvdSuD2pgNaVUCnc4Sc4mXAz7rpW=
+uKxuzGa7YkY73jU1p3vY93_yuOZaYA8cFBsE3bT5ye0AIFV9wqs62kKzlgrePqYlRk9fd4z3Ynf=
+70Vn9sPkFDIN0BA&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1=
+df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7390622686479765%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DItb%2FIeoF%2FZus%2Fue9M=
+WhVQzwSj6gpakxdw%2Bin%2FHM8Ydk%3D&amp;reserved=3D0" originalsrc=3D"https://=
+email.mail.joinhandshake.com/c/eJxlUMtuwyAQ_Bq41VrzsPGBQ5ooP9APsIhZx7RgIgNV=
+P784SXOptIfVzGhmdq1Waroo6jQDBi0w3kpomWjaRh25OInDcJSVeYeBCAjG-eYzunUxq02L-cJ=
+mioEuGmbB0F76bpb9bDnjEo3ophlB9m0vFfV6yfmWCD8Qdq5TsjXem_TfrZL4jWtOdZGcc-CEn3=
+3cCD91hHUlhzHFsk1YgWBSGvdSuD2pgNaVUCnc4Sc4mXAz7rpWuKxuzGa7YkY73jU1p3vY93_yu=
+OZaYA8cFBsE3bT5ye0AIFV9wqs62kKzlgrePqYlRk9fd4z3Ynf70Vn9sPkFDIN0BA" shash=3D=
+"KO05qKe3j1r6FrNLyauzaF3/+NMWy9hWgjxHVsWPEQNhj6ZFuvaJQWPxUciKZCL/n7jdTpaxdF=
+uu4mpaV6LtMQdwqDrdvAXsCCejkOAW5btZzvKl9aP06g/svoN/3hO1bxxTxickKNpUjyPJc6eUc=
+zCWzOGIAYzlOdd9NzyXkkA=3D" target=3D"_blank" style=3D"color:#d56b03"><stron=
+g>International Student Internship Panel</strong></a>&nbsp;| 11 a.m.</div>
+<div>Nov 3:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEtuwzAMRE9j72r=
+I-lleaJEmyAV6AIOWlFitPoElFz1-GSfNpgAXxBtiOKTVSplZtV5TQklPKOsF6Snv-k4dGT_xw3=
+gUqLyTseEkgg_dZ_ZpgWTLAl-uMzm2ixYg6Tz2nMkLSDXMMBgpjAJ-uQxk4HMb9FLrrTTs0NAz1=
+lYthADlvxuK7tulWrARjAtczM4hrw07DQ2VW41TydtqHIIIpUz3UG59StFZv0WU3B0_oYF4A39N=
+iLfkpwrr1VVnp30G98iHvfobz6liACRyVHTk7arhp_YjIULhE17Rnd3aqoUibx9myTm0rzumPdh=
+uP3mrHza_C110Dg&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1=
+df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7390622686489758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DyV25utUk4M3tgMQRd5%2FTG=
+5C5M2ixKS%2BjwY9SUSLb4%2Bw%3D&amp;reserved=3D0" originalsrc=3D"https://emai=
+l.mail.joinhandshake.com/c/eJxlkEtuwzAMRE9j72rI-lleaJEmyAV6AIOWlFitPoElFz1-=
+GSfNpgAXxBtiOKTVSplZtV5TQklPKOsF6Snv-k4dGT_xw3gUqLyTseEkgg_dZ_ZpgWTLAl-uMzm=
+2ixYg6Tz2nMkLSDXMMBgpjAJ-uQxk4HMb9FLrrTTs0NAz1lYthADlvxuK7tulWrARjAtczM4hrw=
+07DQ2VW41TydtqHIIIpUz3UG59StFZv0WU3B0_oYF4A39NiLfkpwrr1VVnp30G98iHvfobz6liA=
+CRyVHTk7arhp_YjIULhE17Rnd3aqoUibx9myTm0rzumPdhuP3mrHza_C110Dg" shash=3D"b7N=
++/IP2BsMjF9tR6g/18iSs/A0Iy6ygB8Csp4eplG8BWfgO1lLnUwGYK4Z09G7XwpIT35mtYDUCPk=
+80yTAtU9iCZxwnVef0CwcB0+7f5qiubuVou6ZzI/sZmHTwB9b2aAKOA4bVW8XcZN5AA7Z1EQTTJ=
+HBrO51bdBg5yMRQNBA=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>ST=
+EM Employer Panel</strong></a>&nbsp;| 3 p.m.</div>
+<div>Nov 4:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEtuwyAURVdjZrX=
+4uo8BgzRRNtAFIGxoTMsnMlB1-SVOmkklBujcp8N9WAWwzIC8ophigikjAhPKRzLCkfETP8ij6M=
+kblgPH0fgwfmafVpNsWc2XG5cc0aqAc8o-BJCZz8YSKyfA7NVYynD3g0BBrbVey8AOAz3306o1I=
+Zjy39ZD9-1SLf0iGBd8Gtg55G1gJxjo1GrUJbdtcR1EU4q-lXLbI4rO-hZ75G74ARcTr8ZfUsct=
+eV3NdnHVWb3P9Hemu17-jedUe4FOJglUcrQp81OJxFhA_4RndWcbqkoAfnlf1pwDeu6h92K7Xnu=
+r7ppfbytzfA&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df49=
+88d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390=
+622686489758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLC=
+JBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3D8BtjadbeKqY2U93OMdgrVCZQBIo=
+KYtOgDvDpV70XwQw%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail.joi=
+nhandshake.com/c/eJxlkEtuwyAURVdjZrX4uo8BgzRRNtAFIGxoTMsnMlB1-SVOmkklBujcp8=
+N9WAWwzIC8ophigikjAhPKRzLCkfETP8ij6MkblgPH0fgwfmafVpNsWc2XG5cc0aqAc8o-BJCZz=
+8YSKyfA7NVYynD3g0BBrbVey8AOAz3306o1IZjy39ZD9-1SLf0iGBd8Gtg55G1gJxjo1GrUJbdt=
+cR1EU4q-lXLbI4rO-hZ75G74ARcTr8ZfUscteV3NdnHVWb3P9Hemu17-jedUe4FOJglUcrQp81O=
+JxFhA_4RndWcbqkoAfnlf1pwDeu6h92K7Xnur7ppfbytzfA" shash=3D"PptQsJKzdndS/gbQO=
+BLl3g7gNl9VHkuUUb1rJDt2wApumrnkzvC5U7GAyX8zYIfKZl6N538PIcGWYabv5qnrOoj3Tus/=
+JiMCWxqSU1JWwkWFxtQMtfV6ILABI4juWEUW1+uthKoy0k/WvPfL7nrtfAOMrASPQixK9L9WWbE=
+U/NI=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Dedicated to Div=
+ersity</strong></a>&nbsp;| 4:30 p.m.</div>
+<div>Nov 5:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uAyEMhU_D7Dr=
+iP7BgkSbKBXoA5ADJ0A5DNEDV45dM0mwqeWF9z3p-tjdKubMaoqGYYoIpIwITykcyqgPjR77XB9=
+GVd6wRxwniPH7muEyw-DLBVxhdTsNkziA18Y4RDXhHqYMLiHDx0nPJxA7kMJup1ltBbI_oqVerH=
+uYZyn-3LobvsNTSG8G44AKx05xXxI4aUdlqsiW31YUOEpRi76HC-pRS8LGlLoU7fkIH6QbxunTc=
+lmgrrNdQg7fbTN8jH_YE_83npfYEHUmtqObDauCnEo2xUP0Lr-zBt6EaofDbh5tynofXIXZLtvn=
+b6M3D5hfN2HSK&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df=
+4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6373=
+90622686499756%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIi=
+LCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DMX8hldkOsxfenJ1lW7tnHE9iA=
+CRh%2FNeejV6REhTnywQ%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail=
+.joinhandshake.com/c/eJxlkE1uAyEMhU_D7DriP7BgkSbKBXoA5ADJ0A5DNEDV45dM0mwqeW=
+F9z3p-tjdKubMaoqGYYoIpIwITykcyqgPjR77XB9GVd6wRxwniPH7muEyw-DLBVxhdTsNkziA18=
+Y4RDXhHqYMLiHDx0nPJxA7kMJup1ltBbI_oqVerHuYZyn-3LobvsNTSG8G44AKx05xXxI4aUdlq=
+siW31YUOEpRi76HC-pRS8LGlLoU7fkIH6QbxunTclmgrrNdQg7fbTN8jH_YE_83npfYEHUmtqOb=
+DauCnEo2xUP0Lr-zBt6EaofDbh5tynofXIXZLtvnb6M3D5hfN2HSK" shash=3D"QPFhu97Bmb1=
+pIbfB3Ea9+qgcVr6K9zeS3wFhvN6wvzgNj9hRFCgq1Hj2EhcOqneYmekAeQE510yWoaERa8gc7/=
+sAl4SIVecAX3C8Go3e92TbKOHhmZem8XoIDOzGlO+PkOtafXnU7mpDi0rFxN7DLCq4tOkGEN9Pt=
+j6NhQ4JLsg=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Making HER=
+story: Womxn Empowered</strong></a>&nbsp;| 11 a.m.</div>
+<div>Nov 5:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEFuxCAMRU8Tdo0=
+MhIQsWExnNBfoARABd0IbwihA1eOXSdPZVPLCet_6_rZTUtpJEq8YMKDAOBVAWdfSVp55d-lO41=
+lU5RXGpoNg_NJ-RL_OZnVpNp_Y2hjIrIByZP0ETAhuBifRogDb21G8T3bghixqzvmeGn5q2LVWy=
+c4si0n_3aqIX7jmVBvBBwG84dclbg2_UGhYX3LQKZbNYiXBpKQfqXA7pIDOl1AlfOADWhPuxt_W=
+isvqdTbbDTM6vc_URf3hT__m45prhIr6UbKxI5sy35mOAELWNzzDoyskKyHh5c3OMS7keYnek-3=
+-2jv1a_MD2rd0fA&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1=
+df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7390622686499756%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Db0dwkVGA1TBZMOI6cZCfNDx=
+CelcDLvACyqZvAFcrpFc%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail=
+.joinhandshake.com/c/eJxlkEFuxCAMRU8Tdo0MhIQsWExnNBfoARABd0IbwihA1eOXSdPZVP=
+LCet_6_rZTUtpJEq8YMKDAOBVAWdfSVp55d-lO41lU5RXGpoNg_NJ-RL_OZnVpNp_Y2hjIrIByZ=
+P0ETAhuBifRogDb21G8T3bghixqzvmeGn5q2LVWyc4si0n_3aqIX7jmVBvBBwG84dclbg2_UGhY=
+X3LQKZbNYiXBpKQfqXA7pIDOl1AlfOADWhPuxt_WisvqdTbbDTM6vc_URf3hT__m45prhIr6UbK=
+xI5sy35mOAELWNzzDoyskKyHh5c3OMS7keYnek-3-2jv1a_MD2rd0fA" shash=3D"Tql6pJFm2=
+vDMn86l43Rfkqal20aRwMz6XGgnAsDZcn2vc/lYZ6fTWW20gHtfOAONiOv6aX+VnW8jrWvuAFGf=
+vYwW2A3TluEwxy8D24fgpX5oFIKZ12x7jwQtekFszskeZwoXmERfLGZ+WbSvhaY/ur+8i1Awfy6=
++L/fEGHs+dOI=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Internsh=
+ip Scams: Recognize and Avoid</strong></a>&nbsp;| 3 p.m.</div>
+<div>Nov 6:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEtuwzAMRE9j72r=
+oa0sLLdIEuUAPYDASEyuVrMCSix6_iutmU4AL4g0xHNIZpexFtd4wwggljFNJKBMd7dSRi5M46K=
+OsyjvRjSARfOjuyc8TzC5P8ImdTbGdzFWwXpErt2DZQIAIpMMgtB16CXhB3QYzlfLIDT807FxrL=
+Q5CgPzfrYr4hXPJtZFcSKoafg5pafiJ0ob1a4ljTutisZIIOY_PVLjsUkTn11glfOIdWogP8Le5=
+4nX2Y4HlhgXduM3URf3uz_7m01xqhIp6rZgW7WLgu1BNiFT1Da_w6Na2GKnI24edUgrt65JxS7b=
+5j96ZX5sfu-Z0XQ&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1=
+df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7390622686509746%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DTRrFrVBK9vMvERf7olvrfwN=
+Was4jEKOAIdam7XOwNJ4%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail=
+.joinhandshake.com/c/eJxlkEtuwzAMRE9j72roa0sLLdIEuUAPYDASEyuVrMCSix6_iutmU4=
+AL4g0xHNIZpexFtd4wwggljFNJKBMd7dSRi5M46KOsyjvRjSARfOjuyc8TzC5P8ImdTbGdzFWwX=
+pErt2DZQIAIpMMgtB16CXhB3QYzlfLIDT807FxrLQ5CgPzfrYr4hXPJtZFcSKoafg5pafiJ0ob1=
+a4ljTutisZIIOY_PVLjsUkTn11glfOIdWogP8Le54nX2Y4HlhgXduM3URf3uz_7m01xqhIp6rZg=
+W7WLgu1BNiFT1Da_w6Na2GKnI24edUgrt65JxS7b5j96ZX5sfu-Z0XQ" shash=3D"f/mUjma7s=
+uWU4tF8qY0OrjUOi81hfkv1zErP6WfzvG9LeCRRu//iK/MafjGzIBrMP6RkEiX6p0iBRHRd6CD1=
+eF3XKB/N3wA2YxjuUkzeiav9T3lu9y8DYSdSEkKrGq4hzTHIXbF55QS1T4jCoXrX1pnKJ8tBeLG=
+CWSa+FvceYPk=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Design y=
+our Experience</strong></a><strong>&nbsp;</strong>| 11 a.m.</div>
+<div>Nov 6:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEluwzAMRU8j72p=
+Qgx15oUWaIBfoAQxqaKxWQ2DJRY9fJXWzKcAF8T7x-UmrpDRadl4xYECBcToAZaKnvTxxcRbH6T=
+Q05RUmIiCiD_1H9mnBZMuCn643OXaL0gDIAJh076i15VJTow_cUE6RsgPrglpqvRXCj4RdWm3VY=
+ghY_rs10X25VEtrBi4Gygm_hLwSfqaMsHGrcS55W41rJGIp8z2VW3cpOuu32CR3xzs0GG_or6nh=
+Lfm54np11dn5MdMWjbs__5vPqbYIDY2TZJPoVoXflU4Ag2xveIZ3duuqGiS8vJkl59A9L5kfyR7=
+-s7fq1-YHwYZ0Ww&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1=
+df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7390622686509746%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMz=
+IiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DmCNOauvp281Us1oayXvwHiv=
+80sPi8Ba9GCKMOFWoe3g%3D&amp;reserved=3D0" originalsrc=3D"https://email.mail=
+.joinhandshake.com/c/eJxlkEluwzAMRU8j72pQgx15oUWaIBfoAQxqaKxWQ2DJRY9fJXWzKc=
+AF8T7x-UmrpDRadl4xYECBcToAZaKnvTxxcRbH6TQ05RUmIiCiD_1H9mnBZMuCn643OXaL0gDIA=
+Jh076i15VJTow_cUE6RsgPrglpqvRXCj4RdWm3VYghY_rs10X25VEtrBi4Gygm_hLwSfqaMsHGr=
+cS55W41rJGIp8z2VW3cpOuu32CR3xzs0GG_or6nhLfm54np11dn5MdMWjbs__5vPqbYIDY2TZJP=
+oVoXflU4Ag2xveIZ3duuqGiS8vJkl59A9L5kfyR7-s7fq1-YHwYZ0Ww" shash=3D"x9ObnqTet=
+jJ7UcxlNG06nu2FHXhWAaVj7Dh4XGN4cGPJtbnL7TS4cfnIPJ3e9PGEICkfH9m90sJOJjjOG8UZ=
+7yqkXQEYOkx0WZl48aj02UGVJfXiisVUgvg6SucCUJLU9Qhk/VV3aIX7yshBIlRFkzkFOWTbCWB=
+K+QYaCtdHVN0=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Arts &am=
+p; Technology Employer Panel</strong></a>&nbsp;| 3 p.m.</div>
+<div><br></div>
+<div><strong>Career Development Summit</strong></div>
+<div>November 14 | 10 a.m. - 1 p.m. | <a href=3D"https://nam02.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%=
+2FeJxNj0luwzAQBF8j3UJw0UIdeHBs-AN5ADEiaYsOF4MLkOeHUpwgwJyqp2e6teBcrby3gmKKC=
+aaMjJjQARHEz2y4DKflPDblHS_dgD1Yhx7Rhg2Czht8GqSi7zcxzvPtRtdp5gRwu0gJ5ZzPetXA=
+GKi1d2Ir5Zk7durotY2CZExCtWhwDjIyujaaq_e27Bvs6mLq2IUMHZ1q8TLHmpRpxEPOcg9i0kv=
+yRtvqm2R2_IIqhmJCaXRaOF1-zyjwT7D30HgNVhZId1OMloc190nAVyELxiNvdf-n64sYOX77UF=
+uMrv_rL484h1taLX5-fQNkC211&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.=
+edu%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637390622686519745%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DXOfi93pPFtf%=
+2BCL31QDOJKSVR9mGAq8OILcEVYYdo84o%3D&amp;reserved=3D0" originalsrc=3D"https=
+://email.mail.joinhandshake.com/c/eJxNj0luwzAQBF8j3UJw0UIdeHBs-AN5ADEiaYsOF=
+4MLkOeHUpwgwJyqp2e6teBcrby3gmKKCaaMjJjQARHEz2y4DKflPDblHS_dgD1Yhx7Rhg2Czht8=
+GqSi7zcxzvPtRtdp5gRwu0gJ5ZzPetXAGKi1d2Ir5Zk7durotY2CZExCtWhwDjIyujaaq_e27Bv=
+s6mLq2IUMHZ1q8TLHmpRpxEPOcg9i0kvyRtvqm2R2_IIqhmJCaXRaOF1-zyjwT7D30HgNVhZId1=
+OMloc190nAVyELxiNvdf-n64sYOX77UFuMrv_rL484h1taLX5-fQNkC211" shash=3D"OE5zRm=
+tpnhKRLTdSZrUP3ilhxCiz3gAHtCBDkbqLZ14MtULfMLCBGPG84XC9UivOBZudkJKjeQyzD1MTF=
+o6YRKwqUoV0q0BSrJ9Q40KDYIFHo7zfGgQzpPnFdB6P0oh06xF28AXOuKdbixX+yuL+dikMaGSG=
+oH3YYRElhUM0tQc=3D" target=3D"_blank" style=3D"color:#d56b03">More Info</a>
+</div>
+<div><br></div>
+<div>This conference style event will be an excellent opportunity to hear f=
+rom fellow students, alumni, employers and organizations on trending topics=
+ in the career development pipeline. <a href=3D"https://nam02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2=
+FeJxlj0tuAyEQRE8Du4z4jmDBwrHlC-QAiAHsIeZjDRDl-METx5tIvWi9UlVXOyWEXQQMiiCCMC=
+IUc4QJm_AkjpSd2EEe-VDekQQMJRPi9FlCXk12dTU3P9mS4KowlW5BhBA-Uzvjy0LEYmZiqZD4Y=
+hcPo1pbu1dAD4Ccx_TmTIym_k8bov_yudWxcMmlYICeY9kAPWEOyNxb0rX0zfpBkqlVP1r57Skl=
+70JPQ_IP_IS25DYiB52lIJL9YZPuJlzz4D0H3cx29c07vVsr3JT5blgixMX4_dXYuw6b4gK9fdi=
+1lAhf9fVeZ3fr4NTvrR_QcnGI&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.e=
+du%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C=
+0%7C0%7C637390622686519745%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DtpcHEMwCF2PCX=
+qbfLzl1oDWgaOtFhwkTBiMudpybphg%3D&amp;reserved=3D0" originalsrc=3D"https://=
+email.mail.joinhandshake.com/c/eJxlj0tuAyEQRE8Du4z4jmDBwrHlC-QAiAHsIeZjDRDl=
+-METx5tIvWi9UlVXOyWEXQQMiiCCMCIUc4QJm_AkjpSd2EEe-VDekQQMJRPi9FlCXk12dTU3P9m=
+S4KowlW5BhBA-Uzvjy0LEYmZiqZD4YhcPo1pbu1dAD4Ccx_TmTIym_k8bov_yudWxcMmlYICeY9=
+kAPWEOyNxb0rX0zfpBkqlVP1r57Skl70JPQ_IP_IS25DYiB52lIJL9YZPuJlzz4D0H3cx29c07v=
+Vsr3JT5blgixMX4_dXYuw6b4gK9fdi1lAhf9fVeZ3fr4NTvrR_QcnGI" shash=3D"cfxaemkQK=
+fwDKrox2KLcHeqJhfiZKlQJ17wcSoucU3bdbm/lZ+gZp1mB3tN3IP9zPGWZ6hDdgeULBXJdwkOt=
+NM89CbQeLL707Z32OH2roHRz5jgE8O+l/YpisUwZX00C1XbMYUG4x3xkoxWn9oEzjmLhupoKOyT=
+xzCL+H1DF9aY=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Register=
+ Now!</strong></a>
+</div>
+<div><br></div>
+<div><br></div>
+<div><strong><u>OTHER UCC EVENTS</u></strong></div>
+<div><br></div>
+<div><strong>Workshops</strong></div>
+<div>Oct 28:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU9j72=
+rxb7xgkSbKBXoANAYckxoTGah6_BLXzabSLEbfG715M1ZJaUbZekUQQRgRijnChHW4k2fKLuw0n=
+HlV3tHQMBTAL909-nWG1aYZPl1nYmhnNU2jEZwYRoRE0DMmqLFk5DBOiPU9tIuac36khp4acq1V=
+soVlgfTfrYruy6051YbTfsCkodclbg29YN4QUXLQKZbNuEoCpKSfqdx2SMFZX0KV3BMf0EB4gL-=
+tFZfV6wzbzWVn9T5TF4nDX_zNxzXXCBWJQZKBtZuC74wHhLisb3iFd7a0WXGJ3j7MHOPSvi7Re7=
+LdX3urfm1-AO_WdIw&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4=
+b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C=
+637390622686529736%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2lu=
+MzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DnSJZKN6aSWavIaH6SAm%2=
+BTfJmvlcgTJ%2FMgF9rRXRU6Nk%3D&amp;reserved=3D0" originalsrc=3D"https://emai=
+l.mail.joinhandshake.com/c/eJxlkE1uwyAQhU9j72rxb7xgkSbKBXoANAYckxoTGah6_BLX=
+zabSLEbfG715M1ZJaUbZekUQQRgRijnChHW4k2fKLuw0nHlV3tHQMBTAL909-nWG1aYZPl1nYmh=
+nNU2jEZwYRoRE0DMmqLFk5DBOiPU9tIuac36khp4acq1VsoVlgfTfrYruy6051YbTfsCkodclbg=
+29YN4QUXLQKZbNuEoCpKSfqdx2SMFZX0KV3BMf0EB4gL-tFZfV6wzbzWVn9T5TF4nDX_zNxzXXC=
+BWJQZKBtZuC74wHhLisb3iFd7a0WXGJ3j7MHOPSvi7Re7LdX3urfm1-AO_WdIw" shash=3D"uF=
+6Rg3JVglpj7z7lKbpBBuXDc4y+B46P4nV/xLIw4zW9vOmXW9a6nW12vw81LB8s7eeSJyKBL8E+g=
+kMJkNcUm1aYcBnpkfK6wVrLmxPBcLdr5xZgq8OU8qrbddPodmYsuuRLaZkmhSnN+lMyOUoTiaHa=
+mEQPdZj+r9jGYbNV6oY=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>A=
+cademic Job Search &amp; CV=E2=80=99s</strong></a>&nbsp;| 12 p.m.</div>
+<div>Oct 29:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU9j72=
+rxY2y8YJEmygV6AIRhHJPyExmoevwS182m0ixG3xu9eTNGcK5n3lpBEEEYEYoZwqTvcMfPtL_0p=
+-nMqvKOpqZHXlnX3aMNqwomreoTOh19uwo6MxjxCIQt84JHzqZ-WeaBA54XbdTSOrHm_EgNPTXk=
+Wqtko5xT6b9bFeELQk61YZRShBp6dXFr6AUPDRlK9jLFsmmoxKuU5DMVbIfkwdjiqwRPfECt_EP=
+ZW6i4BCuz2m6Qwch9pi4aDv_xbz6GXCNUNEycTH27CfWd8YQQ4_UNr_BgSpsF4-jtQ68xuvZ1id=
+yT7f7SGvFr8wOR_3Up&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a=
+4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7=
+C637390622686529736%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DLdOGeB2E00JA4%2Fr9yC=
+svYhqh9o0XJNBT0K37UFkM1xo%3D&amp;reserved=3D0" originalsrc=3D"https://email=
+.mail.joinhandshake.com/c/eJxlkE1uwyAQhU9j72rxY2y8YJEmygV6AIRhHJPyExmoevwS1=
+82m0ixG3xu9eTNGcK5n3lpBEEEYEYoZwqTvcMfPtL_0p-nMqvKOpqZHXlnX3aMNqwomreoTOh19=
+uwo6MxjxCIQt84JHzqZ-WeaBA54XbdTSOrHm_EgNPTXkWqtko5xT6b9bFeELQk61YZRShBp6dXF=
+r6AUPDRlK9jLFsmmoxKuU5DMVbIfkwdjiqwRPfECt_EPZW6i4BCuz2m6Qwch9pi4aDv_xbz6GXC=
+NUNEycTH27CfWd8YQQ4_UNr_BgSpsF4-jtQ68xuvZ1idyT7f7SGvFr8wOR_3Up" shash=3D"Im=
+C97pC+dIrJseBaITIr7itoyQ+76WSkyTdzuiYS5eiIp2oN7s+AiQKehyonYdfMarxgs+1H0+7Gh=
+UGjvhbvM61nyNEVqS7A930AH/dz68+vk2gPmnzw+7HYLm22Bn1KZcnO5Na7WIQL7kkMgFZcAxln=
+IgwgexW6X+lXtuqt8EY=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>I=
+nternship 101</strong></a>&nbsp;| 3 p.m.</div>
+<div>Nov 4:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkEtuwyAURVeDZ7X=
+4GwYM0kTZQBdgYUAxDZjI4KrL74vrZlKJATr36XAf3ijlJtVFQzHFBFNGBCaU96RXZ8Yv_KTPAp=
+J3rBHH2cbUf5a4zHbxdbb30LuSu9kozJgUTioqNSNKUOaGCU-BSz848HXJzK09KmInRK9wtuZtS=
+rb-t0EYvsLSKlwEGzRhiF1TWRG7kAFRubU81rKtLgDJttbx2SqsR5SDj1uGKDzxAZ3NDxtvC-Bt=
+iWOz6y204Md9Bh6Sh1_9zZelQQVAUiuqebca-92Ixlgo-IZX-eC3rhmh8NuHm0tJ3WuTcW-2-8f=
+oza_mB7dIc3Y&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df4=
+988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739=
+0622686539729%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiL=
+CJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dr3M%2FgXZvzplUZnSxEh%2Fv5E=
+FFBg91%2Bd5eGrGPkB6kvlI%3D&amp;reserved=3D0" originalsrc=3D"https://email.m=
+ail.joinhandshake.com/c/eJxlkEtuwyAURVeDZ7X4GwYM0kTZQBdgYUAxDZjI4KrL74vrZlK=
+JATr36XAf3ijlJtVFQzHFBFNGBCaU96RXZ8Yv_KTPApJ3rBHH2cbUf5a4zHbxdbb30LuSu9kozJ=
+gUTioqNSNKUOaGCU-BSz848HXJzK09KmInRK9wtuZtSrb-t0EYvsLSKlwEGzRhiF1TWRG7kAFRu=
+bU81rKtLgDJttbx2SqsR5SDj1uGKDzxAZ3NDxtvC-BtiWOz6y204Md9Bh6Sh1_9zZelQQVAUiuq=
+ebca-92Ixlgo-IZX-eC3rhmh8NuHm0tJ3WuTcW-2-8foza_mB7dIc3Y" shash=3D"cQ7YajKlw=
+A/xT4jVLiSHe48Heh4hmKOBLCowvN9r4zRrY8GlUpGJBwrxUt58Tl+lUimOlNYpJ3+zS1Lighba=
+AWjzroy6tR6OK1olBxCT7IQY31nWddCuEdyQrsvMqPH6tio4eYW1IKSpZj3OHNzdHljSvAU6WOs=
+0hXZ1W9kXgbg=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>How to A=
+ce the Behavioral Interview</strong></a>&nbsp;| 12 p.m.</div>
+<div>Nov 11:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU8Du1=
+r82YYFizRRLtADIAwopuEnMlD1-CWum02lWYy-N3rzZqzk3CwcekkQQRgRikeECRvwwM-UXdhJn=
+MeuvCMBGIrah-Ez-7TqZMuq724wOcJVTjNlVE9CIMtmJsxCOeKOU82sWwQyMMi11kcB9ATItVer=
+Voegy3-3Lrovl2rpzUhngRmg15A3QC-YAzK1GlXJbTOuk6hLUc9Ubjuk6KxvsUvuiQ9odHxof0s=
+dt-RV1dvNVWfVPtMXTYe_-JvPqfYIHU2CE8HgJvV3xQKhkfc3vMI722CVI0dvH2bNOcDXJWpPtv=
+srb-WvzQ9lnHQa&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1d=
+f4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637=
+390622686549718%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzI=
+iLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DAPj%2FY6h29rTZXp%2FIESxr=
+UlLhYEj03HIkvtjwTzc8A38%3D&amp;reserved=3D0" originalsrc=3D"https://email.m=
+ail.joinhandshake.com/c/eJxlkE1uwyAQhU8Du1r82YYFizRRLtADIAwopuEnMlD1-CWum02=
+lWYy-N3rzZqzk3CwcekkQQRgRikeECRvwwM-UXdhJnMeuvCMBGIrah-Ez-7TqZMuq724wOcJVTj=
+NlVE9CIMtmJsxCOeKOU82sWwQyMMi11kcB9ATItVerVoegy3-3Lrovl2rpzUhngRmg15A3QC-YA=
+zK1GlXJbTOuk6hLUc9Ubjuk6KxvsUvuiQ9odHxof0sdt-RV1dvNVWfVPtMXTYe_-JvPqfYIHU2C=
+E8HgJvV3xQKhkfc3vMI722CVI0dvH2bNOcDXJWpPtvsrb-WvzQ9lnHQa" shash=3D"fBgx7DGq=
+mhDb6jcBQKHe8KhhBHWwSUWdAz7YHPvJbIQcLGapPXorgd18qsDNvI9fsANUJ/JrXQoqKmaWucE=
+LefnMttOkZ0foB7giBjg4STPGnF730CQUlsDy5D/KyEMxcvFyky5MlE89hvhPL8SFnGucEkYbYM=
+BwCWQLOvQ8Tvg=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>How to =
+Conduct A Virtual Job Search</strong></a>&nbsp;| 12 p.m.</div>
+<div><br></div>
+<div><strong>Employer Panels and Career Expos</strong></div>
+<div>
+<strong>=EF=BB=BF</strong>Oct 26: <a href=3D"https://nam02.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJ=
+xlj0tuwzAMRE9j72pQH8vSQos0QS7QAxiMJcdK9Qksuejxq7hpNgW4IN5ghkOjpZwusnWaAgUCl=
+JEeCOUd6eSR8RM_qGNflXdQDYeAzne35OKC0eQFP203pdAuWlDkFrjkknDg88X2DAchQBAqZzGr=
+1uullHtu2KGh5zpbMeg95v9pVbRfNpZcl17BMLCGnX1aG3ai0FCxlTDmtK2TrSRgzuOjlV2fUrD=
+GbaFK9oGfcEqx1MhKhZJU8T-M4Y7uGivfohsLrldbrBl3a25Xjd-FKIBe1t9fja3Z2qJ7CW8f05=
+KSb1_1x73O7h6d0b-3fgAYMXDN&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.=
+edu%7C2a4b1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7=
+C0%7C0%7C637390622686549718%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DdYWLiodxWEZy=
+QxXgkXbRINloudO6inzxe9Tpa5EyinQ%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/email.mail.joinhandshake.com/c/eJxlj0tuwzAMRE9j72pQH8vSQos0QS7QAxiMJcdK9Qk=
+suejxq7hpNgW4IN5ghkOjpZwusnWaAgUClJEeCOUd6eSR8RM_qGNflXdQDYeAzne35OKC0eQFP2=
+03pdAuWlDkFrjkknDg88X2DAchQBAqZzGr1uullHtu2KGh5zpbMeg95v9pVbRfNpZcl17BMLCGn=
+X1aG3ai0FCxlTDmtK2TrSRgzuOjlV2fUrDGbaFK9oGfcEqx1MhKhZJU8T-M4Y7uGivfohsLrldb=
+rBl3a25Xjd-FKIBe1t9fja3Z2qJ7CW8f05KSb1_1x73O7h6d0b-3fgAYMXDN" shash=3D"C6wq=
+Cbj1DwonGUsuICdJe1PP27teWPvpqb7b4+ZnglVJyt2eujdQvTTRGWSbJ9qgDxn0Gegk1IW7Hzv=
+gbFL992PIrv0U/KKtw8jo5gB65WJ3MTlrXOt/FZTDABltgMcJW8m0rgUAKgRKagUreate44jZCe=
+Q4yNPERDTrmSK2Vq8=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>EPP=
+S Pathways to Employment: Cyber Security</strong></a><strong> </strong>| 12=
+ p.m.</div>
+<div>Oct 28:&nbsp;<a href=3D"https://nam02.safelinks.protection.outlook.com=
+/?url=3Dhttps%3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlkE1uwyAQhU9j72=
+rxa8OCRZooF-gB0ARITAomMlD1-CWum02lWYy-N3rzZqwSwlxE7xVBBGFEKOYIEzbgQRwpO7GDP=
+PKmvCPZMRTBh-Ge_DLDYvMMn24wKfazsoRNV0oRc2AuIwZrmeOTJFfDYSJM9EHNpTxyRw8dObeq=
+xUIIkP-7NdF9uaXk1vCJSj529BzS2tETQR0Za4k6p7oa10iEnPUzlVt3KTrra2ySe-IdGogP8Le=
+l4bp4XWC9ueKs3mbaonH3x3_zaSktQkOjFESyflXwXbBEiIv2hld4Z2tfFBfo7cPMKYX-dYnekm=
+3-2lv1a_MD-CN0kg&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b=
+1df4988d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C6=
+37390622686559716%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luM=
+zIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DZC5UaFAXJ%2FkfwfzGF1va=
+MX%2FXeQksHSiSsdS4qKD8RNg%3D&amp;reserved=3D0" originalsrc=3D"https://email=
+.mail.joinhandshake.com/c/eJxlkE1uwyAQhU9j72rxa8OCRZooF-gB0ARITAomMlD1-CWum=
+02lWYy-N3rzZqwSwlxE7xVBBGFEKOYIEzbgQRwpO7GDPPKmvCPZMRTBh-Ge_DLDYvMMn24wKfaz=
+soRNV0oRc2AuIwZrmeOTJFfDYSJM9EHNpTxyRw8dObeqxUIIkP-7NdF9uaXk1vCJSj529BzS2tE=
+TQR0Za4k6p7oa10iEnPUzlVt3KTrra2ySe-IdGogP8Lel4bp4XWC9ueKs3mbaonH3x3_zaSktQk=
+OjFESyflXwXbBEiIv2hld4Z2tfFBfo7cPMKYX-dYnekm3-2lv1a_MD-CN0kg" shash=3D"IbEH=
+ILdd1P8un2NEtkj8qmrpJnu2/fpXNV0FIPAmv3tLy8fmHuQjPCAicKZ9OHIMmw8cHRufHKu4DGA=
+ZWOJJVrDJCa9fkkaujzxcqel6KEg++N6ZxKrwM6VgArHNIyE1VC0Zqu5qCHNSwMIp9l3Tn6o4CE=
+c7V+J7oBAPjHsMgHI=3D" target=3D"_blank" style=3D"color:#d56b03"><strong>Div=
+ersity Employer Panel</strong></a>&nbsp;| 3 p.m.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/16=
+30885/original/data.?1600180752" alt=3D"utdallas.joinhandshake.com" style=
+=3D"outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:=
+auto;max-width:100%;clear:both;display:block;margin:0 auto;float:none;text-=
+align:center;width: 600px;" width=3D"600" class=3D"float-center"></div>
+</td></tr></table>
+
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email is being sent to Abigail Thomas at The University of Texas a=
+t Dallas.
+    <br>
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Flink.mailgun.com%2Fu%2FeJw9zU0OwiAQQOHTyE4yw48MCxZab-ABmrFgQGlJpE08=
+vnXj-iXfi4FoupMoQYECBKXRAiojUdKgzdWc_WD3cgF_MDBzqfLZypJ5iT3zK8mpzSIHVBy9dsT=
+exmTAaVTkPGmt3AOSQfEO_FnRA1janW2NXCt3meIm1mAJjrcpt1bFHx5n7n1Mv-NYYjh5Ut58AU=
+vrMxM&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df4988d4d6=
+98ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637390622686=
+559716%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6=
+Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3Dv06BvkhXnedndE8Oen3Eke8rmUmqiHrfh=
+KVk8s6x4JM%3D&amp;reserved=3D0" originalsrc=3D"https://link.mailgun.com/u/e=
+Jw9zU0OwiAQQOHTyE4yw48MCxZab-ABmrFgQGlJpE08vnXj-iXfi4FoupMoQYECBKXRAiojUdKg=
+zdWc_WD3cgF_MDBzqfLZypJ5iT3zK8mpzSIHVBy9dsTexmTAaVTkPGmt3AOSQfEO_FnRA1janW2=
+NXCt3meIm1mAJjrcpt1bFHx5n7n1Mv-NYYjh5Ut58AUvrMxM" shash=3D"Bp7eHCiIdPyTu5aH=
+lR3KyHMOC4jiORDEkUUjt/CSqd5HbRlgn+0D+oEgy/MUByun4sRqurZYBsomspiCdmnP56BtHUt=
+WCkgUBpU6n7D6lahPpdFxa3wt3+T3rBqDbMTV4BgrSsV8C6u8IMgM/+mGFD4hKm8cLKBDc+K+Ff=
+VKRAQ=3D" style=3D"color:#d56b03">Unsubscribe</a> =E2=80=A2
+    <a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Femail.mail.joinhandshake.com%2Fc%2FeJxlT0FuxCAQe024FQ0wtHDgsN2qH-gD=
+ogkQhZZAFIi0z1966aXSSLZsyfYEZ4xfDEtOggQBUgkNQiIX3NwVfuDN3vVw3sFOCDulzL9rKhu=
+V0Db6idzXnW1O6lVEJQFJEHhUxuCCdlErwghdPMtu6_1ok7pN8nMcHcf_oKFfLZ5toNRavykrBi=
+21pzV56qmW-TjjGs9YfGzsdPTowgJoM7ZdPVDO1HgMF-tOG3j58lutmf11zDu1NsffL-YU3Ks10=
+uITFHJQJw&amp;data=3D04%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C2a4b1df4988=
+d4d698ee408d87764eefe%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63739062=
+2686569712%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJB=
+TiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DM1W%2Fw52VDLeGgUHibOxy%2B5i9P=
+3QTZ6XEel8j%2F%2F%2BAAJw%3D&amp;reserved=3D0" originalsrc=3D"https://email.=
+mail.joinhandshake.com/c/eJxlT0FuxCAQe024FQ0wtHDgsN2qH-gDogkQhZZAFIi0z1966a=
+XSSLZsyfYEZ4xfDEtOggQBUgkNQiIX3NwVfuDN3vVw3sFOCDulzL9rKhuV0Db6idzXnW1O6lVEJ=
+QFJEHhUxuCCdlErwghdPMtu6_1ok7pN8nMcHcf_oKFfLZ5toNRavykrBi21pzV56qmW-TjjGs9Y=
+fGzsdPTowgJoM7ZdPVDO1HgMF-tOG3j58lutmf11zDu1NsffL-YU3Ks10uITFHJQJw" shash=
+=3D"OA8xd3hXJWheyP6LjOIElmgIP/mh/Y1LXLNTnZYRW49nGc5YCm5FUiRPle6+wHsPqRlgbn6=
+xV90S0aTr1O6zUNpCoHACBXuVa3zgzRf1JD05QSD+nRBPNA01AleSA598b5L8PU/Gm/UGcI5/tR=
+mq/LfPD7q5NU3mK26u7RgU6q8=3D" style=3D"color:#d56b03">Update preferences</a=
+>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.mail.joinha=
+ndshake.com/o/eJw9zU0OwiAQQOHTyE4yw48MCxZab-ABmrFgQGlJpE08vnXj-iXfi4FoupMoQ=
+YECBKXRAiojUdKgzdWc_WD3cgF_MDBzqfLZypJ5iT3zK8mpzSIHVBy9dsTexmTAaVTkPGmt3AOS=
+QfEO_FnRA1janW2NXCt3meIm1mAJjrcpt1bFHx5n7n1Mv-NYYjh5Ut58AUvrMxM"></body>
+</html>
+
+--d8385b34de624eebae196f8a88a300be--

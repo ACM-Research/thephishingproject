@@ -1,0 +1,757 @@
+Received: from BYAPR01MB3877.prod.exchangelabs.com (2603:10b6:a02:89::12) by
+ BYAPR01MB3798.prod.exchangelabs.com with HTTPS; Sat, 3 Oct 2020 21:01:34
+ +0000
+Received: from SN4PR0501CA0104.namprd05.prod.outlook.com
+ (2603:10b6:803:42::21) by BYAPR01MB3877.prod.exchangelabs.com
+ (2603:10b6:a02:89::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.36; Sat, 3 Oct
+ 2020 21:01:32 +0000
+Received: from SN1NAM02FT041.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:803:42:cafe::eb) by SN4PR0501CA0104.outlook.office365.com
+ (2603:10b6:803:42::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3455.13 via Frontend
+ Transport; Sat, 3 Oct 2020 21:01:31 +0000
+Authentication-Results: spf=pass (sender IP is 199.15.214.46)
+ smtp.mailfrom=em-sj-77.mktomail.com; UTDALLAS.EDU; dkim=pass (signature was
+ verified) header.d=mheducation.com;UTDALLAS.EDU; dmarc=pass action=none
+ header.from=mheducation.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em-sj-77.mktomail.com
+ designates 199.15.214.46 as permitted sender)
+ receiver=protection.outlook.com; client-ip=199.15.214.46;
+ helo=em-sj-46.mktomail.com;
+Received: from em-sj-46.mktomail.com (199.15.214.46) by
+ SN1NAM02FT041.mail.protection.outlook.com (10.152.72.217) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3433.39 via Frontend Transport; Sat, 3 Oct 2020 21:01:31 +0000
+X-MSFBL: GyX66wj1FWYlFmhkQJPguEG5uvSVkfKyYmBh9Fd5GaE=|eyJ1IjoiMTI4LVNKVy0
+	zNDc6MDoxNDAzNDg6NTE0MDY4OjEzODQ3MzM6MTUxNjYwOjk6MjQ2ODA5NzoyMTE
+	zNTY3ODQiLCJyIjoiQVhUMTkwMDU4QHV0ZGFsbGFzLmVkdSIsImciOiJiZy1zai0
+	wMSIsImIiOiJkdnAtMTk5LTE1LTIxNC01MCJ9
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1601758891;
+	s=m1; d=mheducation.com; i=@mheducation.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=SV80aIslBmglZQtjG3FqS6H7xDvyaoJUyjDSOXlcvOo=;
+	b=feBedSVP4PIqTJZKD6R1m8VJVN7RO7cGA7bvlGoF6HGUvOqMLYpd1/O0qAQwVlXa
+	AP7T10RuYPqjkWEG1PNjGT0XqkORCIUrnrGAmzTDqoc81ux/exlQ0msPNMTvBpkBqZC
+	EqxygoxJUcwmooW+a5SEPAdmFT3xKjX/Hoij8ZGY=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1601758891;
+	s=m1; d=mktomail.com; i=@mktomail.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=SV80aIslBmglZQtjG3FqS6H7xDvyaoJUyjDSOXlcvOo=;
+	b=Sfii5xCxt5Bn3NJ7LYM+V17Qr6z52wJrj3fjbVi9Dy4ZAfso9J6HV1lFV8JVlVVi
+	ftMAtLDYZXe+xkoo17SFqjHjGQHh90BfehCpu7ZGnhelgqV9NANUrArXGj10aiBRsNK
+	s/NDHzdp8+GRIljbyY0wvOY4pzO6t3WYm6TwpEcg=
+Date: Sat, 3 Oct 2020 16:01:31 -0500 (CDT)
+From: McGraw Hill Connect Coach <connectnews@mheducation.com>
+Reply-To: connectnews@mheducation.com
+To: AXT190058@UTDALLAS.EDU
+Message-ID: <1964958434.15093098.1601758891667@sjmktmail-batch1l.marketo.org>
+Subject: Your Voice Is Worth A Lot (Maybe $100)
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_15093097_1667599128.1601758891667"
+X-Binding: bg-sj-01
+List-Unsubscribe:
+ <mailto:NFZFC6TUOVGW6UCNOFRHI32FM5XXEMKXMVWHQM3DJVFEGMZNKBVG4MDQMNKUE5TWIRKUCPI=.2468097.151660.9@unsub-sj.mktomail.com>
+X-PVIQ: mkto-128SJW347-000001-000002-468097
+X-MarketoID: 128-SJW-347:0:140348:514068:1384733:151660:9:2468097:211356784
+X-Mailfrom: 128-SJW-347.0.2468097.0.0.151660.9.211356784@em-sj-77.mktomail.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Return-Path:
+ 128-SJW-347.0.2468097.0.0.151660.9.211356784@em-sj-77.mktomail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Oct 2020 21:01:31.8666
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5612c272-3990-4f54-43fc-08d867df815d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Matching-Connectors:
+ 132462324918686224;(4d29bbe7-9268-40c6-23cc-08d4a395902b);()
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT041.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5612c272-3990-4f54-43fc-08d867df815d
+X-MS-TrafficTypeDiagnostic: BYAPR01MB3877:
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Oob-TLC-OOBClassifiers: OLM:4941;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:199.15.214.46;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:em-sj-46.mktomail.com;PTR:em-sj-46.mktomail.com;CAT:NONE;SFS:(4636009)(286005)(6506007)(1096003)(42882007)(33964004)(7036003)(6486002)(83380400001)(76236003)(966005)(118246002)(26005)(3450700001)(8676002)(336012)(36736006)(6512007)(58800400005)(956004)(83170400001)(9686003)(166002)(83080400001)(19627405001)(7636003)(7596003)(356005)(34206002)(16799955002)(94166001);DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Oct 2020 21:01:31.7326
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5612c272-3990-4f54-43fc-08d867df815d
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-AuthSource:
+ SN1NAM02FT041.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR01MB3877
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2305342
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3433.040
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Yk1hNzhvV2s3dTlJWERPYTJ4Uk5ETjMvWDdRWVJURkJuTWdvZTZuaHZEbmZ3?=
+ =?utf-8?B?VTc0VlNQWFRTMlo1b2o1bkJ3eFNaNkNLc3FnNHJDU1hLVVNlM0hrOS9ra2hG?=
+ =?utf-8?B?U0xZQjRQam1yZ1JTc3dJSlhzVmdXSDdTZ0FkUW9YUTcvNE92S0VmTG9RdWxa?=
+ =?utf-8?B?VHBSMHNXNWd6ODRwV0trSk1ld2FOSG0wNzR5T1R1RkhUbW9oOHZ0a1hNZFg2?=
+ =?utf-8?B?bFUxNnJkZGljdzJ2L3BEYUdzdk14bDFxL3ZQOEdUc1NFOEVBR1dibkN3cUdX?=
+ =?utf-8?B?SjlvL1l2dVZDbW1WdHJzNGgzUVBQMGxoaVdOSmIyb1cxRGdMVnpCNXFDd3Zn?=
+ =?utf-8?B?MGg3bEpleG5ERW5BNVlQZGt2RGdiMWh3VnRUbk5jYldFemFjMGE1MGVJMGRD?=
+ =?utf-8?B?a1d6UllRNkZLR0Y3eGpXaGExWHdSU0F2SGZDUklSdy9CUDRHaDNNeE96RVkz?=
+ =?utf-8?B?NXZPVHQvVU5zbWhuWmp1NWhVUHhJbTVsQ25pUjFyQXVvUTAwUW95R09pb2Qv?=
+ =?utf-8?B?QmY2RmNlSk5MMUUyNW5Xa1B6QVVvbUttM0dibzZsUUpvWTFuTW1ya3Z0amtP?=
+ =?utf-8?B?RnpEMXZJN2VlQlNiQXZPdWdNYlJObHZMbDRZb2VVa3UxblIrdGd5NDBCT1gv?=
+ =?utf-8?B?anBGWDlmUGFDMFRQc2xPbEtZaTI3TDhRRVM5eDNyRWRZZmk5STZLdlg1Yk9S?=
+ =?utf-8?B?UWpyK3Z6RTNUaCtFVlN2bEtmdWUvUE5NQWd0OHIyRytxeWFzUzdUcVV1aXFq?=
+ =?utf-8?B?QWc4cTA1R3ZmQmtuZEpJaVVQVDFsRXRRVGxJeWdRYmZqbHVRTVZuM2MrWFpH?=
+ =?utf-8?B?OVJnUEZDeXBzT2pad2RiT1RKS2JnWUtvcmN5dEZpL0lrQy9YQ284YnFBaVJQ?=
+ =?utf-8?B?ZStlcnJjYlZSTFZTaXNwdkMrWHBRdVErdXJWcE4yM0cxNGN2Rll4OW9XdU5m?=
+ =?utf-8?B?cXFpRkRKSkZnOHZiUGh2Y0FHS3hJZkhyQmJOV1A4WVpBb2RSdEVBUFQwWGw4?=
+ =?utf-8?B?cmhoK0VybTdzamJibk5HSk9DamJhSmNtV2lOd21GNnZ1ZmZ2M1JZM0FEN3h0?=
+ =?utf-8?B?YnBneVI0RTFNVkl1UkJSV2hlZVJtdFh1M3o0T0FpbWs5VGpOUFE3dzlrU0JB?=
+ =?utf-8?B?UTRSUUtkQjEycjduekt0aEpqcHVQZHFTb0dTdXM5QjZ6SjBTN1FiTk1odXlx?=
+ =?utf-8?B?WE56VGtUV0c0SU1BWlQyWnFzTk9QL1JqdmdiOEQyMkJZMXhRc1dFM2pIb3d5?=
+ =?utf-8?B?ZUd6Vm1zS1hYdWpuV2FWVGJSdVYxaTBmYVQreXRLYVNnRHZuZXkvRkhkeHMw?=
+ =?utf-8?B?aFpZK3AvbUFLOUNZcW9JeHFwaUlrbDI4UUQ2eFFGTlNDNENYSGJCQUFYYUN5?=
+ =?utf-8?B?YlVackh0aFM5RU1OQXc2UnBsd1ZuSjF1WHQweUlNUEphN3k2aFA2K1dsY3Js?=
+ =?utf-8?B?YlBXSkNBSkl1RzJnTzFKbnpIaW02LzU1QTEzVnlnOGJjSG92UnBhelZmbWN3?=
+ =?utf-8?B?NzBtZ1VIN2RibFhjQnhXaE1PRXlnaTFOSmFrd1B5V2EwOHhhNlJYQUxLY0lM?=
+ =?utf-8?B?bFZES08wWndpaXJOME5YVUcvWWtHNEVaTmhKMjBDQWhrNllCaTZqR01LaWJn?=
+ =?utf-8?B?d1F3SUlscGM3QmlISll4a3NabURzQ1pkR01ReGtZNEZIUVlHZ2FLallacjVO?=
+ =?utf-8?B?WXZ0YTUxdlJzTFpQYW9KUW1ua2kraVAwbTdBM2ZMNUx0UEwzWUxFekcrNExX?=
+ =?utf-8?B?UHl5NWp0YTZoci9XejcxYy9IVVBTc1pDNGxTaEhBZFhHYlFCYkFQME9vU0VI?=
+ =?utf-8?B?V3lyS1ZZMVJsV1ZSS0hRdHFtMENKbytLTFFLekJUR1EzZnNzL2ZNdmdySXZD?=
+ =?utf-8?B?MXh6RDhralNZekdZdHY4cmM3Vmhya0hVZFlLTFpMQVl0Q0xnL3RvZ2cxZ0lz?=
+ =?utf-8?B?dWxEZEZMQ2FIcVZHS2UrZGZ0S3M1MXJsUVZPTEZZR2pPeTVWYzV3UW4wM3hs?=
+ =?utf-8?Q?iUjPtWVTkA0QwUOBXppS6lbBeR31BU=3D?=
+MIME-Version: 1.0
+
+------=_Part_15093097_1667599128.1601758891667
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+To view this email as a web page, go to the following address: https://nam0=
+2.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Finfo.mheducation.com=
+%2Findex.php%2Femail%2FemailWebview%3Fmkt_tok%3DeyJpIjoiWlRobFlUSTJZV0kzTTJ=
+ObCIsInQiOiJ4RzBOalJHK0ZPSjJsYkpPUnlUSTNyeFozQlhxdU83ckphU28vbi9xc2J1MDhScU=
+5aM0NzWS91ZUJvN1U3WlFTWUJReXNDa0o3VXIrSmZ6ZjZPZ3h2QWlnYlFkVGxoTUoxM21uR2F3Q=
+XlFTUU0TUNDTkJIUE1aTTY2dDZNNk5SVHRqWUcxbWl6UVMxK21UZnZ4SVBoSFE9PSJ9&amp;dat=
+a=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df=
+815d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948768091&amp;sd=
+ata=3D%2FjEHWw4kD7BpA7Q6D5VZLaghhF%2BpFvUbKZ3HIb%2F1c2o%3D&amp;reserved=3D0
+
+Hi ABIGAIL,=20
+=20
+ Don=E2=80=99t miss your chance to give us your feedback. Fill out a super =
+quick McGraw Hill Connect=C2=AE survey, and you=E2=80=99ll be entered to wi=
+n one of=C2=A0ten=C2=A0$100 gift cards.*=20
+=20
+ Your opinion matters to us! We would love to know what you think about Con=
+nect. So go ahead, dish it=C2=A0- and maybe you=E2=80=99ll win!
+USE YOUR VOICE <https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%=
+3A%2F%2Fgo.mheducation.com%2Fme00oI00i5PxF7oyJXb0SW0&amp;data=3D02%7C01%7CA=
+bigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d=
+9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948768091&amp;sdata=3DPAUsIppnI=
+WblI2mGvo9VSXtr6wgN%2F1pc%2Fjb0hQu7tVQ%3D&amp;reserved=3D0>
+*See Rules and Regulations within the survey.
+McGraw Hill cares about your privacy. To opt-out of receiving marketing com=
+munications, please select <a href=3D "https://nam02.safelinks.protection.o=
+utlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2FE5x0SeoDJ6y0o0PW0X0i70F=
+&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc=
+08d867df815d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63737355694876809=
+1&amp;sdata=3D4dm8kwmjr9d4p3TexV4yjTMuKQ76ri6E2rLl13IWHnI%3D&amp;reserved=
+=3D0" target=3D"_blank" style=3D"text-decoration: underline; color: #692146=
+;" >UNSUBSCRIBE</a>. You may still continue to receive transactional emails=
+ such as password resets, product updates, and product training. You can fi=
+nd further information around our privacy practices in the <a href=3D "http=
+s://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducati=
+on.com%2FtxWo0PeXSy07E05oJi000F7&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTD=
+allas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4bf7b16e032d15de=
+9f6c%7C0%7C0%7C637373556948768091&amp;sdata=3DgzxrB2ai8mCLneiuT7oIK7cx3zS4j=
+5%2FF4w0Bda4dmjI%3D&amp;reserved=3D0" target=3D"_blank" style=3D"text-decor=
+ation: underline; color: #692146;" >McGraw Hill Privacy Center</a>, by cont=
+acting the McGraw Hill Higher Education Privacy Office by mail at 501 Bell =
+Street, Dubuque, IA 52001, or by emailing <a href=3D "https://nam02.safelin=
+ks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2FVyJFe05x=
+XF0W000S7iPo8o0&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c=
+27239904f5443fc08d867df815d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C63=
+7373556948768091&amp;sdata=3D2GAeGMpnGMRITIy1AzmUIoyqyTDYRu6q9f7maUPpuI0%3D=
+&amp;reserved=3D0" target=3D"_blank" style=3D"text-decoration: underline; c=
+olor: #692146;" >PrivacyOfficerMHHE@mheducation.com</a>.
+
+.
+
+------=_Part_15093097_1667599128.1601758891667
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head><!--[=
+if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Your Voice Matter. Use It!</title>=20
+=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0 ">=20
+<meta name=3D"format-detection" content=3D"telephone=3Dno">    =20
+<style type=3D"text/css">
+body { margin: 0; padding: 0; -webkit-text-size-adjust: 100% !important; -m=
+s-text-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !i=
+mportant; }
+img { border: 0 !important; outline: none !important; }
+p { Margin: 0px !important; Padding: 0px !important; }
+table { border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace:=
+ 0px; }
+td, a, span { border-collapse: collapse; mso-line-height-rule: exactly; }
+.ExternalClass * { line-height: 100%; }
+.em_defaultlink a { color: inherit !important; text-decoration: none !impor=
+tant; }
+.em_g_img + div { display: none; }
+.em_grey a { color: #3f3c3d; text-decoration: none; }
+.em_black a { color: #000000; text-decoration: none; }
+.em_white a { color: #ffffff; text-decoration: none; }
+.em_red a { color: #692146; text-decoration: none; }
+
+@media only screen and (min-width:481px) and (max-width:599px) {
+.em_main_table { width: 100% !important; }
+.em_wrapper { width: 100% !important; }
+.em_hide { display: none !important; }
+.em_full_img img { width: 100% !important; height: auto !important; }
+.em_side15 { width: 15px !important; }
+.em_aside15 { padding: 0px 15px !important; }
+.em_h20 { height: 20px !important; font-size: 1px!important; line-height: 1=
+px!important; }
+.em_padall { padding: 20px 15px !important; }
+.em_h40 { height: 40px !important; }
+.em_pbottom { padding-bottom: 20px !important; }
+}
+
+@media screen and (max-width: 480px) {
+.em_main_table { width: 100% !important; }
+.em_wrapper { width: 100% !important; }
+.em_hide { display: none !important; }
+.em_full_img img { width: 100% !important; height: auto !important; }
+.em_side15 { width: 15px !important; }
+.em_aside15 { padding: 0px 15px !important; }
+.em_h20 { height: 20px !important; font-size: 1px!important; line-height: 1=
+px!important; }
+.em_padall { padding: 20px 15px !important; }
+.em_wid186 { width: 186px !important; height: auto !important; }
+.em_wid83 { width: 83px !important; height: auto !important; }
+.em_h40 { height: 40px !important; }
+.em_pbottom { padding-bottom: 20px !important; }
+u + .em_body .em_full_wrap { width: 100% !important; width: 100vw !importan=
+t; }
+}
+</style>=20
+</head>=20
+<body class=3D"em_body" style=3D"margin:0px auto; padding:0px;" bgcolor=3D"=
+#ffffff">
+<div style=3D"text-align: center"><font face=3D"Verdana" size=3D"1"><a href=
+=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fgo.m=
+heducation.com%2Fv%2Fri0h0W0X5JO7yoSFo0eP0x0&amp;data=3D02%7C01%7CAbigail.T=
+homas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4bf7=
+b16e032d15de9f6c%7C0%7C0%7C637373556948838046&amp;sdata=3DxioA0%2FgQ%2BawSH=
+jLMnoiNDTXrPveX1bOTqstmtG9lsf8%3D&amp;reserved=3D0" originalsrc=3D"http://g=
+o.mheducation.com/v/ri0h0W0X5JO7yoSFo0eP0x0" shash=3D"RZY/q5vnEUmOw2s5TfJaP=
+kJOVzBKvpIuBNAgebXIqoY9HPnVwdZa+qKnr+nIxdV5byo5KCisXx7pZLC4+JOgPuV5pPHkgWoi=
+Ucks+D41u9WEdK99nMju8Jue27/LdetsCJFp8VOMG7KGHUfWzeWc0pKMIWlnPtlGysCvbkbyYVA=
+=3D">View this email as a web page</a><br><br></font></div>
+=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"em_full_wrap" bgcolor=3D"#ffffff">=20
+<tbody>
+<tr>=20
+<td valign=3D"top" align=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#ffffff" class=3D"mktoContainer" id=3D"Template">
+<tr class=3D"mktoModule" id=3D"Header_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" style=3D"padding:6px 0px 18px;" class=
+=3D"em_padall">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"left">=20
+<div class=3D"mktoImg" id=3D"logo_196x35px" mktolockimgsize=3D"true">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2Fx0S0050X09Fe7oJ0GxioyWP&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948838046&amp;sdata=3DvBlNicEepsr1wR=
+wXXhbgiwTHIOZvU93rCqVQmilO3UE%3D&amp;reserved=3D0" originalsrc=3D"http://go=
+.mheducation.com/x0S0050X09Fe7oJ0GxioyWP" shash=3D"prxyQOCdgxw/hKfLHgxDMHF5=
+cSMsksBNNVL2QffXW5tIaoeNaAAiQE7pd/BJK/bIDe8TadnCInauunuiJkmJ2Harf+d+SJVefCP=
+YYKFt+3uhytHmDueVZrkFXaZVo7Ztb3cOX1KXfuEcVHPBpSvM9cIfGZFm+nQo5syvzkK6TXQ=3D=
+" target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"http://info=
+.mheducation.com/rs/128-SJW-347/images/TA-5-header_logo.png" width=3D"196" =
+height=3D"35" alt=3D"Mc Graw Hill Education Connect" border=3D"0" style=3D"=
+display:block; max-width:196px; font-family: Arial, sans-serif; font-size:1=
+4px; line-height:18px; color:#000000; font-weight:bold;" class=3D"em_g_img =
+em_wid186 em_g_img em_wid186"></a>=20
+</div></td>=20
+<td width=3D"10" style=3D"width:10px;">&nbsp;</td>=20
+<td valign=3D"top" align=3D"right">=20
+<div class=3D"mktoImg" id=3D"logo_93px" mktolockimgsize=3D"true">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FO0X0oiPW00e5oS7a0H0xFyJ&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948848038&amp;sdata=3Dbi6ggQraoPRzbr=
+5iJHqBlX0p3s8TwQyv61JiezW9FNU%3D&amp;reserved=3D0" originalsrc=3D"http://go=
+.mheducation.com/O0X0oiPW00e5oS7a0H0xFyJ" shash=3D"DtVLaQC5ZTG/NLYRhP9xkLP1=
+2f8fwCGEEmanDduE4LW89FjEao8jvtsKPTkljKlZvFo64xnCjtIADxUt3ViAuIzsX+rvfsB0q1L=
+nbkHODLJ3QPzCLlKpI+JhifXroCKoAkCSG7lpkedqSYaWx8/FOpVNuVvGodAt5jikScpWcls=3D=
+" target=3D"_blank"><img src=3D"http://info.mheducation.com/rs/128-SJW-347/=
+images/TA-5-college_smarter_logo.png" width=3D"93" alt=3D"COLLEGE SMARTER N=
+OT HARDER" class=3D"em_wid83" style=3D"display:block; max-width:93px; font-=
+family: Arial, sans-serif; font-size:14px; line-height:18px; color:#000000;=
+ font-weight:bold;"></a>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Banners_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"baseline" align=3D"center" class=3D"em_full_img">=20
+<div class=3D"mktoImg" id=3D"Banner_600x197px" mktolockimgsize=3D"true">
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2Fme00oI00i5PxF7oyJXb0SW0&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948848038&amp;sdata=3DmBBO9%2FbLEhXw=
+cqeWdR3VRcdxV%2FbHB4E6bS1Y4YG456Q%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//go.mheducation.com/me00oI00i5PxF7oyJXb0SW0" shash=3D"WtWUEM+SK+1wd3tfd8yP=
++FNQ6kb0WbYYF0f37mJBvvGfQGl2N+IRtV0+HIV+Wt+dIyMAMXCKb0z0SxVCJ/VRRhIBbevvq2k=
+n9wlCaAczojssz5SNQpq/YaDSkDcspWPHjmC9LaUDFyCj3bbq/9LFrM6PSBQUUi+NFAmSkz3aTq=
+Y=3D" target=3D"_blank"><img src=3D"http://info.mheducation.com/rs/128-SJW-=
+347/images/StudentBTS_email5-survey-dk-gray_600x197%5B2%5D.jpg" width=3D"60=
+0" height=3D"197" alt=3D"YOUR VOICE MATTERS. USE IT!" class=3D"em_g_img" st=
+yle=3D"display:block; max-width:600px; font-family: Arial, sans-serif; font=
+-size:16px; line-height:20px; font-weight:bold; color:#000000; font-weight:=
+bold;"></a>
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Top_Divider_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" class=3D"em_full_img" style=3D"font-siz=
+e:0px; line-height:0px;">=20
+<div class=3D"mktoImg" id=3D"Divider_Top">=20
+<img src=3D"http://info.mheducation.com/rs/128-SJW-347/images/TA-5-divider_=
+top.png" width=3D"600" height=3D"13" border=3D"0" style=3D"display:block; m=
+ax-width:600px;">=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td height=3D"28" class=3D"em_h20" style=3D"height:28px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Two_Columns_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" style=3D"padding:0px 35px 0px 35px;" cl=
+ass=3D"em_aside15">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center">=20
+<table width=3D"365" align=3D"left" class=3D"em_wrapper" style=3D"width:365=
+px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td class=3D"em_black" valign=3D"top" align=3D"left" style=3D"color:#000000=
+; font-family:'Proxima Nova', Arial, sans-serif; font-size:15px; line-heigh=
+t:18px;">=20
+<div class=3D"mktoText" id=3D"Conten_text1">=20
+<p><span style=3D"text-transform: capitalize;">Hi ABIGAIL,</span> <br> <br>=
+ Don=E2=80=99t miss your chance to give us your feedback. Fill out a super =
+quick McGraw Hill Connect<sup><span style=3D"font-size: 11px;">=C2=AE</span=
+></sup> survey, and you=E2=80=99ll be entered to win <span style=3D"font-we=
+ight: 600; white-space: nowrap;">one of&nbsp;ten&nbsp;$100 gift cards.*</sp=
+an> <br> <br> Your opinion matters to us! We would love to know what you th=
+ink about Connect. So go ahead, dish it&nbsp;- and maybe you=E2=80=99ll win=
+!</p>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table width=3D"146" align=3D"right" class=3D"em_wrapper em_hide" style=3D"=
+width:146px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center"><img src=3D"http://info.mheducation.com=
+/rs/128-SJW-347/images/TA-5-box_img1.png" width=3D"146" height=3D"142" alt=
+=3D"$100" border=3D"0" style=3D"display:block; max-width:146px; font-family=
+: Arial, sans-serif; font-size:14px; line-height:18px; color:#000000; font-=
+weight:bold;"></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td valign=3D"top" align=3D"center">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" height=3D"0" class=3D"em_outlooksol">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"block" sty=
+le=3D"display:block;">=20
+<tbody>=20
+<tr>=20
+<td height=3D"20" class=3D"em_h20" style=3D"font-size:1px; line-height:1px;=
+">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"display:block;" class=3D"block">=
+=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"e21a23" =
+style=3D"display:block;text-align:center;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"em_white" height=3D"37" valign=3D"middle" align=3D"center" sty=
+le=3D"color:#ffffff; font-family:'Proxima Nova', Arial, sans-serif; font-si=
+ze:13px; font-weight:600; padding:0px 20px; text-transform:uppercase;">=20
+<div class=3D"mktoText" id=3D"Conten_cta1">=20
+<p><a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A=
+%2F%2Fgo.mheducation.com%2Fme00oI00i5PxF7oyJXb0SW0&amp;data=3D02%7C01%7CAbi=
+gail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c=
+4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948858033&amp;sdata=3De8Lhpas%2BA=
+hsgzkkAgm%2FpbzhU98ZX0DJcQr6iYCewXa8%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tp://go.mheducation.com/me00oI00i5PxF7oyJXb0SW0" shash=3D"CLuEuGdDZiQikDFrz=
+0SGFoI/llBE0+uQxKA3Z1mnh1YPlhw7rYccgqD0WhWnivKOSxC02IyUqrIO97BgR2Ooar9y8Dwd=
++C65I+IRLguC7yUUz6wOPlD9lsRFb/NXP+QeG6wOMY2piHvlJ2r18Qq3pOCBZP58foabA00v/0s=
+fuhk=3D" target=3D"_blank" style=3D"text-decoration: none; color: #ffffff; =
+display: block; line-height: 37px;">USE YOUR VOICE</a></p>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+<td width=3D"14" style=3D"width:14px;" class=3D"em_hide">&nbsp;</td>=20
+<td valign=3D"top" align=3D"left" class=3D"em_hide"><img src=3D"http://info=
+.mheducation.com/rs/128-SJW-347/images/TA-5-arrow.png" width=3D"200" height=
+=3D"71" alt=3D"" border=3D"0" style=3D"display:block; max-width:200px;"></t=
+d>=20
+<td width=3D"60" style=3D"width:60px;" class=3D"em_hide">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td height=3D"22" class=3D"em_h40" style=3D"font-size:1px; line-height:1px;=
+">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Footer_Text_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" style=3D"padding:0px 35px 0px 35px;" cl=
+ass=3D"em_aside15">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" style=3D"color:#000000; font-family:'Pr=
+oxima Nova', Arial, sans-serif; font-size:11px; line-height:15px; padding-b=
+ottom:10px;">=20
+<div class=3D"mktoText" id=3D"Conten_text8">=20
+<p>*See Rules and Regulations within the survey.</p>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Bottom_Divider_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"##ffffff">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" class=3D"em_full_img" style=3D"font-siz=
+e:0px; line-height:0px;">=20
+<div class=3D"mktoImg" id=3D"Divider_Bottom">=20
+<img src=3D"http://info.mheducation.com/rs/128-SJW-347/images/TA-5-divider_=
+bottom.png" width=3D"600" height=3D"13" border=3D"0" style=3D"display:block=
+; max-width:600px;">=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Footer_Section">=20
+<td align=3D"center" valign=3D"top">=20
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"width:600px;" class=3D"em_wrapper">=20
+<tbody>=20
+<tr>=20
+<td width=3D"10" style=3D"width:10px;" class=3D"em_side15">&nbsp;</td>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"580" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"width:580px;" class=3D"em_wrapper">=20
+<tbody>=20
+<tr>=20
+<td height=3D"23" style=3D"height:23px;" class=3D"em_h20">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"100" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"width:100px;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<div class=3D"mktoImg" id=3D"fb" mktolockimgsize=3D"true">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FwJyWoixS70050oFJe0P0c0X&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948858033&amp;sdata=3DLYgIH2dGFaz%2F=
+1LuZ3JLh1k4E%2FPt3s7tLRqdCFAxCWlk%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//go.mheducation.com/wJyWoixS70050oFJe0P0c0X" shash=3D"dV9EvxXwp7P8waKEiOOb=
+Z0cZK8o+8PB8nnsEXNhX2Tx8vsSY/MkeN9ZHWfdjCJ4QzIiwk5d+FmfTrYFCbsY+I0P/jj+aPvs=
+nX0OdAkNdj4fFFVbEF3IqonGfuvhn4/oYsEo7c6pNLz08uWuYraPiCFKemmtJYnl2joLcsNdczd=
+o=3D" target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"http://=
+info.mheducation.com/rs/128-SJW-347/images/fb_icon.png" width=3D"21" height=
+=3D"21" alt=3D"fb" style=3D"display:block; font-family:Arial, sans-serif; f=
+ont-size:9px; line-height:12px; color:#000000; max-width:21px;" border=3D"0=
+"></a>=20
+</div></td>=20
+<td width=3D"5" style=3D"width:5px;"></td>=20
+<td align=3D"left" valign=3D"top">=20
+<div class=3D"mktoImg" id=3D"yt">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FK00PiSJe07Xd0Kxyo5Fo0W0&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948868025&amp;sdata=3DZxjVsbaVvIvKK8=
+WoDK3Qd%2Fd%2FohjFG7M4Msf4Gcp99aA%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//go.mheducation.com/K00PiSJe07Xd0Kxyo5Fo0W0" shash=3D"SVr9E8dOcqw+lwa8aF7X=
+ByRw2LEBfa5Rcv69B6tSsBhXXPFj7qyWyM3DZE39TF/cyU541eapwjGHHCQmXPa+AcsYP3pTfyu=
+dGQuRw+sQzPjOWfKXo0Eso2Pq4tZh+87Iwpf8ZjCB1BVJbH42ckDyacs2yAEUJqtoimDJGrq1Bt=
+I=3D" target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"http://=
+info.mheducation.com/rs/128-SJW-347/images/yt_icon.png" width=3D"21" height=
+=3D"21" alt=3D"yt" style=3D"display:block; font-family:Arial, sans-serif; f=
+ont-size:9px; line-height:12px; color:#000000; max-width:21px;" border=3D"0=
+"></a>=20
+</div></td>=20
+<td width=3D"5" style=3D"width:5px;"></td>=20
+<td align=3D"left" valign=3D"top">=20
+<div class=3D"mktoImg" id=3D"insta">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FWS0FLoJi7ee0Wxo00P5yX00&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948868025&amp;sdata=3D%2ButOIjqblwae=
+ySkSyvDi%2Fh57qvQKCPgAXNWfGtn4fAU%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//go.mheducation.com/WS0FLoJi7ee0Wxo00P5yX00" shash=3D"ZVK3z/dcEOCYlW9pXr9C=
+45RmjDaI/5LfOF24LL9MBXr/jhaZNNuH5RjOXnLE2OXegPM4hfMv7K/lFtPFCnFupMzMPmIG0Y7=
+RYtLEpFb/RKmL8hP5yttTMMy6aCF5mp2p3dfZoWDExGyUc8UTKXbBFz0VL35P2bWeRCH4prARtf=
+c=3D" target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"http://=
+info.mheducation.com/rs/128-SJW-347/images/insta_icon.png" width=3D"21" hei=
+ght=3D"21" alt=3D"insta" style=3D"display:block; font-family:Arial, sans-se=
+rif; font-size:9px; line-height:12px; color:#000000; max-width:21px;" borde=
+r=3D"0"></a>=20
+</div></td>=20
+<td width=3D"5" style=3D"width:5px;"></td>=20
+<td align=3D"left" valign=3D"top">=20
+<div class=3D"mktoImg" id=3D"tw">=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FWS0FMoJi7ef0Wxo00P5yX00&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948878023&amp;sdata=3DxGtE4NEm%2BQUi=
+%2FomWNC8GvJKm6OUjASr6BcWjfuVOtfY%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//go.mheducation.com/WS0FMoJi7ef0Wxo00P5yX00" shash=3D"v9rllxU4SLvEanHlm2Co=
+KDc6sfzGD2nbr2T82W2q//aGLgrz63Ho54/sp1selTQzor8NyuhUq+uTH81mNVGBdxwTxDxhT2j=
+RWsR1Phw7j5GU5aHSSboo8bFgKklRjIhhS9o66jMA6Z1uZW4b2I7AAy2zzdmO2se98l2niwyT6r=
+w=3D" target=3D"_blank" style=3D"text-decoration:none;"><img src=3D"http://=
+info.mheducation.com/rs/128-SJW-347/images/twt_icon.png" width=3D"21" heigh=
+t=3D"21" alt=3D"tw" style=3D"display:block; font-family:Arial, sans-serif; =
+font-size:9px; line-height:12px; color:#000000; max-width:21px;" border=3D"=
+0"></a>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td height=3D"23" style=3D"height:23px;" class=3D"em_h20">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"em_black" align=3D"center" valign=3D"top" style=3D"font-family=
+:'Proxima Nova', Arial, sans-serif; font-size:10px; line-height:13px; color=
+:#000000;">=20
+<div class=3D"mktoText" id=3D"Footer_Text1">=20
+<p>McGraw Hill cares about your privacy. To opt-out of receiving marketing =
+communications, please select <a href=3D"https://nam02.safelinks.protection=
+.outlook.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2FE5x0SeoDJ6y0o0PW0X0i7=
+0F&amp;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443=
+fc08d867df815d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948878=
+023&amp;sdata=3D3nlSq3Z6FAQynbbqB6k%2F0cQFW8I%2Fal3rtne%2FJj16sTQ%3D&amp;re=
+served=3D0" originalsrc=3D"http://go.mheducation.com/E5x0SeoDJ6y0o0PW0X0i70=
+F" shash=3D"pL+vl3Jy6COsyMN+sM0WnETZ6bqkS7DnzfYEySUpAkl8UIJyYUr6/RDYqhtbZMg=
+B8O6H5/jhUkD5m/9qhzod+W5cGlBr8gzp67/dimehGOp+m8I3Hr/pPD2w7JxS5a/lgH/21v6Ojs=
+n2dOL8FCVWWbqpcWsM3fL9JRoyEMlh+wQ=3D" target=3D"_blank" style=3D"text-decor=
+ation: underline; color: #692146;">UNSUBSCRIBE</a>. You may still continue =
+to receive transactional emails such as password resets, product updates, a=
+nd product training. You can find further information around our privacy pr=
+actices in the <a href=3D"https://nam02.safelinks.protection.outlook.com/?u=
+rl=3Dhttp%3A%2F%2Fgo.mheducation.com%2FtxWo0PeXSy07E05oJi000F7&amp;data=3D0=
+2%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%=
+7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948878023&amp;sdata=
+=3DG2ShsSwgqUCbPAhq6yn67pbTOlx6wrY%2FxVK9J2hx1Kw%3D&amp;reserved=3D0" origi=
+nalsrc=3D"http://go.mheducation.com/txWo0PeXSy07E05oJi000F7" shash=3D"UNqc2=
+5aE/c9UxAPpu3SO/M8tIr+RE/tIQ+BNUgfAovFCeo+ReJn+5m+OYemM8teVUoKsPP1bhZBIUwKb=
+9mQXAvBbEdYPSR4jJkStLWEK/BoId67ca/8mPYVnF78/QvNNcR2rR90vc9Cw/Rx9Eltw//yuiZF=
+JtqZts7ldn25JIpQ=3D" target=3D"_blank" style=3D"text-decoration: underline;=
+ color: #692146;">McGraw Hill Privacy Center</a>, by contacting the McGraw =
+Hill Higher Education Privacy Office by mail at 501 Bell Street, Dubuque, I=
+A 52001, or by emailing <a href=3D"https://nam02.safelinks.protection.outlo=
+ok.com/?url=3Dhttp%3A%2F%2Fgo.mheducation.com%2FVyJFe05xXF0W000S7iPo8o0&amp=
+;data=3D02%7C01%7CAbigail.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d8=
+67df815d%7C8d281d1d9c4d4bf7b16e032d15de9f6c%7C0%7C0%7C637373556948888016&am=
+p;sdata=3DgeLWFj9ARLYBoZnw8ylFS3%2BrRPPaFFMNGkHgsKjkjpQ%3D&amp;reserved=3D0=
+" originalsrc=3D"http://go.mheducation.com/VyJFe05xXF0W000S7iPo8o0" shash=
+=3D"rw3h6QVBAOpw1iFFjIHqlNhNAbe3CaElMW0HGXamFPaB+17IPuBwom4hXw5rb+3BTMFnd71=
+7bn3WemJpy8GNr/XKTJ/ajzF8NYcJnmEbMPCsvF1XItN8SQDxkl6hyjWV2hOXriFk5x/8BpxUad=
+nKZ5vQ7Y0RvofFCnSLUiMuQus=3D" target=3D"_blank" style=3D"text-decoration: u=
+nderline; color: #692146;">PrivacyOfficerMHHE@mheducation.com</a>.</p>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td height=3D"9" style=3D"font-size:1px; line-height:1px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"em_black" align=3D"center" valign=3D"top" style=3D"font-family=
+:'Proxima Nova', Arial, sans-serif; font-size:10px; line-height:13px; color=
+:#000000;">=20
+<div class=3D"mktoText" id=3D"Footer_Text2"></div></td>=20
+</tr>=20
+<tr>=20
+<td height=3D"42" style=3D"height:42px;" class=3D"em_h20">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+<td width=3D"10" style=3D"width:10px;" class=3D"em_side15">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+</table></td>=20
+</tr>=20
+</tbody>
+</table>=20
+<a href=3D"https://nam02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fgo.mheducation.com%2FDSgi50N0WJy00XeF7o0o0xP&amp;data=3D02%7C01%7CAbigai=
+l.Thomas2%40UTDallas.edu%7C5612c27239904f5443fc08d867df815d%7C8d281d1d9c4d4=
+bf7b16e032d15de9f6c%7C0%7C0%7C637373556948888016&amp;sdata=3DcVQsmhwSe1dlOu=
+2tOeRIUORXm0nvT4khGpXsniFtbNI%3D&amp;reserved=3D0" originalsrc=3D"http://go=
+.mheducation.com/DSgi50N0WJy00XeF7o0o0xP" shash=3D"UXpkkzCE1gnR4sj6n52ypz9i=
+1bM+ZbbaVeIJDS1Cg9uDi8bWCfaYFiuLXtXnV2NW8JCh5rIVV68TX7O0Ec3Y0FLF7rE6d2VWs/z=
+6+r9Oc1gkgh5wkf4TWEIQ2rRVK7uCGUjfx4WqJn1sOAWhp2pQao3cKvRnM1+ovNDewctMoJM=3D=
+"></a>
+<img src=3D"http://go.mheducation.com/trk?t=3D1&amp;mid=3DMTI4LVNKVy0zNDc6M=
+DoxNDAzNDg6NTE0MDY4OjEzODQ3MzM6MTUxNjYwOjk6MjQ2ODA5NzoyMTEzNTY3ODQ6QVhUMTkw=
+MDU4QFVUREFMTEFTLkVEVQ%3D%3D" width=3D"1" height=3D"1" style=3D"display:non=
+e !important;" alt=3D"">
+
+&nbsp;
+</body>
+</html>=
+
+------=_Part_15093097_1667599128.1601758891667--

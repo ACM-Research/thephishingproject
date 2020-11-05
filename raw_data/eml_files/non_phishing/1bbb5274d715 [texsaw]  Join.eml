@@ -1,0 +1,510 @@
+Received: from BN6PR01MB2706.prod.exchangelabs.com (2603:10b6:404:ce::10) by
+ SN6PR01MB3806.prod.exchangelabs.com with HTTPS; Tue, 3 Nov 2020 20:50:52
+ +0000
+Received: from MN2PR06CA0022.namprd06.prod.outlook.com (2603:10b6:208:23d::27)
+ by BN6PR01MB2706.prod.exchangelabs.com (2603:10b6:404:ce::10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.29; Tue, 3 Nov 2020 20:50:42 +0000
+Received: from BL2NAM02FT050.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:208:23d:cafe::9a) by MN2PR06CA0022.outlook.office365.com
+ (2603:10b6:208:23d::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3499.19 via Frontend
+ Transport; Tue, 3 Nov 2020 20:50:42 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.148)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.148 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.148) by
+ BL2NAM02FT050.mail.protection.outlook.com (10.152.77.101) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3520.15 via Frontend Transport; Tue, 3 Nov 2020 20:50:41 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.2106.2; Tue, 3 Nov 2020 14:50:40 -0600
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.2106.2 via Frontend Transport; Tue, 3 Nov 2020 14:50:40 -0600
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id BE2CDC000052; Tue,  3 Nov 2020 14:50:40 -0600 (CST)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id 830D2C000052;
+	Tue,  3 Nov 2020 14:50:36 -0600 (CST)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=rhonda.walls@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  rhonda.walls@utdallas.edu designates 52.100.171.235 as
+  permitted sender) identity=mailfrom;
+  client-ip=52.100.171.235; receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="rhonda.walls@utdallas.edu";
+  x-sender="rhonda.walls@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: 8qbUSb0TLxa7dvCvV1YwfE8adaSUdUe2BkSsPGec58kT/UANEWgHg7y38OgUOwgQTWGSdTnLR3
+ Uikk2GXXxK0X1PGI5fs7btSN+/pEe6TZi3+F2lNrLS6/U5Oj07XIBxpCsWuu9D8sBGrLjrNS9x
+ 5LhYxJlrCSW62Q95dt6wcfF5EEFti93fC07s91jhC40sUn5nSorUo5yaM1CGEl+8L/sSQoEMR/
+ gWPRNzFAMC+XKxuN9zUfW3At+YojwM8sMeOe+lYtOT/lSSydntZz25SP3xmf98SRIPkRV1Ga6q
+ gEoXaxzGzRcqTywKMTW7IMTJ
+X-IronPort-RemoteIP: 52.100.171.235
+X-IronPort-MID: 1268911
+X-IronPort-Reputation: 2.3
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+X-IPAS-Result: =?us-ascii?q?A0A8EgCWwaFfe+urZDRiDhABAQsSDECCcgwjKSgBFwFeW?=
+ =?us-ascii?q?B4DCTQKjTiFMos8kWmBXAwCCQEBAQEBAQEBAQgBGAEMCAIEAQGESgKCCyUBO?=
+ =?us-ascii?q?BMCAwEBAQMCAwEBAQEBBAEBAQIBAQIDAgIBEwEBgQZggQIBQwZ9AT9rIw0BM?=
+ =?us-ascii?q?QyCNwUCAxgOgw4FAQEPGxMBAQQ0AgMBAQEJAUIMBC4OGAEEARcDGoI5TIF+f?=
+ =?us-ascii?q?gECDKJUAYEoPgIjARItAQELgQcpiGh0gTSDBAEBBYE3BX6DIQEJgUYJFIENF?=
+ =?us-ascii?q?4kng22CAz6BVIIaBQKBcIFZAQKBKQESASMrgwEcgiyafolgk0cDBAOCbYkKk?=
+ =?us-ascii?q?iGWISyLIJFjgWqKeJELhEECBAIEBQIQBYE0DSohaXBygh2BGglEAQIBAg0BA?=
+ =?us-ascii?q?gICAQECAQECAQECAgEBAQECAQICjhWEW4kuQEMxAjYCBgoBAQMJfItfXAGBE?=
+ =?us-ascii?q?AEB?=
+IronPort-PHdr: =?us-ascii?q?9a23=3AcByKcRG0I8bmED80SRAUWp1GYnF86YWxBRYc79?=
+ =?us-ascii?q?8ds5kLTJ76pMi9bnLW6fgltlLVR4KTs6sC17OJ9fm4AidZucnJmUtBWaQEbw?=
+ =?us-ascii?q?UCh8QSkl5oK+++Imq/EsTXaTcnFt9JTl5v8iLzG0FUHMHjew+a+SXqvnYdFR?=
+ =?us-ascii?q?rlKAV6OPn+FJLMgMSrzeCy/IDYbxlViDanbr5+MRe7oR/MusUKj4ZuJbs9xg?=
+ =?us-ascii?q?fLr3BVZ+lY2GRkKE6JkR3h/Mmw5plj8ypRu/Il6cFNVLjxcro7Q7JFEjkoKn?=
+ =?us-ascii?q?g568L3uxbNSwuP/WYcXX4NkhVUGQjF7Qr1UYn3vyDnq+dywiiaPcnxTbApRT?=
+ =?us-ascii?q?Sv6rpgRRH0hCsbMTMy7WfagdFygq1GuhKsvxxxzZDJboGJOvRwfa3Qcc8YS2?=
+ =?us-ascii?q?pbQMldSiNMDp2+YosOE+UOMv1VoJPhq1cStxayGRWgCP3pxzRVhnH2x6o60+?=
+ =?us-ascii?q?E5HA3I3AMvBdYOsHDPrNntKawcTeC1zK7OzTredfxa1yr25Y/SchAhpvGMW6?=
+ =?us-ascii?q?9/ftDLxUghDQzFilGQqZf+MjOIyuQCrnKU7+5kVe21kG4rsR9+rSWyxso1jI?=
+ =?us-ascii?q?TCm40axEze+ypj3IY1OcO3SFR9YdO8EJVdqSGXO5VoTs0sR2xmtiI3x6AIt5?=
+ =?us-ascii?q?OmYCQExpQpyhHfZfGbboWF7RbuWeKVLDl4mH9oZq6yiRaw/EW8y+DxSs+520?=
+ =?us-ascii?q?tEoCpCl9nDrHEN1xrL58iaVvty412u2TKL1w/J8eFIO147mrfGK5Mn37U+lY?=
+ =?us-ascii?q?ITvFzDEyPogkn6kbOaelk+9uS16enrf6/qqoGSOoJ0kg3yL7gil8+lDegmPA?=
+ =?us-ascii?q?UDUHKX9fqy2bH54EH0TqhGguUonqTYrJzXK8EWqrOlDwBO04su7hayAyq63N?=
+ =?us-ascii?q?kdgHUKI1dIdReHgoXvJlrAOur3De2ljFSpiDprx+7JPrnmApjVNnbOjLDvca?=
+ =?us-ascii?q?tg50JF1Qc91dNS64tTCr4aPv3/QEjxtMHEDhAiNAy03uDnB8hn2oMGQ2KPBb?=
+ =?us-ascii?q?OZP73Ovl+U5+IvJO+MaJUSuDbgN/gl4/nujXg6mVMHYaap2p4XZGi5HvRgPU?=
+ =?us-ascii?q?qZfWLhj9cfHWsQowYyUPDmhEefXTNRenq+Rbww6z87BY6+CIfMXIGtgLiP3C?=
+ =?us-ascii?q?ehGZ1WY3hLCkqMEXfvcYWLRu0DZDicI8B7ljwEUaOhRpQ81RGyqQD10b5nLu?=
+ =?us-ascii?q?7O9S0Dr57sysV65/DLmREo6TN0F9id032KT2xsgGwHWyQ20LpkoUNj0FuDzK?=
+ =?us-ascii?q?d4judcFdxS/PNJThw6OYTBz+xmFt/9QAbBftOTR1a9WNmpHyw+Ts8pyd8Uf0?=
+ =?us-ascii?q?l9A8mijgzE3yeyHbAai6eLCIYo/aLHxXTxOsl9xm3C1KkglFkmXtBPOXe7hq?=
+ =?us-ascii?q?5j6gfcHYrJk0GDmKaxb6gTwjPC9HrQhVeIp1xSBQt5UKHZWiIEd07OpPz951?=
+ =?us-ascii?q?jeVPmzFbguNg9I0oiPJrYdccDjj1hNWKL+Ps/DaXm6gWa6CFvSnq+BfJHjZD?=
+ =?us-ascii?q?Yg2j7AAmgJmgwe5yODPAk6GiDzuHPbFDVGEVP0f1iq7PVyoXe/R1Rywg2XOF?=
+ =?us-ascii?q?Z83bi48QJAmPqHVvkI1agFsips8W1oEUam1s2FN93VqgF6Or5RJ84yqANK3n?=
+ =?us-ascii?q?mfrAE7I5OIK6F5mkVYbhh7tkfq3g4xB4ldx4xioXgxigFpb7+XmAdMfCje1o?=
+ =?us-ascii?q?u2J7L/Lmjp4AvpdrLa01Xa2c3Q96sSvqcCpk3nrT2uQwAd+nFjyJ0d6Xub4J?=
+ =?us-ascii?q?nDRkJGS5L2VEo+sQdzo7XBSjQh64rQ0XR3d6S4r2mR9cguAb5v9R+ke8wbeJ?=
+ =?us-ascii?q?mEEwn+GodSU9KuL+omkh62ZxYAJ8hP6KI9O8evbL2L1LP9b7Uopy6vkWkSuN?=
+ =?us-ascii?q?M16UmL7ScpErSSjb8Y3/GV2BeGXD7gjVCn9/r6gp1AeSpNRTiy0iG9Qo5aOv?=
+ =?us-ascii?q?AuJMNXT2a2I8ingN55gs2lQGZWoWaqHEhOw8q1YVyXZl350xdX0BENoXuhlS?=
+ =?us-ascii?q?L+0DVwlyoBs7aT1SjKyv+keRYaYzQZfmRpgFbyLITxtOg0ARPyPTAgjwDtpU?=
+ =?us-ascii?q?vhzvEdpK8jcjWKBBsOfjD2KnEkWay15PKOZMtG6ZVgtisyMqz0e1CdTLL05Q?=
+ =?us-ascii?q?QT1yf4N3ZCyDk/czix/Jj1glR2hXmcI3B6sHfCMZwqg06HvJqFGqcXhGFbDC?=
+ =?us-ascii?q?Bj7FufTkCxJdyo4cmZm9/Yv+ayWnjgHpxffC/3zJ+R4S6y5GlkGxq6zJXR0p?=
+ =?us-ascii?q?XsFQk31zO+1sE/CH+O9U6kJNC0juLgar80NlNlD1L99cdgT4xlm9J2hJpMhC?=
+ =?us-ascii?q?RDw8nT/GIHlHe1OtJeisecJDIAQyAGx9nN7U3rwkpmeziTx4X/Wnzb3cJlY8?=
+ =?us-ascii?q?KSf38a0yY55tsMBauJpu8h/2M9sh+joATdbOIo1C0dzv0i4TgFiuUNoyIw0i?=
+ =?us-ascii?q?mUBrQbBg9VMTGmxFyYqtu5qqtQfmOmd7O9gVFmk+emCrWT8WQ+ED7pP40vFi?=
+ =?us-ascii?q?hq4oBjIUrBhTftv5r8doCaPpoD8weZmBDag61JJYItw7AU0DF/NzuY3zVtyv?=
+ =?us-ascii?q?Zn30A2m8Dg+tDBcyI0oeq4GkIKamWzPptMvGmr1eEHwI6Xx9z9Q88nQ21TGs?=
+ =?us-ascii?q?OuFbXxTFdw/bzmL1rcSWVg7CvEX+KZRUjGtw9ntyydSZnzbiPOfSBLw4k6HE?=
+ =?us-ascii?q?vPYxAP5WJcFDQiwMxjH1jzlpW4KRV3umhKtAy/9ksEy+RjMwTzXzXEvAmkLC?=
+ =?us-ascii?q?8uT4SSJwZX6QcE4FrJNcuZ7aR4GCQ9nNXp6QWJLibCNlZ4SFoRU0nBPGjNe7?=
+ =?us-ascii?q?yn5N3O6e+dX7bsMufCaLGKoPcYWvuVl8ui?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.77,448,1596517200"; 
+   d="scan'208,217";a="1268911"
+X-MGA-submission: =?us-ascii?q?MDErc867xg6Yw+kvpMOpbkY2+j8AeUMO3vfTT7?=
+ =?us-ascii?q?fd3Iz9hoaQubJWYHNmsZC05EjAvxruZPEYTgAP/PORJC8E2I+4Q000+T?=
+ =?us-ascii?q?QoThiq7LacfY/tZ7pq87a2ZPexRMDGsEAwhnH7kGRSDfIyRM8EEskeSB?=
+ =?us-ascii?q?hk?=
+Received: from mail-bn8nam11hn2235.outbound.protection.outlook.com (HELO NAM11-BN8-obe.outbound.protection.outlook.com) ([52.100.171.235])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 03 Nov 2020 14:50:32 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=HAMp+jQI403bYmmnlkVm5IEVISRM/WrvpWbdbG5DeKb2SjlzoS0EuUX0Xz/NcUhOPLznG2T4xK+Jh3rLaWWEqXl0ofWEKnF2KWK8x64bkTgcja7MjBqb5X5xwye67rEP1pbel7r2Y44FvoiJ5qI+nRe17yYMQRESHS/r24M0pgEVlLMgNwB4tfBTA3X4RRRIMB6yOH8ZZrH9x/JDUaHCla+MyQKTwZDyZZ8AJgZcEC4Z7ipLrv0oBfAjyQgCsbG4LfI1tifGo6SNMKz5jlHfcFQ1Y4Wmw9cqr5ZtwUKRlyadKAeAFkqngalFYGku1lVIjU8AqNQcVL+qoIAwLCyCLg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=aekBBWhAk/DDBvdCyt0XqmAp/Gs5bozjS9itKkjpO2s=;
+ b=fK4ZHiB0UG86tR2zArwxCyumlhc4AdqJxqy4Gr6LYuaGjCKTthOSGjZv1udzaUoQgNh+KnDBoM2DovtnlbO0tVb2HjJHzfq/RqIOQ9Y+uRQ2dNGss4pj43I7ATixhypZ3J7XBTgYHa5RdyVQAghLj+XbBwpkfMZQuDy9bDja6IMH6n+KhArLbJ5VJ6mGL6bGyQAQuNFOQpSMb+xFGa3gyGA/Gwn2s2kQtre1nACUGOiI9Db58lWjzzk+n9M1uQivyWQgQjutWiO7YktpZ25BoGZG1u7yHA9nfbNOmBLfSnq4a0r7ceoy0kGsqEEtUFquY2Kufog6Yb9bNPEiuB7CYw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=aekBBWhAk/DDBvdCyt0XqmAp/Gs5bozjS9itKkjpO2s=;
+ b=XRSRX/akr6hPGU7CJffCGLn0/sgsRbB61m72i7xahgjf6Eggrjo0y1In9TMu8x4gc+PDuzW3vOT/9elGYMbQj3jyhZo44Fo2TotXZxr2Q+tI0yN+6xASPTcaqH+OThkwE5VOsXjNqBu1eWhSSwN11VM0sY2tlAnQ4QnOUZLFZes=
+Received: from PH0PR01MB6167.prod.exchangelabs.com (2603:10b6:510:14::5) by
+ PH0PR01MB6375.prod.exchangelabs.com (2603:10b6:510:17::7) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3499.27; Tue, 3 Nov 2020 20:50:29 +0000
+Received: from PH0PR01MB6167.prod.exchangelabs.com
+ ([fe80::8930:575d:582c:ebec]) by PH0PR01MB6167.prod.exchangelabs.com
+ ([fe80::8930:575d:582c:ebec%6]) with mapi id 15.20.3499.030; Tue, 3 Nov 2020
+ 20:50:29 +0000
+From: "Walls, Rhonda" <rhonda.walls@utdallas.edu>
+To: ecs.se.ug <ecs.se.ug@lists.utdallas.edu>, ecs.cs.ug
+	<ecs.cs.ug@lists.utdallas.edu>
+Thread-Topic: [texsaw]  Join us for TexSAW 2020 Cybersecurity Contest
+Thread-Index: AdayIvBA/H8YQOezQrioxxUlBU39Kw==
+Date: Tue, 3 Nov 2020 20:50:29 +0000
+Message-ID: <PH0PR01MB6167613C36F7EAF92D7079FBE3110@PH0PR01MB6167.prod.exchangelabs.com>
+Reply-To: "Walls, Rhonda" <rhonda.walls@utdallas.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-TNEF-Correlator:
+list-post: <mailto:texsaw@lists.utdallas.edu>
+list-archive: <https://lists.utdallas.edu/sympa/arc/texsaw>
+list-owner: <mailto:texsaw-request@lists.utdallas.edu>
+X-no-archive: yes
+x-ms-publictraffictype: Email
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PH0PR01MB6167.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(136003)(346002)(396003)(376002)(39860400002)(33656002)(66446008)(7696005)(26005)(19810500001)(3450700001)(478600001)(64756008)(71200400001)(66946007)(70586007)(8676002)(66574015)(75432002)(66556008)(66476007)(450100002)(52536014)(186003)(2906002)(110136005)(9686003)(8936002)(5660300002)(6506007)(316002)(800100003)(166002)(86362001)(786003)(9036002)(4744005)(83380400001)(296002)(55016002);DIR:OUT;SFP:1501;
+X-MS-Office365-Filtering-Correlation-Id: a53a1ab4-00a8-42ae-c9c2-08d8803a208f
+x-ms-traffictypediagnostic: BN7PR01MB3906:|PH0PR01MB6375:|BN6PR01MB2706:
+x-ms-oob-tlc-oobclassifiers: OLM:5797;OLM:5797;OLM:5797;
+x-ms-exchange-transport-crosstenantheadersstamped: BN7PR01MB3906
+X-Microsoft-Antispam-Untrusted: BCL:0;
+x-ms-exchange-transport-endtoendlatency: 00:00:11.3034845
+x-ms-exchange-processed-by-bccfoldering: 15.20.3499.030
+x-ms-exchange-messagesentrepresentingtype: 1
+x-originating-ip: [108.234.23.131]
+x-ms-office365-filtering-correlation-id-prvs: e3acd91b-8a71-4e60-b2eb-08d87f50b9bb
+X-LD-Processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs: <PH0PR01MB6375185CEE786AD83C29429AE3110@PH0PR01MB6375.prod.exchangelabs.com>
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Message-Info-Original:
+ OhrFHxAhlY9vohovCzo/EZx8fP0jsXCsFobVz428agC0u96Tb7VoMkVS7a+E+iRNEYvM/SB9YJjy7p0Vpetb0CoTNC7RhB6G76xIz8+pCAAgsWpDJhzk8XyZFBi0BHRcLhQAoMMHqNQm11qJVyTWjE79Nzg0ehF9zm+GhdGtIp1Ayr7hsM4yy1tT5g3nk6QUkx3ktwKIP3jnWbPbxr/9OHCnS11j7wNY0na0Qobt8FZ972X16hEAPhWoPXZBoPN7o6iJaDeFAfvdHTsJ+Fq+rO0i1ELNCL+aj9hEdm62h+znBaCTAkDYY0f1N0cQMrcw+psXabf4zWUHupZHt1YGvcPk3vaKnafhs3rCq/Fjj00S+09Rh8E1rS6lQy+URejXTKQgVD0/qlQ8mErCzAGhpA==
+x-ms-exchange-antispam-messagedata: aMKxOPDX0U6cV5UBDLrJiQA1P3/XPHFDUGTkzPoVW5zp/5yCxY/05YItLPhzC1z0yDxH43cxOUBr9te5KC3LfaC5k/9nOs+Xr4GV1WeRM1UN3260I0omAtveVi6hvVH3GNzO8v3SkhCz9yASKjdAzVygjZlcBx8LH2wpVUuwm92T2BuX5iV2KbP1NxhQVJ/u4fwwK2V/5nXZQFCIkYPs8FHI9V/o1ublAtSqUX2nsQlwI7xmwTZPYkmNfwauLkOPdRY9unAisxf8Cf28I7ldi9utuMPm7EtYy7aoHb3EYOR8o+G/Y1alHc8VWKUnfofLuNNBK0qhKXq8CLkmkG7y9no2Syrblq+yk17ym0DSEFdBtSDXvbw4y4p68XAvWkjnjqsOq4dykfGVy7PCtYlP+OqUPhU3Y335SVZzLVljM3lHPE1SCKXrXDlNk52hEX+Qi3D002bqSZR9XVn0gd3PzTHhmi8JbrLAsPy/PNB6RDQ4Cl1Tz/3i3/GYC7wUqW3J2hN70wgvrxYZhaeGT7vU+C25k2MytwOtksOi71uRmXcPdKpPtXqBxySynB49LQbWWkBXIMU8iX+8mrwISj8Yt9HUms9+hXkiXqZUFkgnc+Gx31tGuq2r6YEi9sA+4bIKaFxk7OXUHmVcIj6voX6QBA==
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info-Original:
+ =?us-ascii?Q?cmJBdkicrofz++zQ+B2F0WatCf/NVb+eQLAM9Xd/X3xWUJYA5P0BtKfEHqaP?=
+ =?us-ascii?Q?EPxwDf86bKxPGknPoyeEcvtgFlhILZegA/YswTQQ6T2kWyMVm1ZAg7RAeLdN?=
+ =?us-ascii?Q?3f4mziwIJSD4DFW31Cf51u4Ql7XHr2lmDF+gafSPC3SohIMFwuTyHr82ugUz?=
+ =?us-ascii?Q?lF7qSxsS5t+JP1h9zQl0zjH9Fua/mGU77j63KI6t9cK2UypQgaZ5DkiK9CIb?=
+ =?us-ascii?Q?YtM15zw5ZKbeloVh6mAvum8afJull6mhNtVU9o1zW901I0IXMv59JAvjVXbO?=
+ =?us-ascii?Q?pTBVB8G+bXk6NSp8wzcZZ+L4QlYUK7q0kNxq/BJdLhGFrH32Np03YrDDX9io?=
+ =?us-ascii?Q?UemDeydU6KagfAamtteSyQPczLfnJ17ukO/aGiQ7nUQROu+V3eafN0czoh4g?=
+ =?us-ascii?Q?fqHUBRCoEk60BYylkJiGmDNHhI3IqLzv+7uKYCM8J68yw/HeDBcSDszcKoGM?=
+ =?us-ascii?Q?a4uMuN2mq0FkE9Y3XpTdWSaE75KRDXrOaflHsAvdcaY83vizgwvwar3qdtn8?=
+ =?us-ascii?Q?U5JykGAr7g7kvfwLYmS5vFUJc9k69uYQbwj1ZyU6ICgiC6/0zJYdjkNUNF7X?=
+ =?us-ascii?Q?Qumfbhys8QDZjSygqVWkImGu6eOvVrk/30NBwRXnqW0VhlBJI8lW+/uoXZqP?=
+ =?us-ascii?Q?Nj7IUEq+oZT+AjIEdmONOcj6iruhGVL5kSBRkpmX8lWtPblMYf0pr/tiv2wV?=
+ =?us-ascii?Q?aigAdUMzPh2W+1RHBqiU9xCgzZgyPfd+motNDLdILlX42i/EOfM1IMgNEJJb?=
+ =?us-ascii?Q?WXLIO/pfuL6YAJcxSQrzk5fqJ07ESyNN+EpelRQC+m6PjVdRxIX4yM8C4sWk?=
+ =?us-ascii?Q?9aIWhpgrvNh5PSBVK5tMd+/9iTlhBlQn3YgyqDWaZ6uY2QaRcV+YTDsgYa/s?=
+ =?us-ascii?Q?yGeNVx8tTrjV3GJANBmEbXBBKqc2ihJpetn1WcEIYO5EC9/tkclI2OcC8ZRY?=
+ =?us-ascii?Q?ieDhOFmNL5N7jPE6XQO9sd+MJnhpNPbUpLwbWF8GEpHoLe1Wcy/iBPh2J3ct?=
+ =?us-ascii?Q?bedclr3D2WiBOs5Xwqxo/a2x+XkG/YH77LRk28bzObWIear6f0OIXQcCHmq5?=
+ =?us-ascii?Q?LOuDrq7trBEPcNcya10OoJhpcZz7DiYWwhyjPtq+GWRXZMGscWgOGpY2He3u?=
+ =?us-ascii?Q?ICqOBhZEu8gWMkhqB8E0IVot8dFx8mCCoc8e5TQAU7gVfv2C33nxpwUK77+g?=
+ =?us-ascii?Q?4i7P92Ss13VNp9YJ?=
+Content-Type: multipart/alternative;
+	boundary="_000_PH0PR01MB6167613C36F7EAF92D7079FBE3110PH0PR01MB6167prod_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR01MB6375
+Subject: [ecs.cs.ug] [texsaw]  Join us for TexSAW 2020 Cybersecurity Contest
+X-Loop: ecs.cs.ug@lists.utdallas.edu
+X-Sequence: 1192
+Errors-To: ecs.cs.ug-owner@lists.utdallas.edu
+Precedence: bulk
+List-Id: <ecs.cs.ug.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20ecs.cs.ug>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20ecs.cs.ug>
+List-Post: <mailto:ecs.cs.ug@lists.utdallas.edu>
+List-Owner: <mailto:ecs.cs.ug-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/ecs.cs.ug>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/ecs.cs.ug/2020-11/PH0PR01MB6167613C36F7EAF92D7079FBE3110%40PH0PR01MB6167.prod.exchangelabs.com>
+Return-Path: ecs.cs.ug-owner@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Nov 2020 20:50:41.5677
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a53a1ab4-00a8-42ae-c9c2-08d8803a208f
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ BL2NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ BL2NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ BL2NAM02FT050.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ e3acd91b-8a71-4e60-b2eb-08d87f50b9bb
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.148;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Nov 2020 20:50:41.4658
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a53a1ab4-00a8-42ae-c9c2-08d8803a208f
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.148];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR01MB2706
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3499.032
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?XdGs+ssoIJq4mchhq0Jx4v6tahYX/c6oRw26N/ZB1c/K2tAQ5ThDUSM+EZhS?=
+ =?us-ascii?Q?Nex6FLxrYRYGUSnEk0kCQJbp7JADEr79GhHiGqnn87J1VFiiNc/Jl9PLkMNL?=
+ =?us-ascii?Q?7kMPjursjxc7a2dJ0MnKRONHz1CyGyyuvhhLseWZffYGUcPr/AVAC4QxitwU?=
+ =?us-ascii?Q?vGOleUxCkC6ohb3dA68Dj9CJFzU5ZFsB3uRMGqKI+IQnTAhoUEH8mEli0/5f?=
+ =?us-ascii?Q?A8EtRLWO+YBcmIx+ZS8Omn5ZcxC/JN7g/iqt03njHmD28QOy1AAotWFBPm6o?=
+ =?us-ascii?Q?/jJ5ejsdKabO+fRmHzxzz0fyelaBaSve9K1S415siPnSZBZokMUGfotYp3K3?=
+ =?us-ascii?Q?RBMiIIwt1pESGGvbCB/OHcWWuaqBFW3p/EXC5qqUQJz3ap4iGDrrabRLW1h/?=
+ =?us-ascii?Q?FmmsetS5M50x2gFP6cca39btG6TObrOyygkd96pZufoCDZAdfyK7xIemrazN?=
+ =?us-ascii?Q?8Aw6EkP1sbZQ8j982uld9lM22+RCTGr9n1SP1K8ViEWdNR/ZKvrKcu+0l7gu?=
+ =?us-ascii?Q?Y3CVjVYeKDuTfB2kUAWcKfuCkTm/tgM+lkhBUuqC/vXFv4xsvlM8VLXsF2Px?=
+ =?us-ascii?Q?5ICByK5LFdpWrOiXQXR/TSYeAdwzVWLUOePrFwn3ZnMZoaUPgXeVl0FCl5Pl?=
+ =?us-ascii?Q?umNq0/3r5ruQdGGcDu4EH1I3mjLyp3mZCDPtTh76XdqdlYeB5ADf+bvxuA4V?=
+ =?us-ascii?Q?cHDplDcSH5eNiRIyKMBQ8ofmD4AqbTPdGpjW30zCJmpd0v53DEkAr3V00lTJ?=
+ =?us-ascii?Q?hee3onQC7sZy1AnpemSYVYFw5O79lLbEVXqKLASgRFyRFlYkWdPTz2jpKvA4?=
+ =?us-ascii?Q?GZc+jtYvgcJQEuo/H17hP80Otq1xNQTYorL2zQyrZlwaZoLjGSRuht/ly7no?=
+ =?us-ascii?Q?sVqVBFyeQJ1lNkxZ5N+QNsjiWxSo8V01dB4Ivsbm7QhzTZ/B+aKdiDtjZk8C?=
+ =?us-ascii?Q?EMMFjcavzWdAyZnqzBzSy1VBuYKVe0IbEVR/zAMtSyCBU+Sy4MkiEOKxJqpv?=
+ =?us-ascii?Q?Uhkfu2+WLLjleL7QNoztCDrY1SGoqbut7ggfQ5RQK1AKBX2MwepglZ/c23Bj?=
+ =?us-ascii?Q?C+pcirEVFYgKwKQMrp/pzl6PI0N0Pan8RGEKLa4MA+G64D+JGXeuRWXWf5vU?=
+ =?us-ascii?Q?YISscT4bg+jt0BDLwxBeUl9JNAaKeayovFNkKQl+j5eqQSXImux7ZlzXTxSz?=
+ =?us-ascii?Q?pG1wjJ6KOUqGKNdbd3FR/QCAmYR+OerDOrGgjCcEmp/y7pSr/DMab9NhADMU?=
+ =?us-ascii?Q?ls6PGzLfua2GVQ9h9KY8KlZn/N2/cYrkLaw8iwy/xAGPtNE6TRZ2n//C+G0I?=
+ =?us-ascii?Q?0U3AWh4N8BotDse882taKbmSEWUKVEZSFq6xs+Z3TqmwFBqjkWJOco4yBpRK?=
+ =?us-ascii?Q?ONOQ/dDrw6XP+TCBRdWEzrrRzXQNoF1A/O8IsdDqrgnz2cOW0lgMsiCWPnjn?=
+ =?us-ascii?Q?hT/ocRhWFWGpFN68yOVP7+Yw3YQaC47BYl7mvOk8d+g3GjlToimmUOUKeZSb?=
+ =?us-ascii?Q?RKjbwc62lg0OrGJnayYchQvad7SV5In+Xd2cSQDG40teSsp6c+30jPq1aPrr?=
+ =?us-ascii?Q?wGr3683fhjdKdbLZXIlXYokqN2XNIQP04FJOP3l3?=
+MIME-Version: 1.0
+
+--_000_PH0PR01MB6167613C36F7EAF92D7079FBE3110PH0PR01MB6167prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+[The University of Texas at Dallas]<https://www.utdallas.edu/>
+[https://www.utdallas.edu/evites/texsaw-2020/images/TexSAWposter2020.jpg]<h=
+ttp://csi.utdallas.edu/events/TexSAW-2020/>
+
+
+Students will have opportunity to review suggested study material at their =
+own pace and use their newly acquired knowledge during the TexSAW virtual c=
+ybersecurity competition event.
+
+Tenth Annual Texas Security Awareness Week <https://csi.utdallas.edu/events=
+/TexSAW-2020>
+
+November 14-15, 2020
+
+Virtual
+
+The University of Texas at Dallas
+800 W. Campbell Road
+Richardson, Texas 75080
+
+
+[https://www.utdallas.edu/evites/templates/12/images/12-footer.png]
+Having trouble viewing this email? View it in your browser<https://www.utda=
+llas.edu/evites/texsaw-2020/>.
+
+
+--_000_PH0PR01MB6167613C36F7EAF92D7079FBE3110PH0PR01MB6167prod_
+Content-Type: text/html; charset="us-ascii"
+Content-ID: <B399600FC8368A41A24E9E9E7F4EC65C@prod.exchangelabs.com>
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]-->
+<title>Tenth Annual Texas Security Awareness Week - Erik Jonsson School of =
+Engineering and Computer Science - The University of Texas at Dallas</title=
+>
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.readmsgbody, li.readmsgbody, div.readmsgbody
+	{mso-style-name:readmsgbody;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.externalclass, li.externalclass, div.externalclass
+	{mso-style-name:externalclass;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.body-header
+	{mso-style-name:body-header;}
+span.EmailStyle22
+	{mso-style-type:personal-compose;
+	font-family:"Times New Roman",serif;
+	color:blue;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body bgcolor=3D"#F5F4F0" lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"max-width:6.25in">
+<tbody>
+<tr>
+<td style=3D"padding:0in 0in 0in 0in">
+<div align=3D"center">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"max-width:6.25in">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><a href=3D"https://www.utdallas.edu/"><span style=3D=
+"text-decoration:none"><img border=3D"0" width=3D"600" height=3D"60" style=
+=3D"width:6.25in;height:.625in" id=3D"_x0000_i1027" src=3D"https://www.utda=
+llas.edu/evites/testing-center-open-house-2018/utd-header-orange.jpg" alt=
+=3D"The University of Texas at Dallas"></span></a><o:p></o:p></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><a href=3D"http://csi.utdallas.edu/events/TexSAW-202=
+0/"><span style=3D"text-decoration:none"><img border=3D"0" width=3D"600" he=
+ight=3D"364" style=3D"width:6.25in;height:3.7916in" id=3D"_x0000_i1026" src=
+=3D"https://www.utdallas.edu/evites/texsaw-2020/images/TexSAWposter2020.jpg=
+" alt=3D"https://www.utdallas.edu/evites/texsaw-2020/images/TexSAWposter202=
+0.jpg"></span></a><o:p></o:p></p>
+</td>
+</tr>
+<tr>
+<td style=3D"background:white;padding:0in 33.75pt 15.0pt 33.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span s=
+tyle=3D"font-size:13.0pt;font-family:&quot;Georgia&quot;,serif"><br>
+<br>
+Students will have opportunity to review suggested study material at their =
+own pace and use their newly acquired knowledge during the TexSAW virtual c=
+ybersecurity competition event.
+<br>
+<br>
+</span><span class=3D"body-header"><span style=3D"font-size:15.0pt;font-fam=
+ily:&quot;Georgia&quot;,serif;color:#C75B12"><a href=3D"https://csi.utdalla=
+s.edu/events/TexSAW-2020"><span style=3D"color:#C75B12;text-decoration:none=
+">Tenth Annual Texas Security Awareness Week
+</span></a></span></span><span style=3D"font-size:13.0pt;font-family:&quot;=
+Georgia&quot;,serif"><br>
+<br>
+November 14-15, 2020<br>
+<br>
+Virtual<br>
+<br>
+The University of Texas at Dallas<br>
+800 W. Campbell Road<br>
+Richardson, Texas 75080<br>
+<br>
+<br>
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><img bo=
+rder=3D"0" width=3D"600" height=3D"52" style=3D"width:6.25in;height:.5416in=
+" id=3D"_x0000_i1025" src=3D"https://www.utdallas.edu/evites/templates/12/i=
+mages/12-footer.png" alt=3D"https://www.utdallas.edu/evites/templates/12/im=
+ages/12-footer.png"><o:p></o:p></p>
+</td>
+</tr>
+<tr>
+<td style=3D"border:none;border-bottom:solid #C75B12 4.5pt;background:white=
+;padding:6.0pt 0in 9.0pt 0in">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span s=
+tyle=3D"font-size:8.5pt;font-family:&quot;Georgia&quot;,serif;color:#666666=
+">Having trouble viewing this email? View it in your
+<a href=3D"https://www.utdallas.edu/evites/texsaw-2020/"><b><span style=3D"=
+color:#008542">browser</span></b></a>.<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_PH0PR01MB6167613C36F7EAF92D7079FBE3110PH0PR01MB6167prod_--

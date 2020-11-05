@@ -1,0 +1,594 @@
+Received: from CO2PR01MB2149.prod.exchangelabs.com (2603:10b6:102:15::11) by
+ SN6PR01MB3806.prod.exchangelabs.com with HTTPS; Wed, 9 Sep 2020 20:21:45
+ +0000
+Received: from SN2PR01CA0067.prod.exchangelabs.com (2603:10b6:800::35) by
+ CO2PR01MB2149.prod.exchangelabs.com (2603:10b6:102:15::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3370.16; Wed, 9 Sep 2020 20:21:44 +0000
+Received: from SN1NAM02FT017.eop-nam02.prod.protection.outlook.com
+ (2603:10b6:800:0:cafe::22) by SN2PR01CA0067.outlook.office365.com
+ (2603:10b6:800::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3370.16 via Frontend
+ Transport; Wed, 9 Sep 2020 20:21:44 +0000
+Authentication-Results: spf=softfail (sender IP is 129.110.242.147)
+ smtp.mailfrom=lists.utdallas.edu; cometmail.mail.onmicrosoft.com; dkim=fail
+ (signature did not verify)
+ header.d=utdallas.edu;cometmail.mail.onmicrosoft.com; dmarc=fail action=none
+ header.from=utdallas.edu;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ lists.utdallas.edu discourages use of 129.110.242.147 as permitted sender)
+Received: from webmail.utdallas.edu (129.110.242.147) by
+ SN1NAM02FT017.mail.protection.outlook.com (10.152.72.115) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256) id
+ 15.20.3348.17 via Frontend Transport; Wed, 9 Sep 2020 20:21:43 +0000
+Received: from utdex12.campus.ad.utdallas.edu (10.180.14.117) by
+ utdex11.campus.ad.utdallas.edu (10.180.14.116) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1979.3; Wed, 9 Sep 2020 15:21:08 -0500
+Received: from lists.utdallas.edu (10.182.70.33) by
+ utdex12.campus.ad.utdallas.edu (10.180.14.117) with Microsoft SMTP Server id
+ 15.1.1979.3 via Frontend Transport; Wed, 9 Sep 2020 15:21:08 -0500
+Received: by lists.utdallas.edu (Postfix, from userid 153)
+	id A2EF2C000061; Wed,  9 Sep 2020 15:21:08 -0500 (CDT)
+Received: from esa1.hc4541-4.iphmx.com (esa1.hc4541-4.iphmx.com [68.232.155.114])
+	by lists.utdallas.edu (Postfix) with ESMTP id 819A6C000052;
+	Wed,  9 Sep 2020 15:15:21 -0500 (CDT)
+Authentication-Results-Original: esa1.hc4541-4.iphmx.com; spf=Pass
+ smtp.mailfrom=kellykinnard@utdallas.edu
+Received-SPF: Pass (esa1.hc4541-4.iphmx.com: domain of
+  kellykinnard@utdallas.edu designates 40.107.75.71 as
+  permitted sender) identity=mailfrom; client-ip=40.107.75.71;
+  receiver=esa1.hc4541-4.iphmx.com;
+  envelope-from="kellykinnard@utdallas.edu";
+  x-sender="kellykinnard@utdallas.edu"; x-conformance=spf_only;
+  x-record-type="v=spf1"; x-record-text="v=spf1
+  ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/14
+  ip4:104.47.0.0/17 ip6:2a01:111:f400::/48
+  ip6:2a01:111:f403::/48 include:spfd.protection.outlook.com
+  -all"
+IronPort-SDR: ghcUPlPny8o1c0x/73ESnd3xwHrhMDLrwfdS94cxHo8ihLkPcy6l0TmKG0RkiwajbiCC/wiVsE
+ +ZktF0Fq9kA2W5erTe7KZt3VJ6bIk8JAC4Pbw/2/tKXCalW/vyn/bQol8hnyTOwyYDAZuQ90dX
+ CeHak5qYTczjL2VEjR8S1kXeL5Z+Hm70brMkCwHZrwpJhd8RKWXjwNo+erDPwf89orME0GctI0
+ d9vMOfLvci54qFz4XXxjv62AFMnr/5Gu+qZlq5mrsJHjgUednpQWk0+kGlrHNlNDww/a2qH9/r
+ BZAaMr1HO6Ta93t09uooSDi8
+X-IronPort-RemoteIP: 40.107.75.71
+X-IronPort-MID: 615445
+X-IronPort-Reputation: 3.5
+X-IronPort-Listener: IncomingMail
+X-IronPort-SenderGroup: UNKNOWNLIST
+X-IronPort-MailFlowPolicy: $ACCEPTED
+IronPort-PHdr: =?us-ascii?q?9a23=3AxXaFKR28a+ycFZWNsmDT+DRfVm0co7zxezQtwd?=
+ =?us-ascii?q?8ZsesUKf7xwZ3uMQTl6Ol3ixeRBMOHsqwC0reL+Pm8ASQp2tWoiDg6aptCVh?=
+ =?us-ascii?q?sI2409vjcLJ4q7M3D9N+PgdCcgHc5PBxdP9nC/NlVJSo6lPwWB6nK94iQPFR?=
+ =?us-ascii?q?rhKAF7Ovr6GpLIj8Swyuu+54Dfbx9HiTagYL5+Ngi6oAXRu8UZnIdvJbo9wQ?=
+ =?us-ascii?q?bVr3VVfOhb2XlmLk+JkRbm4cew8p9j8yBOtP8k6sVNT6b0cbkmQLJBFDgpPH?=
+ =?us-ascii?q?w768PttRnYUAuA/WAcXXkMkhpJGAfK8hf3VYrsvyTgt+p93C6aPdDqTb0xRD?=
+ =?us-ascii?q?+v4btnRAPuhSwaMTMy7WPZhdFqjK9DoByvuQFxw5Labo+WNfpxYqzScMgARW?=
+ =?us-ascii?q?ZdQspcTTBNDp+iY4YJEuEPPfxYr474p1YWoxewAAisBOXpyjBSnH/5wLU22P?=
+ =?us-ascii?q?kkHw7Y2AwgG9IPvHrJp9jyN6cdT+S1zK3IzDXAbvNW3zH955LSch88uvyMQK?=
+ =?us-ascii?q?5wftfLxkkrEwPKlE6QpZb7MDyIy+QAqm6W5PdvWuyzkWAosR1xoiSxycc2jI?=
+ =?us-ascii?q?nEnoAYx1TE+yllz4s4ON+1RFBnbNO6DpZdqS+UOYV5TM4/QGxkpig0xLIatJ?=
+ =?us-ascii?q?OleCUG1popyhHfZfKJfIWF4hLtWemXLDxlinxlf7e/iAyz8Uim0uD8S9W030?=
+ =?us-ascii?q?tQoSpBltnDrGsN2wbN5ceaV/tw+Fqq1zWX1w3L5exIPVo4mbfHJ5Mj2LI9lJ?=
+ =?us-ascii?q?oevV7BEyPrgEn6kbGae0E+9uS19ujrfq/qqoGTOoNqkA3yL7kiltShDek5Lg?=
+ =?us-ascii?q?QDUW2W9fmg2LL4/ED0RatGguE1n6Tcv53XKsEWq6ukDwJW1Iso9gyxAC280N?=
+ =?us-ascii?q?sCmHkKNFJFdwyDj4juI1zAOOz1A/Cjj1iyiTtm2vbIMqP4DpXKNXfMjq3tfb?=
+ =?us-ascii?q?Fg605A0wUzys1f55RJBb0bOPLzQEjxtMDGARAlLwy0wuHnCNNn2oMZRGKPHq?=
+ =?us-ascii?q?uZMKTVsV+L/O4gP+6MZIoNtDb8Lfgq+eLugGc2lFMBZ6WlwIcbZXKiEvlkI0?=
+ =?us-ascii?q?iVe3jhjsoZHWcPpAU+TejqiFOYUT5UYna/R6E86S8/CIKiDYbDRYGtgLqH3C?=
+ =?us-ascii?q?ihBJ1Ze3tLCk2QEXj1bYqEX/MMZziJIsN7jDMLSKWhR5c71R6yrA/616ZnLu?=
+ =?us-ascii?q?3M9yMYr53syMV15+nPlRAy7jF0C8Wd03qRT2FvhG8IWiM2071lrkx5zleMy7?=
+ =?us-ascii?q?N4j+ZGGtNO+vNDSh06OoLEz+xmF9DyXRrMcMqVSFa7X9qpHzcxTs4qw9IVZ0?=
+ =?us-ascii?q?Z9Gs6ijgzY3yawHr8Vi6GEC4Yw8qLYxXfxPNxxxGjb26k8l1MmWNdANXW6hq?=
+ =?us-ascii?q?5j8AjeH5PHk1mDmKake6QRxyrN9GaYzWqSp0FUShNwUbnYUn8FYkvWqc725l?=
+ =?us-ascii?q?jYQ7CwFLsnL1gJ9cnXBKJBd9n1nHFHX+urbPrXaH+1h3aYAReT2qjKcZbmcm?=
+ =?us-ascii?q?EZ1T6bBUQZxURbxmqbOQU4GjyFonnCRGhVCU/jbkXw6sF6qWinVQkp0w2Da0?=
+ =?us-ascii?q?lozPy49gNDwbSnV/od0JYFoztp/w5oFViz99bXEMab4Rd9cKxYZdomplpLyD?=
+ =?us-ascii?q?SKmRZ6O8nqDKFkgFcEf0A/nE7q0wQ9QtFDnMwuvXArygx7M66wzU9Nfjec1I?=
+ =?us-ascii?q?u2N7HKfDqhtCuzYrLbjwmNmO2d/b0Cvaxi8QfKoR2pG0w+8n5uz9hS1T6m64?=
+ =?us-ascii?q?7XCBYJDsmjX10+rl56rO2HPnB4u8XVzX1pIe+/tTqRk8kxCr4dww27N8xaLL?=
+ =?us-ascii?q?vCEQbzF8MAAM37K+Eun0mqbxQCNfpe3LMoM8qic/KdnqOnIb86zgirhmlG/o?=
+ =?us-ascii?q?1xl3m02XcmGrzw1o0ei7GVxQLeETf30Ar964Wr34FcZTQCWGG4zHqsCIlUb6?=
+ =?us-ascii?q?x0NYEFbAXma866wtFvhJ/rXXdC+Ha+G18P3MugYlyfY0G10QBL1EsRqGCqgm?=
+ =?us-ascii?q?Pkl3oty25v8ffZg3WGyv+HFlJPImNRQWh+kVrgaZO5idwXRgngbgQkkgek+V?=
+ =?us-ascii?q?evwqFaoKplKGyACUxMfiXwMyRjSv7s7vzbO5EJt85u7nwENYb0KUqXQbP8vR?=
+ =?us-ascii?q?YAhi74FjIYxDtnKm3z/8m/ngR6jXLbJ3F2/x+7MYl9wwnS4NvESLtfxD0DEW?=
+ =?us-ascii?q?N7hD3TF1u9Od+g59m8iovPu+S6XnnnW5FOO3qOr8vIpG6g6GtmDAfq1fO+nt?=
+ =?us-ascii?q?n2Egk81ybh2/F3SSnBqBL1ec/m27nwYqp3O0JvAlH78c9zHIpzx5AoiqYX33?=
+ =?us-ascii?q?wL1fD3tTIX1H3+OtJB1efifWIAEHQVlsXN7lGviwVza2iEzIXjWjCBz9t9Mp?=
+ =?us-ascii?q?OkN3gO1HtYjYgCCb/IvuAc23ov5AL+9UWIPLB8hmtPlaNosSZFxblP4E10kG?=
+ =?us-ascii?q?2cGuxAQBMeZHS00UzOt5fn8MA1LC6uaeTijRIi24z+SunE+kYFBz74YslwRy?=
+ =?us-ascii?q?Yot5cmaQue3iGrstO2P4WACLBb/hyMzUWahrAMestoz6gE2XI8azC64S1tyu?=
+ =?us-ascii?q?gwiQFi0MOhpIaLbX13+760CQJZMTuzYN4P/jbqjuBVmcPzvcjnW5xlHn9SDc?=
+ =?us-ascii?q?nYCMmwGTdXjszJcgOHETkysHCeQOaNABOT4UNipmmJHpy2ZSia?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A0AKBgAgN1lfh0dLayhcAw4OAQEBAQE?=
+ =?us-ascii?q?BBwEBEgEBBAQBAUCBTwKBIS9Rd1geAwcILAqNMKJYgXwCCQEBAQEBAQEBAQM?=
+ =?us-ascii?q?BAwEnBgIEAQGESwKCEiQBOwMNAgMBAQEDAgUBAQEEAQEBAgEBAgMCAgETAQE?=
+ =?us-ascii?q?BCA0JCCkwgWIBgUYBgSkhCgQxDII3IoMcCQEMEwgBEgEBOBEBJQEBAR8JBRA?=
+ =?us-ascii?q?BDgwUEgEEAREBBgIGFIMEAYJ8AQIMpXwBgSg+AiMBEi0BAQIJgQUpiVWBNIM?=
+ =?us-ascii?q?BAQEFgTMBhDIBCYE/BwMGgTgBgx6Eb4ELhCyBQj6BEUOFZwQXgUgrCRGDA4I?=
+ =?us-ascii?q?tmgWBTIohhWyDEYd/AweCZYcZApM4gwmJb44ehUCIQ4gxgV2fVwIEAgQFAhA?=
+ =?us-ascii?q?FgX0BgWdygzcTOgECAQIUAQECAQEIAQEBAY4cDA4JhDiJLj5DMQIBNAIGCgE?=
+ =?us-ascii?q?BAwl8jW0BgRABAQ?=
+X-IPAS-Result: =?us-ascii?q?A0AKBgAgN1lfh0dLayhcAw4OAQEBAQEBBwEBEgEBBAQBA?=
+ =?us-ascii?q?UCBTwKBIS9Rd1geAwcILAqNMKJYgXwCCQEBAQEBAQEBAQMBAwEnBgIEAQGES?=
+ =?us-ascii?q?wKCEiQBOwMNAgMBAQEDAgUBAQEEAQEBAgEBAgMCAgETAQEBCA0JCCkwgWIBg?=
+ =?us-ascii?q?UYBgSkhCgQxDII3IoMcCQEMEwgBEgEBOBEBJQEBAR8JBRABDgwUEgEEAREBB?=
+ =?us-ascii?q?gIGFIMEAYJ8AQIMpXwBgSg+AiMBEi0BAQIJgQUpiVWBNIMBAQEFgTMBhDIBC?=
+ =?us-ascii?q?YE/BwMGgTgBgx6Eb4ELhCyBQj6BEUOFZwQXgUgrCRGDA4ItmgWBTIohhWyDE?=
+ =?us-ascii?q?Yd/AweCZYcZApM4gwmJb44ehUCIQ4gxgV2fVwIEAgQFAhAFgX0BgWdygzcTO?=
+ =?us-ascii?q?gECAQIUAQECAQEIAQEBAY4cDA4JhDiJLj5DMQIBNAIGCgEBAwl8jW0BgRABA?=
+ =?us-ascii?q?Q?=
+X-IronPort-AV: E=Sophos;i="5.76,409,1592888400"; 
+   d="png'150?scan'150,208,217,150";a="615445"
+X-MGA-submission: =?us-ascii?q?MDHjsEeQBFUF4oJzo4ApewYRoVRs/VtCc7udVJ?=
+ =?us-ascii?q?Bdis52I+Wdqim4YWg2Ztb67AoL8xD2mRT5k8B8Zoc/KaLapZFpnt1YHR?=
+ =?us-ascii?q?ZZN3bvs0IttL+DxeDOvDSfPLiCnm9xwZ8UH7bhn2vYoMycF93LqxsAgK?=
+ =?us-ascii?q?Sb?=
+Received: from mail-eopbgr750071.outbound.protection.outlook.com (HELO NAM02-BL2-obe.outbound.protection.outlook.com) ([40.107.75.71])
+  by esa1.hc4541-4.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 09 Sep 2020 15:15:17 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=QXEdr0jT3/2vjLFGcd3375ltlZL6c4GsxqVVcj07dXdYR1JLic51NTn5r/6V/2m9IBiKdOSsWrSI/nvt+1rhH+dESTYRsyh5VOxGzpZ5DHuGQHM4qreSTXZcRIUmLtP7NvqrtrxRwa8zctxTQFI7s+4edZ86+XvF6TZBQ4b1tfgjFI7GT+uv//zuZyg4tggJFwf+tSc81JWY6cg2bqeDoJ475WGjTLAxR8H+mwwaFRtYmrXPTT+S3qudmIPNJYOA4SuzXcqAst3WztxKhEiE1eGr0+poxEimELPtOE0a4wMrDUS+dnLqWBqjlUbmayFrnVPdsPjg3wx6mBrnSaE3sQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=NjM+TYLK4WzKdNUUCfZy6Q+KDiqzg5y5U2OnSEXPkZk=;
+ b=bxEEsUS25za4gtIwVnLcy1tMou9c3JUAmquUNm1XFPxxRc46yHlQycBIrEU7Hyo7k+xC3NLAJ83CKPdnFcj3dYzvvFMiQBCzXGlitr6o6LwjWkUJmqNs6+HaBPJpsVZ3s8EUWSfmQgr8fi8AqNPwr6UxgvHphg1TH/0aRE7R1IcqHjLuB7T5nxlVI+XblTOVnXj1Fob1EWgnYF/OoFVjC6syP3O4fjmfoQa0g+3nm61Dqwt+oKoV15IFsRIF7mRrCMNoRGOBC/vtzqSBtKb2mSQA+hgbhBbwj4RH2IOeQ8ERlW9oOCp9ltRTN2ZRu1wwnEBc93BAqan0yC9APWC+Fw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utdallas.edu; dmarc=pass action=none header.from=utdallas.edu;
+ dkim=pass header.d=utdallas.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=utdallas.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=NjM+TYLK4WzKdNUUCfZy6Q+KDiqzg5y5U2OnSEXPkZk=;
+ b=PjPc6isrn+fPPzgaazCz1bV4byyOs4cAXW5LMNidbzqUYjarHgX7z5skvT+NNXKtE5glZh6ynEi7GPqLDd6XK2iz5SCTAKNkJLamwbYm8XBZURF1AVqJ8N/HUdDsT2cgFhqAioD1bbvd7eqRx3g0vYL3Iup2fOPnQeEvXoq8Zfk=
+Received: from BL0PR01MB4276.prod.exchangelabs.com (2603:10b6:208:44::18) by
+ BL0PR01MB4435.prod.exchangelabs.com (2603:10b6:208:37::31) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3370.16; Wed, 9 Sep 2020 20:15:14 +0000
+Received: from BL0PR01MB4276.prod.exchangelabs.com
+ ([fe80::e495:25ca:c5f5:36cb]) by BL0PR01MB4276.prod.exchangelabs.com
+ ([fe80::e495:25ca:c5f5:36cb%5]) with mapi id 15.20.3348.019; Wed, 9 Sep 2020
+ 20:15:14 +0000
+From: "Kinnard, Kelly" <kellykinnard@utdallas.edu>
+To: FacultyList <Faculty@lists.utdallas.edu>, StudentsList
+	<Students@lists.utdallas.edu>, StaffList <Staff@lists.utdallas.edu>
+Thread-Topic: Rutford Closure
+Thread-Index: AdaG5WrTKyJdozGJRfSV9XYg1owL5g==
+Date: Wed, 9 Sep 2020 20:15:13 +0000
+Message-ID: <BL0PR01MB42765E3B564E51FEDE9D21B8B4260@BL0PR01MB4276.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [129.110.242.11]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: 38a6b896-8525-4320-7b45-08d854fdf823
+x-ms-traffictypediagnostic: BL0PR01MB4435:|CO2PR01MB2149:
+x-ld-processed: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-microsoft-antispam-prvs: <BL0PR01MB44357A7E93B381C9A2219C62B4260@BL0PR01MB4435.prod.exchangelabs.com>
+x-ms-oob-tlc-oobclassifiers: OLM:9508;OLM:9508;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ yMu1u+64p3OjpoVIXn5xAPHQoMyzfjQ5ltvSRP4nY9Jfk+wLxGv+In7XQ9H97tDpKUdCnH1YVFefgnVIcyPQiv2EEDIoTHza3oUDfpNGS2AEhRKKpxIu3+UH1aBxnV+DHJ+6y/yiswOp4IIB93tulxTuZ/AcwY2UoqWiZ/BoyGJnwWfrqQqQ3jI6va55cw0KFjvTOaRc9W2YB8jDNse6myVFw1/VjfSL2/GJyIwUQruaPI92/tOmGh+9XaVc4lsHPtBEOCRvHLR6mowkwq68jNs+rAwvwBBIJz82SNrhO6kpvufhEXZR0m25nnyw1rcgoX/XVJj54uz6NGiT8KPO6mMO/KKarSfgtIfdqfLdCpK2tTSUwHEdFHhlDsflZ14m76EW1CN8A1oHL726WlsTww==
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL0PR01MB4276.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(4636009)(136003)(39860400002)(396003)(346002)(376002)(366004)(2906002)(7116003)(26005)(52536014)(71200400001)(8676002)(33656002)(7696005)(8936002)(6506007)(66476007)(66946007)(5660300002)(76116006)(66616009)(66556008)(64756008)(66446008)(296002)(316002)(186003)(786003)(4744005)(86362001)(110136005)(99936003)(450100002)(83380400001)(9686003)(966005)(478600001)(75432002)(55016002)(166002)(3480700007);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata: LoU8FdRQV7nanghwLppOqc16K8AVV8opNkwESsunRRx1YErfGSeU2FASWtQ1Y01EHqo8/Y0KMfjIDGJH2sgbLzsZrvdUYs7KnBjeKkbM4H+1ZxyHkERbn97hYhH+kwB7fNPZkaq88ri+VNqEjJrW3zfDWUh+m16HlrMIRBGw0rcFneKmGZ4n+eTawLp4ogxBDh7x1sEy1AhJky6x1/wkPNYiCepFdMyjevtyn38wLhTsRjfbWRRe2d9039Dk8eCH/IHrNyLBF5o9ozkFSaTrMndL7t1YlDZmn/lulndGOEO4YTJbdWzdseANqF/ej3xh03V3iis8xxPqHTqVC0sYXxWVxFghnC3n1un/CjdkuailHaHF5CdWpLkTitK5mm6mrGV3LxcbOyx3BfA4cKQcEj3eaUAD+AzFkRgTa4jMZyUfsUww2hm9Q4Z97vRSsoFNKDIRhlQxR7Lsm/bj7wv4M5/4G3VD3a+7NO1ABYIUq6s1ZCLjKo1TD5lP20/i5QLp395/MMMoKotwxLrdGvAIZqMzWY7SVgUYr2PTYzXs+7f5wXG3NodpTWLiyHsPECHoFbQm+qxMH0BvotVUSJjC082s9hGC+sPKvLdFxjI8FMQRpZ+jrkLUrMQofyFowwcaNvjLY06gKQnXsut38cJNsQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/related;
+	boundary="_004_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR01MB4435
+Subject: [students] Rutford Closure
+Reply-To: "Kinnard, Kelly" <kellykinnard@utdallas.edu>
+X-Loop: students@lists.utdallas.edu
+X-Sequence: 1409
+Errors-To: students-owner@lists.utdallas.edu
+Precedence: bulk
+Sender: <students-request@lists.utdallas.edu>
+X-no-archive: yes
+List-Id: <students.lists.utdallas.edu>
+List-Help: <mailto:sympa@lists.utdallas.edu?subject=help>
+List-Subscribe: <mailto:sympa@lists.utdallas.edu?subject=subscribe%20students>
+List-Unsubscribe:
+ <mailto:sympa@lists.utdallas.edu?subject=unsubscribe%20students>
+List-Post: <mailto:students@lists.utdallas.edu>
+List-Owner: <mailto:students-request@lists.utdallas.edu>
+List-Archive: <https://lists.utdallas.edu/sympa/arc/students>
+Archived-At: <https://lists.utdallas.edu/sympa/arcsearch_id/students/2020-09/BL0PR01MB42765E3B564E51FEDE9D21B8B4260%40BL0PR01MB4276.prod.exchangelabs.com>
+Return-Path:
+ bounce+abigail.thomas2==a==utdallas.edu==students@lists.utdallas.edu
+X-OrganizationHeadersPreserved: utdex11.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Sep 2020 20:21:43.9459
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 38a6b896-8525-4320-7b45-08d854fdf823
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-CrossPremisesHeadersPromoted:
+ SN1NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ SN1NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SN1NAM02FT017.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: utdallas.edu
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 14eb744d-7023-49a5-a282-08d854fd0fc2
+X-MS-Exchange-Organization-SCL: -1
+X-EOP-Transport-Rule-SympaDomainAllow: Triggered
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:129.110.242.147;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:webmail.utdallas.edu;PTR:InfoDomainNonexistent;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-Safelinks-Url-KeyVer: 1
+X-MS-Exchange-ATPSafeLinks-Stat: 0
+X-MS-Exchange-ATPSafeLinks-BitVector: 1000:0x0|0x0|0x1000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Sep 2020 20:21:43.8759
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 38a6b896-8525-4320-7b45-08d854fdf823
+X-MS-Exchange-CrossTenant-Id: 8d281d1d-9c4d-4bf7-b16e-032d15de9f6c
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=8d281d1d-9c4d-4bf7-b16e-032d15de9f6c;Ip=[129.110.242.147];Helo=[webmail.utdallas.edu]
+X-MS-Exchange-CrossTenant-AuthSource: utdex12.campus.ad.utdallas.edu
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO2PR01MB2149
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8956166
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3348.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750128)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?kway1aaBRnXxbpXvah68cFQ96F4epZeHuOCyfQNZ+yEd1KD90KCUR/To?=
+ =?Windows-1252?Q?OjPhpLENpCIOTVcGhKqbUczZOY1qzJoJHy+XOY0krW9SE0TmFVQtg72U?=
+ =?Windows-1252?Q?mkpDJWXpLfBmR9JH+rln+kgop3g9hwfNI2kKtt2GF0Vs3hoJ62+oAevu?=
+ =?Windows-1252?Q?GsQUM7o6FRsxDGBFsu3fXKwB/ltddwqVIH23piMBgrbDjiaYh0zG8dlG?=
+ =?Windows-1252?Q?TZQNGEKMklITE6NPliC5fHwghofcq6LYnUriV2IrWMmiU41tFxef485J?=
+ =?Windows-1252?Q?mOER1dvy9re3gBE4VrjnEO6Y3/PdQ2ZPJOaAarmg78M96MeQPFUBQobl?=
+ =?Windows-1252?Q?kpjUZPWG2nAqJhaXW8VYQCAOLKaBxYBtGjOXDAKjDnsfgC5nHexmvtFH?=
+ =?Windows-1252?Q?I8Cym1nP/IQQbOiKeRCZsb9r6kZ8AUYt75yR2Vsy4PHluXmSS6vpEX/1?=
+ =?Windows-1252?Q?okjYK3HIbtZFNhxZHCfdl73e/0popRsBxOVJg4bE3tVQbZxiHotUQ95g?=
+ =?Windows-1252?Q?ZFeZyJEFQf8wb8ail7foTdQDb57a0C8Mt0/AuiB4W+G2Q5ra3Y0eVcyb?=
+ =?Windows-1252?Q?Eb77uKNjnv/qw1FYSGUvewRdS4Drs3Xe9XYiOx2AsBLB6sYCZiwpnNqz?=
+ =?Windows-1252?Q?FI/Hm1fc+eLP++nUS5cPO6s6DtoA8gn8kbXi6eirWCN2njIFv+ojt9MV?=
+ =?Windows-1252?Q?rFRE2Ps8hufFB8w3D18gAry3wqH0bIFjeqCooVueBy2Q//w+wNVXeqzA?=
+ =?Windows-1252?Q?brATD4v8+Z7hVfk6Vd1JqGbiAlnYjUVdKgUpwi0mroQ89PyDBZvETJJT?=
+ =?Windows-1252?Q?Bj8JgRWiYI3d3CVlZC6Vu8PS4Qwk2KuWmQrjmF/EoS9iaZ3GMFpbs6zn?=
+ =?Windows-1252?Q?7/SroNQf9HCiOCskLyQ3ixpLOlEbkuoejMnbGotU11FKquLzRRLvZgfM?=
+ =?Windows-1252?Q?kTSdMZevk2KQIo9bnI6ttDLyFmWQp+s5D8DWr1NEbN064MArCIeyKolN?=
+ =?Windows-1252?Q?Csw6h8Yh6kAiLyelLBNc7fv1OWGU/CnRY77f3k6p2NE+TJSbaGvwEwYP?=
+ =?Windows-1252?Q?gjRpbMEIJ9/9a6nq9B+lLIG1GXmYUixZVvNPwmfS8ShUqcAR2g4uWGLK?=
+ =?Windows-1252?Q?/udo/ffwF2LUaSqczlqyjxXd+pVW7ML15R2bBsk93ERRrSU6I8gjgSF1?=
+ =?Windows-1252?Q?0QANvqjrvruyWJ+mxhq095IHhGzurxTpoKru6qz+P4/CClOmMNKpvIUO?=
+ =?Windows-1252?Q?mMTPIReBRvtTEny3XKKHHXXHsuoW1zo4PWRdUrQKBVsTAJSa23G+ZRd3?=
+ =?Windows-1252?Q?064ymRe9ZDWIVcgheXzhzu0peT1+gxJ7bH/5Sua17URvHA+hEnS2EjCk?=
+ =?Windows-1252?Q?/fGXmmeySIseyU/zigW5JTPQ7yd5QrQ1itobHf6GzKCHy5QPxU+Go/Bt?=
+ =?Windows-1252?Q?grvMo2Nd+GQQ7J1N3f6fLBYUFNKDZfTiIfGBRQROdEAgcvpUEYm75Ur0?=
+ =?Windows-1252?Q?mgAPZjU8ImnXY8YMhzoOXNQHqiV3GvbsoDEhPmDxz4lHUpa6KsGMBhnp?=
+ =?Windows-1252?Q?B3O7lFDJcWOMvyCNkpZyWdEeYn7GRJ83T8dpSLeJlnIdys1CdL4EmYol?=
+ =?Windows-1252?Q?jmU=3D?=
+MIME-Version: 1.0
+
+--_004_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_
+Content-Type: multipart/alternative;
+	boundary="_000_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_"
+
+--_000_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Just a gentle reminder............
+
+To support the ongoing Campus Landscape Enhancement Project Phase III there=
+ will be another road closure to occur on September 10, 2020 through Octobe=
+r 10, 2020 and will affect north Rutford between NSERL and Lot T from Syner=
+gy to the NSERL loading dock.  See below link.
+
+Concrete Repairs on north Rutford Avenue at Synergy
+https://www.utdallas.edu/map/?id=3D1772#!m/511189?ce/42140?ct/46626,42147?m=
+c/32.99244983717318,-96.7509611696005?z/20?lvl/0
+
+Please use caution when traversing these areas.  Make alternate arrangement=
+s for deliveries, vendors, and visitors.
+
+Thank you.
+
+
+[cid:image002.png@01D44C08.C0A64B00]
+Kelly Kinnard, CEFP, LEED AP BD+C
+Assistant Vice President
+Facilities Management
+The University of Texas at Dallas
+972.883.2549
+kellykinnard@utdallas.edu<mailto:kellykinnard@utdallas.edu>
+
+
+
+--_000_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Just a gentle reminder=
+&#8230;&#8230;&#8230;&#8230;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">To support the ongoing=
+ Campus Landscape Enhancement Project Phase III there will be another road =
+closure to occur on
+<span style=3D"background:yellow;mso-highlight:yellow">September 10</span>,=
+ 2020 through October 10, 2020 and will affect north Rutford between NSERL =
+and Lot T from Synergy to the NSERL loading dock.&nbsp; See below link.<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><b>Concrete Repairs on north Rutford Avenue at Syner=
+gy<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><a href=3D"https://www.utdallas.edu/map/?id=3D1772#!=
+m/511189?ce/42140?ct/46626,42147?mc/32.99244983717318,-96.7509611696005?z/2=
+0?lvl/0"><span style=3D"color:#0563C1">https://www.utdallas.edu/map/?id=3D1=
+772#!m/511189?ce/42140?ct/46626,42147?mc/32.99244983717318,-96.750961169600=
+5?z/20?lvl/0</span></a><span style=3D"color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Please use caution whe=
+n traversing these areas.&nbsp; Make alternate arrangements for deliveries,=
+ vendors, and visitors.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thank you.<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Fr=
+anklin Gothic Medium&quot;,sans-serif;color:#1F3864"><o:p>&nbsp;</o:p></spa=
+n></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse:collapse">
+<tbody>
+<tr>
+<td width=3D"91" style=3D"width:.95in;border:none;border-right:double windo=
+wtext 4.5pt;padding:0in 5.4pt 0in 5.4pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><b><spa=
+n style=3D"font-size:12.0pt;color:#008542"><img border=3D"0" width=3D"77" h=
+eight=3D"77" style=3D"width:.802in;height:.802in" id=3D"Picture_x0020_3" sr=
+c=3D"cid:image001.png@01D686BC.03514640" alt=3D"cid:image002.png@01D44C08.C=
+0A64B00"><o:p></o:p></span></b></p>
+</td>
+<td width=3D"233" valign=3D"top" style=3D"width:174.6pt;padding:0in 5.4pt 0=
+in 5.4pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:9.0pt;color:#C75B12">Kel=
+ly Kinnard, CEFP, LEED AP BD+C<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:9.0pt;color:#C75B12">Ass=
+istant Vice President<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:9.0pt;color:#C45911">Fac=
+ilities Management<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:#1F3864">The Un=
+iversity of Texas at Dallas<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:#1F3864">972.88=
+3.2549<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><u><span style=3D"font-size:9.0pt;color:#0563C1"><a =
+href=3D"mailto:kellykinnard@utdallas.edu"><span style=3D"color:#0563C1">kel=
+lykinnard@utdallas.edu</span></a></span></u><span style=3D"font-size:9.0pt;=
+color:#1F3864">
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_--
+
+--_004_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=7696;
+	creation-date="Wed, 09 Sep 2020 20:15:13 GMT";
+	modification-date="Wed, 09 Sep 2020 20:15:13 GMT"
+Content-ID: <image001.png@01D686BC.03514640>
+Content-Transfer-Encoding: base64
+
+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
+gg==
+
+--_004_BL0PR01MB42765E3B564E51FEDE9D21B8B4260BL0PR01MB4276prod_--
