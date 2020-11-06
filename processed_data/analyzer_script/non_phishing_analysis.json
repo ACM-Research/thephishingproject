@@ -1,39 +1,1128 @@
 {
-  "\ud83d\udd0e Discover your next career move": {
-    "hops": 5,
-    "totalDelay": 8.033333333333333,
+  "26fddfbe8df1 Founders Day, B.eml": {
+    "filename": "26fddfbe8df1 Founders Day, B.eml",
+    "hops": 7,
+    "totalDelay": 0.3,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "Founders Day, Breast Cancer Awareness, CometCast, Social Media Survey, Viva Volunteer",
+    "from": "newscenter@utdallas.edu",
+    "to": [
+      "news@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "newscenter@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "ce809f4f6bcd State of the Un.eml": {
+    "filename": "ce809f4f6bcd State of the Un.eml",
+    "hops": 7,
+    "totalDelay": 0.3833333333333333,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "State of the University, Undeclared Major Help, Transfer Appreciation Week, Women's Summit",
+    "from": "newscenter@utdallas.edu",
+    "to": [
+      "news@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "newscenter@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "1b0910e36b73 Your Azure for.eml": {
+    "filename": "1b0910e36b73 Your Azure for.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
     "spf": "pass",
     "dkim": "pass",
     "dmarc": "pass",
-    "subject": "\ud83d\udd0e Discover your next career move",
-    "from": "handshake@g.joinhandshake.com",
+    "subject": "Your Azure for Students subscription expires in 1 day",
+    "from": "azure-noreply@microsoft.com",
     "to": [
-      "ewz190000@utdallas.edu"
+      "zxt180005@utdallas.edu"
     ],
-    "replyTo": [
-      "handshake@g.joinhandshake.com"
+    "replyTo": [],
+    "attachments": [
+      "<KMQ8OXA1ZBU4.QD2J5TWW72MD2@RD00155DFF1783>"
     ],
-    "attachments": [],
-    "grammarErrors": 2,
+    "grammarErrors": 22,
     "counts": {
-      "characterCount": 658,
-      "wordCount": 102,
+      "characterCount": 6093,
+      "wordCount": 198,
       "sentenceCount": 4
     },
     "readability": {
-      "flesch_kincaid": 13.2,
-      "gunning_fog": 14.51,
-      "smog_index": 13.4,
-      "automated_readability_index": 16.6,
-      "coleman_liau_index": 13.06,
+      "flesch_kincaid": 56.8,
+      "gunning_fog": 29.09,
+      "smog_index": 20.3,
+      "automated_readability_index": 144.0,
+      "coleman_liau_index": 138.82,
+      "linsear_write": 22.0
+    },
+    "sentiment": {
+      "polarity": 0.31607142857142856,
+      "subjectivity": 0.5190476190476191
+    }
+  },
+  "a6e7bcc6a290 Apartments Oran.eml": {
+    "filename": "a6e7bcc6a290 Apartments Oran.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Apartments Orange Weekly-ish Digest 10.22.20",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "ac313ff81ab0 Thank-a-Profess.eml": {
+    "filename": "ac313ff81ab0 Thank-a-Profess.eml",
+    "hops": 11,
+    "totalDelay": 2.8333333333333335,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: Thank-a-Professor / Thank-a-TA Program from CTL",
+    "from": "poras@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu",
+      "ecs.gr@lists.utdallas.edu",
+      "ecs.phd@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "poras@utdallas.edu"
+    ],
+    "attachments": [
+      "image005.png",
+      "image006.png"
+    ],
+    "grammarErrors": 26,
+    "counts": {
+      "characterCount": 1733,
+      "wordCount": 231,
+      "sentenceCount": 9
+    },
+    "readability": {
+      "flesch_kincaid": 18.0,
+      "gunning_fog": 15.13,
+      "smog_index": 14.6,
+      "automated_readability_index": 20.6,
+      "coleman_liau_index": 16.48,
+      "linsear_write": 17.0
+    },
+    "sentiment": {
+      "polarity": 0.24155844155844156,
+      "subjectivity": 0.4746753246753246
+    }
+  },
+  "cd6a3410036e Jonsson School.eml": {
+    "filename": "cd6a3410036e Jonsson School.eml",
+    "hops": 11,
+    "totalDelay": 8.733333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Jonsson School Events",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 92,
+    "counts": {
+      "characterCount": 15414,
+      "wordCount": 1113,
+      "sentenceCount": 42
+    },
+    "readability": {
+      "flesch_kincaid": 24.2,
+      "gunning_fog": 16.24,
+      "smog_index": 16.1,
+      "automated_readability_index": 52.4,
+      "coleman_liau_index": 52.04,
+      "linsear_write": 16.5
+    },
+    "sentiment": {
+      "polarity": 0.20850497159090906,
+      "subjectivity": 0.40827414772727266
+    }
+  },
+  "304e34ec7788 (MERGED) CS 334.eml": {
+    "filename": "304e34ec7788 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 1.05,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: Thursday 10/22 - Quiz 08",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 71,
+      "wordCount": 12,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 5.6,
+      "gunning_fog": 4.8,
+      "smog_index": 0.0,
+      "automated_readability_index": 7.7,
+      "coleman_liau_index": 8.4,
+      "linsear_write": 5.5
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "edaea74b8e64 Do our values a.eml": {
+    "filename": "edaea74b8e64 Do our values a.eml",
+    "hops": 7,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Do our values align with yours?",
+    "from": "donotreply@intel.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "3b5c769722d9 SCC Services Av.eml": {
+    "filename": "3b5c769722d9 SCC Services Av.eml",
+    "hops": 11,
+    "totalDelay": 11.783333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students] SCC Services Available to you",
+    "from": "Laura.Smith2@utdallas.edu",
+    "to": [
+      "Students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "Laura.Smith2@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 30,
+    "counts": {
+      "characterCount": 5061,
+      "wordCount": 383,
+      "sentenceCount": 13
+    },
+    "readability": {
+      "flesch_kincaid": 25.4,
+      "gunning_fog": 17.75,
+      "smog_index": 15.5,
+      "automated_readability_index": 50.5,
+      "coleman_liau_index": 47.58,
+      "linsear_write": 16.25
+    },
+    "sentiment": {
+      "polarity": 0.16580459770114944,
+      "subjectivity": 0.3241631931287104
+    }
+  },
+  "9e22dd719fbb (MERGED) CS 337.eml": {
+    "filename": "9e22dd719fbb (MERGED) CS 337.eml",
+    "hops": 5,
+    "totalDelay": 0.3666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3377.001 - SE 3377.001 - F20: Exam 2 Info",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "sxp127930@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 13,
+    "counts": {
+      "characterCount": 584,
+      "wordCount": 98,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 41.5,
+      "gunning_fog": 40.83,
+      "smog_index": 0.0,
+      "automated_readability_index": 50.2,
+      "coleman_liau_index": 10.06,
+      "linsear_write": 28.0
+    },
+    "sentiment": {
+      "polarity": 0.25,
+      "subjectivity": 0.4
+    }
+  },
+  "92548438bad2 Daily Notificat.eml": {
+    "filename": "92548438bad2 Daily Notificat.eml",
+    "hops": 5,
+    "totalDelay": 1.0666666666666669,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Daily Notifications",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      "DO-NOT-REPLY@utdallas.edu"
+    ],
+    "replyTo": [
+      "DO-NOT-REPLY@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 146,
+    "counts": {
+      "characterCount": 4328,
+      "wordCount": 123,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 289.6,
+      "gunning_fog": 55.7,
+      "smog_index": 0.0,
+      "automated_readability_index": 109.1,
+      "coleman_liau_index": 59.36,
+      "linsear_write": 71.0
+    },
+    "sentiment": {
+      "polarity": 0.03376623376623377,
+      "subjectivity": 0.4720779220779221
+    }
+  },
+  "db1d901bf9e4 (MERGED) CS 334.eml": {
+    "filename": "db1d901bf9e4 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 0.33333333333333337,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: HW08 due Tues 10/20",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 68,
+      "wordCount": 12,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 4.4,
+      "gunning_fog": 4.8,
+      "smog_index": 0.0,
+      "automated_readability_index": 6.9,
+      "coleman_liau_index": 7.47,
+      "linsear_write": 5.0
+    },
+    "sentiment": {
+      "polarity": -0.125,
+      "subjectivity": 0.375
+    }
+  },
+  "cc8cffe8ab86 Registration Co.eml": {
+    "filename": "cc8cffe8ab86 Registration Co.eml",
+    "hops": 7,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Registration Confirmation: NSA Live Information Session",
+    "from": "icag1@yello.co",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "recruitNSA@nsa.gov"
+    ],
+    "attachments": [],
+    "grammarErrors": 4,
+    "counts": {
+      "characterCount": 2655,
+      "wordCount": 101,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 45.9,
+      "gunning_fog": 26.95,
+      "smog_index": 11.2,
+      "automated_readability_index": 115.0,
+      "coleman_liau_index": 121.35,
+      "linsear_write": 11.0
+    },
+    "sentiment": {
+      "polarity": 0.18571428571428572,
+      "subjectivity": 0.4841269841269842
+    }
+  },
+  "6a77e77f0d1e [students] Stat.eml": {
+    "filename": "6a77e77f0d1e [students] Stat.eml",
+    "hops": 11,
+    "totalDelay": 18.450000000000003,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] State of the University",
+    "from": "announcements@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "announcements@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "ad5a62873147 Campus COVID-19.eml": {
+    "filename": "ad5a62873147 Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 15.433333333333335,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 24, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 916,
+      "wordCount": 127,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 30.4,
+      "gunning_fog": 33.9,
+      "smog_index": 0.0,
+      "automated_readability_index": 39.8,
+      "coleman_liau_index": 18.06,
+      "linsear_write": 15.2
+    },
+    "sentiment": {
+      "polarity": 0.19562289562289564,
+      "subjectivity": 0.3124579124579125
+    }
+  },
+  "19b3d231ef1d EPICS Virtual I.eml": {
+    "filename": "19b3d231ef1d EPICS Virtual I.eml",
+    "hops": 10,
+    "totalDelay": 2.6,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] EPICS Virtual Info Session is Today!",
+    "from": "turcatti@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "turcatti@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png",
+      "image002.jpg"
+    ],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 801,
+      "wordCount": 81,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 16.2,
+      "gunning_fog": 14.26,
+      "smog_index": 14.1,
+      "automated_readability_index": 34.4,
+      "coleman_liau_index": 30.69,
+      "linsear_write": 12.875
+    },
+    "sentiment": {
+      "polarity": 0.5520833333333334,
+      "subjectivity": 0.5
+    }
+  },
+  "f911d3e5a1c1 (MERGED) EPICS.eml": {
+    "filename": "f911d3e5a1c1 (MERGED) EPICS.eml",
+    "hops": 5,
+    "totalDelay": 1.4333333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) EPICS - F20: Workshop Opportunity! October 27 7pm",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "amt101000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 11,
+    "counts": {
+      "characterCount": 1085,
+      "wordCount": 186,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 12.5,
+      "gunning_fog": 13.65,
+      "smog_index": 12.3,
+      "automated_readability_index": 14.7,
+      "coleman_liau_index": 10.57,
+      "linsear_write": 10.5
+    },
+    "sentiment": {
+      "polarity": 0.258,
+      "subjectivity": 0.49333333333333335
+    }
+  },
+  "87277fef7cc3 (MERGED) EPICS.eml": {
+    "filename": "87277fef7cc3 (MERGED) EPICS.eml",
+    "hops": 5,
+    "totalDelay": 0.8,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) EPICS - F20: Guest Speaker Today",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "trb052000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 298,
+      "wordCount": 54,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 20.8,
+      "gunning_fog": 21.6,
+      "smog_index": 0.0,
+      "automated_readability_index": 27.6,
+      "coleman_liau_index": 9.71,
+      "linsear_write": 8.333333333333334
+    },
+    "sentiment": {
+      "polarity": 0.5,
+      "subjectivity": 0.55
+    }
+  },
+  "7a7ccadfdf84 Congratulations.eml": {
+    "filename": "7a7ccadfdf84 Congratulations.eml",
+    "hops": 6,
+    "totalDelay": 0.09999999999999999,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Congratulations on submitting 4 PRs during Hacktoberfest!",
+    "from": "no-reply@digitalocean.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 36,
+    "counts": {
+      "characterCount": 4086,
+      "wordCount": 158,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 44.2,
+      "gunning_fog": 19.89,
+      "smog_index": 15.7,
+      "automated_readability_index": 108.7,
+      "coleman_liau_index": 114.44,
       "linsear_write": 12.0
     },
     "sentiment": {
-      "polarity": 0.43174603174603177,
-      "subjectivity": 0.4547619047619047
+      "polarity": 0.27537462537462537,
+      "subjectivity": 0.5467920967920968
     }
   },
-  "Today's ACM Event: NVIDIA": {
+  "87454384d831 TOMORROW_ Smart.eml": {
+    "filename": "87454384d831 TOMORROW_ Smart.eml",
+    "hops": 11,
+    "totalDelay": 0.9666666666666666,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students.sophomore] TOMORROW: Smart Spending 10/13 from\n 5:30-6:30pm!",
+    "from": "YearExperience@utdallas.edu",
+    "to": [
+      "students.sophomore@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "YearExperience@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png",
+      "image002.png",
+      "image003.gif"
+    ],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 1249,
+      "wordCount": 106,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 25.3,
+      "gunning_fog": 22.42,
+      "smog_index": 20.6,
+      "automated_readability_index": 47.7,
+      "coleman_liau_index": 39.86,
+      "linsear_write": 8.625
+    },
+    "sentiment": {
+      "polarity": 0.23298701298701302,
+      "subjectivity": 0.42857142857142855
+    }
+  },
+  "7d84e341d47e Taking a Deeper.eml": {
+    "filename": "7d84e341d47e Taking a Deeper.eml",
+    "hops": 7,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Taking a Deeper Dive into Software Careers at Intel",
+    "from": "donotreply@intel.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "3c1da126ddcc WTF is DeFi_.em.eml": {
+    "filename": "3c1da126ddcc WTF is DeFi_.em.eml",
+    "hops": 5,
+    "totalDelay": 0.3,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "WTF is DeFi?",
+    "from": "utd.bcso@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "utd.bcso@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 29,
+    "counts": {
+      "characterCount": 4219,
+      "wordCount": 148,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 44.9,
+      "gunning_fog": 28.91,
+      "smog_index": 19.3,
+      "automated_readability_index": 133.2,
+      "coleman_liau_index": 121.88,
+      "linsear_write": 22.333333333333332
+    },
+    "sentiment": {
+      "polarity": 0.375,
+      "subjectivity": 0.4666666666666666
+    }
+  },
+  "2996539f8b99 [students] Octo.eml": {
+    "filename": "2996539f8b99 [students] Octo.eml",
+    "hops": 11,
+    "totalDelay": 14.916666666666668,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] October is Cybersecurity Awareness Month!",
+    "from": "nate.howe@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "nate.howe@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "af987762d2be Program not ope.eml": {
+    "filename": "af987762d2be Program not ope.eml",
+    "hops": 6,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Program not opening the file",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 12,
+    "counts": {
+      "characterCount": 2830,
+      "wordCount": 124,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 34.2,
+      "gunning_fog": 17.02,
+      "smog_index": 13.0,
+      "automated_readability_index": 94.0,
+      "coleman_liau_index": 99.19,
+      "linsear_write": 9.0
+    },
+    "sentiment": {
+      "polarity": 0.2090909090909091,
+      "subjectivity": 0.31363636363636366
+    }
+  },
+  "f0b6c918ae71 Contest today 1.eml": {
+    "filename": "f0b6c918ae71 Contest today 1.eml",
+    "hops": 6,
+    "totalDelay": 0.08333333333333334,
+    "spf": "none",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Contest today 12:00 noon CDT - 3:00 p.m.",
+    "from": "ivorpage@att.net",
+    "to": [
+      "ivor.page@tx.rr.com"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 534,
+      "wordCount": 84,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 11.8,
+      "gunning_fog": 14.53,
+      "smog_index": 14.1,
+      "automated_readability_index": 18.3,
+      "coleman_liau_index": 13.06,
+      "linsear_write": 5.625
+    },
+    "sentiment": {
+      "polarity": 0.10000000000000002,
+      "subjectivity": 0.31666666666666665
+    }
+  },
+  "75ab4a14ed95 (MERGED) CE 433.eml": {
+    "filename": "75ab4a14ed95 (MERGED) CE 433.eml",
+    "hops": 5,
+    "totalDelay": 0.7666666666666666,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CE 4337.501 - CS 4337.501 - F20: Please Read This\n Announcement Carefully!",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "sxm155431@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 29,
+    "counts": {
+      "characterCount": 2394,
+      "wordCount": 393,
+      "sentenceCount": 14
+    },
+    "readability": {
+      "flesch_kincaid": 14.2,
+      "gunning_fog": 14.19,
+      "smog_index": 13.9,
+      "automated_readability_index": 16.1,
+      "coleman_liau_index": 10.68,
+      "linsear_write": 8.0
+    },
+    "sentiment": {
+      "polarity": 0.13673333333333332,
+      "subjectivity": 0.5643435897435898
+    }
+  },
+  "cec813741086 Check out these.eml": {
+    "filename": "cec813741086 Check out these.eml",
+    "hops": 5,
+    "totalDelay": 19.133333333333336,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Check out these new book releases!",
+    "from": "yourbookstore@em.efollett.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "reply@em.efollett.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c4c22e31d1b1 Campus COVID-19.eml": {
+    "filename": "c4c22e31d1b1 Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 14.966666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 18, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 8,
+    "counts": {
+      "characterCount": 1247,
+      "wordCount": 172,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 29.2,
+      "gunning_fog": 29.66,
+      "smog_index": 25.0,
+      "automated_readability_index": 36.5,
+      "coleman_liau_index": 17.83,
+      "linsear_write": 23.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.1600550964187328,
+      "subjectivity": 0.32837465564738294
+    }
+  },
+  "32e69308da6e Peer Advisor Po.eml": {
+    "filename": "32e69308da6e Peer Advisor Po.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Peer Advisor Position - Apply Today!",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "18dbacf00176 Thank You for a.eml": {
+    "filename": "18dbacf00176 Thank You for a.eml",
+    "hops": 6,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Thank You for attending ACM Hacktoberfest",
+    "from": "hacktoberfest@acmutd.co",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "hacktoberfest@acmutd.co"
+    ],
+    "attachments": [],
+    "grammarErrors": 31,
+    "counts": {
+      "characterCount": 6433,
+      "wordCount": 219,
+      "sentenceCount": 9
+    },
+    "readability": {
+      "flesch_kincaid": 47.0,
+      "gunning_fog": 20.86,
+      "smog_index": 15.2,
+      "automated_readability_index": 124.2,
+      "coleman_liau_index": 133.24,
+      "linsear_write": 7.7142857142857135
+    },
+    "sentiment": {
+      "polarity": 0.2564157196969697,
+      "subjectivity": 0.45833333333333326
+    }
+  },
+  "65aceb567fd9 (MERGED) CE 230.eml": {
+    "filename": "65aceb567fd9 (MERGED) CE 230.eml",
+    "hops": 5,
+    "totalDelay": 1.5999999999999999,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CE 2305.501.003 - CS 2305.501.003 - F20: Homework 7",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "jkw053000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 53,
+      "wordCount": 10,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 3.7,
+      "gunning_fog": 4.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 4.8,
+      "coleman_liau_index": 6.18,
+      "linsear_write": 4.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "d31d47768601 Cloud Hero_ Dat.eml": {
+    "filename": "d31d47768601 Cloud Hero_ Dat.eml",
+    "hops": 5,
+    "totalDelay": 0.35,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Cloud Hero: Data & ML with BigQuery",
+    "from": "dscutd@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "dscutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 39,
+    "counts": {
+      "characterCount": 8071,
+      "wordCount": 264,
+      "sentenceCount": 11
+    },
+    "readability": {
+      "flesch_kincaid": 48.1,
+      "gunning_fog": 16.42,
+      "smog_index": 13.7,
+      "automated_readability_index": 129.9,
+      "coleman_liau_index": 136.89,
+      "linsear_write": 15.5
+    },
+    "sentiment": {
+      "polarity": 0.3760330578512397,
+      "subjectivity": 0.5903122130394857
+    }
+  },
+  "927df97855a1 Today's ACM Eve.eml": {
+    "filename": "927df97855a1 Today's ACM Eve.eml",
     "hops": 5,
     "totalDelay": 3.55,
     "spf": "pass",
@@ -67,7 +1156,643 @@
       "subjectivity": 0.5023809523809525
     }
   },
-  "[ecs.cs.ug] FY21 MSFC Pathways Intern Job Vacancy Announcement\n (opening September 14-16, 2020)": {
+  "b4b00e427f22 Your Azure for.eml": {
+    "filename": "b4b00e427f22 Your Azure for.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Your Azure for students credit hasexpired\u2014learnhow to save your data",
+    "from": "azure-noreply@microsoft.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "<C3TQGCNRZBU4.H0XWDUW68HE42@RD00155DFEE17A>"
+    ],
+    "grammarErrors": 24,
+    "counts": {
+      "characterCount": 5267,
+      "wordCount": 156,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 53.2,
+      "gunning_fog": 20.94,
+      "smog_index": 16.9,
+      "automated_readability_index": 148.9,
+      "coleman_liau_index": 153.54,
+      "linsear_write": 12.8
+    },
+    "sentiment": {
+      "polarity": 0.30023310023310024,
+      "subjectivity": 0.717016317016317
+    }
+  },
+  "3d598149c3b7 Jonsson School.eml": {
+    "filename": "3d598149c3b7 Jonsson School.eml",
+    "hops": 11,
+    "totalDelay": 9.633333333333336,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Jonsson School Events",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 121,
+    "counts": {
+      "characterCount": 25311,
+      "wordCount": 1920,
+      "sentenceCount": 76
+    },
+    "readability": {
+      "flesch_kincaid": 22.6,
+      "gunning_fog": 15.43,
+      "smog_index": 15.5,
+      "automated_readability_index": 48.6,
+      "coleman_liau_index": 48.44,
+      "linsear_write": 10.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.2391564685314686,
+      "subjectivity": 0.42402028527028524
+    }
+  },
+  "0bb5c26c7d9b Update on your.eml": {
+    "filename": "0bb5c26c7d9b Update on your.eml",
+    "hops": 6,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "fail",
+    "dmarc": "pass",
+    "subject": "Update on your event with Samsung Electronics America",
+    "from": "notifications@ripplematch.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "j.montrose@sea.samsung.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "1d9a06c7b1d5 Webinar_ Empowe.eml": {
+    "filename": "1d9a06c7b1d5 Webinar_ Empowe.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Webinar: Empower your institution\u2019s security operations with Azure Sentinel",
+    "from": "email@email.microsoft.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "replyto@microsoft.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 35,
+    "counts": {
+      "characterCount": 6069,
+      "wordCount": 206,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 65.5,
+      "gunning_fog": 38.35,
+      "smog_index": 30.7,
+      "automated_readability_index": 147.0,
+      "coleman_liau_index": 133.37,
+      "linsear_write": 27.333333333333332
+    },
+    "sentiment": {
+      "polarity": 0.08181818181818182,
+      "subjectivity": 0.5116161616161616
+    }
+  },
+  "28b32b8d9f20 (MERGED) CS 334.eml": {
+    "filename": "28b32b8d9f20 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 0.35,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: Thursday 10/15 - Quiz 07",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 5,
+    "counts": {
+      "characterCount": 271,
+      "wordCount": 43,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 21.2,
+      "gunning_fog": 22.78,
+      "smog_index": 0.0,
+      "automated_readability_index": 25.0,
+      "coleman_liau_index": 12.61,
+      "linsear_write": 29.0
+    },
+    "sentiment": {
+      "polarity": 0.1,
+      "subjectivity": 0.4
+    }
+  },
+  "72fe8e140a57 NEXT WEEK_ Smar.eml": {
+    "filename": "72fe8e140a57 NEXT WEEK_ Smar.eml",
+    "hops": 11,
+    "totalDelay": 2.8333333333333335,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students.sophomore] NEXT WEEK: Smart Spending 10/13 from\n 5:30-6:30pm!",
+    "from": "YearExperience@utdallas.edu",
+    "to": [
+      "students.sophomore@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "YearExperience@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png",
+      "image002.png",
+      "image003.gif"
+    ],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 1249,
+      "wordCount": 106,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 25.3,
+      "gunning_fog": 22.42,
+      "smog_index": 20.6,
+      "automated_readability_index": 47.7,
+      "coleman_liau_index": 39.86,
+      "linsear_write": 8.625
+    },
+    "sentiment": {
+      "polarity": 0.23298701298701302,
+      "subjectivity": 0.42857142857142855
+    }
+  },
+  "5a6d722d7b37 CBRE D&TRecruit.eml": {
+    "filename": "5a6d722d7b37 CBRE D&TRecruit.eml",
+    "hops": 7,
+    "totalDelay": 0.16666666666666669,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "CBRE D&TRecruiting \u2013 Let\u2019s Stay Connected!",
+    "from": "cbre@yello.co",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "donotreply@cbre.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 17,
+    "counts": {
+      "characterCount": 2921,
+      "wordCount": 161,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 28.8,
+      "gunning_fog": 17.9,
+      "smog_index": 12.5,
+      "automated_readability_index": 70.7,
+      "coleman_liau_index": 75.47,
+      "linsear_write": 12.2
+    },
+    "sentiment": {
+      "polarity": 0.24090909090909093,
+      "subjectivity": 0.49090909090909096
+    }
+  },
+  "8b4194619938 University Hous.eml": {
+    "filename": "8b4194619938 University Hous.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "University Housing - Package Received",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "a291c2258719 Scott from Door.eml": {
+    "filename": "a291c2258719 Scott from Door.eml",
+    "hops": 5,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Scott from DoorDash has sent you a message on Handshake",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "ewz190000@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 1551,
+      "wordCount": 257,
+      "sentenceCount": 9
+    },
+    "readability": {
+      "flesch_kincaid": 13.3,
+      "gunning_fog": 14.24,
+      "smog_index": 13.9,
+      "automated_readability_index": 16.7,
+      "coleman_liau_index": 11.49,
+      "linsear_write": 21.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.1701048951048951,
+      "subjectivity": 0.4163752913752914
+    }
+  },
+  "1ffae3224f05 You are invited.eml": {
+    "filename": "1ffae3224f05 You are invited.eml",
+    "hops": 10,
+    "totalDelay": 8.516666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] You are invited to this Friday's Tech Titans Tech\n Industry Luncheon Webinar featuring the 8 finalists for the Tech\n Innovation Award - RSVP to get the access code, first come first served",
+    "from": "wetterskog@utdallas.edu",
+    "to": [
+      "wetterskog@utdallas.edu"
+    ],
+    "replyTo": [
+      "wetterskog@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 24,
+    "counts": {
+      "characterCount": 1638,
+      "wordCount": 176,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 44.7,
+      "gunning_fog": 42.02,
+      "smog_index": 0.0,
+      "automated_readability_index": 61.2,
+      "coleman_liau_index": 27.98,
+      "linsear_write": 12.5
+    },
+    "sentiment": {
+      "polarity": 0.20000000000000004,
+      "subjectivity": 0.33194444444444443
+    }
+  },
+  "09110d21a397 Action required.eml": {
+    "filename": "09110d21a397 Action required.eml",
+    "hops": 4,
+    "totalDelay": 0.08333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Action required: Update certificate pinning for your applications",
+    "from": "azure-noreply@microsoft.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "fe38c78a4ade [texsaw] Join u.eml": {
+    "filename": "fe38c78a4ade [texsaw] Join u.eml",
+    "hops": 11,
+    "totalDelay": 0.75,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.cs.ug] [texsaw]  Join us for TexSAW 2020 Cybersecurity Contest",
+    "from": "rhonda.walls@utdallas.edu",
+    "to": [
+      "ecs.se.ug@lists.utdallas.edu",
+      "ecs.cs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "rhonda.walls@utdallas.edu"
+    ],
+    "attachments": [
+      "<B399600FC8368A41A24E9E9E7F4EC65C@prod.exchangelabs.com>"
+    ],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 742,
+      "wordCount": 68,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 20.4,
+      "gunning_fog": 15.55,
+      "smog_index": 16.7,
+      "automated_readability_index": 37.3,
+      "coleman_liau_index": 34.98,
+      "linsear_write": 12.75
+    },
+    "sentiment": {
+      "polarity": 0.1787878787878788,
+      "subjectivity": 0.5515151515151515
+    }
+  },
+  "0b2b74a082b9 Upcoming Career.eml": {
+    "filename": "0b2b74a082b9 Upcoming Career.eml",
+    "hops": 5,
+    "totalDelay": 3.583333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Upcoming Career-Focused Events",
+    "from": "handshake@mail.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "eric.green@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 161,
+    "counts": {
+      "characterCount": 9697,
+      "wordCount": 1044,
+      "sentenceCount": 42
+    },
+    "readability": {
+      "flesch_kincaid": 21.3,
+      "gunning_fog": 13.91,
+      "smog_index": 14.4,
+      "automated_readability_index": 27.8,
+      "coleman_liau_index": 25.7,
+      "linsear_write": 68.0
+    },
+    "sentiment": {
+      "polarity": 0.19837239583333335,
+      "subjectivity": 0.41948164682539685
+    }
+  },
+  "27b9c7648c51 Friday class.em.eml": {
+    "filename": "27b9c7648c51 Friday class.em.eml",
+    "hops": 11,
+    "totalDelay": 2.0333333333333337,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "Re: [codeburners] Friday class",
+    "from": "Bhadrachalam.Chitturi@UTDallas.edu",
+    "to": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "attachments": [
+      "Codefornumbertheory.zip"
+    ],
+    "grammarErrors": 19,
+    "counts": {
+      "characterCount": 3379,
+      "wordCount": 116,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 45.0,
+      "gunning_fog": 17.72,
+      "smog_index": 15.0,
+      "automated_readability_index": 121.7,
+      "coleman_liau_index": 128.65,
+      "linsear_write": 11.5
+    },
+    "sentiment": {
+      "polarity": 0.04333333333333335,
+      "subjectivity": 0.3883333333333333
+    }
+  },
+  "7d8f31260e66 Connect Trello.eml": {
+    "filename": "7d8f31260e66 Connect Trello.eml",
+    "hops": 4,
+    "totalDelay": 0.08333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Connect Trello to your favorite apps",
+    "from": "taco@trello.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "taco@trello.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 8065,
+      "wordCount": 117,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 135.1,
+      "gunning_fog": 62.87,
+      "smog_index": 0.0,
+      "automated_readability_index": 356.6,
+      "coleman_liau_index": 339.79,
+      "linsear_write": 36.5
+    },
+    "sentiment": {
+      "polarity": 0.3805871212121212,
+      "subjectivity": 0.6328598484848484
+    }
+  },
+  "b8112289fbbe UofMagenta Inte.eml": {
+    "filename": "b8112289fbbe UofMagenta Inte.eml",
+    "hops": 7,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "UofMagenta Internship Program | Monthly Update",
+    "from": "Enterprise@trm.brassring.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "InternshipProgram@T-Mobile.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 26,
+    "counts": {
+      "characterCount": 4554,
+      "wordCount": 195,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 42.1,
+      "gunning_fog": 28.73,
+      "smog_index": 21.7,
+      "automated_readability_index": 104.1,
+      "coleman_liau_index": 103.43,
+      "linsear_write": 23.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.25370370370370365,
+      "subjectivity": 0.4643518518518518
+    }
+  },
+  "63455efb5aa7 WiCyS Weekly Ne.eml": {
+    "filename": "63455efb5aa7 WiCyS Weekly Ne.eml",
+    "hops": 5,
+    "totalDelay": 0.21666666666666665,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "WiCyS Weekly Newsletter",
+    "from": "wicys.utd@gmail.com",
+    "to": [
+      "Jerry.Teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "wicys.utd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 83,
+    "counts": {
+      "characterCount": 13325,
+      "wordCount": 567,
+      "sentenceCount": 23
+    },
+    "readability": {
+      "flesch_kincaid": 36.5,
+      "gunning_fog": 17.85,
+      "smog_index": 16.9,
+      "automated_readability_index": 97.2,
+      "coleman_liau_index": 101.16,
+      "linsear_write": 7.625
+    },
+    "sentiment": {
+      "polarity": 0.2446270161290323,
+      "subjectivity": 0.49000000000000005
+    }
+  },
+  "6bc5a6333730 That thing you\u2019.eml": {
+    "filename": "6bc5a6333730 That thing you\u2019.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "That thing you\u2019ve always wanted to do?",
+    "from": "support@email.masterclass.com",
+    "to": [
+      "ewz190000@utdallas.edu"
+    ],
+    "replyTo": [
+      "support@masterclass.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 15,
+    "counts": {
+      "characterCount": 567,
+      "wordCount": 85,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 36.4,
+      "gunning_fog": 35.88,
+      "smog_index": 0.0,
+      "automated_readability_index": 46.2,
+      "coleman_liau_index": 13.95,
+      "linsear_write": 16.5
+    },
+    "sentiment": {
+      "polarity": 0.5214285714285715,
+      "subjectivity": 0.3964285714285714
+    }
+  },
+  "56b43a9df9c6 [ecs.cs.ug] FY2.eml": {
+    "filename": "56b43a9df9c6 [ecs.cs.ug] FY2.eml",
     "hops": 10,
     "totalDelay": 2.0166666666666666,
     "spf": "softfail",
@@ -104,47 +1829,858 @@
       "subjectivity": 0.3315476190476191
     }
   },
-  "ACM Dev Applications Open! Win an Amazon Giftcard": {
-    "hops": 5,
-    "totalDelay": 0.08333333333333333,
+  "3cc0302bb041 [GTC Day 4] See.eml": {
+    "filename": "3cc0302bb041 [GTC Day 4] See.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
     "spf": "pass",
     "dkim": "pass",
-    "dmarc": "none",
-    "subject": "ACM Dev Applications Open! Win an Amazon Giftcard",
-    "from": "contact@acmutd.co",
+    "dmarc": "pass",
+    "subject": "[GTC Day 4] See What\u2019s Happening Today",
+    "from": "news@nvidia.com",
     "to": [
-      "ewz190000@utdallas.edu"
+      "jerry.teng@utdallas.edu"
     ],
     "replyTo": [
-      "contact@acmutd.co"
+      "news@nvidia.com"
     ],
     "attachments": [],
-    "grammarErrors": 11,
+    "grammarErrors": 54,
     "counts": {
-      "characterCount": 1529,
-      "wordCount": 231,
-      "sentenceCount": 10
+      "characterCount": 19939,
+      "wordCount": 1041,
+      "sentenceCount": 20
     },
     "readability": {
-      "flesch_kincaid": 13.5,
-      "gunning_fog": 13.92,
-      "smog_index": 13.8,
-      "automated_readability_index": 16.8,
-      "coleman_liau_index": 14.63,
-      "linsear_write": 10.714285714285714
+      "flesch_kincaid": 40.1,
+      "gunning_fog": 29.14,
+      "smog_index": 22.0,
+      "automated_readability_index": 90.2,
+      "coleman_liau_index": 79.19,
+      "linsear_write": 22.666666666666668
     },
     "sentiment": {
-      "polarity": 0.2425,
-      "subjectivity": 0.37
+      "polarity": 0.23671066252588002,
+      "subjectivity": 0.43778467908902685
     }
   },
-  "[ecs.stu] Best practices for your job search": {
+  "e5e371086421 U.S. Department.eml": {
+    "filename": "e5e371086421 U.S. Department.eml",
     "hops": 11,
-    "totalDelay": 20.016666666666666,
+    "totalDelay": 0.8500000000000001,
     "spf": "softfail",
     "dkim": "fail",
     "dmarc": "fail",
-    "subject": "[ecs.stu] Best practices for your job search",
+    "subject": "[ecs.ug] FW: U.S. Department of Energy Internship Virtual Career\n Fair | October 29, 11 a.m.-3 p.m. ET",
+    "from": "ECS_ADU@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_ADU@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg",
+      "image002.jpg",
+      "WDTS Virtual Career Fair 2020_Flyer.pdf"
+    ],
+    "grammarErrors": 42,
+    "counts": {
+      "characterCount": 5631,
+      "wordCount": 323,
+      "sentenceCount": 10
+    },
+    "readability": {
+      "flesch_kincaid": 33.6,
+      "gunning_fog": 19.11,
+      "smog_index": 19.1,
+      "automated_readability_index": 72.2,
+      "coleman_liau_index": 69.15,
+      "linsear_write": 12.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.26225490196078427,
+      "subjectivity": 0.4196078431372549
+    }
+  },
+  "3e1615305632 (MERGED) EPICS.eml": {
+    "filename": "3e1615305632 (MERGED) EPICS.eml",
+    "hops": 5,
+    "totalDelay": 1.0999999999999999,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) EPICS - F20: Material for class Monday",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "trb052000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 4,
+    "counts": {
+      "characterCount": 194,
+      "wordCount": 30,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 13.8,
+      "gunning_fog": 16.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 20.4,
+      "coleman_liau_index": 14.81,
+      "linsear_write": 19.0
+    },
+    "sentiment": {
+      "polarity": 0.2,
+      "subjectivity": 0.2
+    }
+  },
+  "8428a2e1a3b9 HackUTD Game Ja.eml": {
+    "filename": "8428a2e1a3b9 HackUTD Game Ja.eml",
+    "hops": 5,
+    "totalDelay": 3.083333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "none",
+    "subject": "HackUTD Game Jam Starts Tomorrow!",
+    "from": "hello@hackutd.co",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "hello@hackutd.co"
+    ],
+    "attachments": [],
+    "grammarErrors": 33,
+    "counts": {
+      "characterCount": 4445,
+      "wordCount": 131,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 48.3,
+      "gunning_fog": 18.17,
+      "smog_index": 13.5,
+      "automated_readability_index": 142.8,
+      "coleman_liau_index": 152.72,
+      "linsear_write": 6.0
+    },
+    "sentiment": {
+      "polarity": -0.23671874999999998,
+      "subjectivity": 0.325
+    }
+  },
+  "8d65f214ed01 Slices of Pi _.eml": {
+    "filename": "8d65f214ed01 Slices of Pi _.eml",
+    "hops": 5,
+    "totalDelay": 3.9499999999999997,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Slices of Pi | UTD CSG Tech Talk",
+    "from": "utdcsg@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "utdcsg@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 19,
+    "counts": {
+      "characterCount": 2872,
+      "wordCount": 116,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 39.6,
+      "gunning_fog": 25.48,
+      "smog_index": 17.5,
+      "automated_readability_index": 110.3,
+      "coleman_liau_index": 104.13,
+      "linsear_write": 12.6
+    },
+    "sentiment": {
+      "polarity": 0.27,
+      "subjectivity": 0.35
+    }
+  },
+  "9f6eb4d3c0ba ABIGAIL, get re.eml": {
+    "filename": "9f6eb4d3c0ba ABIGAIL, get re.eml",
+    "hops": 4,
+    "totalDelay": 0.08333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "ABIGAIL, get redi to ace your Discrete Mathematics exam\u2026",
+    "from": "connectnews@mheducation.com",
+    "to": [
+      "AXT190058@UTDALLAS.EDU"
+    ],
+    "replyTo": [
+      "connectnews@mheducation.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 30,
+    "counts": {
+      "characterCount": 3308,
+      "wordCount": 150,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 36.6,
+      "gunning_fog": 20.13,
+      "smog_index": 17.1,
+      "automated_readability_index": 90.4,
+      "coleman_liau_index": 94.2,
+      "linsear_write": 11.833333333333334
+    },
+    "sentiment": {
+      "polarity": 0.125,
+      "subjectivity": 0.29285714285714287
+    }
+  },
+  "198d708cbf5b CS 3341.001 - P.eml": {
+    "filename": "198d708cbf5b CS 3341.001 - P.eml",
+    "hops": 5,
+    "totalDelay": 0.4666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "CS 3341.001 - Probability and Statistics in Computer Science and\n Software Engineering - F20: CS 3341 Study Group",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "htn190008@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 537,
+      "wordCount": 23,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 27.8,
+      "gunning_fog": 16.77,
+      "smog_index": 0.0,
+      "automated_readability_index": 90.6,
+      "coleman_liau_index": 100.55,
+      "linsear_write": 6.25
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "6632f7bd05a4 Your session wi.eml": {
+    "filename": "6632f7bd05a4 Your session wi.eml",
+    "hops": 5,
+    "totalDelay": 7.516666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Your session with Paycom begins soon! Join now.",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 224,
+      "wordCount": 35,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 7.8,
+      "gunning_fog": 10.43,
+      "smog_index": 0.0,
+      "automated_readability_index": 13.6,
+      "coleman_liau_index": 12.93,
+      "linsear_write": 6.666666666666667
+    },
+    "sentiment": {
+      "polarity": 0.2,
+      "subjectivity": 0.4
+    }
+  },
+  "9391dc3e7b1c AIS_ AI Talk +.eml": {
+    "filename": "9391dc3e7b1c AIS_ AI Talk +.eml",
+    "hops": 5,
+    "totalDelay": 0.39999999999999997,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "AIS: AI Talk + Game Social",
+    "from": "utd.ais@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "utd.ais@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 31,
+    "counts": {
+      "characterCount": 4765,
+      "wordCount": 233,
+      "sentenceCount": 13
+    },
+    "readability": {
+      "flesch_kincaid": 26.8,
+      "gunning_fog": 14.37,
+      "smog_index": 12.2,
+      "automated_readability_index": 79.3,
+      "coleman_liau_index": 81.37,
+      "linsear_write": 7.7142857142857135
+    },
+    "sentiment": {
+      "polarity": 0.21665909090909094,
+      "subjectivity": 0.4329191919191919
+    }
+  },
+  "82b0b58e0d00 U.S. Department.eml": {
+    "filename": "82b0b58e0d00 U.S. Department.eml",
+    "hops": 11,
+    "totalDelay": 1.9166666666666663,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: U.S. Department of Homeland Security (DHS) Science and\n Technology Directorate, Office of University Programs, Professional\n Opportunities for the Student",
+    "from": "ECS_ADU@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_ADU@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 49,
+    "counts": {
+      "characterCount": 6373,
+      "wordCount": 664,
+      "sentenceCount": 18
+    },
+    "readability": {
+      "flesch_kincaid": 24.8,
+      "gunning_fog": 20.84,
+      "smog_index": 19.8,
+      "automated_readability_index": 37.1,
+      "coleman_liau_index": 28.96,
+      "linsear_write": 12.0
+    },
+    "sentiment": {
+      "polarity": 0.12407531194295904,
+      "subjectivity": 0.34129901960784315
+    }
+  },
+  "6a935c574179 Feedback Reques.eml": {
+    "filename": "6a935c574179 Feedback Reques.eml",
+    "hops": 5,
+    "totalDelay": 1.5333333333333332,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Feedback Requested: Fall 2020 STEAM Career Expo",
+    "from": "handshake@mail.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "recruit@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 68,
+    "counts": {
+      "characterCount": 1781,
+      "wordCount": 217,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 31.5,
+      "gunning_fog": 24.48,
+      "smog_index": 21.0,
+      "automated_readability_index": 38.1,
+      "coleman_liau_index": 19.45,
+      "linsear_write": 68.0
+    },
+    "sentiment": {
+      "polarity": 0.10000000000000002,
+      "subjectivity": 0.27291666666666664
+    }
+  },
+  "5dc4ddae0c9b Campus COVID-19.eml": {
+    "filename": "5dc4ddae0c9b Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 19.283333333333335,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 22, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 17,
+    "counts": {
+      "characterCount": 1718,
+      "wordCount": 249,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 26.3,
+      "gunning_fog": 25.06,
+      "smog_index": 22.9,
+      "automated_readability_index": 31.1,
+      "coleman_liau_index": 15.91,
+      "linsear_write": 24.0
+    },
+    "sentiment": {
+      "polarity": 0.13543123543123545,
+      "subjectivity": 0.3393939393939394
+    }
+  },
+  "480d6f1907e2 Discover Inform.eml": {
+    "filename": "480d6f1907e2 Discover Inform.eml",
+    "hops": 7,
+    "totalDelay": 0.11666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Discover Information Technology Careers at Intel",
+    "from": "donotreply@intel.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "de577537fc87 CSG Tech Talk_.eml": {
+    "filename": "de577537fc87 CSG Tech Talk_.eml",
+    "hops": 5,
+    "totalDelay": 1.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "CSG Tech Talk: x86 Architecture with Prof. John Cole",
+    "from": "utdcsg@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "utdcsg@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 10,
+    "counts": {
+      "characterCount": 1915,
+      "wordCount": 91,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 35.2,
+      "gunning_fog": 27.87,
+      "smog_index": 0.0,
+      "automated_readability_index": 96.3,
+      "coleman_liau_index": 82.03,
+      "linsear_write": 10.25
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "9b4e58434655 U.S. Department.eml": {
+    "filename": "9b4e58434655 U.S. Department.eml",
+    "hops": 11,
+    "totalDelay": 0.8500000000000001,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: U.S. Department of Energy Internship Virtual Career\n Fair | October 29, 11 a.m.-3 p.m. ET",
+    "from": "ECS_ADU@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_ADU@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg",
+      "image002.jpg",
+      "WDTS Virtual Career Fair 2020_Flyer.pdf"
+    ],
+    "grammarErrors": 42,
+    "counts": {
+      "characterCount": 5597,
+      "wordCount": 323,
+      "sentenceCount": 10
+    },
+    "readability": {
+      "flesch_kincaid": 33.6,
+      "gunning_fog": 19.11,
+      "smog_index": 19.1,
+      "automated_readability_index": 71.6,
+      "coleman_liau_index": 68.75,
+      "linsear_write": 12.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.26225490196078427,
+      "subjectivity": 0.4196078431372549
+    }
+  },
+  "55b006021c72 Peer Tutoring_.eml": {
+    "filename": "55b006021c72 Peer Tutoring_.eml",
+    "hops": 5,
+    "totalDelay": 1.0833333333333335,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Peer Tutoring: CHEM 2323 Exam 2 Review Saturday",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "leskay@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 26,
+    "counts": {
+      "characterCount": 839,
+      "wordCount": 109,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 58.8,
+      "gunning_fog": 46.54,
+      "smog_index": 0.0,
+      "automated_readability_index": 60.0,
+      "coleman_liau_index": 15.34,
+      "linsear_write": 32.0
+    },
+    "sentiment": {
+      "polarity": 0.15243055555555557,
+      "subjectivity": 0.3486111111111111
+    }
+  },
+  "4a4a7e81077c All set! You\u2019re.eml": {
+    "filename": "4a4a7e81077c All set! You\u2019re.eml",
+    "hops": 5,
+    "totalDelay": 0.41666666666666663,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "All set! You\u2019re registered for Career Expo Days: STEAM Career Expo",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 4105,
+      "wordCount": 618,
+      "sentenceCount": 21
+    },
+    "readability": {
+      "flesch_kincaid": 15.9,
+      "gunning_fog": 15.71,
+      "smog_index": 15.4,
+      "automated_readability_index": 20.1,
+      "coleman_liau_index": 15.27,
+      "linsear_write": 6.5
+    },
+    "sentiment": {
+      "polarity": 0.23156249999999998,
+      "subjectivity": 0.43833333333333346
+    }
+  },
+  "83c0c2bace75 Talent from Gen.eml": {
+    "filename": "83c0c2bace75 Talent from Gen.eml",
+    "hops": 5,
+    "totalDelay": 1.616666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Talent from General Motors has sent you a message on Handshake",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 16,
+    "counts": {
+      "characterCount": 4563,
+      "wordCount": 247,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 41.4,
+      "gunning_fog": 28.83,
+      "smog_index": 19.5,
+      "automated_readability_index": 86.0,
+      "coleman_liau_index": 78.9,
+      "linsear_write": 17.0
+    },
+    "sentiment": {
+      "polarity": 0.21275146422205246,
+      "subjectivity": 0.6200152788388081
+    }
+  },
+  "1857920eb7f6 (MERGED) CE 334.eml": {
+    "filename": "1857920eb7f6 (MERGED) CE 334.eml",
+    "hops": 5,
+    "totalDelay": 1.2000000000000002,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CE 3345.SEC004 - CS 3345.SEC004 - F20: Assignment 6 and\n Quiz 4",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "sxc105920@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 223,
+      "wordCount": 35,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 7.9,
+      "gunning_fog": 6.97,
+      "smog_index": 8.8,
+      "automated_readability_index": 9.2,
+      "coleman_liau_index": 9.38,
+      "linsear_write": 6.0
+    },
+    "sentiment": {
+      "polarity": 0.1375,
+      "subjectivity": 0.3875
+    }
+  },
+  "6b7c6fa55498 Worried about t.eml": {
+    "filename": "6b7c6fa55498 Worried about t.eml",
+    "hops": 5,
+    "totalDelay": 1.3,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Worried about technical interviews? + Hacktoberfest is Tomorrow!",
+    "from": "comet.acm@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "comet.acm@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 40,
+    "counts": {
+      "characterCount": 5381,
+      "wordCount": 282,
+      "sentenceCount": 13
+    },
+    "readability": {
+      "flesch_kincaid": 29.5,
+      "gunning_fog": 15.2,
+      "smog_index": 14.1,
+      "automated_readability_index": 74.8,
+      "coleman_liau_index": 77.78,
+      "linsear_write": 8.125
+    },
+    "sentiment": {
+      "polarity": 0.21151960784313725,
+      "subjectivity": 0.42647058823529416
+    }
+  },
+  "3a1d4534b7e5 Startup and Res.eml": {
+    "filename": "3a1d4534b7e5 Startup and Res.eml",
+    "hops": 5,
+    "totalDelay": 1.3,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Startup and Research Opportunities!",
+    "from": "mindutdallas@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "mindutdallas@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 40,
+    "counts": {
+      "characterCount": 6947,
+      "wordCount": 269,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 44.4,
+      "gunning_fog": 27.14,
+      "smog_index": 20.4,
+      "automated_readability_index": 118.1,
+      "coleman_liau_index": 105.7,
+      "linsear_write": 16.75
+    },
+    "sentiment": {
+      "polarity": 0.20988386613386614,
+      "subjectivity": 0.34100899100899096
+    }
+  },
+  "0a234078da2f Fidelity Applic.eml": {
+    "filename": "0a234078da2f Fidelity Applic.eml",
+    "hops": 8,
+    "totalDelay": 0.15,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Fidelity Application Update",
+    "from": "Priya.Bhatnagar@fmr.com",
+    "to": [
+      "Jerry.Teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "image001.gif",
+      "image002.jpg",
+      "image003.jpg",
+      "image004.jpg",
+      "image005.jpg",
+      "image006.png",
+      "image007.jpg",
+      "image008.png",
+      "image009.png"
+    ],
+    "grammarErrors": 39,
+    "counts": {
+      "characterCount": 4641,
+      "wordCount": 107,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 71.5,
+      "gunning_fog": 32.22,
+      "smog_index": 22.6,
+      "automated_readability_index": 195.1,
+      "coleman_liau_index": 198.72,
+      "linsear_write": 20.5
+    },
+    "sentiment": {
+      "polarity": 0.12448051948051948,
+      "subjectivity": 0.4099350649350649
+    }
+  },
+  "35a19666bfa4 Thank You for J.eml": {
+    "filename": "35a19666bfa4 Thank You for J.eml",
+    "hops": 7,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Thank You for Joining our Talent Network",
+    "from": "donotreply@caci.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "2e9a4d75f0c6 Error In Zybook.eml": {
+    "filename": "2e9a4d75f0c6 Error In Zybook.eml",
+    "hops": 6,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Error In Zybooks",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 21,
+    "counts": {
+      "characterCount": 3044,
+      "wordCount": 163,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 28.9,
+      "gunning_fog": 17.17,
+      "smog_index": 12.8,
+      "automated_readability_index": 73.8,
+      "coleman_liau_index": 77.5,
+      "linsear_write": 8.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.45909090909090905,
+      "subjectivity": 0.5386363636363637
+    }
+  },
+  "b976932e41a6 EPICS informati.eml": {
+    "filename": "b976932e41a6 EPICS informati.eml",
+    "hops": 11,
+    "totalDelay": 0.8999999999999999,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.stu] EPICS information session today",
     "from": "jerry.alexander@utdallas.edu",
     "to": [
       "jerry.alexander@utdallas.edu"
@@ -153,90 +2689,163 @@
       "jerry.alexander@utdallas.edu"
     ],
     "attachments": [],
-    "grammarErrors": 23,
+    "grammarErrors": 25,
     "counts": {
-      "characterCount": 4346,
-      "wordCount": 660,
-      "sentenceCount": 18
+      "characterCount": 3278,
+      "wordCount": 175,
+      "sentenceCount": 4
     },
     "readability": {
-      "flesch_kincaid": 20.0,
-      "gunning_fog": 19.65,
-      "smog_index": 17.4,
-      "automated_readability_index": 22.4,
-      "coleman_liau_index": 13.7,
-      "linsear_write": 11.333333333333334
+      "flesch_kincaid": 39.3,
+      "gunning_fog": 24.61,
+      "smog_index": 19.8,
+      "automated_readability_index": 83.6,
+      "coleman_liau_index": 77.45,
+      "linsear_write": 17.75
     },
     "sentiment": {
-      "polarity": 0.3283889560052351,
-      "subjectivity": 0.4800807074062888
+      "polarity": 0.3076923076923077,
+      "subjectivity": 0.3775641025641026
     }
   },
-  "Contest today 12:00 noon CDT - 3:00 p.m.": {
-    "hops": 6,
-    "totalDelay": 0.08333333333333334,
-    "spf": "none",
-    "dkim": "pass",
-    "dmarc": "bestguesspass",
-    "subject": "Contest today 12:00 noon CDT - 3:00 p.m.",
-    "from": "ivorpage@att.net",
+  "28baa6eb7f3a [ecs.all] Annou.eml": {
+    "filename": "28baa6eb7f3a [ecs.all] Annou.eml",
+    "hops": 11,
+    "totalDelay": 8.366666666666665,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Announcing UT Dallas Bioengineering Faculty Awards",
+    "from": "Bioengineering@utdallas.edu",
     "to": [
-      "ivor.page@tx.rr.com"
+      "ecs.all@utdallas.edu"
     ],
-    "replyTo": [],
+    "replyTo": [
+      "Bioengineering@utdallas.edu"
+    ],
     "attachments": [],
-    "grammarErrors": 1,
+    "grammarErrors": 0,
     "counts": {
-      "characterCount": 534,
-      "wordCount": 84,
-      "sentenceCount": 3
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 11.8,
-      "gunning_fog": 14.53,
-      "smog_index": 14.1,
-      "automated_readability_index": 18.3,
-      "coleman_liau_index": 13.06,
-      "linsear_write": 5.625
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
     },
     "sentiment": {
-      "polarity": 0.10000000000000002,
-      "subjectivity": 0.31666666666666665
+      "polarity": 0.0,
+      "subjectivity": 0.0
     }
   },
-  "Texas Instruments Inc. is coming to career fair! \ud83c\udf88": {
-    "hops": 5,
-    "totalDelay": 1.3166666666666667,
+  "bc29fd45aefb Basics of Acces.eml": {
+    "filename": "bc29fd45aefb Basics of Acces.eml",
+    "hops": 6,
+    "totalDelay": 0.05,
     "spf": "pass",
     "dkim": "pass",
     "dmarc": "pass",
-    "subject": "Texas Instruments Inc. is coming to career fair! \ud83c\udf88",
-    "from": "handshake@notifications.joinhandshake.com",
+    "subject": "Basics of Accessibility Confirmation",
+    "from": "no-reply@zoom.us",
     "to": [
-      "ewz190000@utdallas.edu"
+      "Jerry.Teng@UTDallas.edu"
     ],
     "replyTo": [],
     "attachments": [],
-    "grammarErrors": 12,
+    "grammarErrors": 0,
     "counts": {
-      "characterCount": 940,
-      "wordCount": 148,
-      "sentenceCount": 6
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 11.7,
-      "gunning_fog": 13.12,
-      "smog_index": 13.3,
-      "automated_readability_index": 16.1,
-      "coleman_liau_index": 12.54,
-      "linsear_write": 21.666666666666668
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
     },
     "sentiment": {
-      "polarity": 0.5777777777777778,
-      "subjectivity": 0.7111111111111111
+      "polarity": 0.0,
+      "subjectivity": 0.0
     }
   },
-  "\ud83d\udc40 See who's hiring": {
+  "a83ad2954698 Important infor.eml": {
+    "filename": "a83ad2954698 Important infor.eml",
+    "hops": 5,
+    "totalDelay": 0.8666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Important information about your application to Toyota Connected",
+    "from": "holli.placino@toyotaconnected.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 983,
+      "wordCount": 112,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 21.4,
+      "gunning_fog": 21.71,
+      "smog_index": 16.3,
+      "automated_readability_index": 34.2,
+      "coleman_liau_index": 26.41,
+      "linsear_write": 13.0
+    },
+    "sentiment": {
+      "polarity": 0.21237373737373738,
+      "subjectivity": 0.457940947940948
+    }
+  },
+  "9c09e622ee8d [students] Brie.eml": {
+    "filename": "9c09e622ee8d [students] Brie.eml",
+    "hops": 11,
+    "totalDelay": 11.1,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Brief Educational Technology Services Survey",
+    "from": "katrina.adams@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "katrina.adams@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "bd9def576ae1 \ud83d\udc40 See who's hir.eml": {
+    "filename": "bd9def576ae1 \ud83d\udc40 See who's hir.eml",
     "hops": 5,
     "totalDelay": 21.15,
     "spf": "pass",
@@ -270,39 +2879,2151 @@
       "subjectivity": 0.48806193806193804
     }
   },
-  "Scott from DoorDash has sent you a message on Handshake": {
+  "c75224722a27 Talent from Gen.eml": {
+    "filename": "c75224722a27 Talent from Gen.eml",
     "hops": 5,
+    "totalDelay": 0.21666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Talent from General Motors has sent you a message on Handshake",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 11,
+    "counts": {
+      "characterCount": 2672,
+      "wordCount": 148,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 79.9,
+      "gunning_fog": 67.58,
+      "smog_index": 0.0,
+      "automated_readability_index": 133.7,
+      "coleman_liau_index": 77.86,
+      "linsear_write": 22.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.2304383116883117,
+      "subjectivity": 0.4529491341991342
+    }
+  },
+  "8df6b2d1c3a4 U.S. Department.eml": {
+    "filename": "8df6b2d1c3a4 U.S. Department.eml",
+    "hops": 11,
+    "totalDelay": 2.45,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: U.S. Department of Homeland Security (DHS) Science and\n Technology Directorate, Office of University Programs, Professional\n Opportunities for the Student",
+    "from": "ECS_ADU@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_ADU@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 49,
+    "counts": {
+      "characterCount": 6357,
+      "wordCount": 664,
+      "sentenceCount": 18
+    },
+    "readability": {
+      "flesch_kincaid": 24.8,
+      "gunning_fog": 20.72,
+      "smog_index": 19.8,
+      "automated_readability_index": 37.0,
+      "coleman_liau_index": 28.78,
+      "linsear_write": 12.0
+    },
+    "sentiment": {
+      "polarity": 0.12407531194295904,
+      "subjectivity": 0.34129901960784315
+    }
+  },
+  "3bd05ce904a9 Jerry, start a.eml": {
+    "filename": "3bd05ce904a9 Jerry, start a.eml",
+    "hops": 4,
     "totalDelay": 0.06666666666666667,
     "spf": "pass",
     "dkim": "pass",
     "dmarc": "pass",
-    "subject": "Scott from DoorDash has sent you a message on Handshake",
-    "from": "handshake@notifications.joinhandshake.com",
+    "subject": "Jerry, start a conversation with your new connection, Matthew",
+    "from": "invitations@linkedin.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "text-body",
+      "html-body"
+    ],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "0ef85de684d2 Hello from the.eml": {
+    "filename": "0ef85de684d2 Hello from the.eml",
+    "hops": 11,
+    "totalDelay": 48.98333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] Hello from the ADU! ECS Scholarship Deadline, Fast Track\n Application Window and UT Austin REU Information Session",
+    "from": "amy.walker@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "amy.walker@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png"
+    ],
+    "grammarErrors": 24,
+    "counts": {
+      "characterCount": 3371,
+      "wordCount": 194,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 26.9,
+      "gunning_fog": 15.08,
+      "smog_index": 15.9,
+      "automated_readability_index": 67.9,
+      "coleman_liau_index": 67.29,
+      "linsear_write": 11.833333333333334
+    },
+    "sentiment": {
+      "polarity": 0.4388888888888889,
+      "subjectivity": 0.43333333333333335
+    }
+  },
+  "400f1de0dfed Two-Semester In.eml": {
+    "filename": "400f1de0dfed Two-Semester In.eml",
+    "hops": 11,
+    "totalDelay": 0.6666666666666667,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.cs.ug] Two-Semester Internship",
+    "from": "aldhahir@utdallas.edu",
+    "to": [
+      "ecs.ee.ug@lists.utdallas.edu",
+      "ecs.ce.ug@lists.utdallas.edu",
+      "ecs.cs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "aldhahir@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 4,
+    "counts": {
+      "characterCount": 555,
+      "wordCount": 70,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 20.5,
+      "gunning_fog": 22.57,
+      "smog_index": 0.0,
+      "automated_readability_index": 29.4,
+      "coleman_liau_index": 21.65,
+      "linsear_write": 13.25
+    },
+    "sentiment": {
+      "polarity": 0.21250000000000002,
+      "subjectivity": 0.2875
+    }
+  },
+  "cb1aa14af0be [students] Cele.eml": {
+    "filename": "cb1aa14af0be [students] Cele.eml",
+    "hops": 11,
+    "totalDelay": 17.783333333333335,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Celebrate Founders Day with UT Dallas!",
+    "from": "announcements@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "announcements@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "52c845bba28c ACM Dev Applica.eml": {
+    "filename": "52c845bba28c ACM Dev Applica.eml",
+    "hops": 5,
+    "totalDelay": 0.08333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "none",
+    "subject": "ACM Dev Applications Open! Win an Amazon Giftcard",
+    "from": "contact@acmutd.co",
     "to": [
       "ewz190000@utdallas.edu"
     ],
+    "replyTo": [
+      "contact@acmutd.co"
+    ],
+    "attachments": [],
+    "grammarErrors": 11,
+    "counts": {
+      "characterCount": 1529,
+      "wordCount": 231,
+      "sentenceCount": 10
+    },
+    "readability": {
+      "flesch_kincaid": 13.5,
+      "gunning_fog": 13.92,
+      "smog_index": 13.8,
+      "automated_readability_index": 16.8,
+      "coleman_liau_index": 14.63,
+      "linsear_write": 10.714285714285714
+    },
+    "sentiment": {
+      "polarity": 0.2425,
+      "subjectivity": 0.37
+    }
+  },
+  "424880e694e9 [students] Stud.eml": {
+    "filename": "424880e694e9 [students] Stud.eml",
+    "hops": 11,
+    "totalDelay": 9.51666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Student Ambassador Info Session is Today",
+    "from": "ambassadors@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ambassadors@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "4bb793c0163b (MERGED) CS 334.eml": {
+    "filename": "4bb793c0163b (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 0.7666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: quiz 01 through 06\n average for midterm",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 169,
+      "wordCount": 30,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 5.6,
+      "gunning_fog": 10.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 8.1,
+      "coleman_liau_index": 8.23,
+      "linsear_write": 8.0
+    },
+    "sentiment": {
+      "polarity": -0.049999999999999996,
+      "subjectivity": 0.5
+    }
+  },
+  "8d746f039926 This Week in Re.eml": {
+    "filename": "8d746f039926 This Week in Re.eml",
+    "hops": 10,
+    "totalDelay": 9.716666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] This Week in Research - October 26-30",
+    "from": "mjs160130@utdallas.edu",
+    "to": [
+      "mjs160130@utdallas.edu"
+    ],
+    "replyTo": [
+      "mjs160130@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg",
+      "image002.jpg",
+      "image003.jpg",
+      "image004.jpg",
+      "image005.jpg"
+    ],
+    "grammarErrors": 19,
+    "counts": {
+      "characterCount": 3821,
+      "wordCount": 319,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 29.3,
+      "gunning_fog": 24.01,
+      "smog_index": 19.4,
+      "automated_readability_index": 53.3,
+      "coleman_liau_index": 42.88,
+      "linsear_write": 12.4
+    },
+    "sentiment": {
+      "polarity": 0.14914141414141416,
+      "subjectivity": 0.4183333333333333
+    }
+  },
+  "99cd9caa96df Jonsson School.eml": {
+    "filename": "99cd9caa96df Jonsson School.eml",
+    "hops": 11,
+    "totalDelay": 10.016666666666667,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Jonsson School Events",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 144,
+    "counts": {
+      "characterCount": 23489,
+      "wordCount": 1843,
+      "sentenceCount": 61
+    },
+    "readability": {
+      "flesch_kincaid": 24.5,
+      "gunning_fog": 17.22,
+      "smog_index": 17.6,
+      "automated_readability_index": 48.8,
+      "coleman_liau_index": 45.95,
+      "linsear_write": 23.0
+    },
+    "sentiment": {
+      "polarity": 0.17809855150887752,
+      "subjectivity": 0.46252744839701365
+    }
+  },
+  "d95d73598e13 Update_ Phases.eml": {
+    "filename": "d95d73598e13 Update_ Phases.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Update: Phases 1-3 Power Outage",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "136869d30ba6 SWEekly Edition.eml": {
+    "filename": "136869d30ba6 SWEekly Edition.eml",
+    "hops": 5,
+    "totalDelay": 3.6333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "SWEekly Edition 7",
+    "from": "sweutd@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "sweutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 87,
+    "counts": {
+      "characterCount": 13168,
+      "wordCount": 765,
+      "sentenceCount": 32
+    },
+    "readability": {
+      "flesch_kincaid": 23.2,
+      "gunning_fog": 14.74,
+      "smog_index": 14.3,
+      "automated_readability_index": 67.0,
+      "coleman_liau_index": 66.07,
+      "linsear_write": 8.571428571428571
+    },
+    "sentiment": {
+      "polarity": 0.2596506734006734,
+      "subjectivity": 0.5631010101010101
+    }
+  },
+  "d0ac0c826a6d Thank you for a.eml": {
+    "filename": "d0ac0c826a6d Thank you for a.eml",
+    "hops": 5,
+    "totalDelay": 1.4666666666666666,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Thank you for applying - 2021 Summer Intern - Information\n Technology-284722",
+    "from": "recruiting-noreply@hrtextron.textron.com",
+    "to": [
+      "jerry.teng@utdallas.edu",
+      "jerry.teng@utdallas.edu"
+    ],
     "replyTo": [],
+    "attachments": [
+      "this_message_in_html.htm"
+    ],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "9410e439adb8 Rutford Closure.eml": {
+    "filename": "9410e439adb8 Rutford Closure.eml",
+    "hops": 11,
+    "totalDelay": 6.516666666666666,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students] Rutford Closure",
+    "from": "kellykinnard@utdallas.edu",
+    "to": [
+      "Faculty@lists.utdallas.edu",
+      "Students@lists.utdallas.edu",
+      "Staff@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "kellykinnard@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png"
+    ],
+    "grammarErrors": 12,
+    "counts": {
+      "characterCount": 838,
+      "wordCount": 96,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 43.1,
+      "gunning_fog": 44.23,
+      "smog_index": 0.0,
+      "automated_readability_index": 63.5,
+      "coleman_liau_index": 25.43,
+      "linsear_write": 11.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.11666666666666668,
+      "subjectivity": 0.3666666666666667
+    }
+  },
+  "d54727859a17 ACM Hacktoberfe.eml": {
+    "filename": "d54727859a17 ACM Hacktoberfe.eml",
+    "hops": 11,
+    "totalDelay": 8.833333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] FW: ACM Hacktoberfest!",
+    "from": "john.cole@utdallas.edu",
+    "to": [
+      "ecs.all@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "john.cole@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 29,
+    "counts": {
+      "characterCount": 8899,
+      "wordCount": 290,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 68.1,
+      "gunning_fog": 39.62,
+      "smog_index": 22.1,
+      "automated_readability_index": 154.9,
+      "coleman_liau_index": 144.04,
+      "linsear_write": 11.0
+    },
+    "sentiment": {
+      "polarity": 0.289116847826087,
+      "subjectivity": 0.5603864734299517
+    }
+  },
+  "6414ded76796 Campus COVID-19.eml": {
+    "filename": "6414ded76796 Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 15.266666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - November 3, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 11,
+    "counts": {
+      "characterCount": 1415,
+      "wordCount": 200,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 26.3,
+      "gunning_fog": 26.2,
+      "smog_index": 23.3,
+      "automated_readability_index": 32.1,
+      "coleman_liau_index": 17.13,
+      "linsear_write": 24.0
+    },
+    "sentiment": {
+      "polarity": 0.12773892773892775,
+      "subjectivity": 0.3163170163170163
+    }
+  },
+  "0e4a566ef91c Campus COVID-19.eml": {
+    "filename": "0e4a566ef91c Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 16.283333333333335,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 19, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
     "attachments": [],
     "grammarErrors": 3,
     "counts": {
-      "characterCount": 1551,
-      "wordCount": 257,
+      "characterCount": 920,
+      "wordCount": 129,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 30.8,
+      "gunning_fog": 34.17,
+      "smog_index": 0.0,
+      "automated_readability_index": 39.9,
+      "coleman_liau_index": 17.77,
+      "linsear_write": 15.0
+    },
+    "sentiment": {
+      "polarity": 0.17606060606060608,
+      "subjectivity": 0.32121212121212117
+    }
+  },
+  "907c202aa81a DUO Security In.eml": {
+    "filename": "907c202aa81a DUO Security In.eml",
+    "hops": 5,
+    "totalDelay": 0.11666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "DUO Security Internship Program - Info Session",
+    "from": "donotreply@cisco.avature.net",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "donotreply@cisco.avature.net"
+    ],
+    "attachments": [
+      "logoheader.png",
+      "iconIG.png",
+      "iconTW.png",
+      "iconFB.png",
+      "iconLI.png",
+      "iconUK.png",
+      "iconYT.png"
+    ],
+    "grammarErrors": 45,
+    "counts": {
+      "characterCount": 5812,
+      "wordCount": 123,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 70.0,
+      "gunning_fog": 30.06,
+      "smog_index": 19.9,
+      "automated_readability_index": 216.3,
+      "coleman_liau_index": 222.8,
+      "linsear_write": 12.6
+    },
+    "sentiment": {
+      "polarity": 0.5,
+      "subjectivity": 0.15
+    }
+  },
+  "c4930764ad77 Thank you for a.eml": {
+    "filename": "c4930764ad77 Thank you for a.eml",
+    "hops": 5,
+    "totalDelay": 1.5833333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Thank you for applying - 2021 Information Technology Intern-284368",
+    "from": "recruiting-noreply@hrtextron.textron.com",
+    "to": [
+      "jerry.teng@utdallas.edu",
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "this_message_in_html.htm"
+    ],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "7a05d883421a Next Steps_ Car.eml": {
+    "filename": "7a05d883421a Next Steps_ Car.eml",
+    "hops": 5,
+    "totalDelay": 1.1833333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Next Steps: Career Expo Days: STEAM Career Expo",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 4,
+    "counts": {
+      "characterCount": 914,
+      "wordCount": 134,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 27.1,
+      "gunning_fog": 30.08,
+      "smog_index": 0.0,
+      "automated_readability_index": 40.4,
+      "coleman_liau_index": 17.66,
+      "linsear_write": 19.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.2131818181818182,
+      "subjectivity": 0.4172727272727273
+    }
+  },
+  "5ebc69d24ef0 Event starting.eml": {
+    "filename": "5ebc69d24ef0 Event starting.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "fail",
+    "dmarc": "pass",
+    "subject": "Event starting soon with Samsung Electronics America",
+    "from": "noreply@ripplematch.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "fc742e22e416 SWEekly Edition.eml": {
+    "filename": "fc742e22e416 SWEekly Edition.eml",
+    "hops": 5,
+    "totalDelay": 9.25,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "SWEekly Edition 9",
+    "from": "sweutd@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "sweutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 64,
+    "counts": {
+      "characterCount": 14228,
+      "wordCount": 685,
+      "sentenceCount": 32
+    },
+    "readability": {
+      "flesch_kincaid": 29.3,
+      "gunning_fog": 14.4,
+      "smog_index": 14.2,
+      "automated_readability_index": 82.5,
+      "coleman_liau_index": 85.73,
+      "linsear_write": 8.5
+    },
+    "sentiment": {
+      "polarity": 0.23387592137592134,
+      "subjectivity": 0.41240786240786254
+    }
+  },
+  "f340520070d8 Daily Notificat.eml": {
+    "filename": "f340520070d8 Daily Notificat.eml",
+    "hops": 5,
+    "totalDelay": 0.6833333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Daily Notifications",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      "DO-NOT-REPLY@utdallas.edu"
+    ],
+    "replyTo": [
+      "DO-NOT-REPLY@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 173,
+    "counts": {
+      "characterCount": 4977,
+      "wordCount": 153,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 281.3,
+      "gunning_fog": 66.43,
+      "smog_index": 0.0,
+      "automated_readability_index": 118.7,
+      "coleman_liau_index": 53.21,
+      "linsear_write": 71.0
+    },
+    "sentiment": {
+      "polarity": 0.03376623376623377,
+      "subjectivity": 0.4720779220779221
+    }
+  },
+  "c32ad06abc92 Campus COVID-19.eml": {
+    "filename": "c32ad06abc92 Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 21.749999999999996,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 9, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 1211,
+      "wordCount": 172,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 22.4,
+      "gunning_fog": 23.71,
+      "smog_index": 21.2,
+      "automated_readability_index": 28.5,
+      "coleman_liau_index": 17.07,
+      "linsear_write": 17.0
+    },
+    "sentiment": {
+      "polarity": 0.11812354312354313,
+      "subjectivity": 0.31439393939393945
+    }
+  },
+  "90bdff5b993a CSG Tech Talk_.eml": {
+    "filename": "90bdff5b993a CSG Tech Talk_.eml",
+    "hops": 5,
+    "totalDelay": 1.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "CSG Tech Talk: x86 Architecture with Prof. John Cole",
+    "from": "utdcsg@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "utdcsg@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 10,
+    "counts": {
+      "characterCount": 1915,
+      "wordCount": 91,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 35.2,
+      "gunning_fog": 27.87,
+      "smog_index": 0.0,
+      "automated_readability_index": 96.3,
+      "coleman_liau_index": 82.03,
+      "linsear_write": 10.25
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c8f132cb182f ECS Career Bits.eml": {
+    "filename": "c8f132cb182f ECS Career Bits.eml",
+    "hops": 5,
+    "totalDelay": 3.0666666666666664,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "ECS Career Bits - October",
+    "from": "handshake@mail.joinhandshake.com",
+    "to": [
+      "axt190058@utdallas.edu"
+    ],
+    "replyTo": [
+      "eric.green@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 77,
+    "counts": {
+      "characterCount": 3352,
+      "wordCount": 478,
+      "sentenceCount": 22
+    },
+    "readability": {
+      "flesch_kincaid": 12.9,
+      "gunning_fog": 12.28,
+      "smog_index": 14.6,
+      "automated_readability_index": 17.6,
+      "coleman_liau_index": 14.39,
+      "linsear_write": 68.0
+    },
+    "sentiment": {
+      "polarity": 0.221984126984127,
+      "subjectivity": 0.36071428571428565
+    }
+  },
+  "f1403db3d6ae NS&M Outstandin.eml": {
+    "filename": "f1403db3d6ae NS&M Outstandin.eml",
+    "hops": 5,
+    "totalDelay": 0.3,
+    "spf": "pass",
+    "dkim": "test",
+    "dmarc": "pass",
+    "subject": "NS&M Outstanding teaching award nominations",
+    "from": "noreply@qemailserver.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "goeckner@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 6,
+    "counts": {
+      "characterCount": 1481,
+      "wordCount": 36,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 64.5,
+      "gunning_fog": 32.18,
+      "smog_index": 0.0,
+      "automated_readability_index": 186.7,
+      "coleman_liau_index": 191.3,
+      "linsear_write": 23.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.125
+    }
+  },
+  "5c78fac20d7e GTC comes to a.eml": {
+    "filename": "5c78fac20d7e GTC comes to a.eml",
+    "hops": 6,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "GTC comes to a close, but the learning continues",
+    "from": "GTC_US@nvidia.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "GTC_US@nvidia.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "045f09d32d69 Alumni Panel Pa.eml": {
+    "filename": "045f09d32d69 Alumni Panel Pa.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Alumni Panel Part 2 Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "2fd8b4e7f8fa TI Tuesday Hand.eml": {
+    "filename": "2fd8b4e7f8fa TI Tuesday Hand.eml",
+    "hops": 10,
+    "totalDelay": 0.5666666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.stu] TI Tuesday Hands-on Workshop - October 27 - you must\n register by 10/19 in order to get the TI parts shipped to your home in\n time:  Build your very own gaming console using a real time operating\n system.  Capped at 40 - first come/first served!",
+    "from": "wetterskog@utdallas.edu",
+    "to": [
+      "wetterskog@utdallas.edu",
+      "ces160130@utdallas.edu",
+      "woten@utdallas.edu",
+      "Amanda.Robles@UTDallas.edu"
+    ],
+    "replyTo": [
+      "wetterskog@utdallas.edu"
+    ],
+    "attachments": [
+      "image003.png"
+    ],
+    "grammarErrors": 14,
+    "counts": {
+      "characterCount": 1390,
+      "wordCount": 139,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 62.2,
+      "gunning_fog": 61.64,
+      "smog_index": 0.0,
+      "automated_readability_index": 90.7,
+      "coleman_liau_index": 31.99,
+      "linsear_write": 7.857142857142858
+    },
+    "sentiment": {
+      "polarity": 0.3665178571428572,
+      "subjectivity": 0.3825396825396826
+    }
+  },
+  "7ad64168db48 ECS Career Bits.eml": {
+    "filename": "7ad64168db48 ECS Career Bits.eml",
+    "hops": 5,
+    "totalDelay": 0.18333333333333332,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "ECS Career Bits - October",
+    "from": "handshake@mail.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "eric.green@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 78,
+    "counts": {
+      "characterCount": 3348,
+      "wordCount": 478,
+      "sentenceCount": 22
+    },
+    "readability": {
+      "flesch_kincaid": 12.9,
+      "gunning_fog": 12.28,
+      "smog_index": 14.6,
+      "automated_readability_index": 17.5,
+      "coleman_liau_index": 14.39,
+      "linsear_write": 68.0
+    },
+    "sentiment": {
+      "polarity": 0.221984126984127,
+      "subjectivity": 0.36071428571428565
+    }
+  },
+  "4536b39c6e93 [ecs.all] Regis.eml": {
+    "filename": "4536b39c6e93 [ecs.all] Regis.eml",
+    "hops": 11,
+    "totalDelay": 8.516666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Registration Confirmation : 2020 TxACE Symposium",
+    "from": "engineering@utdallas.edu",
+    "to": [
+      "ecs.all@utdallas.edu"
+    ],
+    "replyTo": [
+      "Lucien.Finley@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "701afd03408e Virtual GEM Gra.eml": {
+    "filename": "701afd03408e Virtual GEM Gra.eml",
+    "hops": 10,
+    "totalDelay": 21.316666666666666,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Virtual GEM Grad Lab - Saturday, October 24th, 2020",
+    "from": "mjs160130@utdallas.edu",
+    "to": [
+      "mjs160130@utdallas.edu"
+    ],
+    "replyTo": [
+      "mjs160130@utdallas.edu"
+    ],
+    "attachments": [
+      "image003.jpg",
+      "Updated_GEM Flyer.png"
+    ],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 1721,
+      "wordCount": 150,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 17.7,
+      "gunning_fog": 13.65,
+      "smog_index": 13.2,
+      "automated_readability_index": 37.4,
+      "coleman_liau_index": 39.62,
+      "linsear_write": 16.75
+    },
+    "sentiment": {
+      "polarity": 0.33437500000000003,
+      "subjectivity": 0.5312500000000001
+    }
+  },
+  "1bbb5274d715 [texsaw]  Join.eml": {
+    "filename": "1bbb5274d715 [texsaw]  Join.eml",
+    "hops": 11,
+    "totalDelay": 0.3833333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.cs.ug] [texsaw]  Join us for TexSAW 2020 Cybersecurity Contest",
+    "from": "rhonda.walls@utdallas.edu",
+    "to": [
+      "ecs.se.ug@lists.utdallas.edu",
+      "ecs.cs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "rhonda.walls@utdallas.edu"
+    ],
+    "attachments": [
+      "<B399600FC8368A41A24E9E9E7F4EC65C@prod.exchangelabs.com>"
+    ],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 742,
+      "wordCount": 68,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 20.4,
+      "gunning_fog": 15.55,
+      "smog_index": 16.7,
+      "automated_readability_index": 37.3,
+      "coleman_liau_index": 34.98,
+      "linsear_write": 12.75
+    },
+    "sentiment": {
+      "polarity": 0.1787878787878788,
+      "subjectivity": 0.5515151515151515
+    }
+  },
+  "6acdd09d4fd2 Build an API Co.eml": {
+    "filename": "6acdd09d4fd2 Build an API Co.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Build an API Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c616e0ce2ac8 UT Dallas Chora.eml": {
+    "filename": "c616e0ce2ac8 UT Dallas Chora.eml",
+    "hops": 11,
+    "totalDelay": 11.833333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] UT Dallas Choral Newsletter; October 2020",
+    "from": "Choirs@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "Choirs@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 36,
+    "counts": {
+      "characterCount": 6411,
+      "wordCount": 360,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 36.3,
+      "gunning_fog": 26.23,
+      "smog_index": 17.8,
+      "automated_readability_index": 83.2,
+      "coleman_liau_index": 72.06,
+      "linsear_write": 14.0
+    },
+    "sentiment": {
+      "polarity": 0.4754012161084529,
+      "subjectivity": 0.6297767145135565
+    }
+  },
+  "53bea2c864ce Phase 1 Fire Sa.eml": {
+    "filename": "53bea2c864ce Phase 1 Fire Sa.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Phase 1 Fire Safety Information",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "676751b4a94d Phase 1 Fire Sa.eml": {
+    "filename": "676751b4a94d Phase 1 Fire Sa.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Phase 1 Fire Safety Information",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "bac7636b8868 CS 2337.003 - C.eml": {
+    "filename": "bac7636b8868 CS 2337.003 - C.eml",
+    "hops": 5,
+    "totalDelay": 1.1,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "CS 2337.003 - Computer Science II - F20: Project 2 Categorical\n Rubric Graded",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "jws130830@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 13,
+    "counts": {
+      "characterCount": 644,
+      "wordCount": 96,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 39.6,
+      "gunning_fog": 42.15,
+      "smog_index": 0.0,
+      "automated_readability_index": 53.3,
+      "coleman_liau_index": 14.99,
+      "linsear_write": 61.0
+    },
+    "sentiment": {
+      "polarity": 0.125,
+      "subjectivity": 0.41666666666666663
+    }
+  },
+  "a590c0975d8f [students] Flu.eml": {
+    "filename": "a590c0975d8f [students] Flu.eml",
+    "hops": 11,
+    "totalDelay": 300.76666666666665,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Flu Vaccine Now Available",
+    "from": "healthcen@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "healthcen@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "aded54e88528 ECS 1100.502 -.eml": {
+    "filename": "aded54e88528 ECS 1100.502 -.eml",
+    "hops": 5,
+    "totalDelay": 1.1166666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "ECS 1100.502 - Introduction to Engineering and Computer Science -\n F20: Policy Quiz Retake",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "ixm033000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 175,
+      "wordCount": 31,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 13.0,
+      "gunning_fog": 13.69,
+      "smog_index": 0.0,
+      "automated_readability_index": 16.1,
+      "coleman_liau_index": 8.77,
+      "linsear_write": 18.5
+    },
+    "sentiment": {
+      "polarity": 0.625,
+      "subjectivity": 0.31666666666666665
+    }
+  },
+  "fdd863b00490 (MERGED) CS 334.eml": {
+    "filename": "fdd863b00490 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 0.7666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: quiz 01 through 06\n average for midterm",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 169,
+      "wordCount": 30,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 5.6,
+      "gunning_fog": 10.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 8.1,
+      "coleman_liau_index": 8.23,
+      "linsear_write": 8.0
+    },
+    "sentiment": {
+      "polarity": -0.049999999999999996,
+      "subjectivity": 0.5
+    }
+  },
+  "4a760ca5d6e3 ECS Pre-Registr.eml": {
+    "filename": "4a760ca5d6e3 ECS Pre-Registr.eml",
+    "hops": 11,
+    "totalDelay": 94.63333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.cs.ug] ECS Pre-Registration Guide",
+    "from": "ECS_UGadvising@utdallas.edu",
+    "to": [
+      "ecs.bmen.ug@lists.utdallas.edu",
+      "ecs.ce.ug@lists.utdallas.edu",
+      "ecs.cs.ug@lists.utdallas.edu",
+      "ecs.ee.ug@lists.utdallas.edu",
+      "ecs.me.ug@lists.utdallas.edu",
+      "ecs.mse.ug@lists.utdallas.edu",
+      "ecs.se.ug@lists.utdallas.edu",
+      "ecs.te.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_UGadvising@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg"
+    ],
+    "grammarErrors": 15,
+    "counts": {
+      "characterCount": 2564,
+      "wordCount": 123,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 49.7,
+      "gunning_fog": 30.13,
+      "smog_index": 0.0,
+      "automated_readability_index": 102.2,
+      "coleman_liau_index": 88.36,
+      "linsear_write": 17.5
+    },
+    "sentiment": {
+      "polarity": 0.3,
+      "subjectivity": 0.4
+    }
+  },
+  "920ad216dcbf Important Housi.eml": {
+    "filename": "920ad216dcbf Important Housi.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Important Housing Update",
+    "from": "housing@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "housing@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "94f9ce7598a2 (MERGED) CS 334.eml": {
+    "filename": "94f9ce7598a2 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 0.33333333333333337,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: HW08 due Tues 10/20",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 68,
+      "wordCount": 12,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 4.4,
+      "gunning_fog": 4.8,
+      "smog_index": 0.0,
+      "automated_readability_index": 6.9,
+      "coleman_liau_index": 7.47,
+      "linsear_write": 5.0
+    },
+    "sentiment": {
+      "polarity": -0.125,
+      "subjectivity": 0.375
+    }
+  },
+  "9b31329976c3 DOE Scholars Pr.eml": {
+    "filename": "9b31329976c3 DOE Scholars Pr.eml",
+    "hops": 11,
+    "totalDelay": 0.6333333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: DOE Scholars Program - Accepting Applications",
+    "from": "ECS_ADU@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ECS_ADU@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 39,
+    "counts": {
+      "characterCount": 4510,
+      "wordCount": 330,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 37.7,
+      "gunning_fog": 29.52,
+      "smog_index": 24.5,
+      "automated_readability_index": 65.8,
+      "coleman_liau_index": 50.13,
+      "linsear_write": 17.75
+    },
+    "sentiment": {
+      "polarity": 0.14097744360902256,
+      "subjectivity": 0.28909774436090224
+    }
+  },
+  "cf78d4068355 Outage Resolved.eml": {
+    "filename": "cf78d4068355 Outage Resolved.eml",
+    "hops": 11,
+    "totalDelay": 40.68333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students] Outage Resolved: Microsoft Teams Login Error",
+    "from": "OITNotify@utdallas.edu",
+    "to": [
+      "OITNotify@utdallas.edu"
+    ],
+    "replyTo": [
+      "OITNotify@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 21,
+    "counts": {
+      "characterCount": 3562,
+      "wordCount": 131,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 51.0,
+      "gunning_fog": 27.56,
+      "smog_index": 21.8,
+      "automated_readability_index": 124.3,
+      "coleman_liau_index": 122.0,
+      "linsear_write": 17.25
+    },
+    "sentiment": {
+      "polarity": 0.325,
+      "subjectivity": 0.7083333333333334
+    }
+  },
+  "5a46167adbd2 WiCyS Weekly Ne.eml": {
+    "filename": "5a46167adbd2 WiCyS Weekly Ne.eml",
+    "hops": 5,
+    "totalDelay": 0.21666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "WiCyS Weekly Newsletter",
+    "from": "wicys.utd@gmail.com",
+    "to": [
+      "Jerry.Teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "wicys.utd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 97,
+    "counts": {
+      "characterCount": 13868,
+      "wordCount": 655,
+      "sentenceCount": 26
+    },
+    "readability": {
+      "flesch_kincaid": 33.2,
+      "gunning_fog": 16.8,
+      "smog_index": 16.4,
+      "automated_readability_index": 86.5,
+      "coleman_liau_index": 89.45,
+      "linsear_write": 11.8
+    },
+    "sentiment": {
+      "polarity": 0.2578698979591837,
+      "subjectivity": 0.5325736961451247
+    }
+  },
+  "ff218f728f79 New Sessions Ad.eml": {
+    "filename": "ff218f728f79 New Sessions Ad.eml",
+    "hops": 5,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "New Sessions Added to Career Expo Days: STEAM Career Expo!",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 2,
+    "counts": {
+      "characterCount": 461,
+      "wordCount": 71,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 13.6,
+      "gunning_fog": 16.45,
+      "smog_index": 0.0,
+      "automated_readability_index": 23.3,
+      "coleman_liau_index": 15.44,
+      "linsear_write": 11.25
+    },
+    "sentiment": {
+      "polarity": 0.24545454545454545,
+      "subjectivity": 0.4348484848484848
+    }
+  },
+  "46850371eccc You are invited.eml": {
+    "filename": "46850371eccc You are invited.eml",
+    "hops": 10,
+    "totalDelay": 8.9,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] You are invited to the Virtual Tech Titans Awards Gala -\n October 23 from 3:45 to 5 PM - Pre-Show and Awards Gala",
+    "from": "wetterskog@utdallas.edu",
+    "to": [
+      "ecs.all@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "wetterskog@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 21,
+    "counts": {
+      "characterCount": 2552,
+      "wordCount": 114,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 44.4,
+      "gunning_fog": 31.22,
+      "smog_index": 0.0,
+      "automated_readability_index": 108.2,
+      "coleman_liau_index": 94.56,
+      "linsear_write": 11.333333333333334
+    },
+    "sentiment": {
+      "polarity": 0.42746212121212124,
+      "subjectivity": 0.5193181818181818
+    }
+  },
+  "c273fec55fe7 MATLAB Seminars.eml": {
+    "filename": "c273fec55fe7 MATLAB Seminars.eml",
+    "hops": 10,
+    "totalDelay": 0.6333333333333333,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] MATLAB Seminars offered to ECS students - October 14",
+    "from": "turcatti@utdallas.edu",
+    "to": [
+      "ecs.gr@lists.utdallas.edu",
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "turcatti@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg"
+    ],
+    "grammarErrors": 15,
+    "counts": {
+      "characterCount": 3407,
+      "wordCount": 376,
       "sentenceCount": 9
     },
     "readability": {
-      "flesch_kincaid": 13.3,
-      "gunning_fog": 14.24,
-      "smog_index": 13.9,
-      "automated_readability_index": 16.7,
-      "coleman_liau_index": 11.49,
+      "flesch_kincaid": 24.3,
+      "gunning_fog": 23.32,
+      "smog_index": 19.1,
+      "automated_readability_index": 37.6,
+      "coleman_liau_index": 27.98,
+      "linsear_write": 8.857142857142858
+    },
+    "sentiment": {
+      "polarity": 0.19277597402597402,
+      "subjectivity": 0.5376623376623378
+    }
+  },
+  "7198d09fe91d Astrophysics St.eml": {
+    "filename": "7198d09fe91d Astrophysics St.eml",
+    "hops": 7,
+    "totalDelay": 0.31666666666666665,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "Astrophysics Study, Domestic Violence Awareness, Social Media Survey, Black Lives Matter",
+    "from": "newscenter@utdallas.edu",
+    "to": [
+      "news@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "newscenter@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "a323f54bc339 [ecs.cs.ug] Fwd.eml": {
+    "filename": "a323f54bc339 [ecs.cs.ug] Fwd.eml",
+    "hops": 12,
+    "totalDelay": 1.1500000000000001,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.cs.ug] Fwd: Call for Online Participants",
+    "from": "ravip@utdallas.edu",
+    "to": [
+      "ecs.cs.ug@utdallas.edu",
+      "ecs.cs.gr@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "ravip@utdallas.edu"
+    ],
+    "attachments": [
+      "Recruitment Flyer.pdf"
+    ],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 430,
+      "wordCount": 70,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 10.1,
+      "gunning_fog": 13.29,
+      "smog_index": 13.4,
+      "automated_readability_index": 11.9,
+      "coleman_liau_index": 11.95,
+      "linsear_write": 8.6
+    },
+    "sentiment": {
+      "polarity": 0.29,
+      "subjectivity": 0.39
+    }
+  },
+  "6f7b38f94386 [SASE UTD] Upco.eml": {
+    "filename": "6f7b38f94386 [SASE UTD] Upco.eml",
+    "hops": 5,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "[SASE UTD] Upcoming SASE events - 11/03/20",
+    "from": "utd@saseconnect.org",
+    "to": [
+      "nguyenlle@utdallas.edu",
+      "Steve.Nguyen@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "image.png"
+    ],
+    "grammarErrors": 26,
+    "counts": {
+      "characterCount": 3814,
+      "wordCount": 359,
+      "sentenceCount": 19
+    },
+    "readability": {
+      "flesch_kincaid": 15.4,
+      "gunning_fog": 11.46,
+      "smog_index": 12.5,
+      "automated_readability_index": 33.8,
+      "coleman_liau_index": 35.15,
+      "linsear_write": 8.285714285714286
+    },
+    "sentiment": {
+      "polarity": 0.1755171911421911,
+      "subjectivity": 0.3812645687645687
+    }
+  },
+  "db523afa171b Happening Next.eml": {
+    "filename": "db523afa171b Happening Next.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "fail",
+    "dmarc": "pass",
+    "subject": "Happening Next Week: RippleMatch Career Week",
+    "from": "katebeckman@ripplematch.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "katebeckman@ripplematch.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 25,
+    "counts": {
+      "characterCount": 8526,
+      "wordCount": 509,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 51.7,
+      "gunning_fog": 40.68,
+      "smog_index": 26.0,
+      "automated_readability_index": 95.5,
+      "coleman_liau_index": 69.11,
       "linsear_write": 21.666666666666668
     },
     "sentiment": {
-      "polarity": 0.1701048951048951,
-      "subjectivity": 0.4163752913752914
+      "polarity": 0.13190563645109102,
+      "subjectivity": 0.44083038173947264
     }
   },
-  "[ecs.stu] Fall recruiting update": {
+  "4b11f100b4ba Fireside Chat w.eml": {
+    "filename": "4b11f100b4ba Fireside Chat w.eml",
+    "hops": 5,
+    "totalDelay": 0.4666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Fireside Chat with John Hennessy",
+    "from": "dscutd@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "dscutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 42,
+    "counts": {
+      "characterCount": 6386,
+      "wordCount": 195,
+      "sentenceCount": 9
+    },
+    "readability": {
+      "flesch_kincaid": 47.2,
+      "gunning_fog": 16.89,
+      "smog_index": 14.2,
+      "automated_readability_index": 139.0,
+      "coleman_liau_index": 145.18,
+      "linsear_write": 7.571428571428571
+    },
+    "sentiment": {
+      "polarity": 0.2,
+      "subjectivity": 0.35178571428571426
+    }
+  },
+  "6bdfbbb2955b Hear how mixed.eml": {
+    "filename": "6bdfbbb2955b Hear how mixed.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Hear how mixed reality is helping architects boost productivity",
+    "from": "MSDyn365@email.microsoft.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "replyto@microsoft.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 6,
+    "counts": {
+      "characterCount": 5312,
+      "wordCount": 157,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 76.4,
+      "gunning_fog": 43.37,
+      "smog_index": 0.0,
+      "automated_readability_index": 172.5,
+      "coleman_liau_index": 158.25,
+      "linsear_write": 38.0
+    },
+    "sentiment": {
+      "polarity": -0.04722222222222222,
+      "subjectivity": 0.3972222222222222
+    }
+  },
+  "947814d36bc7 Virtual GEM Gra.eml": {
+    "filename": "947814d36bc7 Virtual GEM Gra.eml",
+    "hops": 10,
+    "totalDelay": 21.049999999999997,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Virtual GEM Grad Lab - Saturday, October 24th, 2020",
+    "from": "mjs160130@utdallas.edu",
+    "to": [
+      "mjs160130@utdallas.edu"
+    ],
+    "replyTo": [
+      "mjs160130@utdallas.edu"
+    ],
+    "attachments": [
+      "image003.jpg",
+      "Updated_GEM Flyer.png"
+    ],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 1729,
+      "wordCount": 150,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 16.5,
+      "gunning_fog": 13.12,
+      "smog_index": 13.2,
+      "automated_readability_index": 37.7,
+      "coleman_liau_index": 39.85,
+      "linsear_write": 16.75
+    },
+    "sentiment": {
+      "polarity": 0.33437500000000003,
+      "subjectivity": 0.5312500000000001
+    }
+  },
+  "c6e3d7de5215 \u2728Ta-Da! Prime S.eml": {
+    "filename": "c6e3d7de5215 \u2728Ta-Da! Prime S.eml",
+    "hops": 5,
+    "totalDelay": 4.6,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "\u2728Ta-Da! Prime Savings on Hats\u2728",
+    "from": "yourbookstore@em.efollett.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "reply@em.efollett.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c9514e2e6dfb [ecs.stu] Fall.eml": {
+    "filename": "c9514e2e6dfb [ecs.stu] Fall.eml",
     "hops": 11,
     "totalDelay": 0.9,
     "spf": "softfail",
@@ -336,7 +5057,2382 @@
       "subjectivity": 0.6257575757575757
     }
   },
-  "Contest today for CS^2 students.": {
+  "be714f4a24fa DSC Confirmatio.eml": {
+    "filename": "be714f4a24fa DSC Confirmatio.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "DSC Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "f323338dd26a IDE Output work.eml": {
+    "filename": "f323338dd26a IDE Output work.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "IDE Output working, but Zybooks failing",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 13,
+    "counts": {
+      "characterCount": 2850,
+      "wordCount": 126,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 35.5,
+      "gunning_fog": 17.7,
+      "smog_index": 13.0,
+      "automated_readability_index": 93.2,
+      "coleman_liau_index": 97.86,
+      "linsear_write": 9.0
+    },
+    "sentiment": {
+      "polarity": 0.2090909090909091,
+      "subjectivity": 0.31988636363636364
+    }
+  },
+  "585d701ffa16 Reminder_ Daily.eml": {
+    "filename": "585d701ffa16 Reminder_ Daily.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Reminder: Daily Health Check Text Message Opt-in",
+    "from": "redcap@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "redcap@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 193,
+      "wordCount": 22,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 15.4,
+      "gunning_fog": 14.25,
+      "smog_index": 0.0,
+      "automated_readability_index": 26.4,
+      "coleman_liau_index": 24.89,
+      "linsear_write": 13.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c31db8be4c3b Want to win a S.eml": {
+    "filename": "c31db8be4c3b Want to win a S.eml",
+    "hops": 5,
+    "totalDelay": 0.5333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Want to win a Samsung tablet?",
+    "from": "comet.acm@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "comet.acm@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 29,
+    "counts": {
+      "characterCount": 4520,
+      "wordCount": 273,
+      "sentenceCount": 12
+    },
+    "readability": {
+      "flesch_kincaid": 24.0,
+      "gunning_fog": 14.98,
+      "smog_index": 13.6,
+      "automated_readability_index": 63.5,
+      "coleman_liau_index": 63.87,
+      "linsear_write": 10.833333333333334
+    },
+    "sentiment": {
+      "polarity": 0.27473958333333337,
+      "subjectivity": 0.465625
+    }
+  },
+  "043141c4ff6b [students] Stat.eml": {
+    "filename": "043141c4ff6b [students] Stat.eml",
+    "hops": 11,
+    "totalDelay": 22.25,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] State of the University",
+    "from": "announcements@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "announcements@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c5bb7079a2d6 Important_ STEA.eml": {
+    "filename": "c5bb7079a2d6 Important_ STEA.eml",
+    "hops": 5,
+    "totalDelay": 2.0999999999999996,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Important: STEAM Career Expo Information",
+    "from": "handshake@mail.joinhandshake.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "recruit@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 80,
+    "counts": {
+      "characterCount": 3383,
+      "wordCount": 456,
+      "sentenceCount": 16
+    },
+    "readability": {
+      "flesch_kincaid": 19.1,
+      "gunning_fog": 14.56,
+      "smog_index": 16.0,
+      "automated_readability_index": 21.8,
+      "coleman_liau_index": 16.48,
+      "linsear_write": 68.0
+    },
+    "sentiment": {
+      "polarity": 0.2061434659090909,
+      "subjectivity": 0.5003393308080808
+    }
+  },
+  "8f6616fef0d7 Event Wrap Up C.eml": {
+    "filename": "8f6616fef0d7 Event Wrap Up C.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Event Wrap Up Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "1a8b82758101 Delete for Unor.eml": {
+    "filename": "1a8b82758101 Delete for Unor.eml",
+    "hops": 6,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Delete for Unordered_Map",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 15,
+    "counts": {
+      "characterCount": 2848,
+      "wordCount": 118,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 40.8,
+      "gunning_fog": 22.31,
+      "smog_index": 15.9,
+      "automated_readability_index": 102.5,
+      "coleman_liau_index": 106.45,
+      "linsear_write": 13.2
+    },
+    "sentiment": {
+      "polarity": 0.2787878787878788,
+      "subjectivity": 0.38484848484848483
+    }
+  },
+  "74056926fbb2 Question #2 ass.eml": {
+    "filename": "74056926fbb2 Question #2 ass.eml",
+    "hops": 6,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Question #2 assignment 4",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 11,
+    "counts": {
+      "characterCount": 2813,
+      "wordCount": 117,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 36.0,
+      "gunning_fog": 18.25,
+      "smog_index": 13.7,
+      "automated_readability_index": 99.1,
+      "coleman_liau_index": 105.34,
+      "linsear_write": 12.6
+    },
+    "sentiment": {
+      "polarity": 0.2590909090909091,
+      "subjectivity": 0.3386363636363636
+    }
+  },
+  "977885ed3b27 AWS Educate App.eml": {
+    "filename": "977885ed3b27 AWS Educate App.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "AWS Educate Application Approved",
+    "from": "support@awseducate.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "support@awseducate.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "4b50c29e1575 Your Voice Is W.eml": {
+    "filename": "4b50c29e1575 Your Voice Is W.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Your Voice Is Worth A Lot (Maybe $100)",
+    "from": "connectnews@mheducation.com",
+    "to": [
+      "AXT190058@UTDALLAS.EDU"
+    ],
+    "replyTo": [
+      "connectnews@mheducation.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 32,
+    "counts": {
+      "characterCount": 3111,
+      "wordCount": 174,
+      "sentenceCount": 9
+    },
+    "readability": {
+      "flesch_kincaid": 25.0,
+      "gunning_fog": 14.16,
+      "smog_index": 13.7,
+      "automated_readability_index": 67.8,
+      "coleman_liau_index": 71.17,
+      "linsear_write": 7.7142857142857135
+    },
+    "sentiment": {
+      "polarity": 0.24743589743589745,
+      "subjectivity": 0.3205128205128205
+    }
+  },
+  "a6b6ff9eed2e Google Cloud St.eml": {
+    "filename": "a6b6ff9eed2e Google Cloud St.eml",
+    "hops": 5,
+    "totalDelay": 0.6166666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Google Cloud Study Jam - Google Cloud Essentials",
+    "from": "dscutd@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "dscutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 46,
+    "counts": {
+      "characterCount": 6696,
+      "wordCount": 240,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 42.1,
+      "gunning_fog": 19.67,
+      "smog_index": 15.7,
+      "automated_readability_index": 120.3,
+      "coleman_liau_index": 121.64,
+      "linsear_write": 14.75
+    },
+    "sentiment": {
+      "polarity": 0.2875,
+      "subjectivity": 0.571875
+    }
+  },
+  "2ec7635d29a5 NS&M Outstandin.eml": {
+    "filename": "2ec7635d29a5 NS&M Outstandin.eml",
+    "hops": 5,
+    "totalDelay": 0.3,
+    "spf": "pass",
+    "dkim": "test",
+    "dmarc": "pass",
+    "subject": "NS&M Outstanding teaching award nominations",
+    "from": "noreply@qemailserver.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "goeckner@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 6,
+    "counts": {
+      "characterCount": 1481,
+      "wordCount": 36,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 64.5,
+      "gunning_fog": 32.18,
+      "smog_index": 0.0,
+      "automated_readability_index": 186.7,
+      "coleman_liau_index": 191.3,
+      "linsear_write": 23.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.125
+    }
+  },
+  "3dd509e5bfdb SWEekly Edition.eml": {
+    "filename": "3dd509e5bfdb SWEekly Edition.eml",
+    "hops": 5,
+    "totalDelay": 8.733333333333334,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "SWEekly Edition 10",
+    "from": "sweutd@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "sweutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 70,
+    "counts": {
+      "characterCount": 15929,
+      "wordCount": 718,
+      "sentenceCount": 30
+    },
+    "readability": {
+      "flesch_kincaid": 32.7,
+      "gunning_fog": 15.8,
+      "smog_index": 14.6,
+      "automated_readability_index": 90.5,
+      "coleman_liau_index": 93.56,
+      "linsear_write": 10.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.22137592137592138,
+      "subjectivity": 0.43312858312858327
+    }
+  },
+  "4d5e42da2b09 This Could Be t.eml": {
+    "filename": "4d5e42da2b09 This Could Be t.eml",
+    "hops": 5,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "This Could Be the Start of an Amazing Career! Application\n Submission for 234688 - Intern - Information Security - Summer 2021 at\n Lumen!",
+    "from": "mylink.admin@centurylink.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "mylink.admin@centurylink.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "9e51d32d0718 \ud83d\udd0e Discover your.eml": {
+    "filename": "9e51d32d0718 \ud83d\udd0e Discover your.eml",
+    "hops": 5,
+    "totalDelay": 8.033333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "\ud83d\udd0e Discover your next career move",
+    "from": "handshake@g.joinhandshake.com",
+    "to": [
+      "ewz190000@utdallas.edu"
+    ],
+    "replyTo": [
+      "handshake@g.joinhandshake.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 2,
+    "counts": {
+      "characterCount": 658,
+      "wordCount": 102,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 13.2,
+      "gunning_fog": 14.51,
+      "smog_index": 13.4,
+      "automated_readability_index": 16.6,
+      "coleman_liau_index": 13.06,
+      "linsear_write": 12.0
+    },
+    "sentiment": {
+      "polarity": 0.43174603174603177,
+      "subjectivity": 0.4547619047619047
+    }
+  },
+  "8800559e7767 Undefined Refer.eml": {
+    "filename": "8800559e7767 Undefined Refer.eml",
+    "hops": 6,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Undefined Reference",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 25,
+    "counts": {
+      "characterCount": 3201,
+      "wordCount": 130,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 41.9,
+      "gunning_fog": 21.62,
+      "smog_index": 18.2,
+      "automated_readability_index": 106.4,
+      "coleman_liau_index": 105.75,
+      "linsear_write": 18.0
+    },
+    "sentiment": {
+      "polarity": 0.16717171717171717,
+      "subjectivity": 0.4646464646464647
+    }
+  },
+  "da0303daa1b4 University at B.eml": {
+    "filename": "da0303daa1b4 University at B.eml",
+    "hops": 11,
+    "totalDelay": 0.8333333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] FW: University at Buffalo (UB) Virtual Graduate School\n Week -November 16-20, 2020",
+    "from": "amy.walker@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "amy.walker@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg",
+      "image004.jpg",
+      "image005.jpg",
+      "image002.jpg",
+      "image003.png",
+      "image006.png",
+      "Virtual Graduate Week 2020.pdf"
+    ],
+    "grammarErrors": 16,
+    "counts": {
+      "characterCount": 2453,
+      "wordCount": 232,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 39.3,
+      "gunning_fog": 36.61,
+      "smog_index": 28.9,
+      "automated_readability_index": 62.9,
+      "coleman_liau_index": 31.64,
+      "linsear_write": 18.5
+    },
+    "sentiment": {
+      "polarity": 0.25130853994490354,
+      "subjectivity": 0.4102617079889807
+    }
+  },
+  "ec66f47c76a2 Discover New Sp.eml": {
+    "filename": "ec66f47c76a2 Discover New Sp.eml",
+    "hops": 5,
+    "totalDelay": 0.5333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Discover New Spiritwear Faves & Save 25%",
+    "from": "yourbookstore@em.efollett.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "reply@em.efollett.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "59781f0f5e8a Reminder_ Tell.eml": {
+    "filename": "59781f0f5e8a Reminder_ Tell.eml",
+    "hops": 5,
+    "totalDelay": 1.5,
+    "spf": "pass",
+    "dkim": "test",
+    "dmarc": "pass",
+    "subject": "Reminder: Tell Us About Your Application Experience",
+    "from": "NOREPLY_T-Mobile@qualtrics-survey.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "NOREPLY_T-Mobile@qualtrics-survey.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 1720,
+      "wordCount": 120,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 29.5,
+      "gunning_fog": 24.67,
+      "smog_index": 16.3,
+      "automated_readability_index": 62.1,
+      "coleman_liau_index": 55.0,
+      "linsear_write": 10.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.3919421487603305,
+      "subjectivity": 0.5079889807162534
+    }
+  },
+  "6f81632aec64 NetID Account P.eml": {
+    "filename": "6f81632aec64 NetID Account P.eml",
+    "hops": 6,
+    "totalDelay": 0.15,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "NetID Account Password Expiration Notification (ZXT180005)",
+    "from": "NetIDService@utdallas.edu",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "ff78da5b5d4c Please complete.eml": {
+    "filename": "ff78da5b5d4c Please complete.eml",
+    "hops": 11,
+    "totalDelay": 19.133333333333336,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.stu] Please complete the Internship survey if you have had an\n internship",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 24,
+    "counts": {
+      "characterCount": 2252,
+      "wordCount": 143,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 27.9,
+      "gunning_fog": 20.47,
+      "smog_index": 15.9,
+      "automated_readability_index": 65.7,
+      "coleman_liau_index": 60.45,
+      "linsear_write": 9.0
+    },
+    "sentiment": {
+      "polarity": 0.14487179487179486,
+      "subjectivity": 0.2833333333333333
+    }
+  },
+  "a676eeaf4d10 SWEekly Edition.eml": {
+    "filename": "a676eeaf4d10 SWEekly Edition.eml",
+    "hops": 5,
+    "totalDelay": 2.683333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "SWEekly Edition 8",
+    "from": "sweutd@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "sweutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 67,
+    "counts": {
+      "characterCount": 10156,
+      "wordCount": 482,
+      "sentenceCount": 22
+    },
+    "readability": {
+      "flesch_kincaid": 27.2,
+      "gunning_fog": 14.74,
+      "smog_index": 14.0,
+      "automated_readability_index": 84.2,
+      "coleman_liau_index": 84.92,
+      "linsear_write": 8.142857142857142
+    },
+    "sentiment": {
+      "polarity": 0.3172554347826087,
+      "subjectivity": 0.5455797101449276
+    }
+  },
+  "99011b53e68a (MERGED) CS 337.eml": {
+    "filename": "99011b53e68a (MERGED) CS 337.eml",
+    "hops": 5,
+    "totalDelay": 0.21666666666666667,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3377.001 - SE 3377.001 - F20: Syllabus Updated\n 10-13-2020",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "sxp127930@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 16,
+    "counts": {
+      "characterCount": 465,
+      "wordCount": 74,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 32.2,
+      "gunning_fog": 31.22,
+      "smog_index": 0.0,
+      "automated_readability_index": 39.5,
+      "coleman_liau_index": 11.05,
+      "linsear_write": 13.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.2533333333333333,
+      "subjectivity": 0.4066666666666666
+    }
+  },
+  "815db109b49e [ecs.stu] Best.eml": {
+    "filename": "815db109b49e [ecs.stu] Best.eml",
+    "hops": 11,
+    "totalDelay": 20.016666666666666,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.stu] Best practices for your job search",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 23,
+    "counts": {
+      "characterCount": 4346,
+      "wordCount": 660,
+      "sentenceCount": 18
+    },
+    "readability": {
+      "flesch_kincaid": 20.0,
+      "gunning_fog": 19.65,
+      "smog_index": 17.4,
+      "automated_readability_index": 22.4,
+      "coleman_liau_index": 13.7,
+      "linsear_write": 11.333333333333334
+    },
+    "sentiment": {
+      "polarity": 0.3283889560052351,
+      "subjectivity": 0.4800807074062888
+    }
+  },
+  "2d80b7658443 One More Week t.eml": {
+    "filename": "2d80b7658443 One More Week t.eml",
+    "hops": 5,
+    "totalDelay": 2.0166666666666666,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "none",
+    "subject": "One More Week till HackUTD Game Jam!",
+    "from": "hello@hackutd.co",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "hello@hackutd.co"
+    ],
+    "attachments": [],
+    "grammarErrors": 31,
+    "counts": {
+      "characterCount": 4538,
+      "wordCount": 154,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 42.6,
+      "gunning_fog": 17.89,
+      "smog_index": 13.5,
+      "automated_readability_index": 123.6,
+      "coleman_liau_index": 130.04,
+      "linsear_write": 6.75
+    },
+    "sentiment": {
+      "polarity": 0.075390625,
+      "subjectivity": 0.46249999999999997
+    }
+  },
+  "f6b2531204eb STEAM Career EX.eml": {
+    "filename": "f6b2531204eb STEAM Career EX.eml",
+    "hops": 11,
+    "totalDelay": 0.8333333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.stu] STEAM Career EXPO employer information",
+    "from": "jerry.alexander@utdallas.edu",
+    "to": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "replyTo": [
+      "jerry.alexander@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 330,
+    "counts": {
+      "characterCount": 34211,
+      "wordCount": 1505,
+      "sentenceCount": 15
+    },
+    "readability": {
+      "flesch_kincaid": 60.1,
+      "gunning_fog": 45.09,
+      "smog_index": 22.3,
+      "automated_readability_index": 133.6,
+      "coleman_liau_index": 101.88,
+      "linsear_write": 13.0
+    },
+    "sentiment": {
+      "polarity": -0.22029583763330157,
+      "subjectivity": 0.6025971792225686
+    }
+  },
+  "82e430e1d94b Peer Review for.eml": {
+    "filename": "82e430e1d94b Peer Review for.eml",
+    "hops": 5,
+    "totalDelay": 0.4333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Peer Review for F20 - Kellermann Foundation: Hospital Database",
+    "from": "notifications@edusourcedapp.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 8,
+    "counts": {
+      "characterCount": 843,
+      "wordCount": 25,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 47.1,
+      "gunning_fog": 21.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 139.7,
+      "coleman_liau_index": 159.78,
+      "linsear_write": 7.5
+    },
+    "sentiment": {
+      "polarity": 0.175,
+      "subjectivity": 0.30000000000000004
+    }
+  },
+  "032e8019626e [students] Brie.eml": {
+    "filename": "032e8019626e [students] Brie.eml",
+    "hops": 11,
+    "totalDelay": 43.46666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Brief Educational Technology Services Survey",
+    "from": "katrina.adams@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "katrina.adams@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "a873b48e7cd4 Campus COVID-19.eml": {
+    "filename": "a873b48e7cd4 Campus COVID-19.eml",
+    "hops": 10,
+    "totalDelay": 19.216666666666665,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Campus COVID-19 Notification - October 22, 2020",
+    "from": "OEMCP@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "OEMCP@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 17,
+    "counts": {
+      "characterCount": 1718,
+      "wordCount": 249,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 26.3,
+      "gunning_fog": 25.06,
+      "smog_index": 22.9,
+      "automated_readability_index": 31.1,
+      "coleman_liau_index": 15.91,
+      "linsear_write": 24.0
+    },
+    "sentiment": {
+      "polarity": 0.13543123543123545,
+      "subjectivity": 0.3393939393939394
+    }
+  },
+  "46a1cc97a45c Paycom Applicat.eml": {
+    "filename": "46a1cc97a45c Paycom Applicat.eml",
+    "hops": 5,
+    "totalDelay": 0.23333333333333334,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Paycom Application Security Intern Test invitation",
+    "from": "support@hackerrankforwork.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "josh.malacara@paycomonline.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 28,
+    "counts": {
+      "characterCount": 2417,
+      "wordCount": 166,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 59.9,
+      "gunning_fog": 19.06,
+      "smog_index": 14.8,
+      "automated_readability_index": 43.4,
+      "coleman_liau_index": 38.53,
+      "linsear_write": 10.333333333333334
+    },
+    "sentiment": {
+      "polarity": 0.10481481481481482,
+      "subjectivity": 0.36000000000000004
+    }
+  },
+  "093725c2fbb3 NetID Account P.eml": {
+    "filename": "093725c2fbb3 NetID Account P.eml",
+    "hops": 6,
+    "totalDelay": 0.15,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "NetID Account Password Expiration Notification (ZXT180005)",
+    "from": "NetIDService@utdallas.edu",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "ba48ed3b91ac Webinar_ Empowe.eml": {
+    "filename": "ba48ed3b91ac Webinar_ Empowe.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Webinar: Empower your institution\u2019s security operations with Azure Sentinel",
+    "from": "email@email.microsoft.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "replyto@microsoft.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 35,
+    "counts": {
+      "characterCount": 6075,
+      "wordCount": 206,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 64.3,
+      "gunning_fog": 37.97,
+      "smog_index": 30.7,
+      "automated_readability_index": 147.1,
+      "coleman_liau_index": 133.37,
+      "linsear_write": 27.333333333333332
+    },
+    "sentiment": {
+      "polarity": 0.08181818181818182,
+      "subjectivity": 0.5116161616161616
+    }
+  },
+  "643caa84572d Exam 1 Scores.e.eml": {
+    "filename": "643caa84572d Exam 1 Scores.e.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Exam 1 Scores",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 12,
+    "counts": {
+      "characterCount": 2313,
+      "wordCount": 105,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 34.8,
+      "gunning_fog": 18.9,
+      "smog_index": 13.4,
+      "automated_readability_index": 91.1,
+      "coleman_liau_index": 94.9,
+      "linsear_write": 10.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.2715909090909091,
+      "subjectivity": 0.3386363636363636
+    }
+  },
+  "753283ea8474 Live Q&A with B.eml": {
+    "filename": "753283ea8474 Live Q&A with B.eml",
+    "hops": 4,
+    "totalDelay": 0.05,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Live Q&A with Bozoma Saint John, CMO of Netflix",
+    "from": "success@qualtrics-marketing.com",
+    "to": [
+      "axt190058@utdallas.edu"
+    ],
+    "replyTo": [
+      "success@qualtrics-marketing.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 15,
+    "counts": {
+      "characterCount": 4523,
+      "wordCount": 91,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 76.5,
+      "gunning_fog": 26.19,
+      "smog_index": 16.7,
+      "automated_readability_index": 223.7,
+      "coleman_liau_index": 243.38,
+      "linsear_write": 15.75
+    },
+    "sentiment": {
+      "polarity": 0.37727272727272726,
+      "subjectivity": 0.55
+    }
+  },
+  "44c90a9f585d Upgrade Qualtri.eml": {
+    "filename": "44c90a9f585d Upgrade Qualtri.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Upgrade Qualtrics Surveys for Free",
+    "from": "success@qualtrics-marketing.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [
+      "events@qualtrics.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 8,
+    "counts": {
+      "characterCount": 4792,
+      "wordCount": 119,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 91.0,
+      "gunning_fog": 60.71,
+      "smog_index": 0.0,
+      "automated_readability_index": 223.7,
+      "coleman_liau_index": 189.4,
+      "linsear_write": 17.75
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "d3cf994c6445 (MERGED) CE 334.eml": {
+    "filename": "d3cf994c6445 (MERGED) CE 334.eml",
+    "hops": 5,
+    "totalDelay": 1.1666666666666665,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CE 3345.SEC004 - CS 3345.SEC004 - F20: Exam1",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "sxc105920@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 80,
+      "wordCount": 13,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 6.0,
+      "gunning_fog": 5.2,
+      "smog_index": 0.0,
+      "automated_readability_index": 9.7,
+      "coleman_liau_index": 10.37,
+      "linsear_write": 6.5
+    },
+    "sentiment": {
+      "polarity": 0.2,
+      "subjectivity": 0.25
+    }
+  },
+  "336aef47bb3b [WIND-ENERGY] W.eml": {
+    "filename": "336aef47bb3b [WIND-ENERGY] W.eml",
+    "hops": 11,
+    "totalDelay": 62.35000000000001,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] FW: [WIND-ENERGY] WindSTAR Webinar Series Reminder  to\n Register - Wind Farm Modeling - November 4th",
+    "from": "rotea@utdallas.edu",
+    "to": [
+      "ecs.all@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "rotea@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg",
+      "image008.jpg",
+      "image004.jpg",
+      "image006.png",
+      "image002.jpg",
+      "image005.png"
+    ],
+    "grammarErrors": 50,
+    "counts": {
+      "characterCount": 6578,
+      "wordCount": 653,
+      "sentenceCount": 22
+    },
+    "readability": {
+      "flesch_kincaid": 22.0,
+      "gunning_fog": 18.43,
+      "smog_index": 18.8,
+      "automated_readability_index": 36.4,
+      "coleman_liau_index": 32.67,
+      "linsear_write": 18.5
+    },
+    "sentiment": {
+      "polarity": 0.07310458480913026,
+      "subjectivity": 0.38725427981109806
+    }
+  },
+  "a2c8ced36c81 Contest today.e.eml": {
+    "filename": "a2c8ced36c81 Contest today.e.eml",
+    "hops": 11,
+    "totalDelay": 0.3,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[codeburners] Contest today",
+    "from": "ivor@utdallas.edu",
+    "to": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 7,
+    "counts": {
+      "characterCount": 1086,
+      "wordCount": 46,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 30.5,
+      "gunning_fog": 13.08,
+      "smog_index": 11.2,
+      "automated_readability_index": 93.3,
+      "coleman_liau_index": 101.78,
+      "linsear_write": 6.25
+    },
+    "sentiment": {
+      "polarity": 0.5454545454545454,
+      "subjectivity": 0.6181818181818182
+    }
+  },
+  "27fd99f6ad68 Jerry, start a.eml": {
+    "filename": "27fd99f6ad68 Jerry, start a.eml",
+    "hops": 4,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Jerry, start a conversation with your new connection, Matthew",
+    "from": "invitations@linkedin.com",
+    "to": [
+      "jerry.teng@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [
+      "text-body",
+      "html-body"
+    ],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "d05fb1a602b3 Peer Tutoring_.eml": {
+    "filename": "d05fb1a602b3 Peer Tutoring_.eml",
+    "hops": 5,
+    "totalDelay": 0.23333333333333334,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "Peer Tutoring: CHEM 1311 General Chemistry Exam Review on Wednesday",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "leskay@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 22,
+    "counts": {
+      "characterCount": 904,
+      "wordCount": 122,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 61.5,
+      "gunning_fog": 52.41,
+      "smog_index": 0.0,
+      "automated_readability_index": 65.6,
+      "coleman_liau_index": 14.76,
+      "linsear_write": 31.5
+    },
+    "sentiment": {
+      "polarity": 0.1275573192239859,
+      "subjectivity": 0.3257495590828924
+    }
+  },
+  "091e600e4900 IEEE Confirmati.eml": {
+    "filename": "091e600e4900 IEEE Confirmati.eml",
+    "hops": 6,
+    "totalDelay": 0.08333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "IEEE Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "c8b8f0d4f88c Texas Instrumen.eml": {
+    "filename": "c8b8f0d4f88c Texas Instrumen.eml",
+    "hops": 5,
+    "totalDelay": 1.3166666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Texas Instruments Inc. is coming to career fair! \ud83c\udf88",
+    "from": "handshake@notifications.joinhandshake.com",
+    "to": [
+      "ewz190000@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 12,
+    "counts": {
+      "characterCount": 940,
+      "wordCount": 148,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 11.7,
+      "gunning_fog": 13.12,
+      "smog_index": 13.3,
+      "automated_readability_index": 16.1,
+      "coleman_liau_index": 12.54,
+      "linsear_write": 21.666666666666668
+    },
+    "sentiment": {
+      "polarity": 0.5777777777777778,
+      "subjectivity": 0.7111111111111111
+    }
+  },
+  "ddfef4e447c8 Opinions wanted.eml": {
+    "filename": "ddfef4e447c8 Opinions wanted.eml",
+    "hops": 4,
+    "totalDelay": 0.16666666666666666,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Opinions wanted for $$$$$",
+    "from": "connectnews@mheducation.com",
+    "to": [
+      "AXT190058@UTDALLAS.EDU"
+    ],
+    "replyTo": [
+      "connectnews@mheducation.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 12,
+    "counts": {
+      "characterCount": 3138,
+      "wordCount": 121,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 38.3,
+      "gunning_fog": 15.68,
+      "smog_index": 12.5,
+      "automated_readability_index": 106.5,
+      "coleman_liau_index": 115.71,
+      "linsear_write": 5.555555555555555
+    },
+    "sentiment": {
+      "polarity": 0.3277777777777778,
+      "subjectivity": 0.3333333333333333
+    }
+  },
+  "5954e06d1670 No tricks. New.eml": {
+    "filename": "5954e06d1670 No tricks. New.eml",
+    "hops": 5,
+    "totalDelay": 0.2833333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "\ud83d\udc7b No tricks. New tips & treats for you",
+    "from": "handshake@g.joinhandshake.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [
+      "handshake@g.joinhandshake.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 67,
+    "counts": {
+      "characterCount": 12331,
+      "wordCount": 133,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 149.2,
+      "gunning_fog": 34.26,
+      "smog_index": 22.4,
+      "automated_readability_index": 431.8,
+      "coleman_liau_index": 461.24,
+      "linsear_write": 14.2
+    },
+    "sentiment": {
+      "polarity": 0.045075757575757575,
+      "subjectivity": 0.38409090909090904
+    }
+  },
+  "3f12b656a83d Yesterday's Con.eml": {
+    "filename": "3f12b656a83d Yesterday's Con.eml",
+    "hops": 11,
+    "totalDelay": 0.41666666666666663,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[codeburners] Yesterday's Contest",
+    "from": "ivor@utdallas.edu",
+    "to": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 597,
+      "wordCount": 102,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 10.9,
+      "gunning_fog": 12.95,
+      "smog_index": 13.4,
+      "automated_readability_index": 14.5,
+      "coleman_liau_index": 10.51,
+      "linsear_write": 8.0
+    },
+    "sentiment": {
+      "polarity": 0.075,
+      "subjectivity": 0.44999999999999996
+    }
+  },
+  "679ca4480d03 Jerry, ready to.eml": {
+    "filename": "679ca4480d03 Jerry, ready to.eml",
+    "hops": 7,
+    "totalDelay": 0.06666666666666667,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Jerry, ready to apply with State Farm?",
+    "from": "StateFarm@statefarmtalent.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "62973e19cb87 (MERGED) EPICS.eml": {
+    "filename": "62973e19cb87 (MERGED) EPICS.eml",
+    "hops": 5,
+    "totalDelay": 1.4333333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) EPICS - F20: Project Plan Feedback",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "trb052000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 6,
+    "counts": {
+      "characterCount": 451,
+      "wordCount": 77,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 8.5,
+      "gunning_fog": 10.84,
+      "smog_index": 9.5,
+      "automated_readability_index": 11.2,
+      "coleman_liau_index": 10.04,
+      "linsear_write": 11.0
+    },
+    "sentiment": {
+      "polarity": 0.17500000000000002,
+      "subjectivity": 0.44166666666666665
+    }
+  },
+  "68a96a839366 (MERGED) CS 334.eml": {
+    "filename": "68a96a839366 (MERGED) CS 334.eml",
+    "hops": 5,
+    "totalDelay": 1.05,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) CS 3341.001 - SE 3341.001 - F20: Thursday 10/22 - Quiz 08",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "tgw100020@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 1,
+    "counts": {
+      "characterCount": 71,
+      "wordCount": 12,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 5.6,
+      "gunning_fog": 4.8,
+      "smog_index": 0.0,
+      "automated_readability_index": 7.7,
+      "coleman_liau_index": 8.4,
+      "linsear_write": 5.5
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "88e23c46660e Google Cloud St.eml": {
+    "filename": "88e23c46660e Google Cloud St.eml",
+    "hops": 5,
+    "totalDelay": 2.983333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Google Cloud Study Jam - Baseline: Infrastructure",
+    "from": "dscutd@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "dscutd@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 44,
+    "counts": {
+      "characterCount": 8083,
+      "wordCount": 245,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 54.2,
+      "gunning_fog": 22.04,
+      "smog_index": 18.2,
+      "automated_readability_index": 144.7,
+      "coleman_liau_index": 150.12,
+      "linsear_write": 15.75
+    },
+    "sentiment": {
+      "polarity": 0.25555555555555554,
+      "subjectivity": 0.5194444444444444
+    }
+  },
+  "9495ebd662e6 Comets of Wall.eml": {
+    "filename": "9495ebd662e6 Comets of Wall.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Comets of Wall Street Confirmation",
+    "from": "no-reply@zoom.us",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "e21ccb792719 Update on the 3.eml": {
+    "filename": "e21ccb792719 Update on the 3.eml",
+    "hops": 11,
+    "totalDelay": 1.0833333333333333,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.ug] Update on the 30th (a bit late!)",
+    "from": "amy.walker@utdallas.edu",
+    "to": [
+      "ecs.ug@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "amy.walker@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.png",
+      "image003.jpg",
+      "image002.png",
+      "image004.jpg",
+      "Jonsson School spirit week Flyer.pdf"
+    ],
+    "grammarErrors": 36,
+    "counts": {
+      "characterCount": 6388,
+      "wordCount": 654,
+      "sentenceCount": 30
+    },
+    "readability": {
+      "flesch_kincaid": 17.7,
+      "gunning_fog": 14.29,
+      "smog_index": 14.7,
+      "automated_readability_index": 31.0,
+      "coleman_liau_index": 29.53,
+      "linsear_write": 5.1
+    },
+    "sentiment": {
+      "polarity": 0.259402700474129,
+      "subjectivity": 0.4810843917986775
+    }
+  },
+  "3bb6486d6639 Quantum Seminar.eml": {
+    "filename": "3bb6486d6639 Quantum Seminar.eml",
+    "hops": 11,
+    "totalDelay": 8.933333333333334,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Quantum Seminar Series",
+    "from": "Kathryn.Owens1@utdallas.edu",
+    "to": [
+      "ecs.all@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "Kathryn.Owens1@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg"
+    ],
+    "grammarErrors": 14,
+    "counts": {
+      "characterCount": 2517,
+      "wordCount": 171,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 23.4,
+      "gunning_fog": 17.95,
+      "smog_index": 15.9,
+      "automated_readability_index": 55.9,
+      "coleman_liau_index": 55.11,
+      "linsear_write": 11.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.26944444444444443,
+      "subjectivity": 0.35208333333333336
+    }
+  },
+  "41706afe8cbc CS 2337.003 - C.eml": {
+    "filename": "41706afe8cbc CS 2337.003 - C.eml",
+    "hops": 5,
+    "totalDelay": 1.0833333333333335,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "CS 2337.003 - Computer Science II - F20: Extra Office Hours\n Thursday",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "jws130830@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 4,
+    "counts": {
+      "characterCount": 114,
+      "wordCount": 10,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 14.3,
+      "gunning_fog": 8.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 33.0,
+      "coleman_liau_index": 31.7,
+      "linsear_write": 7.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "6238f775cde7 Contest Today (.eml": {
+    "filename": "6238f775cde7 Contest Today (.eml",
+    "hops": 11,
+    "totalDelay": 0.26666666666666666,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[codeburners] Contest Today",
+    "from": "ivor@utdallas.edu",
+    "to": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "codeburners@lists.utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 8,
+    "counts": {
+      "characterCount": 988,
+      "wordCount": 65,
+      "sentenceCount": 6
+    },
+    "readability": {
+      "flesch_kincaid": 15.8,
+      "gunning_fog": 8.63,
+      "smog_index": 8.8,
+      "automated_readability_index": 51.5,
+      "coleman_liau_index": 56.41,
+      "linsear_write": 4.5
+    },
+    "sentiment": {
+      "polarity": 0.40909090909090906,
+      "subjectivity": 0.4636363636363636
+    }
+  },
+  "e55e80b7cf81 UTD Financial A.eml": {
+    "filename": "e55e80b7cf81 UTD Financial A.eml",
+    "hops": 5,
+    "totalDelay": 0.05,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "UTD Financial Aid Reminder to Apply for Next Year",
+    "from": "financial-aid@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "financial-aid@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "8f71cb502710 (MERGED) EPICS.eml": {
+    "filename": "8f71cb502710 (MERGED) EPICS.eml",
+    "hops": 5,
+    "totalDelay": 0.3833333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "(MERGED) EPICS - F20: Mid-Semester Presentation Final Reminder",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "trb052000@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 273,
+      "wordCount": 49,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 7.3,
+      "gunning_fog": 8.15,
+      "smog_index": 8.8,
+      "automated_readability_index": 8.6,
+      "coleman_liau_index": 8.81,
+      "linsear_write": 8.166666666666666
+    },
+    "sentiment": {
+      "polarity": 0.043750000000000004,
+      "subjectivity": 0.5041666666666667
+    }
+  },
+  "fc3ae449dde2 [students] Flu.eml": {
+    "filename": "fc3ae449dde2 [students] Flu.eml",
+    "hops": 11,
+    "totalDelay": 300.7,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Flu Vaccine Now Available",
+    "from": "healthcen@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "healthcen@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "270f6368bdfa [GitHub] A thir.eml": {
+    "filename": "270f6368bdfa [GitHub] A thir.eml",
+    "hops": 7,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "[GitHub] A third-party OAuth application has been added to your\n account",
+    "from": "noreply@github.com",
+    "to": [
+      "zuyuangteng@gmail.com"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 6,
+    "counts": {
+      "characterCount": 1622,
+      "wordCount": 54,
+      "sentenceCount": 2
+    },
+    "readability": {
+      "flesch_kincaid": 48.0,
+      "gunning_fog": 26.36,
+      "smog_index": 0.0,
+      "automated_readability_index": 129.5,
+      "coleman_liau_index": 137.12,
+      "linsear_write": 12.666666666666666
+    },
+    "sentiment": {
+      "polarity": 0.14375,
+      "subjectivity": 0.33125
+    }
+  },
+  "f4808300262a Reminder_ Daily.eml": {
+    "filename": "f4808300262a Reminder_ Daily.eml",
+    "hops": 4,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "subject": "Reminder: Daily Health Check Text Message Opt-in",
+    "from": "redcap@utdallas.edu",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "redcap@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 3,
+    "counts": {
+      "characterCount": 193,
+      "wordCount": 22,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 15.4,
+      "gunning_fog": 14.25,
+      "smog_index": 0.0,
+      "automated_readability_index": 26.4,
+      "coleman_liau_index": 24.89,
+      "linsear_write": 13.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "f7bf4e23f74b Hacktoberfest +.eml": {
+    "filename": "f7bf4e23f74b Hacktoberfest +.eml",
+    "hops": 5,
+    "totalDelay": 2.083333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "none",
+    "subject": "Hacktoberfest + Unity Workshop",
+    "from": "contact@acmutd.co",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "contact@acmutd.co"
+    ],
+    "attachments": [],
+    "grammarErrors": 26,
+    "counts": {
+      "characterCount": 3882,
+      "wordCount": 222,
+      "sentenceCount": 10
+    },
+    "readability": {
+      "flesch_kincaid": 26.1,
+      "gunning_fog": 15.91,
+      "smog_index": 13.7,
+      "automated_readability_index": 67.6,
+      "coleman_liau_index": 68.33,
+      "linsear_write": 7.125
+    },
+    "sentiment": {
+      "polarity": 0.23972222222222223,
+      "subjectivity": 0.47000000000000003
+    }
+  },
+  "25ec5023d5f1 Upcoming Events.eml": {
+    "filename": "25ec5023d5f1 Upcoming Events.eml",
+    "hops": 5,
+    "totalDelay": 0.23333333333333334,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "Upcoming Events and Opportunities!",
+    "from": "mindutdallas@gmail.com",
+    "to": [
+      "Jerry.Teng@UTDallas.edu"
+    ],
+    "replyTo": [
+      "mindutdallas@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 38,
+    "counts": {
+      "characterCount": 7182,
+      "wordCount": 301,
+      "sentenceCount": 7
+    },
+    "readability": {
+      "flesch_kincaid": 40.1,
+      "gunning_fog": 25.04,
+      "smog_index": 19.7,
+      "automated_readability_index": 108.0,
+      "coleman_liau_index": 96.82,
+      "linsear_write": 17.25
+    },
+    "sentiment": {
+      "polarity": 0.16045454545454546,
+      "subjectivity": 0.48616161616161613
+    }
+  },
+  "37a4ab80dce8 Outage Resolved.eml": {
+    "filename": "37a4ab80dce8 Outage Resolved.eml",
+    "hops": 11,
+    "totalDelay": 40.75,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[students] Outage Resolved: Microsoft Teams Login Error",
+    "from": "OITNotify@utdallas.edu",
+    "to": [
+      "OITNotify@utdallas.edu"
+    ],
+    "replyTo": [
+      "OITNotify@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 21,
+    "counts": {
+      "characterCount": 3582,
+      "wordCount": 131,
+      "sentenceCount": 3
+    },
+    "readability": {
+      "flesch_kincaid": 51.0,
+      "gunning_fog": 27.56,
+      "smog_index": 21.8,
+      "automated_readability_index": 125.0,
+      "coleman_liau_index": 122.69,
+      "linsear_write": 17.25
+    },
+    "sentiment": {
+      "polarity": 0.325,
+      "subjectivity": 0.7083333333333334
+    }
+  },
+  "3165d21a8838 Quantum Seminar.eml": {
+    "filename": "3165d21a8838 Quantum Seminar.eml",
+    "hops": 11,
+    "totalDelay": 9.916666666666666,
+    "spf": "softfail",
+    "dkim": "fail",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Quantum Seminar Series",
+    "from": "Kathryn.Owens1@utdallas.edu",
+    "to": [
+      "ecs.all@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "Kathryn.Owens1@utdallas.edu"
+    ],
+    "attachments": [
+      "image001.jpg"
+    ],
+    "grammarErrors": 17,
+    "counts": {
+      "characterCount": 2717,
+      "wordCount": 162,
+      "sentenceCount": 8
+    },
+    "readability": {
+      "flesch_kincaid": 24.2,
+      "gunning_fog": 17.26,
+      "smog_index": 15.6,
+      "automated_readability_index": 63.6,
+      "coleman_liau_index": 65.02,
+      "linsear_write": 14.2
+    },
+    "sentiment": {
+      "polarity": 0.3333333333333333,
+      "subjectivity": 0.3416666666666666
+    }
+  },
+  "236820e030e4 CS 2337.003 - C.eml": {
+    "filename": "236820e030e4 CS 2337.003 - C.eml",
+    "hops": 5,
+    "totalDelay": 1.1333333333333333,
+    "spf": "pass",
+    "dkim": "none",
+    "dmarc": "pass",
+    "subject": "CS 2337.003 - Computer Science II - F20: BSTree Delete for\n Implementation",
+    "from": "eLearning-Notification@utdallas.edu",
+    "to": [
+      ""
+    ],
+    "replyTo": [
+      "jws130830@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 5,
+    "counts": {
+      "characterCount": 277,
+      "wordCount": 44,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": 19.3,
+      "gunning_fog": 19.42,
+      "smog_index": 0.0,
+      "automated_readability_index": 25.6,
+      "coleman_liau_index": 12.32,
+      "linsear_write": 28.0
+    },
+    "sentiment": {
+      "polarity": 0.39285714285714285,
+      "subjectivity": 0.5178571428571428
+    }
+  },
+  "337d70cf4934 [students] Cele.eml": {
+    "filename": "337d70cf4934 [students] Cele.eml",
+    "hops": 11,
+    "totalDelay": 72.76666666666667,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[students] Celebrate Founders Day with UT Dallas!",
+    "from": "announcements@utdallas.edu",
+    "to": [
+      "students@lists.utdallas.edu"
+    ],
+    "replyTo": [
+      "announcements@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 1
+    },
+    "readability": {
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
+      "smog_index": 0.0,
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
+    },
+    "sentiment": {
+      "polarity": 0.0,
+      "subjectivity": 0.0
+    }
+  },
+  "8e4090b25fc0 CSG Tech Talk_.eml": {
+    "filename": "8e4090b25fc0 CSG Tech Talk_.eml",
+    "hops": 5,
+    "totalDelay": 17.23333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "fail",
+    "subject": "CSG Tech Talk: danooct1 demo and AMA",
+    "from": "utdcsg@gmail.com",
+    "to": [
+      "zxt180005@utdallas.edu"
+    ],
+    "replyTo": [
+      "utdcsg@gmail.com"
+    ],
+    "attachments": [],
+    "grammarErrors": 16,
+    "counts": {
+      "characterCount": 2972,
+      "wordCount": 134,
+      "sentenceCount": 4
+    },
+    "readability": {
+      "flesch_kincaid": 32.9,
+      "gunning_fog": 22.65,
+      "smog_index": 16.2,
+      "automated_readability_index": 95.5,
+      "coleman_liau_index": 89.8,
+      "linsear_write": 10.5
+    },
+    "sentiment": {
+      "polarity": 0.1854707792207792,
+      "subjectivity": 0.6214285714285714
+    }
+  },
+  "bc19aa3d5fad Activity Digest.eml": {
+    "filename": "bc19aa3d5fad Activity Digest.eml",
+    "hops": 6,
+    "totalDelay": 0.03333333333333333,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "bestguesspass",
+    "subject": "Activity Digest since 3:01AM for CS 2337 on Piazza",
+    "from": "no-reply@piazza.com",
+    "to": [
+      "jtt190006@utdallas.edu"
+    ],
+    "replyTo": [],
+    "attachments": [],
+    "grammarErrors": 19,
+    "counts": {
+      "characterCount": 3090,
+      "wordCount": 202,
+      "sentenceCount": 5
+    },
+    "readability": {
+      "flesch_kincaid": 29.7,
+      "gunning_fog": 21.31,
+      "smog_index": 17.4,
+      "automated_readability_index": 66.3,
+      "coleman_liau_index": 56.22,
+      "linsear_write": 9.0
+    },
+    "sentiment": {
+      "polarity": 0.17009379509379507,
+      "subjectivity": 0.366053391053391
+    }
+  },
+  "7ba071ee9e26 Contest today f.eml": {
+    "filename": "7ba071ee9e26 Contest today f.eml",
     "hops": 6,
     "totalDelay": 0.15,
     "spf": "none",
@@ -368,38 +7464,74 @@
       "subjectivity": 0.2222222222222222
     }
   },
-  "That thing you\u2019ve always wanted to do?": {
-    "hops": 4,
-    "totalDelay": 0.06666666666666667,
+  "7f69e9c3df3c MATH 2418.701 -.eml": {
+    "filename": "7f69e9c3df3c MATH 2418.701 -.eml",
+    "hops": 5,
+    "totalDelay": 0.5333333333333333,
     "spf": "pass",
-    "dkim": "pass",
+    "dkim": "none",
     "dmarc": "pass",
-    "subject": "That thing you\u2019ve always wanted to do?",
-    "from": "support@email.masterclass.com",
+    "subject": "MATH 2418.701 - Linear Algebra - F20: Exam II Information",
+    "from": "eLearning-Notification@utdallas.edu",
     "to": [
-      "ewz190000@utdallas.edu"
+      ""
     ],
     "replyTo": [
-      "support@masterclass.com"
+      "jsp061000@utdallas.edu"
     ],
     "attachments": [],
-    "grammarErrors": 15,
+    "grammarErrors": 231,
     "counts": {
-      "characterCount": 567,
-      "wordCount": 85,
+      "characterCount": 4306,
+      "wordCount": 527,
+      "sentenceCount": 26
+    },
+    "readability": {
+      "flesch_kincaid": 17.1,
+      "gunning_fog": 11.69,
+      "smog_index": 13.4,
+      "automated_readability_index": 21.4,
+      "coleman_liau_index": 17.29,
+      "linsear_write": 22.333333333333332
+    },
+    "sentiment": {
+      "polarity": 0.04791666666666667,
+      "subjectivity": 0.37529761904761905
+    }
+  },
+  "ca9fbdca1f30 [ecs.all] Mater.eml": {
+    "filename": "ca9fbdca1f30 [ecs.all] Mater.eml",
+    "hops": 11,
+    "totalDelay": 17.583333333333336,
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "subject": "[ecs.all] Materials Science and Engineering October 2020 eNews",
+    "from": "msedepartmenthead@utdallas.edu",
+    "to": [
+      "ecs.all@utdallas.edu"
+    ],
+    "replyTo": [
+      "msedepartmenthead@utdallas.edu"
+    ],
+    "attachments": [],
+    "grammarErrors": 0,
+    "counts": {
+      "characterCount": 0,
+      "wordCount": 0,
       "sentenceCount": 1
     },
     "readability": {
-      "flesch_kincaid": 36.4,
-      "gunning_fog": 35.88,
+      "flesch_kincaid": -15.7,
+      "gunning_fog": 0.0,
       "smog_index": 0.0,
-      "automated_readability_index": 46.2,
-      "coleman_liau_index": 13.95,
-      "linsear_write": 16.5
+      "automated_readability_index": 0.0,
+      "coleman_liau_index": -15.81,
+      "linsear_write": -1.0
     },
     "sentiment": {
-      "polarity": 0.5214285714285715,
-      "subjectivity": 0.3964285714285714
+      "polarity": 0.0,
+      "subjectivity": 0.0
     }
   }
 }

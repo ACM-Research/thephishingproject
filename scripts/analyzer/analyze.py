@@ -20,7 +20,8 @@ def main(dir: str):
     checker = language_tool_python.LanguageTool('en-US')
     emails = {}
 
-    for filename in os.listdir(dir):
+    filenames = os.listdir(dir)
+    for filename in filenames:
         if not filename.endswith('.eml'):
             continue
                 
@@ -28,7 +29,24 @@ def main(dir: str):
         print('[INFO] Processing {}...'.format(filename))
 
         with open(os.path.join(dir, filename), 'r') as file:
-            mail = mailparser.parse_from_file_obj(file)
+            try:
+                mail = mailparser.parse_from_file_obj(file)
+            except Exception as e:
+                print('[WARNING] Error while parsing: {}'.format(e))
+                continue
+
+            # filter duplicates based on subject
+            #if mail.subject in emails:
+            #    print('[WARNING] This email seems to be a duplicate of "{}"! Skipping...'
+            #        .format(emails[mail.subject]['filename']))
+            #    continue
+
+            # don't process if auth results missing
+            if 'Authentication-Results' not in mail.headers:
+                print('[WARNING] This email is missing an authentication results header! Skipping...')
+                continue
+
+
             #body = re.sub('--- mail_boundary ---.*', ' ', BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' '), flags=re.DOTALL)
             body = mail.text_plain[0] if mail.text_plain else ''
             blob = TextBlob(body)
@@ -38,11 +56,8 @@ def main(dir: str):
             dkim = re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])
             dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
 
-            if mail.subject in emails:
-                print('[WARNING] {} seems to be a duplicate! Skipping...'.format(filename))
-                continue
 
-            emails[mail.subject] = {
+            emails[filename] = {
                 'filename': filename,
                 'hops': mail.received[-1]['hop'],
                 'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
@@ -103,6 +118,11 @@ def main(dir: str):
         csvFile.write('{},{}\n'.format('"'+email+'"', ','.join(csv_values)))
 
     csvFile.close()
+
+
+    # print out stats
+    print('{}/{} processed. The remaining failed for some reason.'
+        .format(len(emails), len(filenames)))
 
 # flatten json into single layer by concatenating keys with '.'
 def flatten_json(y):
