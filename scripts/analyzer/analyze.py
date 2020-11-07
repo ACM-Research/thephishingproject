@@ -7,9 +7,10 @@ from textblob import TextBlob
 import language_tool_python
 import textstat
 import nltk
+from bs4 import BeautifulSoup
 
 # determine if we want to save the email body text
-save_body = False
+save_body = True
 
 # make sure we have punkt downloaded
 nltk.download('punkt', quiet=True)
@@ -20,15 +21,13 @@ def main(dir: str):
     checker = language_tool_python.LanguageTool('en-US')
     emails = {}
 
-    filenames = os.listdir(dir)
+    filenames = [filename for filename in os.listdir(dir) if filename.endswith('.eml')]
     for filename in filenames:
-        if not filename.endswith('.eml'):
-            continue
                 
         print()
         print('[INFO] Processing {}...'.format(filename))
 
-        with open(os.path.join(dir, filename), 'r') as file:
+        with open(os.path.join(dir, filename), 'r', encoding='latin1') as file:
             try:
                 mail = mailparser.parse_from_file_obj(file)
             except Exception as e:
@@ -42,25 +41,29 @@ def main(dir: str):
             #    continue
 
             # don't process if auth results missing
-            if 'Authentication-Results' not in mail.headers:
-                print('[WARNING] This email is missing an authentication results header! Skipping...')
-                continue
+            # if 'Authentication-Results' not in mail.headers:
+            #     print('[WARNING] This email is missing an authentication results header! Skipping...')
+            #     continue
 
-
-            #body = re.sub('--- mail_boundary ---.*', ' ', BeautifulSoup(mail.body, 'lxml').text.replace(u'\xa0', ' '), flags=re.DOTALL)
-            body = mail.text_plain[0] if mail.text_plain else ''
+            attachments = ''
+            for attachment in mail.attachments:
+                attachments += attachment['payload']
+            body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
-            spf = re.findall('spf=(\S*)', mail.headers['Authentication-Results'])
-            dkim = re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])
-            dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
+            if 'Authentication-Results' in mail.headers:
+                spf = re.findall('spf=(\S*)', mail.headers['Authentication-Results'])
+                dkim = re.findall('dkim=(\S*)', mail.headers['Authentication-Results'])
+                dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
+            else:
+                spf = dkim = dmarc = ''
 
 
             emails[filename] = {
                 'filename': filename,
-                'hops': mail.received[-1]['hop'],
-                'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
+                # 'hops': mail.received[-1]['hop'],
+                # 'totalDelay': sum([hop['delay']/60 for hop in mail.received]),
                 'spf': spf[0] if len(spf) else None,
                 'dkim': dkim[0] if len(dkim) else None,
                 'dmarc': dmarc[0] if len(dmarc) else None,
@@ -93,21 +96,21 @@ def main(dir: str):
                 emails[filename]['body'] = body
 
     ## quit if nothing found ##
-    if not emails:
-        print('[WARNING] No files were found in "{}"!'.format(dir))
-        return
+    # if not emails:
+    #     print('[WARNING] No files were found in "{}"!'.format(dir))
+    #     return
 
-    ## output json ##
+    # output json ##
     with open(os.path.join(dir, 'analysis.json'), 'w') as jsonFile:
         json.dump(emails, jsonFile, indent=2)
 
-    ## build and output csv ##
+    # build and output csv ##
 
     # generate and output headers using first email
     column_headers = list(flatten_json(emails[list(emails.keys())[0]]).keys())
-    csvFile = open(os.path.join(dir, 'analysis.csv'), 'w')
+    csvFile = open(os.path.join(dir, 'analysis.csv'), 'w', encoding='utf-8')
     csvFile.write(',{}\n'.format(','.join(column_headers)))
-    
+
     # generate and output one line per email
     for email in emails.keys():
         # flatten json to 1 layer deep
@@ -123,6 +126,18 @@ def main(dir: str):
     # print out stats
     print('{}/{} processed. The remaining failed for some reason.'
         .format(len(emails), len(filenames)))
+
+def remove_noise(text):
+    cleaned_tokens = []
+    for line in text.split(' '):
+        if line == '' or len(line) > 50 or re.search(r'www\..*\....', line) is not None or \
+                re.search(r'\d', line) is not None or line == '\xA9':
+            continue
+        if line == 'mail_boundary':
+            cleaned_tokens.pop()
+            break
+        #line = re.sub(r'\.|!|\(|\)|:|,|\||"|\?|_|/|\[|]', ' ', line)
+    return ' '.join(cleaned_tokens)
 
 # flatten json into single layer by concatenating keys with '.'
 def flatten_json(y):
