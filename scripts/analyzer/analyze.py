@@ -137,6 +137,12 @@ def remove_noise(text):
             cleaned_tokens.pop()
             break
         #line = re.sub(r'\.|!|\(|\)|:|,|\||"|\?|_|/|\[|]', ' ', line)
+        cleaned_tokens.append(line)
+
+    # body = re.sub('www\..*\....', '', text)
+    # body = re.sub('https?:\/\/[^\/]*\/.*$', ' ', body, flags=re.MULTILINE)
+    # body = re.sub(r'[!,?."]', ' ', body)
+    # body = re.sub('--- mail_boundary ---.*', '', text)
     return ' '.join(cleaned_tokens)
 
 # flatten json into single layer by concatenating keys with '.'
