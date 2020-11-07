@@ -8,7 +8,7 @@ a y-value of 1 and non-phishing emails will be given a value of 0.
 import json
 from os import path
 import matplotlib.pyplot as pyplot
-import numpy
+import numpy as np
 from numpy.linalg import lstsq
 
 import tests
@@ -35,6 +35,45 @@ with open(NON_PHISH_PATH, "r") as non_phish_info:
     non_phish_dict = json.load(non_phish_info)
     non_phish_emails = list(non_phish_dict.values())
 
+def graphBarMulti(phishingResults: list, nonPhishingResults: list, testName=""):
+    email_services = ["hotmail", "gmail", "yahoo", "aol", "msn","icloud"]
+    allCategories = list(set(phishingResults) | set(
+        nonPhishingResults))  # union of unique category values
+    # 1 is public domain, 2 is private domain
+    phishData1 = {}
+    phishData2 = {}
+    nonPhishData1 = {}
+    nonPhishData2 = {}
+    for category in allCategories:
+        if any(email_service in category for email_service in email_services):
+            phishData1[category] = phishingResults.count(category)
+            nonPhishData1[category] = nonPhishingResults.count(category)
+        else:
+            phishData2[category] = phishingResults.count(category)
+            nonPhishData2[category] = nonPhishingResults.count(category)
+    N = 2
+    phishData1 = list(filter((0).__ne__, (list(phishData1.values()))))
+    phishData2 = list(filter((0).__ne__, (list(phishData2.values()))))
+    nonPhishData1 = list(filter((0).__ne__, (list(nonPhishData1.values()))))
+    nonPhishData2 = list(filter((0).__ne__, (list(nonPhishData2.values()))))
+    tP = len(phishData1)+len(phishData2)
+    tNP = len(nonPhishData1)+len(nonPhishData2)
+    pyplot.ylim((0,100))
+    phishData = (len(phishData1)/tP*100, len(phishData2)/tP*100)
+    nonphishData = (len(nonPhishData1)/tNP*100,len(nonPhishData2)/tNP*100)
+    ind = np.arange(N)
+    width = 0.35
+
+    pyplot.bar(ind, phishData, width, label='Phishing')
+    pyplot.bar(ind + width, nonphishData, width, label='Non-Phishing')
+
+    pyplot.ylabel('Percentage of Emails')
+    pyplot.title(testName)
+
+    pyplot.xticks(ind + width / 2, ('Public Domain','Private Domain'))
+    pyplot.legend(loc='best')
+    pyplot.show()
+
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
     """ Graphs categorical results based on quanitity for each of the two separate categories.
@@ -51,13 +90,23 @@ def graphCategorical(phishingResults: list, nonPhishingResults: list, testName="
         phishData[category] = phishingResults.count(category)
         nonPhishData[category] = nonPhishingResults.count(category)
     # graph
-    fig, ax = pyplot.subplots()
-    ax.plot(list(phishData.keys()), list(phishData.values()), label="Phishing")
-    ax.plot(list(nonPhishData.keys()), list(
-        nonPhishData.values()), label="Non-Phishing")
-    ax.legend()
+    N = max(len(phishData.keys()), len(nonPhishData.keys()))  # number of categories on x axis
+    tP = sum(phishData.values())  # total of Phishing Emails
+    tNP = sum(nonPhishData.values())  # total of non-Phishing Emails
+    valuePH = [data/tP*100 for data in phishData.values()]  # Gets the percentage of each category
+    valueNPH = [data/tNP*100 for data in nonPhishData.values()]
+
+    ind = np.arange(N)
+    width = 0.35
+    pyplot.ylim(0, 100)
+    pyplot.bar(ind, valuePH, width, label='Phishing')
+    pyplot.bar(ind+width, valueNPH, width, label='Non-Phishing')
+    pyplot.ylabel('Percentage')
     pyplot.title(testName)
+    pyplot.xticks(ind + width / 2, (phishData.keys()))
+    pyplot.legend(loc='best')
     pyplot.show()
+
 
 
 def graphNumerical(phishingResults: list, nonPhishingResults: list, testName=""):
@@ -83,7 +132,7 @@ def graphBestFit(phishingResults: list, nonPhishingResults: list, testName=""):
     vecB = [PHISH_VAL] * len(phishingResults) + [NON_PHISH_VAL] * len(nonPhishingResults)
     
     predX, residuals, rank, singulars = lstsq(matA, vecB, rcond = None)
-    predResults = numpy.dot(matA, predX)
+    predResults = np.dot(matA, predX)
 
     phishPredictions = predResults[:len(phishingResults)]
     nonPhishPredictions = predResults[len(phishingResults):]
@@ -109,8 +158,10 @@ def visualizeTest(test):
 
     elif test.testType == TestType.bestfit:
         graphBestFit(phishingResults, nonPhishingResults, test.testName)
+    elif test.testType == TestType.domain:
+        graphBarMulti(phishingResults, nonPhishingResults, test.testName)
 
 
 if __name__ == "__main__":
-    for test in tests.allTests:
+    for test in allTests:
         visualizeTest(test)
