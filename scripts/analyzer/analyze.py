@@ -129,20 +129,20 @@ def main(dir: str):
 
 def remove_noise(text):
     cleaned_tokens = []
-    for line in text.split(' '):
+    for line in text.split(r'\s'):
         if line == '' or len(line) > 50 or re.search(r'www\..*\....', line) is not None or \
                 re.search(r'\d', line) is not None or line == '\xA9':
             continue
         if line == 'mail_boundary':
             cleaned_tokens.pop()
             break
-        #line = re.sub(r'\.|!|\(|\)|:|,|\||"|\?|_|/|\[|]', ' ', line)
+        #line = re.sub(r'\.|!|\(|\)|:|,|\||"|\?|_|/|\[|]', ' ', line) # replace punctuation with space
         cleaned_tokens.append(line)
 
-    # body = re.sub('www\..*\....', '', text)
-    # body = re.sub('https?:\/\/[^\/]*\/.*$', ' ', body, flags=re.MULTILINE)
-    # body = re.sub(r'[!,?."]', ' ', body)
-    # body = re.sub('--- mail_boundary ---.*', '', text)
+    # body = re.sub('www\..*\....', '', text) # delete links
+    # body = re.sub('https?:\/\/[^\/]*\/.*$', ' ', body, flags=re.MULTILINE) # delete links
+    # body = re.sub(r'[!,?."]', ' ', body) # punctuation replacement v0.1
+    # body = re.sub('--- mail_boundary ---.*', '', text) # remove everything after mail boundary
     return ' '.join(cleaned_tokens)
 
 # flatten json into single layer by concatenating keys with '.'
