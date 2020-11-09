@@ -84,7 +84,7 @@ def main(dir: str):
 
             body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
             blob = TextBlob(body)
-            totalWords += body.lower()
+            totalWords = totalWords + " " + body.lower()
             grammarErrors = checker.check(body)
 
             if 'Authentication-Results' in mail.headers:
@@ -174,7 +174,7 @@ def remove_noise(text):
         if line == 'mail_boundary':
             cleaned_tokens.pop()
             break
-        line = re.sub(r'\(|\)|:|,|\||"|\?|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
+        line = re.sub(r'\(|\)|:|,|\||"|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
         cleaned_tokens.append(line)
 
     # body = re.sub('www\..*\....', '', text) # delete links
