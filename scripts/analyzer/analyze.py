@@ -8,6 +8,18 @@ import language_tool_python
 import textstat
 import nltk
 from bs4 import BeautifulSoup
+import cv2
+import gif2numpy
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfpage import PDFPage
+from io import BytesIO
+import base64
+import chardet
 
 # determine if we want to save the email body text
 save_body = True
@@ -46,9 +58,33 @@ def main(dir: str):
             #     continue
 
             attachments = ''
-            for attachment in mail.attachments:
-                attachments += attachment['payload']
+            try:
+                mail.write_attachments(dir)
+                for attachment in mail.attachments:
+                    if re.search('image', attachment['mail_content_type']):
+                        if re.search('gif', attachment['mail_content_type']):
+                            images, _, _ = gif2numpy.convert(dir + '\\' + attachment['filename'])
+                            img = images[0]
+                        else:
+                            img = cv2.imread(dir + '\\' + attachment['filename'])
+                        img = cv2.resize(img, None, fx=1.2, fy=1.2, interpolation=cv2.INTER_CUBIC)
+                        text = pytesseract.image_to_string(img)
+                        attachments += text
+                    elif re.search('pdf', attachment['mail_content_type']):
+                        encoding = chardet.detect(pdf_to_text(dir + '\\' + attachment['filename']))['encoding']
+                        attachments += pdf_to_text(dir + '\\' + attachment['filename']).decode(encoding)
+                    elif re.search('text', attachment['mail_content_type']):
+                        encoding = chardet.detect(base64.b64decode(attachment['payload']))['encoding']
+                        attachments += base64.b64decode(attachment['payload']).decode(encoding)
+                    else:
+                        attachments += attachment['payload']
+                    os.remove(dir + '\\' + attachment['filename'])
+            except Exception as e:
+                print('[WARNING] Error with attachments: {}'.format(e))
             body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
+            if len(body) == 0:
+                print('zero', body)
+            #print(body)
             blob = TextBlob(body)
             grammarErrors = checker.check(body)
 
@@ -58,7 +94,6 @@ def main(dir: str):
                 dmarc = re.findall('dmarc=(\S*)', mail.headers['Authentication-Results'])
             else:
                 spf = dkim = dmarc = ''
-
 
             emails[filename] = {
                 'filename': filename,
@@ -100,11 +135,11 @@ def main(dir: str):
     #     print('[WARNING] No files were found in "{}"!'.format(dir))
     #     return
 
-    # output json ##
+    ## output json ##
     with open(os.path.join(dir, 'analysis.json'), 'w') as jsonFile:
         json.dump(emails, jsonFile, indent=2)
 
-    # build and output csv ##
+    ## build and output csv ##
 
     # generate and output headers using first email
     column_headers = list(flatten_json(emails[list(emails.keys())[0]]).keys())
@@ -129,14 +164,14 @@ def main(dir: str):
 
 def remove_noise(text):
     cleaned_tokens = []
-    for line in text.split(r'\s'):
-        if line == '' or len(line) > 50 or re.search(r'www\..*\....', line) is not None or \
-                re.search(r'\d', line) is not None or line == '\xA9':
+    for line in text.split():
+        if line == '' or re.search(r'www\..*\....', line) is not None or \
+                line == '\xA9':
             continue
         if line == 'mail_boundary':
             cleaned_tokens.pop()
             break
-        #line = re.sub(r'\.|!|\(|\)|:|,|\||"|\?|_|/|\[|]', ' ', line) # replace punctuation with space
+        line = re.sub(r'\(|\)|:|,|\||"|\?|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
         cleaned_tokens.append(line)
 
     # body = re.sub('www\..*\....', '', text) # delete links
@@ -144,6 +179,24 @@ def remove_noise(text):
     # body = re.sub(r'[!,?."]', ' ', body) # punctuation replacement v0.1
     # body = re.sub('--- mail_boundary ---.*', '', text) # remove everything after mail boundary
     return ' '.join(cleaned_tokens)
+
+def pdf_to_text(path):
+    manager = PDFResourceManager()
+    retstr = BytesIO()
+    layout = LAParams(all_texts=True)
+    device = TextConverter(manager, retstr, laparams=layout)
+    filepath = open(path, 'rb')
+    interpreter = PDFPageInterpreter(manager, device)
+
+    for page in PDFPage.get_pages(filepath, check_extractable=True):
+        interpreter.process_page(page)
+
+    text = retstr.getvalue()
+
+    filepath.close()
+    device.close()
+    retstr.close()
+    return text
 
 # flatten json into single layer by concatenating keys with '.'
 def flatten_json(y):
