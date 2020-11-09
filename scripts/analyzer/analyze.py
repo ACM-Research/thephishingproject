@@ -28,14 +28,14 @@ save_body = True
 nltk.download('punkt', quiet=True)
 
 
-
 def main(dir: str):
     checker = language_tool_python.LanguageTool('en-US')
     emails = {}
+    totalWords = ''
 
     filenames = [filename for filename in os.listdir(dir) if filename.endswith('.eml')]
     for filename in filenames:
-                
+
         print()
         print('[INFO] Processing {}...'.format(filename))
 
@@ -81,11 +81,10 @@ def main(dir: str):
                     os.remove(dir + '\\' + attachment['filename'])
             except Exception as e:
                 print('[WARNING] Error with attachments: {}'.format(e))
+
             body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
-            if len(body) == 0:
-                print('zero', body)
-            #print(body)
             blob = TextBlob(body)
+            totalWords += body.lower()
             grammarErrors = checker.check(body)
 
             if 'Authentication-Results' in mail.headers:
@@ -134,6 +133,10 @@ def main(dir: str):
     # if not emails:
     #     print('[WARNING] No files were found in "{}"!'.format(dir))
     #     return
+
+    ## writing all words to file ##
+    with open(os.path.join(dir, 'words.txt'), 'w', encoding='utf-8') as file:
+        file.write(totalWords.lower())
 
     ## output json ##
     with open(os.path.join(dir, 'analysis.json'), 'w') as jsonFile:
