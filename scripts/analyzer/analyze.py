@@ -168,7 +168,7 @@ def main(dir: str):
 def remove_noise(text):
     cleaned_tokens = []
     for line in text.split():
-        if line == '' or re.search(r'www\..*\....', line) is not None or \
+        if line == '' or re.search(r'https?', line) is not None or \
                 line == '\xA9':
             continue
         if line == 'mail_boundary':
