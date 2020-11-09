@@ -13,7 +13,7 @@ class TestType:
     categorical = "categorical" # test result returns category
     numerical = "numerical"     # test result returns single numerical value
     bestfit = "bestfit"         # test returns tuple, result depends on line of best fit with other data.
-    domain = "domain"     # For example it could return an (x, y, z) tuple aggregating different tests
+                                # For example it could return an (x, y, z) tuple aggregating different tests
                                 # to be put through least squares optimization.
 
 allTests = []
@@ -24,11 +24,15 @@ allTests = []
 # testTemplate.testName = ""
 # allTests.append(testTemplate)
 def domainTest(email):
-    return email["from"]  # Gets the domain of the sender
-domainTest.testType = TestType.domain
+    email_services = ["hotmail", "gmail", "yahoo", "aol", "msn", "icloud"]
+    m = email["from"]
+    if any(email_service in m for email_service in email_services):
+        return "Public Domain"
+    else:
+        return "Private Domain"
+domainTest.testType = TestType.categorical
 domainTest.testName = "Public Domain vs Private Domain"
 allTests.append(domainTest)
-
 
 def spfTest(email):
     # map to results of email spf
@@ -36,7 +40,6 @@ def spfTest(email):
 spfTest.testType = TestType.categorical
 spfTest.testName = "SPF Authentication Results"
 allTests.append(spfTest)
-
 
 def dkimTest(email):
     # map to results of email dkim
