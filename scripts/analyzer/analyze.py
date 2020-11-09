@@ -28,14 +28,14 @@ save_body = True
 nltk.download('punkt', quiet=True)
 
 
-
 def main(dir: str):
     checker = language_tool_python.LanguageTool('en-US')
     emails = {}
+    totalWords = ''
 
     filenames = [filename for filename in os.listdir(dir) if filename.endswith('.eml')]
     for filename in filenames:
-                
+
         print()
         print('[INFO] Processing {}...'.format(filename))
 
@@ -81,11 +81,10 @@ def main(dir: str):
                     os.remove(dir + '\\' + attachment['filename'])
             except Exception as e:
                 print('[WARNING] Error with attachments: {}'.format(e))
+
             body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
-            if len(body) == 0:
-                print('zero', body)
-            #print(body)
             blob = TextBlob(body)
+            totalWords = totalWords + " " + body.lower()
             grammarErrors = checker.check(body)
 
             if 'Authentication-Results' in mail.headers:
@@ -135,6 +134,10 @@ def main(dir: str):
     #     print('[WARNING] No files were found in "{}"!'.format(dir))
     #     return
 
+    ## writing all words to file ##
+    with open(os.path.join(dir, 'words.txt'), 'w', encoding='utf-8') as file:
+        file.write(totalWords.lower())
+
     ## output json ##
     with open(os.path.join(dir, 'analysis.json'), 'w') as jsonFile:
         json.dump(emails, jsonFile, indent=2)
@@ -171,7 +174,7 @@ def remove_noise(text):
         if line == 'mail_boundary':
             cleaned_tokens.pop()
             break
-        line = re.sub(r'\(|\)|:|,|\||"|\?|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
+        line = re.sub(r'\(|\)|:|,|\||"|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
         cleaned_tokens.append(line)
 
     # body = re.sub('www\..*\....', '', text) # delete links
