@@ -11,7 +11,7 @@ import matplotlib.pyplot as pyplot
 import numpy as np
 from numpy.linalg import lstsq
 
-import thephishingproject.scripts.interpreter.tests
+import tests
 from tests import TestType
 
 # Constants
@@ -123,5 +123,5 @@ def visualizeTest(test):
 
 
 if __name__ == "__main__":
-    for test in allTests:
+    for test in tests.allTests:
         visualizeTest(test)
