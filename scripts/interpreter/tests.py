@@ -154,6 +154,22 @@ replyToSenderTest.testType = TestType.categorical
 replyToSenderTest.testName = "Reply To vs Sender"
 allTests.append(replyToSenderTest)
 
+def hasAttachmentTest(email):
+    num = numberOfAttachmentsTest(email)
+    if num > 1:
+        return "2+ attachments"
+    elif num == 1:
+        return "1 attachment"
+    return "0 attachments"
+hasAttachmentTest.testType = TestType.categorical
+hasAttachmentTest.testName = "Attachments"
+allTests.append(hasAttachmentTest)
+
+def numberOfAttachmentsTest(email):
+    return len(email["attachments"])
+numberOfAttachmentsTest.testType = TestType.numerical
+numberOfAttachmentsTest.testName = "Attachment Number"
+allTests.append(numberOfAttachmentsTest)
 
 allAuthCatValues = {
     "fail": PHISH_VAL,
@@ -176,8 +192,16 @@ _domainNum = categoricalToNumericalAutoWeight(domainTest)
 def authDomainSenderBestfit(email):
     # converts domain type, authentication results, and sender reply type into numerical values for linear fitting
     return (_domainNum(email), _spfNum(email), _dkimNum(email), _dmarcNum(email), _replyToSenderNum(email))
-
-
 authDomainSenderBestfit.testType = TestType.bestfit
 authDomainSenderBestfit.testName = "Domain Type and Auth Results"
 allTests.append(authDomainSenderBestfit)
+
+# TODO: calculate most frequent words instead of having me guess based on size in word cloud
+phishHighFreqWords = ["will","arrival","work","service","full name"]
+def wordFreqTest(email):
+    bodyStr = email["body"]
+    nWords = int(email["counts"]["wordCount"]) + 1
+    return [1]+[bodyStr.count(word)/nWords for word in phishHighFreqWords] # added 1 for zero-frequency case
+wordFreqTest.testType = TestType.bestfit
+wordFreqTest.testName = "Word Frequency Fit"
+allTests.append(wordFreqTest)
