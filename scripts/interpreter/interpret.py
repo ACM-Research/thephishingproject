@@ -12,7 +12,10 @@ from numpy.linalg import lstsq
 import tests
 from tests import TestType
 
-from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from PIL import Image
+
+from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH
 
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
@@ -110,9 +113,34 @@ def visualizeTest(test):
         graphBestFit(phishingResults, nonPhishingResults, test.testName)
 
 
+def generate_wordcloud(loc: str):
+    words = open(loc, 'r', encoding='utf-8').read()
+    stopwords = set(STOPWORDS)
+    # shape = np.array(Image.open(''))
+    wc = WordCloud(background_color='white', stopwords=stopwords)  # , mask=shape,
+    # contour_width=3, contour_color='black')
+    wc.generate(words)
+    # color = ImageColorGenerator(shape)
+    # wc.recolor(color_func=color)
+
+    pyplot.imshow(wc, interpolation='bilinear')
+    pyplot.axis('off')
+
+    # if loc == NON_PHISH_WORD_PATH:
+    #     pyplot.savefig(path.join(ROOT, "processed_data",
+    #                              "analyzer_script", "non_phishing_wordcloud.png"))
+    # elif loc == PHISH_WORD_PATH:
+    #     pyplot.savefig(path.join(ROOT, "processed_data",
+    #                              "analyzer_script", "phishing_wordcloud.png"))
+
+    pyplot.show()
+
 if __name__ == "__main__":
     # run specific tests
     visualizeTest(tests.authDomainSenderBestfit)
+
+    generate_wordcloud(NON_PHISH_WORD_PATH)
+    generate_wordcloud(PHISH_WORD_PATH)
 
     # # run all tests
     # for test in tests.allTests:

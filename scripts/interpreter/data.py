@@ -7,6 +7,10 @@ NON_PHISH_PATH = path.join(ROOT, "processed_data",
                            "analyzer_script", "non_phishing_analysis.json")
 PHISH_PATH = path.join(ROOT, "processed_data",
                        "analyzer_script", "phishing_analysis.json")
+NON_PHISH_WORD_PATH = path.join(ROOT, "processed_data",
+                            "analyzer_script", "non_phishing_words.txt")
+PHISH_WORD_PATH = path.join(ROOT, "processed_data",
+                            "analyzer_script", "phishing_words.txt")
 NON_PHISH_VAL = -1
 PHISH_VAL = 1
 
