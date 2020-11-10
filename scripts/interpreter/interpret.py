@@ -14,6 +14,7 @@ from tests import TestType
 
 from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL
 
+
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
     """ Graphs categorical results based on quanitity for each of the two separate categories.
 
@@ -29,10 +30,12 @@ def graphCategorical(phishingResults: list, nonPhishingResults: list, testName="
         phishData[category] = phishingResults.count(category)
         nonPhishData[category] = nonPhishingResults.count(category)
     # graph
-    N = max(len(phishData.keys()), len(nonPhishData.keys()))  # number of categories on x axis
+    # number of categories on x axis
+    N = max(len(phishData.keys()), len(nonPhishData.keys()))
     tP = sum(phishData.values())  # total of Phishing Emails
     tNP = sum(nonPhishData.values())  # total of non-Phishing Emails
-    valuePH = [data/tP*100 for data in phishData.values()]  # Gets the percentage of each category
+    # Gets the percentage of each category
+    valuePH = [data/tP*100 for data in phishData.values()]
     valueNPH = [data/tNP*100 for data in nonPhishData.values()]
 
     ind = np.arange(N)
@@ -48,34 +51,43 @@ def graphCategorical(phishingResults: list, nonPhishingResults: list, testName="
     pyplot.show()
 
 
-def graphNumerical(phishingResults: list, nonPhishingResults: list, testName=""):
+def graphNumerical(phishingResults: list, nonPhishingResults: list, testName="", labelPhishingAxis=False):
     """ Graphs numerical results for each of the categories.
 
     There are multiple ways to represent this data but for now we use a histogram
+    labelPhishingAxis: whether to indicate PHISHING_VALUE and NON_PHISHING_VALUE on the x axis
     """
     nBins = 20
 
     pyplot.hist(phishingResults, nBins, alpha=0.5, label="Phishing")
     pyplot.hist(nonPhishingResults, nBins, alpha=0.5,  label="Non-Phishing")
+
+    if labelPhishingAxis:
+        pyplot.text(PHISH_VAL, 1, "Phishing\nValue")
+        pyplot.text(NON_PHISH_VAL, 1, "Non-Phishing\nValue")
+
     pyplot.title(testName)
     pyplot.legend()
     pyplot.show()
 
+
 def graphBestFit(phishingResults: list, nonPhishingResults: list, testName=""):
     """ Use least squares to fit a linear trend to the results.
 
-    Phishing emails are given a score of 1 while legitamate emails are given a score of -1.
+    Phishing emails are given a score of 1  while legitamate emails are given a score of -1.
     """
     # format for approximating system Ax = b
     matA = phishingResults + nonPhishingResults
-    vecB = [PHISH_VAL] * len(phishingResults) + [NON_PHISH_VAL] * len(nonPhishingResults)
-    
-    predX, residuals, rank, singulars = lstsq(matA, vecB, rcond = None)
+    vecB = [PHISH_VAL] * len(phishingResults) + \
+        [NON_PHISH_VAL] * len(nonPhishingResults)
+
+    predX, residuals, rank, singulars = lstsq(matA, vecB, rcond=None)
     predResults = np.dot(matA, predX)
 
     phishPredictions = predResults[:len(phishingResults)]
     nonPhishPredictions = predResults[len(phishingResults):]
-    graphNumerical(phishPredictions, nonPhishPredictions, "Best Fit: "+testName)
+    graphNumerical(phishPredictions, nonPhishPredictions,
+                   testName="Best Fit: "+testName, labelPhishingAxis=True)
 
 
 def visualizeTest(test):
@@ -98,11 +110,10 @@ def visualizeTest(test):
         graphBestFit(phishingResults, nonPhishingResults, test.testName)
 
 
-
 if __name__ == "__main__":
     # run specific tests
+    visualizeTest(tests.authDomainSenderBestfit)
 
-
-    # run all tests
-    for test in tests.allTests:
-        visualizeTest(test)
+    # # run all tests
+    # for test in tests.allTests:
+    #     visualizeTest(test)
