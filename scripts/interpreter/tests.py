@@ -9,6 +9,7 @@ indicating what type of test they are / what their graph should display:
 Tests are also given names for the purpose of graphing. These can be any strings.
     test.testName = "testname"
 """
+from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL
 
 
 class TestType:
@@ -51,11 +52,28 @@ def categoricalToNumerical(test, categoryValues: dict, defaultValue=None):
     return convertedTest
 
 
+def categoricalToNumericalAutoWeight(test):
+    """ Returns a callable test where categories are converted to automatically weighted scores """
+    phishingResults, nonPhishingResults = runTestOnAll(test)
+    allCategories = list(set(phishingResults) | set(
+        nonPhishingResults))  # union of unique category values
+
+    # calculate proportions for weighting
+    weights = {}
+    for category in allCategories:
+        # this counting algorithm is inefficient (multiple passes)
+        nonPhishCount = nonPhishingResults.count(category)
+        phishCount = phishingResults.count(category)
+        weights[category] = (PHISH_VAL * phishCount + NON_PHISH_VAL *
+                             nonPhishCount) / (phishCount + nonPhishCount)
+    return categoricalToNumerical(test, weights)
+
 # def testTemplate(email):
 #     return ""
 # testTemplate.testType = TestType.categorical
 # testTemplate.testName = ""
 # allTests.append(testTemplate)
+
 
 def domainTest(email):
     email_services = ["hotmail", "gmail", "yahoo", "aol", "msn", "icloud"]
@@ -64,6 +82,8 @@ def domainTest(email):
         return "Public Domain"
     else:
         return "Private Domain"
+
+
 domainTest.testType = TestType.categorical
 domainTest.testName = "Public Domain vs Private Domain"
 allTests.append(domainTest)
@@ -72,6 +92,8 @@ allTests.append(domainTest)
 def spfTest(email):
     # map to results of email spf
     return email["spf"] or "none"
+
+
 spfTest.testType = TestType.categorical
 spfTest.testName = "SPF Authentication Results"
 allTests.append(spfTest)
@@ -80,6 +102,8 @@ allTests.append(spfTest)
 def dkimTest(email):
     # map to results of email dkim
     return email["dkim"] or "none"
+
+
 dkimTest.testType = TestType.categorical
 dkimTest.testName = "DKIM Authentication Results"
 allTests.append(dkimTest)
@@ -88,6 +112,8 @@ allTests.append(dkimTest)
 def dmarcTest(email):
     # map to results of email dmarc
     return email["dmarc"] or "none"
+
+
 dmarcTest.testType = TestType.categorical
 dmarcTest.testName = "DMARC Authentication Results"
 allTests.append(dmarcTest)
@@ -95,6 +121,8 @@ allTests.append(dmarcTest)
 
 def subjectivityTest(email):
     return email["sentiment"]["subjectivity"]
+
+
 subjectivityTest.testType = TestType.numerical
 subjectivityTest.testName = "Body Subjectivity"
 allTests.append(subjectivityTest)
@@ -105,9 +133,12 @@ def readabilityTest(email):
     readabilityFields = ["flesch_kincaid", "gunning_fog", "smog_index",
                          "automated_readability_index", "coleman_liau_index", "linsear_write"]
     return [email["readability"][field] for field in readabilityFields]
+
+
 readabilityTest.testType = TestType.bestfit
 readabilityTest.testName = "Agregate Readability Scores"
 allTests.append(readabilityTest)
+
 
 def replyToSenderTest(email):
     # if the sender is listed as the return path
@@ -117,39 +148,36 @@ def replyToSenderTest(email):
     elif len(email["replyTo"]) > 0:
         return "Reply to other"
     return "No specified reply to"
+
+
 replyToSenderTest.testType = TestType.categorical
 replyToSenderTest.testName = "Reply To vs Sender"
 allTests.append(replyToSenderTest)
 
-domainCatValues = {
-    "Public Domain": 1,
-    "Private Domain": -1
-}
-_domainNum = categoricalToNumerical(domainTest, domainCatValues)
 
 allAuthCatValues = {
-    "fail": -1,
-    "softfail": -0.5,
+    "fail": PHISH_VAL,
+    "softfail": PHISH_VAL/2,
     "none": 0,
     "neutral": 0,
     "test": 0,
-    "bestguesspass": 0.5,
-    "pass": 1,
+    "bestguesspass": NON_PHISH_VAL/2,
+    "pass": NON_PHISH_VAL,
 }
 _spfNum = categoricalToNumerical(spfTest, allAuthCatValues)
 _dkimNum = categoricalToNumerical(dkimTest, allAuthCatValues)
 _dmarcNum = categoricalToNumerical(dmarcTest, allAuthCatValues)
 
-replyToSenderCatValues = {
-    "Reply to sender": 1,
-    "No specified reply to": -1,
-    "Reply to other": -1
-}
-_replyToSenderNum = categoricalToNumerical(replyToSenderTest, replyToSenderCatValues)
+# neither reply to sender nor domain type have predetermined value so use autoweights
+_replyToSenderNum = categoricalToNumericalAutoWeight(replyToSenderTest)
+_domainNum = categoricalToNumericalAutoWeight(domainTest)
+
 
 def authDomainSenderBestfit(email):
     # converts domain type, authentication results, and sender reply type into numerical values for linear fitting
     return (_domainNum(email), _spfNum(email), _dkimNum(email), _dmarcNum(email), _replyToSenderNum(email))
+
+
 authDomainSenderBestfit.testType = TestType.bestfit
 authDomainSenderBestfit.testName = "Domain Type and Auth Results"
 allTests.append(authDomainSenderBestfit)

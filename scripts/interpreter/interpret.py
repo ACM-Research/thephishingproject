@@ -5,8 +5,6 @@ Loads data from processed_data/analyzer_script/phishing_analysis.json and non_ph
 When it becomes helpful to view data on an x-y plane (i.e. for regression) phishing emails will be given
 a y-value of 1 and non-phishing emails will be given a value of 0.
 """
-import json
-from os import path
 import matplotlib.pyplot as pyplot
 import numpy as np
 from numpy.linalg import lstsq
@@ -14,27 +12,7 @@ from numpy.linalg import lstsq
 import tests
 from tests import TestType
 
-# Constants
-ROOT = path.abspath(path.join(path.dirname(__file__), "../.."))
-NON_PHISH_PATH = path.join(ROOT, "processed_data",
-                           "analyzer_script", "non_phishing_analysis.json")
-PHISH_PATH = path.join(ROOT, "processed_data",
-                       "analyzer_script", "phishing_analysis.json")
-NON_PHISH_VAL = -1
-PHISH_VAL = 1
-
-# Load jsons into arrays of emails
-phish_emails = []
-non_phish_emails = []
-
-with open(PHISH_PATH, "r") as phish_info:
-    phish_dict = json.load(phish_info)
-    phish_emails = list(phish_dict.values())
-
-with open(NON_PHISH_PATH, "r") as non_phish_info:
-    non_phish_dict = json.load(non_phish_info)
-    non_phish_emails = list(non_phish_dict.values())
-
+from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
     """ Graphs categorical results based on quanitity for each of the two separate categories.
@@ -107,8 +85,7 @@ def visualizeTest(test):
     fields .testType and .testName
     """
     # run tests for all
-    phishingResults = [test(email) for email in phish_emails]
-    nonPhishingResults = [test(email) for email in non_phish_emails]
+    phishingResults, nonPhishingResults = runTestOnAll(test)
 
     # graph according to type
     if test.testType == TestType.categorical:
@@ -123,5 +100,9 @@ def visualizeTest(test):
 
 
 if __name__ == "__main__":
+    # run specific tests
+
+
+    # run all tests
     for test in tests.allTests:
         visualizeTest(test)
