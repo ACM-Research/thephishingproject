@@ -143,7 +143,10 @@ def generate_wordcloud(loc: str):
 
 if __name__ == "__main__":
     # run specific tests
+    visualizeTest(tests.wordFreqTest)
     visualizeTest(tests.authDomainSenderBestfit)
+    visualizeTest(tests.hasAttachmentTest)
+    visualizeTest(tests.numberOfAttachmentsTest)
 
     generate_wordcloud(NON_PHISH_WORD_PATH)
     generate_wordcloud(PHISH_WORD_PATH)
