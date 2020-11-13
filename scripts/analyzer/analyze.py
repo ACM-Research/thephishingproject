@@ -58,6 +58,8 @@ def main(dir: str):
             #     continue
 
             attachments = ''
+            for attachment in mail.attachments:
+                attachment['filename'] = re.sub(r'<|>', '', attachment['filename'])
             try:
                 mail.write_attachments(dir)
                 for attachment in mail.attachments:
@@ -73,9 +75,12 @@ def main(dir: str):
                     elif re.search('pdf', attachment['mail_content_type']):
                         encoding = chardet.detect(pdf_to_text(dir + '\\' + attachment['filename']))['encoding']
                         attachments += pdf_to_text(dir + '\\' + attachment['filename']).decode(encoding)
-                    elif re.search('text', attachment['mail_content_type']):
-                        encoding = chardet.detect(base64.b64decode(attachment['payload']))['encoding']
-                        attachments += base64.b64decode(attachment['payload']).decode(encoding)
+                    # elif re.search('text', attachment['mail_content_type']):
+                    #     #print(chardet.detect((attachment['payload']).encode()))
+                    #     #encoding = chardet.detect(base64.b64decode(attachment['payload']).encode())['encoding']
+                    #     #attachments += base64.b64decode(attachment['payload']).decode(encoding)
+                    #     #print(codecs.encode(base64.b64decode(attachment['payload']), encoding=attachment['content_transfer_encoding']))
+                    #     attachments += attachment['payload']
                     else:
                         attachments += attachment['payload']
                     os.remove(dir + '\\' + attachment['filename'])
@@ -168,13 +173,13 @@ def main(dir: str):
 def remove_noise(text):
     cleaned_tokens = []
     for line in text.split():
-        if line == '' or re.search(r'www\..*\....', line) is not None or \
-                line == '\xA9':
+        if line == '' or re.search(r'http', line) is not None or len(line) > 50\
+                or re.search(r'cid:', line) is not None:
             continue
         if line == 'mail_boundary':
             cleaned_tokens.pop()
             break
-        line = re.sub(r'\(|\)|:|,|\||"|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
+        # line = re.sub(r'\(|\)|\||"|_|/|\[|]|-{2,}', '', line) # replace punctuation with space
         cleaned_tokens.append(line)
 
     # body = re.sub('www\..*\....', '', text) # delete links

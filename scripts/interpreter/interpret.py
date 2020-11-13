@@ -114,8 +114,14 @@ def visualizeTest(test):
 
 
 def generate_wordcloud(loc: str):
-    words = open(loc, 'r', encoding='utf-8').read()
-    stopwords = set(STOPWORDS)
+    words = open(loc, 'r', encoding='utf-8').read().replace(r'[-./?!,":;()\']', ' ')
+
+    stopwords = list(STOPWORDS)
+    uninteresting = ['true', 'false', 'edu', 'university', 'texas', 'dallas', 'ut', 'email', 'will', 'link', 'student',
+                     'students', 'table', 'unsubscribe', 'register', 'click', 'join', 'us', 'jerry', 'teng', 'browser',
+                     'utdallas', '00pm', 'october', 'pm', 'sr', 'jr', 'richardson', 'tx']
+    stopwords.extend(uninteresting)
+
     # shape = np.array(Image.open(''))
     wc = WordCloud(background_color='white', stopwords=stopwords)  # , mask=shape,
     # contour_width=3, contour_color='black')
