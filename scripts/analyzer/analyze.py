@@ -86,6 +86,7 @@ def main(dir: str):
                     os.remove(dir + '\\' + attachment['filename'])
             except Exception as e:
                 print('[WARNING] Error with attachments: {}'.format(e))
+                [os.remove(dir + '\\' + attachment['filename']) for attachment in mail.attachments]
 
             body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
             blob = TextBlob(body)
