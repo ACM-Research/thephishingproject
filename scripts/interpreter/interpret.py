@@ -12,10 +12,11 @@ from numpy.linalg import lstsq
 import tests
 from tests import TestType
 
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-from PIL import Image
+from wordcloud import WordCloud, STOPWORDS #, ImageColorGenerator
+# from PIL import Image
 
-from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH
+# from os import path
+from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH #, ROOT
 
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
@@ -119,11 +120,13 @@ def generate_wordcloud(loc: str):
     stopwords = list(STOPWORDS)
     uninteresting = ['true', 'false', 'edu', 'university', 'texas', 'dallas', 'ut', 'email', 'will', 'link', 'student',
                      'students', 'table', 'unsubscribe', 'register', 'click', 'join', 'us', 'jerry', 'teng', 'browser',
-                     'utdallas', '00pm', 'october', 'pm', 'sr', 'jr', 'richardson', 'tx']
+                     'utdallas', '00pm', 'october', 'pm', 'sr', 'jr', 'richardson', 'tx', 'november', 'campbell',
+                     'road', 'one', 'use', 'new', 'want']
     stopwords.extend(uninteresting)
 
     # shape = np.array(Image.open(''))
-    wc = WordCloud(background_color='white', stopwords=stopwords)  # , mask=shape,
+    wc = WordCloud(background_color='white', stopwords=stopwords, min_font_size=10)
+    #mask=shape,
     # contour_width=3, contour_color='black')
     wc.generate(words)
     # color = ImageColorGenerator(shape)
