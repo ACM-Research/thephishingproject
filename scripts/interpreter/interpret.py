@@ -7,7 +7,6 @@ a y-value of 1 and non-phishing emails will be given a value of 0.
 """
 import matplotlib.pyplot as pyplot
 import numpy as np
-from numpy.linalg import lstsq
 
 import tests
 from tests import TestType
@@ -16,7 +15,7 @@ from wordcloud import WordCloud, STOPWORDS #, ImageColorGenerator
 # from PIL import Image
 
 # from os import path
-from data import runTestOnAll, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH #, ROOT
+from data import runTestOnAll, findOptimizationVector, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH #, ROOT
 
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
@@ -74,44 +73,24 @@ def graphNumerical(phishingResults: list, nonPhishingResults: list, testName="",
     pyplot.legend()
     pyplot.show()
 
-
-def graphBestFit(phishingResults: list, nonPhishingResults: list, testName=""):
-    """ Use least squares to fit a linear trend to the results.
-
-    Phishing emails are given a score of 1  while legitamate emails are given a score of -1.
-    """
-    # format for approximating system Ax = b
-    matA = phishingResults + nonPhishingResults
-    vecB = [PHISH_VAL] * len(phishingResults) + \
-        [NON_PHISH_VAL] * len(nonPhishingResults)
-
-    predX, residuals, rank, singulars = lstsq(matA, vecB, rcond=None)
-    predResults = np.dot(matA, predX)
-
-    phishPredictions = predResults[:len(phishingResults)]
-    nonPhishPredictions = predResults[len(phishingResults):]
-    graphNumerical(phishPredictions, nonPhishPredictions,
-                   testName="Best Fit: "+testName, labelPhishingAxis=True)
-
-
 def visualizeTest(test):
     """ Graphs test according to type. 
 
     Test must be a function that takes a single email as argument and has member
     fields .testType and .testName
     """
-    # run tests for all
-    phishingResults, nonPhishingResults = runTestOnAll(test)
-
     # graph according to type
     if test.testType == TestType.categorical:
+        phishingResults, nonPhishingResults = runTestOnAll(test)
         graphCategorical(phishingResults, nonPhishingResults, test.testName)
 
     elif test.testType == TestType.numerical:
+        phishingResults, nonPhishingResults = runTestOnAll(test)
         graphNumerical(phishingResults, nonPhishingResults, test.testName)
 
     elif test.testType == TestType.bestfit:
-        graphBestFit(phishingResults, nonPhishingResults, test.testName)
+        predX, phishingResults, nonPhishingResults = findOptimizationVector(test)
+        graphNumerical(phishingResults, nonPhishingResults, testName="Best Fit: "+test.testName, labelPhishingAxis=True)
 
 
 def generate_wordcloud(loc: str):
@@ -147,12 +126,12 @@ def generate_wordcloud(loc: str):
 if __name__ == "__main__":
     # run specific tests
     visualizeTest(tests.wordFreqTest)
-    visualizeTest(tests.authDomainSenderBestfit)
-    visualizeTest(tests.hasAttachmentTest)
-    visualizeTest(tests.numberOfAttachmentsTest)
+    # visualizeTest(tests.authDomainSenderBestfit)
+    # visualizeTest(tests.hasAttachmentTest)
+    # visualizeTest(tests.numberOfAttachmentsTest)
 
-    generate_wordcloud(NON_PHISH_WORD_PATH)
-    generate_wordcloud(PHISH_WORD_PATH)
+    # generate_wordcloud(NON_PHISH_WORD_PATH)
+    # generate_wordcloud(PHISH_WORD_PATH)
 
     # # run all tests
     # for test in tests.allTests:
