@@ -14,8 +14,8 @@ from tests import TestType
 from wordcloud import WordCloud, STOPWORDS #, ImageColorGenerator
 # from PIL import Image
 
-# from os import path
-from data import runTestOnAll, findOptimizationVector, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH #, ROOT
+from os import path
+from data import runTestOnAll, findOptimizationVector, PHISH_VAL, NON_PHISH_VAL, PHISH_WORD_PATH, NON_PHISH_WORD_PATH, ROOT
 
 
 def graphCategorical(phishingResults: list, nonPhishingResults: list, testName=""):
@@ -114,25 +114,25 @@ def generate_wordcloud(loc: str):
     pyplot.imshow(wc, interpolation='bilinear')
     pyplot.axis('off')
 
-    # if loc == NON_PHISH_WORD_PATH:
-    #     pyplot.savefig(path.join(ROOT, "processed_data",
-    #                              "analyzer_script", "non_phishing_wordcloud.png"))
-    # elif loc == PHISH_WORD_PATH:
-    #     pyplot.savefig(path.join(ROOT, "processed_data",
-    #                              "analyzer_script", "phishing_wordcloud.png"))
+    if loc == NON_PHISH_WORD_PATH:
+        pyplot.savefig(path.join(ROOT, "processed_data",
+                                 "analyzer_script", "non_phishing_wordcloud.png"))
+    elif loc == PHISH_WORD_PATH:
+        pyplot.savefig(path.join(ROOT, "processed_data",
+                                 "analyzer_script", "phishing_wordcloud.png"))
 
     pyplot.show()
 
 if __name__ == "__main__":
     # run specific tests
-    visualizeTest(tests.wordFreqTest)
+    # visualizeTest(tests.wordFreqTest)
     # visualizeTest(tests.authDomainSenderBestfit)
     # visualizeTest(tests.hasAttachmentTest)
     # visualizeTest(tests.numberOfAttachmentsTest)
 
-    # generate_wordcloud(NON_PHISH_WORD_PATH)
-    # generate_wordcloud(PHISH_WORD_PATH)
+    generate_wordcloud(NON_PHISH_WORD_PATH)
+    generate_wordcloud(PHISH_WORD_PATH)
 
-    # # run all tests
-    # for test in tests.allTests:
-    #     visualizeTest(test)
+    # run all tests
+    for test in tests.allTests:
+        visualizeTest(test)

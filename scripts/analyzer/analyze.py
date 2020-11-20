@@ -18,7 +18,7 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from io import BytesIO
-import base64
+# import base64
 import chardet
 
 # determine if we want to save the email body text
@@ -35,7 +35,6 @@ def main(dir: str):
 
     filenames = [filename for filename in os.listdir(dir) if filename.endswith('.eml')]
     for filename in filenames:
-
         print()
         print('[INFO] Processing {}...'.format(filename))
 
@@ -45,7 +44,6 @@ def main(dir: str):
             except Exception as e:
                 print('[WARNING] Error while parsing: {}'.format(e))
                 continue
-
             # filter duplicates based on subject
             #if mail.subject in emails:
             #    print('[WARNING] This email seems to be a duplicate of "{}"! Skipping...'
@@ -85,10 +83,12 @@ def main(dir: str):
                         attachments += attachment['payload']
                     os.remove(dir + '\\' + attachment['filename'])
             except Exception as e:
-                print('[WARNING] Error with attachments: {}'.format(e))
+                print('[WARNING] Error while parsing attachments: {}'.format(e))
                 [os.remove(dir + '\\' + attachment['filename']) for attachment in mail.attachments]
 
-            body = remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) + BeautifulSoup(attachments, 'lxml').get_text())
+            body = mail.subject + ' ' + \
+                   remove_noise(BeautifulSoup(mail.body, 'lxml').get_text(separator=' ', strip=True) +
+                                BeautifulSoup(attachments, 'lxml').get_text())
             blob = TextBlob(body)
             totalWords = totalWords + " " + body.lower()
             grammarErrors = checker.check(body)
