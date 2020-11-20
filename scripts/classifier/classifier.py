@@ -129,22 +129,80 @@ print(false_negative)
 print('Number of false negatives (uncaught spam) out of total spam: {}/{} = {:.2f}%'.format(len(false_negative['x']), len(phishing_scores['x']), 100*len(false_negative['x'])/len(phishing_scores['x'])))
 print('Number of false positives (real emails marked as spam): {}/{} = {:.2f}%'.format(len(false_positive['x']), len(non_phishing_scores['x']), 100*len(false_positive['x'])/len(non_phishing_scores['x'])))
 
-fig = go.Figure(
-    data=[go.Scatter3d(
-        x=true_positive['x'] + true_negative['x'] + false_positive['x'] + false_negative['x'],
-        y=true_positive['y'] + true_negative['y'] + false_positive['y'] + false_negative['y'],
-        z=true_positive['z'] + true_negative['z'] + false_positive['z'] + false_negative['z'],
-        mode='markers',
-        marker = {
-            'size': 5,
-            'colorscale': ['coral', 'darkgray', 'darkred', 'crimson'],
-            'color': [0]*len(true_positive['x']) + [1]*len(true_negative['x']) + [2]*len(false_positive['x']) + [3]*len(false_negative['x']),
-            'line': {
-                'color': 'MediumPurple',
-                'width': 1
-            }
+fig = go.Figure()
+
+fig.add_trace(go.Scatter3d(
+    name='True Positive ({})'.format(len(true_positive['x'])),
+    x=true_positive['x'],
+    y=true_positive['y'],
+    z=true_positive['z'],
+    mode='markers',
+    marker = {
+        'size': 5,
+        'color': 'coral',
+        'line': {
+            'color': 'MediumPurple',
+            'width': 1
         }
-    )
-])
+    }
+))
+fig.add_trace(go.Scatter3d(
+    name='True Negative ({})'.format(len(true_negative['x'])),
+    x=true_negative['x'],
+    y=true_negative['y'],
+    z=true_negative['z'],
+    mode='markers',
+    marker = {
+        'size': 5,
+        'color': 'darkgray',
+        'line': {
+            'color': 'MediumPurple',
+            'width': 1
+        }
+    }
+))
+fig.add_trace(go.Scatter3d(
+    name='False Positive ({})'.format(len(false_positive['x'])),
+    x=false_positive['x'],
+    y=false_positive['y'],
+    z=false_positive['z'],
+    mode='markers',
+    marker = {
+        'size': 5,
+        'color': 'darkred',
+        'line': {
+            'color': 'MediumPurple',
+            'width': 1
+        }
+    }
+))
+fig.add_trace(go.Scatter3d(
+    name='False Negative ({})'.format(len(false_negative['x'])),
+    x=false_negative['x'],
+    y=false_negative['y'],
+    z=false_negative['z'],
+    mode='markers',
+    marker = {
+        'size': 5,
+        'color': 'crimson',
+        'line': {
+            'color': 'MediumPurple',
+            'width': 1
+        }
+    }
+))
+
+axisConfig = {
+    'showgrid': True,
+    'gridcolor': 'black'  
+}
+
+fig.update_layout(
+    scene = {
+        'xaxis': axisConfig,
+        'yaxis': axisConfig,
+        'zaxis': axisConfig,
+    }
+)
 
 fig.show()
