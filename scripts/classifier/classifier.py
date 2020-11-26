@@ -33,8 +33,8 @@ def non_phishing_word_score(email: dict) -> int:
     return sum([email['body'].lower().count(word)/wordCount*weights[i] for i, word in enumerate(wordsToCheck)])
 
 def phishing_word_score(email: dict) -> int:
-    wordsToCheck = ['work', 'full name', 'arrival', 'service', 'purchase', 'paid', 'phone', 'employ', '$', 'pay', 'paid']
-    weights = [0, 0, 0, 0, 25.5, 16.6, 12.4, 20.6, 26.2, 0, 0]
+    wordsToCheck = ['purchase', 'paid', 'phone', 'employ', '$']
+    weights = [25.5, 16.6, 12.4, 20.6, 26.2]
     # cutoff of 1.3
     wordCount = 1+email['counts']['wordCount']
     return sum([email['body'].lower().count(word)/wordCount*weights[i] for i, word in enumerate(wordsToCheck)])
@@ -139,10 +139,10 @@ fig.add_trace(go.Scatter3d(
     mode='markers',
     marker = {
         'size': 5,
-        'color': 'coral',
+        'color': 'blue',
         'line': {
-            'color': 'MediumPurple',
-            'width': 1
+            'color': 'Gray',
+            'width': 0.2
         }
     }
 ))
@@ -154,10 +154,10 @@ fig.add_trace(go.Scatter3d(
     mode='markers',
     marker = {
         'size': 5,
-        'color': 'darkgray',
+        'color': 'orangered',
         'line': {
-            'color': 'MediumPurple',
-            'width': 1
+            'color': 'Gray',
+            'width': 0.2
         }
     }
 ))
@@ -169,10 +169,10 @@ fig.add_trace(go.Scatter3d(
     mode='markers',
     marker = {
         'size': 5,
-        'color': 'darkred',
+        'color': 'crimson',
         'line': {
-            'color': 'MediumPurple',
-            'width': 1
+            'color': 'Gray',
+            'width': 0.2
         }
     }
 ))
@@ -186,20 +186,32 @@ fig.add_trace(go.Scatter3d(
         'size': 5,
         'color': 'crimson',
         'line': {
-            'color': 'MediumPurple',
-            'width': 1
+            'color': 'Gray',
+            'width': 0.2
         }
     }
 ))
 
 axisConfig = {
     'showgrid': True,
-    'gridcolor': 'black'  
+    'gridcolor': 'black',
+    'tickvals': [0, 1, 2]
 }
 
 fig.update_layout(
+    font=dict(
+        size=14,
+        color='black'
+    ),
     scene = {
-        'xaxis': axisConfig,
+        'xaxis_title': 'x: Word Frequency Score',
+        'yaxis_title': 'y: Source Score',
+        'zaxis_title': 'z: Reply-to Score',
+        'xaxis': {
+            'range': [-1.5,3],
+            'showgrid': True,
+            'gridcolor': 'black'  
+        },
         'yaxis': axisConfig,
         'zaxis': axisConfig,
     }
