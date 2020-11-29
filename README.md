@@ -1,24 +1,34 @@
 # Analyzing the Targeted Nature of Phishing Attacks
 
 ## Objective
-An email parser used to identify potential phishing attacks targeted towards college students. The parser extracts information, such as the sender, address, subject, content, and links. Alongside the parser, various tests will be conducted to test which factors can signify a phishing attempt. This information will be used to predict and categorize whether an email is harmless or an attempted phishing attack. The goal is to better understand and analyze the characteristics of emails that are sent to the students of UTD.
+The goal of this project is to better understand the characteristics of phishing emails sent to UTD students. It has two parts:  
+
+### 1. Survey Study
+A study was conducted in the form of a survey, in order to gain a better understanding of whether or not students are able to distinguish phishing emails from other emails.
+
+### 2. Email Analysis
+Multiple scripts were created with the goal of determining features that an automated system can use to determine whether or not an email sent to a UTD student is a phishing email. It is comprised of several components:  
+1. The analyzer parses information, such as the sender, address, subject, content, and links. It also calculates readability and grammatical errors. 
+2. The interpreters take this information and display it in ways that show the connection between various email features and their efficacy in classifying phishing emails from non-phishing ones. 
+3. The classifier uses data gathered from the interpreters to calculate scores for each email. Using these scores, it is able to classify emails into phishing and non-phishing categories. The classifier also generates a 3-dimensional graph to better visualize results. 
+
+## Research Poster
+The below research poster details our process and results.   
 
 ![Research Poster.jpg](./poster.jpg)
 
 
 ## Resources
-#### Email Parsing API
-- mailparser.io : https://mailparser.io/
-- Nylas API: https://docs.nylas.com/docs/quickstart-email
 
-#### General Research Resources
-- UTD Info Sec. Dept: https://utdallas.edu/infosecurity/
-- Stimulating a Phishing Attack: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6919577/
+### Research Sources
+ - https://www.prnewswire.com/news-releases/six-out-of-ten-americans-at-risk-of-falling-for-phishing-scam-300976988.html
 
-#### Quick Reads on Phishing Attacks
-- FTC COVID 19 Phishing Attacks: https://www.consumer.ftc.gov/blog/2020/05/covid-19-scams-targeting-college-students
-- Phishing Attacks on Colleges: https://stronger.tech/phishing-college-students/
-- Phishing Examples: https://www.phishing.org/phishing-examples
-
-
-
+### Python libraries
+ - beautifulsoup4
+ - language-tool-python
+ - mail-parser
+ - textblob
+ - textstat
+ - pytesseract
+ - pdfminer
+ - plotly
