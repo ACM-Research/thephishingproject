@@ -1,7 +1,10 @@
-# The UTD Phishing Project
+# Analyzing the Targeted Nature of Phishing Attacksz
 
 ## Objective
-An email parser used to identify potential phishing attacks targeted towards college students and administration. The parser extracts informtation, such as the sender, address, subject, content, and links. This information will be used to then categorize whether an email is potentially harmful, or an attempted phishing attack. The goal is to better understand and analyze the nature of phishing attacks aimed at colleges. Alongside with the parser, various tests will be run and collected as data.
+An email parser used to identify potential phishing attacks targeted towards college students. The parser extracts information, such as the sender, address, subject, content, and links. This information will be used to predict and categorize whether an email is harmless or an attempted phishing attack. The goal is to better understand and analyze the characteristics of emails that are sent to the students of UTD. Alongside with the parser, various tests will be conducted to test which factors can signify a phishing attempt.
+
+![Research Poster.jpg](./poster.jpg)
+
 
 ## Resources
 #### Email Parsing API
