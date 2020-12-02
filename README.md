@@ -1,5 +1,10 @@
 # Analyzing the Targeted Nature of Phishing Attacks
 
+## Research Poster
+The below research poster details our process and results.   
+
+![Research Poster.jpg](./poster.jpg)
+
 ## Objective
 The goal of this project is to better understand the characteristics of phishing emails sent to UTD students. It has two parts:  
 
@@ -11,12 +16,6 @@ Multiple scripts were created with the goal of determining features that an auto
 1. The analyzer parses information, such as the sender, address, subject, content, and links. It also calculates readability and grammatical errors. 
 2. The interpreters take this information and display it in ways that show the connection between various email features and their efficacy in classifying phishing emails from non-phishing ones. 
 3. The classifier uses data gathered from the interpreters to calculate scores for each email. Using these scores, it is able to classify emails into phishing and non-phishing categories. The classifier also generates a 3-dimensional graph to better visualize results. 
-
-## Research Poster
-The below research poster details our process and results.   
-
-![Research Poster.jpg](./poster.jpg)
-
 
 ## Resources
 
@@ -32,3 +31,11 @@ The below research poster details our process and results.
  - pytesseract
  - pdfminer
  - plotly
+ 
+ ## Contributors
+- [Abby Thomas](https://github.com/thomasabigail)
+- [Egan Johnson](https://github.com/EganJ)
+- [Eric Zhang](https://github.com/ez314)
+- [Jerry Teng](https://github.com/JerryTeng01)
+- [Jesse Truong](https://github.com/JTrung51)
+- [Shreya Valaboju](https://github.com/shreyavala) - Research Lead
